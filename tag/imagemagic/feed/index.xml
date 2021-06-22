@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>imagemagic &#8211; Joseph Scott</title>
+	<atom:link href="/tag/imagemagic/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 16 Nov 2009 19:46:36 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>ImageMagick convert &#8211; PDF to JPG, Partial Image Size Problem</title>
+		<link>/2009/11/16/imagemagick-convert-pdf-to-jpg-partial-image-size-problem/</link>
+					<comments>/2009/11/16/imagemagick-convert-pdf-to-jpg-partial-image-size-problem/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 16 Nov 2009 19:46:36 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[imagemagic]]></category>
+		<category><![CDATA[jpg]]></category>
+		<category><![CDATA[pdf]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1596</guid>
+
+					<description><![CDATA[I&#8217;ve been used the ImageMagick convert tool to make JPG images from PDF pages. Nothing too fancy, just generating a single 8.5 x 11 inch ratio JPG for each page in a PDF. This worked really well until I started seeing some PDF files generate the same size JPG, but instead of the page taking [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been used the <a href="http://www.imagemagick.org/script/convert.php">ImageMagick convert</a> tool to make JPG images from PDF pages.  Nothing too fancy, just generating a single 8.5 x 11 inch ratio JPG for each page in a PDF.  This worked really well until I started seeing some PDF files generate the same size JPG, but instead of the page taking up the whole image it was about one quarter size, in the lower left corner.</p>
+<p>Inspecting the PDFs showed that they had much larger dimensions.  So I tried tweaking several settings; <a href="http://www.imagemagick.org/script/command-line-options.php#density">density</a>, <a href="http://www.imagemagick.org/script/command-line-options.php#scale">scale</a>, <a href="http://www.imagemagick.org/script/command-line-options.php#resize">resize</a> and <a href="http://www.imagemagick.org/script/command-line-options.php#resample">resample</a>, all with no luck.  No matter how I adjusted the settings I couldn&#8217;t get the page to use the whole image size.  After more searching and trial and error I finally came across the information I needed to make this work, the <a href="http://www.imagemagick.org/script/command-line-options.php#define">define</a> option.  Specifically: <code>-define pdf:use-cropbox=true</code>.</p>
+<p>By default ImageMagick uses the MediaBox geometry to figure out the page size.  But PDFs may have a CropBox or TrimBox value that is smaller than the MediaBox, which is exactly what I was looking for.  From the ImageMagick <a href="http://www.imagemagick.org/script/formats.php">PDF format</a> description:</p>
+<blockquote><p>
+Requires Ghostscript to read. By default, ImageMagick sets the page size to the MediaBox. Some PDF files, however, have a CropBox or TrimBox that is smaller than the MediaBox and may include white space, registration or cutting marks outside the CropBox or TrimBox. To force ImageMagick to use the CropBox or TrimBox rather than the MediaBox, use -define (e.g. -define pdf:use-cropbox=true or -define pdf:use-trimbox=true). Use -density to improve the appearance of your PDF rendering (e.g. -density 300&#215;300).
+</p></blockquote>
+<p>In my case adding the <code>use-cropbox=true</code> fixed the problem.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/11/16/imagemagick-convert-pdf-to-jpg-partial-image-size-problem/feed/</wfw:commentRss>
+			<slash:comments>10</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

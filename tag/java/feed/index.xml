@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>java &#8211; Joseph Scott</title>
+	<atom:link href="/tag/java/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 23 Aug 2007 18:44:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>From SUNW to JAVA</title>
+		<link>/2007/08/23/from-sunw-to-java/</link>
+					<comments>/2007/08/23/from-sunw-to-java/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 23 Aug 2007 18:44:45 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[stock]]></category>
+		<category><![CDATA[sun]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/08/23/from-sunw-to-java/</guid>
+
+					<description><![CDATA[Today Jonathan Schwartz announced Sun is changing their stock symbol from SUNW to JAVA: JAVA is a technology whose value is near infinite to the internet, and a brand that&#8217;s inseparably a part of Sun (and our profitability). And so next week, we&#8217;re going to embrace that reality by changing our trading symbol, from SUNW [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Today Jonathan Schwartz announced Sun is <a href="http://blogs.sun.com/jonathan/entry/java_is_everywhere">changing their stock symbol from SUNW to JAVA</a>:</p>
+<blockquote><p>
+JAVA is a technology whose value is near infinite to the internet, and a brand that&#8217;s inseparably a part of Sun (and our profitability). And so next week, we&#8217;re going to embrace that reality by changing our trading symbol, from SUNW to JAVA.
+</p></blockquote>
+<p>This seems really odd.  One of the reasons given for doing this was to introduce &#8220;Sun to new investors, developers and consumers&#8221;.  Any investor interested in a &#8220;Java&#8221; technology company that doesn&#8217;t know what Sun&#8217;s role in Java is shouldn&#8217;t be investing in them now just because their ticker symbol changed.  Any developer who doesn&#8217;t know what Sun&#8217;s role in Java is needs to do some more reading.  And any consumer that knows anything at all about Java equates it with slow software that brings their system to its knees when it starts up.</p>
+<p>On the one hand he is the &#8220;Chief Executive Officer and President&#8221; of Sun, so hopefully he and others have really thought this through before they go and spend millions of dollars re-branding.  Then again, who knows.</p>
+<p>If they really wanted to go with a new ticker symbol that would resonate with the tech geek crowd they should have picked ZFS instead.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/08/23/from-sunw-to-java/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: MySQL: INSERT ON DUPLICATE and Multiple Rows	</title>
+	<atom:link href="/2011/02/28/mysql-insert-on-duplicate-and-multiple-rows/feed/" rel="self" type="application/rss+xml" />
+	<link>/2011/02/28/mysql-insert-on-duplicate-and-multiple-rows/</link>
+	<description></description>
+	<lastBuildDate>Fri, 30 Dec 2016 22:32:22 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Mercy Gates		</title>
+		<link>/2011/02/28/mysql-insert-on-duplicate-and-multiple-rows/#comment-31348</link>
+
+		<dc:creator><![CDATA[Mercy Gates]]></dc:creator>
+		<pubDate>Fri, 30 Dec 2016 22:32:22 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3653#comment-31348</guid>
+
+					<description><![CDATA[c=c+1;
+
+please where is the c = c+1; in my query
+
+$sql = mysqli_query($dbCon,&quot;INSERT INTO personal_chat(id,reciever, sender, sender_phone, message) VALUES(&#039;$id&#039;,&#039;$reciever&#039;,&#039;$sender&#039;, &#039;$sender_phone&#039;, &#039;$message&#039;) ON DUPLICATE KEY UPDATE reciever=&#039;$reciever&#039;, sender=&#039;$sender&#039;, sender_phone=&#039;$sender_phone&#039;, message=&#039;$message&#039;&quot;);]]></description>
+			<content:encoded><![CDATA[<p>c=c+1;</p>
+<p>please where is the c = c+1; in my query</p>
+<p>$sql = mysqli_query($dbCon,&#8221;INSERT INTO personal_chat(id,reciever, sender, sender_phone, message) VALUES(&#8216;$id&#8217;,&#8217;$reciever&#8217;,&#8217;$sender&#8217;, &#8216;$sender_phone&#8217;, &#8216;$message&#8217;) ON DUPLICATE KEY UPDATE reciever=&#8217;$reciever&#8217;, sender=&#8217;$sender&#8217;, sender_phone=&#8217;$sender_phone&#8217;, message=&#8217;$message'&#8221;);</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/02/28/mysql-insert-on-duplicate-and-multiple-rows/#comment-3672</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 27 Mar 2012 19:25:06 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3653#comment-3672</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/02/28/mysql-insert-on-duplicate-and-multiple-rows/#comment-3671&quot;&gt;jon&lt;/a&gt;.
+
+That is a different challenge from the one I talked about in the post, and one I haven&#039;t specifically looked at.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/02/28/mysql-insert-on-duplicate-and-multiple-rows/#comment-3671">jon</a>.</p>
+<p>That is a different challenge from the one I talked about in the post, and one I haven&#8217;t specifically looked at.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: jon		</title>
+		<link>/2011/02/28/mysql-insert-on-duplicate-and-multiple-rows/#comment-3671</link>
+
+		<dc:creator><![CDATA[jon]]></dc:creator>
+		<pubDate>Tue, 27 Mar 2012 13:39:51 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3653#comment-3671</guid>
+
+					<description><![CDATA[I have seen many examples of this, but none deal with an INSERT/SELECT and multi-column update from that select.  The requirement is to transfer rows from table A to table B and update existing record that have a matching key...
+
+INSERT INTO TABLEB (COL1,COL2,COL3,COL4)
+SELECT COL1,COL2,COL3,COL4 FROM TABLEA
+ON DUPLICATE KEY UPDATE
+SET ... (what syntax to update all [non-key?] columns with the selected data?)
+
+Do I need aliases to identify the tables in the SET? (SET b.COL1 = a.COL1) of is there a syntax where the SELECT follows the entire INSERT/ON DUPLICATE KEY part?
+
+Thanks.]]></description>
+			<content:encoded><![CDATA[<p>I have seen many examples of this, but none deal with an INSERT/SELECT and multi-column update from that select.  The requirement is to transfer rows from table A to table B and update existing record that have a matching key&#8230;</p>
+<p>INSERT INTO TABLEB (COL1,COL2,COL3,COL4)<br />
+SELECT COL1,COL2,COL3,COL4 FROM TABLEA<br />
+ON DUPLICATE KEY UPDATE<br />
+SET &#8230; (what syntax to update all [non-key?] columns with the selected data?)</p>
+<p>Do I need aliases to identify the tables in the SET? (SET b.COL1 = a.COL1) of is there a syntax where the SELECT follows the entire INSERT/ON DUPLICATE KEY part?</p>
+<p>Thanks.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Tim		</title>
+		<link>/2011/02/28/mysql-insert-on-duplicate-and-multiple-rows/#comment-3670</link>
+
+		<dc:creator><![CDATA[Tim]]></dc:creator>
+		<pubDate>Fri, 20 Jan 2012 12:37:31 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3653#comment-3670</guid>
+
+					<description><![CDATA[Fantastic!
+
+Multirow inserts make scripts so much faster, nice to see you can combine them with the handy &quot;on duplicate&quot; function!]]></description>
+			<content:encoded><![CDATA[<p>Fantastic!</p>
+<p>Multirow inserts make scripts so much faster, nice to see you can combine them with the handy &#8220;on duplicate&#8221; function!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: habu		</title>
+		<link>/2011/02/28/mysql-insert-on-duplicate-and-multiple-rows/#comment-3669</link>
+
+		<dc:creator><![CDATA[habu]]></dc:creator>
+		<pubDate>Tue, 10 Jan 2012 05:45:11 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3653#comment-3669</guid>
+
+					<description><![CDATA[I use ON DUPLICATE KEY UPDATE to update  more than three column in the same query  but it&#039;s give me error how can i correct Thanks!]]></description>
+			<content:encoded><![CDATA[<p>I use ON DUPLICATE KEY UPDATE to update  more than three column in the same query  but it&#8217;s give me error how can i correct Thanks!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/2011/02/28/mysql-insert-on-duplicate-and-multiple-rows/#comment-3668</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 10 Nov 2011 05:59:08 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3653#comment-3668</guid>
+
+					<description><![CDATA[You can also use this syntax to update many existing rows in a table using a single query.
+
+Example:
+INSERT INTO categories
+ (id, display_order, title)
+VALUES
+ (1, 3, &#039;New Title 1&#039;),
+ (2, 4, &#039;New Title 2&#039;),
+ (3, 5, &#039;New Title 3&#039;)
+ON DUPLICATE KEY UPDATE
+ display_order=VALUES(display_order),
+ title=VALUES(title);
+
+OPTIMIZE TABLE tbl_name;
+
+The advantage of this solution is that it&#039;s driven by the indexing of the primary keys, on which a CASE block, the popular solution for updating multiple rows with different values, cannot rely. The OPTIMIZE TABLE part is only advantageous when updating variable-length cells (i.e. VARCHAR, VARBINARY, BLOB, or TEXT). For multiple-column primary keys, you simply specify all of them in the statement.]]></description>
+			<content:encoded><![CDATA[<p>You can also use this syntax to update many existing rows in a table using a single query.</p>
+<p>Example:<br />
+INSERT INTO categories<br />
+ (id, display_order, title)<br />
+VALUES<br />
+ (1, 3, &#8216;New Title 1&#8217;),<br />
+ (2, 4, &#8216;New Title 2&#8217;),<br />
+ (3, 5, &#8216;New Title 3&#8217;)<br />
+ON DUPLICATE KEY UPDATE<br />
+ display_order=VALUES(display_order),<br />
+ title=VALUES(title);</p>
+<p>OPTIMIZE TABLE tbl_name;</p>
+<p>The advantage of this solution is that it&#8217;s driven by the indexing of the primary keys, on which a CASE block, the popular solution for updating multiple rows with different values, cannot rely. The OPTIMIZE TABLE part is only advantageous when updating variable-length cells (i.e. VARCHAR, VARBINARY, BLOB, or TEXT). For multiple-column primary keys, you simply specify all of them in the statement.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/02/28/mysql-insert-on-duplicate-and-multiple-rows/#comment-3667</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 02 Mar 2011 15:20:05 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3653#comment-3667</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/02/28/mysql-insert-on-duplicate-and-multiple-rows/#comment-3666&quot;&gt;Donncha O Caoimh&lt;/a&gt;.
+
+Nice, let me know if it using this method helped.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/02/28/mysql-insert-on-duplicate-and-multiple-rows/#comment-3666">Donncha O Caoimh</a>.</p>
+<p>Nice, let me know if it using this method helped.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Donncha O Caoimh		</title>
+		<link>/2011/02/28/mysql-insert-on-duplicate-and-multiple-rows/#comment-3666</link>
+
+		<dc:creator><![CDATA[Donncha O Caoimh]]></dc:creator>
+		<pubDate>Wed, 02 Mar 2011 13:17:18 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3653#comment-3666</guid>
+
+					<description><![CDATA[Glad I remembered you posted this, gonna use this in a few minutes :)]]></description>
+			<content:encoded><![CDATA[<p>Glad I remembered you posted this, gonna use this in a few minutes 🙂</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

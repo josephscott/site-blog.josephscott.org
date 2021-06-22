@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ingress &#8211; Joseph Scott</title>
+	<atom:link href="/tag/ingress/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 22 Jul 2014 15:31:03 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Trying Out Ingress</title>
+		<link>/2014/07/22/trying-ingress/</link>
+					<comments>/2014/07/22/trying-ingress/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 22 Jul 2014 15:31:03 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[ingress]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10717</guid>
+
+					<description><![CDATA[Now that Ingress is available on the iPhone I&#8217;m giving it a try. I saw lots of green in my neighborhood, so I went blue. The &#8220;Ingress Tips for iOS-folk&#8221; from Tim Bray were helpful. The issue of the Ingress app eating your battery for lunch is no joke. I found that getting up to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Now that <a href="https://www.ingress.com/">Ingress</a> is available on the iPhone I&#8217;m giving it a try.  I saw lots of green in my neighborhood, so I went blue.</p>
+<p>The &#8220;<a href='https://www.tbray.org/ongoing/When/201x/2014/07/13/Ingress-for-Apple-beginners'>Ingress Tips for iOS-folk</a>&#8221; from Tim Bray were helpful.  The issue of the Ingress app eating your battery for lunch is no joke.</p>
+<p>I found that getting up to speed was simple enough.  The training missions appear to provide enough experience to get the basics down.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/07/22/trying-ingress/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

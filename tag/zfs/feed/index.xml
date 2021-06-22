@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>zfs &#8211; Joseph Scott</title>
+	<atom:link href="/tag/zfs/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 15 Jan 2008 00:30:15 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Links for Mon 14 Jan 2008</title>
+		<link>/2008/01/14/links-for-mon-14-jan-2008/</link>
+					<comments>/2008/01/14/links-for-mon-14-jan-2008/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 15 Jan 2008 00:30:15 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[digg]]></category>
+		<category><![CDATA[filesystem]]></category>
+		<category><![CDATA[filter]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[htmlpurifier]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[menubar]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[xss]]></category>
+		<category><![CDATA[zfs]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/01/14/links-for-mon-14-jan-2008/</guid>
+
+					<description><![CDATA[woork: Digg-like navigation bar using CSS &#8211; Add this to my collection of pretty rounded menu bars. Tags: css digg menubar HTML Purifier &#8211; Filter your HTML the standards-compliant way! &#8211; Makes some big claims, would be interesting to see it put to the test. Tags: html php htmlpurifier filter xss zfs &#8211; Trac &#8211; [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://woork.blogspot.com/2008/01/digg-like-navigation-bar-using-css.html">woork: Digg-like navigation bar using CSS</a> &#8211; Add this to my collection of pretty rounded menu bars. <br /> Tags: <a href="http://del.icio.us/josephscott/css">css</a> <a href="http://del.icio.us/josephscott/digg">digg</a> <a href="http://del.icio.us/josephscott/menubar">menubar</a>  </p>
+</li>
+<li>
+<p><a href="http://htmlpurifier.org/">HTML Purifier &#8211; Filter your HTML the standards-compliant way!</a> &#8211; Makes some big claims, would be interesting to see it put to the test. <br /> Tags: <a href="http://del.icio.us/josephscott/html">html</a> <a href="http://del.icio.us/josephscott/php">php</a> <a href="http://del.icio.us/josephscott/htmlpurifier">htmlpurifier</a> <a href="http://del.icio.us/josephscott/filter">filter</a> <a href="http://del.icio.us/josephscott/xss">xss</a>  </p>
+</li>
+<li>
+<p><a href="http://trac.macosforge.org/projects/zfs/wiki/">zfs &#8211; Trac</a> &#8211; Source and binaries for ZFS on Mac OS X.  Seems safe to say that we&#8217;ll see ZFS as a built in feature in some future release of OS X (10.6 perhaps?). <br /> Tags: <a href="http://del.icio.us/josephscott/zfs">zfs</a> <a href="http://del.icio.us/josephscott/macosx">macosx</a> <a href="http://del.icio.us/josephscott/filesystem">filesystem</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/01/14/links-for-mon-14-jan-2008/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>ZFS on FUSE</title>
+		<link>/2006/05/26/zfs-on-fuse/</link>
+					<comments>/2006/05/26/zfs-on-fuse/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 26 May 2006 08:48:13 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[filesystem]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[fuse]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[zfs]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/05/26/zfs-on-fuse/</guid>
+
+					<description><![CDATA[Jeff Bonwick pointed out that ZFS is going to be ported to FUSE (filesystem in user space). This is being done as part of the Google Summer of Code by Ricardo Manuel da Silva Correia. For more info check out the Google SoC application and the ZFS on FUSE/Linux Blog. Although this project specifically mentions [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://blogs.sun.com/roller/page/bonwick?entry=zfs_on_fuse_linux">Jeff Bonwick</a> pointed out that <a href="http://www.opensolaris.org/os/community/zfs/">ZFS</a> is going to be ported to <a href="http://fuse.sourceforge.net/">FUSE</a> (filesystem in user space).  This is being done as part of the <a href="http://code.google.com/soc/">Google Summer of Code</a> by Ricardo Manuel da Silva Correia.</p>
+<p>For more info check out the Google SoC <a href="http://code.google.com/soc/opsol/appinfo.html?csaid=1EEF6B271FE5408B">application</a> and the <a href="http://zfs-on-fuse.blogspot.com/2006/05/announcing-zfs-on-fuselinux.html">ZFS on FUSE/Linux Blog</a>.  Although this project specifically mentions FUSE on Linux I hope that it will work with <a href="http://fuse4bsd.creo.hu/">FUSE for FreeBSD</a>.</p>
+<p>I don&#8217;t know what sort of performance penalty is involved with FUSE, but it would be darn cool to have this work with FreeBSD.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/05/26/zfs-on-fuse/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>ZFS On Mac OS X?</title>
+		<link>/2006/05/04/zfs-on-mac-os-x/</link>
+					<comments>/2006/05/04/zfs-on-mac-os-x/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 05 May 2006 00:40:14 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[filesystem]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[zfs]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/05/04/zfs-on-mac-os-x/</guid>
+
+					<description><![CDATA[Late last month there was a post on the zfs-discuss email list indicating that Apple may be porting ZFS to Mac OS X. Having read some of docs on ZFS this seems like a great idea. With the ability to easily purchase an Xserve RAID unit up to 7TB, having advanced file system abilities would [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Late last month there was a post on the <a href="http://mail.opensolaris.org/mailman/listinfo/zfs-discuss">zfs-discuss email list</a> indicating that Apple may be <a href="http://mail.opensolaris.org/pipermail/zfs-discuss/2006-April/002119.html">porting ZFS to Mac OS X</a>.  Having read some of docs on <a href="http://www.opensolaris.org/os/community/zfs/">ZFS</a> this seems like a great idea.  With the ability to easily purchase an <a href="http://www.apple.com/xserve/raid/">Xserve RAID</a> unit up to 7TB, having advanced file system abilities would be a major plus.</p>
+<p>A fully loaded <a href="http://www.apple.com/xserve/raid/">Xserve RAID</a> unit runs just over $17k for 7TB.   To hit that they use 14 500GB drives.  It doesn&#8217;t seem like much of a stretch to see them using the new <a href="http://www.seagate.com/">Seagate</a> <a href="http://www.seagate.com/cda/newsinfo/newsroom/releases/article/0,1121,3153,00.html">750GB drive</a> (or something like it) in the future.  Using 14 of those would put you at 10.5TB.  Given the announced retail price of about $560 for these drives I&#8217;d guess that prices for such an Xserve RAID unit could come in around $21k.</p>
+<p>There is one more piece to this puzzle that would be really great, an easy to use graphical UI for managing ZFS on OS X.  This would be in addition to the CLI tools, not a replacement.  So I&#8217;m going to wish upon a star for the Apple triple play: ZFS on OS X, a 10TB (or higher) Xserve RAID unit and simple easy to use graphical UI for managing ZFS.  And since I have nothing else to do, I&#8217;ll predict that this will happen with in the next 12 to 18 months.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/05/04/zfs-on-mac-os-x/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

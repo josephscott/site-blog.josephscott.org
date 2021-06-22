@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>tracking &#8211; Joseph Scott</title>
+	<atom:link href="/tag/tracking/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 20 Sep 2019 21:11:14 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>A Privacy Arms Race</title>
+		<link>/2019/09/20/a-privacy-arms-race/</link>
+					<comments>/2019/09/20/a-privacy-arms-race/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 20 Sep 2019 21:11:14 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[crashlytics]]></category>
+		<category><![CDATA[fonts]]></category>
+		<category><![CDATA[tracking]]></category>
+		<guid isPermaLink="false">/?p=17688</guid>
+
+					<description><![CDATA[I&#8217;m continually amazed how creative people can be. The news that Crashlytics is using custom fonts to track users is both fascinating and horrible. I think John Gruber does a good job of capturing the regular person response to this: The basic fact remains: custom fonts, however they’re installed, are not meant to be used [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m continually amazed how creative people can be.  The news that <a href="https://twitter.com/sandofsky/status/1172200578207772672">Crashlytics is using custom fonts to track users</a> is both fascinating and horrible.  I think John Gruber does a good job of capturing <a href="https://daringfireball.net/linked/2019/09/12/crashlytics-font-tracking">the regular person response to this</a>:</p>
+<blockquote><p>
+The basic fact remains: custom fonts, however they’re installed, are not meant to be used for tracking users.
+</p></blockquote>
+<p>Sure, custom fonts weren&#8217;t intended to provide this &#8220;feature&#8221; ( I use that term loosely ), but that is the essence of a neat hack ( in the old school traditional use of the word ).  From a purely technical point view, it is impressive to see someone come up with a method to use an existing system in a way the original creators not only never intended, but never even imagined.</p>
+<p>While part of me is impressed with the clever hack, over all, as a user, as a person, I find it tiring.  This is yet one more thing to deal with.  Each one by themselves is relatively small, but the sum of them together is awful.  Death by a thousand paper cuts.</p>
+<p>Apple has been trying to put a hard line on what they will and won&#8217;t allow, leaning on the side of making it possible for users to have some privacy controls.  A good example of this is the <a href="https://webkit.org/tracking-prevention-policy/">Webkit Tracking Prevention Policy</a>.  That in turn has contributed to Firefox and Chrome taking action to do more regarding privacy options.  None of them are perfect, but each are a definite course change from what we&#8217;ve seen in the last few decades.</p>
+<p>A clever developer figured out how to exploit fonts, and Apple and others will respond by making that harder.  Expect this to be an ongoing circle.</p>
+<p>We are in the middle of a privacy arms race.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/09/20/a-privacy-arms-race/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

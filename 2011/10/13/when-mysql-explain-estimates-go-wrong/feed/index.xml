@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: When MySQL EXPLAIN Estimates Go Wrong	</title>
+	<atom:link href="/2011/10/13/when-mysql-explain-estimates-go-wrong/feed/" rel="self" type="application/rss+xml" />
+	<link>/2011/10/13/when-mysql-explain-estimates-go-wrong/</link>
+	<description></description>
+	<lastBuildDate>Fri, 14 Oct 2011 16:14:21 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/10/13/when-mysql-explain-estimates-go-wrong/#comment-3878</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 14 Oct 2011 16:14:21 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4932#comment-3878</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/10/13/when-mysql-explain-estimates-go-wrong/#comment-3877&quot;&gt;Justin Carmony&lt;/a&gt;.
+
+Definitely strange.  If I were to build a new MySQL server I&#039;d probably go with latest Percona release as well.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/10/13/when-mysql-explain-estimates-go-wrong/#comment-3877">Justin Carmony</a>.</p>
+<p>Definitely strange.  If I were to build a new MySQL server I&#8217;d probably go with latest Percona release as well.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Justin Carmony		</title>
+		<link>/2011/10/13/when-mysql-explain-estimates-go-wrong/#comment-3877</link>
+
+		<dc:creator><![CDATA[Justin Carmony]]></dc:creator>
+		<pubDate>Fri, 14 Oct 2011 03:56:17 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4932#comment-3877</guid>
+
+					<description><![CDATA[I always wondered. Sometimes I thought they could be wildly off under certain circumstances. Glad I&#039;m on Percona Server 5.5.]]></description>
+			<content:encoded><![CDATA[<p>I always wondered. Sometimes I thought they could be wildly off under certain circumstances. Glad I&#8217;m on Percona Server 5.5.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

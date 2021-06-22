@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>pup &#8211; Joseph Scott</title>
+	<atom:link href="/tag/pup/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 22 Aug 2018 16:52:22 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>pup: Command Line HTML Parsing</title>
+		<link>/2018/08/22/pup-command-line-html-parsing/</link>
+					<comments>/2018/08/22/pup-command-line-html-parsing/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 22 Aug 2018 16:52:22 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[go]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[jq]]></category>
+		<category><![CDATA[pup]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15680</guid>
+
+					<description><![CDATA[pup, the three sentence description nails is: pup is a command line tool for processing HTML. It reads from stdin, prints to stdout, and allows the user to filter parts of the page using CSS selectors. Inspired by jq, pup aims to be a fast and flexible way of exploring HTML from the terminal. If [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://github.com/ericchiang/pup">pup</a>, the three sentence description nails is:</p>
+<blockquote><p>
+pup is a command line tool for processing HTML. It reads from stdin, prints to stdout, and allows the user to filter parts of the page using CSS selectors.</p>
+<p>Inspired by jq, pup aims to be a fast and flexible way of exploring HTML from the terminal.
+</p></blockquote>
+<p>If you have used jq, this is going to feel familiar, just for an HTML context.  With the option to <a href="https://github.com/ericchiang/pup#json">output the results as JSON</a>, you could find your self using pup in conjunction with jq.</p>
+<p>There are several examples in the <a href="https://github.com/ericchiang/pup">README</a>, here are a few of my own.</p>
+<p>List all of the <code>IMG</code> tags from cnn.com:<br />
+[shell]<br />
+curl -s https://www.cnn.com/ | pup &#8216;img&#8217;<br />
+[/shell]</p>
+<p>Now get it back as a JSON array:<br />
+[shell]<br />
+curl -s https://www.cnn.com/ | pup &#8216;img json{}&#8217;<br />
+[/shell]</p>
+<p>List all of the <code>LINK</code> attributes that have a <code>rel="preload"</code> attribute:</p>
+<p>[shell]<br />
+curl -s https://www.cnn.com/ | pup &#8216;link[rel=&quot;preload&quot;]&#8217;<br />
+[/shell]</p>
+<p>I could see pup and jq becoming standard utilities on Unix-like systems.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/08/22/pup-command-line-html-parsing/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>pup, Command Line HTML Processor</title>
+		<link>/2014/09/29/pup-command-line-html-processor/</link>
+					<comments>/2014/09/29/pup-command-line-html-processor/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 29 Sep 2014 14:33:10 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[eric-chiang]]></category>
+		<category><![CDATA[go]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[pup]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11027</guid>
+
+					<description><![CDATA[Last year I mentioned a nifty little command line tool called jq. It had a very specific purpose: make it easy to process JSON. That same line of thinking inspired pup, from Eric Chiang: pup is a command line tool for processing HTML. It reads from stdin, prints to stdout, and allows the user to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Last year I mentioned a nifty little command line tool called <a href="https://josephscott.org/archives/2013/03/jq-command-line-json-processor/">jq</a>.  It had a very specific purpose: make it easy to process JSON.  That same line of thinking inspired <a href="https://github.com/EricChiang/pup">pup</a>, from <a href="https://twitter.com/erchiang">Eric Chiang</a>:</p>
+<blockquote><p>
+pup is a command line tool for processing HTML. It reads from stdin, prints to stdout, and allows the user to filter parts of the page using CSS selectors.
+</p></blockquote>
+<p>Here is a little taste of how this works:</p>
+<p>[sourcecode]<br />
+curl -s https://wordpress.com/ |<br />
+pup link<br />
+[/sourcecode]</p>
+<p>That will return all of the <code>link</code> elements on the WordPress.com home page.  You can easily tighten it down to just the shortlink:</p>
+<p>[sourcecode]<br />
+curl -s https://wordpress.com/ |<br />
+pup link[rel=shortlink]</p>
+<p>&lt;link rel=&quot;shortlink&quot; href=&quot;http://wp.me/1&quot;&gt;<br />
+[/sourcecode]</p>
+<p>One final step further, get just the <code>href</code> value:</p>
+<p>[sourcecode]<br />
+curl -s https://wordpress.com/ |<br />
+pup link[rel=shortlink] attr{href}</p>
+<p>http://wp.me/<br />
+[/sourcecode]</p>
+<p>I like it.</p>
+<p>Pup is open source, written in go and available at <a href="https://github.com/EricChiang/pup">https://github.com/EricChiang/pup</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/09/29/pup-command-line-html-processor/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="profile" href="https://gmpg.org/xfn/11"> <meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@josephscott">
+<meta name="twitter:site" content="@josephscott">
+<meta name="twitter:title" content="AJAX Edit In Place With Prototype, Version 0.2.0">
+<meta name="twitter:description" content="UPDATE Thu 29 Nov 2007 @ 5:30pm : The Edit In Place code has a new home at editinplace.orgUPDATE Fri 30 Jun 2006 @ 8:20am : You can find the latest Edit In Place blog posts at http://joseph.randomn"> <link media="all" href="/wp-content/cache/autoptimize/css/autoptimize_da876478aa27b35cb47c491625986a1f.css" rel="stylesheet">
+<link media="print" href="/wp-content/cache/autoptimize/css/autoptimize_4a8bc5d490127fba1e504524cfa205e6.css" rel="stylesheet">
+<title>AJAX Edit In Place With Prototype, Version 0.2.0 &#8211; Joseph Scott</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="alternate" type="application/rss+xml" title="Joseph Scott &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="Joseph Scott &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Joseph Scott &raquo; AJAX Edit In Place With Prototype, Version 0.2.0 Comments Feed" href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/feed/">
+<style id="twentytwenty-style-inline-css">.color-accent,.color-accent-hover:hover,.color-accent-hover:focus,:root .has-accent-color,.has-drop-cap:not(:focus):first-letter,.wp-block-button.is-style-outline,a { color: #e20842; }blockquote,.border-color-accent,.border-color-accent-hover:hover,.border-color-accent-hover:focus { border-color: #e20842; }button,.button,.faux-button,.wp-block-button__link,.wp-block-file .wp-block-file__button,input[type="button"],input[type="reset"],input[type="submit"],.bg-accent,.bg-accent-hover:hover,.bg-accent-hover:focus,:root .has-accent-background-color,.comment-reply-link { background-color: #e20842; }.fill-children-accent,.fill-children-accent * { fill: #e20842; }:root .has-background-color,button,.button,.faux-button,.wp-block-button__link,.wp-block-file__button,input[type="button"],input[type="reset"],input[type="submit"],.wp-block-button,.comment-reply-link,.has-background.has-primary-background-color:not(.has-text-color),.has-background.has-primary-background-color *:not(.has-text-color),.has-background.has-accent-background-color:not(.has-text-color),.has-background.has-accent-background-color *:not(.has-text-color) { color: #f7f7f7; }:root .has-background-background-color { background-color: #f7f7f7; }body,.entry-title a,:root .has-primary-color { color: #000000; }:root .has-primary-background-color { background-color: #000000; }cite,figcaption,.wp-caption-text,.post-meta,.entry-content .wp-block-archives li,.entry-content .wp-block-categories li,.entry-content .wp-block-latest-posts li,.wp-block-latest-comments__comment-date,.wp-block-latest-posts__post-date,.wp-block-embed figcaption,.wp-block-image figcaption,.wp-block-pullquote cite,.comment-metadata,.comment-respond .comment-notes,.comment-respond .logged-in-as,.pagination .dots,.entry-content hr:not(.has-background),hr.styled-separator,:root .has-secondary-color { color: #686868; }:root .has-secondary-background-color { background-color: #686868; }pre,fieldset,input,textarea,table,table *,hr { border-color: #d3d3d3; }caption,code,code,kbd,samp,.wp-block-table.is-style-stripes tbody tr:nth-child(odd),:root .has-subtle-background-background-color { background-color: #d3d3d3; }.wp-block-table.is-style-stripes { border-bottom-color: #d3d3d3; }.wp-block-latest-posts.is-grid li { border-top-color: #d3d3d3; }:root .has-subtle-background-color { color: #d3d3d3; }body:not(.overlay-header) .primary-menu > li > a,body:not(.overlay-header) .primary-menu > li > .icon,.modal-menu a,.footer-menu a, .footer-widgets a,#site-footer .wp-block-button.is-style-outline,.wp-block-pullquote:before,.singular:not(.overlay-header) .entry-header a,.archive-header a,.header-footer-group .color-accent,.header-footer-group .color-accent-hover:hover { color: #e20842; }.social-icons a,#site-footer button:not(.toggle),#site-footer .button,#site-footer .faux-button,#site-footer .wp-block-button__link,#site-footer .wp-block-file__button,#site-footer input[type="button"],#site-footer input[type="reset"],#site-footer input[type="submit"] { background-color: #e20842; }.social-icons a,body:not(.overlay-header) .primary-menu ul,.header-footer-group button,.header-footer-group .button,.header-footer-group .faux-button,.header-footer-group .wp-block-button:not(.is-style-outline) .wp-block-button__link,.header-footer-group .wp-block-file__button,.header-footer-group input[type="button"],.header-footer-group input[type="reset"],.header-footer-group input[type="submit"] { color: #f7f7f7; }#site-header,.footer-nav-widgets-wrapper,#site-footer,.menu-modal,.menu-modal-inner,.search-modal-inner,.archive-header,.singular .entry-header,.singular .featured-media:before,.wp-block-pullquote:before { background-color: #f7f7f7; }.header-footer-group,body:not(.overlay-header) #site-header .toggle,.menu-modal .toggle { color: #000000; }body:not(.overlay-header) .primary-menu ul { background-color: #000000; }body:not(.overlay-header) .primary-menu > li > ul:after { border-bottom-color: #000000; }body:not(.overlay-header) .primary-menu ul ul:after { border-left-color: #000000; }.site-description,body:not(.overlay-header) .toggle-inner .toggle-text,.widget .post-date,.widget .rss-date,.widget_archive li,.widget_categories li,.widget cite,.widget_pages li,.widget_meta li,.widget_nav_menu li,.powered-by-wordpress,.to-the-top,.singular .entry-header .post-meta,.singular:not(.overlay-header) .entry-header .post-meta a { color: #686868; }.header-footer-group pre,.header-footer-group fieldset,.header-footer-group input,.header-footer-group textarea,.header-footer-group table,.header-footer-group table *,.footer-nav-widgets-wrapper,#site-footer,.menu-modal nav *,.footer-widgets-outer-wrapper,.footer-top { border-color: #d3d3d3; }.header-footer-group table caption,body:not(.overlay-header) .header-inner .toggle-wrapper::before { background-color: #d3d3d3; }.overlay-header .header-inner { color: #f7f7f7; }.cover-header .entry-header * { color: #f7f7f7; }</style>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/623">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 5.7.2">
+<link rel="canonical" href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/">
+<link rel="shortlink" href="/?p=623">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2006%2F06%2F07%2Fajax-edit-in-place-with-prototype-version-020%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2006%2F06%2F07%2Fajax-edit-in-place-with-prototype-version-020%2F&#038;format=xml">
+<link rel="alternate" type="application/feed+json" title="Joseph Scott &raquo; JSON Feed" href="/feed/json/">
+<link rel="alternate" type="application/feed+json" title="Joseph Scott &raquo; AJAX Edit In Place With Prototype, Version 0.2.0 Comments Feed" href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/feed/json/"> <script>document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );</script> <style id="custom-background-css">body.custom-background { background-color: #f7f7f7; }</style>
+<style id="wp-custom-css">.powered-by-wordpress { display: none;}
+
+.entry-categories { display: none;}</style>
+</head>
+<body class="post-template-default single single-post postid-623 single-format-standard custom-background wp-embed-responsive singular enable-search-modal missing-post-thumbnail has-single-pagination showing-comments show-avatars footer-top-visible reduced-spacing"> <a class="skip-link screen-reader-text" href="#site-content">Skip to the content</a><header id="site-header" class="header-footer-group" role="banner"><div class="header-inner section-inner">
+<div class="header-titles-wrapper"> <button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false"> <span class="toggle-inner"> <span class="toggle-icon"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewbox="0 0 23 23"><path d="M38.710696,48.0601792 L43,52.3494831 L41.3494831,54 L37.0601792,49.710696 C35.2632422,51.1481185 32.9839107,52.0076499 30.5038249,52.0076499 C24.7027226,52.0076499 20,47.3049272 20,41.5038249 C20,35.7027226 24.7027226,31 30.5038249,31 C36.3049272,31 41.0076499,35.7027226 41.0076499,41.5038249 C41.0076499,43.9839107 40.1481185,46.2632422 38.710696,48.0601792 Z M36.3875844,47.1716785 C37.8030221,45.7026647 38.6734666,43.7048964 38.6734666,41.5038249 C38.6734666,36.9918565 35.0157934,33.3341833 30.5038249,33.3341833 C25.9918565,33.3341833 22.3341833,36.9918565 22.3341833,41.5038249 C22.3341833,46.0157934 25.9918565,49.6734666 30.5038249,49.6734666 C32.7048964,49.6734666 34.7026647,48.8030221 36.1716785,47.3875844 C36.2023931,47.347638 36.2360451,47.3092237 36.2726343,47.2726343 C36.3092237,47.2360451 36.347638,47.2023931 36.3875844,47.1716785 Z" transform="translate(-20 -31)"></path></svg> </span> <span class="toggle-text">Search</span> </span> </button><div class="header-titles"><div class="site-title faux-heading"><a href="/">Joseph Scott</a></div></div> <button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle"> <span class="toggle-inner"> <span class="toggle-icon"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="26" height="7" viewbox="0 0 26 7"><path fill-rule="evenodd" d="M332.5,45 C330.567003,45 329,43.4329966 329,41.5 C329,39.5670034 330.567003,38 332.5,38 C334.432997,38 336,39.5670034 336,41.5 C336,43.4329966 334.432997,45 332.5,45 Z M342,45 C340.067003,45 338.5,43.4329966 338.5,41.5 C338.5,39.5670034 340.067003,38 342,38 C343.932997,38 345.5,39.5670034 345.5,41.5 C345.5,43.4329966 343.932997,45 342,45 Z M351.5,45 C349.567003,45 348,43.4329966 348,41.5 C348,39.5670034 349.567003,38 351.5,38 C353.432997,38 355,39.5670034 355,41.5 C355,43.4329966 353.432997,45 351.5,45 Z" transform="translate(-329 -38)"></path></svg> </span> <span class="toggle-text">Menu</span> </span> </button>
+</div>
+<div class="header-navigation-wrapper">
+<nav class="primary-menu-wrapper" aria-label="Horizontal" role="navigation"><ul class="primary-menu reset-list-style">
+<li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><a href="https://josephscott.org/">Home</a></li>
+<li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-8"><a href="/">Blog</a></li>
+<li id="menu-item-15706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15706"><a href="/contact/">Contact</a></li>
+</ul></nav><div class="header-toggles hide-no-js"><div class="toggle-wrapper search-toggle-wrapper"> <button class="toggle search-toggle desktop-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false"> <span class="toggle-inner"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewbox="0 0 23 23"><path d="M38.710696,48.0601792 L43,52.3494831 L41.3494831,54 L37.0601792,49.710696 C35.2632422,51.1481185 32.9839107,52.0076499 30.5038249,52.0076499 C24.7027226,52.0076499 20,47.3049272 20,41.5038249 C20,35.7027226 24.7027226,31 30.5038249,31 C36.3049272,31 41.0076499,35.7027226 41.0076499,41.5038249 C41.0076499,43.9839107 40.1481185,46.2632422 38.710696,48.0601792 Z M36.3875844,47.1716785 C37.8030221,45.7026647 38.6734666,43.7048964 38.6734666,41.5038249 C38.6734666,36.9918565 35.0157934,33.3341833 30.5038249,33.3341833 C25.9918565,33.3341833 22.3341833,36.9918565 22.3341833,41.5038249 C22.3341833,46.0157934 25.9918565,49.6734666 30.5038249,49.6734666 C32.7048964,49.6734666 34.7026647,48.8030221 36.1716785,47.3875844 C36.2023931,47.347638 36.2360451,47.3092237 36.2726343,47.2726343 C36.3092237,47.2360451 36.347638,47.2023931 36.3875844,47.1716785 Z" transform="translate(-20 -31)"></path></svg> <span class="toggle-text">Search</span> </span> </button>
+</div></div>
+</div>
+</div>
+<div class="search-modal cover-modal header-footer-group" data-modal-target-string=".search-modal"><div class="search-modal-inner modal-inner"><div class="section-inner">
+<form role="search" aria-label="Search for:" method="get" class="search-form" action="/"> <label for="search-form-1"> <span class="screen-reader-text">Search for:</span> <input type="search" id="search-form-1" class="search-field" placeholder="Search &hellip;" value="" name="s"> </label> <input type="submit" class="search-submit" value="Search">
+</form> <button class="toggle search-untoggle close-search-toggle fill-children-current-color" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field"> <span class="screen-reader-text">Close search</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16"><polygon fill="" fill-rule="evenodd" points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102"></polygon></svg> </button>
+</div></div></div></header><div class="menu-modal cover-modal header-footer-group" data-modal-target-string=".menu-modal"><div class="menu-modal-inner modal-inner"><div class="menu-wrapper section-inner">
+<div class="menu-top"> <button class="toggle close-nav-toggle fill-children-current-color" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".menu-modal"> <span class="toggle-text">Close Menu</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16"><polygon fill="" fill-rule="evenodd" points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102"></polygon></svg> </button><nav class="mobile-menu" aria-label="Mobile" role="navigation"><ul class="modal-menu reset-list-style">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><div class="ancestor-wrapper"><a href="https://josephscott.org/">Home</a></div></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-8"><div class="ancestor-wrapper"><a href="/">Blog</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15706"><div class="ancestor-wrapper"><a href="/contact/">Contact</a></div></li>
+</ul></nav>
+</div>
+<div class="menu-bottom"></div>
+</div></div></div>
+<main id="site-content" role="main"><article class="post-623 post type-post status-publish format-standard hentry category-josephscott" id="post-623"><header class="entry-header has-text-align-center header-footer-group"><div class="entry-header-inner section-inner medium">
+<div class="entry-categories"> <span class="screen-reader-text">Categories</span><div class="entry-categories-inner"> <a href="/category/josephscott/" rel="category tag">josephscott</a>
+</div>
+</div>
+<h1 class="entry-title">AJAX Edit In Place With Prototype, Version 0.2.0</h1>
+<div class="post-meta-wrapper post-meta-single post-meta-single-top"><ul class="post-meta">
+<li class="post-author meta-wrapper"> <span class="meta-icon"> <span class="screen-reader-text">Post author</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewbox="0 0 18 20"><path fill="" d="M18,19 C18,19.5522847 17.5522847,20 17,20 C16.4477153,20 16,19.5522847 16,19 L16,17 C16,15.3431458 14.6568542,14 13,14 L5,14 C3.34314575,14 2,15.3431458 2,17 L2,19 C2,19.5522847 1.55228475,20 1,20 C0.44771525,20 0,19.5522847 0,19 L0,17 C0,14.2385763 2.23857625,12 5,12 L13,12 C15.7614237,12 18,14.2385763 18,17 L18,19 Z M9,10 C6.23857625,10 4,7.76142375 4,5 C4,2.23857625 6.23857625,0 9,0 C11.7614237,0 14,2.23857625 14,5 C14,7.76142375 11.7614237,10 9,10 Z M9,8 C10.6568542,8 12,6.65685425 12,5 C12,3.34314575 10.6568542,2 9,2 C7.34314575,2 6,3.34314575 6,5 C6,6.65685425 7.34314575,8 9,8 Z"></path></svg> </span> <span class="meta-text"> By <a href="/author/josephscott/">josephscott</a> </span>
+</li>
+<li class="post-date meta-wrapper"> <span class="meta-icon"> <span class="screen-reader-text">Post date</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewbox="0 0 18 19"><path fill="" d="M4.60069444,4.09375 L3.25,4.09375 C2.47334957,4.09375 1.84375,4.72334957 1.84375,5.5 L1.84375,7.26736111 L16.15625,7.26736111 L16.15625,5.5 C16.15625,4.72334957 15.5266504,4.09375 14.75,4.09375 L13.3993056,4.09375 L13.3993056,4.55555556 C13.3993056,5.02154581 13.0215458,5.39930556 12.5555556,5.39930556 C12.0895653,5.39930556 11.7118056,5.02154581 11.7118056,4.55555556 L11.7118056,4.09375 L6.28819444,4.09375 L6.28819444,4.55555556 C6.28819444,5.02154581 5.9104347,5.39930556 5.44444444,5.39930556 C4.97845419,5.39930556 4.60069444,5.02154581 4.60069444,4.55555556 L4.60069444,4.09375 Z M6.28819444,2.40625 L11.7118056,2.40625 L11.7118056,1 C11.7118056,0.534009742 12.0895653,0.15625 12.5555556,0.15625 C13.0215458,0.15625 13.3993056,0.534009742 13.3993056,1 L13.3993056,2.40625 L14.75,2.40625 C16.4586309,2.40625 17.84375,3.79136906 17.84375,5.5 L17.84375,15.875 C17.84375,17.5836309 16.4586309,18.96875 14.75,18.96875 L3.25,18.96875 C1.54136906,18.96875 0.15625,17.5836309 0.15625,15.875 L0.15625,5.5 C0.15625,3.79136906 1.54136906,2.40625 3.25,2.40625 L4.60069444,2.40625 L4.60069444,1 C4.60069444,0.534009742 4.97845419,0.15625 5.44444444,0.15625 C5.9104347,0.15625 6.28819444,0.534009742 6.28819444,1 L6.28819444,2.40625 Z M1.84375,8.95486111 L1.84375,15.875 C1.84375,16.6516504 2.47334957,17.28125 3.25,17.28125 L14.75,17.28125 C15.5266504,17.28125 16.15625,16.6516504 16.15625,15.875 L16.15625,8.95486111 L1.84375,8.95486111 Z"></path></svg> </span> <span class="meta-text"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/">Wed 7 Jun 2006</a> </span>
+</li>
+<li class="post-comment-link meta-wrapper"> <span class="meta-icon"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewbox="0 0 19 19"><path d="M9.43016863,13.2235931 C9.58624731,13.094699 9.7823475,13.0241935 9.98476849,13.0241935 L15.0564516,13.0241935 C15.8581553,13.0241935 16.5080645,12.3742843 16.5080645,11.5725806 L16.5080645,3.44354839 C16.5080645,2.64184472 15.8581553,1.99193548 15.0564516,1.99193548 L3.44354839,1.99193548 C2.64184472,1.99193548 1.99193548,2.64184472 1.99193548,3.44354839 L1.99193548,11.5725806 C1.99193548,12.3742843 2.64184472,13.0241935 3.44354839,13.0241935 L5.76612903,13.0241935 C6.24715123,13.0241935 6.63709677,13.4141391 6.63709677,13.8951613 L6.63709677,15.5301903 L9.43016863,13.2235931 Z M3.44354839,14.766129 C1.67980032,14.766129 0.25,13.3363287 0.25,11.5725806 L0.25,3.44354839 C0.25,1.67980032 1.67980032,0.25 3.44354839,0.25 L15.0564516,0.25 C16.8201997,0.25 18.25,1.67980032 18.25,3.44354839 L18.25,11.5725806 C18.25,13.3363287 16.8201997,14.766129 15.0564516,14.766129 L10.2979143,14.766129 L6.32072889,18.0506004 C5.75274472,18.5196577 4.89516129,18.1156602 4.89516129,17.3790323 L4.89516129,14.766129 L3.44354839,14.766129 Z"></path></svg> </span> <span class="meta-text"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comments">67 Comments<span class="screen-reader-text"> on AJAX Edit In Place With Prototype, Version 0.2.0</span></a> </span>
+</li>
+</ul></div>
+</div></header><div class="post-inner thin "><div class="entry-content">
+<p><b>UPDATE Thu 29 Nov 2007 @ 5:30pm :</b> The Edit In Place code has a new home at <a href="http://editinplace.org/">editinplace.org</a></p>
+<p><b>UPDATE Fri 30 Jun 2006 @ 8:20am :</b> You can find the latest Edit In Place blog posts at <a href="http://joseph.randomnetworks.com/tag/editinplace">http://joseph.randomnetworks.com/tag/editinplace</a></p>
+<p>It has been almost two months since my since the <a href="http://joseph.randomnetworks.com/archives/2006/04/18/ajax-edit-in-place-with-prototype/">first version of Edit In Place</a> (version 0.1.0). Since then I&#8217;ve been trying to beef up some my JavaScript foo. I also discovered some problems with code that needed to fixed. So today I&#8217;m releasing version 0.2.0 of Edit In Place (eip). Before I get into the changes in the new version go check out the new <a href="http://josephscott.org/code/js/eip/example.html">example.html</a> page. Or go grab the <a href="http://josephscott.org/code/js/eip/releases/eip-0.2.0.tar.gz">0.2.0 release</a> file.</p>
+<p>Doing OO in JavaScript is a bit strange. Because of some other limitations I ended not making on Edit In Place class, instead there are several supporting functions prefixed with EditInPlace to try and avoid name space collisions. The 0.1.0 code didn&#8217;t deal with errors when a save attempt failed, that has been fixed in 0.2.0. Now when a save attempt fails the original text is put back and an alert in displayed indicating that the changes were able to be saved. Perhaps not the most elegant and certainly not the most flexible, but a reasonable start and much better than what we did before (which was worse than nothing).</p>
+<p>There are some new default CSS names used:</p>
+<pre>
+.eip_editable { background-color: #ff9; padding: 3px; }
+.eip_savebutton { background-color: #36f; color: #fff; }
+.eip_cancelbutton { background-color: #000; color: #fff; }
+.eip_saving { background-color: #903; color: #fff; padding: 3px; }
+</pre>
+<p>Making IDs editable have new function calls as well:</p>
+<pre>
+Event.observe(window, 'load', init, false);
+function init() {
+	EditInPlace.makeEditable( {
+		type: 'text',
+		id: 'editme',
+		save_url: 'edit.php'
+	} );
+	EditInPlace.makeEditable( {
+		type: 'textarea',
+		id: 'anotheredit',
+		save_url: 'edit.php'
+	} );
+}
+</pre>
+<p>The EditInPlace.makeEditable() function only requires the id and save_url, the type option defaults to text. There are plenty of other options you can set if you feel so inclined. Here are the defaults:</p>
+<pre>
+id: false,
+save_url: false,
+css_class: 'eip_editable',
+savebutton: 'eip_savebutton',
+cancelbutton: 'eip_cancelbutton',
+saving: 'eip_saving',
+type: 'text'
+</pre>
+<p>The css_class, savebutton, cancelbutton and saving are all CSS classes. The id is DOM id that you want to be editable. The save_url is the URL to call when saving changes. The type is the form type to use, right now this must be either text or textarea.</p>
+<p>My JavaScript skills are still pretty basic so if you have some recommended changes feel free to <a href="http://joseph.randomnetworks.com/contact/">drop me a note</a>. You can find all of the example and release files at <a href="http://josephscott.org/code/js/eip/">http://josephscott.org/code/js/eip/</a>.</p>
+<p><b>UPDATE Fri 9 Jun 2006 @ 1:30pm :</b> I forgot to mention <a href="http://joseph.randomnetworks.com/archives/2006/06/09/edit-in-place-size-of-form-fields/">how size of the form fields</a> work in this new version.</p>
+</div></div>
+<div class="section-inner"></div>
+<nav class="pagination-single section-inner" aria-label="Post" role="navigation"><hr class="styled-separator is-style-wide" aria-hidden="true">
+<div class="pagination-single-inner"> <a class="previous-post" href="/2006/06/06/mark-fletcher-leaving-bloglines/"> <span class="arrow" aria-hidden="true">&larr;</span> <span class="title"><span class="title-inner">Mark Fletcher Leaving Bloglines</span></span> </a> <a class="next-post" href="/2006/06/09/edit-in-place-size-of-form-fields/"> <span class="arrow" aria-hidden="true">&rarr;</span> <span class="title"><span class="title-inner">Edit In Place: Size Of Form Fields</span></span> </a>
+</div>
+<hr class="styled-separator is-style-wide" aria-hidden="true"></nav><div class="comments-wrapper section-inner">
+<div class="comments" id="comments">
+<div class="comments-header section-inner small max-percentage"><h2 class="comment-reply-title"> 67 replies on &ldquo;AJAX Edit In Place With Prototype, Version 0.2.0&rdquo;</h2></div>
+<div class="comments-inner section-inner thin max-percentage">
+<div id="comment-1329" class="pingback even thread-even depth-1"><article id="div-comment-1329" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://joseph.randomnetworks.com/archives/2006/04/18/ajax-edit-in-place-with-prototype/" rel="external nofollow" class="url"><span class="fn">Joseph Scott&#8217;s Blog &raquo; Blog Archive &raquo; AJAX Edit In Place With Prototype</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1329"><time datetime="2006-06-07T22:43:08-06:00" title="Wed 7 Jun 2006 at 10:43 pm">Wed 7 Jun 2006 at 10:43 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] UPDATE Wed 7 Jun 2006 @ 11:45pm : Before you get too attached to what is described here there is a new version you should look at: AJAX Edit In Place With Prototype, Version 0.2.0. [&#8230;]</p></div></article></div>
+<div id="comment-1330" class="pingback odd alt thread-odd thread-alt depth-1"><article id="div-comment-1330" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://warpedvisions.org/2006/06/08/a-prototypejs-edit-in-place-example/" rel="external nofollow" class="url"><span class="fn">warpedvisions.org &raquo; Blog Archive &raquo; A Prototype.js edit-in-place example</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1330"><time datetime="2006-06-08T12:03:34-06:00" title="Thu 8 Jun 2006 at 12:03 pm">Thu 8 Jun 2006 at 12:03 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] June 8th, 2006 in Links AJAX Edit In Place With Prototype, Version 0.2.0. [&#8230;]</p></div></article></div>
+<div id="comment-1331" class="pingback even thread-even depth-1"><article id="div-comment-1331" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.glitchnyc.com/?p=256" rel="external nofollow" class="url"><span class="fn">GlitchNYC &raquo; Blog Archive &raquo; links for 2006-06-09</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1331"><time datetime="2006-06-08T16:24:12-06:00" title="Thu 8 Jun 2006 at 4:24 pm">Thu 8 Jun 2006 at 4:24 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] AJAX Edit In Place With Prototype, Version 0.2.0 I&#8217;d love for the comments feature on our internal helpdesk app to be ajax-enabled so you didn&#8217;t have to reload the page. This might do the trick (tags: ajax javascript webdesign webdev) Share and Enjoy:These icons link to social bookmarking sites where readers can share and discover new web pages. [&#8230;]</p></div></article></div>
+<div id="comment-1332" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1332" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16e372178e" alt="Anders Rasmussen" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Anders Rasmussen</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1332"><time datetime="2006-06-09T00:31:31-06:00" title="Fri 9 Jun 2006 at 12:31 am">Fri 9 Jun 2006 at 12:31 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Sweet,</p>
+<p>I was just wondering, the following seems a bit redundant ..</p>
+<p><code><br> function init() {<br> EditInPlace.makeEditable( {<br> type: 'text',<br> id: 'editme',<br> save_url: 'edit.php'<br> } );<br> EditInPlace.makeEditable( {<br> type: 'textarea',<br> id: 'anotheredit',<br> save_url: 'edit.php'<br> } );<br> }<br> </code></p>
+<p>What are the chances of putting the ID&#8217;s in an array or something similar? The current solution is not that elegant once you exceed a number of EditInPlace elements, perhaps something like; id: &#8216;editme, editme2, editme3, someotherid, editmetoo&#8217;, ..</p>
+<p>In any case, nice write-up &#8211; very inspiring. 🙂</p>
+<p>a.</p>
+</div></article></div>
+<div id="comment-1333" class="comment even thread-even depth-1"><article id="div-comment-1333" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d16e37264c2" alt="joseph" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">joseph</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1333"><time datetime="2006-06-09T00:37:45-06:00" title="Fri 9 Jun 2006 at 12:37 am">Fri 9 Jun 2006 at 12:37 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Taking a list of ids would work if they all were for the same type of edit and used the same save_url. When I was working on this I figured that most people would want the ability to customize each editable id more than doing the same thing over and over.</p>
+<p>If nothing else a simple wrapper function would allow for what you described.</p>
+</div></article></div>
+<div id="comment-1334" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1334" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16e372a7f0" alt="Jeff" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Jeff</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1334"><time datetime="2006-06-09T04:56:09-06:00" title="Fri 9 Jun 2006 at 4:56 am">Fri 9 Jun 2006 at 4:56 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Nice job. I like the usability of normal-looking text becoming editable with a click.</p>
+<p>In Firefox, the editing caret disappears when the text becomes editable. Any way to restore it?</p>
+</div></article></div>
+<div id="comment-1335" class="comment even thread-even depth-1"><article id="div-comment-1335" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://axman6.homeip.net/" rel="external nofollow" class="url"><img id="grav-efe98f3e2e5d53e7e209ae0b11dd6370-120-60d16e372b257" alt="Axman6" src="/wp-content/uploads/gravatar-cache/efe98f3e2e5d53e7e209ae0b11dd6370-120.png" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Axman6</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1335"><time datetime="2006-06-09T05:38:58-06:00" title="Fri 9 Jun 2006 at 5:38 am">Fri 9 Jun 2006 at 5:38 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Is it just me, or is this the perfect thing for wiki&#8217;s? stick this on wikipedia, and it&#8217;ll just fly agone (not that it isn&#8217;t already, but faster maybe :s)<br> Anyway, cya.<br> Al.</p></div></article></div>
+<div id="comment-1336" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1336" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://keith.hostmatrix.org/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16e372fc0e" alt="Keith" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Keith</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1336"><time datetime="2006-06-09T05:40:40-06:00" title="Fri 9 Jun 2006 at 5:40 am">Fri 9 Jun 2006 at 5:40 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>That&#8217;s great piece of code. Is it possible to add authentication to it, such that only authorised users can edit the page?</p></div></article></div>
+<div id="comment-1337" class="comment even thread-even depth-1"><article id="div-comment-1337" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16e37341fb" alt="Rob" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Rob</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1337"><time datetime="2006-06-09T05:43:19-06:00" title="Fri 9 Jun 2006 at 5:43 am">Fri 9 Jun 2006 at 5:43 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>I was looking for an edit in place that requires the user to be logged in as an administrator in order to be able to edit in place and save it. Is it possible with yours?</p></div></article></div>
+<div id="comment-1338" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1338" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://guto.net/" rel="external nofollow" class="url"><img id="grav-760d34405db2c028a3fb099a4510d870-120-60d16e3734c84" alt="Guto" src="/wp-content/uploads/gravatar-cache/760d34405db2c028a3fb099a4510d870-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Guto</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1338"><time datetime="2006-06-09T06:09:02-06:00" title="Fri 9 Jun 2006 at 6:09 am">Fri 9 Jun 2006 at 6:09 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Very interesting&#8230; But I have some sugestions&#8230;</p>
+<p>How about not one but 5 editinplace elements in your lib?<br> EditInPlaceTextField (need for 1 line text)<br> EditInPlaceTextArea (that one that you just did)<br> EditInPlaceCombo (combo box get from an xml)<br> EditInPlaceComboAutoComplete (using the autocomplete from prototype lib)<br> and finally<br> EditInPlaceCheckBox (true or false parans)</p>
+<p>That would be very interesting&#8230;</p>
+<p>But it&#8217;s already good the way it is!</p>
+</div></article></div>
+<div id="comment-1339" class="comment even thread-even depth-1"><article id="div-comment-1339" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16e3739211" alt="falcon" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">falcon</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1339"><time datetime="2006-06-09T06:38:21-06:00" title="Fri 9 Jun 2006 at 6:38 am">Fri 9 Jun 2006 at 6:38 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>I can&#8217;t tell from the description here, I think it will be very useful to have such a component which doesn&#8217;t communicate with the server. A component which only changes the DOM (so save would confirm the change, &#8216;cancel&#8217; would revert back to whatever existed before). This will be helpful for those of us who need to have our users change many things before saving them all together ourselves.</p></div></article></div>
+<div id="comment-1340" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1340" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.rich-waters.com/blog/" rel="external nofollow" class="url"><img id="grav-2cce249358b8e833eedc10ac1ca4e51e-120-60d16e3739d00" alt="Rich Waters" src="/wp-content/uploads/gravatar-cache/2cce249358b8e833eedc10ac1ca4e51e-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Rich Waters</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1340"><time datetime="2006-06-09T06:45:32-06:00" title="Fri 9 Jun 2006 at 6:45 am">Fri 9 Jun 2006 at 6:45 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Not bad for a simple example. There is one build into scriptaculous that is a bit more feature rich. Check out the controls.js file in <a href="http://script.aculo.us/" rel="nofollow">scriptaculous</a> to see their implementation.</p></div></article></div>
+<div id="comment-1341" class="comment even thread-even depth-1"><article id="div-comment-1341" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-44dc48f920e4adf1c2fe17c414a44625-120-60d16e373a74e" alt="Kevin" src="/wp-content/uploads/gravatar-cache/44dc48f920e4adf1c2fe17c414a44625-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Kevin</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1341"><time datetime="2006-06-09T07:19:57-06:00" title="Fri 9 Jun 2006 at 7:19 am">Fri 9 Jun 2006 at 7:19 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>AWESOME!!! Thanks for this! I&#8217;ve been building a very simple validator for a CSV file and needed to have something like this so that when problem data is displayed in a HTML table, they can click on it and edit it.</p>
+<p>I need to integrate a prepopulated select list as one of the formField types. When I get the code worked out I&#8217;ll send it to you!</p>
+<p>Thanks again for this!</p>
+<p>Kevin</p>
+</div></article></div>
+<div id="comment-1342" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1342" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16e373ea5c" alt="Michael Williamson" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Michael Williamson</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1342"><time datetime="2006-06-09T08:59:50-06:00" title="Fri 9 Jun 2006 at 8:59 am">Fri 9 Jun 2006 at 8:59 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>If you double click very quickly on it, two text areas with appear (in your example). If you tripple click very fast, you can get three!</p></div></article></div>
+<div id="comment-1343" class="comment even thread-even depth-1"><article id="div-comment-1343" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16e37431fd" alt="Sean O" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Sean O</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1343"><time datetime="2006-06-09T10:01:46-06:00" title="Fri 9 Jun 2006 at 10:01 am">Fri 9 Jun 2006 at 10:01 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p><i>Anders,</i></p>
+<p>My thoughts exactly.</p>
+<p>I threw together a modified version of this script, using an array to populate each id. Add or subtract as many as you like, the script will create a text file with that id&#8217;s name, or update if it already exists.</p>
+<p><a href="http://home.comcast.net/~rhyno2000/editinplace_v021.zip" rel="nofollow ugc">http://home.comcast.net/~rhyno2000/editinplace_v021.zip</a></p>
+</div></article></div>
+<div id="comment-1344" class="pingback odd alt thread-odd thread-alt depth-1"><article id="div-comment-1344" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://joseph.randomnetworks.com/archives/2006/06/09/edit-in-place-size-of-form-fields/" rel="external nofollow" class="url"><span class="fn">Joseph Scott&#8217;s Blog &raquo; Blog Archive &raquo; Edit In Place: Size Of Form Fields</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1344"><time datetime="2006-06-09T12:24:29-06:00" title="Fri 9 Jun 2006 at 12:24 pm">Fri 9 Jun 2006 at 12:24 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] April 2004 &laquo; AJAX Edit In Place With Prototype, Version 0.2.0 [&#8230;]</p></div></article></div>
+<div id="comment-1345" class="trackback even thread-even depth-1"><article id="div-comment-1345" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://qatardr.net/blog/item/27/" rel="external nofollow" class="url"><span class="fn">ãÃ?æäÃ&#137; Ã&#135;áÃ?Ã&#159;Ã&#138;æÃ&#145; äÃ&#138;</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1345"><time datetime="2006-06-09T12:52:31-06:00" title="Fri 9 Jun 2006 at 12:52 pm">Fri 9 Jun 2006 at 12:52 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p><strong>Ã&#138;Ã&#152;Ã&#136;Ã­Ã&#158; Ã&#138;Ã?Ã&#145;Ã­Ã&#145; Ã&#135;áäÃ&#149; Ã?Ã­ Ã&#135;áÃ&#149;Ã?Ã?Ã&#137; Ã&#136;æÃ&#135;Ã&#147;Ã&#152;Ã&#137; Ã&#131;Ã&#140;Ã&#135;Ã&#159;Ã&#147;&#8230;</strong></p>
+<p>&#8230;</p>
+</div></article></div>
+<div id="comment-1346" class="pingback odd alt thread-odd thread-alt depth-1"><article id="div-comment-1346" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://deardiary.9thspark.com/?p=17" rel="external nofollow" class="url"><span class="fn">Gobble Gobble &raquo; AJAX Edit In Place With Prototype, Version 0.2.0</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1346"><time datetime="2006-06-09T14:03:49-06:00" title="Fri 9 Jun 2006 at 2:03 pm">Fri 9 Jun 2006 at 2:03 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] AJAX Edit In Place with Prototype lets you edit text in line like Flickr. This new version fixes some bugs, is more flexible and cleans up the JavaScript code.read more&nbsp;|&nbsp;digg story You can leave a comment, or trackback from your own site. RSS 2.0 [&#8230;]</p></div></article></div>
+<div id="comment-1347" class="pingback even thread-even depth-1"><article id="div-comment-1347" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="https://zhesto.wordpress.com/2006/06/10/links-for-2006-06-10/" rel="external nofollow" class="url"><span class="fn">Bloggitation &raquo; links for 2006-06-10</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1347"><time datetime="2006-06-09T16:19:28-06:00" title="Fri 9 Jun 2006 at 4:19 pm">Fri 9 Jun 2006 at 4:19 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] AJAX Edit In Place With Prototype (tags: ajax design programming web2.0) [&#8230;]</p></div></article></div>
+<div id="comment-1348" class="pingback odd alt thread-odd thread-alt depth-1"><article id="div-comment-1348" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.sitepoint.com/blogs/2006/06/10/links-for-2006-06-09/" rel="external nofollow" class="url"><span class="fn">SitePoint Blogs &raquo; links for 2006-06-09</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1348"><time datetime="2006-06-09T17:28:42-06:00" title="Fri 9 Jun 2006 at 5:28 pm">Fri 9 Jun 2006 at 5:28 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] AJAX Edit In Place With Prototype, Version 0.2.0 Updated version of a JavaScript library to make page elements editable and submit the changes using AJAX. (tags: javascript ajax) [&#8230;]</p></div></article></div>
+<div id="comment-1349" class="pingback even thread-even depth-1"><article id="div-comment-1349" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="https://exile.wordpress.com/2006/06/10/links-for-2006-06-10/" rel="external nofollow" class="url"><span class="fn">The Exile &raquo; links for 2006-06-10</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1349"><time datetime="2006-06-09T20:26:25-06:00" title="Fri 9 Jun 2006 at 8:26 pm">Fri 9 Jun 2006 at 8:26 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] Joseph Scott’s Blog » Blog Archive » AJAX Edit In Place With Prototype, Version 0.2.0 (tags: editinplace ajax) [&#8230;]</p></div></article></div>
+<div id="comment-1350" class="pingback odd alt thread-odd thread-alt depth-1"><article id="div-comment-1350" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.roks.xmgfree.com/blog/2006/06/10/ajax-edit-in-place-with-prototype-version-020/" rel="external nofollow" class="url"><span class="fn">Dee&#8217;s-Planet! &raquo; AJAX Edit In Place With Prototype, Version 0.2.0</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1350"><time datetime="2006-06-10T05:33:13-06:00" title="Sat 10 Jun 2006 at 5:33 am">Sat 10 Jun 2006 at 5:33 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] Check out the new example&#8230; Download: 0.2.0 release | [&#8230;]</p></div></article></div>
+<div id="comment-1351" class="comment even thread-even depth-1"><article id="div-comment-1351" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.epointment.com/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16e37488d1" alt="Ivo Jansch" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Ivo Jansch</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1351"><time datetime="2006-06-10T08:33:42-06:00" title="Sat 10 Jun 2006 at 8:33 am">Sat 10 Jun 2006 at 8:33 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>We use a similar technique in <a href="http://www.epointment.com/" rel="nofollow">epointment.com</a>, when editing epointments; also using prototype. The hardest part has been making the editor mode look exactly like readonly mode, which almost succeeded except for multiline textarea&#8217;s. I&#8217;ll see if I can make this script available.</p></div></article></div>
+<div id="comment-1352" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1352" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-d70a1a135c93a24c6546d9eaa22fdbc0-120-60d16e37492e1" alt="Mr.Ale" src="/wp-content/uploads/gravatar-cache/d70a1a135c93a24c6546d9eaa22fdbc0-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Mr.Ale</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1352"><time datetime="2006-06-10T10:19:58-06:00" title="Sat 10 Jun 2006 at 10:19 am">Sat 10 Jun 2006 at 10:19 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>How to use bd mysql, i am amateur&#8230;</p></div></article></div>
+<div id="comment-1353" class="pingback even thread-even depth-1"><article id="div-comment-1353" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://wordpress.anandsueman.com/?p=11" rel="external nofollow" class="url"><span class="fn">anandsueman.com &raquo; Blog Archive &raquo; Some usefull items</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1353"><time datetime="2006-06-10T11:00:26-06:00" title="Sat 10 Jun 2006 at 11:00 am">Sat 10 Jun 2006 at 11:00 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] AJAX Edit In Place With Prototype, Version 0.2.0 Updated version of a JavaScript library to make page elements editable and submit the changes using AJAX. (tags: javascript ajax) [&#8230;]</p></div></article></div>
+<div id="comment-1354" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1354" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://peoplearray.com/" rel="external nofollow" class="url"><img id="grav-af53680bdc18dba7caa89f2286611c2e-120-60d16e3749f0c" alt="acedanger" src="/wp-content/uploads/gravatar-cache/af53680bdc18dba7caa89f2286611c2e-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">acedanger</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1354"><time datetime="2006-06-12T07:00:09-06:00" title="Mon 12 Jun 2006 at 7:00 am">Mon 12 Jun 2006 at 7:00 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Can you put two fields side by side and make each of them inline edittable? What I found, from my own experience, was that each EIP field had to be on it&#8217;s own line, unless you use a table. If you use a table, you can&#8217;t use most of the effects from the prototype framework. I found the inability to do this frustrating to say the least.</p></div></article></div>
+<div id="comment-1355" class="pingback even thread-even depth-1"><article id="div-comment-1355" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.bluesparc.com/2006/06/12/ajax-edit-in-place-with-prototype-version-020/" rel="external nofollow" class="url"><span class="fn">BlueSparc design, technology news &raquo; Blog Archive &raquo; AJAX Edit In Place With Prototype, Version 0.2.0</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1355"><time datetime="2006-06-12T07:26:54-06:00" title="Mon 12 Jun 2006 at 7:26 am">Mon 12 Jun 2006 at 7:26 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] Technology such as thisbrings the internet back to its roots, a platform everybody can read, edit, and enjoy! [&#8230;]</p></div></article></div>
+<div id="comment-1356" class="pingback odd alt thread-odd thread-alt depth-1"><article id="div-comment-1356" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://bjtitus.net/2006/06/10/links-for-2006-06-11/" rel="external nofollow" class="url"><span class="fn">links for 2006-06-11 at Bjtitus.net</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1356"><time datetime="2006-06-12T10:00:21-06:00" title="Mon 12 Jun 2006 at 10:00 am">Mon 12 Jun 2006 at 10:00 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] Joseph Scott’s Blog » Blog Archive » AJAX Edit In Place With Prototype, Version 0.2.0 AJAX Edit in Place w/ Prototype (tags: webdesign web2.0 webdevelopment webdev javascript design komen ajax) No Tags [&#8230;]</p></div></article></div>
+<div id="comment-1357" class="comment even thread-even depth-1"><article id="div-comment-1357" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://enterwiki.net/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16e374e7d4" alt="Elliott Cable" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Elliott Cable</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1357"><time datetime="2006-06-12T10:49:06-06:00" title="Mon 12 Jun 2006 at 10:49 am">Mon 12 Jun 2006 at 10:49 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p><i>Is it just me, or is this the perfect thing for wiki’s? stick this on wikipedia, and it’ll just fly agone (not that it isn’t already, but faster maybe :s)<br> Anyway, cya.<br> Al.</i></p>
+<p>That&#8217;s exactly what I am doing. I am busy trying to integrate this into section editing for MediaWiki *right now* &#8211; if you are interested in helping, you can e-mail me me (elliott@starcolon.com).</p>
+</div></article></div>
+<div id="comment-1358" class="pingback odd alt thread-odd thread-alt depth-1"><article id="div-comment-1358" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="https://andybrudtkuhl.wordpress.com/2006/06/12/links-for-2006-06-12/" rel="external nofollow" class="url"><span class="fn">andy brudtkuhl &raquo; Blog Archive &raquo; links for 2006-06-12</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1358"><time datetime="2006-06-12T12:17:58-06:00" title="Mon 12 Jun 2006 at 12:17 pm">Mon 12 Jun 2006 at 12:17 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] Joseph Scott’s Blog » Blog Archive » AJAX Edit In Place With Prototype, Version 0.2.0 It has been almost two months since my since the first version of Edit In Place (version 0.1.0). Since then I’ve been trying to beef up some my JavaScript foo. I also discovered some problems with code that needed to fixed. So today I’m releasing vers (tags: ajax javascript prototype editinplace development) [&#8230;]</p></div></article></div>
+<div id="comment-1359" class="pingback even thread-even depth-1"><article id="div-comment-1359" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://ajaxblog.com/archives/2006/06/12/some-random-ajax-links-from-around-the-web" rel="external nofollow" class="url"><span class="fn">Some Random Ajax Links from around the Web | Ajax Blog</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1359"><time datetime="2006-06-12T15:18:08-06:00" title="Mon 12 Jun 2006 at 3:18 pm">Mon 12 Jun 2006 at 3:18 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] Ajax Edit in Place with Prototype, v0.2.0 [&#8230;]</p></div></article></div>
+<div id="comment-1360" class="pingback odd alt thread-odd thread-alt depth-1"><article id="div-comment-1360" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://joseph.randomnetworks.com/archives/2006/06/12/edit-in-place-version-021/" rel="external nofollow" class="url"><span class="fn">Joseph Scott&#8217;s Blog &raquo; Blog Archive &raquo; Edit In Place: Version 0.2.1</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1360"><time datetime="2006-06-12T15:39:05-06:00" title="Mon 12 Jun 2006 at 3:39 pm">Mon 12 Jun 2006 at 3:39 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] I&#8217;ve been getting lots of great feedback on Edit In Place. As time permits I hope to fix problems and round out the feature set a bit more. To that end I&#8217;ve rolled out version 0.2.1. Here&#8217;s a list of what has changed since version 0.2.0: [&#8230;]</p></div></article></div>
+<div id="comment-1361" class="pingback even thread-even depth-1"><article id="div-comment-1361" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="https://coldcase.wordpress.com/2006/06/15/ajax-edit-in-place-with-prototype-version-020/" rel="external nofollow" class="url"><span class="fn">COLD CASE &raquo; Blog Archive &raquo; AJAX Edit In Place With Prototype, Version 0.2.0</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1361"><time datetime="2006-06-14T07:08:32-06:00" title="Wed 14 Jun 2006 at 7:08 am">Wed 14 Jun 2006 at 7:08 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] read more&nbsp;|&nbsp;digg story Explore posts in the same categories: coldcase [&#8230;]</p></div></article></div>
+<div id="comment-1362" class="pingback odd alt thread-odd thread-alt depth-1"><article id="div-comment-1362" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.thewpthemes.com/?p=77" rel="external nofollow" class="url"><span class="fn">The WP Themes &raquo; AJAX Edit In Place</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1362"><time datetime="2006-06-16T03:12:46-06:00" title="Fri 16 Jun 2006 at 3:12 am">Fri 16 Jun 2006 at 3:12 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] AJAX Edit In Place With Prototype, Version 0.2.0 Click here! [&#8230;]</p></div></article></div>
+<div id="comment-1363" class="pingback even thread-even depth-1"><article id="div-comment-1363" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.davecentral.net/?p=235" rel="external nofollow" class="url"><span class="fn">Quick Link: Ajax Edit in Place using Prototype - davecentral Planet David Central &amp; Dave Central Planet</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1363"><time datetime="2006-06-20T02:59:28-06:00" title="Tue 20 Jun 2006 at 2:59 am">Tue 20 Jun 2006 at 2:59 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] Joseph Scott offers up a new version of his Ajax Edit in Place using Prototype script. Comes in at 3.6k uncompressed in addition to the Prototype Library. [&#8230;]</p></div></article></div>
+<div id="comment-1364" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1364" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.epointment.com/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16e3752fb4" alt="Ivo Jansch" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Ivo Jansch</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1364"><time datetime="2006-06-30T01:03:07-06:00" title="Fri 30 Jun 2006 at 1:03 am">Fri 30 Jun 2006 at 1:03 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>The script we had for epointment.com, which I mentioned in comment 23 above, is now available here:</p>
+<p><a href="http://www.epointment.com/software/eeip" rel="nofollow ugc">http://www.epointment.com/software/eeip</a></p>
+<p>Joseph, perhaps we can see if we can combine forces?</p>
+</div></article></div>
+<div id="comment-1365" class="pingback even thread-even depth-1"><article id="div-comment-1365" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.ioncannon.net/web-design/63/some-interesting-and-useful-ajaxjavascript-code/" rel="external nofollow" class="url"><span class="fn">&raquo; Some interesting and useful AJAX/Javascript code</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1365"><time datetime="2006-07-03T19:13:28-06:00" title="Mon 3 Jul 2006 at 7:13 pm">Mon 3 Jul 2006 at 7:13 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] I like seeing more and more uses of prototype. I&#8217;m not sure if the big guys will win out with their UI toolkits (Yahoo UI/GWT) or if it will always feel better to put things together by hand. Either way it is good to understand how this stuff works. This is an edit in place example that is similar to what you see on flickr. [&#8230;]</p></div></article></div>
+<div id="comment-1366" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1366" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-bfabc6446c2fedd907a7e63949324ae9-120-60d16e3753b43" alt="John" src="/wp-content/uploads/gravatar-cache/bfabc6446c2fedd907a7e63949324ae9-120.png" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">John</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1366"><time datetime="2006-07-15T20:17:09-06:00" title="Sat 15 Jul 2006 at 8:17 pm">Sat 15 Jul 2006 at 8:17 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>How would you go about doing this if you wanted to edit a whole table row&#8217;s worth of fields that might be made up of a variety of different form fields? Like instead of hovering over each individual item, you have a link at the end of the row that says edit which then brings up form fields for the whole thing?</p></div></article></div>
+<div id="comment-1367" class="comment even thread-even depth-1"><article id="div-comment-1367" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16e3758d92" alt="karthi" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">karthi</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1367"><time datetime="2006-07-25T06:31:34-06:00" title="Tue 25 Jul 2006 at 6:31 am">Tue 25 Jul 2006 at 6:31 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>how to execute the php files with the ajax prototype1.4.0?</p></div></article></div>
+<div id="comment-1368" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1368" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.bignewsdesign.com/" rel="external nofollow" class="url"><img id="grav-73535159d69b361eca9dc9b447a0ec6f-120-60d16e3759875" alt="Tim Harper" src="/wp-content/uploads/gravatar-cache/73535159d69b361eca9dc9b447a0ec6f-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Tim Harper</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1368"><time datetime="2006-08-02T12:03:44-06:00" title="Wed 2 Aug 2006 at 12:03 pm">Wed 2 Aug 2006 at 12:03 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Jeff,<br> I&#8217;m getting the same exact problem. It&#8217;s very annoying, I&#8217;ve worked hard to find a work around but haven&#8217;t found anything yet.</p>
+<p>Tim</p>
+</div></article></div>
+<div id="comment-1369" class="comment even thread-even depth-1"><article id="div-comment-1369" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.123.com/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16e375de59" alt="Tim Harper" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Tim Harper</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1369"><time datetime="2006-08-12T19:06:03-06:00" title="Sat 12 Aug 2006 at 7:06 pm">Sat 12 Aug 2006 at 7:06 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Jeff,<br> I’m getting the same exact problem. It’s very annoying, I’ve worked hard to find a work around but haven’t found anything yet.</p>
+<p>Tim</p>
+</div></article></div>
+<div id="comment-1370" class="pingback odd alt thread-odd thread-alt depth-1"><article id="div-comment-1370" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.programmingnews.org/programmers/ajax-edit-in-place-with-prototype-version-020/" rel="external nofollow" class="url"><span class="fn">Programming &raquo; AJAX Edit In Place With Prototype, Version 0.2.0</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1370"><time datetime="2006-08-23T23:09:54-06:00" title="Wed 23 Aug 2006 at 11:09 pm">Wed 23 Aug 2006 at 11:09 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] AJAX Edit In Place with Prototype lets you edit text in line like Flickr. This new version fixes some bugs, is more flexible and cleans up the JavaScript code.read more&nbsp;|&nbsp;digg story [&#8230;]</p></div></article></div>
+<div id="comment-1371" class="comment even thread-even depth-1"><article id="div-comment-1371" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://w-bude.de/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16e37623fe" alt="bratwurstler" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">bratwurstler</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1371"><time datetime="2006-09-09T03:43:19-06:00" title="Sat 9 Sep 2006 at 3:43 am">Sat 9 Sep 2006 at 3:43 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>works perfectly. thank you =)</p></div></article></div>
+<div id="comment-1372" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1372" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.formar.se/prototype" rel="external nofollow" class="url"><img id="grav-35927afca9214ada96edb76ed3df3ecc-120-60d16e3762ec2" alt="Alex" src="/wp-content/uploads/gravatar-cache/35927afca9214ada96edb76ed3df3ecc-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Alex</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1372"><time datetime="2006-10-05T00:32:02-06:00" title="Thu 5 Oct 2006 at 12:32 am">Thu 5 Oct 2006 at 12:32 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I have started to put together a wiki about Prototype. Sergio Pereira&#8217;s documentation is wonderful, but this way everyone can contribute to the documentation. It would be much like the annotated PHP help downloadable from php.net.</p>
+<p>Have a look at <a href="http://www.formar.se/prototype" rel="nofollow ugc">http://www.formar.se/prototype</a></p>
+</div></article></div>
+<div id="comment-1373" class="pingback even thread-even depth-1"><article id="div-comment-1373" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.prototypedoc.com/blog/?p=21" rel="external nofollow" class="url"><span class="fn">Prototype.js Documentation &raquo; Edit In Place With Prototype</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1373"><time datetime="2006-10-15T20:08:08-06:00" title="Sun 15 Oct 2006 at 8:08 pm">Sun 15 Oct 2006 at 8:08 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] <a href="http://joseph.randomnetworks.com/archives/2006/06/07/ajax-edit-in-place-with-prototype-version-020/" rel="nofollow ugc">http://joseph.randomnetworks.com/archives/2006/06/07/ajax-edit-in-place-with-prototype-version-020/</a> [&#8230;]</p></div></article></div>
+<div id="comment-1374" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1374" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8d1b7ecbc533330e7560079b3c962d96-120-60d16e3763c61" alt="Myrian" src="/wp-content/uploads/gravatar-cache/8d1b7ecbc533330e7560079b3c962d96-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Myrian</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1374"><time datetime="2006-10-16T22:48:53-06:00" title="Mon 16 Oct 2006 at 10:48 pm">Mon 16 Oct 2006 at 10:48 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>is it possible to use WYSIWYG editor like tinyMCE in edit?</p></div></article></div>
+<div id="comment-1375" class="comment even thread-even depth-1"><article id="div-comment-1375" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://geocities.com/jiwro/index.htm" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16e3768213" alt="Sam" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Sam</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1375"><time datetime="2006-12-03T08:29:08-07:00" title="Sun 3 Dec 2006 at 8:29 am">Sun 3 Dec 2006 at 8:29 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Hi, is it possible to add authentication to that code?</p></div></article></div>
+<div id="comment-1376" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1376" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-25dfaaf97d0496760be77e40390032f4-120-60d16e3768af7" alt="SumpyGump" src="/wp-content/uploads/gravatar-cache/25dfaaf97d0496760be77e40390032f4-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">SumpyGump</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1376"><time datetime="2006-12-03T21:08:57-07:00" title="Sun 3 Dec 2006 at 9:08 pm">Sun 3 Dec 2006 at 9:08 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>There is an error in the file:</p>
+<p>This:<br> // Complete the failed AJAX request.<br> EditInPlace._saveFailed = function(id, t) {<br> var id_opt = EditInPlace.getOptionsReference(id);</p>
+<p>Should be changed to this:<br> // Complete the failed AJAX request.<br> EditInPlace._saveFailed = function(id, t) {<br> var id_opt = EditInPlace._getOptionsReference(id);</p>
+<p>This is a really cool thing. Great work!</p>
+</div></article></div>
+<div id="comment-1377" class="comment even thread-even depth-1"><article id="div-comment-1377" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-25dfaaf97d0496760be77e40390032f4-120-60d16e37690e0" alt="Sumpygump" src="/wp-content/uploads/gravatar-cache/25dfaaf97d0496760be77e40390032f4-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Sumpygump</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1377"><time datetime="2006-12-06T21:00:17-07:00" title="Wed 6 Dec 2006 at 9:00 pm">Wed 6 Dec 2006 at 9:00 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Also, I think this is helpful for textarea edits:</p>
+<p>Change the following line:<br> field += &#8216;&gt;&#8217; + id_opt[&#8216;orig_text&#8217;] + &#8216;n&#8217;;</p>
+<p>to this:<br> field += &#8216;&gt;&#8217; + id_opt[&#8216;orig_text&#8217;].replace(//g, &#8220;&#8221;).replace(//g,&#8221;&#8221;) + &#8216;n&#8217;;</p>
+<p>This way when the end user is editing the content, it will not have the html br tags in there, which it probably didn&#8217;t in the first place when they typed it. It depends on the situation of course, like if the textarea contains html.</p>
+<p>Just something to throw out there.</p>
+</div></article></div>
+<div id="comment-1378" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1378" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://listfree.rcjes.com/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16e376d397" alt="Richard S" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Richard S</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1378"><time datetime="2006-12-29T18:15:34-07:00" title="Fri 29 Dec 2006 at 6:15 pm">Fri 29 Dec 2006 at 6:15 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Works great &#8230; can I implement it in my site?</p></div></article></div>
+<div id="comment-1379" class="comment even thread-even depth-1"><article id="div-comment-1379" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16e37717f7" alt="Lorenzo" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Lorenzo</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1379"><time datetime="2007-02-08T11:58:11-07:00" title="Thu 8 Feb 2007 at 11:58 am">Thu 8 Feb 2007 at 11:58 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Stupid question. If I have many records to editinplace into the same page?<br> I have 4 record with the same fields<br> 1) id1 Name Surname Address Phone Email<br> 2) id2 Name Surname Address Phone Email<br> 3) id3 Name Surname Address Phone Email<br> 4) id4 Name Surname Address Phone Email</p>
+<p>I must change the funcion? Is it possible?<br> Thanks a lot!<br> Lorenzo</p>
+</div></article></div>
+<div id="comment-1380" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1380" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.encampjove.com/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16e3775e30" alt="Pepo" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Pepo</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1380"><time datetime="2007-03-23T05:52:27-06:00" title="Fri 23 Mar 2007 at 5:52 am">Fri 23 Mar 2007 at 5:52 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi! I’m new on AJAX… Basic question (I think!)</p>
+<p>In the index.html I have EditInPlace.js and prototype.js definition and works well (only in the firs page). I think because Event.observe(window, ‘load’, init, true); put listeners only in this window.</p>
+<p>After I call with AJAX a code to put in a DIV layer new fields, and there EditInPlace don’t run, in this new fields.</p>
+<p>Somebody say my to work with IFRAME, but i don’t like.</p>
+<p>Has anyone a example to include in dinamic AJAX source an makeEditable() call, because I try a lot of things but it can’t run!</p>
+<p>Thank’s for all!</p>
+</div></article></div>
+<div id="comment-1381" class="comment even thread-even depth-1"><article id="div-comment-1381" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16e377a273" alt="Jean" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Jean</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1381"><time datetime="2007-06-13T13:58:24-06:00" title="Wed 13 Jun 2007 at 1:58 pm">Wed 13 Jun 2007 at 1:58 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Great work, however there should be some kind of authentication. Is this planned in next version? Thanks</p></div></article></div>
+<div id="comment-1382" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1382" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.sascha-leib.de/" rel="external nofollow" class="url"><img id="grav-b62b80cf0292cb62090fd6e28e3b5f3c-120-60d16e377ac3a" alt="Sascha Leib" src="/wp-content/uploads/gravatar-cache/b62b80cf0292cb62090fd6e28e3b5f3c-120.png" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Sascha Leib</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1382"><time datetime="2007-06-17T13:39:19-06:00" title="Sun 17 Jun 2007 at 1:39 pm">Sun 17 Jun 2007 at 1:39 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>This looks great, and in fact much better than the one from Script.aculo.us.</p>
+<p>My only problem is that I can&#8217;t find a smooth way to send errors back to the user (stuff like &#8220;the database is down, please try again later&#8221;&#8230;)</p>
+<p>Any ideas?</p>
+<p>/sascha</p>
+</div></article></div>
+<div id="comment-1383" class="comment even thread-even depth-1"><article id="div-comment-1383" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-0ad5a84dc55849fdbf3a0843b4a01b67-120-60d16e377b5f4" alt="Waldemar" src="/wp-content/uploads/gravatar-cache/0ad5a84dc55849fdbf3a0843b4a01b67-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Waldemar</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1383"><time datetime="2007-08-23T15:23:29-06:00" title="Thu 23 Aug 2007 at 3:23 pm">Thu 23 Aug 2007 at 3:23 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi!</p>
+<p>I was wondering if you could add a smiliar to &#8220;Click to edit&#8221; in your previous version of AJAX Edit In Place?</p>
+<p>It was in the old version (0.3.3 <a href="http://josephscott.org/code/js/eip/example.html" rel="nofollow ugc">http://josephscott.org/code/js/eip/example.html</a>) and it would be so cool if you could add it in this version or in the following version.</p>
+<p>Many thanks for a wonderful script!</p>
+<p>//Waldemar</p>
+</div></article></div>
+<div id="comment-1384" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1384" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16e377fbf5" alt="Tom" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Tom</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1384"><time datetime="2007-08-23T23:13:47-06:00" title="Thu 23 Aug 2007 at 11:13 pm">Thu 23 Aug 2007 at 11:13 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>This might be a bug.</p>
+<p>I cant seem to save the data when on_blur: &#8220;cancel&#8221;</p>
+</div></article></div>
+<div id="comment-1385" class="comment even thread-even depth-1"><article id="div-comment-1385" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16e3783db9" alt="Tom" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Tom</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1385"><time datetime="2007-08-23T23:29:04-06:00" title="Thu 23 Aug 2007 at 11:29 pm">Thu 23 Aug 2007 at 11:29 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>onblur: &#8220;save&#8221; doesn&#8217;t work either</p></div></article></div>
+<div id="comment-1386" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1386" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16e3787f48" alt="walter" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">walter</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1386"><time datetime="2007-09-06T08:00:32-06:00" title="Thu 6 Sep 2007 at 8:00 am">Thu 6 Sep 2007 at 8:00 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>For me it&#8217;s perfect.<br> I just need to know how to setup the connection to my database (sql)</p>
+<p>Where is the part of the code to do that, so that i can set up the connection to my database</p>
+<p>thanks</p>
+</div></article></div>
+<div id="comment-1387" class="comment even thread-even depth-1"><article id="div-comment-1387" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16e378c159" alt="walter" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">walter</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1387"><time datetime="2007-09-06T13:57:17-06:00" title="Thu 6 Sep 2007 at 1:57 pm">Thu 6 Sep 2007 at 1:57 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>This line:</p>
+<p>// Store the current (original) value of the editable id.<br> id_opt[&#8216;orig_text&#8217;] = $(id).innerHTML;</p>
+<p>in editInPlace.js</p>
+<p>DOES NOT WORK IN SAFARI</p>
+</div></article></div>
+<div id="comment-1388" class="pingback odd alt thread-odd thread-alt depth-1"><article id="div-comment-1388" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://kerrywebster.com/?p=53" rel="external nofollow" class="url"><span class="fn">kerry webster &raquo; Blog Archive &raquo; AJAX Application Reference</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1388"><time datetime="2007-10-09T22:26:27-06:00" title="Tue 9 Oct 2007 at 10:26 pm">Tue 9 Oct 2007 at 10:26 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] AJAX Edit In Place Another edit in place AJAX script, this one has many options. [&#8230;]</p></div></article></div>
+<div id="comment-1389" class="pingback even thread-even depth-1"><article id="div-comment-1389" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.ultrafree.net/php/40-useful-ajax-applications.html" rel="external nofollow" class="url"><span class="fn">40 Useful AJAX Applications - UltraFREE.net</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1389"><time datetime="2007-11-22T18:41:29-07:00" title="Thu 22 Nov 2007 at 6:41 pm">Thu 22 Nov 2007 at 6:41 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] AJAX Edit In Place Another edit in place AJAX script, this one has many options. [&#8230;]</p></div></article></div>
+<div id="comment-1390" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1390" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16e379074c" alt="siera" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">siera</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1390"><time datetime="2008-01-07T15:57:06-07:00" title="Mon 7 Jan 2008 at 3:57 pm">Mon 7 Jan 2008 at 3:57 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Need some help. wondering if anyone can help me.</p>
+<p>I want to change something on my bebo. i know how to edit it and get it to the way I want. the problem is when i refresh the page it goes back to normal and everything i&#8217;ve edited disappears. is there anyway i can save it the edited way so that when its viewed by anyone it shows up the edited way?</p>
+<p>any help is much appreciated. drop me an email at <a href="mailto:siera21.x@hotmail.co.uk">siera21.x@hotmail.co.uk</a></p>
+</div></article></div>
+<div id="comment-1391" class="comment even thread-even depth-1"><article id="div-comment-1391" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d16e3794914" alt="Joseph Scott" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Joseph Scott</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1391"><time datetime="2008-01-09T14:18:48-07:00" title="Wed 9 Jan 2008 at 2:18 pm">Wed 9 Jan 2008 at 2:18 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>@siera &#8211;</p>
+<p>I&#8217;m not familiar with bebo, your best bet is to contact them and ask for help.</p>
+</div></article></div>
+<div id="comment-1392" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1392" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16e3798eb1" alt="Emerald" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Emerald</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1392"><time datetime="2008-02-05T18:44:02-07:00" title="Tue 5 Feb 2008 at 6:44 pm">Tue 5 Feb 2008 at 6:44 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi Joseph,</p>
+<p>this is awesome! Thanks heaps for it. Only one thing, I have a mysql database and use php.<br> How do I get it to update the database?? Im a novice. Thanks heaps</p>
+</div></article></div>
+<div id="comment-1393" class="pingback even thread-even depth-1"><article id="div-comment-1393" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://brandonquintanaconsulting.com/clients/brandonquintana/ajax/ajax-edit-in-place-with-prototype/" rel="external nofollow" class="url"><span class="fn">Brandon Quintana &raquo; Blog Archive &raquo; AJAX Edit in Place With Prototype</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1393"><time datetime="2008-05-15T12:39:57-06:00" title="Thu 15 May 2008 at 12:39 pm">Thu 15 May 2008 at 12:39 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] point and click. Now there are many ways to tackle the problem but there is some pretty good documentation on Joseph Scott&#8217;s blog. Now I wouldn&#8217;t say this is a perfect solution, no solution [&#8230;]</p></div></article></div>
+<div id="comment-1394" class="pingback odd alt thread-odd thread-alt depth-1"><article id="div-comment-1394" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="https://koshys.wordpress.com/2008/08/11/100/" rel="external nofollow" class="url"><span class="fn">AJAX Unplugged! &laquo; KoshysHome.COM</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1394"><time datetime="2008-08-11T04:35:50-06:00" title="Mon 11 Aug 2008 at 4:35 am">Mon 11 Aug 2008 at 4:35 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] AJAX Edit In PlaceAnother edit in place AJAX script, this one has many options. [&#8230;]</p></div></article></div>
+<div id="comment-1395" class="pingback even thread-even depth-1"><article id="div-comment-1395" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="https://dimaspriyanto.wordpress.com/2009/02/25/in-place-editing-di-ruby-on-rails/" rel="external nofollow" class="url"><span class="fn">in place editing di ruby on rails &laquo; dimas priyanto</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#comment-1395"><time datetime="2009-02-25T00:51:36-07:00" title="Wed 25 Feb 2009 at 12:51 am">Wed 25 Feb 2009 at 12:51 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] <a href="http://joseph.randomnetworks.com/archives/2006/06/07/ajax-edit-in-place-with-prototype-version-020/" rel="nofollow ugc">http://joseph.randomnetworks.com/archives/2006/06/07/ajax-edit-in-place-with-prototype-version-020/</a> [&#8230;]</p></div></article></div>
+</div>
+</div>
+<hr class="styled-separator is-style-wide" aria-hidden="true">
+<div id="respond" class="comment-respond">
+<h2 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2006/06/07/ajax-edit-in-place-with-prototype-version-020/#respond" style="display:none;">Cancel reply</a></small>
+</h2>
+<form action="/wp-comments-post.php" method="post" id="commentform" class="section-inner thin max-percentage" novalidate>
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
+<p class="comment-form-comment"><label for="comment">Comment</label><textarea autocomplete="new-password" id="af88b46c0d" name="af88b46c0d" cols="45" rows="8" maxlength="65525" required="required"></textarea><textarea id="comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea><script data-noptimize type="text/javascript">document.getElementById("comment").setAttribute( "id", "a5fcd4b884f27f46ed4acdae090a61f4" );document.getElementById("af88b46c0d").setAttribute( "id", "comment" );</script></p>
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="623" id="comment_post_ID"> <input type="hidden" name="comment_parent" id="comment_parent" value="0"></p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="49ebab522e"></p>
+<input type="hidden" id="ak_js" name="ak_js" value="138"><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea>
+</form>
+</div>
+</div></article></main><div class="footer-nav-widgets-wrapper header-footer-group"><div class="footer-inner section-inner"><aside class="footer-widgets-outer-wrapper" role="complementary"><div class="footer-widgets-wrapper"><div class="footer-widgets column-one grid-item"><div class="widget widget_search"><div class="widget-content"><form role="search" method="get" class="search-form" action="/"> <label for="search-form-2"> <span class="screen-reader-text">Search for:</span> <input type="search" id="search-form-2" class="search-field" placeholder="Search &hellip;" value="" name="s"> </label> <input type="submit" class="search-submit" value="Search">
+</form></div></div></div></div></aside></div></div>
+<footer id="site-footer" role="contentinfo" class="header-footer-group"><div class="section-inner">
+<div class="footer-credits">
+<p class="footer-copyright">&copy;
+2021 <a href="/">Joseph Scott</a></p>
+<p class="powered-by-wordpress"> <a href="https://wordpress.org/"> Powered by WordPress </a></p>
+</div> <a class="to-the-top" href="#site-header"> <span class="to-the-top-long"> To the top <span class="arrow" aria-hidden="true">&uarr;</span> </span> <span class="to-the-top-short"> Up <span class="arrow" aria-hidden="true">&uarr;</span> </span> </a>
+</div></footer> <script>/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);</script> <script defer src="/wp-content/cache/autoptimize/js/autoptimize_7f503920b823033d01081cc5ae68a469.js"></script>
+</body>
+</html>

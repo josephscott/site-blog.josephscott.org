@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Dropbox Webhooks	</title>
+	<atom:link href="/2014/05/29/dropbox-webhooks/feed/" rel="self" type="application/rss+xml" />
+	<link>/2014/05/29/dropbox-webhooks/</link>
+	<description></description>
+	<lastBuildDate>Fri, 30 May 2014 14:32:50 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2014/05/29/dropbox-webhooks/#comment-4219</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 30 May 2014 14:32:50 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10482#comment-4219</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/05/29/dropbox-webhooks/#comment-4218&quot;&gt;julien51&lt;/a&gt;.
+
+It definitely presents a specific category of issues.  You&#039;ve got things like retry tracking and back off, and the always painful timeout issues.
+
+While probably not at the same scale, another service that would be interesting in that area is Stripe.com.  I&#039;m sure they&#039;ve had to build up a specific set of infrastructure items to deal with their webhook notifications.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/05/29/dropbox-webhooks/#comment-4218">julien51</a>.</p>
+<p>It definitely presents a specific category of issues.  You&#8217;ve got things like retry tracking and back off, and the always painful timeout issues.</p>
+<p>While probably not at the same scale, another service that would be interesting in that area is Stripe.com.  I&#8217;m sure they&#8217;ve had to build up a specific set of infrastructure items to deal with their webhook notifications.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: julien51		</title>
+		<link>/2014/05/29/dropbox-webhooks/#comment-4218</link>
+
+		<dc:creator><![CDATA[julien51]]></dc:creator>
+		<pubDate>Fri, 30 May 2014 06:55:14 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10482#comment-4218</guid>
+
+					<description><![CDATA[We (superfeedr) have been waiting for a long time to start seeing more technical articles on how to write scalable webhook infrastructures. This is usually very different from what web systems are built where the bottleneck is *incoming* data, and not so much *outgoing* requests.]]></description>
+			<content:encoded><![CDATA[<p>We (superfeedr) have been waiting for a long time to start seeing more technical articles on how to write scalable webhook infrastructures. This is usually very different from what web systems are built where the bottleneck is *incoming* data, and not so much *outgoing* requests.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>intentionally-blank-tab &#8211; Joseph Scott</title>
+	<atom:link href="/tag/intentionally-blank-tab/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 14 Apr 2015 15:08:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Chrome: Intentionally Blank Tab</title>
+		<link>/2015/04/14/chrome-intentionally-blank-tab/</link>
+					<comments>/2015/04/14/chrome-intentionally-blank-tab/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 14 Apr 2015 15:08:45 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[chrome-extension]]></category>
+		<category><![CDATA[intentionally-blank-tab]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12168</guid>
+
+					<description><![CDATA[One small thing that I don&#8217;t like in Chrome is the inability to set a &#8216;New Tab&#8217; to a blank page. I want something ridiculously simple. The existing new tab extensions were all more than I needed. It turns out that overriding new tab via an extension is really easy. So I wrote one: Chrome: [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>One small thing that I don&#8217;t like in <a href="http://www.google.com/chrome/">Chrome</a> is the inability to set a &#8216;New Tab&#8217; to a blank page.  I want something ridiculously simple.  The existing <a href="https://chrome.google.com/webstore/search/new%20tab">new tab extensions</a> were all more than I needed.</p>
+<p>It turns out that <a href="https://developer.chrome.com/extensions/override">overriding new tab via an extension</a> is really easy.  So I wrote one: <a href="https://github.com/josephscott/chrome-intentionally-blank-tab">Chrome: Intentionally Blank Tab</a>.</p>
+<p><a href="/wp-content/uploads/2015/04/chrome-intentionally-blank-screenshot-1.png"><img loading="lazy" src="/wp-content/uploads/2015/04/chrome-intentionally-blank-screenshot-1-1024x649.png" data-sizes="(max-width: 1024px) 100vw, 1024px" srcset="/wp-content/uploads/2015/04/chrome-intentionally-blank-screenshot-1-300x190.png 300w, /wp-content/uploads/2015/04/chrome-intentionally-blank-screenshot-1-1024x649.png 1024w, /wp-content/uploads/2015/04/chrome-intentionally-blank-screenshot-1.png 1502w" alt="chrome-intentionally-blank-screenshot" width="660" height="418" class="aligncenter size-large wp-image-12169" /></a></p>
+<p>A <a href="https://github.com/josephscott/chrome-intentionally-blank-tab/blob/master/manifest.json">dozen lines of JSON</a> and a <a href="https://github.com/josephscott/chrome-intentionally-blank-tab/blob/master/newtab.html">dozen lines of HTML</a> produces the super simple new tab page I was looking for.</p>
+<p>The source code is at <a href="https://github.com/josephscott/chrome-intentionally-blank-tab">https://github.com/josephscott/chrome-intentionally-blank-tab</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/04/14/chrome-intentionally-blank-tab/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

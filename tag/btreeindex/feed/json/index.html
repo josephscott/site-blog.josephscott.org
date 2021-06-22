@@ -1,0 +1,38 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/btreeindex/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/btreeindex/",
+    "feed_url": "https://blog.josephscott.org/tag/btreeindex/feed/json/",
+    "language": "en-US",
+    "title": "btreeindex &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://joseph.randomnetworks.com/?p=453",
+            "url": "https://blog.josephscott.org/2005/08/05/postgresql-index-limitation-index-row-size-xxxxx-exceeds-btree-maximum-2713/",
+            "title": "PostgreSQL Index Limitation (index row size xxxxx exceeds btree maximum, 2713)",
+            "content_html": "<p>I&#8217;m working on a project that includes the need to store a fair amount of raw text.  I&#8217;m using <a href=\"http://www.postgresql.org/\">PostgreSQL</a> to store this text, with the raw data being stored in a <a href=\"http://www.postgresql.org/docs/8.0/interactive/datatype-character.html\">TEXT</a> data type field.  When it came time to decide which fields to index I included this field to see what would happen.  It didn&#8217;t give me an error when <a href=\"http://www.postgresql.org/docs/8.0/interactive/sql-createindex.html\">creating the index</a>, so I thought it would be fine.  And it was, for awhile.</p>\n<p>The first few dozen inserts went fine, the raw text for these weren&#8217;t very big.  Later on the inserts start failing and PostgreSQL was logging the errors as:</p>\n<blockquote><p>\npostgres[6289]: [1-1] ERROR:  index row size 5364 exceeds btree maximum, 2713\n</p></blockquote>\n<p>When inserting larger chunks of data the index update failed because it was too large.  I removed the index on the raw text column and errors went away.  So the lesson I learned here is that the B-tree index in PostgreSQL has a maximum size of 2713 bytes.  Keep this in mind when you are going to index large VARCHAR or TEXT fields.</p>\n<p>If you really need to index large TEXT fields then you&#8217;ll have to look at full text indexing with <a href=\"http://www.sai.msu.su/~megera/postgres/gist/tsearch/V2/\">Tsearch2</a>.</p>\n",
+            "content_text": "I&#8217;m working on a project that includes the need to store a fair amount of raw text.  I&#8217;m using PostgreSQL to store this text, with the raw data being stored in a TEXT data type field.  When it came time to decide which fields to index I included this field to see what would happen.  It didn&#8217;t give me an error when creating the index, so I thought it would be fine.  And it was, for awhile.\nThe first few dozen inserts went fine, the raw text for these weren&#8217;t very big.  Later on the inserts start failing and PostgreSQL was logging the errors as:\n\npostgres[6289]: [1-1] ERROR:  index row size 5364 exceeds btree maximum, 2713\n\nWhen inserting larger chunks of data the index update failed because it was too large.  I removed the index on the raw text column and errors went away.  So the lesson I learned here is that the B-tree index in PostgreSQL has a maximum size of 2713 bytes.  Keep this in mind when you are going to index large VARCHAR or TEXT fields.\nIf you really need to index large TEXT fields then you&#8217;ll have to look at full text indexing with Tsearch2.",
+            "date_published": "2005-08-05T09:30:45-06:00",
+            "date_modified": "2005-08-05T09:30:45-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "btreeindex",
+                "Database",
+                "PostgreSQL",
+                "tsearch2",
+                "josephscott"
+            ]
+        }
+    ]
+}

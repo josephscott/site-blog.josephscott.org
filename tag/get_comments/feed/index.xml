@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>get_comments &#8211; Joseph Scott</title>
+	<atom:link href="/tag/get_comments/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 06 Apr 2010 14:30:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>The Easy Way To Get Recent Comments In WordPress</title>
+		<link>/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/</link>
+					<comments>/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 06 Apr 2010 14:30:45 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[get_comments]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2127</guid>
+
+					<description><![CDATA[I see lots of tutorials about how to get the most recent comments in WordPress. Many of these involve custom database queries and sometimes a few other additional contortions. There&#8217;s no need for any of that, WordPress provides a simple function that does all of the work for you &#8211; get_comments. It provides you with [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I see lots of tutorials about how to get the most recent comments in WordPress.  Many of these involve custom database queries and sometimes a few other additional contortions.  There&#8217;s no need for any of that, WordPress provides a simple function that does all of the work for you &#8211; <a href="http://codex.wordpress.org/Function_Reference/get_comments">get_comments</a>.  It provides you with an array of comment objects, allowing you to massage the comment data into what ever format you want.</p>
+<p>For those that don&#8217;t mind reading through the WordPress source code you can find the <a href="http://core.trac.wordpress.org/browser/trunk/wp-includes/comment.php#L190">get_comments function in wp-includes/comment.php</a>.  This function first showed up in the 2.7 release, back at the end of 2008.</p>
+<p>Here&#8217;s a simple example that will return the 5 most recently approved comments:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+$recent_comments = get_comments( array(<br />
+    &#8216;number&#8217;    =&gt; 5,<br />
+    &#8216;status&#8217;    =&gt; &#8216;approve&#8217;<br />
+) );<br />
+[/sourcecode]</p>
+<p>That&#8217;s all there is to it.  You can use <code>get_comments</code> to fetch comments based on a number options: author_email, ID, karma, number, offset, orderby, order, parent, post_id, status, type, and user_id.  The power and flexibility of this function really shines through when you combine these options to get just the specific comments you are looking for.</p>
+<p>Simplicity isn&#8217;t the only reason you should use <code>get_comments</code> instead of a home grown direct database query, it uses the core WordPress object cache hooks.  If you are using an object cache plugin (memcached for instance) then this will reduce the number of queries that are sent to your database.  Power, flexibility, and performance; what more could you ask for! <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/feed/</wfw:commentRss>
+			<slash:comments>26</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

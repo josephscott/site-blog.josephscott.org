@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>storage &#8211; Joseph Scott</title>
+	<atom:link href="/tag/storage/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 12 Feb 2008 00:30:20 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Links for Mon 11 Feb 2008</title>
+		<link>/2008/02/11/links-for-mon-11-feb-2008/</link>
+					<comments>/2008/02/11/links-for-mon-11-feb-2008/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 12 Feb 2008 00:30:20 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[storage]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/02/11/links-for-mon-11-feb-2008/</guid>
+
+					<description><![CDATA[Sizing PostgreSQL 8.3 Logs &#8211; Jignesh Shah&#8217;s Weblog &#8211; Interesting walk through on figuring out how to make PostgreSQL WAL keep up with your expected traffic. Tags: postgresql database storage performance]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://blogs.sun.com/jkshah/entry/sizing_postgresql_8_3_logs">Sizing PostgreSQL 8.3 Logs &#8211; Jignesh Shah&#8217;s Weblog</a> &#8211; Interesting walk through on figuring out how to make PostgreSQL WAL keep up with your expected traffic. <br /> Tags: <a href="http://del.icio.us/josephscott/postgresql">postgresql</a> <a href="http://del.icio.us/josephscott/database">database</a> <a href="http://del.icio.us/josephscott/storage">storage</a> <a href="http://del.icio.us/josephscott/performance">performance</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/02/11/links-for-mon-11-feb-2008/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Poul-Henning Kamp &#8211; Joseph Scott</title>
+	<atom:link href="/tag/poul-henning-kamp/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 16 Jun 2015 13:45:28 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>HTTP/2.0, Luke-Warm Interest</title>
+		<link>/2015/06/16/http2-0-luke-warm-interest/</link>
+					<comments>/2015/06/16/http2-0-luke-warm-interest/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 16 Jun 2015 13:45:28 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http2]]></category>
+		<category><![CDATA[Poul-Henning Kamp]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10535</guid>
+
+					<description><![CDATA[It is worth noting that not everyone was excited for the push to HTTP/2.0. Poul-Henning Kamp on Why HTTP/2.0 does not seem interesting: For instance identifying the standardized HTTP headers, by a 4-byte length and textual name, and then applying a deflate compressor to save bandwidth is totally at odds with the job of HTTP [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>It is worth noting that not everyone was excited for the push to HTTP/2.0.  Poul-Henning Kamp on <a href="https://www.varnish-cache.org/docs/trunk/phk/http20.html#">Why HTTP/2.0 does not seem interesting</a>:</p>
+<blockquote><p>
+For instance identifying the standardized HTTP headers, by a 4-byte length and textual name, and then applying a deflate compressor to save bandwidth is totally at odds with the job of HTTP routers which need to quickly extract the Host: header in order to route the traffic, preferably without committing extensive resources to each request.
+</p></blockquote>
+<p>That was 3 years ago.  I suspect there is enough momentum behind HTTP/2.0 now that Varnish will end up implementing it, despite concerns like this.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/06/16/http2-0-luke-warm-interest/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

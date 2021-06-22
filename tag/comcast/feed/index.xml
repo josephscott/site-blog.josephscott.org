@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>comcast &#8211; Joseph Scott</title>
+	<atom:link href="/tag/comcast/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 26 Mar 2015 14:59:33 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Google Fiber to the South, Google Fiber to the North</title>
+		<link>/2015/03/26/google-fiber-to-the-south-google-fiber-to-the-north/</link>
+					<comments>/2015/03/26/google-fiber-to-the-south-google-fiber-to-the-north/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 26 Mar 2015 14:59:33 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[centurylink]]></category>
+		<category><![CDATA[comcast]]></category>
+		<category><![CDATA[google-fiber]]></category>
+		<category><![CDATA[utah]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11908</guid>
+
+					<description><![CDATA[This week Google Fiber announced they are coming to Salt Lake City. It looks like this is going to be a new fiber network, built from scratch. That is significantly different from the Google Fiber in Provo, which was done by purchasing an existing network. Unfortunately there is no fiber run to my house, and [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>This week <a href='http://googlefiberblog.blogspot.com/2015/03/google-fiber-is-coming-to-salt-lake-city.html'>Google Fiber announced they are coming to Salt Lake City</a>.  It looks like this is going to be a new fiber network, built from scratch.  That is significantly different from the Google Fiber in Provo, which was done by purchasing an existing network.</p>
+<p>Unfortunately there is no fiber run to my house, and as far as I know there are no plans for it in the future.  There are really only two options: CenturyLink and Comcast.  For my location CenturyLink offers a maximum speed of 12Mbps down, which is usable, but not great.  Under the <a href="http://www.fcc.gov/document/fcc-finds-us-broadband-deployment-not-keeping-pace">new FCC guidelines</a> that isn&#8217;t even considered broadband.</p>
+<p>Comcast does provide 50 &#8211; 100Mbps down connections.  Unfortunately that means there is effectively only one broadband connection option.</p>
+<p>At this point with Google Fiber already in Provo, and Google Fiber going into Salt Lake City, they may as well build out the area between the two <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/03/26/google-fiber-to-the-south-google-fiber-to-the-north/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Change Your Comcast Password</title>
+		<link>/2014/02/12/change-your-comcast-password/</link>
+					<comments>/2014/02/12/change-your-comcast-password/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 12 Feb 2014 13:54:26 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[comcast]]></category>
+		<category><![CDATA[password-policy]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9906</guid>
+
+					<description><![CDATA[ZDNet reports that over 30 Comcast mail servers were compromised recently: NullCrew FTS used a Local File Inclusion (LFI) exploit to gain access to the Zimbra LDAP and MySQL database — which houses the usernames and passwords of Comcast ISP users. I am a Comcast customer and I haven&#8217;t heard anything from them about this. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>ZDNet reports that <a href="http://www.zdnet.com/change-your-passwords-comcast-hushes-minimizes-serious-hack-7000026118/" title="Interesting how many attackers have used Pastebin to share details.">over 30 Comcast mail servers were compromised recently</a>:</p>
+<blockquote><p>
+NullCrew FTS used a Local File Inclusion (LFI) exploit to gain access to the Zimbra LDAP and MySQL database — which houses the usernames and passwords of Comcast ISP users.
+</p></blockquote>
+<p>I am a Comcast customer and I haven&#8217;t heard anything from them about this.  Which is line with what ZDNet has reported, that they haven&#8217;t been forth coming with details yet.</p>
+<p>Off I went to change my Comcast password.  That is when I ran into this disappointing password policy:</p>
+<p><a href="/wp-content/uploads/2014/02/comcast-password-limits-1.jpg" title="Another disappointing password policy."><img loading="lazy" src="/wp-content/uploads/2014/02/comcast-password-limits-1.jpg" alt="comcast-password-limits" width="272" height="222" class="aligncenter size-full wp-image-9915" /></a></p>
+<p>The good part is that they do support special characters, which is more than I can say for some other password policies I&#8217;ve seen.</p>
+<p>The bad part is that it only supports up to 16 characters and doesn&#8217;t allow spaces.  That suggests that Comcast might be storing the passwords in plain text.  Which of course would be bad.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/02/12/change-your-comcast-password/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Thank You Comcast</title>
+		<link>/2013/03/29/thank-you-comcast/</link>
+					<comments>/2013/03/29/thank-you-comcast/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 29 Mar 2013 16:22:31 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[comcast]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7330</guid>
+
+					<description><![CDATA[It isn&#8217;t every day that I get to say something nice about Comcast, so I&#8217;m making a point of doing that today. This morning I got an email from Comcast about my cable Internet connection: Dear Valued Customer, Great news! We&#8217;ve increased your Internet speed! Now we have doubled the speed of your Blast!® Internet [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>It isn&#8217;t every day that I get to say something nice about <a href="http://www.comcast.com/">Comcast</a>, so I&#8217;m making a point of doing that today.</p>
+<p>This morning I got an email from Comcast about my cable Internet connection:</p>
+<blockquote><p>
+Dear Valued Customer, </p>
+<p>Great news! We&#8217;ve increased your Internet speed! </p>
+<p>Now we have doubled the speed of your Blast!® Internet service, with download speeds up to 50 Mbps and upload speeds up to 10 Mbps.
+</p></blockquote>
+<p>My existing connection was already 35 Mbps down, so 50 Mbps wouldn&#8217;t be double, but it definitely would be a big increase.  I was more excited about the upstream speed going from my current 6 Mbps to 10 Mbps.</p>
+<p>Before doing the modem update I ran a <a href="http://www.speedtest.net/">Speedtest.net</a> test to the local Comcast test node in Salt Lake City:</p>
+<p><img loading="lazy" src="https://sharedat.net/f/XC/XClN/speedtest-35mbps.png" width="699" height="73" class="aligncenter" /></p>
+<p>Which isn&#8217;t bad, that is up and down speeds that I&#8217;ve had for a few years.  I should also note that is from my Macbook Air connected over my home wifi network.</p>
+<p>I pulled the power, cable, and ethernet connections out of the back of my cable modem, paused for a few seconds, then plugged everything back in.  After waiting about a minute the connection came back.  I ran the same Speedtest.net test again:</p>
+<p><img loading="lazy" src="https://sharedat.net/f/iC/iCmm/speedtest-50mbps.png" width="700" height="66" class="aligncenter" /></p>
+<p>Faster speeds!  The upgrade was painless and only took a couple of minutes.  When I first signed up for Comcast I made sure to get a cable modem that supported DOCSIS 3.0, just in case.  Today that appears to have paid off.</p>
+<p>Thank you Comcast.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/03/29/thank-you-comcast/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>An Important Message From Comcast</title>
+		<link>/2010/11/12/an-important-message-from-comcast/</link>
+					<comments>/2010/11/12/an-important-message-from-comcast/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 12 Nov 2010 21:26:00 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[comcast]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3172</guid>
+
+					<description><![CDATA[I recently switched to Comcast at home. Today in the mailbox I found 10 separate letters from Comcast: No idea why they felt it was necessary to use 10 separate envelopes for this, but i figured it must be pretty important. So I opened all 10, each contained a single piece of paper. After quickly [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I recently <a href="http://josephscott.org/archives/2010/11/from-qwest-dsl-to-comcast-cable/">switched to Comcast</a> at home.  Today in the mailbox I found 10 separate letters from Comcast:</p>
+<figure style="width: 640px" class="wp-caption alignnone"><img loading="lazy" alt="Important Message From Comcast" src="http://farm2.static.flickr.com/1198/5169784987_8214db7ed7_z.jpg" title="Important Message From Comcast" width="640" height="480" /><figcaption class="wp-caption-text">Important Message(s) From Comcast</figcaption></figure>
+<p>No idea why they felt it was necessary to use 10 separate envelopes for this, but i figured it must be pretty important.  So I opened all 10, each contained a single piece of paper.  After quickly scanning through the text of each one there were 2 groups of letters:</p>
+<ul>
+<li><strong>First group</strong>&#8211; one letter indicating that I had a new password for one of their services, it included the new password in the text of the letter</li>
+<li><strong>Second group</strong>&#8211; nine letters indicating that I had recently changed my password for one of their services</li>
+</ul>
+<p>I&#8217;d call this overkill, but some how that just doesn&#8217;t seem strong enough.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/11/12/an-important-message-from-comcast/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>From Qwest DSL to Comcast Cable</title>
+		<link>/2010/11/03/from-qwest-dsl-to-comcast-cable/</link>
+					<comments>/2010/11/03/from-qwest-dsl-to-comcast-cable/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 03 Nov 2010 20:14:03 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[cable]]></category>
+		<category><![CDATA[comcast]]></category>
+		<category><![CDATA[dsl]]></category>
+		<category><![CDATA[qwest]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3112</guid>
+
+					<description><![CDATA[I changed Internet providers, from Qwest DSL: to Comcast Cable: When I signed up they told me it was for 12Mbs down and 2Mbs up, so I&#8217;d consider this good so far.]]></description>
+										<content:encoded><![CDATA[<p>I changed Internet providers, from Qwest DSL:</p>
+<p><img src="http://farm2.static.flickr.com/1110/5143318159_2cf1b78ab0_o.png"></p>
+<p>to Comcast Cable:</p>
+<p><img src="http://farm2.static.flickr.com/1234/5143924496_291c4d93cf_o.png"></p>
+<p>When I signed up they told me it was for 12Mbs down and 2Mbs up, so I&#8217;d consider this good so far.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/11/03/from-qwest-dsl-to-comcast-cable/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

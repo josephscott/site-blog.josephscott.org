@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Guide to PHP Security	</title>
+	<atom:link href="/2005/10/11/guide-to-php-security/feed/" rel="self" type="application/rss+xml" />
+	<link>/2005/10/11/guide-to-php-security/</link>
+	<description></description>
+	<lastBuildDate>Mon, 29 Sep 2008 03:13:29 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2005/10/11/guide-to-php-security/#comment-990</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 29 Sep 2008 03:13:29 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=502#comment-990</guid>
+
+					<description><![CDATA[@Mike -
+
+This post is now nearly 3 years old, in that time MySQL versions that support nested queries are common.  So now your argument looks like MySQL is inherently less secure now.]]></description>
+			<content:encoded><![CDATA[<p>@Mike &#8211;</p>
+<p>This post is now nearly 3 years old, in that time MySQL versions that support nested queries are common.  So now your argument looks like MySQL is inherently less secure now.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Mike		</title>
+		<link>/2005/10/11/guide-to-php-security/#comment-989</link>
+
+		<dc:creator><![CDATA[Mike]]></dc:creator>
+		<pubDate>Sat, 27 Sep 2008 15:51:18 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=502#comment-989</guid>
+
+					<description><![CDATA[Joseph I disagree, I think there are definately &#039;levels&#039; of sql injection - being able to see all the information in a database and being able to update is different.
+
+The fact that mysql_query() does not support stacked queries can make it impossible for a hacker to insert data into a database through a weak point.
+
+For example take the following query:
+
+&#039;SELECT * FROM users where id = &#039;. $_GET[&#039;unsanitised_variable&#039;]
+
+because of this a user can now construct a union select and view anything he or she likes in the database, however there is no way for the user to insert data into the database.
+
+Obviously not sanitising user input is a fools mistake, however it must be noted that allowing multiple queries increases the risk of damage via sql injection.]]></description>
+			<content:encoded><![CDATA[<p>Joseph I disagree, I think there are definately &#8216;levels&#8217; of sql injection &#8211; being able to see all the information in a database and being able to update is different.</p>
+<p>The fact that mysql_query() does not support stacked queries can make it impossible for a hacker to insert data into a database through a weak point.</p>
+<p>For example take the following query:</p>
+<p>&#8216;SELECT * FROM users where id = &#8216;. $_GET[&#8216;unsanitised_variable&#8217;]</p>
+<p>because of this a user can now construct a union select and view anything he or she likes in the database, however there is no way for the user to insert data into the database.</p>
+<p>Obviously not sanitising user input is a fools mistake, however it must be noted that allowing multiple queries increases the risk of damage via sql injection.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: ahmed		</title>
+		<link>/2005/10/11/guide-to-php-security/#comment-988</link>
+
+		<dc:creator><![CDATA[ahmed]]></dc:creator>
+		<pubDate>Tue, 19 Aug 2008 11:57:42 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=502#comment-988</guid>
+
+					<description><![CDATA[i think there is a mistake in the first example of the chapter:
+
+// supposed input
+$name = ilia; DELETE FROM users;;
+mysql_query(SELECT * FROM users WHERE name={$name});
+
+in page 74 you said that:
+&quot;mysql_query() function does not permit query stacking, or executing
+multiple queries in a single function call.&quot;
+but in the example you make multiple queries in a single function call.]]></description>
+			<content:encoded><![CDATA[<p>i think there is a mistake in the first example of the chapter:</p>
+<p>// supposed input<br />
+$name = ilia; DELETE FROM users;;<br />
+mysql_query(SELECT * FROM users WHERE name={$name});</p>
+<p>in page 74 you said that:<br />
+&#8220;mysql_query() function does not permit query stacking, or executing<br />
+multiple queries in a single function call.&#8221;<br />
+but in the example you make multiple queries in a single function call.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jim		</title>
+		<link>/2005/10/11/guide-to-php-security/#comment-987</link>
+
+		<dc:creator><![CDATA[Jim]]></dc:creator>
+		<pubDate>Wed, 12 Oct 2005 20:35:10 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=502#comment-987</guid>
+
+					<description><![CDATA[Wow, Ilia didn&#039;t waste any time replying!]]></description>
+			<content:encoded><![CDATA[<p>Wow, Ilia didn&#8217;t waste any time replying!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: joseph		</title>
+		<link>/2005/10/11/guide-to-php-security/#comment-986</link>
+
+		<dc:creator><![CDATA[joseph]]></dc:creator>
+		<pubDate>Tue, 11 Oct 2005 21:21:09 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=502#comment-986</guid>
+
+					<description><![CDATA[I think that certain types of injection attacks may be harder depending on support for query chaining.  If you are open to injection attacks, degrees of difficulty aren&#039;t what I&#039;d consider an additional layer of security though.  I believe that this is especially true given the amount of attention SQL injection attacks have received over the years.  For the bad guys the degrees in difficulty aren&#039;t much.]]></description>
+			<content:encoded><![CDATA[<p>I think that certain types of injection attacks may be harder depending on support for query chaining.  If you are open to injection attacks, degrees of difficulty aren&#8217;t what I&#8217;d consider an additional layer of security though.  I believe that this is especially true given the amount of attention SQL injection attacks have received over the years.  For the bad guys the degrees in difficulty aren&#8217;t much.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: ilia alshanetsky		</title>
+		<link>/2005/10/11/guide-to-php-security/#comment-985</link>
+
+		<dc:creator><![CDATA[ilia alshanetsky]]></dc:creator>
+		<pubDate>Tue, 11 Oct 2005 21:10:48 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=502#comment-985</guid>
+
+					<description><![CDATA[I think misunderstand the point I was trying to make there. MySQL is no more secure against SQL injection then let&#039;s say PostgreSQL. However, the fact that MySQL interface in PHP does not support query chaining makes exploitation of the problem more difficult. Certainly not impossible, just more difficult.]]></description>
+			<content:encoded><![CDATA[<p>I think misunderstand the point I was trying to make there. MySQL is no more secure against SQL injection then let&#8217;s say PostgreSQL. However, the fact that MySQL interface in PHP does not support query chaining makes exploitation of the problem more difficult. Certainly not impossible, just more difficult.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

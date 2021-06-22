@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>form2gravatar &#8211; Joseph Scott</title>
+	<atom:link href="/tag/form2gravatar/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 10 Dec 2012 21:37:50 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Automatically Loading a Gravatar Image Based on Form Field Input</title>
+		<link>/2012/12/10/automatically-loading-a-gravatar-image-based-on-form-field-input/</link>
+					<comments>/2012/12/10/automatically-loading-a-gravatar-image-based-on-form-field-input/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 10 Dec 2012 21:37:50 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[form2gravatar]]></category>
+		<category><![CDATA[gravatar]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jquery]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6594</guid>
+
+					<description><![CDATA[I&#8217;ve seen several examples of automatically loading a Gravatar image on the fly based on an input form field. After coming across another one recently and not finding a Javascript library that would do this for me, I sat down to play with this process a bit. I knew the process wasn&#8217;t complex, but at [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve seen several examples of automatically loading a <a href="http://gravatar.com/">Gravatar</a> image on the fly based on an input form field.  After coming across another one recently and not finding a Javascript library that would do this for me, I sat down to play with this process a bit.  I knew the process wasn&#8217;t complex, but at the same time it seemed like something that should have an easy to use drop in module to make it work.  The result is a simple jQuery plugin I&#8217;m calling <a href="http://josephscott.org/code/javascript/form2gravatar/">form2gravatar</a>.</p>
+<p>The source code is available at <a href="https://github.com/josephscott/form2gravatar">https://github.com/josephscott/form2gravatar</a>, along with a simple demo at <a href="http://josephscott.org/code/javascript/form2gravatar/">http://josephscott.org/code/javascript/form2gravatar/</a>.  To get started you need a form field, and a target image element:</p>
+<p>[sourcecode lang=&#8221;html&#8221;]<br />
+&lt;div&gt;<br />
+	Email &lt;input type=&quot;text&quot; name=&quot;email&quot; id=&quot;email&quot;&gt;<br />
+&lt;/div&gt;<br />
+&lt;div&gt;<br />
+	&lt;img src=&quot; id=&quot;gravatar&quot; alt=&quot;Gravatar&quot; height=&quot;64&quot; width=&quot;64&quot;&gt;<br />
+&lt;/div&gt;<br />
+[/sourcecode]</p>
+<p>Assuming you&#8217;ve loaded jQuery and form2gravatar.js you can then trigger a Gravatar image lookup with:</p>
+<p>[sourcecode lang=&#8221;javascript&#8221;]<br />
+$( &#8216;#email&#8217; ).form2gravatar( { target: &#8216;#gravatar&#8217; } );<br />
+[/sourcecode]</p>
+<p>This tells form2gravatar to watch the keystrokes in the <code>#email</code> element and update the <code>#gravatar</code> image.  By default it will check the form value several times a second, which makes it easy to update the image rapidly, but might be a waste in some cases.  So there is an option to only do an image update when the form field loses focus (<code>use_blue</code>).  </p>
+<p>For pages with several form fields setting <code>use_blur</code> to true will still provide a good experience and have almost no performance impact on the page.  If you only have a few form fields (like on a log in page) I&#8217;d stick with the default behavior.  You can adjust how frequently the form field is checked with the <code>timer_interval</code> option.</p>
+<p>Here is a list of all the options in form2gravatar:</p>
+<p>[sourcecode lang=&#8221;javascript&#8221;]<br />
+	var opt = {<br />
+		&#8216;default_img&#8217;	: &#8216;mm&#8217;,<br />
+		&#8216;size&#8217;		    : 64,<br />
+		&#8216;ssl&#8217;		    : false,<br />
+		&#8216;target&#8217;	    : false,<br />
+		&#8216;timer_interval&#8217;: 100,<br />
+		&#8216;use_blur&#8217;	    : false<br />
+	};<br />
+[/sourcecode]</p>
+<p>The only one that is required is <code>target</code>.  The other option many folks will want look at is <code>default_img</code>, which by default uses the mystery man from Gravatar.  You can use any of the other <a href="https://en.gravatar.com/site/implement/images/">Gravatar default options</a> (404, mm, identicon, monsterid, wavatar, retro, and blank) along with a URL to some other image.</p>
+<p>The Github repo includes a demo.html file that shows this in use for sign in page.  From there you can copy and tweak it into what ever shape you&#8217;d like.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/12/10/automatically-loading-a-gravatar-image-based-on-form-field-input/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

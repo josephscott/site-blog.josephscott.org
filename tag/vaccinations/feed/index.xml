@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>vaccinations &#8211; Joseph Scott</title>
+	<atom:link href="/tag/vaccinations/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 08 Jan 2021 02:50:33 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Utah Vaccination Trends</title>
+		<link>/2021/01/07/utah-vaccination-trends/</link>
+					<comments>/2021/01/07/utah-vaccination-trends/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 08 Jan 2021 02:50:33 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[covid-19]]></category>
+		<category><![CDATA[utah]]></category>
+		<category><![CDATA[vaccinations]]></category>
+		<guid isPermaLink="false">/?p=18392</guid>
+
+					<description><![CDATA[My rough math for number of vaccines Utah needs to be giving each day was 15,000. Unfortunately https://coronavirus-dashboard.utah.gov/#vaccines only provides the total number of vaccines that have been given. While that is helpful, it isn&#8217;t enough to determine if the pace is sufficient to get it to everyone who wants it by 1 September 2021. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>My <a href="/2021/01/01/utah-vaccination-math/">rough math for number of vaccines Utah needs to be giving each day</a> was 15,000.  Unfortunately <a href="https://coronavirus-dashboard.utah.gov/#vaccines">https://coronavirus-dashboard.utah.gov/#vaccines</a> only provides the total number of vaccines that have been given.  While that is helpful, it isn&#8217;t enough to determine if the pace is sufficient to get it to everyone who wants it by 1 September 2021.  For that we need daily numbers, and to track that trend over time ( they do this for covid-19 cases and deaths ).</p>
+<p>I decided to solve that problem myself with a simple <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRLswt3xO8ckCQktr6RbAwWtGeu3ujqUK0LYLe97hE-vwxNFmtzWJSVDnVLwstYij7O5igCJmFDVMAt/pubhtml#">spreadsheet</a>.  I&#8217;m noting the total for each day and comparing it to the previous day to come up with the daily numbers. There are daily numbers for both the vaccinations given and the vaccine doses that have been received.</p>
+<p><iframe height="500" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRLswt3xO8ckCQktr6RbAwWtGeu3ujqUK0LYLe97hE-vwxNFmtzWJSVDnVLwstYij7O5igCJmFDVMAt/pubhtml?widget=true&amp;headers=false"></iframe></p>
+<p>To make it easy to tell which days are over and under the 15,000 target I&#8217;ve applied condition formatting.  Pink for days with less than 15,000 and green for days with more than 15,000.  Nothing fancy, but it is effective at communicating the data in a glance.</p>
+<p>Unfortunately I wasn&#8217;t able to find the total doses shipped for December 18th, 19th, 20th, 24th, 25th, and 31st; and January 1st and 3rd.  Those are noted by an asterisk next to them and on those days I used the previous known value.</p>
+<p>The 2nd of January is the only day over 15,000 &#8211; at 16,174, but that covers multiple days due to the New Year&#8217;s Day holiday.  Today the daily number was 7,568 vaccinations, our highest single day number so far.  Unfortunately is only half of my estimated minimum of 15,000 per day that we&#8217;ll need to get it out to everyone by 1 September 2021.</p>
+<p>Honestly, I&#8217;d rather they targeted a minimum of 25,000 vaccinations per day.  I realize that supply would need to keep up with that as well, which has other challenges.</p>
+<p>A read-only version of the spreadsheet is publicly available at <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRLswt3xO8ckCQktr6RbAwWtGeu3ujqUK0LYLe97hE-vwxNFmtzWJSVDnVLwstYij7O5igCJmFDVMAt/pubhtml#">https://docs.google.com/spreadsheets/d/e/2PACX-1vRLswt3xO8ckCQktr6RbAwWtGeu3ujqUK0LYLe97hE-vwxNFmtzWJSVDnVLwstYij7O5igCJmFDVMAt/pubhtml#</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2021/01/07/utah-vaccination-trends/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Utah Vaccination Math</title>
+		<link>/2021/01/01/utah-vaccination-math/</link>
+					<comments>/2021/01/01/utah-vaccination-math/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 01 Jan 2021 19:25:33 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[covid-19]]></category>
+		<category><![CDATA[utah]]></category>
+		<category><![CDATA[vaccinations]]></category>
+		<guid isPermaLink="false">/?p=18336</guid>
+
+					<description><![CDATA[With 2020 behind us, at least chronologically, there is a strong push to get the covid-19 pandemic under control through vaccinations. As has been widely reported, the initial rate of vaccination has been slower that what was originally hoped for. That got me wondering what the math looks like for vaccinations here in Utah. The [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>With 2020 behind us, at least chronologically, there is a strong push to get the covid-19 pandemic under control through vaccinations.  As has been <a href="https://www.washingtonpost.com/opinions/2020/12/29/covid-19-vaccine-distribution-slow-testing/">widely reported</a>, the initial rate of vaccination has been slower that what was originally hoped for.  That got me wondering what the math looks like for vaccinations here in Utah.</p>
+<p>The stated goal for a <a href="https://coronavirus-download.utah.gov/Health/Vaccine_Timeline.pdf" title="vaccination timeline in Utah">vaccination timeline in Utah</a> is having it available to &#8220;All Utahns&#8221; some where between March and July 2021.</p>
+<p><a href="/wp-content/uploads/2021/01/utah-vaccine-timeline.png"><img loading="lazy" src="/wp-content/uploads/2021/01/utah-vaccine-timeline-791x1024.png" alt="" width="580" height="751" class="aligncenter size-large wp-image-18338" srcset="/wp-content/uploads/2021/01/utah-vaccine-timeline-791x1024.png 791w, /wp-content/uploads/2021/01/utah-vaccine-timeline-232x300.png 232w, /wp-content/uploads/2021/01/utah-vaccine-timeline-768x994.png 768w, /wp-content/uploads/2021/01/utah-vaccine-timeline-1187x1536.png 1187w, /wp-content/uploads/2021/01/utah-vaccine-timeline-1200x1553.png 1200w, /wp-content/uploads/2021/01/utah-vaccine-timeline.png 1275w" sizes="(max-width: 580px) 100vw, 580px" /></a></p>
+<p>To make the math easier let&#8217;s say we want all Utahns who want the vaccine to be able to get it by 1 September 2021.  Here is one way to break that down.</p>
+<p>&#8211; 243 days <a href="https://asd.gsfc.nasa.gov/Craig.Markwardt/doy2021.html">between</a> 1 January 2021 and 1 September 2021<br />
+&#8211; 3,205,958 people in Utah ( <a href="https://www.census.gov/quickfacts/UT">estimate from 1 July 2019</a>, <a href="/wp-content/uploads/2021/01/www.census.gov_quickfacts_UT.png">screenshot</a> )<br />
+&#8211; Of those, 29% are under the age of 18, leaving 2,276,230 adults</p>
+<p>The Pfizer vaccine has been approved for 16 and up, while Moderna is 18 and up.  Continuing the simple approach, let&#8217;s go with 18 and up across the board, it also lines up with the population reference.</p>
+<p>At the high end we would vaccinate 2,276,230 people in 243 days.  That would be 9,368 vaccinations a day if these were single shot systems, but they are not.  Each requires two shots, a few weeks apart.  Doubling that brings to 18,736 vaccinations a day.</p>
+<p>We are unlikely to need 100% vaccination under control though.  The exact percentage needed isn&#8217;t known for sure, we can safely say that it would need to be a significant portion of the population.  I will go with 75% here:</p>
+<pre>
+2,276,230 people * 0.75 = 1,707,172 people
+1,707,172 people * vaccine shots = 3,414,344 shots
+3,414,344 shots / 243 days = 14,051 shots per day
+</pre>
+<p>To get to 75% of those 18 and over in Utah by 1 September 2021 we need to be giving more than 14,000 shots per day.</p>
+<p>If 14,000 plus is the target, how are we doing so far?  On 30 December 2020 we hit <a href="https://twitter.com/RobertGehrke/status/1344737146070913024">6,230 vaccinations</a>.</p>
+<p><a href="/wp-content/uploads/2021/01/twitter-shots.png"><img loading="lazy" src="/wp-content/uploads/2021/01/twitter-shots-927x1024.png" alt="" width="580" height="641" class="aligncenter size-large wp-image-18347" srcset="/wp-content/uploads/2021/01/twitter-shots-927x1024.png 927w, /wp-content/uploads/2021/01/twitter-shots-272x300.png 272w, /wp-content/uploads/2021/01/twitter-shots-768x848.png 768w, /wp-content/uploads/2021/01/twitter-shots-1200x1325.png 1200w, /wp-content/uploads/2021/01/twitter-shots.png 1306w" sizes="(max-width: 580px) 100vw, 580px" /></a></p>
+<p>We will need to more than double that.</p>
+<p>This doesn&#8217;t address the other 29% of the population that is under the age of 18 &#8211; another 929,728 people.  Hopefully at some point during 2021 there will be a vaccine that will be approved for children.  If that happens then we&#8217;ll need even more capacity beyond the 14,000 target.  That could easily put us in the 15,000 to 16,000 shots per day range.</p>
+<p>Given all of the variables, my rough math points me towards a <strong>minimum</strong> target of 15,000 vaccinations per day, every day.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2021/01/01/utah-vaccination-math/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

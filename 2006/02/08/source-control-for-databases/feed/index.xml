@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Source Control for Databases	</title>
+	<atom:link href="/2006/02/08/source-control-for-databases/feed/" rel="self" type="application/rss+xml" />
+	<link>/2006/02/08/source-control-for-databases/</link>
+	<description></description>
+	<lastBuildDate>Fri, 10 Feb 2006 03:07:50 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Matt		</title>
+		<link>/2006/02/08/source-control-for-databases/#comment-1132</link>
+
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+		<pubDate>Fri, 10 Feb 2006 03:07:50 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/08/source-control-for-databases/#comment-1132</guid>
+
+					<description><![CDATA[I talked to someone the other day who was doing diffs of DB dumps for unit tests, to see what the test touched in the DB.]]></description>
+			<content:encoded><![CDATA[<p>I talked to someone the other day who was doing diffs of DB dumps for unit tests, to see what the test touched in the DB.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

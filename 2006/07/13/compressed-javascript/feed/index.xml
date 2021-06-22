@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Compressed JavaScript	</title>
+	<atom:link href="/2006/07/13/compressed-javascript/feed/" rel="self" type="application/rss+xml" />
+	<link>/2006/07/13/compressed-javascript/</link>
+	<description></description>
+	<lastBuildDate>Thu, 13 Nov 2014 15:23:22 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2006/07/13/compressed-javascript/#comment-1460</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 13 Nov 2014 15:23:22 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/07/13/compressed-javascript/#comment-1460</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2006/07/13/compressed-javascript/#comment-1459&quot;&gt;Jason Klabot&lt;/a&gt;.
+
+I know they are calling themselves &quot;compressors&quot;, but they really aren&#039;t.  A more accurate term would be minifier.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2006/07/13/compressed-javascript/#comment-1459">Jason Klabot</a>.</p>
+<p>I know they are calling themselves &#8220;compressors&#8221;, but they really aren&#8217;t.  A more accurate term would be minifier.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jason Klabot		</title>
+		<link>/2006/07/13/compressed-javascript/#comment-1459</link>
+
+		<dc:creator><![CDATA[Jason Klabot]]></dc:creator>
+		<pubDate>Thu, 13 Nov 2014 12:10:43 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/07/13/compressed-javascript/#comment-1459</guid>
+
+					<description><![CDATA[I have a question. Isn&#039;t it much easier to just use one of the many online Javascript compressors available today for this (like http://www.giftofspeed.com/javascript-compressor/ or http://javascriptcompressor.com/ ) and just compress the individual javascript files instead of going through all the hassle to set it all up yourself? Thanks]]></description>
+			<content:encoded><![CDATA[<p>I have a question. Isn&#8217;t it much easier to just use one of the many online Javascript compressors available today for this (like <a href="http://www.giftofspeed.com/javascript-compressor/" rel="nofollow ugc">http://www.giftofspeed.com/javascript-compressor/</a> or <a href="http://javascriptcompressor.com/" rel="nofollow ugc">http://javascriptcompressor.com/</a> ) and just compress the individual javascript files instead of going through all the hassle to set it all up yourself? Thanks</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Magnolia		</title>
+		<link>/2006/07/13/compressed-javascript/#comment-1458</link>
+
+		<dc:creator><![CDATA[Magnolia]]></dc:creator>
+		<pubDate>Thu, 27 Nov 2008 16:17:01 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/07/13/compressed-javascript/#comment-1458</guid>
+
+					<description><![CDATA[A simple online javascript minifier can be found at http://netspurt.com/
+It is based on dojo&#039;s shrinksafe]]></description>
+			<content:encoded><![CDATA[<p>A simple online javascript minifier can be found at <a href="http://netspurt.com/" rel="nofollow ugc">http://netspurt.com/</a><br />
+It is based on dojo&#8217;s shrinksafe</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Neil Hathaway		</title>
+		<link>/2006/07/13/compressed-javascript/#comment-1457</link>
+
+		<dc:creator><![CDATA[Neil Hathaway]]></dc:creator>
+		<pubDate>Fri, 27 Jun 2008 20:39:12 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/07/13/compressed-javascript/#comment-1457</guid>
+
+					<description><![CDATA[why not just make your js/css files minified from your editor during the build process, heres how in netbeans 6.1 ide.]]></description>
+			<content:encoded><![CDATA[<p>why not just make your js/css files minified from your editor during the build process, heres how in netbeans 6.1 ide.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2006/07/13/compressed-javascript/#comment-1456</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 20 Jun 2008 20:08:51 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/07/13/compressed-javascript/#comment-1456</guid>
+
+					<description><![CDATA[@Osama A. -
+
+I think as long as mod_gzip caches the resulting files, then that&#039;s probably good enough.]]></description>
+			<content:encoded><![CDATA[<p>@Osama A. &#8211;</p>
+<p>I think as long as mod_gzip caches the resulting files, then that&#8217;s probably good enough.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Osama A.		</title>
+		<link>/2006/07/13/compressed-javascript/#comment-1455</link>
+
+		<dc:creator><![CDATA[Osama A.]]></dc:creator>
+		<pubDate>Thu, 19 Jun 2008 19:43:22 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/07/13/compressed-javascript/#comment-1455</guid>
+
+					<description><![CDATA[Hey,
+
+Do you guys think there is a performance hit by using mod_gzip instead of this technique? Would pre-compression give any long-lasting performance improvements?
+
+Or do you guys think that with the caching in mod_gzip it becomes irrelevant for static files like JS anyway because the server will only zip the first time and not onwards?
+
+Your comments pls]]></description>
+			<content:encoded><![CDATA[<p>Hey,</p>
+<p>Do you guys think there is a performance hit by using mod_gzip instead of this technique? Would pre-compression give any long-lasting performance improvements?</p>
+<p>Or do you guys think that with the caching in mod_gzip it becomes irrelevant for static files like JS anyway because the server will only zip the first time and not onwards?</p>
+<p>Your comments pls</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: steve rasmussen		</title>
+		<link>/2006/07/13/compressed-javascript/#comment-1454</link>
+
+		<dc:creator><![CDATA[steve rasmussen]]></dc:creator>
+		<pubDate>Mon, 14 Apr 2008 23:19:11 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/07/13/compressed-javascript/#comment-1454</guid>
+
+					<description><![CDATA[For those of you who can&#039;t get this to work here is some more detailed information.
+
+.htaccess
+RewriteEngine On
+AddEncoding x-gzip .gz
+RewriteCond %{HTTP:Accept-encoding} gzip
+RewriteCond %{HTTP_USER_AGENT} !Safari
+RewriteCond %{REQUEST_FILENAME}.gz -f
+RewriteRule ^(.*)$ $1.gz [QSA,L]
+
+This one will work on css and js files any file really, just gzip it and if it exists it will use it (unless the client is using safari).
+
+To make this work you have to fix the mime records that apache uses. In httpd.conf comment the global setting that looks like this:
+
+#AddType application/x-tar .tgz
+
+Then you need to make sure that your &quot;AddEncoding x-gzip .gz&quot; directive will work by setting your directory to have &quot;AllowOverride All&quot;. Still in httpd.conf in my vhost I added:
+
+        &#060;Directory /home/username/public_html&#062;
+               AllowOverride All
+        &#060;/Directory&#062;
+
+If there are still problems edit mime.type and comment out the gzip line. Don&#039;t forget to restart apache. I hope this saves someone hours.]]></description>
+			<content:encoded><![CDATA[<p>For those of you who can&#8217;t get this to work here is some more detailed information.</p>
+<p>.htaccess<br />
+RewriteEngine On<br />
+AddEncoding x-gzip .gz<br />
+RewriteCond %{HTTP:Accept-encoding} gzip<br />
+RewriteCond %{HTTP_USER_AGENT} !Safari<br />
+RewriteCond %{REQUEST_FILENAME}.gz -f<br />
+RewriteRule ^(.*)$ $1.gz [QSA,L]</p>
+<p>This one will work on css and js files any file really, just gzip it and if it exists it will use it (unless the client is using safari).</p>
+<p>To make this work you have to fix the mime records that apache uses. In httpd.conf comment the global setting that looks like this:</p>
+<p>#AddType application/x-tar .tgz</p>
+<p>Then you need to make sure that your &#8220;AddEncoding x-gzip .gz&#8221; directive will work by setting your directory to have &#8220;AllowOverride All&#8221;. Still in httpd.conf in my vhost I added:</p>
+<p>        &lt;Directory /home/username/public_html&gt;<br />
+               AllowOverride All<br />
+        &lt;/Directory&gt;</p>
+<p>If there are still problems edit mime.type and comment out the gzip line. Don&#8217;t forget to restart apache. I hope this saves someone hours.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: JoZ		</title>
+		<link>/2006/07/13/compressed-javascript/#comment-1453</link>
+
+		<dc:creator><![CDATA[JoZ]]></dc:creator>
+		<pubDate>Thu, 10 Apr 2008 21:07:20 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/07/13/compressed-javascript/#comment-1453</guid>
+
+					<description><![CDATA[The only problem I see with the suggested methods is that most rely on having the possibility to use .htaccess, a thing I cannot do on one hosting service I use... The solution more interesting for me was the first one proposed byKenrick, because it use a .php script but unfortunately the link to the script doesn&#039;t work anymore... :(]]></description>
+			<content:encoded><![CDATA[<p>The only problem I see with the suggested methods is that most rely on having the possibility to use .htaccess, a thing I cannot do on one hosting service I use&#8230; The solution more interesting for me was the first one proposed byKenrick, because it use a .php script but unfortunately the link to the script doesn&#8217;t work anymore&#8230; 🙁</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2006/07/13/compressed-javascript/#comment-1452</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 30 Jan 2008 13:49:07 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/07/13/compressed-javascript/#comment-1452</guid>
+
+					<description><![CDATA[@blogging developer -
+
+Thanks for pointing that one out.  Seems Javascript compression has been getting a lot of attention.]]></description>
+			<content:encoded><![CDATA[<p>@blogging developer &#8211;</p>
+<p>Thanks for pointing that one out.  Seems Javascript compression has been getting a lot of attention.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: blogging developer		</title>
+		<link>/2006/07/13/compressed-javascript/#comment-1451</link>
+
+		<dc:creator><![CDATA[blogging developer]]></dc:creator>
+		<pubDate>Tue, 29 Jan 2008 17:46:10 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/07/13/compressed-javascript/#comment-1451</guid>
+
+					<description><![CDATA[Another free online tool for compressing javascript is &lt;a href=&quot;http://www.compressjavascript.com&quot;/ title=&quot;free online tool for compressing javascript&quot; rel=&quot;nofollow&quot;&gt;http://www.compressjavascript.com&lt;/a&gt;
+
+cheers,
+blogging developer]]></description>
+			<content:encoded><![CDATA[<p>Another free online tool for compressing javascript is <a href="http://www.compressjavascript.com/" title="free online tool for compressing javascript" rel="nofollow">http://www.compressjavascript.com/</a></p>
+<p>cheers,<br />
+blogging developer</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

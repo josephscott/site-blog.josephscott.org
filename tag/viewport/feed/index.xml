@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>viewport &#8211; Joseph Scott</title>
+	<atom:link href="/tag/viewport/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 21 Jan 2020 18:19:20 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Browser Defaults: HTTPS and Viewport</title>
+		<link>/2020/01/21/browser-defaults-https-and-viewport/</link>
+					<comments>/2020/01/21/browser-defaults-https-and-viewport/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 21 Jan 2020 18:19:20 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[browser]]></category>
+		<category><![CDATA[https]]></category>
+		<category><![CDATA[jeremy-keith]]></category>
+		<category><![CDATA[viewport]]></category>
+		<guid isPermaLink="false">/?p=17953</guid>
+
+					<description><![CDATA[Jeremy Keith suggests two changes to the browser default behavior. HTTPS First When you type in example.com with no protocol, the browser tries HTTP first. His suggestion is to change that to HTTPS instead. Then if HTTPS fails, fall back to HTTP. This falls under the &#8220;trying to be correct by default&#8221; behavior. Our browsers [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://adactio.com/">Jeremy Keith</a> suggests <a href="https://adactio.com/journal/16295">two changes to the browser default behavior</a>.</p>
+<h3>HTTPS First</h3>
+<p>When you type in <code>example.com</code> with no protocol, the browser tries HTTP first.  His suggestion is to change that to HTTPS instead.  Then if HTTPS fails, fall back to HTTP.</p>
+<p>This falls under the &#8220;trying to be correct by default&#8221; behavior.  Our browsers should generally encrypt traffic to sites by default.  If you type in <code><strong>http</strong>://example.com</code>, then you are directing it to make a request that is plain text, and it should follow that direction.  Outside of that, better to do encryption by default.</p>
+<p>I&#8217;m in favor of this kind of change.</p>
+<p>I&#8217;d even consider going one step further: flip <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security">HSTS ( HTTP Strict-Transport-Security )</a>.  Instead of requiring sites to opt-in to telling browsers that a site should be HTTPS only, default to HTTPS and require the site to opt-in to a plain HTTP version.  That is a bigger change, that will require more work &#8211; namely that we need more <a href="https://letsencrypt.org/">Let&#8217;s Encrypt</a> alternatives &#8211; but I think we can get there.</p>
+<h3>Assume Viewport</h3>
+<p>The question:</p>
+<blockquote><p>
+Responsive design has swept the web. What would happen if mobile browsers were to assume <code>width=device-width</code>?
+</p></blockquote>
+<p>The big push for this came from mobile, Safari specifically.  That ship has sailed, no point in trying to pretend that we will ever go back. I&#8217;m in favor of this kind of change.</p>
+<h3>Improving Defaults</h3>
+<p>As technology changes, it is healthy to re-evaluate our defaults.  Most people won&#8217;t change them, so a &#8220;protect the user&#8221; attitude should weigh heavily in how defaults are managed over time.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/01/21/browser-defaults-https-and-viewport/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

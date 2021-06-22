@@ -1,0 +1,89 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/ilya-grigorik/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/ilya-grigorik/",
+    "feed_url": "https://blog.josephscott.org/tag/ilya-grigorik/feed/json/",
+    "language": "en-US",
+    "title": "ilya-grigorik &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=13538",
+            "url": "https://blog.josephscott.org/2015/10/29/preconnect/",
+            "title": "Preconnect",
+            "content_html": "<p><a href=\"https://www.chromestatus.com/feature/5560623895150592\">Chrome 46</a>, released a few weeks ago, includes support for the <a href=\"https://w3c.github.io/resource-hints/#dfn-preconnect\">preconnect resource hint</a>.  Ilya Grigorik has a good write up on <a href=\"https://www.igvita.com/2015/08/17/eliminating-roundtrips-with-preconnect/\">Eliminating Roundtrips with Preconnect</a>:</p>\n<blockquote><p>\nThe preconnect HTML hint allows the application to tell the browser which sockets it will need ahead of initiating the actual requests; preconnect eliminates DNS, TCP, and TLS roundtrips from the request&#8217;s critical path.\n</p></blockquote>\n<p>Using it is easy:</p>\n<p>[sourcecode lang=&#8221;html&#8221;]<br />\n&lt;link rel=&quot;preconnect&quot; href=&quot;//example.com&quot;&gt;<br />\n&lt;link rel=&quot;preconnect&quot; href=&quot;//cdn.example.com&quot; crossorigin&gt;<br />\n[/sourcecode]</p>\n<p>Currently preconnect is only supported on <a href=\"http://caniuse.com/#search=Preconnect\">Firefox and Chrome</a> ( it first appeared in Firefox 39, back in July ).  This is a potentially powerful feature, definitely worth experimenting with.</p>\n",
+            "content_text": "Chrome 46, released a few weeks ago, includes support for the preconnect resource hint.  Ilya Grigorik has a good write up on Eliminating Roundtrips with Preconnect:\n\nThe preconnect HTML hint allows the application to tell the browser which sockets it will need ahead of initiating the actual requests; preconnect eliminates DNS, TCP, and TLS roundtrips from the request&#8217;s critical path.\n\nUsing it is easy:\n[sourcecode lang=&#8221;html&#8221;]\n&lt;link rel=&quot;preconnect&quot; href=&quot;//example.com&quot;&gt;\n&lt;link rel=&quot;preconnect&quot; href=&quot;//cdn.example.com&quot; crossorigin&gt;\n[/sourcecode]\nCurrently preconnect is only supported on Firefox and Chrome ( it first appeared in Firefox 39, back in July ).  This is a potentially powerful feature, definitely worth experimenting with.",
+            "date_published": "2015-10-29T07:33:43-06:00",
+            "date_modified": "2015-10-29T07:33:43-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "ilya-grigorik",
+                "preconnect",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=11440",
+            "url": "https://blog.josephscott.org/2015/09/01/http-archive-and-bigquery/",
+            "title": "HTTP Archive and BigQuery",
+            "content_html": "<p>The <a href=\"http://httparchive.org/\">HTTP Archive</a> is a great resource for watching trends on the web in general, and web performance specifically.  What you might not know is that data from the HTTP Archive test runs ( twice a month ) are available via <a href=\"https://bigquery.cloud.google.com/\">Google BigQuery</a>.  Ilya Grigorik walks through getting started in <a href='https://www.igvita.com/2013/06/20/http-archive-bigquery-web-performance-answers/'>HTTP Archive + BigQuery = Web Performance Answers</a>.</p>\n",
+            "content_text": "The HTTP Archive is a great resource for watching trends on the web in general, and web performance specifically.  What you might not know is that data from the HTTP Archive test runs ( twice a month ) are available via Google BigQuery.  Ilya Grigorik walks through getting started in HTTP Archive + BigQuery = Web Performance Answers.",
+            "date_published": "2015-09-01T08:37:43-06:00",
+            "date_modified": "2015-09-01T08:37:43-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "google-bigquery",
+                "http-archive",
+                "ilya-grigorik",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=12721",
+            "url": "https://blog.josephscott.org/2015/08/07/http2-optimizations/",
+            "title": "HTTP/2 Optimizations",
+            "content_html": "<p>Slides from <a href=\"https://www.igvita.com/\">Ilya Grigork</a> on <a href=\"https://docs.google.com/presentation/d/1r7QXGYOLCh4fcUq0jDdDwKJWNqWK1o4xMtYpKZCJYjM/present?slide=id.p19\">HTTP/2 is here, let&#8217;s optimize!</a></p>\n<p><iframe loading=\"lazy\" src=\"https://docs.google.com/presentation/embed?id=1r7QXGYOLCh4fcUq0jDdDwKJWNqWK1o4xMtYpKZCJYjM&amp;start=false&amp;loop=false&amp; frameborder=\"0\" width=\"600\" height=\"467\"></iframe></p>\n<p>Some of the traditional HTTP/1 optimization approaches now work against the features available in HTTP/2.</p>\n",
+            "content_text": "Slides from Ilya Grigork on HTTP/2 is here, let&#8217;s optimize!",
+            "date_published": "2015-08-07T08:01:17-06:00",
+            "date_modified": "2015-08-07T08:01:17-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "http2",
+                "ilya-grigorik",
+                "Posts"
+            ]
+        }
+    ]
+}

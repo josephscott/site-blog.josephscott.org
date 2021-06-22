@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: The PowerBook Is Back!	</title>
+	<atom:link href="/2004/07/06/the-powerbook-is-back/feed/" rel="self" type="application/rss+xml" />
+	<link>/2004/07/06/the-powerbook-is-back/</link>
+	<description></description>
+	<lastBuildDate>Fri, 16 Sep 2005 07:31:43 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott&#8217;s Blog &#187; Tweaking Mac OS X Sysctl Values		</title>
+		<link>/2004/07/06/the-powerbook-is-back/#comment-401</link>
+
+		<dc:creator><![CDATA[Joseph Scott&#8217;s Blog &#187; Tweaking Mac OS X Sysctl Values]]></dc:creator>
+		<pubDate>Fri, 16 Sep 2005 07:31:43 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/07/06/the-powerbook-is-back/#comment-401</guid>
+
+					<description><![CDATA[[...] Now that my PowerBook is back I&#8217;ve done a fresh install of Mac OS X. Along with restoring all of my data and applications I&#8217;ve been tweaking a few settings. In the past I&#8217;ve edited /etc/rc to adjust sysctl values. It turns out that Mac OS X (at least as of 10.3.4) supports using /etc/sysctl.conf to set sysctl values. Here&#8217;s what my /etc/sysctl.conf looks like:  kern.sysv.shmmax=167772160 kern.sysv.shmmin=1 kern.sysv.shmmni=64 kern.sysv.shmseg=16 kern.sysv.shmall=65536 kern.maxproc=2048 kern.maxprocperuid=512  Update (8:42am 7 Jul 04): Hmmm, even though there is clearly code in /etc/rc to set sysctl values from /etc/sysctl.conf they don&#8217;t appear to actually change the values. I guess for now I&#8217;ll be putting these values directly into /etc/rc again. If anyone has more info on this please leave a comment. [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Now that my PowerBook is back I&#8217;ve done a fresh install of Mac OS X. Along with restoring all of my data and applications I&#8217;ve been tweaking a few settings. In the past I&#8217;ve edited /etc/rc to adjust sysctl values. It turns out that Mac OS X (at least as of 10.3.4) supports using /etc/sysctl.conf to set sysctl values. Here&#8217;s what my /etc/sysctl.conf looks like:  kern.sysv.shmmax=167772160 kern.sysv.shmmin=1 kern.sysv.shmmni=64 kern.sysv.shmseg=16 kern.sysv.shmall=65536 kern.maxproc=2048 kern.maxprocperuid=512  Update (8:42am 7 Jul 04): Hmmm, even though there is clearly code in /etc/rc to set sysctl values from /etc/sysctl.conf they don&#8217;t appear to actually change the values. I guess for now I&#8217;ll be putting these values directly into /etc/rc again. If anyone has more info on this please leave a comment. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

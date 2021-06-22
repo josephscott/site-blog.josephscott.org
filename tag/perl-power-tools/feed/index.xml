@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>perl-power-tools &#8211; Joseph Scott</title>
+	<atom:link href="/tag/perl-power-tools/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 15 Apr 2020 19:25:34 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Perl Power Tools</title>
+		<link>/2020/04/15/perl-power-tools/</link>
+					<comments>/2020/04/15/perl-power-tools/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 15 Apr 2020 19:25:34 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[perl]]></category>
+		<category><![CDATA[perl-power-tools]]></category>
+		<guid isPermaLink="false">/?p=18106</guid>
+
+					<description><![CDATA[I recently found myself working in a limited shell account that did not include a utility I needed: patch. Without patch I went poking around to see what was available that would be close, or at least be coaxed into a useable replacement. That is how I discovered they included a Swiss Army Chainsaw: Perl. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I recently found myself working in a limited shell account that did not include a utility I needed: <a href="http://man7.org/linux/man-pages/man1/patch.1.html">patch</a>.  Without patch I went poking around to see what was available that would be close, or at least be coaxed into a useable replacement.  That is how I discovered they included a Swiss Army Chainsaw: Perl.</p>
+<p>Having Perl available meant I had plenty of options.  Fortunately others have already done the work of implementing patch in Perl: <a href="http://perlpowertools.com/">Perl Power Tools</a>:</p>
+<blockquote><p>
+In February 1999, Tom Christiansen announced the Perl Power Tools project to provide a unified BSD toolbox. Perl is the same (mostly) everywhere you go and the same programs could run the same everywhere instead of being reimplemented for each platform. The Perl versions would have the same switches and features.
+</p></blockquote>
+<p><a href="/wp-content/uploads/2020/04/perl-power-tools.png"><img loading="lazy" src="/wp-content/uploads/2020/04/perl-power-tools-1020x1024.png" alt="" width="580" height="582" class="aligncenter size-large wp-image-18181" srcset="/wp-content/uploads/2020/04/perl-power-tools-1020x1024.png 1020w, /wp-content/uploads/2020/04/perl-power-tools-300x300.png 300w, /wp-content/uploads/2020/04/perl-power-tools-150x150.png 150w, /wp-content/uploads/2020/04/perl-power-tools-768x771.png 768w, /wp-content/uploads/2020/04/perl-power-tools-1530x1536.png 1530w, /wp-content/uploads/2020/04/perl-power-tools-1200x1205.png 1200w, /wp-content/uploads/2020/04/perl-power-tools.png 1574w" sizes="(max-width: 580px) 100vw, 580px" /></a></p>
+<p>The Perl Power Tools implements many common Unix utilities with just Perl, which I was just what I needed in this case.</p>
+<p>I&#8217;m glad this work was already done, and still available, when I needed it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/04/15/perl-power-tools/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

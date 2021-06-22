@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>xmlrpc &#8211; Joseph Scott</title>
+	<atom:link href="/tag/xmlrpc/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 20 Aug 2008 23:52:31 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Slides: WordPress APIs</title>
+		<link>/2008/08/20/slides-wordpress-apis/</link>
+					<comments>/2008/08/20/slides-wordpress-apis/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 20 Aug 2008 23:52:31 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[atompub]]></category>
+		<category><![CDATA[slideshare]]></category>
+		<category><![CDATA[wordcamp]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xmlrpc]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1169</guid>
+
+					<description><![CDATA[I&#8217;ve had a few requests for the slides from my WordPress APIs talk at WordCamp San Francisco last weekend. A few minutes on SlideShare and here they are: WordPress APIs View SlideShare presentation or Upload your own. (tags: atompub xmlrpc) It&#8217;s very brief, time was limited.]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve had a few requests for the slides from my WordPress APIs talk at WordCamp San Francisco last weekend.  A few minutes on SlideShare and here they are:</p>
+<div style="width:425px;text-align:left"><a href="http://www.slideshare.net/josephscott/wordpress-apis-presentation?src=embed" title="WordPress APIs">WordPress APIs</a></p>
+<div style="font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px">View SlideShare <a href="http://www.slideshare.net/josephscott/wordpress-apis-presentation?src=embed" title="View WordPress APIs on SlideShare">presentation</a> or <a href="http://www.slideshare.net/upload?src=embed">Upload</a> your own. (tags: <a href="http://slideshare.net/tag/atompub">atompub</a> <a href="http://slideshare.net/tag/xmlrpc">xmlrpc</a>)</div>
+</div>
+<p>It&#8217;s very brief, time was limited.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/08/20/slides-wordpress-apis/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>WordPress 2.6 &#8211; XML-RPC &#038; AtomPub Changes</title>
+		<link>/2008/07/14/wordpress-26-xml-rpc-atompub-changes/</link>
+					<comments>/2008/07/14/wordpress-26-xml-rpc-atompub-changes/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 15 Jul 2008 04:04:32 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[atompub]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xmlrpc]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1122</guid>
+
+					<description><![CDATA[WordPress 2.6 has been released. For those of you interested in keeping up with XML-RPC &#38; AtomPub changes in WordPress, here&#8217;s what has changed from 2.5.1 to 2.6: XML-RPC The starify function was removed from xmlrpc.php (ticket 6634) New method &#8211; wp.getUsersBlogs see Blog ID in WordPress and XML-RPC Blog APIs for some background (ticket [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://wordpress.org/development/2008/07/wordpress-26-tyner/">WordPress 2.6</a> has been released.</p>
+<p>For those of you interested in keeping up with XML-RPC &amp; AtomPub changes in WordPress, here&#8217;s what has changed from 2.5.1 to 2.6:</p>
+<h4>XML-RPC</h4>
+<ul>
+<li>The starify function was removed from xmlrpc.php (ticket <a href="http://trac.wordpress.org/ticket/6634">6634</a>)</li>
+<li>New method &#8211; wp.getUsersBlogs  see <a href="http://joseph.randomnetworks.com/archives/2008/06/10/blog-id-in-wordpress-and-xml-rpc-blog-apis/">Blog ID in WordPress and XML-RPC Blog APIs</a> for some background (ticket <a href="http://trac.wordpress.org/ticket/7130">7130</a>)</li>
+<li>New field &#8211; xmlrpc in blogger.getUsersBlogs (same background as above, ticket <a href="http://trac.wordpress.org/ticket/7130">7130</a>)</li>
+<li>New method &#8211; wp.getPageTemplates (ticket <a href="http://trac.wordpress.org/ticket/6098">6098</a>)</li>
+<li>New field &#8211; wp_page_template in the wp.getPage method (ticket <a href="http://trac.wordpress.org/ticket/6098">6098</a>)</li>
+<li>New method &#8211; wp.getOptions (ticket <a href="http://trac.wordpress.org/ticket/7123">7123</a>)</li>
+<li>New method &#8211; wp.setOptions (ticket <a href="http://trac.wordpress.org/ticket/7123">7123</a>)</li>
+<li>Added support for enclosures in metaWeblog.newPost and metaWeblog.editPost (ticket <a href="http://trac.wordpress.org/ticket/3405">3405</a>)</li>
+<li>The &lt;!&ndash;&ndash;more&ndash;&ndash;&gt; tag is no longer embeds newlines before and after in metaWeblog.newPost and metaWeblog.editPost (ticket <a href="http://trac.wordpress.org/ticket/6016">6016</a>)</li>
+<li>XML-RPC is disabled by default for new installs of WordPress.  Upgrading will <b>NOT</b> disable XML-RPC (ticket <a href="http://trac.wordpress.org/ticket/7157">7157</a>)</li>
+</ul>
+<h4>AtomPub</h4>
+<ul>
+<li>If $_SERVER[&#8216;ORIG_PATH_INFO&#8217;] is set, we use that instead of $_SERVER[&#8216;PATH_INFO&#8217;] in determining the $path value (ticket <a href="http://trac.wordpress.org/ticket/6995">6995</a>)</li>
+<li>Fixed problem where using clean URLs (instead of ?p=1 style) would cause wp-app.php/posts requests to return zero posts (ticket <a href="http://trac.wordpress.org/ticket/7249">7249</a>)</li>
+<li>AtomPub is disabled by default for new installs of WordPress.  Upgrading will <b>NOT</b> disable AtomPub (ticket <a href="http://trac.wordpress.org/ticket/7157">7157</a>)</li>
+</ul>
+<p>Since the story around disabling XML-RPC &amp; AtomPub by default has gone through a few twists, I&#8217;ll re-state the current situation: new installs of WordPress will have XML-RPC and AtomPub access disabled by default, upgrades of WordPress to version 2.6 from previous versions will not have XML-RPC and AtomPub disabled as part of the upgrade process.  There is no check box for enabling these services during the install or upgrade.  The process for turning them back on are simple check boxes in wp-admin under Settings -&gt; Writing.</p>
+<p>On the security front, there are no known security issues in XML-RPC or AtomPub.  If you think you&#8217;ve discovered one please email the details to security@wordpress.org.</p>
+<p>Another point that I&#8217;ve seen a few folks bring up is the feeling that this is just the first step in removing XML-RPC and/or AtomPub entirely or that they&#8217;ll stop getting new features.  These features are not going away and as for continued development and new features, go back and read the top of this post.  That said, we can definitely use more people looking at the XML-RPC and AtomPub code.</p>
+<p>If you are interested in XML-RPC/AtomPub, please come join us on the <a href="http://lists.automattic.com/mailman/listinfo/wp-xmlrpc">wp-xmlrpc</a> email list.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/07/14/wordpress-26-xml-rpc-atompub-changes/feed/</wfw:commentRss>
+			<slash:comments>8</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>WordPress 2.6 to Have XML-RPC &#038; AtomPub Disabled by Default</title>
+		<link>/2008/06/21/wordpress-26-to-have-xml-rpc-atompub-disabled-by-default/</link>
+					<comments>/2008/06/21/wordpress-26-to-have-xml-rpc-atompub-disabled-by-default/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sun, 22 Jun 2008 04:06:45 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[atompub]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xmlrpc]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1114</guid>
+
+					<description><![CDATA[As westi has already noted, the next version of WordPress will have XML-RPC and AtomPub disabled by default. It&#8217;s easily turned on via an option in wp-admin, and can be enabled during installation as well. This reduces the number of potential ways an attacker can break in. To be clear though, I&#8217;m not aware of [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>As <a href="http://westi.wordpress.com/2008/06/20/making-the-default-install-more-secure/">westi has already noted</a>, the next version of <a href="http://wordpress.org/">WordPress</a> will have XML-RPC and AtomPub disabled by default.  It&#8217;s easily turned on via an option in wp-admin, and can be enabled during installation as well.</p>
+<p>This reduces the number of potential ways an attacker can break in.  To be clear though, I&#8217;m not aware of any current security issues with XML-RPC or AtomPub in WordPress.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/06/21/wordpress-26-to-have-xml-rpc-atompub-disabled-by-default/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Blog ID in WordPress and XML-RPC Blog APIs</title>
+		<link>/2008/06/10/blog-id-in-wordpress-and-xml-rpc-blog-apis/</link>
+					<comments>/2008/06/10/blog-id-in-wordpress-and-xml-rpc-blog-apis/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 10 Jun 2008 18:27:38 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[blogid]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xmlrpc]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1103</guid>
+
+					<description><![CDATA[If you&#8217;ve done any sort of work with XML-RPC blog APIs on WordPress you&#8217;ve come across blog_id. What blog_id does and does not do in WordPress can be a bit confusing though. Lets look at the metaWeblog.* XML-RPC methods to get an idea of what the problem looks like. Here&#8217;s the metaWeblog.newPost method: metaWeblog.newPost( blog_id, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you&#8217;ve done any sort of work with XML-RPC blog APIs on WordPress you&#8217;ve come across blog_id.  What blog_id does and does not do in WordPress can be a bit confusing though.</p>
+<p>Lets look at the <a href="http://www.xmlrpc.com/metaWeblogApi">metaWeblog.*</a> XML-RPC methods to get an idea of what the problem looks like.  Here&#8217;s the metaWeblog.newPost method:</p>
+<p><code></p>
+<pre>
+metaWeblog.newPost( blog_id, username, password, struct, publish )
+</pre>
+<p></code></p>
+<p>The WordPress implementation of this method doesn&#8217;t use the blog_id value at all.  For all intents and purposes it is thrown away, only using the last four parameters.  It&#8217;s kept in the parameter list though in an effort to be compatible with other implementations of metaWeblog.newPost.</p>
+<p>For regular WordPress installs that isn&#8217;t too confusing.  There is some very limited internal use of blog_id, just none at the XML-RPC level.  Where things go a little side ways is with WordPress MU (WPMU), which is what WordPress.com uses.  WPMU uses the blog_id value quite a bit, since it has to manage multiple blogs.</p>
+<p>One reason for including the blod_id in method calls like metaWeblog.newPost is because other services only have one XML-RPC end point (end point is just a URL). One example is TypePad, whose <a href="http://support.typepad.com/cgi-bin/typepad.cfg/php/enduser/std_adp.php?p_faqid=195">XML-RPC end point is http://www.typepad.com/t/api</a>.  This allows them to figure which blog the new post is being assigned to.  For WPMU there is a unique XML-RPC end point for each blog, instead of just one for the whole WPMU install.  Because of this WPMU doesn&#8217;t need the blog_id value to figure out which blog the new post is for because it can figure that out from the XML-RPC end point being used.</p>
+<p>But wait, there&#8217;s more.  Here&#8217;s metaWeblog.editPost:</p>
+<p><code></p>
+<pre>
+metaWeblog.editPost( post_id, username, password, struct, publish )
+</pre>
+<p></code></p>
+<p>You&#8217;ll notice that there&#8217;s no blog_id in the parameter list. For other services this isn&#8217;t an issue because they&#8217;ll generate unique post_id values not for just one blog, but for their whole service.  WPMU doesn&#8217;t do that, post_id&#8217;s are only unique in each blog.  A given WPMU install could have as many posts with a post_id of 1 as there are blogs setup.</p>
+<p>So far all of these examples can be addressed by making sure that you point to the correct XML-RPC end point.  But the metaWeblog.* methods aren&#8217;t the only APIs WordPress makes available, there&#8217;s also a subset of the blogger.* methods.  One that really causes grief is blogger.getUsersBlogs:</p>
+<p><code></p>
+<pre>
+blogger.getUsersBlogs( app_key, username, password )
+</pre>
+<p></code></p>
+<p>Ignore the app_key parameter, WordPress does.  The intent of this method was to let clients know what blogs a given user had access to.  Once the user provided a username and password a client could then just ask the service for a list of all the blogs that the user had access to.  Unfortunately for WPMU, clients would make certain incorrect assumptions once they&#8217;d asked blogger.getUsersBlogs for information.</p>
+<p>Let&#8217;s use example.com has an example of a multi-blog site.  I&#8217;ve got blogs at joseph.example.com, josephscott.example.com and helloworld.example.com.  A blog client comes along and asks example.com/xmlrpc.php for a list of blogs that I have access to.  They get a list back that looks something like:</p>
+<p><code></p>
+<pre>
+{
+	{
+		url: http://joseph.example.com/,
+		blogid: 123123,
+		blogName: Joseph
+	},
+	{
+		url: http://josephscott.example.com/,
+		blogid: 321321,
+		blogName: "Joseph Scott"
+	},
+	{
+		url: http://helloworld.example.com/,
+		blogid: 90909090,
+		blogName: "Hello World"
+	}
+}
+</pre>
+<p></code></p>
+<p>Nothing wrong so far, but it&#8217;s what I see blog clients do next that breaks things.  Instead of querying each blog URL to find out what the XML-RPC end point is for each one, they assume that the end point that provided this data will work for all three.  I&#8217;ve found this to be a <b>very</b> common assumption in blog clients.  In this case it means that they send metaWeblog.newPost requests to example.com/xmlrpc.php.  For services that have one global end point for all of their blogs this works fine, which works because they send along the unique blog_id value.  This doesn&#8217;t work for WPMU because it throws away those blog_id values sent to it via XML-RPC methods.</p>
+<p>At this point you might be thinking, well, gee, why don&#8217;t you just fix WordPress/WPMU to respect the blog_id and then everything will be fine.  That was what I thought the first time I ran into this.  I started digging through code, and then I ran into metaWeblog.editPost (and others) that don&#8217;t require a blog_id value.  That&#8217;s when I realized that it wasn&#8217;t realistic to try and fix this.  It would require WPMU to generate unique post_id values across all blogs, something that it does not do, and isn&#8217;t likely to be doing in the near future.</p>
+<p>In order to minimize the confusion I changed the behavior of the blogger.getUsersBlogs method in WordPress.  Instead of sending details for all the blogs that the user had access to, it only sent info for the one blog that it was talking to.  Continuing with the example above, lets say the client had sent a blogger.getUsersBlogs request to josephscott.example.com/xmlrpc.php.  The response would only contain data about josephscott.example.com.  This effectively prevents the client from getting confused about example.com supporting blog_id and only using one global XML-RPC end point.  The down side to this approach is that instead of the client being able to discover all of the other blogs that I have access to on example.com, I have to configure each one in the client.</p>
+<p>Well, that isn&#8217;t completely true.  If a client makes a blogger.getUsersBlogs to the master blog in an WPMU install it will still get a list of all the blogs that user has access to.  In the example above that would be example.com/xmlrpc.php.  This was necessary because some services querying WordPress.com depended on this.  Those changes were generalized and are included as part of WPMU.</p>
+<p>For blog clients that wanted access to a user blog list but don&#8217;t make the single end point assumption I added a new method, wp.getUsersBlogs:</p>
+<p><code></p>
+<pre>
+wp.getUsersBlogs( username, password )
+</pre>
+<p></code></p>
+<p>It returns the same data that blogger.getUsersBlogs does, with one additional field for each blog: xmlrpc.  The xmlrpc field is the XML-RPC end point for each blog.  This saves the client from having to go out and detect the end point for each blog.  My hope was that if a client knew enough to ask for wp.getUsersBlogs it also knew enough not to make incorrect assumptions about what to do with that data.</p>
+<p>Right now the wp.getUsersBlogs is only available on WordPress.com, but it will be hitting WordPress and WordPressMU soon.</p>
+<p>It&#8217;s still possible that at some point we&#8217;ll do enough low level work in WordPress/WPMU to make things work in a manner similar to what others do with blog_id and post_id, but for now this is where things stand.  If you are making use of the XML-RPC APIs in WordPress and wondered what the story was with blog_id&#8217;s, now you know.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/06/10/blog-id-in-wordpress-and-xml-rpc-blog-apis/feed/</wfw:commentRss>
+			<slash:comments>12</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Four Years of WordPress, One Year at Automattic</title>
+		<link>/2008/04/15/four-years-of-wordpress-one-year-at-automattic/</link>
+					<comments>/2008/04/15/four-years-of-wordpress-one-year-at-automattic/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 15 Apr 2008 16:14:45 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[akismet]]></category>
+		<category><![CDATA[automattic]]></category>
+		<category><![CDATA[movabletype]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xmlrpc]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1057</guid>
+
+					<description><![CDATA[On April 16, 2007 I started working at Automattic, amazing how fast the last year has gone by. As I started gathering up details for what I&#8217;ve been doing this past year, I found that in April 2004 was when I started using WordPress to power this blog. Four Years of WordPress My first post [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>On April 16, 2007 I started working at <a href="http://automattic.com/">Automattic</a>, amazing how fast the last year has gone by.  As I started gathering up details for what I&#8217;ve been doing this past year, I found that in April 2004 was when I started using <a href="http://wordpress.org/">WordPress</a> to power this blog.</p>
+<h3>Four Years of WordPress</h3>
+<p>My <a href="http://joseph.randomnetworks.com/archives/2004/04/30/taking-the-dive-into-wordpress/">first post</a> on this blog was from April 30, 2004, using a beta of WordPress 1.2.  First though, a little history.</p>
+<p>In mid-2003 I figured it was time for me to get in on this &#8220;weblog&#8221; thing.  Although I&#8217;d had various sites on the web since 1995, there was something about the order and structure of a blog that appealed to me.  Like many others during this time I took a look at <a href="http://www.movabletype.org/">MovableType</a> as one option to power my blog, since all the cool kids were using it (like <a href="http://jeremy.zawodny.com/blog/">Jeremy Zawodny</a>, one of the blogs I&#8217;d been reading regularly).  That didn&#8217;t last very long.  I went on to try every piece of blog software that I could find, none of them really worked the way that I&#8217;d hoped they would.</p>
+<p>Feeling that all the available options out there weren&#8217;t going to cut it, I started writing my own (another thing that seemly everyone else was doing at the time).  I quickly got it up to the point where publicly it was good enough.  I used that for months, while continuing to look at other options.</p>
+<p>Fast forward to March/April 2004 where I finally found WordPress.  It was being actively developed and was easily the best out of all the other options that I tried.  And I had installed pretty much everything out there.</p>
+<p>Since then I&#8217;ve published more than 1,000 posts with over 1,500 comments.  I started using <a href="http://akismet.com/">Akismet</a>, which has blocked more that 500,000 pieces of spam.</p>
+<h3>One Year at Automattic</h3>
+<p>It is amazing that a whole year has gone by since my <a href="http://joseph.randomnetworks.com/archives/2007/04/12/friday-the-13th/">Friday the 13th</a> post.  Fortunately though it&#8217;s pretty easy to sum up.  This job is freaking awesome!</p>
+<p>The <a href="http://automattic.com/about/">people at Automattic</a> are amazing.  At one point I had met everyone in the company, which is saying something since we are scattered all across the globe.  Since then more people have come aboard, and I look forward to meeting them face to face latter this year.</p>
+<p>Before joining Automattic full time in April 2007, I had been doing contract work starting back in January 2007.  The result of that work was the new wp.* XML-RPC methods.  For the most part I really enjoy working on XML-RPC, though some of the specific APIs that are built on top of it are a bit quirky.</p>
+<p>Working on <a href="http://wordpress.com/">WordPress.com</a> has been absolutely fascinating.  The scale and growth are pretty impressive.  Check out some of the <a href="http://wordpress.com/stats/">stats</a> and you&#8217;ll see what I&#8217;m talking about.  We are fast approaching 3 million blogs.  Not bad considering we hit <a href="http://joseph.randomnetworks.com/archives/2007/12/17/2-million-plus/">2 million</a> in December 2007, some 4 months ago.</p>
+<h3>The Future</h3>
+<p>There are so many ways in which WordPress still has amazing amount of potential.  In the social network sphere we are seeing things like <a href="http://buddypress.org/">BuddyPress</a> and <a href="http://diso-project.org/">Diso</a>.  From the WordPress as a platform department there&#8217;s <a href="http://wordpress.com/blog/2008/01/28/introducing-prologue/">Prologue</a> (which reminds me, I need to get a new version out the door, keep an eye on <a href="http://prologuetheme.org/">prologuetheme.org</a>) and <a href="http://designintellection.com/downloads/wp-contact-manager/">WP Contact Manager</a>.  Even good old XML-RPC will continue to see improvement as time goes on.</p>
+<p>The next year will bring a few more releases of WordPress.  What&#8217;s really exciting though is seeing how people will continue to take WordPress to new and different places.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/04/15/four-years-of-wordpress-one-year-at-automattic/feed/</wfw:commentRss>
+			<slash:comments>10</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>WordPresss 2.5</title>
+		<link>/2008/03/29/wordpresss-25/</link>
+					<comments>/2008/03/29/wordpresss-25/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 29 Mar 2008 21:51:08 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[custom_fields]]></category>
+		<category><![CDATA[date_created_gmt]]></category>
+		<category><![CDATA[mt_allow_comments]]></category>
+		<category><![CDATA[page_status]]></category>
+		<category><![CDATA[post_status]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[wp.deleteCategory]]></category>
+		<category><![CDATA[wp.getCommentCount]]></category>
+		<category><![CDATA[wp.getPageStatusList]]></category>
+		<category><![CDATA[wp.getPostStatusList]]></category>
+		<category><![CDATA[wp.suggestCategories]]></category>
+		<category><![CDATA[xmlrpc]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1049</guid>
+
+					<description><![CDATA[WordPress 2.5 is officially out the door. Matt hits the long list of highlights of what is new in the release announcement. This coincides with the new layout at WordPress.rog. Peter Westwood (one of the WordPress core developers) put together a tag cloud of people who contributed to this release. For the XML-RPC blog client [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://wordpress.org/">WordPress</a> 2.5 is officially out the door.  <a href="http://ma.tt/">Matt</a> hits the long list of highlights of what is new in the <a href="http://wordpress.org/development/2008/03/wordpress-25-brecker/">release announcement</a>.  This coincides with the new layout at <a href="http://wordpress.org/">WordPress.rog</a>.  <a href="http://blog.ftwr.co.uk/">Peter Westwood</a> (one of the WordPress core developers) put together a <a href="http://blog.ftwr.co.uk/archives/2008/03/29/wordpress-25-contributors/">tag cloud of people who contributed to this release</a>.</p>
+<p>For the XML-RPC blog client developers out there 2.5 adds four new methods:</p>
+<ul>
+<li>wp.deleteCategory( blog_id, username, password, category_id ) &#8211; Delete a category.</li>
+<li>wp.getCommentCount( blog_id, username, password, post_id ) &#8211; Provides a struct of all the comment counts ( approved, awaiting_moderation, spam, total_comments ) for a given post_id.  The post_id parameter is optional (or can be set to zero), if it is not provided then the same struct is returned, but for the entire blog instead of just one post.</li>
+<li>wp.getPostStatusList( blog_id, username, password ) &#8211; Provides a struct of all the valid post statuses ( draft, pending, private, publish ) and their descriptions ( Draft, Pending Review, Private, Published ).</li>
+<li>wp.getPageStatusList( blog_id, username, password ) &#8211; Provides a struct of all the valid page statuses ( draft, private, publish ) and their descriptions ( Draft, Private, Published).</li>
+</ul>
+<p>To go along with the new status methods, you can now explicitly set the post and page status using the post_status and page_status fields.  Like wise the status is also exposed via the various get* methods.  One note about future posts, for the purposes of XML-RPC clients we set the post_status to publish when the actual database value is future.</p>
+<p>The wp.suggestCategories method has been fixed to return data in the same format that it did originally.  I never heard anyone complain about this though, so I guess it isn&#8217;t getting much use.</p>
+<p>Custom fields for posts and pages are now exposed and manageable from metaWeblog.getPost/newPost/editPost, wp.getPage/newPage/editPage via the custom_fields field.  I was really happy to get this in, I think there is a lot of potential in being able to manage custom fields externally.</p>
+<p>The mt_allow_comments field now understands the value of 2 to be the same as the value of zero.  This was done because other platforms expect to be able use the value 2, so some clients assume that we support it.  Now we do, but from the WordPress point of view is does exactly the same thing as zero.</p>
+<p>If the field date_created_gmt is provided in metaWeblog.newPost/editPost, wp.newPage/editPage then it is used instead of the dateCreated field.  This same field was already exposed via metaWeblog.getPost, wp.getPage.  By definition the date_created_gmt field is always GMT, even if you don&#8217;t provide a time zone offset or a trailing Z.  I&#8217;m hoping this will help ease the many headaches that have been brought on by trying to deal with date/time issues in the XML-RPC blog APIs.</p>
+<p>If you are a developer that makes use of the WordPress XML-RPC interface, or are interested in doing development work on the WordPress XML-RPC code please subscribe to the <a href="http://lists.automattic.com/mailman/listinfo/wp-xmlrpc">wp-xmlrpc email list</a>.  Along with various tickets in <a href="http://trac.wordpress.org/">Trac</a> this is where we discuss ideas and issues for the XML-RPC APIs that WordPress supports.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/03/29/wordpresss-25/feed/</wfw:commentRss>
+			<slash:comments>10</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Wed 20 Feb 2008</title>
+		<link>/2008/02/20/links-for-wed-20-feb-2008/</link>
+					<comments>/2008/02/20/links-for-wed-20-feb-2008/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 21 Feb 2008 00:00:11 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[cpan]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[perl]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xmlrpc]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/02/20/links-for-wed-20-feb-2008/</guid>
+
+					<description><![CDATA[WordPress::XMLRPC &#8211; search.cpan.org &#8211; Perl module for talking to WordPress Tags: cpan perl wordpress xmlrpc]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://search.cpan.org/~leocharre/WordPress-XMLRPC-1.06/lib/WordPress/XMLRPC.pm">WordPress::XMLRPC &#8211; search.cpan.org</a> &#8211; Perl module for talking to WordPress <br /> Tags: <a href="http://del.icio.us/josephscott/cpan">cpan</a> <a href="http://del.icio.us/josephscott/perl">perl</a> <a href="http://del.icio.us/josephscott/wordpress">wordpress</a> <a href="http://del.icio.us/josephscott/xmlrpc">xmlrpc</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/02/20/links-for-wed-20-feb-2008/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Thu 7 Feb 2008</title>
+		<link>/2008/02/07/links-for-thu-7-feb-2008/</link>
+					<comments>/2008/02/07/links-for-thu-7-feb-2008/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 08 Feb 2008 00:30:16 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[ixr]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[movabletype]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[sun]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xmlrpc]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/02/07/links-for-thu-7-feb-2008/</guid>
+
+					<description><![CDATA[scot hacker?s foobar blog &#62; Notes on a Massive WordPress Migration &#8211; Lots of details on how they moved CDT from MovableType to WordPress. Tags: movabletype wordpress Why Did I Change My Mind? &#124; AlwaysOn &#8211; Logic behind MySQL selling to Sun instead of going ahead with the IPO. Tags: mysql sun ixr &#8211; Google [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://birdhouse.org/blog/2008/02/07/notes-on-a-massive-wordpress-migration/#more-2785">scot hacker?s foobar blog &gt; Notes on a Massive WordPress Migration</a> &#8211; Lots of details on how they moved CDT from MovableType to WordPress. <br /> Tags: <a href="http://del.icio.us/josephscott/movabletype">movabletype</a> <a href="http://del.icio.us/josephscott/wordpress">wordpress</a>  </p>
+</li>
+<li>
+<p><a href="http://alwayson.goingon.com/permalink/post/23603">Why Did I Change My Mind? | AlwaysOn</a> &#8211; Logic behind MySQL selling to Sun instead of going ahead with the IPO. <br /> Tags: <a href="http://del.icio.us/josephscott/mysql">mysql</a> <a href="http://del.icio.us/josephscott/sun">sun</a>  </p>
+</li>
+<li>
+<p><a href="http://code.google.com/p/ixr/">ixr &#8211; Google Code</a> &#8211; Looks like Simon took his IXR XML-RPC library here <br /> Tags: <a href="http://del.icio.us/josephscott/php">php</a> <a href="http://del.icio.us/josephscott/xmlrpc">xmlrpc</a> <a href="http://del.icio.us/josephscott/ixr">ixr</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/02/07/links-for-thu-7-feb-2008/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>metaWeblog Imperfections</title>
+		<link>/2007/11/12/metaweblog-imperfections/</link>
+					<comments>/2007/11/12/metaweblog-imperfections/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 12 Nov 2007 13:00:15 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[metaweblog]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xmlrpc]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/12/metaweblog-imperfections/</guid>
+
+					<description><![CDATA[&#8230; forgive the imperfections of MetaWeblog implementations around the world. Daniel Jalkut on why we shouldn&#8217;t be worrying about this WordPress ticket. I love that line.]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+&#8230; forgive the imperfections of MetaWeblog implementations around the world.
+</p></blockquote>
+<p><a href="http://comox.textdrive.com/pipermail/wp-xmlrpc/2007-November/000097.html">Daniel Jalkut</a> on why we shouldn&#8217;t be worrying about this <a href="http://trac.wordpress.org/ticket/3994">WordPress ticket</a>.</p>
+<p>I love that line.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/11/12/metaweblog-imperfections/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Thu 8 Nov 2007</title>
+		<link>/2007/11/08/links-for-thu-8-nov-2007/</link>
+					<comments>/2007/11/08/links-for-thu-8-nov-2007/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 09 Nov 2007 00:30:21 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[atompub]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[mail]]></category>
+		<category><![CDATA[metaweblog]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[sendmail]]></category>
+		<category><![CDATA[stats]]></category>
+		<category><![CDATA[utah]]></category>
+		<category><![CDATA[vote]]></category>
+		<category><![CDATA[windowslivewriter]]></category>
+		<category><![CDATA[xmlrpc]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/08/links-for-thu-8-nov-2007/</guid>
+
+					<description><![CDATA[State of Utah Elections Office &#8211; The number of registered voters in the State of Utah, by county. Just under 1.5 million total. Tags: utah vote stats The BabelFish Blog, Limitations of MetaWeblog API &#8211; Couple of years old, but a good list of complaints. Tags: xmlrpc metaweblog PHP mail() and The Path of No [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://elections.utah.gov/voterstatistics.html">State of Utah Elections Office</a> &#8211; The number of registered voters in the State of Utah, by county.  Just under 1.5 million total. <br /> Tags: <a href="http://del.icio.us/josephscott/utah">utah</a> <a href="http://del.icio.us/josephscott/vote">vote</a> <a href="http://del.icio.us/josephscott/stats">stats</a>  </p>
+</li>
+<li>
+<p><a href="http://www.bblfish.net/blog/page7.html#2005/06/20/22-28-18-208">The BabelFish Blog, Limitations of MetaWeblog API</a> &#8211; Couple of years old, but a good list of complaints. <br /> Tags: <a href="http://del.icio.us/josephscott/xmlrpc">xmlrpc</a> <a href="http://del.icio.us/josephscott/metaweblog">metaweblog</a>  </p>
+</li>
+<li>
+<p><a href="http://allinthehead.com/retro/315/php-mail-and-the-path-of-no-return">PHP mail() and The Path of No Return ? All in the head</a> &#8211; If you are using PHP&#8217;s mail() function then make sure that Sendmail is happy with the From address on the envelope. <br /> Tags: <a href="http://del.icio.us/josephscott/php">php</a> <a href="http://del.icio.us/josephscott/mail">mail</a> <a href="http://del.icio.us/josephscott/sendmail">sendmail</a>  </p>
+</li>
+<li>
+<p><a href="http://jcheng.wordpress.com/2007/11/06/wlwatompub-part-4-categories/">WLW+AtomPub, Part 4: Categories | whateverblog.</a> &#8211; Sounds like categories in AtomPub will still need some work. <br /> Tags: <a href="http://del.icio.us/josephscott/windowslivewriter">windowslivewriter</a> <a href="http://del.icio.us/josephscott/atompub">atompub</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/11/08/links-for-thu-8-nov-2007/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

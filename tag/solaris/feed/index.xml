@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>solaris &#8211; Joseph Scott</title>
+	<atom:link href="/tag/solaris/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 28 Apr 2008 17:11:40 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Sun Should Be in the Consumer Cloud Services Business</title>
+		<link>/2008/04/28/sun-should-be-in-the-consumer-cloud-services-business/</link>
+					<comments>/2008/04/28/sun-should-be-in-the-consumer-cloud-services-business/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 28 Apr 2008 17:11:40 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[cloudservices]]></category>
+		<category><![CDATA[datacenter]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[solaris]]></category>
+		<category><![CDATA[sun]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1061</guid>
+
+					<description><![CDATA[When Google App Engine was announced one of the features that was heavily pushed was it&#8217;s ability to scale. Combined with Amazon&#8217;s AWS products, I&#8217;ve been thinking about other companies who could/should be in the cloud services business. There&#8217;s the obvious ones that everyone talks about like Microsoft and Yahoo, but then another name came [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>When <a href="http://code.google.com/appengine/">Google App Engine</a> was announced one of the features that was heavily pushed was it&#8217;s ability to scale.  Combined with Amazon&#8217;s AWS products, I&#8217;ve been thinking about other companies who could/should be in the cloud services business.  There&#8217;s the obvious ones that everyone talks about like Microsoft and Yahoo, but then another name came to mind: <a href="http://www.sun.com/">Sun</a>.</p>
+<p>What service should Sun offer to the world?  I&#8217;ll give you a hint, they recently spent $1 billion dollars <a href="http://joseph.randomnetworks.com/archives/2008/01/16/sun-buys-mysql/">acquiring the company</a> behind the product.  Yep, none other than <a href="http://mysql.com/">MySQL</a>.</p>
+<p>Love it or hate it, MySQL is widely used by many companies and individuals.  What I&#8217;d like to see from Sun is a MySQL cloud service that works just like your current MySQL server(s), only better.  It should scale such that I don&#8217;t have to worry about performance and replicate data sufficiently that I&#8217;ll always have access to my data.  There&#8217;s no need for a new API, since MySQL already supports network connectivity.</p>
+<p>With MySQL already in such wide spread use, the benefits would be easy to see.  For instance, I could use such a service to power my WordPress blog with only a few changes to my wp-config.php file.  Effectively requiring zero code changes.</p>
+<p>Pricing wise I&#8217;d expect something similar to EC2 or S3, a general pay as you go schedule.  Perhaps even with a very low use free option, just enough for people to get hooked.  But if I were <a href="http://blogs.sun.com/jonathan/">Jonathan Schwartz</a> I wouldn&#8217;t stop there.</p>
+<p>As nice as it is to have an easy to use pay as you go web service, there are many companies that would like the performance, scalability and reliability of such a service but don&#8217;t want to send all their data to Sun.  Enter Sun&#8217;s <a href="http://www.sun.com/products/sunmd/s20/">Modular Datacenter</a>, a.k.a. data center in a box.  Okay, a very big box, but a box none the less.  Take all the lessons they learn making the MySQL cloud service work and put them in the data center box and sell it.</p>
+<p>This would also appeal to hosting companies, who could then offer the same sort of service to the users.  Imagine some place like <a href="http://www.theplanet.com/">The Planet</a> having a few of these in their data centers.  They&#8217;d get the benefits of the cloud service without having to haul all that traffic over their Internet connections.</p>
+<p>In my ideal world this wouldn&#8217;t be limited to MySQL.  I&#8217;d love to see this same sort of thing for <a href="http://www.postgresql.org/">PostgreSQL</a>, since Sun has also been pushing <a href="http://www.sun.com/software/products/postgresql/index.jsp">PostgreSQL for Solaris</a> as well.  Sadly I&#8217;m not holding my breath on that one.  With PostgreSQL being a much more community based project, there&#8217;s nothing to stop some other company from providing this service.</p>
+<p>Perhaps Sun should have <a href="http://joseph.randomnetworks.com/archives/2007/08/23/from-sunw-to-java/">changed their stock ticker</a> to MYSQ instead of JAVA.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/04/28/sun-should-be-in-the-consumer-cloud-services-business/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>DTrace For FreeBSD</title>
+		<link>/2005/09/08/dtrace-for-freebsd/</link>
+					<comments>/2005/09/08/dtrace-for-freebsd/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 08 Sep 2005 17:21:49 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[devonodell]]></category>
+		<category><![CDATA[dtrace]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[offmyserver]]></category>
+		<category><![CDATA[raqdevil]]></category>
+		<category><![CDATA[solaris]]></category>
+		<category><![CDATA[sun]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=473</guid>
+
+					<description><![CDATA[Last month Devon O&#8217;Dell started work on porting DTrace from Solaris to FreeBSD. Devon works for Offmyserver.com, which is providing him with hardware and support for the project. Bryan Cantrill, one of the developers at Sun working on DTrace, has also offered support for the port. Recently there has been some work to make DTrace [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Last month <a href="http://www.sitetronics.com/wordpress/">Devon O&#8217;Dell</a> started work on <a href="http://www.zdnet.com.au/news/software/soa/Developer_aims_for_Dtrace_on_FreeBSD/0,2000061733,39210618,00.htm">porting DTrace from Solaris to FreeBSD</a>.  Devon works for <a href="http://www.offmyserver.com/">Offmyserver.com</a>, which is providing him with hardware and support for the project.  <a href="http://blogs.sun.com/roller/page/bmc">Bryan Cantrill</a>, one of the developers at <a href="http://www.sun.com/">Sun</a> working on <a href="http://opensolaris.org/os/community/dtrace/">DTrace</a>, has also <a href="http://blogs.sun.com/roller/page/bmc?entry=dtrace_on_freebsd">offered support</a> for the port.  Recently there has been some work to make DTrace usable <a href="http://blogs.sun.com/roller/page/bmc?entry=dtrace_and_php_demonstrated">with PHP</a> and <a href="http://blogs.sun.com/roller/page/bmc?entry=dtrace_and_ruby">with Ruby</a>.  I&#8217;ve never used DTrace, but it looks very impressive.  I look forward to being able to use this tool on my favorite server OS (<a href="http://www.freebsd.org/">FreeBSD</a> of course).</p>
+<p>Devon is also involved with <a href="http://www.raqdevil.com/">RAQdevil</a>, an Offmyserver.com project.  RAQdevil is another web control panel software package that is open source and based off of the Cobalt systems (which is now owned by Sun).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/09/08/dtrace-for-freebsd/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

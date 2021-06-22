@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>fiber &#8211; Joseph Scott</title>
+	<atom:link href="/tag/fiber/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 28 May 2014 16:03:19 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>The Value Of 5.2 Milliseconds</title>
+		<link>/2014/05/28/the-value-of-5-2-milliseconds/</link>
+					<comments>/2014/05/28/the-value-of-5-2-milliseconds/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 28 May 2014 16:03:19 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[fiber]]></category>
+		<category><![CDATA[hibernia-networks]]></category>
+		<category><![CDATA[networking]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10531</guid>
+
+					<description><![CDATA[&#8220;Project Express&#8221; from Hibernia Networks is a new trans-Atlantic fiber connection from New York to London. It was started in 2011 but isn&#8217;t expected to be completed until later in 2014. From a 2012 Bloomberg news article about the project: Project Express will be the fastest cable across the Atlantic, reducing the time it takes [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>&#8220;Project Express&#8221; from Hibernia Networks is a new trans-Atlantic fiber connection from New York to London.  It was started in 2011 but isn&#8217;t expected to be completed until later in 2014.  From a <a href="http://www.bloomberg.com/news/2012-03-29/cable-across-atlantic-aims-to-save-traders-milliseconds.html">2012 Bloomberg news article about the project</a>:</p>
+<blockquote><p>
+Project Express will be the fastest cable across the Atlantic, reducing the time it takes data to travel round-trip between New York and London to 59.6 milliseconds from the current top speed of 64.8 milliseconds
+</p></blockquote>
+<p>The cost for this new, shorter, fiber line is reportedly over $300M.  A big price tag for a 5.2 millisecond reduction in round-trip time.</p>
+<p><a href="/wp-content/uploads/2014/05/hibernia-express-1.png"><img loading="lazy" src="/wp-content/uploads/2014/05/hibernia-express-1-1024x563.png" alt="hibernia-express" width="676" height="371" class="aligncenter size-large wp-image-10533" srcset="/wp-content/uploads/2014/05/hibernia-express-1-1024x563.png 1024w, /wp-content/uploads/2014/05/hibernia-express-1-300x165.png 300w, /wp-content/uploads/2014/05/hibernia-express-1-768x423.png 768w, /wp-content/uploads/2014/05/hibernia-express-1.png 1116w" sizes="(max-width: 676px) 100vw, 676px" /></a></p>
+<p>It should come as no surprise then that the main customer base for this new connection is high speed trading companies.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/05/28/the-value-of-5-2-milliseconds/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Fiber Internet As Infrastructure</title>
+		<link>/2014/05/14/fiber-internet-infrastructure/</link>
+					<comments>/2014/05/14/fiber-internet-infrastructure/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 14 May 2014 13:01:08 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[fiber]]></category>
+		<category><![CDATA[internet]]></category>
+		<category><![CDATA[matthew-dias]]></category>
+		<category><![CDATA[park-city]]></category>
+		<category><![CDATA[utah]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10468</guid>
+
+					<description><![CDATA[Park City, Utah city manager Matthew Dias on why they are putting out request for proposals ( RFPs ) to install high-speed fiber across the city, emphasis mine: Residents are going to start demanding this level of service as basic infrastructure Sadly I don&#8217;t expect to see much progress in getting fiber to my home [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Park City, Utah <a href="http://www.ksl.com/?sid=29854334&#038;nid=148&#038;title=fiber-internet-coming-to-park-city&#038;s_cid=queue-12" title="I wonder how many other cities started thinking this way after Google Fiber 'purchased' the Provo network.">city manager Matthew Dias</a> on why they are putting out request for proposals ( RFPs ) to install high-speed fiber across the city, emphasis mine:</p>
+<blockquote><p>
+Residents are going to start demanding this level of service as <strong>basic infrastructure</strong>
+</p></blockquote>
+<p>Sadly I don&#8217;t expect to see much progress in getting fiber to my home in Sandy over the next few years.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/05/14/fiber-internet-infrastructure/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

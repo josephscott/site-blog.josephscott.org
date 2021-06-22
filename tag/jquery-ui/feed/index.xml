@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>jquery-ui &#8211; Joseph Scott</title>
+	<atom:link href="/tag/jquery-ui/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 17 Feb 2011 17:02:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>jQuery UI Time Picker</title>
+		<link>/2011/02/17/jquery-ui-time-picker/</link>
+					<comments>/2011/02/17/jquery-ui-time-picker/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 17 Feb 2011 17:02:07 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jquery]]></category>
+		<category><![CDATA[jquery-ui]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2816</guid>
+
+					<description><![CDATA[jQuery UI date/time picker mod The standard date picker in jQuery UI really needs support for time selection as well. Doesn&#8217;t have to be this exact mod, but something like it would be handy.]]></description>
+										<content:encoded><![CDATA[<figure style="width: 640px" class="wp-caption alignnone"><img loading="lazy" alt="" src="http://farm6.static.flickr.com/5254/5453978568_b86ab44ae2_z.jpg" title="jQuery UI Date/Time Picker" width="640" height="237" /><figcaption class="wp-caption-text">jQuery UI Date/Time Picker mod</figcaption></figure>
+<p><a href="http://puna.net.nz/timepicker.htm">jQuery UI date/time picker mod</a></p>
+<p>The standard <a href="http://jqueryui.com/demos/datepicker/">date picker</a> in <a href="http://jqueryui.com/">jQuery UI</a> really needs support for time selection as well.  Doesn&#8217;t have to be this exact mod, but something like it would be handy.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/02/17/jquery-ui-time-picker/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

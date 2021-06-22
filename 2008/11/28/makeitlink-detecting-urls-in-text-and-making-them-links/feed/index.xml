@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: MakeItLink &#8211; Detecting URLs In Text And Making Them Links	</title>
+	<atom:link href="/2008/11/28/makeitlink-detecting-urls-in-text-and-making-them-links/feed/" rel="self" type="application/rss+xml" />
+	<link>/2008/11/28/makeitlink-detecting-urls-in-text-and-making-them-links/</link>
+	<description></description>
+	<lastBuildDate>Thu, 25 Aug 2011 21:51:11 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: bluhring		</title>
+		<link>/2008/11/28/makeitlink-detecting-urls-in-text-and-making-them-links/#comment-2546</link>
+
+		<dc:creator><![CDATA[bluhring]]></dc:creator>
+		<pubDate>Thu, 25 Aug 2011 21:51:11 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=467#comment-2546</guid>
+
+					<description><![CDATA[Thanks for sharing this Joseph! Great stuff!
+
+For anyone else who is noticing a problem when copying the code displayed on this page, you may have noticed that some of the HTML entities have been encoded. So a plain copy/paste from above doesn&#039;t work. You have to unencode them. In this script it&#039;s not all that easy to find them all.
+
+I did find another article that has the same snippet available without that problem:
+http://stackoverflow.com/questions/1159006/find-urls-replies-and-hashtags-from-tweets]]></description>
+			<content:encoded><![CDATA[<p>Thanks for sharing this Joseph! Great stuff!</p>
+<p>For anyone else who is noticing a problem when copying the code displayed on this page, you may have noticed that some of the HTML entities have been encoded. So a plain copy/paste from above doesn&#8217;t work. You have to unencode them. In this script it&#8217;s not all that easy to find them all.</p>
+<p>I did find another article that has the same snippet available without that problem:<br />
+<a href="http://stackoverflow.com/questions/1159006/find-urls-replies-and-hashtags-from-tweets" rel="nofollow ugc">http://stackoverflow.com/questions/1159006/find-urls-replies-and-hashtags-from-tweets</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/11/28/makeitlink-detecting-urls-in-text-and-making-them-links/#comment-2545</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 09 Feb 2009 22:06:18 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=467#comment-2545</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2008/11/28/makeitlink-detecting-urls-in-text-and-making-them-links/#comment-2544&quot;&gt;Ryan&lt;/a&gt;.
+
+We welcome patches :-)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2008/11/28/makeitlink-detecting-urls-in-text-and-making-them-links/#comment-2544">Ryan</a>.</p>
+<p>We welcome patches 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ryan		</title>
+		<link>/2008/11/28/makeitlink-detecting-urls-in-text-and-making-them-links/#comment-2544</link>
+
+		<dc:creator><![CDATA[Ryan]]></dc:creator>
+		<pubDate>Mon, 09 Feb 2009 20:49:34 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=467#comment-2544</guid>
+
+					<description><![CDATA[Hi,
+
+I tested again and you are partially right. This case:
+
+&quot;My site (http://josephscott.org)&quot;/
+
+still did not work but this did:
+
+&quot;My site (http://josephscott.org)/ period.&quot;
+
+So I added a trailing space character to the string on line 41 and that seemed to fix the problem.
+
+I am having trouble deciphering that regex. Can we not find a solution where line 41 looks like:
+
+&quot;{$text}&quot;
+
+instead of:
+
+&quot; {$text} &quot;
+
+thx]]></description>
+			<content:encoded><![CDATA[<p>Hi,</p>
+<p>I tested again and you are partially right. This case:</p>
+<p>&#8220;My site (<a href="http://josephscott.org/" rel="nofollow ugc">http://josephscott.org/</a>)&#8221;</p>
+<p>still did not work but this did:</p>
+<p>&#8220;My site (<a href="http://josephscott.org/" rel="nofollow ugc">http://josephscott.org/</a>) period.&#8221;</p>
+<p>So I added a trailing space character to the string on line 41 and that seemed to fix the problem.</p>
+<p>I am having trouble deciphering that regex. Can we not find a solution where line 41 looks like:</p>
+<p>&#8220;{$text}&#8221;</p>
+<p>instead of:</p>
+<p>&#8221; {$text} &#8221;</p>
+<p>thx</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/11/28/makeitlink-detecting-urls-in-text-and-making-them-links/#comment-2543</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 09 Feb 2009 18:35:42 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=467#comment-2543</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2008/11/28/makeitlink-detecting-urls-in-text-and-making-them-links/#comment-2542&quot;&gt;Ryan&lt;/a&gt;.
+
+Multiple people have indicated that this code is working.  Can you confirm that your copied code is the same as what I posted?]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2008/11/28/makeitlink-detecting-urls-in-text-and-making-them-links/#comment-2542">Ryan</a>.</p>
+<p>Multiple people have indicated that this code is working.  Can you confirm that your copied code is the same as what I posted?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ryan		</title>
+		<link>/2008/11/28/makeitlink-detecting-urls-in-text-and-making-them-links/#comment-2542</link>
+
+		<dc:creator><![CDATA[Ryan]]></dc:creator>
+		<pubDate>Sat, 07 Feb 2009 21:50:24 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=467#comment-2542</guid>
+
+					<description><![CDATA[Hi again,
+
+I have reconstructed the wordpress make_clickable code to try and get this to work and it still does not work(at least on a PHP4 engine).
+
+Please see MakeItLink2.php and MakeItLink3.php which can be found in this zip:
+
+http://pinchpile.com/makelink.zip
+
+MakeItLink2.php is a class for making links without taking parens into consideration. This works as expected.
+
+MakeItLink3.php is a class for taking parens into account as coded in the leaner version diff for ticket 8300. This code still does not work for(on PHP4 at least) this test case:
+
+My site (http://josephscott.org)/
+
+Can you test it on PHP 4/5 and get back to me? Thanks.]]></description>
+			<content:encoded><![CDATA[<p>Hi again,</p>
+<p>I have reconstructed the wordpress make_clickable code to try and get this to work and it still does not work(at least on a PHP4 engine).</p>
+<p>Please see MakeItLink2.php and MakeItLink3.php which can be found in this zip:</p>
+<p><a href="http://pinchpile.com/makelink.zip" rel="nofollow ugc">http://pinchpile.com/makelink.zip</a></p>
+<p>MakeItLink2.php is a class for making links without taking parens into consideration. This works as expected.</p>
+<p>MakeItLink3.php is a class for taking parens into account as coded in the leaner version diff for ticket 8300. This code still does not work for(on PHP4 at least) this test case:</p>
+<p>My site (<a href="http://josephscott.org/" rel="nofollow ugc">http://josephscott.org/</a>)</p>
+<p>Can you test it on PHP 4/5 and get back to me? Thanks.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ryan		</title>
+		<link>/2008/11/28/makeitlink-detecting-urls-in-text-and-making-them-links/#comment-2541</link>
+
+		<dc:creator><![CDATA[Ryan]]></dc:creator>
+		<pubDate>Sat, 07 Feb 2009 20:39:25 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=467#comment-2541</guid>
+
+					<description><![CDATA[Hi,
+
+I copied the code to my clipboard and pasted it to a PHP file. Then I removed the protected/public keywords because I have PHP4. I started testing it and it does not work for a link in parens that has no parens. The ending closing paren is included as part of the link. This is the example I was testing(hopefully it will render properly):
+
+My site (http://josephscott.org)/
+
+If it doesn&#039;t render properly it is this case:
+
+(link)
+
+Can you test this with a PHP4 version of MakeItLink? And if it works for you can you post a link to your actual class file?]]></description>
+			<content:encoded><![CDATA[<p>Hi,</p>
+<p>I copied the code to my clipboard and pasted it to a PHP file. Then I removed the protected/public keywords because I have PHP4. I started testing it and it does not work for a link in parens that has no parens. The ending closing paren is included as part of the link. This is the example I was testing(hopefully it will render properly):</p>
+<p>My site (<a href="http://josephscott.org/" rel="nofollow ugc">http://josephscott.org/</a>)</p>
+<p>If it doesn&#8217;t render properly it is this case:</p>
+<p>(link)</p>
+<p>Can you test this with a PHP4 version of MakeItLink? And if it works for you can you post a link to your actual class file?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Eric Meyer		</title>
+		<link>/2008/11/28/makeitlink-detecting-urls-in-text-and-making-them-links/#comment-2540</link>
+
+		<dc:creator><![CDATA[Eric Meyer]]></dc:creator>
+		<pubDate>Mon, 08 Dec 2008 03:15:37 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=467#comment-2540</guid>
+
+					<description><![CDATA[Perfecto-- works great!  Thanks much.  I may integrate this into my &lt;a href=&quot;http://meyerweb.com/eric/tools/wordpress/mw_latest_tweet.html&quot; rel=&quot;nofollow&quot;&gt;Latest Tweet plugin&lt;/a&gt;, depending on how much effort it will take to do so and still support the URL-shortening feature.]]></description>
+			<content:encoded><![CDATA[<p>Perfecto&#8211; works great!  Thanks much.  I may integrate this into my <a href="http://meyerweb.com/eric/tools/wordpress/mw_latest_tweet.html" rel="nofollow">Latest Tweet plugin</a>, depending on how much effort it will take to do so and still support the URL-shortening feature.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/11/28/makeitlink-detecting-urls-in-text-and-making-them-links/#comment-2539</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Sun, 07 Dec 2008 06:14:54 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=467#comment-2539</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2008/11/28/makeitlink-detecting-urls-in-text-and-making-them-links/#comment-2536&quot;&gt;Eric Meyer&lt;/a&gt;.
+
+Sorry, this appears to completely my fault.  Not sure when/where, but I managed to completely botch that regex line.  I&#039;ve updated the code in the post with the correct regex line.  I tried the corrected version (minus the protected/public keywords) with PHP4 and confirmed that it works now.
+
+My apologies for the confusion.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2008/11/28/makeitlink-detecting-urls-in-text-and-making-them-links/#comment-2536">Eric Meyer</a>.</p>
+<p>Sorry, this appears to completely my fault.  Not sure when/where, but I managed to completely botch that regex line.  I&#8217;ve updated the code in the post with the correct regex line.  I tried the corrected version (minus the protected/public keywords) with PHP4 and confirmed that it works now.</p>
+<p>My apologies for the confusion.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/11/28/makeitlink-detecting-urls-in-text-and-making-them-links/#comment-2538</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Sat, 06 Dec 2008 23:08:37 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=467#comment-2538</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2008/11/28/makeitlink-detecting-urls-in-text-and-making-them-links/#comment-2536&quot;&gt;Eric Meyer&lt;/a&gt;.
+
+I take that back, it looks like something did change in PHP5 for preg_replace_callback that causes it to break in PHP4.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2008/11/28/makeitlink-detecting-urls-in-text-and-making-them-links/#comment-2536">Eric Meyer</a>.</p>
+<p>I take that back, it looks like something did change in PHP5 for preg_replace_callback that causes it to break in PHP4.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/11/28/makeitlink-detecting-urls-in-text-and-making-them-links/#comment-2537</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Sat, 06 Dec 2008 21:25:03 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=467#comment-2537</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2008/11/28/makeitlink-detecting-urls-in-text-and-making-them-links/#comment-2536&quot;&gt;Eric Meyer&lt;/a&gt;.
+
+It does have PHP5&#039;isms in it (such as the protected and public keywords), but there really isn&#039;t anything in the code that requires PHP5.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2008/11/28/makeitlink-detecting-urls-in-text-and-making-them-links/#comment-2536">Eric Meyer</a>.</p>
+<p>It does have PHP5&#8217;isms in it (such as the protected and public keywords), but there really isn&#8217;t anything in the code that requires PHP5.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

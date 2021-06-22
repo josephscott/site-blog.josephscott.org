@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>googleappengine &#8211; Joseph Scott</title>
+	<atom:link href="/tag/googleappengine/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 08 Apr 2008 22:59:40 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Google App Engine</title>
+		<link>/2008/04/08/google-app-engine/</link>
+					<comments>/2008/04/08/google-app-engine/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 08 Apr 2008 22:59:40 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[amazon]]></category>
+		<category><![CDATA[ec2]]></category>
+		<category><![CDATA[gae]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[googleappengine]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[s3]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1053</guid>
+
+					<description><![CDATA[Today&#8217;s big news was the announcement of Google App Engine. Plenty of people have been covering the details, I just wanted to leave a few thoughts: This looks like an amazing service. Being able to make use of Google infrastructure for your web app is a wonderful idea. Currently limited to Python, so all the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Today&#8217;s big news was the <a href="http://googleappengine.blogspot.com/2008/04/introducing-google-app-engine-our-new.html">announcement of Google App Engine</a>.  Plenty of people have been covering the details, I just wanted to leave a few thoughts:</p>
+<p>This looks like an amazing service.  Being able to make use of Google infrastructure for your web app is a wonderful idea.  Currently limited to Python, so all the Python fans are going nuts.</p>
+<p>What Google App Engine (GAE) isn&#8217;t is a direct competitor to Amazon&#8217;s web services (EC2, S3, etc).  What Amazon provides are virtualized services, what GAE provides is a specific platform.  While that platform is pretty amazing, it is also complete and total vendor lock in.  If you needed to move your application off of GAE, how would you do it?  This might give pause to those interested in buying your startup.</p>
+<p>There&#8217;s an SDK for starting your app before going live, but no way to migrate data from your test system to the live server.  I imagine as people begin to use this new platform they&#8217;ll find other issues as well.  That isn&#8217;t to say that GAE isn&#8217;t worth while, just that it isn&#8217;t a miracle cure.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/04/08/google-app-engine/feed/</wfw:commentRss>
+			<slash:comments>7</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

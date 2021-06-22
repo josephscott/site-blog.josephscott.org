@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Browsers &#8211; Joseph Scott</title>
+	<atom:link href="/category/web/browsers/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 26 May 2005 03:27:13 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>IE Specific CSS</title>
+		<link>/2005/05/25/ie-specific-css/</link>
+					<comments>/2005/05/25/ie-specific-css/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 26 May 2005 03:27:13 +0000</pubDate>
+				<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[Design]]></category>
+		<category><![CDATA[How To]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[ie]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/25/ie-specific-css/</guid>
+
+					<description><![CDATA[I was working on some site design and needed to tweak it for IE (IE dev team, hello, is this thing on? Better CSS support please) in order to make look more along the lines of what I had intended (which is the way that FireFox and Safari display it). So off to Google I [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was working on some site design and needed to tweak it for IE (IE dev team, hello, is this thing on?  Better CSS support please) in order to make look more along the lines of what I had intended (which is the way that FireFox and Safari display it).  So off to Google I went hoping to find some way to easy include CSS only for IE browsers.  Low and behold it is amazingly easy!  I first came across <a href="http://www.noscope.com/journal/2004/04/conditional_comments">this example</a> which lead me to the <a href="http://www.quirksmode.org/css/condcom.html">conditional comments site</a>.  All I can say is, wow!  It works, it&#8217;s simple, doesn&#8217;t feel like a complete crazy hack (although some might say the mere fact that this has to be done at all is a hack) and it only took me a minute or two to put it all together.</p>
+<p>It is a shame that this has to be done, but at least there is an easy way to do it.  Here&#8217;s an example of including CSS that will only be used by Internet Explorer (IE):</p>
+<p><code><br />
+&lt;!--[if IE]&gt;<br />
+&lt;link rel="stylesheet" type="text/css" media="screen"<br />
+    href="/ie-style.css" /&gt;<br />
+&lt;![endif]--&gt;<br />
+</code></p>
+<p>It seems that you could include any sort of HTML (or JavaScript?) between these conditional comments.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/05/25/ie-specific-css/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Safari Passes the ACID2 Test</title>
+		<link>/2005/04/27/safari-passes-the-acid2-test/</link>
+					<comments>/2005/04/27/safari-passes-the-acid2-test/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 28 Apr 2005 06:45:00 +0000</pubDate>
+				<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[Mac OS X]]></category>
+		<category><![CDATA[OS]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/04/27/safari-passes-the-acid2-test/</guid>
+
+					<description><![CDATA[Good news, Dave Hyatt is reporting that Safari now passes the ACID2 test. So when will be seeing an update for Safari via Software Updates that has all of these fixes? Congrats Dave and thank you for your work on this. I wonder if IE, Firefox and Opera have made any progress on this.]]></description>
+										<content:encoded><![CDATA[<p>Good news, Dave Hyatt is reporting that <a href="http://weblogs.mozillazine.org/hyatt/archives/2005_04.html#008042">Safari now passes the ACID2 test</a>.  So when will be seeing an update for Safari via Software Updates that has all of these fixes?</p>
+<p>Congrats Dave and thank you for your work on this.</p>
+<p>I wonder if IE, Firefox and Opera have made any progress on this.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/04/27/safari-passes-the-acid2-test/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Transparent Safari</title>
+		<link>/2005/04/18/transparent-safari/</link>
+					<comments>/2005/04/18/transparent-safari/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 18 Apr 2005 19:11:41 +0000</pubDate>
+				<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[Mac OS X]]></category>
+		<category><![CDATA[OS]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/04/18/transparent-sarafi/</guid>
+
+					<description><![CDATA[Chalk this one up to strange looking things, Safari now has an option for transparent windows. If you have the 10.3.9 update and the debug menu enabled you can turn on &#8220;Use Transparent Window&#8221;. I&#8217;ve tried this a few times and it only works for pages that don&#8217;t have a color or image set for [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Chalk this one up to strange looking things, Safari now has an option for <a href="http://www.tuaw.com/2005/04/18/whats-up-with-the-transparent-window-in-safari/">transparent windows</a>.  If you have the 10.3.9 update and the debug menu enabled you can turn on &#8220;Use Transparent Window&#8221;.  I&#8217;ve tried this a few times and it only works for pages that don&#8217;t have a color or image set for the body tag.  It also works in empty tabs.  From the comments it seems this has something to do with the <a href="http://www.apple.com/macosx/features/dashboard/">Dashboard</a> feature in Tiger (OS X 10.4).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/04/18/transparent-safari/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Acid2 Test For Web Browsers</title>
+		<link>/2005/04/12/acid2-test-for-web-browsers/</link>
+					<comments>/2005/04/12/acid2-test-for-web-browsers/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 12 Apr 2005 23:26:09 +0000</pubDate>
+				<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/04/12/acid2-test-for-web-browsers/</guid>
+
+					<description><![CDATA[The new Acid2 Browser Test is up over at the Web Standards Project (WaSP). I tried out the Acid2 test page in Safari, FireFox (OS X), IE, Opera (Win XP) and Firefox (Win XP), none of them looked like the reference redering, although some were definitely closer than others. The good news for Safari users [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The new <a href="http://webstandards.org/act/acid2/">Acid2 Browser Test</a> is up over at the <a href="http://webstandards.org/">Web Standards Project (WaSP)</a>.  I tried out the <a href="http://webstandards.org/act/acid2/test.html">Acid2 test page</a> in Safari, FireFox (OS X), IE, Opera (Win XP) and Firefox (Win XP), none of them looked like the <a href="http://webstandards.org/act/acid2/reference.html">reference redering</a>, although some were definitely closer than others.  The good news for Safari users is that <a href="http://weblogs.mozillazine.org/hyatt/index.html">Dave Hyatt</a> is already working on <a href="http://weblogs.mozillazine.org/hyatt/archives/2005_04.html">fixing Acid2 problems in Safari</a>.  It would be nice to hear about active progress being made by the other browser vendors as well.  Perhaps <a href="http://scoble.weblogs.com/">Scoble</a> could get the <a href="http://blogs.msdn.com/ie/">IE Team</a> to actually do something about this (crossing fingers).</p>
+<p>What would we do if we didn&#8217;t have IE to kick around?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/04/12/acid2-test-for-web-browsers/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>A Practical Use For AJAX</title>
+		<link>/2005/03/23/a-practical-use-for-ajax/</link>
+					<comments>/2005/03/23/a-practical-use-for-ajax/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 24 Mar 2005 00:29:42 +0000</pubDate>
+				<category><![CDATA[Blogging]]></category>
+		<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/03/23/a-practical-use-for-ajax/</guid>
+
+					<description><![CDATA[The new Google Maps is cool, and so are many of the other sites out there venturing into more client side work (AJAX, if you must, although calling it new is a bit of stretch). But lets face it, how many of them are really practical? One could argue that Gmail is using this for [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The new <a href="http://maps.google.com/">Google Maps</a> is cool, and so are many of the other sites out there venturing into more client side work (<a href="http://www.adaptivepath.com/publications/essays/archives/000385.php">AJAX</a>, if you must, although calling it new is a bit of stretch).  But lets face it, how many of them are really practical?  One could argue that <a href="http://www.gmail.com/">Gmail</a> is using this for some real down to earth features, but I think you&#8217;ll find that in the minority instead of the majority.  What I&#8217;d like to see this technology being used to replicate more the &#8220;desktop software&#8221; features in web applications.  The example that came to mind is writing blog entries.</p>
+<p>I&#8217;m using <a href="http://wordpress.org/">WordPress</a> to manage my blog.  It does a nice enough job for most things, although I still have my gripes.  When I first start an entry in WP I will generally save as a draft after the first few lines to make sure that if something happens I can at least go back to that point.  And I&#8217;ll often hit the &#8220;Save and Continue Editing&#8221; button while composing the rest of the message, for the same reason.  If something goes toes up while I&#8217;m writing my entry (like my network connection), then I want to keep the loss to a minimum.  Hopefully you can already see where I&#8217;m going with this.</p>
+<p>With using these client side requests (AJAX), why can&#8217;t we have an autosave feature like with commonly do with word processors?  That should reduce the risk of data loss while editing things online quite a bit (depending on how often you set the system to autosave).  If an error occurred when autosave was doing its thing, then it could pop up a little javascript alert window and let you know that there was a problem.</p>
+<p>I haven&#8217;t fully flushed out this idea yet, let alone done anything that would resemble a proof of concept, but it seems like it should be doable.  Who knows, maybe Google will build this into the compose message part of Gmail.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/03/23/a-practical-use-for-ajax/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Pimp My Safari</title>
+		<link>/2005/03/21/pimp-my-safari/</link>
+					<comments>/2005/03/21/pimp-my-safari/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 22 Mar 2005 01:07:44 +0000</pubDate>
+				<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[Mac OS X]]></category>
+		<category><![CDATA[OS]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/03/21/pimp-my-safari/</guid>
+
+					<description><![CDATA[For all you Safari loving Mac OS X users there is new site worth checking out, Pimp My Safari. Brought to you by Jon Hicks. I never new there were so many toys for Safari.]]></description>
+										<content:encoded><![CDATA[<p>For all you <a href="http://www.apple.com/safari/">Safari</a> loving <a href="http://www.apple.com/macosx/">Mac OS X</a> users there is new site worth checking out, <a href="http://pimpmysafari.com/">Pimp My Safari</a>.  Brought to you by <a href="http://www.hicksdesign.co.uk/journal/693/">Jon Hicks</a>.  I never new there were so many toys for Safari.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/03/21/pimp-my-safari/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Safari&#8217;s Debug Menu</title>
+		<link>/2005/03/16/safaris-debug-menuopen-source-blog-open-sourcery/</link>
+					<comments>/2005/03/16/safaris-debug-menuopen-source-blog-open-sourcery/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 17 Mar 2005 06:38:15 +0000</pubDate>
+				<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[Mac OS X]]></category>
+		<category><![CDATA[OS]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/03/16/safaris-debug-menuopen-source-blog-open-sourcery/</guid>
+
+					<description><![CDATA[Ever since a PowerBook with Mac OS X became my primary system, Safari has been my primary browser. Every now and then I still use FireFox on Mac OS X, but it is pretty rare. I never knew about Safari&#8217;s debug menu though, which has some useful tools. I think I&#8217;ll leave this turned on.]]></description>
+										<content:encoded><![CDATA[<p>Ever since a PowerBook with Mac OS X became my primary system, Safari has been my primary browser.  Every now and then I still use FireFox on Mac OS X, but it is pretty rare.  I never knew about <a href="http://www.sitepoint.com/blog-post-view?id=244050">Safari&#8217;s debug menu</a> though, which has some useful tools.  I think I&#8217;ll leave this turned on.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/03/16/safaris-debug-menuopen-source-blog-open-sourcery/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Making IE Accept File Downloads</title>
+		<link>/2004/10/01/making-ie-accept-file-downloads/</link>
+					<comments>/2004/10/01/making-ie-accept-file-downloads/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 01 Oct 2004 21:31:33 +0000</pubDate>
+				<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[How To]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/10/01/making-ie-accept-file-downloads/</guid>
+
+					<description><![CDATA[I&#8217;ve been adding more report features to our internal web app at work. Getting them to the point they are at now is another story, for now let me tell the tale of convincing Internet Explorer (IE) to download a comma separated value (CSV) version of these reports. Here is the situation, a secure (SSL) [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been adding more report features to our internal web app at work.  Getting them to the point they are at now is another story, for now let me tell the tale of convincing Internet Explorer (IE) to download a comma separated value (CSV) version of these reports.  Here is the situation, a secure (SSL) connection to Apache to an internal website written in PHP talking to a PostgreSQL database with IE 6 on the client end.  The initial version of the reports just displayed in an HTML table as part of the site.  It was suggested that the data should be available as CSV so that employees could easily manipulate or graph the data in Excel.  Sounded reasonable enough.  After a couple of tries it looked like I had everything working.  All of my initial tests were done using Firefox on Windows, with a little bit of testing using Safari on OS X.  I know we still have some folks at work who are still using IE (that too is another story) so I tested that one out last.  Everything worked, right up until I tried to download the CSV version of the reports.</p>
+<p>Instead of prompting me with a dialog box to determine if I wanted to open the file or save, IE simply came back and indicated that it couldn&#8217;t save the file and presented with me with one option, &#8216;OK&#8217;.  Of course &#8216;OK&#8217; isn&#8217;t really &#8216;OK&#8217;, because it terminated the download and dropped me back into the website.  Just great, I thought I was pretty much done and then IE showed its unpleasant side.  Knowing that someone else must have ran into this problem I went on a hunt for a solution.  After trying out several ideas over a couple of hours I came across the solution.  Here is what I believe to be the minimum solution to make IE correctly download a file presented to it from PHP.</p>
+<p>First, when talking to IE there is an additional session parameter that must be set for the download to work (this was the last piece of the puzzle that I found).  This has to be done before starting the session.</p>
+<blockquote>
+<pre>
+if(strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE')) {
+    session_cache_limiter("public");
+}
+session_start();
+</pre>
+</blockquote>
+<p>Once you have built your CSV string and are ready to send it to the browser you&#8217;ll need to add a couple of headers first.</p>
+<blockquote>
+<pre>
+header('Content-type: application/octet-stream');
+header('Content-Disposition: attachment; filename="report.csv"');
+print($csv);
+</pre>
+</blockquote>
+<p>Now that it all seems to be working it doesn&#8217;t look very impressive, but it was certainly disappointing to have my initial solution work in Safari, Firefox and Opera but not IE.  I hope this saves someone else the hours I spent figuring out why IE hates me.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2004/10/01/making-ie-accept-file-downloads/feed/</wfw:commentRss>
+			<slash:comments>87</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

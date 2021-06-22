@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>wireshark &#8211; Joseph Scott</title>
+	<atom:link href="/tag/wireshark/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 17 Dec 2015 16:59:15 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Inspecting HTTPS With Wireshark</title>
+		<link>/2015/12/17/inspecting-https-with-wireshark/</link>
+					<comments>/2015/12/17/inspecting-https-with-wireshark/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 17 Dec 2015 16:59:15 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[https]]></category>
+		<category><![CDATA[wireshark]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14422</guid>
+
+					<description><![CDATA[A short how to on Inspecting HTTPS With Wireshark. The key is to log browser data with SSLKEYLOGFILE, then load that file into Wireshark.]]></description>
+										<content:encoded><![CDATA[<p>A short how to on <a href="https://certsimple.com/blog/ssl-wireshark-mac-osx">Inspecting HTTPS With Wireshark</a>.  The key is to log browser data with <code>SSLKEYLOGFILE</code>, then load that file into <a href="https://www.wireshark.org/">Wireshark</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/17/inspecting-https-with-wireshark/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

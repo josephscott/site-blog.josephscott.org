@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>nic-jansma &#8211; Joseph Scott</title>
+	<atom:link href="/tag/nic-jansma/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 28 Dec 2015 18:39:40 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Measuring the Performance of Single Page Applications</title>
+		<link>/2015/12/28/measuring-the-performance-of-single-page-applications/</link>
+					<comments>/2015/12/28/measuring-the-performance-of-single-page-applications/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 28 Dec 2015 18:39:40 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[nic-jansma]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[slides]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14142</guid>
+
+					<description><![CDATA[Slides from Nic Jansma on measuring the performance of single page applications: This is an area that I&#8217;ll be spending some time on in 2016.]]></description>
+										<content:encoded><![CDATA[<p>Slides from Nic Jansma on <a href="http://www.slideshare.net/nicjansma/measuring-the-performance-of-single-page-applications">measuring the performance of single page applications</a>:</p>
+<p><iframe loading="lazy" src="//www.slideshare.net/slideshow/embed_code/key/JPWRcJHkRyy3Kd" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe></p>
+<p>This is an area that I&#8217;ll be spending some time on in 2016.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/28/measuring-the-performance-of-single-page-applications/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Compressing UserTiming</title>
+		<link>/2015/12/23/compressing-usertiming/</link>
+					<comments>/2015/12/23/compressing-usertiming/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 23 Dec 2015 16:59:35 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[compression]]></category>
+		<category><![CDATA[nic-jansma]]></category>
+		<category><![CDATA[usertiming]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14602</guid>
+
+					<description><![CDATA[Nic Jansma&#8217;s Performance Calendar post Compressing UserTiming is a great read for those interested in collectioning UserTiming data and compression in general: Basically, if you have good domain-specific knowledge of your data-structures, you can often compress better than a general-case minimizer like gzip or MessagePack. Source code is available at https://github.com/nicjansma/usertiming-compression.js.]]></description>
+										<content:encoded><![CDATA[<p>Nic Jansma&#8217;s Performance Calendar post <a href="http://calendar.perfplanet.com/2015/compressing-usertiming/">Compressing UserTiming</a> is a great read for those interested in collectioning UserTiming data and compression in general:</p>
+<blockquote><p>
+Basically, if you have good domain-specific knowledge of your data-structures, you can often compress better than a general-case minimizer like gzip or MessagePack.
+</p></blockquote>
+<p>Source code is available at <a href="https://github.com/nicjansma/usertiming-compression.js">https://github.com/nicjansma/usertiming-compression.js</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/23/compressing-usertiming/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Navigation, Resource, and User Timing</title>
+		<link>/2015/11/16/navigation-resource-and-user-timing/</link>
+					<comments>/2015/11/16/navigation-resource-and-user-timing/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 16 Nov 2015 15:35:23 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[navigation-timing]]></category>
+		<category><![CDATA[nic-jansma]]></category>
+		<category><![CDATA[resource-timing]]></category>
+		<category><![CDATA[user-timing]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13706</guid>
+
+					<description><![CDATA[Nic Jansma covers&#160;Navigation Timing, Resource Timing, and User Timing in detail.]]></description>
+										<content:encoded><![CDATA[<p>Nic Jansma covers&nbsp;<a href="http://nicj.net/navigationtiming-in-practice/">Navigation Timing</a>, <a href="http://nicj.net/resourcetiming-in-practice/">Resource Timing</a>, and <a href="http://nicj.net/usertiming-in-practice/">User Timing</a> in detail.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/16/navigation-resource-and-user-timing/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

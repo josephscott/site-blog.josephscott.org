@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>documentation &#8211; Joseph Scott</title>
+	<atom:link href="/tag/documentation/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Sat, 02 Jun 2007 18:33:11 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>WordPress XML-RPC API</title>
+		<link>/2007/06/02/wordpress-xml-rpc-api/</link>
+					<comments>/2007/06/02/wordpress-xml-rpc-api/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 02 Jun 2007 18:33:11 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[api]]></category>
+		<category><![CDATA[documentation]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xmlrpc]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/06/02/wordpress-xml-rpc-api/</guid>
+
+					<description><![CDATA[Documentation for the new WordPress specific XML-RPC API is up now on the WordPress Codex.]]></description>
+										<content:encoded><![CDATA[<p>Documentation for the new <a href="http://codex.wordpress.org/XML-RPC_wp">WordPress specific XML-RPC API</a> is up now on the <a href="http://codex.wordpress.org/Main_Page">WordPress Codex</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/06/02/wordpress-xml-rpc-api/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Remembering To Document Everything</title>
+		<link>/2005/12/02/remembering-to-document-everything/</link>
+					<comments>/2005/12/02/remembering-to-document-everything/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 02 Dec 2005 18:15:37 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[akismet]]></category>
+		<category><![CDATA[api]]></category>
+		<category><![CDATA[documentation]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=527</guid>
+
+					<description><![CDATA[Although I haven&#8217;t used it yet, I&#8217;ve been watching Akismet with interest. Their goal is to fight comment and trackback spam, free for personal use and a fee for commercial use. When Matt first announced this service I downloaded the WordPress Plugin just to look through the code to see what the API looked like. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Although I haven&#8217;t used it yet, I&#8217;ve been watching <a href="http://akismet.com/">Akismet</a> with interest.  Their goal is to fight comment and trackback spam, free for personal use and a fee for <a href="http://akismet.com/commercial/">commercial use</a>.  When <a href="http://photomatt.net/">Matt</a> first announced this service I downloaded the <a href="http://akismet.com/download/">WordPress Plugin</a> just to look through the code to see what the API looked like.</p>
+<p>My interest was rekindled with the <a href="http://akismet.com/blog/2005/12/python-and-api/">announcement</a> of <a href="http://akismet.com/development/api/">API docs</a> for Akismet.  The API is pretty simple (good) and called via <a href="http://en.wikipedia.org/wiki/Representational_State_Transfer">REST</a>.  Then I wandered over to their <a href="http://lists.automattic.com/mailman/listinfo/spam-stopper">Spam Stopper</a> email list to see what sort items were being discussed.  One of the <a href="http://comox.textdrive.com/pipermail/spam-stopper/2005-December/000256.html">first emails I came across</a> had a reasonable question:</p>
+<blockquote><p>
+The API documentation says of the comment-check function :</p>
+<p>    &#8220;This call returns either &#8220;true&#8221; or &#8220;false&#8221; as the body content.&#8221;</p>
+<p>I have been assuming that &#8220;false&#8221; means the comment *is* spam &#8211; is this correct ?
+</p></blockquote>
+<p>I thought this was kind of odd, so I went back and checked the docs again.  Sure enough that was all the docs said about return values for comment-check.  Matt provided a <a href="http://comox.textdrive.com/pipermail/spam-stopper/2005-December/000257.html">quick reply</a> though:</p>
+<blockquote><p>
+That would be the problem. <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>True = this is spam<br />
+False = this is not spam
+</p></blockquote>
+<p>So the lesson learned here is to remember to document everything when it comes to your API.  This reminds me a something I read somewhere: don&#8217;t write so that you can be understood, write so that you can&#8217;t be missunderstood.</p>
+<p>None of this is meant as a strike against Matt, anything that helps reduce the amount spam going around is a good thing.  The docs were also listed as a first draft, so I&#8217;m sure they will get additional refinement as time goes on.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/12/02/remembering-to-document-everything/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

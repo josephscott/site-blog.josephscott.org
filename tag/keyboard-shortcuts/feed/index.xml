@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>keyboard-shortcuts &#8211; Joseph Scott</title>
+	<atom:link href="/tag/keyboard-shortcuts/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 13 Jan 2010 17:00:19 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Mac OS X Screenshot Keyboard Shortcuts</title>
+		<link>/2010/01/13/mac-os-x-screenshot-keyboard-shortcuts/</link>
+					<comments>/2010/01/13/mac-os-x-screenshot-keyboard-shortcuts/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 13 Jan 2010 17:00:19 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[keyboard-shortcuts]]></category>
+		<category><![CDATA[macosx]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1730</guid>
+
+					<description><![CDATA[Mac OS X has numerous keyboard shortcuts, a handful of which will do screenshots for you: Shift-Command-3 : Screenshot of the whole screen, automatically saved as &#8216;Picture 1.png&#8217; to your desktop. Shift-Control-Command-3 : Screenshot of the whole screen copied to the clipboard. Shift-Command-4 : Selection of the screen, automatically saved as &#8216;Picture 1.png&#8217; to your [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Mac OS X has numerous keyboard shortcuts, a handful of which will do screenshots for you:</p>
+<ul>
+<li><b>Shift-Command-3</b> : Screenshot of the whole screen, automatically saved as &#8216;Picture 1.png&#8217; to your desktop.</li>
+<li><b>Shift-Control-Command-3</b> : Screenshot of the whole screen copied to the clipboard.</li>
+<li><b>Shift-Command-4</b> : Selection of the screen, automatically saved as &#8216;Picture 1.png&#8217; to your desktop.</li>
+<li><b>Shift-Control-Command-4</b> : Selection of the screen copied to the clipboard.</li>
+</ul>
+<p>I&#8217;ve found the &#8216;Shift-Command-4&#8217; shortcut particularly handy (when I can remember it).  It switches the mouse cursor into a cross-hair target and tells you the size of the image that you are selecting.  Then *poof* the image file gets saved to your desktop.</p>
+<p><b>Update:</b> Mike Grace <a href="http://twitter.com/MikeGrace/status/7716798187">suggested</a> Shift-Command-4 then press the space bar.  That captures a screenshot of an entire window and saves it to your desktop as &#8216;Picture 1.png&#8217;.  Nice!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/01/13/mac-os-x-screenshot-keyboard-shortcuts/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>esc_html &#8211; Joseph Scott</title>
+	<atom:link href="/tag/esc_html/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 19 Jan 2010 14:12:18 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>PHP Helpers: esc_html</title>
+		<link>/2010/01/19/php-helpers-esc_html/</link>
+					<comments>/2010/01/19/php-helpers-esc_html/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2010 14:12:18 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[esc_html]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[php-helpers]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1796</guid>
+
+					<description><![CDATA[Next up in the PHP Helpers series is esc_html: [sourcecode lang=&#8221;php&#8221;] if ( !function_exists( &#8216;esc_html&#8217; ) ) { function esc_html( $html, $char_set = &#8216;UTF-8&#8217; ) { if ( empty( $html ) ) { return &#8221;; } $html = (string) $html; $html = htmlspecialchars( $html, ENT_QUOTES, $char_set ); return $html; } } [/sourcecode] As you might [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Next up in the PHP Helpers series is <code>esc_html</code>:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+if ( !function_exists( &#8216;esc_html&#8217; ) ) {<br />
+    function esc_html( $html, $char_set = &#8216;UTF-8&#8217; ) {<br />
+        if ( empty( $html ) ) {<br />
+            return &#8221;;<br />
+        }</p>
+<p>        $html = (string) $html;<br />
+        $html = htmlspecialchars( $html, ENT_QUOTES, $char_set );</p>
+<p>        return $html;<br />
+    }<br />
+}<br />
+[/sourcecode]</p>
+<p>As you might have guessed this function escapes strings for HTML output.  It&#8217;s not much more than a wrapper around <a href="http://us.php.net/htmlspecialchars">htmlspecialchars</a>, but provides central place to tweak your desired default behavior.</p>
+<p>There&#8217;s room to experiment with additional optimizations and strict checking in this as well.  I added the basics (look for empty strings, type cast to a string), if you&#8217;ve got a favorite additional check leave a comment below.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/01/19/php-helpers-esc_html/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

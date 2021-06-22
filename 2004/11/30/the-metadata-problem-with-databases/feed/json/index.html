@@ -1,0 +1,124 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2004/11/30/the-metadata-problem-with-databases/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2004/11/30/the-metadata-problem-with-databases/",
+    "feed_url": "https://blog.josephscott.org/2004/11/30/the-metadata-problem-with-databases/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: The Metadata Problem With Databases",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2004/11/30/the-metadata-problem-with-databases/#comment-709",
+            "url": "https://blog.josephscott.org/2004/11/30/the-metadata-problem-with-databases/#comment-709",
+            "content_html": "David,\n\nIn a word, no.  Even though you are right about returning a null instead of a regex if the metadata table hadn't been populated yet allowing for inserts to succeed, there is another dependancy layer, the lookup functions.  The functions used to lookup the regex would need to be created first before they could be used in a constraint definition.  Creating these functions will fail if the metadata table doesn't exist.\n\nSo we would still be stuck unless PostgreSQL was given enough knowledge to properly order the metadata table and corresponding functions when doing a dump.",
+            "content_text": "David,\n\nIn a word, no.  Even though you are right about returning a null instead of a regex if the metadata table hadn't been populated yet allowing for inserts to succeed, there is another dependancy layer, the lookup functions.  The functions used to lookup the regex would need to be created first before they could be used in a constraint definition.  Creating these functions will fail if the metadata table doesn't exist.\n\nSo we would still be stuck unless PostgreSQL was given enough knowledge to properly order the metadata table and corresponding functions when doing a dump.",
+            "date_published": "2004-12-15T22:37:36-07:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://joseph.randomnetworks.com/",
+                    "avatar": "https://secure.gravatar.com/avatar/407fb36bbf6a01e151680be9f408b5af?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://joseph.randomnetworks.com/",
+                "avatar": "https://secure.gravatar.com/avatar/407fb36bbf6a01e151680be9f408b5af?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/11/30/the-metadata-problem-with-databases/#comment-708",
+            "url": "https://blog.josephscott.org/2004/11/30/the-metadata-problem-with-databases/#comment-708",
+            "content_html": "you comment about the problems with a backup/restore, but wouldn't a restore in the wrong order just result in (for this example) the metadata_regex just returning a null and therefor allowing the insert?",
+            "content_text": "you comment about the problems with a backup/restore, but wouldn't a restore in the wrong order just result in (for this example) the metadata_regex just returning a null and therefor allowing the insert?",
+            "date_published": "2004-12-15T19:42:46-07:00",
+            "authors": [
+                {
+                    "name": "David Lang",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/540f7979c05b3e9747418eab4600c3c0?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "David Lang",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/540f7979c05b3e9747418eab4600c3c0?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/11/30/the-metadata-problem-with-databases/#comment-707",
+            "url": "https://blog.josephscott.org/2004/11/30/the-metadata-problem-with-databases/#comment-707",
+            "content_html": "Joseph,\n\nYes, I realize that the use of DOMAINS doesn't give you the full flexibility which you are looking for.  FWIW, the lack of COMMENT ON for DOMAINS is fixed for 8.0.\n\nImplementing a metadata-extended-attributes table like you suggest would certainly be an interesting idea.   However, I contend that if you want it to operate issue-free and perform well, some hacking of the PostgreSQL source code will have to be involved.    When/if you do it, start a project on pgFoundry (www.pgfoundry.org); I'm sure others will be interested.\n\n--Josh Berkus\n  PostgreSQL Project",
+            "content_text": "Joseph,\n\nYes, I realize that the use of DOMAINS doesn't give you the full flexibility which you are looking for.  FWIW, the lack of COMMENT ON for DOMAINS is fixed for 8.0.\n\nImplementing a metadata-extended-attributes table like you suggest would certainly be an interesting idea.   However, I contend that if you want it to operate issue-free and perform well, some hacking of the PostgreSQL source code will have to be involved.    When/if you do it, start a project on pgFoundry (www.pgfoundry.org); I'm sure others will be interested.\n\n--Josh Berkus\n  PostgreSQL Project",
+            "date_published": "2004-12-11T14:27:40-07:00",
+            "authors": [
+                {
+                    "name": "Josh Berkus",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/3ba1ad0bccad137bd59d7dbf76fc7854?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Josh Berkus",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/3ba1ad0bccad137bd59d7dbf76fc7854?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/11/30/the-metadata-problem-with-databases/#comment-706",
+            "url": "https://blog.josephscott.org/2004/11/30/the-metadata-problem-with-databases/#comment-706",
+            "content_html": "Josh:\n\nExcellent point about backup and restores, I didn't really address that but it is certainly something to keep in mind.  In my example, if you kept your metadata in another table that table would have to be the very first table loaded.  Otherwise tables with real data in them would fail as soon as they tried to lookup constraint details.  Perhaps one possible solution would be have PostgreSQL support a special metadata table that was marked as such so that the system could be given enough info backup and restore properly (ala foreign keys and the like).\n\nIf you'll read through the article, I mention the use of DOMAINs as a possible solution to the problem.  DOMAINs only solve part of the problem by allowing for a DOMAIN to be used in across multiple tables/columns but doesn't provide the flexibility that I was looking for.  Looks like you can't add a comment to a DOMAIN.  What happens when you want to add some additional metadata to a column?  The way that DOMAINs work only add a small amount of new flexibility without going all the way.",
+            "content_text": "Josh:\n\nExcellent point about backup and restores, I didn't really address that but it is certainly something to keep in mind.  In my example, if you kept your metadata in another table that table would have to be the very first table loaded.  Otherwise tables with real data in them would fail as soon as they tried to lookup constraint details.  Perhaps one possible solution would be have PostgreSQL support a special metadata table that was marked as such so that the system could be given enough info backup and restore properly (ala foreign keys and the like).\n\nIf you'll read through the article, I mention the use of DOMAINs as a possible solution to the problem.  DOMAINs only solve part of the problem by allowing for a DOMAIN to be used in across multiple tables/columns but doesn't provide the flexibility that I was looking for.  Looks like you can't add a comment to a DOMAIN.  What happens when you want to add some additional metadata to a column?  The way that DOMAINs work only add a small amount of new flexibility without going all the way.",
+            "date_published": "2004-12-10T22:54:27-07:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://joseph.randomnetworks.com/",
+                    "avatar": "https://secure.gravatar.com/avatar/407fb36bbf6a01e151680be9f408b5af?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://joseph.randomnetworks.com/",
+                "avatar": "https://secure.gravatar.com/avatar/407fb36bbf6a01e151680be9f408b5af?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/11/30/the-metadata-problem-with-databases/#comment-705",
+            "url": "https://blog.josephscott.org/2004/11/30/the-metadata-problem-with-databases/#comment-705",
+            "content_html": "Joseph,\n\nI'd watch out, even with the new solution.  Table lookup functions in constraints may load, but that doesn't mean that they won't create problems down the line.   You've already discovered one limitation, changes to existing data.   A second limitation will become apparent when you try to back-up and restore the database; the constraint as you've written it may not register dependencies correctly and thus may not restore.\n\nOverall, what I'm saying is that, in the current PostgreSQL design spec, constraints are not supposed to point to external table references, and you can cause yourself headaches through doing this.  Of course, you can always jump on PGSQL-HACKERS with a patch to better support constraints with external references, but you'll have to argue it out.  A lot of people say this is the job of database Assertions, a hypothetical feature.\n\nIn any case, in your search for metadata you missed a very useful feature ... DOMAINs.   These are a SQL92 feature that exists somewhere between a full datatype and a table column.   As in the example above, you'd do:\n\nCREATE DOMAIN USERNAME AS TEXT\n\tCHECK VALUE ~* '^[a-zA-Z ]{3,16}$';\n\nThen you can create the table as:\n\nCREATE TABLE users (\n  user_id SERIAL NOT NULL,\n  username USERNAME NOT NULL,\n  lastname VARCHAR(50) NOT NULL,\n  firstname VARCHAR(50) NULL,\n  email_addr VARCHAR(250) NULL\n);\n\nFor fields requiring complex constraints, I find this approach a lot more self-documenting than the use of table constraints.   Also, it means that the USERNAME domain can be re-used in other tables.\n\nYou'll note that I've put the 3-to-16-character limit in the regex instead of using VARCHAR(16).  I did this for several reasons:\n\n1) The database needs to check the expression against the regex, and we might as well do ONE check, and not TWO.\n\n2) It allowed me to do a *minimum* as well as maximum length.\n\n3) I generally feel that VARCHAR is a legacy of limited-storage systems of the late 80's and try to avoid it in modern applications, SQL-standard or not.\n\nAlso, I think you can COMMENT ON the DOMAIN, to give yourself some extra metadata.\n\n--Josh Berkus\n  PostgreSQL Project\n  josh, who is at postgresql.org",
+            "content_text": "Joseph,\n\nI'd watch out, even with the new solution.  Table lookup functions in constraints may load, but that doesn't mean that they won't create problems down the line.   You've already discovered one limitation, changes to existing data.   A second limitation will become apparent when you try to back-up and restore the database; the constraint as you've written it may not register dependencies correctly and thus may not restore.\n\nOverall, what I'm saying is that, in the current PostgreSQL design spec, constraints are not supposed to point to external table references, and you can cause yourself headaches through doing this.  Of course, you can always jump on PGSQL-HACKERS with a patch to better support constraints with external references, but you'll have to argue it out.  A lot of people say this is the job of database Assertions, a hypothetical feature.\n\nIn any case, in your search for metadata you missed a very useful feature ... DOMAINs.   These are a SQL92 feature that exists somewhere between a full datatype and a table column.   As in the example above, you'd do:\n\nCREATE DOMAIN USERNAME AS TEXT\n\tCHECK VALUE ~* '^[a-zA-Z ]{3,16}$';\n\nThen you can create the table as:\n\nCREATE TABLE users (\n  user_id SERIAL NOT NULL,\n  username USERNAME NOT NULL,\n  lastname VARCHAR(50) NOT NULL,\n  firstname VARCHAR(50) NULL,\n  email_addr VARCHAR(250) NULL\n);\n\nFor fields requiring complex constraints, I find this approach a lot more self-documenting than the use of table constraints.   Also, it means that the USERNAME domain can be re-used in other tables.\n\nYou'll note that I've put the 3-to-16-character limit in the regex instead of using VARCHAR(16).  I did this for several reasons:\n\n1) The database needs to check the expression against the regex, and we might as well do ONE check, and not TWO.\n\n2) It allowed me to do a *minimum* as well as maximum length.\n\n3) I generally feel that VARCHAR is a legacy of limited-storage systems of the late 80's and try to avoid it in modern applications, SQL-standard or not.\n\nAlso, I think you can COMMENT ON the DOMAIN, to give yourself some extra metadata.\n\n--Josh Berkus\n  PostgreSQL Project\n  josh, who is at postgresql.org",
+            "date_published": "2004-12-10T22:27:14-07:00",
+            "authors": [
+                {
+                    "name": "Josh Berkus",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/3ba1ad0bccad137bd59d7dbf76fc7854?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Josh Berkus",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/3ba1ad0bccad137bd59d7dbf76fc7854?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/11/30/the-metadata-problem-with-databases/#comment-704",
+            "url": "https://blog.josephscott.org/2004/11/30/the-metadata-problem-with-databases/#comment-704",
+            "content_html": "If you are looking for a prior example of this type of system, check out Progress. I has this metadata in the field definitions to support the 4GL. It has column names, output formats, help messages, validation expressions, and validation error messages. You're right that changing the format of a common column can become a problem as every table with that column needs to be fixed.\n\nIt would be nice if somehow a common set of field metadata could be added directly to the field definitions in other databases.",
+            "content_text": "If you are looking for a prior example of this type of system, check out Progress. I has this metadata in the field definitions to support the 4GL. It has column names, output formats, help messages, validation expressions, and validation error messages. You're right that changing the format of a common column can become a problem as every table with that column needs to be fixed.\n\nIt would be nice if somehow a common set of field metadata could be added directly to the field definitions in other databases.",
+            "date_published": "2004-12-10T21:15:36-07:00",
+            "authors": [
+                {
+                    "name": "Stephen Surbey",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/be4ff037d2656f0eb1e86b0dd9aca7bc?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Stephen Surbey",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/be4ff037d2656f0eb1e86b0dd9aca7bc?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>assetic &#8211; Joseph Scott</title>
+	<atom:link href="/tag/assetic/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 02 Nov 2015 14:57:40 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Asset Management for PHP</title>
+		<link>/2015/11/02/asset-management-for-php/</link>
+					<comments>/2015/11/02/asset-management-for-php/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 02 Nov 2015 14:57:40 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[assetic]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13593</guid>
+
+					<description><![CDATA[Looking for one more asset management tool to use? Check out assetic: [sourcecode lang=&#8221;php&#8221;] use AsseticAssetAssetCollection; use AsseticAssetFileAsset; use AsseticAssetGlobAsset; $js = new AssetCollection( [ new GlobAsset(&#8216;/path/to/js/*&#8217;), new FileAsset(&#8216;/path/to/another.js&#8217;), ] ); echo $js-&#62;dump(); [/sourcecode]]]></description>
+										<content:encoded><![CDATA[<p>Looking for one more asset management tool to use?  Check out <a href="https://github.com/kriswallsmith/assetic">assetic</a>:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+use AsseticAssetAssetCollection;<br />
+use AsseticAssetFileAsset;<br />
+use AsseticAssetGlobAsset;</p>
+<p>$js = new AssetCollection( [<br />
+    new GlobAsset(&#8216;/path/to/js/*&#8217;),<br />
+    new FileAsset(&#8216;/path/to/another.js&#8217;),<br />
+] );</p>
+<p>echo $js-&gt;dump();<br />
+[/sourcecode]</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/02/asset-management-for-php/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

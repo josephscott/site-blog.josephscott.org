@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>brotli &#8211; Joseph Scott</title>
+	<atom:link href="/tag/brotli/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 26 Jan 2016 16:59:11 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Brotli Coming To Chrome</title>
+		<link>/2016/01/26/brotli-coming-to-chrome/</link>
+					<comments>/2016/01/26/brotli-coming-to-chrome/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 26 Jan 2016 16:59:11 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[brotli]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[compression]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14980</guid>
+
+					<description><![CDATA[I had mentioned that Brotli compression was coming to Firefox, but it was only listed as &#8216;in development&#8217; for Chrome. That changed this month: Intent to Ship: Brotli (Accept-encoding: br on HTTPS connection). A big issue to keep in mind: it will be limited to HTTPS connections. Perhaps this will be enough to motivate Microsoft [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I had mentioned that <a href="https://josephscott.org/archives/2015/12/brotli-in-browsers/">Brotli compression was coming to Firefox</a>, but it was only listed as &#8216;in development&#8217; for Chrome.  That changed this month: <a href="https://groups.google.com/a/chromium.org/forum/#!searchin/blink-dev/brotli/blink-dev/JufzX024oy0/WEOGbN43AwAJ">Intent to Ship: Brotli (Accept-encoding: br on HTTPS connection)</a>.</p>
+<p>A big issue to keep in mind: it will be limited to HTTPS connections.</p>
+<p>Perhaps this will be enough to motivate Microsoft and Apple to include support as well.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/01/26/brotli-coming-to-chrome/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Brotli in Browsers</title>
+		<link>/2015/12/15/brotli-in-browsers/</link>
+					<comments>/2015/12/15/brotli-in-browsers/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 15 Dec 2015 16:38:42 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[brotli]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[compression]]></category>
+		<category><![CDATA[firefox]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14357</guid>
+
+					<description><![CDATA[Last month I mentioned Brotli for Nginx. On the client side, Firefox is aiming to add support for Brotli in version 44: If all goes well in testing, Firefox 44 (ETA January 2016) will negotiate brotli as a content-encoding for https resources. The negotiation will be done in the usual way via the Accept-Encoding request [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Last month I mentioned <a href="https://josephscott.org/archives/2015/11/brotli-for-nginx/">Brotli for Nginx</a>.  On the client side, <a href="http://bitsup.blogspot.com/2015/09/brotli-content-encoding-for-firefox-44.html">Firefox is aiming to add support for Brotli in version 44</a>:</p>
+<blockquote><p>
+If all goes well in testing, Firefox 44 (ETA January 2016) will negotiate brotli as a content-encoding for https resources. The negotiation will be done in the usual way via the Accept-Encoding request header and the token &#8220;br&#8221;. Servers that wish to encode a response with brotli can do so by adding &#8220;br&#8221; to the Content-Encoding response header. Firefox won&#8217;t decode brotli outside of https &#8211; so make sure to use the HTTP content negotiation framework instead of doing user agent sniffing.
+</p></blockquote>
+<p>Chrome has <a href="https://www.chromestatus.com/features/5420797577396224">Brotli support listed as &#8220;in development&#8221;</a>.  I didn&#8217;t see any indication of a current timeline for it showing up in a release version.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/15/brotli-in-browsers/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Brotli for Nginx</title>
+		<link>/2015/11/20/brotli-for-nginx/</link>
+					<comments>/2015/11/20/brotli-for-nginx/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 20 Nov 2015 16:15:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[brotli]]></category>
+		<category><![CDATA[cloudflare]]></category>
+		<category><![CDATA[compression]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[nginx]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14048</guid>
+
+					<description><![CDATA[Two months ago Google announced Brotli, a new compression format: Brotli is a whole new data format. This new format allows us to get 20–26% higher compression ratios over Zopfli. In our study ‘Comparison of Brotli, Deflate, Zopfli, LZMA, LZHAM and Bzip2 Compression Algorithms’ we show that Brotli is roughly as fast as zlib’s Deflate [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Two months ago Google announced <a href="http://google-opensource.blogspot.com/2015/09/introducing-brotli-new-compression.html">Brotli</a>, a new compression format:</p>
+<blockquote><p>
+Brotli is a whole new data format. This new format allows us to get 20–26% higher compression ratios over Zopfli. In our study ‘Comparison of Brotli, Deflate, Zopfli, LZMA, LZHAM and Bzip2 Compression Algorithms’ we show that Brotli is roughly as fast as zlib’s Deflate implementation. At the same time, it compresses slightly more densely than LZMA and bzip2 on the Canterbury corpus. The higher data density is achieved by a 2nd order context modeling, re-use of entropy codes, larger memory window of past data and joint distribution codes. Just like Zopfli, the new algorithm is named after Swiss bakery products. Brötli means ‘small bread’ in Swiss German.
+</p></blockquote>
+<p>Compression is a big deal for web performance, being able to send the same file with fewer bytes is a big win.</p>
+<p>There are now two Nginx modules for supporting Brotli compression: <a href="https://github.com/google/ngx_brotli">ngx_brotli from Google</a> and <a href="https://github.com/cloudflare/ngx_brotli_module">ngx_brotli_module from CloudFlare</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/20/brotli-for-nginx/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

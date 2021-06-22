@@ -1,0 +1,36 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/singleton/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/singleton/",
+    "feed_url": "https://blog.josephscott.org/tag/singleton/feed/json/",
+    "language": "en-US",
+    "title": "singleton &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://josephscott.org/?p=5801",
+            "url": "https://blog.josephscott.org/2012/04/23/extendable-singleton-base-class-for-php/",
+            "title": "Extendable Singleton Base Class for PHP",
+            "content_html": "<p>I&#8217;ve been thinking about <a href=\"http://en.wikipedia.org/wiki/Singleton_pattern\">singletons</a> in PHP recently.  There is an <a href=\"http://php.net/manual/en/language.oop5.patterns.php\">example in the PHP docs</a>, which works well enough.  Then I started looking for a way to have a singleton base class.  My first few attempts failed, the key was to leverage <a href=\"http://php.net/manual/en/language.oop5.late-static-bindings.php\">late static binding</a>, which was added in PHP 5.3.0.</p>\n<p>[sourcecode lang=&#8221;php&#8221;]<br />\nclass Singleton {<br />\n    protected static $instance;</p>\n<p>    private function __clone() { }<br />\n    private function __construct() { }<br />\n    private function __wakeup() { }</p>\n<p>    final public static function singleton() {<br />\n        if ( !isset( static::$instance ) ) {<br />\n            static::$instance = new static();<br />\n        }</p>\n<p>        return static::$instance;<br />\n    }<br />\n}<br />\n[/sourcecode]</p>\n<p>This base class can be extended to create simple singleton classes, like so:</p>\n<p>[sourcecode lang=&#8221;php&#8221;]<br />\nclass Example extends Singleton {<br />\n    protected static $count;</p>\n<p>    public function add( $num = 1 ) {<br />\n        $this-&gt;count += $num;<br />\n        return $this-&gt;count;<br />\n    }</p>\n<p>    public function get_count() {<br />\n        return $this-&gt;count;<br />\n    }</p>\n<p>    public function subtract( $num = 1 ) {<br />\n        $this-&gt;count -= $num;<br />\n        return $this-&gt;count;<br />\n    }<br />\n}<br />\n[/sourcecode]</p>\n<p>Here is what this looks like in action:</p>\n<p>[sourcecode lang=&#8221;php&#8221;]<br />\necho &quot;COUNT:n&quot;;<br />\n$count = Example::singleton();<br />\necho $count-&gt;add() . &quot;n&quot;;          // 1<br />\necho $count-&gt;add( 4 ) . &quot;n&quot;;       // 5<br />\necho $count-&gt;subtract( 7 ) . &quot;n&quot;;  // -2<br />\necho $count-&gt;add( 10 ) . &quot;n&quot;;      // 8<br />\necho $count-&gt;get_count() . &quot;n&quot;;    // 8<br />\necho &quot;n&quot;;</p>\n<p>echo &quot;ANOTHER:n&quot;;<br />\n$another = Example::singleton();<br />\necho $another-&gt;get_count() . &quot;n&quot;;  // 8<br />\necho $another-&gt;add( 2 ) . &quot;n&quot;;     // 10<br />\necho $another-&gt;subtract( 3 ) . &quot;n&quot;;// 7<br />\necho $another-&gt;get_count() . &quot;n&quot;;  // 7<br />\necho &quot;n&quot;;<br />\n[/sourcecode]</p>\n<p>There are a few actions that the singleton class specifically fobids:</p>\n<p>[sourcecode lang=&#8221;php&#8221;]<br />\n// Each of these will throw an error<br />\n$test = new Example();<br />\n$test = clone $count;<br />\n$test = unserialize( serialize( $count ) );<br />\n[/sourcecode]</p>\n<p>You could also do this via <a href=\"http://php.net/manual/en/language.oop5.traits.php\">traits</a> if you are using PHP 5.4.0 or newer.  I wish PHP 5.0.0 had just gone with multiple inheritance in the first place.</p>\n",
+            "content_text": "I&#8217;ve been thinking about singletons in PHP recently.  There is an example in the PHP docs, which works well enough.  Then I started looking for a way to have a singleton base class.  My first few attempts failed, the key was to leverage late static binding, which was added in PHP 5.3.0.\n[sourcecode lang=&#8221;php&#8221;]\nclass Singleton {\n    protected static $instance;\n    private function __clone() { }\n    private function __construct() { }\n    private function __wakeup() { }\n    final public static function singleton() {\n        if ( !isset( static::$instance ) ) {\n            static::$instance = new static();\n        }\n        return static::$instance;\n    }\n}\n[/sourcecode]\nThis base class can be extended to create simple singleton classes, like so:\n[sourcecode lang=&#8221;php&#8221;]\nclass Example extends Singleton {\n    protected static $count;\n    public function add( $num = 1 ) {\n        $this-&gt;count += $num;\n        return $this-&gt;count;\n    }\n    public function get_count() {\n        return $this-&gt;count;\n    }\n    public function subtract( $num = 1 ) {\n        $this-&gt;count -= $num;\n        return $this-&gt;count;\n    }\n}\n[/sourcecode]\nHere is what this looks like in action:\n[sourcecode lang=&#8221;php&#8221;]\necho &quot;COUNT:n&quot;;\n$count = Example::singleton();\necho $count-&gt;add() . &quot;n&quot;;          // 1\necho $count-&gt;add( 4 ) . &quot;n&quot;;       // 5\necho $count-&gt;subtract( 7 ) . &quot;n&quot;;  // -2\necho $count-&gt;add( 10 ) . &quot;n&quot;;      // 8\necho $count-&gt;get_count() . &quot;n&quot;;    // 8\necho &quot;n&quot;;\necho &quot;ANOTHER:n&quot;;\n$another = Example::singleton();\necho $another-&gt;get_count() . &quot;n&quot;;  // 8\necho $another-&gt;add( 2 ) . &quot;n&quot;;     // 10\necho $another-&gt;subtract( 3 ) . &quot;n&quot;;// 7\necho $another-&gt;get_count() . &quot;n&quot;;  // 7\necho &quot;n&quot;;\n[/sourcecode]\nThere are a few actions that the singleton class specifically fobids:\n[sourcecode lang=&#8221;php&#8221;]\n// Each of these will throw an error\n$test = new Example();\n$test = clone $count;\n$test = unserialize( serialize( $count ) );\n[/sourcecode]\nYou could also do this via traits if you are using PHP 5.4.0 or newer.  I wish PHP 5.0.0 had just gone with multiple inheritance in the first place.",
+            "date_published": "2012-04-23T14:12:57-06:00",
+            "date_modified": "2012-04-23T14:12:57-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "PHP",
+                "singleton",
+                "Posts"
+            ]
+        }
+    ]
+}

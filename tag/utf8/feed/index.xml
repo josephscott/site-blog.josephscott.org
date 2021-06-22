@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>utf8 &#8211; Joseph Scott</title>
+	<atom:link href="/tag/utf8/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 30 Sep 2015 15:03:02 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Encodings and Character Sets</title>
+		<link>/2015/09/30/encodings-and-character-sets/</link>
+					<comments>/2015/09/30/encodings-and-character-sets/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 30 Sep 2015 15:03:02 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[utf8]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13068</guid>
+
+					<description><![CDATA[Character encoding issues will never go away. What Every Programmer Absolutely, Positively Needs to Know About Encodings and Character Sets to Work With Text: You&#8217;re never actually directly dealing with &#8220;characters&#8221; or &#8220;text&#8221;, you&#8217;re always dealing with bits as seen through several layers of abstractions. Incorrect results are a sign of one of the abstraction [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Character encoding issues will never go away.</p>
+<p><a href="http://kunststube.net/encoding/">What Every Programmer Absolutely, Positively Needs to Know About Encodings and Character Sets to Work With Text</a>:</p>
+<blockquote><p>
+You&#8217;re never actually directly dealing with &#8220;characters&#8221; or &#8220;text&#8221;, you&#8217;re always dealing with bits as seen through several layers of abstractions. Incorrect results are a sign of one of the abstraction layers failing.
+</p></blockquote>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/09/30/encodings-and-character-sets/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>MySQL UTF-8</title>
+		<link>/2015/07/27/unicode-support-mysql/</link>
+					<comments>/2015/07/27/unicode-support-mysql/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 27 Jul 2015 14:01:00 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[utf8]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9946</guid>
+
+					<description><![CDATA[If it involves character encoding you know something is bound to bite you eventually: The trick, apparently, is to use a slightly different encoding which MySQL calls &#8220;utf8mb4&#8221; which supports up to 4-byte UTF-8 characters. Unicode support in MySQL is not exactly clear cut.]]></description>
+										<content:encoded><![CDATA[<p>If it involves character encoding you know something is bound to bite you eventually:</p>
+<blockquote><p>
+The trick, apparently, is to use a slightly different encoding which MySQL calls &#8220;utf8mb4&#8221; which supports up to 4-byte UTF-8 characters.
+</p></blockquote>
+<p><a href="http://www.codeka.com.au/blog/2014/02/unicode-support-in-mysql-is--">Unicode support in MySQL is not exactly clear cut</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/07/27/unicode-support-mysql/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Moon Phase Bash Prompt</title>
+		<link>/2013/12/05/moon-phase-bash-prompt/</link>
+					<comments>/2013/12/05/moon-phase-bash-prompt/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 05 Dec 2013 16:38:40 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[bash]]></category>
+		<category><![CDATA[emoji]]></category>
+		<category><![CDATA[moon]]></category>
+		<category><![CDATA[prompt]]></category>
+		<category><![CDATA[utf8]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9531</guid>
+
+					<description><![CDATA[Show the current phase of the moon as a UTF-8 Emoji character in Bash, from Mike Adams Turns out you can put all sorts of characters in your prompt.]]></description>
+										<content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2013/12/moon-prompt-1.jpg" alt="moon-prompt" width="173" height="97" class="aligncenter size-full wp-image-9536" /></p>
+<p><a href='https://gist.github.com/mdawaffe/7799053'>Show the current phase of the moon as a UTF-8 Emoji character in Bash</a>, from <a href="https://twitter.com/mdawaffe">Mike Adams</a></p>
+<p>Turns out you can put all sorts of <a href="http://osxdaily.com/2013/04/08/add-emoji-command-line-bash-prompt/">characters in your prompt</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/12/05/moon-phase-bash-prompt/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Removing non-UTF8 characters from strings with PHP</title>
+		<link>/2011/01/14/removing-non-utf8-characters-from-strings-with-php/</link>
+					<comments>/2011/01/14/removing-non-utf8-characters-from-strings-with-php/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 14 Jan 2011 15:47:46 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[preg_replace]]></category>
+		<category><![CDATA[utf8]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3409</guid>
+
+					<description><![CDATA[[sourcecode lang=&#8221;php&#8221;] //reject overly long 2 byte sequences, //as well as characters above U+10000 //and replace with ? $some_string = preg_replace(&#8216;/&#8217;. &#8216;[x00-x08x10x0Bx0Cx0E-x19x7F]&#8217;. &#8216;&#124;[x00-x7F][x80-xBF]+&#8217;. &#8216;&#124;([xC0xC1]&#124;[xF0-xFF])[x80-xBF]*&#8217;. &#8216;&#124;[xC2-xDF]((?![x80-xBF])&#124;[x80-xBF]{2,})&#8217;. &#8216;&#124;[xE0-xEF](([x80-xBF](?![x80-xBF]))&#124;&#8217;. &#8216;(?![x80-xBF]{2})&#124;[x80-xBF]{3,})&#8217;. &#8216;/S&#8217;, &#8216;?&#8217;, $some_string ); //reject overly long 3 byte sequences //and UTF-16 surrogates and replace with ? $some_string = preg_replace(&#8216;/&#8217;. &#8216;xE0[x80-x9F][x80-xBF]&#8217;. &#8216;&#124;xED[xA0-xBF][x80-xBF]&#8217;. &#8216;/S&#8217;, &#8216;?&#8217;, $some_string ); [/sourcecode] Via [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>[sourcecode lang=&#8221;php&#8221;]<br />
+//reject overly long 2 byte sequences,<br />
+//as well as characters above U+10000<br />
+//and replace with ?<br />
+$some_string = preg_replace(&#8216;/&#8217;.<br />
+ &#8216;[x00-x08x10x0Bx0Cx0E-x19x7F]&#8217;.<br />
+ &#8216;|[x00-x7F][x80-xBF]+&#8217;.<br />
+ &#8216;|([xC0xC1]|[xF0-xFF])[x80-xBF]*&#8217;.<br />
+ &#8216;|[xC2-xDF]((?![x80-xBF])|[x80-xBF]{2,})&#8217;.<br />
+ &#8216;|[xE0-xEF](([x80-xBF](?![x80-xBF]))|&#8217;.<br />
+ &#8216;(?![x80-xBF]{2})|[x80-xBF]{3,})&#8217;.<br />
+ &#8216;/S&#8217;,<br />
+ &#8216;?&#8217;, $some_string );</p>
+<p>//reject overly long 3 byte sequences<br />
+//and UTF-16 surrogates and replace with ?<br />
+$some_string = preg_replace(&#8216;/&#8217;.<br />
+ &#8216;xE0[x80-x9F][x80-xBF]&#8217;.<br />
+ &#8216;|xED[xA0-xBF][x80-xBF]&#8217;.<br />
+ &#8216;/S&#8217;,<br />
+ &#8216;?&#8217;, $some_string );<br />
+[/sourcecode]</p>
+<p>Via <a href='http://magp.ie/2011/01/06/remove-non-utf8-characters-from-string-with-php/'>Remove non-UTF8 characters from string with PHP « Magp.ie</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/01/14/removing-non-utf8-characters-from-strings-with-php/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>rasmus-lerdorf &#8211; Joseph Scott</title>
+	<atom:link href="/tag/rasmus-lerdorf/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 21 Sep 2015 14:43:06 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Phan: Static Analyzer for PHP</title>
+		<link>/2015/09/21/phan-static-analyzer-for-php/</link>
+					<comments>/2015/09/21/phan-static-analyzer-for-php/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 21 Sep 2015 14:43:06 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[phan]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[rasmus-lerdorf]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13030</guid>
+
+					<description><![CDATA[Rasmus Lerdorf is working on &#8220;a placeholder and proof-of-concept&#8221; static analyzer for PHP called Phan. It requires PHP 7 and the php-ast extension.]]></description>
+										<content:encoded><![CDATA[<p><a href="http://lerdorf.com/bio/">Rasmus Lerdorf</a> is working on &#8220;a placeholder and proof-of-concept&#8221; static analyzer for PHP called <a href="https://github.com/rlerdorf/phan">Phan</a>.  It requires PHP 7 and the <a href="https://github.com/nikic/php-ast">php-ast extension</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/09/21/phan-static-analyzer-for-php/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

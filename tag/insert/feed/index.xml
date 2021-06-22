@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>insert &#8211; Joseph Scott</title>
+	<atom:link href="/tag/insert/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 28 Feb 2011 18:03:55 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>MySQL: INSERT ON DUPLICATE and Multiple Rows</title>
+		<link>/2011/02/28/mysql-insert-on-duplicate-and-multiple-rows/</link>
+					<comments>/2011/02/28/mysql-insert-on-duplicate-and-multiple-rows/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 28 Feb 2011 18:03:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[insert]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[sql]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3653</guid>
+
+					<description><![CDATA[If you are familiar with the MySQL INSERT syntax you&#8217;ve probably already noticed the ability to insert multiple rows with one call: [sourcecode lang=&#8221;sql&#8221;] INSERT INTO table_name (a,b,c) VALUES (1,2,3), (4,5,6), (7,8,9); [/sourcecode] This can be handy if you have several rows that you need to insert, no point in making separate calls for each [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you are familiar with the MySQL <a href="http://dev.mysql.com/doc/refman/5.5/en/insert.html">INSERT </a> syntax you&#8217;ve probably already noticed the ability to insert multiple rows with one call:</p>
+<p>[sourcecode lang=&#8221;sql&#8221;]<br />
+INSERT INTO table_name (a,b,c) VALUES (1,2,3), (4,5,6), (7,8,9);<br />
+[/sourcecode]</p>
+<p>This can be handy if you have several rows that you need to insert, no point in making separate calls for each one.</p>
+<p>Another nice feature is the <a href="http://dev.mysql.com/doc/refman/5.5/en/insert-on-duplicate.html">ON DUPLICATE</a> syntax, which allows for:</p>
+<p>[sourcecode lang=&#8221;sql&#8221;]<br />
+INSERT INTO table_name (a,b,c) VALUES (1,2,3)<br />
+  ON DUPLICATE KEY UPDATE c = c + 1;<br />
+[/sourcecode]</p>
+<p>If you have a unique index on the table, then ON DUPLICATE will kick in if there is a conflict with the unique on insert.  Without ON DUPLICATE you&#8217;d generally do a SELECT first to see if the value was already in the table, then either do an INSERT or an UPDATE based on the response.</p>
+<p>What you may not have noticed is that you can combine the multi-row insert and ON DUPLICATE features to do:</p>
+<p>[sourcecode lang=&#8221;sql&#8221;]<br />
+INSERT INTO table_name (a,b,c) VALUES (1,2,3), (4,5,6), (7,8,9)<br />
+  ON DUPLICATE KEY UPDATE c = c + 1;<br />
+[/sourcecode]</p>
+<p>Where might you use something like this?  If you were looping over data and inserting using ON DUPLICATE inside the loop you could instead build the SQL string inside the loop and then issue a single database request after the loop.  </p>
+<p>Exactly what sort of savings you&#8217;ll see depends on a number of factors ( number of iterations in your loop, latency for database requests, etc. ), so run your own tests to determine if this will help for your particular situation.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/02/28/mysql-insert-on-duplicate-and-multiple-rows/feed/</wfw:commentRss>
+			<slash:comments>8</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

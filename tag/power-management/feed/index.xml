@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>power-management &#8211; Joseph Scott</title>
+	<atom:link href="/tag/power-management/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 30 Jan 2020 18:12:36 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Low Power Mode on Mac OS</title>
+		<link>/2020/01/30/low-power-mode-on-mac-os/</link>
+					<comments>/2020/01/30/low-power-mode-on-mac-os/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 30 Jan 2020 18:12:36 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[macos]]></category>
+		<category><![CDATA[marco-arment]]></category>
+		<category><![CDATA[power-management]]></category>
+		<guid isPermaLink="false">/?p=18029</guid>
+
+					<description><![CDATA[Back in 2018 Marco Arment suggested Low Power Mode on the Mac: Sometimes, you just need Low Power Mode: the switch added to iOS a few years ago to conserve battery life when you need it, at the expense of full performance and background tasks. There’s no such feature on Mac laptops, but there should [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Back in 2018 Marco Arment suggested <a href="https://marco.org/2018/07/31/mac-low-power-mode">Low Power Mode on the Mac</a>:</p>
+<blockquote><p>
+Sometimes, you just need Low Power Mode: the switch added to iOS a few years ago to conserve battery life when you need it, at the expense of full performance and background tasks.</p>
+<p>There’s no such feature on Mac laptops, but there should be.
+</p></blockquote>
+<p><a href="/wp-content/uploads/2020/01/low-power-mode.png"><img loading="lazy" src="/wp-content/uploads/2020/01/low-power-mode.png" alt="" width="546" height="106" class="aligncenter size-full wp-image-18047" srcset="/wp-content/uploads/2020/01/low-power-mode.png 546w, /wp-content/uploads/2020/01/low-power-mode-300x58.png 300w" sizes="(max-width: 546px) 100vw, 546px" /></a></p>
+<p>Yes, Yes, <strong>Yes!</strong></p>
+<p>Marco has been using a <a href=https://www.rugarciap.com/turbo-boost-switcher-for-os-x/">third party kernel extension to do this</a> and posted <a href="https://marco.org/2020/01/13/macos-low-power-mode-redux">updated results for a 16-inch Macbook Pro</a>:</p>
+<blockquote><p>
+anecdotally, I’m seeing similar battery gains by disabling Turbo Boost that I’ve seen with previous laptops: significantly longer battery life that I’d estimate to be between 30–50%.
+</p></blockquote>
+<p>A big <strong>+1</strong> from me for a &#8220;low power mode&#8221; option in MacOS.  Add it to MacOS 10.16 and talk about it on stage during the announcement.  Brag about how much longer the battery can go in low power mode.</p>
+<p>My oldest child has an iPhone 5S and generally leaves it in low power mode all day, as she tends to favor availability over everything else.  If there were a similar option in MacOS I suspect many people would do the same thing for their laptops.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/01/30/low-power-mode-on-mac-os/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

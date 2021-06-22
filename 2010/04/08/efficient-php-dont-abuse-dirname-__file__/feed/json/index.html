@@ -1,0 +1,200 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/",
+    "feed_url": "https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: Efficient PHP: Don&#8217;t Abuse dirname( __FILE__ )",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3404",
+            "url": "https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3404",
+            "content_html": "I have justed played around with YiiFramework and tested it.\n\nA page from yii-user-management module (index page) took 3-4 seconds to load.\n\nI analyzed it and saw YiiFramework uses dirname all over the place. 99% of the total page loading time was is the dirname method!\n\nWhy is everyone using YiiFramework I wonder...",
+            "content_text": "I have justed played around with YiiFramework and tested it.\n\nA page from yii-user-management module (index page) took 3-4 seconds to load.\n\nI analyzed it and saw YiiFramework uses dirname all over the place. 99% of the total page loading time was is the dirname method!\n\nWhy is everyone using YiiFramework I wonder...",
+            "date_published": "2014-01-15T13:39:02-07:00",
+            "authors": [
+                {
+                    "name": "Toby",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/ec882c7463580d631d5ade912d62d1c9?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Toby",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/ec882c7463580d631d5ade912d62d1c9?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3403",
+            "url": "https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3403",
+            "content_html": "Hi\n\nI'm not expert in PHP, but I see a problem in your approach or I am doing something wrong! :-)\n\nIf in all the files I define \n$dirname=dirname(__FILE__)\nthis will modify the value of that variable in the including files (is there any way to have a really local variable?)\n\nSuppose the following files:\nmaster.php includes dir1/child.php and dir2/child.php and the child.php files inlude other files.\n\n[master.php]\n\n\n[child.php]\n\n\nIn this situation, I will get an error in master.php when trying to include\nrequire_once($dirBase . '/dir2/child.php');\nbecause after including 'dir1/child.php' the value of dirBase will have changed!\n\nBut If I use dirname(__FILE__ everywhere (unfortunately I can't use __DIR__) everything works fine!\n\nAs I have said, probably I'm doing something wrong, any hint please? :-)\n\nThanks\n\nIsi",
+            "content_text": "Hi\n\nI'm not expert in PHP, but I see a problem in your approach or I am doing something wrong! :-)\n\nIf in all the files I define \n$dirname=dirname(__FILE__)\nthis will modify the value of that variable in the including files (is there any way to have a really local variable?)\n\nSuppose the following files:\nmaster.php includes dir1/child.php and dir2/child.php and the child.php files inlude other files.\n\n[master.php]\n\n\n[child.php]\n\n\nIn this situation, I will get an error in master.php when trying to include\nrequire_once($dirBase . '/dir2/child.php');\nbecause after including 'dir1/child.php' the value of dirBase will have changed!\n\nBut If I use dirname(__FILE__ everywhere (unfortunately I can't use __DIR__) everything works fine!\n\nAs I have said, probably I'm doing something wrong, any hint please? :-)\n\nThanks\n\nIsi",
+            "date_published": "2012-07-20T06:41:06-06:00",
+            "authors": [
+                {
+                    "name": "Isi",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/bc1ab9d70d1bf6953cc1254c332c3292?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Isi",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/bc1ab9d70d1bf6953cc1254c332c3292?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3402",
+            "url": "https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3402",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3401\">Felipe Lav\u00edn</a>.\n\nI haven't tested it, but I'd expect it to be at least as efficient as calling dirname( __FILE__ ) just once, if not more so.",
+            "content_text": "In reply to Felipe Lav\u00edn.\n\nI haven't tested it, but I'd expect it to be at least as efficient as calling dirname( __FILE__ ) just once, if not more so.",
+            "date_published": "2010-11-16T23:37:14-07:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3401",
+            "url": "https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3401",
+            "content_html": "Have you tested this with __DIR__ ? (it's a new magic constant as of PHP 5.3.0)",
+            "content_text": "Have you tested this with __DIR__ ? (it's a new magic constant as of PHP 5.3.0)",
+            "date_published": "2010-11-16T12:10:18-07:00",
+            "authors": [
+                {
+                    "name": "Felipe Lav\u00edn",
+                    "url": "http://www.yukei.net",
+                    "avatar": "https://secure.gravatar.com/avatar/bc7cc3fdb4af85e7923367e5f234f77b?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Felipe Lav\u00edn",
+                "url": "http://www.yukei.net",
+                "avatar": "https://secure.gravatar.com/avatar/bc7cc3fdb4af85e7923367e5f234f77b?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3400",
+            "url": "https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3400",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3399\">Steven Spraot</a>.\n\ndirname( __FILE__ ) gets you the full path, no matter where your file lives or gets moved to.",
+            "content_text": "In reply to Steven Spraot.\n\ndirname( __FILE__ ) gets you the full path, no matter where your file lives or gets moved to.",
+            "date_published": "2010-06-17T10:04:07-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3399",
+            "url": "https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3399",
+            "content_html": "Using full paths is often not possible, e.g. developing for a client with a different directory layout to what you're developing with locally.\n\nOr, when the client changes the paths of your files.",
+            "content_text": "Using full paths is often not possible, e.g. developing for a client with a different directory layout to what you're developing with locally.\n\nOr, when the client changes the paths of your files.",
+            "date_published": "2010-06-16T16:47:15-06:00",
+            "authors": [
+                {
+                    "name": "Steven Spraot",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/ebfce5189677ef31c4b9a532b2bd1ffe?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Steven Spraot",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/ebfce5189677ef31c4b9a532b2bd1ffe?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3398",
+            "url": "https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3398",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3397\">alexanderpas</a>.\n\nThe general rule is to use full paths when ever possible.",
+            "content_text": "In reply to alexanderpas.\n\nThe general rule is to use full paths when ever possible.",
+            "date_published": "2010-05-31T09:33:06-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3397",
+            "url": "https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3397",
+            "content_html": "don't forget you can use the current directory indicator (the dot) in required and include.",
+            "content_text": "don't forget you can use the current directory indicator (the dot) in required and include.",
+            "date_published": "2010-05-28T23:08:57-06:00",
+            "authors": [
+                {
+                    "name": "alexanderpas",
+                    "url": "http://dropdev.org",
+                    "avatar": "https://secure.gravatar.com/avatar/ca5fd69395f0422a8c9ef11db8bb29ca?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "alexanderpas",
+                "url": "http://dropdev.org",
+                "avatar": "https://secure.gravatar.com/avatar/ca5fd69395f0422a8c9ef11db8bb29ca?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3396",
+            "url": "https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3396",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3395\">Angelo Mandato</a>.\n\nRight, I think the general goal for something like this is to minimize the number of times something like dirname( __FILE__ ) is called.  And if you can avoid it entirely with __DIR__ in 5.3 then all the better!",
+            "content_text": "In reply to Angelo Mandato.\n\nRight, I think the general goal for something like this is to minimize the number of times something like dirname( __FILE__ ) is called.  And if you can avoid it entirely with __DIR__ in 5.3 then all the better!",
+            "date_published": "2010-04-08T13:17:25-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3395",
+            "url": "https://blog.josephscott.org/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3395",
+            "content_html": "This was an eye opener! I use dirname() and basename() a lot. I wonder if this is also a performance issue when using an accelerator such as APC with PHP.\n\nLuckily in my case for many of my applications, I get the root folder with a special function call so my quick plan is to set a unique global variable when the function is called the first time and all future calls return the global variable. When I do a major rewrite I will change my projects to a unique define approach. I'm definitely going to switch my WordPress plugins to use a define for the root folder as well!",
+            "content_text": "This was an eye opener! I use dirname() and basename() a lot. I wonder if this is also a performance issue when using an accelerator such as APC with PHP.\n\nLuckily in my case for many of my applications, I get the root folder with a special function call so my quick plan is to set a unique global variable when the function is called the first time and all future calls return the global variable. When I do a major rewrite I will change my projects to a unique define approach. I'm definitely going to switch my WordPress plugins to use a define for the root folder as well!",
+            "date_published": "2010-04-08T13:04:59-06:00",
+            "authors": [
+                {
+                    "name": "Angelo Mandato",
+                    "url": "http://angelo.mandato.com",
+                    "avatar": "https://secure.gravatar.com/avatar/b90f2940d863e219ef05f655f6193aa8?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Angelo Mandato",
+                "url": "http://angelo.mandato.com",
+                "avatar": "https://secure.gravatar.com/avatar/b90f2940d863e219ef05f655f6193aa8?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

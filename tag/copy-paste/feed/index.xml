@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>copy-paste &#8211; Joseph Scott</title>
+	<atom:link href="/tag/copy-paste/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 27 Sep 2011 19:49:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Firefox Desperate To Mimic Chrome, Even Their Mistakes</title>
+		<link>/2011/09/27/firefox-desperate-to-mimic-chrome-even-their-mistakes/</link>
+					<comments>/2011/09/27/firefox-desperate-to-mimic-chrome-even-their-mistakes/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 27 Sep 2011 19:49:38 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[copy-paste]]></category>
+		<category><![CDATA[firefox]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[mozilla]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4841</guid>
+
+					<description><![CDATA[Recently Firefox has been pushing a more aggressive upgrade schedule. There is little doubt that they are feeling the pressure from Google Chrome, which is becoming increasingly popular and has an aggressive upgrade cycle as well. In the last year Chrome has become nearly as popular as Firefox. Many of the recent changes with Firefox, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Recently <a href="http://www.mozilla.org/en-US/firefox/new/">Firefox</a> has been pushing a more aggressive upgrade schedule.  There is little doubt that they are feeling the pressure from <a href="http://www.google.com/chrome">Google Chrome</a>, which is becoming increasingly popular and has an aggressive upgrade cycle as well.</p>
+<p>In the <a href="http://gs.statcounter.com/#browser-ww-monthly-201009-201108">last year Chrome has become nearly as popular as Firefox</a>.  Many of the recent changes with Firefox, like the shorter release cycles, make it look like it is trying to play catch up with Chrome.  Perhaps desperately so.  Unfortunately with <a href="http://www.mozilla.org/en-US/firefox/7.0/releasenotes/">release of Firefox 7</a> it appears they are also desperate to copy the same mistakes Chrome has made.</p>
+<p>It is no secret that <a href="http://josephscott.org/archives/2010/09/chrome-how-being-clever-is-worse-than-being-simple/">I really don&#8217;t like the way Chrome broke copy and paste in the URL field</a>.  That was a horrible decision that irritates me on an almost daily basis.  When I select something to be copied I expect to have an exact copy of what was selected, altering that under the hood completely breaks the concept of copy and paste.</p>
+<p>So guess what new &#8220;feature&#8221; was added to <a href="http://www.mozilla.org/en-US/firefox/7.0/releasenotes/">Firefox 7</a>?  You got it:</p>
+<blockquote><p>
+The &#8216;http://&/#8217; URL prefix is now hidden by default
+</p></blockquote>
+<p>And it behaves in exactly the same broken way that Chrome does.  </p>
+<p>To the Mozilla team: look, I understand that you&#8217;re concerned about losing market share to Chrome, but please, please, please don&#8217;t mimic their mistakes.  Now in order to copy and paste the URL properly I have to copy everything but the first character of the hostname, then manually type in that first character then paste in the remainder.  Absolutely horrible.  This is one feature of Chrome that no one should ever copy, and I&#8217;d be thrilled to see it removed from Chrome as well.</p>
+<p>If you want to no longer show &#8216;http://&/#8217; in the URL field, fine, but please stop breaking copy and paste.</p>
+<p><strong>UPDATE:</strong> Turns out Firefox has an option for disabling this &#8220;feature&#8221; ( <a href="https://twitter.com/#!/ozh/status/118775509990637568">kudos to @ozh</a> ):</p>
+<ul>
+<li>Enter about:config in the URL field</li>
+<li>Filter on browser.urlbar.trimURLs</li>
+<li>Set the value for browser.urlbar.trimURLs to false</li>
+</ul>
+<p>Not great that this is on by default, but at least there is an easy way to turn it off.  Now, if only it were that easy to turn off this &#8220;feature&#8221; in Chrome.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/09/27/firefox-desperate-to-mimic-chrome-even-their-mistakes/feed/</wfw:commentRss>
+			<slash:comments>18</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Chrome, How Being Clever is Worse Than Being Simple</title>
+		<link>/2010/09/17/chrome-how-being-clever-is-worse-than-being-simple/</link>
+					<comments>/2010/09/17/chrome-how-being-clever-is-worse-than-being-simple/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 17 Sep 2010 18:12:23 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[clever]]></category>
+		<category><![CDATA[copy-paste]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[simple]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2831</guid>
+
+					<description><![CDATA[Many people have already complained about Google Chrome leaving off the http:// in the URL field (there are certain cases where it does display, that is now the exception though, not the rule), here is my take on why this move was not only wrong, but worse than what we had before. Initially the complaint [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img loading="lazy" alt="" src="http://www.google.com/intl/en/images/logos/chrome_logo.gif" title="Goolge Chrome" class="alignleft" width="198" height="40" />Many people have already complained about Google Chrome leaving off the http:// in the URL field (there are certain cases where it does display, that is now the exception though, not the rule), here is my take on why this move was not only wrong, but worse than what we had before.</p>
+<p>Initially the complaint was that without the http:// in front copy-paste will be a problem, because other systems use that to detect strings that look like URLs.  So Google got clever (this should be the first clue of something bad happening, picking a clever solution over a simple one), when you copy the URL it magically inserts the http:// at the beginning so that it shows up when you paste.</p>
+<p>Problem solved right?  No, it actually made things worse.</p>
+<p>It is not unusual for me to copy just the host name portion of the URL from my browser (Chrome is usually my default browser), but since Chrome silently adds the http:// in the background it is not impossible to copy just the host name.  Using this site as an example, copying josephscott.org from the URL results in http://josephscott.org/ when I paste.  Not only does it prefix http:// it also adds the trailing slash.</p>
+<p>This ends up being super annoying.  I&#8217;ve looked for options to disable this feature of Chrome and just always show http:// in the URL field and not to mangle copy-paste.  So far I haven&#8217;t found a way to do this.  My work around for now is to copy all but the first character of the host name, type that in manually and then paste the rest of the host name.</p>
+<p>Was mangling the copy-paste buffer in the background a clever hack?  Yes.  Is it better than the simple solution just showing http:// in the URL field?  No, not by a long shot.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/09/17/chrome-how-being-clever-is-worse-than-being-simple/feed/</wfw:commentRss>
+			<slash:comments>14</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

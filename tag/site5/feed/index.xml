@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>site5 &#8211; Joseph Scott</title>
+	<atom:link href="/tag/site5/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 06 Jul 2006 05:32:09 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Trying Out Site5</title>
+		<link>/2006/07/05/trying-out-site5/</link>
+					<comments>/2006/07/05/trying-out-site5/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 06 Jul 2006 05:32:09 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[blog]]></category>
+		<category><![CDATA[site5]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/07/05/trying-out-site5/</guid>
+
+					<description><![CDATA[I&#8217;ve been looking for another host and have decided to give Site5 a try. I would have preferred a provider using FreeBSD (like Pair) instead of Linux, but I can deal with that (time to learn more about bash). The other bummer was lack of PostgreSQL support (like Bluehost). So if you are reading this [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been looking for another host and have decided to give <a href="http://www.site5.com/">Site5</a> a try.  I would have preferred a provider using <a href="http://www.freebsd.org/">FreeBSD</a> (like <a href="http://www.pair.com/">Pair</a>) instead of Linux, but I can deal with that (time to learn more about bash).  The other bummer was lack of <a href="http://www.postgresql.org/">PostgreSQL</a> support (like <a href="http://www.bluehost.com/">Bluehost</a>).</p>
+<p>So if you are reading this then you&#8217;ve picked up the DNS updates.  Let me know if you notice something broken that I&#8217;ve missed.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/07/05/trying-out-site5/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

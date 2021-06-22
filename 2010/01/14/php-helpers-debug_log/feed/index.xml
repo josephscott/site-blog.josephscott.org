@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: PHP Helpers: debug_log	</title>
+	<atom:link href="/2010/01/14/php-helpers-debug_log/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/01/14/php-helpers-debug_log/</link>
+	<description></description>
+	<lastBuildDate>Wed, 14 Apr 2010 08:28:44 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/01/14/php-helpers-debug_log/#comment-3167</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 14 Apr 2010 08:28:44 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1748#comment-3167</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/01/14/php-helpers-debug_log/#comment-3166&quot;&gt;Edward de Leau&lt;/a&gt;.
+
+I haven&#039;t had a need to change the file name for the debug log.  I made it an option though on the off chance that it comes up later on.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/01/14/php-helpers-debug_log/#comment-3166">Edward de Leau</a>.</p>
+<p>I haven&#8217;t had a need to change the file name for the debug log.  I made it an option though on the off chance that it comes up later on.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Edward de Leau		</title>
+		<link>/2010/01/14/php-helpers-debug_log/#comment-3166</link>
+
+		<dc:creator><![CDATA[Edward de Leau]]></dc:creator>
+		<pubDate>Tue, 13 Apr 2010 20:29:33 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1748#comment-3166</guid>
+
+					<description><![CDATA[I was lately also thinking of starting a little set of generic functions. I also made a little log function recently.
+
+One of the things I ran into was the filename which you set by default and I had the same idea (i made one log functions for a html log and one for a clear text log) (the html log shows different colors based on the importance)
+
+&lt;code&gt;
+function EDL_HTML_LOG($msg=&quot;undefined&quot;, $level=0, $logDirFile=&#039;log/log.html&#039;) {&lt;/code&gt;
+
+But... if one of the apps has a different location for the log file that would not be handy repeating it over and over. So I made a little wrapper function in the same php page:
+
+&lt;code&gt;
+function Logger($msg=&quot;undefined&quot;, $level=0) {
+	EDL_HTML_LOG($msg,$level,LOGFILE_HTML);
+}
+&lt;/code&gt;
+
+The LOGFILE_HTML can now be set as a define in the appliation.
+
+However, this is still not satisfying since what if the user (uh..thats me) forgets to define the location of the Log file in of the applications.]]></description>
+			<content:encoded><![CDATA[<p>I was lately also thinking of starting a little set of generic functions. I also made a little log function recently.</p>
+<p>One of the things I ran into was the filename which you set by default and I had the same idea (i made one log functions for a html log and one for a clear text log) (the html log shows different colors based on the importance)</p>
+<p><code><br />
+function EDL_HTML_LOG($msg="undefined", $level=0, $logDirFile='log/log.html') {</code></p>
+<p>But&#8230; if one of the apps has a different location for the log file that would not be handy repeating it over and over. So I made a little wrapper function in the same php page:</p>
+<p><code><br />
+function Logger($msg="undefined", $level=0) {<br />
+	EDL_HTML_LOG($msg,$level,LOGFILE_HTML);<br />
+}<br />
+</code></p>
+<p>The LOGFILE_HTML can now be set as a define in the appliation.</p>
+<p>However, this is still not satisfying since what if the user (uh..thats me) forgets to define the location of the Log file in of the applications.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

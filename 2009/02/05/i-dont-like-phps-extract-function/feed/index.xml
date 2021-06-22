@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: I Don&#8217;t Like PHP&#8217;s extract() Function	</title>
+	<atom:link href="/2009/02/05/i-dont-like-phps-extract-function/feed/" rel="self" type="application/rss+xml" />
+	<link>/2009/02/05/i-dont-like-phps-extract-function/</link>
+	<description></description>
+	<lastBuildDate>Tue, 25 Aug 2020 14:14:17 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Leo		</title>
+		<link>/2009/02/05/i-dont-like-phps-extract-function/#comment-2700</link>
+
+		<dc:creator><![CDATA[Leo]]></dc:creator>
+		<pubDate>Sat, 05 Mar 2016 00:20:59 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=724#comment-2700</guid>
+
+					<description><![CDATA[Great point why cause more friction! 
+
+I feel if there&#039;s a NEED to use extract() through either non-understanding or it&#039;s the current practice of the codebase you&#039;re working on then at least come up with a convention to name its resulting variables like $extVariable so it&#039;s not completely magic especially if it&#039;s used hundreds of lines later.]]></description>
+			<content:encoded><![CDATA[<p>Great point why cause more friction! </p>
+<p>I feel if there&#8217;s a NEED to use extract() through either non-understanding or it&#8217;s the current practice of the codebase you&#8217;re working on then at least come up with a convention to name its resulting variables like $extVariable so it&#8217;s not completely magic especially if it&#8217;s used hundreds of lines later.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: I'm Luis! ^-^		</title>
+		<link>/2009/02/05/i-dont-like-phps-extract-function/#comment-2699</link>
+
+		<dc:creator><![CDATA[I'm Luis! ^-^]]></dc:creator>
+		<pubDate>Tue, 23 Feb 2016 15:18:12 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=724#comment-2699</guid>
+
+					<description><![CDATA[I think that when we&#039;re using MVC, instead of using extract we can call our array $controller and pass it to the template.
+
+When someone is reading our code, if we use MVC that person must know that we use MVC. So when he reads he knows that everything related to $controller came from the controller that called to that template. And that&#039;s it.]]></description>
+			<content:encoded><![CDATA[<p>I think that when we&#8217;re using MVC, instead of using extract we can call our array $controller and pass it to the template.</p>
+<p>When someone is reading our code, if we use MVC that person must know that we use MVC. So when he reads he knows that everything related to $controller came from the controller that called to that template. And that&#8217;s it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/02/05/i-dont-like-phps-extract-function/#comment-2698</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 30 Sep 2015 14:31:32 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=724#comment-2698</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/02/05/i-dont-like-phps-extract-function/#comment-2697&quot;&gt;Flaral&lt;/a&gt;.
+
+It isn&#039;t less readable when you are debugging something a year later and trying to figure out where &lt;code&gt;$object_four&lt;/code&gt; came from.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/02/05/i-dont-like-phps-extract-function/#comment-2697">Flaral</a>.</p>
+<p>It isn&#8217;t less readable when you are debugging something a year later and trying to figure out where <code>$object_four</code> came from.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Flaral		</title>
+		<link>/2009/02/05/i-dont-like-phps-extract-function/#comment-2697</link>
+
+		<dc:creator><![CDATA[Flaral]]></dc:creator>
+		<pubDate>Wed, 30 Sep 2015 05:55:09 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=724#comment-2697</guid>
+
+					<description><![CDATA[What about when passing an array of objects?
+
+It&#039;s less readable to do:
+
+$args[&quot;object_four&quot;]-&#062;getInfo();
+
+Than to do:
+
+Extract($args);
+
+$object_four-&#062;getInfo();]]></description>
+			<content:encoded><![CDATA[<p>What about when passing an array of objects?</p>
+<p>It&#8217;s less readable to do:</p>
+<p>$args[&#8220;object_four&#8221;]-&gt;getInfo();</p>
+<p>Than to do:</p>
+<p>Extract($args);</p>
+<p>$object_four-&gt;getInfo();</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/02/05/i-dont-like-phps-extract-function/#comment-2696</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 14 Sep 2015 14:37:02 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=724#comment-2696</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/02/05/i-dont-like-phps-extract-function/#comment-2695&quot;&gt;Robert Wilde&lt;/a&gt;.
+
+I don&#039;t think there is anything preventing the use of &lt;code&gt;list()&lt;/code&gt; for that.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/02/05/i-dont-like-phps-extract-function/#comment-2695">Robert Wilde</a>.</p>
+<p>I don&#8217;t think there is anything preventing the use of <code>list()</code> for that.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Robert Wilde		</title>
+		<link>/2009/02/05/i-dont-like-phps-extract-function/#comment-2695</link>
+
+		<dc:creator><![CDATA[Robert Wilde]]></dc:creator>
+		<pubDate>Mon, 14 Sep 2015 01:39:54 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=724#comment-2695</guid>
+
+					<description><![CDATA[Interested to know if this method of using list() can be used with shortcode_atts().
+
+This is the most common place I find extract() and where it becomes a annoyance.
+
+Thanks for the insight so far, very helpful.]]></description>
+			<content:encoded><![CDATA[<p>Interested to know if this method of using list() can be used with shortcode_atts().</p>
+<p>This is the most common place I find extract() and where it becomes a annoyance.</p>
+<p>Thanks for the insight so far, very helpful.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Michal Zuber		</title>
+		<link>/2009/02/05/i-dont-like-phps-extract-function/#comment-2694</link>
+
+		<dc:creator><![CDATA[Michal Zuber]]></dc:creator>
+		<pubDate>Thu, 15 May 2014 05:13:09 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=724#comment-2694</guid>
+
+					<description><![CDATA[Hi, very good point. I was used to:
+&lt;code&gt;
+$secured = array();
+$secured = secure_input($_POST);
+extract($secured, EXTR_PREFIX_ALL, &#039;post&#039;);
+&lt;/code&gt;
+Because after that came the insertion into DB. But after reading your opinions it looks to me now really unnecessary to extract. Keep posting such best practices ;)]]></description>
+			<content:encoded><![CDATA[<p>Hi, very good point. I was used to:<br />
+<code><br />
+$secured = array();<br />
+$secured = secure_input($_POST);<br />
+extract($secured, EXTR_PREFIX_ALL, 'post');<br />
+</code><br />
+Because after that came the insertion into DB. But after reading your opinions it looks to me now really unnecessary to extract. Keep posting such best practices 😉</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/02/05/i-dont-like-phps-extract-function/#comment-2693</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Sun, 24 Jun 2012 21:33:45 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=724#comment-2693</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/02/05/i-dont-like-phps-extract-function/#comment-2692&quot;&gt;jagall&lt;/a&gt;.
+
+The extract() function expects an array.  Looks like you are calling it with some other data type.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/02/05/i-dont-like-phps-extract-function/#comment-2692">jagall</a>.</p>
+<p>The extract() function expects an array.  Looks like you are calling it with some other data type.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: jagall		</title>
+		<link>/2009/02/05/i-dont-like-phps-extract-function/#comment-2692</link>
+
+		<dc:creator><![CDATA[jagall]]></dc:creator>
+		<pubDate>Thu, 21 Jun 2012 21:33:02 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=724#comment-2692</guid>
+
+					<description><![CDATA[Hi guys, I am getting this error in a log file in my cache folder which is created each time a page is loaded:
+
+PHP Warning:  extract() [&lt;a href=&quot;function.extract&quot; rel=&quot;nofollow&quot;&gt;function.extract&lt;/a&gt;]: First argument should be an array in ......
+
+Has anybody any ideas, as I am stumped. Not a programmer so you know.
+Cheers]]></description>
+			<content:encoded><![CDATA[<p>Hi guys, I am getting this error in a log file in my cache folder which is created each time a page is loaded:</p>
+<p>PHP Warning:  extract() [<a href="function.extract" rel="nofollow">function.extract</a>]: First argument should be an array in &#8230;&#8230;</p>
+<p>Has anybody any ideas, as I am stumped. Not a programmer so you know.<br />
+Cheers</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Kent Davidson		</title>
+		<link>/2009/02/05/i-dont-like-phps-extract-function/#comment-2691</link>
+
+		<dc:creator><![CDATA[Kent Davidson]]></dc:creator>
+		<pubDate>Mon, 16 May 2011 21:15:57 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=724#comment-2691</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/02/05/i-dont-like-phps-extract-function/#comment-2682&quot;&gt;David Brewer&lt;/a&gt;.
+
+Ditto this approach. I do this all the time, without the array_fill magic:
+
+&lt;code&gt;$name_first = $name_last = $name_middle = $name_suffix = $name_prefix = null;
+extract($person, EXTR_IF_EXISTS);
+&lt;/code&gt;
+
+The ones which do it without pre-declaring the vars it feel a little scary to me.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/02/05/i-dont-like-phps-extract-function/#comment-2682">David Brewer</a>.</p>
+<p>Ditto this approach. I do this all the time, without the array_fill magic:</p>
+<p><code>$name_first = $name_last = $name_middle = $name_suffix = $name_prefix = null;<br />
+extract($person, EXTR_IF_EXISTS);<br />
+</code></p>
+<p>The ones which do it without pre-declaring the vars it feel a little scary to me.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

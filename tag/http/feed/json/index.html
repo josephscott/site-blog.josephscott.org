@@ -1,0 +1,273 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/http/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/http/",
+    "feed_url": "https://blog.josephscott.org/tag/http/feed/json/",
+    "language": "en-US",
+    "title": "http &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/?p=16999",
+            "url": "https://blog.josephscott.org/2018/10/02/browser-cookie-limits/",
+            "title": "Browser Cookie Limits",
+            "content_html": "<p><a href=\"http://browsercookielimits.squawky.net/\">http://browsercookielimits.squawky.net/</a></p>\n<p>In Chrome 69 I got the following results:</p>\n<p>&#8211; Guessing Max Cookie Count Per Domain: 180<br />\n&#8211; Guessing Max Cookie Size Per Cookie: 4096 bytes</p>\n<p>For Firefox 62:</p>\n<p>&#8211; Guessing Max Cookie Count Per Domain: NA ( it kept trying to kill the script )<br />\n&#8211; Guessing Max Cookie Size Per Cookie: 4097 bytes</p>\n<p>Safari 11.1.2 under Mac OS 10.13.6:</p>\n<p>&#8211; Guessing Max Cookie Count Per Domain: NA<br />\n&#8211; Guessing Max Cookie Size Per Cookie: 4097 bytes</p>\n<p>Safari 11 in iOS 11.4.1:</p>\n<p>&#8211; Guessing Max Cookie Count Per Domain: NA<br />\n&#8211; Guessing Max Cookie Size Per Cookie: 4097 bytes</p>\n",
+            "content_text": "http://browsercookielimits.squawky.net/\nIn Chrome 69 I got the following results:\n&#8211; Guessing Max Cookie Count Per Domain: 180\n&#8211; Guessing Max Cookie Size Per Cookie: 4096 bytes\nFor Firefox 62:\n&#8211; Guessing Max Cookie Count Per Domain: NA ( it kept trying to kill the script )\n&#8211; Guessing Max Cookie Size Per Cookie: 4097 bytes\nSafari 11.1.2 under Mac OS 10.13.6:\n&#8211; Guessing Max Cookie Count Per Domain: NA\n&#8211; Guessing Max Cookie Size Per Cookie: 4097 bytes\nSafari 11 in iOS 11.4.1:\n&#8211; Guessing Max Cookie Count Per Domain: NA\n&#8211; Guessing Max Cookie Size Per Cookie: 4097 bytes",
+            "date_published": "2018-10-02T15:53:34-06:00",
+            "date_modified": "2018-10-02T15:53:34-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "cookies",
+                "http"
+            ]
+        },
+        {
+            "id": "https://blog.josephscott.org/?p=16981",
+            "url": "https://blog.josephscott.org/2018/09/18/safari-can-be-stingy/",
+            "title": "Safari Can Be Stingy",
+            "content_html": "<p>Andy Davies dug into the shared caching situation on Safari, in <a href=\"https://andydavies.me/blog/2018/09/06/safari-caching-and-3rd-party-resources/\">Safari, Caching and Third-Party Resources</a>.  The shared cache in Safari may be more stingy that most people would have guessed:</p>\n<blockquote><p>\nWhat this means is Safari caches content from third-party origins separately for each document origin, so for example if two sites, say a.com and b.com both use a common library, third-party.com/script.js, then script.js will be cached separately for both sites.</p>\n<p>And if someone has an \u2018empty\u2019 cache and visits the first site and then the other, script.js will be downloaded twice.\n</p></blockquote>\n<p>This is another situation of having to measure to make sure that the rule of thumb is actually helping in your specific case.  The numbers from the HTTP Archive research were not exciting:</p>\n<blockquote><p>\nThe March 2018 HTTP Archive (desktop) run has data for approximately 466,000 pages and the most popular public library, jQuery 1.11.3 from ajax.googleapis.com (served over HTTPS), is used by just over 1% of them.</p>\n<p>I\u2019m not sure what level adoption needs to reach for shared caching to achieve critical mass but 1% certainly seems unlikely to be high enough and even Google\u2019s most popular font \u2013 OpenSans \u2013 is only requested by around 9% of pages in the HTTP Archive.\n</p></blockquote>\n<p>If 9% ends up being the upper bound for shared cache hits, we need to start re-thinking our approach.</p>\n",
+            "content_text": "Andy Davies dug into the shared caching situation on Safari, in Safari, Caching and Third-Party Resources.  The shared cache in Safari may be more stingy that most people would have guessed:\n\nWhat this means is Safari caches content from third-party origins separately for each document origin, so for example if two sites, say a.com and b.com both use a common library, third-party.com/script.js, then script.js will be cached separately for both sites.\nAnd if someone has an \u2018empty\u2019 cache and visits the first site and then the other, script.js will be downloaded twice.\n\nThis is another situation of having to measure to make sure that the rule of thumb is actually helping in your specific case.  The numbers from the HTTP Archive research were not exciting:\n\nThe March 2018 HTTP Archive (desktop) run has data for approximately 466,000 pages and the most popular public library, jQuery 1.11.3 from ajax.googleapis.com (served over HTTPS), is used by just over 1% of them.\nI\u2019m not sure what level adoption needs to reach for shared caching to achieve critical mass but 1% certainly seems unlikely to be high enough and even Google\u2019s most popular font \u2013 OpenSans \u2013 is only requested by around 9% of pages in the HTTP Archive.\n\nIf 9% ends up being the upper bound for shared cache hits, we need to start re-thinking our approach.",
+            "date_published": "2018-09-18T11:06:18-06:00",
+            "date_modified": "2018-09-18T11:06:18-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "andy-davies",
+                "cache",
+                "cdn",
+                "http",
+                "safari"
+            ]
+        },
+        {
+            "id": "https://blog.josephscott.org/?p=16941",
+            "url": "https://blog.josephscott.org/2018/08/28/server-timing-api/",
+            "title": "Server Timing API",
+            "content_html": "<p>Leaving myself a note in the form of a few links for the <a href=\"https://w3c.github.io/server-timing/\">Server Timing API</a>:</p>\n<p>&#8211; <a href=\"https://w3c.github.io/server-timing/\">W3C Server Timing spec</a><br />\n&#8211; <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Server-Timing\">Mozilla Server Timing</a><br />\n&#8211; <a href=\"https://developers.google.com/web/updates/2018/03/nic65#server-timing\">Server Timing as of Chrome 65</a></p>\n<p>This is a method that allows you to include performance related metrics in the HTTP response, using the <code>Server-Timing</code> header.  Browsers, like Chrome, can then display that information as part of the request timing details.</p>\n",
+            "content_text": "Leaving myself a note in the form of a few links for the Server Timing API:\n&#8211; W3C Server Timing spec\n&#8211; Mozilla Server Timing\n&#8211; Server Timing as of Chrome 65\nThis is a method that allows you to include performance related metrics in the HTTP response, using the Server-Timing header.  Browsers, like Chrome, can then display that information as part of the request timing details.",
+            "date_published": "2018-08-28T13:47:44-06:00",
+            "date_modified": "2018-08-28T13:47:44-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "http",
+                "server-timing"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=15468",
+            "url": "https://blog.josephscott.org/2018/06/19/http-alternative-services/",
+            "title": "HTTP Alternative Services",
+            "content_html": "<p>RFC 7838: <a href=\"https://tools.ietf.org/html/rfc7838\">HTTP Alternative Services</a>.</p>\n<p>This allows HTTP responses to indicate alternative servers that a client can use ( but it isn&#8217;t required to do so ). One example, from the RFC:</p>\n<blockquote><p><code>Alt-Svc: h2=\":8000\"</code></p>\n<p>This indicates the &#8220;h2&#8221; protocol ([RFC7540]) on the same host using<br />\nthe indicated port 8000.</p></blockquote>\n<p>Google already uses this to announce <a href=\"https://www.chromium.org/quic\">QUIC</a> as an alternative, with this header included in a response from https://www.google.com/:</p>\n<p><code>Alt-Svc: quic=\":443\"; ma=2592000; v=\"43,42,41,39,35\"</code></p>\n<p>That breaks down as:</p>\n<p>&#8211; QUIC is available on port 443, of the same origin<br />\n&#8211; Max age ( ma ) for this information is 2,592,000 seconds ( default is 24 hours )<br />\n&#8211; Version negotiation hints ( v ) for QUIC</p>\n<p>That gives sites a direct option for announcing other means of making requests.  Right now QUIC is the obvious alternative, but by being an open format, others could use it too.</p>\n<p>Mark Nottingham has a good <a href=\"https://www.mnot.net/blog/2016/03/09/alt-svc\">write up on &#8220;Alternative Services&#8221;</a>.</p>\n",
+            "content_text": "RFC 7838: HTTP Alternative Services.\nThis allows HTTP responses to indicate alternative servers that a client can use ( but it isn&#8217;t required to do so ). One example, from the RFC:\nAlt-Svc: h2=\":8000\"\nThis indicates the &#8220;h2&#8221; protocol ([RFC7540]) on the same host using\nthe indicated port 8000.\nGoogle already uses this to announce QUIC as an alternative, with this header included in a response from https://www.google.com/:\nAlt-Svc: quic=\":443\"; ma=2592000; v=\"43,42,41,39,35\"\nThat breaks down as:\n&#8211; QUIC is available on port 443, of the same origin\n&#8211; Max age ( ma ) for this information is 2,592,000 seconds ( default is 24 hours )\n&#8211; Version negotiation hints ( v ) for QUIC\nThat gives sites a direct option for announcing other means of making requests.  Right now QUIC is the obvious alternative, but by being an open format, others could use it too.\nMark Nottingham has a good write up on &#8220;Alternative Services&#8221;.",
+            "date_published": "2018-06-19T12:34:54-06:00",
+            "date_modified": "2018-06-19T12:34:54-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "http",
+                "quic",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=15320",
+            "url": "https://blog.josephscott.org/2016/03/11/client-hint-save-data/",
+            "title": "Client Hint: Save-Data",
+            "content_html": "<p>From the world of client hints comes <a href=\"http://httpwg.org/http-extensions/client-hints.html#the-save-data-hint\">Save-Data</a>:</p>\n<blockquote><p>\nThe token is a signal indicating explicit user opt-in into a reduced data usage mode on the client, and when communicated to origins allows them to deliver alternate content honoring such preference &#8211; e.g. smaller image and video resources, alternate markup, and so on.\n</p></blockquote>\n<p>The Google Developer site has a write up on <a href=\"https://developers.google.com/web/updates/2016/02/save-data\">Delivering Fast and Light Applications with Save-Data</a>.  No surprise that their main target is a better experience for users on slow mobile connections.</p>\n<p>If sites start respecting <code>Save-Data = \"on\"</code> requests, and they do it in a way that maintains basically functionality, then why not turn it on all the time?  Even if I&#8217;m on an LTE connection, I&#8217;d rather have a faster loading site.  The next step is to turn it on for desktop browsers.  There is nothing that limits this to mobile clients.</p>\n<p>Anything that targets faster page loads on mobile clients will eventually get used everywhere.</p>\n",
+            "content_text": "From the world of client hints comes Save-Data:\n\nThe token is a signal indicating explicit user opt-in into a reduced data usage mode on the client, and when communicated to origins allows them to deliver alternate content honoring such preference &#8211; e.g. smaller image and video resources, alternate markup, and so on.\n\nThe Google Developer site has a write up on Delivering Fast and Light Applications with Save-Data.  No surprise that their main target is a better experience for users on slow mobile connections.\nIf sites start respecting Save-Data = \"on\" requests, and they do it in a way that maintains basically functionality, then why not turn it on all the time?  Even if I&#8217;m on an LTE connection, I&#8217;d rather have a faster loading site.  The next step is to turn it on for desktop browsers.  There is nothing that limits this to mobile clients.\nAnything that targets faster page loads on mobile clients will eventually get used everywhere.",
+            "date_published": "2016-03-11T11:11:05-07:00",
+            "date_modified": "2016-03-11T11:11:05-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "client-hint",
+                "http",
+                "save-data",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=14930",
+            "url": "https://blog.josephscott.org/2016/01/18/hpack-static-table-definitionhpack-header-compression-for-http2/",
+            "title": "HPACK, Static Table Definition",
+            "content_html": "<p>The HPACK ( <a href=\"https://http2.github.io/http2-spec/compression.html\">header compression for HTTP/2</a> ) static table:</p>\n<blockquote><p>\nThe static table was created from the most frequent header fields used by popular web sites, with the addition of HTTP/2-specific pseudo-header fields (see Section 8.1.2.1 of [HTTP2]). For header fields with a few frequent values, an entry was added for each of these frequent values. For other header fields, an entry was added with an empty value.\n</p></blockquote>\n<p>Here is a <a href=\"https://http2.github.io/http2-spec/compression.html#static.table.entries\">direct link to the list</a>.  I like number 16, <code>accept-encoding: gzip, deflate</code>, even though that means this won&#8217;t be usable with <a href=\"https://josephscott.org/archives/2015/12/brotli-in-browsers/\">Brotli</a>.</p>\n",
+            "content_text": "The HPACK ( header compression for HTTP/2 ) static table:\n\nThe static table was created from the most frequent header fields used by popular web sites, with the addition of HTTP/2-specific pseudo-header fields (see Section 8.1.2.1 of [HTTP2]). For header fields with a few frequent values, an entry was added for each of these frequent values. For other header fields, an entry was added with an empty value.\n\nHere is a direct link to the list.  I like number 16, accept-encoding: gzip, deflate, even though that means this won&#8217;t be usable with Brotli.",
+            "date_published": "2016-01-18T11:51:43-07:00",
+            "date_modified": "2016-01-18T11:51:43-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "hpack",
+                "http",
+                "http2",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=12964",
+            "url": "https://blog.josephscott.org/2015/08/10/chrome-intent-to-ship-dpr-client-hints/",
+            "title": "Chrome Intent to Ship: DPR, Client Hints",
+            "content_html": "<p>Back in June I mentioned <a href=\"https://josephscott.org/archives/2015/06/http-client-hints-dpr-device-pixel-ratio/\">HTTP client hints, like DPR</a>.  It has gone on to <a href=\"https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/vvX1vCQihDE/wg6JQg9utaMJ\">Intent to Ship for Chrome</a>.  That spawned additional discussion on privacy and performance issues.  Yoav Weiss has written up a doc on <a href=\"https://github.com/yoavweiss/http-client-hints/blob/browser_considerations/browser_implementation_considerations.md\">implementation considerations</a>.</p>\n<p>The <a href=\"https://www.chromestatus.com/features/5504430086553600\">Chrome Feature List</a> has it with a status of &#8220;In development&#8221;.</p>\n",
+            "content_text": "Back in June I mentioned HTTP client hints, like DPR.  It has gone on to Intent to Ship for Chrome.  That spawned additional discussion on privacy and performance issues.  Yoav Weiss has written up a doc on implementation considerations.\nThe Chrome Feature List has it with a status of &#8220;In development&#8221;.",
+            "date_published": "2015-08-10T09:09:36-06:00",
+            "date_modified": "2015-08-10T09:09:36-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "chrome",
+                "http",
+                "yoav-weiss",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=12180",
+            "url": "https://blog.josephscott.org/2015/06/09/http-client-hints-dpr-device-pixel-ratio/",
+            "title": "HTTP Client Hints: DPR ( device pixel ratio )",
+            "content_html": "<p>From the world of &#8220;retina images are still kind of a pain&#8221;: <a href=\"https://github.com/igrigorik/http-client-hints#delivering-dpr-and-resource-width-aware-images\">clients could include DPR ( device pixel ratio ) details in image requests</a>:</p>\n<blockquote><p>\nDPR hint automates device-pixel-ratio-based selection and enables delivery of optimal image variant without any changes in markup.\n</p></blockquote>\n<p>A request from the client for an image would look like:</p>\n<p>[code lang=text]<br />\nGET /img.jpg HTTP/1.1<br />\nUser-Agent: Awesome Browser<br />\nAccept: image/webp, image/jpg<br />\nDPR: 2.0<br />\n[/code]</p>\n<p>This would be wonderfully helpful to servers that can manipulate image results to best fit the capabilities of clients.</p>\n<p>There is also discussion about a <code>RW</code> ( resource width ) header.</p>\n",
+            "content_text": "From the world of &#8220;retina images are still kind of a pain&#8221;: clients could include DPR ( device pixel ratio ) details in image requests:\n\nDPR hint automates device-pixel-ratio-based selection and enables delivery of optimal image variant without any changes in markup.\n\nA request from the client for an image would look like:\n[code lang=text]\nGET /img.jpg HTTP/1.1\nUser-Agent: Awesome Browser\nAccept: image/webp, image/jpg\nDPR: 2.0\n[/code]\nThis would be wonderfully helpful to servers that can manipulate image results to best fit the capabilities of clients.\nThere is also discussion about a RW ( resource width ) header.",
+            "date_published": "2015-06-09T08:13:59-06:00",
+            "date_modified": "2015-06-09T08:13:59-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "http",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=11443",
+            "url": "https://blog.josephscott.org/2014/12/02/how-to-check-a-site-for-spdy-support-with-openssl/",
+            "title": "How To Check A Site For SPDY Support With OpenSSL",
+            "content_html": "<p>A <a href=\"http://stackoverflow.com/questions/23742928/how-to-detect-if-a-server-is-using-spdy/23792880#23792880\">Stack Overflow thread</a> with an example on how to check a server for <a href=\"http://www.chromium.org/spdy\">SPDY</a> support with <a href=\"https://www.openssl.org/\">OpenSSL</a>:</p>\n<pre>\nopenssl s_client -connect google.com:443 -nextprotoneg ''\n</pre>\n<p>The result I got from &#8220;OpenSSL 1.0.1f 6 Jan 2014&#8221; looked like this ( emphasis mine ):</p>\n<pre>\nCONNECTED(00000003)\n<strong>Protocols advertised by server: spdy/5a1, h2-14, spdy/3.1, spdy/3, http/1.1</strong>\n139790806673056:error:140920E3:SSL routines:SSL3_GET_SERVER_HELLO:parse tlsext:s3_clnt.c:1061:\n---\nno peer certificate available\n---\nNo client certificate CA names sent\n---\nSSL handshake has read 110 bytes and written 7 bytes\n---\nNew, (NONE), Cipher is (NONE)\nSecure Renegotiation IS supported\nCompression: NONE\nExpansion: NONE\nNext protocol: (2) \nSSL-Session:\n    Protocol  : TLSv1.2\n    Cipher    : 0000\n    Session-ID: \n    Session-ID-ctx: \n    Master-Key: \n    Key-Arg   : None\n    PSK identity: None\n    PSK identity hint: None\n    SRP username: None\n    Start Time: 1417496091\n    Timeout   : 300 (sec)\n    Verify return code: 0 (ok)\n---\n</pre>\n<p>The &#8220;Protocols advertised by server:&#8221; is the line you need.</p>\n",
+            "content_text": "A Stack Overflow thread with an example on how to check a server for SPDY support with OpenSSL:\n\nopenssl s_client -connect google.com:443 -nextprotoneg ''\n\nThe result I got from &#8220;OpenSSL 1.0.1f 6 Jan 2014&#8221; looked like this ( emphasis mine ):\n\nCONNECTED(00000003)\nProtocols advertised by server: spdy/5a1, h2-14, spdy/3.1, spdy/3, http/1.1\n139790806673056:error:140920E3:SSL routines:SSL3_GET_SERVER_HELLO:parse tlsext:s3_clnt.c:1061:\n---\nno peer certificate available\n---\nNo client certificate CA names sent\n---\nSSL handshake has read 110 bytes and written 7 bytes\n---\nNew, (NONE), Cipher is (NONE)\nSecure Renegotiation IS supported\nCompression: NONE\nExpansion: NONE\nNext protocol: (2) \nSSL-Session:\n    Protocol  : TLSv1.2\n    Cipher    : 0000\n    Session-ID: \n    Session-ID-ctx: \n    Master-Key: \n    Key-Arg   : None\n    PSK identity: None\n    PSK identity hint: None\n    SRP username: None\n    Start Time: 1417496091\n    Timeout   : 300 (sec)\n    Verify return code: 0 (ok)\n---\n\nThe &#8220;Protocols advertised by server:&#8221; is the line you need.",
+            "date_published": "2014-12-02T16:15:21-07:00",
+            "date_modified": "2014-12-02T16:15:21-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "http",
+                "openssl",
+                "spdy",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=11178",
+            "url": "https://blog.josephscott.org/2014/10/08/http-api-for-postgresql/",
+            "title": "HTTP API for PostgreSQL",
+            "content_html": "<p>PostgreSQL has also been considering a <a href=\"https://wiki.postgresql.org/wiki/HTTP_API\">HTTP API</a>.</p>\n",
+            "content_text": "PostgreSQL has also been considering a HTTP API.",
+            "date_published": "2014-10-08T14:51:04-06:00",
+            "date_modified": "2014-10-08T14:51:04-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "http",
+                "PostgreSQL",
+                "Posts"
+            ]
+        }
+    ]
+}

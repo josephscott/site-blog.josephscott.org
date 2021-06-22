@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Two Complaints With PHP5	</title>
+	<atom:link href="/2004/11/05/two-complaints-with-php5/feed/" rel="self" type="application/rss+xml" />
+	<link>/2004/11/05/two-complaints-with-php5/</link>
+	<description></description>
+	<lastBuildDate>Thu, 15 Nov 2007 02:10:08 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Sam Barrow		</title>
+		<link>/2004/11/05/two-complaints-with-php5/#comment-688</link>
+
+		<dc:creator><![CDATA[Sam Barrow]]></dc:creator>
+		<pubDate>Thu, 15 Nov 2007 02:10:08 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/11/05/two-complaints-with-php5/#comment-688</guid>
+
+					<description><![CDATA[I think multiple inheritance is a near necessity for large scale applications. Sure, most people don&#039;t need it, but for some applications it is incredibly useful and helpful. Interfaces achieve an entirely different result, I don&#039;t know why people always say &quot;use interfaces instead&quot; that makes no sense to me.]]></description>
+			<content:encoded><![CDATA[<p>I think multiple inheritance is a near necessity for large scale applications. Sure, most people don&#8217;t need it, but for some applications it is incredibly useful and helpful. Interfaces achieve an entirely different result, I don&#8217;t know why people always say &#8220;use interfaces instead&#8221; that makes no sense to me.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hasnain		</title>
+		<link>/2004/11/05/two-complaints-with-php5/#comment-687</link>
+
+		<dc:creator><![CDATA[Hasnain]]></dc:creator>
+		<pubDate>Mon, 13 Aug 2007 08:24:30 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/11/05/two-complaints-with-php5/#comment-687</guid>
+
+					<description><![CDATA[I agree with the two complaints. There is no significant thing of multiple inheritence in PHP5.]]></description>
+			<content:encoded><![CDATA[<p>I agree with the two complaints. There is no significant thing of multiple inheritence in PHP5.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Namespacing PHP &#124; Joseph Scott's Blog		</title>
+		<link>/2004/11/05/two-complaints-with-php5/#comment-686</link>
+
+		<dc:creator><![CDATA[Namespacing PHP &#124; Joseph Scott's Blog]]></dc:creator>
+		<pubDate>Fri, 13 Jul 2007 15:12:12 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/11/05/two-complaints-with-php5/#comment-686</guid>
+
+					<description><![CDATA[[...] really should have included lack of namespaces in my complaints about PHP5. If that was bugging you too then you&#8217;ll be happy to hear that PHP6 will have [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] really should have included lack of namespaces in my complaints about PHP5. If that was bugging you too then you&#8217;ll be happy to hear that PHP6 will have [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bernhard Kepplinger		</title>
+		<link>/2004/11/05/two-complaints-with-php5/#comment-685</link>
+
+		<dc:creator><![CDATA[Bernhard Kepplinger]]></dc:creator>
+		<pubDate>Mon, 07 Feb 2005 16:02:35 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/11/05/two-complaints-with-php5/#comment-685</guid>
+
+					<description><![CDATA[with php5 this issue really should have been resolved. ... as i really hoped it would.]]></description>
+			<content:encoded><![CDATA[<p>with php5 this issue really should have been resolved. &#8230; as i really hoped it would.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2004/11/05/two-complaints-with-php5/#comment-684</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 08 Dec 2004 20:52:07 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/11/05/two-complaints-with-php5/#comment-684</guid>
+
+					<description><![CDATA[I never suggested that multiple inheritance would be a free feature from a performance stand point.  I do contend though that abstract classes are not a substitute for multiple inheritance.
+
+In addition to C++, multiple inheritance is supported by Perl, Python and Eiffel.  Likely more, but those are the ones I can think of off hand.]]></description>
+			<content:encoded><![CDATA[<p>I never suggested that multiple inheritance would be a free feature from a performance stand point.  I do contend though that abstract classes are not a substitute for multiple inheritance.</p>
+<p>In addition to C++, multiple inheritance is supported by Perl, Python and Eiffel.  Likely more, but those are the ones I can think of off hand.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Greg Ferguson		</title>
+		<link>/2004/11/05/two-complaints-with-php5/#comment-683</link>
+
+		<dc:creator><![CDATA[Greg Ferguson]]></dc:creator>
+		<pubDate>Wed, 08 Dec 2004 20:03:28 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/11/05/two-complaints-with-php5/#comment-683</guid>
+
+					<description><![CDATA[There is a performance hit associated with multiple inheritance.  And you incur the hit whether or not you choose to use it.  The choice not to implement multiple inheritance seems to be the more popular choice.  Only C++ choose to implement it.]]></description>
+			<content:encoded><![CDATA[<p>There is a performance hit associated with multiple inheritance.  And you incur the hit whether or not you choose to use it.  The choice not to implement multiple inheritance seems to be the more popular choice.  Only C++ choose to implement it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jazeps		</title>
+		<link>/2004/11/05/two-complaints-with-php5/#comment-682</link>
+
+		<dc:creator><![CDATA[Jazeps]]></dc:creator>
+		<pubDate>Wed, 17 Nov 2004 16:03:45 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/11/05/two-complaints-with-php5/#comment-682</guid>
+
+					<description><![CDATA[I was writing a kind of unit testing suite, but found out that PHP5 does not take PHP errors as exceptions. Just like you said. So I came accross your page by googling on the subject. This is very sad. I was just being amazed by the restore_exception_handler when this sh#t hit me. Thanks for the set_error_handler advice.]]></description>
+			<content:encoded><![CDATA[<p>I was writing a kind of unit testing suite, but found out that PHP5 does not take PHP errors as exceptions. Just like you said. So I came accross your page by googling on the subject. This is very sad. I was just being amazed by the restore_exception_handler when this sh#t hit me. Thanks for the set_error_handler advice.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rami Kayyali		</title>
+		<link>/2004/11/05/two-complaints-with-php5/#comment-681</link>
+
+		<dc:creator><![CDATA[Rami Kayyali]]></dc:creator>
+		<pubDate>Sun, 07 Nov 2004 20:44:08 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/11/05/two-complaints-with-php5/#comment-681</guid>
+
+					<description><![CDATA[Actually, I don&#039;t think multiple inheritance is a must, sure it&#039;s a nice feature, but sometimes it gives painful headaches, and it&#039;s often misused and it got a bad reputation from those misuses. It probably took long sessions for Java designers to decide that Java doesn&#039;t need multiple inheritance, so we&#039;ll have to stick to the next best thing.]]></description>
+			<content:encoded><![CDATA[<p>Actually, I don&#8217;t think multiple inheritance is a must, sure it&#8217;s a nice feature, but sometimes it gives painful headaches, and it&#8217;s often misused and it got a bad reputation from those misuses. It probably took long sessions for Java designers to decide that Java doesn&#8217;t need multiple inheritance, so we&#8217;ll have to stick to the next best thing.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

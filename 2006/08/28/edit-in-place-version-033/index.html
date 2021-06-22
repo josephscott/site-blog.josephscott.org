@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="profile" href="https://gmpg.org/xfn/11"> <meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@josephscott">
+<meta name="twitter:site" content="@josephscott">
+<meta name="twitter:title" content="Edit In Place, Version 0.3.3">
+<meta name="twitter:description" content="Changes in version 0.3.3:Remove trailing newline from edit form (Sheldon)Minified version of EditInPlace.js included in distribution filesNew option: ajax_dataI&#039;ve tried to keep the size of Ed"> <link media="all" href="/wp-content/cache/autoptimize/css/autoptimize_da876478aa27b35cb47c491625986a1f.css" rel="stylesheet">
+<link media="print" href="/wp-content/cache/autoptimize/css/autoptimize_4a8bc5d490127fba1e504524cfa205e6.css" rel="stylesheet">
+<title>Edit In Place, Version 0.3.3 &#8211; Joseph Scott</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="alternate" type="application/rss+xml" title="Joseph Scott &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="Joseph Scott &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Joseph Scott &raquo; Edit In Place, Version 0.3.3 Comments Feed" href="/2006/08/28/edit-in-place-version-033/feed/">
+<style id="twentytwenty-style-inline-css">.color-accent,.color-accent-hover:hover,.color-accent-hover:focus,:root .has-accent-color,.has-drop-cap:not(:focus):first-letter,.wp-block-button.is-style-outline,a { color: #e20842; }blockquote,.border-color-accent,.border-color-accent-hover:hover,.border-color-accent-hover:focus { border-color: #e20842; }button,.button,.faux-button,.wp-block-button__link,.wp-block-file .wp-block-file__button,input[type="button"],input[type="reset"],input[type="submit"],.bg-accent,.bg-accent-hover:hover,.bg-accent-hover:focus,:root .has-accent-background-color,.comment-reply-link { background-color: #e20842; }.fill-children-accent,.fill-children-accent * { fill: #e20842; }:root .has-background-color,button,.button,.faux-button,.wp-block-button__link,.wp-block-file__button,input[type="button"],input[type="reset"],input[type="submit"],.wp-block-button,.comment-reply-link,.has-background.has-primary-background-color:not(.has-text-color),.has-background.has-primary-background-color *:not(.has-text-color),.has-background.has-accent-background-color:not(.has-text-color),.has-background.has-accent-background-color *:not(.has-text-color) { color: #f7f7f7; }:root .has-background-background-color { background-color: #f7f7f7; }body,.entry-title a,:root .has-primary-color { color: #000000; }:root .has-primary-background-color { background-color: #000000; }cite,figcaption,.wp-caption-text,.post-meta,.entry-content .wp-block-archives li,.entry-content .wp-block-categories li,.entry-content .wp-block-latest-posts li,.wp-block-latest-comments__comment-date,.wp-block-latest-posts__post-date,.wp-block-embed figcaption,.wp-block-image figcaption,.wp-block-pullquote cite,.comment-metadata,.comment-respond .comment-notes,.comment-respond .logged-in-as,.pagination .dots,.entry-content hr:not(.has-background),hr.styled-separator,:root .has-secondary-color { color: #686868; }:root .has-secondary-background-color { background-color: #686868; }pre,fieldset,input,textarea,table,table *,hr { border-color: #d3d3d3; }caption,code,code,kbd,samp,.wp-block-table.is-style-stripes tbody tr:nth-child(odd),:root .has-subtle-background-background-color { background-color: #d3d3d3; }.wp-block-table.is-style-stripes { border-bottom-color: #d3d3d3; }.wp-block-latest-posts.is-grid li { border-top-color: #d3d3d3; }:root .has-subtle-background-color { color: #d3d3d3; }body:not(.overlay-header) .primary-menu > li > a,body:not(.overlay-header) .primary-menu > li > .icon,.modal-menu a,.footer-menu a, .footer-widgets a,#site-footer .wp-block-button.is-style-outline,.wp-block-pullquote:before,.singular:not(.overlay-header) .entry-header a,.archive-header a,.header-footer-group .color-accent,.header-footer-group .color-accent-hover:hover { color: #e20842; }.social-icons a,#site-footer button:not(.toggle),#site-footer .button,#site-footer .faux-button,#site-footer .wp-block-button__link,#site-footer .wp-block-file__button,#site-footer input[type="button"],#site-footer input[type="reset"],#site-footer input[type="submit"] { background-color: #e20842; }.social-icons a,body:not(.overlay-header) .primary-menu ul,.header-footer-group button,.header-footer-group .button,.header-footer-group .faux-button,.header-footer-group .wp-block-button:not(.is-style-outline) .wp-block-button__link,.header-footer-group .wp-block-file__button,.header-footer-group input[type="button"],.header-footer-group input[type="reset"],.header-footer-group input[type="submit"] { color: #f7f7f7; }#site-header,.footer-nav-widgets-wrapper,#site-footer,.menu-modal,.menu-modal-inner,.search-modal-inner,.archive-header,.singular .entry-header,.singular .featured-media:before,.wp-block-pullquote:before { background-color: #f7f7f7; }.header-footer-group,body:not(.overlay-header) #site-header .toggle,.menu-modal .toggle { color: #000000; }body:not(.overlay-header) .primary-menu ul { background-color: #000000; }body:not(.overlay-header) .primary-menu > li > ul:after { border-bottom-color: #000000; }body:not(.overlay-header) .primary-menu ul ul:after { border-left-color: #000000; }.site-description,body:not(.overlay-header) .toggle-inner .toggle-text,.widget .post-date,.widget .rss-date,.widget_archive li,.widget_categories li,.widget cite,.widget_pages li,.widget_meta li,.widget_nav_menu li,.powered-by-wordpress,.to-the-top,.singular .entry-header .post-meta,.singular:not(.overlay-header) .entry-header .post-meta a { color: #686868; }.header-footer-group pre,.header-footer-group fieldset,.header-footer-group input,.header-footer-group textarea,.header-footer-group table,.header-footer-group table *,.footer-nav-widgets-wrapper,#site-footer,.menu-modal nav *,.footer-widgets-outer-wrapper,.footer-top { border-color: #d3d3d3; }.header-footer-group table caption,body:not(.overlay-header) .header-inner .toggle-wrapper::before { background-color: #d3d3d3; }.overlay-header .header-inner { color: #f7f7f7; }.cover-header .entry-header * { color: #f7f7f7; }</style>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/676">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 5.7.2">
+<link rel="canonical" href="/2006/08/28/edit-in-place-version-033/">
+<link rel="shortlink" href="/?p=676">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2006%2F08%2F28%2Fedit-in-place-version-033%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2006%2F08%2F28%2Fedit-in-place-version-033%2F&#038;format=xml">
+<link rel="alternate" type="application/feed+json" title="Joseph Scott &raquo; JSON Feed" href="/feed/json/">
+<link rel="alternate" type="application/feed+json" title="Joseph Scott &raquo; Edit In Place, Version 0.3.3 Comments Feed" href="/2006/08/28/edit-in-place-version-033/feed/json/"> <script>document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );</script> <style id="custom-background-css">body.custom-background { background-color: #f7f7f7; }</style>
+<style id="wp-custom-css">.powered-by-wordpress { display: none;}
+
+.entry-categories { display: none;}</style>
+</head>
+<body class="post-template-default single single-post postid-676 single-format-standard custom-background wp-embed-responsive singular enable-search-modal missing-post-thumbnail has-single-pagination showing-comments show-avatars footer-top-visible reduced-spacing"> <a class="skip-link screen-reader-text" href="#site-content">Skip to the content</a><header id="site-header" class="header-footer-group" role="banner"><div class="header-inner section-inner">
+<div class="header-titles-wrapper"> <button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false"> <span class="toggle-inner"> <span class="toggle-icon"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewbox="0 0 23 23"><path d="M38.710696,48.0601792 L43,52.3494831 L41.3494831,54 L37.0601792,49.710696 C35.2632422,51.1481185 32.9839107,52.0076499 30.5038249,52.0076499 C24.7027226,52.0076499 20,47.3049272 20,41.5038249 C20,35.7027226 24.7027226,31 30.5038249,31 C36.3049272,31 41.0076499,35.7027226 41.0076499,41.5038249 C41.0076499,43.9839107 40.1481185,46.2632422 38.710696,48.0601792 Z M36.3875844,47.1716785 C37.8030221,45.7026647 38.6734666,43.7048964 38.6734666,41.5038249 C38.6734666,36.9918565 35.0157934,33.3341833 30.5038249,33.3341833 C25.9918565,33.3341833 22.3341833,36.9918565 22.3341833,41.5038249 C22.3341833,46.0157934 25.9918565,49.6734666 30.5038249,49.6734666 C32.7048964,49.6734666 34.7026647,48.8030221 36.1716785,47.3875844 C36.2023931,47.347638 36.2360451,47.3092237 36.2726343,47.2726343 C36.3092237,47.2360451 36.347638,47.2023931 36.3875844,47.1716785 Z" transform="translate(-20 -31)"></path></svg> </span> <span class="toggle-text">Search</span> </span> </button><div class="header-titles"><div class="site-title faux-heading"><a href="/">Joseph Scott</a></div></div> <button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle"> <span class="toggle-inner"> <span class="toggle-icon"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="26" height="7" viewbox="0 0 26 7"><path fill-rule="evenodd" d="M332.5,45 C330.567003,45 329,43.4329966 329,41.5 C329,39.5670034 330.567003,38 332.5,38 C334.432997,38 336,39.5670034 336,41.5 C336,43.4329966 334.432997,45 332.5,45 Z M342,45 C340.067003,45 338.5,43.4329966 338.5,41.5 C338.5,39.5670034 340.067003,38 342,38 C343.932997,38 345.5,39.5670034 345.5,41.5 C345.5,43.4329966 343.932997,45 342,45 Z M351.5,45 C349.567003,45 348,43.4329966 348,41.5 C348,39.5670034 349.567003,38 351.5,38 C353.432997,38 355,39.5670034 355,41.5 C355,43.4329966 353.432997,45 351.5,45 Z" transform="translate(-329 -38)"></path></svg> </span> <span class="toggle-text">Menu</span> </span> </button>
+</div>
+<div class="header-navigation-wrapper">
+<nav class="primary-menu-wrapper" aria-label="Horizontal" role="navigation"><ul class="primary-menu reset-list-style">
+<li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><a href="https://josephscott.org/">Home</a></li>
+<li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-8"><a href="/">Blog</a></li>
+<li id="menu-item-15706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15706"><a href="/contact/">Contact</a></li>
+</ul></nav><div class="header-toggles hide-no-js"><div class="toggle-wrapper search-toggle-wrapper"> <button class="toggle search-toggle desktop-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false"> <span class="toggle-inner"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewbox="0 0 23 23"><path d="M38.710696,48.0601792 L43,52.3494831 L41.3494831,54 L37.0601792,49.710696 C35.2632422,51.1481185 32.9839107,52.0076499 30.5038249,52.0076499 C24.7027226,52.0076499 20,47.3049272 20,41.5038249 C20,35.7027226 24.7027226,31 30.5038249,31 C36.3049272,31 41.0076499,35.7027226 41.0076499,41.5038249 C41.0076499,43.9839107 40.1481185,46.2632422 38.710696,48.0601792 Z M36.3875844,47.1716785 C37.8030221,45.7026647 38.6734666,43.7048964 38.6734666,41.5038249 C38.6734666,36.9918565 35.0157934,33.3341833 30.5038249,33.3341833 C25.9918565,33.3341833 22.3341833,36.9918565 22.3341833,41.5038249 C22.3341833,46.0157934 25.9918565,49.6734666 30.5038249,49.6734666 C32.7048964,49.6734666 34.7026647,48.8030221 36.1716785,47.3875844 C36.2023931,47.347638 36.2360451,47.3092237 36.2726343,47.2726343 C36.3092237,47.2360451 36.347638,47.2023931 36.3875844,47.1716785 Z" transform="translate(-20 -31)"></path></svg> <span class="toggle-text">Search</span> </span> </button>
+</div></div>
+</div>
+</div>
+<div class="search-modal cover-modal header-footer-group" data-modal-target-string=".search-modal"><div class="search-modal-inner modal-inner"><div class="section-inner">
+<form role="search" aria-label="Search for:" method="get" class="search-form" action="/"> <label for="search-form-1"> <span class="screen-reader-text">Search for:</span> <input type="search" id="search-form-1" class="search-field" placeholder="Search &hellip;" value="" name="s"> </label> <input type="submit" class="search-submit" value="Search">
+</form> <button class="toggle search-untoggle close-search-toggle fill-children-current-color" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field"> <span class="screen-reader-text">Close search</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16"><polygon fill="" fill-rule="evenodd" points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102"></polygon></svg> </button>
+</div></div></div></header><div class="menu-modal cover-modal header-footer-group" data-modal-target-string=".menu-modal"><div class="menu-modal-inner modal-inner"><div class="menu-wrapper section-inner">
+<div class="menu-top"> <button class="toggle close-nav-toggle fill-children-current-color" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".menu-modal"> <span class="toggle-text">Close Menu</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16"><polygon fill="" fill-rule="evenodd" points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102"></polygon></svg> </button><nav class="mobile-menu" aria-label="Mobile" role="navigation"><ul class="modal-menu reset-list-style">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><div class="ancestor-wrapper"><a href="https://josephscott.org/">Home</a></div></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-8"><div class="ancestor-wrapper"><a href="/">Blog</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15706"><div class="ancestor-wrapper"><a href="/contact/">Contact</a></div></li>
+</ul></nav>
+</div>
+<div class="menu-bottom"></div>
+</div></div></div>
+<main id="site-content" role="main"><article class="post-676 post type-post status-publish format-standard hentry category-josephscott" id="post-676"><header class="entry-header has-text-align-center header-footer-group"><div class="entry-header-inner section-inner medium">
+<div class="entry-categories"> <span class="screen-reader-text">Categories</span><div class="entry-categories-inner"> <a href="/category/josephscott/" rel="category tag">josephscott</a>
+</div>
+</div>
+<h1 class="entry-title">Edit In Place, Version 0.3.3</h1>
+<div class="post-meta-wrapper post-meta-single post-meta-single-top"><ul class="post-meta">
+<li class="post-author meta-wrapper"> <span class="meta-icon"> <span class="screen-reader-text">Post author</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewbox="0 0 18 20"><path fill="" d="M18,19 C18,19.5522847 17.5522847,20 17,20 C16.4477153,20 16,19.5522847 16,19 L16,17 C16,15.3431458 14.6568542,14 13,14 L5,14 C3.34314575,14 2,15.3431458 2,17 L2,19 C2,19.5522847 1.55228475,20 1,20 C0.44771525,20 0,19.5522847 0,19 L0,17 C0,14.2385763 2.23857625,12 5,12 L13,12 C15.7614237,12 18,14.2385763 18,17 L18,19 Z M9,10 C6.23857625,10 4,7.76142375 4,5 C4,2.23857625 6.23857625,0 9,0 C11.7614237,0 14,2.23857625 14,5 C14,7.76142375 11.7614237,10 9,10 Z M9,8 C10.6568542,8 12,6.65685425 12,5 C12,3.34314575 10.6568542,2 9,2 C7.34314575,2 6,3.34314575 6,5 C6,6.65685425 7.34314575,8 9,8 Z"></path></svg> </span> <span class="meta-text"> By <a href="/author/josephscott/">josephscott</a> </span>
+</li>
+<li class="post-date meta-wrapper"> <span class="meta-icon"> <span class="screen-reader-text">Post date</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewbox="0 0 18 19"><path fill="" d="M4.60069444,4.09375 L3.25,4.09375 C2.47334957,4.09375 1.84375,4.72334957 1.84375,5.5 L1.84375,7.26736111 L16.15625,7.26736111 L16.15625,5.5 C16.15625,4.72334957 15.5266504,4.09375 14.75,4.09375 L13.3993056,4.09375 L13.3993056,4.55555556 C13.3993056,5.02154581 13.0215458,5.39930556 12.5555556,5.39930556 C12.0895653,5.39930556 11.7118056,5.02154581 11.7118056,4.55555556 L11.7118056,4.09375 L6.28819444,4.09375 L6.28819444,4.55555556 C6.28819444,5.02154581 5.9104347,5.39930556 5.44444444,5.39930556 C4.97845419,5.39930556 4.60069444,5.02154581 4.60069444,4.55555556 L4.60069444,4.09375 Z M6.28819444,2.40625 L11.7118056,2.40625 L11.7118056,1 C11.7118056,0.534009742 12.0895653,0.15625 12.5555556,0.15625 C13.0215458,0.15625 13.3993056,0.534009742 13.3993056,1 L13.3993056,2.40625 L14.75,2.40625 C16.4586309,2.40625 17.84375,3.79136906 17.84375,5.5 L17.84375,15.875 C17.84375,17.5836309 16.4586309,18.96875 14.75,18.96875 L3.25,18.96875 C1.54136906,18.96875 0.15625,17.5836309 0.15625,15.875 L0.15625,5.5 C0.15625,3.79136906 1.54136906,2.40625 3.25,2.40625 L4.60069444,2.40625 L4.60069444,1 C4.60069444,0.534009742 4.97845419,0.15625 5.44444444,0.15625 C5.9104347,0.15625 6.28819444,0.534009742 6.28819444,1 L6.28819444,2.40625 Z M1.84375,8.95486111 L1.84375,15.875 C1.84375,16.6516504 2.47334957,17.28125 3.25,17.28125 L14.75,17.28125 C15.5266504,17.28125 16.15625,16.6516504 16.15625,15.875 L16.15625,8.95486111 L1.84375,8.95486111 Z"></path></svg> </span> <span class="meta-text"> <a href="/2006/08/28/edit-in-place-version-033/">Mon 28 Aug 2006</a> </span>
+</li>
+<li class="post-comment-link meta-wrapper"> <span class="meta-icon"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewbox="0 0 19 19"><path d="M9.43016863,13.2235931 C9.58624731,13.094699 9.7823475,13.0241935 9.98476849,13.0241935 L15.0564516,13.0241935 C15.8581553,13.0241935 16.5080645,12.3742843 16.5080645,11.5725806 L16.5080645,3.44354839 C16.5080645,2.64184472 15.8581553,1.99193548 15.0564516,1.99193548 L3.44354839,1.99193548 C2.64184472,1.99193548 1.99193548,2.64184472 1.99193548,3.44354839 L1.99193548,11.5725806 C1.99193548,12.3742843 2.64184472,13.0241935 3.44354839,13.0241935 L5.76612903,13.0241935 C6.24715123,13.0241935 6.63709677,13.4141391 6.63709677,13.8951613 L6.63709677,15.5301903 L9.43016863,13.2235931 Z M3.44354839,14.766129 C1.67980032,14.766129 0.25,13.3363287 0.25,11.5725806 L0.25,3.44354839 C0.25,1.67980032 1.67980032,0.25 3.44354839,0.25 L15.0564516,0.25 C16.8201997,0.25 18.25,1.67980032 18.25,3.44354839 L18.25,11.5725806 C18.25,13.3363287 16.8201997,14.766129 15.0564516,14.766129 L10.2979143,14.766129 L6.32072889,18.0506004 C5.75274472,18.5196577 4.89516129,18.1156602 4.89516129,17.3790323 L4.89516129,14.766129 L3.44354839,14.766129 Z"></path></svg> </span> <span class="meta-text"> <a href="/2006/08/28/edit-in-place-version-033/#comments">42 Comments<span class="screen-reader-text"> on Edit In Place, Version 0.3.3</span></a> </span>
+</li>
+</ul></div>
+</div></header><div class="post-inner thin "><div class="entry-content">
+<p>Changes in <a href="http://josephscott.org/code/js/eip/releases/eip-0.3.3.tgz">version 0.3.3</a>:</p>
+<ul>
+<li>Remove trailing newline from edit form (<a href="http://tooshel.com/wordpress/">Sheldon</a>)</li>
+<li>
+<a href="http://www.crockford.com/javascript/jsmin.html">Minified</a> version of EditInPlace.js included in distribution files</li>
+<li>New option: ajax_data</li>
+</ul>
+<p>I&#8217;ve tried to keep the size of EditInPlace reasonable, but as more bug fixes and features get added there is only so much you can do. So starting with version 0.3.3 I&#8217;m including a minified (via <a href="http://www.crockford.com/javascript/jsmin.html">JSMin</a>) version of EditInPlace.js. This brings the JavaScript source from 10,304 bytes to 6,751 bytes.</p>
+<p>The new ajax_data option allows you to provided additional data. I&#8217;ve had a few requests for this feature, thanks to <a href="http://joelion.com/">Joe Lion</a> for reminding me about it. The <a href="http://josephscott.org/code/js/eip/example.html">example page</a> has been updated to show to use this new feature. It&#8217;s simple enough:</p>
+<pre>
+EditInPlace.makeEditable({
+  id: 'edit_this_thing',
+  ajax_data: {
+    database_id: 12345,
+    other_data: 'Some Other String Data'
+  }
+});
+</pre>
+<p>As always, you can browse the <a href="http://josephscott.org/code/js/eip/">Edit In Place files</a>, play with the <a href="http://josephscott.org/code/js/eip/example.html">example page</a> or download the <a href="http://josephscott.org/code/js/eip/releases/eip-0.3.3.tgz">version 0.3.3</a> release.</p>
+</div></div>
+<div class="section-inner"></div>
+<nav class="pagination-single section-inner" aria-label="Post" role="navigation"><hr class="styled-separator is-style-wide" aria-hidden="true">
+<div class="pagination-single-inner"> <a class="previous-post" href="/2006/08/24/amazon-elastic-compute-cloud-amazon-ec2/"> <span class="arrow" aria-hidden="true">&larr;</span> <span class="title"><span class="title-inner">Amazon Elastic Compute Cloud (Amazon EC2)</span></span> </a> <a class="next-post" href="/2006/08/29/web-20-color-palette/"> <span class="arrow" aria-hidden="true">&rarr;</span> <span class="title"><span class="title-inner">Web 2.0 Color Palette</span></span> </a>
+</div>
+<hr class="styled-separator is-style-wide" aria-hidden="true"></nav><div class="comments-wrapper section-inner">
+<div class="comments" id="comments">
+<div class="comments-header section-inner small max-percentage"><h2 class="comment-reply-title"> 42 replies on &ldquo;Edit In Place, Version 0.3.3&rdquo;</h2></div>
+<div class="comments-inner section-inner thin max-percentage">
+<div id="comment-1587" class="comment even thread-even depth-1"><article id="div-comment-1587" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-531f3da23fd520fca976e7b328f19508-120-60d169fbd6e9a" alt="Jon Frisby" src="/wp-content/uploads/gravatar-cache/531f3da23fd520fca976e7b328f19508-120.png" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Jon Frisby</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1587"><time datetime="2006-09-03T18:06:54-06:00" title="Sun 3 Sep 2006 at 6:06 pm">Sun 3 Sep 2006 at 6:06 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Y&#8217;know, a handy option for select tags would be the ability to save the change when a new value is selected.</p>
+<p>Also, on_blur: &#8216;cancel&#8217; doesn&#8217;t work for me in Safari &#8212; I can&#8217;t ever save any changes, even by hitting enter.</p>
+<p>-JF</p>
+</div></article></div>
+<div id="comment-1588" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1588" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-531f3da23fd520fca976e7b328f19508-120-60d169fbd7d27" alt="Jon Frisby" src="/wp-content/uploads/gravatar-cache/531f3da23fd520fca976e7b328f19508-120.png" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Jon Frisby</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1588"><time datetime="2006-09-03T18:15:55-06:00" title="Sun 3 Sep 2006 at 6:15 pm">Sun 3 Sep 2006 at 6:15 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Also, it would be nifty if you could incorporate Nick Dunn&#8217;s moo.fx patch as a toggle-able option.</p>
+<p>-JF</p>
+</div></article></div>
+<div id="comment-1589" class="comment even thread-even depth-1"><article id="div-comment-1589" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.exploreweb2.com/" rel="external nofollow" class="url"><img id="grav-771f52b5b1d9889ded1391e182b44dbb-120-60d169fbd8d99" alt="Sachin Sagar Rai" src="/wp-content/uploads/gravatar-cache/771f52b5b1d9889ded1391e182b44dbb-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Sachin Sagar Rai</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1589"><time datetime="2006-09-04T03:28:08-06:00" title="Mon 4 Sep 2006 at 3:28 am">Mon 4 Sep 2006 at 3:28 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>How to get the value of ajax_data in php file?<br> I tried $_POST[&#8216;ajax_data&#8217;], didn&#8217;t work<br> Again tried $_POST[&#8216;ajax_data&#8217;][0] thinking its an array, but still didn&#8217;t work. How to get the values of ajax_data?</p>
+<p>And<br> Yes, the on_blur text element doesn&#8217;t save when Save button is pressed in Firefox(1.5.0.3)</p>
+</div></article></div>
+<div id="comment-1590" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1590" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d169fbdfc7a" alt="joseph" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">joseph</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1590"><time datetime="2006-09-04T08:14:15-06:00" title="Mon 4 Sep 2006 at 8:14 am">Mon 4 Sep 2006 at 8:14 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Sachin-</p>
+<p>You can access the additional data by name. So the additional data is made available by name, like: $_POST[&#8220;database_id&#8221;]</p>
+<p>Do you have an example up on the web where the on_blur and save button don&#8217;t work? I&#8217;ll add this to my to do list.</p>
+</div></article></div>
+<div id="comment-1591" class="comment even thread-even depth-1"><article id="div-comment-1591" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d169fbe5baf" alt="joseph" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">joseph</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1591"><time datetime="2006-09-04T08:24:11-06:00" title="Mon 4 Sep 2006 at 8:24 am">Mon 4 Sep 2006 at 8:24 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Jon Frisby-</p>
+<p>Adding events that help with the select field would be helpful. I&#8217;ll add that to my to do list.</p>
+<p>I&#8217;ll look around and see if there are known JavaScript event issues in Safari. I will note though that pressing enter is not the same as on_blur.</p>
+<p>I&#8217;m still a bit on fence when it comes to integrating moo.fx. I have been seriously considering it (and looked at bringing in Nick&#8217;s changes), but haven&#8217;t committed to doing it yet.</p>
+</div></article></div>
+<div id="comment-1592" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1592" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.exploreweb2.com/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169fbeafa8" alt="Sachin Sagar Rai" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Sachin Sagar Rai</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1592"><time datetime="2006-09-04T12:24:46-06:00" title="Mon 4 Sep 2006 at 12:24 pm">Mon 4 Sep 2006 at 12:24 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Joseph,<br> The on_blur not editing bug is in the example page itself.<br> <a href="http://josephscott.org/code/js/eip/example.html" rel="nofollow ugc">http://josephscott.org/code/js/eip/example.html</a></p></div></article></div>
+<div id="comment-1593" class="comment even thread-even depth-1"><article id="div-comment-1593" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.exploreweb2.com/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169fbf126f" alt="Sachin Sagar Rai" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Sachin Sagar Rai</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1593"><time datetime="2006-09-06T08:22:10-06:00" title="Wed 6 Sep 2006 at 8:22 am">Wed 6 Sep 2006 at 8:22 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Joseph,<br> The on_blur: ‘cancel’ still doesn’t work in your demo page<br> <a href="http://josephscott.org/code/js/eip/example.html" rel="nofollow ugc">http://josephscott.org/code/js/eip/example.html</a><br> Did u fix it??</p></div></article></div>
+<div id="comment-1594" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1594" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d169fc03deb" alt="joseph" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">joseph</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1594"><time datetime="2006-09-06T08:39:26-06:00" title="Wed 6 Sep 2006 at 8:39 am">Wed 6 Sep 2006 at 8:39 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>@Sachin &#8211; I haven&#8217;t had a chance to even look at it yet. I&#8217;m open to suggestions for a fix, other wise it will have to wait until I get the time to figure it out.</p></div></article></div>
+<div id="comment-1595" class="comment even thread-even depth-1"><article id="div-comment-1595" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169fc0acb7" alt="Benjamin" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Benjamin</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1595"><time datetime="2006-09-12T07:51:13-06:00" title="Tue 12 Sep 2006 at 7:51 am">Tue 12 Sep 2006 at 7:51 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I&#8217;m running a mySQL SELECT query in php that outputs a table of my data. it seems like it should be easy to use your edit plugin to allow easy editing of the generated table. I imagine I would use ajax. any ideas?</p>
+<p><code><br> while (($row = mysql_fetch_array($myguestlist,MYSQL_ASSOC)) &amp;&amp; ($i<br> " valign="top"&gt;</code></p>
+<p> </p>
+</div></article></div>
+<div id="comment-1596" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1596" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-994c22da11e6f0babd37f167b1a5fe32-120-60d169fc0be71" alt="Sheldon" src="/wp-content/uploads/gravatar-cache/994c22da11e6f0babd37f167b1a5fe32-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Sheldon</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1596"><time datetime="2006-09-14T11:32:32-06:00" title="Thu 14 Sep 2006 at 11:32 am">Thu 14 Sep 2006 at 11:32 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Joseph,</p>
+<p>Just getting back into the swing of things but still very much enjoying working with EIP!! The new ajax_data option really makes this easy. Anyway, today&#8217;s issue is with &#8220;orig_text&#8221;. It&#8217;s in the defaults area with a comment saying &#8220;options that are managed for you&#8221;. I was thinking that &#8220;orig_text&#8221; would be passed along with &#8220;content&#8221; so I could compare content to orig_text and if they are the same I wouldn&#8217;t write to the database but it doesn&#8217;t seem to work that way. I could do it with ajax_data and just make an option called &#8220;oldcontent&#8221; but after I update the text once, the &#8220;oldcontent&#8221; isn&#8217;t right for the next update. I know this is all very confusing and the point of &#8220;orig_text&#8221; is so you can put it back into the new &#8220;input type=text&#8221; you create and also get the length from it so you know the size of the box it is in but I think it would be nice to have access to it as well as the &#8220;content&#8221; at the save_url.</p>
+<p>Thanks again.</p>
+<p>Sheldon</p>
+</div></article></div>
+<div id="comment-1597" class="comment even thread-even depth-1"><article id="div-comment-1597" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d169fc11b06" alt="joseph" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">joseph</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1597"><time datetime="2006-09-14T12:39:59-06:00" title="Thu 14 Sep 2006 at 12:39 pm">Thu 14 Sep 2006 at 12:39 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>@Sheldon- Sending orig_text in the XHR seems reasonable. Keep in mind that the scope is pretty limited though, perhaps describing it as previous text would be better.</p></div></article></div>
+<div id="comment-1598" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1598" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169fc17df8" alt="Jason" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Jason</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1598"><time datetime="2006-09-14T14:13:21-06:00" title="Thu 14 Sep 2006 at 2:13 pm">Thu 14 Sep 2006 at 2:13 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>It doesn&#8217;t seem able to process + symbols, they get converted to spaces. Any idea how to solve this?</p></div></article></div>
+<div id="comment-1599" class="comment even thread-even depth-1"><article id="div-comment-1599" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://plok.in/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169fc1f519" alt="KImmo" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">KImmo</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1599"><time datetime="2006-10-01T11:59:57-06:00" title="Sun 1 Oct 2006 at 11:59 am">Sun 1 Oct 2006 at 11:59 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi,</p>
+<p>I am wondering if it&#8217;s somehow possible to initialise EditInPlace in a div-layer loaded with Ajax.Updater from an external page?<br> Event.observe(window, &#8216;load&#8217;, init, false) does not seem to work. Perhaps some other event should be observed?</p>
+</div></article></div>
+<div id="comment-1600" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1600" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d169fc25314" alt="joseph" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">joseph</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1600"><time datetime="2006-10-02T07:50:28-06:00" title="Mon 2 Oct 2006 at 7:50 am">Mon 2 Oct 2006 at 7:50 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>@KImmo- I think that as long as the browser will process JavaScript when your update is sent you could include an EditInPlace.makeEditable() call in your new layer that should work. Make sure that your makeEditable() call happens after your new layer gets added though. Can you setup an example test page somewhere so we can see exactly what is failing?</p></div></article></div>
+<div id="comment-1601" class="comment even thread-even depth-1"><article id="div-comment-1601" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://remmelt.com/" rel="external nofollow" class="url"><img id="grav-0d6cbe498b1d29132fd2cde4167c4dfc-120-60d169fc2632e" alt="remmelt" src="/wp-content/uploads/gravatar-cache/0d6cbe498b1d29132fd2cde4167c4dfc-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">remmelt</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1601"><time datetime="2006-10-19T04:13:02-06:00" title="Thu 19 Oct 2006 at 4:13 am">Thu 19 Oct 2006 at 4:13 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>@Sheldon<br> Instead of sending double data back, you could use prepared statements. At least using PEAR&#8217;s MDB2 with MySQL, only &#8216;real&#8217; changes are comitted to the database. I would think that any decent database has this facility. It also helps securing against XSS type attacks.</p>
+<p>My problem is with newlines. The example page has a textarea but doesn&#8217;t display any newlines on save. I fixed that using nl2br in my PHP script, but then on any consecutive edit the &#8216;s are in the text&#8230; Which would freak the hell out of my users. Any idea how I can circumvent this? It&#8217;s the same for any htmlspecialchars.</p>
+</div></article></div>
+<div id="comment-1602" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1602" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://remmelt.com/" rel="external nofollow" class="url"><img id="grav-0d6cbe498b1d29132fd2cde4167c4dfc-120-60d169fc26ccf" alt="remmelt" src="/wp-content/uploads/gravatar-cache/0d6cbe498b1d29132fd2cde4167c4dfc-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">remmelt</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1602"><time datetime="2006-10-19T04:14:11-06:00" title="Thu 19 Oct 2006 at 4:14 am">Thu 19 Oct 2006 at 4:14 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>🙂 I meant the (smaller-than)br /(greater-than) tags.</p></div></article></div>
+<div id="comment-1603" class="comment even thread-even depth-1"><article id="div-comment-1603" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-276d28076b0fbe3facf0e0f481f06b69-120-60d169fc27d5b" alt="jake" src="/wp-content/uploads/gravatar-cache/276d28076b0fbe3facf0e0f481f06b69-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">jake</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1603"><time datetime="2006-10-25T02:57:27-06:00" title="Wed 25 Oct 2006 at 2:57 am">Wed 25 Oct 2006 at 2:57 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>thanks &#8211; script is neat.</p>
+<p>but how to use this for eip of tables?<br> lets say i want to edit row 2, column 4: i wonder how to assign those ids to make the appropriate mysql update.<br> use something like &#8220;editfield_2_4&#8221; as id? i dont know. please give advise or show a little example for an editable table.</p>
+</div></article></div>
+<div id="comment-1604" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1604" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169fc30500" alt="John" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">John</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1604"><time datetime="2006-11-01T12:02:35-07:00" title="Wed 1 Nov 2006 at 12:02 pm">Wed 1 Nov 2006 at 12:02 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Hey,<br> Amazingly useful tool! Just had a quick suggestion. Since EIP seems to take over the element pretty well, it&#8217;d be nice to have some way to run a javascript function after it finishes saving. So, for instance, if you eip a number, you can fire off the javascript to do some math elsewhere on the page. Of course, that adds a suggestion for data type validation (numeric, date, etc etc) but the former seems much more useful than the latter. Anyway, again great work. Thanks again!</p></div></article></div>
+<div id="comment-1605" class="comment even thread-even depth-1"><article id="div-comment-1605" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.afarther.com/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169fc36f96" alt="allister" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">allister</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1605"><time datetime="2006-11-06T17:29:17-07:00" title="Mon 6 Nov 2006 at 5:29 pm">Mon 6 Nov 2006 at 5:29 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>checking this out now &#8211; but wanted to let you know the d/l link on the example page includes the .gz extension and the file doesnt&#8230;</p>
+<p>thanks for the hard work.</p>
+</div></article></div>
+<div id="comment-1606" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1606" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169fc3ea5f" alt="Nick" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Nick</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1606"><time datetime="2006-11-13T06:45:23-07:00" title="Mon 13 Nov 2006 at 6:45 am">Mon 13 Nov 2006 at 6:45 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>yeah it would be great to call another function after the AJAX call finishs. Also an example of the ajax_data would be useful</p></div></article></div>
+<div id="comment-1607" class="comment even thread-even depth-1"><article id="div-comment-1607" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169fc448dc" alt="Nick" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Nick</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1607"><time datetime="2006-11-13T07:18:27-07:00" title="Mon 13 Nov 2006 at 7:18 am">Mon 13 Nov 2006 at 7:18 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Sorry to be a bit clearer:</p>
+<p>It would be great if you could call from the &#8216;action&#8217; page a JS function. Imagine you have a validation script on edit.php and you want to pass an error back to the calling page if the value passed in isn&#8217;t correct.</p>
+</div></article></div>
+<div id="comment-1608" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1608" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169fc49e9f" alt="Nick" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Nick</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1608"><time datetime="2006-11-13T08:59:56-07:00" title="Mon 13 Nov 2006 at 8:59 am">Mon 13 Nov 2006 at 8:59 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>as a quick fix i added in defaults:</p>
+<p> error_message: &#8216;Error with field&#8217;,<br> error_message_class:	&#8216;message-bad-small&#8217;,<br> error_id: &#8216;Error&#8217;,</p>
+<p>and</p>
+<p>if (t.responseText.match(&#8220;Error:&#8221;)) {<br> error_id = id_opt[&#8216;error_id&#8217;];<br> Element.addClassName(error_id, id_opt[&#8216;error_message_class&#8217;]);<br> $(error_id).innerHTML = id_opt[&#8216;error_message&#8217;];<br> }</p>
+<p>to the successful AJAX request (in the else).</p>
+<p>then called it like:</p>
+<p>EditInPlace.makeEditable( {<br> type: &#8216;text&#8217;,<br> id: &#8216;city&#8217;,<br> save_url: &#8216;edit.cfm&#8217;,<br> max_size: &#8217;20&#8217;,<br> error_message: &#8216;there has been an error with &#8216;city&#8221;,<br> error_id: &#8216;cityError&#8217;<br> } );</p>
+</div></article></div>
+<div id="comment-1609" class="comment even thread-even depth-1"><article id="div-comment-1609" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169fc4f4b9" alt="Nick" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Nick</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1609"><time datetime="2006-11-13T09:13:55-07:00" title="Mon 13 Nov 2006 at 9:13 am">Mon 13 Nov 2006 at 9:13 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>NOTE: this requires you have:<br> on the calling page if you&#8217;ve not specifed the error_id in the JS EIP call (this is the default).</p>
+<p>If you want a inline error use somehting like:</p>
+<p>Hove</p>
+</div></article></div>
+<div id="comment-1610" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1610" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169fc56214" alt="Nick" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Nick</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1610"><time datetime="2006-11-14T02:17:48-07:00" title="Tue 14 Nov 2006 at 2:17 am">Tue 14 Nov 2006 at 2:17 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I wonder if there is a way to make 3 fields editable on one click. For example say i have a phone number and the user clicks on it to edit. What i would then like is 3 boxes to appear: international code, area code and number. Then when they click the save button it saves all 3 fileds?</p>
+<p>Any ideas, suggestions?</p>
+<p>TIA</p>
+</div></article></div>
+<div id="comment-1611" class="comment even thread-even depth-1"><article id="div-comment-1611" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d169fc5b924" alt="joseph" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">joseph</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1611"><time datetime="2006-11-14T09:50:54-07:00" title="Tue 14 Nov 2006 at 9:50 am">Tue 14 Nov 2006 at 9:50 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Being able to edit more than one field as a concept is certainly doable. However the current EditInPlace code is designed around editing one field at a time.</p></div></article></div>
+<div id="comment-1612" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1612" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169fc611a8" alt="Nick" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Nick</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1612"><time datetime="2006-11-15T01:56:02-07:00" title="Wed 15 Nov 2006 at 1:56 am">Wed 15 Nov 2006 at 1:56 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Joseph &#8211; any tips hints? I&#8217;ve created an extra id_opt[&#8216;type&#8217;] that loops over a number sent in but i feel this is a hack?</p></div></article></div>
+<div id="comment-1613" class="comment even thread-even depth-1"><article id="div-comment-1613" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169fc6638c" alt="Mircea" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Mircea</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1613"><time datetime="2006-11-16T11:04:41-07:00" title="Thu 16 Nov 2006 at 11:04 am">Thu 16 Nov 2006 at 11:04 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Well, that works for one record. But what if I have more than one records to be edited in place (one after another…like a grid)?</p>
+<p>How can I diferentiate which is which to be updated?? (for the example “You can edit this line with a single click.”)</p>
+<p>Any ideas? Thanks.</p>
+</div></article></div>
+<div id="comment-1614" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1614" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169fc6bce4" alt="Fabrizio" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Fabrizio</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1614"><time datetime="2006-12-02T06:39:27-07:00" title="Sat 2 Dec 2006 at 6:39 am">Sat 2 Dec 2006 at 6:39 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi! First sorry for my very bad English.<br> I&#8217;m enjoying your beautiful library and I&#8217;ve just added a small piece of code to perform validation of data before submitting to server.<br> It just consists of a new option in defaults:<br> verify_func: false<br> and a little bit of code in _saveClick function just after the var id_opt = EditInPlace._getOptionsReference(id); line:</p>
+<p>//Verify data<br> if (id_opt[&#8216;verify_func&#8217;] &amp;&amp; typeof id_opt[&#8216;verify_func&#8217;]==&#8217;function&#8217;) {<br> if (!id_opt[&#8216;verify_func&#8217;]($F(id + &#8216;_edit&#8217;),$(id+ &#8216;_edit&#8217;)))<br> return;<br> }</p>
+<p>If A &#8216;verify_func&#8217; is found, it will be called passing the current field value and the current element. The function has to return true or false: if false the submitting is interrupted. The verify_func can display any error message, etc to the user.</p>
+<p>Hope you will find this little modification useful and you will include (even similar/better) in future versions of your EIP library.</p>
+<p>Fabrizio</p>
+</div></article></div>
+<div id="comment-1615" class="comment even thread-even depth-1"><article id="div-comment-1615" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169fc71744" alt="kosiakk" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">kosiakk</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1615"><time datetime="2006-12-03T16:16:36-07:00" title="Sun 3 Dec 2006 at 4:16 pm">Sun 3 Dec 2006 at 4:16 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>line 248:<br> var id_opt = EditInPlace.getOptionsReference(id);<br> change to<br> var id_opt = EditInPlace._getOptionsReference(id);</p>
+<p>line 261<br> if(id_opt[&#8216;is_empty&#8217;] == true) {<br> can be simplified to<br> if(id_opt[&#8216;is_empty&#8217;]) {</p>
+</div></article></div>
+<div id="comment-1616" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1616" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.shiftcreate.com/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169fc772f6" alt="Adam Jimenez" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Adam Jimenez</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1616"><time datetime="2006-12-06T12:04:35-07:00" title="Wed 6 Dec 2006 at 12:04 pm">Wed 6 Dec 2006 at 12:04 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi,</p>
+<p>Would be great if it worked with a chunk of HTML.</p>
+<p>ie:</p>
+<p>This is a test.</p>
+<p>It kinda works &#8211; but it doesn&#8217;t mouseover properly.</p>
+</div></article></div>
+<div id="comment-1617" class="comment even thread-even depth-1"><article id="div-comment-1617" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.shiftcreate.com/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169fc7de32" alt="Adam Jimenez" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Adam Jimenez</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1617"><time datetime="2006-12-06T12:07:04-07:00" title="Wed 6 Dec 2006 at 12:07 pm">Wed 6 Dec 2006 at 12:07 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Pressing escape to cancel would be good to.</p></div></article></div>
+<div id="comment-1618" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1618" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://simania.co.il/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169fc833de" alt="Lavi Avigdor" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Lavi Avigdor</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1618"><time datetime="2006-12-09T07:35:42-07:00" title="Sat 9 Dec 2006 at 7:35 am">Sat 9 Dec 2006 at 7:35 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>UTF-8&#8230; currently the EIP does not support languages other then english.</p>
+<p>I&#8217;d be happy to see it fixed.</p>
+</div></article></div>
+<div id="comment-1619" class="comment even thread-even depth-1"><article id="div-comment-1619" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169fc8a124" alt="Jan Terje Nilsen" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Jan Terje Nilsen</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1619"><time datetime="2006-12-14T17:36:28-07:00" title="Thu 14 Dec 2006 at 5:36 pm">Thu 14 Dec 2006 at 5:36 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Lavi Avigdor,</p>
+<p>for example, by adding:<br> header(&#8220;Content-Type: application/xhtml+xml; charset=iso-8859-1&#8221;);<br> on a line above:<br> $id = $_POST[&#8220;id&#8221;];<br> in edit.php from the example files i would get support for Norwegian characters.</p>
+<p>I hope this helps you out a bit.</p>
+</div></article></div>
+<div id="comment-1620" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1620" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169fc8fd6e" alt="ileadu" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">ileadu</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1620"><time datetime="2007-01-19T23:30:53-07:00" title="Fri 19 Jan 2007 at 11:30 pm">Fri 19 Jan 2007 at 11:30 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>field += &#8216;onfocus=&#8221;this.select();&#8221;&#8216;;</p>
+<p>lack a space</p>
+<p>field += &#8216; onfocus=&#8221;this.select();&#8221;&#8216;;</p>
+</div></article></div>
+<div id="comment-1621" class="comment even thread-even depth-1"><article id="div-comment-1621" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d169fc97907" alt="joseph" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">joseph</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1621"><time datetime="2007-01-19T23:35:53-07:00" title="Fri 19 Jan 2007 at 11:35 pm">Fri 19 Jan 2007 at 11:35 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>ileadu-</p>
+<p>Good catch, I&#8217;ve added it to my fix/feature list.</p>
+<p>Thanks.</p>
+</div></article></div>
+<div id="comment-1622" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1622" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169fc9e10b" alt="Rodrigo" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Rodrigo</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1622"><time datetime="2007-02-03T18:44:07-07:00" title="Sat 3 Feb 2007 at 6:44 pm">Sat 3 Feb 2007 at 6:44 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>What about save the field when return is pressed?</p>
+<p>After line 149 add</p>
+<p>Event.observe(id + &#8216;_edit&#8217;, &#8216;keypress&#8217;, function(event) {<br> if (event.keyCode == Event.KEY_RETURN)<br> EditInPlace._saveClick(false, id);<br> });</p>
+</div></article></div>
+<div id="comment-1623" class="comment even thread-even depth-1"><article id="div-comment-1623" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.gawaher.com/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169fca50a7" alt="sallam" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">sallam</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1623"><time datetime="2007-02-14T14:41:51-07:00" title="Wed 14 Feb 2007 at 2:41 pm">Wed 14 Feb 2007 at 2:41 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Thanks for a very useful script.<br> But how can I get it to save the text that users typed or selected?<br> Every time I reload the example page, it goes back to how it was.</p>
+<p>ps. is there any how-to instructions for that great script?</p>
+</div></article></div>
+<div id="comment-1624" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1624" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d169fcadef7" alt="joseph" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">joseph</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1624"><time datetime="2007-02-14T14:57:48-07:00" title="Wed 14 Feb 2007 at 2:57 pm">Wed 14 Feb 2007 at 2:57 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>sallam-</p>
+<p>The example page doesn&#8217;t save the changes anywhere, it just sends back the text it was provided. In production you&#8217;d save those changes in a database.</p>
+<p>For the client side view the source of the example page. The server side is pretty basic and there is a link on the example page to the PHP script that the example page uses. You can extend it from there.</p>
+</div></article></div>
+<div id="comment-1625" class="comment even thread-even depth-1"><article id="div-comment-1625" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.raumahapkido.net/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169fcba73f" alt="Barya" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Barya</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1625"><time datetime="2007-03-17T08:55:23-06:00" title="Sat 17 Mar 2007 at 8:55 am">Sat 17 Mar 2007 at 8:55 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Good job!</p>
+<p>It could be useful feature to add file upload control.<br> For example, for images updating.</p>
+</div></article></div>
+<div id="comment-1626" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1626" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169fcc07f3" alt="Shawn" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Shawn</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1626"><time datetime="2007-10-30T09:23:56-06:00" title="Tue 30 Oct 2007 at 9:23 am">Tue 30 Oct 2007 at 9:23 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I am having a little trouble with this. I did get it working fine on my own website I run at home. But now I am trying to get this implemented in our helpdesk website at my work because it would make editing inventory much easier.</p>
+<p>Everything works until I hit save, at that point for some reason the new text that gets displayed in place of the old is a copy of the entire page container and all. For some reason it thinks the innerHTML of the span is the html of the entire page.</p>
+<p>My boss used code igniter to design the site and I am not sure if that is causing the problem. Any ideas where to start looking for the solution?</p>
+</div></article></div>
+<div id="comment-1627" class="comment even thread-even depth-1"><article id="div-comment-1627" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169fcc6da5" alt="alex" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">alex</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1627"><time datetime="2007-11-19T13:50:33-07:00" title="Mon 19 Nov 2007 at 1:50 pm">Mon 19 Nov 2007 at 1:50 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>I&#8217;m having this problem too 🙁<br> Can anyone help us?</p></div></article></div>
+<div id="comment-1628" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1628" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169fccced7" alt="Deniz" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Deniz</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/28/edit-in-place-version-033/#comment-1628"><time datetime="2008-09-16T16:29:32-06:00" title="Tue 16 Sep 2008 at 4:29 pm">Tue 16 Sep 2008 at 4:29 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Please fix this UTF-8 problem! :((</p></div></article></div>
+</div>
+</div>
+<hr class="styled-separator is-style-wide" aria-hidden="true">
+<div id="respond" class="comment-respond">
+<h2 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2006/08/28/edit-in-place-version-033/#respond" style="display:none;">Cancel reply</a></small>
+</h2>
+<form action="/wp-comments-post.php" method="post" id="commentform" class="section-inner thin max-percentage" novalidate>
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
+<p class="comment-form-comment"><label for="comment">Comment</label><textarea autocomplete="new-password" id="f248400ecb" name="f248400ecb" cols="45" rows="8" maxlength="65525" required="required"></textarea><textarea id="comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea><script data-noptimize type="text/javascript">document.getElementById("comment").setAttribute( "id", "a4057cd4fa0d905c5a75538d6fca4ade" );document.getElementById("f248400ecb").setAttribute( "id", "comment" );</script></p>
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="676" id="comment_post_ID"> <input type="hidden" name="comment_parent" id="comment_parent" value="0"></p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="de803805cc"></p>
+<input type="hidden" id="ak_js" name="ak_js" value="182"><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea>
+</form>
+</div>
+</div></article></main><div class="footer-nav-widgets-wrapper header-footer-group"><div class="footer-inner section-inner"><aside class="footer-widgets-outer-wrapper" role="complementary"><div class="footer-widgets-wrapper"><div class="footer-widgets column-one grid-item"><div class="widget widget_search"><div class="widget-content"><form role="search" method="get" class="search-form" action="/"> <label for="search-form-2"> <span class="screen-reader-text">Search for:</span> <input type="search" id="search-form-2" class="search-field" placeholder="Search &hellip;" value="" name="s"> </label> <input type="submit" class="search-submit" value="Search">
+</form></div></div></div></div></aside></div></div>
+<footer id="site-footer" role="contentinfo" class="header-footer-group"><div class="section-inner">
+<div class="footer-credits">
+<p class="footer-copyright">&copy;
+2021 <a href="/">Joseph Scott</a></p>
+<p class="powered-by-wordpress"> <a href="https://wordpress.org/"> Powered by WordPress </a></p>
+</div> <a class="to-the-top" href="#site-header"> <span class="to-the-top-long"> To the top <span class="arrow" aria-hidden="true">&uarr;</span> </span> <span class="to-the-top-short"> Up <span class="arrow" aria-hidden="true">&uarr;</span> </span> </a>
+</div></footer> <script>/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);</script> <script defer src="/wp-content/cache/autoptimize/js/autoptimize_7f503920b823033d01081cc5ae68a469.js"></script>
+</body>
+</html>

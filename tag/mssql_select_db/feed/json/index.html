@@ -1,0 +1,37 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/mssql_select_db/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/mssql_select_db/",
+    "feed_url": "https://blog.josephscott.org/tag/mssql_select_db/feed/json/",
+    "language": "en-US",
+    "title": "mssql_select_db &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2006/09/29/sql-server-escaping-the-database-name/",
+            "url": "https://blog.josephscott.org/2006/09/29/sql-server-escaping-the-database-name/",
+            "title": "SQL Server: Escaping The Database Name",
+            "content_html": "<p>Welcome to another episode of being caught off guard by strange string requirements.  Today I discovered (the hard way of course) that Microsoft SQL Server 2000 doesn&#8217;t like to have dashes in database names.  Fine, I probably should have used an underscore instead, but this was a database being used for something else that I just need to do some quick queries against in PHP.</p>\n<p>I knew that the connection between the web server and the SQL Server systems was working because I had scripts talking to other SQL Server databases.  My problem wasn&#8217;t connecting, <a href=\"http://us3.php.net/manual/en/function.mssql-connect.php\">mssql_connect()</a> didn&#8217;t cause an error, it was selecting which database to use.  Fortunately the answer was right there in the docs for <a href=\"http://us3.php.net/manual/en/function.mssql-select-db.php\">mssql_select_db()</a>:</p>\n<blockquote><p>\nTo escape the name of a database that contains spaces, hyphens (&#8220;-&#8220;), or any other exceptional characters, the database name must be enclosed in brackets, as is shown in the example, below. This technique must also be applied when selecting a database name that is also a reserved word (such as &#8220;primary&#8221;).\n</p></blockquote>\n<p>So just get in the habit of wrapping your SQL Server database name in brackets ( [ ] ) and you&#8217;ll be fine:</p>\n<pre>\n   $conn = mssql_connect('SQLSERVERHOST', 'username', 'password');\n   mssql_select_db('[database-name]', $conn);\n</pre>\n<p>What I want to know is, why brackets around the whole name instead of traditional character escaping?</p>\n",
+            "content_text": "Welcome to another episode of being caught off guard by strange string requirements.  Today I discovered (the hard way of course) that Microsoft SQL Server 2000 doesn&#8217;t like to have dashes in database names.  Fine, I probably should have used an underscore instead, but this was a database being used for something else that I just need to do some quick queries against in PHP.\nI knew that the connection between the web server and the SQL Server systems was working because I had scripts talking to other SQL Server databases.  My problem wasn&#8217;t connecting, mssql_connect() didn&#8217;t cause an error, it was selecting which database to use.  Fortunately the answer was right there in the docs for mssql_select_db():\n\nTo escape the name of a database that contains spaces, hyphens (&#8220;-&#8220;), or any other exceptional characters, the database name must be enclosed in brackets, as is shown in the example, below. This technique must also be applied when selecting a database name that is also a reserved word (such as &#8220;primary&#8221;).\n\nSo just get in the habit of wrapping your SQL Server database name in brackets ( [ ] ) and you&#8217;ll be fine:\n\n   $conn = mssql_connect('SQLSERVERHOST', 'username', 'password');\n   mssql_select_db('[database-name]', $conn);\n\nWhat I want to know is, why brackets around the whole name instead of traditional character escaping?",
+            "date_published": "2006-09-29T09:52:20-06:00",
+            "date_modified": "2006-09-29T09:52:20-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "mssql_select_db",
+                "PHP",
+                "sqlserver",
+                "josephscott"
+            ]
+        }
+    ]
+}

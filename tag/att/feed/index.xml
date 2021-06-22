@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>att &#8211; Joseph Scott</title>
+	<atom:link href="/tag/att/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 13 Jul 2015 14:01:24 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>LTE and 3G in SLC</title>
+		<link>/2015/07/13/lte-and-3g-in-slc/</link>
+					<comments>/2015/07/13/lte-and-3g-in-slc/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 13 Jul 2015 14:01:24 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[att]]></category>
+		<category><![CDATA[mobile]]></category>
+		<category><![CDATA[sprint]]></category>
+		<category><![CDATA[t-mobile]]></category>
+		<category><![CDATA[utah]]></category>
+		<category><![CDATA[verizon]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13044</guid>
+
+					<description><![CDATA[PC Magazine&#8217;s Fastest Mobile Networks 2015: We hit 30 U.S. cities to test mobile data speeds on AT&#038;T, Sprint, T-Mobile, and Verizon Wireless, and found the most competitive wireless landscape in six years. Find out which network is the best where you live. I&#8217;m most interested in the Salt Lake City, Utah results. First up, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>PC Magazine&#8217;s <a href="http://www.pcmag.com/article2/0,2817,2485837,00.asp">Fastest Mobile Networks 2015</a>:</p>
+<blockquote><p>We hit 30 U.S. cities to test mobile data speeds on AT&#038;T, Sprint, T-Mobile, and Verizon Wireless, and found the most competitive wireless landscape in six years. Find out which network is the best where you live.</p></blockquote>
+<p>I&#8217;m most interested in the <a href="http://www.pcmag.com/article2/0,2817,2485867,00.asp">Salt Lake City, Utah results</a>.  First up, LTE:</p>
+<p><a href="/wp-content/uploads/2015/07/slc-lte-1.png"><img loading="lazy" src="/wp-content/uploads/2015/07/slc-lte-1-1024x978.png" data-sizes="(max-width: 1024px) 100vw, 1024px" srcset="/wp-content/uploads/2015/07/slc-lte-1-300x286.png 300w, /wp-content/uploads/2015/07/slc-lte-1-1024x978.png 1024w, /wp-content/uploads/2015/07/slc-lte-1.png 1412w" alt="slc-lte" width="660" height="630" class="aligncenter size-large wp-image-13185" /></a></p>
+<p>AT&amp;T and Verizon are basically tied on the TTFB ( Time To First Byte ).  The slowest, T-Mobile was 32% slower than the fastest.</p>
+<p>Next, 3G:</p>
+<p><a href="/wp-content/uploads/2015/07/slc-3g-1.png"><img loading="lazy" src="/wp-content/uploads/2015/07/slc-3g-1-1024x976.png" data-sizes="(max-width: 1024px) 100vw, 1024px" srcset="/wp-content/uploads/2015/07/slc-3g-1-300x286.png 300w, /wp-content/uploads/2015/07/slc-3g-1-1024x976.png 1024w, /wp-content/uploads/2015/07/slc-3g-1.png 1416w" alt="slc-3g" width="660" height="629" class="aligncenter size-large wp-image-13187" /></a></p>
+<p>AT&amp;T is the clear TTFB winner here.  The range is brutal, T-Mobile was more than 4X slower than the winner.  Even the second place position, Sprint, was 43% slower than AT&amp;T.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/07/13/lte-and-3g-in-slc/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>AT&#038;T Network Latency</title>
+		<link>/2014/10/07/att-network-latency/</link>
+					<comments>/2014/10/07/att-network-latency/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 07 Oct 2014 15:54:10 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[att]]></category>
+		<category><![CDATA[latency]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11007</guid>
+
+					<description><![CDATA[AT&#038;T has a nice page displaying network latency between cities across their network.]]></description>
+										<content:encoded><![CDATA[<p>AT&#038;T has a nice page displaying <a href="http://ipnetwork.bgtmo.ip.att.net/pws/network_delay.html">network latency between cities</a> across their network.</p>
+<p><a href="/wp-content/uploads/2014/10/att-latency-1.png"><img loading="lazy" src="/wp-content/uploads/2014/10/att-latency-1.png" alt="att-latency" width="824" height="687" class="aligncenter size-full wp-image-11189" srcset="/wp-content/uploads/2014/10/att-latency-1.png 824w, /wp-content/uploads/2014/10/att-latency-1-300x250.png 300w, /wp-content/uploads/2014/10/att-latency-1-768x640.png 768w" sizes="(max-width: 824px) 100vw, 824px" /></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/10/07/att-network-latency/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>New AT&#038;T Data Plans</title>
+		<link>/2010/06/04/new-att-data-plans/</link>
+					<comments>/2010/06/04/new-att-data-plans/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 04 Jun 2010 23:21:00 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[att]]></category>
+		<category><![CDATA[iphone]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2384</guid>
+
+					<description><![CDATA[There has been much said about the new AT&#38;T data plans, with particular emphasis on the iPhone, as it requires a data plan. Here are some numbers: $15 / 200 MB = $0.075/MB $25 / 2,000 MB = $0.0125/MB Then there are the overage charges. This is silly. If they aren&#8217;t going to offer an [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>There has been much said about the <a href="http://www.att.com/shop/wireless/plans/data-plans.jsp">new AT&amp;T data plans</a>, with particular emphasis on the iPhone, as it requires a data plan.  Here are some numbers:</p>
+<pre>
+$15 / 200 MB = $0.075/MB
+$25 / 2,000 MB = $0.0125/MB
+</pre>
+<p>Then there are the overage charges.  This is silly.  If they aren&#8217;t going to offer an unlimited plan any more then just move to a standard flat rate per MB charge.  Here&#8217;s what I&#8217;d suggest:</p>
+<pre>
+$5 charge per month to enable a data plan
+$0.025 per MB in usage fees
+</pre>
+<p>On the low end, for people on the 200MB per month plan it brings the price down even further, to $10.  On the high end, 2,000MB per month, it jumps up to $55.  Use more, pay more, while making it fairly cheap to use it reasonably.</p>
+<p>And all that should include the tethering feature, no extra charge.  So what if people use more data when they are tethered, at $0.025 per MB they&#8217;ll be making plenty off of it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/06/04/new-att-data-plans/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

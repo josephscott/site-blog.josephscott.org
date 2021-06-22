@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>tor &#8211; Joseph Scott</title>
+	<atom:link href="/tag/tor/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 17 Nov 2014 17:14:05 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Tor Needs To Be Normal</title>
+		<link>/2014/11/17/tor-needs-to-be-normal/</link>
+					<comments>/2014/11/17/tor-needs-to-be-normal/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 17 Nov 2014 17:14:05 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[tim-bray]]></category>
+		<category><![CDATA[tor]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11409</guid>
+
+					<description><![CDATA[Or at least not abnormal. While discussing How To Be Secret, Tim Bray mentions: You’ll note that I didn’t rec­om­mend us­ing Tor. For this sce­nar­i­o, I’m un­con­vinced that there’s a value-add. The Firm can de­tect Tor traf­fic, and so us­ing it feels to me like wav­ing a bright red “Secrets here!” flag. Using Tor is [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Or at least not abnormal.</p>
+<p><a href="/wp-content/uploads/2014/11/tor-logo-1.png"><img loading="lazy" src="/wp-content/uploads/2014/11/tor-logo-1.png" alt="tor-logo" width="300" height="182" class="aligncenter size-full wp-image-11414" /></a></p>
+<p>While discussing <a href="https://www.tbray.org/ongoing/When/201x/2014/11/14/Being-Secret">How To Be Secret</a>, Tim Bray mentions:</p>
+<blockquote><p>
+You’ll note that I didn’t rec­om­mend us­ing Tor. For this sce­nar­i­o, I’m un­con­vinced that there’s a value-add. The Firm can de­tect Tor traf­fic, and so us­ing it feels to me like wav­ing a bright red “Secrets here!” flag.
+</p></blockquote>
+<p>Using Tor is not a cure all for privacy and security.  In some cases the <a href="http://thestack.com/chakravarty-tor-traffic-analysis-141114">privacy might break down</a>, and <a href="http://arstechnica.com/security/2014/11/for-a-year-one-rogue-tor-node-added-malware-to-windows-executables/">security could be even worse</a>.</p>
+<p>Even with all of the issues Tor will no doubt need to overcome in the future, it will need to be a viable option for many more years.  One way that happens is to make the use of Tor more normal than it is today.</p>
+<p>To contribute to that change, at least once a week I&#8217;m going to use Tor.  I&#8217;d give it a catchy name like &#8220;Tor on Tuesdays&#8221;, but it shouldn&#8217;t be limited to the same day each week.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/11/17/tor-needs-to-be-normal/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>tortunnel</title>
+		<link>/2013/04/08/tortunnel/</link>
+					<comments>/2013/04/08/tortunnel/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 08 Apr 2013 15:08:50 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[tor]]></category>
+		<category><![CDATA[tortunnel]]></category>
+		<category><![CDATA[xmission]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7373</guid>
+
+					<description><![CDATA[tortunnel sets up a local proxy routed through a Tor exit node: This is useful in cases where you might want some very low level of anonymity and don&#8217;t want to deal with the performance implications of using Tor&#8217;s full three-hop circuits. Usage is simple, torproxy -p 5060 -r to use a random Tor exit [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href='http://www.thoughtcrime.org/software/tortunnel/'>tortunnel</a> sets up a local proxy routed through a Tor exit node:</p>
+<blockquote><p>
+This is useful in cases where you might want some very low level of anonymity and don&#8217;t want to deal with the performance implications of using Tor&#8217;s full three-hop circuits.
+</p></blockquote>
+<p>Usage is simple, <code>torproxy -p 5060 -r</code> to use a random Tor exit node and <code>torproxy -p 5060 -n &lt;ip&gt;</code> to use a specific exit node.</p>
+<p>Source code for tortunnel is at <a href="https://github.com/moxie0/tortunnel">https://github.com/moxie0/tortunnel</a></p>
+<p><img loading="lazy" src="https://sharedat.net/f/VC/VCo6/anon-xmission.png" width="499" height="349" class="aligncenter" /> </p>
+<p>I might give this a try using <a href="http://anon.xmission.com/">anon.xmission.com</a>, which is a Tor exit node run by XMission, a local ISP here in Utah.  While I&#8217;m not an XMission customer, my Comcast connection gets good speedtest.net results to XMission.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/04/08/tortunnel/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

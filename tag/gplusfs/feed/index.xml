@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>gplusfs &#8211; Joseph Scott</title>
+	<atom:link href="/tag/gplusfs/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 20 Sep 2011 14:21:33 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>GPlusFS: Google+ Data as a Filesystem</title>
+		<link>/2011/09/20/gplusfs-google-data-as-a-filesystem/</link>
+					<comments>/2011/09/20/gplusfs-google-data-as-a-filesystem/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 20 Sep 2011 14:21:33 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[filesystem]]></category>
+		<category><![CDATA[fuse]]></category>
+		<category><![CDATA[gplusfs]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4794</guid>
+
+					<description><![CDATA[With the basics of a Google+ API announced last week I started poking around. I liked that there was an option to simply sign up for an API key, allowing me to quickly try it out from the command line using cURL. The JSON formatted results were easy enough to understand. That led to hooking [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img loading="lazy" alt="" src="https://lh5.googleusercontent.com/-9Knvs3vTsv4/TngVMTJXG7I/AAAAAAAAAKs/-CoAtvU79Gg/google-plus.png" title="Google+" class="alignleft" width="260" height="50" /></p>
+<p>With the <a href="http://googleplusplatform.blogspot.com/2011/09/getting-started-on-google-api.html">basics of a Google+ API announced last week</a> I started poking around.  I liked that there was an option to simply <a href="https://code.google.com/apis/console#access">sign up for an API key</a>, allowing me to quickly try it out from the command line using cURL.  The JSON formatted results were easy enough to understand.</p>
+<p>That led to hooking up FUSE and Python to provide the ability to mount the <a href="http://developers.google.com/+/api/latest/people">people.get data</a> as a filesystem.  A bit more hacking and <a href="https://github.com/josephscott/gplusfs">gplusfs</a> was born.  It is still basic, but has been working fine so far with my profile.  This is all still read-only, since the Google+ API is read-only.</p>
+<p>Here is what a directory listing of my profile looks like:</p>
+<p>[sourcecode lang=&#8221;plain&#8221;]<br />
+&gt; ls -la *<br />
+-r&#8212;&#8212;&#8211; 1 root root   57 1970-01-01 00:00 aboutMe.txt<br />
+-r&#8212;&#8212;&#8211; 1 root root   12 1970-01-01 00:00 displayName.txt<br />
+-r&#8212;&#8212;&#8211; 1 root root    4 1970-01-01 00:00 gender.txt<br />
+-r&#8212;&#8212;&#8211; 1 root root   21 1970-01-01 00:00 id.txt<br />
+-r&#8212;&#8212;&#8211; 1 root root 5117 1970-01-01 00:00 image.jpg<br />
+-r&#8212;&#8212;&#8211; 1 root root   11 1970-01-01 00:00 kind.txt<br />
+-r&#8212;&#8212;&#8211; 1 root root   45 1970-01-01 00:00 url.txt</p>
+<p>organizations:<br />
+total 1<br />
+dr&#8212;&#8212;&#8211; 2 root root  0 1970-01-01 00:00 ./<br />
+dr&#8212;&#8212;&#8211; 2 root root  0 1970-01-01 00:00 ../<br />
+-r&#8212;&#8212;&#8211; 1 root root 10 1970-01-01 00:00 work.txt</p>
+<p>urls:<br />
+total 1<br />
+dr&#8212;&#8212;&#8211; 2 root root  0 1970-01-01 00:00 ./<br />
+dr&#8212;&#8212;&#8211; 2 root root  0 1970-01-01 00:00 ../<br />
+-r&#8212;&#8212;&#8211; 1 root root 63 1970-01-01 00:00 json.txt<br />
+-r&#8212;&#8212;&#8211; 1 root root 45 1970-01-01 00:00 profile.txt<br />
+[/sourcecode]</p>
+<p>For JSON values that are strings I used the key name for the file, with an added .txt extension.  The size of the file is determined by the length of the string.  It works the way you&#8217;d expect:</p>
+<p>[sourcecode lang=&#8221;plain&#8221;]<br />
+&gt; more displayName.txt<br />
+Joseph Scott<br />
+[/sourcecode]</p>
+<p>For the profile image the API provides the URL of the image, gplusfs grabs a copy of the image and exposes that to the filesystem instead of the URL string.</p>
+<p>The other special case is list values, which are exposed as directories.  The JSON data provides multiple values for these, so breaking these out as separate directories with their own files seemed like the path of least surprise.</p>
+<p>The source code is available at <a href="https://github.com/josephscott/gplusfs">https://github.com/josephscott/gplusfs</a> and configuration wise it just needs your Google+ user id and an <a href="http://developers.google.com/+/api/oauth#apikey">API key</a>.  Give it a spin and let me know if you run into any issues with your profile data.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/09/20/gplusfs-google-data-as-a-filesystem/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

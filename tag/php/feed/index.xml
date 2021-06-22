@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>PHP &#8211; Joseph Scott</title>
+	<atom:link href="/tag/php/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 17 Oct 2018 20:37:33 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>PHP exit() / die() With Strings</title>
+		<link>/2018/10/17/php-exit-die-with-strings/</link>
+					<comments>/2018/10/17/php-exit-die-with-strings/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 17 Oct 2018 20:37:33 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">/?p=17035</guid>
+
+					<description><![CDATA[Short Version: Don&#8217;t do it! I recently had a discussion about calling PHP exit() ( which is what die() gets mapped to ) with a string instead of an integer. While the PHP docs indicate that calling it with a string is ok, I submit that is almost never the right thing to do ( [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>Short Version:</strong> Don&#8217;t do it!</p>
+<p>I recently had a discussion about calling PHP <a href="http://php.net/manual/en/function.exit.php">exit()</a> ( which is what <a href="http://php.net/die">die()</a> gets mapped to ) with a string instead of an integer. While the PHP docs indicate that calling it with a string is ok, I submit that is almost never the right thing to do ( like 99.999999999% of the time ).</p>
+<p>Here is an example of what I mean:</p>
+<pre class="line-numbers"><code class="language-php">&lt;?php
+exit( 'Something went wrong.' );</code></pre>
+<p>Why is this a problem? It sets the <a href="https://en.wikipedia.org/wiki/Exit_status#POSIX">exit status</a> to zero. Why is that a problem? Because <a href="https://www.freebsd.org/cgi/man.cgi?query=sysexits&amp;sektion=3">the</a> <a href="http://tldp.org/LDP/abs/html/exitcodes.html">common</a> <a href="https://www.gnu.org/software/bash/manual/html_node/Exit-Status.html">convention</a> is that ( <a href="https://en.wikipedia.org/wiki/Exit_status#POSIX">#</a> ):</p>
+<blockquote><p>systems typically use a convention of zero for success and nonzero for error</p></blockquote>
+<p>There is an easy way to see this behavior using the command line:</p>
+<pre class="line-numbers"><code class="language-markup">$ php -r "exit( 'Something went wrong.' );"
+Something went wrong.
+$ echo $?
+0</code></pre>
+<p>Even though the text of the message was about a problem, the status code said everything is fine.  That is the status code equivalent of:</p>
+<p><a href="/wp-content/uploads/2018/10/fire-1.jpg"><img loading="lazy" src="/wp-content/uploads/2018/10/fire-1-1024x485.jpg" alt="" width="840" height="398" class="aligncenter size-large wp-image-17059" srcset="/wp-content/uploads/2018/10/fire-1.jpg 1024w, /wp-content/uploads/2018/10/fire-1-300x142.jpg 300w, /wp-content/uploads/2018/10/fire-1-768x364.jpg 768w" sizes="(max-width: 840px) 100vw, 840px" /></a></p>
+<p>If you are calling <code>exit()</code> and everything really is fine, make sure the status code you return is zero. For any other type of condition, make sure the exit code is something NOT zero. For example:</p>
+<pre class="line-numbers"><code class="language-markup">$ php -r "exit( 14 );"
+$ echo $?
+14</code></pre>
+<p>The <a href="https://secure.php.net/manual/en/function.exit.php">PHP docs</a> indicate that valid status values &#8220;should be in the range 0 to 254&#8221;.  That leaves 1 to 254 for error conditions.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/10/17/php-exit-die-with-strings/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>My New Favorite Error</title>
+		<link>/2016/07/25/my-new-favorite-error/</link>
+					<comments>/2016/07/25/my-new-favorite-error/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 25 Jul 2016 13:37:38 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[error-message]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">/?p=15743</guid>
+
+					<description><![CDATA[PHP Fatal error: Unknown: Cannot use output buffering in output buffering display handlers in Unknown on line 0 I still haven&#8217;t found the mysterious line 0.]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+PHP Fatal error:  Unknown: Cannot use output buffering in output buffering display handlers in Unknown on line 0
+</p></blockquote>
+<p>I still haven&#8217;t found the mysterious <code>line 0</code>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/07/25/my-new-favorite-error/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>PHP Yay Preprocessor</title>
+		<link>/2016/02/02/php-yay-preprocessor/</link>
+					<comments>/2016/02/02/php-yay-preprocessor/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 02 Feb 2016 18:11:20 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[yay]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15017</guid>
+
+					<description><![CDATA[Not enough preprocessor in your PHP: Hypertext Preprocessor? Enter YAY: YAY! is a high level parser combinator based PHP preprocessor that allows anyone to augment PHP with PHP I can see the strong temptation to use something like this. If carried too far though you essentially end up with the PHP equivalent of CoffeeScript.]]></description>
+										<content:encoded><![CDATA[<p>Not enough preprocessor in your <code>PHP: Hypertext Preprocessor</code>?  Enter <a href="https://github.com/marcioAlmada/yay">YAY</a>:</p>
+<blockquote><p>
+YAY! is a high level parser combinator based PHP preprocessor that allows anyone to augment PHP with PHP
+</p></blockquote>
+<p>I can see the strong temptation to use something like this.  If carried too far though you essentially end up with the PHP equivalent of CoffeeScript.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/02/02/php-yay-preprocessor/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Swoole</title>
+		<link>/2016/01/29/swoole/</link>
+					<comments>/2016/01/29/swoole/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 29 Jan 2016 16:59:33 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[swoole]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14960</guid>
+
+					<description><![CDATA[Swoole is another effort to bring event-driven async features to PHP: Swoole is an event-driven, asynchronous &#038; concurrent networking communication framework with higher performance written only in C for PHP. While I&#8217;m not sure about using this as an application server for PHP ( I have mixed feelings about PHP app servers in general ), [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.swoole.com/index.en.html">Swoole</a> is another effort to bring event-driven async features to PHP:</p>
+<blockquote><p>
+Swoole is an event-driven, asynchronous &#038; concurrent networking communication framework with higher performance written only in C for PHP.
+</p></blockquote>
+<p>While I&#8217;m not sure about using this as an application server for PHP ( I have mixed feelings about PHP app servers in general ), I do like their TCP server example:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+$serv = new swoole_server(&quot;127.0.0.1&quot;, 9501);<br />
+$serv-&gt;set(array(<br />
+    &#8216;worker_num&#8217; =&gt; 8,<br />
+    &#8216;daemonize&#8217; =&gt; true,<br />
+));<br />
+$serv-&gt;on(&#8216;connect&#8217;, function ($serv, $fd){<br />
+    echo &quot;Client:Connect.n&quot;;<br />
+});<br />
+$serv-&gt;on(&#8216;receive&#8217;, function ($serv, $fd, $from_id, $data) {<br />
+    $serv-&gt;send($fd, &#8216;Swoole: &#8216;.$data);<br />
+    $serv-&gt;close($fd);<br />
+});<br />
+$serv-&gt;on(&#8216;close&#8217;, function ($serv, $fd) {<br />
+    echo &quot;Client: Close.n&quot;;<br />
+});<br />
+$serv-&gt;start();<br />
+[/sourcecode]</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/01/29/swoole/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>PHP Speaking FastCGI</title>
+		<link>/2016/01/08/php-speaking-fastcgi/</link>
+					<comments>/2016/01/08/php-speaking-fastcgi/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 08 Jan 2016 16:59:00 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[fastcgi]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14628</guid>
+
+					<description><![CDATA[PHP-FastCGI-Client is a handy tool for speaking the FastCGI protocol.]]></description>
+										<content:encoded><![CDATA[<p><a href="https://github.com/adoy/PHP-FastCGI-Client">PHP-FastCGI-Client</a> is a handy tool for speaking the FastCGI protocol.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/01/08/php-speaking-fastcgi/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>PHP7</title>
+		<link>/2015/12/04/php7/</link>
+					<comments>/2015/12/04/php7/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 04 Dec 2015 15:57:22 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14484</guid>
+
+					<description><![CDATA[PHP7 is officially out the door. Next up is getting extensions updated. That is going be a blocker for many sites. Then there is the discussion around how long it will take hosts to make PHP7 available and when projects like WordPress will up their minimum requirements. For WordPress the math is something like: current [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://php.net/archive/2015.php#id2015-12-03-1">PHP7 is officially out the door</a>.  Next up is getting <a href="https://github.com/gophp7/gophp7-ext/wiki/extensions-catalog">extensions updated</a>.  That is going be a blocker for many sites.</p>
+<p>Then there is the discussion around how long it will take hosts to make PHP7 available and when projects like WordPress will up their minimum requirements.</p>
+<p>For WordPress the math is something like: <a href="https://wordpress.org/about/requirements/">current PHP 5.2.4 minimum</a> + <a href="https://wordpress.org/about/stats/">PHP 5.4 being the most used version</a> + <a href="http://php.net/supported-versions.php">PHP 7 scheduled to be EOL&#8217;d in December 2018</a> + the large performance improvements in PHP7.  It&#8217;s tempting to pick a future date, then scream it from the roof tops so everyone knows it is coming.</p>
+<p>My wishful thinking date for WordPress to move the minimum requirement to PHP7 is June 2017.  If I were to guess though, it will be more like January 2020.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/04/php7/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Supported Versions of PHP</title>
+		<link>/2015/11/12/supported-versions-of-php/</link>
+					<comments>/2015/11/12/supported-versions-of-php/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 12 Nov 2015 15:56:30 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13873</guid>
+
+					<description><![CDATA[PHP 5.5 is already in the &#8220;security support only&#8221; category: Each release branch of PHP is fully supported for two years from its initial stable release. During this period, bugs and security issues that have been reported are fixed and are released in regular point releases. After this two year period of active support, each [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>PHP 5.5 is already in the &#8220;security support only&#8221; category:</p>
+<blockquote><p>
+Each release branch of PHP is fully supported for two years from its initial stable release. During this period, bugs and security issues that have been reported are fixed and are released in regular point releases.</p>
+<p>After this two year period of active support, each branch is then supported for an additional year for critical security issues only. Releases during this period are made on an as-needed basis: there may be multiple point releases, or none, depending on the number of reports.
+</p></blockquote>
+<p>From <a href="http://php.net/supported-versions.php">PHP: Supported Versions</a>.</p>
+<p>The issue of how long to support previous releases is a big deal.  There is already plenty of work to do in terms of pushing forward on new releases, working on previous releases just adds to the stack.</p>
+<p>When possible the biggest help to everyone is making it clear when and for how long previous releases are going to be supported.  This is something that Ubuntu has done a good job at.  They established <a href="http://www.ubuntu.com/info/release-end-of-life">a pattern of LTS ( Long Term Support ) vs regular releases</a>, making the expectations clear ( though their move to <a href="http://fridge.ubuntu.com/2013/03/19/changes-in-ubuntu-releases-decided-by-the-ubuntu-technical-board/">reduce non-LTS release support from 18 to 9 months</a> definitely caused confusion/problems for people ).</p>
+<p>If you want your favorite project to support previous releases longer, understand that means getting involved and providing resources ( time, money, people ).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/12/supported-versions-of-php/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Language Trends</title>
+		<link>/2015/11/07/language-trends/</link>
+					<comments>/2015/11/07/language-trends/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 07 Nov 2015 15:45:06 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[github]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13644</guid>
+
+					<description><![CDATA[The Language Trends on GitHub, 2008 &#8211; 2015: PHP wins the award for most consistent.]]></description>
+										<content:encoded><![CDATA[<p>The <a href="https://github.com/blog/2047-language-trends-on-github">Language Trends on GitHub</a>, 2008 &#8211; 2015:</p>
+<p><a href="/wp-content/uploads/2015/11/github-language-trends-1.jpg"><img loading="lazy" src="/wp-content/uploads/2015/11/github-language-trends-1-1024x589.jpg" alt="github-language-trends" width="660" height="380" class="alignleft size-large wp-image-14278" srcset="/wp-content/uploads/2015/11/github-language-trends-1-1024x589.jpg 1024w, /wp-content/uploads/2015/11/github-language-trends-1-300x173.jpg 300w, /wp-content/uploads/2015/11/github-language-trends-1-768x442.jpg 768w, /wp-content/uploads/2015/11/github-language-trends-1.jpg 1200w" sizes="(max-width: 660px) 100vw, 660px" /></a></p>
+<p>PHP wins the award for most consistent.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/07/language-trends/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Asset Management for PHP</title>
+		<link>/2015/11/02/asset-management-for-php/</link>
+					<comments>/2015/11/02/asset-management-for-php/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 02 Nov 2015 14:57:40 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[assetic]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13593</guid>
+
+					<description><![CDATA[Looking for one more asset management tool to use? Check out assetic: [sourcecode lang=&#8221;php&#8221;] use AsseticAssetAssetCollection; use AsseticAssetFileAsset; use AsseticAssetGlobAsset; $js = new AssetCollection( [ new GlobAsset(&#8216;/path/to/js/*&#8217;), new FileAsset(&#8216;/path/to/another.js&#8217;), ] ); echo $js-&#62;dump(); [/sourcecode]]]></description>
+										<content:encoded><![CDATA[<p>Looking for one more asset management tool to use?  Check out <a href="https://github.com/kriswallsmith/assetic">assetic</a>:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+use AsseticAssetAssetCollection;<br />
+use AsseticAssetFileAsset;<br />
+use AsseticAssetGlobAsset;</p>
+<p>$js = new AssetCollection( [<br />
+    new GlobAsset(&#8216;/path/to/js/*&#8217;),<br />
+    new FileAsset(&#8216;/path/to/another.js&#8217;),<br />
+] );</p>
+<p>echo $js-&gt;dump();<br />
+[/sourcecode]</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/02/asset-management-for-php/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>PHP7 &#038; Extensions</title>
+		<link>/2015/10/28/php7-extensions/</link>
+					<comments>/2015/10/28/php7-extensions/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 28 Oct 2015 13:27:53 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13550</guid>
+
+					<description><![CDATA[Another big issue with migrating to PHP7: extensions. The folks at goPHP7 have an Extension Catalog, a list of which extensions currently support PHP7 and which ones do not. The good news is that most ( though not all ) of the core extensions are listed as working under PHP7. The bad news is that [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Another big issue with <a href="https://josephscott.org/archives/2015/10/migrating-to-php-7/">migrating to PHP7</a>: extensions.  The folks at goPHP7 have an <a href="https://github.com/gophp7/gophp7-ext/wiki/extensions-catalog">Extension Catalog</a>, a list of which extensions currently support PHP7 and which ones do not.</p>
+<p>The good news is that most ( though not all ) of the core extensions are listed as working under PHP7.  The bad news is that very few of the non-core extensions work with PHP7.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/28/php7-extensions/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

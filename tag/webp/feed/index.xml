@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>webp &#8211; Joseph Scott</title>
+	<atom:link href="/tag/webp/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 02 May 2011 15:54:31 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>WebP In The Wild</title>
+		<link>/2011/05/02/webp-in-the-wild/</link>
+					<comments>/2011/05/02/webp-in-the-wild/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 02 May 2011 15:54:31 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[jpg]]></category>
+		<category><![CDATA[webp]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4024</guid>
+
+					<description><![CDATA[Josh Fraser posts a few WebP statistics based on serving converted JPEGs for live sites. The bottom line: the average optimized JPEG went from 49k to 22.8k as a WebP image.]]></description>
+										<content:encoded><![CDATA[<p>Josh Fraser posts a few <a href="http://torbit.com/blog/2011/05/02/webp-statistics/">WebP statistics</a> based on serving converted JPEGs for live sites.  The bottom line: the average optimized JPEG went from 49k to 22.8k as a WebP image.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/05/02/webp-in-the-wild/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

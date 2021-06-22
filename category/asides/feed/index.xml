@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Asides &#8211; Joseph Scott</title>
+	<atom:link href="/category/asides/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 10 Jun 2013 18:25:05 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>PageSpeed Online</title>
+		<link>/2013/06/10/pagespeed-online/</link>
+					<comments>/2013/06/10/pagespeed-online/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 10 Jun 2013 18:25:05 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[pagespeed]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3950</guid>
+
+					<description><![CDATA[Unfortunately the Chrome PageSpeed plugin hasn&#8217;t worked for me in a long time. WebPagetest.org appears to no longer include PageSpeed analysis in reports either. That leaves PageSpeed Online has the only option for running a PageSpeed analysis on a site. I really liked using the Chrome plugin (back when I could still get it to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Unfortunately the <a href="https://chrome.google.com/webstore/detail/pagespeed-insights-by-goo/gplegfbjlmmehdoakndmohflojccocli?hl=en">Chrome PageSpeed plugin</a> hasn&#8217;t worked for me in a long time.  <a href="http://www.webpagetest.org/">WebPagetest.org</a> appears to no longer include PageSpeed analysis in reports either.</p>
+<p><img loading="lazy" src="https://sharedat.net/f/DE/DEIC/pagespeed-online.png" width="449" height="75" class="aligncenter" /></p>
+<p>That leaves <a href="https://developers.google.com/speed/pagespeed/insights">PageSpeed Online</a> has the only option for running a PageSpeed analysis on a site.</p>
+<p>I really liked using the Chrome plugin (back when I could still get it to work), but I&#8217;m happy to see there is at least one place where you can still run a PageSpeed analysis.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/06/10/pagespeed-online/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>ioprofile</title>
+		<link>/2013/05/13/ioprofile/</link>
+					<comments>/2013/05/13/ioprofile/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 13 May 2013 15:32:31 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[ioprofile]]></category>
+		<category><![CDATA[lsof]]></category>
+		<category><![CDATA[pt-ioprofile]]></category>
+		<category><![CDATA[strace]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3013</guid>
+
+					<description><![CDATA[ioprofile ( now called pt-ioprofile ) is a nifty tool for seeing the I/O activity of a process: The ioprofile tool captures a process&#8217;s I/O activity through lsof and strace and summarizes it. The result is a tabular display that shows you where the process spent its time on I/O operations. Here is a screenshot [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://aspersa.googlecode.com/svn/html/ioprofile.html">ioprofile</a> ( now called <a href="http://www.percona.com/doc/percona-toolkit/2.1/pt-ioprofile.html">pt-ioprofile</a> ) is a nifty tool for seeing the I/O activity of a process:</p>
+<blockquote><p>
+The ioprofile tool captures a process&#8217;s I/O activity through lsof and strace and summarizes it. The result is a tabular display that shows you where the process spent its time on I/O operations.
+</p></blockquote>
+<p>Here is a screenshot from the first example in the original ioprofile docs:</p>
+<p><img loading="lazy" src="https://sharedat.net/f/HD/HDvC/ioprofile.png" width="573" height="268" class="aligncenter" /></p>
+<p>Which shows the time spent in I/O for each of those files.  Another useful option is the see the byte count of I/O for each file:</p>
+<p><img loading="lazy" src="https://sharedat.net/f/bD/bDw5/ioprofile-bytes.png" width="573" height="255" class="aligncenter" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/05/13/ioprofile/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Family History Tech</title>
+		<link>/2011/03/29/family-history-tech/</link>
+					<comments>/2011/03/29/family-history-tech/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 29 Mar 2011 15:28:15 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[familysearch]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3783</guid>
+
+					<description><![CDATA[Family Tech &#124; Technology tips for genealogists and family historians.. Powered by WordPress, nice! Now if they could just ditch the captcha requirement for comments.]]></description>
+										<content:encoded><![CDATA[<p><a href='http://familytech.familysearch.org/'>Family Tech | Technology tips for genealogists and family historians.</a>.</p>
+<p>Powered by WordPress, nice!  Now if they could just ditch the captcha requirement for comments.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/03/29/family-history-tech/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>PhantomJS: Headless WebKit with JavaScript API</title>
+		<link>/2011/03/28/phantomjs-headless-webkit-with-javascript-api/</link>
+					<comments>/2011/03/28/phantomjs-headless-webkit-with-javascript-api/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 28 Mar 2011 15:19:42 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[phantomjs]]></category>
+		<category><![CDATA[webkit]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3898</guid>
+
+					<description><![CDATA[PhantomJS: Headless WebKit with JavaScript API. The rendering example looks promising for capturing screenshots of URLs.]]></description>
+										<content:encoded><![CDATA[<p><a href='http://www.phantomjs.org/'>PhantomJS</a>: Headless WebKit with JavaScript API</a>.  The <a href="http://code.google.com/p/phantomjs/wiki/QuickStart#Rendering">rendering</a> example looks promising for capturing screenshots of URLs.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/03/28/phantomjs-headless-webkit-with-javascript-api/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Tim Bray on WordPress</title>
+		<link>/2011/03/17/tim-bray-on-wordpress/</link>
+					<comments>/2011/03/17/tim-bray-on-wordpress/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 17 Mar 2011 20:35:58 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[tim-bray]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3874</guid>
+
+					<description><![CDATA[There are lots of good products out there, but for self-hosted blogging in 2011, it’s really hard to beat WordPress. Tim Bray · Things about Blogging]]></description>
+										<content:encoded><![CDATA[<blockquote><p>There are lots of good products out there, but for self-hosted blogging in 2011, it’s really hard to beat WordPress.</p></blockquote>
+<p><a href='http://www.tbray.org/ongoing/When/201x/2011/03/07/BNotes'>Tim Bray · Things about Blogging</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/03/17/tim-bray-on-wordpress/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>IE6 Countdown</title>
+		<link>/2011/03/04/ie6-countdown/</link>
+					<comments>/2011/03/04/ie6-countdown/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 04 Mar 2011 16:38:47 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[ie6]]></category>
+		<category><![CDATA[internet-explorer]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3698</guid>
+
+					<description><![CDATA[The IE6 Countdown &#8211; if Microsoft can&#8217;t convince people to stop using IE6, no one can.]]></description>
+										<content:encoded><![CDATA[<p>The <a href='http://ie6countdown.com/'>IE6 Countdown</a> &#8211; if Microsoft can&#8217;t convince people to stop using IE6, no one can.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/03/04/ie6-countdown/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Redis Sharding at Craigslist</title>
+		<link>/2011/02/26/redis-sharding-at-craigslist/</link>
+					<comments>/2011/02/26/redis-sharding-at-craigslist/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 26 Feb 2011 22:08:02 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[craigslist]]></category>
+		<category><![CDATA[redis]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3648</guid>
+
+					<description><![CDATA[Redis Sharding at Craigslist]]></description>
+										<content:encoded><![CDATA[<p><a href="http://blog.zawodny.com/2011/02/26/redis-sharding-at-craigslist/">Redis Sharding at Craigslist</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/02/26/redis-sharding-at-craigslist/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Consumer group wants to tax Netflix to pay for rural broadband</title>
+		<link>/2011/02/25/consumer-group-wants-to-tax-netflix-to-pay-for-rural-broadband/</link>
+					<comments>/2011/02/25/consumer-group-wants-to-tax-netflix-to-pay-for-rural-broadband/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 25 Feb 2011 22:02:07 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[broadband]]></category>
+		<category><![CDATA[netflix]]></category>
+		<category><![CDATA[taxes]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3638</guid>
+
+					<description><![CDATA[Consumer group wants to tax Netflix to pay for rural broadband &#8211; doesn&#8217;t make any sense to me. This would be like taxing people extra who use the most long distance minutes, even though they already pay to use those minutes.]]></description>
+										<content:encoded><![CDATA[<p><a href="http://thehill.com/blogs/hillicon-valley/technology/145915-consumer-group-tax-netflix-to-pay-for-rural-broadband">Consumer group wants to tax Netflix to pay for rural broadband</a> &#8211; doesn&#8217;t make any sense to me.  This would be like taxing people extra who use the most long distance minutes, even though they already pay to use those minutes.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/02/25/consumer-group-wants-to-tax-netflix-to-pay-for-rural-broadband/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Magic 8 Ball Patent</title>
+		<link>/2011/01/31/magic-8-ball-patent/</link>
+					<comments>/2011/01/31/magic-8-ball-patent/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 31 Jan 2011 18:48:27 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[magic-8-ball]]></category>
+		<category><![CDATA[patent]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3464</guid>
+
+					<description><![CDATA[Last week marked 47 years since the patent of the Magic 8 Ball.]]></description>
+										<content:encoded><![CDATA[<p>Last week marked 47 years since the <a href='http://www.google.com/patents?id=1aRYAAAAEBAJ&#038;printsec=drawing&#038;zoom=4#v=onepage&#038;q&#038;f=false'>patent of the Magic 8 Ball</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/01/31/magic-8-ball-patent/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Android Reboot</title>
+		<link>/2010/11/30/android-reboot/</link>
+					<comments>/2010/11/30/android-reboot/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 30 Nov 2010 21:29:22 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[memory-leaks]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3241</guid>
+
+					<description><![CDATA[Just a minute, I have to reboot my phone. &#8211; Brother-in-law trying to take a video from his Android phone I asked him more about this, he indicated that some of the apps he had downloaded had memory leaks (he wasn&#8217;t sure which ones) and needed to reboot the phone regularly. Recording video just locks [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+Just a minute, I have to reboot my phone.
+</p></blockquote>
+<p>&#8211; Brother-in-law trying to take a video from his Android phone</p>
+<p>I asked him more about this, he indicated that some of the apps he had downloaded had memory leaks (he wasn&#8217;t sure which ones) and needed to reboot the phone regularly.  Recording video just locks up until doing a reboot.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/11/30/android-reboot/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

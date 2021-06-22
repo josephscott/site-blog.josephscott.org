@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Tweaking Mac OS X Sysctl Values	</title>
+	<atom:link href="/2004/07/06/tweaking-mac-os-x-sysctl-values/feed/" rel="self" type="application/rss+xml" />
+	<link>/2004/07/06/tweaking-mac-os-x-sysctl-values/</link>
+	<description></description>
+	<lastBuildDate>Mon, 28 May 2007 20:25:51 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Venera7.com &#187; Errores extraños de OS X		</title>
+		<link>/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-414</link>
+
+		<dc:creator><![CDATA[Venera7.com &#187; Errores extraños de OS X]]></dc:creator>
+		<pubDate>Mon, 28 May 2007 20:25:51 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-414</guid>
+
+					<description><![CDATA[[...] Tweaking Mac OS X Sysctl Values &#124; Joseph Scott&#8217;s Blog [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Tweaking Mac OS X Sysctl Values | Joseph Scott&#8217;s Blog [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Snell-Pym &#187; 2007 &#187; February &#187; 16		</title>
+		<link>/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-413</link>
+
+		<dc:creator><![CDATA[Snell-Pym &#187; 2007 &#187; February &#187; 16]]></dc:creator>
+		<pubDate>Fri, 16 Feb 2007 15:29:59 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-413</guid>
+
+					<description><![CDATA[[...] system limits are (as usual) set via sysctls. But if you try and change them, they refuse to alter. It turns out that you can set them, but only once - the first time this set of sysctls is written to the kernel, [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] system limits are (as usual) set via sysctls. But if you try and change them, they refuse to alter. It turns out that you can set them, but only once &#8211; the first time this set of sysctls is written to the kernel, [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Yukie		</title>
+		<link>/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-412</link>
+
+		<dc:creator><![CDATA[Yukie]]></dc:creator>
+		<pubDate>Fri, 08 Sep 2006 22:05:05 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-412</guid>
+
+					<description><![CDATA[Hi. I&#039;ve read all of your correspondence, but I still can not work this out....
+Here&#039;s what happens.
+
+Yukies-iBook:/etc yukie$ sudo sysctl -w kern.sysv.shmmax=20971520 kern.sysv.shmmin=1 kern.sysv.shmmni=32 kern.sysv.shmseg=8 kern.sysv.shmall=5120
+Password:
+kern.sysv.shmmax: 4194304 -&#062; 4194304
+kern.sysv.shmmin: 1 -&#062; 1
+kern.sysv.shmmni: 32 -&#062; 32
+kern.sysv.shmseg: 8 -&#062; 8
+kern.sysv.shmall: 1024 -&#062; 1024
+
+I can&#039;t even change these values .... A little help??]]></description>
+			<content:encoded><![CDATA[<p>Hi. I&#8217;ve read all of your correspondence, but I still can not work this out&#8230;.<br />
+Here&#8217;s what happens.</p>
+<p>Yukies-iBook:/etc yukie$ sudo sysctl -w kern.sysv.shmmax=20971520 kern.sysv.shmmin=1 kern.sysv.shmmni=32 kern.sysv.shmseg=8 kern.sysv.shmall=5120<br />
+Password:<br />
+kern.sysv.shmmax: 4194304 -&gt; 4194304<br />
+kern.sysv.shmmin: 1 -&gt; 1<br />
+kern.sysv.shmmni: 32 -&gt; 32<br />
+kern.sysv.shmseg: 8 -&gt; 8<br />
+kern.sysv.shmall: 1024 -&gt; 1024</p>
+<p>I can&#8217;t even change these values &#8230;. A little help??</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: James		</title>
+		<link>/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-411</link>
+
+		<dc:creator><![CDATA[James]]></dc:creator>
+		<pubDate>Sat, 27 May 2006 09:28:44 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-411</guid>
+
+					<description><![CDATA[I think that shmall should actually be set to (shmmax / pagesize) * shmmni instead. That lets you have the maximum number of shared memory ids worth of shared memory counted in pages... I could be mistaken however, I&#039;m not a shared memory guru.]]></description>
+			<content:encoded><![CDATA[<p>I think that shmall should actually be set to (shmmax / pagesize) * shmmni instead. That lets you have the maximum number of shared memory ids worth of shared memory counted in pages&#8230; I could be mistaken however, I&#8217;m not a shared memory guru.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Mark		</title>
+		<link>/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-410</link>
+
+		<dc:creator><![CDATA[Mark]]></dc:creator>
+		<pubDate>Wed, 25 Jan 2006 20:08:57 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-410</guid>
+
+					<description><![CDATA[Thanks to all from me, too. dmc - your last comment was especially helpful. After (only some) aggravation, I was able to successfull change shmmax, etc on 10.3 and 10.4]]></description>
+			<content:encoded><![CDATA[<p>Thanks to all from me, too. dmc &#8211; your last comment was especially helpful. After (only some) aggravation, I was able to successfull change shmmax, etc on 10.3 and 10.4</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: dmc		</title>
+		<link>/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-409</link>
+
+		<dc:creator><![CDATA[dmc]]></dc:creator>
+		<pubDate>Wed, 27 Apr 2005 04:22:56 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-409</guid>
+
+					<description><![CDATA[Turns out that when you set the last of the 5 shm values, the shared memory becomes &quot;initialized&quot; by a call to shminit().  After that, it simply ignores any subsequent changes until the system restarts.
+
+If you edit /etc/sysctl.conf, as you are supposed to, unless you set all 5, your changes will be overwritten by the subsequent code in /etc/rc that sets the default values.  So the solution is to not just add the shmmax and shmall that you want, but the other three also, so that shminit() gets called, locking the values in place.]]></description>
+			<content:encoded><![CDATA[<p>Turns out that when you set the last of the 5 shm values, the shared memory becomes &#8220;initialized&#8221; by a call to shminit().  After that, it simply ignores any subsequent changes until the system restarts.</p>
+<p>If you edit /etc/sysctl.conf, as you are supposed to, unless you set all 5, your changes will be overwritten by the subsequent code in /etc/rc that sets the default values.  So the solution is to not just add the shmmax and shmall that you want, but the other three also, so that shminit() gets called, locking the values in place.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Moonless Nights		</title>
+		<link>/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-408</link>
+
+		<dc:creator><![CDATA[Moonless Nights]]></dc:creator>
+		<pubDate>Wed, 20 Apr 2005 03:33:24 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-408</guid>
+
+					<description><![CDATA[The reason why those changes in sysctl.conf do not take effect is because those particular parameters can only be set once.  Future modifications to the values are ignored.
+
+That said, if you remove the settings from /etc/rc, then the change in /etc/sysctl.conf should take effect.]]></description>
+			<content:encoded><![CDATA[<p>The reason why those changes in sysctl.conf do not take effect is because those particular parameters can only be set once.  Future modifications to the values are ignored.</p>
+<p>That said, if you remove the settings from /etc/rc, then the change in /etc/sysctl.conf should take effect.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Kevin Murphy		</title>
+		<link>/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-407</link>
+
+		<dc:creator><![CDATA[Kevin Murphy]]></dc:creator>
+		<pubDate>Thu, 10 Mar 2005 19:59:08 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-407</guid>
+
+					<description><![CDATA[Hmm, putting together rhumgod&#039;s and jfw&#039;s comments, I set /etc/sysctl.conf to:
+
+kern.sysv.shmmax=134217728
+kern.sysv.shmmin=1
+kern.sysv.shmmni=32
+kern.sysv.shmseg=8
+kern.sysv.shmall=32768
+
+However, the settings are not applied once I reboot (e.g., &#039;sysctl kern.sysv.shmmax&#039; shows the default 4194304 instead of my value.  Is this an Apple bug, or am I still missing something?]]></description>
+			<content:encoded><![CDATA[<p>Hmm, putting together rhumgod&#8217;s and jfw&#8217;s comments, I set /etc/sysctl.conf to:</p>
+<p>kern.sysv.shmmax=134217728<br />
+kern.sysv.shmmin=1<br />
+kern.sysv.shmmni=32<br />
+kern.sysv.shmseg=8<br />
+kern.sysv.shmall=32768</p>
+<p>However, the settings are not applied once I reboot (e.g., &#8216;sysctl kern.sysv.shmmax&#8217; shows the default 4194304 instead of my value.  Is this an Apple bug, or am I still missing something?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: rhumgod		</title>
+		<link>/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-406</link>
+
+		<dc:creator><![CDATA[rhumgod]]></dc:creator>
+		<pubDate>Tue, 01 Feb 2005 22:02:59 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-406</guid>
+
+					<description><![CDATA[herve - make sure you adjusted SHMALL to match the adjustment you made to SHMMAX.  SHMALL is the total amount of shared memory available, SHMMAX is maximum size of a shared memory segment.
+
+On Panther (10.3.x) set your SHMALL to:
+
+{VALUE of SHMMAX} / 4096
+
+4096 is the default page size in 10.3.x.  So, for example, your SHMMAX is 134217728 (128MB), you would set SHMALL to 32768.]]></description>
+			<content:encoded><![CDATA[<p>herve &#8211; make sure you adjusted SHMALL to match the adjustment you made to SHMMAX.  SHMALL is the total amount of shared memory available, SHMMAX is maximum size of a shared memory segment.</p>
+<p>On Panther (10.3.x) set your SHMALL to:</p>
+<p>{VALUE of SHMMAX} / 4096</p>
+<p>4096 is the default page size in 10.3.x.  So, for example, your SHMMAX is 134217728 (128MB), you would set SHMALL to 32768.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: jfw		</title>
+		<link>/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-405</link>
+
+		<dc:creator><![CDATA[jfw]]></dc:creator>
+		<pubDate>Thu, 27 Jan 2005 00:08:59 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-405</guid>
+
+					<description><![CDATA[had the same problem with values in sysctl.conf not taking effect -- until what you said caused me to look at /etc/rc. I then looked closely at my sysctl.conf, and I realized it had what turns out to be a syntax error -- whitespace!
+
+I set the following:
+
+&lt;code&gt;net.inet.tcp.keepidle=2160&lt;/code&gt;
+
+but I had originally written it with a space on either side of the equals sign.  Without the spaces, it loads at startup!
+
+Make sure that&#039;s not your issue too...
+
+I&#039;m on 10.3.7 btw.]]></description>
+			<content:encoded><![CDATA[<p>had the same problem with values in sysctl.conf not taking effect &#8212; until what you said caused me to look at /etc/rc. I then looked closely at my sysctl.conf, and I realized it had what turns out to be a syntax error &#8212; whitespace!</p>
+<p>I set the following:</p>
+<p><code>net.inet.tcp.keepidle=2160</code></p>
+<p>but I had originally written it with a space on either side of the equals sign.  Without the spaces, it loads at startup!</p>
+<p>Make sure that&#8217;s not your issue too&#8230;</p>
+<p>I&#8217;m on 10.3.7 btw.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Update Nginx For Better HTTPS Performance	</title>
+	<atom:link href="/2014/04/22/update-nginx-for-better-https-performance/feed/" rel="self" type="application/rss+xml" />
+	<link>/2014/04/22/update-nginx-for-better-https-performance/</link>
+	<description></description>
+	<lastBuildDate>Mon, 28 Apr 2014 13:52:30 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Tried Out SPDY &#124; Joseph Scott		</title>
+		<link>/2014/04/22/update-nginx-for-better-https-performance/#comment-4213</link>
+
+		<dc:creator><![CDATA[Tried Out SPDY &#124; Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 28 Apr 2014 13:52:30 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10261#comment-4213</guid>
+
+					<description><![CDATA[[&#8230;] Tollman suggested I try out SPDY with my updated Nginx install. While I&#8217;m sad at the idea of giving up a plain text HTTP API, [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Tollman suggested I try out SPDY with my updated Nginx install. While I&#8217;m sad at the idea of giving up a plain text HTTP API, [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Zack Tollman		</title>
+		<link>/2014/04/22/update-nginx-for-better-https-performance/#comment-4212</link>
+
+		<dc:creator><![CDATA[Zack Tollman]]></dc:creator>
+		<pubDate>Mon, 28 Apr 2014 12:56:33 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10261#comment-4212</guid>
+
+					<description><![CDATA[Interesting. It&#039;s still nice to remove the extra bloat and along with some of the other optimizations, you should hopefully be able to improve the performance.]]></description>
+			<content:encoded><![CDATA[<p>Interesting. It&#8217;s still nice to remove the extra bloat and along with some of the other optimizations, you should hopefully be able to improve the performance.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2014/04/22/update-nginx-for-better-https-performance/#comment-4211</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 23 Apr 2014 22:47:55 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10261#comment-4211</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/04/22/update-nginx-for-better-https-performance/#comment-4207&quot;&gt;Zack Tollman&lt;/a&gt;.
+
+I tried it with the root cert removed.  It obviously reduced the cert size ( from 3625 bytes to 2543 bytes ), but didn&#039;t appear to have any significant improvement for performance.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/04/22/update-nginx-for-better-https-performance/#comment-4207">Zack Tollman</a>.</p>
+<p>I tried it with the root cert removed.  It obviously reduced the cert size ( from 3625 bytes to 2543 bytes ), but didn&#8217;t appear to have any significant improvement for performance.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2014/04/22/update-nginx-for-better-https-performance/#comment-4210</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 23 Apr 2014 17:01:05 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10261#comment-4210</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/04/22/update-nginx-for-better-https-performance/#comment-4209&quot;&gt;Zack Tollman&lt;/a&gt;.
+
+Was mostly looking to see if they got significantly worse.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/04/22/update-nginx-for-better-https-performance/#comment-4209">Zack Tollman</a>.</p>
+<p>Was mostly looking to see if they got significantly worse.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Zack Tollman		</title>
+		<link>/2014/04/22/update-nginx-for-better-https-performance/#comment-4209</link>
+
+		<dc:creator><![CDATA[Zack Tollman]]></dc:creator>
+		<pubDate>Wed, 23 Apr 2014 16:32:47 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10261#comment-4209</guid>
+
+					<description><![CDATA[Awesome! Glad to hear it. I wouldn&#039;t expect performance improvements with a change to the cipher list; although, I suppose there could be micro improvements with some browsers I suppose.]]></description>
+			<content:encoded><![CDATA[<p>Awesome! Glad to hear it. I wouldn&#8217;t expect performance improvements with a change to the cipher list; although, I suppose there could be micro improvements with some browsers I suppose.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2014/04/22/update-nginx-for-better-https-performance/#comment-4208</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 23 Apr 2014 16:23:21 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10261#comment-4208</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/04/22/update-nginx-for-better-https-performance/#comment-4207&quot;&gt;Zack Tollman&lt;/a&gt;.
+
+I&#039;m trying out that cipher list now.  Tests so far have been good, performance doesn&#039;t seem to have significantly changed ( at least when browsing with Chrome ) and security is definitely better.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/04/22/update-nginx-for-better-https-performance/#comment-4207">Zack Tollman</a>.</p>
+<p>I&#8217;m trying out that cipher list now.  Tests so far have been good, performance doesn&#8217;t seem to have significantly changed ( at least when browsing with Chrome ) and security is definitely better.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Zack Tollman		</title>
+		<link>/2014/04/22/update-nginx-for-better-https-performance/#comment-4207</link>
+
+		<dc:creator><![CDATA[Zack Tollman]]></dc:creator>
+		<pubDate>Tue, 22 Apr 2014 22:58:02 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10261#comment-4207</guid>
+
+					<description><![CDATA[I&#039;d be interested to see what happens if you remove the root cert and continue to change the buffer size. You might lose a RT.
+
+&lt;blockquote&gt;I’m never quiet happy with the combination of performance, security, and client support. My SSL Labs score flops around all over the place as a result :-)&lt;/blockquote&gt;
+
+I totally understand. The suite I linked to has worked really well. I used it for the SSL setup we are using at The Theme Foundry. It hits the sweet spot between performance, security and compatibility.
+
+You will love it once you get SPDY installed! The waterfall becomes a work of art ;)]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;d be interested to see what happens if you remove the root cert and continue to change the buffer size. You might lose a RT.</p>
+<blockquote><p>I’m never quiet happy with the combination of performance, security, and client support. My SSL Labs score flops around all over the place as a result 🙂</p></blockquote>
+<p>I totally understand. The suite I linked to has worked really well. I used it for the SSL setup we are using at The Theme Foundry. It hits the sweet spot between performance, security and compatibility.</p>
+<p>You will love it once you get SPDY installed! The waterfall becomes a work of art 😉</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2014/04/22/update-nginx-for-better-https-performance/#comment-4206</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 22 Apr 2014 18:02:45 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10261#comment-4206</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/04/22/update-nginx-for-better-https-performance/#comment-4205&quot;&gt;Zack Tollman&lt;/a&gt;.
+
+Thanks for the feedback.  I am bundling the root cert, I could probably get away with just including the intermediate cert, which I haven&#039;t tried yet.
+
+I did try a few values for the ssl_buffer_size, in my tests I found that they didn&#039;t make any difference.  In terms of ciphers, I&#039;m trying out new combinations all the time.  I&#039;m never quiet happy with the combination of performance, security, and client support.  My SSL Labs score flops around all over the place as a result :-)
+
+SPDY is something that I&#039;ll look at enabling the next time I tweak my config.  For this particular upgrade I only wanted to limit the number of changes to make it easier to see what their individual impact was.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/04/22/update-nginx-for-better-https-performance/#comment-4205">Zack Tollman</a>.</p>
+<p>Thanks for the feedback.  I am bundling the root cert, I could probably get away with just including the intermediate cert, which I haven&#8217;t tried yet.</p>
+<p>I did try a few values for the ssl_buffer_size, in my tests I found that they didn&#8217;t make any difference.  In terms of ciphers, I&#8217;m trying out new combinations all the time.  I&#8217;m never quiet happy with the combination of performance, security, and client support.  My SSL Labs score flops around all over the place as a result 🙂</p>
+<p>SPDY is something that I&#8217;ll look at enabling the next time I tweak my config.  For this particular upgrade I only wanted to limit the number of changes to make it easier to see what their individual impact was.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Zack Tollman		</title>
+		<link>/2014/04/22/update-nginx-for-better-https-performance/#comment-4205</link>
+
+		<dc:creator><![CDATA[Zack Tollman]]></dc:creator>
+		<pubDate>Tue, 22 Apr 2014 16:10:54 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10261#comment-4205</guid>
+
+					<description><![CDATA[Hi Joseph!
+
+Excellent work! It&#039;s nice how many problems updating to the mainline version of Nginx can solve for you. It&#039;s also great to see how many WordPress folks are learning about and improving SSL performance.
+
+I took a quick look at your setup via &lt;a href=&quot;https://www.ssllabs.com/ssltest/analyze.html?d=josephscott.org&quot; rel=&quot;nofollow&quot;&gt;SSL Labs&lt;/a&gt; and have a few suggestions. It looks like you are including the root cert in your cert package. This can lead to extra RTT because of TCP Slow Start. Your initial congestion window might not be able to handle the size of the cert and therefore incur extra RTT. Removing the cert (which is available in all browsers already) &lt;em&gt;could&lt;/em&gt; reduce the SSL handshake time some more.
+
+You may also want to check and ensure that the &lt;a href=&quot;https://github.com/tollmanz/ssl-nginx-starter/blob/master/srv/salt/config/nginx/sites-enabled/sslplayground.conf#L24-L25&quot; rel=&quot;nofollow&quot;&gt;&quot;ssl_buffer_size&quot;&lt;/a&gt; is set to not overflow the buffer causing extra RTT.
+
+While not performance related, it looks like you are using some insecure ciphers in your cipher suite. I&#039;d recommend a list of different &lt;a href=&quot;https://github.com/tollmanz/ssl-nginx-starter/blob/master/srv/salt/config/nginx/sites-enabled/sslplayground.conf#L17&quot; rel=&quot;nofollow&quot;&gt;ciphers&lt;/a&gt; that are secure and provide PFS. 
+
+Finally, since you are running 1.5.13 with the SPDY module compiled into it, you might as well use it! You get a whole host of performance benefits with it (although it has no impact on the SSL negotiation other than you only have to do it once per page view). You only need to add a few changes to your Nginx config file:
+
+1. &lt;a href=&quot;https://github.com/tollmanz/ssl-nginx-starter/blob/master/srv/salt/config/nginx/sites-enabled/sslplayground.conf#L2&quot; rel=&quot;nofollow&quot;&gt;Enable SPDY&lt;/a&gt;
+2. &lt;a href=&quot;https://github.com/tollmanz/ssl-nginx-starter/blob/master/srv/salt/config/nginx/sites-enabled/sslplayground.conf#L35&quot; rel=&quot;nofollow&quot;&gt;Announce SPDY&lt;/a&gt;
+
+Enabling SPDY will remove all of the extra purple and orange in your &lt;a href=&quot;http://www.webpagetest.org/result/140422_9J_3ecbe87ed28a7046289cf0345733049a/2/details/&quot; rel=&quot;nofollow&quot;&gt;waterfall&lt;/a&gt; for the low cost of two lines of config.]]></description>
+			<content:encoded><![CDATA[<p>Hi Joseph!</p>
+<p>Excellent work! It&#8217;s nice how many problems updating to the mainline version of Nginx can solve for you. It&#8217;s also great to see how many WordPress folks are learning about and improving SSL performance.</p>
+<p>I took a quick look at your setup via <a href="https://www.ssllabs.com/ssltest/analyze.html?d=josephscott.org" rel="nofollow">SSL Labs</a> and have a few suggestions. It looks like you are including the root cert in your cert package. This can lead to extra RTT because of TCP Slow Start. Your initial congestion window might not be able to handle the size of the cert and therefore incur extra RTT. Removing the cert (which is available in all browsers already) <em>could</em> reduce the SSL handshake time some more.</p>
+<p>You may also want to check and ensure that the <a href="https://github.com/tollmanz/ssl-nginx-starter/blob/master/srv/salt/config/nginx/sites-enabled/sslplayground.conf#L24-L25" rel="nofollow">&#8220;ssl_buffer_size&#8221;</a> is set to not overflow the buffer causing extra RTT.</p>
+<p>While not performance related, it looks like you are using some insecure ciphers in your cipher suite. I&#8217;d recommend a list of different <a href="https://github.com/tollmanz/ssl-nginx-starter/blob/master/srv/salt/config/nginx/sites-enabled/sslplayground.conf#L17" rel="nofollow">ciphers</a> that are secure and provide PFS. </p>
+<p>Finally, since you are running 1.5.13 with the SPDY module compiled into it, you might as well use it! You get a whole host of performance benefits with it (although it has no impact on the SSL negotiation other than you only have to do it once per page view). You only need to add a few changes to your Nginx config file:</p>
+<p>1. <a href="https://github.com/tollmanz/ssl-nginx-starter/blob/master/srv/salt/config/nginx/sites-enabled/sslplayground.conf#L2" rel="nofollow">Enable SPDY</a><br />
+2. <a href="https://github.com/tollmanz/ssl-nginx-starter/blob/master/srv/salt/config/nginx/sites-enabled/sslplayground.conf#L35" rel="nofollow">Announce SPDY</a></p>
+<p>Enabling SPDY will remove all of the extra purple and orange in your <a href="http://www.webpagetest.org/result/140422_9J_3ecbe87ed28a7046289cf0345733049a/2/details/" rel="nofollow">waterfall</a> for the low cost of two lines of config.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

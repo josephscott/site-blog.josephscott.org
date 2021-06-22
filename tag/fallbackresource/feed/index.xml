@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>fallbackresource &#8211; Joseph Scott</title>
+	<atom:link href="/tag/fallbackresource/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 12 Oct 2011 15:29:40 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Apache FallbackResource Directive</title>
+		<link>/2011/10/12/apache-fallbackresource-directive/</link>
+					<comments>/2011/10/12/apache-fallbackresource-directive/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 12 Oct 2011 15:29:40 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[apache]]></category>
+		<category><![CDATA[fallbackresource]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4918</guid>
+
+					<description><![CDATA[As of Apache HTTPD 2.2.16 there is a new FallbackResource directive: It is frequently desirable to have a single file or resource handle all requests to a particular directory, except those requests that correspond to an existing file or script. This is often referred to as a &#8216;front controller.&#8217; In earlier versions of httpd, this [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>As of <a href="http://httpd.apache.org/">Apache HTTPD</a> 2.2.16 there is a new <a href="http://httpd.apache.org/docs/current/mod/mod_dir.html#fallbackresource">FallbackResource directive</a>:</p>
+<blockquote><p>
+It is frequently desirable to have a single file or resource handle all requests to a particular directory, except those requests that correspond to an existing file or script. This is often referred to as a &#8216;front controller.&#8217;</p>
+<p>In earlier versions of httpd, this effect typically required mod_rewrite, and the use of the -f and -d tests for file and directory existence. This now requires only one line of configuration.</p>
+<p><code>FallbackResource /index.php</code></p>
+<p>Existing files, such as images, css files, and so on, will be served normally.
+</p></blockquote>
+<p>This is a really useful directive to have available, reminds me of the <a href="http://wiki.nginx.org/HttpCoreModule#try_files">try_files feature in Nginx</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/10/12/apache-fallbackresource-directive/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

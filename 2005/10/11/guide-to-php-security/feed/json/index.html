@@ -1,0 +1,124 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2005/10/11/guide-to-php-security/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2005/10/11/guide-to-php-security/",
+    "feed_url": "https://blog.josephscott.org/2005/10/11/guide-to-php-security/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: Guide to PHP Security",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2005/10/11/guide-to-php-security/#comment-990",
+            "url": "https://blog.josephscott.org/2005/10/11/guide-to-php-security/#comment-990",
+            "content_html": "@Mike -\n\nThis post is now nearly 3 years old, in that time MySQL versions that support nested queries are common.  So now your argument looks like MySQL is inherently less secure now.",
+            "content_text": "@Mike -\n\nThis post is now nearly 3 years old, in that time MySQL versions that support nested queries are common.  So now your argument looks like MySQL is inherently less secure now.",
+            "date_published": "2008-09-28T20:13:29-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://www.randomnetworks.com/",
+                    "avatar": "https://secure.gravatar.com/avatar/407fb36bbf6a01e151680be9f408b5af?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://www.randomnetworks.com/",
+                "avatar": "https://secure.gravatar.com/avatar/407fb36bbf6a01e151680be9f408b5af?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2005/10/11/guide-to-php-security/#comment-989",
+            "url": "https://blog.josephscott.org/2005/10/11/guide-to-php-security/#comment-989",
+            "content_html": "Joseph I disagree, I think there are definately 'levels' of sql injection - being able to see all the information in a database and being able to update is different.\n\nThe fact that mysql_query() does not support stacked queries can make it impossible for a hacker to insert data into a database through a weak point.\n\nFor example take the following query:\n\n'SELECT * FROM users where id = '. $_GET['unsanitised_variable']\n\nbecause of this a user can now construct a union select and view anything he or she likes in the database, however there is no way for the user to insert data into the database.\n\nObviously not sanitising user input is a fools mistake, however it must be noted that allowing multiple queries increases the risk of damage via sql injection.",
+            "content_text": "Joseph I disagree, I think there are definately 'levels' of sql injection - being able to see all the information in a database and being able to update is different.\n\nThe fact that mysql_query() does not support stacked queries can make it impossible for a hacker to insert data into a database through a weak point.\n\nFor example take the following query:\n\n'SELECT * FROM users where id = '. $_GET['unsanitised_variable']\n\nbecause of this a user can now construct a union select and view anything he or she likes in the database, however there is no way for the user to insert data into the database.\n\nObviously not sanitising user input is a fools mistake, however it must be noted that allowing multiple queries increases the risk of damage via sql injection.",
+            "date_published": "2008-09-27T08:51:18-06:00",
+            "authors": [
+                {
+                    "name": "Mike",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/a795575ab8039a08f9b3cc19fc790a29?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Mike",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/a795575ab8039a08f9b3cc19fc790a29?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2005/10/11/guide-to-php-security/#comment-988",
+            "url": "https://blog.josephscott.org/2005/10/11/guide-to-php-security/#comment-988",
+            "content_html": "i think there is a mistake in the first example of the chapter:\n\n// supposed input\n$name = \u0093ilia\u0092; DELETE FROM users;\u0094;\nmysql_query(\u0093SELECT * FROM users WHERE name=\u0092{$name}\u0092\u0094);\n\nin page 74 you said that:\n\"mysql_query() function does not permit query stacking, or executing\nmultiple queries in a single function call.\"\nbut in the example you make multiple queries in a single function call.",
+            "content_text": "i think there is a mistake in the first example of the chapter:\n\n// supposed input\n$name = \u0093ilia\u0092; DELETE FROM users;\u0094;\nmysql_query(\u0093SELECT * FROM users WHERE name=\u0092{$name}\u0092\u0094);\n\nin page 74 you said that:\n\"mysql_query() function does not permit query stacking, or executing\nmultiple queries in a single function call.\"\nbut in the example you make multiple queries in a single function call.",
+            "date_published": "2008-08-19T04:57:42-06:00",
+            "authors": [
+                {
+                    "name": "ahmed",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/ce65f802945c93e1c78e725fdcacedca?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "ahmed",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/ce65f802945c93e1c78e725fdcacedca?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2005/10/11/guide-to-php-security/#comment-987",
+            "url": "https://blog.josephscott.org/2005/10/11/guide-to-php-security/#comment-987",
+            "content_html": "Wow, Ilia didn't waste any time replying!",
+            "content_text": "Wow, Ilia didn't waste any time replying!",
+            "date_published": "2005-10-12T12:35:10-06:00",
+            "authors": [
+                {
+                    "name": "Jim",
+                    "url": "http://sonicchicken.net/blog/wordpress/",
+                    "avatar": "https://secure.gravatar.com/avatar/897bf16bff8239d695e71d8ee1a1ce36?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Jim",
+                "url": "http://sonicchicken.net/blog/wordpress/",
+                "avatar": "https://secure.gravatar.com/avatar/897bf16bff8239d695e71d8ee1a1ce36?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2005/10/11/guide-to-php-security/#comment-986",
+            "url": "https://blog.josephscott.org/2005/10/11/guide-to-php-security/#comment-986",
+            "content_html": "I think that certain types of injection attacks may be harder depending on support for query chaining.  If you are open to injection attacks, degrees of difficulty aren't what I'd consider an additional layer of security though.  I believe that this is especially true given the amount of attention SQL injection attacks have received over the years.  For the bad guys the degrees in difficulty aren't much.",
+            "content_text": "I think that certain types of injection attacks may be harder depending on support for query chaining.  If you are open to injection attacks, degrees of difficulty aren't what I'd consider an additional layer of security though.  I believe that this is especially true given the amount of attention SQL injection attacks have received over the years.  For the bad guys the degrees in difficulty aren't much.",
+            "date_published": "2005-10-11T13:21:09-06:00",
+            "authors": [
+                {
+                    "name": "joseph",
+                    "url": "http://www.randomnetworks.com/",
+                    "avatar": "https://secure.gravatar.com/avatar/407fb36bbf6a01e151680be9f408b5af?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "joseph",
+                "url": "http://www.randomnetworks.com/",
+                "avatar": "https://secure.gravatar.com/avatar/407fb36bbf6a01e151680be9f408b5af?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2005/10/11/guide-to-php-security/#comment-985",
+            "url": "https://blog.josephscott.org/2005/10/11/guide-to-php-security/#comment-985",
+            "content_html": "I think misunderstand the point I was trying to make there. MySQL is no more secure against SQL injection then let's say PostgreSQL. However, the fact that MySQL interface in PHP does not support query chaining makes exploitation of the problem more difficult. Certainly not impossible, just more difficult.",
+            "content_text": "I think misunderstand the point I was trying to make there. MySQL is no more secure against SQL injection then let's say PostgreSQL. However, the fact that MySQL interface in PHP does not support query chaining makes exploitation of the problem more difficult. Certainly not impossible, just more difficult.",
+            "date_published": "2005-10-11T13:10:48-06:00",
+            "authors": [
+                {
+                    "name": "ilia alshanetsky",
+                    "url": "http://ilia.ws",
+                    "avatar": "https://secure.gravatar.com/avatar/514caaf20494636ad6deb78c17b9af06?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "ilia alshanetsky",
+                "url": "http://ilia.ws",
+                "avatar": "https://secure.gravatar.com/avatar/514caaf20494636ad6deb78c17b9af06?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

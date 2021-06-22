@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>json-rpc &#8211; Joseph Scott</title>
+	<atom:link href="/tag/json-rpc/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 06 Sep 2006 05:43:33 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>JavaScript Object Notation (JSON)</title>
+		<link>/2006/09/05/javascript-object-notation-json/</link>
+					<comments>/2006/09/05/javascript-object-notation-json/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 06 Sep 2006 05:43:33 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[atom]]></category>
+		<category><![CDATA[feed]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[json]]></category>
+		<category><![CDATA[json-rpc]]></category>
+		<category><![CDATA[jsonrequest]]></category>
+		<category><![CDATA[rss]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/09/05/javascript-object-notation-json/</guid>
+
+					<description><![CDATA[I&#8217;ve been thinking more and more about JavaScript Object Notation (JSON) lately. If you aren&#8217;t familiar with JSON here&#8217;s some reading: Introducing JSON JSON (Wikipedia) JSON for the masses (Dustin Diaz) Unless I see a serious counter argument, I&#8217;m ready to jump on the replace XML with JSON boat. Other proposed ideas based on JSON [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been thinking more and more about <a href="http://www.json.org/">JavaScript Object Notation (JSON)</a> lately.  If you aren&#8217;t familiar with JSON here&#8217;s some reading:</p>
+<ul>
+<li><a href="http://www.json.org/">Introducing JSON</a></li>
+<li><a href="http://en.wikipedia.org/wiki/JSON">JSON</a> (Wikipedia)</li>
+<li><a href="http://www.dustindiaz.com/json-for-the-masses/">JSON for the masses</a> (Dustin Diaz)</li>
+</ul>
+<p>Unless I see a serious counter argument, I&#8217;m ready to jump on the <a href="http://www.json.org/xml.html">replace XML with JSON</a> boat.  Other proposed ideas based on JSON include <a href="http://www.json.org/JSONRequest.html">JSONRequest</a> (a safer version of XMLHttpRequest) and <a href="http://json-rpc.org/">JSON-RPC</a> (like XML-RPC without the XML).</p>
+<p>This leads me to my next thought, should the existing feed formats (RSS &amp; ATOM) be replaced with JSON?  I&#8217;m not 100% sure that this is the right thing, but I&#8217;m giving it serious consideration.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/09/05/javascript-object-notation-json/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

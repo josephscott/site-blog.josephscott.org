@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>thredis &#8211; Joseph Scott</title>
+	<atom:link href="/tag/thredis/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 25 Feb 2013 17:32:48 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Thredis, the Peanut Butter Cup of Databases</title>
+		<link>/2013/02/25/thredis-the-peanut-butter-cup-of-databases/</link>
+					<comments>/2013/02/25/thredis-the-peanut-butter-cup-of-databases/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 25 Feb 2013 17:32:48 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[redis]]></category>
+		<category><![CDATA[sqlite]]></category>
+		<category><![CDATA[thredis]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6702</guid>
+
+					<description><![CDATA[Ever wonder what would happen if you dipped SQLite into Redis? You get Thredis, the peanut butter cup of databases: Thredis embeds an in-memory SQLite database within Redis to enable a sophisticated level of SQL (joins, sub-selects, etc, all supported), as well as introduces multi-threaded processing to take advantage of SMP systems. This is one [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Ever wonder what would happen if you dipped <a href="http://www.sqlite.org/">SQLite</a> into <a href="http://redis.io/">Redis</a>?  You get <a href="http://thredis.org/">Thredis</a>, the peanut butter cup of databases:</p>
+<blockquote><p>
+Thredis embeds an in-memory SQLite database within Redis to enable a<br />
+sophisticated level of SQL (joins, sub-selects, etc, all supported),<br />
+as well as introduces multi-threaded processing to take advantage of<br />
+SMP systems.
+</p></blockquote>
+<p>This is one wild hack, check out one of the examples:</p>
+<p>[sourcecode]<br />
+redis 127.0.0.1:6379&gt; zadd foo_zset 1 a 2 b 3 c<br />
+(integer) 3<br />
+redis 127.0.0.1:6379&gt; sql &quot;create virtual table zset using redis (foo_zset)&quot;<br />
+OK<br />
+redis 127.0.0.1:6379&gt; sql &quot;select * from zset&quot;<br />
+1) 1) &quot;key&quot;<br />
+   2) &quot;val&quot;<br />
+2) 1) &quot;1.0&quot;<br />
+   2) &quot;a&quot;<br />
+3) 1) &quot;2.0&quot;<br />
+   2) &quot;b&quot;<br />
+4) 1) &quot;3.0&quot;<br />
+   2) &quot;c&quot;<br />
+[/sourcecode]</p>
+<p>More examples are listed at <a href="http://thredis.org/">http://thredis.org/</a>, source code is available at <a href="https://github.com/grisha/thredis">https://github.com/grisha/thredis</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/02/25/thredis-the-peanut-butter-cup-of-databases/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

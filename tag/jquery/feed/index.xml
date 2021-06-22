@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>jquery &#8211; Joseph Scott</title>
+	<atom:link href="/tag/jquery/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 19 Feb 2020 21:20:47 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>You Might Not Need jQuery</title>
+		<link>/2020/02/19/you-might-not-need-jquery/</link>
+					<comments>/2020/02/19/you-might-not-need-jquery/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 19 Feb 2020 21:20:47 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jquery]]></category>
+		<guid isPermaLink="false">/?p=18077</guid>
+
+					<description><![CDATA[The first stable version of jQuery was released in August 2006 ( 1.0 ), more than 13 years ago. I am happy to say that the world of web browsers has changed significantly since then. In 2020, You Might Not Need jQuery any more. I&#8217;m being completely serious here, writing plain JavaScript without jQuery is [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The first stable version of <a href="https://jquery.org/">jQuery</a> was released in <a href="https://jquery.org/history/">August 2006 ( 1.0 )</a>, more than 13 years ago.  I am happy to say that the world of web browsers has changed significantly since then.</p>
+<p>In 2020, <a href="http://youmightnotneedjquery.com/">You Might Not Need jQuery</a> any more.  I&#8217;m being completely serious here, writing plain JavaScript without jQuery is a totally viable option for many sites.</p>
+<p>There is a great resource at <a href="http://youmightnotneedjquery.com/">youmightnotneedjquery.com</a> for vanilla JavaScript versions of common jQuery calls, that vary depending on the version of Internet Explorer that you want to support.</p>
+<p>When it was released jQuery was super helpful as a compatibility layer to make writing JavaScript that worked across browsers.  Today, for many people and sites, that compatibility layer is no longer needed.  But it continues to get used in those cases out of habit and convenience in continuing to carry around old code.</p>
+<p>Including jQuery comes with a cost.  The current version, <a href="https://code.jquery.com/jquery-3.4.1.min.js">3.4.1</a>, is 88,145 bytes minified.  Even with Brotli that is more than 29 KB over the wire.  If updating the JavaScript on your site would require fewer bytes than that, start making <a href="http://youmightnotneedjquery.com/">the switch</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/02/19/you-might-not-need-jquery/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How Many jQuerys</title>
+		<link>/2019/12/03/how-many-jquerys/</link>
+					<comments>/2019/12/03/how-many-jquerys/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 04 Dec 2019 01:22:05 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[jquery]]></category>
+		<guid isPermaLink="false">/?p=17625</guid>
+
+					<description><![CDATA[There have been a few times this year where we&#8217;ve been able to make significant size reductions to a page, in the ball park of 100 KB over the wire ( compressed ). To really drive home how big those changes are, we would describe them in units of jQuery. The current version of jQuery [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>There have been a few times this year where we&#8217;ve been able to make significant size reductions to a page, in the ball park of 100 KB over the wire ( compressed ).  To really drive home how big those changes are, we would describe them in units of <a href="https://jquery.com/">jQuery</a>.</p>
+<p>The current version of jQuery ( <a href="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">3.4.1</a> ) comes in at 30,774 bytes over the wire ( gzip compressed ).  That would make the example 100 KB improvement above worth &#8220;3.2 jQuerys&#8221;.</p>
+<p>If you&#8217;ve ever done front end work on the web &#8220;&lt;X&gt; jQuerys&#8221; paints a picture of how many bytes we are talking about.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/12/03/how-many-jquerys/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Bootstrap Without jQuery</title>
+		<link>/2015/10/09/bootstrap-without-jquery/</link>
+					<comments>/2015/10/09/bootstrap-without-jquery/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 09 Oct 2015 13:42:35 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[bootstrap]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jquery]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11676</guid>
+
+					<description><![CDATA[A few options for using Bootstrap, without using jQuery: https://github.com/tagawa/bootstrap-without-jquery http://thednp.github.io/bootstrap.native/ I find myself using jQuery less and less, which is generally a good thing.]]></description>
+										<content:encoded><![CDATA[<p>A few options for using <a href="http://getbootstrap.com/">Bootstrap</a>, without using <a href="https://jquery.com/">jQuery</a>:</p>
+<ul>
+<li><a href="https://github.com/tagawa/bootstrap-without-jquery">https://github.com/tagawa/bootstrap-without-jquery</a></li>
+<li><a href="http://thednp.github.io/bootstrap.native/">http://thednp.github.io/bootstrap.native/</a></li>
+</ul>
+<p>I find myself using jQuery less and less, which is generally a good thing.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/09/bootstrap-without-jquery/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Minified.js</title>
+		<link>/2013/07/17/minified-js/</link>
+					<comments>/2013/07/17/minified-js/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 17 Jul 2013 15:50:59 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jquery]]></category>
+		<category><![CDATA[minified-js]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=8589</guid>
+
+					<description><![CDATA[I&#8217;m not surprised to see more and more &#8220;lightweight&#8221; JavaScript libraries pop up as jQuery has grown in size. The pendulum tends to swing hard from one direction to the other with these things. One that I came across recently is Minified.js: Minified.js is a client-side JavaScript library, comparable to jQuery and MooTools in scope. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m not surprised to see more and more &#8220;lightweight&#8221; JavaScript libraries pop up as jQuery has grown in size.  The pendulum tends to swing hard from one direction to the other with these things.</p>
+<p>One that I came across recently is <a href='http://minifiedjs.com/'>Minified.js</a>:</p>
+<blockquote><p>
+Minified.js is a client-side JavaScript library, comparable to jQuery and MooTools in scope. Its features include DOM manipulation, animation, events, cookies and HTTP requests.
+</p></blockquote>
+<p>The size of the JavaScript file you send across the wire is certainly one factor to consider, especially for mobile users.  I&#8217;m more curious to see what the performance looks like when using similar features.  In some cases that is even more important than the size of the file.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/07/17/minified-js/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>jQuery Edit In Place ( JEIP ) 0.2.0</title>
+		<link>/2013/02/20/jquery-edit-in-place-jeip-0-2-0/</link>
+					<comments>/2013/02/20/jquery-edit-in-place-jeip-0-2-0/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 20 Feb 2013 16:33:16 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jeip]]></category>
+		<category><![CDATA[jquery]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6797</guid>
+
+					<description><![CDATA[Justin Hall was kind enough to suggest a fix for jQuery Edit In Place ( JEIP ) to work with version 1.9.x of jQuery. Version 0.2.0 of JEIP is needed if you are using jQuery 1.9.x. I also moved the code to GitHub as well &#8211; https://github.com/josephscott/jeip &#8211; so fork away. I&#8217;ve updated the links [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.justinwhall.com/">Justin Hall</a> was kind enough to suggest a fix for <a href="http://josephscott.org/code/javascript/jquery-edit-in-place/">jQuery Edit In Place ( JEIP )</a> to work with version 1.9.x of <a href="http://jquery.org/">jQuery</a>.  Version 0.2.0 of JEIP is needed if you are using jQuery 1.9.x.</p>
+<p>I also moved the code to GitHub as well &#8211; <a href="https://github.com/josephscott/jeip">https://github.com/josephscott/jeip</a> &#8211; so fork away.</p>
+<p>I&#8217;ve updated the links on the <a href="http://josephscott.org/code/javascript/jquery-edit-in-place/">JEIP page</a> and <a href="http://josephscott.org/code/javascript/jeip-demo/">demo page</a> to JEIP 0.2.0 and jQuery 1.9.1.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/02/20/jquery-edit-in-place-jeip-0-2-0/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Automatically Loading a Gravatar Image Based on Form Field Input</title>
+		<link>/2012/12/10/automatically-loading-a-gravatar-image-based-on-form-field-input/</link>
+					<comments>/2012/12/10/automatically-loading-a-gravatar-image-based-on-form-field-input/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 10 Dec 2012 21:37:50 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[form2gravatar]]></category>
+		<category><![CDATA[gravatar]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jquery]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6594</guid>
+
+					<description><![CDATA[I&#8217;ve seen several examples of automatically loading a Gravatar image on the fly based on an input form field. After coming across another one recently and not finding a Javascript library that would do this for me, I sat down to play with this process a bit. I knew the process wasn&#8217;t complex, but at [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve seen several examples of automatically loading a <a href="http://gravatar.com/">Gravatar</a> image on the fly based on an input form field.  After coming across another one recently and not finding a Javascript library that would do this for me, I sat down to play with this process a bit.  I knew the process wasn&#8217;t complex, but at the same time it seemed like something that should have an easy to use drop in module to make it work.  The result is a simple jQuery plugin I&#8217;m calling <a href="http://josephscott.org/code/javascript/form2gravatar/">form2gravatar</a>.</p>
+<p>The source code is available at <a href="https://github.com/josephscott/form2gravatar">https://github.com/josephscott/form2gravatar</a>, along with a simple demo at <a href="http://josephscott.org/code/javascript/form2gravatar/">http://josephscott.org/code/javascript/form2gravatar/</a>.  To get started you need a form field, and a target image element:</p>
+<p>[sourcecode lang=&#8221;html&#8221;]<br />
+&lt;div&gt;<br />
+	Email &lt;input type=&quot;text&quot; name=&quot;email&quot; id=&quot;email&quot;&gt;<br />
+&lt;/div&gt;<br />
+&lt;div&gt;<br />
+	&lt;img src=&quot; id=&quot;gravatar&quot; alt=&quot;Gravatar&quot; height=&quot;64&quot; width=&quot;64&quot;&gt;<br />
+&lt;/div&gt;<br />
+[/sourcecode]</p>
+<p>Assuming you&#8217;ve loaded jQuery and form2gravatar.js you can then trigger a Gravatar image lookup with:</p>
+<p>[sourcecode lang=&#8221;javascript&#8221;]<br />
+$( &#8216;#email&#8217; ).form2gravatar( { target: &#8216;#gravatar&#8217; } );<br />
+[/sourcecode]</p>
+<p>This tells form2gravatar to watch the keystrokes in the <code>#email</code> element and update the <code>#gravatar</code> image.  By default it will check the form value several times a second, which makes it easy to update the image rapidly, but might be a waste in some cases.  So there is an option to only do an image update when the form field loses focus (<code>use_blue</code>).  </p>
+<p>For pages with several form fields setting <code>use_blur</code> to true will still provide a good experience and have almost no performance impact on the page.  If you only have a few form fields (like on a log in page) I&#8217;d stick with the default behavior.  You can adjust how frequently the form field is checked with the <code>timer_interval</code> option.</p>
+<p>Here is a list of all the options in form2gravatar:</p>
+<p>[sourcecode lang=&#8221;javascript&#8221;]<br />
+	var opt = {<br />
+		&#8216;default_img&#8217;	: &#8216;mm&#8217;,<br />
+		&#8216;size&#8217;		    : 64,<br />
+		&#8216;ssl&#8217;		    : false,<br />
+		&#8216;target&#8217;	    : false,<br />
+		&#8216;timer_interval&#8217;: 100,<br />
+		&#8216;use_blur&#8217;	    : false<br />
+	};<br />
+[/sourcecode]</p>
+<p>The only one that is required is <code>target</code>.  The other option many folks will want look at is <code>default_img</code>, which by default uses the mystery man from Gravatar.  You can use any of the other <a href="https://en.gravatar.com/site/implement/images/">Gravatar default options</a> (404, mm, identicon, monsterid, wavatar, retro, and blank) along with a URL to some other image.</p>
+<p>The Github repo includes a demo.html file that shows this in use for sign in page.  From there you can copy and tweak it into what ever shape you&#8217;d like.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/12/10/automatically-loading-a-gravatar-image-based-on-form-field-input/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Handsontable &#8211; jQuery grid editor</title>
+		<link>/2012/07/27/handsontable-jquery-grid-editor/</link>
+					<comments>/2012/07/27/handsontable-jquery-grid-editor/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 27 Jul 2012 17:19:44 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[excel]]></category>
+		<category><![CDATA[handsontable]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jquery]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6104</guid>
+
+					<description><![CDATA[Provide spreadsheet style editing pretty much any where with Handsontable, a jQuery plugin. No formula support, so not really an Excel/Google Docs replacement, but still useful.]]></description>
+										<content:encoded><![CDATA[<p>Provide spreadsheet style editing pretty much any where with <a href='http://handsontable.com/'>Handsontable</a>, a jQuery plugin.</p>
+<p>No formula support, so not really an Excel/Google Docs replacement, but still useful.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/07/27/handsontable-jquery-grid-editor/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Difference Between A Human Click And A Trigger Click With jQuery</title>
+		<link>/2012/07/25/difference-between-a-human-click-and-a-trigger-click-with-jquery/</link>
+					<comments>/2012/07/25/difference-between-a-human-click-and-a-trigger-click-with-jquery/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 25 Jul 2012 16:16:34 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[click]]></category>
+		<category><![CDATA[event]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jquery]]></category>
+		<category><![CDATA[trigger]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6176</guid>
+
+					<description><![CDATA[I was recently working on a page that had some existing transitions that happened when a user clicked on an item. My thought was to periodically trigger a click event that would automate the process some what, allowing me to take advantage of the existing transition code. jQuery has a nifty method called .trigger that [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was recently working on a page that had some existing transitions that happened when a user clicked on an item.  My thought was to periodically trigger a click event that would automate the process some what, allowing me to take advantage of the existing transition code.</p>
+<p>jQuery has a nifty method called <a href="http://api.jquery.com/trigger/">.trigger</a> that takes care of firing the click event for me.  Very handy, but then I quickly realized that I needed to be able to tell the difference between a human click event and a <code>.trigger</code>&#8216;d click event.</p>
+<p>Fortunately I wasn&#8217;t the only one to have run into this issue and there is a solution described at <a href="http://stackoverflow.com/questions/6692031/check-if-event-is-triggered-by-a-human/6692173#6692173">http://stackoverflow.com/questions/6692031/check-if-event-is-triggered-by-a-human/6692173#6692173</a>.  The key is <code>event.originalEvent</code>, here is an example from the StackOverflow post:</p>
+<p>[sourcecode lang=&#8221;javascript&#8221;]<br />
+$( &quot;#click-me&quot; ).click( function( event ) {<br />
+    if ( event.originalEvent === undefined ) {<br />
+        alert( &#8216;not human&#8217; )<br />
+    } else {<br />
+        alert( &#8216;human&#8217; );<br />
+    }<br />
+} );<br />
+[/sourcecode]</p>
+<p>You can also try it out on jsFiddle &#8211; <a href="http://jsfiddle.net/Uf8Wv/">http://jsfiddle.net/Uf8Wv/</a></p>
+<p>This appears to be specific to jQuery, which in this case wasn&#8217;t a big deal since all of the other code on the page was using jQuery as well.  The <a href="http://api.jquery.com/category/events/event-object/">Event object</a> documentation mentions <code>event.originalEvent</code>, but doesn&#8217;t indicate that it can be used in this way.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/07/25/difference-between-a-human-click-and-a-trigger-click-with-jquery/feed/</wfw:commentRss>
+			<slash:comments>7</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Microjs, Long List of Libraries</title>
+		<link>/2012/04/06/microjs-long-list-of-libraries/</link>
+					<comments>/2012/04/06/microjs-long-list-of-libraries/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 06 Apr 2012 14:31:18 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jquery]]></category>
+		<category><![CDATA[microjs]]></category>
+		<category><![CDATA[mustache]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=5651</guid>
+
+					<description><![CDATA[I don&#8217;t recall the last time I&#8217;d looked at microjs.com, but I&#8217;m quite sure the list of libraries was much smaller back then. Some of the libraries listed, like Mustache, I&#8217;ve seen and played with before. Skimming through the list this morning, most of them are new to me. The number of libraries listed is [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I don&#8217;t recall the last time I&#8217;d looked at <a href="http://microjs.com/">microjs.com</a>, but I&#8217;m quite sure the list of libraries was much smaller back then.</p>
+<p>Some of the libraries listed, like <a href="http://mustache.github.com/">Mustache</a>, I&#8217;ve seen and played with before.  Skimming through the list this morning, most of them are new to me.  The number of libraries listed is impressive.</p>
+<p>I&#8217;m still not sure that I&#8217;ll have a use for many of these, I suspect for most sites being able to rely on <a href="http://jquery.com/">jQuery</a> (and jQuery plugins) consistently will out weigh trying to save a few bytes here and there.  I&#8217;m willing to be proven wrong though, which is why one of the reasons I find the microjs list so fascinating.</p>
+<p>Do you have a favorite microjs library, or one that you can&#8217;t live without?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/04/06/microjs-long-list-of-libraries/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Delayed Loading Gravatars</title>
+		<link>/2011/05/19/delayed-loading-gravatars/</link>
+					<comments>/2011/05/19/delayed-loading-gravatars/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 19 May 2011 22:12:07 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[async-gravatars]]></category>
+		<category><![CDATA[gravatar]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jquery]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4132</guid>
+
+					<description><![CDATA[About two months I looked at adding Gravatars to a page, where in most cases there would be 20 different Gravatars on each page view. This seemed like a good time to try out Paul Hammond&#8217;s Speed Up Your Site with Delayed Content technique for loading Gravatar images. A few quick hacks later it was [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>About two months I looked at adding <a href="http://gravatar.com/">Gravatars</a> to a page, where in most cases there would be 20 different Gravatars on each page view.  This seemed like a good time to try out Paul Hammond&#8217;s <a href="http://24ways.org/2010/speed-up-your-site-with-delayed-content">Speed Up Your Site with Delayed Content</a> technique for loading Gravatar images.  A few quick hacks later it was working and I was reasonably happy with it.</p>
+<p>Fast forward a few more weeks and I found myself wanting to add Gravatars to another page, but this time most of the page views were going involving loading 250 different Gravatar images.  I went back to my original script for delayed loading, cleaned it up a bit and applied it to this new page.  At this point I realized that this was something that would be nice to have as a simple to use, mostly drop in feature.  So I refined it a bit more, made a few more improvements and I&#8217;m now making it public as <a href="http://josephscott.org/code/javascript/async-gravatars/">Async Gravatars</a>.  The code is open source and available on Github at <a href="https://github.com/josephscott/async-gravatars">https://github.com/josephscott/async-gravatars</a>.</p>
+<p>The process and the code are actually very simple:</p>
+<h3>Step 1</h3>
+<p>Use the same SRC attribute for all of your Gravatar images in the IMG tag, with the md5 of the real Gravatar in the data-gravatar_hash attribute, like so:</p>
+<p>[sourcecode lang=&#8221;html&#8221;]<br />
+&lt;img data-gravatar_hash=&quot;713072bbe89035a79c17d19e53dd5d9b&quot;<br />
+    class=&quot;load-gravatar&quot; height=&quot;64&quot; width=&quot;64&quot;<br />
+    src=&quot;https://secure.gravatar.com/avatar/00000000000000000000000000000000?s=64&amp;d=mm&quot; /&gt;<br />
+[/sourcecode]</p>
+<p>For PHP powered sites something like this will do the trick:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+&lt;img data-gravatar_hash=&quot;&lt;?php echo md5( strtolower( trim( $email ) ) ); ?&gt;&quot;<br />
+    class=&quot;load-gravatar&quot; height=&quot;64&quot; width=&quot;64&quot;<br />
+    src=&quot;https://secure.gravatar.com/avatar/00000000000000000000000000000000?s=64&amp;d=mm&quot; /&gt;<br />
+[/sourcecode]</p>
+<p>It is important to use the same SRC for all of the images, that way your browser only needs to make on request for all of them.  And by using a real image with the same dimensions you won&#8217;t have issues with the page re-flowing when the real Gravatar gets loaded.  I should note that the one SRC value you use doesn&#8217;t have to be loaded from Gravatar.com, it can be something that you host on your own site.</p>
+<h3>Step 2</h3>
+<p>Load the <a href="http://jquery.com/">jQuery</a> code and the <a href="https://github.com/josephscott/async-gravatars/blob/master/async-gravatars.js">async-gravatars.js</a> file, then one small piece of Javascript to trigger loading of the real Gravatar images after the page has finished loading:</p>
+<p>[sourcecode lang=&#8221;javascript&#8221;]<br />
+jQuery( document ).ready( function() {<br />
+    $( &#8216;.load-gravatar&#8217; ).async_gravatars( {<br />
+        ssl: true<br />
+    } );<br />
+} );<br />
+[/sourcecode]</p>
+<p>The <code>.async_gravatars()</code> function accepts the following options, with these defaults:</p>
+<p>[sourcecode lang=&#8221;javascript&#8221;]<br />
+{<br />
+		&#8216;default_img&#8217;	: &#8216;identicon&#8217;,<br />
+		&#8216;hash_attr&#8217;		: &#8216;data-gravatar_hash&#8217;,<br />
+		&#8216;rating&#8217;		: &#8216;pg&#8217;,<br />
+		&#8216;size&#8217;			: 64,<br />
+		&#8216;ssl&#8217;			: false<br />
+}<br />
+[/sourcecode]</p>
+<h3>Step 3</h3>
+<p>Sit back and enjoy, there is no step 3!</p>
+<h3>Conclusion</h3>
+<p>If you want to see it in action I put together a little <a href="http://josephscott.org/code/javascript/async-gravatars/">demo page</a> that loads a sample of Gravatar images for some of my fellow <a href="http://automattic.com/">Automatticians</a>.  A <a href="https://github.com/josephscott/async-gravatars/blob/master/index.html">demo page</a> is also included in the Github project.</p>
+<p>The Javascript code that does the work is <a href="https://github.com/josephscott/async-gravatars/blob/master/async-gravatars.js">very simple</a>, so spend a minute or two and take a look.  If you have suggestions or improvements let me know.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/05/19/delayed-loading-gravatars/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

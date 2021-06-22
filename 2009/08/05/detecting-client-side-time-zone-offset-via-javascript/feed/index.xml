@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Detecting Client Side Time Zone Offset Via Javascript	</title>
+	<atom:link href="/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/feed/" rel="self" type="application/rss+xml" />
+	<link>/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/</link>
+	<description></description>
+	<lastBuildDate>Sat, 29 Dec 2012 19:06:35 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: uncleunvoid		</title>
+		<link>/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2994</link>
+
+		<dc:creator><![CDATA[uncleunvoid]]></dc:creator>
+		<pubDate>Sat, 29 Dec 2012 19:06:35 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1347#comment-2994</guid>
+
+					<description><![CDATA[Also doesnt work when you sit in colombia with a UK machine stating UK time. It wont get the offset. Do a timezone server call and get the zone based on your location.]]></description>
+			<content:encoded><![CDATA[<p>Also doesnt work when you sit in colombia with a UK machine stating UK time. It wont get the offset. Do a timezone server call and get the zone based on your location.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2993</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 29 Dec 2010 22:33:12 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1347#comment-2993</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2992&quot;&gt;Jon Nylander&lt;/a&gt;.
+
+Thanks for the link.  In my particular case I was only after the numeric offset so the additional data wasn&#039;t needed.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2992">Jon Nylander</a>.</p>
+<p>Thanks for the link.  In my particular case I was only after the numeric offset so the additional data wasn&#8217;t needed.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jon Nylander		</title>
+		<link>/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2992</link>
+
+		<dc:creator><![CDATA[Jon Nylander]]></dc:creator>
+		<pubDate>Wed, 29 Dec 2010 11:27:18 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1347#comment-2992</guid>
+
+					<description><![CDATA[Nice, but the drawback with only using the offset is that daylight savings is not taken into account. Another problem is that different timezones in the same UTC-offset often start daylight savings on different dates. For a more robust timezone you will have to do some checking of known dates. 
+
+Check out https://bitbucket.org/pellepim/jstimezonedetect which will give you a more accurate timezone as a result rather than just an offset. It is based on the code from onlineaspect.com that was linked above.]]></description>
+			<content:encoded><![CDATA[<p>Nice, but the drawback with only using the offset is that daylight savings is not taken into account. Another problem is that different timezones in the same UTC-offset often start daylight savings on different dates. For a more robust timezone you will have to do some checking of known dates. </p>
+<p>Check out <a href="https://bitbucket.org/pellepim/jstimezonedetect" rel="nofollow ugc">https://bitbucket.org/pellepim/jstimezonedetect</a> which will give you a more accurate timezone as a result rather than just an offset. It is based on the code from onlineaspect.com that was linked above.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ricardo J. Parada		</title>
+		<link>/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2991</link>
+
+		<dc:creator><![CDATA[Ricardo J. Parada]]></dc:creator>
+		<pubDate>Fri, 12 Nov 2010 01:11:17 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1347#comment-2991</guid>
+
+					<description><![CDATA[I used this Java code on the server to convert to a Joda DateTimeZone:
+
+    int hoursOffset = clientTimeZoneOffset / 60;
+    int minutesOffset = clientTimeZoneOffset % 60;
+    DateTimeZone clientTimeZone = DateTimeZone.forOffsetHoursMinutes(-hoursOffset, minutesOffset);
+
+And on the client side I have something like this:
+
+
+
+$(&#039;clientTimeZoneOffsetField&#039;).value = new Date.getTimeZoneOffset();
+]]></description>
+			<content:encoded><![CDATA[<p>I used this Java code on the server to convert to a Joda DateTimeZone:</p>
+<p>    int hoursOffset = clientTimeZoneOffset / 60;<br />
+    int minutesOffset = clientTimeZoneOffset % 60;<br />
+    DateTimeZone clientTimeZone = DateTimeZone.forOffsetHoursMinutes(-hoursOffset, minutesOffset);</p>
+<p>And on the client side I have something like this:</p>
+<p>$(&#8216;clientTimeZoneOffsetField&#8217;).value = new Date.getTimeZoneOffset();</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2990</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 13 May 2010 19:28:00 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1347#comment-2990</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2989&quot;&gt;Joel Nylund&lt;/a&gt;.
+
+Interesting, I&#039;ll have to give that a read.
+
+As for daylight savings, that is likely always going to be a pain.  JavaScript should know enough about the system it is running on to have the right offset.   This puts the work of keeping daylight savings in sync on the operating system, where it belongs.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2989">Joel Nylund</a>.</p>
+<p>Interesting, I&#8217;ll have to give that a read.</p>
+<p>As for daylight savings, that is likely always going to be a pain.  JavaScript should know enough about the system it is running on to have the right offset.   This puts the work of keeping daylight savings in sync on the operating system, where it belongs.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joel Nylund		</title>
+		<link>/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2989</link>
+
+		<dc:creator><![CDATA[Joel Nylund]]></dc:creator>
+		<pubDate>Thu, 13 May 2010 15:09:53 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1347#comment-2989</guid>
+
+					<description><![CDATA[Hi, this is cool, but doesnt do daylight savings time, I found this after your script broke on spring forward:
+http://www.onlineaspect.com/2007/06/08/auto-detect-a-time-zone-with-javascript/
+
+thanks
+Joel]]></description>
+			<content:encoded><![CDATA[<p>Hi, this is cool, but doesnt do daylight savings time, I found this after your script broke on spring forward:<br />
+<a href="http://www.onlineaspect.com/2007/06/08/auto-detect-a-time-zone-with-javascript/" rel="nofollow ugc">http://www.onlineaspect.com/2007/06/08/auto-detect-a-time-zone-with-javascript/</a></p>
+<p>thanks<br />
+Joel</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2988</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 25 Aug 2009 16:39:55 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1347#comment-2988</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2987&quot;&gt;Chris Charabaruk&lt;/a&gt;.
+
+Nice catch.  I&#039;ll have to update my example code to add the negative.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2987">Chris Charabaruk</a>.</p>
+<p>Nice catch.  I&#8217;ll have to update my example code to add the negative.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Chris Charabaruk		</title>
+		<link>/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2987</link>
+
+		<dc:creator><![CDATA[Chris Charabaruk]]></dc:creator>
+		<pubDate>Tue, 25 Aug 2009 04:26:51 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1347#comment-2987</guid>
+
+					<description><![CDATA[A caveat: Date.getTimezoneOffset() returns positive numbers west of GMT and negative east of it. This means to get a proper offset, the result of that call needs to be made negative. After all, North American EDT is -0400, not +0400.]]></description>
+			<content:encoded><![CDATA[<p>A caveat: Date.getTimezoneOffset() returns positive numbers west of GMT and negative east of it. This means to get a proper offset, the result of that call needs to be made negative. After all, North American EDT is -0400, not +0400.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Roland Smith		</title>
+		<link>/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2986</link>
+
+		<dc:creator><![CDATA[Roland Smith]]></dc:creator>
+		<pubDate>Mon, 10 Aug 2009 17:26:02 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1347#comment-2986</guid>
+
+					<description><![CDATA[This works great! Thanks for the tip.]]></description>
+			<content:encoded><![CDATA[<p>This works great! Thanks for the tip.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

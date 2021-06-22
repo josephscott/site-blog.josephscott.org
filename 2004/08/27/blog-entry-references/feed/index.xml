@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Blog Entry References	</title>
+	<atom:link href="/2004/08/27/blog-entry-references/feed/" rel="self" type="application/rss+xml" />
+	<link>/2004/08/27/blog-entry-references/</link>
+	<description></description>
+	<lastBuildDate>Sun, 29 Aug 2004 01:29:21 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Greg Gershman		</title>
+		<link>/2004/08/27/blog-entry-references/#comment-572</link>
+
+		<dc:creator><![CDATA[Greg Gershman]]></dc:creator>
+		<pubDate>Sun, 29 Aug 2004 01:29:21 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/08/27/blog-entry-references/#comment-572</guid>
+
+					<description><![CDATA[Hi Joseph, I&#039;m sorry Blogdigger didn&#039;t work so well for you.  What specifc problems were you seeing?
+
+I&#039;m guessing that when you added a search for your whole site, Blogdigger returned less results than expected.  This is related to what I mentioned in my previous comment; when I first built the link search app, I was focusing on tracking conversations between blog posts specifically, not general site links.  As such, Blogdigger&#039;s link search looks at the whole link.  As time went on I realized this needed improvement, and I&#039;ve been working on a new version that should be in place soon.
+
+Either way, I&#039;d appreciate any specific comments, it would help in improving Blogdigger.  Thanks!]]></description>
+			<content:encoded><![CDATA[<p>Hi Joseph, I&#8217;m sorry Blogdigger didn&#8217;t work so well for you.  What specifc problems were you seeing?</p>
+<p>I&#8217;m guessing that when you added a search for your whole site, Blogdigger returned less results than expected.  This is related to what I mentioned in my previous comment; when I first built the link search app, I was focusing on tracking conversations between blog posts specifically, not general site links.  As such, Blogdigger&#8217;s link search looks at the whole link.  As time went on I realized this needed improvement, and I&#8217;ve been working on a new version that should be in place soon.</p>
+<p>Either way, I&#8217;d appreciate any specific comments, it would help in improving Blogdigger.  Thanks!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

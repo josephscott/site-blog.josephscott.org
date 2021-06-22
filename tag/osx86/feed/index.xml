@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>osx86 &#8211; Joseph Scott</title>
+	<atom:link href="/tag/osx86/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 07 Sep 2005 16:53:02 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>OSX86</title>
+		<link>/2005/09/07/osx86/</link>
+					<comments>/2005/09/07/osx86/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 07 Sep 2005 16:53:02 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[darwine]]></category>
+		<category><![CDATA[intel]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[osx86]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=472</guid>
+
+					<description><![CDATA[In the last month or so there has been lots of discussion about running the x86 version of Mac OS X on non-Apple x86 systems. www.osx86project.org has lots of information, with plenty of resources on their wiki. I&#8217;ve read some of the articles on how to make this work and watched some of the videos [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>In the last month or so there has been lots of discussion about running the x86 version of <a href="http://www.apple.com/macosx/">Mac OS X</a> on non-Apple x86 systems.  <a href="http://www.osx86project.org/">www.osx86project.org</a> has lots of information, with plenty of resources on <a href="http://wiki.osx86project.org/wiki/index.php/Main_Page">their wiki</a>.  I&#8217;ve read some of the articles on how to make this work and watched some of the videos that demo a working install, but I never really got into it too much beyond that.</p>
+<p>A friend of mine was a bit more determined though.  The first time he installed it he was using the VMWare image and all the limitations and hoops you have to jump through to make that work.  Later on he discovered that some folks had bundled together the needed SSE2 hacks and drivers into a DVD image with the OS X for Intel.  He burned the DVD and has tried out the install on a few systems, all of them seem to work in various degrees.  Most of the problems seem to be with driver support for video, network and audio systems.  But the install is for the most part a standard OS X install, with a few customization options for installing SSE2 or SSE3 hacks and drivers.  I witnessed an entire install of OS X on an older Dell system running a P4 1.8Ghz CPU (with SSE2) and 512 MB RAM.  The install went fine, audio and network both worked and the video works okay, but only supports 1024&#215;768.</p>
+<p>The applications seemed to work fine also.  Safari, Quicktime, Dashboard, iPhoto, iTunes and Preview all started up and appeared to run just fine.  Downloaded <a href="http://www.codingmonkeys.de/subethaedit/">SubEthaEdit</a> version 2.2, which is a universal binary, and it ran without complaint.  Even the PPC version of <a href="http://www.mozilla.org/products/firefox/">FireFox</a> 1.0.6 runs on it.  Speed wise it seemed comparable to my PowerBook G4 with 1.25Ghz CPU and 2 GB RAM.  I&#8217;d imagine that on a high end Intel system OS X would run very nicely.  I can&#8217;t tell how strange that sounds <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" />  Even stranger is the prospect of using <a href="http://darwine.opendarwin.org//">Darwine</a> to run Windows apps on Mac OS X.</p>
+<p>So now I&#8217;m excited to see Apple hardware with Intel CPUs.  I&#8217;d love to get a new PowerBook that I could split up 4 ways: Mac OS X, Windows, FreeBSD and FAT32 to share across the three operating systems.  Of course I also want it to have great battery life.  I don&#8217;t want to wait until next year (or longer), I want cool new toys from Apple now!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/09/07/osx86/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: The Basics of fetch()	</title>
+	<atom:link href="/2015/04/15/the-basics-of-fetch/feed/" rel="self" type="application/rss+xml" />
+	<link>/2015/04/15/the-basics-of-fetch/</link>
+	<description></description>
+	<lastBuildDate>Fri, 17 Apr 2015 14:59:57 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2015/04/15/the-basics-of-fetch/#comment-4329</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 17 Apr 2015 14:59:57 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11775#comment-4329</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2015/04/15/the-basics-of-fetch/#comment-4328&quot;&gt;Julien&lt;/a&gt;.
+
+I have mixed feelings about purely syntactic sugar changes.  I&#039;m definitely in favor in the cases where real improvements can be made.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2015/04/15/the-basics-of-fetch/#comment-4328">Julien</a>.</p>
+<p>I have mixed feelings about purely syntactic sugar changes.  I&#8217;m definitely in favor in the cases where real improvements can be made.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Julien		</title>
+		<link>/2015/04/15/the-basics-of-fetch/#comment-4328</link>
+
+		<dc:creator><![CDATA[Julien]]></dc:creator>
+		<pubDate>Fri, 17 Apr 2015 06:56:54 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11775#comment-4328</guid>
+
+					<description><![CDATA[Even more interesting than the tech itself, I find more interesting the debate around the role of that new API. To some (prominent) JS people, this is mostly syntactic sugar and they wonder if it&#039;s the time of W3C to go up the stack and make assumptions on the implementers behalf.
+
+After all haven&#039;t we had wrappers around XHR for a long time?
+
+I have not made my mind but that&#039;s a debate worth having IMO.]]></description>
+			<content:encoded><![CDATA[<p>Even more interesting than the tech itself, I find more interesting the debate around the role of that new API. To some (prominent) JS people, this is mostly syntactic sugar and they wonder if it&#8217;s the time of W3C to go up the stack and make assumptions on the implementers behalf.</p>
+<p>After all haven&#8217;t we had wrappers around XHR for a long time?</p>
+<p>I have not made my mind but that&#8217;s a debate worth having IMO.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2015/04/15/the-basics-of-fetch/#comment-4327</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 15 Apr 2015 18:35:35 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11775#comment-4327</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2015/04/15/the-basics-of-fetch/#comment-4326&quot;&gt;apokalyptik&lt;/a&gt;.
+
+Yep.  For now we&#039;ve got a &lt;a href=&quot;https://github.com/github/fetch&quot; rel=&quot;nofollow&quot;&gt;fetch polyfill&lt;/a&gt;.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2015/04/15/the-basics-of-fetch/#comment-4326">apokalyptik</a>.</p>
+<p>Yep.  For now we&#8217;ve got a <a href="https://github.com/github/fetch" rel="nofollow">fetch polyfill</a>.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: apokalyptik		</title>
+		<link>/2015/04/15/the-basics-of-fetch/#comment-4326</link>
+
+		<dc:creator><![CDATA[apokalyptik]]></dc:creator>
+		<pubDate>Wed, 15 Apr 2015 17:34:37 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11775#comment-4326</guid>
+
+					<description><![CDATA[Nice. Just need http://caniuse.com/#feat=fetch to look better now :)]]></description>
+			<content:encoded><![CDATA[<p>Nice. Just need <a href="http://caniuse.com/#feat=fetch" rel="nofollow ugc">http://caniuse.com/#feat=fetch</a> to look better now 🙂</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

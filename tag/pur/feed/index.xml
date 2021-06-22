@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>pur &#8211; Joseph Scott</title>
+	<atom:link href="/tag/pur/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 18 Nov 2008 14:00:37 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>PHP URL Routing (PUR)</title>
+		<link>/2008/11/18/php-url-routing-pur/</link>
+					<comments>/2008/11/18/php-url-routing-pur/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 18 Nov 2008 14:00:37 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[pur]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=309</guid>
+
+					<description><![CDATA[I&#8217;ve been thinking about individual features of various code frameworks, starting with two features that are closely related: clean URLs and URL routing. To examine this idea further I started writing a basic implementation of these two features in PHP. To start with we&#8217;ll redirect all requests to a single index.php file. Here&#8217;s the .htaccess [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been thinking about individual features of various code frameworks, starting with two features that are closely related: clean URLs and URL routing.  To examine this idea further I started writing a basic implementation of these two features in PHP.</p>
+<p>To start with we&#8217;ll redirect all requests to a single index.php file.  Here&#8217;s the .htaccess file:</p>
+<p>[sourcecode language=&#8221;text&#8221;]<br />
+RewriteEngine on<br />
+RewriteBase /<br />
+RewriteCond %{REQUEST_FILENAME} !-f<br />
+RewriteCond %{REQUEST_FILENAME} !-d<br />
+RewriteRule ^(.*)?*$ index.php?_route_=$1 [L,QSA]<br />
+[/sourcecode]</p>
+<p>The idea here is pretty basic, unless the exact file or directory exists redirect the request to index.php.  When the redirect happens, add a GET variable (_route_) that contains the directory portion of the URL.</p>
+<p>The index.php file itself is pretty simple:</p>
+<p>[sourcecode language=&#8221;php&#8221;]<br />
+require &#8220;./PUR.php&#8221;;</p>
+<p>$routes = array(<br />
+    &#8220;_not_found_&#8221;           =&gt; &#8220;demo_not_found&#8221;,<br />
+    &#8220;&#8221;                      =&gt; array( &#8220;DEMO&#8221;, &#8220;homePage&#8221; ),<br />
+    &#8220;color/black&#8221;           =&gt; array( &#8220;DEMO&#8221;, &#8220;colorBlack&#8221; ),<br />
+    &#8220;color&#8221;                 =&gt; array( &#8220;DEMO&#8221;, &#8220;color&#8221; )<br />
+);</p>
+<p>$route = new PUR( );<br />
+$route-&gt;setRoutes( $routes );<br />
+$route-&gt;routeURL( preg_replace( &#8220;|/$|&#8221;, &#8220;&#8221;, $_GET[&#8216;_route_&#8217;] ) );<br />
+[/sourcecode]</p>
+<p>First we include the PUR class (PHP URL Routing) and provide it with an array of URLs to function or class/methods and the URL that is currently being called.  A URL can be mapped to either a function or a method of a class.  In the above example there&#8217;s a special route called _not_found_ that is called when there is no route defined for a URL, in this case it will be passed to the demo_not_found function.  Everything else goes through the DEMO class.</p>
+<p>Another thing to note, because of the way the URL patterns are tested, the more specific URLs must appear higher up.  That&#8217;s why color/black shows up before color.  If there was a color/black/blue then it would have to be listed about color/black.  The home page is a little bit of a special case, it&#8217;s the empty URL value.</p>
+<p>It doesn&#8217;t matter where the code for the functions or classes are, it&#8217;s up to you to make sure they are pulled in before the routing takes place.  I could have used a directory layout pattern like Rails and other, but I chose not to in this case.  To keep things simple these can all be in the index.php file.</p>
+<p>[sourcecode language=&#8221;php&#8221;]<br />
+function demo_not_found( $args = false ) {<br />
+    print &#8220;Route not found.&#8221;;<br />
+}</p>
+<p>class DEMO {<br />
+    function homePage( $args = false ) {<br />
+        print &#8220;This is the home page.&#8221;;<br />
+    }</p>
+<p>    function colorBlack( $args = false ) {<br />
+        print &#8220;The color black and everything below.&#8221;;<br />
+    }</p>
+<p>    function color( $args = false ) {<br />
+        print &#8220;All the other colors.&#8221;;<br />
+    }<br />
+}<br />
+[/sourcecode]</p>
+<p>Each function should accept a single optional argument.  PUR will pass the the additional URL directories as an array to the function.  Using our example, if you requested example.com/color/blue/and/green/ it would match the color URL and would call the color method from the DEMO class and $args would be an array:</p>
+<p>[sourcecode language=&#8221;php&#8221;]<br />
+Array<br />
+(<br />
+    [0] =&gt; blue<br />
+    [1] =&gt; and<br />
+    [2] =&gt; green<br />
+)<br />
+[/sourcecode]</p>
+<p>Lets get into the interesting part, the PUR class:</p>
+<p>[sourcecode language=&#8221;php&#8221;]<br />
+class PUR {<br />
+    protected $route_match      = false;<br />
+    protected $route_call       = false;<br />
+    protected $route_call_args  = false;</p>
+<p>    protected $routes           = array( );</p>
+<p>    public function __construct( ) {</p>
+<p>    } // function __construct( )</p>
+<p>    public function setRoutes( $routes ) {<br />
+        $this-&gt;routes = $routes;<br />
+    } // function setRoutes</p>
+<p>    public function routeURL( $url = false ) {<br />
+        // Look for exact matches<br />
+        if( isset( $this-&gt;routes[$url] ) ) {<br />
+            $this-&gt;route_match = $url;<br />
+            $this-&gt;route_call = $this-&gt;routes[$url];</p>
+<p>            $this-&gt;callRoute( );<br />
+            return true;<br />
+        }</p>
+<p>        // See if the first part of the route exists<br />
+        foreach( $this-&gt;routes as $path =&gt; $call ) {<br />
+            if( empty( $path ) ) {<br />
+                continue;<br />
+            }</p>
+<p>            preg_match( &#8220;|{$path}/(.*)$|i&#8221;, $url, $match );<br />
+            if( !empty( $match[1] ) ) {<br />
+                $this-&gt;route_match = $path;<br />
+                $this-&gt;route_call = $call;<br />
+                $this-&gt;route_call_args = explode( &#8220;/&#8221;, $match[1] );</p>
+<p>                $this-&gt;callRoute( );<br />
+                return true;<br />
+            } // if<br />
+        } // foreach</p>
+<p>        // If no match was found, call the default route if there is one<br />
+        if( $this-&gt;route_call === false ) {<br />
+            if( !empty( $this-&gt;routes[&#8216;_not_found_&#8217;] ) ) {<br />
+                $this-&gt;route_call = $this-&gt;routes[&#8216;_not_found_&#8217;];<br />
+                $this-&gt;callRoute( );<br />
+                return true;<br />
+            }<br />
+        }</p>
+<p>    } // function routeURL( )</p>
+<p>    private function callRoute( ) {<br />
+        $call = $this-&gt;route_call;</p>
+<p>        if( is_array( $call ) ) {<br />
+            $call_obj = new $call[0]( );<br />
+            $call_obj-&gt;$call[1]( $this-&gt;route_call_args );<br />
+        }<br />
+        else {<br />
+            $call( $this-&gt;route_call_args );<br />
+        }<br />
+    } // function callRoute</p>
+<p>} // class PUR<br />
+[/sourcecode]</p>
+<p>There are a few private variables that are used to track routes, URL and the function to call.  The routeURL method does most of the work, so lets walk through each section.  First we look to see if there&#8217;s an exact match in the routes array.  In our example this would be &#8220;&#8221;, &#8220;color/black&#8221; and &#8220;color&#8221;.  An exact match is always preferred and is easy to check for.  If that doesn&#8217;t find anything then we move on to regular expression checking to see if the beginning of the URL matches any of the routes.  This is what allows color/blue/and/green to match the color route.  Finally, if a match still can&#8217;t be found then we look for the special _not_found_ route and use it.</p>
+<p>The callRoute method is only used internally to actually issue the routing call.  If the defined route is an array then it&#8217;s assumed to be a class/method pair and will create an object of that class and then call the method with the array of variables (if there are any).  If it&#8217;s not an array then it&#8217;s assumed to be a function.</p>
+<p>Getting this code up and working wasn&#8217;t too bad, and seems to cover the clean URL and URL routing needs pretty well with out requiring a ton of extra work.  It has no external dependencies, so it could be used as a new drop in feature for existing projects.</p>
+<p>Any thoughts on improving this code while keeping things simple?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/11/18/php-url-routing-pur/feed/</wfw:commentRss>
+			<slash:comments>7</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

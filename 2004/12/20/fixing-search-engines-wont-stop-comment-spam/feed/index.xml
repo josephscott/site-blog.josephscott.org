@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Fixing Search Engines Won&#8217;t Stop Comment Spam	</title>
+	<atom:link href="/2004/12/20/fixing-search-engines-wont-stop-comment-spam/feed/" rel="self" type="application/rss+xml" />
+	<link>/2004/12/20/fixing-search-engines-wont-stop-comment-spam/</link>
+	<description></description>
+	<lastBuildDate>Tue, 21 Dec 2004 08:24:06 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Karim		</title>
+		<link>/2004/12/20/fixing-search-engines-wont-stop-comment-spam/#comment-721</link>
+
+		<dc:creator><![CDATA[Karim]]></dc:creator>
+		<pubDate>Tue, 21 Dec 2004 08:24:06 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/12/20/fixing-search-engines-wont-stop-comment-spam/#comment-721</guid>
+
+					<description><![CDATA[The hell of keywoards must be controlled, the Search engines more and more intellignet are detoured by more sophisticated false meta tages, the most I hate is the meta tage generated while searcing for a specific keywords, as soon as you&#039;ve reached that site, you and the search engine are suprise that the content is far from your query such as you type : Tunisian blog directoty &#062;&#062; www.stupidsite.com/Tunisian_blog_directoty.htm, the trick is genious but devil inside.]]></description>
+			<content:encoded><![CDATA[<p>The hell of keywoards must be controlled, the Search engines more and more intellignet are detoured by more sophisticated false meta tages, the most I hate is the meta tage generated while searcing for a specific keywords, as soon as you&#8217;ve reached that site, you and the search engine are suprise that the content is far from your query such as you type : Tunisian blog directoty &gt;&gt; <a href="http://www.stupidsite.com/Tunisian_blog_directoty.htm" rel="nofollow ugc">http://www.stupidsite.com/Tunisian_blog_directoty.htm</a>, the trick is genious but devil inside.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Mark Wubben		</title>
+		<link>/2004/12/20/fixing-search-engines-wont-stop-comment-spam/#comment-720</link>
+
+		<dc:creator><![CDATA[Mark Wubben]]></dc:creator>
+		<pubDate>Mon, 20 Dec 2004 19:22:33 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/12/20/fixing-search-engines-wont-stop-comment-spam/#comment-720</guid>
+
+					<description><![CDATA[I think the problem with your PubSub search is that people put comments directly into their feeds, without moderating. You moderate because you want to protect your site from spam and trolls, but if you syndicate without moderating, this has no effect (as once an item is in BlogLines, or PubSub, it&#039;ll be there forever)... perhaps you could blame the weblog owners for that one ;-)]]></description>
+			<content:encoded><![CDATA[<p>I think the problem with your PubSub search is that people put comments directly into their feeds, without moderating. You moderate because you want to protect your site from spam and trolls, but if you syndicate without moderating, this has no effect (as once an item is in BlogLines, or PubSub, it&#8217;ll be there forever)&#8230; perhaps you could blame the weblog owners for that one 😉</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2004/12/20/fixing-search-engines-wont-stop-comment-spam/#comment-719</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 20 Dec 2004 18:46:13 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/12/20/fixing-search-engines-wont-stop-comment-spam/#comment-719</guid>
+
+					<description><![CDATA[Bob -
+I didn&#039;t mean to include linkrank for each post, just for the domain.  I&#039;ve removed that link for each post and left the correct one for the domain on the side.  Thanks for catching this.
+
+As far as limiting my PubSub search, I&#039;d opted for everything because I didn&#039;t want to miss out on anything.  I still feel that in the case of my PostgreSQL PubSub search I&#039;d rather deal with the spam than miss out on a good post just because it came from an unpopular site.  I doubt that I&#039;m in the top 50% (my link rank has only been going red for the several weeks), so people would miss all of my posts.  Maybe that&#039;s a feature?  :-)
+
+I don&#039;t know that there is much PubSub can do about this sort of problem with reasonable accuracy (above 99.99%).  If you were to simply stop following feeds that were known to be spam, they would just keep starting news ones.]]></description>
+			<content:encoded><![CDATA[<p>Bob &#8211;<br />
+I didn&#8217;t mean to include linkrank for each post, just for the domain.  I&#8217;ve removed that link for each post and left the correct one for the domain on the side.  Thanks for catching this.</p>
+<p>As far as limiting my PubSub search, I&#8217;d opted for everything because I didn&#8217;t want to miss out on anything.  I still feel that in the case of my PostgreSQL PubSub search I&#8217;d rather deal with the spam than miss out on a good post just because it came from an unpopular site.  I doubt that I&#8217;m in the top 50% (my link rank has only been going red for the several weeks), so people would miss all of my posts.  Maybe that&#8217;s a feature?  🙂</p>
+<p>I don&#8217;t know that there is much PubSub can do about this sort of problem with reasonable accuracy (above 99.99%).  If you were to simply stop following feeds that were known to be spam, they would just keep starting news ones.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bob Wyman		</title>
+		<link>/2004/12/20/fixing-search-engines-wont-stop-comment-spam/#comment-718</link>
+
+		<dc:creator><![CDATA[Bob Wyman]]></dc:creator>
+		<pubDate>Mon, 20 Dec 2004 18:07:11 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/12/20/fixing-search-engines-wont-stop-comment-spam/#comment-718</guid>
+
+					<description><![CDATA[Note: The &quot;PubSub LinkRank&quot; in your Reference Search area should not include item specific data. LinkRanks only apply to sites. Thus, the correct link to your LinkRank would be:
+http://www.pubsub.com/linkranks.php?dom=joseph.randomnetworks.com
+
+On the Spam problem... We feel your pain! In fact, we&#039;re constantly trying to figure out ways to reduce the amount of spam we pass through the users. The problem, of course, is that it is very difficult for us to determine what is and is not spam. One thing you can do, however, to reduce the amount of spam you get is to use PubSub LinkRanks to filter the results you get. Typically, the spam comes from sites that nobody links to. Thus, if you say you only want to get data from sites that are in the &quot;Top 50%&quot; according to LinkRanks, you won&#039;t see as much spam. Of course, you&#039;ll be missing other &quot;good&quot; data as well. But, at least it is a start. Check out our weblogs subscription page at: http://www.pubsub.com/weblogs.php . It should be fairly obvious how to use the drop-down list to filter your results. I&#039;m sorry we&#039;re not doing better -- but we&#039;re trying.
+
+bob wyman]]></description>
+			<content:encoded><![CDATA[<p>Note: The &#8220;PubSub LinkRank&#8221; in your Reference Search area should not include item specific data. LinkRanks only apply to sites. Thus, the correct link to your LinkRank would be:<br />
+<a href="http://www.pubsub.com/linkranks.php?dom=joseph.randomnetworks.com" rel="nofollow ugc">http://www.pubsub.com/linkranks.php?dom=joseph.randomnetworks.com</a></p>
+<p>On the Spam problem&#8230; We feel your pain! In fact, we&#8217;re constantly trying to figure out ways to reduce the amount of spam we pass through the users. The problem, of course, is that it is very difficult for us to determine what is and is not spam. One thing you can do, however, to reduce the amount of spam you get is to use PubSub LinkRanks to filter the results you get. Typically, the spam comes from sites that nobody links to. Thus, if you say you only want to get data from sites that are in the &#8220;Top 50%&#8221; according to LinkRanks, you won&#8217;t see as much spam. Of course, you&#8217;ll be missing other &#8220;good&#8221; data as well. But, at least it is a start. Check out our weblogs subscription page at: <a href="http://www.pubsub.com/weblogs.php" rel="nofollow ugc">http://www.pubsub.com/weblogs.php</a> . It should be fairly obvious how to use the drop-down list to filter your results. I&#8217;m sorry we&#8217;re not doing better &#8212; but we&#8217;re trying.</p>
+<p>bob wyman</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

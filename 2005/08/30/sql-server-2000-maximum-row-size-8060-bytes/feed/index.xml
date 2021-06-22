@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: SQL Server 2000: Maximum Row Size 8060 Bytes	</title>
+	<atom:link href="/2005/08/30/sql-server-2000-maximum-row-size-8060-bytes/feed/" rel="self" type="application/rss+xml" />
+	<link>/2005/08/30/sql-server-2000-maximum-row-size-8060-bytes/</link>
+	<description></description>
+	<lastBuildDate>Wed, 04 Jun 2008 14:00:28 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Sam Phillips		</title>
+		<link>/2005/08/30/sql-server-2000-maximum-row-size-8060-bytes/#comment-951</link>
+
+		<dc:creator><![CDATA[Sam Phillips]]></dc:creator>
+		<pubDate>Wed, 04 Jun 2008 14:00:28 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=469#comment-951</guid>
+
+					<description><![CDATA[Maybe try VARCHAR instead of NVARCHAR?  NVARCHAR requires 2X as many bytes to store as a VARCHAR  (I think).
+
+Hope this helps,
+
+Sam]]></description>
+			<content:encoded><![CDATA[<p>Maybe try VARCHAR instead of NVARCHAR?  NVARCHAR requires 2X as many bytes to store as a VARCHAR  (I think).</p>
+<p>Hope this helps,</p>
+<p>Sam</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Nsiku Banda		</title>
+		<link>/2005/08/30/sql-server-2000-maximum-row-size-8060-bytes/#comment-950</link>
+
+		<dc:creator><![CDATA[Nsiku Banda]]></dc:creator>
+		<pubDate>Tue, 29 Apr 2008 16:38:10 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=469#comment-950</guid>
+
+					<description><![CDATA[Just shows how cheeky Microsoft is to want to come up with different versions of SQL. I do not see why the row field limitations to 8060 bytes in SQL Server 2000 had to wait for the release of the 2005 version??
+
+It would be nice to &quot;truncate&quot; microsoft from our lives forever, but I am not quite sure how!]]></description>
+			<content:encoded><![CDATA[<p>Just shows how cheeky Microsoft is to want to come up with different versions of SQL. I do not see why the row field limitations to 8060 bytes in SQL Server 2000 had to wait for the release of the 2005 version??</p>
+<p>It would be nice to &#8220;truncate&#8221; microsoft from our lives forever, but I am not quite sure how!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2005/08/30/sql-server-2000-maximum-row-size-8060-bytes/#comment-949</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 27 Mar 2008 14:49:45 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=469#comment-949</guid>
+
+					<description><![CDATA[@Kundan Kr Kaushik -
+
+I never got around to looking at what the performance implications were for using text fields instead.]]></description>
+			<content:encoded><![CDATA[<p>@Kundan Kr Kaushik &#8211;</p>
+<p>I never got around to looking at what the performance implications were for using text fields instead.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Kundan Kr Kaushik		</title>
+		<link>/2005/08/30/sql-server-2000-maximum-row-size-8060-bytes/#comment-948</link>
+
+		<dc:creator><![CDATA[Kundan Kr Kaushik]]></dc:creator>
+		<pubDate>Wed, 26 Mar 2008 15:06:34 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=469#comment-948</guid>
+
+					<description><![CDATA[Hi,
+just now i saw a warning while creating the table in SQL Server 200, that the row size(15409) exceeds the maximum(8060).I searched for other options.TEXT field is there to fix this but i think there will be a performance hit.since my application has extensive searches.I have used nvarchar.In normal case the size of a row in my table ll be below the limit, but in worst case it can be more.
+is there any option without compromisisng with performance??]]></description>
+			<content:encoded><![CDATA[<p>Hi,<br />
+just now i saw a warning while creating the table in SQL Server 200, that the row size(15409) exceeds the maximum(8060).I searched for other options.TEXT field is there to fix this but i think there will be a performance hit.since my application has extensive searches.I have used nvarchar.In normal case the size of a row in my table ll be below the limit, but in worst case it can be more.<br />
+is there any option without compromisisng with performance??</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rakesh Vende		</title>
+		<link>/2005/08/30/sql-server-2000-maximum-row-size-8060-bytes/#comment-947</link>
+
+		<dc:creator><![CDATA[Rakesh Vende]]></dc:creator>
+		<pubDate>Wed, 12 Dec 2007 06:23:23 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=469#comment-947</guid>
+
+					<description><![CDATA[HI,
+
+  I am getting following error while inserting a row into database.
+
+&quot; Database Error:
+[Microsoft][ODBC SQL Server Driver][SQL Server]Cannot create a row of size 8078 which is greater than the allowable maximum of 8060.&quot;
+
+ What I suppose to do? I am using SQL server 2005.
+ Can u please help me out !.
+
+ Thanks &#038; regards,
+  Rakesh Vende]]></description>
+			<content:encoded><![CDATA[<p>HI,</p>
+<p>  I am getting following error while inserting a row into database.</p>
+<p>&#8221; Database Error:<br />
+[Microsoft][ODBC SQL Server Driver][SQL Server]Cannot create a row of size 8078 which is greater than the allowable maximum of 8060.&#8221;</p>
+<p> What I suppose to do? I am using SQL server 2005.<br />
+ Can u please help me out !.</p>
+<p> Thanks &amp; regards,<br />
+  Rakesh Vende</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Brice Dunwoodie		</title>
+		<link>/2005/08/30/sql-server-2000-maximum-row-size-8060-bytes/#comment-946</link>
+
+		<dc:creator><![CDATA[Brice Dunwoodie]]></dc:creator>
+		<pubDate>Tue, 02 Oct 2007 09:34:45 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=469#comment-946</guid>
+
+					<description><![CDATA[You may also want to investigate the &#039;sp_tableoption&#039; stored procedure. You can set &quot;text in row&quot; to ON and SQL will store text, ntext or image data with the row, provided it does not exceed the row storage limit.
+
+This is useful for performance purposes, provided your data length does not always exceed the row storage limit. See Books Online for details.]]></description>
+			<content:encoded><![CDATA[<p>You may also want to investigate the &#8216;sp_tableoption&#8217; stored procedure. You can set &#8220;text in row&#8221; to ON and SQL will store text, ntext or image data with the row, provided it does not exceed the row storage limit.</p>
+<p>This is useful for performance purposes, provided your data length does not always exceed the row storage limit. See Books Online for details.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ed		</title>
+		<link>/2005/08/30/sql-server-2000-maximum-row-size-8060-bytes/#comment-945</link>
+
+		<dc:creator><![CDATA[Ed]]></dc:creator>
+		<pubDate>Wed, 05 Sep 2007 17:49:18 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=469#comment-945</guid>
+
+					<description><![CDATA[You may also review your table design.
+A lot of times (more than should be) the problem is that the design has not been normalized.
+
+Text data type will work for what is called free-form text but you have to retrieve and update the data differently.  Refer to Books OnLine for specifics.]]></description>
+			<content:encoded><![CDATA[<p>You may also review your table design.<br />
+A lot of times (more than should be) the problem is that the design has not been normalized.</p>
+<p>Text data type will work for what is called free-form text but you have to retrieve and update the data differently.  Refer to Books OnLine for specifics.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: sowjanya		</title>
+		<link>/2005/08/30/sql-server-2000-maximum-row-size-8060-bytes/#comment-944</link>
+
+		<dc:creator><![CDATA[sowjanya]]></dc:creator>
+		<pubDate>Mon, 27 Aug 2007 07:20:24 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=469#comment-944</guid>
+
+					<description><![CDATA[why sql server contains row size in 8060 bytes]]></description>
+			<content:encoded><![CDATA[<p>why sql server contains row size in 8060 bytes</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jon		</title>
+		<link>/2005/08/30/sql-server-2000-maximum-row-size-8060-bytes/#comment-943</link>
+
+		<dc:creator><![CDATA[Jon]]></dc:creator>
+		<pubDate>Thu, 05 Oct 2006 17:52:30 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=469#comment-943</guid>
+
+					<description><![CDATA[Ah, you may want to consider using a Text field.  It has a max size of around 2GB (not sure if this is right) and its &quot;data&quot; is not stored in the table row but rather the table row stores a &quot;pointer&quot; to the data that lives elsewhere.  There is a performance hit, since whenever you read a record from a table with a text field, the text &quot;data&quot; has to be read from elsewhere on the disk. So this may be less than ideal for you.]]></description>
+			<content:encoded><![CDATA[<p>Ah, you may want to consider using a Text field.  It has a max size of around 2GB (not sure if this is right) and its &#8220;data&#8221; is not stored in the table row but rather the table row stores a &#8220;pointer&#8221; to the data that lives elsewhere.  There is a performance hit, since whenever you read a record from a table with a text field, the text &#8220;data&#8221; has to be read from elsewhere on the disk. So this may be less than ideal for you.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Deane		</title>
+		<link>/2005/08/30/sql-server-2000-maximum-row-size-8060-bytes/#comment-942</link>
+
+		<dc:creator><![CDATA[Deane]]></dc:creator>
+		<pubDate>Tue, 30 Aug 2005 23:18:37 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=469#comment-942</guid>
+
+					<description><![CDATA[It&#039;s teally odd to read this today since I ran into this same problem yesterday.
+
+I too am running it with PHP (from Apache on Windows), and am quite happy with it.  I&#039;ve always thought SQL Server was one of Microsoft&#039;s best products.
+
+Anyway, I went to add a recursive foreign key to a large table (60+ fields) -- so the table joins against itself.  Sure enough, I was told that the row size was too small and it may cause failures on insert statements.
+
+Odd to read this post the very next day.]]></description>
+			<content:encoded><![CDATA[<p>It&#8217;s teally odd to read this today since I ran into this same problem yesterday.</p>
+<p>I too am running it with PHP (from Apache on Windows), and am quite happy with it.  I&#8217;ve always thought SQL Server was one of Microsoft&#8217;s best products.</p>
+<p>Anyway, I went to add a recursive foreign key to a large table (60+ fields) &#8212; so the table joins against itself.  Sure enough, I was told that the row size was too small and it may cause failures on insert statements.</p>
+<p>Odd to read this post the very next day.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

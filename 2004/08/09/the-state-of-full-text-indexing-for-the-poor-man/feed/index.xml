@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: The State Of Full-Text Indexing For The Poor Man	</title>
+	<atom:link href="/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/feed/" rel="self" type="application/rss+xml" />
+	<link>/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/</link>
+	<description></description>
+	<lastBuildDate>Thu, 19 Apr 2007 19:01:48 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Peufeu		</title>
+		<link>/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-514</link>
+
+		<dc:creator><![CDATA[Peufeu]]></dc:creator>
+		<pubDate>Thu, 19 Apr 2007 19:01:48 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-514</guid>
+
+					<description><![CDATA[swish-e does not support Unicode. End of story.
+
+&#062; In tsearch2 you end up adding a field to you table and then creating an index on that field.
+
+Yes, and that is why it works much better. When you search and rank results, mysql reads the index, then has to reparse the text, whereas tsearch2 uses the canned pre-parsed tsvector in your table. Besides, since postgres compresses the text and vector, the resulting table size is the same as mysql. Postgres also does lexemization so your search results are much better.
+
+Some benchmarks for you. Read on ;)
+
+http://peufeu.free.fr/ftsbench/]]></description>
+			<content:encoded><![CDATA[<p>swish-e does not support Unicode. End of story.</p>
+<p>&gt; In tsearch2 you end up adding a field to you table and then creating an index on that field.</p>
+<p>Yes, and that is why it works much better. When you search and rank results, mysql reads the index, then has to reparse the text, whereas tsearch2 uses the canned pre-parsed tsvector in your table. Besides, since postgres compresses the text and vector, the resulting table size is the same as mysql. Postgres also does lexemization so your search results are much better.</p>
+<p>Some benchmarks for you. Read on 😉</p>
+<p><a href="http://peufeu.free.fr/ftsbench/" rel="nofollow ugc">http://peufeu.free.fr/ftsbench/</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: heri		</title>
+		<link>/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-513</link>
+
+		<dc:creator><![CDATA[heri]]></dc:creator>
+		<pubDate>Thu, 27 Jul 2006 01:57:19 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-513</guid>
+
+					<description><![CDATA[i use innodb for mysql and i replicate all varchar/text data to a search index table each time there is an update or create. i think it is the best way because you get innodb and text search...until mysql release full text for innoDB]]></description>
+			<content:encoded><![CDATA[<p>i use innodb for mysql and i replicate all varchar/text data to a search index table each time there is an update or create. i think it is the best way because you get innodb and text search&#8230;until mysql release full text for innoDB</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jian Chen		</title>
+		<link>/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-512</link>
+
+		<dc:creator><![CDATA[Jian Chen]]></dc:creator>
+		<pubDate>Thu, 07 Jul 2005 04:58:57 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-512</guid>
+
+					<description><![CDATA[I am currently using Lucene plus either MySql or Postgres. However, I must say, it would be lot better if MySql could integrate CLucene into its implementation.]]></description>
+			<content:encoded><![CDATA[<p>I am currently using Lucene plus either MySql or Postgres. However, I must say, it would be lot better if MySql could integrate CLucene into its implementation.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Simon Willison		</title>
+		<link>/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-511</link>
+
+		<dc:creator><![CDATA[Simon Willison]]></dc:creator>
+		<pubDate>Mon, 09 Aug 2004 22:14:44 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-511</guid>
+
+					<description><![CDATA[You can import data in to swish-e by writing a script that pulls things from your database and spits them out to standard output one at a time as simple HTML files - you then pipe that straight in to the swish-e indexer. All of our sites are dynamic / database driven, but we use the swish-e indexer to build an index of our content once a day. Then we use the Python swish-e binding to query the index for serving up actual search results (there are bindings for other languages as well).]]></description>
+			<content:encoded><![CDATA[<p>You can import data in to swish-e by writing a script that pulls things from your database and spits them out to standard output one at a time as simple HTML files &#8211; you then pipe that straight in to the swish-e indexer. All of our sites are dynamic / database driven, but we use the swish-e indexer to build an index of our content once a day. Then we use the Python swish-e binding to query the index for serving up actual search results (there are bindings for other languages as well).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-510</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 09 Aug 2004 20:30:20 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-510</guid>
+
+					<description><![CDATA[I don&#039;t remember coming across swish-e before, it certainly looks interesting.  I&#039;m not sure how exactly this would integrate into a purely dynamic database drive site though.
+
+I&#039;m glad you mentioned this though because I&#039;ve got another project at work where this will come in very handy.]]></description>
+			<content:encoded><![CDATA[<p>I don&#8217;t remember coming across swish-e before, it certainly looks interesting.  I&#8217;m not sure how exactly this would integrate into a purely dynamic database drive site though.</p>
+<p>I&#8217;m glad you mentioned this though because I&#8217;ve got another project at work where this will come in very handy.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Simon Willison		</title>
+		<link>/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-509</link>
+
+		<dc:creator><![CDATA[Simon Willison]]></dc:creator>
+		<pubDate>Mon, 09 Aug 2004 19:54:35 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-509</guid>
+
+					<description><![CDATA[Have you looked at swish-e? It&#039;s an open source full text indexing engine: http://www.swish-e.org/
+
+I absolutely love it - it&#039;s what I used to build the search engine for http://www2.ljworld.com/search/ and http://www.visitlawrence.com/search/ , among others. You need to run the indexer periodically (we do it once a day) so it doesn&#039;t search your &quot;live&quot; data, rather a snapshot from last time you ran the indexer.]]></description>
+			<content:encoded><![CDATA[<p>Have you looked at swish-e? It&#8217;s an open source full text indexing engine: <a href="http://www.swish-e.org/" rel="nofollow ugc">http://www.swish-e.org/</a></p>
+<p>I absolutely love it &#8211; it&#8217;s what I used to build the search engine for <a href="http://www2.ljworld.com/search/" rel="nofollow ugc">http://www2.ljworld.com/search/</a> and <a href="http://www.visitlawrence.com/search/" rel="nofollow ugc">http://www.visitlawrence.com/search/</a> , among others. You need to run the indexer periodically (we do it once a day) so it doesn&#8217;t search your &#8220;live&#8221; data, rather a snapshot from last time you ran the indexer.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>time-to-first-byte &#8211; Joseph Scott</title>
+	<atom:link href="/tag/time-to-first-byte/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 26 Dec 2013 17:29:03 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>NGINX TLS Time To First Byte</title>
+		<link>/2013/12/26/nginx-tls-time-to-first-byte/</link>
+					<comments>/2013/12/26/nginx-tls-time-to-first-byte/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 26 Dec 2013 17:29:03 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[https]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[ssl]]></category>
+		<category><![CDATA[time-to-first-byte]]></category>
+		<category><![CDATA[tls]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9676</guid>
+
+					<description><![CDATA[Ilya Grigorik on optimizing NGINX TLS time to first byte (TTTFB): let&#8217;s now turn to the practical matter of picking and tuning the server to deliver the best results. One would hope that the default “out of the box” experience for most servers would do a good job… unfortunately, that is not the case. Let&#8217;s [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Ilya Grigorik on <a href="http://www.igvita.com/2013/12/16/optimizing-nginx-tls-time-to-first-byte/" title="A race before the race.">optimizing NGINX TLS time to first byte (TTTFB)</a>:</p>
+<blockquote><p>
+let&#8217;s now turn to the practical matter of picking and tuning the server to deliver the best results. One would hope that the default “out of the box” experience for most servers would do a good job… unfortunately, that is not the case. Let&#8217;s take a closer look nginx
+</p></blockquote>
+<p>In the simplest terms, TLS involves more work.  The current realities of securing communications means we don&#8217;t have a good way to avoid doing that additional work, indeed we will be doing it more often than we ever have before.  The end result is that we need to spend more time thinking about how to optimize the HTTPS experience for all users.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/12/26/nginx-tls-time-to-first-byte/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

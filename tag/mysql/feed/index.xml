@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>MySQL &#8211; Joseph Scott</title>
+	<atom:link href="/tag/mysql/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 25 Feb 2016 18:11:13 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Docker Overhead</title>
+		<link>/2016/02/25/docker-overhead/</link>
+					<comments>/2016/02/25/docker-overhead/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 25 Feb 2016 18:11:13 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[docker]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15115</guid>
+
+					<description><![CDATA[Percona has been measuring Docker overhead ( when running MySQL ). Specifically I/O ( there is none ), and network ( depends ) overhead. Be mindful of your Docker network config.]]></description>
+										<content:encoded><![CDATA[<p>Percona has been measuring Docker overhead ( when running MySQL ).  Specifically <a href="https://www.percona.com/blog/2016/02/11/measuring-docker-io-overhead/">I/O</a> ( there is none ), and <a href="https://www.percona.com/blog/2016/02/05/measuring-docker-cpu-network-overhead/">network</a> ( depends ) overhead.</p>
+<p>Be mindful of your Docker network config.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/02/25/docker-overhead/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Error Based SQL Injection</title>
+		<link>/2015/12/08/error-based-sql-injection/</link>
+					<comments>/2015/12/08/error-based-sql-injection/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 08 Dec 2015 15:57:07 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[sql-injection]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13613</guid>
+
+					<description><![CDATA[Looking for a new twist on SQL injection? Try BIGINT Overflow Error Based SQL Injection: To perform these injection the mysql_error() should be echoed back to us that’s why this is error based injection. The MySQL version should be 5.5.5 or above. There can be lots of variations for these overflow injections. Even error messages [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Looking for a new twist on SQL injection?  Try <a href="https://osandamalith.wordpress.com/2015/07/08/bigint-overflow-error-based-sql-injection/">BIGINT Overflow Error Based SQL Injection</a>:</p>
+<blockquote><p>
+To perform these injection the mysql_error() should be echoed back to us that’s why this is error based injection. The MySQL version should be 5.5.5 or above. There can be lots of variations for these overflow injections.</p></blockquote>
+<p>Even error messages can betray you.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/08/error-based-sql-injection/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>MySQL ORDER BY</title>
+		<link>/2015/10/06/on-order-by-optimization-domas-mituzas/</link>
+					<comments>/2015/10/06/on-order-by-optimization-domas-mituzas/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 06 Oct 2015 19:00:10 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[domas-mituzas]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13411</guid>
+
+					<description><![CDATA[Domas Mituzas on ORDER BY optimization in MySQL: So, it was SELECT c,d FROM t WHERE b=X ORDER BY a DESC LIMIT 1, where PK is (a) and a possible index is on (b,c). What we were observing was a massive table scan on PK instead of using (b, &#8230;) indexing. Table in question was [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Domas Mituzas <a href="http://dom.as/2015/07/30/on-order-by-optimization/">on ORDER BY optimization</a> in MySQL:</p>
+<blockquote><p>
+So, it was SELECT c,d FROM t WHERE b=X ORDER BY a DESC LIMIT 1, where PK is (a) and a possible index is on (b,c).</p>
+<p>What we were observing was a massive table scan on PK instead of using (b, &#8230;) indexing. Table in question was in hundreds of gigabytes, so that did hurt, a bit. If one forced the (b,c) index, queries became really fast.</p>
+<p>&#8230;</p>
+<p>This function would say that the ref_key (b,c) – the index that returns least rows – is not the best key, and the best key is one on (a). How did it come up with such conclusion? Short answer – optimizer is very naïve.</p></blockquote>
+<p>Index selection for fun and profit.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/06/on-order-by-optimization-domas-mituzas/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>MySQL UTF-8</title>
+		<link>/2015/07/27/unicode-support-mysql/</link>
+					<comments>/2015/07/27/unicode-support-mysql/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 27 Jul 2015 14:01:00 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[utf8]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9946</guid>
+
+					<description><![CDATA[If it involves character encoding you know something is bound to bite you eventually: The trick, apparently, is to use a slightly different encoding which MySQL calls &#8220;utf8mb4&#8221; which supports up to 4-byte UTF-8 characters. Unicode support in MySQL is not exactly clear cut.]]></description>
+										<content:encoded><![CDATA[<p>If it involves character encoding you know something is bound to bite you eventually:</p>
+<blockquote><p>
+The trick, apparently, is to use a slightly different encoding which MySQL calls &#8220;utf8mb4&#8221; which supports up to 4-byte UTF-8 characters.
+</p></blockquote>
+<p><a href="http://www.codeka.com.au/blog/2014/02/unicode-support-in-mysql-is--">Unicode support in MySQL is not exactly clear cut</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/07/27/unicode-support-mysql/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>WordPress Upgrades &gt; MySQL Upgrades &gt; PHP Upgrades</title>
+		<link>/2015/03/24/wordpress-upgrades-mysql-upgrades-php-upgrades/</link>
+					<comments>/2015/03/24/wordpress-upgrades-mysql-upgrades-php-upgrades/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 24 Mar 2015 15:41:35 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11646</guid>
+
+					<description><![CDATA[I was pleasantly surprised to see that the updated WordPress.org stats page shows more than 50% of active sites are on version 4.0 or newer: That is really good for a piece of software released less than seven months ago. The years long effort into making upgrades easier and more reliable are paying off nicely. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was pleasantly surprised to see that the <a href="https://make.wordpress.org/meta/2015/03/01/major-update-to-our-version-stats-for-php-mysql-and-wordpress/">updated</a> <a href="https://wordpress.org/about/stats/">WordPress.org stats page</a> shows more than 50% of active sites are on version 4.0 or newer:</p>
+<p><a href="/wp-content/uploads/2015/03/wp-versions-1.png"><img loading="lazy" src="/wp-content/uploads/2015/03/wp-versions-1-300x292.png" alt="wp-versions" width="300" height="292" class="aligncenter size-medium wp-image-11880" srcset="/wp-content/uploads/2015/03/wp-versions-1-300x292.png 300w, /wp-content/uploads/2015/03/wp-versions-1.png 349w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>That is really good for a piece of software released less than <a href="https://wordpress.org/news/2014/09/benny/">seven months ago</a>.  The years long effort into making upgrades easier and more reliable are paying off nicely.</p>
+<p>When I looked at PHP and MySQL version usage that is where things got strange.  I know that PHP upgrades at some hosting providers happen at a very slow pace, but I didn&#8217;t fully appreciate how slow.</p>
+<p><a href="/wp-content/uploads/2015/03/wp-mysql-versions-1.png"><img loading="lazy" src="/wp-content/uploads/2015/03/wp-mysql-versions-1-300x274.png" alt="wp-mysql-versions" width="300" height="274" class="aligncenter size-medium wp-image-11887" srcset="/wp-content/uploads/2015/03/wp-mysql-versions-1-300x274.png 300w, /wp-content/uploads/2015/03/wp-mysql-versions-1.png 372w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>The most reported MySQL version for active WordPress sites is 5.5, at nearly 60%.  The first <a href="http://dev.mysql.com/doc/relnotes/mysql/5.6/en/news-5-6-10.html">MySQL 5.5 General Availability</a> release was two years ago ( February 2013 ).  Considering how sensitive data storage is I&#8217;d consider that a good upgrade rate.</p>
+<p>Turns out to be significantly faster than PHP.</p>
+<p><a href="/wp-content/uploads/2015/03/wp-php-versions-1.png"><img loading="lazy" src="/wp-content/uploads/2015/03/wp-php-versions-1-300x249.png" alt="wp-php-versions" width="300" height="249" class="aligncenter size-medium wp-image-11877" srcset="/wp-content/uploads/2015/03/wp-php-versions-1-300x249.png 300w, /wp-content/uploads/2015/03/wp-php-versions-1.png 409w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Less than 47% of active WordPress sites report using PHP version 5.4 or newer.</p>
+<p>The first release of PHP 5.4 was <a href="http://php.net/releases/5_4_0.php">three years ago</a> ( March 2012 ).  I could see not wanting to upgrade on the initial release, so I&#8217;ll discount that to two years with PHP 5.4.13 in <a href="http://php.net/releases/">March 2013</a>.  That still leaves PHP 5.4+ at 47% compared to MySQL 5.5+ at 66%.</p>
+<p>I didn&#8217;t expect to see hosting providers upgrading MySQL faster than PHP.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/03/24/wordpress-upgrades-mysql-upgrades-php-upgrades/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>HTTP Plugin for MySQL</title>
+		<link>/2014/10/06/http-plugin-for-mysql/</link>
+					<comments>/2014/10/06/http-plugin-for-mysql/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 06 Oct 2014 16:24:07 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11116</guid>
+
+					<description><![CDATA[There is a HTTP plugin for MySQL available at labs.mysql.com. Ulf Wendel covers it in more detail. The development preview brings three APIs: key-document for nested JSON documents, CRUD for JSON mapped SQL tables and plain SQL with JSON replies. More so: MySQL 5.7.4 has SQL functions for modifying JSON, for searching documents and new [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>There is a HTTP plugin for MySQL available at <a href="http://labs.mysql.com/">labs.mysql.com</a>.  Ulf Wendel covers it in <a href="http://blog.ulf-wendel.de/2014/mysql-5-7-http-plugin-mysql/">more detail</a>.</p>
+<blockquote><p>
+The development preview brings three APIs: key-document for nested JSON documents, CRUD for JSON mapped SQL tables and plain SQL with JSON replies. More so: MySQL 5.7.4 has SQL functions for modifying JSON, for searching documents and new indexing methods!
+</p></blockquote>
+<p>At this point I still have more questions than answers, but I&#8217;m definitely intrigued.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/10/06/http-plugin-for-mysql/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>TokuDB and MongoDB</title>
+		<link>/2013/05/10/tokudb-and-mongodb/</link>
+					<comments>/2013/05/10/tokudb-and-mongodb/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 10 May 2013 15:58:02 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[baron-schwartz]]></category>
+		<category><![CDATA[mongodb]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[tokudb]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7607</guid>
+
+					<description><![CDATA[Baron Schwartz on TokuDB going open source: I think TokuDB will rapidly become the storage engine of choice for MongoDB, and could catapult MongoDB into the lead in the NoSQL database arena. This would have profound implications for opensource databases of all flavors, not just NoSQL databases. It is easy to forget how long it [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Baron Schwartz on <a href="http://www.xaprb.com/blog/2013/04/29/what-tokudb-might-mean-for-mongodb/">TokuDB going open source</a>:</p>
+<blockquote><p>
+I think TokuDB will rapidly become the storage engine of choice for MongoDB, and could catapult MongoDB into the lead in the NoSQL database arena. This would have profound implications for opensource databases of all flavors, not just NoSQL databases.
+</p></blockquote>
+<p>It is easy to forget how long it took MySQL to get to where it is today ( and it still has plenty of issues ).  When I look at MongoDB I see it going through a similar path to MySQL ( and most other software ) to reach a point of critical features, stability, and mass.  Improving the underlying storage engine, by using an existing open source one, could move it down that path much faster.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/05/10/tokudb-and-mongodb/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Percona MySQL jemalloc Benchmarks</title>
+		<link>/2013/04/17/percona-mysql-jemalloc-benchmarks/</link>
+					<comments>/2013/04/17/percona-mysql-jemalloc-benchmarks/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 17 Apr 2013 15:24:57 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[jemalloc]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[percona]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7496</guid>
+
+					<description><![CDATA[Last week I mentioned Percona MySQL was switching to jemalloc. This week mysqlperformanceblog.com published benchmarks comparing MySQL 5.5.30, Percona MySQL 5.5.30, and MySQL 5.6.10.]]></description>
+										<content:encoded><![CDATA[<p>Last week I mentioned <a href="https://josephscott.org/archives/2013/04/percona-mysql-server-switching-to-jemalloc/">Percona MySQL was switching to jemalloc</a>.  This week mysqlperformanceblog.com published <a href="http://www.mysqlperformanceblog.com/2013/04/15/memory-allocators-mysql-performance-improvements-in-pecona-server-5-5-30-30-2/">benchmarks comparing MySQL 5.5.30, Percona MySQL 5.5.30, and MySQL 5.6.10</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/04/17/percona-mysql-jemalloc-benchmarks/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Percona MySQL Server Switching to jemalloc</title>
+		<link>/2013/04/12/percona-mysql-server-switching-to-jemalloc/</link>
+					<comments>/2013/04/12/percona-mysql-server-switching-to-jemalloc/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2013 15:06:34 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[jemalloc]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[percona]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7427</guid>
+
+					<description><![CDATA[I was reading through the Percona MySQL Server 5.5.30-30.2 release notes and noticed this gem: Percona Server for MySQL will now be shipped with the libjemalloc library. Benchmark showing the impact of memory allocators on MySQL performance can be found in this blogpost. (Ignacio Nin) The &#8220;Impact of memory allocators on MySQL performance&#8221; post is [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was reading through the <a href="http://www.mysqlperformanceblog.com/2013/04/10/percona-server-for-mysql-5-5-30-30-2-now-available/">Percona MySQL Server 5.5.30-30.2 release notes</a> and noticed this gem:</p>
+<blockquote><p>
+Percona Server for MySQL will now be shipped with the libjemalloc library. Benchmark showing the impact of memory allocators on MySQL performance can be found in this <a href="http://www.mysqlperformanceblog.com/2012/07/05/impact-of-memory-allocators-on-mysql-performance/">blogpost</a>. (Ignacio Nin)
+</p></blockquote>
+<p>The &#8220;<a href="http://www.mysqlperformanceblog.com/2012/07/05/impact-of-memory-allocators-on-mysql-performance/">Impact of memory allocators on MySQL performance</a>&#8221; post is worth a read.  Alternatives like lockless, jemalloc, and tcmalloc appear to provide better performance than traditional glibc.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/04/12/percona-mysql-server-switching-to-jemalloc/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>When MySQL EXPLAIN Estimates Go Wrong</title>
+		<link>/2011/10/13/when-mysql-explain-estimates-go-wrong/</link>
+					<comments>/2011/10/13/when-mysql-explain-estimates-go-wrong/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 13 Oct 2011 17:09:51 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[explain]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4932</guid>
+
+					<description><![CDATA[An odd looking bug with EXPLAIN in MySQL 5.1 mentioned in When EXPLAIN estimates can go wrong! the row estimates on 5.1 is very off, its as much as 57 times less than the number of rows, which is not acceptable at all. While 5.5 returns an acceptable estimate. This test proves that there is [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>An odd looking bug with <a href="http://dev.mysql.com/doc/refman/5.5/en/explain.html">EXPLAIN</a> in MySQL 5.1 mentioned in <a href="http://www.mysqlperformanceblog.com/2011/10/13/when-explain-estimates-can-go-wrong/">When EXPLAIN estimates can go wrong!</a></p>
+<blockquote><p>
+the row estimates on 5.1 is very off, its as much as 57 times less than the number of rows, which is not acceptable at all. While 5.5 returns an acceptable estimate.</p>
+<p>This test proves that there is a bug in MySQL 5.1 and how it calculates the row estimates. This bug was tracked down to <a href="http://bugs.mysql.com/bug.php?id=53761">http://bugs.mysql.com/bug.php?id=53761</a> and was indeed fixed in 5.5 as my tests show.
+</p></blockquote>
+<p>Which leads MySQL 5.1 to make some odd index choices based on wildly inaccurate row estimates.  Good to know this has already been fixed in MySQL 5.5.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/10/13/when-mysql-explain-estimates-go-wrong/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>barry-pollard &#8211; Joseph Scott</title>
+	<atom:link href="/tag/barry-pollard/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 12 Sep 2019 16:37:17 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>The First 14 KB</title>
+		<link>/2019/09/12/the-first-14-kb/</link>
+					<comments>/2019/09/12/the-first-14-kb/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 12 Sep 2019 16:37:17 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[barry-pollard]]></category>
+		<category><![CDATA[tcp/ip]]></category>
+		<guid isPermaLink="false">/?p=17671</guid>
+
+					<description><![CDATA[Barry Pollard has a ground level examination of the performance adage that the first 14 KB of a page view is the most critical: Critical Resources and the First 14 KB &#8211; A Review. If you aren&#8217;t familiar with how the 14 KB guideline came to be, that is one of the first things he [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Barry Pollard has a ground level examination of the performance adage that the first 14 KB of a page view is the most critical: <a href="https://www.tunetheweb.com/blog/critical-resources-and-the-first-14kb/">Critical Resources and the First 14 KB &#8211; A Review</a>.</p>
+<p>If you aren&#8217;t familiar with how the 14 KB guideline came to be, that is one of the first things he addresses.  The short version is <a href="https://hpbn.co/building-blocks-of-tcp/#slow-start">TCP slow start</a>.</p>
+<p>That is the theoretical of what a new TCP connection looks like for a page view, what Barry Pollard does here is look at the details of what a real world process goes through.  I really like it when people examine what really happens, where the rubber meets the road, in this case that means looking at one packet at a time.</p>
+<p>The bottom line:</p>
+<blockquote><p>
+This post is also not intended to mean that page size is not important &#8211; it is massively important and I&#8217;m a big fan of optimising web performance! However I do warn against absolutism. The real world is far more complex than that. The general advice still stands: put your important resources near the top of the page so the browser can see them as soon as possible and start working on them, and ideally make your page as small as possible to allow it to download quickly. But don&#8217;t sweat too much over this magic 14 KB number.
+</p></blockquote>
+<p>When in doubt, measure for yourself what happens during a page view of your site.  And do it sometimes even when you don&#8217;t have doubt, to confirm that your theories match reality.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/09/12/the-first-14-kb/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

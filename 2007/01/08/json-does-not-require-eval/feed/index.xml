@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: JSON Does Not Require eval( )	</title>
+	<atom:link href="/2007/01/08/json-does-not-require-eval/feed/" rel="self" type="application/rss+xml" />
+	<link>/2007/01/08/json-does-not-require-eval/</link>
+	<description></description>
+	<lastBuildDate>Wed, 28 Mar 2007 12:22:07 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Matt Westcott		</title>
+		<link>/2007/01/08/json-does-not-require-eval/#comment-1777</link>
+
+		<dc:creator><![CDATA[Matt Westcott]]></dc:creator>
+		<pubDate>Wed, 28 Mar 2007 12:22:07 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/01/08/json-does-not-require-eval/#comment-1777</guid>
+
+					<description><![CDATA[It&#039;s neat that the Yahoo API gives you this shortcut, but I don&#039;t see why it makes you any less nervous than using eval() directly. By putting a Yahoo URL in your script src=&quot;...&quot; attribute, you&#039;re still blindly executing whatever code Yahoo decide to send back, and trusting them not to do anything evil.]]></description>
+			<content:encoded><![CDATA[<p>It&#8217;s neat that the Yahoo API gives you this shortcut, but I don&#8217;t see why it makes you any less nervous than using eval() directly. By putting a Yahoo URL in your script src=&#8221;&#8230;&#8221; attribute, you&#8217;re still blindly executing whatever code Yahoo decide to send back, and trusting them not to do anything evil.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: joseph		</title>
+		<link>/2007/01/08/json-does-not-require-eval/#comment-1776</link>
+
+		<dc:creator><![CDATA[joseph]]></dc:creator>
+		<pubDate>Wed, 10 Jan 2007 21:26:38 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/01/08/json-does-not-require-eval/#comment-1776</guid>
+
+					<description><![CDATA[Sorry about that, I&#039;ve changed it now.]]></description>
+			<content:encoded><![CDATA[<p>Sorry about that, I&#8217;ve changed it now.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Kalle Kasurila		</title>
+		<link>/2007/01/08/json-does-not-require-eval/#comment-1775</link>
+
+		<dc:creator><![CDATA[Kalle Kasurila]]></dc:creator>
+		<pubDate>Tue, 09 Jan 2007 22:50:48 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/01/08/json-does-not-require-eval/#comment-1775</guid>
+
+					<description><![CDATA[Your website doesn&#039;t define a default text color, but sets the bg color in many places. As my default text color is white, this results in white-on-white text in many places. Please add &#039;color: #000000;&#039; to the body-element (or whatever-the-white-areas-are) in your css. You shouldn&#039;t trust the user to have sensible defaults :)]]></description>
+			<content:encoded><![CDATA[<p>Your website doesn&#8217;t define a default text color, but sets the bg color in many places. As my default text color is white, this results in white-on-white text in many places. Please add &#8216;color: #000000;&#8217; to the body-element (or whatever-the-white-areas-are) in your css. You shouldn&#8217;t trust the user to have sensible defaults 🙂</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

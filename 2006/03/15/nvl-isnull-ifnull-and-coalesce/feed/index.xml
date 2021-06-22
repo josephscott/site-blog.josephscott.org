@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: NVL, ISNULL, IFNULL and COALESCE	</title>
+	<atom:link href="/2006/03/15/nvl-isnull-ifnull-and-coalesce/feed/" rel="self" type="application/rss+xml" />
+	<link>/2006/03/15/nvl-isnull-ifnull-and-coalesce/</link>
+	<description></description>
+	<lastBuildDate>Thu, 22 Aug 2019 16:57:16 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Bill Raper		</title>
+		<link>/2006/03/15/nvl-isnull-ifnull-and-coalesce/#comment-163075</link>
+
+		<dc:creator><![CDATA[Bill Raper]]></dc:creator>
+		<pubDate>Thu, 22 Aug 2019 16:57:16 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/03/15/nvl-isnull-ifnull-and-coalesce/#comment-163075</guid>
+
+					<description><![CDATA[This is an area of bizarre inconsistency across database engines.  In PostgreSQL, and in Redshift, the NVL() function is a synonym for COALESCE.  In other dialects, like Netezza, the NVL() function is nothing like COALESCE.  Its purpose is to REPLACE ALL VALUES OF NULL WITH THE FOLLOWING VALUE. Similar to case x when null then y else x end.
+The observation of the various permutations is a failure on the part of the ANSI committee in defining what NVL should mean.]]></description>
+			<content:encoded><![CDATA[<p>This is an area of bizarre inconsistency across database engines.  In PostgreSQL, and in Redshift, the NVL() function is a synonym for COALESCE.  In other dialects, like Netezza, the NVL() function is nothing like COALESCE.  Its purpose is to REPLACE ALL VALUES OF NULL WITH THE FOLLOWING VALUE. Similar to case x when null then y else x end.<br />
+The observation of the various permutations is a failure on the part of the ANSI committee in defining what NVL should mean.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: NOne		</title>
+		<link>/2006/03/15/nvl-isnull-ifnull-and-coalesce/#comment-1193</link>
+
+		<dc:creator><![CDATA[NOne]]></dc:creator>
+		<pubDate>Wed, 18 Jul 2012 10:10:52 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/03/15/nvl-isnull-ifnull-and-coalesce/#comment-1193</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2006/03/15/nvl-isnull-ifnull-and-coalesce/#comment-1189&quot;&gt;Alistair&lt;/a&gt;.
+
+You&#039;re confusing COALESCE() with DECODE().]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2006/03/15/nvl-isnull-ifnull-and-coalesce/#comment-1189">Alistair</a>.</p>
+<p>You&#8217;re confusing COALESCE() with DECODE().</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Marco Castro		</title>
+		<link>/2006/03/15/nvl-isnull-ifnull-and-coalesce/#comment-1192</link>
+
+		<dc:creator><![CDATA[Marco Castro]]></dc:creator>
+		<pubDate>Thu, 18 Aug 2011 16:10:03 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/03/15/nvl-isnull-ifnull-and-coalesce/#comment-1192</guid>
+
+					<description><![CDATA[At Potgresql you can do:
+
+SELECT COALESCE(&#039;word&#039;, cast(123 as varchar))
+
+it will work]]></description>
+			<content:encoded><![CDATA[<p>At Potgresql you can do:</p>
+<p>SELECT COALESCE(&#8216;word&#8217;, cast(123 as varchar))</p>
+<p>it will work</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Reece		</title>
+		<link>/2006/03/15/nvl-isnull-ifnull-and-coalesce/#comment-1191</link>
+
+		<dc:creator><![CDATA[Reece]]></dc:creator>
+		<pubDate>Mon, 27 Jun 2011 19:30:31 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/03/15/nvl-isnull-ifnull-and-coalesce/#comment-1191</guid>
+
+					<description><![CDATA[There is one MAJOR HUGE difference you seem to be ignoring. 
+
+sql server:
+
+SELECT IFNULL(&#039;word&#039;, 123)
+&#062; word
+
+postgres:
+
+SELECT COALESCE(&#039;word&#039;, 123)
+&#062; invalid input syntax for integer: &quot;woot&quot;]]></description>
+			<content:encoded><![CDATA[<p>There is one MAJOR HUGE difference you seem to be ignoring. </p>
+<p>sql server:</p>
+<p>SELECT IFNULL(&#8216;word&#8217;, 123)<br />
+&gt; word</p>
+<p>postgres:</p>
+<p>SELECT COALESCE(&#8216;word&#8217;, 123)<br />
+&gt; invalid input syntax for integer: &#8220;woot&#8221;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Thorsten Kettner		</title>
+		<link>/2006/03/15/nvl-isnull-ifnull-and-coalesce/#comment-1190</link>
+
+		<dc:creator><![CDATA[Thorsten Kettner]]></dc:creator>
+		<pubDate>Tue, 20 Mar 2007 12:20:18 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/03/15/nvl-isnull-ifnull-and-coalesce/#comment-1190</guid>
+
+					<description><![CDATA[Alistair, you are confusing DECODE and COALESCE. What you describe is the DECODE function. COALESCE works in Oracle as in other dbms. It takes the first value from the list which is not null. Hence giving it two args only equals NVL.
+
+Thorsten.]]></description>
+			<content:encoded><![CDATA[<p>Alistair, you are confusing DECODE and COALESCE. What you describe is the DECODE function. COALESCE works in Oracle as in other dbms. It takes the first value from the list which is not null. Hence giving it two args only equals NVL.</p>
+<p>Thorsten.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Alistair		</title>
+		<link>/2006/03/15/nvl-isnull-ifnull-and-coalesce/#comment-1189</link>
+
+		<dc:creator><![CDATA[Alistair]]></dc:creator>
+		<pubDate>Thu, 22 Feb 2007 13:06:18 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/03/15/nvl-isnull-ifnull-and-coalesce/#comment-1189</guid>
+
+					<description><![CDATA[Joseph,
+
+I&#039;m not sure if you&#039;re aware or not but there is a difference between an NVL and a COALESCE in Oracle. Using an NVL, you check a single field and replace a NULL value with your preferred replacement, for example:
+
+&lt;code&gt;SELECT NVL(dog, &#039;cat&#039;) FROM Animals;&lt;/code&gt;
+
+In which case, if the dog column contained a NULL value the value of &#039;cat&#039; would be substituted in.
+
+A COALESCE is essentially an inline if-then-elsif-else block. The COALESCE function can accept any number of values and do the replacement, for example:
+
+&lt;code&gt;SELECT COALESCE(dog, &#039;foxy&#039;, &#039;energetic&#039;, &#039;poodle&#039;, &#039;happy&#039;, &#039;cats win&#039;) FROM  Animal;&lt;/code&gt;
+
+In the above example, if the value of the dog column is &#039;foxy&#039;, then &#039;energetic&#039; will be substituted in; likewise for &#039;poodle&#039; and &#039;happy&#039;. If it isn&#039;t either of those values though, then &#039;cats win&#039; will be substituted in.
+
+Regards,
+Al.]]></description>
+			<content:encoded><![CDATA[<p>Joseph,</p>
+<p>I&#8217;m not sure if you&#8217;re aware or not but there is a difference between an NVL and a COALESCE in Oracle. Using an NVL, you check a single field and replace a NULL value with your preferred replacement, for example:</p>
+<p><code>SELECT NVL(dog, 'cat') FROM Animals;</code></p>
+<p>In which case, if the dog column contained a NULL value the value of &#8216;cat&#8217; would be substituted in.</p>
+<p>A COALESCE is essentially an inline if-then-elsif-else block. The COALESCE function can accept any number of values and do the replacement, for example:</p>
+<p><code>SELECT COALESCE(dog, 'foxy', 'energetic', 'poodle', 'happy', 'cats win') FROM  Animal;</code></p>
+<p>In the above example, if the value of the dog column is &#8216;foxy&#8217;, then &#8216;energetic&#8217; will be substituted in; likewise for &#8216;poodle&#8217; and &#8216;happy&#8217;. If it isn&#8217;t either of those values though, then &#8216;cats win&#8217; will be substituted in.</p>
+<p>Regards,<br />
+Al.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Richard Tallent		</title>
+		<link>/2006/03/15/nvl-isnull-ifnull-and-coalesce/#comment-1188</link>
+
+		<dc:creator><![CDATA[Richard Tallent]]></dc:creator>
+		<pubDate>Thu, 28 Dec 2006 19:08:42 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/03/15/nvl-isnull-ifnull-and-coalesce/#comment-1188</guid>
+
+					<description><![CDATA[In SQL Server, COALESCE() can result in a sub-optimal execution plan, so ISNULL() is better if you only need to test one value for NULL. There are some other differences as well (more info at http://databases.aspfaq.com/database/coalesce-vs-isnull-sql.html)]]></description>
+			<content:encoded><![CDATA[<p>In SQL Server, COALESCE() can result in a sub-optimal execution plan, so ISNULL() is better if you only need to test one value for NULL. There are some other differences as well (more info at <a href="http://databases.aspfaq.com/database/coalesce-vs-isnull-sql.html" rel="nofollow ugc">http://databases.aspfaq.com/database/coalesce-vs-isnull-sql.html</a>)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jason		</title>
+		<link>/2006/03/15/nvl-isnull-ifnull-and-coalesce/#comment-1187</link>
+
+		<dc:creator><![CDATA[Jason]]></dc:creator>
+		<pubDate>Sun, 05 Nov 2006 01:15:54 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/03/15/nvl-isnull-ifnull-and-coalesce/#comment-1187</guid>
+
+					<description><![CDATA[Good notes. DB2 also uses Coalesce.]]></description>
+			<content:encoded><![CDATA[<p>Good notes. DB2 also uses Coalesce.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Raimond Verwei		</title>
+		<link>/2006/03/15/nvl-isnull-ifnull-and-coalesce/#comment-1186</link>
+
+		<dc:creator><![CDATA[Raimond Verwei]]></dc:creator>
+		<pubDate>Wed, 24 May 2006 07:26:53 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/03/15/nvl-isnull-ifnull-and-coalesce/#comment-1186</guid>
+
+					<description><![CDATA[DB2 also supports COALESCE(...)
+You might want to add that to the list.]]></description>
+			<content:encoded><![CDATA[<p>DB2 also supports COALESCE(&#8230;)<br />
+You might want to add that to the list.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

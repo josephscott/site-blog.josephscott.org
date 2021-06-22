@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: jQuery Edit In Place (JEIP)	</title>
+	<atom:link href="/code/javascript/jquery-edit-in-place/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 15 Jun 2016 11:46:56 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Inplace Editing &#8211; Fast Gallery &#8211; wordpress-15123-47510-124403.cloudwaysapps.com		</title>
+		<link>/code/javascript/jquery-edit-in-place/#comment-315</link>
+
+		<dc:creator><![CDATA[Inplace Editing &#8211; Fast Gallery &#8211; wordpress-15123-47510-124403.cloudwaysapps.com]]></dc:creator>
+		<pubDate>Wed, 15 Jun 2016 11:46:56 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?page_id=114#comment-315</guid>
+
+					<description><![CDATA[[&#8230;] Feature basiert auf dem jQuery Edit in Place Plugin, welches separat heruntergeladen und installiert werden [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Feature basiert auf dem jQuery Edit in Place Plugin, welches separat heruntergeladen und installiert werden [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/code/javascript/jquery-edit-in-place/#comment-314</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 22 May 2015 00:46:20 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?page_id=114#comment-314</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/code/javascript/jquery-edit-in-place/#comment-313&quot;&gt;Paula RB&lt;/a&gt;.
+
+If you are still getting the error then something is preventing the jQuery object from being created.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/code/javascript/jquery-edit-in-place/#comment-313">Paula RB</a>.</p>
+<p>If you are still getting the error then something is preventing the jQuery object from being created.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Paula RB		</title>
+		<link>/code/javascript/jquery-edit-in-place/#comment-313</link>
+
+		<dc:creator><![CDATA[Paula RB]]></dc:creator>
+		<pubDate>Thu, 21 May 2015 23:38:19 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?page_id=114#comment-313</guid>
+
+					<description><![CDATA[Oops I should have known better than putting script tags on my comment. I&#039;m importing the following in this order:
+&quot;//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js&quot;
+
+window.jQuery &#124;&#124; document.write(&#039;scripting tag src=&quot;../assets/js/jquery.min.js&quot; scripting tag&#039;))
+
+and then I include jeip.js and I double checked the directories and paths are correct.]]></description>
+			<content:encoded><![CDATA[<p>Oops I should have known better than putting script tags on my comment. I&#8217;m importing the following in this order:<br />
+&#8220;//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js&#8221;</p>
+<p>window.jQuery || document.write(&#8216;scripting tag src=&#8221;../assets/js/jquery.min.js&#8221; scripting tag&#8217;))</p>
+<p>and then I include jeip.js and I double checked the directories and paths are correct.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Paula RB		</title>
+		<link>/code/javascript/jquery-edit-in-place/#comment-312</link>
+
+		<dc:creator><![CDATA[Paula RB]]></dc:creator>
+		<pubDate>Thu, 21 May 2015 22:47:16 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?page_id=114#comment-312</guid>
+
+					<description><![CDATA[It is, I&#039;m actually importing it from a local file and from the Google APIs
+
+    
+   
+
+    // Fall back to a local copy of jQuery if the CDN fails
+    window.jQuery &#124;&#124; document.write(&#039;&#039;))]]></description>
+			<content:encoded><![CDATA[<p>It is, I&#8217;m actually importing it from a local file and from the Google APIs</p>
+<p>    // Fall back to a local copy of jQuery if the CDN fails<br />
+    window.jQuery || document.write(&#8221;))</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/code/javascript/jquery-edit-in-place/#comment-311</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 19 May 2015 19:31:52 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?page_id=114#comment-311</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/code/javascript/jquery-edit-in-place/#comment-310&quot;&gt;Paula RB&lt;/a&gt;.
+
+You need to make sure that jQuery is loaded before the jeip.js code.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/code/javascript/jquery-edit-in-place/#comment-310">Paula RB</a>.</p>
+<p>You need to make sure that jQuery is loaded before the jeip.js code.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Paula RB		</title>
+		<link>/code/javascript/jquery-edit-in-place/#comment-310</link>
+
+		<dc:creator><![CDATA[Paula RB]]></dc:creator>
+		<pubDate>Tue, 19 May 2015 19:26:08 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?page_id=114#comment-310</guid>
+
+					<description><![CDATA[Thanks for such an awesome feature! I&#039;m aware you haven&#039;t worked on this code for a while which is totally fine - I have a very newbie question (I&#039;ve only been coding for a couple of years and am just entering the JQuery world). 
+
+I included the jeip.js file in my code and added the simple tag just to try to out ($(&quot;#username&quot;).eip(&quot;save.php&quot;); ) in the  of the html file but the console spits the error &#039;ReferenceError: jQuery is not defined on jeip.js 323&#039;. Am supposed to write my jquery on jeip.js?]]></description>
+			<content:encoded><![CDATA[<p>Thanks for such an awesome feature! I&#8217;m aware you haven&#8217;t worked on this code for a while which is totally fine &#8211; I have a very newbie question (I&#8217;ve only been coding for a couple of years and am just entering the JQuery world). </p>
+<p>I included the jeip.js file in my code and added the simple tag just to try to out ($(&#8220;#username&#8221;).eip(&#8220;save.php&#8221;); ) in the  of the html file but the console spits the error &#8216;ReferenceError: jQuery is not defined on jeip.js 323&#8217;. Am supposed to write my jquery on jeip.js?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Benjamin Sandmann		</title>
+		<link>/code/javascript/jquery-edit-in-place/#comment-309</link>
+
+		<dc:creator><![CDATA[Benjamin Sandmann]]></dc:creator>
+		<pubDate>Tue, 02 Dec 2014 18:56:13 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?page_id=114#comment-309</guid>
+
+					<description><![CDATA[Np, you&#039;ve done all of the heavy lifting; I can just add it in myself.  Thanks for building this and posting it online!]]></description>
+			<content:encoded><![CDATA[<p>Np, you&#8217;ve done all of the heavy lifting; I can just add it in myself.  Thanks for building this and posting it online!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/code/javascript/jquery-edit-in-place/#comment-308</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 02 Dec 2014 16:14:38 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?page_id=114#comment-308</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/code/javascript/jquery-edit-in-place/#comment-307&quot;&gt;Benjamin Sandmann&lt;/a&gt;.
+
+That would be a nice feature to have.  I haven&#039;t done anything with this code in a long time, it isn&#039;t likely to get updated any time soon.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/code/javascript/jquery-edit-in-place/#comment-307">Benjamin Sandmann</a>.</p>
+<p>That would be a nice feature to have.  I haven&#8217;t done anything with this code in a long time, it isn&#8217;t likely to get updated any time soon.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Benjamin Sandmann		</title>
+		<link>/code/javascript/jquery-edit-in-place/#comment-307</link>
+
+		<dc:creator><![CDATA[Benjamin Sandmann]]></dc:creator>
+		<pubDate>Tue, 02 Dec 2014 09:39:18 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?page_id=114#comment-307</guid>
+
+					<description><![CDATA[Your in-place editor is amazing, but I didn&#039;t see an option for a callback function instead of an AJAX callout.  Is there any reason to not give the user more control over their I/O and simply have them return a string after they&#039;re done (the String would represent the HTML you would use as if the AJAX response had returned in your other examples).]]></description>
+			<content:encoded><![CDATA[<p>Your in-place editor is amazing, but I didn&#8217;t see an option for a callback function instead of an AJAX callout.  Is there any reason to not give the user more control over their I/O and simply have them return a string after they&#8217;re done (the String would represent the HTML you would use as if the AJAX response had returned in your other examples).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Justin		</title>
+		<link>/code/javascript/jquery-edit-in-place/#comment-306</link>
+
+		<dc:creator><![CDATA[Justin]]></dc:creator>
+		<pubDate>Mon, 05 May 2014 18:44:44 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?page_id=114#comment-306</guid>
+
+					<description><![CDATA[Is there a way to check if the origin value matches on of the select options? I&#039;d like to have the right option selected upon initiating the plugin.]]></description>
+			<content:encoded><![CDATA[<p>Is there a way to check if the origin value matches on of the select options? I&#8217;d like to have the right option selected upon initiating the plugin.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

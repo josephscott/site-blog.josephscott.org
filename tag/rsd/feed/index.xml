@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>rsd &#8211; Joseph Scott</title>
+	<atom:link href="/tag/rsd/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 23 Mar 2009 22:52:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Slow Loading RSD URLs In WordPress</title>
+		<link>/2009/03/23/slow-loading-rsd-urls-in-wordpress/</link>
+					<comments>/2009/03/23/slow-loading-rsd-urls-in-wordpress/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 23 Mar 2009 22:52:51 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[rsd]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xml-rpc]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1009</guid>
+
+					<description><![CDATA[A common mechanism for XML-RPC clients to find out information about your WordPress blog is to look for the Really Simple Discovery (RSD) URL. The RSD contains information about the available APIs that WordPress supports. A typical discovery process would look something like this: Request your blog URL, http://example.com/ and look for the RSD link [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>A common mechanism for XML-RPC clients to find out information about your WordPress blog is to look for the <a href="http://cyber.law.harvard.edu/blogs/gems/tech/rsd.html">Really Simple Discovery (RSD)</a> URL.  The RSD contains information about the available APIs that WordPress supports.  A typical discovery process would look something like this:</p>
+<ol>
+<li>Request your blog URL, http://example.com/ and look for the RSD link element</li>
+<li>Request the RSD URL and parse the provided info</li>
+<li>Determine which API information to use</li>
+<li>Communicate with your blog via the determined API</li>
+</ol>
+<p>On rare occasions I&#8217;ve seen reports where the RSD URL (which looks like http://example.com/xmlrpc.php?rsd in WordPress) will take a very long time to load (3 minutes or more) even though the rest of the site responds very quickly.  This can cause problems for XML-RPC clients (like the <a href="http://iphone.wordpress.org/">WordPress iPhone app</a>) if they timeout trying to get the RSD data.  The reports of this problem were few and far between, without much of a common thread.  Until today.</p>
+<p><a href="http://core.trac.wordpress.org/ticket/9380">Ticket 9380</a> showed up earlier today, reported by foks.  Foks noticed that the SSL check being done when the RSD URL was requested didn&#8217;t have a timeout set, so if the conditions were just right it will wait for the system level timeout before failing.  That explained why the RSD request would take so long in some cases.  If you&#8217;ve run into this problem you can use the trivial one line patch or grab a copy of the <a href="http://core.trac.wordpress.org/browser/branches/2.7/wp-includes/functions.php?rev=10831">wp-includes/functions.php</a> file from the WordPress 2.7.x branch at <a href="http://core.trac.wordpress.org/browser/branches/2.7/wp-includes/functions.php?rev=10831&amp;format=txt">http://core.trac.wordpress.org/browser/branches/2.7/wp-includes/functions.php?rev=10831&amp;format=txt</a> and try it out.</p>
+<p>This fix has been applied to both the 2.7.x branch (meaning it will be part of a 2.7.2 release if there is one) and -trunk (meaning it will be part of the upcoming 2.8 release).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/03/23/slow-loading-rsd-urls-in-wordpress/feed/</wfw:commentRss>
+			<slash:comments>13</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

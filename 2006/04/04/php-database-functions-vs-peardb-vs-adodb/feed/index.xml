@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: PHP Database Functions vs. PEAR::DB vs. ADOdb (and PDO)	</title>
+	<atom:link href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/feed/" rel="self" type="application/rss+xml" />
+	<link>/2006/04/04/php-database-functions-vs-peardb-vs-adodb/</link>
+	<description></description>
+	<lastBuildDate>Mon, 24 Oct 2011 15:20:36 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Vincent Pazeller		</title>
+		<link>/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1251</link>
+
+		<dc:creator><![CDATA[Vincent Pazeller]]></dc:creator>
+		<pubDate>Mon, 24 Oct 2011 15:20:36 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1251</guid>
+
+					<description><![CDATA[Hi!
+
+Nice to have a comparison of speeds. Howewer, It would be even nicer with small charts... the query you use deals with around 200 records. It would be VERY interesting to know how the different libraries behave when dealing with 1000, 10000, 100000. This would allow you to draw very simple charts and have an idea of how the different systems deal with complexity...
+
+Another interesting statistic would be: what is the amount of memory used by these systems?
+
+Thank you for your work anyways ;-)
+
+Regards]]></description>
+			<content:encoded><![CDATA[<p>Hi!</p>
+<p>Nice to have a comparison of speeds. Howewer, It would be even nicer with small charts&#8230; the query you use deals with around 200 records. It would be VERY interesting to know how the different libraries behave when dealing with 1000, 10000, 100000. This would allow you to draw very simple charts and have an idea of how the different systems deal with complexity&#8230;</p>
+<p>Another interesting statistic would be: what is the amount of memory used by these systems?</p>
+<p>Thank you for your work anyways 😉</p>
+<p>Regards</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: lotso		</title>
+		<link>/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1250</link>
+
+		<dc:creator><![CDATA[lotso]]></dc:creator>
+		<pubDate>Sun, 31 May 2009 13:38:18 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1250</guid>
+
+					<description><![CDATA[My own data shows
+
+pgsql TIME: 1.2292530536652
+adodb TIME: 3.7784049510956
+pear TIME: 6.3551380634308
+pdo TIME: 1.2426941394806
+
+from selecting from 1521 rows over 250times from the DB in my laptop.]]></description>
+			<content:encoded><![CDATA[<p>My own data shows</p>
+<p>pgsql TIME: 1.2292530536652<br />
+adodb TIME: 3.7784049510956<br />
+pear TIME: 6.3551380634308<br />
+pdo TIME: 1.2426941394806</p>
+<p>from selecting from 1521 rows over 250times from the DB in my laptop.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1249</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 02 Feb 2009 16:27:08 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1249</guid>
+
+					<description><![CDATA[It&#039;s been a long time since I put together that benchmark.  At this point I don&#039;t have any plans to add to it.]]></description>
+			<content:encoded><![CDATA[<p>It&#8217;s been a long time since I put together that benchmark.  At this point I don&#8217;t have any plans to add to it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Alexandre Morgaut		</title>
+		<link>/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1248</link>
+
+		<dc:creator><![CDATA[Alexandre Morgaut]]></dc:creator>
+		<pubDate>Fri, 23 Jan 2009 17:22:32 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1248</guid>
+
+					<description><![CDATA[Well the question now is: What about dbx and oDBC access performances with this bench ?
+
+Surely that ODBC will be one of the slowest but I really don&#039;t know for dbx !!!
+I think that as it is based on vendors drivers it should be slower than using it directly, but will it be faster than ODBC, DB, &#038; MDB2 ???]]></description>
+			<content:encoded><![CDATA[<p>Well the question now is: What about dbx and oDBC access performances with this bench ?</p>
+<p>Surely that ODBC will be one of the slowest but I really don&#8217;t know for dbx !!!<br />
+I think that as it is based on vendors drivers it should be slower than using it directly, but will it be faster than ODBC, DB, &amp; MDB2 ???</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Max		</title>
+		<link>/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1247</link>
+
+		<dc:creator><![CDATA[Max]]></dc:creator>
+		<pubDate>Thu, 23 Oct 2008 13:07:24 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1247</guid>
+
+					<description><![CDATA[1. [dumped PDO driver]:   3.225413084 sec
+2. [dumped DB driver]:     6.618566036 sec
+3. [dumped MDB2 driver]: 4.775002956 sec
+4. [dumped mysql driver]: 3.155264854 sec
+
+ &#039;mysql&#039;,
+					&#039;hostspec&#039; =&#062; &#039;localhost&#039;,
+					&#039;database&#039; =&#062; &#039;mysql&#039;,
+					&#039;username&#039; =&#062; &#039;root&#039;,
+					&#039;password&#039; =&#062; &#039;pass&#039;
+				);
+
+	if ($type == &quot;DB&quot;)
+	{
+		require_once(&quot;DB.php&quot;);
+
+		$db = DB::connect($dsn);
+		if (PEAR::isError($db)) { die($db-&#062;getMessage()); }
+        $db-&#062;setFetchMode(DB_FETCHMODE_ASSOC);
+
+		for ($i=1; $iquery( $sql);
+
+			if (PEAR::isError($res)) {die($res-&#062;getMessage());}
+
+			echo &quot;&quot;;
+			while( $res-&#062;fetchInto( $row ) )
+			{
+				process_row($row);
+			}
+			echo &quot;&quot;;
+		}
+	}
+	elseif($type == &quot;MDB2&quot;)
+	{
+		require_once(&quot;MDB2.php&quot;);
+
+		$mdb2 =&#038; MDB2::connect($dsn);
+		if (PEAR::isError($mdb2)) { die($mdb2-&#062;getMessage()); }
+
+		for ($i=1; $iquery( $sql);
+
+			if (PEAR::isError($res)) {die($res-&#062;getMessage());}
+
+			echo &quot;&quot;;
+			while ($row = $res-&#062;fetchRow(MDB2_FETCHMODE_ASSOC))
+			{
+				process_row($row);
+			}
+        	echo &quot;&quot;;
+		}
+	}
+	elseif ($type == &quot;PDO&quot;)
+	{
+		$pdo = new PDO(&quot;mysql:dbname=&quot;.$dsn[&#039;database&#039;], $dsn[&#039;username&#039;], $dsn[&#039;password&#039;]); //PDO::FETCH_ASSOC
+
+		for ($i=1; $i&#060;=$num; $i++)
+		{
+			echo &quot;&quot;;
+			foreach ($pdo-&#062;query($sql) as $row)
+			{
+				process_row($row);
+			}
+			echo &quot;&quot;;
+		}
+	}
+	elseif ($type == &quot;mysql&quot;)
+	{
+		mysql_connect($dsn[&#039;hostspec&#039;], $dsn[&#039;username&#039;], $dsn[&#039;password&#039;]);
+		mysql_select_db($dsn[&#039;database&#039;]);
+
+		for ($i=1; $i&#060;=$num; $i++)
+		{
+			echo &quot;&quot;;
+			if ($res = mysql_query($sql))
+			{
+				while($row = mysql_fetch_assoc($res))
+				{
+					process_row($row);
+				}
+			}
+			echo &quot;&quot;;
+		}
+    }
+}
+
+function process_row($row)
+{
+	ob_start();
+	echo sizeof($row);
+	//print_r();
+	ob_end_clean();
+}
+
+$types = array(&quot;PDO&quot;, &quot;DB&quot;, &quot;MDB2&quot;, &quot;mysql&quot;);
+$sql = &#039;SELECT * FROM user&#039;;
+
+require($_SERVER[&#039;DOCUMENT_ROOT&#039;].&quot;/inc/class/class_timer.php&quot;);
+$timer = Timer::getInstance();
+$timer-&#062;saveTime(&#039;start&#039;);
+foreach ($types as $type)
+{
+	dump_users($type, $sql, 500);
+	$timer-&#062;saveTime(&#039;dumped &#039;.$type.&#039; driver&#039;);
+}
+
+echo $timer-&#062;getReport(1);
+
+?&#062;]]></description>
+			<content:encoded><![CDATA[<p>1. [dumped PDO driver]:   3.225413084 sec<br />
+2. [dumped DB driver]:     6.618566036 sec<br />
+3. [dumped MDB2 driver]: 4.775002956 sec<br />
+4. [dumped mysql driver]: 3.155264854 sec</p>
+<p> &#8216;mysql&#8217;,<br />
+					&#8216;hostspec&#8217; =&gt; &#8216;localhost&#8217;,<br />
+					&#8216;database&#8217; =&gt; &#8216;mysql&#8217;,<br />
+					&#8216;username&#8217; =&gt; &#8216;root&#8217;,<br />
+					&#8216;password&#8217; =&gt; &#8216;pass&#8217;<br />
+				);</p>
+<p>	if ($type == &#8220;DB&#8221;)<br />
+	{<br />
+		require_once(&#8220;DB.php&#8221;);</p>
+<p>		$db = DB::connect($dsn);<br />
+		if (PEAR::isError($db)) { die($db-&gt;getMessage()); }<br />
+        $db-&gt;setFetchMode(DB_FETCHMODE_ASSOC);</p>
+<p>		for ($i=1; $iquery( $sql);</p>
+<p>			if (PEAR::isError($res)) {die($res-&gt;getMessage());}</p>
+<p>			echo &#8220;&#8221;;<br />
+			while( $res-&gt;fetchInto( $row ) )<br />
+			{<br />
+				process_row($row);<br />
+			}<br />
+			echo &#8220;&#8221;;<br />
+		}<br />
+	}<br />
+	elseif($type == &#8220;MDB2&#8221;)<br />
+	{<br />
+		require_once(&#8220;MDB2.php&#8221;);</p>
+<p>		$mdb2 =&amp; MDB2::connect($dsn);<br />
+		if (PEAR::isError($mdb2)) { die($mdb2-&gt;getMessage()); }</p>
+<p>		for ($i=1; $iquery( $sql);</p>
+<p>			if (PEAR::isError($res)) {die($res-&gt;getMessage());}</p>
+<p>			echo &#8220;&#8221;;<br />
+			while ($row = $res-&gt;fetchRow(MDB2_FETCHMODE_ASSOC))<br />
+			{<br />
+				process_row($row);<br />
+			}<br />
+        	echo &#8220;&#8221;;<br />
+		}<br />
+	}<br />
+	elseif ($type == &#8220;PDO&#8221;)<br />
+	{<br />
+		$pdo = new PDO(&#8220;mysql:dbname=&#8221;.$dsn[&#8216;database&#8217;], $dsn[&#8216;username&#8217;], $dsn[&#8216;password&#8217;]); //PDO::FETCH_ASSOC</p>
+<p>		for ($i=1; $i&lt;=$num; $i++)<br />
+		{<br />
+			echo &#8220;&#8221;;<br />
+			foreach ($pdo-&gt;query($sql) as $row)<br />
+			{<br />
+				process_row($row);<br />
+			}<br />
+			echo &#8220;&#8221;;<br />
+		}<br />
+	}<br />
+	elseif ($type == &#8220;mysql&#8221;)<br />
+	{<br />
+		mysql_connect($dsn[&#8216;hostspec&#8217;], $dsn[&#8216;username&#8217;], $dsn[&#8216;password&#8217;]);<br />
+		mysql_select_db($dsn[&#8216;database&#8217;]);</p>
+<p>		for ($i=1; $i&lt;=$num; $i++)<br />
+		{<br />
+			echo &#8220;&#8221;;<br />
+			if ($res = mysql_query($sql))<br />
+			{<br />
+				while($row = mysql_fetch_assoc($res))<br />
+				{<br />
+					process_row($row);<br />
+				}<br />
+			}<br />
+			echo &#8220;&#8221;;<br />
+		}<br />
+    }<br />
+}</p>
+<p>function process_row($row)<br />
+{<br />
+	ob_start();<br />
+	echo sizeof($row);<br />
+	//print_r();<br />
+	ob_end_clean();<br />
+}</p>
+<p>$types = array(&#8220;PDO&#8221;, &#8220;DB&#8221;, &#8220;MDB2&#8221;, &#8220;mysql&#8221;);<br />
+$sql = &#8216;SELECT * FROM user&#8217;;</p>
+<p>require($_SERVER[&#8216;DOCUMENT_ROOT&#8217;].&#8221;/inc/class/class_timer.php&#8221;);<br />
+$timer = Timer::getInstance();<br />
+$timer-&gt;saveTime(&#8216;start&#8217;);<br />
+foreach ($types as $type)<br />
+{<br />
+	dump_users($type, $sql, 500);<br />
+	$timer-&gt;saveTime(&#8216;dumped &#8216;.$type.&#8217; driver&#8217;);<br />
+}</p>
+<p>echo $timer-&gt;getReport(1);</p>
+<p>?&gt;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: DH		</title>
+		<link>/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1246</link>
+
+		<dc:creator><![CDATA[DH]]></dc:creator>
+		<pubDate>Wed, 23 Jul 2008 19:41:56 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1246</guid>
+
+					<description><![CDATA[Found this on google, and I wanted to update the stats a bit:
+
+PDO, 2500 iterations: 2.94587302208
+pg_query, 2500 iterations: 2.72805809975
+
+So they&#039;ve improved PDO in the last year or two.
+
+It&#039;s ~8% slower than direct pg_* functions, at least for relatively simple selects, as opposed to the ~16% when this post was originally written.]]></description>
+			<content:encoded><![CDATA[<p>Found this on google, and I wanted to update the stats a bit:</p>
+<p>PDO, 2500 iterations: 2.94587302208<br />
+pg_query, 2500 iterations: 2.72805809975</p>
+<p>So they&#8217;ve improved PDO in the last year or two.</p>
+<p>It&#8217;s ~8% slower than direct pg_* functions, at least for relatively simple selects, as opposed to the ~16% when this post was originally written.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Tony Landis		</title>
+		<link>/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1245</link>
+
+		<dc:creator><![CDATA[Tony Landis]]></dc:creator>
+		<pubDate>Thu, 05 Jun 2008 19:18:07 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1245</guid>
+
+					<description><![CDATA[Joseph,
+
+I left out ADOdb with the extension because, as I stated, my tests were to determine if there is it was an advantage or a disadvantage to add a large distribution such as the ADOdb library. Also, it is my feeling that PDO is widely adopted (and will become even more so) by web hosts than the ADOdb extension.
+
+As to why I didn&#039;t benchmark the mysql/mysqli functions - I was benchmarking database abstraction libraries. Of course they should perform faster than any abstraction library but that is beside the point if abstraction is required, right?
+
+Are you suggesting that using any of these libraries are less suitable for use in a scalable application?]]></description>
+			<content:encoded><![CDATA[<p>Joseph,</p>
+<p>I left out ADOdb with the extension because, as I stated, my tests were to determine if there is it was an advantage or a disadvantage to add a large distribution such as the ADOdb library. Also, it is my feeling that PDO is widely adopted (and will become even more so) by web hosts than the ADOdb extension.</p>
+<p>As to why I didn&#8217;t benchmark the mysql/mysqli functions &#8211; I was benchmarking database abstraction libraries. Of course they should perform faster than any abstraction library but that is beside the point if abstraction is required, right?</p>
+<p>Are you suggesting that using any of these libraries are less suitable for use in a scalable application?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1244</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 04 Jun 2008 20:46:35 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1244</guid>
+
+					<description><![CDATA[@Tony Landis (21) -
+
+If you suspect that they would be nearly a tie, why leave it out?  And if you are worried about performance, why even consider a host where you can&#039;t use something like APC or the ADOdb extension? Usually this means a dedicated server, something where you have a lot more control.
+
+You tests showed ADOdb with APC improving by more than 700%, on the low end.  A good chunk of that is because of APC, since it doesn&#039;t have to re-compile the PHP scripts every time.  Which goes back to my point, using something APC offsets library size in a big way.  Not entirely, but much better than without it.
+
+It seems obvious on the surface that ADOdb is probably not going to be as fast as PDO, I don&#039;t think anyone will find that surprising.
+
+If you were looking to demonstrate performance issues, why didn&#039;t you include benchmarks for the mysql/mysqli functions?  Wouldn&#039;t those be even faster than PDO?
+
+Just a note on &quot;performance&quot; in general.  It isn&#039;t a substitute for scalability.  Not that improved performance isn&#039;t an important part of being scalable, but no amount of increased performance will make up for scalability.]]></description>
+			<content:encoded><![CDATA[<p>@Tony Landis (21) &#8211;</p>
+<p>If you suspect that they would be nearly a tie, why leave it out?  And if you are worried about performance, why even consider a host where you can&#8217;t use something like APC or the ADOdb extension? Usually this means a dedicated server, something where you have a lot more control.</p>
+<p>You tests showed ADOdb with APC improving by more than 700%, on the low end.  A good chunk of that is because of APC, since it doesn&#8217;t have to re-compile the PHP scripts every time.  Which goes back to my point, using something APC offsets library size in a big way.  Not entirely, but much better than without it.</p>
+<p>It seems obvious on the surface that ADOdb is probably not going to be as fast as PDO, I don&#8217;t think anyone will find that surprising.</p>
+<p>If you were looking to demonstrate performance issues, why didn&#8217;t you include benchmarks for the mysql/mysqli functions?  Wouldn&#8217;t those be even faster than PDO?</p>
+<p>Just a note on &#8220;performance&#8221; in general.  It isn&#8217;t a substitute for scalability.  Not that improved performance isn&#8217;t an important part of being scalable, but no amount of increased performance will make up for scalability.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Tony Landis		</title>
+		<link>/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1243</link>
+
+		<dc:creator><![CDATA[Tony Landis]]></dc:creator>
+		<pubDate>Wed, 04 Jun 2008 19:47:54 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1243</guid>
+
+					<description><![CDATA[Hi Joseph,
+
+I agree that the ADOdb extension would change things. I suspect that PDO and ADOdb performance would be nearly a tie.
+
+I do have to disagree that the overhead to import code is small - as my tests showed, even with APC enabled, ADODdb performed at a bit less than half the speed of ADOdb. And since many hosting environments offer neither APC or the ADOdb extension, ADOdb is going to use a great deal more resources in most cases... so it should be a concern where performance is an issue.
+
+Ultimately, my tests were to determine if there is it was an advantage or a disadvantage to add a large distribution such as the ADOdb library, and I understand that your tests were targeted differently.]]></description>
+			<content:encoded><![CDATA[<p>Hi Joseph,</p>
+<p>I agree that the ADOdb extension would change things. I suspect that PDO and ADOdb performance would be nearly a tie.</p>
+<p>I do have to disagree that the overhead to import code is small &#8211; as my tests showed, even with APC enabled, ADODdb performed at a bit less than half the speed of ADOdb. And since many hosting environments offer neither APC or the ADOdb extension, ADOdb is going to use a great deal more resources in most cases&#8230; so it should be a concern where performance is an issue.</p>
+<p>Ultimately, my tests were to determine if there is it was an advantage or a disadvantage to add a large distribution such as the ADOdb library, and I understand that your tests were targeted differently.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1242</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 04 Jun 2008 15:45:17 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1242</guid>
+
+					<description><![CDATA[@Tony Landis -
+
+True, it does not include the over head required to import the library code.  For those worried about performance that over head is likely to be very, very, very small since they&#039;ll be using some sort of cache like APC.
+
+You technique also includes many other factors that I wasn&#039;t interested in measuring, my only concern was the relative performance of talking do the database in different ways.
+
+I read through the results of your tests, I didn&#039;t see anything using the ADOdb extension, which speeds things up quite a bit.]]></description>
+			<content:encoded><![CDATA[<p>@Tony Landis &#8211;</p>
+<p>True, it does not include the over head required to import the library code.  For those worried about performance that over head is likely to be very, very, very small since they&#8217;ll be using some sort of cache like APC.</p>
+<p>You technique also includes many other factors that I wasn&#8217;t interested in measuring, my only concern was the relative performance of talking do the database in different ways.</p>
+<p>I read through the results of your tests, I didn&#8217;t see anything using the ADOdb extension, which speeds things up quite a bit.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

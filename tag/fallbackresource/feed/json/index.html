@@ -1,0 +1,36 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/fallbackresource/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/fallbackresource/",
+    "feed_url": "https://blog.josephscott.org/tag/fallbackresource/feed/json/",
+    "language": "en-US",
+    "title": "fallbackresource &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://josephscott.org/?p=4918",
+            "url": "https://blog.josephscott.org/2011/10/12/apache-fallbackresource-directive/",
+            "title": "Apache FallbackResource Directive",
+            "content_html": "<p>As of <a href=\"http://httpd.apache.org/\">Apache HTTPD</a> 2.2.16 there is a new <a href=\"http://httpd.apache.org/docs/current/mod/mod_dir.html#fallbackresource\">FallbackResource directive</a>:</p>\n<blockquote><p>\nIt is frequently desirable to have a single file or resource handle all requests to a particular directory, except those requests that correspond to an existing file or script. This is often referred to as a &#8216;front controller.&#8217;</p>\n<p>In earlier versions of httpd, this effect typically required mod_rewrite, and the use of the -f and -d tests for file and directory existence. This now requires only one line of configuration.</p>\n<p><code>FallbackResource /index.php</code></p>\n<p>Existing files, such as images, css files, and so on, will be served normally.\n</p></blockquote>\n<p>This is a really useful directive to have available, reminds me of the <a href=\"http://wiki.nginx.org/HttpCoreModule#try_files\">try_files feature in Nginx</a>.</p>\n",
+            "content_text": "As of Apache HTTPD 2.2.16 there is a new FallbackResource directive:\n\nIt is frequently desirable to have a single file or resource handle all requests to a particular directory, except those requests that correspond to an existing file or script. This is often referred to as a &#8216;front controller.&#8217;\nIn earlier versions of httpd, this effect typically required mod_rewrite, and the use of the -f and -d tests for file and directory existence. This now requires only one line of configuration.\nFallbackResource /index.php\nExisting files, such as images, css files, and so on, will be served normally.\n\nThis is a really useful directive to have available, reminds me of the try_files feature in Nginx.",
+            "date_published": "2011-10-12T09:29:40-06:00",
+            "date_modified": "2011-10-12T09:29:40-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "apache",
+                "fallbackresource",
+                "Posts"
+            ]
+        }
+    ]
+}

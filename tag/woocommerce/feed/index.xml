@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>woocommerce &#8211; Joseph Scott</title>
+	<atom:link href="/tag/woocommerce/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 20 May 2015 15:19:21 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Automattic + WooCommerce</title>
+		<link>/2015/05/20/automattic-woocommerce/</link>
+					<comments>/2015/05/20/automattic-woocommerce/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 20 May 2015 15:19:21 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[automattic]]></category>
+		<category><![CDATA[woocommerce]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12587</guid>
+
+					<description><![CDATA[Big news at work yesterday: Automattic purchased WooCommerce.]]></description>
+										<content:encoded><![CDATA[<p>Big news at work yesterday: <a href="http://ma.tt/2015/05/woomattic/">Automattic purchased WooCommerce</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/05/20/automattic-woocommerce/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

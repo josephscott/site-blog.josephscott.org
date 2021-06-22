@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ilya-grigorik &#8211; Joseph Scott</title>
+	<atom:link href="/tag/ilya-grigorik/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 29 Oct 2015 13:33:43 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Preconnect</title>
+		<link>/2015/10/29/preconnect/</link>
+					<comments>/2015/10/29/preconnect/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 29 Oct 2015 13:33:43 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[ilya-grigorik]]></category>
+		<category><![CDATA[preconnect]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13538</guid>
+
+					<description><![CDATA[Chrome 46, released a few weeks ago, includes support for the preconnect resource hint. Ilya Grigorik has a good write up on Eliminating Roundtrips with Preconnect: The preconnect HTML hint allows the application to tell the browser which sockets it will need ahead of initiating the actual requests; preconnect eliminates DNS, TCP, and TLS roundtrips [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://www.chromestatus.com/feature/5560623895150592">Chrome 46</a>, released a few weeks ago, includes support for the <a href="https://w3c.github.io/resource-hints/#dfn-preconnect">preconnect resource hint</a>.  Ilya Grigorik has a good write up on <a href="https://www.igvita.com/2015/08/17/eliminating-roundtrips-with-preconnect/">Eliminating Roundtrips with Preconnect</a>:</p>
+<blockquote><p>
+The preconnect HTML hint allows the application to tell the browser which sockets it will need ahead of initiating the actual requests; preconnect eliminates DNS, TCP, and TLS roundtrips from the request&#8217;s critical path.
+</p></blockquote>
+<p>Using it is easy:</p>
+<p>[sourcecode lang=&#8221;html&#8221;]<br />
+&lt;link rel=&quot;preconnect&quot; href=&quot;//example.com&quot;&gt;<br />
+&lt;link rel=&quot;preconnect&quot; href=&quot;//cdn.example.com&quot; crossorigin&gt;<br />
+[/sourcecode]</p>
+<p>Currently preconnect is only supported on <a href="http://caniuse.com/#search=Preconnect">Firefox and Chrome</a> ( it first appeared in Firefox 39, back in July ).  This is a potentially powerful feature, definitely worth experimenting with.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/29/preconnect/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>HTTP Archive and BigQuery</title>
+		<link>/2015/09/01/http-archive-and-bigquery/</link>
+					<comments>/2015/09/01/http-archive-and-bigquery/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 01 Sep 2015 14:37:43 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[google-bigquery]]></category>
+		<category><![CDATA[http-archive]]></category>
+		<category><![CDATA[ilya-grigorik]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11440</guid>
+
+					<description><![CDATA[The HTTP Archive is a great resource for watching trends on the web in general, and web performance specifically. What you might not know is that data from the HTTP Archive test runs ( twice a month ) are available via Google BigQuery. Ilya Grigorik walks through getting started in HTTP Archive + BigQuery = [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The <a href="http://httparchive.org/">HTTP Archive</a> is a great resource for watching trends on the web in general, and web performance specifically.  What you might not know is that data from the HTTP Archive test runs ( twice a month ) are available via <a href="https://bigquery.cloud.google.com/">Google BigQuery</a>.  Ilya Grigorik walks through getting started in <a href='https://www.igvita.com/2013/06/20/http-archive-bigquery-web-performance-answers/'>HTTP Archive + BigQuery = Web Performance Answers</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/09/01/http-archive-and-bigquery/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>HTTP/2 Optimizations</title>
+		<link>/2015/08/07/http2-optimizations/</link>
+					<comments>/2015/08/07/http2-optimizations/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 07 Aug 2015 14:01:17 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http2]]></category>
+		<category><![CDATA[ilya-grigorik]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12721</guid>
+
+					<description><![CDATA[Slides from Ilya Grigork on HTTP/2 is here, let&#8217;s optimize!]]></description>
+										<content:encoded><![CDATA[<p>Slides from <a href="https://www.igvita.com/">Ilya Grigork</a> on <a href="https://docs.google.com/presentation/d/1r7QXGYOLCh4fcUq0jDdDwKJWNqWK1o4xMtYpKZCJYjM/present?slide=id.p19">HTTP/2 is here, let&#8217;s optimize!</a></p>
+<p><iframe loading="lazy" src="https://docs.google.com/presentation/embed?id=1r7QXGYOLCh4fcUq0jDdDwKJWNqWK1o4xMtYpKZCJYjM&amp;start=false&amp;loop=false&amp; frameborder="0" width="600" height="467"></iframe></p>
+<p>Some of the traditional HTTP/1 optimization approaches now work against the features available in HTTP/2.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/08/07/http2-optimizations/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

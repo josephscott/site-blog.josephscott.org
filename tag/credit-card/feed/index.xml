@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>credit-card &#8211; Joseph Scott</title>
+	<atom:link href="/tag/credit-card/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 30 Dec 2013 18:35:11 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Stolen Credit Card Markets</title>
+		<link>/2013/12/30/stolen-credit-card-markets/</link>
+					<comments>/2013/12/30/stolen-credit-card-markets/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 30 Dec 2013 18:35:11 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[brian-krebs]]></category>
+		<category><![CDATA[credit-card]]></category>
+		<category><![CDATA[markets]]></category>
+		<category><![CDATA[target]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9667</guid>
+
+					<description><![CDATA[Great read on the some of the black market activity of stolen credit cards from Target from Brian Krebs: Like other card shops, this store allows customers to search for available cards using a number of qualifications, including BIN; dozens of card types (MasterCard, Visa, et. al.); expiration date; track type; country; and the name [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Great read on the some of <a href="http://krebsonsecurity.com/2013/12/cards-stolen-in-target-breach-flood-underground-markets/" title="What is stolen online gets sold online.">the black market activity of stolen credit cards from Target</a> from Brian Krebs:</p>
+<blockquote><p>
+Like other card shops, this store allows customers to search for available cards using a number of qualifications, including BIN; dozens of card types (MasterCard, Visa, et. al.); expiration date; track type; country; and the name of the financial institution that issued the card.
+</p></blockquote>
+<p>After reading the article the first question I had was do these stores re-sell the stolen card details.  I wasn&#8217;t the only one wondering that.  In the comments <a href="http://krebsonsecurity.com/2013/12/cards-stolen-in-target-breach-flood-underground-markets/comment-page-1/#comment-216463" title="Site comments for the win!">Brian Krebs addressed this question</a>:</p>
+<blockquote><p>
+This shop in particular is highly rated, and one the biggest no-nos you can commit in this business is selling the same card more than once. These guys are pros, and they have access to more dumps than they know what to do with. There is no reason for them to try to cheat people, as doing so would very quickly ruin their cred in the underground.</p>
+<p>As I state in the story, customers can check cards to see if they’re still active, and will get money back/refund if a card is already canceled. The surest way to have all of your customers complaining about all or most of their purchased cards coming back as canceled is to try and sell the same card to multiple buyers.
+</p></blockquote>
+<p>It seems that even in the black market you can&#8217;t always escape the demands of good customer service.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/12/30/stolen-credit-card-markets/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

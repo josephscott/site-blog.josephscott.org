@@ -1,0 +1,181 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/",
+    "feed_url": "https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: Detecting Client Side Time Zone Offset Via Javascript",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2994",
+            "url": "https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2994",
+            "content_html": "Also doesnt work when you sit in colombia with a UK machine stating UK time. It wont get the offset. Do a timezone server call and get the zone based on your location.",
+            "content_text": "Also doesnt work when you sit in colombia with a UK machine stating UK time. It wont get the offset. Do a timezone server call and get the zone based on your location.",
+            "date_published": "2012-12-29T12:06:35-07:00",
+            "authors": [
+                {
+                    "name": "uncleunvoid",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/0dab20f4684687c27139f4d2799ece4a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "uncleunvoid",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/0dab20f4684687c27139f4d2799ece4a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2993",
+            "url": "https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2993",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2992\">Jon Nylander</a>.\n\nThanks for the link.  In my particular case I was only after the numeric offset so the additional data wasn't needed.",
+            "content_text": "In reply to Jon Nylander.\n\nThanks for the link.  In my particular case I was only after the numeric offset so the additional data wasn't needed.",
+            "date_published": "2010-12-29T15:33:12-07:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2992",
+            "url": "https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2992",
+            "content_html": "Nice, but the drawback with only using the offset is that daylight savings is not taken into account. Another problem is that different timezones in the same UTC-offset often start daylight savings on different dates. For a more robust timezone you will have to do some checking of known dates. \n\nCheck out https://bitbucket.org/pellepim/jstimezonedetect which will give you a more accurate timezone as a result rather than just an offset. It is based on the code from onlineaspect.com that was linked above.",
+            "content_text": "Nice, but the drawback with only using the offset is that daylight savings is not taken into account. Another problem is that different timezones in the same UTC-offset often start daylight savings on different dates. For a more robust timezone you will have to do some checking of known dates. \n\nCheck out https://bitbucket.org/pellepim/jstimezonedetect which will give you a more accurate timezone as a result rather than just an offset. It is based on the code from onlineaspect.com that was linked above.",
+            "date_published": "2010-12-29T04:27:18-07:00",
+            "authors": [
+                {
+                    "name": "Jon Nylander",
+                    "url": "http://bagonca.com",
+                    "avatar": "https://secure.gravatar.com/avatar/e0a4888ba41a6678e59234cd2d58747e?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Jon Nylander",
+                "url": "http://bagonca.com",
+                "avatar": "https://secure.gravatar.com/avatar/e0a4888ba41a6678e59234cd2d58747e?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2991",
+            "url": "https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2991",
+            "content_html": "I used this Java code on the server to convert to a Joda DateTimeZone:\n\n    int hoursOffset = clientTimeZoneOffset / 60;\n    int minutesOffset = clientTimeZoneOffset % 60;\n    DateTimeZone clientTimeZone = DateTimeZone.forOffsetHoursMinutes(-hoursOffset, minutesOffset);\n\nAnd on the client side I have something like this:\n\n\n\n$('clientTimeZoneOffsetField').value = new Date.getTimeZoneOffset();\n",
+            "content_text": "I used this Java code on the server to convert to a Joda DateTimeZone:\n\n    int hoursOffset = clientTimeZoneOffset / 60;\n    int minutesOffset = clientTimeZoneOffset % 60;\n    DateTimeZone clientTimeZone = DateTimeZone.forOffsetHoursMinutes(-hoursOffset, minutesOffset);\n\nAnd on the client side I have something like this:\n\n\n\n$('clientTimeZoneOffsetField').value = new Date.getTimeZoneOffset();",
+            "date_published": "2010-11-11T18:11:17-07:00",
+            "authors": [
+                {
+                    "name": "Ricardo J. Parada",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/2c554e8cfdb9fa26b9fb20a433eaad1d?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Ricardo J. Parada",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/2c554e8cfdb9fa26b9fb20a433eaad1d?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2990",
+            "url": "https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2990",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2989\">Joel Nylund</a>.\n\nInteresting, I'll have to give that a read.\n\nAs for daylight savings, that is likely always going to be a pain.  JavaScript should know enough about the system it is running on to have the right offset.   This puts the work of keeping daylight savings in sync on the operating system, where it belongs.",
+            "content_text": "In reply to Joel Nylund.\n\nInteresting, I'll have to give that a read.\n\nAs for daylight savings, that is likely always going to be a pain.  JavaScript should know enough about the system it is running on to have the right offset.   This puts the work of keeping daylight savings in sync on the operating system, where it belongs.",
+            "date_published": "2010-05-13T12:28:00-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2989",
+            "url": "https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2989",
+            "content_html": "Hi, this is cool, but doesnt do daylight savings time, I found this after your script broke on spring forward:\nhttp://www.onlineaspect.com/2007/06/08/auto-detect-a-time-zone-with-javascript/\n\nthanks\nJoel",
+            "content_text": "Hi, this is cool, but doesnt do daylight savings time, I found this after your script broke on spring forward:\nhttp://www.onlineaspect.com/2007/06/08/auto-detect-a-time-zone-with-javascript/\n\nthanks\nJoel",
+            "date_published": "2010-05-13T08:09:53-06:00",
+            "authors": [
+                {
+                    "name": "Joel Nylund",
+                    "url": "http://jnylund.typepad.com",
+                    "avatar": "https://secure.gravatar.com/avatar/8b6e08343b303f21abcf1f6f83153412?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joel Nylund",
+                "url": "http://jnylund.typepad.com",
+                "avatar": "https://secure.gravatar.com/avatar/8b6e08343b303f21abcf1f6f83153412?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2988",
+            "url": "https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2988",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2987\">Chris Charabaruk</a>.\n\nNice catch.  I'll have to update my example code to add the negative.",
+            "content_text": "In reply to Chris Charabaruk.\n\nNice catch.  I'll have to update my example code to add the negative.",
+            "date_published": "2009-08-25T09:39:55-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2987",
+            "url": "https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2987",
+            "content_html": "A caveat: Date.getTimezoneOffset() returns positive numbers west of GMT and negative east of it. This means to get a proper offset, the result of that call needs to be made negative. After all, North American EDT is -0400, not +0400.",
+            "content_text": "A caveat: Date.getTimezoneOffset() returns positive numbers west of GMT and negative east of it. This means to get a proper offset, the result of that call needs to be made negative. After all, North American EDT is -0400, not +0400.",
+            "date_published": "2009-08-24T21:26:51-06:00",
+            "authors": [
+                {
+                    "name": "Chris Charabaruk",
+                    "url": "http://coldacid.net",
+                    "avatar": "https://secure.gravatar.com/avatar/c6d7e2689cfa7ed7aaf419fdc9cc8862?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Chris Charabaruk",
+                "url": "http://coldacid.net",
+                "avatar": "https://secure.gravatar.com/avatar/c6d7e2689cfa7ed7aaf419fdc9cc8862?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2986",
+            "url": "https://blog.josephscott.org/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comment-2986",
+            "content_html": "This works great! Thanks for the tip.",
+            "content_text": "This works great! Thanks for the tip.",
+            "date_published": "2009-08-10T10:26:02-06:00",
+            "authors": [
+                {
+                    "name": "Roland Smith",
+                    "url": "http://www.rnsmith.com/",
+                    "avatar": "https://secure.gravatar.com/avatar/81a33655dbf8dedfbb936b895f8dc512?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Roland Smith",
+                "url": "http://www.rnsmith.com/",
+                "avatar": "https://secure.gravatar.com/avatar/81a33655dbf8dedfbb936b895f8dc512?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

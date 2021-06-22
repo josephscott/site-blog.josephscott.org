@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: PHP Helpers: curl_http_request	</title>
+	<atom:link href="/2010/03/17/php-helpers-curl_http_request/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/03/17/php-helpers-curl_http_request/</link>
+	<description></description>
+	<lastBuildDate>Wed, 17 Mar 2010 22:56:31 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/03/17/php-helpers-curl_http_request/#comment-3344</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 17 Mar 2010 22:56:31 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2029#comment-3344</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/03/17/php-helpers-curl_http_request/#comment-3343&quot;&gt;Viper007Bond&lt;/a&gt;.
+
+haha!
+
+Agreed, it&#039;s easy to take for granted the number of things that WordPress provides.  But that&#039;s why these posts were called &#039;PHP Helpers&#039; and not &#039;WordPress Helpers&#039; :-)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/03/17/php-helpers-curl_http_request/#comment-3343">Viper007Bond</a>.</p>
+<p>haha!</p>
+<p>Agreed, it&#8217;s easy to take for granted the number of things that WordPress provides.  But that&#8217;s why these posts were called &#8216;PHP Helpers&#8217; and not &#8216;WordPress Helpers&#8217; 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Viper007Bond		</title>
+		<link>/2010/03/17/php-helpers-curl_http_request/#comment-3343</link>
+
+		<dc:creator><![CDATA[Viper007Bond]]></dc:creator>
+		<pubDate>Wed, 17 Mar 2010 22:54:49 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2029#comment-3343</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/03/17/php-helpers-curl_http_request/#comment-3342&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+Lies!
+
+I actually personally often end up doing stuff like that for non-WordPress scripts of mine. I&#039;ve been spoiled by all of WordPress&#039; helper functions, heh. :)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/03/17/php-helpers-curl_http_request/#comment-3342">Joseph Scott</a>.</p>
+<p>Lies!</p>
+<p>I actually personally often end up doing stuff like that for non-WordPress scripts of mine. I&#8217;ve been spoiled by all of WordPress&#8217; helper functions, heh. 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/03/17/php-helpers-curl_http_request/#comment-3342</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 17 Mar 2010 22:50:05 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2029#comment-3342</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/03/17/php-helpers-curl_http_request/#comment-3341&quot;&gt;Viper007Bond&lt;/a&gt;.
+
+The whole world is not WordPress :-)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/03/17/php-helpers-curl_http_request/#comment-3341">Viper007Bond</a>.</p>
+<p>The whole world is not WordPress 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Viper007Bond		</title>
+		<link>/2010/03/17/php-helpers-curl_http_request/#comment-3341</link>
+
+		<dc:creator><![CDATA[Viper007Bond]]></dc:creator>
+		<pubDate>Wed, 17 Mar 2010 22:46:51 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2029#comment-3341</guid>
+
+					<description><![CDATA[[php]require( &#039;wp-load.php&#039; );
+
+function curl_http_request( $url, $req = &#039;GET&#039;, $arg = array( ) ) {
+	$arg[&#039;method&#039;] = $req;
+	return wp_remote_request( $url, $arg );
+}[/php]
+
+/whistle]]></description>
+			<content:encoded><![CDATA[<p>[php]require( &#8216;wp-load.php&#8217; );</p>
+<p>function curl_http_request( $url, $req = &#8216;GET&#8217;, $arg = array( ) ) {<br />
+	$arg[&#8216;method&#8217;] = $req;<br />
+	return wp_remote_request( $url, $arg );<br />
+}[/php]</p>
+<p>/whistle</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>namespace &#8211; Joseph Scott</title>
+	<atom:link href="/tag/namespace/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 28 Aug 2014 21:27:49 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>PHP array_map Callback Expects The Full Namespace</title>
+		<link>/2014/08/28/php-array_map-callback-expects-the-full-namespace/</link>
+					<comments>/2014/08/28/php-array_map-callback-expects-the-full-namespace/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 28 Aug 2014 21:27:49 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[array-map]]></category>
+		<category><![CDATA[callback]]></category>
+		<category><![CDATA[namespace]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10941</guid>
+
+					<description><![CDATA[The array_map function in PHP has a quirk ( I know, shocker ) that I&#8217;ve managed to forget several times. Hopefully writing it here will cement it in my memory. Using array_map isn&#8217;t hard, here is a very contrived example: [sourcecode lang=&#8221;php&#8221;] namespace EXAMPLE; function lowercase_string( $name ) { return strtolower( $name ); } function [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The <a href="http://php.net/manual/en/function.array-map.php">array_map</a> function in PHP has a quirk ( I know, shocker ) that I&#8217;ve managed to forget several times.  Hopefully writing it here will cement it in my memory.</p>
+<p>Using <code>array_map</code> isn&#8217;t hard, here is a very contrived example:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+namespace EXAMPLE;</p>
+<p>function lowercase_string( $name ) {<br />
+    return strtolower( $name );<br />
+}</p>
+<p>function lowercase_array( $names ) {<br />
+    return array_map( &#8216;lowercase_string&#8217;, $names );<br />
+}</p>
+<p>print_r( lowercase_array( [<br />
+    &#8216;Bill&#8217;,<br />
+    &#8216;Max&#8217;,<br />
+    &#8216;Julie&#8217;,<br />
+    &#8216;Norm&#8217;<br />
+] ) );<br />
+echo &quot;n&quot;;<br />
+[/sourcecode]</p>
+<p>You feed an array to <code>lowercase_array()</code> and it will return lower cased versions of all the array entries.  Do you know what happens when you run this code?</p>
+<p>[sourcecode lang=&#8221;plain&#8221;]<br />
+PHP Warning:  array_map() expects parameter 1<br />
+to be a valid callback, function &#8216;lowercase_string&#8217;<br />
+not found or invalid function name in<br />
+/home/josephscott/tmp/array-map.php on line 9<br />
+[/sourcecode]</p>
+<p>( I broke this up into multiple lines to make it easier to read )</p>
+<p>How can <code>lowercase_string</code> not be a valid callback? It is even defined right there in the same file.  The answer to this question is in the very first line of my example.</p>
+<p>When using <code>array_map()</code> inside of a <a href="http://php.net/manual/en/language.namespaces.php">namespace</a> you must provide the full namespace reference to the callback.  In this case that means replacing <code>lowercase_string</code> with <code>EXAMPLElowercase_string</code>:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+namespace EXAMPLE;</p>
+<p>function lowercase_string( $name ) {<br />
+    return strtolower( $name );<br />
+}</p>
+<p>function lowercase_array( $names ) {<br />
+    return array_map( &#8216;EXAMPLElowercase_string&#8217;, $names );<br />
+}</p>
+<p>print_r( lowercase_array( [<br />
+    &#8216;Bill&#8217;,<br />
+    &#8216;Max&#8217;,<br />
+    &#8216;Julie&#8217;,<br />
+    &#8216;Norm&#8217;<br />
+] ) );<br />
+echo &quot;n&quot;;<br />
+[/sourcecode]</p>
+<p>Running this corrected version gives us what we&#8217;d expect:</p>
+<p>[sourcecode lang=&#8221;plain&#8221;]<br />
+Array<br />
+(<br />
+    [0] =&gt; bill<br />
+    [1] =&gt; max<br />
+    [2] =&gt; julie<br />
+    [3] =&gt; norm<br />
+)<br />
+[/sourcecode]</p>
+<p>I think the reason that I keep forgetting this is because it feels more obvious that <code>array_map()</code> should know it is already in a namespace and try to dereference the callback based on that namespace first, the same way a regular function call would.  This feels like a violation of the <a href="http://en.wikipedia.org/wiki/Principle_of_least_astonishment">principle of least astonishment (POLA)</a>.</p>
+<p>While the <a href="http://php.net/manual/en/function.array-map.php">array_map()</a> documentation makes no mention of the namespace requirement for the callback, it does appear to be the intended behavior.  A <a href="https://bugs.php.net/bug.php?id=54509">PHP bug</a> was filed describing this exact issue.  It was closed as &#8220;this is not a bug&#8221;.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/08/28/php-array_map-callback-expects-the-full-namespace/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

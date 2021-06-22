@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>l-root &#8211; Joseph Scott</title>
+	<atom:link href="/tag/l-root/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 09 Mar 2015 14:55:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>DNS: L-Root</title>
+		<link>/2015/03/09/dns-l-root/</link>
+					<comments>/2015/03/09/dns-l-root/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 09 Mar 2015 14:55:38 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[dns]]></category>
+		<category><![CDATA[icann]]></category>
+		<category><![CDATA[l-root]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11642</guid>
+
+					<description><![CDATA[L-Root ( one of the 13 root DNS servers ) locations around the globe: One list puts the count at 150. How did ICANN end up with 150 anycast sites for L-Root? Turns out you can host an L-Root instance in your own network ( called an L-Single ).]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.dns.icann.org/">L-Root</a> ( one of the <a href="https://www.iana.org/domains/root/servers">13 root DNS servers</a> ) locations around the globe:</p>
+<p><a href="http://www.dns.icann.org/index.html%3Fp=689.html"><img loading="lazy" src="/wp-content/uploads/2015/03/l-root-world-1.png" alt="l-root-world" width="471" height="251" class="aligncenter size-full wp-image-11746" srcset="/wp-content/uploads/2015/03/l-root-world-1.png 471w, /wp-content/uploads/2015/03/l-root-world-1-300x160.png 300w" sizes="(max-width: 471px) 100vw, 471px" /></a></p>
+<p>One <a href="https://blog.thousandeyes.com/comparing-dns-root-server-performance/">list</a> puts the count at 150.</p>
+<p>How did ICANN end up with 150 anycast sites for L-Root?  Turns out you can <a href="http://www.dns.icann.org/index.html%3Fp=2205.html">host an L-Root instance in your own network</a> ( called an L-Single ).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/03/09/dns-l-root/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

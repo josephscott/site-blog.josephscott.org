@@ -1,0 +1,67 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/sqlinjection/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/sqlinjection/",
+    "feed_url": "https://blog.josephscott.org/tag/sqlinjection/feed/json/",
+    "language": "en-US",
+    "title": "sqlinjection &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=14469",
+            "url": "https://blog.josephscott.org/2015/12/22/sqlmap/",
+            "title": "sqlmap",
+            "content_html": "<p><a href=\"http://sqlmap.org/\">sqlmap</a>:</p>\n<blockquote><p>\npenetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers.\n</p></blockquote>\n<p>Nice feature list, I need to take this out for a spin.</p>\n",
+            "content_text": "sqlmap:\n\npenetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers.\n\nNice feature list, I need to take this out for a spin.",
+            "date_published": "2015-12-22T09:59:56-07:00",
+            "date_modified": "2015-12-22T09:59:56-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "sqlinjection",
+                "sqlmap",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/?p=502",
+            "url": "https://blog.josephscott.org/2005/10/11/guide-to-php-security/",
+            "title": "Guide to PHP Security",
+            "content_html": "<p>The chapter on <a href=\"http://dev.mysql.com/tech-resources/articles/guide-to-php-security.html\">SQL Injection</a> from the book <a href=\"http://www.amazon.com/gp/product/0973862106/002-2635821-4429631\">Guide to PHP Security</a> by <a href=\"http://ilia.ws/\">Ilia Alshanetsky</a> is available in <a href=\"http://dev.mysql.com/tech-resources/articles/guide-to-php-security-ch3.pdf\">PDF format</a>.  This can be a rather fun topic so I downloaded a copy of the PDF and started reading.  I&#8217;d read less two pages before I was ready to toss this chapter out the window.</p>\n<p>The first example showed a very simple inject that terminated the original query with a ; and appended another query that deleted some data.  The example used <a href=\"http://www.mysql.com/\">MySQL</a> functions and the author noted the following after explaining the injection:</p>\n<blockquote><p>\nFortunately, if you use MySQL, the mysql_query() function does not permit query stacking, or executing multiple queries in a single function call.  If you try to stack queries, the call fails.</p>\n<p>However, other PHP database extensions, such as <strong>SQLite and PostgreSQL, happily perform stacked queries, executing all of the queries provided in one string and creating a serious security problem</strong>.\n</p></blockquote>\n<p>The emphasis is mine.  I couldn&#8217;t believe that the author was basically claiming that MySQL is more secure than <a href=\"http://www.sqlite.org/\">SQLite</a> and <a href=\"http://www.postgresql.org/\">PostgreSQL</a> because they allowed you to run multiple SQL statements in one string.  Then something else came to mind, didn&#8217;t MySQL add this feature not too long ago?  So I went hunting around and came up with the <a href=\"http://dev.mysql.com/doc/mysql/en/c-api-multiple-queries.html\">C API Handling of Multiple Query Execution</a> in MySQL, which was introduced in version 4.1.  Although still correct, the <a href=\"http://us2.php.net/mysql_query\">mysql_query()</a> function in <a href=\"http://www.php.net/\">PHP</a> doesn&#8217;t allow for multiple statements, the underlying C libraries do.  I&#8217;d expect that at somepoint in the future PHP will catch up and support that feature for MySQL 4.1 and above.</p>\n<p>But back to my first point, being able to run multiple queries in a single string is not a security threat.  Not proplerly filtering data before using in an SQL statement is.  If you allow unfiltered data to be injected into your SQL statement then you&#8217;ve got problems, even if you database doesn&#8217;t support multiple statements in a single string.</p>\n<p>I hope that this isn&#8217;t typical of the rest of the book.</p>\n",
+            "content_text": "The chapter on SQL Injection from the book Guide to PHP Security by Ilia Alshanetsky is available in PDF format.  This can be a rather fun topic so I downloaded a copy of the PDF and started reading.  I&#8217;d read less two pages before I was ready to toss this chapter out the window.\nThe first example showed a very simple inject that terminated the original query with a ; and appended another query that deleted some data.  The example used MySQL functions and the author noted the following after explaining the injection:\n\nFortunately, if you use MySQL, the mysql_query() function does not permit query stacking, or executing multiple queries in a single function call.  If you try to stack queries, the call fails.\nHowever, other PHP database extensions, such as SQLite and PostgreSQL, happily perform stacked queries, executing all of the queries provided in one string and creating a serious security problem.\n\nThe emphasis is mine.  I couldn&#8217;t believe that the author was basically claiming that MySQL is more secure than SQLite and PostgreSQL because they allowed you to run multiple SQL statements in one string.  Then something else came to mind, didn&#8217;t MySQL add this feature not too long ago?  So I went hunting around and came up with the C API Handling of Multiple Query Execution in MySQL, which was introduced in version 4.1.  Although still correct, the mysql_query() function in PHP doesn&#8217;t allow for multiple statements, the underlying C libraries do.  I&#8217;d expect that at somepoint in the future PHP will catch up and support that feature for MySQL 4.1 and above.\nBut back to my first point, being able to run multiple queries in a single string is not a security threat.  Not proplerly filtering data before using in an SQL statement is.  If you allow unfiltered data to be injected into your SQL statement then you&#8217;ve got problems, even if you database doesn&#8217;t support multiple statements in a single string.\nI hope that this isn&#8217;t typical of the rest of the book.",
+            "date_published": "2005-10-11T11:27:08-06:00",
+            "date_modified": "2005-10-11T11:27:08-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "MySQL",
+                "PHP",
+                "PostgreSQL",
+                "security",
+                "sql",
+                "sqlinjection",
+                "sqlite",
+                "josephscott"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Nginx 1.7.8 &#8211; Fixes 200ms Delay With SPDY	</title>
+	<atom:link href="/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/feed/" rel="self" type="application/rss+xml" />
+	<link>/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/</link>
+	<description></description>
+	<lastBuildDate>Wed, 11 Mar 2015 06:19:58 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Kevin Sweet		</title>
+		<link>/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/#comment-4285</link>
+
+		<dc:creator><![CDATA[Kevin Sweet]]></dc:creator>
+		<pubDate>Wed, 11 Mar 2015 06:19:58 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11433#comment-4285</guid>
+
+					<description><![CDATA[Wow, thanks so much for writing this article! I finally got to put SPDY on a server, and noticed that the TTFB was actually pretty bad. After Googling for awhile I stumbled onto this. I was extremely skeptical that this was actually my problem. But I was using Nginx 1.6 so I figured I might as well upgrade to 1.7. As soon as I did, webpagetest started giving me As for TTFB. Crazy.
+
+Thanks again!]]></description>
+			<content:encoded><![CDATA[<p>Wow, thanks so much for writing this article! I finally got to put SPDY on a server, and noticed that the TTFB was actually pretty bad. After Googling for awhile I stumbled onto this. I was extremely skeptical that this was actually my problem. But I was using Nginx 1.6 so I figured I might as well upgrade to 1.7. As soon as I did, webpagetest started giving me As for TTFB. Crazy.</p>
+<p>Thanks again!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rik Ske		</title>
+		<link>/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/#comment-4284</link>
+
+		<dc:creator><![CDATA[Rik Ske]]></dc:creator>
+		<pubDate>Wed, 18 Feb 2015 17:05:27 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11433#comment-4284</guid>
+
+					<description><![CDATA[I forget to thank you for the article. So thank you for that.
+Btw The Nginx team is going to evaluate the case, see:
+
+&quot;We will discuss merging this code to 1.6 for the next release but we
+don&#039;t have a schedule for 1.6.3 yet.&quot; - Maxim Konovalov]]></description>
+			<content:encoded><![CDATA[<p>I forget to thank you for the article. So thank you for that.<br />
+Btw The Nginx team is going to evaluate the case, see:</p>
+<p>&#8220;We will discuss merging this code to 1.6 for the next release but we<br />
+don&#8217;t have a schedule for 1.6.3 yet.&#8221; &#8211; Maxim Konovalov</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/#comment-4283</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 18 Feb 2015 16:58:54 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11433#comment-4283</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/#comment-4282&quot;&gt;Rik Ske&lt;/a&gt;.
+
+I don&#039;t know what the Nginx back porting policy is ( or if they have one ).  I agree that it would definitely be helpful for those still using the 1.6.x versions.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/#comment-4282">Rik Ske</a>.</p>
+<p>I don&#8217;t know what the Nginx back porting policy is ( or if they have one ).  I agree that it would definitely be helpful for those still using the 1.6.x versions.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rik Ske		</title>
+		<link>/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/#comment-4282</link>
+
+		<dc:creator><![CDATA[Rik Ske]]></dc:creator>
+		<pubDate>Wed, 18 Feb 2015 16:54:44 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11433#comment-4282</guid>
+
+					<description><![CDATA[Thanks Joseph for your fast reply,
+
+I have asked the Nginx developers to make a patch for Nginx 1.6. 
+This is a major loss of function and a critical bug, if you ask me, 
+because the existing 1.6. tcp_nodelay won&#039;t work as it should be.]]></description>
+			<content:encoded><![CDATA[<p>Thanks Joseph for your fast reply,</p>
+<p>I have asked the Nginx developers to make a patch for Nginx 1.6.<br />
+This is a major loss of function and a critical bug, if you ask me,<br />
+because the existing 1.6. tcp_nodelay won&#8217;t work as it should be.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/#comment-4281</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 18 Feb 2015 15:56:43 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11433#comment-4281</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/#comment-4280&quot;&gt;Rik Ske&lt;/a&gt;.
+
+Correct, you&#039;ll need 1.7.8 or newer in order to fix that.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/#comment-4280">Rik Ske</a>.</p>
+<p>Correct, you&#8217;ll need 1.7.8 or newer in order to fix that.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rik Ske		</title>
+		<link>/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/#comment-4280</link>
+
+		<dc:creator><![CDATA[Rik Ske]]></dc:creator>
+		<pubDate>Wed, 18 Feb 2015 15:08:55 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11433#comment-4280</guid>
+
+					<description><![CDATA[I&#039;m having the same problem as described in this article.
+&quot;It applies to all versions up to 1.7.8&#039;&#039; unfortunately.
+Reference: http://mailman.nginx.org/pipermail/nginx/2015-February/046651.html]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;m having the same problem as described in this article.<br />
+&#8220;It applies to all versions up to 1.7.8&#8221; unfortunately.<br />
+Reference: <a href="http://mailman.nginx.org/pipermail/nginx/2015-February/046651.html" rel="nofollow ugc">http://mailman.nginx.org/pipermail/nginx/2015-February/046651.html</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Performance Calendar &#187; Blast from the Past: Impact of TCP Components on Time to First Byte		</title>
+		<link>/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/#comment-4279</link>
+
+		<dc:creator><![CDATA[Performance Calendar &#187; Blast from the Past: Impact of TCP Components on Time to First Byte]]></dc:creator>
+		<pubDate>Tue, 30 Dec 2014 03:51:49 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11433#comment-4279</guid>
+
+					<description><![CDATA[[&#8230;] Now that we have seen why the components of TCP lets see how their interaction causes a deadlock.Instead of a contrived example to demonstrate this classic problem , lets take a look at this problem in the wild. The thread has a lot of details from WPT waterfalls to tcpdumps. The TLDR can be read here if you are impatient [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Now that we have seen why the components of TCP lets see how their interaction causes a deadlock.Instead of a contrived example to demonstrate this classic problem , lets take a look at this problem in the wild. The thread has a lot of details from WPT waterfalls to tcpdumps. The TLDR can be read here if you are impatient [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/#comment-4278</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 04 Dec 2014 14:59:04 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11433#comment-4278</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/#comment-4277&quot;&gt;Rodrigo Montoro&lt;/a&gt;.
+
+I don&#039;t think that I ever tested Nginx 1.6.2.  I was focused on recent versions.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/#comment-4277">Rodrigo Montoro</a>.</p>
+<p>I don&#8217;t think that I ever tested Nginx 1.6.2.  I was focused on recent versions.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rodrigo Montoro		</title>
+		<link>/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/#comment-4277</link>
+
+		<dc:creator><![CDATA[Rodrigo Montoro]]></dc:creator>
+		<pubDate>Thu, 04 Dec 2014 13:53:44 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11433#comment-4277</guid>
+
+					<description><![CDATA[Did you test 1.6.2 version if  it has same delay problem ?
+
+Thanks for sharing this =)]]></description>
+			<content:encoded><![CDATA[<p>Did you test 1.6.2 version if  it has same delay problem ?</p>
+<p>Thanks for sharing this =)</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

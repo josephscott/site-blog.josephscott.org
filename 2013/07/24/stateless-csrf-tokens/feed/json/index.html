@@ -1,0 +1,200 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/",
+    "feed_url": "https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: Stateless CSRF Tokens",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4085",
+            "url": "https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4085",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4084\">mbrubeck</a>.\n\nThere is a === comparison in that function, is that what you meant to refer to?\n\nI also need to update this post to point to an improved version of the code - <a href=\"https://josephscott.org/archives/2013/08/better-stateless-csrf-tokens/\" rel=\"nofollow\">https://josephscott.org/archives/2013/08/better-stateless-csrf-tokens/</a>.",
+            "content_text": "In reply to mbrubeck.\n\nThere is a === comparison in that function, is that what you meant to refer to?\n\nI also need to update this post to point to an improved version of the code - https://josephscott.org/archives/2013/08/better-stateless-csrf-tokens/.",
+            "date_published": "2013-08-27T21:50:44-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "https://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "https://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4084",
+            "url": "https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4084",
+            "content_html": "It looks like this might be vulnerable to timing attacks, because of the == string comparison to check the hash in request_token_verify.  You should use a constant-time string comparison to prevent this.",
+            "content_text": "It looks like this might be vulnerable to timing attacks, because of the == string comparison to check the hash in request_token_verify.  You should use a constant-time string comparison to prevent this.",
+            "date_published": "2013-08-27T21:41:36-06:00",
+            "authors": [
+                {
+                    "name": "mbrubeck",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/85232f8499fd6ee91623408fc23835d1?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "mbrubeck",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/85232f8499fd6ee91623408fc23835d1?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4083",
+            "url": "https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4083",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4082\">John Wilander</a>.\n\nI didn't want to get into cookies for CSRF tokens.  If you have multiple forms on a page you would potentially want a unique CSRF token for each form.  While you could still do that using cookies, it would bit a more management.",
+            "content_text": "In reply to John Wilander.\n\nI didn't want to get into cookies for CSRF tokens.  If you have multiple forms on a page you would potentially want a unique CSRF token for each form.  While you could still do that using cookies, it would bit a more management.",
+            "date_published": "2013-08-12T16:37:38-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "https://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "https://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4082",
+            "url": "https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4082",
+            "content_html": "I blogged about this in January 2012: http://appsandsecurity.blogspot.se/2012/01/stateless-csrf-protection.html\n\u2026 and later that year I did a presentation on even further research, proposing a triple submit to countermeasure HttpOnly cookie overwrites via subdomain XSS and cookie jar overflow: http://www.slideshare.net/johnwilander/stateless-anticsrf",
+            "content_text": "I blogged about this in January 2012: http://appsandsecurity.blogspot.se/2012/01/stateless-csrf-protection.html\n\u2026 and later that year I did a presentation on even further research, proposing a triple submit to countermeasure HttpOnly cookie overwrites via subdomain XSS and cookie jar overflow: http://www.slideshare.net/johnwilander/stateless-anticsrf",
+            "date_published": "2013-08-12T16:27:26-06:00",
+            "authors": [
+                {
+                    "name": "John Wilander",
+                    "url": "http://appsandsecurity.blogspot.com",
+                    "avatar": "https://secure.gravatar.com/avatar/124034ae52bcb03dc484260b492c48f7?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "John Wilander",
+                "url": "http://appsandsecurity.blogspot.com",
+                "avatar": "https://secure.gravatar.com/avatar/124034ae52bcb03dc484260b492c48f7?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4081",
+            "url": "https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4081",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4079\">Holger</a>.\n\nDepends on what other processes submitted data goes through.",
+            "content_text": "In reply to Holger.\n\nDepends on what other processes submitted data goes through.",
+            "date_published": "2013-08-02T19:21:55-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "https://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "https://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4080",
+            "url": "https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4080",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4078\">Steve Clay</a>.\n\nTrue, a but not additional state.  Perhaps that would have been a better way to describe it.\n\nYou should be validating user accounts along with CSRF tokens anyway.",
+            "content_text": "In reply to Steve Clay.\n\nTrue, a but not additional state.  Perhaps that would have been a better way to describe it.\n\nYou should be validating user accounts along with CSRF tokens anyway.",
+            "date_published": "2013-08-02T19:20:35-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "https://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "https://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4079",
+            "url": "https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4079",
+            "content_html": "\"...as an attacker can set the token to zero and it ...\"\nHow, can an attacker pass an INT? ;-)",
+            "content_text": "\"...as an attacker can set the token to zero and it ...\"\nHow, can an attacker pass an INT? ;-)",
+            "date_published": "2013-08-02T19:01:33-06:00",
+            "authors": [
+                {
+                    "name": "Holger",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/2893c6e2acc2c6e103fed7d317ab4aac?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Holger",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/2893c6e2acc2c6e103fed7d317ab4aac?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4078",
+            "url": "https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4078",
+            "content_html": "Useful but not stateless. If you need user specific data (and you definitely want to for this) that's \"state\".",
+            "content_text": "Useful but not stateless. If you need user specific data (and you definitely want to for this) that's \"state\".",
+            "date_published": "2013-08-02T18:51:40-06:00",
+            "authors": [
+                {
+                    "name": "Steve Clay",
+                    "url": "http://www.mrclay.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/73274862fcf6824261077da95fa3bcfe?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Steve Clay",
+                "url": "http://www.mrclay.org/",
+                "avatar": "https://secure.gravatar.com/avatar/73274862fcf6824261077da95fa3bcfe?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4077",
+            "url": "https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4077",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4076\">Daniel Bachhuber</a>.\n\nIt was a fun exercise thinking through the issues involved.",
+            "content_text": "In reply to Daniel Bachhuber.\n\nIt was a fun exercise thinking through the issues involved.",
+            "date_published": "2013-07-25T04:59:34-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "https://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "https://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4076",
+            "url": "https://blog.josephscott.org/2013/07/24/stateless-csrf-tokens/#comment-4076",
+            "content_html": "Fun read \u2014 thanks for taking the time to write it up.",
+            "content_text": "Fun read \u2014 thanks for taking the time to write it up.",
+            "date_published": "2013-07-25T04:51:39-06:00",
+            "authors": [
+                {
+                    "name": "Daniel Bachhuber",
+                    "url": "http://danielbachhuber.com/",
+                    "avatar": "https://secure.gravatar.com/avatar/2cffb19eae4c61e51884d4648b2a3ed9?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Daniel Bachhuber",
+                "url": "http://danielbachhuber.com/",
+                "avatar": "https://secure.gravatar.com/avatar/2cffb19eae4c61e51884d4648b2a3ed9?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

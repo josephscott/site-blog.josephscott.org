@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>akamai &#8211; Joseph Scott</title>
+	<atom:link href="/tag/akamai/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 21 Sep 2017 16:34:04 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Akamai, State of the Internet</title>
+		<link>/2017/09/21/akamai-state-of-the-internet/</link>
+					<comments>/2017/09/21/akamai-state-of-the-internet/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 21 Sep 2017 16:34:04 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[akamai]]></category>
+		<category><![CDATA[bandwidth]]></category>
+		<category><![CDATA[internet]]></category>
+		<guid isPermaLink="false">/?p=16168</guid>
+
+					<description><![CDATA[Here are a few data points I pulled from the Akamai &#8220;State of the Internet&#8221;, 2017 Q1 PDF. The global average connection speed increased 2.3% quarter-over-quarter to 7.2 Mbps Page 3 Insert a general warning about &#8220;averages&#8221; here. A little further down, on page 12, they do break it down further by providing the top [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Here are a few data points I pulled from the <a href="https://www.akamai.com/us/en/multimedia/documents/state-of-the-internet/q1-2017-state-of-the-internet-connectivity-report.pdf">Akamai &#8220;State of the Internet&#8221;, 2017 Q1</a> PDF.</p>
+<blockquote><p>
+The global average connection speed increased 2.3% quarter-over-quarter to 7.2 Mbps</p>
+<p><cite>Page 3</cite>
+</p></blockquote>
+<p>Insert a general warning about &#8220;averages&#8221; here.  A little further down, on page 12, they do break it down further by providing the top 10 countries:</p>
+<p><a href="/wp-content/uploads/2017/09/country-average-connections.png"><img loading="lazy" src="/wp-content/uploads/2017/09/country-average-connections.png" alt="" width="600" height="502" class="aligncenter size-full wp-image-16178" srcset="/wp-content/uploads/2017/09/country-average-connections.png 600w, /wp-content/uploads/2017/09/country-average-connections-300x251.png 300w" sizes="(max-width: 600px) 100vw, 600px" /></a></p>
+<p>This puts the US at ~2.6 times higher than the global average.  Then I found a table on page 15 that was ever more useful:</p>
+<p><a href="/wp-content/uploads/2017/09/connection-above-15mbps.png"><img loading="lazy" src="/wp-content/uploads/2017/09/connection-above-15mbps.png" alt="" width="600" height="491" class="aligncenter size-full wp-image-16179" srcset="/wp-content/uploads/2017/09/connection-above-15mbps.png 600w, /wp-content/uploads/2017/09/connection-above-15mbps-300x246.png 300w" sizes="(max-width: 600px) 100vw, 600px" /></a></p>
+<p>My take away: 52% of US connections are less than 15 Mbps.  Let that sink in for minute.  There is an entire section, starting on page 17, that goes into more detail on US connections.</p>
+<p>It is worth at least skimming through the ~55 pages, especially the mobile section starting on page 43.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2017/09/21/akamai-state-of-the-internet/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

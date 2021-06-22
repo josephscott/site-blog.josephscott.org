@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mediadevices &#8211; Joseph Scott</title>
+	<atom:link href="/tag/mediadevices/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 02 Dec 2015 15:57:58 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>MediaDevices</title>
+		<link>/2015/12/02/mediadevices/</link>
+					<comments>/2015/12/02/mediadevices/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 02 Dec 2015 15:57:58 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[firefox]]></category>
+		<category><![CDATA[mediadevices]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14122</guid>
+
+					<description><![CDATA[Chrome 47 has support for mediaDevices.enumerateDevices(): Modern browsers make it possible to select input and output devices including cameras, microphones and speakers. For example: &#8211; On a phone, select the front or rear-facing camera. &#8211; On a laptop, choose the internal speakers or a speaker connected by Bluetooth. &#8211; For a video chat, choose internal [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://developers.google.com/web/updates/2015/10/media-devices">Chrome 47 has support for <code>mediaDevices.enumerateDevices()</code></a>:</p>
+<blockquote><p>
+Modern browsers make it possible to select input and output devices including cameras, microphones and speakers.</p>
+<p>For example:<br />
+&#8211; On a phone, select the front or rear-facing camera.<br />
+&#8211; On a laptop, choose the internal speakers or a speaker connected by Bluetooth.<br />
+&#8211; For a video chat, choose internal or external microphone or camera.
+</p></blockquote>
+<p>This has been <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/enumerateDevices">available in Firefox since version 39</a> and is part of the <a href="http://w3c.github.io/mediacapture-main/getusermedia.html#widl-NavigatorUserMedia-mediaDevices">W3C &#8220;Media Capture and Streams&#8221; draft</a>.</p>
+<p>I can see this getting lots of play in the &#8220;native vs. web&#8221; arguments.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/02/mediadevices/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

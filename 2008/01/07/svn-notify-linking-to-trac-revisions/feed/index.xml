@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: SVN-Notify, Linking To Trac Revisions	</title>
+	<atom:link href="/2008/01/07/svn-notify-linking-to-trac-revisions/feed/" rel="self" type="application/rss+xml" />
+	<link>/2008/01/07/svn-notify-linking-to-trac-revisions/</link>
+	<description></description>
+	<lastBuildDate>Fri, 29 Feb 2008 23:50:22 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Theory		</title>
+		<link>/2008/01/07/svn-notify-linking-to-trac-revisions/#comment-2067</link>
+
+		<dc:creator><![CDATA[Theory]]></dc:creator>
+		<pubDate>Fri, 29 Feb 2008 23:50:22 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/01/07/svn-notify-linking-to-trac-revisions/#comment-2067</guid>
+
+					<description><![CDATA[Howdy,
+
+You might want to check out SVN::Notify 2.70, released today, which has new support for content filtering, and includes a Trac filter that parses log messages from the Trac wiki format to HTML, thus getting all the links and other formatting. Be sure to also install Text::Trac and then use it like this:
+
+/usr/local/bin/svnnotify -r $REV -C -d -H HTML::ColorDiff -p $REPOS 
+-t wp-svn@lists.automattic.com 
+--from m@wordpress.org 
+--reply-to wp-hackers@lists.automattic.com 
+--revision-url http://trac.wordpress.org/changeset/%s 
+--filter Trac 
+--trac-url http://trac.wordpress.org/
+
+Theory]]></description>
+			<content:encoded><![CDATA[<p>Howdy,</p>
+<p>You might want to check out SVN::Notify 2.70, released today, which has new support for content filtering, and includes a Trac filter that parses log messages from the Trac wiki format to HTML, thus getting all the links and other formatting. Be sure to also install Text::Trac and then use it like this:</p>
+<p>/usr/local/bin/svnnotify -r $REV -C -d -H HTML::ColorDiff -p $REPOS<br />
+-t <a href="mailto:wp-svn@lists.automattic.com">wp-svn@lists.automattic.com</a><br />
+&#8211;from <a href="mailto:m@wordpress.org">m@wordpress.org</a><br />
+&#8211;reply-to <a href="mailto:wp-hackers@lists.automattic.com">wp-hackers@lists.automattic.com</a><br />
+&#8211;revision-url <a href="http://trac.wordpress.org/changeset/%s" rel="nofollow ugc">http://trac.wordpress.org/changeset/%s</a><br />
+&#8211;filter Trac<br />
+&#8211;trac-url <a href="http://trac.wordpress.org/" rel="nofollow ugc">http://trac.wordpress.org/</a></p>
+<p>Theory</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

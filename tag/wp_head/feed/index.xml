@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>wp_head &#8211; Joseph Scott</title>
+	<atom:link href="/tag/wp_head/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 25 Mar 2010 13:59:04 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Database Powered CSS in WordPress Themes</title>
+		<link>/2010/03/25/database-powered-css-in-wordpress-themes/</link>
+					<comments>/2010/03/25/database-powered-css-in-wordpress-themes/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 25 Mar 2010 13:59:04 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[parse_request]]></category>
+		<category><![CDATA[themes]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[wp_head]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1869</guid>
+
+					<description><![CDATA[A popular ability in WordPress themes is to add custom CSS driven by options. This brings up a common question, how should the theme inject custom CSS? I&#8217;ll outline three different approaches on how to do this. These aren&#8217;t new, many people have written about these; forums, blog posts, email lists and IRC. I&#8217;m still [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>A popular ability in WordPress themes is to add custom CSS driven by options.  This brings up a common question, how should the theme inject custom CSS?  I&#8217;ll outline three different approaches on how to do this.  These aren&#8217;t new, many people have written about these; forums, blog posts, email lists and IRC.  I&#8217;m still seeing questions about this though, so I wanted to address this specific question with specific solutions.</p>
+<p>For the purposes of code examples I&#8217;ll assume that you have an option called <code>my_background_color</code> and that you want to do something like this:</p>
+<p>[sourcecode lang=&#8221;css&#8221;]<br />
+body {<br />
+    background-color: &lt;?php echo $theme_opt[&#8216;my_background_color&#8217;]; ?&gt;<br />
+}<br />
+[/sourcecode]</p>
+<p>We&#8217;ll start with the simplest method.</p>
+<h3>header.php</h3>
+<p>Most themes have a <code>header.php</code> file that contains template code for the top of the HTML output.  This makes it easy to add custom CSS with options, just echo it out inside the HEAD section of the HTML:</p>
+<p>[sourcecode lang=&#8221;html&#8221;]<br />
+&lt;style type=&#8217;text/css&#8217;&gt;<br />
+body {<br />
+    background-color: &lt;?php echo $theme_opt[&#8216;my_background_color&#8217;]; ?&gt;<br />
+}<br />
+&lt;/style&gt;<br />
+[/sourcecode]</p>
+<p>The advantages to this approach is that it&#8217;s very simple, you already have a <code>header.php</code> so adding a few more lines doesn&#8217;t take much work.  The disadvantage is that this solution isn&#8217;t very flexible, if you have complex rules about when and how to include the CSS then your <code>header.php</code> file gets a lot extra &#8220;stuff&#8221; that may not need for every page.</p>
+<p>If your needs are simple then this works great.  If not, I suggest using either wp_head or parse_request.</p>
+<h3>wp_head</h3>
+<p>Each theme calls a WordPress action at the end of the HTML HEAD section &#8211;  <a href="http://codex.wordpress.org/Plugin_API/Action_Reference/wp_head">wp_head</a> &#8211; that can be used to include the custom CSS:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+&lt;?php<br />
+add_action( &#8216;wp_head&#8217;, &#8216;my_custom_css_hook&#8217; );<br />
+function my_custom_css_hook( ) {<br />
+    # get theme options<br />
+?&gt;</p>
+<p>&lt;style type=&#8217;text/css&#8217;&gt;<br />
+body {<br />
+    background-color: &lt;?php echo $theme_opt[&#8216;my_background_color&#8217;]; ?&gt;<br />
+}<br />
+&lt;/style&gt;</p>
+<p>&lt;?php<br />
+}<br />
+[/sourcecode]</p>
+<p>The only real difference between this approach and the previous one is that it&#8217;s less clutter in <code>header.php</code>.  Instead of having all that code in <code>header.php</code> it can be moved out to a separate file and WordPress will include it at runtime whenever the <code>wp_head</code> action fires.</p>
+<h3>parse_request</h3>
+<p>WordPress can provide your theme with custom URLs, these can turn around and serve up what ever you want, including CSS.  This technique takes a little bit more work, but provides the maximum degree of flexibility.  There are a couple steps to this one, first what you&#8217;ll need to have in <code>header.php</code>:</p>
+<p>[sourcecode lang=&#8221;html&#8221;]<br />
+&lt;link rel=&#8217;stylesheet&#8217; type=&#8217;text/css&#8217; href=&quot;&lt;?php bloginfo( &#8216;url&#8217; ); ?&gt;/?my-custom-content=css&quot; /&gt;<br />
+[/sourcecode]</p>
+<p>The <code>my-custom-content=css</code> just needs to be something unique to your theme so that it doesn&#8217;t conflict with plugins that might be using parse_request as well.</p>
+<p>Next we need to tell WordPress how we want to handle this request:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+add_action( &#8216;parse_request&#8217;, &#8216;my_custom_wp_request&#8217; );<br />
+function my_custom_wp_request( $wp ) {<br />
+    if (<br />
+        !empty( $_GET[&#8216;my-custom-content&#8217;] )<br />
+        &amp;&amp; $_GET[&#8216;my-custom-content&#8217;] == &#8216;css&#8217;<br />
+    ) {<br />
+        # get theme options<br />
+        header( &#8216;Content-Type: text/css&#8217; );<br />
+?&gt;</p>
+<p>body {<br />
+    background-color: &lt;?php echo $theme_opt[&#8216;my_background_color&#8217;]; ?&gt;<br />
+}</p>
+<p>&lt;?php<br />
+        exit;<br />
+    }<br />
+}<br />
+[/sourcecode]</p>
+<p>A few things in there that I want to point out.  Pay attention to line 8, this tells the browser what sort of content we are sending back.  In this case it was CSS, but it could have been JavaScript or anything else.  Also note that I didn&#8217;t add any cache related headers, it&#8217;s worth reading up on cache control in HTTP headers so that you know how that works.  Line 16 is also important, we don&#8217;t want WordPress attempting to do any further processing after we return the CSS so the right thing to do is exit as soon as possible.</p>
+<p>And if you wanted to keep the CSS in a separate file ( <code>custom-css.php</code> for our example ) that looked more like a normal CSS file then the <code>my_custom_wp_request</code> function could look like:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+function my_custom_wp_request( $wp ) {<br />
+    if (<br />
+        !empty( $_GET[&#8216;my-custom-content&#8217;] )<br />
+        &amp;&amp; $_GET[&#8216;my-custom-content&#8217;] == &#8216;css&#8217;<br />
+    ) {<br />
+        # get theme options<br />
+        header( &#8216;Content-Type: text/css&#8217; );<br />
+        require dirname( __FILE__ ) . &#8216;/custom-css.php&#8217;;<br />
+        exit;<br />
+    }<br />
+}<br />
+[/sourcecode]</p>
+<p>allowing your <code>custom-css.php</code> to look like:</p>
+<p>[sourcecode lang=&#8221;CSS&#8221;]<br />
+body {<br />
+    background-color: &lt;?php echo $theme_opt[&#8216;my_background_color&#8217;]; ?&gt;<br />
+}<br />
+[/sourcecode]</p>
+<p>basically just enough PHP to fill in the option blanks, other wise a normal looking CSS file.  I rather like this approach, it provides a nice degree of separation and control.</p>
+<h3>Conclusion</h3>
+<p>Now you have three methods for including database powered CSS in your WordPress theme.  I like using parse_request with the CSS in a separate file ( the last example ), for a little bit of extra work you get lots of flexibility and a nice layer of separation that makes managing the CSS portion easier.</p>
+<p>Having any tips on how to improve on this?  <a href="#comments">Leave a comment below!</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/03/25/database-powered-css-in-wordpress-themes/feed/</wfw:commentRss>
+			<slash:comments>52</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

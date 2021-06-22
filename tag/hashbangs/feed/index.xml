@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>hashbangs &#8211; Joseph Scott</title>
+	<atom:link href="/tag/hashbangs/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 30 May 2012 15:30:05 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Twitter Backing Away From Hashbang URLs</title>
+		<link>/2012/05/30/twitter-backing-away-from-hashbang-urls/</link>
+					<comments>/2012/05/30/twitter-backing-away-from-hashbang-urls/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 30 May 2012 15:30:05 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[hashbangs]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[Twitter]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=5964</guid>
+
+					<description><![CDATA[The big news from Twitter&#8217;s Improving performance on twitter.com was the first step in backing away from hashbang (#!) URLs: &#8230; our primary reason for this change is to improve initial page-load performance. The first thing that you might notice is that permalink URLs are now simpler: they no longer use the hashbang (#!). While [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The big news from Twitter&#8217;s <a href="http://engineering.twitter.com/2012/05/improving-performance-on-twittercom.html">Improving performance on twitter.com</a> was the first step in backing away from hashbang (#!) URLs:</p>
+<blockquote><p>
+&#8230; our primary reason for this change is to improve initial page-load performance.</p>
+<p>The first thing that you might notice is that permalink URLs are now simpler: they no longer use the hashbang (#!). While hashbang-style URLs have a handful of limitations, our primary reason for this change is to improve initial page-load performance.</p>
+<p>When you come to twitter.com, we want you to see content as soon as possible. With hashbang URLs, the browser needs to download an HTML page, download and execute some JavaScript, recognize the hashbang path (which is only visible to the browser), then fetch and render the content for that URL. By removing the need to handle routing on the client, we remove many of these steps and reduce the time it takes for you to find out what’s happening on twitter.com.
+</p></blockquote>
+<p>I&#8217;m not surprised that they found doing one thing faster than doing that one thing plus four more.</p>
+<p>I, like many others, are happy to see this go.  <a href="http://rc3.org/2012/05/29/twitter-finally-rejects-their-all-javascript-approach/">Rafe Colburn put it this way:</a></p>
+<blockquote><p>
+It feels good to see terrible ideas die, even when it takes awhile.
+</p></blockquote>
+<p><a href="http://functionsource.com/post/conditional-tier-rendering-twitter-achieves-level-5-5-of-the-render-game">Dion Almaer</a> concludes:</p>
+<blockquote><p>
+It’s about the experience stupid.
+</p></blockquote>
+<p>Providing a good user experience with &#8220;traditional&#8221; methods is better than providing a poorer user experience using the hotest new trends.</p>
+<p>The sad part about Twitter&#8217;s path down the hashbang road is that they are now left with two unappealing options.  Either they continue to include a backwards compatibility piece of Javascript on every page load, or break all of the previous hashbang URLs.  So far it appears that they are going with the first option, including a piece of Javascript on each page that looks for a hashbang URL.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/05/30/twitter-backing-away-from-hashbang-urls/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Hashbang URLs</title>
+		<link>/2011/05/30/hashbang-urls/</link>
+					<comments>/2011/05/30/hashbang-urls/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 30 May 2011 16:03:49 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[dan-webb]]></category>
+		<category><![CDATA[hashbangs]]></category>
+		<category><![CDATA[url]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4194</guid>
+
+					<description><![CDATA[The final line from Dan Webb&#8217;s It Is About The Hashbangs: Can we all agree to let it go the way of flash intros, please? Hashbang URLs can not go away fast enough. Please work to wipe them off the web and then pretend it never happened.]]></description>
+										<content:encoded><![CDATA[<p>The final line from Dan Webb&#8217;s <a href="http://danwebb.net/2011/5/28/it-is-about-the-hashbangs">It Is About The Hashbangs</a>:</p>
+<blockquote><p>
+Can we all agree to let it go the way of flash intros, please?
+</p></blockquote>
+<p>Hashbang URLs can not go away fast enough.  Please work to wipe them off the web and then pretend it never happened.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/05/30/hashbang-urls/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

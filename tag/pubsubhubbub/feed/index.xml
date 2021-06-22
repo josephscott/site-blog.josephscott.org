@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>pubsubhubbub &#8211; Joseph Scott</title>
+	<atom:link href="/tag/pubsubhubbub/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 27 May 2011 19:15:22 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>PuSHPress 0.1.7</title>
+		<link>/2011/05/27/pushpress-0-1-7/</link>
+					<comments>/2011/05/27/pushpress-0-1-7/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 27 May 2011 19:15:22 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[pubsubhubbub]]></category>
+		<category><![CDATA[pushpress]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4187</guid>
+
+					<description><![CDATA[Version 0.1.7 of the PuSHPress WordPress plugin is now live. This includes fixes to various edge cases that have come up over time. Details are available in the changelog. Thank you to John Godley, Andrew Nacin, Hugo Hallqvist (couldn&#8217;t find a link for him), and Mike Adams for reporting issues and submitting patches.]]></description>
+										<content:encoded><![CDATA[<p><a href="http://code.google.com/p/pubsubhubbub/"><img loading="lazy" alt="" src="http://code.google.com/apis/pubsubhubbub/images/hubbub.png" title="PubSubHubbub" class="alignleft" width="113" height="38" /></a></p>
+<p>Version 0.1.7 of the <a href="http://wordpress.org/extend/plugins/pushpress/">PuSHPress WordPress plugin</a> is now live.  This includes fixes to various edge cases that have come up over time.  Details are available in the <a href="http://wordpress.org/extend/plugins/pushpress/changelog/">changelog</a>.</p>
+<p>Thank you to <a href="http://urbangiraffe.com/">John Godley</a>, <a href="http://andrewnacin.com/">Andrew Nacin</a>, Hugo Hallqvist (couldn&#8217;t find a link for him), and <a href="http://blogwaffe.com/">Mike Adams</a> for reporting issues and submitting patches.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/05/27/pushpress-0-1-7/feed/</wfw:commentRss>
+			<slash:comments>13</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>mod_ping, Maybe I Should Have Called It PubSubHubbub</title>
+		<link>/2010/03/04/mod_ping-maybe-i-should-have-called-it-pubsubhubbub/</link>
+					<comments>/2010/03/04/mod_ping-maybe-i-should-have-called-it-pubsubhubbub/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 05 Mar 2010 06:03:01 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[pubsubhubbub]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1979</guid>
+
+					<description><![CDATA[ReadWriteWeb has an article about Google potentially using PuSH to get updates into the search index. I knew this idea sounded familiar so I went hunting through some of my old posts and found &#8211; Apache Module Idea mod_ping from 2004. Back then I had thought a lot about searching blog feeds. There were some [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>ReadWriteWeb has an article about <a href="http://www.readwriteweb.com/archives/google_developing_real_time_index.php">Google potentially using PuSH</a> to get updates into the search index.  I knew this idea sounded familiar so I went hunting through some of my old posts and found &#8211; <a href="http://joseph.randomnetworks.com/archives/2004/08/24/apache-module-idea-mod_ping/">Apache Module Idea mod_ping</a> from 2004.</p>
+<p>Back then I had thought a lot about searching blog feeds.  There were some services that offered blog feed searching but they were all pretty bad.  I wrote a review of the situation at the time in <a href="http://joseph.randomnetworks.com/archives/2004/08/24/why-hasnt-anyone-figured-out-how-to-do-feed-searches/">Why Hasn’t Anyone Figured Out How To Do Feed Searches?</a>.  Keep in mind that <a href="http://joseph.randomnetworks.com/archives/2005/09/14/google-blog-search/">Google&#8217;s blog search feature</a> wouldn&#8217;t be announced for another year.</p>
+<p>It seemed odd to me that blog feed search would be so bad given how strongly the blogging software community had embraced the idea of pinging updates.  This led me to the idea of some sort of <a href="http://joseph.randomnetworks.com/archives/2004/08/24/apache-module-idea-mod_ping/">mod_ping for Apache</a> that would do similar pings for any type of website updates, it didn&#8217;t have to be limited to just blogs.  Obviously I never took this idea any where (besides writing that post) and to be honest I hadn&#8217;t really revisited the idea much since.  Search engines took a different route for update frequency, with features like <a href="http://www.google.com/press/pressrel/sitemapsorg.html">sitemaps</a> in 2006.</p>
+<p>Fast forward to 2010 and we&#8217;ve got discussion of Google potentially using PubSubHubbub (PuSH) to subscribe to updates from every single web site out there.  This brings up an interesting question though.  Since PuSH focuses on feed formats (RSS &amp; Atom) for pings, what format will pings from sites that don&#8217;t have feeds look like?  Will the ping just contain the entire HTML output of the updated page?  What about a <a href="http://en.wikipedia.org/wiki/Diff">diff</a> (unified format of course!) between the new HTML and the previous HTML for a given page?</p>
+<p>Folks like <a href="http://www.onebigfluke.com/">Brett Slatkin</a> have been thinking about this sort of thing on a deeper level than I ever did, so I&#8217;m curious to see where this goes.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/03/04/mod_ping-maybe-i-should-have-called-it-pubsubhubbub/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>PuSHPress: A PubSubHubbub Plugin For WordPress</title>
+		<link>/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/</link>
+					<comments>/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 03 Mar 2010 16:49:50 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[pubsubhubbub]]></category>
+		<category><![CDATA[pushpress]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1963</guid>
+
+					<description><![CDATA[PubSubHubbub, or PuSH, is now supported on all WordPress.com blogs. For those running sites using the WordPress.org software the PuSHPress plugin is available to do the same thing. The big difference in this plugin compared to the other PuSH WordPress plugins is that it includes a PuSH hub built in. A little bit of PubSubHubbub [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://code.google.com/p/pubsubhubbub/">PubSubHubbub</a>, or <a href="http://en.blog.wordpress.com/2010/03/03/rub-a-dub-dub-in-the-pubsubhubbub/">PuSH, is now supported on all WordPress.com blogs</a>.  For those running sites using the WordPress.org software the <a href="http://wordpress.org/extend/plugins/pushpress/">PuSHPress plugin</a> is available to do the same thing.  The big difference in this plugin compared to the other PuSH WordPress plugins is that it includes a PuSH hub built in.</p>
+<h3>A little bit of PubSubHubbub background</h3>
+<p>Like <a href="http://josephscott.org/archives/2009/09/rsscloud-for-wordpress/">rssCloud</a>, PuSH adds a line to your feed to let clients know where they can send PuSH subscription requests.  In the RSS2 feed this looks like:</p>
+<p>[sourcecode lang=&#8221;xml&#8221;]<br />
+&lt;atom:link rel=&quot;hub&quot; href=&quot;http://josephscott.org/?pushpress=hub&quot;&gt;<br />
+[/sourcecode]</p>
+<p>and in Atom looks like:</p>
+<p>[sourcecode lang=&#8221;xml&#8221;]<br />
+&lt;link rel=&quot;hub&quot; href=&quot;http://josephscott.org/?pushpress=hub&quot;&gt;<br />
+[/sourcecode]</p>
+<p>The href attribute contains the URL that subscribers can send requests to.  Details on <a href="http://pubsubhubbub.googlecode.com/svn/trunk/pubsubhubbub-core-0.3.html#subscribing">what that request looks like</a> are in the <a href="http://pubsubhubbub.googlecode.com/svn/trunk/pubsubhubbub-core-0.3.html">PubSubHubbub Spec</a>.  The short version, it&#8217;s a simple HTTP POST call with some specific field names.</p>
+<p>Here&#8217;s an example PHP subscription request asking that updates to http://example.com/feed/ be sent to http://example.com/push/ via the hub at http://example.com/?pushpress=hub</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+$curl = curl_init( );</p>
+<p>curl_setopt( $curl, CURLOPT_URL, &#8216;http://example.com/?pushpress=hub&#8217; );<br />
+curl_setopt( $curl, CURLOPT_POSTFIELDS, &#8216;hub.callback=http://example.com/push/&amp;hub.mode=subscribe&amp;hub.secret=not-telling-you&amp;hub.verify=sync&amp;hub.topic=http://example.com/feed/&amp;hub.verify_token=133t-$7r1n9&#8217; );<br />
+curl_setopt( $curl, CURLOPT_VERBOSE, 1 );<br />
+curl_setopt( $curl, CURLOPT_POST, 1 );</p>
+<p>curl_exec( $curl );<br />
+print_r( curl_getinfo( $curl ) );<br />
+curl_close( $curl );<br />
+[/sourcecode]</p>
+<p>The hub at example.com will then send new content (in feed format) right after it&#8217;s published to URL provided in hub.callback.</p>
+<h3>Why the PuSHPress plugin?</h3>
+<p>I love that there are large, open PuSH hubs available for anyone to use.  There&#8217;s a list at <a href="http://code.google.com/p/pubsubhubbub/wiki/Hubs">http://code.google.com/p/pubsubhubbub/wiki/Hubs</a>.  In PuSH since most of the hard work (figuring out what&#8217;s new in a feed and sending that out to subscribers) is done via the hub this is very handy and really great for testing.</p>
+<p>I also think there&#8217;s a role for a readily available simple hub that anyone can put up and use, in this case built on top of WordPress.  And by leveraging WordPress the hub part can be greatly simplified.  The real bonus for users is choice, they can relay the updates through 3rd party hubs, or use the built in hub in PuSHPress.</p>
+<p>It&#8217;s worth noting that PuSHPress has a WordPress filter on the array of hubs; pushpress_hubs.  This allows other plugins to easily add to or replace the hubs mentioned in the feeds by PuSHPress.</p>
+<p>To help keep things simple and limit potential abuse the PuSHPress plugin will only allow subscriptions for the RSS2 and Atom feeds of the WordPress blog that it is installed on.</p>
+<p>My thanks to <a href="http://www.onebigfluke.com/">Brett Slatkin</a> for helping test PuSHPress.  His tests revealed a few bugs that were quickly addressed.</p>
+<h3>How fast?</h3>
+<p>When talking about these realtime-ish update features this question often comes up.  Fair enough, I&#8217;d want to know too <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>The PuSHPress plugin schedules pings to go out right away via the <a href="http://codex.wordpress.org/Function_Reference/wp_schedule_single_event">wp_schedule_single_event</a> function in WordPress.  I suspect for most people this will be quite fast.  If your server is under tremendous load and really slow, then this will be really slow too, just like the rest of the server <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>On WordPress.com the details are a bit different.  Instead of scheduling pings to be sent out with wp_schedule_single_event it adds them to our asynchronous jobs system ( more info available at <a href="http://code.trac.wordpress.org/">http://code.trac.wordpress.org/</a> ).  The jobs system is setup to do exactly these kinds of tasks really, really fast.  Don&#8217;t be surprised if the ping shows up before you get a chance to finish the first Mississippi.</p>
+<h3>The future</h3>
+<p>So where is all this going?  Who knows, but it is fun to watch!  <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<h3>Further reading</h3>
+<p>If you have an interest in this area there are plenty of resources:</p>
+<ul>
+<li><a href="http://code.google.com/p/pubsubhubbub/">PubSubHubbub project site</a></li>
+<li><a href="http://groups.google.com/group/pubsubhubbub">Google Group</a></li>
+<li><a href="http://pubsubhubbub.googlecode.com/svn/trunk/pubsubhubbub-core-0.3.html">Spec</a></li>
+</ul>
+<p>The spec is a quick read and to the point, worth reading.</p>
+<p>And there you have it, a little more in-depth discussion of PuSHPress.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/feed/</wfw:commentRss>
+			<slash:comments>60</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

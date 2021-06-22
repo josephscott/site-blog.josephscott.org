@@ -1,0 +1,37 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/vld/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/vld/",
+    "feed_url": "https://blog.josephscott.org/tag/vld/feed/json/",
+    "language": "en-US",
+    "title": "vld &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://josephscott.org/?p=3294",
+            "url": "https://blog.josephscott.org/2010/12/20/closing-php-tag-more-work/",
+            "title": "Closing PHP Tag \u2013 More Work",
+            "content_html": "<p>I was testing PHP code with <a href=\"http://pecl.php.net/package/vld\">VLD</a> and noticed something odd.  If I left off the final closing PHP then there were fewer ops.  Here is an example:</p>\n<p>[sourcecode lang=&#8221;php&#8221;]<br />\n&lt;?php<br />\n$first_name = &#8216;Joseph&#8217;;<br />\n$last_name = &#8216;Scott&#8217;;<br />\n?&gt;<br />\n[/sourcecode]</p>\n<p>has 6 ops:</p>\n<pre>\nline     # *  op                  operands\n------------------------------------------\n   2     0  >   EXT_STMT                                                 \n         1      ASSIGN           !0, 'Joseph'\n   3     2      EXT_STMT                                                 \n         3      ASSIGN           !1, 'Scott'\n   5     4      EXT_STMT                                                 \n         5    > RETURN              1\n</pre>\n<p>The same file, minus the closing PHP tag:</p>\n<p>[sourcecode lang=&#8221;php&#8221;]<br />\n&lt;?php<br />\n$first_name = &#8216;Joseph&#8217;;<br />\n$last_name = &#8216;Scott&#8217;;<br />\n[/sourcecode]</p>\n<p>has only 5 ops:</p>\n<pre>\nline     # *  op                operands\n-----------------------------------------\n   2     0  >   EXT_STMT                                                 \n         1      ASSIGN        !0, 'Joseph'\n   3     2      EXT_STMT                                                 \n         3      ASSIGN        !1, 'Scott'\n   4     4    > RETURN         1\n\n</pre>\n<p>I trimmed the VLD output to make it easier to read.</p>\n<p>Boils down to an extra EXT_STMT op when the closing PHP tag is included.</p>\n",
+            "content_text": "I was testing PHP code with VLD and noticed something odd.  If I left off the final closing PHP then there were fewer ops.  Here is an example:\n[sourcecode lang=&#8221;php&#8221;]\n&lt;?php\n$first_name = &#8216;Joseph&#8217;;\n$last_name = &#8216;Scott&#8217;;\n?&gt;\n[/sourcecode]\nhas 6 ops:\n\nline     # *  op                  operands\n------------------------------------------\n   2     0  >   EXT_STMT                                                 \n         1      ASSIGN           !0, 'Joseph'\n   3     2      EXT_STMT                                                 \n         3      ASSIGN           !1, 'Scott'\n   5     4      EXT_STMT                                                 \n         5    > RETURN              1\n\nThe same file, minus the closing PHP tag:\n[sourcecode lang=&#8221;php&#8221;]\n&lt;?php\n$first_name = &#8216;Joseph&#8217;;\n$last_name = &#8216;Scott&#8217;;\n[/sourcecode]\nhas only 5 ops:\n\nline     # *  op                operands\n-----------------------------------------\n   2     0  >   EXT_STMT                                                 \n         1      ASSIGN        !0, 'Joseph'\n   3     2      EXT_STMT                                                 \n         3      ASSIGN        !1, 'Scott'\n   4     4    > RETURN         1\n\n\nI trimmed the VLD output to make it easier to read.\nBoils down to an extra EXT_STMT op when the closing PHP tag is included.",
+            "date_published": "2010-12-20T10:25:09-07:00",
+            "date_modified": "2010-12-20T10:25:09-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "performance",
+                "PHP",
+                "vld",
+                "Posts"
+            ]
+        }
+    ]
+}

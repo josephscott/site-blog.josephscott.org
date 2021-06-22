@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Mac OS X: Spotlight Server is Disabled	</title>
+	<atom:link href="/2013/11/25/mac-os-x-spotlight-server-is-disabled/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/11/25/mac-os-x-spotlight-server-is-disabled/</link>
+	<description></description>
+	<lastBuildDate>Fri, 22 Jan 2016 15:45:59 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Adam Orth		</title>
+		<link>/2013/11/25/mac-os-x-spotlight-server-is-disabled/#comment-4119</link>
+
+		<dc:creator><![CDATA[Adam Orth]]></dc:creator>
+		<pubDate>Fri, 22 Jan 2016 15:45:59 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=9463#comment-4119</guid>
+
+					<description><![CDATA[Thank you, this discussion helped me get my new backup drive formatted in Yosemite: Spotlight was keeping me from partitioning it and I  ended up with a bit of a mess on my hands in Terminal. One of the key factors here for me was rebooting the computer after loading LaunchDaemon.]]></description>
+			<content:encoded><![CDATA[<p>Thank you, this discussion helped me get my new backup drive formatted in Yosemite: Spotlight was keeping me from partitioning it and I  ended up with a bit of a mess on my hands in Terminal. One of the key factors here for me was rebooting the computer after loading LaunchDaemon.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Don		</title>
+		<link>/2013/11/25/mac-os-x-spotlight-server-is-disabled/#comment-4118</link>
+
+		<dc:creator><![CDATA[Don]]></dc:creator>
+		<pubDate>Sun, 26 Apr 2015 20:52:40 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=9463#comment-4118</guid>
+
+					<description><![CDATA[I&#039;ve never used SuperDuper and I have no theories why Spotlight was broken, but you guidance was the answer.
+
+Thank you!]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve never used SuperDuper and I have no theories why Spotlight was broken, but you guidance was the answer.</p>
+<p>Thank you!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2013/11/25/mac-os-x-spotlight-server-is-disabled/#comment-4117</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 27 Nov 2013 23:45:40 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=9463#comment-4117</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/11/25/mac-os-x-spotlight-server-is-disabled/#comment-4116&quot;&gt;Thomas Beck&lt;/a&gt;.
+
+Using SuperDuper after an upgrade to Mavericks is what happened to me as well.  Glad to know this helped someone else.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/11/25/mac-os-x-spotlight-server-is-disabled/#comment-4116">Thomas Beck</a>.</p>
+<p>Using SuperDuper after an upgrade to Mavericks is what happened to me as well.  Glad to know this helped someone else.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Thomas Beck		</title>
+		<link>/2013/11/25/mac-os-x-spotlight-server-is-disabled/#comment-4116</link>
+
+		<dc:creator><![CDATA[Thomas Beck]]></dc:creator>
+		<pubDate>Wed, 27 Nov 2013 10:54:37 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=9463#comment-4116</guid>
+
+					<description><![CDATA[That fixed an issue I ran into with SuperDuper after upgrading to Mavericks. On my machine I had to reboot after loading the LaunchDaemon again.
+
+Thanks a lot!]]></description>
+			<content:encoded><![CDATA[<p>That fixed an issue I ran into with SuperDuper after upgrading to Mavericks. On my machine I had to reboot after loading the LaunchDaemon again.</p>
+<p>Thanks a lot!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

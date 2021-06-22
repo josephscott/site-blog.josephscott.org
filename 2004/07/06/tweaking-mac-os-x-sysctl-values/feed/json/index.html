@@ -1,0 +1,200 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2004/07/06/tweaking-mac-os-x-sysctl-values/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2004/07/06/tweaking-mac-os-x-sysctl-values/",
+    "feed_url": "https://blog.josephscott.org/2004/07/06/tweaking-mac-os-x-sysctl-values/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: Tweaking Mac OS X Sysctl Values",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-414",
+            "url": "https://blog.josephscott.org/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-414",
+            "content_html": "[...] Tweaking Mac OS X Sysctl Values | Joseph Scott&#8217;s Blog [...]",
+            "content_text": "[...] Tweaking Mac OS X Sysctl Values | Joseph Scott&#8217;s Blog [...]",
+            "date_published": "2007-05-28T12:25:51-06:00",
+            "authors": [
+                {
+                    "name": "Venera7.com &raquo; Errores extra\u00f1os de OS X",
+                    "url": "http://www.venera7.com/apple/errores-extranos-de-os-x",
+                    "avatar": false
+                }
+            ],
+            "author": {
+                "name": "Venera7.com &raquo; Errores extra\u00f1os de OS X",
+                "url": "http://www.venera7.com/apple/errores-extranos-de-os-x",
+                "avatar": false
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-413",
+            "url": "https://blog.josephscott.org/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-413",
+            "content_html": "[...] system limits are (as usual) set via sysctls. But if you try and change them, they refuse to alter. It turns out that you can set them, but only once - the first time this set of sysctls is written to the kernel, [...]",
+            "content_text": "[...] system limits are (as usual) set via sysctls. But if you try and change them, they refuse to alter. It turns out that you can set them, but only once - the first time this set of sysctls is written to the kernel, [...]",
+            "date_published": "2007-02-16T07:29:59-07:00",
+            "authors": [
+                {
+                    "name": "Snell-Pym &raquo; 2007 &raquo; February &raquo; 16",
+                    "url": "http://www.snell-pym.org.uk/archives/2007/02/16//",
+                    "avatar": false
+                }
+            ],
+            "author": {
+                "name": "Snell-Pym &raquo; 2007 &raquo; February &raquo; 16",
+                "url": "http://www.snell-pym.org.uk/archives/2007/02/16//",
+                "avatar": false
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-412",
+            "url": "https://blog.josephscott.org/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-412",
+            "content_html": "Hi. I've read all of your correspondence, but I still can not work this out....\nHere's what happens.\n\nYukies-iBook:/etc yukie$ sudo sysctl -w kern.sysv.shmmax=20971520 kern.sysv.shmmin=1 kern.sysv.shmmni=32 kern.sysv.shmseg=8 kern.sysv.shmall=5120\nPassword:\nkern.sysv.shmmax: 4194304 -&gt; 4194304\nkern.sysv.shmmin: 1 -&gt; 1\nkern.sysv.shmmni: 32 -&gt; 32\nkern.sysv.shmseg: 8 -&gt; 8\nkern.sysv.shmall: 1024 -&gt; 1024\n\nI can't even change these values .... A little help??",
+            "content_text": "Hi. I've read all of your correspondence, but I still can not work this out....\nHere's what happens.\n\nYukies-iBook:/etc yukie$ sudo sysctl -w kern.sysv.shmmax=20971520 kern.sysv.shmmin=1 kern.sysv.shmmni=32 kern.sysv.shmseg=8 kern.sysv.shmall=5120\nPassword:\nkern.sysv.shmmax: 4194304 -&gt; 4194304\nkern.sysv.shmmin: 1 -&gt; 1\nkern.sysv.shmmni: 32 -&gt; 32\nkern.sysv.shmseg: 8 -&gt; 8\nkern.sysv.shmall: 1024 -&gt; 1024\n\nI can't even change these values .... A little help??",
+            "date_published": "2006-09-08T14:05:05-06:00",
+            "authors": [
+                {
+                    "name": "Yukie",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/cbee1c462fdaf3c0651131e5a1b5e460?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Yukie",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/cbee1c462fdaf3c0651131e5a1b5e460?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-411",
+            "url": "https://blog.josephscott.org/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-411",
+            "content_html": "I think that shmall should actually be set to (shmmax / pagesize) * shmmni instead. That lets you have the maximum number of shared memory ids worth of shared memory counted in pages... I could be mistaken however, I'm not a shared memory guru.",
+            "content_text": "I think that shmall should actually be set to (shmmax / pagesize) * shmmni instead. That lets you have the maximum number of shared memory ids worth of shared memory counted in pages... I could be mistaken however, I'm not a shared memory guru.",
+            "date_published": "2006-05-27T01:28:44-06:00",
+            "authors": [
+                {
+                    "name": "James",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/481b570b441a30cb26938e367b8562e9?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "James",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/481b570b441a30cb26938e367b8562e9?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-410",
+            "url": "https://blog.josephscott.org/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-410",
+            "content_html": "Thanks to all from me, too. dmc - your last comment was especially helpful. After (only some) aggravation, I was able to successfull change shmmax, etc on 10.3 and 10.4",
+            "content_text": "Thanks to all from me, too. dmc - your last comment was especially helpful. After (only some) aggravation, I was able to successfull change shmmax, etc on 10.3 and 10.4",
+            "date_published": "2006-01-25T12:08:57-07:00",
+            "authors": [
+                {
+                    "name": "Mark",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/e4cbee904dc5cfaffeba1466e5c7e9fd?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Mark",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/e4cbee904dc5cfaffeba1466e5c7e9fd?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-409",
+            "url": "https://blog.josephscott.org/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-409",
+            "content_html": "Turns out that when you set the last of the 5 shm values, the shared memory becomes \"initialized\" by a call to shminit().  After that, it simply ignores any subsequent changes until the system restarts.\n\nIf you edit /etc/sysctl.conf, as you are supposed to, unless you set all 5, your changes will be overwritten by the subsequent code in /etc/rc that sets the default values.  So the solution is to not just add the shmmax and shmall that you want, but the other three also, so that shminit() gets called, locking the values in place.",
+            "content_text": "Turns out that when you set the last of the 5 shm values, the shared memory becomes \"initialized\" by a call to shminit().  After that, it simply ignores any subsequent changes until the system restarts.\n\nIf you edit /etc/sysctl.conf, as you are supposed to, unless you set all 5, your changes will be overwritten by the subsequent code in /etc/rc that sets the default values.  So the solution is to not just add the shmmax and shmall that you want, but the other three also, so that shminit() gets called, locking the values in place.",
+            "date_published": "2005-04-26T20:22:56-06:00",
+            "authors": [
+                {
+                    "name": "dmc",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/1298ae8e9b729c5d3c2fb47647f75ade?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "dmc",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/1298ae8e9b729c5d3c2fb47647f75ade?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-408",
+            "url": "https://blog.josephscott.org/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-408",
+            "content_html": "The reason why those changes in sysctl.conf do not take effect is because those particular parameters can only be set once.  Future modifications to the values are ignored.\n\nThat said, if you remove the settings from /etc/rc, then the change in /etc/sysctl.conf should take effect.",
+            "content_text": "The reason why those changes in sysctl.conf do not take effect is because those particular parameters can only be set once.  Future modifications to the values are ignored.\n\nThat said, if you remove the settings from /etc/rc, then the change in /etc/sysctl.conf should take effect.",
+            "date_published": "2005-04-19T19:33:24-06:00",
+            "authors": [
+                {
+                    "name": "Moonless Nights",
+                    "url": "http://www.spectralclass.com",
+                    "avatar": "https://secure.gravatar.com/avatar/b1df7c6a3fe372ad5df06f990a519d19?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Moonless Nights",
+                "url": "http://www.spectralclass.com",
+                "avatar": "https://secure.gravatar.com/avatar/b1df7c6a3fe372ad5df06f990a519d19?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-407",
+            "url": "https://blog.josephscott.org/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-407",
+            "content_html": "Hmm, putting together rhumgod's and jfw's comments, I set /etc/sysctl.conf to:\n\nkern.sysv.shmmax=134217728\nkern.sysv.shmmin=1\nkern.sysv.shmmni=32\nkern.sysv.shmseg=8\nkern.sysv.shmall=32768\n\nHowever, the settings are not applied once I reboot (e.g., 'sysctl kern.sysv.shmmax' shows the default 4194304 instead of my value.  Is this an Apple bug, or am I still missing something?",
+            "content_text": "Hmm, putting together rhumgod's and jfw's comments, I set /etc/sysctl.conf to:\n\nkern.sysv.shmmax=134217728\nkern.sysv.shmmin=1\nkern.sysv.shmmni=32\nkern.sysv.shmseg=8\nkern.sysv.shmall=32768\n\nHowever, the settings are not applied once I reboot (e.g., 'sysctl kern.sysv.shmmax' shows the default 4194304 instead of my value.  Is this an Apple bug, or am I still missing something?",
+            "date_published": "2005-03-10T11:59:08-07:00",
+            "authors": [
+                {
+                    "name": "Kevin Murphy",
+                    "url": "http://www.delcodemocracy.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/93a9810402cc22f9c1ca3fb0f0a29f74?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Kevin Murphy",
+                "url": "http://www.delcodemocracy.org/",
+                "avatar": "https://secure.gravatar.com/avatar/93a9810402cc22f9c1ca3fb0f0a29f74?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-406",
+            "url": "https://blog.josephscott.org/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-406",
+            "content_html": "herve - make sure you adjusted SHMALL to match the adjustment you made to SHMMAX.  SHMALL is the total amount of shared memory available, SHMMAX is maximum size of a shared memory segment.\n\nOn Panther (10.3.x) set your SHMALL to:\n\n{VALUE of SHMMAX} / 4096\n\n4096 is the default page size in 10.3.x.  So, for example, your SHMMAX is 134217728 (128MB), you would set SHMALL to 32768.",
+            "content_text": "herve - make sure you adjusted SHMALL to match the adjustment you made to SHMMAX.  SHMALL is the total amount of shared memory available, SHMMAX is maximum size of a shared memory segment.\n\nOn Panther (10.3.x) set your SHMALL to:\n\n{VALUE of SHMMAX} / 4096\n\n4096 is the default page size in 10.3.x.  So, for example, your SHMMAX is 134217728 (128MB), you would set SHMALL to 32768.",
+            "date_published": "2005-02-01T14:02:59-07:00",
+            "authors": [
+                {
+                    "name": "rhumgod",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/f5998d4a142b6148fa299549ccccbc0b?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "rhumgod",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/f5998d4a142b6148fa299549ccccbc0b?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-405",
+            "url": "https://blog.josephscott.org/2004/07/06/tweaking-mac-os-x-sysctl-values/#comment-405",
+            "content_html": "had the same problem with values in sysctl.conf not taking effect -- until what you said caused me to look at /etc/rc. I then looked closely at my sysctl.conf, and I realized it had what turns out to be a syntax error -- whitespace!\n\nI set the following:\n\n<code>net.inet.tcp.keepidle=2160</code>\n\nbut I had originally written it with a space on either side of the equals sign.  Without the spaces, it loads at startup!\n\nMake sure that's not your issue too...\n\nI'm on 10.3.7 btw.",
+            "content_text": "had the same problem with values in sysctl.conf not taking effect -- until what you said caused me to look at /etc/rc. I then looked closely at my sysctl.conf, and I realized it had what turns out to be a syntax error -- whitespace!\n\nI set the following:\n\nnet.inet.tcp.keepidle=2160\n\nbut I had originally written it with a space on either side of the equals sign.  Without the spaces, it loads at startup!\n\nMake sure that's not your issue too...\n\nI'm on 10.3.7 btw.",
+            "date_published": "2005-01-26T16:08:59-07:00",
+            "authors": [
+                {
+                    "name": "jfw",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/f85ed977b7e31fc9558d4895fbcef626?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "jfw",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/f85ed977b7e31fc9558d4895fbcef626?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

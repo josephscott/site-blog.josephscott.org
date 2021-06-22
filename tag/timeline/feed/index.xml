@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>timeline &#8211; Joseph Scott</title>
+	<atom:link href="/tag/timeline/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 02 Apr 2012 13:59:02 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Javascript Timeline</title>
+		<link>/2012/04/02/javascript-timeline/</link>
+					<comments>/2012/04/02/javascript-timeline/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 02 Apr 2012 13:59:02 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[timeline]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=5598</guid>
+
+					<description><![CDATA[It seems that having Facebook offer a timeline UI has reignited interest in that format. I&#8217;ve seen several Javascript libraries pop up that make generating a timeline UI fairly simple. One that caught my eye is Timeline. Has anyone whipped up scripts to automatically populate data for Timeline from Subversion or Git repos?]]></description>
+										<content:encoded><![CDATA[<p>It seems that having Facebook offer a timeline UI has reignited interest in that format.  I&#8217;ve seen several Javascript libraries pop up that make generating a timeline UI fairly simple.  One that caught my eye is <a href='http://timeline.verite.co/'>Timeline</a>.</p>
+<p>Has anyone whipped up scripts to automatically populate data for Timeline from Subversion or Git repos?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/04/02/javascript-timeline/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

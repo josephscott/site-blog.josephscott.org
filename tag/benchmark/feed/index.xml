@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>benchmark &#8211; Joseph Scott</title>
+	<atom:link href="/tag/benchmark/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 05 May 2014 19:35:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Framework Benchmarks</title>
+		<link>/2014/05/05/framework-benchmarks/</link>
+					<comments>/2014/05/05/framework-benchmarks/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 05 May 2014 19:35:00 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[benchmark]]></category>
+		<category><![CDATA[hhvm]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10447</guid>
+
+					<description><![CDATA[The folks at TechEmpower having been doing an impressive job of framework benchmarks, now on round 9 &#8211; With ample network bandwidth, the highest-performing frameworks are further differentiated. Additionally, the Peak test environment uses servers with 40 HT cores across two Xeon E5 processors, and the results illustrate how well each framework scales to high [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The folks at TechEmpower having been doing an impressive job of <a href="http://www.techempower.com/blog/2014/05/01/framework-benchmarks-round-9/" title="Turns out no one framework wins everything.">framework benchmarks, now on round 9</a> &#8211;</p>
+<blockquote><p>
+With ample network bandwidth, the highest-performing frameworks are further differentiated. Additionally, the Peak test environment uses servers with 40 HT cores across two Xeon E5 processors, and the results illustrate how well each framework scales to high parallelism on a single server node.
+</p></blockquote>
+<p>HHVM made a top showing under the <a href="http://www.techempower.com/benchmarks/#section=data-r9&#038;hw=peak&#038;test=update">data updates</a> category.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/05/05/framework-benchmarks/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Too Much Of A Good Thing, JavaScripts Loops In Prototype</title>
+		<link>/2006/09/05/too-much-of-a-good-thing-javascripts-loops-in-prototype/</link>
+					<comments>/2006/09/05/too-much-of-a-good-thing-javascripts-loops-in-prototype/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 06 Sep 2006 06:13:58 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[benchmark]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[prototype]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/09/05/too-much-of-a-good-thing-javascripts-loops-in-prototype/</guid>
+
+					<description><![CDATA[Ryan Campbell investigates the cost of enumerable loops in Prototype. The resulting numbers are pretty dramatic when dealing with larger arrays. One thing to keep in mind though is that for only a few iterations over arrays with a small number of elements then the penalty is probably small enough that it won&#8217;t cause problems. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Ryan Campbell investigates <a href="http://particletree.com/notebook/beware-of-javascript-library-overkill/">the cost of enumerable loops in Prototype</a>.  The resulting numbers are pretty dramatic when dealing with larger arrays.  One thing to keep in mind though is that for only a few iterations over arrays with a small number of elements then the penalty is probably small enough that it won&#8217;t cause problems.</p>
+<p>Benchmarks using the various JavaScript libraries is something that I&#8217;d expect to see more of.  Soon or later someone will post benchmarks between Prototype, YUI and JQuery on various tests.  The benefit from having numbers like this is that eventually all libraries will adopt the fastest approach that meets their goals.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/09/05/too-much-of-a-good-thing-javascripts-loops-in-prototype/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

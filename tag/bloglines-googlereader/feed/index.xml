@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>bloglines googlereader &#8211; Joseph Scott</title>
+	<atom:link href="/tag/bloglines-googlereader/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 07 Oct 2005 18:39:49 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Google Reader</title>
+		<link>/2005/10/07/google-reader/</link>
+					<comments>/2005/10/07/google-reader/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 07 Oct 2005 18:39:49 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[bloglines googlereader]]></category>
+		<category><![CDATA[feeds]]></category>
+		<category><![CDATA[google]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=499</guid>
+
+					<description><![CDATA[Google has a web based feed reader: Google Reader (in beta of course). The most obvious question is, what does this mean for Bloglines? Only time will tell. I was able to import my subscription list (in OPML format) from Bloglines into the Google Reader. The hardest part of this process was figuring out how [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Google has a web based feed reader: <a href="http://www.google.com/reader/">Google Reader</a> (in beta of course).  The most obvious question is, what does this mean for <a href="http://www.bloglines.com/">Bloglines</a>?  Only time will tell.</p>
+<p>I was able to import my subscription list (in OPML format) from Bloglines into the Google Reader.  The hardest part of this process was figuring out how to do that in Bloglines.  I had to jump through three or four hoops before I got to an export link in Bloglines.  They should have an export link in the extras section at the bottom of my subscription list where I read my feeds.</p>
+<p>The UI in Google Reader is a little odd at first.  The keyboard navigation is nice though.  The two sorting options of relevance and date aren&#8217;t real clear though.  I just want to read unread entries in feeds that I&#8217;m subscribed to most of the time, and relevance and date don&#8217;t convey that to me.  Along with being able to keep an entry unread there are options to blog about the entry which is tied to their <a href="http://www.blogger.com/">Blogger</a> service.  This is fine if you use Blogger and completely useless if you don&#8217;t.  There is also an option to Gmail the entry, but when I tried that the page that it brought up only indicated an error.  I&#8217;m going to assume that when it is working that will fire up a new message in your <a href="http://www.gmail.com/">Gmail</a> with a link and or the text of the entry already in the body of the message.</p>
+<p>They&#8217;ve obviously put some thought into this, but I&#8217;m not sure that was translated into a really good product.  Despite all of it&#8217;s problems one of the things that I like about the Bloglines UI is the ability at a glance to get a pretty good idea of which blogs have new entries without having to look too hard.  The Google Reader UI is more zoomed in than that, so it isn&#8217;t immediately obvious how many feeds have unread entries.  Its hard to pin down why, but this bothers me.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/10/07/google-reader/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

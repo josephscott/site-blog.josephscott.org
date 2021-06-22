@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>tus &#8211; Joseph Scott</title>
+	<atom:link href="/tag/tus/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 14 Dec 2015 17:49:49 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Resumable File Uploads</title>
+		<link>/2015/12/14/resumable-file-uploads/</link>
+					<comments>/2015/12/14/resumable-file-uploads/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 14 Dec 2015 17:49:49 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[tus]]></category>
+		<category><![CDATA[uploads]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14349</guid>
+
+					<description><![CDATA[tus.io is working on an &#8220;Open Protocol for Resumable Uploads&#8221;. Their 1.0 announcement covers many of the details.]]></description>
+										<content:encoded><![CDATA[<p><a href="http://tus.io/">tus.io</a> is working on an &#8220;Open Protocol for Resumable Uploads&#8221;.  Their <a href="http://tus.io/blog/2015/11/16/tus.1.0/">1.0 announcement</a> covers many of the details.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/14/resumable-file-uploads/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

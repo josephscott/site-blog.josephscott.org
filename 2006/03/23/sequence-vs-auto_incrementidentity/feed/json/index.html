@@ -1,0 +1,124 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2006/03/23/sequence-vs-auto_incrementidentity/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2006/03/23/sequence-vs-auto_incrementidentity/",
+    "feed_url": "https://blog.josephscott.org/2006/03/23/sequence-vs-auto_incrementidentity/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: Sequence vs Auto_Increment/Identity",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2006/03/23/sequence-vs-auto_incrementidentity/#comment-1202",
+            "url": "https://blog.josephscott.org/2006/03/23/sequence-vs-auto_incrementidentity/#comment-1202",
+            "content_html": "It appears that sequences will be a feature of SQL  Server 2011...\n\nhttp://www.sql-server-performance.com/articles/dev/sequence_sql_server_2011_p1.aspx",
+            "content_text": "It appears that sequences will be a feature of SQL  Server 2011...\n\nhttp://www.sql-server-performance.com/articles/dev/sequence_sql_server_2011_p1.aspx",
+            "date_published": "2011-02-10T21:27:08-07:00",
+            "authors": [
+                {
+                    "name": "johnr",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/d54e0bb878e37ba8cb17f76f1e416e96?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "johnr",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/d54e0bb878e37ba8cb17f76f1e416e96?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2006/03/23/sequence-vs-auto_incrementidentity/#comment-1201",
+            "url": "https://blog.josephscott.org/2006/03/23/sequence-vs-auto_incrementidentity/#comment-1201",
+            "content_html": "[...] s\u00e1bado, marzo 25 2006 @ 08:40 EST   At the risk of turning this into a SQL Server blog I have to bring up one more issue that I came across. I was looking at the Microsoft SQL Server functions in PHP trying to figure out how how to get the last inserted id from an identity field. With MySQL you can use mysql_insert_id() in PHP.  Complete story: http://joseph.randomnetworks.com/archives/2006/03/23/sequence-vs-auto_incrementidentity/:: :: [...]",
+            "content_text": "[...] s\u00e1bado, marzo 25 2006 @ 08:40 EST   At the risk of turning this into a SQL Server blog I have to bring up one more issue that I came across. I was looking at the Microsoft SQL Server functions in PHP trying to figure out how how to get the last inserted id from an identity field. With MySQL you can use mysql_insert_id() in PHP.  Complete story: http://joseph.randomnetworks.com/archives/2006/03/23/sequence-vs-auto_incrementidentity/:: :: [...]",
+            "date_published": "2006-03-25T16:27:15-07:00",
+            "authors": [
+                {
+                    "name": "DbRunas.com.ar - Sequence vs Auto_Increment/Identity",
+                    "url": "http://www.dbrunas.com.ar/article.php?story=20060325084057446",
+                    "avatar": false
+                }
+            ],
+            "author": {
+                "name": "DbRunas.com.ar - Sequence vs Auto_Increment/Identity",
+                "url": "http://www.dbrunas.com.ar/article.php?story=20060325084057446",
+                "avatar": false
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2006/03/23/sequence-vs-auto_incrementidentity/#comment-1200",
+            "url": "https://blog.josephscott.org/2006/03/23/sequence-vs-auto_incrementidentity/#comment-1200",
+            "content_html": "You are correct, I see your point.  PostgreSQL does not implement the identity feature from the standard.  Instead I should have suggested that you include a section on sequences since they are also part of the standard.",
+            "content_text": "You are correct, I see your point.  PostgreSQL does not implement the identity feature from the standard.  Instead I should have suggested that you include a section on sequences since they are also part of the standard.",
+            "date_published": "2006-03-25T08:44:01-07:00",
+            "authors": [
+                {
+                    "name": "joseph",
+                    "url": "http://www.randomnetworks.com/",
+                    "avatar": "https://secure.gravatar.com/avatar/407fb36bbf6a01e151680be9f408b5af?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "joseph",
+                "url": "http://www.randomnetworks.com/",
+                "avatar": "https://secure.gravatar.com/avatar/407fb36bbf6a01e151680be9f408b5af?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2006/03/23/sequence-vs-auto_incrementidentity/#comment-1199",
+            "url": "https://blog.josephscott.org/2006/03/23/sequence-vs-auto_incrementidentity/#comment-1199",
+            "content_html": "Yes, PostgreSQL and Oracle have sequences, and I think that they are fairly compliant compared to the SQL standard's SEQUENCE specs, although I haven't examined it closely yet.\n\nIDENTITY and SEQUENCEs are not the same thing, although clearly related. The link I referred you to solely examines whether the DBMSes implement the standard's IDENTITY feature; in cases where they don't, I mention some alternative ways to obtain somewhat comparable effects.\n\nAbout \"to indicate them as non-standard because the don\u2019t support identity is clearly wrong\", I don't know what you mean. I don't write that PostgreSQL and Oracle are non-standard because they don't support the IDENTITY column attribute. As I write, the IDENTITY feature is a non-core (i.e. optional) SQL:2003 feature.\n\nAt this point, my page doesn't have a section dedicated to SEQUENCES.\n\nWhat I wanted to point out is that MySQL's AUTO_INCREMENT feature actually has a nice property: The fact that AUTO_INCREMENT makes it easy to handle situations where the application sometimes inserts automatic, sometimes explicit (non-automatic) values into the AUTO_INCREMENT-column.",
+            "content_text": "Yes, PostgreSQL and Oracle have sequences, and I think that they are fairly compliant compared to the SQL standard's SEQUENCE specs, although I haven't examined it closely yet.\n\nIDENTITY and SEQUENCEs are not the same thing, although clearly related. The link I referred you to solely examines whether the DBMSes implement the standard's IDENTITY feature; in cases where they don't, I mention some alternative ways to obtain somewhat comparable effects.\n\nAbout \"to indicate them as non-standard because the don\u2019t support identity is clearly wrong\", I don't know what you mean. I don't write that PostgreSQL and Oracle are non-standard because they don't support the IDENTITY column attribute. As I write, the IDENTITY feature is a non-core (i.e. optional) SQL:2003 feature.\n\nAt this point, my page doesn't have a section dedicated to SEQUENCES.\n\nWhat I wanted to point out is that MySQL's AUTO_INCREMENT feature actually has a nice property: The fact that AUTO_INCREMENT makes it easy to handle situations where the application sometimes inserts automatic, sometimes explicit (non-automatic) values into the AUTO_INCREMENT-column.",
+            "date_published": "2006-03-25T05:23:15-07:00",
+            "authors": [
+                {
+                    "name": "Troels Arvin",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/50ead803b8addd4a5f64d02bd8097b3d?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Troels Arvin",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/50ead803b8addd4a5f64d02bd8097b3d?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2006/03/23/sequence-vs-auto_incrementidentity/#comment-1198",
+            "url": "https://blog.josephscott.org/2006/03/23/sequence-vs-auto_incrementidentity/#comment-1198",
+            "content_html": "If you want to ensure that you have unique values in a column then you should be placing some sort of unique constraint on it.  As you note in the link you provided fields that make use of sequences or identities are usually primary keys, which would include a unique constraint.  Having an identity field enforce uniqueness is one more thing to remember.  What if you don't want your identity field to enforce uniqueness?  I have no idea why you'd want that, but it is one more thing to remember.  Either way I'd contend that the correct way to enforce this is with a unique constraint.\n\nIn the link you provided you mention that the standard specifies the identity method and not the sequence method.  I'm assuming that you are talking about SQL-2003 since you mention at the top of that page.  There is a PDF covering new features in SQL-2003 at <a href=\"http://www.wiscorp.com/SQLStandards.html\" rel=\"nofollow\">http://www.wiscorp.com/SQLStandards.html</a> see the link <a href=\"http://www.wiscorp.com/SQL2003Features.pdf\" rel=\"nofollow\">SQL 2003 Paper</a> (PDF) under Key Readings.  According to this PDF both identity (pages 21-22) and sequences (pages  15-20) are included in the standard.  I don't know if Oracle and PostgreSQL sequences meet the spec exactly, but to indicate them as non-standard because the don't support identity is clearly wrong.  This is also supported by the <a href=\"http://www.acm.org/sigmod/record/issues/0403/E.JimAndrew-standard.pdf\" rel=\"nofollow\">SQL:2003 Has Been Published</a> PDF from ACM which mentions both sequences and identities as part of the SQL 2003 standard.\n\nOverall I like your comparison.  The PostgreSQL version you mention is over a year old so there may be some changes that could go into your list.",
+            "content_text": "If you want to ensure that you have unique values in a column then you should be placing some sort of unique constraint on it.  As you note in the link you provided fields that make use of sequences or identities are usually primary keys, which would include a unique constraint.  Having an identity field enforce uniqueness is one more thing to remember.  What if you don't want your identity field to enforce uniqueness?  I have no idea why you'd want that, but it is one more thing to remember.  Either way I'd contend that the correct way to enforce this is with a unique constraint.\n\nIn the link you provided you mention that the standard specifies the identity method and not the sequence method.  I'm assuming that you are talking about SQL-2003 since you mention at the top of that page.  There is a PDF covering new features in SQL-2003 at http://www.wiscorp.com/SQLStandards.html see the link SQL 2003 Paper (PDF) under Key Readings.  According to this PDF both identity (pages 21-22) and sequences (pages  15-20) are included in the standard.  I don't know if Oracle and PostgreSQL sequences meet the spec exactly, but to indicate them as non-standard because the don't support identity is clearly wrong.  This is also supported by the SQL:2003 Has Been Published PDF from ACM which mentions both sequences and identities as part of the SQL 2003 standard.\n\nOverall I like your comparison.  The PostgreSQL version you mention is over a year old so there may be some changes that could go into your list.",
+            "date_published": "2006-03-24T11:14:49-07:00",
+            "authors": [
+                {
+                    "name": "joseph",
+                    "url": "http://www.randomnetworks.com/",
+                    "avatar": "https://secure.gravatar.com/avatar/407fb36bbf6a01e151680be9f408b5af?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "joseph",
+                "url": "http://www.randomnetworks.com/",
+                "avatar": "https://secure.gravatar.com/avatar/407fb36bbf6a01e151680be9f408b5af?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2006/03/23/sequence-vs-auto_incrementidentity/#comment-1197",
+            "url": "https://blog.josephscott.org/2006/03/23/sequence-vs-auto_incrementidentity/#comment-1197",
+            "content_html": "A nice feature about AUTO_INCREMENT is that you are guaranteed that it will never fail:\nAssume that table \"foo\" has an auto-incremented column \"foo_auto\". Even though the AUTO_INCREMENT's counter may have reached a value of 238 for the next row's \"foo_auto\" column, if you insert a row where the value of foo_auto has explicitly been set to 238, AUTO_INCREMENT will \"see\" this, and insert 239 next time you insert a row where you don't explicitly state the primary key value.\n\nIn other auto-generating schemes, it's not easy to allow for both auto-generated values and explicitly stated values.\n\nI've written about the subject at http://troels.arvin.dk/db/rdbms/#mix-identity",
+            "content_text": "A nice feature about AUTO_INCREMENT is that you are guaranteed that it will never fail:\nAssume that table \"foo\" has an auto-incremented column \"foo_auto\". Even though the AUTO_INCREMENT's counter may have reached a value of 238 for the next row's \"foo_auto\" column, if you insert a row where the value of foo_auto has explicitly been set to 238, AUTO_INCREMENT will \"see\" this, and insert 239 next time you insert a row where you don't explicitly state the primary key value.\n\nIn other auto-generating schemes, it's not easy to allow for both auto-generated values and explicitly stated values.\n\nI've written about the subject at http://troels.arvin.dk/db/rdbms/#mix-identity",
+            "date_published": "2006-03-24T01:17:09-07:00",
+            "authors": [
+                {
+                    "name": "Troels Arvin",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/50ead803b8addd4a5f64d02bd8097b3d?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Troels Arvin",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/50ead803b8addd4a5f64d02bd8097b3d?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

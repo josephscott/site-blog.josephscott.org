@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>licensing &#8211; Joseph Scott</title>
+	<atom:link href="/tag/licensing/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 10 Apr 2007 21:25:37 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Quotes</title>
+		<link>/2007/04/10/quotes/</link>
+					<comments>/2007/04/10/quotes/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 10 Apr 2007 21:25:37 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[licensing]]></category>
+		<category><![CDATA[northtemple]]></category>
+		<category><![CDATA[quotes]]></category>
+		<category><![CDATA[wma]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/04/10/quotes/</guid>
+
+					<description><![CDATA[Some lines are just too good to pass up. Ted Boren at NorthTemple on commit privs: The best way to keep developers from breaking the build is to take away their rights to commit code. ~ Just overheard from our QA team, tongue deeply in cheek Zunester on licensing fees, emphasis mine, via Daring Fireball: [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Some lines are just too good to pass up.</p>
+<p><a href="http://northtemple.com/514">Ted Boren at NorthTemple on commit privs</a>:</p>
+<blockquote><p>
+The best way to keep developers from breaking the build is to take away their rights to commit code.</p>
+<p>~ Just overheard from our QA team, tongue deeply in cheek
+</p></blockquote>
+<p><a href="http://www.zunester.com/2007/04/more-than-you-ever-wanted-to-know-about.html">Zunester on licensing fees</a>, emphasis mine, via <a href="http://daringfireball.net/2007/04/some_facts_about_aac">Daring Fireball</a>:</p>
+<blockquote><p>
+WMA – Microsoft’s audio format. Adopted by most mp3 player skus (but not by most mp3 player units, thanks to the iPod..). <b>Freely licensable for a low fee</b>. Also associated with WMDRM, which is supported by playsforsure devices. High compression efficiency, good compatibility story, but not as good as mp3’s.
+</p></blockquote>
+<p>I love a good laugh in the middle of the day.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/04/10/quotes/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

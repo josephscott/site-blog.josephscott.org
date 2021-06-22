@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>nofollow &#8211; Joseph Scott</title>
+	<atom:link href="/tag/nofollow/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 24 Mar 2005 06:34:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Begone Nofollow</title>
+		<link>/2005/03/23/begone-nofollow/</link>
+					<comments>/2005/03/23/begone-nofollow/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 24 Mar 2005 06:34:44 +0000</pubDate>
+				<category><![CDATA[Blogging]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[nofollow]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/03/23/begone-nofollow/</guid>
+
+					<description><![CDATA[I&#8217;ve ripped out all of the nofollow tagging that WordPress was doing to the links in the comments. So feel free to comment away with the confidence that you&#8217;ll still get your Google Juice. Why did I bother doing this? Because it doesn&#8217;t work, I was still receiving hundreds and hundreds of spam comments after [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve ripped out all of the nofollow tagging that <a href="http://www.wordpress.org/">WordPress</a> was doing to the links in the comments.  So feel free to comment away with the confidence that you&#8217;ll still get your <a href="http://www.google.com/search?client=safari&amp;rls=en&amp;q=google+juice&amp;ie=UTF-8&amp;oe=UTF-8">Google Juice</a>.  Why did I bother doing this?  Because it doesn&#8217;t work, I was still receiving hundreds and hundreds of spam comments after my upgrade to WP 1.5.  So leaving it in there was only hurting those legit comments.  I&#8217;ll say it one more time, if your solution doesn&#8217;t PREVENT the problem, then it isn&#8217;t really a solution.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/03/23/begone-nofollow/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

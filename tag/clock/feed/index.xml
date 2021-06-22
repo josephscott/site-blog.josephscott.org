@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>clock &#8211; Joseph Scott</title>
+	<atom:link href="/tag/clock/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 24 May 2011 14:05:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>worldtimebuddy</title>
+		<link>/2011/05/24/worldtimebuddy/</link>
+					<comments>/2011/05/24/worldtimebuddy/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 24 May 2011 14:05:38 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[clock]]></category>
+		<category><![CDATA[time-zone]]></category>
+		<category><![CDATA[worldtimebuddy]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4077</guid>
+
+					<description><![CDATA[worldtimebuddy &#8211; handy little site for tracking the date and time across multiple time zones. Especially when your team of five people spans a range of 18 hours across time zones on three different continents. Only downside is the mobile experience, there doesn&#8217;t seem to be any way to change the time setting when I [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href='http://www.worldtimebuddy.com/'>worldtimebuddy</a> &#8211; handy little site for tracking the date and time across multiple time zones.  Especially when your team of five people spans a range of 18 hours across time zones on three different continents.</p>
+<p>Only downside is the mobile experience, there doesn&#8217;t seem to be any way to change the time setting when I viewed the site with an iPhone.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/05/24/worldtimebuddy/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Alternative Clock Style</title>
+		<link>/2010/08/27/alternative-clock-style/</link>
+					<comments>/2010/08/27/alternative-clock-style/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 27 Aug 2010 15:26:34 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[clock]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2767</guid>
+
+					<description><![CDATA[I like this alternative clock layout. I does a good job of conveying all of the information for which month to the second, but I still don&#8217;t see it as replacing my regular clocks. In most cases I only want to know the minute/hour/day. Anyone come up with alternative clock style for just that information?]]></description>
+										<content:encoded><![CDATA[<p>I like this <a href="http://vis.stanford.edu/protovis/ex/clock-full.html">alternative clock layout</a>.  I does a good job of conveying all of the information for which month to the second, but I still don&#8217;t see it as replacing my regular clocks.  In most cases I only want to know the minute/hour/day.  Anyone come up with alternative clock style for just that information?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/08/27/alternative-clock-style/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

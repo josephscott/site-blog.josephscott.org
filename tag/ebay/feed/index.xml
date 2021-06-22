@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ebay &#8211; Joseph Scott</title>
+	<atom:link href="/tag/ebay/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Sat, 05 Apr 2014 05:33:37 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>PHP Remote Execution Bug Discovery Process</title>
+		<link>/2014/04/05/php-remote-execution-bug-discovery-process/</link>
+					<comments>/2014/04/05/php-remote-execution-bug-discovery-process/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 05 Apr 2014 05:33:37 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[ebay]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[security]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9618</guid>
+
+					<description><![CDATA[Interesting walk through on how a remote execution bug was found on an eBay site. Mitigation items end up being fairly standard: don&#8217;t trust user input and avoid eval() as much as possible.]]></description>
+										<content:encoded><![CDATA[<p>Interesting walk through on <a href="http://secalert.net/2013/12/13/ebay-remote-code-execution/">how a remote execution bug was found on an eBay site</a>.</p>
+<p>Mitigation items end up being fairly standard: don&#8217;t trust user input and avoid <code>eval()</code> as much as possible.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/04/05/php-remote-execution-bug-discovery-process/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>First Copy of Absolute FreeBSD Auction</title>
+		<link>/2007/10/24/first-copy-of-absolute-freebsd-auction/</link>
+					<comments>/2007/10/24/first-copy-of-absolute-freebsd-auction/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 24 Oct 2007 17:00:27 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[absolutefreebsd]]></category>
+		<category><![CDATA[auction]]></category>
+		<category><![CDATA[ebay]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/10/24/first-copy-of-absolute-freebsd-auction/</guid>
+
+					<description><![CDATA[The FreeBSD Foundation has arranged to auction off the first copy of Absolute FreeBSD, 2nd Edition by Michael Lucas. The proceeds of the auction will go to the foundation: http://cgi.ebay.com/ws/eBayISAPI.dll?ViewItem&#38;item=120175384688&#38;ssPageName=ADME:L:LCA:US:1123. I didn&#8217;t see this mentioned on the foundation web site yet, so here is a link to the email announcement of the auction.]]></description>
+										<content:encoded><![CDATA[<p><img src="http://farm3.static.flickr.com/2199/1717356870_1b4d916416.jpg?v=0" /></p>
+<p>The <a href="http://www.freebsdfoundation.org/">FreeBSD Foundation</a> has arranged to auction off the first copy of <a href="http://www.nostarch.com/frameset.php?startat=abs_bsd2">Absolute FreeBSD, 2nd Edition</a> by <a href="http://www.blackhelicopters.org/~mwlucas/">Michael Lucas</a>.  The proceeds of the auction will go to the foundation:</p>
+<p><a href="http://cgi.ebay.com/ws/eBayISAPI.dll?ViewItem&amp;item=120175384688&amp;ssPageName=ADME:L:LCA:US:1123">http://cgi.ebay.com/ws/eBayISAPI.dll?ViewItem&amp;item=120175384688&amp;ssPageName=ADME:L:LCA:US:1123</a>.</p>
+<p>I didn&#8217;t see this mentioned on the foundation web site yet, so here is a link to the <a href="http://lists.freebsd.org/pipermail/freebsd-announce/2007-October/001151.html">email announcement</a> of the auction.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/10/24/first-copy-of-absolute-freebsd-auction/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

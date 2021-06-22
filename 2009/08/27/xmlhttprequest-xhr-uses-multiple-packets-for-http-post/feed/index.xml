@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: XMLHttpRequest (XHR) Uses Multiple Packets for HTTP POST?	</title>
+	<atom:link href="/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/feed/" rel="self" type="application/rss+xml" />
+	<link>/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/</link>
+	<description></description>
+	<lastBuildDate>Thu, 26 Jan 2017 09:48:56 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: laike9m		</title>
+		<link>/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-34109</link>
+
+		<dc:creator><![CDATA[laike9m]]></dc:creator>
+		<pubDate>Thu, 26 Jan 2017 09:48:56 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1411#comment-34109</guid>
+
+					<description><![CDATA[@Nicholas Humfrey You sure about that? I tested Chrome 55.0.2883.95 and it still sends two TCP packets.]]></description>
+			<content:encoded><![CDATA[<p>@Nicholas Humfrey You sure about that? I tested Chrome 55.0.2883.95 and it still sends two TCP packets.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Nicholas Humfrey		</title>
+		<link>/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-17709</link>
+
+		<dc:creator><![CDATA[Nicholas Humfrey]]></dc:creator>
+		<pubDate>Tue, 11 Oct 2016 18:48:20 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1411#comment-17709</guid>
+
+					<description><![CDATA[October 2016 and I am experiencing this problem with Safari 9.1.3 (10601.7.8) on Mac OS and also on iOS 10.0.2.
+It is sending the HTTP headers in one packet and the body in a second packet, even for a very small request.
+
+I am implementing a tiny IPv6 HTTP server on Arduino, which can&#039;t currently cope with requests spanning multiple packets. So very frustrating that it works with Chrome but not Safari.
+
+The good news however it that Chrome 53.0.2785.143 (also on Mac) is sending a single packet, containing both the headers and body.]]></description>
+			<content:encoded><![CDATA[<p>October 2016 and I am experiencing this problem with Safari 9.1.3 (10601.7.8) on Mac OS and also on iOS 10.0.2.<br />
+It is sending the HTTP headers in one packet and the body in a second packet, even for a very small request.</p>
+<p>I am implementing a tiny IPv6 HTTP server on Arduino, which can&#8217;t currently cope with requests spanning multiple packets. So very frustrating that it works with Chrome but not Safari.</p>
+<p>The good news however it that Chrome 53.0.2785.143 (also on Mac) is sending a single packet, containing both the headers and body.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: dc		</title>
+		<link>/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-15434</link>
+
+		<dc:creator><![CDATA[dc]]></dc:creator>
+		<pubDate>Sat, 24 Sep 2016 02:56:26 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1411#comment-15434</guid>
+
+					<description><![CDATA[Maybe now, 2016, the world is changed?]]></description>
+			<content:encoded><![CDATA[<p>Maybe now, 2016, the world is changed?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: ericlaw1979		</title>
+		<link>/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3035</link>
+
+		<dc:creator><![CDATA[ericlaw1979]]></dc:creator>
+		<pubDate>Thu, 17 Jan 2013 20:59:52 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1411#comment-3035</guid>
+
+					<description><![CDATA[In case you&#039;re curious about why this happens in IE-- the headers are sent by WinINET, but the calling pattern of XHR through URLMon to WinINET results in going async, which means that the POST body bytes aren&#039;t typically supplied to WinINET until after the headers have been sent. This is something that we looked at changing in IE10 but ran out of time. In practice, the performance impact is pretty small.
+
+To chandru&#039;s question: The issue here is that the POST body can get lost if the browsing process is torn down in the window between the headers being sent to WinINET and the body being sent down. As a consequence, while a window is closing, you could end up with the headers and no body. (Fiddler will warn if it sees this happen).]]></description>
+			<content:encoded><![CDATA[<p>In case you&#8217;re curious about why this happens in IE&#8211; the headers are sent by WinINET, but the calling pattern of XHR through URLMon to WinINET results in going async, which means that the POST body bytes aren&#8217;t typically supplied to WinINET until after the headers have been sent. This is something that we looked at changing in IE10 but ran out of time. In practice, the performance impact is pretty small.</p>
+<p>To chandru&#8217;s question: The issue here is that the POST body can get lost if the browsing process is torn down in the window between the headers being sent to WinINET and the body being sent down. As a consequence, while a window is closing, you could end up with the headers and no body. (Fiddler will warn if it sees this happen).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Steve Esco		</title>
+		<link>/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3034</link>
+
+		<dc:creator><![CDATA[Steve Esco]]></dc:creator>
+		<pubDate>Tue, 17 Jan 2012 00:01:46 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1411#comment-3034</guid>
+
+					<description><![CDATA[After pulling my hair out for four days while working on an HTTP server implementation using .NET sockets, I was able to determine that i may actually get a minimum of one packet but usually about 5 packets for a single HTTP post on most mobile browsers. This for an AJAX call with a content length of about 11 Kb.]]></description>
+			<content:encoded><![CDATA[<p>After pulling my hair out for four days while working on an HTTP server implementation using .NET sockets, I was able to determine that i may actually get a minimum of one packet but usually about 5 packets for a single HTTP post on most mobile browsers. This for an AJAX call with a content length of about 11 Kb.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: 9UED &#124; 专注于用户体验 &#124; 浏览器加载与页面de性能优化		</title>
+		<link>/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3031</link>
+
+		<dc:creator><![CDATA[9UED &#124; 专注于用户体验 &#124; 浏览器加载与页面de性能优化]]></dc:creator>
+		<pubDate>Tue, 06 Sep 2011 09:14:16 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1411#comment-3031</guid>
+
+					<description><![CDATA[[...] 之所以用get性能更好的原因是有测试表明，即使数据很小，大部分浏览器（除了Firefox）在使用post时也会发送两个TCP的packet，所以性能上会有损失 [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] 之所以用get性能更好的原因是有测试表明，即使数据很小，大部分浏览器（除了Firefox）在使用post时也会发送两个TCP的packet，所以性能上会有损失 [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: XMLHttpRequest XHR Uses Multiple Packets for HTTP POST? &#124; Joseph Scott &#171; the joy of coding		</title>
+		<link>/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3030</link>
+
+		<dc:creator><![CDATA[XMLHttpRequest XHR Uses Multiple Packets for HTTP POST? &#124; Joseph Scott &#171; the joy of coding]]></dc:creator>
+		<pubDate>Thu, 09 Dec 2010 18:26:20 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1411#comment-3030</guid>
+
+					<description><![CDATA[[...] XMLHttpRequest XHR Uses Multiple Packets for HTTP POST? &#124; Joseph Scott. [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] XMLHttpRequest XHR Uses Multiple Packets for HTTP POST? | Joseph Scott. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3029</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2010 14:11:22 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1411#comment-3029</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3028&quot;&gt;Maurits&lt;/a&gt;.
+
+Nice, glad it helped.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3028">Maurits</a>.</p>
+<p>Nice, glad it helped.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Maurits		</title>
+		<link>/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3028</link>
+
+		<dc:creator><![CDATA[Maurits]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2010 12:57:46 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1411#comment-3028</guid>
+
+					<description><![CDATA[Thank you very much! We have such a web app that is doing lots of updates and to us this is enormously important. After doing some wiresharking and emulating some loss, jitter, low bandwidth and reordering (using tc) and reading your post I decided to change all the ajax post requests to ajax get requests hoping it had something to do with the 2 packet issue. And it did: after that no more strange 404&#039;s on the ajax calls appeared in the apache access log. I still didn&#039;t figure out why exactly, but emulating these conditions is no easy task either, so I may never find out.]]></description>
+			<content:encoded><![CDATA[<p>Thank you very much! We have such a web app that is doing lots of updates and to us this is enormously important. After doing some wiresharking and emulating some loss, jitter, low bandwidth and reordering (using tc) and reading your post I decided to change all the ajax post requests to ajax get requests hoping it had something to do with the 2 packet issue. And it did: after that no more strange 404&#8217;s on the ajax calls appeared in the apache access log. I still didn&#8217;t figure out why exactly, but emulating these conditions is no easy task either, so I may never find out.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3027</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 16 Nov 2009 16:36:48 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1411#comment-3027</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3026&quot;&gt;chandru&lt;/a&gt;.
+
+It&#039;s over TCP so any lost packets would be resent by the networking layer, below the browser.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3026">chandru</a>.</p>
+<p>It&#8217;s over TCP so any lost packets would be resent by the networking layer, below the browser.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>unit-testing &#8211; Joseph Scott</title>
+	<atom:link href="/tag/unit-testing/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 29 May 2013 16:06:39 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Enhance PHP Unit Testing</title>
+		<link>/2013/05/29/enhance-php-unit-testing/</link>
+					<comments>/2013/05/29/enhance-php-unit-testing/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 29 May 2013 16:06:39 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[enhance-php]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[unit-testing]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7785</guid>
+
+					<description><![CDATA[Like most people who have written unit tests for PHP code, I used PHPUnit. It is likely the most widely used testing library for PHP. I recently came across Enhance PHP Unit Testing for PHP, so I thought I would give it a try. Lets start with the traditional super basic Math class: [sourcecode lang=&#8221;php&#8221;] [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Like most people who have written unit tests for PHP code, I used <a href="https://github.com/sebastianbergmann/phpunit/">PHPUnit</a>.  It is likely the most widely used testing library for PHP.</p>
+<p>I recently came across <a href='http://www.enhance-php.com/'>Enhance PHP Unit Testing for PHP</a>, so I thought I would give it a try.</p>
+<p><img loading="lazy" src="https://sharedat.net/f/sD/sD77/enhance-php-logo.png" width="452" height="100" class="aligncenter" /></p>
+<p>Lets start with the traditional super basic <code>Math</code> class:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+class Math {<br />
+    public function add_2_numbers( $num_1, $num_2 ) {<br />
+        return $num_1 + $num_2;<br />
+    }</p>
+<p>    public function subtract_2_numbers( $num_1, $num_2 ) {<br />
+        return $num1 &#8211; $num2;<br />
+    }</p>
+<p>    public function multiply_2_numbers( $num_1, $num_2 ) {<br />
+        return $num_1 * $num_2;<br />
+    }</p>
+<p>    public function divide_2_numbers( $num_1, $num_2 ) {<br />
+        return $num_1 / $num_2;<br />
+    }<br />
+}<br />
+[/sourcecode]</p>
+<p>There are a few ways to test this with Enhance PHP, I eventually settled on the <a href="http://www.enhance-php.com/Content/Method-Coverage/">method coverage</a> approach:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+class Math_Test extends EnhanceTestFixture {<br />
+    public function add_2_numbers() {<br />
+        $target = EnhanceCore::getCodeCoverageWrapper( &#8216;Math&#8217; );<br />
+        $scenario = EnhanceCore::getScenario( $target, &#8216;add_2_numbers&#8217; );</p>
+<p>        $scenario-&gt;with( 2, 2 )-&gt;expect( 4 );<br />
+        $scenario-&gt;with( 0, 2 )-&gt;expect( 2 );<br />
+        $scenario-&gt;with( 3, 2 )-&gt;expect( 5 );</p>
+<p>        $scenario-&gt;VerifyExpectations();<br />
+    }<br />
+}</p>
+<p>EnhanceCore::runTests();<br />
+[/sourcecode]</p>
+<p>The syntax is easy enough, we define a <code>$target</code> for the class we are going to test then use <code>$scenario</code> to make multiple calls to the same method.  In this case we&#8217;ll call <code>add_2_numbers</code> with three different sets of parameters and indicating what the expected result is.  After defining our scenarios calling <code>VerifyExpectations</code> takes care of checking each one.</p>
+<p>Running that test returns the following results:</p>
+<p>[sourcecode lang=&#8221;text&#8221;]<br />
+Test Passed</p>
+<p>add_2_numbers &#8211; Passed</p>
+<p>Math-&gt;add_2_numbers:3<br />
+Math-&gt;subtract_2_numbers:0<br />
+Math-&gt;multiply_2_numbers:0<br />
+Math-&gt;divide_2_numbers:0</p>
+<p>Test Passed<br />
+Test run took 0.0001370906829834 seconds<br />
+[/sourcecode]</p>
+<p>The code coverage results are only at the method level.  You get a report indicating how many tests there are for each method.  If you want granular line by line code coverage analysis you&#8217;ll still want to look at <a href="http://phpunit.de/manual/3.8/en/code-coverage-analysis.html">PHPUnit + Xdebug</a>.</p>
+<p>To see what a failure looks like we&#8217;ll add these lines to the <code>Math_Test</code> class:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+        // for sufficiently large values of 2<br />
+        $scenario-&gt;with( 2, 2 )-&gt;expect( 5 );<br />
+[/sourcecode]</p>
+<p>Reports:</p>
+<p>[sourcecode lang=&#8221;text&#8221;]<br />
+Test Failed</p>
+<p>[Line 983 in file EnhanceTestFramework.php] add_2_numbers &#8211; Failed &#8211; Expected 5 but was 4</p>
+<p>Math-&gt;add_2_numbers:4<br />
+Math-&gt;subtract_2_numbers:0<br />
+Math-&gt;multiply_2_numbers:0<br />
+Math-&gt;divide_2_numbers:0</p>
+<p>Test Failed<br />
+Test run took 0.00020480155944824 seconds<br />
+[/sourcecode]</p>
+<p>There is a trade off in detail level using the scenario approach.  On the whole I like the tighter syntax of scenario, so I consider this level of detail good enough.</p>
+<p>I haven&#8217;t used Enhance PHP for enough tests to know for sure that I&#8217;d use it over PHPUnit, but I&#8217;m leaning that direction.  I really, really like having a single 56k file that handles the testing infrastructure.  That means I can easily distribute it along with my tests.</p>
+<p>If you are already heavily invested in using PHPUnit, switching to something else is likely not going to be worth it.  If you are writing tests for something new then <a href="http://www.enhance-php.com/">Enhance PHP</a> is worth trying.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/05/29/enhance-php-unit-testing/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

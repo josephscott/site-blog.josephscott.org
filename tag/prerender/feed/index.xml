@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>prerender &#8211; Joseph Scott</title>
+	<atom:link href="/tag/prerender/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 02 May 2014 15:36:01 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Full Page Prerendering in Chrome</title>
+		<link>/2014/05/02/full-page-prerendering-in-chrome/</link>
+					<comments>/2014/05/02/full-page-prerendering-in-chrome/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 02 May 2014 15:36:01 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[cache]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[prerender]]></category>
+		<category><![CDATA[steve-souders]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10432</guid>
+
+					<description><![CDATA[Steve Souders takeaway #1 after trying to figure out unexpected caching behavior in Chrome ( emphasis is mine ): Remember that Chrome may do DNS prefetch, TCP pre-connect, and even prerender the entire page based on the confidences in chrome://predictors. Apparently this isn&#8217;t new information, it was mentioned by Ilya Grigorik in High Performance Networking in [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Steve Souders takeaway #1 after trying to figure out <a href="http://www.stevesouders.com/blog/2014/04/30/unexpected-prerender-in-chrome/" title="Everyone is reading his site by now right?">unexpected caching behavior in Chrome</a> ( emphasis is mine ):</p>
+<blockquote><p>
+Remember that Chrome may do DNS prefetch, TCP pre-connect, and even <strong>prerender the entire page</strong> based on the confidences in chrome://predictors.
+</p></blockquote>
+<p>Apparently this isn&#8217;t new information, it was mentioned by Ilya Grigorik in <a href="http://networkedblogs.com/HK4Pk" title="There is no way to link to an individual section.">High Performance Networking in Google Chrome</a>.  But if Steve Souders didn&#8217;t know about it already then I expect that it isn&#8217;t widely known.</p>
+<p>Looking over the chrome://predictors/ results in my browser it is about what I&#8217;d expect.  One thing that would be helpful is the ability to sort by individual columns.  I&#8217;m most interested in which pages Chrome is mostly likely to attempt to prerender.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/05/02/full-page-prerendering-in-chrome/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

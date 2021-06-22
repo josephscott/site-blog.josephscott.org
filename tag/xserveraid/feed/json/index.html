@@ -1,0 +1,42 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/xserveraid/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/xserveraid/",
+    "feed_url": "https://blog.josephscott.org/tag/xserveraid/feed/json/",
+    "language": "en-US",
+    "title": "xserveraid &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2005/03/19/dont-mess-with-my-xserve-g5/",
+            "url": "https://blog.josephscott.org/2005/03/19/dont-mess-with-my-xserve-g5/",
+            "title": "Don\u2019t Mess With My Xserve G5",
+            "content_html": "<p>I&#8217;ve been looking at a couple of different possibilities for expanding our file storage capacity at work, specifically I wanted to see if I&#8217;d run into any problems using FreeBSD 5.x with an <a href=\"http://www.apple.com/xserve/raid/\">Apple Xserve RAID</a> using the Apple Fibre Channel card.  So back on Thursday (17 Mar 2005) I took the spare Fibre Channel card and put it in a test box and broke the mirror on our current Xserve RAID system (connected to an Xserve G5) and plugged it in a tried it out.  The good news is that everything seems to work just fine.  FreeBSD detected the card using the <a href=\"http://www.freebsd.org/cgi/man.cgi?query=mpt&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+5.3-RELEASE+and+Ports&amp;format=html\">mpt(4)</a> driver and found the RAID array without any problems.</p>\n<p>The <a href=\"http://www.apple.com/xserve/\">Apple Xserve G5</a> was up and live the whole time, so it started beeping and sending out notifications when we unplugged one portion of the mirror that I used to test FreeBSD with.  So after I started running my tests I walked over to server room again to push the system indicator light/button on the front of the Xserve G5 (just to the left of the USB port on the <a href=\"http://images.apple.com/xserve/images/xs_indextop_010604_02.gif\">front panel</a>).  So I walk in the room, hold the button down for about a second and all of the sudden the lights in the room turned off and all of the UPSs started beeping madly.  After about of second of the power being off the building generator kicked on and we had emergency power running (nice to know the generator works), so all of the UPSs went silent again.</p>\n<p>I freaked!  I thought maybe I had some how killed a circuit by pushing this button on the Xserve G5.  I walked out of the server room and discovered that the whole building was out.  A minute later we discovered that the whole <a href=\"http://www.csus.edu/\">campus</a> and surrounding area lost power, so it wasn&#8217;t anything that I did.  I&#8217;m not sure if someone took out a power pole or what, but the power came back on after twenty minutes or so.  Just to make sure I went back and pressed the system indicator light/button to see if the power would stay on.  Fortunately nothing happened, so it was just coincidence that I happened to have pushed that button at the some moment that good sized power outage happened.</p>\n<p>Of course it doesn&#8217;t make any sense that pressing that button would cause a power outage, but I was sure spooked there for a minute.  Don&#8217;t mess with my Xserve G5 or I&#8217;ll turn the power off again <img src=\"https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png\" alt=\"\ud83d\ude42\" class=\"wp-smiley\" style=\"height: 1em; max-height: 1em;\" /></p>\n",
+            "content_text": "I&#8217;ve been looking at a couple of different possibilities for expanding our file storage capacity at work, specifically I wanted to see if I&#8217;d run into any problems using FreeBSD 5.x with an Apple Xserve RAID using the Apple Fibre Channel card.  So back on Thursday (17 Mar 2005) I took the spare Fibre Channel card and put it in a test box and broke the mirror on our current Xserve RAID system (connected to an Xserve G5) and plugged it in a tried it out.  The good news is that everything seems to work just fine.  FreeBSD detected the card using the mpt(4) driver and found the RAID array without any problems.\nThe Apple Xserve G5 was up and live the whole time, so it started beeping and sending out notifications when we unplugged one portion of the mirror that I used to test FreeBSD with.  So after I started running my tests I walked over to server room again to push the system indicator light/button on the front of the Xserve G5 (just to the left of the USB port on the front panel).  So I walk in the room, hold the button down for about a second and all of the sudden the lights in the room turned off and all of the UPSs started beeping madly.  After about of second of the power being off the building generator kicked on and we had emergency power running (nice to know the generator works), so all of the UPSs went silent again.\nI freaked!  I thought maybe I had some how killed a circuit by pushing this button on the Xserve G5.  I walked out of the server room and discovered that the whole building was out.  A minute later we discovered that the whole campus and surrounding area lost power, so it wasn&#8217;t anything that I did.  I&#8217;m not sure if someone took out a power pole or what, but the power came back on after twenty minutes or so.  Just to make sure I went back and pressed the system indicator light/button to see if the power would stay on.  Fortunately nothing happened, so it was just coincidence that I happened to have pushed that button at the some moment that good sized power outage happened.\nOf course it doesn&#8217;t make any sense that pressing that button would cause a power outage, but I was sure spooked there for a minute.  Don&#8217;t mess with my Xserve G5 or I&#8217;ll turn the power off again",
+            "date_published": "2005-03-19T00:38:22-07:00",
+            "date_modified": "2005-03-19T00:38:22-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "apple",
+                "FreeBSD",
+                "macosx",
+                "xraid",
+                "xserve",
+                "xserveraid",
+                "General",
+                "Mac OS X",
+                "OS"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/w3c/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/w3c/",
+    "feed_url": "https://blog.josephscott.org/tag/w3c/feed/json/",
+    "language": "en-US",
+    "title": "w3c &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://josephscott.org/?p=4030",
+            "url": "https://blog.josephscott.org/2011/05/04/html5-spec-calls-for-altering-your-data/",
+            "title": "HTML5 Spec Calls For Altering Your Data",
+            "content_html": "<p>While reading the <a href=\"http://blog.jquery.com/2011/05/03/jquery-16-released/\">jQuery 1.6 release announcement</a> I came across this gem:</p>\n<blockquote><p>\njQuery 1.5 introduced a feature in the .data() method to automatically import any data- attributes that were set on the element and convert them to JavaScript values using JSON semantics. In jQuery 1.6 we have updated this feature to match the W3C HTML5 spec with regards to camel-casing data attributes that have embedded dashes. So for example in jQuery 1.5.2, an attribute of data-max-value=&#8221;15&#8243; would create a data object of { max-value: 15 } but as of jQuery 1.6 it sets { maxValue: 15 }.\n</p></blockquote>\n<p>The portion of the W3C HTML5 spec mentioned is <a href=\"http://www.w3.org/TR/html5/elements.html#embedding-custom-non-visible-data-with-the-data-attributes\">http://www.w3.org/TR/html5/elements.html#embedding-custom-non-visible-data-with-the-data-attributes</a> &#8211; and the specific wording in this regard is:</p>\n<blockquote><p>\n<strong>element . dataset</strong><br />\nReturns a DOMStringMap object for the element&#8217;s data-* attributes.</p>\n<p>Hyphenated names become camel-cased. For example, data-foo-bar=&#8221;&#8221; becomes element.dataset.fooBar.\n</p></blockquote>\n<p>My feelings on this are simple &#8211; this is an absolutely horrible idea!  Why would you indicate that implementations of the spec actually alter the attribute names used in the HTML?  The only result from this I can see is confusion and wasted time when code breaks from this but it isn&#8217;t obvious why.</p>\n<p>To make this even more confusing the data attribute section of the spec also mentions:</p>\n<blockquote><p>\nNote: All attributes on HTML elements in HTML documents get ASCII-lowercased automatically, so the restriction on ASCII uppercase letters doesn&#8217;t affect such documents.\n</p></blockquote>\n<p>So even if you wanted to CamelCase your data attribute names, to avoid the auto conversion described in the spec, you can&#8217;t.  Using <code>data-CamelCase</code> would become <code>data-camelcase</code>.</p>\n<p>Where does all this leave the average web dev?  Well, I think the easiest way out is to never, ever, ever use a name for a data attribute that the spec indicates will be altered.  This means no dashes any where in the dev controlled section of data attribute names.  That isn&#8217;t very pretty since the attribute is required to start with <code>data-</code>, but it is the safest route. </p>\n<p> In practice this will result in either names with no breaks or using underscores where you would normally use dashes.  &#8220;Safe&#8221; examples would be:</p>\n<ul>\n<li>data-foobar</li>\n<li>data-foo_bar</li>\n</ul>\n<p>I&#8217;m really disappointed to see attribute name changes be part of the HTML5 spec.  I&#8217;d be really curious to know what the justification was for this move.</p>\n",
+            "content_text": "While reading the jQuery 1.6 release announcement I came across this gem:\n\njQuery 1.5 introduced a feature in the .data() method to automatically import any data- attributes that were set on the element and convert them to JavaScript values using JSON semantics. In jQuery 1.6 we have updated this feature to match the W3C HTML5 spec with regards to camel-casing data attributes that have embedded dashes. So for example in jQuery 1.5.2, an attribute of data-max-value=&#8221;15&#8243; would create a data object of { max-value: 15 } but as of jQuery 1.6 it sets { maxValue: 15 }.\n\nThe portion of the W3C HTML5 spec mentioned is http://www.w3.org/TR/html5/elements.html#embedding-custom-non-visible-data-with-the-data-attributes &#8211; and the specific wording in this regard is:\n\nelement . dataset\nReturns a DOMStringMap object for the element&#8217;s data-* attributes.\nHyphenated names become camel-cased. For example, data-foo-bar=&#8221;&#8221; becomes element.dataset.fooBar.\n\nMy feelings on this are simple &#8211; this is an absolutely horrible idea!  Why would you indicate that implementations of the spec actually alter the attribute names used in the HTML?  The only result from this I can see is confusion and wasted time when code breaks from this but it isn&#8217;t obvious why.\nTo make this even more confusing the data attribute section of the spec also mentions:\n\nNote: All attributes on HTML elements in HTML documents get ASCII-lowercased automatically, so the restriction on ASCII uppercase letters doesn&#8217;t affect such documents.\n\nSo even if you wanted to CamelCase your data attribute names, to avoid the auto conversion described in the spec, you can&#8217;t.  Using data-CamelCase would become data-camelcase.\nWhere does all this leave the average web dev?  Well, I think the easiest way out is to never, ever, ever use a name for a data attribute that the spec indicates will be altered.  This means no dashes any where in the dev controlled section of data attribute names.  That isn&#8217;t very pretty since the attribute is required to start with data-, but it is the safest route. \n In practice this will result in either names with no breaks or using underscores where you would normally use dashes.  &#8220;Safe&#8221; examples would be:\n\ndata-foobar\ndata-foo_bar\n\nI&#8217;m really disappointed to see attribute name changes be part of the HTML5 spec.  I&#8217;d be really curious to know what the justification was for this move.",
+            "date_published": "2011-05-04T09:12:02-06:00",
+            "date_modified": "2011-05-04T09:12:02-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "data-attribute",
+                "html5",
+                "jquery",
+                "w3c",
+                "Posts"
+            ]
+        }
+    ]
+}

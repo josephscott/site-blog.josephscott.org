@@ -1,0 +1,200 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/",
+    "feed_url": "https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: Redirect To SSL Using Apache&#8217;s .htaccess",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-14000",
+            "url": "https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-14000",
+            "content_html": "i use SSLRequireSSL",
+            "content_text": "i use SSLRequireSSL",
+            "date_published": "2016-09-15T17:24:36-06:00",
+            "authors": [
+                {
+                    "name": "baytelmobile",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/6b8a6478720acfb6882f5e172d711185?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "baytelmobile",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/6b8a6478720acfb6882f5e172d711185?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-494",
+            "url": "https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-494",
+            "content_html": "Greeting folks. I will make this short as possible. First, I want to thank everyone for their post. \nI know absolutely nothing about coding or .htaccess files or anything else. I recently created an eCommerce site using OpenCart 2.0.1.0 and hosted it with FatCow. I purchased an SSL and learned in order for it to work with OpenCart I had to alter the config.php files at the root and in the admin folder &lt;&lt; (To make the admin panel SSL also). After altering the files I had trouble with my website. I could add items to the cart but, when I clicked on any link it would log the user out. If I reversed the changes to the config files the website worked fine except it wasn&#039;t SSL. While as said I knew nothing about coding I did suspect it had something to do with links not directing properly due to the SSL. So, I thought, what if I could find a way to make all the pages SSL. Would that resolve the issue? I didn&#039;t know but, I aimed to find out. Then while searching I came across this site and decided to gamble by entering one of the codes above. This is the code I inserted. \n\nRewriteEngine On\nRewriteCond %{HTTPS} off\nRewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]\n\nSure enough. This resolved the issue. Now my entire site is SSL and no more user log outs. \n\nIn short, thank all of you for posting your ideas and solutions. Now it&#039;s time to make some money with the site.. Thanks again  ;-)",
+            "content_text": "Greeting folks. I will make this short as possible. First, I want to thank everyone for their post. \nI know absolutely nothing about coding or .htaccess files or anything else. I recently created an eCommerce site using OpenCart 2.0.1.0 and hosted it with FatCow. I purchased an SSL and learned in order for it to work with OpenCart I had to alter the config.php files at the root and in the admin folder &lt;&lt; (To make the admin panel SSL also). After altering the files I had trouble with my website. I could add items to the cart but, when I clicked on any link it would log the user out. If I reversed the changes to the config files the website worked fine except it wasn&#039;t SSL. While as said I knew nothing about coding I did suspect it had something to do with links not directing properly due to the SSL. So, I thought, what if I could find a way to make all the pages SSL. Would that resolve the issue? I didn&#039;t know but, I aimed to find out. Then while searching I came across this site and decided to gamble by entering one of the codes above. This is the code I inserted. \n\nRewriteEngine On\nRewriteCond %{HTTPS} off\nRewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]\n\nSure enough. This resolved the issue. Now my entire site is SSL and no more user log outs. \n\nIn short, thank all of you for posting your ideas and solutions. Now it&#039;s time to make some money with the site.. Thanks again  ;-)",
+            "date_published": "2016-01-13T14:28:48-07:00",
+            "authors": [
+                {
+                    "name": "Joe",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/514f699b31760db1888ccfcc2fa42bc5?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joe",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/514f699b31760db1888ccfcc2fa42bc5?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-493",
+            "url": "https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-493",
+            "content_html": "Hi, \nI am very new at this, but please bare with me!\nAfter using your redirect ( which is great),\n\nRewriteEngine On\nRewriteCond %{HTTPS} off\nRewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L] \n\nit works however my sub-domain (blog) now goes in a loop back to the domain home page. I have tried several suggested exclusions for sub-domain, but haven't been able to exclude it. Can you please help? I have a wildcard SSL",
+            "content_text": "Hi, \nI am very new at this, but please bare with me!\nAfter using your redirect ( which is great),\n\nRewriteEngine On\nRewriteCond %{HTTPS} off\nRewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L] \n\nit works however my sub-domain (blog) now goes in a loop back to the domain home page. I have tried several suggested exclusions for sub-domain, but haven't been able to exclude it. Can you please help? I have a wildcard SSL",
+            "date_published": "2015-05-31T17:01:11-06:00",
+            "authors": [
+                {
+                    "name": "Monika",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/a45dae4b30259b6a1df7af87f6bcca17?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Monika",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/a45dae4b30259b6a1df7af87f6bcca17?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-492",
+            "url": "https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-492",
+            "content_html": "Hei thanks for sharing, that's useful information for me. I'm going to buy SSL, but at first i must find out the way to configure that. ^_^ Keep sharing...",
+            "content_text": "Hei thanks for sharing, that's useful information for me. I'm going to buy SSL, but at first i must find out the way to configure that. ^_^ Keep sharing...",
+            "date_published": "2015-04-17T12:46:24-06:00",
+            "authors": [
+                {
+                    "name": "Jefry Dewangga",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/00b72c7af1774e60306372e54b3c79be?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Jefry Dewangga",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/00b72c7af1774e60306372e54b3c79be?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-491",
+            "url": "https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-491",
+            "content_html": "Thanks a million.  I'd tried loads of things and nothing worked - This got it sorted, you are a star :-)",
+            "content_text": "Thanks a million.  I'd tried loads of things and nothing worked - This got it sorted, you are a star :-)",
+            "date_published": "2015-04-07T20:52:33-06:00",
+            "authors": [
+                {
+                    "name": "Tim",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/7d88eb11d121c5a87946bcda41c83399?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Tim",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/7d88eb11d121c5a87946bcda41c83399?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-490",
+            "url": "https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-490",
+            "content_html": "Better use: (without code tags...)\nRewriteCond %{HTTPS} off\nRewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]",
+            "content_text": "Better use: (without code tags...)\nRewriteCond %{HTTPS} off\nRewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]",
+            "date_published": "2013-04-10T08:19:51-06:00",
+            "authors": [
+                {
+                    "name": "DiceXQ",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/774f3829142daed13cdbe91de2cc97fa?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "DiceXQ",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/774f3829142daed13cdbe91de2cc97fa?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-489",
+            "url": "https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-489",
+            "content_html": "I added an Exclude feature as well:\n\n\n## This will switch any page from HTTP over to HTTPS\nRewriteEngine On\nRewriteCond %{HTTPS} off\nRewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}\n\n## This will switch from HTTPS back to HTTP on any page that has 'travel-blog' 'easyblog'  in the URL\nRewriteCond %{HTTPS} on\nRewriteRule ^(travel-blog|easyblog)(.*)/?$ http://%{HTTP_HOST}%{REQUEST_URI} [R=301,NC,L]",
+            "content_text": "I added an Exclude feature as well:\n\n\n## This will switch any page from HTTP over to HTTPS\nRewriteEngine On\nRewriteCond %{HTTPS} off\nRewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}\n\n## This will switch from HTTPS back to HTTP on any page that has 'travel-blog' 'easyblog'  in the URL\nRewriteCond %{HTTPS} on\nRewriteRule ^(travel-blog|easyblog)(.*)/?$ http://%{HTTP_HOST}%{REQUEST_URI} [R=301,NC,L]",
+            "date_published": "2013-02-07T21:48:46-07:00",
+            "authors": [
+                {
+                    "name": "MRomrell",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/46e5bc4f50b86647685f27e311113ee4?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "MRomrell",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/46e5bc4f50b86647685f27e311113ee4?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-488",
+            "url": "https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-488",
+            "content_html": "RewriteCond %{HTTPS} !=on\nRewriteRule ^(.*) https://%{SERVER_NAME}/$1 [R,L]",
+            "content_text": "RewriteCond %{HTTPS} !=on\nRewriteRule ^(.*) https://%{SERVER_NAME}/$1 [R,L]",
+            "date_published": "2013-01-24T22:53:34-07:00",
+            "authors": [
+                {
+                    "name": "E. D. Dickenson",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/de2429f15a45d57b7bb2564a6eccf272?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "E. D. Dickenson",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/de2429f15a45d57b7bb2564a6eccf272?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-487",
+            "url": "https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-487",
+            "content_html": "This is a really helpful post because I was constantly facing some problem in redirecting to SSL using apaches. You have explained everything in great detail with the requisite information in simple language. Thanks a lot!",
+            "content_text": "This is a really helpful post because I was constantly facing some problem in redirecting to SSL using apaches. You have explained everything in great detail with the requisite information in simple language. Thanks a lot!",
+            "date_published": "2012-11-21T11:20:54-07:00",
+            "authors": [
+                {
+                    "name": "Vanity mirrors seattle",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/4b27988f37e760bd2a4cc3ba61e47fad?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Vanity mirrors seattle",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/4b27988f37e760bd2a4cc3ba61e47fad?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-486",
+            "url": "https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-486",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-485\">Steve</a>.\n\nIt can go directly in your Apache config file, or in an .htaccess file (assuming your Apache setup has them enabled).",
+            "content_text": "In reply to Steve.\n\nIt can go directly in your Apache config file, or in an .htaccess file (assuming your Apache setup has them enabled).",
+            "date_published": "2012-07-16T13:50:09-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

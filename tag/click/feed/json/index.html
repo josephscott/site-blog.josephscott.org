@@ -1,0 +1,39 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/click/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/click/",
+    "feed_url": "https://blog.josephscott.org/tag/click/feed/json/",
+    "language": "en-US",
+    "title": "click &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=6176",
+            "url": "https://blog.josephscott.org/2012/07/25/difference-between-a-human-click-and-a-trigger-click-with-jquery/",
+            "title": "Difference Between A Human Click And A Trigger Click With jQuery",
+            "content_html": "<p>I was recently working on a page that had some existing transitions that happened when a user clicked on an item.  My thought was to periodically trigger a click event that would automate the process some what, allowing me to take advantage of the existing transition code.</p>\n<p>jQuery has a nifty method called <a href=\"http://api.jquery.com/trigger/\">.trigger</a> that takes care of firing the click event for me.  Very handy, but then I quickly realized that I needed to be able to tell the difference between a human click event and a <code>.trigger</code>&#8216;d click event.</p>\n<p>Fortunately I wasn&#8217;t the only one to have run into this issue and there is a solution described at <a href=\"http://stackoverflow.com/questions/6692031/check-if-event-is-triggered-by-a-human/6692173#6692173\">http://stackoverflow.com/questions/6692031/check-if-event-is-triggered-by-a-human/6692173#6692173</a>.  The key is <code>event.originalEvent</code>, here is an example from the StackOverflow post:</p>\n<p>[sourcecode lang=&#8221;javascript&#8221;]<br />\n$( &quot;#click-me&quot; ).click( function( event ) {<br />\n    if ( event.originalEvent === undefined ) {<br />\n        alert( &#8216;not human&#8217; )<br />\n    } else {<br />\n        alert( &#8216;human&#8217; );<br />\n    }<br />\n} );<br />\n[/sourcecode]</p>\n<p>You can also try it out on jsFiddle &#8211; <a href=\"http://jsfiddle.net/Uf8Wv/\">http://jsfiddle.net/Uf8Wv/</a></p>\n<p>This appears to be specific to jQuery, which in this case wasn&#8217;t a big deal since all of the other code on the page was using jQuery as well.  The <a href=\"http://api.jquery.com/category/events/event-object/\">Event object</a> documentation mentions <code>event.originalEvent</code>, but doesn&#8217;t indicate that it can be used in this way.</p>\n",
+            "content_text": "I was recently working on a page that had some existing transitions that happened when a user clicked on an item.  My thought was to periodically trigger a click event that would automate the process some what, allowing me to take advantage of the existing transition code.\njQuery has a nifty method called .trigger that takes care of firing the click event for me.  Very handy, but then I quickly realized that I needed to be able to tell the difference between a human click event and a .trigger&#8216;d click event.\nFortunately I wasn&#8217;t the only one to have run into this issue and there is a solution described at http://stackoverflow.com/questions/6692031/check-if-event-is-triggered-by-a-human/6692173#6692173.  The key is event.originalEvent, here is an example from the StackOverflow post:\n[sourcecode lang=&#8221;javascript&#8221;]\n$( &quot;#click-me&quot; ).click( function( event ) {\n    if ( event.originalEvent === undefined ) {\n        alert( &#8216;not human&#8217; )\n    } else {\n        alert( &#8216;human&#8217; );\n    }\n} );\n[/sourcecode]\nYou can also try it out on jsFiddle &#8211; http://jsfiddle.net/Uf8Wv/\nThis appears to be specific to jQuery, which in this case wasn&#8217;t a big deal since all of the other code on the page was using jQuery as well.  The Event object documentation mentions event.originalEvent, but doesn&#8217;t indicate that it can be used in this way.",
+            "date_published": "2012-07-25T10:16:34-06:00",
+            "date_modified": "2012-07-25T10:16:34-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "click",
+                "event",
+                "javascript",
+                "jquery",
+                "trigger",
+                "Posts"
+            ]
+        }
+    ]
+}

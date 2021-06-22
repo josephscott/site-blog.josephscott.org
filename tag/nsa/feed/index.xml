@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>nsa &#8211; Joseph Scott</title>
+	<atom:link href="/tag/nsa/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 16 Dec 2013 16:37:02 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Right and Wrong</title>
+		<link>/2013/12/16/right-and-wrong/</link>
+					<comments>/2013/12/16/right-and-wrong/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 16 Dec 2013 16:37:02 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[60-minutes]]></category>
+		<category><![CDATA[edward-snowden]]></category>
+		<category><![CDATA[meet-the-press]]></category>
+		<category><![CDATA[nsa]]></category>
+		<category><![CDATA[steve-inskeep]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9628</guid>
+
+					<description><![CDATA[Steve Inskeep on Edward Snowden during Meet The Press on 15 Dec 2013, responding to Bill Richardson (emphasis is mine): And I wonder if it&#8217;s possible to say that two things can be true simultaneously, Governor Richardson.  It may well be that Snowden was wrong, that he should be prosecuted, and that, at the same [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.npr.org/people/4080709/steve-inskeep">Steve Inskeep</a> on Edward Snowden during <a href="http://www.nbcnews.com/id/53836204/ns/meet_the_press-transcripts/t/dec-paul-ryan-patty-murray-michael-hayden-bill-richardson-nancy-gibbs-kathleen-parker-steve-inskeep-scott-walker/">Meet The Press on 15 Dec 2013</a>, responding to Bill Richardson (emphasis is mine):</p>
+<blockquote><p>
+And I wonder if it&#8217;s possible to say that <strong>two things can be true simultaneously</strong>, Governor Richardson.  <strong>It may well be that Snowden was wrong, that he should be prosecuted, and that, at the same time, he did a necessary thing because this is the only way that we find out.</strong>  Even though members of Congress do have information, they respond to public pressure.  Public pressure only comes from public debates, and you only have a debate when you have someone who does something that is wrong, like Edward Snowden.
+</p></blockquote>
+<p>This may end up being the most useful and accurate way to describe Snowden and what he has done.</p>
+<p>This description is all the more powerful since it came on the same day that <a href="http://www.cbsnews.com/news/nsa-speaks-out-on-snowden-spying/">60 Minutes aired their NSA/Snowden piece</a>.  I was very disappointed in 60 Minutes on their NSA segment.  They had an opportunity to ask some tough questions that deserve answers, and they blew it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/12/16/right-and-wrong/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The Weakest Link, Routers and Switches?</title>
+		<link>/2013/10/24/the-weakest-link-routers-and-switches/</link>
+					<comments>/2013/10/24/the-weakest-link-routers-and-switches/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 24 Oct 2013 14:46:35 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[d-link]]></category>
+		<category><![CDATA[netgear]]></category>
+		<category><![CDATA[nsa]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[wifi]]></category>
+		<category><![CDATA[wired]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9044</guid>
+
+					<description><![CDATA[Wired ran an article last month about the NSA compromising routers and switches in their spying efforts: According to the Post, the government planned to expand the program to cover millions of additional foreign machines in the future and preferred hacking routers to individual PCs because it gave agencies access to data from entire networks [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Wired ran an article last month about <a href="http://www.wired.com/threatlevel/2013/09/nsa-router-hacking/">the NSA compromising routers and switches</a> in their spying efforts:</p>
+<blockquote><p>
+According to the Post, the government planned to expand the program to cover millions of additional foreign machines in the future and preferred hacking routers to individual PCs because it gave agencies access to data from entire networks of computers instead of just individual machines.
+</p></blockquote>
+<p>This totally makes sense.  More often than not the most interesting data is what is transmitted over the network.  Also saves on having to compromise multiple computers, instead just breaking into the central point they all share.</p>
+<p>Given the revelations of the NSA spying on U.S. citizens this year, it would seem likely that they would use the same approach domestically.  There are hundreds of thousands ( if not millions ) of wifi routers, switches, and cable/DSL modems deployed across the U.S. in homes and businesses.  Now combine this with the number of reports of simple compromises on some of these devices and you have a recipe for domestic spying on  a large scale.</p>
+<p>What sort of simple compromises do some wifi routers and switches have?  Checkout a report this week on a few <a href="http://shadow-file.blogspot.com/2013/10/complete-persistent-compromise-of.html">Netgear models</a>, and another report earlier in the month about certain <a href="http://www.devttys0.com/2013/10/reverse-engineering-a-d-link-backdoor/">D-Link models</a>.  Even if these vendors released updated firmware revisions that fixed all of these issues, when is the last time you updated the firmware on your home router, cable/DSL modem, or switch?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/10/24/the-weakest-link-routers-and-switches/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The Privacy Decades</title>
+		<link>/2013/10/16/the-privacy-decades/</link>
+					<comments>/2013/10/16/the-privacy-decades/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 16 Oct 2013 14:53:07 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[nsa]]></category>
+		<category><![CDATA[privacy]]></category>
+		<category><![CDATA[the-west-wing]]></category>
+		<category><![CDATA[tsa]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9195</guid>
+
+					<description><![CDATA[Episode 9 of the TV show The West Wing ( &#8220;The Short List&#8221; ) dealt with how a U.S. Supreme Court Justice nominee might rule in regards to privacy. The main question being, did a right to privacy exist at all? This episode aired at the end of 1999, but it has a brief segment [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Episode 9 of the TV show The West Wing ( &#8220;The Short List&#8221; ) dealt with how a U.S. Supreme Court Justice nominee might rule in regards to privacy.  The main question being, did a right to privacy exist at all?</p>
+<p>This episode aired at the end of 1999, but it has a brief segment that could have been said yesterday:</p>
+<a href="/2013/10/16/the-privacy-decades/"><img src="/wp-content/plugins/wp-youtube-lyte/lyteCache.php?origThumbUrl=%2F%2Fi.ytimg.com%2Fvi%2Fpj4PwyfDNuI%2Fhqdefault.jpg" alt="YouTube Video"></a><br /><br /></p>
+<p>Rough transcription (emphasis mine):</p>
+<blockquote><p>
+It&#8217;s about the next 20 years. </p>
+<p>Twenties and thirties, it was the role of government.  Fifties and sixties, it was civil rights. <strong>The next two decades, are gonna be privacy</strong>.</p>
+<p>I&#8217;m talking about the Internet.  I&#8217;m talking about cellphones.  I&#8217;m talking about health records, and who&#8217;s gay and who&#8217;s not. And moreover, in a country born on a will to be free, what could be more fundamental than this?
+</p></blockquote>
+<p>Think of all the restrictions on privacy that have happened since 1999, from the TSA to the recent revelations of the NSA spying on Americans.  The question of a right to privacy is even more critical today than it was 14 years ago.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/10/16/the-privacy-decades/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Utah Democrat, Jim Matheson, Votes to Continue NSA Spying</title>
+		<link>/2013/07/25/utah-democrat-jim-matheson-votes-to-continue-nsa-spying/</link>
+					<comments>/2013/07/25/utah-democrat-jim-matheson-votes-to-continue-nsa-spying/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 25 Jul 2013 16:15:35 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[jim-matheson]]></category>
+		<category><![CDATA[nsa]]></category>
+		<category><![CDATA[politics]]></category>
+		<category><![CDATA[utah]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=8747</guid>
+
+					<description><![CDATA[Since I managed to completely screw up my initial post on the NSA spying vote, I wanted to make sure I got the record right. The three Republican representatives from Utah voted to end the NSA spying program. The one Utah Democrat representative, Jim Matheson, voted to continue NSA spying on U.S. citizens. So is [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Since I managed to <a href="https://josephscott.org/archives/2013/07/utah-republication-representatives-vote-to-continue-nsa-spying/">completely screw up my initial post on the NSA spying vote</a>, I wanted to make sure I got the record right.</p>
+<p>The three Republican representatives from Utah voted to end the NSA spying program.  The one Utah Democrat representative, <a href="http://www.freedomworks.org/blog/jwithrow/see-how-your-representative-voted-on-the-amash-ame">Jim Matheson, voted to continue NSA spying on U.S. citizens</a>.</p>
+<p>So is Mr. Matheson ready to repeal the fourth amendment?  Lets skip the peripheral issues and get right to the center of it.  Am I protected from search and seizure of my papers and effects or not?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/07/25/utah-democrat-jim-matheson-votes-to-continue-nsa-spying/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Utah Republication Representatives Vote to Continue NSA Spying</title>
+		<link>/2013/07/25/utah-republication-representatives-vote-to-continue-nsa-spying/</link>
+					<comments>/2013/07/25/utah-republication-representatives-vote-to-continue-nsa-spying/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 25 Jul 2013 14:45:20 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[nsa]]></category>
+		<category><![CDATA[politics]]></category>
+		<category><![CDATA[utah]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=8710</guid>
+
+					<description><![CDATA[UPDATE: I have this backwards. The three Utah Republicans voted to end the NSA spying on U.S. citizens. My apologies to Rob Bishop, Jason Chaffetz, and Chris Stewart. That leaves me frustrated with Jim Matheson. I was completely wrong on the record of this vote and have written an updated post. The U.S. House of [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>UPDATE</strong>: I have this backwards.</p>
+<p>The three Utah Republicans voted to end the NSA spying on U.S. citizens.  My apologies to Rob Bishop, Jason Chaffetz, and Chris Stewart.  That leaves me frustrated with Jim Matheson.</p>
+<p>I was completely wrong on the record of this vote and have written an <a href="https://josephscott.org/archives/2013/07/utah-democrat-jim-matheson-votes-to-continue-nsa-spying/">updated post</a>.</p>
+<hr />
+<p><strike><br />
+The <a href="http://politics.nytimes.com/congress/votes/113/house/1/412">U.S. House of Representatives failed to limit NSA spying</a>.  In Utah three of the four representatives voted to continue NSA spying on U.S. citizens:</p>
+<p><a href="http://politics.nytimes.com/congress/votes/113/house/1/412"><img loading="lazy" src="https://sharedat.net/f/bE/bEe2/us-house-vote-412-utah.png" width="501" height="198" class="aligncenter" /></a></p>
+<p>The three Republicans: <a href="http://robbishop.house.gov/">Rob Bishop</a>, <a href="http://chaffetz.house.gov/">Jason Chaffetz</a>, and <a href="http://stewart.house.gov/">Chris Stewart</a> voted for the NSA spying to continue.  The only Democrat, <a href="http://matheson.house.gov/">Jim Matheson</a>, voted to limit NSA spying on U.S. citizens.</p>
+<p>My current representative is Jason Chaffetz.  It used to be Jim Matheson, but that changed after the 2010 redistricting of the Utah house seats.  I&#8217;ve already sent a complaint to Mr. Chaffetz about his vote on this matter.<br />
+</strike></p>
+<p>It dawned on me that what all those who voted to continue NSA spying on U.S. citizens should do is put forth a bill to repeal the fourth amendment to the U.S. Constitution.  If you are going to claim that you can search and seize my papers and effects at will, you may as well remove that protection from the Constitution entirely.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/07/25/utah-republication-representatives-vote-to-continue-nsa-spying/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

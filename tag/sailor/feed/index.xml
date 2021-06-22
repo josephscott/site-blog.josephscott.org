@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sailor &#8211; Joseph Scott</title>
+	<atom:link href="/tag/sailor/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 22 Sep 2015 14:34:36 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Sailor</title>
+		<link>/2015/09/22/sailor/</link>
+					<comments>/2015/09/22/sailor/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 22 Sep 2015 14:34:36 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[sailor]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13179</guid>
+
+					<description><![CDATA[One of the technologies that seems to be flying under the radar right now is Lua, especially in the form of OpenResty ( Nginx + Lua ). Seeing Sailor, a Lua MVC framework, provide hints at what web development with Lua could be like.]]></description>
+										<content:encoded><![CDATA[<p>One of the technologies that seems to be flying under the radar right now is <a href="http://www.lua.org/">Lua</a>, especially in the form of <a href="https://openresty.org/">OpenResty</a> ( Nginx + Lua ).</p>
+<p>Seeing <a href="http://sailorproject.org/">Sailor</a>, a Lua MVC framework, provide hints at what web development with Lua could be like.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/09/22/sailor/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

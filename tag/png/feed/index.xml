@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>png &#8211; Joseph Scott</title>
+	<atom:link href="/tag/png/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 10 Jul 2018 15:53:42 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Lossless PNG Compression</title>
+		<link>/2018/07/10/lossless-png-compression/</link>
+					<comments>/2018/07/10/lossless-png-compression/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 10 Jul 2018 15:53:42 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[compression]]></category>
+		<category><![CDATA[png]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15634</guid>
+
+					<description><![CDATA[Lossless compression can be a very safe first step in reducing image sizes. I came across this comparison of lossless PNG compression tools, and I was surprised at the range of results. While no one single tool ranked first in all of the tests, it does show that there are some ( like ZopfliPNG ) [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Lossless compression can be a very safe first step in reducing image sizes.  I came across this <a href="https://olegkikin.com/png_optimizers/">comparison of lossless PNG compression tools</a>, and I was surprised at the range of results.  While no one single tool ranked first in all of the tests, it does show that there are some ( like <a href="https://github.com/google/zopfli/blob/master/README.zopflipng">ZopfliPNG</a> ) that do a good job most of the time.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/07/10/lossless-png-compression/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

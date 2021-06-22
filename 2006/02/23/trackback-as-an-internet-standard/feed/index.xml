@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: TrackBack as an Internet Standard	</title>
+	<atom:link href="/2006/02/23/trackback-as-an-internet-standard/feed/" rel="self" type="application/rss+xml" />
+	<link>/2006/02/23/trackback-as-an-internet-standard/</link>
+	<description></description>
+	<lastBuildDate>Mon, 06 Mar 2006 08:34:43 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: M. David Peterson		</title>
+		<link>/2006/02/23/trackback-as-an-internet-standard/#comment-1173</link>
+
+		<dc:creator><![CDATA[M. David Peterson]]></dc:creator>
+		<pubDate>Mon, 06 Mar 2006 08:34:43 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/23/trackback-as-an-internet-standard/#comment-1173</guid>
+
+					<description><![CDATA[Hmmmm... seems something in my last comment caused a couple of paragraphs to be lost.  If this proves to be the case, if you keep an eye out on my blog, you will find more details regarding what the above links refer to.]]></description>
+			<content:encoded><![CDATA[<p>Hmmmm&#8230; seems something in my last comment caused a couple of paragraphs to be lost.  If this proves to be the case, if you keep an eye out on my blog, you will find more details regarding what the above links refer to.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: M. David Peterson		</title>
+		<link>/2006/02/23/trackback-as-an-internet-standard/#comment-1172</link>
+
+		<dc:creator><![CDATA[M. David Peterson]]></dc:creator>
+		<pubDate>Mon, 06 Mar 2006 08:31:37 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/23/trackback-as-an-internet-standard/#comment-1172</guid>
+
+					<description><![CDATA[&#062;&#062; Want to do something helpful, come up with a completely new trackback/pingback/pick-a-new-name mechanism that is designed to actively slow down/prevent spam.  http://www.x2x2x.org/projects/wiki/doku.php?id=llup  http://www.xsltblog.com/llup/LLUPWorkingDraftSummary.doc  http://www.x2x2x.org/projects/wiki/doku.php?id=llup:spectemplate &lt;I&gt; http://www.xsltblog.com]]>/</description>
+			<content:encoded><![CDATA[<p>&gt;&gt; Want to do something helpful, come up with a completely new trackback/pingback/pick-a-new-name mechanism that is designed to actively slow down/prevent spam.  <a href="http://www.x2x2x.org/projects/wiki/doku.php?id=llup" rel="nofollow ugc">http://www.x2x2x.org/projects/wiki/doku.php?id=llup</a>  <a href="http://www.xsltblog.com/llup/LLUPWorkingDraftSummary.doc" rel="nofollow ugc">http://www.xsltblog.com/llup/LLUPWorkingDraftSummary.doc</a>  <a href="http://www.x2x2x.org/projects/wiki/doku.php?id=llup:spectemplate" rel="nofollow ugc">http://www.x2x2x.org/projects/wiki/doku.php?id=llup:spectemplate</a> <i> <a href="http://www.xsltblog.com/" rel="nofollow ugc">http://www.xsltblog.com/</a></i></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jim		</title>
+		<link>/2006/02/23/trackback-as-an-internet-standard/#comment-1171</link>
+
+		<dc:creator><![CDATA[Jim]]></dc:creator>
+		<pubDate>Thu, 02 Mar 2006 15:08:41 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/23/trackback-as-an-internet-standard/#comment-1171</guid>
+
+					<description><![CDATA[Trackback is quite vulnerable to spam, but I haven&#039;t seen much Pingback spam around.  I believe the reason for this is that the Pingback specification recommends that Pingback servers check the page being submitted for links to the article in question.  This raises the bar for spammers - not by a large amount, but enough that it&#039;s just easier to spam Trackback instead.
+
+Spam was in fact the explicit reason for this spec text, as you can see from the very first version of the spec:
+http://www.kryogenix.org/writings/tech/pingback
+
+It was discussed more on the mailing list here:
+http://www.aquarionics.com/misc/archives/blogite/0287.html
+
+A host whitelist with manual approval of the rest seems like it would solve the problem once and for all.  You could even build it semi-automatically by hooking in blogrolls, articles you link to, etc.
+
+In hindsight, there&#039;s a lot to be improved with both Trackback and Pingback, so neither make a good candidate for a standard.  This recent turn of events seems centred around &quot;standardising Trackback&quot;, but in essense, it&#039;s really building a successor to both Trackback and Pingback.]]></description>
+			<content:encoded><![CDATA[<p>Trackback is quite vulnerable to spam, but I haven&#8217;t seen much Pingback spam around.  I believe the reason for this is that the Pingback specification recommends that Pingback servers check the page being submitted for links to the article in question.  This raises the bar for spammers &#8211; not by a large amount, but enough that it&#8217;s just easier to spam Trackback instead.</p>
+<p>Spam was in fact the explicit reason for this spec text, as you can see from the very first version of the spec:<br />
+<a href="http://www.kryogenix.org/writings/tech/pingback" rel="nofollow ugc">http://www.kryogenix.org/writings/tech/pingback</a></p>
+<p>It was discussed more on the mailing list here:<br />
+<a href="http://www.aquarionics.com/misc/archives/blogite/0287.html" rel="nofollow ugc">http://www.aquarionics.com/misc/archives/blogite/0287.html</a></p>
+<p>A host whitelist with manual approval of the rest seems like it would solve the problem once and for all.  You could even build it semi-automatically by hooking in blogrolls, articles you link to, etc.</p>
+<p>In hindsight, there&#8217;s a lot to be improved with both Trackback and Pingback, so neither make a good candidate for a standard.  This recent turn of events seems centred around &#8220;standardising Trackback&#8221;, but in essense, it&#8217;s really building a successor to both Trackback and Pingback.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rob		</title>
+		<link>/2006/02/23/trackback-as-an-internet-standard/#comment-1170</link>
+
+		<dc:creator><![CDATA[Rob]]></dc:creator>
+		<pubDate>Sat, 25 Feb 2006 09:59:59 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/23/trackback-as-an-internet-standard/#comment-1170</guid>
+
+					<description><![CDATA[Is trackback spam REALLY that much of a problem though? I mean, I have had my fair share of trackbacks that weren&#039;t really relevant but it pales in comparison to those automated programs that put a comment on your blog.
+
+But, hey if you could come up with a way to do trackbaks without any spam I&#039;d be all for it.]]></description>
+			<content:encoded><![CDATA[<p>Is trackback spam REALLY that much of a problem though? I mean, I have had my fair share of trackbacks that weren&#8217;t really relevant but it pales in comparison to those automated programs that put a comment on your blog.</p>
+<p>But, hey if you could come up with a way to do trackbaks without any spam I&#8217;d be all for it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Adam Kalsey		</title>
+		<link>/2006/02/23/trackback-as-an-internet-standard/#comment-1169</link>
+
+		<dc:creator><![CDATA[Adam Kalsey]]></dc:creator>
+		<pubDate>Thu, 23 Feb 2006 22:37:08 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/23/trackback-as-an-internet-standard/#comment-1169</guid>
+
+					<description><![CDATA[One of the things we&#039;re trying to do with the new spec is to solve the spam problem. Trackback spam exists because it&#039;s an easy way to insert data onto your page anonymously. So the solution to that is to provide a way for trackback clients and servers to provide authentication and identity.]]></description>
+			<content:encoded><![CDATA[<p>One of the things we&#8217;re trying to do with the new spec is to solve the spam problem. Trackback spam exists because it&#8217;s an easy way to insert data onto your page anonymously. So the solution to that is to provide a way for trackback clients and servers to provide authentication and identity.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,48 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2010/01/14/php-helpers-debug_log/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2010/01/14/php-helpers-debug_log/",
+    "feed_url": "https://blog.josephscott.org/2010/01/14/php-helpers-debug_log/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: PHP Helpers: debug_log",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2010/01/14/php-helpers-debug_log/#comment-3167",
+            "url": "https://blog.josephscott.org/2010/01/14/php-helpers-debug_log/#comment-3167",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2010/01/14/php-helpers-debug_log/#comment-3166\">Edward de Leau</a>.\n\nI haven't had a need to change the file name for the debug log.  I made it an option though on the off chance that it comes up later on.",
+            "content_text": "In reply to Edward de Leau.\n\nI haven't had a need to change the file name for the debug log.  I made it an option though on the off chance that it comes up later on.",
+            "date_published": "2010-04-14T01:28:44-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2010/01/14/php-helpers-debug_log/#comment-3166",
+            "url": "https://blog.josephscott.org/2010/01/14/php-helpers-debug_log/#comment-3166",
+            "content_html": "I was lately also thinking of starting a little set of generic functions. I also made a little log function recently.\n\nOne of the things I ran into was the filename which you set by default and I had the same idea (i made one log functions for a html log and one for a clear text log) (the html log shows different colors based on the importance)\n\n<code>\nfunction EDL_HTML_LOG($msg=\"undefined\", $level=0, $logDirFile='log/log.html') {</code>\n\nBut... if one of the apps has a different location for the log file that would not be handy repeating it over and over. So I made a little wrapper function in the same php page:\n\n<code>\nfunction Logger($msg=\"undefined\", $level=0) {\n\tEDL_HTML_LOG($msg,$level,LOGFILE_HTML);\n}\n</code>\n\nThe LOGFILE_HTML can now be set as a define in the appliation.\n\nHowever, this is still not satisfying since what if the user (uh..thats me) forgets to define the location of the Log file in of the applications.",
+            "content_text": "I was lately also thinking of starting a little set of generic functions. I also made a little log function recently.\n\nOne of the things I ran into was the filename which you set by default and I had the same idea (i made one log functions for a html log and one for a clear text log) (the html log shows different colors based on the importance)\n\n\nfunction EDL_HTML_LOG($msg=\"undefined\", $level=0, $logDirFile='log/log.html') {\n\nBut... if one of the apps has a different location for the log file that would not be handy repeating it over and over. So I made a little wrapper function in the same php page:\n\n\nfunction Logger($msg=\"undefined\", $level=0) {\n\tEDL_HTML_LOG($msg,$level,LOGFILE_HTML);\n}\n\n\nThe LOGFILE_HTML can now be set as a define in the appliation.\n\nHowever, this is still not satisfying since what if the user (uh..thats me) forgets to define the location of the Log file in of the applications.",
+            "date_published": "2010-04-13T13:29:33-06:00",
+            "authors": [
+                {
+                    "name": "Edward de Leau",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/7a831efd240c56f74f4c4f2618d9a51a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Edward de Leau",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/7a831efd240c56f74f4c4f2618d9a51a?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

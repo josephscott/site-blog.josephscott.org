@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mootools &#8211; Joseph Scott</title>
+	<atom:link href="/tag/mootools/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 12 Sep 2006 06:28:14 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Checking Out jQuery</title>
+		<link>/2006/09/11/checking-out-jquery/</link>
+					<comments>/2006/09/11/checking-out-jquery/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 12 Sep 2006 06:28:14 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[ajax]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jquery]]></category>
+		<category><![CDATA[mootools]]></category>
+		<category><![CDATA[prototype]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/09/11/checking-out-jquery/</guid>
+
+					<description><![CDATA[I&#8217;ve been reading through some of the jQuery docs and I&#8217;m getting more and more interested. I&#8217;m aware of mootools (and Jonathan&#8217;s drag and drop example) and the latest updates to prototype. I hope to get around to playing with those as well. The compressed version of jQuery comes in at impressive 17,587 bytes. I [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been reading through some of the <a href="http://jquery.com/">jQuery</a> <a href="http://jquery.com/docs/">docs</a> and I&#8217;m getting more and more interested.  I&#8217;m aware of <a href="http://mootools.net/">mootools</a> (and Jonathan&#8217;s <a href="http://www.snook.ca/archives/javascript/mootools_drag_a/">drag and drop example</a>) and the latest <a href="http://encytemedia.com/blog/articles/2006/08/30/a-flurry-of-prototype-updates">updates</a> <a href="http://encytemedia.com/blog/articles/2006/09/05/the-flurry-continues-more-prototype-updates">to prototype</a>.  I hope to get around to playing with those as well.</p>
+<p>The <a href="http://jquery.com/src/jquery-latest.pack.js">compressed version of jQuery</a> comes in at impressive 17,587 bytes.  I do wonder if there is any slow down in performance.  Either way, it is a huge leap from the 45,778 byte <a href="http://jquery.com/src/jquery-latest.js">uncompressed version of jQuery</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/09/11/checking-out-jquery/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

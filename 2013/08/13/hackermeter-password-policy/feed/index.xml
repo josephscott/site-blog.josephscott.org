@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: HackerMeter Password Policy	</title>
+	<atom:link href="/2013/08/13/hackermeter-password-policy/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/08/13/hackermeter-password-policy/</link>
+	<description></description>
+	<lastBuildDate>Tue, 13 Aug 2013 21:26:54 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2013/08/13/hackermeter-password-policy/#comment-4093</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 13 Aug 2013 21:26:54 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=8844#comment-4093</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/08/13/hackermeter-password-policy/#comment-4092&quot;&gt;Samuel &quot;Otto&quot; Wood&lt;/a&gt;.
+
+I&#039;d read that previously and I like the approach.  The 320k gzipped JavaScript is heavier than I&#039;d like, but there ways of mitigating that.
+
+The bigger issue is still having overly restrictive password policies, on either the length or characters used.  Never understood the logic of things like @ and !.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/08/13/hackermeter-password-policy/#comment-4092">Samuel &#8220;Otto&#8221; Wood</a>.</p>
+<p>I&#8217;d read that previously and I like the approach.  The 320k gzipped JavaScript is heavier than I&#8217;d like, but there ways of mitigating that.</p>
+<p>The bigger issue is still having overly restrictive password policies, on either the length or characters used.  Never understood the logic of things like @ and !.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Samuel "Otto" Wood		</title>
+		<link>/2013/08/13/hackermeter-password-policy/#comment-4092</link>
+
+		<dc:creator><![CDATA[Samuel "Otto" Wood]]></dc:creator>
+		<pubDate>Tue, 13 Aug 2013 20:54:35 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=8844#comment-4092</guid>
+
+					<description><![CDATA[What do you think of zxcvbn? Or other similar &quot;password-strength-checker&quot; code?
+
+https://tech.dropbox.com/2012/04/zxcvbn-realistic-password-strength-estimation/
+
+If you want to try it out, I made a WordPress plugin out of it too.
+
+http://wordpress.org/plugins/zxcvbn/]]></description>
+			<content:encoded><![CDATA[<p>What do you think of zxcvbn? Or other similar &#8220;password-strength-checker&#8221; code?</p>
+<p><a href="https://tech.dropbox.com/2012/04/zxcvbn-realistic-password-strength-estimation/" rel="nofollow ugc">https://tech.dropbox.com/2012/04/zxcvbn-realistic-password-strength-estimation/</a></p>
+<p>If you want to try it out, I made a WordPress plugin out of it too.</p>
+<p><a href="http://wordpress.org/plugins/zxcvbn/" rel="nofollow ugc">http://wordpress.org/plugins/zxcvbn/</a></p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

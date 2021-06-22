@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Under Appreciated Code: strtotime	</title>
+	<atom:link href="/2011/07/19/under-appreciated-code-strtotime/feed/" rel="self" type="application/rss+xml" />
+	<link>/2011/07/19/under-appreciated-code-strtotime/</link>
+	<description></description>
+	<lastBuildDate>Fri, 26 Aug 2011 13:40:55 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/07/19/under-appreciated-code-strtotime/#comment-3787</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 26 Aug 2011 13:40:55 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4486#comment-3787</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/07/19/under-appreciated-code-strtotime/#comment-3786&quot;&gt;Angelo Mandato&lt;/a&gt;.
+
+haha, running out of seconds since 1 Jan 1970 is going be a major let done.  Sometime around Tue Jan 19 03:14:07 2038 we will all really be wishing they&#039;d used an unsigned 32bit int instead of a signed one.
+
+Of course everyone will have updated to 64bit time storage by then ;-)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/07/19/under-appreciated-code-strtotime/#comment-3786">Angelo Mandato</a>.</p>
+<p>haha, running out of seconds since 1 Jan 1970 is going be a major let done.  Sometime around Tue Jan 19 03:14:07 2038 we will all really be wishing they&#8217;d used an unsigned 32bit int instead of a signed one.</p>
+<p>Of course everyone will have updated to 64bit time storage by then 😉</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Angelo Mandato		</title>
+		<link>/2011/07/19/under-appreciated-code-strtotime/#comment-3786</link>
+
+		<dc:creator><![CDATA[Angelo Mandato]]></dc:creator>
+		<pubDate>Fri, 26 Aug 2011 13:33:40 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4486#comment-3786</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/07/19/under-appreciated-code-strtotime/#comment-3785&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+Just wait till 2038 for the Millennium bug, that will be happening about when we&#039;re looking at retirement!]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/07/19/under-appreciated-code-strtotime/#comment-3785">Joseph Scott</a>.</p>
+<p>Just wait till 2038 for the Millennium bug, that will be happening about when we&#8217;re looking at retirement!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/07/19/under-appreciated-code-strtotime/#comment-3785</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 26 Aug 2011 13:29:04 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4486#comment-3785</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/07/19/under-appreciated-code-strtotime/#comment-3784&quot;&gt;Angelo Mandato&lt;/a&gt;.
+
+Yep, two digit years stink.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/07/19/under-appreciated-code-strtotime/#comment-3784">Angelo Mandato</a>.</p>
+<p>Yep, two digit years stink.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Angelo Mandato		</title>
+		<link>/2011/07/19/under-appreciated-code-strtotime/#comment-3784</link>
+
+		<dc:creator><![CDATA[Angelo Mandato]]></dc:creator>
+		<pubDate>Fri, 26 Aug 2011 13:19:31 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4486#comment-3784</guid>
+
+					<description><![CDATA[No worries here, I&#039;m just giving my opinion. I too like the function, I also like get_headers, but these functions have their problems too.
+
+I used to use strtotime all the time for converting readable dates in any non-critical situations. Sometime in 2002 strtotime inverted a date on me, I believe it was a date in the International format YY/MM/DD that the strtotime function translated to the US format MM/DD/YY. I use preg_match to parse my dates in these situations, I mainly rely on strtotime for parsing RFC defined dates and even then if the application was for banking or for life/death use I wouldn&#039;t even touch strtotime.
+
+You may want to read up on some of the other problems with strtotime(), it isn’t just translating English to logic. http://php.net/manual/en/function.strtotime.php :-)]]></description>
+			<content:encoded><![CDATA[<p>No worries here, I&#8217;m just giving my opinion. I too like the function, I also like get_headers, but these functions have their problems too.</p>
+<p>I used to use strtotime all the time for converting readable dates in any non-critical situations. Sometime in 2002 strtotime inverted a date on me, I believe it was a date in the International format YY/MM/DD that the strtotime function translated to the US format MM/DD/YY. I use preg_match to parse my dates in these situations, I mainly rely on strtotime for parsing RFC defined dates and even then if the application was for banking or for life/death use I wouldn&#8217;t even touch strtotime.</p>
+<p>You may want to read up on some of the other problems with strtotime(), it isn’t just translating English to logic. <a href="http://php.net/manual/en/function.strtotime.php" rel="nofollow ugc">http://php.net/manual/en/function.strtotime.php</a> 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/07/19/under-appreciated-code-strtotime/#comment-3783</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 26 Aug 2011 12:49:40 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4486#comment-3783</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/07/19/under-appreciated-code-strtotime/#comment-3782&quot;&gt;Angelo Mandato&lt;/a&gt;.
+
+I don&#039;t think I ever suggested that strtotime() was right absolutely 100% of the time.  I hate to quote myself, but &quot;If it works, use it. If it doesn’t, do something else&quot;.  Obviously the more critical the code path, the more testing that needs to be done to make sure it does actually work for various cases.
+
+You may want to read up on some of the other formats that strtotime() supports, it isn&#039;t just English style wording.  http://php.net/manual/en/function.strtotime.php
+
+If it doesn&#039;t work for you, don&#039;t use it.  Not a big deal :-)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/07/19/under-appreciated-code-strtotime/#comment-3782">Angelo Mandato</a>.</p>
+<p>I don&#8217;t think I ever suggested that strtotime() was right absolutely 100% of the time.  I hate to quote myself, but &#8220;If it works, use it. If it doesn’t, do something else&#8221;.  Obviously the more critical the code path, the more testing that needs to be done to make sure it does actually work for various cases.</p>
+<p>You may want to read up on some of the other formats that strtotime() supports, it isn&#8217;t just English style wording.  <a href="http://php.net/manual/en/function.strtotime.php" rel="nofollow ugc">http://php.net/manual/en/function.strtotime.php</a></p>
+<p>If it doesn&#8217;t work for you, don&#8217;t use it.  Not a big deal 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Angelo Mandato		</title>
+		<link>/2011/07/19/under-appreciated-code-strtotime/#comment-3782</link>
+
+		<dc:creator><![CDATA[Angelo Mandato]]></dc:creator>
+		<pubDate>Fri, 26 Aug 2011 12:42:35 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4486#comment-3782</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/07/19/under-appreciated-code-strtotime/#comment-3781&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+i like the function, I like to have as many tools/options as possible in my toolbox. I just would not trust such a solution for anything that needs to be absolutely 100%.
+
+Assumptions are the biggest bugs in programming. Assuming a function that translates english to logic will always be correct is a poor assumption. Good enough for a vanilla web site, but not good enough when your money or your life is on the line.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/07/19/under-appreciated-code-strtotime/#comment-3781">Joseph Scott</a>.</p>
+<p>i like the function, I like to have as many tools/options as possible in my toolbox. I just would not trust such a solution for anything that needs to be absolutely 100%.</p>
+<p>Assumptions are the biggest bugs in programming. Assuming a function that translates english to logic will always be correct is a poor assumption. Good enough for a vanilla web site, but not good enough when your money or your life is on the line.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/07/19/under-appreciated-code-strtotime/#comment-3781</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 26 Aug 2011 11:44:02 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4486#comment-3781</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/07/19/under-appreciated-code-strtotime/#comment-3780&quot;&gt;Angelo Mandato&lt;/a&gt;.
+
+I&#039;m not sure I understand the your problem with strtotime().  If it works, use it.  If it doesn&#039;t, do something else.  What I&#039;ve found is that it works for many cases, making it very handy.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/07/19/under-appreciated-code-strtotime/#comment-3780">Angelo Mandato</a>.</p>
+<p>I&#8217;m not sure I understand the your problem with strtotime().  If it works, use it.  If it doesn&#8217;t, do something else.  What I&#8217;ve found is that it works for many cases, making it very handy.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Angelo Mandato		</title>
+		<link>/2011/07/19/under-appreciated-code-strtotime/#comment-3780</link>
+
+		<dc:creator><![CDATA[Angelo Mandato]]></dc:creator>
+		<pubDate>Thu, 25 Aug 2011 17:07:52 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4486#comment-3780</guid>
+
+					<description><![CDATA[As far as simplicity, this use for this function is really cool and may be a good alternative for someone who doesn&#039;t understand the equivalent computer logic.
+
+As a developer, I do not like this function used in this way since logic and the english language do not mix well. To truly be bullet proof, the use of mktime() will solve the above examples with simple arithmetic. The problem with a function like this is expectations, what if someone wanted &#039;first day of last month excluding March and September&#039;.
+
+Personally, I would be pretty upset if this kind of code was found in a banking web site or in a defibrillator. Otherwise, cool stuff!]]></description>
+			<content:encoded><![CDATA[<p>As far as simplicity, this use for this function is really cool and may be a good alternative for someone who doesn&#8217;t understand the equivalent computer logic.</p>
+<p>As a developer, I do not like this function used in this way since logic and the english language do not mix well. To truly be bullet proof, the use of mktime() will solve the above examples with simple arithmetic. The problem with a function like this is expectations, what if someone wanted &#8216;first day of last month excluding March and September&#8217;.</p>
+<p>Personally, I would be pretty upset if this kind of code was found in a banking web site or in a defibrillator. Otherwise, cool stuff!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jonathan Brazil		</title>
+		<link>/2011/07/19/under-appreciated-code-strtotime/#comment-3779</link>
+
+		<dc:creator><![CDATA[Jonathan Brazil]]></dc:creator>
+		<pubDate>Tue, 19 Jul 2011 15:45:44 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4486#comment-3779</guid>
+
+					<description><![CDATA[Not a PHP guy but had the opportunity to get involved with some PHP code recently and this function definitely stood out as a great help. It&#039;s always the simple ones!]]></description>
+			<content:encoded><![CDATA[<p>Not a PHP guy but had the opportunity to get involved with some PHP code recently and this function definitely stood out as a great help. It&#8217;s always the simple ones!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/07/19/under-appreciated-code-strtotime/#comment-3778</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 19 Jul 2011 15:26:14 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4486#comment-3778</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/07/19/under-appreciated-code-strtotime/#comment-3777&quot;&gt;Gordon Brander&lt;/a&gt;.
+
+As long as you don&#039;t count the self described magic methods - http://php.net/manual/en/language.oop5.magic.php ;-)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/07/19/under-appreciated-code-strtotime/#comment-3777">Gordon Brander</a>.</p>
+<p>As long as you don&#8217;t count the self described magic methods &#8211; <a href="http://php.net/manual/en/language.oop5.magic.php" rel="nofollow ugc">http://php.net/manual/en/language.oop5.magic.php</a> 😉</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

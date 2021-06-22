@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: How Much Does One Terabyte Of Bandwidth Cost?	</title>
+	<atom:link href="/2009/01/22/how-much-does-one-terabyte-of-bandwidth-cost/feed/" rel="self" type="application/rss+xml" />
+	<link>/2009/01/22/how-much-does-one-terabyte-of-bandwidth-cost/</link>
+	<description></description>
+	<lastBuildDate>Tue, 03 Jan 2012 21:55:43 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Fabian		</title>
+		<link>/2009/01/22/how-much-does-one-terabyte-of-bandwidth-cost/#comment-2673</link>
+
+		<dc:creator><![CDATA[Fabian]]></dc:creator>
+		<pubDate>Tue, 03 Jan 2012 21:55:43 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=685#comment-2673</guid>
+
+					<description><![CDATA[Nice article, just to add some updated data, the incoming data transfer for Amazon EC2 is now 0 (zero). You can see an evolution of costs here:
+
+http://aws.typepad.com/aws/2011/06/aws-lowers-its-pricing-again-free-inbound-data-transfer-and-lower-outbound-data-transfer-for-all-ser.html
+
+Happy 2012!]]></description>
+			<content:encoded><![CDATA[<p>Nice article, just to add some updated data, the incoming data transfer for Amazon EC2 is now 0 (zero). You can see an evolution of costs here:</p>
+<p><a href="http://aws.typepad.com/aws/2011/06/aws-lowers-its-pricing-again-free-inbound-data-transfer-and-lower-outbound-data-transfer-for-all-ser.html" rel="nofollow ugc">http://aws.typepad.com/aws/2011/06/aws-lowers-its-pricing-again-free-inbound-data-transfer-and-lower-outbound-data-transfer-for-all-ser.html</a></p>
+<p>Happy 2012!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Peaceful Programmer &#187; Blog Archive &#187; Tethering Stupidity and Why AT&#38;T Just Doesn&#8217;t Get It		</title>
+		<link>/2009/01/22/how-much-does-one-terabyte-of-bandwidth-cost/#comment-2672</link>
+
+		<dc:creator><![CDATA[Peaceful Programmer &#187; Blog Archive &#187; Tethering Stupidity and Why AT&#38;T Just Doesn&#8217;t Get It]]></dc:creator>
+		<pubDate>Wed, 23 Feb 2011 02:08:04 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=685#comment-2672</guid>
+
+					<description><![CDATA[[...] Compared to the 5 cents per gigabyte provided at the host company level. Are you telling me it costs AT&#038;T 200x the cost of a data center to provide connectivity to their end users?? Idiocy, especially since the AT&#038;T networks [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Compared to the 5 cents per gigabyte provided at the host company level. Are you telling me it costs AT&amp;T 200x the cost of a data center to provide connectivity to their end users?? Idiocy, especially since the AT&amp;T networks [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/01/22/how-much-does-one-terabyte-of-bandwidth-cost/#comment-2671</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 29 Dec 2010 22:34:22 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=685#comment-2671</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/01/22/how-much-does-one-terabyte-of-bandwidth-cost/#comment-2670&quot;&gt;peter&lt;/a&gt;.
+
+Perhaps, lots of variables to consider.  S3 isn&#039;t always the fastest of file hosts either, so can a counter issue to traffic spikes.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/01/22/how-much-does-one-terabyte-of-bandwidth-cost/#comment-2670">peter</a>.</p>
+<p>Perhaps, lots of variables to consider.  S3 isn&#8217;t always the fastest of file hosts either, so can a counter issue to traffic spikes.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: peter		</title>
+		<link>/2009/01/22/how-much-does-one-terabyte-of-bandwidth-cost/#comment-2670</link>
+
+		<dc:creator><![CDATA[peter]]></dc:creator>
+		<pubDate>Wed, 29 Dec 2010 19:15:28 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=685#comment-2670</guid>
+
+					<description><![CDATA[I think the last paragraph is very important:
+
+&quot;It isn’t clear that all of the servers listed above would do well at serving 1 TB per month, that’s lot of sustained traffic. If we needed two servers to adequately deal with the load then that changes the cost structure quite a bit.&quot;
+
+This is one of the reasons S3 seems more expensive - I don&#039;t know if S3&#039;s SLA states it explicitly, but I would expect that a file hosted on S3 would continue to be served reliably even with a sudden spike in traffic, whereas if the file were on a single server, a spike might overwhelm that server.  One of the tradeoffs for paying a bit more for &quot;cloud&quot; services is the ability to handle spikes like that, without having to overprovision.]]></description>
+			<content:encoded><![CDATA[<p>I think the last paragraph is very important:</p>
+<p>&#8220;It isn’t clear that all of the servers listed above would do well at serving 1 TB per month, that’s lot of sustained traffic. If we needed two servers to adequately deal with the load then that changes the cost structure quite a bit.&#8221;</p>
+<p>This is one of the reasons S3 seems more expensive &#8211; I don&#8217;t know if S3&#8217;s SLA states it explicitly, but I would expect that a file hosted on S3 would continue to be served reliably even with a sudden spike in traffic, whereas if the file were on a single server, a spike might overwhelm that server.  One of the tradeoffs for paying a bit more for &#8220;cloud&#8221; services is the ability to handle spikes like that, without having to overprovision.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Taemojitsu		</title>
+		<link>/2009/01/22/how-much-does-one-terabyte-of-bandwidth-cost/#comment-2669</link>
+
+		<dc:creator><![CDATA[Taemojitsu]]></dc:creator>
+		<pubDate>Wed, 15 Sep 2010 19:44:43 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=685#comment-2669</guid>
+
+					<description><![CDATA[So if a certain ISP in the US has a soft cap for residential subscribers of 250GB/mo, that&#039;s a value of $25+ and not &lt;i&gt;that&lt;/i&gt; bad, I suppose.]]></description>
+			<content:encoded><![CDATA[<p>So if a certain ISP in the US has a soft cap for residential subscribers of 250GB/mo, that&#8217;s a value of $25+ and not <i>that</i> bad, I suppose.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: John Bacon		</title>
+		<link>/2009/01/22/how-much-does-one-terabyte-of-bandwidth-cost/#comment-2668</link>
+
+		<dc:creator><![CDATA[John Bacon]]></dc:creator>
+		<pubDate>Wed, 02 Jun 2010 22:58:45 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=685#comment-2668</guid>
+
+					<description><![CDATA[Interestingly enough, 18 months and the prices are still about the same.  Amazon S3 is only $20 less per TB than it was when you wrote this.
+
+Dedicated offerings keep the same prices and bandwidth allotment.  The only thing that changed were better CPU/motherboards.
+
+I&#039;d say this post has enough legs to be relatively on the spot for another 18 months!  :)]]></description>
+			<content:encoded><![CDATA[<p>Interestingly enough, 18 months and the prices are still about the same.  Amazon S3 is only $20 less per TB than it was when you wrote this.</p>
+<p>Dedicated offerings keep the same prices and bandwidth allotment.  The only thing that changed were better CPU/motherboards.</p>
+<p>I&#8217;d say this post has enough legs to be relatively on the spot for another 18 months!  🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/01/22/how-much-does-one-terabyte-of-bandwidth-cost/#comment-2667</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 02 Jun 2010 20:53:24 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=685#comment-2667</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/01/22/how-much-does-one-terabyte-of-bandwidth-cost/#comment-2666&quot;&gt;John Bacon&lt;/a&gt;.
+
+This post is now more than 18 months old, I&#039;d expect bandwidth costs to continue to drop.
+
+As for launching a WP network, &quot;it depends&quot; is best answer I could give to such a broad question.  There are so many other details that weigh in on that sort of decision.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/01/22/how-much-does-one-terabyte-of-bandwidth-cost/#comment-2666">John Bacon</a>.</p>
+<p>This post is now more than 18 months old, I&#8217;d expect bandwidth costs to continue to drop.</p>
+<p>As for launching a WP network, &#8220;it depends&#8221; is best answer I could give to such a broad question.  There are so many other details that weigh in on that sort of decision.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: John Bacon		</title>
+		<link>/2009/01/22/how-much-does-one-terabyte-of-bandwidth-cost/#comment-2666</link>
+
+		<dc:creator><![CDATA[John Bacon]]></dc:creator>
+		<pubDate>Wed, 02 Jun 2010 19:07:04 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=685#comment-2666</guid>
+
+					<description><![CDATA[You could serve the 1TB, 100 times using a 100TB.com dedicated server. ($199)  For $98, you could use their cloud service and get 10TB of transfer.
+
+They are on SoftLayer, which seems pretty good.
+
+My setup is at ThePlanet and it is been peachy since 2003.  You get a better deal than the advertised price if you pick up the phone and call.
+
+I&#039;d love to know, if you were launching a WordPress MU/3.0 network today, would you go with dedicated server(s), AWS or something else?]]></description>
+			<content:encoded><![CDATA[<p>You could serve the 1TB, 100 times using a 100TB.com dedicated server. ($199)  For $98, you could use their cloud service and get 10TB of transfer.</p>
+<p>They are on SoftLayer, which seems pretty good.</p>
+<p>My setup is at ThePlanet and it is been peachy since 2003.  You get a better deal than the advertised price if you pick up the phone and call.</p>
+<p>I&#8217;d love to know, if you were launching a WordPress MU/3.0 network today, would you go with dedicated server(s), AWS or something else?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/01/22/how-much-does-one-terabyte-of-bandwidth-cost/#comment-2665</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 14 May 2010 16:47:58 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=685#comment-2665</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/01/22/how-much-does-one-terabyte-of-bandwidth-cost/#comment-2664&quot;&gt;varun&lt;/a&gt;.
+
+Streaming video has it&#039;s own set of issues, bandwidth calculations would look very different for that.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/01/22/how-much-does-one-terabyte-of-bandwidth-cost/#comment-2664">varun</a>.</p>
+<p>Streaming video has it&#8217;s own set of issues, bandwidth calculations would look very different for that.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: varun		</title>
+		<link>/2009/01/22/how-much-does-one-terabyte-of-bandwidth-cost/#comment-2664</link>
+
+		<dc:creator><![CDATA[varun]]></dc:creator>
+		<pubDate>Fri, 14 May 2010 12:43:32 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=685#comment-2664</guid>
+
+					<description><![CDATA[Informative. How does this math for storage map to streaming of video?
+&quot;With Nielsen reporting 138 million unique viewers in the U.S. alone.  The growth in total streams is even greater, increasing 26 percent year-over-year to a total of 11.2 billion streams.  In addition, Coda Research Consultancy forecasts that U.S. mobile handset data traffic will reach 327 petabytes a month in 2010. Mobile video will account for the lion share of that traffic&quot;.
+
+I tried doing a map for 327 petabytes/month? It scores in millions. should it be computed differently?
+
+varun]]></description>
+			<content:encoded><![CDATA[<p>Informative. How does this math for storage map to streaming of video?<br />
+&#8220;With Nielsen reporting 138 million unique viewers in the U.S. alone.  The growth in total streams is even greater, increasing 26 percent year-over-year to a total of 11.2 billion streams.  In addition, Coda Research Consultancy forecasts that U.S. mobile handset data traffic will reach 327 petabytes a month in 2010. Mobile video will account for the lion share of that traffic&#8221;.</p>
+<p>I tried doing a map for 327 petabytes/month? It scores in millions. should it be computed differently?</p>
+<p>varun</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

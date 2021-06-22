@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>hackermeter &#8211; Joseph Scott</title>
+	<atom:link href="/tag/hackermeter/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 13 Aug 2013 14:19:24 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>HackerMeter Password Policy</title>
+		<link>/2013/08/13/hackermeter-password-policy/</link>
+					<comments>/2013/08/13/hackermeter-password-policy/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 13 Aug 2013 14:19:24 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[hackermeter]]></category>
+		<category><![CDATA[password-policy]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=8844</guid>
+
+					<description><![CDATA[I created an account on HackerMeter to see what the coding exercises looked like. I didn&#8217;t even finish creating my account before I was hit with a major disappointment: A site meant to help rank hackers rejected my 40 character password. Violating this password policy is so bad they had to tell me twice. 🙂 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I created an account on <a href="http://www.hackermeter.com/">HackerMeter</a> to see what the coding exercises looked like.  I didn&#8217;t even finish creating my account before I was hit with a major disappointment:</p>
+<p><img loading="lazy" src="https://sharedat.net/f/kE/kEvq/hackermeter-password-policy-text.png" width="738" height="49" class="aligncenter" /></p>
+<p>A site meant to help rank hackers rejected my 40 character password.  Violating this password policy is so bad they had to tell me twice. <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Perhaps they should add an exercise to code a password hashing mechanism that supports more than 30 characters.  For reference, bcrypt supports up to 72 characters.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/08/13/hackermeter-password-policy/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

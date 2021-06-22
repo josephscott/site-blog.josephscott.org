@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>http &#8211; Joseph Scott</title>
+	<atom:link href="/tag/http/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 02 Oct 2018 21:53:34 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Browser Cookie Limits</title>
+		<link>/2018/10/02/browser-cookie-limits/</link>
+					<comments>/2018/10/02/browser-cookie-limits/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 02 Oct 2018 21:53:34 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[cookies]]></category>
+		<category><![CDATA[http]]></category>
+		<guid isPermaLink="false">/?p=16999</guid>
+
+					<description><![CDATA[http://browsercookielimits.squawky.net/ In Chrome 69 I got the following results: &#8211; Guessing Max Cookie Count Per Domain: 180 &#8211; Guessing Max Cookie Size Per Cookie: 4096 bytes For Firefox 62: &#8211; Guessing Max Cookie Count Per Domain: NA ( it kept trying to kill the script ) &#8211; Guessing Max Cookie Size Per Cookie: 4097 bytes [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://browsercookielimits.squawky.net/">http://browsercookielimits.squawky.net/</a></p>
+<p>In Chrome 69 I got the following results:</p>
+<p>&#8211; Guessing Max Cookie Count Per Domain: 180<br />
+&#8211; Guessing Max Cookie Size Per Cookie: 4096 bytes</p>
+<p>For Firefox 62:</p>
+<p>&#8211; Guessing Max Cookie Count Per Domain: NA ( it kept trying to kill the script )<br />
+&#8211; Guessing Max Cookie Size Per Cookie: 4097 bytes</p>
+<p>Safari 11.1.2 under Mac OS 10.13.6:</p>
+<p>&#8211; Guessing Max Cookie Count Per Domain: NA<br />
+&#8211; Guessing Max Cookie Size Per Cookie: 4097 bytes</p>
+<p>Safari 11 in iOS 11.4.1:</p>
+<p>&#8211; Guessing Max Cookie Count Per Domain: NA<br />
+&#8211; Guessing Max Cookie Size Per Cookie: 4097 bytes</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/10/02/browser-cookie-limits/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Safari Can Be Stingy</title>
+		<link>/2018/09/18/safari-can-be-stingy/</link>
+					<comments>/2018/09/18/safari-can-be-stingy/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 18 Sep 2018 17:06:18 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[andy-davies]]></category>
+		<category><![CDATA[cache]]></category>
+		<category><![CDATA[cdn]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[safari]]></category>
+		<guid isPermaLink="false">/?p=16981</guid>
+
+					<description><![CDATA[Andy Davies dug into the shared caching situation on Safari, in Safari, Caching and Third-Party Resources. The shared cache in Safari may be more stingy that most people would have guessed: What this means is Safari caches content from third-party origins separately for each document origin, so for example if two sites, say a.com and [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Andy Davies dug into the shared caching situation on Safari, in <a href="https://andydavies.me/blog/2018/09/06/safari-caching-and-3rd-party-resources/">Safari, Caching and Third-Party Resources</a>.  The shared cache in Safari may be more stingy that most people would have guessed:</p>
+<blockquote><p>
+What this means is Safari caches content from third-party origins separately for each document origin, so for example if two sites, say a.com and b.com both use a common library, third-party.com/script.js, then script.js will be cached separately for both sites.</p>
+<p>And if someone has an ‘empty’ cache and visits the first site and then the other, script.js will be downloaded twice.
+</p></blockquote>
+<p>This is another situation of having to measure to make sure that the rule of thumb is actually helping in your specific case.  The numbers from the HTTP Archive research were not exciting:</p>
+<blockquote><p>
+The March 2018 HTTP Archive (desktop) run has data for approximately 466,000 pages and the most popular public library, jQuery 1.11.3 from ajax.googleapis.com (served over HTTPS), is used by just over 1% of them.</p>
+<p>I’m not sure what level adoption needs to reach for shared caching to achieve critical mass but 1% certainly seems unlikely to be high enough and even Google’s most popular font – OpenSans – is only requested by around 9% of pages in the HTTP Archive.
+</p></blockquote>
+<p>If 9% ends up being the upper bound for shared cache hits, we need to start re-thinking our approach.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/09/18/safari-can-be-stingy/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Server Timing API</title>
+		<link>/2018/08/28/server-timing-api/</link>
+					<comments>/2018/08/28/server-timing-api/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 28 Aug 2018 19:47:44 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[server-timing]]></category>
+		<guid isPermaLink="false">/?p=16941</guid>
+
+					<description><![CDATA[Leaving myself a note in the form of a few links for the Server Timing API: &#8211; W3C Server Timing spec &#8211; Mozilla Server Timing &#8211; Server Timing as of Chrome 65 This is a method that allows you to include performance related metrics in the HTTP response, using the Server-Timing header. Browsers, like Chrome, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Leaving myself a note in the form of a few links for the <a href="https://w3c.github.io/server-timing/">Server Timing API</a>:</p>
+<p>&#8211; <a href="https://w3c.github.io/server-timing/">W3C Server Timing spec</a><br />
+&#8211; <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Server-Timing">Mozilla Server Timing</a><br />
+&#8211; <a href="https://developers.google.com/web/updates/2018/03/nic65#server-timing">Server Timing as of Chrome 65</a></p>
+<p>This is a method that allows you to include performance related metrics in the HTTP response, using the <code>Server-Timing</code> header.  Browsers, like Chrome, can then display that information as part of the request timing details.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/08/28/server-timing-api/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>HTTP Alternative Services</title>
+		<link>/2018/06/19/http-alternative-services/</link>
+					<comments>/2018/06/19/http-alternative-services/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 19 Jun 2018 18:34:54 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[quic]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15468</guid>
+
+					<description><![CDATA[RFC 7838: HTTP Alternative Services. This allows HTTP responses to indicate alternative servers that a client can use ( but it isn&#8217;t required to do so ). One example, from the RFC: Alt-Svc: h2=":8000" This indicates the &#8220;h2&#8221; protocol ([RFC7540]) on the same host using the indicated port 8000. Google already uses this to announce [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>RFC 7838: <a href="https://tools.ietf.org/html/rfc7838">HTTP Alternative Services</a>.</p>
+<p>This allows HTTP responses to indicate alternative servers that a client can use ( but it isn&#8217;t required to do so ). One example, from the RFC:</p>
+<blockquote><p><code>Alt-Svc: h2=":8000"</code></p>
+<p>This indicates the &#8220;h2&#8221; protocol ([RFC7540]) on the same host using<br />
+the indicated port 8000.</p></blockquote>
+<p>Google already uses this to announce <a href="https://www.chromium.org/quic">QUIC</a> as an alternative, with this header included in a response from https://www.google.com/:</p>
+<p><code>Alt-Svc: quic=":443"; ma=2592000; v="43,42,41,39,35"</code></p>
+<p>That breaks down as:</p>
+<p>&#8211; QUIC is available on port 443, of the same origin<br />
+&#8211; Max age ( ma ) for this information is 2,592,000 seconds ( default is 24 hours )<br />
+&#8211; Version negotiation hints ( v ) for QUIC</p>
+<p>That gives sites a direct option for announcing other means of making requests.  Right now QUIC is the obvious alternative, but by being an open format, others could use it too.</p>
+<p>Mark Nottingham has a good <a href="https://www.mnot.net/blog/2016/03/09/alt-svc">write up on &#8220;Alternative Services&#8221;</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/06/19/http-alternative-services/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Client Hint: Save-Data</title>
+		<link>/2016/03/11/client-hint-save-data/</link>
+					<comments>/2016/03/11/client-hint-save-data/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 11 Mar 2016 18:11:05 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[client-hint]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[save-data]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15320</guid>
+
+					<description><![CDATA[From the world of client hints comes Save-Data: The token is a signal indicating explicit user opt-in into a reduced data usage mode on the client, and when communicated to origins allows them to deliver alternate content honoring such preference &#8211; e.g. smaller image and video resources, alternate markup, and so on. The Google Developer [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>From the world of client hints comes <a href="http://httpwg.org/http-extensions/client-hints.html#the-save-data-hint">Save-Data</a>:</p>
+<blockquote><p>
+The token is a signal indicating explicit user opt-in into a reduced data usage mode on the client, and when communicated to origins allows them to deliver alternate content honoring such preference &#8211; e.g. smaller image and video resources, alternate markup, and so on.
+</p></blockquote>
+<p>The Google Developer site has a write up on <a href="https://developers.google.com/web/updates/2016/02/save-data">Delivering Fast and Light Applications with Save-Data</a>.  No surprise that their main target is a better experience for users on slow mobile connections.</p>
+<p>If sites start respecting <code>Save-Data = "on"</code> requests, and they do it in a way that maintains basically functionality, then why not turn it on all the time?  Even if I&#8217;m on an LTE connection, I&#8217;d rather have a faster loading site.  The next step is to turn it on for desktop browsers.  There is nothing that limits this to mobile clients.</p>
+<p>Anything that targets faster page loads on mobile clients will eventually get used everywhere.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/03/11/client-hint-save-data/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>HPACK, Static Table Definition</title>
+		<link>/2016/01/18/hpack-static-table-definitionhpack-header-compression-for-http2/</link>
+					<comments>/2016/01/18/hpack-static-table-definitionhpack-header-compression-for-http2/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 18 Jan 2016 18:51:43 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[hpack]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[http2]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14930</guid>
+
+					<description><![CDATA[The HPACK ( header compression for HTTP/2 ) static table: The static table was created from the most frequent header fields used by popular web sites, with the addition of HTTP/2-specific pseudo-header fields (see Section 8.1.2.1 of [HTTP2]). For header fields with a few frequent values, an entry was added for each of these frequent [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The HPACK ( <a href="https://http2.github.io/http2-spec/compression.html">header compression for HTTP/2</a> ) static table:</p>
+<blockquote><p>
+The static table was created from the most frequent header fields used by popular web sites, with the addition of HTTP/2-specific pseudo-header fields (see Section 8.1.2.1 of [HTTP2]). For header fields with a few frequent values, an entry was added for each of these frequent values. For other header fields, an entry was added with an empty value.
+</p></blockquote>
+<p>Here is a <a href="https://http2.github.io/http2-spec/compression.html#static.table.entries">direct link to the list</a>.  I like number 16, <code>accept-encoding: gzip, deflate</code>, even though that means this won&#8217;t be usable with <a href="https://josephscott.org/archives/2015/12/brotli-in-browsers/">Brotli</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/01/18/hpack-static-table-definitionhpack-header-compression-for-http2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Chrome Intent to Ship: DPR, Client Hints</title>
+		<link>/2015/08/10/chrome-intent-to-ship-dpr-client-hints/</link>
+					<comments>/2015/08/10/chrome-intent-to-ship-dpr-client-hints/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 10 Aug 2015 15:09:36 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[yoav-weiss]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12964</guid>
+
+					<description><![CDATA[Back in June I mentioned HTTP client hints, like DPR. It has gone on to Intent to Ship for Chrome. That spawned additional discussion on privacy and performance issues. Yoav Weiss has written up a doc on implementation considerations. The Chrome Feature List has it with a status of &#8220;In development&#8221;.]]></description>
+										<content:encoded><![CDATA[<p>Back in June I mentioned <a href="https://josephscott.org/archives/2015/06/http-client-hints-dpr-device-pixel-ratio/">HTTP client hints, like DPR</a>.  It has gone on to <a href="https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/vvX1vCQihDE/wg6JQg9utaMJ">Intent to Ship for Chrome</a>.  That spawned additional discussion on privacy and performance issues.  Yoav Weiss has written up a doc on <a href="https://github.com/yoavweiss/http-client-hints/blob/browser_considerations/browser_implementation_considerations.md">implementation considerations</a>.</p>
+<p>The <a href="https://www.chromestatus.com/features/5504430086553600">Chrome Feature List</a> has it with a status of &#8220;In development&#8221;.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/08/10/chrome-intent-to-ship-dpr-client-hints/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>HTTP Client Hints: DPR ( device pixel ratio )</title>
+		<link>/2015/06/09/http-client-hints-dpr-device-pixel-ratio/</link>
+					<comments>/2015/06/09/http-client-hints-dpr-device-pixel-ratio/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 09 Jun 2015 14:13:59 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12180</guid>
+
+					<description><![CDATA[From the world of &#8220;retina images are still kind of a pain&#8221;: clients could include DPR ( device pixel ratio ) details in image requests: DPR hint automates device-pixel-ratio-based selection and enables delivery of optimal image variant without any changes in markup. A request from the client for an image would look like: [code lang=text] [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>From the world of &#8220;retina images are still kind of a pain&#8221;: <a href="https://github.com/igrigorik/http-client-hints#delivering-dpr-and-resource-width-aware-images">clients could include DPR ( device pixel ratio ) details in image requests</a>:</p>
+<blockquote><p>
+DPR hint automates device-pixel-ratio-based selection and enables delivery of optimal image variant without any changes in markup.
+</p></blockquote>
+<p>A request from the client for an image would look like:</p>
+<p>[code lang=text]<br />
+GET /img.jpg HTTP/1.1<br />
+User-Agent: Awesome Browser<br />
+Accept: image/webp, image/jpg<br />
+DPR: 2.0<br />
+[/code]</p>
+<p>This would be wonderfully helpful to servers that can manipulate image results to best fit the capabilities of clients.</p>
+<p>There is also discussion about a <code>RW</code> ( resource width ) header.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/06/09/http-client-hints-dpr-device-pixel-ratio/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How To Check A Site For SPDY Support With OpenSSL</title>
+		<link>/2014/12/02/how-to-check-a-site-for-spdy-support-with-openssl/</link>
+					<comments>/2014/12/02/how-to-check-a-site-for-spdy-support-with-openssl/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 02 Dec 2014 16:15:21 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[openssl]]></category>
+		<category><![CDATA[spdy]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11443</guid>
+
+					<description><![CDATA[A Stack Overflow thread with an example on how to check a server for SPDY support with OpenSSL: openssl s_client -connect google.com:443 -nextprotoneg '' The result I got from &#8220;OpenSSL 1.0.1f 6 Jan 2014&#8221; looked like this ( emphasis mine ): CONNECTED(00000003) Protocols advertised by server: spdy/5a1, h2-14, spdy/3.1, spdy/3, http/1.1 139790806673056:error:140920E3:SSL routines:SSL3_GET_SERVER_HELLO:parse tlsext:s3_clnt.c:1061: --- [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>A <a href="http://stackoverflow.com/questions/23742928/how-to-detect-if-a-server-is-using-spdy/23792880#23792880">Stack Overflow thread</a> with an example on how to check a server for <a href="http://www.chromium.org/spdy">SPDY</a> support with <a href="https://www.openssl.org/">OpenSSL</a>:</p>
+<pre>
+openssl s_client -connect google.com:443 -nextprotoneg ''
+</pre>
+<p>The result I got from &#8220;OpenSSL 1.0.1f 6 Jan 2014&#8221; looked like this ( emphasis mine ):</p>
+<pre>
+CONNECTED(00000003)
+<strong>Protocols advertised by server: spdy/5a1, h2-14, spdy/3.1, spdy/3, http/1.1</strong>
+139790806673056:error:140920E3:SSL routines:SSL3_GET_SERVER_HELLO:parse tlsext:s3_clnt.c:1061:
+---
+no peer certificate available
+---
+No client certificate CA names sent
+---
+SSL handshake has read 110 bytes and written 7 bytes
+---
+New, (NONE), Cipher is (NONE)
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+Next protocol: (2) 
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : 0000
+    Session-ID: 
+    Session-ID-ctx: 
+    Master-Key: 
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1417496091
+    Timeout   : 300 (sec)
+    Verify return code: 0 (ok)
+---
+</pre>
+<p>The &#8220;Protocols advertised by server:&#8221; is the line you need.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/12/02/how-to-check-a-site-for-spdy-support-with-openssl/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>HTTP API for PostgreSQL</title>
+		<link>/2014/10/08/http-api-for-postgresql/</link>
+					<comments>/2014/10/08/http-api-for-postgresql/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 08 Oct 2014 14:51:04 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11178</guid>
+
+					<description><![CDATA[PostgreSQL has also been considering a HTTP API.]]></description>
+										<content:encoded><![CDATA[<p>PostgreSQL has also been considering a <a href="https://wiki.postgresql.org/wiki/HTTP_API">HTTP API</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/10/08/http-api-for-postgresql/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

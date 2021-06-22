@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>opcache &#8211; Joseph Scott</title>
+	<atom:link href="/tag/opcache/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 26 Mar 2013 16:59:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Zend Opcache Control Panel</title>
+		<link>/2013/03/26/zend-opcache-control-panel/</link>
+					<comments>/2013/03/26/zend-opcache-control-panel/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 26 Mar 2013 16:59:45 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[opcache]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7257</guid>
+
+					<description><![CDATA[If you&#8217;ve been following the development of PHP 5.5 you probably already know that the Zend Optimizer Plus has been released under the &#8220;The PHP License, version 3.01&#8221; license, renamed to Zend Opcache, and merged into the PHP 5.5 code base. Last week PHP 5.5.0 beta-1 was released, which is the first version to include [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img loading="lazy" src="https://sharedat.net/f/9C/9CfR/php-logo.png" width="250" height="134" class="alignleft" /></p>
+<p>If you&#8217;ve been following the development of PHP 5.5 you probably already know that the <a href="https://github.com/zend-dev/ZendOptimizerPlus">Zend Optimizer Plus</a> has been released under the &#8220;The PHP License, version 3.01&#8221; license, renamed to Zend Opcache, and merged into the PHP 5.5 code base.  Last week <a href="http://php.net/archive/2013.php#id2013-03-21-1">PHP 5.5.0 beta-1 was released</a>, which is the first version to include the Zend Opcache.</p>
+<p>CK has built a simple <a href="http://ckon.wordpress.com/2013/03/26/opcache-control-panel-for-php/">Zend Opcache control panel</a>, which you may find useful.  The code is available at <a href="https://gist.github.com/ck-on/4959032/?ocp.php">https://gist.github.com/ck-on/4959032/?ocp.php</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/03/26/zend-opcache-control-panel/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

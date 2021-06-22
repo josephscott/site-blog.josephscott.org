@@ -1,0 +1,65 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/iis/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/iis/",
+    "feed_url": "https://blog.josephscott.org/tag/iis/feed/json/",
+    "language": "en-US",
+    "title": "iis &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2007/09/24/php-on-iis/",
+            "url": "https://blog.josephscott.org/2007/09/24/php-on-iis/",
+            "title": "PHP on IIS",
+            "content_html": "<p>Microsoft&#8217;s <a href=\"http://www.iis.net/\">IIS.net</a> site has a new section: <a href=\"http://www.iis.net/php\">PHP on IIS</a>.  This is kind of strange on several levels.  First off is the idea of Microsoft supporting non-Microsoft server side languages in IIS.  Yeah, you&#8217;ve been able to do this for a long time (I remember running a perl ISAPI module in IIS in the 90s), but quite frankly it wasn&#8217;t that great.  Just getting it to run usually involved way too much voodoo.  It looks like we are starting to get something that resembles official support for PHP on IIS.</p>\n<p>Another strange think is that this was announced in conjunction with their Go Live release of <a href=\"http://www.iis.net/downloads/default.aspx?tabid=34&amp;g=6&amp;i=1521\">FastCGI for IIS 5.1 and IIS 6.0</a>.  Those using IIS 7 will have to wait until Vista SP1 or running Server 2008 Beta 3 or better.  I suppose IIS 7 doesn&#8217;t have a large share of the IIS web server market so perhaps it isn&#8217;t much of an issue.</p>\n<p>It looks like FastCGI will be the official way to run PHP on IIS going forward.</p>\n<p>The IIS.net site has some documentation on how to get various PHP apps running on IIS, including <a href=\"http://www.iis.net/articles/view.aspx/IIS7/Hosting-Web-Applications/PHP/PHP-Applications-on-IIS---WordPress\">WordPress on IIS</a>.</p>\n<p>My first choice is still a un*x box though <img src=\"https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png\" alt=\"\ud83d\ude42\" class=\"wp-smiley\" style=\"height: 1em; max-height: 1em;\" /></p>\n",
+            "content_text": "Microsoft&#8217;s IIS.net site has a new section: PHP on IIS.  This is kind of strange on several levels.  First off is the idea of Microsoft supporting non-Microsoft server side languages in IIS.  Yeah, you&#8217;ve been able to do this for a long time (I remember running a perl ISAPI module in IIS in the 90s), but quite frankly it wasn&#8217;t that great.  Just getting it to run usually involved way too much voodoo.  It looks like we are starting to get something that resembles official support for PHP on IIS.\nAnother strange think is that this was announced in conjunction with their Go Live release of FastCGI for IIS 5.1 and IIS 6.0.  Those using IIS 7 will have to wait until Vista SP1 or running Server 2008 Beta 3 or better.  I suppose IIS 7 doesn&#8217;t have a large share of the IIS web server market so perhaps it isn&#8217;t much of an issue.\nIt looks like FastCGI will be the official way to run PHP on IIS going forward.\nThe IIS.net site has some documentation on how to get various PHP apps running on IIS, including WordPress on IIS.\nMy first choice is still a un*x box though",
+            "date_published": "2007-09-24T17:13:13-06:00",
+            "date_modified": "2007-09-24T17:13:13-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "fastcgi",
+                "iis",
+                "PHP",
+                "Windows",
+                "WordPress",
+                "josephscott"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2007/09/04/wordpress-file-uploads-with-iis/",
+            "url": "https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/",
+            "title": "WordPress File Uploads With IIS",
+            "content_html": "<p>I didn&#8217;t have any problems getting WordPress to work on Windows Vista, IIS7 and PHP 5 (ISAPI).  That is, until I tried to upload an image.  After hunting around and gathering tips and ideas from others here is what I had to do:</p>\n<ol>\n<li>Edit upload_tmp_dir option in php.ini.  In my case I created an uploads folder in the wwwroot: upload_tmp_dir = &#8220;c:inetpubwwwrootuploads&#8221;</li>\n<li>Create the c:inetpubwwwrootuploads folder and grant the IUSR full control of it</li>\n<li>Create the uploads folder in your wp-content folder, for me this was in c:inetpubwwwrootwordpress-trunkwp-contentsuploads, then grant the IUSR full control of it</li>\n<li>Restart the IIS service (to pick up the php.ini change)</li>\n</ol>\n<p>After that I was able to upload files in WordPress running under Vista and IIS7.  I haven&#8217;t tried to fine tune the permissions issue, it is possible that this can be done without having to grant full control of those folders to the IUSR account.</p>\n",
+            "content_text": "I didn&#8217;t have any problems getting WordPress to work on Windows Vista, IIS7 and PHP 5 (ISAPI).  That is, until I tried to upload an image.  After hunting around and gathering tips and ideas from others here is what I had to do:\n\nEdit upload_tmp_dir option in php.ini.  In my case I created an uploads folder in the wwwroot: upload_tmp_dir = &#8220;c:inetpubwwwrootuploads&#8221;\nCreate the c:inetpubwwwrootuploads folder and grant the IUSR full control of it\nCreate the uploads folder in your wp-content folder, for me this was in c:inetpubwwwrootwordpress-trunkwp-contentsuploads, then grant the IUSR full control of it\nRestart the IIS service (to pick up the php.ini change)\n\nAfter that I was able to upload files in WordPress running under Vista and IIS7.  I haven&#8217;t tried to fine tune the permissions issue, it is possible that this can be done without having to grant full control of those folders to the IUSR account.",
+            "date_published": "2007-09-04T12:58:52-06:00",
+            "date_modified": "2007-09-04T12:58:52-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "iis",
+                "WordPress",
+                "josephscott"
+            ]
+        }
+    ]
+}

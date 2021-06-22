@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>handbook &#8211; Joseph Scott</title>
+	<atom:link href="/tag/handbook/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 31 Jul 2012 15:16:53 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>WordPress Core Contributor Handbook</title>
+		<link>/2012/07/31/wordpress-core-contributor-handbook/</link>
+					<comments>/2012/07/31/wordpress-core-contributor-handbook/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 31 Jul 2012 15:16:53 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[handbook]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6227</guid>
+
+					<description><![CDATA[If you&#8217;ve ever asked &#8220;How can I contribute to WordPress?&#8221; then go check out the WordPress Core Contributor Handbook. While still early in development (you&#8217;ll see that some sections are just a stub list of topics that need to be covered) it is already worth reading if you are interested in how WordPress development works. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you&#8217;ve ever asked &#8220;How can I contribute to WordPress?&#8221; then go check out the <a href="http://make.wordpress.org/core/handbook/">WordPress Core Contributor Handbook</a>.  While still early in development (you&#8217;ll see that some sections are just a stub list of topics that need to be covered) it is already worth reading if you are interested in how WordPress development works.</p>
+<p>A call been put out for someone to <a href='http://make.wordpress.org/core/2012/07/28/looking-for-a-lead/'>lead the work on the handbook</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/07/31/wordpress-core-contributor-handbook/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

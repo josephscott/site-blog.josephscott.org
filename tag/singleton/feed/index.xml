@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>singleton &#8211; Joseph Scott</title>
+	<atom:link href="/tag/singleton/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 23 Apr 2012 20:12:57 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Extendable Singleton Base Class for PHP</title>
+		<link>/2012/04/23/extendable-singleton-base-class-for-php/</link>
+					<comments>/2012/04/23/extendable-singleton-base-class-for-php/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 23 Apr 2012 20:12:57 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[singleton]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=5801</guid>
+
+					<description><![CDATA[I&#8217;ve been thinking about singletons in PHP recently. There is an example in the PHP docs, which works well enough. Then I started looking for a way to have a singleton base class. My first few attempts failed, the key was to leverage late static binding, which was added in PHP 5.3.0. [sourcecode lang=&#8221;php&#8221;] class [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been thinking about <a href="http://en.wikipedia.org/wiki/Singleton_pattern">singletons</a> in PHP recently.  There is an <a href="http://php.net/manual/en/language.oop5.patterns.php">example in the PHP docs</a>, which works well enough.  Then I started looking for a way to have a singleton base class.  My first few attempts failed, the key was to leverage <a href="http://php.net/manual/en/language.oop5.late-static-bindings.php">late static binding</a>, which was added in PHP 5.3.0.</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+class Singleton {<br />
+    protected static $instance;</p>
+<p>    private function __clone() { }<br />
+    private function __construct() { }<br />
+    private function __wakeup() { }</p>
+<p>    final public static function singleton() {<br />
+        if ( !isset( static::$instance ) ) {<br />
+            static::$instance = new static();<br />
+        }</p>
+<p>        return static::$instance;<br />
+    }<br />
+}<br />
+[/sourcecode]</p>
+<p>This base class can be extended to create simple singleton classes, like so:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+class Example extends Singleton {<br />
+    protected static $count;</p>
+<p>    public function add( $num = 1 ) {<br />
+        $this-&gt;count += $num;<br />
+        return $this-&gt;count;<br />
+    }</p>
+<p>    public function get_count() {<br />
+        return $this-&gt;count;<br />
+    }</p>
+<p>    public function subtract( $num = 1 ) {<br />
+        $this-&gt;count -= $num;<br />
+        return $this-&gt;count;<br />
+    }<br />
+}<br />
+[/sourcecode]</p>
+<p>Here is what this looks like in action:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+echo &quot;COUNT:n&quot;;<br />
+$count = Example::singleton();<br />
+echo $count-&gt;add() . &quot;n&quot;;          // 1<br />
+echo $count-&gt;add( 4 ) . &quot;n&quot;;       // 5<br />
+echo $count-&gt;subtract( 7 ) . &quot;n&quot;;  // -2<br />
+echo $count-&gt;add( 10 ) . &quot;n&quot;;      // 8<br />
+echo $count-&gt;get_count() . &quot;n&quot;;    // 8<br />
+echo &quot;n&quot;;</p>
+<p>echo &quot;ANOTHER:n&quot;;<br />
+$another = Example::singleton();<br />
+echo $another-&gt;get_count() . &quot;n&quot;;  // 8<br />
+echo $another-&gt;add( 2 ) . &quot;n&quot;;     // 10<br />
+echo $another-&gt;subtract( 3 ) . &quot;n&quot;;// 7<br />
+echo $another-&gt;get_count() . &quot;n&quot;;  // 7<br />
+echo &quot;n&quot;;<br />
+[/sourcecode]</p>
+<p>There are a few actions that the singleton class specifically fobids:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+// Each of these will throw an error<br />
+$test = new Example();<br />
+$test = clone $count;<br />
+$test = unserialize( serialize( $count ) );<br />
+[/sourcecode]</p>
+<p>You could also do this via <a href="http://php.net/manual/en/language.oop5.traits.php">traits</a> if you are using PHP 5.4.0 or newer.  I wish PHP 5.0.0 had just gone with multiple inheritance in the first place.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/04/23/extendable-singleton-base-class-for-php/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

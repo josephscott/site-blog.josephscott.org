@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>vld &#8211; Joseph Scott</title>
+	<atom:link href="/tag/vld/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 20 Dec 2010 17:25:09 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Closing PHP Tag &#8211; More Work</title>
+		<link>/2010/12/20/closing-php-tag-more-work/</link>
+					<comments>/2010/12/20/closing-php-tag-more-work/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 20 Dec 2010 17:25:09 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[vld]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3294</guid>
+
+					<description><![CDATA[I was testing PHP code with VLD and noticed something odd. If I left off the final closing PHP then there were fewer ops. Here is an example: [sourcecode lang=&#8221;php&#8221;] &#60;?php $first_name = &#8216;Joseph&#8217;; $last_name = &#8216;Scott&#8217;; ?&#62; [/sourcecode] has 6 ops: line # * op operands ------------------------------------------ 2 0 > EXT_STMT 1 ASSIGN !0, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was testing PHP code with <a href="http://pecl.php.net/package/vld">VLD</a> and noticed something odd.  If I left off the final closing PHP then there were fewer ops.  Here is an example:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+&lt;?php<br />
+$first_name = &#8216;Joseph&#8217;;<br />
+$last_name = &#8216;Scott&#8217;;<br />
+?&gt;<br />
+[/sourcecode]</p>
+<p>has 6 ops:</p>
+<pre>
+line     # *  op                  operands
+------------------------------------------
+   2     0  >   EXT_STMT                                                 
+         1      ASSIGN           !0, 'Joseph'
+   3     2      EXT_STMT                                                 
+         3      ASSIGN           !1, 'Scott'
+   5     4      EXT_STMT                                                 
+         5    > RETURN              1
+</pre>
+<p>The same file, minus the closing PHP tag:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+&lt;?php<br />
+$first_name = &#8216;Joseph&#8217;;<br />
+$last_name = &#8216;Scott&#8217;;<br />
+[/sourcecode]</p>
+<p>has only 5 ops:</p>
+<pre>
+line     # *  op                operands
+-----------------------------------------
+   2     0  >   EXT_STMT                                                 
+         1      ASSIGN        !0, 'Joseph'
+   3     2      EXT_STMT                                                 
+         3      ASSIGN        !1, 'Scott'
+   4     4    > RETURN         1
+
+</pre>
+<p>I trimmed the VLD output to make it easier to read.</p>
+<p>Boils down to an extra EXT_STMT op when the closing PHP tag is included.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/12/20/closing-php-tag-more-work/feed/</wfw:commentRss>
+			<slash:comments>12</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

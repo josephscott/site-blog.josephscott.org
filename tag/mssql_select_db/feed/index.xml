@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mssql_select_db &#8211; Joseph Scott</title>
+	<atom:link href="/tag/mssql_select_db/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 29 Sep 2006 17:52:20 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>SQL Server: Escaping The Database Name</title>
+		<link>/2006/09/29/sql-server-escaping-the-database-name/</link>
+					<comments>/2006/09/29/sql-server-escaping-the-database-name/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 29 Sep 2006 17:52:20 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[mssql_select_db]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[sqlserver]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/09/29/sql-server-escaping-the-database-name/</guid>
+
+					<description><![CDATA[Welcome to another episode of being caught off guard by strange string requirements. Today I discovered (the hard way of course) that Microsoft SQL Server 2000 doesn&#8217;t like to have dashes in database names. Fine, I probably should have used an underscore instead, but this was a database being used for something else that I [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Welcome to another episode of being caught off guard by strange string requirements.  Today I discovered (the hard way of course) that Microsoft SQL Server 2000 doesn&#8217;t like to have dashes in database names.  Fine, I probably should have used an underscore instead, but this was a database being used for something else that I just need to do some quick queries against in PHP.</p>
+<p>I knew that the connection between the web server and the SQL Server systems was working because I had scripts talking to other SQL Server databases.  My problem wasn&#8217;t connecting, <a href="http://us3.php.net/manual/en/function.mssql-connect.php">mssql_connect()</a> didn&#8217;t cause an error, it was selecting which database to use.  Fortunately the answer was right there in the docs for <a href="http://us3.php.net/manual/en/function.mssql-select-db.php">mssql_select_db()</a>:</p>
+<blockquote><p>
+To escape the name of a database that contains spaces, hyphens (&#8220;-&#8220;), or any other exceptional characters, the database name must be enclosed in brackets, as is shown in the example, below. This technique must also be applied when selecting a database name that is also a reserved word (such as &#8220;primary&#8221;).
+</p></blockquote>
+<p>So just get in the habit of wrapping your SQL Server database name in brackets ( [ ] ) and you&#8217;ll be fine:</p>
+<pre>
+   $conn = mssql_connect('SQLSERVERHOST', 'username', 'password');
+   mssql_select_db('[database-name]', $conn);
+</pre>
+<p>What I want to know is, why brackets around the whole name instead of traditional character escaping?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/09/29/sql-server-escaping-the-database-name/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

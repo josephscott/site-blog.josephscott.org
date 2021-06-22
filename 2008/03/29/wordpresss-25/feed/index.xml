@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: WordPresss 2.5	</title>
+	<atom:link href="/2008/03/29/wordpresss-25/feed/" rel="self" type="application/rss+xml" />
+	<link>/2008/03/29/wordpresss-25/</link>
+	<description></description>
+	<lastBuildDate>Mon, 22 Sep 2008 15:46:27 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Tom		</title>
+		<link>/2008/03/29/wordpresss-25/#comment-2214</link>
+
+		<dc:creator><![CDATA[Tom]]></dc:creator>
+		<pubDate>Mon, 22 Sep 2008 15:46:27 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1049#comment-2214</guid>
+
+					<description><![CDATA[Thanks Joesph
+
+I just signed up for the email list and posted the following there:
+
+Im writing a Java app using the redstone xmlrpc library and having a problem with both postCreated and date_created_gmt
+
+Whenever I set the postCreated field, WP interprets/modifies the timezone to GMT. For the time being, Ive kludged the date (adding the difference between the local TZ and GMT) so that WP gets the post date right.  This is ugly and I&#039;d rather not do this . . .
+
+It&#039;s been suggested that I use the date_created_gmt field, but I&#039;ve had zero luck getting this to work.  It seems that WP doesn&#039;t recognize the passed in java.util.Date as a valid date and subsequently defaults to the current date.
+
+Any thoughts on whats going on here?  Anyone care to share some working code?
+
+Here&#039;s a snipet of what I&#039;m doing . . .
+
+
+HashMap content = new HashMap();
+
+java.util.Date postDate;
+
+Calendar c = Calendar.getInstance();
+c.add(Calendar.Days, 7);
+
+postDate = c.getTime();
+
+// System.out.println(postDate); yeilds
+
+// snip . . .
+// title, keywords, category, description, etc.  are all populated . . .
+
+content.put(&quot;title&quot;,title);
+content.put(&quot;mt_keywords&quot;,keywords);
+content.put(&quot;categories&quot;, new String[]{category});
+content.put(&quot;post_status&quot;, &quot;publish&quot;);
+content.put(&quot;description&quot;, articlebody);
+ //content.put(&quot;date_created_gmt&quot;,  postDate);  // date doesn&#039;t get interpretted correctly and defaults to the current date
+content.put(&quot;dateCreated&quot;, postDate); // date is offset by local TZ - GMT
+
+Object[] params = new Object[]{new String(&quot;n/a&quot;), user, pass, content, new Boolean(&quot;true&quot;)};
+ Object token;
+try {
+  token = client.invoke(&quot;metaWeblog.newPost&quot;, params);
+} catch (XmlRpcException ex) {
+  Logger.getLogger(WPDripFeederView.class.getName()).log(Level.SEVERE, null, ex);
+} catch (XmlRpcFault ex) {
+  Logger.getLogger(WPDripFeederView.class.getName()).log(Level.SEVERE, null, ex);
+}]]></description>
+			<content:encoded><![CDATA[<p>Thanks Joesph</p>
+<p>I just signed up for the email list and posted the following there:</p>
+<p>Im writing a Java app using the redstone xmlrpc library and having a problem with both postCreated and date_created_gmt</p>
+<p>Whenever I set the postCreated field, WP interprets/modifies the timezone to GMT. For the time being, Ive kludged the date (adding the difference between the local TZ and GMT) so that WP gets the post date right.  This is ugly and I&#8217;d rather not do this . . .</p>
+<p>It&#8217;s been suggested that I use the date_created_gmt field, but I&#8217;ve had zero luck getting this to work.  It seems that WP doesn&#8217;t recognize the passed in java.util.Date as a valid date and subsequently defaults to the current date.</p>
+<p>Any thoughts on whats going on here?  Anyone care to share some working code?</p>
+<p>Here&#8217;s a snipet of what I&#8217;m doing . . .</p>
+<p>HashMap content = new HashMap();</p>
+<p>java.util.Date postDate;</p>
+<p>Calendar c = Calendar.getInstance();<br />
+c.add(Calendar.Days, 7);</p>
+<p>postDate = c.getTime();</p>
+<p>// System.out.println(postDate); yeilds</p>
+<p>// snip . . .<br />
+// title, keywords, category, description, etc.  are all populated . . .</p>
+<p>content.put(&#8220;title&#8221;,title);<br />
+content.put(&#8220;mt_keywords&#8221;,keywords);<br />
+content.put(&#8220;categories&#8221;, new String[]{category});<br />
+content.put(&#8220;post_status&#8221;, &#8220;publish&#8221;);<br />
+content.put(&#8220;description&#8221;, articlebody);<br />
+ //content.put(&#8220;date_created_gmt&#8221;,  postDate);  // date doesn&#8217;t get interpretted correctly and defaults to the current date<br />
+content.put(&#8220;dateCreated&#8221;, postDate); // date is offset by local TZ &#8211; GMT</p>
+<p>Object[] params = new Object[]{new String(&#8220;n/a&#8221;), user, pass, content, new Boolean(&#8220;true&#8221;)};<br />
+ Object token;<br />
+try {<br />
+  token = client.invoke(&#8220;metaWeblog.newPost&#8221;, params);<br />
+} catch (XmlRpcException ex) {<br />
+  Logger.getLogger(WPDripFeederView.class.getName()).log(Level.SEVERE, null, ex);<br />
+} catch (XmlRpcFault ex) {<br />
+  Logger.getLogger(WPDripFeederView.class.getName()).log(Level.SEVERE, null, ex);<br />
+}</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/03/29/wordpresss-25/#comment-2213</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 22 Sep 2008 15:21:21 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1049#comment-2213</guid>
+
+					<description><![CDATA[@Tom -
+
+I highly recommend using date_created_gmt.  What problems have you run into with using it?
+
+Another good resource for questions is the &lt;a href=&quot;http://lists.automattic.com/mailman/listinfo/wp-xmlrpc&quot; rel=&quot;nofollow&quot;&gt;wp-xmlrpc email list&lt;/a&gt;.]]></description>
+			<content:encoded><![CDATA[<p>@Tom &#8211;</p>
+<p>I highly recommend using date_created_gmt.  What problems have you run into with using it?</p>
+<p>Another good resource for questions is the <a href="http://lists.automattic.com/mailman/listinfo/wp-xmlrpc" rel="nofollow">wp-xmlrpc email list</a>.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Tom		</title>
+		<link>/2008/03/29/wordpresss-25/#comment-2212</link>
+
+		<dc:creator><![CDATA[Tom]]></dc:creator>
+		<pubDate>Sun, 21 Sep 2008 17:55:42 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1049#comment-2212</guid>
+
+					<description><![CDATA[Hi Joseph -- thanks for all of the great info.
+
+I have a follow up question on date/time.  I&#039;m writing a Java app using the redstone xmlrpc library.
+
+Whenever I set the postCreated field, WP interprets/modifies the timezone to GMT.  For the time being, I&#039;ve kludged the date (adding the difference between the local TZ and GMT) so that WP gets the post date right.
+
+I&#039;m using the java.util.Date class for the postCreated parameter.
+
+Any thoughts on whats going on here?  btw, I&#039;ve had zero luck in getting date_created_gmt to work properly.
+
+thanks
+
+tom]]></description>
+			<content:encoded><![CDATA[<p>Hi Joseph &#8212; thanks for all of the great info.</p>
+<p>I have a follow up question on date/time.  I&#8217;m writing a Java app using the redstone xmlrpc library.</p>
+<p>Whenever I set the postCreated field, WP interprets/modifies the timezone to GMT.  For the time being, I&#8217;ve kludged the date (adding the difference between the local TZ and GMT) so that WP gets the post date right.</p>
+<p>I&#8217;m using the java.util.Date class for the postCreated parameter.</p>
+<p>Any thoughts on whats going on here?  btw, I&#8217;ve had zero luck in getting date_created_gmt to work properly.</p>
+<p>thanks</p>
+<p>tom</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Widget Guy		</title>
+		<link>/2008/03/29/wordpresss-25/#comment-2211</link>
+
+		<dc:creator><![CDATA[Widget Guy]]></dc:creator>
+		<pubDate>Sun, 13 Apr 2008 07:01:21 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1049#comment-2211</guid>
+
+					<description><![CDATA[Thanks for the quick reply Joseph.... My code was busted thus it was throwing that error... changing the date type from string to dateTime.iso8601 and using $date_created = date(&quot;YmdTH:i:sZ&quot;, mktime(.....)) worked!]]></description>
+			<content:encoded><![CDATA[<p>Thanks for the quick reply Joseph&#8230;. My code was busted thus it was throwing that error&#8230; changing the date type from string to dateTime.iso8601 and using $date_created = date(&#8220;YmdTH:i:sZ&#8221;, mktime(&#8230;..)) worked!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/03/29/wordpresss-25/#comment-2210</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Sun, 13 Apr 2008 05:54:37 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1049#comment-2210</guid>
+
+					<description><![CDATA[@Wdiget Guy -
+
+The getIso error was recently brought up in a ticket:
+
+http://trac.wordpress.org/ticket/6612
+
+I haven&#039;t asked for that patch to be committed yet, I&#039;m waiting for feedback from some of the current blog clients before we mess with date/time settings, which have proved to be very sensitive in the past.
+
+To answer your question about date_created_gmt, just the standard YYYYMMDDTHH:MM:SSZ format.]]></description>
+			<content:encoded><![CDATA[<p>@Wdiget Guy &#8211;</p>
+<p>The getIso error was recently brought up in a ticket:</p>
+<p><a href="http://trac.wordpress.org/ticket/6612" rel="nofollow ugc">http://trac.wordpress.org/ticket/6612</a></p>
+<p>I haven&#8217;t asked for that patch to be committed yet, I&#8217;m waiting for feedback from some of the current blog clients before we mess with date/time settings, which have proved to be very sensitive in the past.</p>
+<p>To answer your question about date_created_gmt, just the standard YYYYMMDDTHH:MM:SSZ format.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Widget Guy		</title>
+		<link>/2008/03/29/wordpresss-25/#comment-2209</link>
+
+		<dc:creator><![CDATA[Widget Guy]]></dc:creator>
+		<pubDate>Sun, 13 Apr 2008 05:42:07 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1049#comment-2209</guid>
+
+					<description><![CDATA[Thanks for the post summing up the WP 2.5 rpc changes.... Just wondering what format date_created_gmt should be in as I had unresolved problems with &quot;Call to a member function getIso() on a non-object&quot; and dateCreated]]></description>
+			<content:encoded><![CDATA[<p>Thanks for the post summing up the WP 2.5 rpc changes&#8230;. Just wondering what format date_created_gmt should be in as I had unresolved problems with &#8220;Call to a member function getIso() on a non-object&#8221; and dateCreated</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Angelo Mandato		</title>
+		<link>/2008/03/29/wordpresss-25/#comment-2208</link>
+
+		<dc:creator><![CDATA[Angelo Mandato]]></dc:creator>
+		<pubDate>Mon, 31 Mar 2008 19:08:43 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1049#comment-2208</guid>
+
+					<description><![CDATA[I joined the mailing list.
+
+I did a test and it appears my assumption was right, the custom_fields is an array of structs. Each struct should contain a key and value. A struct should also include the custom field &#039;id&#039; if the struct is updating an existing custom field. Otherwise the struct should only include the key and value to insert a new custom field.
+
+Wordpress is awesome!]]></description>
+			<content:encoded><![CDATA[<p>I joined the mailing list.</p>
+<p>I did a test and it appears my assumption was right, the custom_fields is an array of structs. Each struct should contain a key and value. A struct should also include the custom field &#8216;id&#8217; if the struct is updating an existing custom field. Otherwise the struct should only include the key and value to insert a new custom field.</p>
+<p>WordPress is awesome!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/03/29/wordpresss-25/#comment-2207</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 31 Mar 2008 15:32:46 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1049#comment-2207</guid>
+
+					<description><![CDATA[@Angelo Mandato -
+
+I definitely need to spend some time in the WordPress Codex documenting more of this.  Until then the I recommend the thread from the wp-xmlrpc (http://lists.automattic.com/mailman/listinfo/wp-xmlrpc) email list:
+
+http://comox.textdrive.com/pipermail/wp-xmlrpc/2007-November/thread.html
+
+Oh, and the original Trac ticket:
+
+http://trac.wordpress.org/ticket/5148]]></description>
+			<content:encoded><![CDATA[<p>@Angelo Mandato &#8211;</p>
+<p>I definitely need to spend some time in the WordPress Codex documenting more of this.  Until then the I recommend the thread from the wp-xmlrpc (<a href="http://lists.automattic.com/mailman/listinfo/wp-xmlrpc" rel="nofollow ugc">http://lists.automattic.com/mailman/listinfo/wp-xmlrpc</a>) email list:</p>
+<p><a href="http://comox.textdrive.com/pipermail/wp-xmlrpc/2007-November/thread.html" rel="nofollow ugc">http://comox.textdrive.com/pipermail/wp-xmlrpc/2007-November/thread.html</a></p>
+<p>Oh, and the original Trac ticket:</p>
+<p><a href="http://trac.wordpress.org/ticket/5148" rel="nofollow ugc">http://trac.wordpress.org/ticket/5148</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Angelo Mandato		</title>
+		<link>/2008/03/29/wordpresss-25/#comment-2206</link>
+
+		<dc:creator><![CDATA[Angelo Mandato]]></dc:creator>
+		<pubDate>Mon, 31 Mar 2008 03:33:02 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1049#comment-2206</guid>
+
+					<description><![CDATA[This is the only web site that references the new custom_fields feature. Is there documentation available somewhere for the API side, should the custom_fields be an array of structs with each struct having a key and value with an optional id?
+
+Thanks,
+Angelo]]></description>
+			<content:encoded><![CDATA[<p>This is the only web site that references the new custom_fields feature. Is there documentation available somewhere for the API side, should the custom_fields be an array of structs with each struct having a key and value with an optional id?</p>
+<p>Thanks,<br />
+Angelo</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Geoff Sakala		</title>
+		<link>/2008/03/29/wordpresss-25/#comment-2205</link>
+
+		<dc:creator><![CDATA[Geoff Sakala]]></dc:creator>
+		<pubDate>Sat, 29 Mar 2008 23:37:04 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1049#comment-2205</guid>
+
+					<description><![CDATA[@Joseph
+
+Just upgraded to 2.5. Much cleaner, simpler interface. I love the ease of upgrading plugins. The new media capabilities are amazing. Hope you&#039;re doing well.]]></description>
+			<content:encoded><![CDATA[<p>@Joseph</p>
+<p>Just upgraded to 2.5. Much cleaner, simpler interface. I love the ease of upgrading plugins. The new media capabilities are amazing. Hope you&#8217;re doing well.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

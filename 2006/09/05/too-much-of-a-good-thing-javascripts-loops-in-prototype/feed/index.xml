@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Too Much Of A Good Thing, JavaScripts Loops In Prototype	</title>
+	<atom:link href="/2006/09/05/too-much-of-a-good-thing-javascripts-loops-in-prototype/feed/" rel="self" type="application/rss+xml" />
+	<link>/2006/09/05/too-much-of-a-good-thing-javascripts-loops-in-prototype/</link>
+	<description></description>
+	<lastBuildDate>Wed, 06 Sep 2006 07:10:32 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: kenrick		</title>
+		<link>/2006/09/05/too-much-of-a-good-thing-javascripts-loops-in-prototype/#comment-1642</link>
+
+		<dc:creator><![CDATA[kenrick]]></dc:creator>
+		<pubDate>Wed, 06 Sep 2006 07:10:32 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/09/05/too-much-of-a-good-thing-javascripts-loops-in-prototype/#comment-1642</guid>
+
+					<description><![CDATA[yeah a friend of mine was using jQuery for a large Purchase Order application. It was huge. Huge arrays. Lots of stuff moving about client side. Seconds to sort, et al. He then decided to rip out jQuery and suddenly everything (after a few days of ripping out) became faster.
+
+I think libraries, js libraries in this instance, can be very helpful, but hurtful when the developer using them doesn&#039;t understand that abstraction can potentially hinder them in the long run. In server side land, ActiveRecord is great, but really, straight SQL is mighty fast, and you just have to know when its appropriate. There are trade offs for development ease vs speed, and i think you can continue to use libraries as long as they make it easy to get back to basics when need be.
+
+Its also important to realize the scope of the code you are going to be using. In my personal development I might let slide somethings that are easier for me to develop (like adodb for php let say), even though I know that using mysql_* commands are alot faster. But for its intended purpose its gonna be ok.
+
+At what point do you abstract? I think that in this current hype of web 2.0, where many applications are created out of abstractions of APIs and other code bases lots of people are not taking into consideration performance. It hurts new developers who rely on it, thinking naively that since so and so uses it it must be fast. Rails has a find_by_sql method for a reason.]]></description>
+			<content:encoded><![CDATA[<p>yeah a friend of mine was using jQuery for a large Purchase Order application. It was huge. Huge arrays. Lots of stuff moving about client side. Seconds to sort, et al. He then decided to rip out jQuery and suddenly everything (after a few days of ripping out) became faster.</p>
+<p>I think libraries, js libraries in this instance, can be very helpful, but hurtful when the developer using them doesn&#8217;t understand that abstraction can potentially hinder them in the long run. In server side land, ActiveRecord is great, but really, straight SQL is mighty fast, and you just have to know when its appropriate. There are trade offs for development ease vs speed, and i think you can continue to use libraries as long as they make it easy to get back to basics when need be.</p>
+<p>Its also important to realize the scope of the code you are going to be using. In my personal development I might let slide somethings that are easier for me to develop (like adodb for php let say), even though I know that using mysql_* commands are alot faster. But for its intended purpose its gonna be ok.</p>
+<p>At what point do you abstract? I think that in this current hype of web 2.0, where many applications are created out of abstractions of APIs and other code bases lots of people are not taking into consideration performance. It hurts new developers who rely on it, thinking naively that since so and so uses it it must be fast. Rails has a find_by_sql method for a reason.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

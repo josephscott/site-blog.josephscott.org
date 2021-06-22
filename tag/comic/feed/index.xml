@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>comic &#8211; Joseph Scott</title>
+	<atom:link href="/tag/comic/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 08 May 2012 16:53:14 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Deploying is the new Compiling</title>
+		<link>/2012/05/08/deploying-is-the-new-compiling/</link>
+					<comments>/2012/05/08/deploying-is-the-new-compiling/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 08 May 2012 16:53:14 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[comic]]></category>
+		<category><![CDATA[compiling]]></category>
+		<category><![CDATA[deploy]]></category>
+		<category><![CDATA[xkcd]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=5892</guid>
+
+					<description><![CDATA[Inspired by this classic xkcd comic I realized the excuses have changed over time: Programmer Excuses: 1992 Programmer Excuses: 2012]]></description>
+										<content:encoded><![CDATA[<p>Inspired by <a href="http://xkcd.com/303/">this classic xkcd comic</a> I realized the excuses have changed over time:</p>
+<h2>Programmer Excuses: 1992</h2>
+<a href="http://xkcd.com/303/"><img loading="lazy" alt="Programmer Excuses: 1992" src="https://lh6.googleusercontent.com/-v7nHH7SIHA8/T6GxtF-A6nI/AAAAAAAAAZk/KDbA9lc4bEk/s413/compiling-orig.png" title="'Are you stealing those LCDs?' 'Yeah, but I'm doing it while my code compiles.'" width="413" height="360" /></a>
+<p><br style="margin: 25px;" /></p>
+<h2>Programmer Excuses: 2012</h2>
+<img loading="lazy" alt="Programmer Excuses: 2012" src="https://lh6.googleusercontent.com/-mZlpI0ceJgA/T6GxtDMkMzI/AAAAAAAAAZg/slvbOJjzdkY/s413/compiling-new.png" title="This is what I imagine Facebook HQ looks like on Tuesdays during the weekly deploy." width="413" height="360" />
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/05/08/deploying-is-the-new-compiling/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

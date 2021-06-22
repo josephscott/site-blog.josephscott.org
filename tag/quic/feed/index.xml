@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>quic &#8211; Joseph Scott</title>
+	<atom:link href="/tag/quic/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 19 Jun 2018 18:34:54 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>HTTP Alternative Services</title>
+		<link>/2018/06/19/http-alternative-services/</link>
+					<comments>/2018/06/19/http-alternative-services/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 19 Jun 2018 18:34:54 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[quic]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15468</guid>
+
+					<description><![CDATA[RFC 7838: HTTP Alternative Services. This allows HTTP responses to indicate alternative servers that a client can use ( but it isn&#8217;t required to do so ). One example, from the RFC: Alt-Svc: h2=":8000" This indicates the &#8220;h2&#8221; protocol ([RFC7540]) on the same host using the indicated port 8000. Google already uses this to announce [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>RFC 7838: <a href="https://tools.ietf.org/html/rfc7838">HTTP Alternative Services</a>.</p>
+<p>This allows HTTP responses to indicate alternative servers that a client can use ( but it isn&#8217;t required to do so ). One example, from the RFC:</p>
+<blockquote><p><code>Alt-Svc: h2=":8000"</code></p>
+<p>This indicates the &#8220;h2&#8221; protocol ([RFC7540]) on the same host using<br />
+the indicated port 8000.</p></blockquote>
+<p>Google already uses this to announce <a href="https://www.chromium.org/quic">QUIC</a> as an alternative, with this header included in a response from https://www.google.com/:</p>
+<p><code>Alt-Svc: quic=":443"; ma=2592000; v="43,42,41,39,35"</code></p>
+<p>That breaks down as:</p>
+<p>&#8211; QUIC is available on port 443, of the same origin<br />
+&#8211; Max age ( ma ) for this information is 2,592,000 seconds ( default is 24 hours )<br />
+&#8211; Version negotiation hints ( v ) for QUIC</p>
+<p>That gives sites a direct option for announcing other means of making requests.  Right now QUIC is the obvious alternative, but by being an open format, others could use it too.</p>
+<p>Mark Nottingham has a good <a href="https://www.mnot.net/blog/2016/03/09/alt-svc">write up on &#8220;Alternative Services&#8221;</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/06/19/http-alternative-services/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

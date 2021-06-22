@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: CAPTCHA versus Email	</title>
+	<atom:link href="/2007/08/07/captcha-versus-email/feed/" rel="self" type="application/rss+xml" />
+	<link>/2007/08/07/captcha-versus-email/</link>
+	<description></description>
+	<lastBuildDate>Sat, 15 Mar 2008 08:07:51 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Leblanc Meneses		</title>
+		<link>/2007/08/07/captcha-versus-email/#comment-1879</link>
+
+		<dc:creator><![CDATA[Leblanc Meneses]]></dc:creator>
+		<pubDate>Sat, 15 Mar 2008 08:07:51 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/08/07/captcha-versus-email/#comment-1879</guid>
+
+					<description><![CDATA[in reality it&#039;s not versus its really a join of the two ideas.
+
+Without a captcha posting automated comments would be to easy.
+I could also easily write a cron job to check my mailbox ... local system cat + grep + wget and visit the url&#039;s to common blogs i want to spam.
+
+CAPTCHA and Email  now thats a nice concept.  I plan on implementing this for non logged in users.
+
+The captcha would be needed on initial posting of comment and after the user visits the url.  to avoid a simple wget script.]]></description>
+			<content:encoded><![CDATA[<p>in reality it&#8217;s not versus its really a join of the two ideas.</p>
+<p>Without a captcha posting automated comments would be to easy.<br />
+I could also easily write a cron job to check my mailbox &#8230; local system cat + grep + wget and visit the url&#8217;s to common blogs i want to spam.</p>
+<p>CAPTCHA and Email  now thats a nice concept.  I plan on implementing this for non logged in users.</p>
+<p>The captcha would be needed on initial posting of comment and after the user visits the url.  to avoid a simple wget script.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Clarks		</title>
+		<link>/2007/08/07/captcha-versus-email/#comment-1878</link>
+
+		<dc:creator><![CDATA[Clarks]]></dc:creator>
+		<pubDate>Sun, 19 Aug 2007 19:05:03 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/08/07/captcha-versus-email/#comment-1878</guid>
+
+					<description><![CDATA[I think captch is less annoying, as you see the alphanumeric data on the same page and need to enter it in the box.
+But the email. You have to open a new window, login to your email account, click on the link, and then the comment is activated.
+
+But I think email blocks more spam than captcha.]]></description>
+			<content:encoded><![CDATA[<p>I think captch is less annoying, as you see the alphanumeric data on the same page and need to enter it in the box.<br />
+But the email. You have to open a new window, login to your email account, click on the link, and then the comment is activated.</p>
+<p>But I think email blocks more spam than captcha.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

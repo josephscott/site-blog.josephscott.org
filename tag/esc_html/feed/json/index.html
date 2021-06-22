@@ -1,0 +1,37 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/esc_html/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/esc_html/",
+    "feed_url": "https://blog.josephscott.org/tag/esc_html/feed/json/",
+    "language": "en-US",
+    "title": "esc_html &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://josephscott.org/?p=1796",
+            "url": "https://blog.josephscott.org/2010/01/19/php-helpers-esc_html/",
+            "title": "PHP Helpers: esc_html",
+            "content_html": "<p>Next up in the PHP Helpers series is <code>esc_html</code>:</p>\n<p>[sourcecode lang=&#8221;php&#8221;]<br />\nif ( !function_exists( &#8216;esc_html&#8217; ) ) {<br />\n    function esc_html( $html, $char_set = &#8216;UTF-8&#8217; ) {<br />\n        if ( empty( $html ) ) {<br />\n            return &#8221;;<br />\n        }</p>\n<p>        $html = (string) $html;<br />\n        $html = htmlspecialchars( $html, ENT_QUOTES, $char_set );</p>\n<p>        return $html;<br />\n    }<br />\n}<br />\n[/sourcecode]</p>\n<p>As you might have guessed this function escapes strings for HTML output.  It&#8217;s not much more than a wrapper around <a href=\"http://us.php.net/htmlspecialchars\">htmlspecialchars</a>, but provides central place to tweak your desired default behavior.</p>\n<p>There&#8217;s room to experiment with additional optimizations and strict checking in this as well.  I added the basics (look for empty strings, type cast to a string), if you&#8217;ve got a favorite additional check leave a comment below.</p>\n",
+            "content_text": "Next up in the PHP Helpers series is esc_html:\n[sourcecode lang=&#8221;php&#8221;]\nif ( !function_exists( &#8216;esc_html&#8217; ) ) {\n    function esc_html( $html, $char_set = &#8216;UTF-8&#8217; ) {\n        if ( empty( $html ) ) {\n            return &#8221;;\n        }\n        $html = (string) $html;\n        $html = htmlspecialchars( $html, ENT_QUOTES, $char_set );\n        return $html;\n    }\n}\n[/sourcecode]\nAs you might have guessed this function escapes strings for HTML output.  It&#8217;s not much more than a wrapper around htmlspecialchars, but provides central place to tweak your desired default behavior.\nThere&#8217;s room to experiment with additional optimizations and strict checking in this as well.  I added the basics (look for empty strings, type cast to a string), if you&#8217;ve got a favorite additional check leave a comment below.",
+            "date_published": "2010-01-19T07:12:18-07:00",
+            "date_modified": "2010-01-19T07:12:18-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "esc_html",
+                "PHP",
+                "php-helpers",
+                "Posts"
+            ]
+        }
+    ]
+}

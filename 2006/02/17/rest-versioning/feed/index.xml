@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: REST Versioning	</title>
+	<atom:link href="/2006/02/17/rest-versioning/feed/" rel="self" type="application/rss+xml" />
+	<link>/2006/02/17/rest-versioning/</link>
+	<description></description>
+	<lastBuildDate>Thu, 11 Dec 2008 19:35:49 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: What Rich Client Applications Can Learn from the Web &#124; Chui&#8217;s counterpoint		</title>
+		<link>/2006/02/17/rest-versioning/#comment-1144</link>
+
+		<dc:creator><![CDATA[What Rich Client Applications Can Learn from the Web &#124; Chui&#8217;s counterpoint]]></dc:creator>
+		<pubDate>Thu, 11 Dec 2008 19:35:49 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/17/rest-versioning/#comment-1144</guid>
+
+					<description><![CDATA[[...] are versioning and security issues with mash ups though. Spoofing, CSRF. Any guidance on doing this properly with [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] are versioning and security issues with mash ups though. Spoofing, CSRF. Any guidance on doing this properly with [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

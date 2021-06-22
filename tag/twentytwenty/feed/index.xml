@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>twentytwenty &#8211; Joseph Scott</title>
+	<atom:link href="/tag/twentytwenty/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 27 Dec 2019 18:02:43 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>2020 Style</title>
+		<link>/2019/12/27/2020-style/</link>
+					<comments>/2019/12/27/2020-style/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 27 Dec 2019 18:02:43 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[theme]]></category>
+		<category><![CDATA[twentytwenty]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">/?p=17917</guid>
+
+					<description><![CDATA[With the year 2020 fast approaching, I thought it would be a good time to change up the style on blog.josephscott.org. To that end, I&#8217;m trying out the Twenty Twenty WordPress theme. One of the things I&#8217;m really happy to see in the Twenty Twenty theme is the use of vanilla JavaScript, without jQuery. I&#8217;m [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>With the year 2020 fast approaching, I thought it would be a good time to change up the style on <a href="/">blog.josephscott.org</a>.  To that end, I&#8217;m trying out the <a href="https://wordpress.org/themes/twentytwenty/">Twenty Twenty WordPress theme</a>.</p>
+<figure id="attachment_17932" aria-describedby="caption-attachment-17932" style="width: 450px" class="wp-caption aligncenter"><a href="/wp-content/uploads/2019/12/screenshot-blog-josephscott-org.png"><img loading="lazy" src="/wp-content/uploads/2019/12/screenshot-blog-josephscott-org-450x1024.png" alt="" width="450" height="1024" class="size-large wp-image-17932" srcset="/wp-content/uploads/2019/12/screenshot-blog-josephscott-org-450x1024.png 450w, /wp-content/uploads/2019/12/screenshot-blog-josephscott-org-132x300.png 132w, /wp-content/uploads/2019/12/screenshot-blog-josephscott-org-768x1746.png 768w, /wp-content/uploads/2019/12/screenshot-blog-josephscott-org-901x2048.png 901w, /wp-content/uploads/2019/12/screenshot-blog-josephscott-org-1200x2728.png 1200w, /wp-content/uploads/2019/12/screenshot-blog-josephscott-org-1980x4501.png 1980w" sizes="(max-width: 450px) 100vw, 450px" /></a><figcaption id="caption-attachment-17932" class="wp-caption-text">blog.josephscott.org</figcaption></figure>
+<p>One of the things I&#8217;m really happy to see in the Twenty Twenty theme is the use of <a href="https://github.com/WordPress/twentytwenty/pull/163">vanilla JavaScript, without jQuery</a>.  I&#8217;m hopeful that more WordPress themes will follow that pattern ( jQuery has been great, but if you don&#8217;t need it, don&#8217;t use it ).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/12/27/2020-style/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

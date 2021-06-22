@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>firebug &#8211; Joseph Scott</title>
+	<atom:link href="/tag/firebug/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 28 Apr 2010 04:08:53 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Firebug Feature Request</title>
+		<link>/2010/04/27/firebug-feature-request/</link>
+					<comments>/2010/04/27/firebug-feature-request/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 28 Apr 2010 04:08:53 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[feature-request]]></category>
+		<category><![CDATA[firebug]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2227</guid>
+
+					<description><![CDATA[I really like Firebug, I highly recommend it (if you do web dev and haven&#8217;t used it then it is time to catch up). While trying to debug a particular problem with an image not loading correctly, I thought of a new feature that would be really handy to have. The HTML inspector is really [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I really like <a href="http://getfirebug.com/">Firebug</a>, I highly recommend it (if you do web dev and haven&#8217;t used it then it is time to catch up).  While trying to debug a particular problem with an image not loading correctly, I thought of a new feature that would be really handy to have.</p>
+<p>The HTML inspector is really great at taking you directly to the item on the page you&#8217;re interested in, but sometimes that isn&#8217;t enough.  I&#8217;d like to have an option to see the network request for that resource (an image in this case) on the &#8216;Net&#8217; panel.  I suppose it wouldn&#8217;t need to be part of the inspector, if I could right click on an img tag and have a menu option to go directly to the network request for that image that would be good enough.</p>
+<p>Having the network requests broken out by type is a good start, but when you&#8217;ve got dozens of images loading on a single page scanning the list by file name isn&#8217;t very fun.</p>
+<p>If this is something that is already available in Firebug and I&#8217;ve missed it please enlighten me in the comments below.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/04/27/firebug-feature-request/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>I&#8217;m Sold on Prototype</title>
+		<link>/2006/02/16/im-sold-on-prototype/</link>
+					<comments>/2006/02/16/im-sold-on-prototype/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 17 Feb 2006 07:14:39 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[ajax]]></category>
+		<category><![CDATA[firebug]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[prototype]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/16/im-sold-on-prototype/</guid>
+
+					<description><![CDATA[For years I avoided Javascript as much as possible. It was a pain to try and support all of the versions of Internet Explorer (IE) and Netscape Navigator. It just was not worth it. As time went on my aversion to Javascript lessened, but I never made the effort to really learn it as a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>For years I avoided <a href="http://en.wikipedia.org/wiki/Javascript">Javascript</a> as much as possible.  It was a pain to try and support all of the versions of <a href="http://www.microsoft.com/windows/ie/default.mspx">Internet Explorer</a> (IE) and <a href="http://en.wikipedia.org/wiki/Netscape">Netscape Navigator</a>.  It just was not worth it.  As time went on my aversion to Javascript lessened, but I never made the effort to really learn it as a language.  I would learn just enough to accomplish a small specific task.</p>
+<p>Fast forward to 2005/2006.  <a href="http://www.adaptivepath.com/publications/essays/archives/000385.php">AJAX</a> has become the buzzword of choice.  Some smart folks have learned to deal with most/many of the issues that are still there between IE and (now) Firefox.  This has given rise to Javascript libraries, with <a href="http://prototype.conio.net/">Prototype</a> being one of the more popular.</p>
+<p>After a few brief attempts trying to figure out how to do something useful in Javascript with Prototype I figured my lack of real Javascript skills were just not up to the job.  Then <a href="http://www.yahoo.com/">Yahoo</a> came out with their <a href="http://developer.yahoo.net/yui/">Yahoo! User Interface Library</a> (YUI), which got me thinking about Prototype again.  After reading through more examples and documentation I was finally able to accomplish exactly what I wanted.</p>
+<p>I&#8217;m now sold on using Prototype.  <a href="http://conio.net/">Sam Stephenson</a> deserves heaps of praise.  To help out others who are looking for documentation and examples, here is a list of resources for Prototype.</p>
+<ul>
+<li><b><a href="http://prototype.conio.net/">Prototype</a></b>: The official website for Prototype.</li>
+<li><b><a href="http://dev.rubyonrails.org/browser/spinoffs/prototype/">Prototype Subversion repository</a></b>: Sometimes looking at the source (and its history) is the only way to answer a question.</li>
+<li><b><a href="http://www.sergiopereira.com/articles/prototype.js.html">Developer Notes for prototype.js</a></b>: This site provides great examples on using Prototype and an amazing reference section.  If you use Prototype at all this is a site you&#8217;ll want to bookmarked for easy access.</li>
+<li><b><a href="http://julian.empiregn.com/2005-11/Easily_upgrade_your_forms_to_AJAX/">Easily upgrade your forms to AJAX</a></b>: A lot of AJAX activity focuses around HTML forms, this page provides a basic example on how Prototype makes that possible.</li>
+<li><b><a href="http://wiki.script.aculo.us/scriptaculous/show/Prototype">script.aculo.us prototype wiki</a></b>: Another good reference site with some examples.</li>
+<li><b><a href="http://blogs.ebusiness-apps.com/jordan/pages/Prototype%20Library%20Info.htm">Overview of the Prototype Javascript Library</a></b>: Provides a good, quick over view of what is possible.</li>
+</ul>
+<p>While trying to debug AJAX I recommend using the Firefox plugin called <a href="https://addons.mozilla.org/extensions/moreinfo.php?id=1843&amp;application=firefox">FireBug</a>.  Turn on the &#8220;XMLHttpRequest Spy&#8221; feature and you&#8217;ll be able to monitor all of the AJAX transactions that are going on.</p>
+<p>Of course Prototype isn&#8217;t perfect, there are still important limitations and issues to keep in mind.  For instance, the target platforms for Prototype are (from the <a href="http://dev.rubyonrails.org/browser/spinoffs/prototype/README">README</a>):</p>
+<blockquote cite="http://dev.rubyonrails.org/browser/spinoffs/prototype/README"><p>
+Microsoft Internet Explorer for Windows, version 6.0 and higher<br />
+Mozilla Firefox 1.0/Mozilla 1.7 and higher<br />
+Apple Safari 1.2 and higher
+</p></blockquote>
+<p>I&#8217;m also curious to see how it stacks up against the new Yahoo User Interface Library.  Either way this is an exciting time in the land of Javascript.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/02/16/im-sold-on-prototype/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

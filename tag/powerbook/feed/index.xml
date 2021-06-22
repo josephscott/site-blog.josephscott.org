@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>powerbook &#8211; Joseph Scott</title>
+	<atom:link href="/tag/powerbook/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Sat, 08 Apr 2006 01:07:22 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>PowerBook Problems</title>
+		<link>/2006/04/07/powerbook-problems/</link>
+					<comments>/2006/04/07/powerbook-problems/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 08 Apr 2006 01:07:22 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[powerbook]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/04/07/powerbook-problems/</guid>
+
+					<description><![CDATA[Yesterday was a bummer. The hard drive on 15&#8243; PowerBook G4 died. Thankfully the folks at the Apple Store at Arden Fair Mall replaced it quickly, after I spent the $99 for Pro Care. I dropped it off yesterday afternoon and it was ready first thing this morning. It was still under the three year [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Yesterday was a bummer.  The hard drive on 15&#8243; PowerBook G4 died.  Thankfully the folks at the Apple Store at Arden Fair Mall replaced it quickly, after I spent the $99 for <a href="http://www.apple.com/retail/procare/">Pro Care</a>.  I dropped it off yesterday afternoon and it was ready first thing this morning.  It was still under the three year warranty so the repair didn&#8217;t cost anything.</p>
+<p>After I got back to the office this morning I noticed that the system only showed 1 Gig of RAM instead of the 2 that I had before.  Back to the Apple Store.  Both of the memory sticks were still in the system, but it would only recognize one slot.  Looks like the logic board is going to need replacing.  To see if I could get things done any faster I went to the CSU Sacramento <a href="http://www.foundation.csus.edu/bookstore/computer/">Computer Store</a> where they have an Apple tech on site.  He seemed to think that it was just one of the memory chips that was bad.  So we pulled the bad one with then intent that it would get replaced next week (there was a life time warranty on the memory).</p>
+<p>Back to the office one more time.  The system would work for a few minutes and then freeze.  Then it wouldn&#8217;t boot.  Then it paniced while booting.  Ug, not good.  So then I moved the one remaining memory stick from the slot it was in into the other other slot (there are only two slots).  After that it has been fine.  Looks like the Apple store folks were right, the logic board needs to be replaced.  Ick.</p>
+<p>I&#8217;m bummed to spend so much of the day running around trying to get my two year old PowerBook G4 going again.  While I still do a lot of (I mean a lot) of Windows work, not having Unix like guts on my primary development system is a real pain.  Of course if things got bad enough perhaps work would spring for a new <a href="http://www.apple.com/macbookpro/">MacBook Pro</a> <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Hey, I can dream.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/04/07/powerbook-problems/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

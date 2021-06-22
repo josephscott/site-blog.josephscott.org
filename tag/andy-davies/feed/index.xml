@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>andy-davies &#8211; Joseph Scott</title>
+	<atom:link href="/tag/andy-davies/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 18 Sep 2018 17:06:18 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Safari Can Be Stingy</title>
+		<link>/2018/09/18/safari-can-be-stingy/</link>
+					<comments>/2018/09/18/safari-can-be-stingy/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 18 Sep 2018 17:06:18 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[andy-davies]]></category>
+		<category><![CDATA[cache]]></category>
+		<category><![CDATA[cdn]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[safari]]></category>
+		<guid isPermaLink="false">/?p=16981</guid>
+
+					<description><![CDATA[Andy Davies dug into the shared caching situation on Safari, in Safari, Caching and Third-Party Resources. The shared cache in Safari may be more stingy that most people would have guessed: What this means is Safari caches content from third-party origins separately for each document origin, so for example if two sites, say a.com and [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Andy Davies dug into the shared caching situation on Safari, in <a href="https://andydavies.me/blog/2018/09/06/safari-caching-and-3rd-party-resources/">Safari, Caching and Third-Party Resources</a>.  The shared cache in Safari may be more stingy that most people would have guessed:</p>
+<blockquote><p>
+What this means is Safari caches content from third-party origins separately for each document origin, so for example if two sites, say a.com and b.com both use a common library, third-party.com/script.js, then script.js will be cached separately for both sites.</p>
+<p>And if someone has an ‘empty’ cache and visits the first site and then the other, script.js will be downloaded twice.
+</p></blockquote>
+<p>This is another situation of having to measure to make sure that the rule of thumb is actually helping in your specific case.  The numbers from the HTTP Archive research were not exciting:</p>
+<blockquote><p>
+The March 2018 HTTP Archive (desktop) run has data for approximately 466,000 pages and the most popular public library, jQuery 1.11.3 from ajax.googleapis.com (served over HTTPS), is used by just over 1% of them.</p>
+<p>I’m not sure what level adoption needs to reach for shared caching to achieve critical mass but 1% certainly seems unlikely to be high enough and even Google’s most popular font – OpenSans – is only requested by around 9% of pages in the HTTP Archive.
+</p></blockquote>
+<p>If 9% ends up being the upper bound for shared cache hits, we need to start re-thinking our approach.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/09/18/safari-can-be-stingy/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Making IE Accept File Downloads	</title>
+	<atom:link href="/2004/10/01/making-ie-accept-file-downloads/feed/" rel="self" type="application/rss+xml" />
+	<link>/2004/10/01/making-ie-accept-file-downloads/</link>
+	<description></description>
+	<lastBuildDate>Thu, 01 Aug 2013 16:47:29 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: l Laundry		</title>
+		<link>/2004/10/01/making-ie-accept-file-downloads/#comment-664</link>
+
+		<dc:creator><![CDATA[l Laundry]]></dc:creator>
+		<pubDate>Thu, 01 Aug 2013 16:47:29 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/10/01/making-ie-accept-file-downloads/#comment-664</guid>
+
+					<description><![CDATA[Using IIS and IE8. Had same problem where the csv would not open. It worked for years but when I added code to make my site IE10 compliant (in my case I told the browser to act like it was IE8, way too much code to change to make it truly IE10). Anyway the problem occured and the post from &quot;Harry School&quot; on (Fri 1 Dec 2006 at 4:39 am) worked for me.
+
+My asp file has this in it and it works fine now.
+
+Response.ContentType = &quot;application/octet-stream&quot;
+Response.AddHeader &quot;content-disposition&quot;,&quot;attachment; filename=&quot; &#038; sfile &#038; &quot;.CSV&quot;
+Response.CacheControl = &quot;Cache-Control: must-revalidate, post-check=0, pre-check=0&quot;
+
+I was missing the last line.
+
+Thanks so much!]]></description>
+			<content:encoded><![CDATA[<p>Using IIS and IE8. Had same problem where the csv would not open. It worked for years but when I added code to make my site IE10 compliant (in my case I told the browser to act like it was IE8, way too much code to change to make it truly IE10). Anyway the problem occured and the post from &#8220;Harry School&#8221; on (Fri 1 Dec 2006 at 4:39 am) worked for me.</p>
+<p>My asp file has this in it and it works fine now.</p>
+<p>Response.ContentType = &#8220;application/octet-stream&#8221;<br />
+Response.AddHeader &#8220;content-disposition&#8221;,&#8221;attachment; filename=&#8221; &amp; sfile &amp; &#8220;.CSV&#8221;<br />
+Response.CacheControl = &#8220;Cache-Control: must-revalidate, post-check=0, pre-check=0&#8221;</p>
+<p>I was missing the last line.</p>
+<p>Thanks so much!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joel		</title>
+		<link>/2004/10/01/making-ie-accept-file-downloads/#comment-663</link>
+
+		<dc:creator><![CDATA[Joel]]></dc:creator>
+		<pubDate>Fri, 09 Sep 2011 12:05:42 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/10/01/making-ie-accept-file-downloads/#comment-663</guid>
+
+					<description><![CDATA[Sorry, I should have mentioned that it worked before but it doesn&#039;t now...
+It works on my manager&#039;s laptop with his parasite-browser (sorry I don&#039;t know what else to call it - I believe this &quot;browser&quot; uses the IE-engine but runs its own interface)...
+
+&#038; yes my default browser is IE (&#038; I thought that would help...)
+
+Thanks in advance for anyone who&#039;s giving this some thought.
+&#038; since I don&#039;t know much about coding, I thought this &quot;might be part of the puzzle&quot;.
+
+Cheers.]]></description>
+			<content:encoded><![CDATA[<p>Sorry, I should have mentioned that it worked before but it doesn&#8217;t now&#8230;<br />
+It works on my manager&#8217;s laptop with his parasite-browser (sorry I don&#8217;t know what else to call it &#8211; I believe this &#8220;browser&#8221; uses the IE-engine but runs its own interface)&#8230;</p>
+<p>&amp; yes my default browser is IE (&amp; I thought that would help&#8230;)</p>
+<p>Thanks in advance for anyone who&#8217;s giving this some thought.<br />
+&amp; since I don&#8217;t know much about coding, I thought this &#8220;might be part of the puzzle&#8221;.</p>
+<p>Cheers.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joel		</title>
+		<link>/2004/10/01/making-ie-accept-file-downloads/#comment-662</link>
+
+		<dc:creator><![CDATA[Joel]]></dc:creator>
+		<pubDate>Fri, 09 Sep 2011 11:58:12 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/10/01/making-ie-accept-file-downloads/#comment-662</guid>
+
+					<description><![CDATA[Hi people, I might be shouting at the wrong crowd...
+
+But I can&#039;t get IE&#039;s authentication to &quot;carry over&quot; to Excel&#039;s web query, could any of you coders help please?
+
+Thanks.]]></description>
+			<content:encoded><![CDATA[<p>Hi people, I might be shouting at the wrong crowd&#8230;</p>
+<p>But I can&#8217;t get IE&#8217;s authentication to &#8220;carry over&#8221; to Excel&#8217;s web query, could any of you coders help please?</p>
+<p>Thanks.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ram		</title>
+		<link>/2004/10/01/making-ie-accept-file-downloads/#comment-661</link>
+
+		<dc:creator><![CDATA[Ram]]></dc:creator>
+		<pubDate>Fri, 03 Jun 2011 02:25:50 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/10/01/making-ie-accept-file-downloads/#comment-661</guid>
+
+					<description><![CDATA[Guys, thanks everyone for the ideas. I tried various combinations. Finally, the below code worked and saved me from more agony. Many thanks to Harry School &#038; Duncan. post-check=0 and pre-check=0 did the trick.
+
+        header(&quot;Content-Disposition: attachment; filename=filenamehere.csv;&quot;);
+        header(&quot;Content-Type: text/csv&quot;);
+        
+        if(strpos($_SERVER[&#039;HTTP_USER_AGENT&#039;], &#039;MSIE&#039;)) 
+        {
+            header(&#039;Cache-Control: must-revalidate, post-check=0, pre-check=0&#039;);
+            header(&#039;Pragma: public&#039;);
+        } 
+        else 
+        {
+            header(&#039;Pragma: no-cache&#039;);
+        }]]></description>
+			<content:encoded><![CDATA[<p>Guys, thanks everyone for the ideas. I tried various combinations. Finally, the below code worked and saved me from more agony. Many thanks to Harry School &amp; Duncan. post-check=0 and pre-check=0 did the trick.</p>
+<p>        header(&#8220;Content-Disposition: attachment; filename=filenamehere.csv;&#8221;);<br />
+        header(&#8220;Content-Type: text/csv&#8221;);</p>
+<p>        if(strpos($_SERVER[&#8216;HTTP_USER_AGENT&#8217;], &#8216;MSIE&#8217;))<br />
+        {<br />
+            header(&#8216;Cache-Control: must-revalidate, post-check=0, pre-check=0&#8217;);<br />
+            header(&#8216;Pragma: public&#8217;);<br />
+        }<br />
+        else<br />
+        {<br />
+            header(&#8216;Pragma: no-cache&#8217;);<br />
+        }</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Glen H. Barratt		</title>
+		<link>/2004/10/01/making-ie-accept-file-downloads/#comment-660</link>
+
+		<dc:creator><![CDATA[Glen H. Barratt]]></dc:creator>
+		<pubDate>Sat, 04 Apr 2009 00:42:52 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/10/01/making-ie-accept-file-downloads/#comment-660</guid>
+
+					<description><![CDATA[Thank you so much. Your fix was the only one that worked for me. The &quot;if(strpos($_SERVER[&#039;HTTP_USER_AGENT&#039;], &#039;MSIE&#039;)) session_cache_limiter(&quot;public&quot;);&quot; that is.]]></description>
+			<content:encoded><![CDATA[<p>Thank you so much. Your fix was the only one that worked for me. The &#8220;if(strpos($_SERVER[&#8216;HTTP_USER_AGENT&#8217;], &#8216;MSIE&#8217;)) session_cache_limiter(&#8220;public&#8221;);&#8221; that is.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jody		</title>
+		<link>/2004/10/01/making-ie-accept-file-downloads/#comment-659</link>
+
+		<dc:creator><![CDATA[Jody]]></dc:creator>
+		<pubDate>Tue, 31 Mar 2009 23:35:09 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/10/01/making-ie-accept-file-downloads/#comment-659</guid>
+
+					<description><![CDATA[Thanks Duncan, your method works for my site which uses SSL that annoys the crap out of me. For both IE and FF&#062; :) Whee now I can work better!]]></description>
+			<content:encoded><![CDATA[<p>Thanks Duncan, your method works for my site which uses SSL that annoys the crap out of me. For both IE and FF&gt; 🙂 Whee now I can work better!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Gordon		</title>
+		<link>/2004/10/01/making-ie-accept-file-downloads/#comment-658</link>
+
+		<dc:creator><![CDATA[Gordon]]></dc:creator>
+		<pubDate>Wed, 25 Mar 2009 19:22:45 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/10/01/making-ie-accept-file-downloads/#comment-658</guid>
+
+					<description><![CDATA[I&#039;m still having trouble after looking through and trying your suggestion and those in the comments. I&#039;m running ASP.NET 2.0, IIS, Win2003.
+
+I&#039;m generating a CSV file for users to download when they click a button on a page (the page is SiteReports.aspx). Without SSL, it works great in FF and IE7. With SSL (which I need to do), it works great in FF, but in IE7:
+
+-&#062; If I have ContentType set to &#039;application/octet-stream&#039;, I get a file download prompt, but the filename I gave it is replaced with &#039;SiteReports_aspx&#039;, with no extension, so if they user chooses &#039;open&#039; from the download prompt, it opens as plain text within IE.
+-&#062; If I have ContentType set to anything else, I get &#039;Internet Explorer cannot download SiteReports.aspx from etc...&#039;.
+
+I don&#039;t understand why it tries to download something with a different filename than the one I specified in Content-Disposition. I&#039;m currently setting up my headers like this:
+
+Response.Clear();
+Response.Charset = String.Empty;
+Response.ContentType = &quot;application/octet-stream&quot;;
+Response.AddHeader(&quot;Pragma&quot;, &quot;public&quot;);
+Response.AddHeader(&quot;Cache-Control&quot;, &quot;max-age=10&quot;);
+Response.AddHeader(&quot;Content-Disposition&quot;, &quot;attachment; filename=test.csv&quot;);
+Response.Write(fileContents);
+Response.End();
+
+Any ideas? Thanks.]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;m still having trouble after looking through and trying your suggestion and those in the comments. I&#8217;m running ASP.NET 2.0, IIS, Win2003.</p>
+<p>I&#8217;m generating a CSV file for users to download when they click a button on a page (the page is SiteReports.aspx). Without SSL, it works great in FF and IE7. With SSL (which I need to do), it works great in FF, but in IE7:</p>
+<p>-&gt; If I have ContentType set to &#8216;application/octet-stream&#8217;, I get a file download prompt, but the filename I gave it is replaced with &#8216;SiteReports_aspx&#8217;, with no extension, so if they user chooses &#8216;open&#8217; from the download prompt, it opens as plain text within IE.<br />
+-&gt; If I have ContentType set to anything else, I get &#8216;Internet Explorer cannot download SiteReports.aspx from etc&#8230;&#8217;.</p>
+<p>I don&#8217;t understand why it tries to download something with a different filename than the one I specified in Content-Disposition. I&#8217;m currently setting up my headers like this:</p>
+<p>Response.Clear();<br />
+Response.Charset = String.Empty;<br />
+Response.ContentType = &#8220;application/octet-stream&#8221;;<br />
+Response.AddHeader(&#8220;Pragma&#8221;, &#8220;public&#8221;);<br />
+Response.AddHeader(&#8220;Cache-Control&#8221;, &#8220;max-age=10&#8221;);<br />
+Response.AddHeader(&#8220;Content-Disposition&#8221;, &#8220;attachment; filename=test.csv&#8221;);<br />
+Response.Write(fileContents);<br />
+Response.End();</p>
+<p>Any ideas? Thanks.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: stephan		</title>
+		<link>/2004/10/01/making-ie-accept-file-downloads/#comment-657</link>
+
+		<dc:creator><![CDATA[stephan]]></dc:creator>
+		<pubDate>Mon, 23 Mar 2009 13:46:30 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/10/01/making-ie-accept-file-downloads/#comment-657</guid>
+
+					<description><![CDATA[thanks for that. additionally the particular IE&#039;s here are only happy if content-type header offers encoding=... as well.
+
+e.g.
+header(&#039;Content-type: application/octet-stream; encoding=UTF-8&#039;);]]></description>
+			<content:encoded><![CDATA[<p>thanks for that. additionally the particular IE&#8217;s here are only happy if content-type header offers encoding=&#8230; as well.</p>
+<p>e.g.<br />
+header(&#8216;Content-type: application/octet-stream; encoding=UTF-8&#8217;);</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: sandy		</title>
+		<link>/2004/10/01/making-ie-accept-file-downloads/#comment-656</link>
+
+		<dc:creator><![CDATA[sandy]]></dc:creator>
+		<pubDate>Tue, 10 Mar 2009 01:13:28 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/10/01/making-ie-accept-file-downloads/#comment-656</guid>
+
+					<description><![CDATA[I am running into similar problem and tried all the combination given in this post but alas!
+I have asp page over SSL and trying to generate the CSV file but not working. Any help?
+esponse.Clear
+				Response.AddHeader &quot;Pragma: public&quot;
+				Response.AddHeader &quot;Cache-Control: no-store, no-cache, no-transform, must-revalidate, private&quot;;
+				Response.AddHeader &quot;Title&quot;, &quot;My Report Results&quot;
+				Response.ContentType = &quot;text/csv&quot;
+				Response.AddHeader &quot;Content-disposition&quot;, &quot;Attachment;filename=Myreport.csv&quot;]]></description>
+			<content:encoded><![CDATA[<p>I am running into similar problem and tried all the combination given in this post but alas!<br />
+I have asp page over SSL and trying to generate the CSV file but not working. Any help?<br />
+esponse.Clear<br />
+				Response.AddHeader &#8220;Pragma: public&#8221;<br />
+				Response.AddHeader &#8220;Cache-Control: no-store, no-cache, no-transform, must-revalidate, private&#8221;;<br />
+				Response.AddHeader &#8220;Title&#8221;, &#8220;My Report Results&#8221;<br />
+				Response.ContentType = &#8220;text/csv&#8221;<br />
+				Response.AddHeader &#8220;Content-disposition&#8221;, &#8220;Attachment;filename=Myreport.csv&#8221;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: pkachhia		</title>
+		<link>/2004/10/01/making-ie-accept-file-downloads/#comment-655</link>
+
+		<dc:creator><![CDATA[pkachhia]]></dc:creator>
+		<pubDate>Mon, 23 Feb 2009 11:09:24 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/10/01/making-ie-accept-file-downloads/#comment-655</guid>
+
+					<description><![CDATA[Hi,
+I have the problem which is something related to this post.
+I have trying to download the file using the download code.
+It&#039;s work fine in IE7, Mozilla, chrome but it is not works in IE6.
+The most socking thing is , few days ago , it is working in all the browsers, even in IE6. But today i got this error.When I have trying to use IE6 for download it shows the following message:
+&quot;Internet explorer was not able to open this Internet site. The requested site is either unavailable or cannot be found. Please try again later.&quot;
+Can any body help me?
+
+Regards,
+Pkachhia]]></description>
+			<content:encoded><![CDATA[<p>Hi,<br />
+I have the problem which is something related to this post.<br />
+I have trying to download the file using the download code.<br />
+It&#8217;s work fine in IE7, Mozilla, chrome but it is not works in IE6.<br />
+The most socking thing is , few days ago , it is working in all the browsers, even in IE6. But today i got this error.When I have trying to use IE6 for download it shows the following message:<br />
+&#8220;Internet explorer was not able to open this Internet site. The requested site is either unavailable or cannot be found. Please try again later.&#8221;<br />
+Can any body help me?</p>
+<p>Regards,<br />
+Pkachhia</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

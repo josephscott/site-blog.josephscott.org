@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>merge &#8211; Joseph Scott</title>
+	<atom:link href="/tag/merge/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 05 Jan 2010 20:10:10 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Revert to a Previous Version in Subversion</title>
+		<link>/2010/01/05/revert-to-a-previous-version-in-subversion/</link>
+					<comments>/2010/01/05/revert-to-a-previous-version-in-subversion/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 05 Jan 2010 20:10:10 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[merge]]></category>
+		<category><![CDATA[revert]]></category>
+		<category><![CDATA[subversion]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1684</guid>
+
+					<description><![CDATA[Most of the time when I&#8217;m working with code that is checked out from Subversion it&#8217;s moving forward, version after version. There are times though where I need to revert back to a previous version (one reason you should have your code versioned in the first place). Subversion can do this, but it isn&#8217;t via [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Most of the time when I&#8217;m working with code that is checked out from <a href="http://subversion.tigris.org/">Subversion</a> it&#8217;s moving forward, version after version.  There are times though where I need to revert back to a previous version (one reason you should have your code versioned in the first place).  Subversion can do this, but it isn&#8217;t via the <a href="http://svnbook.red-bean.com/en/1.5/svn.ref.svn.c.revert.html">revert</a> command, instead it&#8217;s done with <a href="http://svnbook.red-bean.com/en/1.5/svn.ref.svn.c.merge.html">merge</a>.</p>
+<p>Most of the time this means I can revert my working copy to rev 12345 with this command:</p>
+<p><code>svn merge -r HEAD:12345 .</code></p>
+<p>The merge command requires a directory parameter, the dot just means the current directory.  This only reverts your working copy though, so don&#8217;t forget to commit after merge.</p>
+<p>Reverting back to a previous version is one of those things that I do infrequently enough that I end up searching for how to do it each time.  Perhaps writing about it will help me remember this a bit better.  If nothing else I know where to look for a quick example now.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/01/05/revert-to-a-previous-version-in-subversion/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

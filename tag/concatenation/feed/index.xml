@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>concatenation &#8211; Joseph Scott</title>
+	<atom:link href="/tag/concatenation/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 17 Nov 2017 17:37:05 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>HTTP/2 and Concatenation</title>
+		<link>/2017/11/17/http-2-and-concatenation/</link>
+					<comments>/2017/11/17/http-2-and-concatenation/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 17 Nov 2017 17:37:05 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[concatenation]]></category>
+		<category><![CDATA[http2]]></category>
+		<guid isPermaLink="false">/?p=16295</guid>
+
+					<description><![CDATA[I&#8217;ve seen it repeated over and over how HTTP/2 means that you no longer have to concatenate resources. The context is usually around JavaScript, but it is similar for CSS. Real world tests don&#8217;t always line up with that theoretical expectation, as demonstrated by Khan Academy back in 2015. Here is their summary: HTTP/2.0, with [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve seen it repeated over and over how HTTP/2 means that you no longer have to concatenate resources.  The context is usually around JavaScript, but it is similar for CSS.  Real world tests don&#8217;t always line up with that theoretical expectation, as demonstrated by <a href="http://engineering.khanacademy.org/posts/js-packaging-http2.htm">Khan Academy back in 2015</a>.  Here is their summary:</p>
+<blockquote><p>
+HTTP/2.0, with its multiplexing, header compression, and the like, offers the promise of the best of all worlds when it comes to downloading JavaScript: great local caching, great download efficiency, no wasted bytes, and a simpler serving infrastructure to boot. All you have to do is give up your packaging system and download all your JavaScript source files individually.</p>
+<p>The reality is not so rosy. Due to degraded compression performance, the size of the data download with individual source files ends up being higher than with packages, despite having achieved &#8216;no wasted bytes&#8217;. Likewise, the promised download efficiency has yet to show up in the wild, at least for us. It seems that, for the moment at least, JavaScript packaging is here to stay.
+</p></blockquote>
+<p>From what I&#8217;ve seen so far, there is some line that balances between too much concatenation and too little.  Unfortunately I think that line is going to vary from site to site.  If we are lucky, we might get some good guidelines ( always concat if loading fewer than X bytes ) that can be applied by tools and services automatically.</p>
+<p>Having hard rules that &#8220;always make things better 100% of the time&#8221; are becoming less common in the world of HTTP/2, modern browsers, and mobile clients.  There is no substitute for making measurements and comparing the results.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2017/11/17/http-2-and-concatenation/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

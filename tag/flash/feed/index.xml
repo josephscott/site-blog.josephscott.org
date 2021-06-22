@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>flash &#8211; Joseph Scott</title>
+	<atom:link href="/tag/flash/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 08 Mar 2016 18:11:50 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>When Content Is Not King</title>
+		<link>/2016/03/08/when-content-is-not-king/</link>
+					<comments>/2016/03/08/when-content-is-not-king/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 08 Mar 2016 18:11:50 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[flash]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15255</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[<p><a href="/wp-content/uploads/2016/02/install-flash-1.png" rel="attachment wp-att-15256"><img loading="lazy" src="/wp-content/uploads/2016/02/install-flash-1.png" alt="install-flash" width="784" height="359" class="aligncenter size-full wp-image-15256" srcset="/wp-content/uploads/2016/02/install-flash-1.png 784w, /wp-content/uploads/2016/02/install-flash-1-300x137.png 300w, /wp-content/uploads/2016/02/install-flash-1-768x352.png 768w" sizes="(max-width: 784px) 100vw, 784px" /></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/03/08/when-content-is-not-king/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Start of 2016</title>
+		<link>/2016/01/01/start-of-2016/</link>
+					<comments>/2016/01/01/start-of-2016/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 01 Jan 2016 16:59:57 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<category><![CDATA[new-year]]></category>
+		<category><![CDATA[politics]]></category>
+		<category><![CDATA[predictions]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14751</guid>
+
+					<description><![CDATA[Today I&#8217;m joining the time honored tradition of making predictions for the new year. Translation: wild guesses and obvious statements. 1. Apple Makes A Move To Improve Internet Services Perhaps Apple&#8217;s single biggest weak spot has been online services. It is clear they know how to do a good job making hardware, all the way [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Today I&#8217;m joining the time honored tradition of making predictions for the new year.  Translation: wild guesses and obvious statements.</p>
+<h4>1. <a href="http://www.apple.com/">Apple</a> Makes A Move To Improve Internet Services</h4>
+<p>Perhaps Apple&#8217;s single biggest weak spot has been online services.  It is clear they know how to do a good job making hardware, all the way down to the chip level in some cases, and software to run on that hardware.  Execution of large scale Internet services hasn&#8217;t gone as smoothly.</p>
+<p>In the past people have suggested that Apple might buy an existing company to help bring in large scale web DNA.  I think what is more likely is that Apple makes a few key high level hires that build out new teams.</p>
+<p>This won&#8217;t be an easy thing for Apple.  When I look around at more recent successful web startups I see lots of sharing.  That will be a significant change of pace for a company that invests heavily in secrecy.</p>
+<p>I consider <a href="https://swift.org/">Swift</a> going open source a positive sign.</p>
+<h4>2. <a href="http://www.lua.org/">Lua</a> Gets More Attention</h4>
+<p>Cloudflare has been pushing the <a href="https://blog.cloudflare.com/pushing-nginx-to-its-limit-with-lua/">Nginx + Lua</a> combination for years now.  I consider that particular combination one of the most under rated technology stacks around.</p>
+<p>If you were heavy into all the microservices talk during 2015 then Lua+Nginx is an exciting combination.  I wouldn&#8217;t be surprised if AWS launches a new service around Lua.</p>
+<p>I recommend <a href="https://openresty.org/">OpenResty</a> ( a build of Nginx with Lua ) and <a href="http://lua.space/">lua.space</a> ( community news ).</p>
+<h4>3. Flash First Video Becomes Shameful</h4>
+<p>We have pretty good support for the <a href="http://caniuse.com/#feat=video">video element</a>, it is time to move Flash for video to a <a href="http://docs.webplatform.org/wiki/html/elements/video#Flash_fallback">fallback</a> position.  You are probably already doing that for mobile devices, time to go all in.</p>
+<h4>4. More Open Source From Microsoft</h4>
+<p>Microsoft has started to gain back some geek cred with their push into making more of their code open source ( check out <a href="https://github.com/Microsoft">https://github.com/Microsoft</a> ).  My prediction is they go even further, announcing one of their larger key products will go open source.  The big bets would be Exchange or SQL Server.  The other big candidate would a component of Office.</p>
+<h4>5. Strange U.S. Presidential Politics</h4>
+<p>If you&#8217;d asked about this a year ago, I would have focused on how much I&#8217;m not keen on family dynasties for President.  At the time Jeb Bush and Hillary Clinton were safe bets on being the candidates from their respective parties.  One had a brother and father who were President, the other a husband.  Since then there have been dramatic changes on the Republican side, and very little change on the Democratic side.</p>
+<p>My prediction: things get even stranger before the general election.  This might be the year for a <a href="http://www.nbcnews.com/politics/2016-election/contested-convention-almost-everything-you-need-know-n478736">contested convention</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/01/01/start-of-2016/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The Digital Dark Age, Today</title>
+		<link>/2015/04/07/the-digital-dark-age-today/</link>
+					<comments>/2015/04/07/the-digital-dark-age-today/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 07 Apr 2015 15:02:18 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[bbc]]></category>
+		<category><![CDATA[flash]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12075</guid>
+
+					<description><![CDATA[I went to the BBC News site to watch the Vint Cerf &#8216;digital Dark Age&#8217; interview, but all I got was: The really frustrating part, the mobile version of their site plays the video on my iPhone just fine ( which definitely isn&#8217;t using Flash ). The &#8216;digital dark age&#8217; is already here, it&#8217;s just [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I went to the BBC News site to watch the <a href='http://www.bbc.com/news/science-environment-31450389'>Vint Cerf &#8216;digital Dark Age&#8217; interview</a>, but all I got was:</p>
+<p><a href="/wp-content/uploads/2015/04/requires-flash-1.png"><img loading="lazy" src="/wp-content/uploads/2015/04/requires-flash-1.png" alt="requires-flash" width="1000" height="649" class="aligncenter size-full wp-image-12079" srcset="/wp-content/uploads/2015/04/requires-flash-1.png 1000w, /wp-content/uploads/2015/04/requires-flash-1-300x195.png 300w, /wp-content/uploads/2015/04/requires-flash-1-768x498.png 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></a></p>
+<p>The really frustrating part, the mobile version of their site plays the video on my iPhone just fine ( which definitely isn&#8217;t using Flash ).  The &#8216;digital dark age&#8217; is already here, it&#8217;s just not very evenly distributed.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/04/07/the-digital-dark-age-today/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Direct Download Of Flash For Mac OS X</title>
+		<link>/2014/09/01/direct-download-of-flash-for-mac-os-x/</link>
+					<comments>/2014/09/01/direct-download-of-flash-for-mac-os-x/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 01 Sep 2014 16:04:46 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[macosx]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10975</guid>
+
+					<description><![CDATA[That little button for &#8220;Installing Flash&#8221; isn&#8217;t entirely honest. It only downloads an installer app than then downloads Flash. It possible to skip that step, by downloading the actual Flash package from: http://fpdownload.macromedia.com/get/flashplayer/current/licensing/mac/install_flash_player_14_osx.dmg. The installer app often fails horribly when going through a proxy. Better to save yourself the headache and download the Flash update [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="/wp-content/uploads/2014/09/flash-install-button-1.png"><img loading="lazy" src="/wp-content/uploads/2014/09/flash-install-button-1.png" alt="flash-install-button" width="276" height="91" class="aligncenter size-full wp-image-10978" /></a></p>
+<p>That little button for &#8220;<a href="http://get.adobe.com/flashplayer/?no_redirect">Installing Flash</a>&#8221; isn&#8217;t entirely honest.  It only downloads an installer app than then downloads Flash.  It possible to skip that step, by downloading the actual Flash package from:</p>
+<p><a href="http://fpdownload.macromedia.com/get/flashplayer/current/licensing/mac/install_flash_player_14_osx.dmg">http://fpdownload.macromedia.com/get/flashplayer/current/licensing/mac/install_flash_player_14_osx.dmg</a>.</p>
+<p>The installer app often fails horribly when going through a proxy.  Better to save yourself the headache and download the Flash update directly.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/09/01/direct-download-of-flash-for-mac-os-x/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What Yahoo Finance Looks Like Without Flash</title>
+		<link>/2011/11/09/what-yahoo-finance-looks-like-without-flash/</link>
+					<comments>/2011/11/09/what-yahoo-finance-looks-like-without-flash/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 09 Nov 2011 20:30:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[yahoo]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=5075</guid>
+
+					<description><![CDATA[I was wondering about the stock price for Google today and out of habit went to finance.yahoo.com to see a chart. Specifically I wanted to see the 1 year chart. I don&#8217;t have Flash installed on my primary browser, which triggered Yahoo Finance to redirect me away from the 1 year chart page to http://finance.yahoo.com/chart/flash#symbol=GOOG;range=1y [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was wondering about the stock price for Google today and out of habit went to <a href="http://finance.yahoo.com/">finance.yahoo.com</a> to see a chart.  Specifically I wanted to see the <a href="http://finance.yahoo.com/echarts?s=GOOG+Interactive#symbol=GOOG;range=1y">1 year chart</a>.  I don&#8217;t have Flash installed on my primary browser, which triggered Yahoo Finance to redirect me away from the 1 year chart page to <a href="http://finance.yahoo.com/chart/flash#symbol=GOOG;range=1y">http://finance.yahoo.com/chart/flash#symbol=GOOG;range=1y</a> instead.  Which looks like this:</p>
+<figure style="width: 808px" class="wp-caption alignnone"><img loading="lazy" alt="Yahoo Finance Chart Without Flash" src="https://lh4.googleusercontent.com/-mBpEmUfa6-I/Trrf8vojx7I/AAAAAAAAAQg/Bd1o5co4w3M/s808/yahoo-finance-no-flash.png" title="Yahoo Finance Chart Without Flash" width="808" height="336" /><figcaption class="wp-caption-text">Yahoo Finance Chart Without Flash</figcaption></figure>
+<p>Seriously, that is what the page looks in my Chrome 16 beta browser without Flash installed.</p>
+<p>If you are going to continue using Flash for these charts, why on earth would you redirect people without it to such a useless page?</p>
+<p><strong>Update :</strong> <a href="https://twitter.com/azitzer">@azitzer</a> (product manager for Yahoo Finance) <a href="https://twitter.com/azitzer/status/134417603841101824">noticed this</a> and to their credit <a href="https://twitter.com/azitzer/status/135237048721358849">fixed it</a>.  Still requires Flash to get the regular graph, but at least now the redirect doesn&#8217;t send you to a mostly empty page.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/11/09/what-yahoo-finance-looks-like-without-flash/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

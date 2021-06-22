@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: HTTP Basic Auth with httplib2	</title>
+	<atom:link href="/2011/06/07/http-basic-auth-with-httplib2/feed/" rel="self" type="application/rss+xml" />
+	<link>/2011/06/07/http-basic-auth-with-httplib2/</link>
+	<description></description>
+	<lastBuildDate>Wed, 30 May 2012 15:03:01 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/06/07/http-basic-auth-with-httplib2/#comment-3696</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 30 May 2012 15:03:01 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4075#comment-3696</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/06/07/http-basic-auth-with-httplib2/#comment-3695&quot;&gt;Scott S-Allen&lt;/a&gt;.
+
+I&#039;ve also started looking at &lt;a href=&quot;http://docs.python-requests.org/en/latest/index.html&quot; rel=&quot;nofollow&quot;&gt;Requests&lt;/a&gt; as another option.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/06/07/http-basic-auth-with-httplib2/#comment-3695">Scott S-Allen</a>.</p>
+<p>I&#8217;ve also started looking at <a href="http://docs.python-requests.org/en/latest/index.html" rel="nofollow">Requests</a> as another option.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Scott S-Allen		</title>
+		<link>/2011/06/07/http-basic-auth-with-httplib2/#comment-3695</link>
+
+		<dc:creator><![CDATA[Scott S-Allen]]></dc:creator>
+		<pubDate>Tue, 29 May 2012 07:27:38 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4075#comment-3695</guid>
+
+					<description><![CDATA[httplib2 does handle connections differently than the built-in libraries and conveniently enables an on-disk cache (.cache by default). I chose it for a project that needed to manage connections more proactively than urllib, et al. A side effect of this is the response object maintains a reference and is therefore persistent allowing other code to be a bit more lazy. That can bite, for me it allowed for some cleaner code.
+
+The auth bit you were at odds with is the _request method (__init__.py file). While I&#039;ve not poked at it in earnest, the change appears to be trivial to implement cleanly. I wanted to see if a guy could easily append the auth into the authorizations attribute but the way the first request is made precludes that from working it appears.
+
+The one justification that may make a difference with the author is that some systems (some might say broken), do not play well without some from the start. I work with one vendor that requires basic-auth to prompt a 401 response for the next level. Like you, I simply send auth (both to the example) in the first headers and the full query URI for a single-step request and response.
+
+Regardless of all this, I used the same method as you via custom headers. It was trivial and easily maintained.]]></description>
+			<content:encoded><![CDATA[<p>httplib2 does handle connections differently than the built-in libraries and conveniently enables an on-disk cache (.cache by default). I chose it for a project that needed to manage connections more proactively than urllib, et al. A side effect of this is the response object maintains a reference and is therefore persistent allowing other code to be a bit more lazy. That can bite, for me it allowed for some cleaner code.</p>
+<p>The auth bit you were at odds with is the _request method (__init__.py file). While I&#8217;ve not poked at it in earnest, the change appears to be trivial to implement cleanly. I wanted to see if a guy could easily append the auth into the authorizations attribute but the way the first request is made precludes that from working it appears.</p>
+<p>The one justification that may make a difference with the author is that some systems (some might say broken), do not play well without some from the start. I work with one vendor that requires basic-auth to prompt a 401 response for the next level. Like you, I simply send auth (both to the example) in the first headers and the full query URI for a single-step request and response.</p>
+<p>Regardless of all this, I used the same method as you via custom headers. It was trivial and easily maintained.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/06/07/http-basic-auth-with-httplib2/#comment-3694</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 27 Jun 2011 19:17:48 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4075#comment-3694</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/06/07/http-basic-auth-with-httplib2/#comment-3693&quot;&gt;Nikolay&lt;/a&gt;.
+
+I looked at urllib/urllib2 originally, but the HTTPPasswordMgr approach did not look appealing.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/06/07/http-basic-auth-with-httplib2/#comment-3693">Nikolay</a>.</p>
+<p>I looked at urllib/urllib2 originally, but the HTTPPasswordMgr approach did not look appealing.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Nikolay		</title>
+		<link>/2011/06/07/http-basic-auth-with-httplib2/#comment-3693</link>
+
+		<dc:creator><![CDATA[Nikolay]]></dc:creator>
+		<pubDate>Mon, 27 Jun 2011 09:27:11 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4075#comment-3693</guid>
+
+					<description><![CDATA[Why are you using &lt;code&gt;httplib2&lt;/code&gt;? There is a built-in HTTP library: &lt;a href=&quot;http://docs.python.org/library/urllib2.html&quot; rel=&quot;nofollow&quot;&gt;urllib2&lt;/a&gt;, which will serve you will (and supports basic auth out of the box).]]></description>
+			<content:encoded><![CDATA[<p>Why are you using <code>httplib2</code>? There is a built-in HTTP library: <a href="http://docs.python.org/library/urllib2.html" rel="nofollow">urllib2</a>, which will serve you will (and supports basic auth out of the box).</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>gnu &#8211; Joseph Scott</title>
+	<atom:link href="/tag/gnu/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 18 May 2015 14:28:22 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>LSCOLORS</title>
+		<link>/2015/05/18/lscolors/</link>
+					<comments>/2015/05/18/lscolors/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 18 May 2015 14:28:22 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[bsd]]></category>
+		<category><![CDATA[gnu]]></category>
+		<category><![CDATA[ls]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12511</guid>
+
+					<description><![CDATA[BSD ls and GNU ls differ on how to configure colors. Mac OS X ls is the BSD variant. The LSCOLORS Generator is helpful for creating a color set, or converting between BSD and GNU color configurations. I&#8217;m currently using: BSD: GxFxCxDxbxegedabagaced GNU: di=1;36;40:ln=1;35;40:so=1;32;40:pi=1;33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=34;43:]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.freebsd.org/cgi/man.cgi?query=ls">BSD ls</a> and <a href="http://man7.org/linux/man-pages/man1/ls.1.html">GNU ls</a> differ on how to configure colors.  <a href="https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/ls.1.html">Mac OS X ls</a> is the BSD variant.</p>
+<p>The <a href="http://geoff.greer.fm/lscolors/">LSCOLORS Generator</a> is helpful for creating a color set, or converting between BSD and GNU color configurations.</p>
+<p>I&#8217;m currently using:</p>
+<ul>
+<li><strong>BSD: </strong> <code>GxFxCxDxbxegedabagaced</code></li>
+<li><strong>GNU: </strong><code>di=1;36;40:ln=1;35;40:so=1;32;40:pi=1;33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=34;43:</code></li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/05/18/lscolors/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

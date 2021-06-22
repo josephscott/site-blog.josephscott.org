@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sips &#8211; Joseph Scott</title>
+	<atom:link href="/tag/sips/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 22 Apr 2010 17:48:21 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>sips &#8211; Mac OS X CLI Image Manipulation Tool</title>
+		<link>/2010/04/22/sips-mac-os-x-cli-image-manipulation-tool/</link>
+					<comments>/2010/04/22/sips-mac-os-x-cli-image-manipulation-tool/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 22 Apr 2010 17:48:21 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[sips]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2213</guid>
+
+					<description><![CDATA[I wonder how long sips (scriptable image processing system) has been around in Mac OS X? If you&#8217;re the type who has a terminal window open all the time any way (or a dozen of them) then this is a really handy tool for image manipulation. Via &#8211; http://onethingwell.org/post/540410201/sips]]></description>
+										<content:encoded><![CDATA[<p>I wonder how long <a href="http://developer.apple.com/mac/library/documentation/Darwin/Reference/ManPages/man1/sips.1.html">sips</a> (scriptable image processing system) has been around in Mac OS X?  If you&#8217;re the type who has a terminal window open all the time any way (or a dozen of them) then this is a really handy tool for image manipulation.</p>
+<p>Via &#8211; <a href="http://onethingwell.org/post/540410201/sips">http://onethingwell.org/post/540410201/sips</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/04/22/sips-mac-os-x-cli-image-manipulation-tool/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

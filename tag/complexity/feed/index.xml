@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>complexity &#8211; Joseph Scott</title>
+	<atom:link href="/tag/complexity/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 01 Jan 2015 17:52:25 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Characteristics of a Fast Program</title>
+		<link>/2015/01/01/characteristics-of-a-fast-program/</link>
+					<comments>/2015/01/01/characteristics-of-a-fast-program/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 01 Jan 2015 17:52:25 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[complexity]]></category>
+		<category><![CDATA[kazuho-oku]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11376</guid>
+
+					<description><![CDATA[From a presentation on the internals of the H2O web server ( something I had previously mentioned ) by Kazuho Oku, slide 21 ( emphasis is mine ): Characteristics of a fast program: 1. Executes less instructions &#8211; speed is a result of simplicity, not complexity Getting the same result with less work and less [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>From a <a href="http://blog.kazuhooku.com/2014/11/the-internals-h2o-or-how-to-write-fast.html">presentation on the internals of the H2O web server</a> ( something I had <a href="https://josephscott.org/archives/2014/10/h2o/">previously mentioned</a> ) by Kazuho Oku, slide 21 ( emphasis is mine ):</p>
+<blockquote><p>
+Characteristics of a fast program:<br />
+1. Executes less instructions<br />
+    &#8211; <strong>speed is a result of simplicity, not complexity</strong>
+</p></blockquote>
+<p>Getting the same result with less work and less complexity is a good thing.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/01/01/characteristics-of-a-fast-program/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

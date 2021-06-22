@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>zack-tollman &#8211; Joseph Scott</title>
+	<atom:link href="/tag/zack-tollman/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 24 Jul 2015 14:01:47 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>To CDN Or Not To CDN</title>
+		<link>/2015/07/24/to-cdn-or-not-to-cdn/</link>
+					<comments>/2015/07/24/to-cdn-or-not-to-cdn/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 24 Jul 2015 14:01:47 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[cdn]]></category>
+		<category><![CDATA[http2]]></category>
+		<category><![CDATA[zack-tollman]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9885</guid>
+
+					<description><![CDATA[Zack Tollman on Why we don&#8217;t use a CDN: A story about SPDY and SSL. The simple &#8220;rule&#8221; of always use a CDN may not always be a good idea. When in doubt, measure. Then measure again even when not in doubt. Expect these types of questions and discussions to come up more and more [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Zack Tollman on <a href='https://thethemefoundry.com/blog/why-we-dont-use-a-cdn-spdy-ssl/'>Why we don&#8217;t use a CDN: A story about SPDY and SSL</a>.</p>
+<p>The simple &#8220;rule&#8221; of always use a CDN may not always be a good idea.  When in doubt, measure.  Then measure again even when not in doubt.</p>
+<p>Expect these types of questions and discussions to come up more and more as HTTP/2 deployments continue.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/07/24/to-cdn-or-not-to-cdn/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>reactjs &#8211; Joseph Scott</title>
+	<atom:link href="/tag/reactjs/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 23 Sep 2015 15:08:28 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>React.js Tutorial</title>
+		<link>/2015/09/23/react-js-tutorial/</link>
+					<comments>/2015/09/23/react-js-tutorial/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 23 Sep 2015 15:08:28 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[jsbin]]></category>
+		<category><![CDATA[reactjs]]></category>
+		<category><![CDATA[shu-uesugi]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13169</guid>
+
+					<description><![CDATA[A very well done &#8220;React.js Introduction For People Who Know Just Enough jQuery To Get By&#8221; by Shu Uesugi: Of people who have never tried out React, some are comfortable with frontend JS frameworks like Backbone, Ember, or Angular. Some know JavaScript pretty well. Some know just enough jQuery to get by. A tutorial that&#8217;s [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>A very well done &#8220;<a href="http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/">React.js Introduction For People Who Know Just Enough jQuery To Get By</a>&#8221; by <a href="http://chibicode.com/">Shu Uesugi</a>:</p>
+<blockquote><p>
+Of people who have never tried out React, some are comfortable with frontend JS frameworks like Backbone, Ember, or Angular. Some know JavaScript pretty well. Some know just enough jQuery to get by. A tutorial that&#8217;s effective for one group may not be optimal for the other groups.</p>
+<p>In this tutorial, I&#8217;m targeting the third group I mentioned: people who know just enough jQuery to get by.
+</p></blockquote>
+<p>My favorite part is the use of embedded <a href="https://jsbin.com/">JS Bin</a> items.  This makes it easy to do the code examples inline with the tutorial.  I recommend trying it out, even if you already know ReactJS, just to see what the experience is like with this approach.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/09/23/react-js-tutorial/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

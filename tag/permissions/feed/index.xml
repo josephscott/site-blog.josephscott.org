@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>permissions &#8211; Joseph Scott</title>
+	<atom:link href="/tag/permissions/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 24 Jan 2018 15:38:03 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Speedtest.net Android App Permissions</title>
+		<link>/2018/01/24/speedtest-net-android-app-permissions/</link>
+					<comments>/2018/01/24/speedtest-net-android-app-permissions/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 24 Jan 2018 15:38:03 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[permissions]]></category>
+		<category><![CDATA[privacy]]></category>
+		<category><![CDATA[speedtest]]></category>
+		<guid isPermaLink="false">/?p=16398</guid>
+
+					<description><![CDATA[I went to install the speedtest.net Android app and the following permission requests popped up: The first three all seemed reasonable. That last one, not so much: Device ID &#038; call information Allows the app to determine the phone number and device IDs, whether a call is active, and the remote number connected by a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I went to install the <a href="https://play.google.com/store/apps/details?id=org.zwanoo.android.speedtest&#038;hl=en">speedtest.net Android app</a> and the following permission requests popped up:</p>
+<p><a href="/wp-content/uploads/2018/01/speedtest-permissions.png"><img loading="lazy" src="/wp-content/uploads/2018/01/speedtest-permissions-576x1024.png" alt="" width="576" height="1024" class="aligncenter size-large wp-image-16399" srcset="/wp-content/uploads/2018/01/speedtest-permissions-576x1024.png 576w, /wp-content/uploads/2018/01/speedtest-permissions-169x300.png 169w, /wp-content/uploads/2018/01/speedtest-permissions-768x1365.png 768w, /wp-content/uploads/2018/01/speedtest-permissions.png 1080w" sizes="(max-width: 576px) 100vw, 576px" /></a></p>
+<p>The first three all seemed reasonable.  That last one, not so much:</p>
+<blockquote><p>
+<strong>Device ID &#038; call information</strong></p>
+<p>Allows the app to determine the phone number and device IDs, whether a call is active, and the remote number connected by a call
+</p></blockquote>
+<p>I want to run speed tests, not track phone calls.  The language isn&#8217;t exactly clear.  Is it saying it can only do that while I&#8217;m using the app?  Even if that is the case, I can&#8217;t think of any instances where I would want a speed test app to track my phone call information.</p>
+<p>There is still the option of using their web based test.  But you have to use the &#8220;desktop&#8221; view, because their mobile site only does one thing: redirect you to the app.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/01/24/speedtest-net-android-app-permissions/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

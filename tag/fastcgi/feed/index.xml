@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>fastcgi &#8211; Joseph Scott</title>
+	<atom:link href="/tag/fastcgi/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 08 Jan 2016 16:59:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>PHP Speaking FastCGI</title>
+		<link>/2016/01/08/php-speaking-fastcgi/</link>
+					<comments>/2016/01/08/php-speaking-fastcgi/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 08 Jan 2016 16:59:00 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[fastcgi]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14628</guid>
+
+					<description><![CDATA[PHP-FastCGI-Client is a handy tool for speaking the FastCGI protocol.]]></description>
+										<content:encoded><![CDATA[<p><a href="https://github.com/adoy/PHP-FastCGI-Client">PHP-FastCGI-Client</a> is a handy tool for speaking the FastCGI protocol.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/01/08/php-speaking-fastcgi/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>PHP on IIS</title>
+		<link>/2007/09/24/php-on-iis/</link>
+					<comments>/2007/09/24/php-on-iis/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 24 Sep 2007 23:13:13 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[fastcgi]]></category>
+		<category><![CDATA[iis]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[Windows]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/09/24/php-on-iis/</guid>
+
+					<description><![CDATA[Microsoft&#8217;s IIS.net site has a new section: PHP on IIS. This is kind of strange on several levels. First off is the idea of Microsoft supporting non-Microsoft server side languages in IIS. Yeah, you&#8217;ve been able to do this for a long time (I remember running a perl ISAPI module in IIS in the 90s), [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Microsoft&#8217;s <a href="http://www.iis.net/">IIS.net</a> site has a new section: <a href="http://www.iis.net/php">PHP on IIS</a>.  This is kind of strange on several levels.  First off is the idea of Microsoft supporting non-Microsoft server side languages in IIS.  Yeah, you&#8217;ve been able to do this for a long time (I remember running a perl ISAPI module in IIS in the 90s), but quite frankly it wasn&#8217;t that great.  Just getting it to run usually involved way too much voodoo.  It looks like we are starting to get something that resembles official support for PHP on IIS.</p>
+<p>Another strange think is that this was announced in conjunction with their Go Live release of <a href="http://www.iis.net/downloads/default.aspx?tabid=34&amp;g=6&amp;i=1521">FastCGI for IIS 5.1 and IIS 6.0</a>.  Those using IIS 7 will have to wait until Vista SP1 or running Server 2008 Beta 3 or better.  I suppose IIS 7 doesn&#8217;t have a large share of the IIS web server market so perhaps it isn&#8217;t much of an issue.</p>
+<p>It looks like FastCGI will be the official way to run PHP on IIS going forward.</p>
+<p>The IIS.net site has some documentation on how to get various PHP apps running on IIS, including <a href="http://www.iis.net/articles/view.aspx/IIS7/Hosting-Web-Applications/PHP/PHP-Applications-on-IIS---WordPress">WordPress on IIS</a>.</p>
+<p>My first choice is still a un*x box though <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/09/24/php-on-iis/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

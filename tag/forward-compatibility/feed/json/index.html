@@ -1,0 +1,37 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/forward-compatibility/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/forward-compatibility/",
+    "feed_url": "https://blog.josephscott.org/tag/forward-compatibility/feed/json/",
+    "language": "en-US",
+    "title": "forward-compatibility &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=8368",
+            "url": "https://blog.josephscott.org/2013/06/26/forward-compatibility-another-reason-for-named-parameters-in-php/",
+            "title": "Forward Compatibility, Another Reason for Named Parameters in PHP",
+            "content_html": "<p>While Anthony Ferrara&#8217;s <a href=\"http://blog.ircmaxell.com/2013/06/backwards-compatibility-is-for-suckers.html\">Backwards Compatibility Is For Suckers</a> starts off as mostly flame bait, he does bring up one important issue: forward compatibility.</p>\n<p>The PHP example he cites is the new <a href=\"http://us3.php.net/password_hash\">password_hash</a> function.  It looks like this:</p>\n<pre><code>password_hash( $password, $algo, array $options = array() );</code></pre>\n<p>Currently <code>$options</code> supports two values: <code>salt</code> and <code>cost</code>.  The forward compatibility part is that new values can be added to <code>$options</code> without having to change the function signature.</p>\n<p>This is the best you can do with PHP right now, which is a bummer.  The (much) better solution would be to have named parameter support.  Use Python as the reference for this.  No more hiding parameters in an opaque options array, instead expose all of them in the function signature.</p>\n<p>Until PHP has proper named parameter support we&#8217;ll have to continue the awkward use of arrays to hide current and future optional parameters.</p>\n",
+            "content_text": "While Anthony Ferrara&#8217;s Backwards Compatibility Is For Suckers starts off as mostly flame bait, he does bring up one important issue: forward compatibility.\nThe PHP example he cites is the new password_hash function.  It looks like this:\npassword_hash( $password, $algo, array $options = array() );\nCurrently $options supports two values: salt and cost.  The forward compatibility part is that new values can be added to $options without having to change the function signature.\nThis is the best you can do with PHP right now, which is a bummer.  The (much) better solution would be to have named parameter support.  Use Python as the reference for this.  No more hiding parameters in an opaque options array, instead expose all of them in the function signature.\nUntil PHP has proper named parameter support we&#8217;ll have to continue the awkward use of arrays to hide current and future optional parameters.",
+            "date_published": "2013-06-26T04:14:32-06:00",
+            "date_modified": "2013-06-26T04:14:32-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "anthony-ferrara",
+                "forward-compatibility",
+                "PHP",
+                "Posts"
+            ]
+        }
+    ]
+}

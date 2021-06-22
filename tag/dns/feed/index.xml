@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>dns &#8211; Joseph Scott</title>
+	<atom:link href="/tag/dns/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 26 Jan 2018 21:58:48 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>The Five Second DNS Lookup</title>
+		<link>/2018/01/26/the-five-second-dns-lookup/</link>
+					<comments>/2018/01/26/the-five-second-dns-lookup/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 26 Jan 2018 21:58:48 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[dns]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">/?p=16387</guid>
+
+					<description><![CDATA[I was reviewing the waterfall results from a WebPageTest.org test recently and I came across a third party resource that look 5 seconds to do a DNS lookup: To be exact it took 5.031 seconds. The parameters of the test itself were nothing exciting, Chrome from Virginia with the &#8220;Cable&#8221; network profile ( 5/1 Mbps, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was reviewing the waterfall results from a <a href="https://www.webpagetest.org/">WebPageTest.org</a> test recently and I came across a third party resource that look 5 seconds to do a DNS lookup:</p>
+<p><a href="/wp-content/uploads/2018/01/dns-time.jpg"><img loading="lazy" src="/wp-content/uploads/2018/01/dns-time-1024x644.jpg" alt="" width="840" height="528" class="aligncenter size-large wp-image-16388" srcset="/wp-content/uploads/2018/01/dns-time-1024x644.jpg 1024w, /wp-content/uploads/2018/01/dns-time-300x189.jpg 300w, /wp-content/uploads/2018/01/dns-time-768x483.jpg 768w, /wp-content/uploads/2018/01/dns-time.jpg 1192w" sizes="(max-width: 840px) 100vw, 840px" /></a></p>
+<p>To be exact it took 5.031 seconds.  The parameters of the test itself were nothing exciting, Chrome from Virginia with the &#8220;Cable&#8221; network profile ( 5/1 Mbps, 28 ms RTT ).  The DNS lookup for the initial page request only took 0.059 seconds, so this wasn&#8217;t a function of the test parameters.</p>
+<p><a href="/wp-content/uploads/2018/01/dns-time-bar.png"><img loading="lazy" src="/wp-content/uploads/2018/01/dns-time-bar.png" alt="" width="814" height="40" class="aligncenter size-full wp-image-16392" srcset="/wp-content/uploads/2018/01/dns-time-bar.png 814w, /wp-content/uploads/2018/01/dns-time-bar-300x15.png 300w, /wp-content/uploads/2018/01/dns-time-bar-768x38.png 768w" sizes="(max-width: 814px) 100vw, 814px" /></a></p>
+<p>When you see an entry like that it is a good reminder not to take DNS performance for granted.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/01/26/the-five-second-dns-lookup/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>.invalid</title>
+		<link>/2015/06/12/invalid/</link>
+					<comments>/2015/06/12/invalid/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 12 Jun 2015 14:10:54 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[dns]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12764</guid>
+
+					<description><![CDATA[All these years and I&#8217;d never come across .invalid. From RFC 2606: There is a need for top level domain (TLD) names that can be used for creating names which, without fear of conflicts with current or future actual TLD names in the global DNS, can be used for private testing of existing DNS related [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>All these years and I&#8217;d never come across <strong>.invalid</strong>.  From <a href="http://tools.ietf.org/html/rfc2606">RFC 2606</a>:</p>
+<blockquote><p>
+There is a need for top level domain (TLD) names that can be used for<br />
+creating names which, without fear of conflicts with current or<br />
+future actual TLD names in the global DNS, can be used for private<br />
+testing of existing DNS related code, examples in documentation, DNS<br />
+related experimentation, invalid DNS names, or other similar uses.</p>
+<p>&#8230;</p>
+<p>To safely satisfy these needs, four domain names are reserved as<br />
+listed and described below.</p>
+<pre>
+                   .test
+                .example
+                .invalid
+              .localhost
+</pre>
+<p>&#8220;.test&#8221; is recommended for use in testing of current or new DNS<br />
+related code.</p>
+<p>&#8220;.example&#8221; is recommended for use in documentation or as examples.</p>
+<p>&#8220;.invalid&#8221; is intended for use in online construction of domain<br />
+names that are sure to be invalid and which it is obvious at a<br />
+glance are invalid.</p>
+<p>The &#8220;.localhost&#8221; TLD has traditionally been statically defined in<br />
+host DNS implementations as having an A record pointing to the<br />
+loop back IP address and is reserved for such use.  Any other use<br />
+would conflict with widely deployed code which assumes this use.
+</p></blockquote>
+<p>On a related note, RFC 2606 is also where <code>example.com</code>, <code>example.net</code>, and <code>example.edu</code> are reserved.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/06/12/invalid/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>WordPress.com #3 in Worldwide DNS Performance</title>
+		<link>/2015/03/25/wordpress-com-3-in-worldwide-dns-performance/</link>
+					<comments>/2015/03/25/wordpress-com-3-in-worldwide-dns-performance/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 25 Mar 2015 15:07:33 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[dns]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[wordpress.com]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11912</guid>
+
+					<description><![CDATA[Two weeks ago I mentioned dnsperf.com. After that I reached out to @jimaek about adding WordPress.com to the list of measured providers. It has been super exciting to see WordPress.com DNS performance rank #3 worldwide: We are behind second place EdgeCast by just 0.66ms. Serious kudos to our systems and network operations teams on including [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Two weeks ago <a href="https://josephscott.org/archives/2015/03/dns-performance/">I mentioned dnsperf.com</a>.  After that I reached out to <a href="https://twitter.com/jimaek">@jimaek</a> about adding <a href="https://wordpress.com/">WordPress.com</a> to the list of measured providers.</p>
+<p>It has been super exciting to see <a href="http://www.dnsperf.com/">WordPress.com DNS performance rank #3 worldwide</a>:</p>
+<p><img loading="lazy" src="/wp-content/uploads/2015/03/dnsperf-wpcom-1-1.png" alt="dnsperf-wpcom-1" width="830" height="452" class="aligncenter size-full wp-image-11916" srcset="/wp-content/uploads/2015/03/dnsperf-wpcom-1-1.png 830w, /wp-content/uploads/2015/03/dnsperf-wpcom-1-1-300x163.png 300w, /wp-content/uploads/2015/03/dnsperf-wpcom-1-1-768x418.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></p>
+<p>We are behind second place EdgeCast by just 0.66ms.</p>
+<p>Serious kudos to our systems and network operations teams on including DNS as part of our Anycast network, which made this level of performance possible.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/03/25/wordpress-com-3-in-worldwide-dns-performance/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>DNS Performance</title>
+		<link>/2015/03/11/dns-performance/</link>
+					<comments>/2015/03/11/dns-performance/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 11 Mar 2015 15:28:29 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[dns]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11759</guid>
+
+					<description><![CDATA[DNSPerf.com tracks the response time for various providers. You can drill down to see the response time history for each provider as well. To pick one example: namecheap.]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.dnsperf.com/">DNSPerf.com</a> tracks the response time for various providers.</p>
+<p><a href="/wp-content/uploads/2015/03/dnsperf-world-1.png"><img loading="lazy" src="/wp-content/uploads/2015/03/dnsperf-world-1.png" alt="dnsperf-world" width="785" height="633" class="aligncenter size-full wp-image-11768" srcset="/wp-content/uploads/2015/03/dnsperf-world-1.png 785w, /wp-content/uploads/2015/03/dnsperf-world-1-300x242.png 300w, /wp-content/uploads/2015/03/dnsperf-world-1-768x619.png 768w" sizes="(max-width: 785px) 100vw, 785px" /></a></p>
+<p>You can drill down to see the response time history for each provider as well.  To pick one example: <a href="http://www.dnsperf.com/provider/Namecheap">namecheap</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/03/11/dns-performance/feed/</wfw:commentRss>
+			<slash:comments>9</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>DNS: L-Root</title>
+		<link>/2015/03/09/dns-l-root/</link>
+					<comments>/2015/03/09/dns-l-root/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 09 Mar 2015 14:55:38 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[dns]]></category>
+		<category><![CDATA[icann]]></category>
+		<category><![CDATA[l-root]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11642</guid>
+
+					<description><![CDATA[L-Root ( one of the 13 root DNS servers ) locations around the globe: One list puts the count at 150. How did ICANN end up with 150 anycast sites for L-Root? Turns out you can host an L-Root instance in your own network ( called an L-Single ).]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.dns.icann.org/">L-Root</a> ( one of the <a href="https://www.iana.org/domains/root/servers">13 root DNS servers</a> ) locations around the globe:</p>
+<p><a href="http://www.dns.icann.org/index.html%3Fp=689.html"><img loading="lazy" src="/wp-content/uploads/2015/03/l-root-world-1.png" alt="l-root-world" width="471" height="251" class="aligncenter size-full wp-image-11746" srcset="/wp-content/uploads/2015/03/l-root-world-1.png 471w, /wp-content/uploads/2015/03/l-root-world-1-300x160.png 300w" sizes="(max-width: 471px) 100vw, 471px" /></a></p>
+<p>One <a href="https://blog.thousandeyes.com/comparing-dns-root-server-performance/">list</a> puts the count at 150.</p>
+<p>How did ICANN end up with 150 anycast sites for L-Root?  Turns out you can <a href="http://www.dns.icann.org/index.html%3Fp=2205.html">host an L-Root instance in your own network</a> ( called an L-Single ).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/03/09/dns-l-root/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Dot Kitchen Sink</title>
+		<link>/2014/03/06/dot-kitchen-sink/</link>
+					<comments>/2014/03/06/dot-kitchen-sink/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 06 Mar 2014 16:30:39 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[dns]]></category>
+		<category><![CDATA[domains]]></category>
+		<category><![CDATA[icann]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9965</guid>
+
+					<description><![CDATA[ICANN ( the Internet Corporation for Assigned Names and Numbers ), the people responsible the IPv4 &#038; IPv6 address space and the top-level domain ( TLDs ) space, are rolling out a large list of new top-level domains. Tired of being limited to the traditional .com / .net / .org and country domains? Soon you&#8217;ll [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>ICANN ( the Internet Corporation for Assigned Names and Numbers ), the people responsible the IPv4 &#038; IPv6 address space and the top-level domain ( TLDs ) space, are rolling out a large <a href="http://newgtlds.icann.org/en/program-status/delegated-strings" title=".PLUMBING really?">list of new top-level domains</a>.  Tired of being limited to the traditional .com / .net / .org and country domains?  Soon you&#8217;ll have a bizarre set of new possibilities.</p>
+<p>Here is a sample of what is coming:</p>
+<pre>
+.DOMAINS
+.RECIPES
+.NINJA
+.EMAIL
+.ZONE
+.MONASH
+.XYZ
+.FISH
+</pre>
+<p>Some of these have obvious categories, like .recipes for recipe web sites.  Others I think are just random names people pulled out of a hat, like .ninja.</p>
+<p>The title of this post, Dot Kitchen Sink, was meant to be a joke, but there is some truth to it.  On the list  of new TLDs is .kitchen, so you could have a joseph@sink.kitchen email address or joseph.kitchen/sink/ as a web site.  Telling someone your email address in a voice conversation is only going to get harder.</p>
+<p>Time to go all the way with dot.dot just to make things even more confusing <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/03/06/dot-kitchen-sink/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>NSTX, IP-over-DNS</title>
+		<link>/2010/08/31/nstx-ip-over-dns/</link>
+					<comments>/2010/08/31/nstx-ip-over-dns/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 31 Aug 2010 19:38:51 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[dns]]></category>
+		<category><![CDATA[nstx]]></category>
+		<category><![CDATA[tcp/ip]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2600</guid>
+
+					<description><![CDATA[NSTX, IP-over-DNS &#8211; clever hack (via Jeremy Zawodny)]]></description>
+										<content:encoded><![CDATA[<p><a href="http://thomer.com/howtos/nstx.html">NSTX, IP-over-DNS</a> &#8211; clever hack (via <a href="http://jeremy.zawodny.com/linkblog/">Jeremy Zawodny</a>)</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/08/31/nstx-ip-over-dns/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Slow Loading Websites in Mac OS X Web Browsers</title>
+		<link>/2009/12/18/slow-loading-websites-in-mac-os-x-web-browsers/</link>
+					<comments>/2009/12/18/slow-loading-websites-in-mac-os-x-web-browsers/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 18 Dec 2009 16:14:21 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[dns]]></category>
+		<category><![CDATA[ipv6]]></category>
+		<category><![CDATA[macosx]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1620</guid>
+
+					<description><![CDATA[I noticed when trying to reach www.freebsd.org the last week on a mac that it took forever, just sitting there spinning on an empty page. But on the same network in loaded right away on a Windows XP system. I thought that was rather odd, but moved on and didn&#8217;t think about it again until [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I noticed when trying to reach <a href="http://www.freebsd.org/">www.freebsd.org</a> the last week on a mac that it took forever, just sitting there spinning on an empty page.  But on the same network in loaded right away on a Windows XP system.  I thought that was rather odd, but moved on and didn&#8217;t think about it again until last night.  I tried it again and noticed the same problem, using any browser on the mac it never loaded, on Windows XP showed up right away.</p>
+<p>That&#8217;s when a little inspiration showed up.  I knew that www.freebsd.org was also available via IPv6, I wonder if Mac OS X was trying to reach it via IPv6 first.  If it was then it would never succeed as my DSL provides IPv4 and I don&#8217;t have a IPv6 tunnel setup.  First I confirmed that www.freebsd.org had an IPv6 address, <code>host www.freebsd.org</code> provided this:</p>
+<p>[sourcecode highlight=&#8221;2&#8243;]<br />
+www.freebsd.org has address 69.147.83.33<br />
+www.freebsd.org has IPv6 address 2001:4f8:fff6::21<br />
+www.freebsd.org mail is handled by 0 .<br />
+[/sourcecode]</p>
+<p>The second line there confirmed that there was indeed an IPv6 DNS address for www.freebsd.org.</p>
+<p>Next was a quick trip to the network preferences on the mac.  Click the &#8216;Advanced&#8217; button for your network connection and under the TCP/IP section you&#8217;ll see an option labeled &#8216;Configure IPv6&#8217;.  Mine was set to &#8216;Automatically&#8217;, which I then changed to &#8216;Off&#8217;.  Click &#8216;OK&#8217; then &#8216;Apply&#8217;.  That turned off IPv6 support for my network connection on the mac.</p>
+<p>And sure enough www.freebsd.org loaded up right away again after that.</p>
+<p>If you aren&#8217;t using IPv6 on your network then it&#8217;s probably worth just turning it off.  I&#8217;m rather surprised that I didn&#8217;t run into this sooner.  I guess there aren&#8217;t that many websites out there advertising IPv6 addresses.</p>
+<p><b>Update:</b> I noticed that us2.php.net has an IPv6 address listed as well, which explains why I&#8217;d had problems loading that site too.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/12/18/slow-loading-websites-in-mac-os-x-web-browsers/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Qwest Redirecting DNS lookups</title>
+		<link>/2008/09/29/qwest-redirecting-dns-lookups/</link>
+					<comments>/2008/09/29/qwest-redirecting-dns-lookups/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 29 Sep 2008 16:49:46 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[dns]]></category>
+		<category><![CDATA[qwest]]></category>
+		<category><![CDATA[web.help]]></category>
+		<category><![CDATA[yahoo]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1178</guid>
+
+					<description><![CDATA[Qwest has started redirecting DNS queries to their own servers. Not because I asked them to, they did it to start pushing their own search results page when DNS queries failed (like so many others have and some still do). This new &#8220;service&#8221; is called Web.Help. In order to do this they reset my DSL [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.qwest.com/">Qwest</a> has started redirecting DNS queries to their own servers.  Not because I asked them to, they did it to start pushing their own search results page when DNS queries failed (like so many others have and some still do).  This new &#8220;service&#8221; is called <a href="http://www.qwest.net/web.help/">Web.Help</a>.  In order to do this they reset my DSL line this morning (which was irritating), but they did at least provide some links on what this.</p>
+<p>After reading through some of their information on their new &#8220;service&#8221; I found a link indicating that I could opt out (not that I ever opted in).  I&#8217;m not sure what they were thinking here though, instead of the &#8220;opt out&#8221; taking me to a page where I could opt out, it took me to another documentation page on their new service.  I had to dig through three or four layers of &#8220;opt out&#8221; links before I got to a page that would actually turn this off.  Which of course reset my DSL connection again about 5 minutes later.  We&#8217;ll see where this ends up.</p>
+<p>The search results they were showing for failed DNS queries were from <a href="http://yahoo.com/">Yahoo</a>.  I wonder if Yahoo is paying Qwest to do this.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/09/29/qwest-redirecting-dns-lookups/feed/</wfw:commentRss>
+			<slash:comments>13</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

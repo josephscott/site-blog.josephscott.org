@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>npm &#8211; Joseph Scott</title>
+	<atom:link href="/tag/npm/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 21 Mar 2014 18:06:42 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>NPM As A Blocker</title>
+		<link>/2014/03/21/npm-blocker/</link>
+					<comments>/2014/03/21/npm-blocker/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 21 Mar 2014 18:06:42 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[box]]></category>
+		<category><![CDATA[nodejs]]></category>
+		<category><![CDATA[npm]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10081</guid>
+
+					<description><![CDATA[From Handling Node.js Dependencies At Box: We would have a lot of explaining to do if a deployment ended up canceled because the public npm registry was down. &#8230; The most important requirement in this regard is deploying without dependence on the public npm registry. I&#8217;ve brought up this issue in just about every conversation [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>From <a href='http://tech.blog.box.com/2014/03/handling-node-js-dependencies-at-box/' title="Nice to see public threads addressing this issue.">Handling Node.js Dependencies At Box</a>:</p>
+<blockquote><p>
+We would have a lot of explaining to do if a deployment ended up canceled because the public npm registry was down.</p>
+<p>&#8230;</p>
+<p>The most important requirement in this regard is deploying without dependence on the public npm registry.
+</p></blockquote>
+<p>I&#8217;ve brought up this issue in just about every conversation I&#8217;ve had with people about NPM.  What happens when  the registry goes down or is unavailable for any reason?  If your deploy mechanism is dependent on the registry being up, it is going to cause a whole lot of pain.  And you know that will wait to happen until the worst possible moment.</p>
+<p>I am surprised at the number of times people seem to have not considered that an issue.</p>
+<p>Here is the bottom line, from the same post &#8211;</p>
+<blockquote><p>
+At any given time, what’s checked-in to source control is ready to be deployed into production on its own.
+</p></blockquote>
+<p>I&#8217;ve described it this way: <strong>if it is code that you depend on in production then it should be in your source control repo</strong>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/03/21/npm-blocker/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

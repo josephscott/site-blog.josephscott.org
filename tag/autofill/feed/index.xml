@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>autofill &#8211; Joseph Scott</title>
+	<atom:link href="/tag/autofill/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 24 Jun 2015 14:22:49 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Autofill Fields</title>
+		<link>/2015/06/24/autofill-fields/</link>
+					<comments>/2015/06/24/autofill-fields/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 24 Jun 2015 14:22:49 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[autofill]]></category>
+		<category><![CDATA[html]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12863</guid>
+
+					<description><![CDATA[The HTML spec section on autofill has a list of autofill field keywords. Things like address-line1, cc-exp-month, and so on. There are examples of how to use these in the Help users checkout faster with Autofill article at html5rocks.com.]]></description>
+										<content:encoded><![CDATA[<p>The HTML spec section on <a href="https://html.spec.whatwg.org/multipage/forms.html#autofill">autofill</a> has a list of <a href="https://html.spec.whatwg.org/multipage/forms.html#autofill-field">autofill field keywords</a>.  Things like <code>address-line1</code>, <code>cc-exp-month</code>, and so on.</p>
+<p>There are examples of how to use these in the <a href="http://updates.html5rocks.com/2015/06/checkout-faster-with-Autofill">Help users checkout faster with Autofill</a> article at html5rocks.com.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/06/24/autofill-fields/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

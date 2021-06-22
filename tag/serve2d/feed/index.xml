@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>serve2d &#8211; Joseph Scott</title>
+	<atom:link href="/tag/serve2d/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 22 Oct 2015 12:30:08 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>serve2d</title>
+		<link>/2015/10/22/serve2d/</link>
+					<comments>/2015/10/22/serve2d/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 22 Oct 2015 12:30:08 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[serve2d]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13464</guid>
+
+					<description><![CDATA[Proxying multiple protocols on a single port, serve2d: serve2 allows you to serve multiple protocols on a single socket. Example handlers include proxy, HTTP, TLS (through which HTTPS is handled), ECHO and DISCARD. More can easily be added, as long as the protocol sends some data that can be recognized. The proxy handler allows you [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Proxying multiple protocols on a single port, <a href="https://github.com/joushou/serve2d">serve2d</a>:</p>
+<blockquote><p>
+serve2 allows you to serve multiple protocols on a single socket. Example handlers include proxy, HTTP, TLS (through which HTTPS is handled), ECHO and DISCARD. More can easily be added, as long as the protocol sends some data that can be recognized. The proxy handler allows you to redirect the connection to external services, such as OpenSSH or Nginx, in case you don&#8217;t want or can&#8217;t use a Go implementation. In most cases, proxy will be sufficient.
+</p></blockquote>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/22/serve2d/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

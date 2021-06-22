@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ssh &#8211; Joseph Scott</title>
+	<atom:link href="/tag/ssh/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 29 Oct 2013 17:15:58 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Listen for SSL and SSH on the Same Port</title>
+		<link>/2013/10/29/listen-for-ssl-and-ssh-on-the-same-port/</link>
+					<comments>/2013/10/29/listen-for-ssl-and-ssh-on-the-same-port/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 29 Oct 2013 17:15:58 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[corkscrew]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[ssh]]></category>
+		<category><![CDATA[ssl]]></category>
+		<category><![CDATA[sslh]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9293</guid>
+
+					<description><![CDATA[Many corporate firewalls will limit outgoing connections to ports 80 and 443 in a vain effort to restrict access to non-web services. You could run SSH on port 80 or 443 on a VPS or dedicated server, but if you have one of those you are probably already using it to host a small web [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Many corporate firewalls will limit outgoing connections to ports 80 and 443 in a vain effort to restrict access to non-web services.  You could run SSH on port 80 or 443 on a VPS or dedicated server, but if you have one of those you are probably already using it to host a small web site. Wouldn&#8217;t it be nice if your server could listen for both SSH and HTTP/S on port 80 and 443?  That is where <a href="http://www.rutschle.net/tech/sslh.shtml">sslh</a> comes in:</p>
+<blockquote><p>
+sslh accepts connections on specified ports, and forwards them further based on tests performed on the first data packet sent by the remote client.</p>
+<p>Probes for HTTP, SSL, SSH, OpenVPN, tinc, XMPP are implemented, and any other protocol that can be tested using a regular expression, can be recognised. A typical use case is to allow serving several services on port 443 (e.g. to connect to ssh from inside a corporate firewall, which almost never block port 443) while still serving HTTPS on that port.</p>
+<p>Hence sslh acts as a protocol demultiplexer, or a switchboard. Its name comes from its original function to serve SSH and HTTPS on the same port.
+</p></blockquote>
+<p>Source code is available at <a href="https://github.com/yrutschle/sslh">https://github.com/yrutschle/sslh</a>.</p>
+<p>For small uses cases this may come in handy.  If you were constantly needing to SSH to port 80 or 443 then I&#8217;d recommend just spending a few dollars a month to get a VPS dedicated to that task.</p>
+<p>If you are stuck in a limited corporate network another tool you may find useful is <a href="http://www.agroman.net/corkscrew/">corkscrew</a>, which tunnels SSH connections through HTTP proxies.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/10/29/listen-for-ssl-and-ssh-on-the-same-port/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>autotunnel</title>
+		<link>/2011/03/04/autotunnel/</link>
+					<comments>/2011/03/04/autotunnel/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 04 Mar 2011 21:03:54 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[autotunnel]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[proxy]]></category>
+		<category><![CDATA[ssh]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3705</guid>
+
+					<description><![CDATA[This is a set of scripts for OS X that will automatically connect your SSH SOCKS proxy when you switch to a SOCKS-enabled Network Location. Basically, we add a LaunchAgent to detect when your active Network Location profile has changed. If set to a SOCKS-enabled profile, it enables another LaunchAgent to start an autossh session. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+This is a set of scripts for OS X that will automatically connect your SSH SOCKS proxy when you switch to a SOCKS-enabled Network Location.</p>
+<p>Basically, we add a LaunchAgent to detect when your active Network Location profile has changed. If set to a SOCKS-enabled profile, it enables another LaunchAgent to start an autossh session.  If changed to a non-SOCKS profile, we disable that LaunchAgent, stopping autossh. Easy peezy.
+</p></blockquote>
+<p><a href='https://github.com/lhl/autotunnel'>lhl/autotunnel &#8211; GitHub</a></p>
+<p>I like the idea of using the network location to manage making the right ssh connections for a SOCKS proxy to work automatically.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/03/04/autotunnel/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Tue 8 Jan 2008</title>
+		<link>/2008/01/08/links-for-tue-8-jan-2008/</link>
+					<comments>/2008/01/08/links-for-tue-8-jan-2008/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 09 Jan 2008 00:30:03 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[facebox]]></category>
+		<category><![CDATA[fuse]]></category>
+		<category><![CDATA[grabfs]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jquery]]></category>
+		<category><![CDATA[lightbox]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[macfuse]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[putty]]></category>
+		<category><![CDATA[puttytray]]></category>
+		<category><![CDATA[screen]]></category>
+		<category><![CDATA[screenshot]]></category>
+		<category><![CDATA[ssh]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/01/08/links-for-tue-8-jan-2008/</guid>
+
+					<description><![CDATA[Recover Truncated PHP Serialized Arrays // ShaunInman.com &#8211; Another example of why databases should NEVER silenty truncate data. If the data doesn&#8217;t fit in the field then the insert/update needs to fail. Tags: php database Facebox 1.0 &#8211; Another lightbox clone in the style of Facebook. Requires JQuery. Tags: facebox jquery javascript lightbox Beastie Blog [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://www.shauninman.com/archive/2008/01/08/recovering_truncated_php_serialized_arrays">Recover Truncated PHP Serialized Arrays // ShaunInman.com</a> &#8211; Another example of why databases should NEVER silenty truncate data.  If the data doesn&#8217;t fit in the field then the insert/update needs to fail. <br /> Tags: <a href="http://del.icio.us/josephscott/php">php</a> <a href="http://del.icio.us/josephscott/database">database</a>  </p>
+</li>
+<li>
+<p><a href="http://famspam.com/facebox">Facebox 1.0</a> &#8211; Another lightbox clone in the style of Facebook.  Requires JQuery. <br /> Tags: <a href="http://del.icio.us/josephscott/facebox">facebox</a> <a href="http://del.icio.us/josephscott/jquery">jquery</a> <a href="http://del.icio.us/josephscott/javascript">javascript</a> <a href="http://del.icio.us/josephscott/lightbox">lightbox</a>  </p>
+</li>
+<li>
+<p><a href="http://beastieblog.com/?p=76">Beastie Blog | Using Screen to log yourself.</a> &#8211; I&#8217;ve never used the logging feature of screen, might use it next time I setup a new server though. <br /> Tags: <a href="http://del.icio.us/josephscott/screen">screen</a>  </p>
+</li>
+<li>
+<p><a href="http://osxbook.com/book/bonus/chapter11/grabfs/">GrabFS: The Screenshot File System</a> &#8211; Not sure I&#8217;ll ever use it, but this is just an awesome hack. <br /> Tags: <a href="http://del.icio.us/josephscott/macosx">macosx</a> <a href="http://del.icio.us/josephscott/screenshot">screenshot</a> <a href="http://del.icio.us/josephscott/grabfs">grabfs</a> <a href="http://del.icio.us/josephscott/fuse">fuse</a> <a href="http://del.icio.us/josephscott/macfuse">macfuse</a>  </p>
+</li>
+<li>
+<p><a href="http://www.xs4all.nl/~whaa/putty/">PuTTY Tray</a> &#8211; Always important to have a good ssh client for your Windows box. <br /> Tags: <a href="http://del.icio.us/josephscott/putty">putty</a> <a href="http://del.icio.us/josephscott/puttytray">puttytray</a> <a href="http://del.icio.us/josephscott/ssh">ssh</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/01/08/links-for-tue-8-jan-2008/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

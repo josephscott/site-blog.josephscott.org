@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>coding-horror &#8211; Joseph Scott</title>
+	<atom:link href="/tag/coding-horror/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 09 Apr 2012 16:25:05 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Slow Hashing</title>
+		<link>/2012/04/09/slow-hashing/</link>
+					<comments>/2012/04/09/slow-hashing/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 09 Apr 2012 16:25:05 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[bcrypt]]></category>
+		<category><![CDATA[coding-horror]]></category>
+		<category><![CDATA[crypt]]></category>
+		<category><![CDATA[hash]]></category>
+		<category><![CDATA[md5]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=5676</guid>
+
+					<description><![CDATA[The majority of the Coding Horror: Speed Hashing post talks about speed based on MD5. It isn&#8217;t until the very bottom that you see this: If you are a developer: Use bcrypt or PBKDF2 exclusively to hash anything you need to be secure. These new hashes were specifically designed to be difficult to implement on [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The majority of the <a href='http://www.codinghorror.com/blog/2012/04/speed-hashing.html'>Coding Horror: Speed Hashing</a> post talks about speed based on MD5.  It isn&#8217;t until the very bottom that you see this:</p>
+<blockquote><p>
+If you are a developer:</p>
+<p>Use bcrypt or PBKDF2 exclusively to hash anything you need to be secure. These new hashes were specifically designed to be difficult to implement on GPUs. Do not use any other form of hash. Almost every other popular hashing scheme is vulnerable to brute forcing by arrays of commodity GPUs, which only get faster and more parallel and easier to program for every year.
+</p></blockquote>
+<p>I&#8217;m not sure why that wasn&#8217;t at the very top.</p>
+<p>If you are still using MD5 to hash passwords (or worse, aren&#8217;t hashing passwords at all) then please stop and go use <a href="http://bcrypt.sourceforge.net/">bcrypt</a>.  For those using PHP <a href="http://www.openwall.com/phpass/">phpass</a> is a great option.</p>
+<p>For password hashes you want the process to be slow.  There is of course a trade off.  Here is a PHP example:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+crypt( &#8216;password&#8217;, &#8216;$2a$12$usesomesillystringforsalt$&#8217; );<br />
+[/sourcecode]</p>
+<p>The <code>$2a</code> tells <a href="http://us.php.net/crypt">crypt</a> to use <code>CRYPT_BLOWFISH</code>.  The <code>$15$</code> is the cost parameter, ranging from 04 to 31.  Running this on my Core 2 Duo laptop takes 0.4 seconds.  Increasing the cost parameter increases the amount of time it takes to compute the hash.  For my Core 2 Duo it looks like:</p>
+<p><strong>Cost 12:</strong> 00.4 seconds<br />
+<strong>Cost 13:</strong> 00.7 seconds<br />
+<strong>Cost 14:</strong> 01.4 seconds<br />
+<strong>Cost 15:</strong> 02.8 seconds<br />
+<strong>Cost 16:</strong> 05.5 seconds<br />
+<strong>Cost 17:</strong> 11.1 seconds<br />
+<strong>Cost 18:</strong> 22.1 seconds</p>
+<p>While having a cost of 18 might sound exciting from the point of view of making brute force attacks more difficult it would make for a horrible user experience.  Remember that each time a use fills out the log in form on your site you have to hash the password they entered to see if the matches the one your in your database.  Waiting 22 seconds per log in attempt would drive your users nuts.</p>
+<p>So how high should the cost be to make brute force attacks impractical, but low enough to still provide a good user experience?  Some of that is going to depend on the power of your servers, but for now lets stick with my Core 2 Duo example.  If your possible password combinations were lower case letters, upper case letters, and numbers for a 7 character string then you&#8217;d be looking at 62 ^ 7, or 3,521,614,606,208 combinations.</p>
+<p>The speed hashing post indicated that for MD5 all 7 character passwords of that type could be calculated in 4 minutes.  If we choose a cost of 13 (meaning 0.7 seconds per password) and I&#8217;ve done my math correctly, it would take 159,528 years to do the same thing on my Core 2 Duo.</p>
+<p>If your server is 10 times faster than my Core 2 Duo then a cost of 13 may still be fairly reasonable.  A single hash would take 0.07 seconds and computing hashes for all 7 character passwords would take 15,952 years.  Even another 100x increase in speed would still mean 159 years.</p>
+<p>None of this takes into consideration the possibility of spreading the brute force attack across multiple servers of course.  But the concept is still the same.  Slower hash techniques mean you&#8217;ll need a larger number of servers to compute all of the possible combinations in a reasonable amount of time compared to a very fast hash, like MD5.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/04/09/slow-hashing/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>rafe-colburn &#8211; Joseph Scott</title>
+	<atom:link href="/tag/rafe-colburn/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 03 Apr 2015 15:18:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Underestimating Perl</title>
+		<link>/2015/04/03/underestimating-perl/</link>
+					<comments>/2015/04/03/underestimating-perl/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 03 Apr 2015 15:18:44 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[perl]]></category>
+		<category><![CDATA[rafe-colburn]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10964</guid>
+
+					<description><![CDATA[Rafe Colburn on Perl outperforming sed and awk: There are a couple of lessons here. The first is that when you’re doing simple text processing, you may as well just use Perl one-liners. The idea that sed and awk are superior because they are smaller and simpler is not borne out by real-world results. (They [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Rafe Colburn on <a href="http://rc3.org/2014/08/28/surprisingly-perl-outperforms-sed-and-awk/">Perl outperforming sed and awk</a>:</p>
+<blockquote><p>
+There are a couple of lessons here. The first is that when you’re doing simple text processing, you may as well just use Perl one-liners. The idea that sed and awk are superior because they are smaller and simpler is not borne out by real-world results. (They may be faster for some things, but it’s clearly no sure thing.) Perl is mature and is obviously highly optimized.</p>
+<p>The second is that while premature optimization may be the root of all evil, when you’re performing the same operation billions of times, even very small gains in efficiency can have huge impact. When the CPU on the server was pegged at 100% for a few days and the load average spiked at over 200, every gain in efficiency became hugely important.
+</p></blockquote>
+<p>I&#8217;ve sliced and diced a lot of text with Perl ( mostly many years ago ), it will always have a fond place in my heart.  The <a href="http://www.catonmat.net/blog/introduction-to-perl-one-liners/">one-liner abilities</a> are legendary.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/04/03/underestimating-perl/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Longevity</title>
+		<link>/2015/03/19/longevity/</link>
+					<comments>/2015/03/19/longevity/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 19 Mar 2015 13:05:27 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[rafe-colburn]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11428</guid>
+
+					<description><![CDATA[Rafe Colburn on apps and the web, emphasis mine: If you care about the longevity of your work, you will publish it on Web pages that can be rendered in a browser. Nobody knows what will happen with apps or app stores in the future. If you publish something and want to make sure people [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Rafe Colburn on <a href="http://rc3.org/2014/11/18/some-thoughts-on-apps/">apps and the web</a>, emphasis mine:</p>
+<blockquote><p>
+If you care about the longevity of your work, you will publish it on Web pages that can be rendered in a browser. Nobody knows what will happen with apps or app stores in the future. <strong>If you publish something and want to make sure people can view it in 10 years, it needs to have a URL that works in a browser.</strong> If you want to make your work available to as many people as possible right now, you’ll publish it on a Web page.
+</p></blockquote>
+<p>Thinking about digital content in decades puts things in a very different perspective.  Sticking to the core features of the web is as close as we can get to carving something into digital stone.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/03/19/longevity/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Interviewing Methods</title>
+		<link>/2013/02/18/interviewing-methods/</link>
+					<comments>/2013/02/18/interviewing-methods/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 18 Feb 2013 18:28:31 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[hiring]]></category>
+		<category><![CDATA[interviews]]></category>
+		<category><![CDATA[rafe-colburn]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6725</guid>
+
+					<description><![CDATA[Nobody has convinced me that stressful “challenge” style interviews accurately model the work of software developers. People who do well at them are not necessarily more qualified than people who do poorly at them. Answering interview questions is itself a skill, and being good at it doesn’t mean you’ll necessarily be good at the job. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+Nobody has convinced me that stressful “challenge” style interviews accurately model the work of software developers. People who do well at them are not necessarily more qualified than people who do poorly at them. Answering interview questions is itself a skill, and being good at it doesn’t mean you’ll necessarily be good at the job. Etsy is iterating on how it builds a model of software engineers through the hiring process. Every company should be.</p>
+<p>&#8211; Rafe Colburn, <a href="http://rc3.org/2013/02/14/interviewing-is-just-a-model-of-employment/">Interviewing is just a model of employment</a>
+</p></blockquote>
+<p>I personally am not a huge fan of the &#8216;stump the candidate&#8217; interviews.  Ideally by the time someone has reached the interview level they&#8217;ve already shown a capacity to be generally qualified from a skills point of view.</p>
+<p>As a goal I like the idea an interview as a model of what regular employment would look like.  That makes the interview less of an interview and more of a trial process working on the same types of things that other devs at the company are doing.</p>
+<p>Another ideal is to regularly ask yourself, is our hiring process bringing in people who go on to be successful in their roles?  As devs we tweak and adjust code all the time, we should be open to doing the same with our interviewing and hiring methods.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/02/18/interviewing-methods/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

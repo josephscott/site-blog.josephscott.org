@@ -1,0 +1,124 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/",
+    "feed_url": "https://blog.josephscott.org/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: The State Of Full-Text Indexing For The Poor Man",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-514",
+            "url": "https://blog.josephscott.org/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-514",
+            "content_html": "swish-e does not support Unicode. End of story.\n\n&gt; In tsearch2 you end up adding a field to you table and then creating an index on that field.\n\nYes, and that is why it works much better. When you search and rank results, mysql reads the index, then has to reparse the text, whereas tsearch2 uses the canned pre-parsed tsvector in your table. Besides, since postgres compresses the text and vector, the resulting table size is the same as mysql. Postgres also does lexemization so your search results are much better.\n\nSome benchmarks for you. Read on ;)\n\nhttp://peufeu.free.fr/ftsbench/",
+            "content_text": "swish-e does not support Unicode. End of story.\n\n&gt; In tsearch2 you end up adding a field to you table and then creating an index on that field.\n\nYes, and that is why it works much better. When you search and rank results, mysql reads the index, then has to reparse the text, whereas tsearch2 uses the canned pre-parsed tsvector in your table. Besides, since postgres compresses the text and vector, the resulting table size is the same as mysql. Postgres also does lexemization so your search results are much better.\n\nSome benchmarks for you. Read on ;)\n\nhttp://peufeu.free.fr/ftsbench/",
+            "date_published": "2007-04-19T11:01:48-06:00",
+            "authors": [
+                {
+                    "name": "Peufeu",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/15919ef42c81128b6553998cea44750c?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Peufeu",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/15919ef42c81128b6553998cea44750c?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-513",
+            "url": "https://blog.josephscott.org/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-513",
+            "content_html": "i use innodb for mysql and i replicate all varchar/text data to a search index table each time there is an update or create. i think it is the best way because you get innodb and text search...until mysql release full text for innoDB",
+            "content_text": "i use innodb for mysql and i replicate all varchar/text data to a search index table each time there is an update or create. i think it is the best way because you get innodb and text search...until mysql release full text for innoDB",
+            "date_published": "2006-07-26T17:57:19-06:00",
+            "authors": [
+                {
+                    "name": "heri",
+                    "url": "http://www.sprinj.com",
+                    "avatar": "https://secure.gravatar.com/avatar/4fb289727af1b7e9176ba39d0bc7a3ff?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "heri",
+                "url": "http://www.sprinj.com",
+                "avatar": "https://secure.gravatar.com/avatar/4fb289727af1b7e9176ba39d0bc7a3ff?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-512",
+            "url": "https://blog.josephscott.org/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-512",
+            "content_html": "I am currently using Lucene plus either MySql or Postgres. However, I must say, it would be lot better if MySql could integrate CLucene into its implementation.",
+            "content_text": "I am currently using Lucene plus either MySql or Postgres. However, I must say, it would be lot better if MySql could integrate CLucene into its implementation.",
+            "date_published": "2005-07-06T20:58:57-06:00",
+            "authors": [
+                {
+                    "name": "Jian Chen",
+                    "url": "http://www.jhsystems.net",
+                    "avatar": "https://secure.gravatar.com/avatar/8966886660f9d2b8cf9ebc7c16507980?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Jian Chen",
+                "url": "http://www.jhsystems.net",
+                "avatar": "https://secure.gravatar.com/avatar/8966886660f9d2b8cf9ebc7c16507980?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-511",
+            "url": "https://blog.josephscott.org/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-511",
+            "content_html": "You can import data in to swish-e by writing a script that pulls things from your database and spits them out to standard output one at a time as simple HTML files - you then pipe that straight in to the swish-e indexer. All of our sites are dynamic / database driven, but we use the swish-e indexer to build an index of our content once a day. Then we use the Python swish-e binding to query the index for serving up actual search results (there are bindings for other languages as well).",
+            "content_text": "You can import data in to swish-e by writing a script that pulls things from your database and spits them out to standard output one at a time as simple HTML files - you then pipe that straight in to the swish-e indexer. All of our sites are dynamic / database driven, but we use the swish-e indexer to build an index of our content once a day. Then we use the Python swish-e binding to query the index for serving up actual search results (there are bindings for other languages as well).",
+            "date_published": "2004-08-09T15:14:44-06:00",
+            "authors": [
+                {
+                    "name": "Simon Willison",
+                    "url": "http://simon.incutio.com/",
+                    "avatar": "https://secure.gravatar.com/avatar/dac49bca00c7edd6546b14b9a9475a30?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Simon Willison",
+                "url": "http://simon.incutio.com/",
+                "avatar": "https://secure.gravatar.com/avatar/dac49bca00c7edd6546b14b9a9475a30?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-510",
+            "url": "https://blog.josephscott.org/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-510",
+            "content_html": "I don't remember coming across swish-e before, it certainly looks interesting.  I'm not sure how exactly this would integrate into a purely dynamic database drive site though.\n\nI'm glad you mentioned this though because I've got another project at work where this will come in very handy.",
+            "content_text": "I don't remember coming across swish-e before, it certainly looks interesting.  I'm not sure how exactly this would integrate into a purely dynamic database drive site though.\n\nI'm glad you mentioned this though because I've got another project at work where this will come in very handy.",
+            "date_published": "2004-08-09T13:30:20-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://joseph.randomnetworks.com/",
+                    "avatar": "https://secure.gravatar.com/avatar/407fb36bbf6a01e151680be9f408b5af?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://joseph.randomnetworks.com/",
+                "avatar": "https://secure.gravatar.com/avatar/407fb36bbf6a01e151680be9f408b5af?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-509",
+            "url": "https://blog.josephscott.org/2004/08/09/the-state-of-full-text-indexing-for-the-poor-man/#comment-509",
+            "content_html": "Have you looked at swish-e? It's an open source full text indexing engine: http://www.swish-e.org/\n\nI absolutely love it - it's what I used to build the search engine for http://www2.ljworld.com/search/ and http://www.visitlawrence.com/search/ , among others. You need to run the indexer periodically (we do it once a day) so it doesn't search your \"live\" data, rather a snapshot from last time you ran the indexer.",
+            "content_text": "Have you looked at swish-e? It's an open source full text indexing engine: http://www.swish-e.org/\n\nI absolutely love it - it's what I used to build the search engine for http://www2.ljworld.com/search/ and http://www.visitlawrence.com/search/ , among others. You need to run the indexer periodically (we do it once a day) so it doesn't search your \"live\" data, rather a snapshot from last time you ran the indexer.",
+            "date_published": "2004-08-09T12:54:35-06:00",
+            "authors": [
+                {
+                    "name": "Simon Willison",
+                    "url": "http://simon.incutio.com/",
+                    "avatar": "https://secure.gravatar.com/avatar/dac49bca00c7edd6546b14b9a9475a30?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Simon Willison",
+                "url": "http://simon.incutio.com/",
+                "avatar": "https://secure.gravatar.com/avatar/dac49bca00c7edd6546b14b9a9475a30?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

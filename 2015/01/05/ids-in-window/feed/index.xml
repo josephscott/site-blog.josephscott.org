@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: IDs in Window	</title>
+	<atom:link href="/2015/01/05/ids-in-window/feed/" rel="self" type="application/rss+xml" />
+	<link>/2015/01/05/ids-in-window/</link>
+	<description></description>
+	<lastBuildDate>Thu, 08 Jan 2015 19:26:06 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2015/01/05/ids-in-window/#comment-4276</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 08 Jan 2015 19:26:06 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11430#comment-4276</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2015/01/05/ids-in-window/#comment-4275&quot;&gt;Julien Genestoux (@julien51)&lt;/a&gt;.
+
+I don&#039;t recommend using &lt;code&gt;window.someid&lt;/code&gt; or &lt;code&gt;someid&lt;/code&gt; in regular code.  From what I&#039;ve seen ( the link to jsperf in the post ) using &lt;code&gt;document.getElementById( &#039;someid&#039; );&lt;/code&gt; is significantly faster.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2015/01/05/ids-in-window/#comment-4275">Julien Genestoux (@julien51)</a>.</p>
+<p>I don&#8217;t recommend using <code>window.someid</code> or <code>someid</code> in regular code.  From what I&#8217;ve seen ( the link to jsperf in the post ) using <code>document.getElementById( 'someid' );</code> is significantly faster.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Julien Genestoux (@julien51)		</title>
+		<link>/2015/01/05/ids-in-window/#comment-4275</link>
+
+		<dc:creator><![CDATA[Julien Genestoux (@julien51)]]></dc:creator>
+		<pubDate>Thu, 08 Jan 2015 19:12:57 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11430#comment-4275</guid>
+
+					<description><![CDATA[What is it that you don&#039;t recommend? using ids at all or just window.?
+Because, if you just use ids, they *will* be defined in the window scope, whether you use them or not!]]></description>
+			<content:encoded><![CDATA[<p>What is it that you don&#8217;t recommend? using ids at all or just window.?<br />
+Because, if you just use ids, they *will* be defined in the window scope, whether you use them or not!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

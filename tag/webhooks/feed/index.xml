@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>webhooks &#8211; Joseph Scott</title>
+	<atom:link href="/tag/webhooks/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 29 May 2014 15:14:18 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Dropbox Webhooks</title>
+		<link>/2014/05/29/dropbox-webhooks/</link>
+					<comments>/2014/05/29/dropbox-webhooks/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 29 May 2014 15:14:18 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[aws]]></category>
+		<category><![CDATA[dropbox]]></category>
+		<category><![CDATA[webhooks]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10482</guid>
+
+					<description><![CDATA[Dropbox launched support for webhooks. This is a great move. Amazon S3 does have something similar. You can enable notifications via their Simple Notification Service ( SNS ), but then you are charged for the SNS usage. For many people that will make it less appealing than traditional direct webhooks. Dropbox continues to use a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Dropbox <a href="https://www.dropbox.com/developers/blog/90/announcing-dropbox-webhooks">launched support for webhooks</a>.  This is a great move.</p>
+<p>Amazon S3 does have something similar.  You can enable <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html">notifications via their Simple Notification Service ( SNS )</a>, but then you are charged for the SNS usage.  For many people that will make it less appealing than traditional direct webhooks.</p>
+<p>Dropbox continues to use a mix of Amazon Web Services ( AWS ) and separate dedicated hardware to manage user file.  I wonder if they are using any AWS services to process what are likely millions of HTTP requests for webhooks.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/05/29/dropbox-webhooks/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Webhooks on WordPress.com</title>
+		<link>/2010/04/14/webhooks-on-wordpress-com/</link>
+					<comments>/2010/04/14/webhooks-on-wordpress-com/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 14 Apr 2010 23:18:28 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[hookpress]]></category>
+		<category><![CDATA[webhooks]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2190</guid>
+
+					<description><![CDATA[I&#8217;m thrilled to have webhooks on WordPress.com open for everyone today! Eoin Gallagher and I used mitcho&#8216;s HookPress WordPress plugin for this. I&#8217;ve been talking with mitcho and he&#8217;ll be incorporating some of our changes in the next release of HookPress. This is one of those foundational technologies that I&#8217;m really excited to have launched [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m thrilled to have <a href="http://en.blog.wordpress.com/2010/04/14/hook-line-and-sinker/">webhooks on WordPress.com</a> open for everyone today!  <a href="http://magp.ie/">Eoin Gallagher</a> and I used <a href="http://mitcho.com/">mitcho</a>&#8216;s <a href="http://wordpress.org/extend/plugins/hookpress/">HookPress</a> WordPress plugin for this.  I&#8217;ve been talking with mitcho and he&#8217;ll be incorporating some of our changes in the next release of HookPress.</p>
+<p>This is one of those foundational technologies that I&#8217;m really excited to have launched and even more excited to see what people us it for.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/04/14/webhooks-on-wordpress-com/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>cron &#8211; Joseph Scott</title>
+	<atom:link href="/tag/cron/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Oct 2015 16:32:34 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>PHP Cron Parser</title>
+		<link>/2015/10/19/php-cron-parser/</link>
+					<comments>/2015/10/19/php-cron-parser/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 19 Oct 2015 16:32:34 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[cron]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13310</guid>
+
+					<description><![CDATA[Previously I&#8217;d been asked about a PHP library that could parse cron schedules. I don&#8217;t remember who it was, so I&#8217;m going to post this here for reference and hope it gets to the right person. https://github.com/mtdowling/cron-expression, with how to articles: Cron Expression Parsing in PHP and Cron Expression Parser in PHP.]]></description>
+										<content:encoded><![CDATA[<p>Previously I&#8217;d been asked about a PHP library that could parse cron schedules.  I don&#8217;t remember who it was, so I&#8217;m going to post this here for reference and hope it gets to the right person.</p>
+<p><a href="https://github.com/mtdowling/cron-expression">https://github.com/mtdowling/cron-expression</a>, with how to articles: <a href="http://mtdowling.com/blog/2012/06/03/cron-expressions-in-php/">Cron Expression Parsing in PHP</a> and <a href="http://www.codediesel.com/php/cron-expression-parser-in-php/">Cron Expression Parser in PHP</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/19/php-cron-parser/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>lockrun</title>
+		<link>/2013/10/25/lockrun/</link>
+					<comments>/2013/10/25/lockrun/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 25 Oct 2013 14:55:15 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[cron]]></category>
+		<category><![CDATA[lockrun]]></category>
+		<category><![CDATA[solo]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6249</guid>
+
+					<description><![CDATA[Two years ago I mentioned Solo, which uses TCP/IP port binding to prevent a program from running more than once. For those that don&#8217;t want to use up ports or would rather stick to file locks for other reasons you can accomplish the same thing with lockrun. An example cron entry using lockrun: */5 * [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Two years ago I mentioned <a href="https://josephscott.org/archives/2011/09/solo/">Solo</a>, which uses TCP/IP port binding to prevent a program from running more than once.</p>
+<p>For those that don&#8217;t want to use up ports or would rather stick to file locks for other reasons you can accomplish the same thing with <a href='http://www.unixwiz.net/tools/lockrun.html'>lockrun</a>.</p>
+<p>An example cron entry using lockrun:</p>
+<blockquote><p>
+*/5 * * * * /usr/local/bin/lockrun &#8211;lockfile=/var/run/cacti.lockrun &#8212; /usr/local/bin/cron-cacti-poller</p>
+<p>IMPORTANT: Be sure to place the lockfile in a directory that only that user has the rights to, and not in /tmp (as this Tech Tip has previously suggested). If a different user has the ability to write to the directory, s/he could create a symbolic link from the target lockfile to some system file that uses locks the same way, and get the cron job to foul up the locking.<br />
+The file used, /var/run/cacti.lockrun, is created (if necessary), the lock acquired, and closed when finished. At no time does lockrun perform any file I/O: the file exists only to be the subject of locking requests.
+</p></blockquote>
+<p>Overall I like the Solo approach better, but it might not be a good option in every situation. In those cases lockrun looks like a good alternative.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/10/25/lockrun/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Solo</title>
+		<link>/2011/09/26/solo/</link>
+					<comments>/2011/09/26/solo/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 26 Sep 2011 20:20:22 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[cron]]></category>
+		<category><![CDATA[perl]]></category>
+		<category><![CDATA[solo]]></category>
+		<category><![CDATA[tcp/ip]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4792</guid>
+
+					<description><![CDATA[Solo is an interesting little Perl script: solo is a very simple script (10 lines) that prevents a program from running more than one copy at a time. It is useful with cron to make sure that a job doesn&#8217;t run before a previous one has finished. * * * * * solo -port=3801 /usr/local/bin/awesome-script.sh [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href='http://timkay.com/solo/'>Solo</a> is an interesting <a href="http://timkay.com/solo/solo">little Perl script</a>:</p>
+<blockquote><p>
+solo is a very simple script (10 lines) that prevents a program from running more than one copy at a time. It is useful with cron to make sure that a job doesn&#8217;t run before a previous one has finished.</p>
+<p>* * * * * solo -port=3801 /usr/local/bin/awesome-script.sh blah blah
+</p></blockquote>
+<p>The clever part is the use of binding to TCP ports to ensure that only one copy of the script is running at a time.  No more lockfiles or filesystem tricks, just let the kernel figure out if the port is already in use.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/09/26/solo/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

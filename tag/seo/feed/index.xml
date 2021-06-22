@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>seo &#8211; Joseph Scott</title>
+	<atom:link href="/tag/seo/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 07 Aug 2014 17:05:58 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Google Giving Weight to HTTPS in Search Results</title>
+		<link>/2014/08/07/google-giving-weight-to-https-in-search-results/</link>
+					<comments>/2014/08/07/google-giving-weight-to-https-in-search-results/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 07 Aug 2014 17:05:58 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[https]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[seo]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10777</guid>
+
+					<description><![CDATA[Maybe not everything, but certainly more than we are doing now. So how do you encourage more sites to use HTTPS? Well, if you are Google, you tweak the SEO black box: we&#8217;re starting to use HTTPS as a ranking signal. For now it&#8217;s only a very lightweight signal — affecting fewer than 1% of [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="/wp-content/uploads/2014/08/https-all-the-things-1.jpg"><img loading="lazy" src="/wp-content/uploads/2014/08/https-all-the-things-1.jpg" alt="https-all-the-things" width="400" height="300" class="aligncenter size-full wp-image-10791" srcset="/wp-content/uploads/2014/08/https-all-the-things-1.jpg 400w, /wp-content/uploads/2014/08/https-all-the-things-1-300x225.jpg 300w" sizes="(max-width: 400px) 100vw, 400px" /></a></p>
+<p>Maybe not everything, but certainly more than we are doing now.</p>
+<p>So how do you encourage more sites to use HTTPS?  Well, if you are Google, you tweak the SEO black box:</p>
+<blockquote><p>
+we&#8217;re starting to use HTTPS as a ranking signal. For now it&#8217;s only a very lightweight signal — affecting fewer than 1% of global queries, and carrying less weight than other signals such as high-quality content — while we give webmasters time to switch to HTTPS. But over time, we may decide to strengthen it, because we’d like to encourage all website owners to switch from HTTP to HTTPS to keep everyone safe on the web.
+</p></blockquote>
+<p>From <a href="http://googlewebmastercentral.blogspot.com/2014/08/https-as-ranking-signal.html">HTTPS as a ranking signal</a> on the Google Webmaster Central Blog.</p>
+<p>The call to have more sites use HTTPS has been out for some time.  It is hard to be motivated enough to over come the technical and financial hurdles to make the move ( and for some sites those hurdles are non-trivial ).  The SEO approach that Google is taking is the equivalent of hitting sites in the wallet ( in some cases that might be the literal result ).  When the possibility of loosing money is involved then it is easier to get people&#8217;s attention.</p>
+<p>This might be the single best use of the crazy Google SEO situation I&#8217;ve ever seen.</p>
+<p>Earlier this summer Automattic talked about working towards <a href="http://en.blog.wordpress.com/2014/06/05/reset-the-net/">providing all *.wordpress.com sites with HTTPS by the end of 2014</a>.  This is something that I&#8217;m really excited to see happen.</p>
+<p>If you still aren&#8217;t supporting HTTPS for your site, I&#8217;d encourage you to map out a plan to get there.  Tim Bray posted a simple <a href="https://www.tbray.org/ongoing/When/201x/2012/12/02/HTTPS">outline of the why and how of switching to HTTPS</a>.  If you are looking for a more technical view of how HTTPS works check out <a href="http://chimera.labs.oreilly.com/books/1230000000545/ch04.html">the TLS chapter of &#8220;High Performance Browser Networking&#8221;</a>, which is free to read online.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/08/07/google-giving-weight-to-https-in-search-results/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Google SEO</title>
+		<link>/2009/12/28/google-seo/</link>
+					<comments>/2009/12/28/google-seo/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 28 Dec 2009 18:52:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[seo]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1655</guid>
+
+					<description><![CDATA[Anyone else find it odd that the first result for the term &#8216;SEO&#8217; from Google isn&#8217;t an SEO company? The first result is from Wikipedia, you don&#8217;t find an SEO company until the 6th entry on the page (counting &#8220;News&#8221; and &#8220;Latest results&#8221; items). &#60;tongue-in-cheek&#62; Shouldn&#8217;t the people who know all the magic about SEO [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Anyone else find it odd that the first result for the term &#8216;SEO&#8217; from Google isn&#8217;t an SEO company?</p>
+<figure style="width: 500px" class="wp-caption alignnone"><a href="http://www.google.com/search?hl=en&amp;site=&amp;q=seo&amp;btnG=Search"><img loading="lazy" alt="Google SEO" src="http://farm5.static.flickr.com/4047/4222316475_9b0d791428.jpg" width="500" height="480"></a><figcaption class="wp-caption-text">Google SEO</figcaption></figure>
+<p>The first result is from Wikipedia, you don&#8217;t find an SEO company until the 6th entry on the page (counting &#8220;News&#8221; and &#8220;Latest results&#8221; items).</p>
+<p><b>&lt;tongue-in-cheek&gt;</b><br />
+Shouldn&#8217;t the people who know all the magic about SEO be able to work that magic for themselves?<br />
+<b>&lt;/tonge-in-cheek&gt;</b></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/12/28/google-seo/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

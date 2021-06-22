@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>prologue &#8211; Joseph Scott</title>
+	<atom:link href="/tag/prologue/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 25 Jul 2008 02:50:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Prologue 1.4.1</title>
+		<link>/2008/07/24/prologue-141/</link>
+					<comments>/2008/07/24/prologue-141/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 25 Jul 2008 02:50:52 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[prologue]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1150</guid>
+
+					<description><![CDATA[Version 1.4.1 of the Prologue WordPress theme is now available. Prologue is in the theme directory now, so if you aren&#8217;t into using Subversion this is the easiest way to grab the new version. Here&#8217;s the list of changes since the 1.3 release: Fix CSS for lists (Matt Thomas) Show login message when comments are [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Version 1.4.1 of the Prologue WordPress theme is now available.  <a href="http://wordpress.org/extend/themes/prologue">Prologue is in the theme directory</a> now, so if you aren&#8217;t into using Subversion this is the easiest way to grab the new version.  Here&#8217;s the list of changes since the 1.3 release:</p>
+<ul>
+<li>Fix CSS for lists (Matt Thomas)</li>
+<li>Show login message when comments are disabled instead of comment form (Sam Bauers)</li>
+<li>Don&#8217;t float the avatar out for the authors widget</li>
+<li>Rename get_avatar( ) to prologue_get_avatar( )</li>
+<li>Use make_clickable( ) in posts, makes URLs mentioned clickable. (Michael Adams, Barry Abrahamson)</li>
+<li>Provide edit link for comments (Mark Riley)</li>
+<li>Add theme tag: microblog (Lloyd Budd)</li>
+<li>Respect time settings instead of hard coding them (Lloyd Budd)</li>
+<li>iPhone style sheet (Matt Mullenweg)</li>
+</ul>
+<p>If you&#8217;ve been having problems with WordPress 2.6 and Prologue please give this version a try before sending in any new problem reports.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/07/24/prologue-141/feed/</wfw:commentRss>
+			<slash:comments>24</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The Top Search Result For Prologue</title>
+		<link>/2008/03/03/the-top-search-result-for-prologue/</link>
+					<comments>/2008/03/03/the-top-search-result-for-prologue/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 03 Mar 2008 22:24:08 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[prologue]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[yahoo]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1031</guid>
+
+					<description><![CDATA[The top search result for prologue on Google is Matt&#8216;s Prologue theme announcement. That same announcement post is number 5 on Yahoo! and on Live Search / MSN Search it doesn&#8217;t show up on the first page of results at all. Feel free to speculate on those data points.]]></description>
+										<content:encoded><![CDATA[<p>The top search result for <code>prologue</code> on Google is <a href="http://ma.tt/">Matt</a>&#8216;s <a href="http://wordpress.com/blog/2008/01/28/introducing-prologue/">Prologue theme announcement</a>.  That same announcement post is number 5 on Yahoo! and on Live Search / MSN Search it doesn&#8217;t show up on the first page of results at all.</p>
+<p>Feel free to speculate on those data points.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/03/03/the-top-search-result-for-prologue/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Prologue 1.3</title>
+		<link>/2008/02/03/prologue-13/</link>
+					<comments>/2008/02/03/prologue-13/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 04 Feb 2008 06:44:49 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[prologue]]></category>
+		<category><![CDATA[theme]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/02/03/prologue-13/</guid>
+
+					<description><![CDATA[New update for Prologue theme: Spacing and HTML cleanup New caching for sidebar tag list Show tags for posts on the front page Zip file download now available Michael Adams cleaned up some of the HTML. The sidebar tag list generates a number of small queries so if that is causing you problems look into [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>New update for Prologue theme:</p>
+<ul>
+<li>Spacing and HTML cleanup</li>
+<li>New caching for sidebar tag list</li>
+<li>Show tags for posts on the front page</li>
+<li>Zip file download now available</li>
+</ul>
+<p><a href="http://blogwaffe.com/">Michael Adams</a> cleaned up some of the HTML.  The sidebar tag list generates a number of small queries so if that is causing you problems look into using one of the <a href="http://codex.wordpress.org/Function_Reference/WP_Cache">object cache</a> back end.  <a href="http://www.danga.com/memcached/">Memcache</a> is commonly used for this, Ryan has a post on setting up a <a href="http://ryan.wordpress.com/2005/12/23/memcached-backend/">Memcache backend</a> for WordPress.</p>
+<p>I&#8217;ve seen many requests for a zip to be made available for the Prologue theme and now we&#8217;ve got one: <a href="http://prologuetheme.org/releases/prologue-1.3.zip">Prologue 1.3</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/02/03/prologue-13/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Demo of Prologue with Jesse Stay</title>
+		<link>/2008/02/01/demo-of-prologue-with-jesse-stay/</link>
+					<comments>/2008/02/01/demo-of-prologue-with-jesse-stay/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 01 Feb 2008 07:02:49 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[automattic]]></category>
+		<category><![CDATA[prologue]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/02/01/demo-of-prologue-with-jesse-stay/</guid>
+
+					<description><![CDATA[I went to lunch with Jesse Stay where we talked a bit about Prologue and what it is like to work at Automattic.]]></description>
+										<content:encoded><![CDATA[<p>I went to <a href="http://www.jessestay.com/articles/2008/02/01/demo-of-prologue-with-joseph-scott-developer-at-automattic/">lunch with Jesse Stay</a> where we talked a bit about <a href="http://wordpress.com/blog/2008/01/28/introducing-prologue/">Prologue</a> and what it is like to work at <a href="http://automattic.com/">Automattic</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/02/01/demo-of-prologue-with-jesse-stay/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Thu 31 Jan 2008</title>
+		<link>/2008/01/31/links-for-thu-31-jan-2008/</link>
+					<comments>/2008/01/31/links-for-thu-31-jan-2008/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 01 Feb 2008 00:31:17 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[bot]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[im]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[prologue]]></category>
+		<category><![CDATA[reference]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/01/31/links-for-thu-31-jan-2008/</guid>
+
+					<description><![CDATA[The Prologuer Bot @ Webcracy &#8211; Some basic IM and Prologue integration Tags: im bot prologue wordpress CSS Reference &#8211; This looks promising. Tags: css reference]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://webcracy.org/code/the-prologuer-bot/">The Prologuer Bot @ Webcracy</a> &#8211; Some basic IM and Prologue integration <br /> Tags: <a href="http://del.icio.us/josephscott/im">im</a> <a href="http://del.icio.us/josephscott/bot">bot</a> <a href="http://del.icio.us/josephscott/prologue">prologue</a> <a href="http://del.icio.us/josephscott/wordpress">wordpress</a>  </p>
+</li>
+<li>
+<p><a href="http://reference.sitepoint.com/css">CSS Reference</a> &#8211; This looks promising. <br /> Tags: <a href="http://del.icio.us/josephscott/css">css</a> <a href="http://del.icio.us/josephscott/reference">reference</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/01/31/links-for-thu-31-jan-2008/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Prologue Update</title>
+		<link>/2008/01/29/prologue-update/</link>
+					<comments>/2008/01/29/prologue-update/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 30 Jan 2008 06:53:07 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[prologue]]></category>
+		<category><![CDATA[theme]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/01/29/prologue-update/</guid>
+
+					<description><![CDATA[The Prologue Theme got a lot more attention that I expected (hit the top of TechMeme) and we&#8217;ve been getting a lot of feedback. So I&#8217;ve updated Prologue based on some this feedback and discussion with the the other folks at Automattic. Here&#8217;s what has changed: New template file for displaying Pages Change front page [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The <a href="http://joseph.randomnetworks.com/archives/2008/01/28/prologue-a-wordpress-theme/">Prologue Theme</a> got a lot more attention that I expected (hit the <a href="http://www.techmeme.com/080128/p173#a080128p173">top of TechMeme</a>) and we&#8217;ve been getting a lot of feedback.  So I&#8217;ve updated Prologue based on some this feedback and discussion with the <a href="http://automattic.com/about/">the other folks at Automattic</a>.  Here&#8217;s what has changed:</p>
+<ul>
+<li>New template file for displaying Pages</li>
+<li>Change front page to be recent stream instead of one post per person</li>
+<li>Adjust tag and front page to not show an avatar if the previous post was by the same author</li>
+<li>Change default title for sidebar tag list to &#8216;Recent Tags&#8217;</li>
+<li>Provide a post title based on the beginning of the post content</li>
+</ul>
+<p>I bumped the version listed in style.css to 1.2 when I made these changes.  You can get it from the <a href="http://svn.automattic.com/wpcom-themes/prologue/">Prologue Subversion directory</a>, and yes, I&#8217;m still looking to put together a zip file for those that prefer that method instead.</p>
+<p>One other thing to note, I was making use of a method in Prologue that currently only exists in WordPress -trunk, this means people using WordPress 2.3.2 were getting errors (on the author pages).  This has been fixed as well.  Sorry about that.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/01/29/prologue-update/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Tue 29 Jan 2008</title>
+		<link>/2008/01/29/links-for-tue-29-jan-2008/</link>
+					<comments>/2008/01/29/links-for-tue-29-jan-2008/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 30 Jan 2008 00:30:26 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[prologue]]></category>
+		<category><![CDATA[startrek]]></category>
+		<category><![CDATA[themes]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/01/29/links-for-tue-29-jan-2008/</guid>
+
+					<description><![CDATA[YouTube &#8211; Star Trek: Captain James T. Kirk Giving some advises &#8211; Don&#8217;t make me go all evil Captain Kirk on you. Tags: startrek Prologue Theme Mod with 128 Chars Limit &#124; Play Work Play Studio &#8211; I guess some folks really like to know their limits 🙂 Tags: wordpress prologue themes]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://youtube.com/watch?v=9GZbfD0R6Vc&amp;feature=related">YouTube &#8211; Star Trek: Captain James T. Kirk Giving some advises</a> &#8211; Don&#8217;t make me go all evil Captain Kirk on you. <br /> Tags: <a href="http://del.icio.us/josephscott/startrek">startrek</a>  </p>
+</li>
+<li>
+<p><a href="http://playworkplay.com/blog/prologue-theme-mod-with-128-chars-limit/">Prologue Theme Mod with 128 Chars Limit | Play Work Play Studio</a> &#8211; I guess some folks really like to know their limits <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <br /> Tags: <a href="http://del.icio.us/josephscott/wordpress">wordpress</a> <a href="http://del.icio.us/josephscott/prologue">prologue</a> <a href="http://del.icio.us/josephscott/themes">themes</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/01/29/links-for-tue-29-jan-2008/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Prologue, A WordPress Theme</title>
+		<link>/2008/01/28/prologue-a-wordpress-theme/</link>
+					<comments>/2008/01/28/prologue-a-wordpress-theme/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 29 Jan 2008 02:37:48 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[prologue]]></category>
+		<category><![CDATA[theme]]></category>
+		<category><![CDATA[Twitter]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/01/28/prologue-a-wordpress-theme/</guid>
+
+					<description><![CDATA[While in Arizona Matt Thomas and I implemented a new theme that Matt Mullenweg came up with: Prologue. It is a Twitter inspired WordPress theme. Here&#8217;s the run down: Post new entries right at the top of the page (assuming you are logged in and are allowed to post new entries to the blog) Front [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>While in Arizona <a href="http://iammattthomas.com/journal/introducing-prologue">Matt Thomas</a> and I implemented <a href="http://wordpress.com/blog/2008/01/28/introducing-prologue/">a new theme</a> that <a href="http://ma.tt/2008/01/twitter-theme/">Matt Mullenweg</a> came up with: <a href="http://wordpress.com/blog/2008/01/28/introducing-prologue/">Prologue</a>.  It is a <a href="http://twitter.com/">Twitter</a> inspired WordPress theme.  Here&#8217;s the run down:</p>
+<ul>
+<li>Post new entries right at the top of the page (assuming you are logged in and are allowed to post new entries to the blog)</li>
+<li>Front page shows the most recent post from every user on the blog</li>
+<li>The tags on the sidebar are sorted by most recently used</li>
+<li>All the other stuff in a typical WordPress theme: tag, author and single post pages</li>
+</ul>
+<p>For the sidebar there is also a widget for showing the most recently used tags, which allows you to set the title and how many tags you want to show.  That will be handy for sites that have many tags, but only want to see the 10 or 15 most recent.</p>
+<p>Prologue is completely self contained as a WordPress theme.  It&#8217;s now available for use on WordPress.com and also works with self hosted WordPress.org installs.  If you want to use it with your WordPress.org install you can get it from the public Subversion repository:</p>
+<p><a href="http://svn.automattic.com/wpcom-themes/prologue/">http://svn.automattic.com/wpcom-themes/prologue/</a></p>
+<p>I&#8217;ve heard a few people request to have a single zip file to download instead of using Subversion.  I&#8217;ll see what I can do to accommodate those folks, in the meantime I highly recommend learning Subversion for this sort of thing, it will make keeping up to date much easier.</p>
+<p><b>UPDATE 9:45am 4 Aug 2008:</b> You can find the latest version of Prologue available for download from the <a href="http://wordpress.org/extend/themes/">WordPress Theme Directory</a> at <a href="http://wordpress.org/extend/themes/prologue">http://wordpress.org/extend/themes/prologue</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/01/28/prologue-a-wordpress-theme/feed/</wfw:commentRss>
+			<slash:comments>38</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

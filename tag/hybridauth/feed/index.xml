@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>hybridauth &#8211; Joseph Scott</title>
+	<atom:link href="/tag/hybridauth/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 07 Mar 2013 23:49:27 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>HybridAuth</title>
+		<link>/2013/03/07/hybridauth/</link>
+					<comments>/2013/03/07/hybridauth/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 07 Mar 2013 23:49:27 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[hybridauth]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=5746</guid>
+
+					<description><![CDATA[HybridAuth is an open source PHP library that provides a consistent API for social APIs and identity providers. If you were looking for a relatively easy way to provide a &#8216;Sign in With Facebook/Twitter/Google&#8217; feature to your site, this is a decent place to start. The source code is available at https://github.com/hybridauth/hybridauth.]]></description>
+										<content:encoded><![CDATA[<p><a href='http://hybridauth.sourceforge.net/'>HybridAuth</a> is an open source PHP library that provides a consistent API for social APIs and identity providers.</p>
+<p>If you were looking for a relatively easy way to provide a &#8216;Sign in With Facebook/Twitter/Google&#8217; feature to your site, this is a decent place to start.  The source code is available at <a href="https://github.com/hybridauth/hybridauth">https://github.com/hybridauth/hybridauth</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/03/07/hybridauth/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

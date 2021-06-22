@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>network-link-conditioner &#8211; Joseph Scott</title>
+	<atom:link href="/tag/network-link-conditioner/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 10 Apr 2014 16:09:42 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Network Link Conditioner</title>
+		<link>/2014/04/10/network-link-conditioner/</link>
+					<comments>/2014/04/10/network-link-conditioner/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 10 Apr 2014 16:09:42 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[mobile]]></category>
+		<category><![CDATA[network-link-conditioner]]></category>
+		<category><![CDATA[networking]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10142</guid>
+
+					<description><![CDATA[Matt Thompson outlines how to install the Network Link Conditioner on Mac OS X. The Network Link Conditioner allows you to tweak settings to simulate various network conditions. This is a must have tool if you want to see what your mobile app experience is like under less than ideal network conditions.]]></description>
+										<content:encoded><![CDATA[<p>Matt Thompson outlines <a href="http://nshipster.com/network-link-conditioner/" title="This should just be part of a standard Xcode install.">how to install the Network Link Conditioner on Mac OS X</a>.</p>
+<p><a href="/wp-content/uploads/2014/04/network-link-conditioner-1.jpg"><img loading="lazy" src="/wp-content/uploads/2014/04/network-link-conditioner-1-300x185.jpg" alt="network-link-conditioner" width="300" height="185" class="aligncenter size-medium wp-image-10192" srcset="/wp-content/uploads/2014/04/network-link-conditioner-1-300x185.jpg 300w, /wp-content/uploads/2014/04/network-link-conditioner-1.jpg 701w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>The Network Link Conditioner allows you to tweak settings to simulate various network conditions.  This is a must have tool if you want to see what your mobile app experience is like under less than ideal network conditions.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/04/10/network-link-conditioner/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

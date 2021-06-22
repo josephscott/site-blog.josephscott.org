@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>request-map &#8211; Joseph Scott</title>
+	<atom:link href="/tag/request-map/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 16 Dec 2015 16:59:35 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Request Map</title>
+		<link>/2015/12/16/request-map/</link>
+					<comments>/2015/12/16/request-map/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 16 Dec 2015 16:59:35 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[request-map]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14412</guid>
+
+					<description><![CDATA[Request Map Generator is a visual way of looking at what requests are being made for a given page. Some are simple, like Google.com: Others are more complex, like CNN.com:]]></description>
+										<content:encoded><![CDATA[<p><a href="http://requestmap.webperf.tools/">Request Map Generator</a> is a visual way of looking at what requests are being made for a given page.</p>
+<p>Some are simple, like Google.com:</p>
+<p><a href="/wp-content/uploads/2015/12/request-map-google-1.png" rel="attachment wp-att-14611"><img loading="lazy" src="/wp-content/uploads/2015/12/request-map-google-1-1024x451.png" alt="request-map-google" width="660" height="291" class="aligncenter size-large wp-image-14611" srcset="/wp-content/uploads/2015/12/request-map-google-1-1024x451.png 1024w, /wp-content/uploads/2015/12/request-map-google-1-300x132.png 300w, /wp-content/uploads/2015/12/request-map-google-1-768x338.png 768w, /wp-content/uploads/2015/12/request-map-google-1.png 1169w" sizes="(max-width: 660px) 100vw, 660px" /></a></p>
+<p>Others are more complex, like CNN.com:</p>
+<p><a href="/wp-content/uploads/2015/12/request-map-cnn-1.png" rel="attachment wp-att-14612"><img loading="lazy" src="/wp-content/uploads/2015/12/request-map-cnn-1.png" alt="request-map-cnn" width="909" height="694" class="aligncenter size-full wp-image-14612" srcset="/wp-content/uploads/2015/12/request-map-cnn-1.png 909w, /wp-content/uploads/2015/12/request-map-cnn-1-300x229.png 300w, /wp-content/uploads/2015/12/request-map-cnn-1-768x586.png 768w" sizes="(max-width: 909px) 100vw, 909px" /></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/16/request-map/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

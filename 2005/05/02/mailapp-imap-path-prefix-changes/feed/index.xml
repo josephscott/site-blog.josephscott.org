@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Mail.app IMAP Path Prefix Changes	</title>
+	<atom:link href="/2005/05/02/mailapp-imap-path-prefix-changes/feed/" rel="self" type="application/rss+xml" />
+	<link>/2005/05/02/mailapp-imap-path-prefix-changes/</link>
+	<description></description>
+	<lastBuildDate>Thu, 06 Dec 2007 22:36:04 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2005/05/02/mailapp-imap-path-prefix-changes/#comment-785</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 06 Dec 2007 22:36:04 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/02/mailapp-imap-path-prefix-changes/#comment-785</guid>
+
+					<description><![CDATA[@Thomas Vanparys-
+
+No problem, it bugged me for awhile as well, which is why I wrote this up in the first place.
+
+As for trash, I think by default it uses a folder named Trash.]]></description>
+			<content:encoded><![CDATA[<p>@Thomas Vanparys-</p>
+<p>No problem, it bugged me for awhile as well, which is why I wrote this up in the first place.</p>
+<p>As for trash, I think by default it uses a folder named Trash.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Thomas Vanparys		</title>
+		<link>/2005/05/02/mailapp-imap-path-prefix-changes/#comment-784</link>
+
+		<dc:creator><![CDATA[Thomas Vanparys]]></dc:creator>
+		<pubDate>Thu, 06 Dec 2007 22:22:18 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/02/mailapp-imap-path-prefix-changes/#comment-784</guid>
+
+					<description><![CDATA[Thanks a lot for the tip regarding the  Courier-IMAP server&#039;s INBOX path. I was having a hell of time with Mail.app before and now I&#039;m all happy! If only I could figure out where the trash goes....]]></description>
+			<content:encoded><![CDATA[<p>Thanks a lot for the tip regarding the  Courier-IMAP server&#8217;s INBOX path. I was having a hell of time with Mail.app before and now I&#8217;m all happy! If only I could figure out where the trash goes&#8230;.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Peter		</title>
+		<link>/2005/05/02/mailapp-imap-path-prefix-changes/#comment-783</link>
+
+		<dc:creator><![CDATA[Peter]]></dc:creator>
+		<pubDate>Mon, 29 Oct 2007 19:16:49 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/02/mailapp-imap-path-prefix-changes/#comment-783</guid>
+
+					<description><![CDATA[[...] I also have mail disappearing from my inbox. It is still saved on the server, as I can see it on OWA, but my inbox is completely empty on mail.app. Anyone?? [...]
+
+I came across the same problem; after years of problem-free use the file system of my server that runs Courier IMAP filled up.  After cleaning up the partition and restarting imapd, the messages in my Inbox don&#039;t show anymore.  However, all subfolders of the Inbox DO show up and are updated.  Strangely enough, even the unread count is being updated in the Inbox -- but neither old nor new messages appear in the message list.
+
+I&#039;ve tried to completely remove the IMAP account from the Mail.app prefs as well as wiped out ~/Library/Mail/IMAP-my-account to no avail; hence I suspect that the problem might be on the server side.  But then Thunderbird shows all the messages in the same Inbox correctly... I&#039;m puzzled.
+
+Did you by any chance solve this mystery?
+
+Thanks for any hint,
+
+Peter]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] I also have mail disappearing from my inbox. It is still saved on the server, as I can see it on OWA, but my inbox is completely empty on mail.app. Anyone?? [&#8230;]</p>
+<p>I came across the same problem; after years of problem-free use the file system of my server that runs Courier IMAP filled up.  After cleaning up the partition and restarting imapd, the messages in my Inbox don&#8217;t show anymore.  However, all subfolders of the Inbox DO show up and are updated.  Strangely enough, even the unread count is being updated in the Inbox &#8212; but neither old nor new messages appear in the message list.</p>
+<p>I&#8217;ve tried to completely remove the IMAP account from the Mail.app prefs as well as wiped out ~/Library/Mail/IMAP-my-account to no avail; hence I suspect that the problem might be on the server side.  But then Thunderbird shows all the messages in the same Inbox correctly&#8230; I&#8217;m puzzled.</p>
+<p>Did you by any chance solve this mystery?</p>
+<p>Thanks for any hint,</p>
+<p>Peter</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ming		</title>
+		<link>/2005/05/02/mailapp-imap-path-prefix-changes/#comment-782</link>
+
+		<dc:creator><![CDATA[Ming]]></dc:creator>
+		<pubDate>Tue, 01 May 2007 18:10:38 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/02/mailapp-imap-path-prefix-changes/#comment-782</guid>
+
+					<description><![CDATA[I also have mail disappearing from my inbox.  It is still saved on the server, as I can see it on OWA, but my inbox is completely empty on mail.app.  Anyone??]]></description>
+			<content:encoded><![CDATA[<p>I also have mail disappearing from my inbox.  It is still saved on the server, as I can see it on OWA, but my inbox is completely empty on mail.app.  Anyone??</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Tadek&#8217;s Blog &#187; Blog Archive &#187; Changing IMAP prefix in Mail.app		</title>
+		<link>/2005/05/02/mailapp-imap-path-prefix-changes/#comment-781</link>
+
+		<dc:creator><![CDATA[Tadek&#8217;s Blog &#187; Blog Archive &#187; Changing IMAP prefix in Mail.app]]></dc:creator>
+		<pubDate>Mon, 26 Mar 2007 22:22:02 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/02/mailapp-imap-path-prefix-changes/#comment-781</guid>
+
+					<description><![CDATA[[...] http://joseph.randomnetworks.com/archives/2005/05/02/mailapp-imap-path-prefix-changes/ [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] <a href="http://joseph.randomnetworks.com/archives/2005/05/02/mailapp-imap-path-prefix-changes/" rel="nofollow ugc">http://joseph.randomnetworks.com/archives/2005/05/02/mailapp-imap-path-prefix-changes/</a> [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hawk Wings &#187; Blog Archive &#187; A mendable Mail.app IMAP mailbox mess		</title>
+		<link>/2005/05/02/mailapp-imap-path-prefix-changes/#comment-780</link>
+
+		<dc:creator><![CDATA[Hawk Wings &#187; Blog Archive &#187; A mendable Mail.app IMAP mailbox mess]]></dc:creator>
+		<pubDate>Tue, 12 Dec 2006 13:50:21 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/02/mailapp-imap-path-prefix-changes/#comment-780</guid>
+
+					<description><![CDATA[[...] Some of his problems can be fixed by setting the right IMAP path prefix for his email provider (More on this in a post and comments  on Joseph Scott&#8217;s blog). [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Some of his problems can be fixed by setting the right IMAP path prefix for his email provider (More on this in a post and comments  on Joseph Scott&#8217;s blog). [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Micah		</title>
+		<link>/2005/05/02/mailapp-imap-path-prefix-changes/#comment-779</link>
+
+		<dc:creator><![CDATA[Micah]]></dc:creator>
+		<pubDate>Sat, 16 Sep 2006 19:51:34 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/02/mailapp-imap-path-prefix-changes/#comment-779</guid>
+
+					<description><![CDATA[Kelly:
+
+I picked up this hint from a PDF I found while looking for how to set up delegates, this is probably what you are looking for: TO disable public folder syncing:
+1. quit mail.app
+2. go to your Library/Mail/ folder, look in the exchange box there, and find the Public Folders folder.
+3. Do get info (cmd-i)
+4. set permissions to &quot;No access&quot;.
+5. next time you start up mail, you&#039;ll see the public folders still, but they won&#039;t have any content, and won&#039;t sync.
+
+Now...
+
+If anyone knows how to read a delegate account in Mail, or how to set up 2 exchange accounts (I can create one, but after that, only choic e is IMAP or POP), or how to get the stupid calendar link to actually point to our web exchange server that I specified in the prefs, instead of to the incoming exchange server, I&#039;d be a happy man.
+
+Micah]]></description>
+			<content:encoded><![CDATA[<p>Kelly:</p>
+<p>I picked up this hint from a PDF I found while looking for how to set up delegates, this is probably what you are looking for: TO disable public folder syncing:<br />
+1. quit mail.app<br />
+2. go to your Library/Mail/ folder, look in the exchange box there, and find the Public Folders folder.<br />
+3. Do get info (cmd-i)<br />
+4. set permissions to &#8220;No access&#8221;.<br />
+5. next time you start up mail, you&#8217;ll see the public folders still, but they won&#8217;t have any content, and won&#8217;t sync.</p>
+<p>Now&#8230;</p>
+<p>If anyone knows how to read a delegate account in Mail, or how to set up 2 exchange accounts (I can create one, but after that, only choic e is IMAP or POP), or how to get the stupid calendar link to actually point to our web exchange server that I specified in the prefs, instead of to the incoming exchange server, I&#8217;d be a happy man.</p>
+<p>Micah</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: kelly		</title>
+		<link>/2005/05/02/mailapp-imap-path-prefix-changes/#comment-778</link>
+
+		<dc:creator><![CDATA[kelly]]></dc:creator>
+		<pubDate>Thu, 14 Sep 2006 13:57:21 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/02/mailapp-imap-path-prefix-changes/#comment-778</guid>
+
+					<description><![CDATA[I have connected mail to our MS Exchange 2003 server. When setting up the account, I chose &quot;Exchange&quot; as the option and made sure it kept NTLM authentication. Strange part, though, is that it used just may username not domain/username which I was not used to. For OWA, it may require HTTPS (ours did).
+
+That said, if anyone knows how I can disable the @#$@# public folders from showing up / being sync&#039;d, it&#039;d be great. It&#039;s such a pain to watch it sync some 100k emails in there when I have no desire to read &#039;em.
+
+KellyF]]></description>
+			<content:encoded><![CDATA[<p>I have connected mail to our MS Exchange 2003 server. When setting up the account, I chose &#8220;Exchange&#8221; as the option and made sure it kept NTLM authentication. Strange part, though, is that it used just may username not domain/username which I was not used to. For OWA, it may require HTTPS (ours did).</p>
+<p>That said, if anyone knows how I can disable the @#$@# public folders from showing up / being sync&#8217;d, it&#8217;d be great. It&#8217;s such a pain to watch it sync some 100k emails in there when I have no desire to read &#8217;em.</p>
+<p>KellyF</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Pavlo		</title>
+		<link>/2005/05/02/mailapp-imap-path-prefix-changes/#comment-777</link>
+
+		<dc:creator><![CDATA[Pavlo]]></dc:creator>
+		<pubDate>Fri, 08 Sep 2006 11:25:20 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/02/mailapp-imap-path-prefix-changes/#comment-777</guid>
+
+					<description><![CDATA[Could the person who got Mail.app to work with Exchange 2003 please give more detail. A step by step, a website reference anything. I have checked Apple, MS and have not found any information. Entourage is constantly freezing and I need to find a way to get Mail.app to work.]]></description>
+			<content:encoded><![CDATA[<p>Could the person who got Mail.app to work with Exchange 2003 please give more detail. A step by step, a website reference anything. I have checked Apple, MS and have not found any information. Entourage is constantly freezing and I need to find a way to get Mail.app to work.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: joseph		</title>
+		<link>/2005/05/02/mailapp-imap-path-prefix-changes/#comment-776</link>
+
+		<dc:creator><![CDATA[joseph]]></dc:creator>
+		<pubDate>Mon, 28 Aug 2006 23:32:52 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/02/mailapp-imap-path-prefix-changes/#comment-776</guid>
+
+					<description><![CDATA[Tom-
+I was able to use an Exchange 2003 account from Mail.app without any problems.  For the account type I used &#039;Exchange&#039;, and pointed it to the OWA (Outlook Web Access) site.  I didn&#039;t change any other settings and was able to receive email just fine.]]></description>
+			<content:encoded><![CDATA[<p>Tom-<br />
+I was able to use an Exchange 2003 account from Mail.app without any problems.  For the account type I used &#8216;Exchange&#8217;, and pointed it to the OWA (Outlook Web Access) site.  I didn&#8217;t change any other settings and was able to receive email just fine.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

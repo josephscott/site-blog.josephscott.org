@@ -1,0 +1,37 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/npm/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/npm/",
+    "feed_url": "https://blog.josephscott.org/tag/npm/feed/json/",
+    "language": "en-US",
+    "title": "npm &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=10081",
+            "url": "https://blog.josephscott.org/2014/03/21/npm-blocker/",
+            "title": "NPM As A Blocker",
+            "content_html": "<p>From <a href='http://tech.blog.box.com/2014/03/handling-node-js-dependencies-at-box/' title=\"Nice to see public threads addressing this issue.\">Handling Node.js Dependencies At Box</a>:</p>\n<blockquote><p>\nWe would have a lot of explaining to do if a deployment ended up canceled because the public npm registry was down.</p>\n<p>&#8230;</p>\n<p>The most important requirement in this regard is deploying without dependence on the public npm registry.\n</p></blockquote>\n<p>I&#8217;ve brought up this issue in just about every conversation I&#8217;ve had with people about NPM.  What happens when  the registry goes down or is unavailable for any reason?  If your deploy mechanism is dependent on the registry being up, it is going to cause a whole lot of pain.  And you know that will wait to happen until the worst possible moment.</p>\n<p>I am surprised at the number of times people seem to have not considered that an issue.</p>\n<p>Here is the bottom line, from the same post &#8211;</p>\n<blockquote><p>\nAt any given time, what\u2019s checked-in to source control is ready to be deployed into production on its own.\n</p></blockquote>\n<p>I&#8217;ve described it this way: <strong>if it is code that you depend on in production then it should be in your source control repo</strong>.</p>\n",
+            "content_text": "From Handling Node.js Dependencies At Box:\n\nWe would have a lot of explaining to do if a deployment ended up canceled because the public npm registry was down.\n&#8230;\nThe most important requirement in this regard is deploying without dependence on the public npm registry.\n\nI&#8217;ve brought up this issue in just about every conversation I&#8217;ve had with people about NPM.  What happens when  the registry goes down or is unavailable for any reason?  If your deploy mechanism is dependent on the registry being up, it is going to cause a whole lot of pain.  And you know that will wait to happen until the worst possible moment.\nI am surprised at the number of times people seem to have not considered that an issue.\nHere is the bottom line, from the same post &#8211;\n\nAt any given time, what\u2019s checked-in to source control is ready to be deployed into production on its own.\n\nI&#8217;ve described it this way: if it is code that you depend on in production then it should be in your source control repo.",
+            "date_published": "2014-03-21T18:06:42-06:00",
+            "date_modified": "2014-03-21T18:06:42-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "box",
+                "nodejs",
+                "npm",
+                "Posts"
+            ]
+        }
+    ]
+}

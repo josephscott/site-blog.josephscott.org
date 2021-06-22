@@ -1,0 +1,122 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/bcrypt/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/bcrypt/",
+    "feed_url": "https://blog.josephscott.org/tag/bcrypt/feed/json/",
+    "language": "en-US",
+    "title": "bcrypt &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=15280",
+            "url": "https://blog.josephscott.org/2016/03/01/password-hashing-examples/",
+            "title": "Password Hashing Examples",
+            "content_html": "<p>Paragon Initiative has put together a post with examples of <a href=\"https://paragonie.com/blog/2016/02/how-safely-store-password-in-2016\">how to use bcrypt &amp; scrypt in PHP, Java, C#, Ruby, Python, and NodeJS</a>.  Most of the code examples are only a few lines long, making them easy to follow.</p>\n<p>They had picked bcrypt as their standard example, with scrypt as the next alternative, based on their preferred algorithm list:</p>\n<blockquote><p>\nAlthough there is disagreement about how to rank them, cryptography experts agree that these algorithms are the only ones you should be using to store passwords in 2016:</p>\n<p>&#8211; Argon2, the Password Hashing Competition winner.<br />\n&#8211; bcrypt<br />\n&#8211; scrypt<br />\n&#8211; The other Password Hashing Competition finalists ( Catena, Lyra2, Makwa, and yescrypt )<br />\n&#8211; PBKDF2 ( nearly everyone except FIPS agrees this is the worst of the acceptable options )\n</p></blockquote>\n<p>I&#8217;ll give Argon2 a few years of real world exposure before I&#8217;d consider it for the number one spot.  Until then I agree that bcrypt is good default approach.  For caveats on that see their &#8220;Why prioritize bcrypt over scrypt?&#8221; section.</p>\n<p>For new systems this should be an easy thing to do ( you&#8217;ve already got code examples now! ).  And converting old systems isn&#8217;t necessarily complex, most of the time will be spent testing.</p>\n",
+            "content_text": "Paragon Initiative has put together a post with examples of how to use bcrypt &amp; scrypt in PHP, Java, C#, Ruby, Python, and NodeJS.  Most of the code examples are only a few lines long, making them easy to follow.\nThey had picked bcrypt as their standard example, with scrypt as the next alternative, based on their preferred algorithm list:\n\nAlthough there is disagreement about how to rank them, cryptography experts agree that these algorithms are the only ones you should be using to store passwords in 2016:\n&#8211; Argon2, the Password Hashing Competition winner.\n&#8211; bcrypt\n&#8211; scrypt\n&#8211; The other Password Hashing Competition finalists ( Catena, Lyra2, Makwa, and yescrypt )\n&#8211; PBKDF2 ( nearly everyone except FIPS agrees this is the worst of the acceptable options )\n\nI&#8217;ll give Argon2 a few years of real world exposure before I&#8217;d consider it for the number one spot.  Until then I agree that bcrypt is good default approach.  For caveats on that see their &#8220;Why prioritize bcrypt over scrypt?&#8221; section.\nFor new systems this should be an easy thing to do ( you&#8217;ve already got code examples now! ).  And converting old systems isn&#8217;t necessarily complex, most of the time will be spent testing.",
+            "date_published": "2016-03-01T11:11:51-07:00",
+            "date_modified": "2016-03-01T11:11:51-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "bcrypt",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=11794",
+            "url": "https://blog.josephscott.org/2015/04/21/beware-of-crypto-combinations/",
+            "title": "Beware of Crypto Combinations",
+            "content_html": "<p><a href=\"http://en.wikipedia.org/wiki/Bcrypt\">Bcrypt</a> has in interesting limitation, it only uses the first 72 bytes to generate a hash.  Anthony Ferrara covers why you may want to live with that limitation: <a href=\"http://blog.ircmaxell.com/2015/03/security-issue-combining-bcrypt-with.html\">Security Issue: Combining Bcrypt With Other Hash Functions</a>.</p>\n<p>The specific example he covers is pre-hashing with the raw output of <a href=\"http://php.net/manual/en/function.hash-hmac.php\">hash_hmac()</a>, which can contain null bytes:</p>\n<blockquote><p>\nthis means that the output can contain null bytes. In fact, it means that on average 1 out of every 256 passwords (or 0.39%) will have a leading null byte. So we only need to try approximately 177 passwords to get a 50% chance of finding a hash with a leading null byte. And we only need to try approximately 177 users to get a 50% chance of finding a user with a leading null byte. So trying 31329 permutations of users and passwords gives us a 25% chance of finding one that will work.</p>\n<p>&#8230;</p>\n<p>This is <strong>bad</strong>. This is <strong>really bad</strong>.\n</p></blockquote>\n<p>Oh the null byte, you have been the source of many unexpected results.</p>\n<p>If you don&#8217;t use the raw output of <code>hash_hmac()</code> then you won&#8217;t get null bytes and you&#8217;ll be fine.  By default raw output is set to false.</p>\n<blockquote><p>\nYou are 100% safe if you do one of the following:</p>\n<ol>\n<li>Use straight bcrypt (don&#8217;t pre-hash)</li>\n<li>Use hex output from the pre-hash</li>\n<li>Base64 encode the raw output of a pre-hash</li>\n</ol>\n<p>If you are using raw output, encode it first, and you&#8217;re safe.\n</p></blockquote>\n<p>There are so many ways to mess up cryptography.  <a href=\"https://josephscott.org/archives/2015/04/which-kneecap/\">This is not the kneecap you want to get shot in</a>.  Nearly every situation should stick with existing, widely used and tested, crypto options.</p>\n",
+            "content_text": "Bcrypt has in interesting limitation, it only uses the first 72 bytes to generate a hash.  Anthony Ferrara covers why you may want to live with that limitation: Security Issue: Combining Bcrypt With Other Hash Functions.\nThe specific example he covers is pre-hashing with the raw output of hash_hmac(), which can contain null bytes:\n\nthis means that the output can contain null bytes. In fact, it means that on average 1 out of every 256 passwords (or 0.39%) will have a leading null byte. So we only need to try approximately 177 passwords to get a 50% chance of finding a hash with a leading null byte. And we only need to try approximately 177 users to get a 50% chance of finding a user with a leading null byte. So trying 31329 permutations of users and passwords gives us a 25% chance of finding one that will work.\n&#8230;\nThis is bad. This is really bad.\n\nOh the null byte, you have been the source of many unexpected results.\nIf you don&#8217;t use the raw output of hash_hmac() then you won&#8217;t get null bytes and you&#8217;ll be fine.  By default raw output is set to false.\n\nYou are 100% safe if you do one of the following:\n\nUse straight bcrypt (don&#8217;t pre-hash)\nUse hex output from the pre-hash\nBase64 encode the raw output of a pre-hash\n\nIf you are using raw output, encode it first, and you&#8217;re safe.\n\nThere are so many ways to mess up cryptography.  This is not the kneecap you want to get shot in.  Nearly every situation should stick with existing, widely used and tested, crypto options.",
+            "date_published": "2015-04-21T14:50:24-06:00",
+            "date_modified": "2015-04-21T14:50:24-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "anthony-ferrara",
+                "bcrypt",
+                "PHP",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=8075",
+            "url": "https://blog.josephscott.org/2013/06/06/password-anniversary-day/",
+            "title": "Password Anniversary Day",
+            "content_html": "<p>Exactly one year ago today it was announced that part of the <a href=\"http://www.theverge.com/2012/6/6/3067523/linkedin-password-leak-online\">LinkedIn password database had been shared online</a>.  <a href=\"http://www.reddit.com/r/technology/comments/unt92/russian_hackers_claim_to_have_65m_linkedin/\">There</a> <a href=\"http://blog.linkedin.com/2012/06/06/updating-your-password-on-linkedin-and-other-account-security-best-practices/\">were</a> <a href=\"http://blog.linkedin.com/2012/06/06/linkedin-member-passwords-compromised/\">many</a> <a href=\"http://blog.linkedin.com/2012/06/07/taking-steps-to-protect-our-members/\">posts</a> <a href=\"http://blog.linkedin.com/2012/06/09/an-update-on-taking-steps-to-protect-our-members/\">about</a> <a href=\"https://news.ycombinator.com/item?id=4073309\">it</a>.</p>\n<p>Having your password database compromised is bad.  But that turned out to not be the worst part of what happened.  Although I didn&#8217;t see it mentioned in any of the official LinkedIn posts, people quickly realized that the passwords were hashed using SHA-1.  No salts, no stretching, just a plain, single round, SHA-1.  That made finding the plain text version of the password for millions of LinkedIn accounts fairly simple.  </p>\n<p>Using bcrypt with a decent random salt generator and good work factor would have been much better.</p>\n<p>This made it very clear to me that if a site like LinkedIn can make the mistake of using a poor password storage method, anyone can.  I made a repeating calendar entry for 6 June of every year to be &#8220;Password Anniversary Day&#8221;.  On Password Anniversary Day ( 6/6 ) I pick a few sites that I have accounts on, more or less at random, and change my password.  Just in case.</p>\n<p>My Tweet about this on 6 June 2012:</p>\n<blockquote class=\"twitter-tweet\" data-width=\"550\" data-dnt=\"true\">\n<p lang=\"en\" dir=\"ltr\">Welcome to the first annual &quot;change your <a href=\"http://t.co/utIhGP9J\">http://t.co/utIhGP9J</a> password&quot; day <a href=\"http://t.co/DP88nDF1\">http://t.co/DP88nDF1</a></p>\n<p>&mdash; Joseph Scott (@josephscott) <a href=\"https://twitter.com/josephscott/status/210388473125945344?ref_src=twsrc%5Etfw\">June 6, 2012</a></p></blockquote>\n<p><script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></p>\n<p>Happy Password Anniversary Day everyone.</p>\n",
+            "content_text": "Exactly one year ago today it was announced that part of the LinkedIn password database had been shared online.  There were many posts about it.\nHaving your password database compromised is bad.  But that turned out to not be the worst part of what happened.  Although I didn&#8217;t see it mentioned in any of the official LinkedIn posts, people quickly realized that the passwords were hashed using SHA-1.  No salts, no stretching, just a plain, single round, SHA-1.  That made finding the plain text version of the password for millions of LinkedIn accounts fairly simple.  \nUsing bcrypt with a decent random salt generator and good work factor would have been much better.\nThis made it very clear to me that if a site like LinkedIn can make the mistake of using a poor password storage method, anyone can.  I made a repeating calendar entry for 6 June of every year to be &#8220;Password Anniversary Day&#8221;.  On Password Anniversary Day ( 6/6 ) I pick a few sites that I have accounts on, more or less at random, and change my password.  Just in case.\nMy Tweet about this on 6 June 2012:\n\nWelcome to the first annual &quot;change your http://t.co/utIhGP9J password&quot; day http://t.co/DP88nDF1\n&mdash; Joseph Scott (@josephscott) June 6, 2012\n\nHappy Password Anniversary Day everyone.",
+            "date_published": "2013-06-06T17:42:27-06:00",
+            "date_modified": "2013-06-06T17:42:27-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "bcrypt",
+                "linkedin",
+                "password",
+                "password-anniversary-day",
+                "security",
+                "sha-1",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=5676",
+            "url": "https://blog.josephscott.org/2012/04/09/slow-hashing/",
+            "title": "Slow Hashing",
+            "content_html": "<p>The majority of the <a href='http://www.codinghorror.com/blog/2012/04/speed-hashing.html'>Coding Horror: Speed Hashing</a> post talks about speed based on MD5.  It isn&#8217;t until the very bottom that you see this:</p>\n<blockquote><p>\nIf you are a developer:</p>\n<p>Use bcrypt or PBKDF2 exclusively to hash anything you need to be secure. These new hashes were specifically designed to be difficult to implement on GPUs. Do not use any other form of hash. Almost every other popular hashing scheme is vulnerable to brute forcing by arrays of commodity GPUs, which only get faster and more parallel and easier to program for every year.\n</p></blockquote>\n<p>I&#8217;m not sure why that wasn&#8217;t at the very top.</p>\n<p>If you are still using MD5 to hash passwords (or worse, aren&#8217;t hashing passwords at all) then please stop and go use <a href=\"http://bcrypt.sourceforge.net/\">bcrypt</a>.  For those using PHP <a href=\"http://www.openwall.com/phpass/\">phpass</a> is a great option.</p>\n<p>For password hashes you want the process to be slow.  There is of course a trade off.  Here is a PHP example:</p>\n<p>[sourcecode lang=&#8221;php&#8221;]<br />\ncrypt( &#8216;password&#8217;, &#8216;$2a$12$usesomesillystringforsalt$&#8217; );<br />\n[/sourcecode]</p>\n<p>The <code>$2a</code> tells <a href=\"http://us.php.net/crypt\">crypt</a> to use <code>CRYPT_BLOWFISH</code>.  The <code>$15$</code> is the cost parameter, ranging from 04 to 31.  Running this on my Core 2 Duo laptop takes 0.4 seconds.  Increasing the cost parameter increases the amount of time it takes to compute the hash.  For my Core 2 Duo it looks like:</p>\n<p><strong>Cost 12:</strong> 00.4 seconds<br />\n<strong>Cost 13:</strong> 00.7 seconds<br />\n<strong>Cost 14:</strong> 01.4 seconds<br />\n<strong>Cost 15:</strong> 02.8 seconds<br />\n<strong>Cost 16:</strong> 05.5 seconds<br />\n<strong>Cost 17:</strong> 11.1 seconds<br />\n<strong>Cost 18:</strong> 22.1 seconds</p>\n<p>While having a cost of 18 might sound exciting from the point of view of making brute force attacks more difficult it would make for a horrible user experience.  Remember that each time a use fills out the log in form on your site you have to hash the password they entered to see if the matches the one your in your database.  Waiting 22 seconds per log in attempt would drive your users nuts.</p>\n<p>So how high should the cost be to make brute force attacks impractical, but low enough to still provide a good user experience?  Some of that is going to depend on the power of your servers, but for now lets stick with my Core 2 Duo example.  If your possible password combinations were lower case letters, upper case letters, and numbers for a 7 character string then you&#8217;d be looking at 62 ^ 7, or 3,521,614,606,208 combinations.</p>\n<p>The speed hashing post indicated that for MD5 all 7 character passwords of that type could be calculated in 4 minutes.  If we choose a cost of 13 (meaning 0.7 seconds per password) and I&#8217;ve done my math correctly, it would take 159,528 years to do the same thing on my Core 2 Duo.</p>\n<p>If your server is 10 times faster than my Core 2 Duo then a cost of 13 may still be fairly reasonable.  A single hash would take 0.07 seconds and computing hashes for all 7 character passwords would take 15,952 years.  Even another 100x increase in speed would still mean 159 years.</p>\n<p>None of this takes into consideration the possibility of spreading the brute force attack across multiple servers of course.  But the concept is still the same.  Slower hash techniques mean you&#8217;ll need a larger number of servers to compute all of the possible combinations in a reasonable amount of time compared to a very fast hash, like MD5.</p>\n",
+            "content_text": "The majority of the Coding Horror: Speed Hashing post talks about speed based on MD5.  It isn&#8217;t until the very bottom that you see this:\n\nIf you are a developer:\nUse bcrypt or PBKDF2 exclusively to hash anything you need to be secure. These new hashes were specifically designed to be difficult to implement on GPUs. Do not use any other form of hash. Almost every other popular hashing scheme is vulnerable to brute forcing by arrays of commodity GPUs, which only get faster and more parallel and easier to program for every year.\n\nI&#8217;m not sure why that wasn&#8217;t at the very top.\nIf you are still using MD5 to hash passwords (or worse, aren&#8217;t hashing passwords at all) then please stop and go use bcrypt.  For those using PHP phpass is a great option.\nFor password hashes you want the process to be slow.  There is of course a trade off.  Here is a PHP example:\n[sourcecode lang=&#8221;php&#8221;]\ncrypt( &#8216;password&#8217;, &#8216;$2a$12$usesomesillystringforsalt$&#8217; );\n[/sourcecode]\nThe $2a tells crypt to use CRYPT_BLOWFISH.  The $15$ is the cost parameter, ranging from 04 to 31.  Running this on my Core 2 Duo laptop takes 0.4 seconds.  Increasing the cost parameter increases the amount of time it takes to compute the hash.  For my Core 2 Duo it looks like:\nCost 12: 00.4 seconds\nCost 13: 00.7 seconds\nCost 14: 01.4 seconds\nCost 15: 02.8 seconds\nCost 16: 05.5 seconds\nCost 17: 11.1 seconds\nCost 18: 22.1 seconds\nWhile having a cost of 18 might sound exciting from the point of view of making brute force attacks more difficult it would make for a horrible user experience.  Remember that each time a use fills out the log in form on your site you have to hash the password they entered to see if the matches the one your in your database.  Waiting 22 seconds per log in attempt would drive your users nuts.\nSo how high should the cost be to make brute force attacks impractical, but low enough to still provide a good user experience?  Some of that is going to depend on the power of your servers, but for now lets stick with my Core 2 Duo example.  If your possible password combinations were lower case letters, upper case letters, and numbers for a 7 character string then you&#8217;d be looking at 62 ^ 7, or 3,521,614,606,208 combinations.\nThe speed hashing post indicated that for MD5 all 7 character passwords of that type could be calculated in 4 minutes.  If we choose a cost of 13 (meaning 0.7 seconds per password) and I&#8217;ve done my math correctly, it would take 159,528 years to do the same thing on my Core 2 Duo.\nIf your server is 10 times faster than my Core 2 Duo then a cost of 13 may still be fairly reasonable.  A single hash would take 0.07 seconds and computing hashes for all 7 character passwords would take 15,952 years.  Even another 100x increase in speed would still mean 159 years.\nNone of this takes into consideration the possibility of spreading the brute force attack across multiple servers of course.  But the concept is still the same.  Slower hash techniques mean you&#8217;ll need a larger number of servers to compute all of the possible combinations in a reasonable amount of time compared to a very fast hash, like MD5.",
+            "date_published": "2012-04-09T10:25:05-06:00",
+            "date_modified": "2012-04-09T10:25:05-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "bcrypt",
+                "coding-horror",
+                "crypt",
+                "hash",
+                "md5",
+                "PHP",
+                "Posts"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>crash-report &#8211; Joseph Scott</title>
+	<atom:link href="/tag/crash-report/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 12 Apr 2011 18:23:09 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Caching and Processing 2TB Mozilla Crash Reports</title>
+		<link>/2011/04/12/caching-and-processing-2tb-mozilla-crash-reports/</link>
+					<comments>/2011/04/12/caching-and-processing-2tb-mozilla-crash-reports/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 12 Apr 2011 18:23:09 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[crash-report]]></category>
+		<category><![CDATA[firefox]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3979</guid>
+
+					<description><![CDATA[Mozilla processes TBs of Firefox crash reports daily using HBase, Hadoop, Python and Thrift protocol. The project is called Socorro, a system for collecting, processing, and displaying crash reports from clients. Today the Socorro application stores about 2.6 million crash reports per day. During peak traffic, it receives about 2.5K crashes per minute. via Caching [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+Mozilla processes TBs of Firefox crash reports daily using HBase, Hadoop, Python and Thrift protocol. The project is called Socorro, a system for collecting, processing, and displaying crash reports from clients. Today the Socorro application stores about 2.6 million crash reports per day. During peak traffic, it receives about 2.5K crashes per minute.
+</p></blockquote>
+<p>via <a href='http://highscalability.com/blog/2011/4/12/caching-and-processing-2tb-mozilla-crash-reports-in-memory-w.html'>Caching and Processing 2TB Mozilla Crash Reports in memory with Hazelcast</a></p>
+<p>A peak of 40 crash reports per second and an average around 30 per second!  I wonder what the distribution looks like for installs sending in crash reports.  Are the majority of the reports coming in from a small portion of users or is it more spread out across the entire install base?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/04/12/caching-and-processing-2tb-mozilla-crash-reports/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

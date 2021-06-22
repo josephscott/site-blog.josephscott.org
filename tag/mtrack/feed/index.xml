@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mtrack &#8211; Joseph Scott</title>
+	<atom:link href="/tag/mtrack/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 01 Feb 2011 21:22:59 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>mtrack</title>
+		<link>/2011/02/01/mtrack/</link>
+					<comments>/2011/02/01/mtrack/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 01 Feb 2011 21:22:59 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[mtrack]]></category>
+		<category><![CDATA[trac]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3456</guid>
+
+					<description><![CDATA[mtrack is a project management, source browser, wiki and issue tracking tool heavily inspired by the popular Trac software. via mtrack &#8211; software development tracker. About every five months I get a strong desire to write a clone of Trac. I like the features, but the setup, admin, customization and management aspects are a pain. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>mtrack is a project management, source browser, wiki and issue tracking tool heavily inspired by the popular Trac software.</p></blockquote>
+<p>via <a href='http://mtrack.wezfurlong.org/'>mtrack &#8211; software development tracker</a>.</p>
+<p>About every five months I get a strong desire to write a clone of <a href="http://trac.edgewall.org/">Trac</a>.  I like the features, but the setup, admin, customization and management aspects are a pain.  Something like <a href="http://mtrack.wezfurlong.org/">mtrack</a> looks interesting enough that I may give it a try.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/02/01/mtrack/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

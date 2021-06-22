@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>web-hooks &#8211; Joseph Scott</title>
+	<atom:link href="/tag/web-hooks/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 20 Aug 2009 04:25:02 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Web Hooks in Gmail Would Be Great</title>
+		<link>/2009/08/19/web-hooks-in-gmail-would-be-great/</link>
+					<comments>/2009/08/19/web-hooks-in-gmail-would-be-great/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 20 Aug 2009 04:25:02 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[gmail]]></category>
+		<category><![CDATA[web-hooks]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1377</guid>
+
+					<description><![CDATA[I&#8217;ve been loosely following the webhooks idea for awhile and I quite like it. I&#8217;m hoping to see more sites and services add support for web hooks, allowing my own services to consume data and events more or less as they happen. Late last night while trying to get Michael to go to sleep I [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been loosely following the <a href="http://webhooks.pbworks.com/">webhooks</a> idea for awhile and I quite like it.  I&#8217;m hoping to see more sites and services add support for web hooks, allowing my own services to consume data and events more or less as they happen.</p>
+<p>Late last night while trying to get Michael to go to sleep I started thinking about the different ways we provide data to users.  Feeds (RSS &amp; Atom) have become really popular and are fine for what they do.  Then my thoughts turned to email.  I still get quite a bit of information via email.  In thinking about feeds versus email, feeds are still mostly about polling for updates (or pings or pubsubhubbub).  Email is potentially event driven, but in many cases you still have to poll for new emails.</p>
+<p><img loading="lazy" alt="" src="http://farm3.static.flickr.com/2667/3839041938_b17c07ce57_o.gif" class="alignleft" width="143" height="59" /></p>
+<p>That&#8217;s when in hit me.  What I really want is web hooks for my <a href="http://mail.google.com/">Gmail</a> account!  I could filter in Gmail for certain email patterns and have those emails skip the inbox, go directly into my archive and have a copy of the email passed off to a URL of my choosing for further processing.  All without having to poll for new emails, they would be pushed out to the URL automatically.</p>
+<p>Now to be fair you could get something close to this already.  If you have an email server you could have Gmail forward a copy of the email to your email server which could then pass it off to a script instead of delivering it to an inbox (did this with email aliases and procmail for years).  But in my case I&#8217;m using Gmail in part because I got tired of running my own email server, I wanted to spend that time doing other things.</p>
+<p>By why limit this to just Gmail?  Why not have web hooks available for Google Reader or Google Calendar?  A hook could get called anytime a change is made to my calendar, or a new item shows up from a blog with a specific tag.  Then there&#8217;s Google Docs, hooks that would get called when ever someone besides me edits a document.  There are any number of possibilities.</p>
+<p>Now for the icing on the cake.  Combined the power of web hooks with solid APIs for the services that call these hooks (Gmail, Google Calendar/Reader/Docs, etc.) and then you have something almost magical.  The URL end points that process the hook data can turn around and update that data again, at the source.  In the Google Calendar case a web hook that was called for invites, the hook could turn around and accept or decline that invite.  This allows me to come up with my own means of processing, interacting with and responding to events.</p>
+<p>Google has already started down this road with support for <a href="http://code.google.com/p/support/wiki/PostCommitWebHooks">post commit web hooks on Google Code</a>.  Hopefully that is just the beginning.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/08/19/web-hooks-in-gmail-would-be-great/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

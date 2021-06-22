@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Joyent/TextDrive&#8217;s Really, Really, Really Bad Netperf Benchmarks	</title>
+	<atom:link href="/2006/05/05/joyenttextdrives-really-really-really-bad-netperf-benchmarks/feed/" rel="self" type="application/rss+xml" />
+	<link>/2006/05/05/joyenttextdrives-really-really-really-bad-netperf-benchmarks/</link>
+	<description></description>
+	<lastBuildDate>Tue, 30 May 2006 09:03:11 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Andrei		</title>
+		<link>/2006/05/05/joyenttextdrives-really-really-really-bad-netperf-benchmarks/#comment-1300</link>
+
+		<dc:creator><![CDATA[Andrei]]></dc:creator>
+		<pubDate>Tue, 30 May 2006 09:03:11 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/05/05/joyenttextdrives-really-really-really-bad-netperf-benchmarks/#comment-1300</guid>
+
+					<description><![CDATA[Oh, just checked the disclaimer:
+
+&lt;blockquote cite=&quot;Jason&quot;&gt;
+Disclaimer: these were with FreeBSD 5. FreeBSD 6 doesn&#039;t seem to have the same issues
+
+Netperf server running on yumi.textdrive.com (solaris nevada build) and comox.textdrive.com (freebsd 5.4).
+
+Tested from emi.textdrive.com (solaris) and pacific.textdrive.com (freebsd)
+&lt;/blockquote&gt;]]></description>
+			<content:encoded><![CDATA[<p>Oh, just checked the disclaimer:</p>
+<blockquote cite="Jason"><p>
+Disclaimer: these were with FreeBSD 5. FreeBSD 6 doesn&#8217;t seem to have the same issues</p>
+<p>Netperf server running on yumi.textdrive.com (solaris nevada build) and comox.textdrive.com (freebsd 5.4).</p>
+<p>Tested from emi.textdrive.com (solaris) and pacific.textdrive.com (freebsd)
+</p></blockquote>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Andrei		</title>
+		<link>/2006/05/05/joyenttextdrives-really-really-really-bad-netperf-benchmarks/#comment-1299</link>
+
+		<dc:creator><![CDATA[Andrei]]></dc:creator>
+		<pubDate>Tue, 30 May 2006 09:00:26 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/05/05/joyenttextdrives-really-really-really-bad-netperf-benchmarks/#comment-1299</guid>
+
+					<description><![CDATA[Could you benchmark other versions of FreeBSD, let&#039;s say 5.4 or 5.5 or even 4.x?
+
+Jason might claim that the switch to Solaris was done a while ago, before 6.0 became production.]]></description>
+			<content:encoded><![CDATA[<p>Could you benchmark other versions of FreeBSD, let&#8217;s say 5.4 or 5.5 or even 4.x?</p>
+<p>Jason might claim that the switch to Solaris was done a while ago, before 6.0 became production.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: george li		</title>
+		<link>/2006/05/05/joyenttextdrives-really-really-really-bad-netperf-benchmarks/#comment-1298</link>
+
+		<dc:creator><![CDATA[george li]]></dc:creator>
+		<pubDate>Wed, 17 May 2006 16:16:20 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/05/05/joyenttextdrives-really-really-really-bad-netperf-benchmarks/#comment-1298</guid>
+
+					<description><![CDATA[I guess Jason&#039;s math is as bas as his attitude and as bad as Textdrive&#039;s support. They are full of themselves, with no reason other than hype. If the don&#039;t get their act together ... you know what they say: you can fool some people sometime....]]></description>
+			<content:encoded><![CDATA[<p>I guess Jason&#8217;s math is as bas as his attitude and as bad as Textdrive&#8217;s support. They are full of themselves, with no reason other than hype. If the don&#8217;t get their act together &#8230; you know what they say: you can fool some people sometime&#8230;.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vivek		</title>
+		<link>/2006/05/05/joyenttextdrives-really-really-really-bad-netperf-benchmarks/#comment-1297</link>
+
+		<dc:creator><![CDATA[Vivek]]></dc:creator>
+		<pubDate>Wed, 10 May 2006 14:44:22 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/05/05/joyenttextdrives-really-really-really-bad-netperf-benchmarks/#comment-1297</guid>
+
+					<description><![CDATA[I&#039;ll bet $1 that the problem with their configuration is that their switch and ethernet cards do not agree on their auto-sensing of speed or duplex, causing such issues.  There should be a boat load of errors in the syslog about collisions on at least one of the systems.  The solution is to get better hardware or to hard-wire either the switch or NIC or both to the proper speed/duplex settings.
+
+FWIW, I just ran this test from a 6.0/i386 box to a 6.1/amd64 box and got these numbers:
+
+&lt;code&gt;
+/usr/local/netperf/netperf -fM -H yertle -tTCP_STREAM -- -m1472
+TCP STREAM TEST to yertle
+Recv   Send    Send
+Socket Socket  Message  Elapsed
+Size   Size    Size     Time     Throughput
+bytes  bytes   bytes    secs.    MBytes/sec
+
+ 65536  32768   1472    10.00      53.37
+&lt;/code&gt;
+
+They&#039;re both running gigabit NICs thru a cheap-o Dell unmanaged switch.  And they&#039;re not idle boxes, either...]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ll bet $1 that the problem with their configuration is that their switch and ethernet cards do not agree on their auto-sensing of speed or duplex, causing such issues.  There should be a boat load of errors in the syslog about collisions on at least one of the systems.  The solution is to get better hardware or to hard-wire either the switch or NIC or both to the proper speed/duplex settings.</p>
+<p>FWIW, I just ran this test from a 6.0/i386 box to a 6.1/amd64 box and got these numbers:</p>
+<p><code><br />
+/usr/local/netperf/netperf -fM -H yertle -tTCP_STREAM -- -m1472<br />
+TCP STREAM TEST to yertle<br />
+Recv   Send    Send<br />
+Socket Socket  Message  Elapsed<br />
+Size   Size    Size     Time     Throughput<br />
+bytes  bytes   bytes    secs.    MBytes/sec</p>
+<p> 65536  32768   1472    10.00      53.37<br />
+</code></p>
+<p>They&#8217;re both running gigabit NICs thru a cheap-o Dell unmanaged switch.  And they&#8217;re not idle boxes, either&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: joseph		</title>
+		<link>/2006/05/05/joyenttextdrives-really-really-really-bad-netperf-benchmarks/#comment-1296</link>
+
+		<dc:creator><![CDATA[joseph]]></dc:creator>
+		<pubDate>Sat, 06 May 2006 05:22:46 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/05/05/joyenttextdrives-really-really-really-bad-netperf-benchmarks/#comment-1296</guid>
+
+					<description><![CDATA[The post at Text Snippets has some numbers, along with some additional tests.]]></description>
+			<content:encoded><![CDATA[<p>The post at Text Snippets has some numbers, along with some additional tests.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Powen		</title>
+		<link>/2006/05/05/joyenttextdrives-really-really-really-bad-netperf-benchmarks/#comment-1295</link>
+
+		<dc:creator><![CDATA[Powen]]></dc:creator>
+		<pubDate>Sat, 06 May 2006 03:29:17 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/05/05/joyenttextdrives-really-really-really-bad-netperf-benchmarks/#comment-1295</guid>
+
+					<description><![CDATA[You should also take a look at this page, it seems to have different numbers than you do.
+
+http://textsnippets.com/posts/show/399]]></description>
+			<content:encoded><![CDATA[<p>You should also take a look at this page, it seems to have different numbers than you do.</p>
+<p><a href="http://textsnippets.com/posts/show/399" rel="nofollow ugc">http://textsnippets.com/posts/show/399</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Warren		</title>
+		<link>/2006/05/05/joyenttextdrives-really-really-really-bad-netperf-benchmarks/#comment-1294</link>
+
+		<dc:creator><![CDATA[Warren]]></dc:creator>
+		<pubDate>Fri, 05 May 2006 23:41:32 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/05/05/joyenttextdrives-really-really-really-bad-netperf-benchmarks/#comment-1294</guid>
+
+					<description><![CDATA[You should head on over to the TextDrive forum and ask - Mr Hoffman posts there quite regularly.
+
+http://forum.textdrive.com/
+
+Warren]]></description>
+			<content:encoded><![CDATA[<p>You should head on over to the TextDrive forum and ask &#8211; Mr Hoffman posts there quite regularly.</p>
+<p><a href="http://forum.textdrive.com/" rel="nofollow ugc">http://forum.textdrive.com/</a></p>
+<p>Warren</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

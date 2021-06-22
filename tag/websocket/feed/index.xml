@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>websocket &#8211; Joseph Scott</title>
+	<atom:link href="/tag/websocket/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 26 Aug 2015 14:01:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>HTTP/2 and WebSocket</title>
+		<link>/2015/08/26/http2-and-websocket/</link>
+					<comments>/2015/08/26/http2-and-websocket/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 26 Aug 2015 14:01:44 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http2]]></category>
+		<category><![CDATA[websocket]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12738</guid>
+
+					<description><![CDATA[With HTTP/2 marching towards production environments, you might be wondering how WebSocket fits in. The HTTPbis working group was thinking about that too: The WebSocket protocol enables two-way communication between a client running untrusted code in a controlled environment to a remote host that has opted-in to communications from that code. Since it requires one [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>With HTTP/2 marching towards production environments, you might be wondering how WebSocket fits in.  The HTTPbis working group was thinking about that too:</p>
+<blockquote><p>
+The WebSocket protocol enables two-way communication between a client running untrusted code in a controlled environment to a remote host that has opted-in to communications from that code.  Since it requires one TCP connection for every WebSocket connection, having multiple WebSocket connections between the same client and the same server is inefficient.  On the other hand, HTTP/2 specifies a fast, secure, multiplexed framing protocol.  This document provides bi-directional multiplexed communication by layering WebSocket on top of HTTP/2.
+</p></blockquote>
+<p>From <a href="https://tools.ietf.org/html/draft-hirano-httpbis-websocket-over-http2-01">draft-hirano-httpbis-websocket-over-http2-01</a>.</p>
+<p>The draft expired back on February 13, 2015 and I haven&#8217;t seen any other significant discussions in this area.  At this point there doesn&#8217;t appear to be any momentum to come up with a way to leverage HTTP/2 in future versions of the WebSocket protocol.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/08/26/http2-and-websocket/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

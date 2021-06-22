@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Setting up SVNSync and SVN-Notify	</title>
+	<atom:link href="/2010/01/15/setting-up-svnsync-and-svn-notify/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/01/15/setting-up-svnsync-and-svn-notify/</link>
+	<description></description>
+	<lastBuildDate>Sun, 10 Feb 2013 15:56:48 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: From SVN to Git(hub) &#171; Cruver.com		</title>
+		<link>/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3150</link>
+
+		<dc:creator><![CDATA[From SVN to Git(hub) &#171; Cruver.com]]></dc:creator>
+		<pubDate>Sun, 10 Feb 2013 15:56:48 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1627#comment-3150</guid>
+
+					<description><![CDATA[[...] to synchronize your new local SVN with the remote SVN server.  A dead simple guide can be found here.  If you have issues using file://, try using svn://localhost:3690.  You can also ignore Step 6 [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] to synchronize your new local SVN with the remote SVN server.  A dead simple guide can be found here.  If you have issues using file://, try using <a href="svn://localhost:3690" rel="nofollow ugc">svn://localhost:3690</a>.  You can also ignore Step 6 [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Fran		</title>
+		<link>/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3149</link>
+
+		<dc:creator><![CDATA[Fran]]></dc:creator>
+		<pubDate>Thu, 14 Jul 2011 07:52:17 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1627#comment-3149</guid>
+
+					<description><![CDATA[Great article !
+Is there any way to get the full repository path in the notification email?
+Currently I get &quot;trunk/project/......&quot; while it would be great to have the full path as we have the subversion service through http with apache and would be able to navigate directly to the file. Something like:
+&quot;http://svn.mydomain.com/projectName/trunk/project....&quot;
+
+Thanks in advance.]]></description>
+			<content:encoded><![CDATA[<p>Great article !<br />
+Is there any way to get the full repository path in the notification email?<br />
+Currently I get &#8220;trunk/project/&#8230;&#8230;&#8221; while it would be great to have the full path as we have the subversion service through http with apache and would be able to navigate directly to the file. Something like:<br />
+&#8220;http://svn.mydomain.com/projectName/trunk/project&#8230;.&#8221;</p>
+<p>Thanks in advance.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3148</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 29 Mar 2010 22:05:50 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1627#comment-3148</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3147&quot;&gt;westi&lt;/a&gt;.
+
+Yeah, I need to play with this a bit more and see if I can make it work again.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3147">westi</a>.</p>
+<p>Yeah, I need to play with this a bit more and see if I can make it work again.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: westi		</title>
+		<link>/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3147</link>
+
+		<dc:creator><![CDATA[westi]]></dc:creator>
+		<pubDate>Mon, 29 Mar 2010 18:46:58 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1627#comment-3147</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3145&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+You may need a longer delay before the notifier runs so as to ensure you are not catching the svnsync username.
+
+You could make it check the username and loop if the username for the revision is still svnsync.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3145">Joseph Scott</a>.</p>
+<p>You may need a longer delay before the notifier runs so as to ensure you are not catching the svnsync username.</p>
+<p>You could make it check the username and loop if the username for the revision is still svnsync.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: westi		</title>
+		<link>/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3146</link>
+
+		<dc:creator><![CDATA[westi]]></dc:creator>
+		<pubDate>Mon, 29 Mar 2010 18:45:27 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1627#comment-3146</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3144&quot;&gt;Øystein K. Stephansen&lt;/a&gt;.
+
+If you enable the ability to edit rev-props using a hook in the repo (which I think you have to do for svnsync anyway) then you can easily change the username associated with a log message.
+
+You can do this as a one time script which runs through each revision on write a hook to do it for each revision as it is synced (as long as you can hook in after svnsync has set the username)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3144">Øystein K. Stephansen</a>.</p>
+<p>If you enable the ability to edit rev-props using a hook in the repo (which I think you have to do for svnsync anyway) then you can easily change the username associated with a log message.</p>
+<p>You can do this as a one time script which runs through each revision on write a hook to do it for each revision as it is synced (as long as you can hook in after svnsync has set the username)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3145</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 29 Mar 2010 15:05:06 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1627#comment-3145</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3144&quot;&gt;Øystein K. Stephansen&lt;/a&gt;.
+
+Peter Westwood&#039;s suggestion worked for awhile, but for some reason has stopped working for me.  This could be due to changes on the main repo, I&#039;m not sure.
+
+I&#039;m not aware of specific method for changing usernames with svn hooks, but I wouldn&#039;t be surprised if someone has done that before.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3144">Øystein K. Stephansen</a>.</p>
+<p>Peter Westwood&#8217;s suggestion worked for awhile, but for some reason has stopped working for me.  This could be due to changes on the main repo, I&#8217;m not sure.</p>
+<p>I&#8217;m not aware of specific method for changing usernames with svn hooks, but I wouldn&#8217;t be surprised if someone has done that before.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Øystein K. Stephansen		</title>
+		<link>/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3144</link>
+
+		<dc:creator><![CDATA[Øystein K. Stephansen]]></dc:creator>
+		<pubDate>Mon, 29 Mar 2010 12:33:34 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1627#comment-3144</guid>
+
+					<description><![CDATA[Hi!
+
+Did you sort the issue regarding that all commits where done by the user running svnsync?
+
+I&#039;m trying to move my subversion from an online service to our own local network and all commits are done by the user running the svnsync. And to make it even harder all the usernames have changed from the old repository to the new one.
+
+Do you know of any way to change the usernames with svn hooks? On the external online service we use our complete mail address as usernames but the local one only use the domain username. So I need to strip away &quot;@domain.com&quot; in the username that does the commit......
+
+Any ideas?]]></description>
+			<content:encoded><![CDATA[<p>Hi!</p>
+<p>Did you sort the issue regarding that all commits where done by the user running svnsync?</p>
+<p>I&#8217;m trying to move my subversion from an online service to our own local network and all commits are done by the user running the svnsync. And to make it even harder all the usernames have changed from the old repository to the new one.</p>
+<p>Do you know of any way to change the usernames with svn hooks? On the external online service we use our complete mail address as usernames but the local one only use the domain username. So I need to strip away &#8220;@domain.com&#8221; in the username that does the commit&#8230;&#8230;</p>
+<p>Any ideas?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: westi		</title>
+		<link>/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3143</link>
+
+		<dc:creator><![CDATA[westi]]></dc:creator>
+		<pubDate>Sat, 16 Jan 2010 23:05:57 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1627#comment-3143</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3142&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+Cool.
+
+I guess the output redirect difference may be just a shell configuration thing.
+
+I just googled what to use as I can never remember ;-)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3142">Joseph Scott</a>.</p>
+<p>Cool.</p>
+<p>I guess the output redirect difference may be just a shell configuration thing.</p>
+<p>I just googled what to use as I can never remember 😉</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3142</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Sat, 16 Jan 2010 23:02:35 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1627#comment-3142</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3141&quot;&gt;westi&lt;/a&gt;.
+
+Nice!
+I had to make just one small fix, I changed the last line to:
+
+&lt;code&gt;delayed_notify $1 $2 &#062;&#038;2 /dev/null &#038;&lt;/code&gt;
+
+Without that I&#039;d get an error, post-commit: 28: Syntax error: Bad fd number
+I guess it doesn&#039;t assume STDERR.
+
+Not a big deal, but I usually do the ordering on this differently: &lt;code&gt;&#062; /dev/null 2&#062;&#038;1&lt;/code&gt;
+so that it reads out loud like, redirect STDOUT to /dev/null and redirect STDERR to STDOUT
+
+Thanks again, I just confirmed that this works.  I now get the correct username in the commit emails.  I&#039;ll update the post with your example.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3141">westi</a>.</p>
+<p>Nice!<br />
+I had to make just one small fix, I changed the last line to:</p>
+<p><code>delayed_notify $1 $2 &gt;&amp;2 /dev/null &amp;</code></p>
+<p>Without that I&#8217;d get an error, post-commit: 28: Syntax error: Bad fd number<br />
+I guess it doesn&#8217;t assume STDERR.</p>
+<p>Not a big deal, but I usually do the ordering on this differently: <code>&gt; /dev/null 2&gt;&amp;1</code><br />
+so that it reads out loud like, redirect STDOUT to /dev/null and redirect STDERR to STDOUT</p>
+<p>Thanks again, I just confirmed that this works.  I now get the correct username in the commit emails.  I&#8217;ll update the post with your example.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: westi		</title>
+		<link>/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3141</link>
+
+		<dc:creator><![CDATA[westi]]></dc:creator>
+		<pubDate>Sat, 16 Jan 2010 12:11:41 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1627#comment-3141</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3140&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+This will do it.
+
+This will fork and sleep before doing the notify so that you catch the revprop changes as well.
+
+You need to tune the sleep time based on how big the revprop changes take.  10 seconds is probably far too long.
+
+&lt;code&gt;
+#!/bin/sh
+
+delayed_notify() {
+        sleep 10
+        /usr/bin/svnnotify --repos-path &quot;$1&quot; --revision &quot;$2&quot; 
+        --to commit-list@example.com 
+        --from commit-list@example.com 
+        --with-diff 
+        --subject-cx 
+        --subject-prefix &#039;REPO-NAME &#039; 
+        --handler HTML::ColorDiff
+}
+
+delayed_notify $1 $2 &#062;&#038; /dev/null &#038;
+&lt;/code&gt;]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/01/15/setting-up-svnsync-and-svn-notify/#comment-3140">Joseph Scott</a>.</p>
+<p>This will do it.</p>
+<p>This will fork and sleep before doing the notify so that you catch the revprop changes as well.</p>
+<p>You need to tune the sleep time based on how big the revprop changes take.  10 seconds is probably far too long.</p>
+<p><code><br />
+#!/bin/sh</p>
+<p>delayed_notify() {<br />
+        sleep 10<br />
+        /usr/bin/svnnotify --repos-path "$1" --revision "$2"<br />
+        --to commit-list@example.com<br />
+        --from commit-list@example.com<br />
+        --with-diff<br />
+        --subject-cx<br />
+        --subject-prefix 'REPO-NAME '<br />
+        --handler HTML::ColorDiff<br />
+}</p>
+<p>delayed_notify $1 $2 &gt;&amp; /dev/null &amp;<br />
+</code></p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

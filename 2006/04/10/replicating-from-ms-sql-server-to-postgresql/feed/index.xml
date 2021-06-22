@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Replicating from MS SQL Server to PostgreSQL	</title>
+	<atom:link href="/2006/04/10/replicating-from-ms-sql-server-to-postgresql/feed/" rel="self" type="application/rss+xml" />
+	<link>/2006/04/10/replicating-from-ms-sql-server-to-postgresql/</link>
+	<description></description>
+	<lastBuildDate>Tue, 11 Apr 2006 17:33:10 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Adam Kalsey		</title>
+		<link>/2006/04/10/replicating-from-ms-sql-server-to-postgresql/#comment-1254</link>
+
+		<dc:creator><![CDATA[Adam Kalsey]]></dc:creator>
+		<pubDate>Tue, 11 Apr 2006 17:33:10 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/04/10/replicating-from-ms-sql-server-to-postgresql/#comment-1254</guid>
+
+					<description><![CDATA[It would also be a good way to port your product to Postgresql. You could have a live testing environment synced with an existing DB.]]></description>
+			<content:encoded><![CDATA[<p>It would also be a good way to port your product to Postgresql. You could have a live testing environment synced with an existing DB.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

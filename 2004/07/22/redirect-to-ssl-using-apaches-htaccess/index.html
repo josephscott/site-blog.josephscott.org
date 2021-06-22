@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="profile" href="https://gmpg.org/xfn/11"> <meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@josephscott">
+<meta name="twitter:site" content="@josephscott">
+<meta name="twitter:title" content="Redirect To SSL Using Apache&#8217;s .htaccess">
+<meta name="twitter:description" content="There are plenty of times I want to require users to be accessing a site only via SSL.  My first try at this was to simple create a .htaccess file that contained SSLRequireSSL, which basically t"> <link media="all" href="/wp-content/cache/autoptimize/css/autoptimize_da876478aa27b35cb47c491625986a1f.css" rel="stylesheet">
+<link media="print" href="/wp-content/cache/autoptimize/css/autoptimize_4a8bc5d490127fba1e504524cfa205e6.css" rel="stylesheet">
+<title>Redirect To SSL Using Apache&#8217;s .htaccess &#8211; Joseph Scott</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="alternate" type="application/rss+xml" title="Joseph Scott &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="Joseph Scott &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Joseph Scott &raquo; Redirect To SSL Using Apache&#8217;s .htaccess Comments Feed" href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/feed/">
+<style id="twentytwenty-style-inline-css">.color-accent,.color-accent-hover:hover,.color-accent-hover:focus,:root .has-accent-color,.has-drop-cap:not(:focus):first-letter,.wp-block-button.is-style-outline,a { color: #e20842; }blockquote,.border-color-accent,.border-color-accent-hover:hover,.border-color-accent-hover:focus { border-color: #e20842; }button,.button,.faux-button,.wp-block-button__link,.wp-block-file .wp-block-file__button,input[type="button"],input[type="reset"],input[type="submit"],.bg-accent,.bg-accent-hover:hover,.bg-accent-hover:focus,:root .has-accent-background-color,.comment-reply-link { background-color: #e20842; }.fill-children-accent,.fill-children-accent * { fill: #e20842; }:root .has-background-color,button,.button,.faux-button,.wp-block-button__link,.wp-block-file__button,input[type="button"],input[type="reset"],input[type="submit"],.wp-block-button,.comment-reply-link,.has-background.has-primary-background-color:not(.has-text-color),.has-background.has-primary-background-color *:not(.has-text-color),.has-background.has-accent-background-color:not(.has-text-color),.has-background.has-accent-background-color *:not(.has-text-color) { color: #f7f7f7; }:root .has-background-background-color { background-color: #f7f7f7; }body,.entry-title a,:root .has-primary-color { color: #000000; }:root .has-primary-background-color { background-color: #000000; }cite,figcaption,.wp-caption-text,.post-meta,.entry-content .wp-block-archives li,.entry-content .wp-block-categories li,.entry-content .wp-block-latest-posts li,.wp-block-latest-comments__comment-date,.wp-block-latest-posts__post-date,.wp-block-embed figcaption,.wp-block-image figcaption,.wp-block-pullquote cite,.comment-metadata,.comment-respond .comment-notes,.comment-respond .logged-in-as,.pagination .dots,.entry-content hr:not(.has-background),hr.styled-separator,:root .has-secondary-color { color: #686868; }:root .has-secondary-background-color { background-color: #686868; }pre,fieldset,input,textarea,table,table *,hr { border-color: #d3d3d3; }caption,code,code,kbd,samp,.wp-block-table.is-style-stripes tbody tr:nth-child(odd),:root .has-subtle-background-background-color { background-color: #d3d3d3; }.wp-block-table.is-style-stripes { border-bottom-color: #d3d3d3; }.wp-block-latest-posts.is-grid li { border-top-color: #d3d3d3; }:root .has-subtle-background-color { color: #d3d3d3; }body:not(.overlay-header) .primary-menu > li > a,body:not(.overlay-header) .primary-menu > li > .icon,.modal-menu a,.footer-menu a, .footer-widgets a,#site-footer .wp-block-button.is-style-outline,.wp-block-pullquote:before,.singular:not(.overlay-header) .entry-header a,.archive-header a,.header-footer-group .color-accent,.header-footer-group .color-accent-hover:hover { color: #e20842; }.social-icons a,#site-footer button:not(.toggle),#site-footer .button,#site-footer .faux-button,#site-footer .wp-block-button__link,#site-footer .wp-block-file__button,#site-footer input[type="button"],#site-footer input[type="reset"],#site-footer input[type="submit"] { background-color: #e20842; }.social-icons a,body:not(.overlay-header) .primary-menu ul,.header-footer-group button,.header-footer-group .button,.header-footer-group .faux-button,.header-footer-group .wp-block-button:not(.is-style-outline) .wp-block-button__link,.header-footer-group .wp-block-file__button,.header-footer-group input[type="button"],.header-footer-group input[type="reset"],.header-footer-group input[type="submit"] { color: #f7f7f7; }#site-header,.footer-nav-widgets-wrapper,#site-footer,.menu-modal,.menu-modal-inner,.search-modal-inner,.archive-header,.singular .entry-header,.singular .featured-media:before,.wp-block-pullquote:before { background-color: #f7f7f7; }.header-footer-group,body:not(.overlay-header) #site-header .toggle,.menu-modal .toggle { color: #000000; }body:not(.overlay-header) .primary-menu ul { background-color: #000000; }body:not(.overlay-header) .primary-menu > li > ul:after { border-bottom-color: #000000; }body:not(.overlay-header) .primary-menu ul ul:after { border-left-color: #000000; }.site-description,body:not(.overlay-header) .toggle-inner .toggle-text,.widget .post-date,.widget .rss-date,.widget_archive li,.widget_categories li,.widget cite,.widget_pages li,.widget_meta li,.widget_nav_menu li,.powered-by-wordpress,.to-the-top,.singular .entry-header .post-meta,.singular:not(.overlay-header) .entry-header .post-meta a { color: #686868; }.header-footer-group pre,.header-footer-group fieldset,.header-footer-group input,.header-footer-group textarea,.header-footer-group table,.header-footer-group table *,.footer-nav-widgets-wrapper,#site-footer,.menu-modal nav *,.footer-widgets-outer-wrapper,.footer-top { border-color: #d3d3d3; }.header-footer-group table caption,body:not(.overlay-header) .header-inner .toggle-wrapper::before { background-color: #d3d3d3; }.overlay-header .header-inner { color: #f7f7f7; }.cover-header .entry-header * { color: #f7f7f7; }</style>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/80">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 5.7.2">
+<link rel="canonical" href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/">
+<link rel="shortlink" href="/?p=80">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2004%2F07%2F22%2Fredirect-to-ssl-using-apaches-htaccess%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2004%2F07%2F22%2Fredirect-to-ssl-using-apaches-htaccess%2F&#038;format=xml">
+<link rel="alternate" type="application/feed+json" title="Joseph Scott &raquo; JSON Feed" href="/feed/json/">
+<link rel="alternate" type="application/feed+json" title="Joseph Scott &raquo; Redirect To SSL Using Apache&#8217;s .htaccess Comments Feed" href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/feed/json/"> <script>document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );</script> <style id="custom-background-css">body.custom-background { background-color: #f7f7f7; }</style>
+<style id="wp-custom-css">.powered-by-wordpress { display: none;}
+
+.entry-categories { display: none;}</style>
+</head>
+<body class="post-template-default single single-post postid-80 single-format-standard custom-background wp-embed-responsive singular enable-search-modal missing-post-thumbnail has-single-pagination showing-comments show-avatars footer-top-visible reduced-spacing"> <a class="skip-link screen-reader-text" href="#site-content">Skip to the content</a><header id="site-header" class="header-footer-group" role="banner"><div class="header-inner section-inner">
+<div class="header-titles-wrapper"> <button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false"> <span class="toggle-inner"> <span class="toggle-icon"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewbox="0 0 23 23"><path d="M38.710696,48.0601792 L43,52.3494831 L41.3494831,54 L37.0601792,49.710696 C35.2632422,51.1481185 32.9839107,52.0076499 30.5038249,52.0076499 C24.7027226,52.0076499 20,47.3049272 20,41.5038249 C20,35.7027226 24.7027226,31 30.5038249,31 C36.3049272,31 41.0076499,35.7027226 41.0076499,41.5038249 C41.0076499,43.9839107 40.1481185,46.2632422 38.710696,48.0601792 Z M36.3875844,47.1716785 C37.8030221,45.7026647 38.6734666,43.7048964 38.6734666,41.5038249 C38.6734666,36.9918565 35.0157934,33.3341833 30.5038249,33.3341833 C25.9918565,33.3341833 22.3341833,36.9918565 22.3341833,41.5038249 C22.3341833,46.0157934 25.9918565,49.6734666 30.5038249,49.6734666 C32.7048964,49.6734666 34.7026647,48.8030221 36.1716785,47.3875844 C36.2023931,47.347638 36.2360451,47.3092237 36.2726343,47.2726343 C36.3092237,47.2360451 36.347638,47.2023931 36.3875844,47.1716785 Z" transform="translate(-20 -31)"></path></svg> </span> <span class="toggle-text">Search</span> </span> </button><div class="header-titles"><div class="site-title faux-heading"><a href="/">Joseph Scott</a></div></div> <button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle"> <span class="toggle-inner"> <span class="toggle-icon"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="26" height="7" viewbox="0 0 26 7"><path fill-rule="evenodd" d="M332.5,45 C330.567003,45 329,43.4329966 329,41.5 C329,39.5670034 330.567003,38 332.5,38 C334.432997,38 336,39.5670034 336,41.5 C336,43.4329966 334.432997,45 332.5,45 Z M342,45 C340.067003,45 338.5,43.4329966 338.5,41.5 C338.5,39.5670034 340.067003,38 342,38 C343.932997,38 345.5,39.5670034 345.5,41.5 C345.5,43.4329966 343.932997,45 342,45 Z M351.5,45 C349.567003,45 348,43.4329966 348,41.5 C348,39.5670034 349.567003,38 351.5,38 C353.432997,38 355,39.5670034 355,41.5 C355,43.4329966 353.432997,45 351.5,45 Z" transform="translate(-329 -38)"></path></svg> </span> <span class="toggle-text">Menu</span> </span> </button>
+</div>
+<div class="header-navigation-wrapper">
+<nav class="primary-menu-wrapper" aria-label="Horizontal" role="navigation"><ul class="primary-menu reset-list-style">
+<li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><a href="https://josephscott.org/">Home</a></li>
+<li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-8"><a href="/">Blog</a></li>
+<li id="menu-item-15706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15706"><a href="/contact/">Contact</a></li>
+</ul></nav><div class="header-toggles hide-no-js"><div class="toggle-wrapper search-toggle-wrapper"> <button class="toggle search-toggle desktop-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false"> <span class="toggle-inner"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewbox="0 0 23 23"><path d="M38.710696,48.0601792 L43,52.3494831 L41.3494831,54 L37.0601792,49.710696 C35.2632422,51.1481185 32.9839107,52.0076499 30.5038249,52.0076499 C24.7027226,52.0076499 20,47.3049272 20,41.5038249 C20,35.7027226 24.7027226,31 30.5038249,31 C36.3049272,31 41.0076499,35.7027226 41.0076499,41.5038249 C41.0076499,43.9839107 40.1481185,46.2632422 38.710696,48.0601792 Z M36.3875844,47.1716785 C37.8030221,45.7026647 38.6734666,43.7048964 38.6734666,41.5038249 C38.6734666,36.9918565 35.0157934,33.3341833 30.5038249,33.3341833 C25.9918565,33.3341833 22.3341833,36.9918565 22.3341833,41.5038249 C22.3341833,46.0157934 25.9918565,49.6734666 30.5038249,49.6734666 C32.7048964,49.6734666 34.7026647,48.8030221 36.1716785,47.3875844 C36.2023931,47.347638 36.2360451,47.3092237 36.2726343,47.2726343 C36.3092237,47.2360451 36.347638,47.2023931 36.3875844,47.1716785 Z" transform="translate(-20 -31)"></path></svg> <span class="toggle-text">Search</span> </span> </button>
+</div></div>
+</div>
+</div>
+<div class="search-modal cover-modal header-footer-group" data-modal-target-string=".search-modal"><div class="search-modal-inner modal-inner"><div class="section-inner">
+<form role="search" aria-label="Search for:" method="get" class="search-form" action="/"> <label for="search-form-1"> <span class="screen-reader-text">Search for:</span> <input type="search" id="search-form-1" class="search-field" placeholder="Search &hellip;" value="" name="s"> </label> <input type="submit" class="search-submit" value="Search">
+</form> <button class="toggle search-untoggle close-search-toggle fill-children-current-color" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field"> <span class="screen-reader-text">Close search</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16"><polygon fill="" fill-rule="evenodd" points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102"></polygon></svg> </button>
+</div></div></div></header><div class="menu-modal cover-modal header-footer-group" data-modal-target-string=".menu-modal"><div class="menu-modal-inner modal-inner"><div class="menu-wrapper section-inner">
+<div class="menu-top"> <button class="toggle close-nav-toggle fill-children-current-color" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".menu-modal"> <span class="toggle-text">Close Menu</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16"><polygon fill="" fill-rule="evenodd" points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102"></polygon></svg> </button><nav class="mobile-menu" aria-label="Mobile" role="navigation"><ul class="modal-menu reset-list-style">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><div class="ancestor-wrapper"><a href="https://josephscott.org/">Home</a></div></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-8"><div class="ancestor-wrapper"><a href="/">Blog</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15706"><div class="ancestor-wrapper"><a href="/contact/">Contact</a></div></li>
+</ul></nav>
+</div>
+<div class="menu-bottom"></div>
+</div></div></div>
+<main id="site-content" role="main"><article class="post-80 post type-post status-publish format-standard hentry category-how-to category-servers category-web" id="post-80"><header class="entry-header has-text-align-center header-footer-group"><div class="entry-header-inner section-inner medium">
+<div class="entry-categories"> <span class="screen-reader-text">Categories</span><div class="entry-categories-inner"> <a href="/category/how-to/" rel="category tag">How To</a> <a href="/category/web/servers/" rel="category tag">Servers</a> <a href="/category/web/" rel="category tag">Web</a>
+</div>
+</div>
+<h1 class="entry-title">Redirect To SSL Using Apache&#8217;s .htaccess</h1>
+<div class="post-meta-wrapper post-meta-single post-meta-single-top"><ul class="post-meta">
+<li class="post-author meta-wrapper"> <span class="meta-icon"> <span class="screen-reader-text">Post author</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewbox="0 0 18 20"><path fill="" d="M18,19 C18,19.5522847 17.5522847,20 17,20 C16.4477153,20 16,19.5522847 16,19 L16,17 C16,15.3431458 14.6568542,14 13,14 L5,14 C3.34314575,14 2,15.3431458 2,17 L2,19 C2,19.5522847 1.55228475,20 1,20 C0.44771525,20 0,19.5522847 0,19 L0,17 C0,14.2385763 2.23857625,12 5,12 L13,12 C15.7614237,12 18,14.2385763 18,17 L18,19 Z M9,10 C6.23857625,10 4,7.76142375 4,5 C4,2.23857625 6.23857625,0 9,0 C11.7614237,0 14,2.23857625 14,5 C14,7.76142375 11.7614237,10 9,10 Z M9,8 C10.6568542,8 12,6.65685425 12,5 C12,3.34314575 10.6568542,2 9,2 C7.34314575,2 6,3.34314575 6,5 C6,6.65685425 7.34314575,8 9,8 Z"></path></svg> </span> <span class="meta-text"> By <a href="/author/josephscott/">josephscott</a> </span>
+</li>
+<li class="post-date meta-wrapper"> <span class="meta-icon"> <span class="screen-reader-text">Post date</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewbox="0 0 18 19"><path fill="" d="M4.60069444,4.09375 L3.25,4.09375 C2.47334957,4.09375 1.84375,4.72334957 1.84375,5.5 L1.84375,7.26736111 L16.15625,7.26736111 L16.15625,5.5 C16.15625,4.72334957 15.5266504,4.09375 14.75,4.09375 L13.3993056,4.09375 L13.3993056,4.55555556 C13.3993056,5.02154581 13.0215458,5.39930556 12.5555556,5.39930556 C12.0895653,5.39930556 11.7118056,5.02154581 11.7118056,4.55555556 L11.7118056,4.09375 L6.28819444,4.09375 L6.28819444,4.55555556 C6.28819444,5.02154581 5.9104347,5.39930556 5.44444444,5.39930556 C4.97845419,5.39930556 4.60069444,5.02154581 4.60069444,4.55555556 L4.60069444,4.09375 Z M6.28819444,2.40625 L11.7118056,2.40625 L11.7118056,1 C11.7118056,0.534009742 12.0895653,0.15625 12.5555556,0.15625 C13.0215458,0.15625 13.3993056,0.534009742 13.3993056,1 L13.3993056,2.40625 L14.75,2.40625 C16.4586309,2.40625 17.84375,3.79136906 17.84375,5.5 L17.84375,15.875 C17.84375,17.5836309 16.4586309,18.96875 14.75,18.96875 L3.25,18.96875 C1.54136906,18.96875 0.15625,17.5836309 0.15625,15.875 L0.15625,5.5 C0.15625,3.79136906 1.54136906,2.40625 3.25,2.40625 L4.60069444,2.40625 L4.60069444,1 C4.60069444,0.534009742 4.97845419,0.15625 5.44444444,0.15625 C5.9104347,0.15625 6.28819444,0.534009742 6.28819444,1 L6.28819444,2.40625 Z M1.84375,8.95486111 L1.84375,15.875 C1.84375,16.6516504 2.47334957,17.28125 3.25,17.28125 L14.75,17.28125 C15.5266504,17.28125 16.15625,16.6516504 16.15625,15.875 L16.15625,8.95486111 L1.84375,8.95486111 Z"></path></svg> </span> <span class="meta-text"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/">Thu 22 Jul 2004</a> </span>
+</li>
+<li class="post-comment-link meta-wrapper"> <span class="meta-icon"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewbox="0 0 19 19"><path d="M9.43016863,13.2235931 C9.58624731,13.094699 9.7823475,13.0241935 9.98476849,13.0241935 L15.0564516,13.0241935 C15.8581553,13.0241935 16.5080645,12.3742843 16.5080645,11.5725806 L16.5080645,3.44354839 C16.5080645,2.64184472 15.8581553,1.99193548 15.0564516,1.99193548 L3.44354839,1.99193548 C2.64184472,1.99193548 1.99193548,2.64184472 1.99193548,3.44354839 L1.99193548,11.5725806 C1.99193548,12.3742843 2.64184472,13.0241935 3.44354839,13.0241935 L5.76612903,13.0241935 C6.24715123,13.0241935 6.63709677,13.4141391 6.63709677,13.8951613 L6.63709677,15.5301903 L9.43016863,13.2235931 Z M3.44354839,14.766129 C1.67980032,14.766129 0.25,13.3363287 0.25,11.5725806 L0.25,3.44354839 C0.25,1.67980032 1.67980032,0.25 3.44354839,0.25 L15.0564516,0.25 C16.8201997,0.25 18.25,1.67980032 18.25,3.44354839 L18.25,11.5725806 C18.25,13.3363287 16.8201997,14.766129 15.0564516,14.766129 L10.2979143,14.766129 L6.32072889,18.0506004 C5.75274472,18.5196577 4.89516129,18.1156602 4.89516129,17.3790323 L4.89516129,14.766129 L3.44354839,14.766129 Z"></path></svg> </span> <span class="meta-text"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comments">73 Comments<span class="screen-reader-text"> on Redirect To SSL Using Apache&#8217;s .htaccess</span></a> </span>
+</li>
+</ul></div>
+</div></header><div class="post-inner thin "><div class="entry-content">
+<p><span style="float: left;padding: 10px"></span></p>
+<p><br> There are plenty of times I want to require users to be accessing a site only via SSL. My first try at this was to simple create a .htaccess file that contained SSLRequireSSL, which basically tells Apache that access to a site can only be allowed if SSL is being used. This accomplished what I wanted, but it brought a side issue to requiring SSL, users often leave off (or forget) the the s in https. So after a little bit of digging around I found another approach to this. The new .htaccess file looks like this:<br> <code><br> RewriteEngine On<br> RewriteCond %{SERVER_PORT} !443<br> RewriteRule (.*) https://www.example.com/require-secure/ [R]<br> </code><br> The first line tells Apache we are going to use mod_rewrite. The second line only matches if the port being used to access the site is 443 (the port reserved for https use). If that second line matches then the third takes kicks in, which simply redirects the user to the SSL version of your URL. This still enforces the use of SSL, but saves you from trying figure why you can&#8217;t get to your site just because you forget the s in https.</p>
+<p><b>UPDATE Tue 23 May 2006 @ 3:50pm :</b> <a href="http://joseph.randomnetworks.com/archives/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-477">Comment #4 by Nicolás Echániz</a> has an even better version of this that isn&#8217;t limited to checking a specific port (443) for SSL:</p>
+<p><code><br> RewriteEngine On<br> RewriteCond %{HTTPS} off<br> RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}<br> </code></p>
+</div></div>
+<div class="section-inner"></div>
+<nav class="pagination-single section-inner" aria-label="Post" role="navigation"><hr class="styled-separator is-style-wide" aria-hidden="true">
+<div class="pagination-single-inner"> <a class="previous-post" href="/2004/07/22/neal-a-maxwell-dies/"> <span class="arrow" aria-hidden="true">&larr;</span> <span class="title"><span class="title-inner">Neal A. Maxwell Dies</span></span> </a> <a class="next-post" href="/2004/07/23/link-dump-14/"> <span class="arrow" aria-hidden="true">&rarr;</span> <span class="title"><span class="title-inner">Link Dump</span></span> </a>
+</div>
+<hr class="styled-separator is-style-wide" aria-hidden="true"></nav><div class="comments-wrapper section-inner">
+<div class="comments" id="comments">
+<div class="comments-header section-inner small max-percentage"><h2 class="comment-reply-title"> 73 replies on &ldquo;Redirect To SSL Using Apache&#8217;s .htaccess&rdquo;</h2></div>
+<div class="comments-inner section-inner thin max-percentage">
+<div id="comment-422" class="comment even thread-even depth-1"><article id="div-comment-422" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.jonasblog.com/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169d3a5b22" alt="John Jonas" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">John Jonas</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-422"><time datetime="2004-09-09T08:56:29-06:00" title="Thu 9 Sep 2004 at 8:56 am">Thu 9 Sep 2004 at 8:56 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>You can also add the following to a .htaccess file:</p>
+<p> SSLRequireSSL</p>
+<p> #no non-ssl access<br> Redirect permanent /secure <a href="https://www.example.domain.com/secure" rel="nofollow ugc">https://www.example.domain.com/secure</a></p>
+<p>PS. I&#8217;m LDS too!</p>
+</div></article></div>
+<div id="comment-423" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-423" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.jonasblog.com/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169d3ab561" alt="John Jonas" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">John Jonas</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-423"><time datetime="2004-09-09T08:58:38-06:00" title="Thu 9 Sep 2004 at 8:58 am">Thu 9 Sep 2004 at 8:58 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Dang&#8230;forgot the code tag&#8230;</p>
+<p><code></code></p>
+<p> SSLRequireSSL</p>
+<p> #no non-ssl access<br> Redirect permanent /secure https://www.example.domain.com/secure</p>
+<p></p>
+</div></article></div>
+<div id="comment-424" class="comment even thread-even depth-1"><article id="div-comment-424" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d3b568d" alt="Paul Mortlock" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Paul Mortlock</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-424"><time datetime="2004-10-21T19:20:55-06:00" title="Thu 21 Oct 2004 at 7:20 pm">Thu 21 Oct 2004 at 7:20 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>i use SSLRequireSSL in my .htaccess file and it causes a server error any ideas?</p></div></article></div>
+<div id="comment-425" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-425" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-6db8f124d1b9536e30554eaf35a97cbd-120-60d169d3b663b" alt="Nicolás Echániz" src="/wp-content/uploads/gravatar-cache/6db8f124d1b9536e30554eaf35a97cbd-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Nicolás Echániz</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-425"><time datetime="2004-12-04T18:07:42-07:00" title="Sat 4 Dec 2004 at 6:07 pm">Sat 4 Dec 2004 at 6:07 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I want my users to access their webmail through https, so I have this on my httpd.conf:</p>
+<p>Alias /webmail &#8220;/var/www/localhost/htdocs/squirrelmail&#8221;</p>
+<p>RewriteEngine On<br> RewriteCond %{HTTPS} off<br> RewriteRule (.*) <a href="https://%/" rel="nofollow ugc">https://%</a>{HTTP_HOST}%{REQUEST_URI}<br> AllowOverride None<br> Options FollowSymLinks<br> Order allow,deny<br> Allow from all</p>
+</div></article></div>
+<div id="comment-426" class="comment even thread-even depth-1"><article id="div-comment-426" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.paul-roberts.com/" rel="external nofollow" class="url"><img id="grav-2dda62bdefdf51895f11b0acc5dd27c9-120-60d169d3b803a" alt="Paul Roberts" src="/wp-content/uploads/gravatar-cache/2dda62bdefdf51895f11b0acc5dd27c9-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Paul Roberts</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-426"><time datetime="2005-03-19T04:38:32-07:00" title="Sat 19 Mar 2005 at 4:38 am">Sat 19 Mar 2005 at 4:38 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I find that the following works</p>
+<p>IfModule !mod_ssl.c&gt;<br> # no non-ssl access<br> Redirect permanent / <a href="https://www.cse.unsw.edu.au/" rel="nofollow ugc">https://www.cse.unsw.edu.au/</a><br> &lt;/IfModule&gt;</p>
+<p>from <a href="https://www.cse.unsw.edu.au/faq/questions/www-htaccess.html" rel="nofollow ugc">http://www.cse.unsw.edu.au/faq/questions/www-htaccess.html</a></p>
+<p>PS moderator pls deleted previous post the &lt;&#8216;s were striped</p>
+</div></article></div>
+<div id="comment-427" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-427" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.X18PB.com/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d3bdcd7" alt="Eugene Miroskins" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Eugene Miroskins</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-427"><time datetime="2005-09-02T18:24:27-06:00" title="Fri 2 Sep 2005 at 6:24 pm">Fri 2 Sep 2005 at 6:24 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Thank you SO MUCH! The mod_rewrite works great for me, I thought this problem was going to be more difficult to solve until i came upon this page. Now almost ready to launch our site.</p></div></article></div>
+<div id="comment-428" class="comment even thread-even depth-1"><article id="div-comment-428" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d3c3310" alt="Dan" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Dan</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-428"><time datetime="2006-02-15T12:15:56-07:00" title="Wed 15 Feb 2006 at 12:15 pm">Wed 15 Feb 2006 at 12:15 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Thanks, exactly what I was looking for; works great.</p></div></article></div>
+<div id="comment-429" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-429" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-60eb5adb30c930ee7d575c7fc1793636-120-60d169d3c4287" alt="Cormac" src="/wp-content/uploads/gravatar-cache/60eb5adb30c930ee7d575c7fc1793636-120.png" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Cormac</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-429"><time datetime="2006-04-18T05:55:32-06:00" title="Tue 18 Apr 2006 at 5:55 am">Tue 18 Apr 2006 at 5:55 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>I have uploaded a .htaccess file to my root with the code that is posted in the original article. When i try to access the folder <a href="http://www.example.com/require-secure" rel="nofollow ugc">http://www.example.com/require-secure</a> it brings me to <a href="https://www.example.com/require-secure" rel="nofollow ugc">https://www.example.com/require-secure</a> straight away but it also throws out a 404 error. I&#8217;m wondering if anybody knows why this might be happening?</p></div></article></div>
+<div id="comment-430" class="comment even thread-even depth-1"><article id="div-comment-430" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.topofcool.com/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d3c9467" alt="Finster" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Finster</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-430"><time datetime="2006-04-21T14:50:48-06:00" title="Fri 21 Apr 2006 at 2:50 pm">Fri 21 Apr 2006 at 2:50 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I think you need to have a section set up to direct traffic to the SSL port with SSLEnable included in it.</p>
+<p>I may also be full of crap. I&#8217;m kind of an Apache n00b.</p>
+</div></article></div>
+<div id="comment-431" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-431" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d3ce730" alt="Joakim" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Joakim</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-431"><time datetime="2006-05-08T12:36:33-06:00" title="Mon 8 May 2006 at 12:36 pm">Mon 8 May 2006 at 12:36 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Nicolás Echániz&#8217;</p>
+<p><code> RewriteCond	%{HTTPS}	off<br> RewriteRule	(.*) https://%{HTTP_HOST}%{REQUEST_URI}<br> </code><br> is very elegant, since it checks to see if it is using ssl regardless of what port is used and uses variables to do the rewriting. Good job 🙂</p>
+</div></article></div>
+<div id="comment-432" class="comment even thread-even depth-1"><article id="div-comment-432" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d3d581c" alt="ChiselingStone" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">ChiselingStone</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-432"><time datetime="2006-05-23T14:32:56-06:00" title="Tue 23 May 2006 at 2:32 pm">Tue 23 May 2006 at 2:32 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Thank all of you for your posts!!!<br> By combining Joseph Scott&#8217;s code and Joakim&#8217;s code into an .htaccess file at the root of my server files, I came up with:</p>
+<p>RewriteEngine On<br> RewriteCond %{HTTPS} off<br> RewriteRule (.*)https://www..com/index.htm</p>
+<p>With your site in the middle of course&#8230; Works great! A user goes to mysite.com, and boom, it switches to <a href="http://www.mysite.com/" rel="nofollow ugc">http://www.mysite.com</a> and is secure. Very nice!</p>
+<p>I swear, every bit of these things is like chiseling a statue out of a block of marble. Each little bit requires a lot of hammering, but when you&#8217;re done&#8230;</p>
+<p>Laters!</p>
+</div></article></div>
+<div id="comment-433" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-433" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://alvaro.es/" rel="external nofollow" class="url"><img id="grav-c9e1d852b4d287027fe76f794e506878-120-60d169d3d6859" alt="Álvaro G. Vicario" src="/wp-content/uploads/gravatar-cache/c9e1d852b4d287027fe76f794e506878-120.png" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Álvaro G. Vicario</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-433"><time datetime="2006-07-26T04:48:30-06:00" title="Wed 26 Jul 2006 at 4:48 am">Wed 26 Jul 2006 at 4:48 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>My non-mod_rewrite solution:</p>
+<p> ServerName example.com</p>
+<p> RedirectPermanent / <a href="https://example.com/" rel="nofollow ugc">https://example.com/</a></p>
+<p> ServerName example.com</p>
+</div></article></div>
+<div id="comment-434" class="comment even thread-even depth-1"><article id="div-comment-434" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://alvaro.es/" rel="external nofollow" class="url"><img id="grav-c9e1d852b4d287027fe76f794e506878-120-60d169d3d7328" alt="Álvaro G. Vicario" src="/wp-content/uploads/gravatar-cache/c9e1d852b4d287027fe76f794e506878-120.png" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Álvaro G. Vicario</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-434"><time datetime="2006-07-26T04:49:24-06:00" title="Wed 26 Jul 2006 at 4:49 am">Wed 26 Jul 2006 at 4:49 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Sorry, tags are not escaped but stripped. I&#8217;ll use square brackets:</p>
+<p>My non-mod_rewrite solution is:</p>
+<p>[VirtualHost *:80]<br> ServerName example.com<br> [Location /]<br> RedirectPermanent / <a href="https://example.com/" rel="nofollow ugc">https://example.com/</a><br> [/Location]<br> [/VirtualHost]<br> [VirtualHost *:443]<br> ServerName example.com<br> [/VirtualHost]</p>
+</div></article></div>
+<div id="comment-435" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-435" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://alvaro.es/" rel="external nofollow" class="url"><img id="grav-c9e1d852b4d287027fe76f794e506878-120-60d169d3d7cda" alt="Álvaro G. Vicario" src="/wp-content/uploads/gravatar-cache/c9e1d852b4d287027fe76f794e506878-120.png" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Álvaro G. Vicario</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-435"><time datetime="2006-07-26T04:51:40-06:00" title="Wed 26 Jul 2006 at 4:51 am">Wed 26 Jul 2006 at 4:51 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Just a note: I couldn&#8217;t make this work until I realised that HTTPS env variable was not available in my web server, God knows why. I had to use the SERVER_PORT solution instead.</p></div></article></div>
+<div id="comment-436" class="comment even thread-even depth-1"><article id="div-comment-436" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d3dec55" alt="saravanan" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">saravanan</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-436"><time datetime="2006-08-02T04:21:47-06:00" title="Wed 2 Aug 2006 at 4:21 am">Wed 2 Aug 2006 at 4:21 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>hi</p>
+<p>how to redirect http to https,</p>
+<p>what data has been put in the htaccess file</p>
+</div></article></div>
+<div id="comment-437" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-437" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d3e4b20" alt="Bernard" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Bernard</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-437"><time datetime="2006-10-18T14:01:08-06:00" title="Wed 18 Oct 2006 at 2:01 pm">Wed 18 Oct 2006 at 2:01 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>How can I change my login page and other personal information page from http to https?</p></div></article></div>
+<div id="comment-438" class="comment even thread-even depth-1"><article id="div-comment-438" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.htaccesselite.com/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169d3eb700" alt="htaccesselite" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">htaccesselite</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-438"><time datetime="2006-10-24T13:36:24-06:00" title="Tue 24 Oct 2006 at 1:36 pm">Tue 24 Oct 2006 at 1:36 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I came up with a much better solution:</p>
+<p>SSLOptions +StrictRequire<br> SSLRequireSSL<br> SSLRequire %{HTTP_HOST} eq &#8220;domaincom.secure.powweb.com&#8221;<br> AuthUserFile /www/d/domain/.htpasswd<br> AuthName &#8220;Private&#8221;<br> AuthType basic<br> require user admin56<br> ErrorDocument 403 <a href="https://domaincom.secure.powweb.com/private/index.php" rel="nofollow ugc">https://domaincom.secure.powweb.com/private/index.php</a></p>
+<p>Tutorial: <a href="http://www.htaccesselite.com/htaccess/force-https-and-no-double-login-vt30.html" rel="nofollow ugc">http://www.htaccesselite.com/htaccess/force-https-and-no-double-login-vt30.html</a></p>
+</div></article></div>
+<div id="comment-439" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-439" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d40311a" alt="ti89" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">ti89</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-439"><time datetime="2006-10-30T10:06:28-07:00" title="Mon 30 Oct 2006 at 10:06 am">Mon 30 Oct 2006 at 10:06 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p># htaccesselite Says:<br> October 24th, 2006 at 1:36 pm</p>
+<p>I came up with a much better solution:</p>
+<p>SSLOptions +StrictRequire<br> SSLRequireSSL<br> SSLRequire %{HTTP_HOST} eq “domaincom.secure.powweb.com”<br> AuthUserFile /www/d/domain/.htpasswd<br> AuthName “Private”<br> AuthType basic<br> require user admin56<br> ErrorDocument 403 <a href="https://domaincom.secure.powweb.com/private/index.php" rel="nofollow ugc">https://domaincom.secure.powweb.com/private/index.php</a></p>
+<p>Tutorial: <a href="http://www.htaccesselite.com/htaccess/force-https-and-no-double-login-vt30.html" rel="nofollow ugc">http://www.htaccesselite.com/htaccess/force-https-and-no-double-login-vt30.html</a></p>
+<p>Wow! That fixed my problem exactly! There is an even better SSL article at htaccesselite -&gt; <a href="http://www.htaccesselite.com/htaccess/redirecting-all-or-part-of-a-server-to-ssl-vt61.html" rel="nofollow ugc">http://www.htaccesselite.com/htaccess/redirecting-all-or-part-of-a-server-to-ssl-vt61.html</a></p>
+</div></article></div>
+<div id="comment-440" class="pingback even thread-even depth-1"><article id="div-comment-440" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.askapache.com/2006/uncategorized/htaccesselitecom-aboutus.html" rel="external nofollow" class="url"><span class="fn">AskApache.com &raquo; htaccesselite.com aboutus</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-440"><time datetime="2006-11-07T00:12:22-07:00" title="Tue 7 Nov 2006 at 12:12 am">Tue 7 Nov 2006 at 12:12 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] <a href="http://joseph.randomnetworks.com/archives/2004/07/22/redirect-to-ssl-using-apaches-htaccess/" rel="nofollow ugc">http://joseph.randomnetworks.com/archives/2004/07/22/redirect-to-ssl-using-apaches-htaccess/</a> [&#8230;]</p></div></article></div>
+<div id="comment-441" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-441" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d4096cf" alt="Rudolf Potucek" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Rudolf Potucek</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-441"><time datetime="2006-11-07T19:13:16-07:00" title="Tue 7 Nov 2006 at 7:13 pm">Tue 7 Nov 2006 at 7:13 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Here is a most paranoid version that includes all the above comments. The idea is that we want to use a .htaccess file to make sure that all access to this directory will be by SSL or not at all, but we also want to make sure that if someone has typed a URL manually without the http/https, we direct to the desired url. The paranoid aspect of this lies in the fact that neither mod_rewrite nor mod_ssl might be available, say if you just ported to a new webserver setup etc.</p>
+<p># If we have neither mod_ssl nor mod_rewrite<br> # simply deny access</p>
+<p> deny from all</p>
+<p># If we have mod_rewrite<br> # redirect to https version of requested page</p>
+<p> RewriteEngine On<br> RewriteCond %{HTTPS} off<br> RewriteRule (.*) <a href="https://%/" rel="nofollow ugc">https://%</a>{HTTP_HOST}%{REQUEST_URI}</p>
+<p># else (if we have mod_ssl)<br> # make sure we require SSL</p>
+<p> SSLRequireSSL</p>
+<p># Finally, if anything went wrong, tell the user we<br> # require SSL<br> ErrorDocument 403 <a href="http://xyz.com/error-403-require-ssl.html" rel="nofollow ugc">http://xyz.com/error-403-require-ssl.html</a></p>
+</div></article></div>
+<div id="comment-442" class="comment even thread-even depth-1"><article id="div-comment-442" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d4105af" alt="Rudolf Potucek" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Rudolf Potucek</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-442"><time datetime="2006-11-07T19:18:14-07:00" title="Tue 7 Nov 2006 at 7:18 pm">Tue 7 Nov 2006 at 7:18 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>REPOST with edits because angled brackets got stripped out &#8230; replace all square brackets with angled brackets to make this work &#8230;</p>
+<p>Here is a most paranoid version that includes all the above comments. The idea is that we want to use a .htaccess file to make sure that all access to this directory will be by SSL or not at all, but we also want to make sure that if someone has typed a URL manually without the http/https, we direct to the desired url. The paranoid aspect of this lies in the fact that neither mod_rewrite nor mod_ssl might be available, say if you just ported to a new webserver setup etc.</p>
+<p># If we have neither mod_ssl nor mod_rewrite<br> # simply deny access<br> [IfModule !mod_rewrite.c]<br> [IfModule !mod_ssl.c]<br> deny from all<br> [/IfModule]<br> [/IfModule]</p>
+<p># If we have mod_rewrite<br> # redirect to https version of page<br> [IfModule mod_rewrite.c]<br> RewriteEngine On<br> RewriteCond %{HTTPS} off<br> RewriteRule (.*) <a href="https://%/" rel="nofollow ugc">https://%</a>{HTTP_HOST}%{REQUEST_URI}<br> [/IfModule]</p>
+<p># else (if we have mod_ssl)<br> # make sure we require SSL<br> [IfModule !mod_rewrite.c]<br> [IfModule mod_ssl.c]<br> SSLRequireSSL<br> [/IfModule]<br> [/IfModule]</p>
+<p>ErrorDocument 403 <a href="http://xyz.com/error-403-require-ssl.html" rel="nofollow ugc">http://xyz.com/error-403-require-ssl.html</a></p>
+</div></article></div>
+<div id="comment-443" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-443" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="https://en.wikipedia.org/wiki/Htaccess" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d41acd5" alt="Amy Gardner" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Amy Gardner</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-443"><time datetime="2006-11-21T05:58:45-07:00" title="Tue 21 Nov 2006 at 5:58 am">Tue 21 Nov 2006 at 5:58 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>According to <a href="http://www.askapache.com/2006/htaccess/apache-ssl-in-htaccess-examples.html" rel="nofollow ugc">http://www.askapache.com/2006/htaccess/apache-ssl-in-htaccess-examples.html</a> you don&#8217;t need mod_ssl to check for HTTPS variable.</p>
+<p>[IfModule !mod_ssl.c]<br> deny from all<br> [/IfModule]</p>
+<p>And I think if HTTPS isn&#8217;t on its empty?</p>
+</div></article></div>
+<div id="comment-444" class="comment even thread-even depth-1"><article id="div-comment-444" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.askapache.com/2006/htaccess/htaccesselite-ultimate-htaccess-article.html" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d422520" alt="Jonathan Webber" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Jonathan Webber</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-444"><time datetime="2007-01-05T13:27:25-07:00" title="Fri 5 Jan 2007 at 1:27 pm">Fri 5 Jan 2007 at 1:27 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Are the IfModules even correct syntax? Are you allowed to use them? How come there aren&#8217;t any at the <a href="http://www.askapache.com/2006/htaccess/htaccesselite-ultimate-htaccess-article.html" rel="nofollow ugc">http://www.askapache.com/2006/htaccess/htaccesselite-ultimate-htaccess-article.html</a> ?</p></div></article></div>
+<div id="comment-445" class="pingback odd alt thread-odd thread-alt depth-1"><article id="div-comment-445" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="https://kojiroh.wordpress.com/2007/02/01/how-to-automatically-redirect-http-to-https-in-apache/" rel="external nofollow" class="url"><span class="fn">How to automatically redirect http to https in Apache &laquo; Kojiroh&#8217;s technical blogs</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-445"><time datetime="2007-01-31T23:24:16-07:00" title="Wed 31 Jan 2007 at 11:24 pm">Wed 31 Jan 2007 at 11:24 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] Joseph Scott&#8217;s Blog [&#8230;]</p></div></article></div>
+<div id="comment-446" class="comment even thread-even depth-1"><article id="div-comment-446" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://Redirectnotworking/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d42c76f" alt="Rakesh" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Rakesh</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-446"><time datetime="2007-02-02T21:16:43-07:00" title="Fri 2 Feb 2007 at 9:16 pm">Fri 2 Feb 2007 at 9:16 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi,</p>
+<p>I have a page called test1.xml in /htdocs/test1/test1.xml and want to redirect to test2.php located in /htdocs/test2/test2.php using .htaccess file.<br> My entries are as follows in .htaccess :</p>
+<p>Redirect 301 /htdocs/test1/test1.xml <a href="http://www.example.com/test2/test2.php" rel="nofollow ugc">http://www.example.com/test2/test2.php</a></p>
+<p>plz Correct me if any mistakes done in above line. I am using Apache 1.3.33 version.<br> I have created .htaccess file in /htdocs/ directory .<br> Let me know your suggestions</p>
+</div></article></div>
+<div id="comment-447" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-447" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.creative3.net/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d436e56" alt="Jarrod" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Jarrod</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-447"><time datetime="2007-02-13T19:43:44-07:00" title="Tue 13 Feb 2007 at 7:43 pm">Tue 13 Feb 2007 at 7:43 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>The &#8220;Update&#8221; with this code:</p>
+<p>RewriteEngine On<br> RewriteCond %{HTTPS} off<br> RewriteRule (.*) <a href="https://%/" rel="nofollow ugc">https://%</a>{HTTP_HOST}%{REQUEST_URI}</p>
+<p>Works great. Any url from within my site automatically gets rolled to https:</p>
+</div></article></div>
+<div id="comment-448" class="comment even thread-even depth-1"><article id="div-comment-448" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.askapache.com/2006/htaccess/apache-ssl-in-htaccess-examples.html" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d43d5fc" alt="Rick Syuh" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Rick Syuh</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-448"><time datetime="2007-02-26T05:47:24-07:00" title="Mon 26 Feb 2007 at 5:47 am">Mon 26 Feb 2007 at 5:47 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Jarrod I still get a warning if I try to goto <a href="http://www.site.com:80/" rel="nofollow ugc">http://www.site.com:80</a>&#8230;</p>
+<p>The only way to make sure my site doesn&#8217;t act funny and popup warnings is to use the SSLRequireSSL with the erordocument suggested by ti89..</p>
+<p><a href="http://www.askapache.com/2006/htaccess/apache-ssl-in-htaccess-examples.html" rel="nofollow ugc">http://www.askapache.com/2006/htaccess/apache-ssl-in-htaccess-examples.html</a></p>
+</div></article></div>
+<div id="comment-449" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-449" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d443544" alt="twp" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">twp</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-449"><time datetime="2007-03-10T11:10:36-07:00" title="Sat 10 Mar 2007 at 11:10 am">Sat 10 Mar 2007 at 11:10 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>My problem is that i only want ssl for authentication on a portion of the website (using htpasswd); after the authentication completed i want plain http back on. I am quite new at apache and i suspect i can use mod_rewrite.. but i failed to find any exemple to fit 🙁 thanks for any info</p></div></article></div>
+<div id="comment-450" class="comment even thread-even depth-1"><article id="div-comment-450" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169d449715" alt="Mario Lobo" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Mario Lobo</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-450"><time datetime="2007-03-14T04:00:03-06:00" title="Wed 14 Mar 2007 at 4:00 am">Wed 14 Mar 2007 at 4:00 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>what if I have the following:</p>
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;<br> NameVirtualHost *:80</p>
+<p> ServerName webmail.mallavoodoo.com.br<br> Redirect permanent / <a href="https://webmail.mallavoodoo.com.br:443/" rel="nofollow ugc">https://webmail.mallavoodoo.com.br:443/</a></p>
+<p> ServerName webmail.digiart.art.br<br> Redirect permanent / <a href="https://webmail.digiart.art.br:444/" rel="nofollow ugc">https://webmail.digiart.art.br:444/</a></p>
+<p>NameVirtualHost *:443<br> NameVirtualHost *:444<br> listen 444</p>
+<p> ServerAdmin <a href="mailto:suporte.provedor@ipad.com.br">suporte.provedor@ipad.com.br</a><br> DocumentRoot /mail/webmail<br> ServerName webmail.mallavoodoo.com.br<br> ErrorLog /var/log/httpd/webmail.mallavoodoo.com.br-ssl_error_log<br> CustomLog /var/log/httpd/webmail.mallavoodoo.com.br-ssl_access_log combined<br> SSLEngine on<br> SSLCipherSuite ALL:!ADH:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv2:+EXP:+eNULL<br> SSLCertificateFile /usr/local/etc/apache22/ssl/malla.crt<br> SSLCertificateKeyFile /usr/local/etc/apache22/ssl/malla.key</p>
+<p> SSLOptions +StdEnvVars</p>
+<p> SetEnvIf User-Agent &#8220;.*MSIE.*&#8221; nokeepalive ssl-unclean-shutdown downgrade-1.0 force-response-1.0</p>
+<p> ServerAdmin <a href="mailto:suporte.provedor@ipad.com.br">suporte.provedor@ipad.com.br</a><br> DocumentRoot /mail/webmail<br> ServerName webmail.digiart.art.br<br> ErrorLog /var/log/httpd/webmail.digiart.art.br-ssl_error_log<br> CustomLog /var/log/httpd/webmail.digiart.art.br-ssl_access_log combined<br> SSLEngine on<br> SSLCipherSuite ALL:!ADH:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv2:+EXP:+eNULL<br> SSLCertificateFile /usr/local/etc/apache22/ssl/digiart.crt<br> SSLCertificateKeyFile /usr/local/etc/apache22/ssl/digiart.key</p>
+<p> SSLOptions +StdEnvVars</p>
+<p> SetEnvIf User-Agent &#8220;.*MSIE.*&#8221; nokeepalive ssl-unclean-shutdown downgrade-1.0 force-response-1.0</p>
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</p>
+<p>when I try to access <a href="http://webmail.digiart.art.br/" rel="nofollow ugc">http://webmail.digiart.art.br/</a> ,</p>
+<p>I get a a page with only:</p>
+<p>SSH-2.0-OpenSSH_4.0</p>
+<p>adn I don&#8217;t get redirected to <a href="https://webmail.digiart.art.br:444/" rel="nofollow ugc">https://webmail.digiart.art.br:444/</a></p>
+<p>whats wrong? the purpose here is to use a certificate for each site.</p>
+<p>Thanks</p>
+</div></article></div>
+<div id="comment-451" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-451" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d44fb94" alt="Mario Lobo" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Mario Lobo</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-451"><time datetime="2007-03-14T10:36:23-06:00" title="Wed 14 Mar 2007 at 10:36 am">Wed 14 Mar 2007 at 10:36 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Never mind my previous post. I found the tweak.</p>
+<p>Instead of:<br> Redirect permanent / <a rel="nofollow ugc">https://</a>&#8230;&#8230;.</p>
+<p>I wrote:<br> Redirect 301 / <a rel="nofollow ugc">https://</a>&#8230;&#8230;.</p>
+<p>and it worked !!</p>
+<p>But thanks for letting me post here !</p>
+</div></article></div>
+<div id="comment-452" class="comment even thread-even depth-1"><article id="div-comment-452" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d454f21" alt="JudyE" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">JudyE</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-452"><time datetime="2007-10-14T15:49:15-06:00" title="Sun 14 Oct 2007 at 3:49 pm">Sun 14 Oct 2007 at 3:49 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>I used Jarrod&#8217;s code from 2/13/07 and it&#8217;s perfect. Many thanks 🙂</p></div></article></div>
+<div id="comment-453" class="pingback odd alt thread-odd thread-alt depth-1"><article id="div-comment-453" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://christian.hess-gruenig.de/blog/ssl-https-per-htaccess-erzwingen/" rel="external nofollow" class="url"><span class="fn">To Whom It Concerns … &raquo; SSL (https://) per .htaccess erzwingen</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-453"><time datetime="2007-11-07T03:46:10-07:00" title="Wed 7 Nov 2007 at 3:46 am">Wed 7 Nov 2007 at 3:46 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] des Webservers nur &uuml;ber eine verschl&uuml;sselte Verbindung auszuliefern1, habe ich bei Joseph Scott (in einem kurzen Beitrag von 2004) eine kurze und sehr elegante L&ouml;sung gefunden, die euch [&#8230;]</p></div></article></div>
+<div id="comment-454" class="pingback even thread-even depth-1"><article id="div-comment-454" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://realme.au8ust.org/archives/277" rel="external nofollow" class="url"><span class="fn">*real me&raquo; Blog Archive &raquo; ໃຊ້ .htaccess ໃນການ redirect ຫນ້າເວັບໄປໃຊ້ SSL</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-454"><time datetime="2007-12-27T17:45:49-07:00" title="Thu 27 Dec 2007 at 5:45 pm">Thu 27 Dec 2007 at 5:45 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] ຂໍ້ມູນໄດ້ຈາກ Josept Scott&#8217;s blog [&#8230;]</p></div></article></div>
+<div id="comment-455" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-455" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d45a646" alt="Liew Jo Ee" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Liew Jo Ee</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-455"><time datetime="2008-01-11T08:15:58-07:00" title="Fri 11 Jan 2008 at 8:15 am">Fri 11 Jan 2008 at 8:15 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi to all, I m newbie to apache.</p>
+<p>Can anyone explain to me wat is FollowSymLinks and Indexes FollowSymLink?</p>
+<p>Do I have to put one of the above the under and under ?</p>
+<p>I have put this into<br> RewriteEngine On<br> RewriteCond %{HTTPS} off<br> RewriteRule (.*) <a href="https://%/" rel="nofollow ugc">https://%</a>{HTTP_HOST}%{REQUEST_URI}</p>
+<p>in the .htaccess in the documentroot</p>
+<p>the redirect is working but it is redirecting to the DirectoryIndex</p>
+<p>etc -&gt; <a href="http://www.abc.com/info.php" rel="nofollow ugc">http://www.abc.com/info.php</a> becomes <a href="https://www.abc.com/" rel="nofollow ugc">https://www.abc.com/</a><br> i want it to be changed to <a href="https://www.abc.com/info.php" rel="nofollow ugc">https://www.abc.com/info.php</a>. How can i do that? what i ve done wrong?</p>
+</div></article></div>
+<div id="comment-456" class="comment even thread-even depth-1"><article id="div-comment-456" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d169d4612cc" alt="Joseph Scott" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Joseph Scott</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-456"><time datetime="2008-01-11T10:39:21-07:00" title="Fri 11 Jan 2008 at 10:39 am">Fri 11 Jan 2008 at 10:39 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>@ Liew Jo Ee &#8211;</p>
+<p>I&#8217;d suggest reading up on the DirectoryIndex option in Apache, which indicates that the default file name for a directory should be served as default if none is provided. In your example you&#8217;d do something like:</p>
+<p><code>DirectoryIndex info.php</code></p>
+</div></article></div>
+<div id="comment-457" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-457" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169d4693db" alt="Kyle" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Kyle</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-457"><time datetime="2008-01-17T21:40:40-07:00" title="Thu 17 Jan 2008 at 9:40 pm">Thu 17 Jan 2008 at 9:40 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>I was looking for this snippet of code for one of my customers thanks a million!</p></div></article></div>
+<div id="comment-458" class="comment even thread-even depth-1"><article id="div-comment-458" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d169d473252" alt="Joseph Scott" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Joseph Scott</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-458"><time datetime="2008-01-17T22:22:03-07:00" title="Thu 17 Jan 2008 at 10:22 pm">Thu 17 Jan 2008 at 10:22 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>@Kyle &#8211;</p>
+<p>Cool, always nice to hear people find this stuff useful.</p>
+</div></article></div>
+<div id="comment-459" class="pingback odd alt thread-odd thread-alt depth-1"><article id="div-comment-459" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://weblog.ntl.nectec.or.th/spiritualtheater/2008/01/22/%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%95%e0%b8%b4%e0%b8%94%e0%b8%95%e0%b8%b1%e0%b9%89%e0%b8%87-server-mailtalk/" rel="external nofollow" class="url"><span class="fn">SpiritualTheater &raquo; การติดตั้ง server Mailtalk</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-459"><time datetime="2008-01-30T03:05:40-07:00" title="Wed 30 Jan 2008 at 3:05 am">Wed 30 Jan 2008 at 3:05 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] <a href="http://joseph.randomnetworks.com/archives/2004/07/22/redirect-to-ssl-using-apaches-htaccess/" rel="nofollow ugc">http://joseph.randomnetworks.com/archives/2004/07/22/redirect-to-ssl-using-apaches-htaccess/</a> [&#8230;]</p></div></article></div>
+<div id="comment-460" class="comment even thread-even depth-1"><article id="div-comment-460" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.pasaload.biz/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d478ed3" alt="Boris R" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Boris R</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-460"><time datetime="2008-02-27T04:44:02-07:00" title="Wed 27 Feb 2008 at 4:44 am">Wed 27 Feb 2008 at 4:44 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I edited my .htaccess file (added the text at the end of the htaccess file) and used Joakim&#8217;s and ChiselingStone&#8217;s points. (#s 10 and 11). It worked the first time. Thanks!</p>
+<p>RewriteEngine On<br> RewriteCond %{HTTPS} off<br> RewriteRule (.*) <a href="https://%/" rel="nofollow ugc">https://%</a>{HTTP_HOST}%{REQUEST_URI}</p>
+</div></article></div>
+<div id="comment-461" class="pingback odd alt thread-odd thread-alt depth-1"><article id="div-comment-461" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://orangesplotch.com/blog/using-htaccess-to-redirect-to-ssl/" rel="external nofollow" class="url"><span class="fn">Using .htaccess to Redirect to SSL &raquo; orangeSplotch.com</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-461"><time datetime="2008-03-02T00:53:08-07:00" title="Sun 2 Mar 2008 at 12:53 am">Sun 2 Mar 2008 at 12:53 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] Pretty slick stuff. Too bad I can&#8217;t take any credit for it. Here is where I first came across it. Redirect To SSL Using Apache&#146;s .htaccess [&#8230;]</p></div></article></div>
+<div id="comment-462" class="comment even thread-even depth-1"><article id="div-comment-462" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d47ef96" alt="Njau Ndirangu" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Njau Ndirangu</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-462"><time datetime="2008-03-11T22:41:25-06:00" title="Tue 11 Mar 2008 at 10:41 pm">Tue 11 Mar 2008 at 10:41 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Alot of people have written how to redirect http to https but nobody explains how to switch back to http. With apache once you switch to https it stays like that so what approach would you take to switch back to http from https?</p></div></article></div>
+<div id="comment-463" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-463" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d4867bb" alt="Patrick K" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Patrick K</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-463"><time datetime="2008-04-23T14:48:34-06:00" title="Wed 23 Apr 2008 at 2:48 pm">Wed 23 Apr 2008 at 2:48 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I&#8217;ve been putzing with a ubuntu 7.10 server install, and having fits with most info I could find on removing directory listings, and also routing http to https sites.</p>
+<p>My site has 4 normal virtual sites, and 1 self signed SSL site. I needed to have anything with <a href="http://some.secure.site/" rel="nofollow ugc">http://some.secure.site</a> route to <a href="https://some.secure.site/" rel="nofollow ugc">https://some.secure.site</a>.</p>
+<p>All my other sites worked without problem, so <a href="http://www.somesite.com/" rel="nofollow ugc">http://www.somesite.com</a> would resolve for all normal sites. but <a href="http://www.secure.site/" rel="nofollow ugc">http://www.secure.site</a> would drop back to the /var/www directory, meaning it wasn&#8217;t resolving to my /var/www/secure area. typeing in <a href="https://www.secure.site/" rel="nofollow ugc">https://www.secure.site</a> worked perfectly.</p>
+<p>I liked the<br> [code]<br> RewriteEngine On<br> RewriteCond %{HTTPS} off<br> RewriteRule (.*) <a href="https://%/" rel="nofollow ugc">https://%</a>{HTTP_HOST}%{REQUEST_URI}<br> [/code]<br> as listed above, but it wouldn&#8217;t work in a .htaccess. I turned on AllowOverride everywhere I could find it, but to no avail. I also installed (or it was already) the mod_rewrite and mod_alias was working too. I confirmed this by running phpinfo() and seeing that both were installed as loaded modules.</p>
+<p>I finally removed it from .htaccess, and instead put it in the [Directory /var/www] section of /etc/apache2/sites-available/default.</p>
+<p>Is working now.</p>
+<p>Basically, all my named hosts resolve to their respective directories, but if someone puts a http: address that doesn&#8217;t resolve, it gets sent to my <a href="https://some.secure.site/" rel="nofollow ugc">https://some.secure.site</a> address. Seeing as how I only have one to worry about, it works fine.</p>
+<p>For my directory listings, I tried the Options -Indexes in a .htaccess file, but no dice, kept giving 500 errors. I have error doc statements in .htaccess, and those work fine, so I new .htaccess is working.</p>
+<p>I ended up going into the conf file for each site: <a href="http://www.somesite.com.conf/" rel="nofollow ugc">http://www.somesite.com.conf</a> under /etc/apache2/sites-available. In each site conf file, under the [Directory &#8220;/var/www/somesite&#8221;] section, i changed Options +Indexes to Options -Indexes.</p>
+<p>That&#8217;s working too. So I removed both attempts from my .htaccess, as neither worked from that route. Instead I installed directives in the conf file for each site, and default, and it&#8217;s working fine.</p>
+</div></article></div>
+<div id="comment-464" class="comment even thread-even depth-1"><article id="div-comment-464" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.phppassion.com/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d48cded" alt="hitesh shinde" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">hitesh shinde</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-464"><time datetime="2008-05-12T23:55:27-06:00" title="Mon 12 May 2008 at 11:55 pm">Mon 12 May 2008 at 11:55 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>If you want HTTPS for only 2 or more individual files not a full directory, Then try this</p>
+<p>RewriteEngine On</p>
+<p>RewriteCond %{SERVER_PORT} !^443$<br> RewriteRule ^index.php$ <a href="https://www.phppassion.com/index.php" rel="nofollow ugc">https://www.phppassion.com/index.php</a></p>
+<p>RewriteCond %{SERVER_PORT} !^443$<br> RewriteRule ^index1.php$ <a href="https://www.phppassion.com/index1.php" rel="nofollow ugc">https://www.phppassion.com/index1.php</a></p>
+<p>It works.</p>
+</div></article></div>
+<div id="comment-465" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-465" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.phppassion.com/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d4956de" alt="hitesh shinde" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">hitesh shinde</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-465"><time datetime="2008-05-12T23:57:48-06:00" title="Mon 12 May 2008 at 11:57 pm">Mon 12 May 2008 at 11:57 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>if anyone want to full directory HTTPS</p>
+<p>Try this</p>
+<p>RewriteCond %{HTTPS} off<br> #RewriteRule ^DirName(.*) <a href="https://%/" rel="nofollow ugc">https://%</a>{HTTP_HOST}%{REQUEST_URI}</p>
+</div></article></div>
+<div id="comment-466" class="comment even thread-even depth-1"><article id="div-comment-466" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d49c6f0" alt="Utpal Desai" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Utpal Desai</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-466"><time datetime="2008-06-03T03:02:50-06:00" title="Tue 3 Jun 2008 at 3:02 am">Tue 3 Jun 2008 at 3:02 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>simply create a squirrelmail.conf file at /etc/httpd/conf.d copy and paste below content, save it and restart APACHE</p>
+<p>Alias /webmail &#8220;/usr/share/squirrelmail&#8221;</p>
+<p>RewriteEngine on<br> RewriteCond %{HTTPS} !=on<br> RewriteRule .* <a href="https://%/" rel="nofollow ugc">https://%</a>{HTTP_HOST}:443%{REQUEST_URI} [QSA,R=permanent,L]</p>
+</div></article></div>
+<div id="comment-467" class="pingback odd alt thread-odd thread-alt depth-1"><article id="div-comment-467" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://adlersa.yotaweb.de/blog/2008/07/17/https-umleitung-per-htaccess" rel="external nofollow" class="url"><span class="fn">Adlerweb</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-467"><time datetime="2008-07-17T13:30:51-06:00" title="Thu 17 Jul 2008 at 1:30 pm">Thu 17 Jul 2008 at 1:30 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] Editierlinks auf die ungesicherte Seite. Hier lässt sich mit einer .htaccess-Datei, welche ich auf Joseph Scott&#146;s Blog gefunden habe, im Verzeichnis wp-admin Abhilfe [&#8230;]</p></div></article></div>
+<div id="comment-468" class="pingback even thread-even depth-1"><article id="div-comment-468" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://forums.kayako.com/f62/forward-http-https-18004/#post82724" rel="external nofollow" class="url"><span class="fn">Forward http:// to https:// - Kayako Community Forums</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-468"><time datetime="2008-07-21T01:09:55-06:00" title="Mon 21 Jul 2008 at 1:09 am">Mon 21 Jul 2008 at 1:09 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] 08:09 AM Redirect To SSL Using Apache&#8217;s .htaccess &#8211; Joseph Scott&#8217;s Blog details how to do this. Craig Brass &#8211; Kayako Forum Squatter (Note: I am NOT a staff member) [&#8230;]</p></div></article></div>
+<div id="comment-469" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-469" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169d4a4428" alt="nowashburn" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">nowashburn</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-469"><time datetime="2008-08-20T07:24:08-06:00" title="Wed 20 Aug 2008 at 7:24 am">Wed 20 Aug 2008 at 7:24 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>thanks! works great, nice and simple!</p></div></article></div>
+<div id="comment-470" class="comment even thread-even depth-1"><article id="div-comment-470" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d4ac365" alt="lasdesign" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">lasdesign</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-470"><time datetime="2008-09-19T07:41:56-06:00" title="Fri 19 Sep 2008 at 7:41 am">Fri 19 Sep 2008 at 7:41 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi,<br> Thanks for all your help above, i managed to put use what youve shared above and com eup with a solution that seems to work for me.</p>
+<p>My problem is that i need to switch to ssl (https) for a particular directory based on using a shared host offering shared SSL.</p>
+<p>The contents of the htaccess file i created was as follows:</p>
+<p>RewriteEngine On<br> RewriteCond %{SERVER_PORT} 80<br> RewriteCond %{REQUEST_URI} subdirectory<br> RewriteRule ^(.*)$ <a href="https://www.shared-ssl-domain-url.com/subdirectory/" rel="nofollow ugc">https://www.shared-ssl-domain-url.com/subdirectory/</a> [R,L]</p>
+<p>PS &#8211; The htaccess file has to be stored in the sub directory you wish to use for ssl. E.g. subdirectory.</p>
+<p>I hope this helps somebody.</p>
+</div></article></div>
+<div id="comment-471" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-471" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d4b1dd7" alt="Taylor" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Taylor</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-471"><time datetime="2008-10-29T17:05:26-06:00" title="Wed 29 Oct 2008 at 5:05 pm">Wed 29 Oct 2008 at 5:05 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I currently have my .htaccess file that sends all of the requests for my website to https: however I am trying to host two different sites under the same hosting. Well when I put in the URL then it redirects me back to the other site. Does anyone know the code to only redirect within the root directory and leave the subdirectories alone?</p>
+<p>This is my current code:</p>
+<p>Options +FollowSymLinks<br> RewriteEngine On<br> RewriteBase /<br> SSLOptions +StrictRequire<br> SSLRequireSSL<br> SSLRequire %{HTTP_HOST} eq &#8220;example.com&#8221;<br> ErrorDocument 403 <a href="https://example.com/" rel="nofollow ugc">https://example.com</a></p>
+<p>Thanks</p>
+</div></article></div>
+<div id="comment-472" class="comment even thread-even depth-1"><article id="div-comment-472" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://leslietanedesign.com/blog/" rel="external nofollow" class="url"><img id="grav-18812df4d181d6ca45ac0a7217b9fe04-120-60d169d4b28a0" alt="Leslie" src="/wp-content/uploads/gravatar-cache/18812df4d181d6ca45ac0a7217b9fe04-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Leslie</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-472"><time datetime="2009-01-09T08:36:11-07:00" title="Fri 9 Jan 2009 at 8:36 am">Fri 9 Jan 2009 at 8:36 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Boy am I late to the party on this, but thanks! I spent hours looking for code that would work and this did the trick.</p></div></article></div>
+<div id="comment-473" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-473" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d4ba502" alt="unhitched" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">unhitched</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-473"><time datetime="2009-01-20T06:08:34-07:00" title="Tue 20 Jan 2009 at 6:08 am">Tue 20 Jan 2009 at 6:08 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>worked for me &#8211; thanks!</p></div></article></div>
+<div id="comment-474" class="pingback even thread-even depth-1"><article id="div-comment-474" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://didier.misson.net/blog/2009/02/06/apache-redirection-en-https-avec-htaccess/" rel="external nofollow" class="url"><span class="fn">Un peu de tout &raquo; Archives du Blog &raquo; Apache: redirection en https avec .htaccess</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-474"><time datetime="2009-02-05T18:12:41-07:00" title="Thu 5 Feb 2009 at 6:12 pm">Thu 5 Feb 2009 at 6:12 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] me suis basé sur ce billet de Joseph Scott, solution améliorée par Nicolas [&#8230;]</p></div></article></div>
+<div id="comment-475" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-475" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169d4c1273" alt="Gimi" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Gimi</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-475"><time datetime="2009-02-23T15:58:24-07:00" title="Mon 23 Feb 2009 at 3:58 pm">Mon 23 Feb 2009 at 3:58 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>To redirect a specific url to https use RewriteCond<br> RewriteCond %{HTTPS} off<br> RewriteCond %{REQUEST_URI} =/secure #You can have multiple rewrite cond<br> RewriteRule (.*) <a href="https://%/" rel="nofollow ugc">https://%</a>{HTTP_HOST}%{REQUEST_URI} [R=301,L]</p>
+<p>To redirect the rest of the site from https to http:</p>
+<p> RewriteCond %{HTTPS} on<br> RewriteCond %{REQUEST_URI} !=/secure<br> RewriteRule (.*) <a href="http://%/" rel="nofollow ugc">http://%</a>{HTTP_HOST}%{REQUEST_URI} [R=301,L]</p>
+</div></article></div>
+<div id="comment-476" class="comment even thread-even depth-1"><article id="div-comment-476" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d4c79cf" alt="Kev" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Kev</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-476"><time datetime="2009-02-28T20:05:26-07:00" title="Sat 28 Feb 2009 at 8:05 pm">Sat 28 Feb 2009 at 8:05 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>RewriteEngine On<br> RewriteCond %{HTTPS} !on<br> RewriteRule (.*) <a href="https://%/" rel="nofollow ugc">https://%</a>{HTTP_HOST}%{REQUEST_URI}</p>
+<p>Simple, elegant, works brilliantly.<br> THANKS!</p>
+</div></article></div>
+<div id="comment-477" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-477" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d4ce499" alt="Derek" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Derek</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-477"><time datetime="2009-03-03T22:40:44-07:00" title="Tue 3 Mar 2009 at 10:40 pm">Tue 3 Mar 2009 at 10:40 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I had to add [R=301,L] to my RewriteRule to get this working with wildcard subdomains.</p>
+<p>RewriteEngine On<br> RewriteCond %{HTTPS} !on<br> RewriteRule (.*) <a href="https://%/" rel="nofollow ugc">https://%</a>{HTTP_HOST}%{REQUEST_URI} [R=301,L]</p>
+</div></article></div>
+<div id="comment-478" class="comment even thread-even depth-1"><article id="div-comment-478" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169d4d5c60" alt="breadbaker" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">breadbaker</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-478"><time datetime="2009-03-14T13:29:20-06:00" title="Sat 14 Mar 2009 at 1:29 pm">Sat 14 Mar 2009 at 1:29 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I am sorry to tell you, that those examples won&#8217;t work if you are on a non standard http port, e.g. <a href="http://www.example.com:8888/" rel="nofollow ugc">http://www.example.com:8888/</a> will redirect to <a href="https://www.example.com:8888/" rel="nofollow ugc">https://www.example.com:8888/</a></p>
+<p>use this instead:</p>
+<p>[code]<br> RewriteEngine On<br> RewriteCond %{HTTPS} off<br> RewriteRule (.*) <a href="https://%/" rel="nofollow ugc">https://%</a>{SERVER_NAME}%{REQUEST_URI}<br> [/code]</p>
+</div></article></div>
+<div id="comment-479" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-479" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d4dccc9" alt="AA" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">AA</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-479"><time datetime="2009-04-21T17:17:37-06:00" title="Tue 21 Apr 2009 at 5:17 pm">Tue 21 Apr 2009 at 5:17 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I like the May 23rd updated solution best.<br> The problem with hard coding a redirect to something like <a href="http://site/something" rel="nofollow ugc">http://site/something</a>, at least for what I want, I just want to add https to whatever they typed. I don&#8217;t want to send them to a set home page but rather what they typed, just secure.<br> That&#8217;s why I like the first solution best.</p>
+<p>RewriteEngine On<br> RewriteCond %{HTTPS} off<br> RewriteRule (.*) <a href="https://%/" rel="nofollow ugc">https://%</a>{HTTP_HOST}%{REQUEST_URI}</p>
+<p>Yay!<br> I don&#8217;t have to worry about where I put this or what site, as long as it has ssl enabled.</p>
+</div></article></div>
+<div id="comment-480" class="comment even thread-even depth-1"><article id="div-comment-480" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d4e2b11" alt="sebastijan" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">sebastijan</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-480"><time datetime="2009-07-04T01:07:38-06:00" title="Sat 4 Jul 2009 at 1:07 am">Sat 4 Jul 2009 at 1:07 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>You can do a classical redirect in apache conf.</p>
+<p>Redirect / <a href="https://mypage.com/" rel="nofollow ugc">https://mypage.com/</a></p>
+<p>I have another question.</p>
+<p>How do exclude certain pages from being redirected to https?</p>
+<p>Thanks</p>
+</div></article></div>
+<div id="comment-481" class="pingback odd alt thread-odd thread-alt depth-1"><article id="div-comment-481" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://animebsd.net/archives/2897" rel="external nofollow" class="url"><span class="fn">Forcing SSL with nginx and Apache | animeBSD</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-481"><time datetime="2011-06-28T04:43:23-06:00" title="Tue 28 Jun 2011 at 4:43 am">Tue 28 Jun 2011 at 4:43 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] nginx rule is written by me, Apache rule is written by someone on internet with minor fix on skipping regex capture ((.*) replaced by ^). This entry was posted in [&#8230;]</p></div></article></div>
+<div id="comment-482" class="comment even thread-even depth-1"><article id="div-comment-482" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d4e8ca5" alt="Paul" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Paul</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-482"><time datetime="2011-08-03T02:14:21-06:00" title="Wed 3 Aug 2011 at 2:14 am">Wed 3 Aug 2011 at 2:14 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I&#8217;m using site without the www and this works well from root:<br> RewriteCond %{HTTP_HOST} ^www.domain.com$ [NC]<br> RewriteRule ^(.*)$ <a href="https://www.domain.com/$1" rel="nofollow ugc">http://domain.com/$1</a> [R=301,L]</p>
+<p>A subdirectory of my site is SSL that I want without the www too, but this does not work with another htaccess in the subdirectory:<br> RewriteCond %{HTTP_HOST} ^www.domain.com$ [NC]<br> RewriteRule ^(.*)$ <a href="https://domain.com/subdirectory/$1" rel="nofollow ugc">https://domain.com/subdirectory/$1</a> [R=301,L]</p>
+<p>tried this too:<br> RewriteCond %{HTTPS} off<br> RewriteRule (.*) <a href="https://domain.com/subdirectory/$1" rel="nofollow ugc">https://domain.com/subdirectory/$1</a> [R=301,L]</p>
+<p>I just get the untrusted certificate warning at the www URL rather than the redirect.</p>
+<p>TIA for any help</p>
+</div></article></div>
+<div id="comment-483" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-483" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-0878e5ef240b32bc88060cd82954de0a-120-60d169d4e9b8e" alt="Andrew" src="/wp-content/uploads/gravatar-cache/0878e5ef240b32bc88060cd82954de0a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Andrew</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-483"><time datetime="2011-09-05T10:22:15-06:00" title="Mon 5 Sep 2011 at 10:22 am">Mon 5 Sep 2011 at 10:22 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi guys,</p>
+<p>Would the following rules have the effect as follows:</p>
+<p>[code]http://mysite.co.za &#8211;&amp;gt; <a href="https://www.mysite.co.za[/code%5D" rel="nofollow ugc">https://www.mysite.co.za[/code%5D</a></p>
+<p>[code]Options +FollowSymLinks<br> RewriteEngine on</p>
+<p>RewriteCond %{HTTP_HOST} ^mysite.co.za [NC]<br> RewriteRule ^(.*)$ <a href="https://www.mysite.co.za/$1" rel="nofollow ugc">https://www.mysite.co.za/$1</a> [L,R=301]</p>
+<p>RewriteCond %{HTTPS} off<br> RewriteRule (.*) <a href="https://%/" rel="nofollow ugc">https://%</a>{HTTP_HOST}%{REQUEST_URI}[/code]</p>
+<p>Just want to ensure that I can use the code in order to obtain the above dual result?</p>
+<p>Thanks!</p>
+</div></article></div>
+<div id="comment-485" class="comment even thread-even depth-1"><article id="div-comment-485" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d4f023e" alt="Steve" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Steve</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-485"><time datetime="2012-07-12T22:29:42-06:00" title="Thu 12 Jul 2012 at 10:29 pm">Thu 12 Jul 2012 at 10:29 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>I&#8217;m a real novice. Where do I put this code?</p></div></article></div>
+<div id="comment-486" class="comment byuser comment-author-josephscott bypostauthor odd alt thread-odd thread-alt depth-1"><article id="div-comment-486" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://josephscott.org/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d169d4f0a87" alt="Joseph Scott" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Joseph Scott</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-486"><time datetime="2012-07-16T13:50:09-06:00" title="Mon 16 Jul 2012 at 1:50 pm">Mon 16 Jul 2012 at 1:50 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>It can go directly in your Apache config file, or in an .htaccess file (assuming your Apache setup has them enabled).</p></div>
+<footer class="comment-footer-meta"> <span class="by-post-author">By Post Author</span></footer></article></div>
+<div id="comment-487" class="comment even thread-even depth-1"><article id="div-comment-487" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d504db0" alt="Vanity mirrors seattle" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Vanity mirrors seattle</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-487"><time datetime="2012-11-21T11:20:54-07:00" title="Wed 21 Nov 2012 at 11:20 am">Wed 21 Nov 2012 at 11:20 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>This is a really helpful post because I was constantly facing some problem in redirecting to SSL using apaches. You have explained everything in great detail with the requisite information in simple language. Thanks a lot!</p></div></article></div>
+<div id="comment-488" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-488" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-de2429f15a45d57b7bb2564a6eccf272-120-60d169d505b15" alt="E. D. Dickenson" src="/wp-content/uploads/gravatar-cache/de2429f15a45d57b7bb2564a6eccf272-120.png" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">E. D. Dickenson</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-488"><time datetime="2013-01-24T22:53:34-07:00" title="Thu 24 Jan 2013 at 10:53 pm">Thu 24 Jan 2013 at 10:53 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>RewriteCond %{HTTPS} !=on<br> RewriteRule ^(.*) <a href="https://%/" rel="nofollow ugc">https://%</a>{SERVER_NAME}/$1 [R,L]</p></div></article></div>
+<div id="comment-489" class="comment even thread-even depth-1"><article id="div-comment-489" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-46e5bc4f50b86647685f27e311113ee4-120-60d169d50679d" alt="MRomrell" src="/wp-content/uploads/gravatar-cache/46e5bc4f50b86647685f27e311113ee4-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">MRomrell</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-489"><time datetime="2013-02-07T21:48:46-07:00" title="Thu 7 Feb 2013 at 9:48 pm">Thu 7 Feb 2013 at 9:48 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I added an Exclude feature as well:</p>
+<p>## This will switch any page from HTTP over to HTTPS<br> RewriteEngine On<br> RewriteCond %{HTTPS} off<br> RewriteRule (.*) <a href="https://%/" rel="nofollow ugc">https://%</a>{HTTP_HOST}%{REQUEST_URI}</p>
+<p>## This will switch from HTTPS back to HTTP on any page that has &#8216;travel-blog&#8217; &#8216;easyblog&#8217; in the URL<br> RewriteCond %{HTTPS} on<br> RewriteRule ^(travel-blog|easyblog)(.*)/?$ <a href="http://%/" rel="nofollow ugc">http://%</a>{HTTP_HOST}%{REQUEST_URI} [R=301,NC,L]</p>
+</div></article></div>
+<div id="comment-490" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-490" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-774f3829142daed13cdbe91de2cc97fa-120-60d169d507665" alt="DiceXQ" src="/wp-content/uploads/gravatar-cache/774f3829142daed13cdbe91de2cc97fa-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">DiceXQ</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-490"><time datetime="2013-04-10T08:19:51-06:00" title="Wed 10 Apr 2013 at 8:19 am">Wed 10 Apr 2013 at 8:19 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Better use: (without code tags&#8230;)<br> RewriteCond %{HTTPS} off<br> RewriteRule ^(.*)$ <a href="https://%/" rel="nofollow ugc">https://%</a>{HTTP_HOST}%{REQUEST_URI} [L,R=301]</p></div></article></div>
+<div id="comment-491" class="comment even thread-even depth-1"><article id="div-comment-491" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d50d0a3" alt="Tim" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Tim</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-491"><time datetime="2015-04-07T20:52:33-06:00" title="Tue 7 Apr 2015 at 8:52 pm">Tue 7 Apr 2015 at 8:52 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Thanks a million. I&#8217;d tried loads of things and nothing worked &#8211; This got it sorted, you are a star 🙂</p></div></article></div>
+<div id="comment-492" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-492" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-00b72c7af1774e60306372e54b3c79be-120-60d169d50de31" alt="Jefry Dewangga" src="/wp-content/uploads/gravatar-cache/00b72c7af1774e60306372e54b3c79be-120.png" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Jefry Dewangga</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-492"><time datetime="2015-04-17T12:46:24-06:00" title="Fri 17 Apr 2015 at 12:46 pm">Fri 17 Apr 2015 at 12:46 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Hei thanks for sharing, that&#8217;s useful information for me. I&#8217;m going to buy SSL, but at first i must find out the way to configure that. ^_^ Keep sharing&#8230;</p></div></article></div>
+<div id="comment-493" class="comment even thread-even depth-1"><article id="div-comment-493" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169d513a7a" alt="Monika" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Monika</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-493"><time datetime="2015-05-31T17:01:11-06:00" title="Sun 31 May 2015 at 5:01 pm">Sun 31 May 2015 at 5:01 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi,<br> I am very new at this, but please bare with me!<br> After using your redirect ( which is great),</p>
+<p>RewriteEngine On<br> RewriteCond %{HTTPS} off<br> RewriteRule (.*) <a href="https://%/" rel="nofollow ugc">https://%</a>{HTTP_HOST}%{REQUEST_URI} [R=301,L]</p>
+<p>it works however my sub-domain (blog) now goes in a loop back to the domain home page. I have tried several suggested exclusions for sub-domain, but haven&#8217;t been able to exclude it. Can you please help? I have a wildcard SSL</p>
+</div></article></div>
+<div id="comment-494" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-494" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d519ca6" alt="Joe" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Joe</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-494"><time datetime="2016-01-13T14:28:48-07:00" title="Wed 13 Jan 2016 at 2:28 pm">Wed 13 Jan 2016 at 2:28 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Greeting folks. I will make this short as possible. First, I want to thank everyone for their post.<br> I know absolutely nothing about coding or .htaccess files or anything else. I recently created an eCommerce site using OpenCart 2.0.1.0 and hosted it with FatCow. I purchased an SSL and learned in order for it to work with OpenCart I had to alter the config.php files at the root and in the admin folder &lt;&lt; (To make the admin panel SSL also). After altering the files I had trouble with my website. I could add items to the cart but, when I clicked on any link it would log the user out. If I reversed the changes to the config files the website worked fine except it wasn&#039;t SSL. While as said I knew nothing about coding I did suspect it had something to do with links not directing properly due to the SSL. So, I thought, what if I could find a way to make all the pages SSL. Would that resolve the issue? I didn&#039;t know but, I aimed to find out. Then while searching I came across this site and decided to gamble by entering one of the codes above. This is the code I inserted.</p>
+<p>RewriteEngine On<br> RewriteCond %{HTTPS} off<br> RewriteRule (.*) <a href="https://%/" rel="nofollow ugc">https://%</a>{HTTP_HOST}%{REQUEST_URI} [R=301,L]</p>
+<p>Sure enough. This resolved the issue. Now my entire site is SSL and no more user log outs.</p>
+<p>In short, thank all of you for posting your ideas and solutions. Now it&#039;s time to make some money with the site.. Thanks again 😉</p>
+</div></article></div>
+<div id="comment-14000" class="comment even thread-even depth-1"><article id="div-comment-14000" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169d52024d" alt="baytelmobile" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">baytelmobile</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-14000"><time datetime="2016-09-15T17:24:36-06:00" title="Thu 15 Sep 2016 at 5:24 pm">Thu 15 Sep 2016 at 5:24 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>i use SSLRequireSSL</p></div></article></div>
+</div>
+</div>
+<hr class="styled-separator is-style-wide" aria-hidden="true">
+<div id="respond" class="comment-respond">
+<h2 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#respond" style="display:none;">Cancel reply</a></small>
+</h2>
+<form action="/wp-comments-post.php" method="post" id="commentform" class="section-inner thin max-percentage" novalidate>
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
+<p class="comment-form-comment"><label for="comment">Comment</label><textarea autocomplete="new-password" id="fc1a87bfe7" name="fc1a87bfe7" cols="45" rows="8" maxlength="65525" required="required"></textarea><textarea id="comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea><script data-noptimize type="text/javascript">document.getElementById("comment").setAttribute( "id", "a9bd541042b429cb78b3c1da071f0a14" );document.getElementById("fc1a87bfe7").setAttribute( "id", "comment" );</script></p>
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="80" id="comment_post_ID"> <input type="hidden" name="comment_parent" id="comment_parent" value="0"></p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="84c5802ca4"></p>
+<input type="hidden" id="ak_js" name="ak_js" value="171"><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea>
+</form>
+</div>
+</div></article></main><div class="footer-nav-widgets-wrapper header-footer-group"><div class="footer-inner section-inner"><aside class="footer-widgets-outer-wrapper" role="complementary"><div class="footer-widgets-wrapper"><div class="footer-widgets column-one grid-item"><div class="widget widget_search"><div class="widget-content"><form role="search" method="get" class="search-form" action="/"> <label for="search-form-2"> <span class="screen-reader-text">Search for:</span> <input type="search" id="search-form-2" class="search-field" placeholder="Search &hellip;" value="" name="s"> </label> <input type="submit" class="search-submit" value="Search">
+</form></div></div></div></div></aside></div></div>
+<footer id="site-footer" role="contentinfo" class="header-footer-group"><div class="section-inner">
+<div class="footer-credits">
+<p class="footer-copyright">&copy;
+2021 <a href="/">Joseph Scott</a></p>
+<p class="powered-by-wordpress"> <a href="https://wordpress.org/"> Powered by WordPress </a></p>
+</div> <a class="to-the-top" href="#site-header"> <span class="to-the-top-long"> To the top <span class="arrow" aria-hidden="true">&uarr;</span> </span> <span class="to-the-top-short"> Up <span class="arrow" aria-hidden="true">&uarr;</span> </span> </a>
+</div></footer> <script>/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);</script> <script defer src="/wp-content/cache/autoptimize/js/autoptimize_7f503920b823033d01081cc5ae68a469.js"></script>
+</body>
+</html>

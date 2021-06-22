@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>corkscrew &#8211; Joseph Scott</title>
+	<atom:link href="/tag/corkscrew/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 29 Oct 2013 17:15:58 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Listen for SSL and SSH on the Same Port</title>
+		<link>/2013/10/29/listen-for-ssl-and-ssh-on-the-same-port/</link>
+					<comments>/2013/10/29/listen-for-ssl-and-ssh-on-the-same-port/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 29 Oct 2013 17:15:58 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[corkscrew]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[ssh]]></category>
+		<category><![CDATA[ssl]]></category>
+		<category><![CDATA[sslh]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9293</guid>
+
+					<description><![CDATA[Many corporate firewalls will limit outgoing connections to ports 80 and 443 in a vain effort to restrict access to non-web services. You could run SSH on port 80 or 443 on a VPS or dedicated server, but if you have one of those you are probably already using it to host a small web [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Many corporate firewalls will limit outgoing connections to ports 80 and 443 in a vain effort to restrict access to non-web services.  You could run SSH on port 80 or 443 on a VPS or dedicated server, but if you have one of those you are probably already using it to host a small web site. Wouldn&#8217;t it be nice if your server could listen for both SSH and HTTP/S on port 80 and 443?  That is where <a href="http://www.rutschle.net/tech/sslh.shtml">sslh</a> comes in:</p>
+<blockquote><p>
+sslh accepts connections on specified ports, and forwards them further based on tests performed on the first data packet sent by the remote client.</p>
+<p>Probes for HTTP, SSL, SSH, OpenVPN, tinc, XMPP are implemented, and any other protocol that can be tested using a regular expression, can be recognised. A typical use case is to allow serving several services on port 443 (e.g. to connect to ssh from inside a corporate firewall, which almost never block port 443) while still serving HTTPS on that port.</p>
+<p>Hence sslh acts as a protocol demultiplexer, or a switchboard. Its name comes from its original function to serve SSH and HTTPS on the same port.
+</p></blockquote>
+<p>Source code is available at <a href="https://github.com/yrutschle/sslh">https://github.com/yrutschle/sslh</a>.</p>
+<p>For small uses cases this may come in handy.  If you were constantly needing to SSH to port 80 or 443 then I&#8217;d recommend just spending a few dollars a month to get a VPS dedicated to that task.</p>
+<p>If you are stuck in a limited corporate network another tool you may find useful is <a href="http://www.agroman.net/corkscrew/">corkscrew</a>, which tunnels SSH connections through HTTP proxies.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/10/29/listen-for-ssl-and-ssh-on-the-same-port/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

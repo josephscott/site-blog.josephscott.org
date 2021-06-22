@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sourcecontrol &#8211; Joseph Scott</title>
+	<atom:link href="/tag/sourcecontrol/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 09 Feb 2006 06:33:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Source Control for Databases</title>
+		<link>/2006/02/08/source-control-for-databases/</link>
+					<comments>/2006/02/08/source-control-for-databases/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 09 Feb 2006 06:33:30 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[sourcecontrol]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/08/source-control-for-databases/</guid>
+
+					<description><![CDATA[Josh Berkus asks a great question, what options are there for source control management (SCM) of databases? He focuses on three specific issues: Database Diffs are DDL Some Data Gets Copied, Some Doesn&#8217;t A Database SCM Tool Should Control Source and Update the Database in One Action I&#8217;d love to be able to get a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Josh Berkus asks a great question, <a href="http://blogs.ittoolbox.com/database/soup/archives/007666.asp?rss=1">what options are there for source control management (SCM) of databases</a>?  He focuses on three specific issues:</p>
+<ul>
+<li>Database Diffs are DDL</li>
+<li>Some Data Gets Copied, Some Doesn&#8217;t</li>
+<li>A Database SCM Tool Should Control Source and Update the Database in One Action</li>
+</ul>
+<p>I&#8217;d love to be able to get a SQL based diff for database schemas for different versions of an application.  A tool like that would be a huge step by itself.  So what does it take to tokenize SQL syntax?  Perhaps <a href="http://www.cpan.org/">CPAN</a>&#8216;s <a href="http://search.cpan.org/~jzucker/SQL-Statement-1.14/lib/SQL/Statement.pm">SQL::Statement</a> would good enough.  It seems to <a href="http://search.cpan.org/~jzucker/SQL-Statement-1.14/lib/SQL/Statement/Syntax.pod">understand a fair bit of SQL syntax</a>.  Additional work would have to be done get a set of ALTER TABLE commands to update the schema.</p>
+<p>Such a tool will also fall prey to the issue support multiple databases.  The two obvious targets to start with would be <a href="http://www.postgresql.org/">PostgreSQL</a> and <a href="http://www.mysql.com/">MySQL</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/02/08/source-control-for-databases/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,38 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/sprintf/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/sprintf/",
+    "feed_url": "https://blog.josephscott.org/tag/sprintf/feed/json/",
+    "language": "en-US",
+    "title": "sprintf &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=11201",
+            "url": "https://blog.josephscott.org/2015/04/02/qrintf/",
+            "title": "qrintf",
+            "content_html": "<p>I&#8217;ve mentioned the <a href=\"https://github.com/h2o/h2o\">h2o web server</a> from Kazuho Oku <a href=\"https://josephscott.org/archives/2014/10/h2o/\">previously</a>.  One of the major goals for h2o is performance.  To the point that Kazuho created a sprintf/snprintf pre-processor called <a href=\"http://blog.kazuhooku.com/2014/10/announcing-qrintf-and-qrintf-gcc.html\">qrintf</a>:</p>\n<blockquote><p>\nsprintf (snprintf) is a great function for converting data to strings. The downside is that it is slow. Recently the functions have been one of the bottlenecks of H2O, which is a high performance HTTP server / library with support for HTTP/1.x and HTTP/2.</p>\n<p>&#8230;</p>\n<p>H2O uses sprintf in three parts: building the HTTP status line, building ETag, and building the access log.</p>\n<p>By using qrintf-gcc in place of gcc, the performance of H2O jumps up by 20% in a benchmark that sends tiny files and with access logging enabled (from 82,900 reqs/sec. to 99,200 reqs/sec.).\n</p></blockquote>\n<p>A 20% improvement is not something you run into every day.</p>\n",
+            "content_text": "I&#8217;ve mentioned the h2o web server from Kazuho Oku previously.  One of the major goals for h2o is performance.  To the point that Kazuho created a sprintf/snprintf pre-processor called qrintf:\n\nsprintf (snprintf) is a great function for converting data to strings. The downside is that it is slow. Recently the functions have been one of the bottlenecks of H2O, which is a high performance HTTP server / library with support for HTTP/1.x and HTTP/2.\n&#8230;\nH2O uses sprintf in three parts: building the HTTP status line, building ETag, and building the access log.\nBy using qrintf-gcc in place of gcc, the performance of H2O jumps up by 20% in a benchmark that sends tiny files and with access logging enabled (from 82,900 reqs/sec. to 99,200 reqs/sec.).\n\nA 20% improvement is not something you run into every day.",
+            "date_published": "2015-04-02T15:19:56-06:00",
+            "date_modified": "2015-04-02T15:19:56-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "h2o",
+                "kazuho-oku",
+                "qprintf",
+                "sprintf",
+                "Posts"
+            ]
+        }
+    ]
+}

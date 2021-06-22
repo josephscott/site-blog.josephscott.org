@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>themes &#8211; Joseph Scott</title>
+	<atom:link href="/tag/themes/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 06 Jul 2011 14:05:22 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Rocking the Twenty Eleven Theme</title>
+		<link>/2011/07/06/rocking-the-twenty-eleven-theme/</link>
+					<comments>/2011/07/06/rocking-the-twenty-eleven-theme/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 06 Jul 2011 14:05:22 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[themes]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4413</guid>
+
+					<description><![CDATA[With WordPress 3.2 out the door it seemed like a good time to try out the the Twenty Eleven theme. A few minor tweaks later and I&#8217;m pretty happy with the look. I&#8217;m still on the look out for a good header image, any suggestions?]]></description>
+										<content:encoded><![CDATA[<p>With <a href="http://wordpress.org/news/2011/07/gershwin/">WordPress 3.2</a> out the door it seemed like a good time to try out the the <a href="http://wordpress.org/extend/themes/twentyeleven">Twenty Eleven theme</a>.  A few minor tweaks later and I&#8217;m pretty happy with the look.</p>
+<p><img loading="lazy" alt="" src="https://lh5.googleusercontent.com/-FqWOWOOgdVQ/ThP1JSdor7I/AAAAAAAAAKE/81atzOVZN3Q/ss-josephscott-org.png" title="josephscott.org screen shot" class="alignnone" width="1402" height="742" /></p>
+<p>I&#8217;m still on the look out for a good header image, any suggestions?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/07/06/rocking-the-twenty-eleven-theme/feed/</wfw:commentRss>
+			<slash:comments>9</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Learning By Reviewing</title>
+		<link>/2011/03/14/learning-by-reviewing/</link>
+					<comments>/2011/03/14/learning-by-reviewing/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 14 Mar 2011 16:55:39 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[theme-reviews]]></category>
+		<category><![CDATA[themes]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3779</guid>
+
+					<description><![CDATA[Joining the Reviewers Team is simple, just a matter of getting your environment setup (4-6 minutes) and grabbing a theme for review. The most interesting and valuable part is not that you’re helping out the community, but that you’re learning yourself. I personally reviewed a little less than 20 themes (and still counting) but I [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+<a href="http://make.wordpress.org/themes/about/how-to-join-wptrt/">Joining the Reviewers Team</a> is simple, just a matter of getting your environment setup (4-6 minutes) and grabbing a theme for review. The most interesting and valuable part is not that you’re helping out the community, but that you’re learning yourself. I personally reviewed a little less than 20 themes (and still counting) but <strong>I learned so much about them and the best practices of developing them, the Settings API, coding standards, and damn I learned two functions i had no clue about (<a href="http://codex.wordpress.org/Function_Reference/checked">checked()</a> and <a href="http://codex.wordpress.org/Function_Reference/selected">selected()</a>)</strong>  — hope that doesn’t make me a rookie <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" />
+</p></blockquote>
+<p>Konstantin Kovshenin from <a href='http://kovshenin.com/archives/introducing-minimal-georgia-for-wordpress/'>Introducing Minimal Georgia for WordPress</a>, emphasis mine.</p>
+<p>The <a href="http://wordpress.org/extend/themes/">WordPress.org Themes</a> are reviewed by community members.  As Konstantin points out, not only does this help the community as a whole, he also learned something new as part of the process.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/03/14/learning-by-reviewing/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Why WordPress Themes are Derivative of WordPress</title>
+		<link>/2010/07/19/why-wordpress-themes-are-derivative-of-wordpress/</link>
+					<comments>/2010/07/19/why-wordpress-themes-are-derivative-of-wordpress/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 19 Jul 2010 17:06:36 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[gpl]]></category>
+		<category><![CDATA[license]]></category>
+		<category><![CDATA[mark-jaquith]]></category>
+		<category><![CDATA[themes]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2553</guid>
+
+					<description><![CDATA[Mark Jaquith has an excellent post describing Why WordPress Themes are Derivative of WordPress. Mark is one of the lead developers of WordPress and makes a living by doing freelance WordPress consulting (Covered Web Services). What Mark points out is that WordPress and themes &#8220;run as one cohesive unit&#8221;. It&#8217;s a good read, I highly [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Mark Jaquith has an excellent post describing <a href="http://markjaquith.wordpress.com/2010/07/17/why-wordpress-themes-are-derivative-of-wordpress/">Why WordPress Themes are Derivative of WordPress</a>.  Mark is one of the <a href="http://wordpress.org/about/">lead developers of WordPress</a> and makes a living by doing freelance WordPress consulting (<a href="http://coveredwebservices.com/">Covered Web Services</a>).</p>
+<p>What Mark points out is that WordPress and themes &#8220;run as one cohesive unit&#8221;.  It&#8217;s a good read, I highly recommend it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/07/19/why-wordpress-themes-are-derivative-of-wordpress/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>WordCamp SF 2010 Presentation Video</title>
+		<link>/2010/06/15/wordcamp-sf-2010-presentation-video/</link>
+					<comments>/2010/06/15/wordcamp-sf-2010-presentation-video/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 15 Jun 2010 23:53:00 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[presentation]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[themes]]></category>
+		<category><![CDATA[video]]></category>
+		<category><![CDATA[wordcamp]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2410</guid>
+
+					<description><![CDATA[From WordPress.TV. I&#8217;ll never get used to watching myself on video.]]></description>
+										<content:encoded><![CDATA[<p>From <a href="http://wordpress.tv/2010/05/01/joseph-scott-secure-plugins-sf10/">WordPress.TV</a>.</p>
+<p>I&#8217;ll never get used to watching myself on video.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/06/15/wordcamp-sf-2010-presentation-video/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Database Powered CSS in WordPress Themes</title>
+		<link>/2010/03/25/database-powered-css-in-wordpress-themes/</link>
+					<comments>/2010/03/25/database-powered-css-in-wordpress-themes/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 25 Mar 2010 13:59:04 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[parse_request]]></category>
+		<category><![CDATA[themes]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[wp_head]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1869</guid>
+
+					<description><![CDATA[A popular ability in WordPress themes is to add custom CSS driven by options. This brings up a common question, how should the theme inject custom CSS? I&#8217;ll outline three different approaches on how to do this. These aren&#8217;t new, many people have written about these; forums, blog posts, email lists and IRC. I&#8217;m still [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>A popular ability in WordPress themes is to add custom CSS driven by options.  This brings up a common question, how should the theme inject custom CSS?  I&#8217;ll outline three different approaches on how to do this.  These aren&#8217;t new, many people have written about these; forums, blog posts, email lists and IRC.  I&#8217;m still seeing questions about this though, so I wanted to address this specific question with specific solutions.</p>
+<p>For the purposes of code examples I&#8217;ll assume that you have an option called <code>my_background_color</code> and that you want to do something like this:</p>
+<p>[sourcecode lang=&#8221;css&#8221;]<br />
+body {<br />
+    background-color: &lt;?php echo $theme_opt[&#8216;my_background_color&#8217;]; ?&gt;<br />
+}<br />
+[/sourcecode]</p>
+<p>We&#8217;ll start with the simplest method.</p>
+<h3>header.php</h3>
+<p>Most themes have a <code>header.php</code> file that contains template code for the top of the HTML output.  This makes it easy to add custom CSS with options, just echo it out inside the HEAD section of the HTML:</p>
+<p>[sourcecode lang=&#8221;html&#8221;]<br />
+&lt;style type=&#8217;text/css&#8217;&gt;<br />
+body {<br />
+    background-color: &lt;?php echo $theme_opt[&#8216;my_background_color&#8217;]; ?&gt;<br />
+}<br />
+&lt;/style&gt;<br />
+[/sourcecode]</p>
+<p>The advantages to this approach is that it&#8217;s very simple, you already have a <code>header.php</code> so adding a few more lines doesn&#8217;t take much work.  The disadvantage is that this solution isn&#8217;t very flexible, if you have complex rules about when and how to include the CSS then your <code>header.php</code> file gets a lot extra &#8220;stuff&#8221; that may not need for every page.</p>
+<p>If your needs are simple then this works great.  If not, I suggest using either wp_head or parse_request.</p>
+<h3>wp_head</h3>
+<p>Each theme calls a WordPress action at the end of the HTML HEAD section &#8211;  <a href="http://codex.wordpress.org/Plugin_API/Action_Reference/wp_head">wp_head</a> &#8211; that can be used to include the custom CSS:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+&lt;?php<br />
+add_action( &#8216;wp_head&#8217;, &#8216;my_custom_css_hook&#8217; );<br />
+function my_custom_css_hook( ) {<br />
+    # get theme options<br />
+?&gt;</p>
+<p>&lt;style type=&#8217;text/css&#8217;&gt;<br />
+body {<br />
+    background-color: &lt;?php echo $theme_opt[&#8216;my_background_color&#8217;]; ?&gt;<br />
+}<br />
+&lt;/style&gt;</p>
+<p>&lt;?php<br />
+}<br />
+[/sourcecode]</p>
+<p>The only real difference between this approach and the previous one is that it&#8217;s less clutter in <code>header.php</code>.  Instead of having all that code in <code>header.php</code> it can be moved out to a separate file and WordPress will include it at runtime whenever the <code>wp_head</code> action fires.</p>
+<h3>parse_request</h3>
+<p>WordPress can provide your theme with custom URLs, these can turn around and serve up what ever you want, including CSS.  This technique takes a little bit more work, but provides the maximum degree of flexibility.  There are a couple steps to this one, first what you&#8217;ll need to have in <code>header.php</code>:</p>
+<p>[sourcecode lang=&#8221;html&#8221;]<br />
+&lt;link rel=&#8217;stylesheet&#8217; type=&#8217;text/css&#8217; href=&quot;&lt;?php bloginfo( &#8216;url&#8217; ); ?&gt;/?my-custom-content=css&quot; /&gt;<br />
+[/sourcecode]</p>
+<p>The <code>my-custom-content=css</code> just needs to be something unique to your theme so that it doesn&#8217;t conflict with plugins that might be using parse_request as well.</p>
+<p>Next we need to tell WordPress how we want to handle this request:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+add_action( &#8216;parse_request&#8217;, &#8216;my_custom_wp_request&#8217; );<br />
+function my_custom_wp_request( $wp ) {<br />
+    if (<br />
+        !empty( $_GET[&#8216;my-custom-content&#8217;] )<br />
+        &amp;&amp; $_GET[&#8216;my-custom-content&#8217;] == &#8216;css&#8217;<br />
+    ) {<br />
+        # get theme options<br />
+        header( &#8216;Content-Type: text/css&#8217; );<br />
+?&gt;</p>
+<p>body {<br />
+    background-color: &lt;?php echo $theme_opt[&#8216;my_background_color&#8217;]; ?&gt;<br />
+}</p>
+<p>&lt;?php<br />
+        exit;<br />
+    }<br />
+}<br />
+[/sourcecode]</p>
+<p>A few things in there that I want to point out.  Pay attention to line 8, this tells the browser what sort of content we are sending back.  In this case it was CSS, but it could have been JavaScript or anything else.  Also note that I didn&#8217;t add any cache related headers, it&#8217;s worth reading up on cache control in HTTP headers so that you know how that works.  Line 16 is also important, we don&#8217;t want WordPress attempting to do any further processing after we return the CSS so the right thing to do is exit as soon as possible.</p>
+<p>And if you wanted to keep the CSS in a separate file ( <code>custom-css.php</code> for our example ) that looked more like a normal CSS file then the <code>my_custom_wp_request</code> function could look like:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+function my_custom_wp_request( $wp ) {<br />
+    if (<br />
+        !empty( $_GET[&#8216;my-custom-content&#8217;] )<br />
+        &amp;&amp; $_GET[&#8216;my-custom-content&#8217;] == &#8216;css&#8217;<br />
+    ) {<br />
+        # get theme options<br />
+        header( &#8216;Content-Type: text/css&#8217; );<br />
+        require dirname( __FILE__ ) . &#8216;/custom-css.php&#8217;;<br />
+        exit;<br />
+    }<br />
+}<br />
+[/sourcecode]</p>
+<p>allowing your <code>custom-css.php</code> to look like:</p>
+<p>[sourcecode lang=&#8221;CSS&#8221;]<br />
+body {<br />
+    background-color: &lt;?php echo $theme_opt[&#8216;my_background_color&#8217;]; ?&gt;<br />
+}<br />
+[/sourcecode]</p>
+<p>basically just enough PHP to fill in the option blanks, other wise a normal looking CSS file.  I rather like this approach, it provides a nice degree of separation and control.</p>
+<h3>Conclusion</h3>
+<p>Now you have three methods for including database powered CSS in your WordPress theme.  I like using parse_request with the CSS in a separate file ( the last example ), for a little bit of extra work you get lots of flexibility and a nice layer of separation that makes managing the CSS portion easier.</p>
+<p>Having any tips on how to improve on this?  <a href="#comments">Leave a comment below!</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/03/25/database-powered-css-in-wordpress-themes/feed/</wfw:commentRss>
+			<slash:comments>52</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>WordPress Theme Authors, Don&#8217;t Forget The wp_head() Function</title>
+		<link>/2009/04/08/wordpress-theme-authors-dont-forget-the-wp_head-function/</link>
+					<comments>/2009/04/08/wordpress-theme-authors-dont-forget-the-wp_head-function/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 08 Apr 2009 20:03:33 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[atompub]]></category>
+		<category><![CDATA[iphone]]></category>
+		<category><![CDATA[themes]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xml-rpc]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1124</guid>
+
+					<description><![CDATA[When creating a WordPress theme don&#8217;t forget to include a wp_head(); call in the HTML HEAD section of your theme. It&#8217;s very simple to do, just include: [sourcecode lang=&#8221;php&#8221;] wp_head(); [/sourcecode] Before the closing HEAD tag (&#60;/head&#62;) in your HTML. Why make such a fuss over a single function call? Because it does a fair [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>When creating a WordPress theme don&#8217;t forget to include a wp_head(); call in the HTML HEAD section of your theme.  It&#8217;s very simple to do, just include:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+wp_head();<br />
+[/sourcecode]</p>
+<p>Before the closing HEAD tag (&lt;/head&gt;) in your HTML.</p>
+<p>Why make such a fuss over a single function call?  Because it does a fair bit of work behind the scenes and without it some WordPress features will not work properly.  Take a look at the wp_head section of the wp-includes/default-filters.php file in WordPress, you&#8217;ll see a number of events that are tied to the wp_head action.</p>
+<p>One area where this is a particular problem is for offline blog clients that make use of the XML-RPC and AtomPub APIs in WordPress.  The &#8220;Really Simple Discoverability&#8221; (RSD) link that WordPress inserts instructs these clients on where to find the RSD URL, which contains information on how the clients can send XML-RPC and AtomPub requests.  We&#8217;ve seen a number of times now where an error reported by a <a href="http://iphone.wordpress.org/">WordPress iPhone App</a> user is caused because there is no RSD link in their WordPress blog.  Looking a little deeper reveals that there was no RSD link because the theme they were using didn&#8217;t include a call to wp_head().</p>
+<p>If you are writing a WordPress theme here is your reminder, make sure that the wp_head() function is being called at the end of your HEAD section.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/04/08/wordpress-theme-authors-dont-forget-the-wp_head-function/feed/</wfw:commentRss>
+			<slash:comments>15</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Theme Directory Interview</title>
+		<link>/2008/08/13/theme-directory-interview/</link>
+					<comments>/2008/08/13/theme-directory-interview/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 13 Aug 2008 20:33:04 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[themedirectory]]></category>
+		<category><![CDATA[themes]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1166</guid>
+
+					<description><![CDATA[Ian Stewart has an interview up about the WordPress Theme Directory: Matt Mullenweg &#38; Joseph Scott Discuss The WordPress Themes Directory.]]></description>
+										<content:encoded><![CDATA[<p>Ian Stewart has an interview up about the <a href="http://wordpress.org/extend/themes/">WordPress Theme Directory</a>: <a href="http://themeshaper.com/matt-mullenweg-joseph-scott-wordpress-themes-directory/">Matt Mullenweg &amp; Joseph Scott Discuss The WordPress Themes Directory</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/08/13/theme-directory-interview/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>WordPress &gt; Theme Directory</title>
+		<link>/2008/07/18/wordpress-theme-directory/</link>
+					<comments>/2008/07/18/wordpress-theme-directory/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 18 Jul 2008 15:57:53 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[theme directory]]></category>
+		<category><![CDATA[themes]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1129</guid>
+
+					<description><![CDATA[Bringing the new theme directory under the WordPress extend umbrella allowed us to take advantage of all the infrastructure that has already been built up to support WordPress.org. If youve browsed through the plugin directory, youll feel right at home in the new theme directory. WordPress Theme Directory. Since announcing this last night we&#8217;ve had [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>Bringing the new theme directory under the WordPress extend umbrella allowed us to take advantage of all the infrastructure that has already been built up to support WordPress.org. If youve browsed through the plugin directory, youll feel right at home in the new theme directory.</p></blockquote>
+<p><a href="http://wordpress.org/development/2008/07/theme-directory/">WordPress Theme Directory</a>.</p>
+<p>Since announcing this last night we&#8217;ve had a lot of new theme submissions.  So far the responses I&#8217;ve seen have been very positive and excited about having a new central home for WordPress themes.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/07/18/wordpress-theme-directory/feed/</wfw:commentRss>
+			<slash:comments>7</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Looking for WordPress Themes Authors to try out a WordPress.org feature</title>
+		<link>/2008/06/20/looking-for-wordpress-themes-authors-to-try-out-a-wordpressorg-feature/</link>
+					<comments>/2008/06/20/looking-for-wordpress-themes-authors-to-try-out-a-wordpressorg-feature/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 20 Jun 2008 19:23:22 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[themes]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1111</guid>
+
+					<description><![CDATA[There&#8217;s a new feature at WordPress.org in the works. We&#8217;ll be providing to theme authors what wordpress.org/extend/plugins/ has for plugin authors. The core features are there and now I&#8217;m looking for some theme authors to test it out and provide some feed back. If you are interested and willing to provide feedback please contact me [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>There&#8217;s a new feature at WordPress.org in the works.  We&#8217;ll be<br />
+providing to theme authors what wordpress.org/extend/plugins/ has for<br />
+plugin authors.</p>
+<p>The core features are there and now I&#8217;m looking for some theme<br />
+authors to test it out and provide some feed back.  If you are<br />
+interested and willing to provide feedback please <a href="http://joseph.randomnetworks.com/contact/">contact me</a> and let me know what your wordpress.org username is.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/06/20/looking-for-wordpress-themes-authors-to-try-out-a-wordpressorg-feature/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Tue 29 Jan 2008</title>
+		<link>/2008/01/29/links-for-tue-29-jan-2008/</link>
+					<comments>/2008/01/29/links-for-tue-29-jan-2008/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 30 Jan 2008 00:30:26 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[prologue]]></category>
+		<category><![CDATA[startrek]]></category>
+		<category><![CDATA[themes]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/01/29/links-for-tue-29-jan-2008/</guid>
+
+					<description><![CDATA[YouTube &#8211; Star Trek: Captain James T. Kirk Giving some advises &#8211; Don&#8217;t make me go all evil Captain Kirk on you. Tags: startrek Prologue Theme Mod with 128 Chars Limit &#124; Play Work Play Studio &#8211; I guess some folks really like to know their limits 🙂 Tags: wordpress prologue themes]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://youtube.com/watch?v=9GZbfD0R6Vc&amp;feature=related">YouTube &#8211; Star Trek: Captain James T. Kirk Giving some advises</a> &#8211; Don&#8217;t make me go all evil Captain Kirk on you. <br /> Tags: <a href="http://del.icio.us/josephscott/startrek">startrek</a>  </p>
+</li>
+<li>
+<p><a href="http://playworkplay.com/blog/prologue-theme-mod-with-128-chars-limit/">Prologue Theme Mod with 128 Chars Limit | Play Work Play Studio</a> &#8211; I guess some folks really like to know their limits <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <br /> Tags: <a href="http://del.icio.us/josephscott/wordpress">wordpress</a> <a href="http://del.icio.us/josephscott/prologue">prologue</a> <a href="http://del.icio.us/josephscott/themes">themes</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/01/29/links-for-tue-29-jan-2008/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

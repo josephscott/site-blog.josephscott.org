@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>feedlounge &#8211; Joseph Scott</title>
+	<atom:link href="/tag/feedlounge/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 08 Dec 2005 19:40:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>MySQL to PostgreSQL and UUID/GUIDs</title>
+		<link>/2005/12/08/mysql-to-postgresql-and-uuidguids/</link>
+					<comments>/2005/12/08/mysql-to-postgresql-and-uuidguids/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 08 Dec 2005 19:40:07 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[feedlounge]]></category>
+		<category><![CDATA[guid]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[uuid]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=528</guid>
+
+					<description><![CDATA[(Warning, I tend to use UUID instead of GUID. For purposes of this post consider them interchangeable.) I&#8217;ve already mentioned the announcement of FeedLounge making the move from MySQL to PostgreSQL last month, but the discussion is still on going. If you haven&#8217;t yet, go read all of the comments on the announcement. This has [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>(Warning, I tend to use UUID instead of GUID.  For purposes of this post consider them interchangeable.)</p>
+<p>I&#8217;ve already <a href="http://joseph.randomnetworks.com/archives/2005/11/21/feedlounge-switches-to-postgresql/">mentioned</a> the announcement of <a href="http://www.feedlounge.com/">FeedLounge</a> making the <a href="http://feedlounge.com/blog/2005/11/20/switched-to-postgresql/">move from MySQL to PostgreSQL</a> last month, but the discussion is still on going.  If you haven&#8217;t yet, go read all of the comments on the announcement.  This has to be some of the most productive and level headed (no flames yet) set of blog comments I&#8217;ve seen in a long time.  For those of you who are coming late to this story let me bring you up to speed:</p>
+<p>FeedLounge started with MySQL as their database, with the MyISAM table types.  They ran into problems and so moved to the <a href="http://www.innodb.com/index.php">InnoDB</a> table type in MySQL.  Still not completely happy they did more research and decided to try out <a href="http://www.postgresql.com/">PostgreSQL</a> for their database needs.  Their tests showed that MySQL InnoDB database was 34GB, in PostgreSQL it was 9.6GB.  Restores in MySQL took more than 24 hours, in PostgreSQL it was less than 5 hours.  These numbers resulted in better performance and reduced time.</p>
+<p>It has been more than two weeks since the initial announcement and there are still new comments being added.  As of this morning there are <strike>34</strike> 35 comments.  Some of the comments have come from people who are very knowledgable about MySQL and the size of InnoDB indexes <a href="http://feedlounge.com/blog/2005/11/20/switched-to-postgresql/#comment-406">became the focus</a> for why InnoDB was so much bigger than PostgreSQL.  Using InnoDB with UUIDs as the primary key was <a href="http://feedlounge.com/blog/2005/11/20/switched-to-postgresql/#comment-409">identified as a problem</a>, especially in the area of performance.</p>
+<p>Things continued to get more interesting when Heikki Tuuri (the creator of InnoDB) left a comment <a href="http://feedlounge.com/blog/2005/11/20/switched-to-postgresql/#comment-451">confirming the size problems in InnoDB</a> when using a UUID as a primary key.  It seems that using a UUID in this way causes a couple of problems, the first being that InnoDB wants to keep things in index order, which is great for indexes on sequential numbers but bad for seemingly random data (PostgreSQL can do the same thing with <a href="http://www.postgresql.org/docs/8.1/interactive/sql-cluster.html">cluster</a>).  The next problem is that secondary indexes in the same table get copies of the primary key index to making finding things faster.  This, at least in part, was what caused the size difference.</p>
+<p><a href="http://feedlounge.com/blog/2005/11/20/switched-to-postgresql/#comment-455">Heikki&#8217;s solution</a> (and others have mentioned this) is to use an auto_increment field as the primary key and create a unique secondary index on the UUID field.  This would make the primary key index size much smaller and still allow InnoDB to do index lookups on the UUID field.  That would seem to solve the problem, but there hasn&#8217;t been any feedback yet to confirm if it fixed all of the differences between InnoDB and PostgreSQL.</p>
+<p>There is something about having to add an extra field to my table to make the database perform better that doesn&#8217;t seem quite right though.  I don&#8217;t have anything concrete that I can point to showing that this isn&#8217;t a good idea, but it doesn&#8217;t feel right.  For those who are running into these same types of problems though, it might be something to try, at least until you get a chance to try out PostgreSQL.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/12/08/mysql-to-postgresql-and-uuidguids/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>FeedLounge Switches To PostgreSQL</title>
+		<link>/2005/11/21/feedlounge-switches-to-postgresql/</link>
+					<comments>/2005/11/21/feedlounge-switches-to-postgresql/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 21 Nov 2005 18:01:11 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[feedlounge]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=521</guid>
+
+					<description><![CDATA[This could turn into an interesting case study, FeedLounge has switched databases, from MySQL to PostgreSQL. The two main factors they listed were database size (34Gig for MySQL/InnoDB vs. 9.6Gig for PostgreSQL) and restoration time (24+ hours to restore database in MySQL vs. less than 5 hours for PostgreSQL). I&#8217;m surprised to here about the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>This could turn into an interesting case study, <a href="http://www.feedlounge.com/">FeedLounge</a> has <a href="http://feedlounge.com/blog/2005/11/20/switched-to-postgresql/">switched databases</a>, from <a href="http://www.mysql.com/">MySQL</a> to <a href="http://www.postgresql.org/">PostgreSQL</a>.  The two main factors they listed were database size (34Gig for MySQL/InnoDB vs. 9.6Gig for PostgreSQL) and restoration time (24+ hours to restore database in MySQL vs. less than 5 hours for PostgreSQL).</p>
+<p>I&#8217;m surprised to here about the huge difference in database size between MySQL (w/InnoDB) and PostgreSQL.  Perhaps the different indexing techniques are responsible for this, I&#8217;m not sure.  For large databases the ability to cut your storage requirements by more than 1/3 is huge.  My gut feeling though is that this would not be the norm though.  More testing is definitely in order to make this comparison more meaningful.</p>
+<p>The huge difference in database restoration time also strikes me as a bit high.  Certainly another area where further tests would be interesting to see if this pattern holds true in general.  Obviously being able to restore your database in less than 1/3 the time is a good thing.</p>
+<p>The real kicker in all this though is the chance to make use of the additional features found in PostgreSQL (they point this out in their write up).  I hope that <a href="http://www.alexking.org/">Alex</a> continues to write about how this transition progresses.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/11/21/feedlounge-switches-to-postgresql/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

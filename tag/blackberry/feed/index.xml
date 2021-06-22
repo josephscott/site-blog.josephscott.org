@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>blackberry &#8211; Joseph Scott</title>
+	<atom:link href="/tag/blackberry/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 04 Feb 2010 18:23:03 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>WordPress for BlackBerry</title>
+		<link>/2010/02/04/wordpress-for-blackberry/</link>
+					<comments>/2010/02/04/wordpress-for-blackberry/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 04 Feb 2010 18:23:03 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[blackberry]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1855</guid>
+
+					<description><![CDATA[It&#8217;s a mobile app kind of week 🙂 The WordPress BlackBerry App is out of beta and ready with it&#8217;s 1.0 release. Just like the other WordPress mobile apps it&#8217;s open source and free. You can find more help and info in the FAQ, forums, and Trac site (for tickets and patches). These mobile apps [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>It&#8217;s a mobile app kind of week <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>The <a href="http://blackberry.wordpress.org/">WordPress BlackBerry App</a> is out of beta and ready with it&#8217;s <a href="http://blackberry.wordpress.org/2010/02/04/version-1-0-videopress-support-improved-comments-and-app-world/">1.0 release</a>.</p>
+<p>Just like the other WordPress mobile apps it&#8217;s open source and free.  You can find more help and info in the <a href="http://blackberry.wordpress.org/faq/">FAQ</a>, <a href="http://blackberry.forums.wordpress.org/">forums</a>, and <a href="http://blackberry.trac.wordpress.org/">Trac site</a> (for tickets and patches).</p>
+<p>These mobile apps use XML-RPC to communicate with your WordPress blog, so make sure you have that enabled first.  You can find that in wp-admin under Settings -&gt; Writing in the Remote Publishing section.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/02/04/wordpress-for-blackberry/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Debugging WordPress	</title>
+	<atom:link href="/2004/05/08/debugging-wordpress/feed/" rel="self" type="application/rss+xml" />
+	<link>/2004/05/08/debugging-wordpress/</link>
+	<description></description>
+	<lastBuildDate>Sat, 22 Dec 2007 08:29:39 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: sufehmi		</title>
+		<link>/2004/05/08/debugging-wordpress/#comment-371</link>
+
+		<dc:creator><![CDATA[sufehmi]]></dc:creator>
+		<pubDate>Sat, 22 Dec 2007 08:29:39 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/05/08/debugging-wordpress/#comment-371</guid>
+
+					<description><![CDATA[Thank you very much, this snippet has helped me pinpointed the problem in my client&#039;s blog.
+
+Turned out his database was corrupted, and tbale wp_options contained about 1,200,000 records. And I was wondering why his blog took forever to load :-)  apache/error.log, mysql/mysql.log, mysql/mysql-slow-queries.log, etc - none of them had the clue that I needed.
+
+Thanks again, it was most helpful !]]></description>
+			<content:encoded><![CDATA[<p>Thank you very much, this snippet has helped me pinpointed the problem in my client&#8217;s blog.</p>
+<p>Turned out his database was corrupted, and tbale wp_options contained about 1,200,000 records. And I was wondering why his blog took forever to load 🙂  apache/error.log, mysql/mysql.log, mysql/mysql-slow-queries.log, etc &#8211; none of them had the clue that I needed.</p>
+<p>Thanks again, it was most helpful !</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

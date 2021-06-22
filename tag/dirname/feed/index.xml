@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>dirname &#8211; Joseph Scott</title>
+	<atom:link href="/tag/dirname/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 08 Apr 2010 15:26:39 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Efficient PHP: Don&#8217;t Abuse dirname( __FILE__ )</title>
+		<link>/2010/04/08/efficient-php-dont-abuse-dirname-__file__/</link>
+					<comments>/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 08 Apr 2010 15:26:39 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[dirname]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2147</guid>
+
+					<description><![CDATA[Every now and then I run across a chunk of PHP code at the top of a file that looks something like this: [sourcecode lang=&#8221;php&#8221;] require dirname( __FILE__ ) . &#8216;/path/to/something.php&#8217;; require dirname( __FILE__ ) . &#8216;/path/to/another.php&#8217;; require dirname( __FILE__ ) . &#8216;/path/to/me-too.php&#8217;; require dirname( __FILE__ ) . &#8216;/path/to/sure-why-not.php&#8217;; require dirname( __FILE__ ) . &#8216;/path/to/kitchen-sink.php&#8217;; [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Every now and then I run across a chunk of PHP code at the top of a file that looks something like this:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+require dirname( __FILE__ ) . &#8216;/path/to/something.php&#8217;;<br />
+require dirname( __FILE__ ) . &#8216;/path/to/another.php&#8217;;<br />
+require dirname( __FILE__ ) . &#8216;/path/to/me-too.php&#8217;;<br />
+require dirname( __FILE__ ) . &#8216;/path/to/sure-why-not.php&#8217;;<br />
+require dirname( __FILE__ ) . &#8216;/path/to/kitchen-sink.php&#8217;;<br />
+[/sourcecode]</p>
+<p>and what jumps out at me is the repeated use of <code>dirname( __FILE__ )</code> for each require statement (for now we&#8217;ll avoid asking why anyone would need to include the kitchen-sink in their code base).  My gut instinct is to call <code>dirname( __FILE__ )</code> once, save that in a variable and then reference the variable to build the path.  Not wanting to go on instinct alone I put together a small test to see if it really would make any difference.</p>
+<p>The contrived test code will compare approach A:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+$var = dirname( __FILE__ ) . &#8216;/path/to/something.php&#8217;;<br />
+$var = dirname( __FILE__ ) . &#8216;/path/to/another.php&#8217;;<br />
+$var = dirname( __FILE__ ) . &#8216;/path/to/me-too.php&#8217;;<br />
+$var = dirname( __FILE__ ) . &#8216;/path/to/sure-why-not.php&#8217;;<br />
+$var = dirname( __FILE__ ) . &#8216;/path/to/kitchen-sink.php&#8217;;<br />
+[/sourcecode]</p>
+<p>with approach B:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+$path = dirname( __FILE__ );</p>
+<p>$var = $path . &#8216;/path/to/something.php&#8217;;<br />
+$var = $path . &#8216;/path/to/another.php&#8217;;<br />
+$var = $path . &#8216;/path/to/me-too.php&#8217;;<br />
+$var = $path . &#8216;/path/to/sure-why-not.php&#8217;;<br />
+$var = $path . &#8216;/path/to/kitchen-sink.php&#8217;;<br />
+[/sourcecode]</p>
+<p>I&#8217;m not testing with <code>require</code> in an effort to focus just on the difference repeated <code>dirname( __FILE__ )</code> calls make, not how fast the filesystem can slurp in PHP libraries.</p>
+<h3>VLD</h3>
+<p>My first test was to pass each approach through <a href="http://derickrethans.nl/projects.html#vld">VLD</a> to see how much &#8220;work&#8221; PHP was doing.    For that I pulled out the number of operations needed for each approach:</p>
+<p><b>approach A:</b> 37 ops<br />
+<b>approach B:</b> 23 ops</p>
+<p>Calling <code>dirname( __FILE__ )</code> once required 37% fewer operations.  This is a bit of blunt measurement since it doesn&#8217;t attempt to give individual weights to the different operations, but it gives a good general view.  The rule of thumb is that fewer ops is better than more ops.</p>
+<h3>Time</h3>
+<p>I tried running each approach in a simple loop, but it always ran so quickly that I didn&#8217;t see any useful difference.</p>
+<h4>Memory</h4>
+<p>Next up was a look at <a href="http://us.php.net/manual/en/function.memory-get-peak-usage.php">memory_get_peak_usage</a>.  Turns out there was a small difference:</p>
+<p><b>approach A:</b> 57,312 bytes<br />
+<b>approach B:</b> 56,992 bytes</p>
+<p>Sure 320 bytes isn&#8217;t a big deal in the world of servers with 16GB of memory, but it&#8217;s one more reason why approach B is just that tiny bit better.</p>
+<h4>Conclusion</h4>
+<p>If you see this pattern creeping into your code base and you can easily convert it then you&#8217;ll likely be better off for it.  Remember that everything is a trade off though, if it takes you several hours to go through and make this kind of change it may not be worth it.</p>
+<p>I&#8217;d certainly file this away for new projects though so that you can avoid repetitive <code>dirname( __FILE__ )</code> calls from the start.  For that matter, if you can get away with running on 5.3 or higher then you&#8217;d probably want to skip this entirely and look at using the new <a href="http://us.php.net/manual/en/language.constants.predefined.php">__DIR__</a> constant.  I haven&#8217;t tested how it compares to the two approaches listed above, but I&#8217;d expect it to be at least as good as approach B, perhaps even better.</p>
+<p>For reference I tested this using PHP 5.2.10-2ubuntu6.4 with Suhosin-Patch 0.9.7 (cli) (built: Jan  6 2010 22:41:56).  Your specific version of PHP may behave differently.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/04/08/efficient-php-dont-abuse-dirname-__file__/feed/</wfw:commentRss>
+			<slash:comments>12</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

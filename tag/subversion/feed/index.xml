@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>subversion &#8211; Joseph Scott</title>
+	<atom:link href="/tag/subversion/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 13 Jul 2011 18:32:09 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>SVN::Notify Looking For A New Maintainer</title>
+		<link>/2011/07/13/svnnotify-looking-for-a-new-maintainer/</link>
+					<comments>/2011/07/13/svnnotify-looking-for-a-new-maintainer/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 13 Jul 2011 18:32:09 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[perl]]></category>
+		<category><![CDATA[subversion]]></category>
+		<category><![CDATA[svn-notify]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4470</guid>
+
+					<description><![CDATA[David Wheeler announced that SVN::Notify is up for adoption. I still get quite a bit of milage out of SVN::Notify and hope that some Perl hacker out there is willing to take it over.]]></description>
+										<content:encoded><![CDATA[<p>David Wheeler announced that <a href='http://www.justatheory.com/computers/programming/perl/modules/adopt-svn-notify.html'>SVN::Notify is up for adoption</a>.  I still get quite a bit of milage out of <a href="http://search.cpan.org/dist/SVN-Notify/">SVN::Notify</a> and hope that some Perl hacker out there is willing to take it over.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/07/13/svnnotify-looking-for-a-new-maintainer/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Setting up SVNSync and SVN-Notify</title>
+		<link>/2010/01/15/setting-up-svnsync-and-svn-notify/</link>
+					<comments>/2010/01/15/setting-up-svnsync-and-svn-notify/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 15 Jan 2010 15:58:31 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[subversion]]></category>
+		<category><![CDATA[svn-notify]]></category>
+		<category><![CDATA[svnsync]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1627</guid>
+
+					<description><![CDATA[Long story short, I wanted to get commit emails for a Subversion repo. I don&#8217;t have any admin rights to the repo so I figured the easiest way was to just setup a local repo, keep up to date with the live repo with svnsync and then configure svn-notify on my local repo. The local [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Long story short, I wanted to get commit emails for a Subversion repo.  I don&#8217;t have any admin rights to the repo so I figured the easiest way was to just setup a local repo, keep up to date with the live repo with svnsync and then configure svn-notify on my local repo.  The local repo is only used for svn-notify, I&#8217;m not using it to checkout copies of the code or anything else.</p>
+<p>A good resource to getting started with svnsync is <a href="http://svn.apache.org/repos/asf/subversion/trunk/notes/svnsync.txt">http://svn.apache.org/repos/asf/subversion/trunk/notes/svnsync.txt</a>.  Go take a look at that first, should make the rest of this easy to follow.</p>
+<p>I assume that you already have subversion/svnsync and svn-notify installed and ready to go.  I&#8217;m not going to cover installing those.</p>
+<p>Here are the steps I followed to put this all together, first svnsync:</p>
+<ol>
+<li>Create local svn repo: <code>svnadmin create /home/svn/repo-name</code></li>
+<li>Edit <code>/home/svn/repo-name/hooks/pre-revprop-change</code> so that it looks like:
+<p>[sourcecode]<br />
+#!/bin/sh<br />
+USER=&quot;$3&quot;</p>
+<p>if [ &quot;$USER&quot; = &quot;svnsync&quot; ]; then exit 0; fi</p>
+<p>echo &quot;Only the svnsync user can change revprops&quot; &gt;&amp;2<br />
+exit 1<br />
+[/sourcecode]</p>
+<p>This limits changes to the local repo to only the &#8216;svnsync&#8217; user.
+</li>
+<li>Make it executable: <code>chmod +x /home/svn/repo-name/hooks/pre-revprop-change</code></li>
+<li>Initialize the sync between repos: <code>svnsync init &#8211; username svnsync file:///home/svn/repo-name http://svn.example.com/repo-name</code></li>
+<li>Run the first sync: <code>svnsync sync file:///home/svn/repo-name</code></li>
+<li>Schedule a cron job to run the sync periodically, say once every hour (on a nice odd number like 17 after the hour): <code>17 * * * * /usr/local/bin/svnsync &#8211; non-interactive sync file:///home/svn/repo-name</code></li>
+</ol>
+<p>With svnsync in place adding svn-notify for our locally synced repo is pretty easy.  Edit /home/svn/repo-name/hooks/post-commit  to look like:</p>
+<p>[sourcecode]<br />
+#!/bin/sh</p>
+<p>REPOS=&quot;$1&quot;<br />
+REV=&quot;$2&quot;</p>
+<p>delayed_notify( ) {<br />
+sleep 10</p>
+<p>/usr/local/bin/svnnotify &#8211;repos-path &quot;$1&quot; &#8211;revision &quot;$2&quot;<br />
+&#8211;to commit-list@example.com<br />
+&#8211;from commit-list@example.com<br />
+&#8211;with-diff<br />
+&#8211;subject-cx<br />
+&#8211;subject-prefix &#8216;REPO-NAME &#8216;<br />
+&#8211;handler HTML::ColorDiff<br />
+}</p>
+<p>delayed_notify $1 $2 &gt; /dev/null 2&gt;&amp;1 &amp;<br />
+[/sourcecode]</p>
+<p>Then make that hook executable: <code>chmod +x /home/svn/repo-name/hooks/post-commit</code></p>
+<p>There are two downsides to this approach.  First, the commit emails don&#8217;t go out right away after a commit, svnsync has to be run first.  In my example above that means it could be an hour after the commit before the email goes out.  I don&#8217;t consider this a big deal and the gap can be reduced by syncing more often.  <strike>The second problem bugs me, the user listed for all of the commits is the svnsync user, instead of the actual user that committed the change to the master repo.  Since all of the commits are replayed as the svnsync user there doesn&#8217;t appear to be an easy way to fix this.  If you know of one let me know.</strike></p>
+<p>And there we go, now you can get commit emails for a repo that you don&#8217;t have any admin rights to.  Not glamorous or ideal, but better than nothing.</p>
+<p><b>Update: </b> A big thank you <a href="http://blog.ftwr.co.uk/">Peter Westwood</a> (a.k.a westi) for suggesting a technique to delay svn-notify long enough for svnsync to finish replaying the rev-prop changes.  I tried it out and it solved the problem where all commit emails showed the &#8216;svnsync&#8217; user for every commit.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/01/15/setting-up-svnsync-and-svn-notify/feed/</wfw:commentRss>
+			<slash:comments>12</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Revert to a Previous Version in Subversion</title>
+		<link>/2010/01/05/revert-to-a-previous-version-in-subversion/</link>
+					<comments>/2010/01/05/revert-to-a-previous-version-in-subversion/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 05 Jan 2010 20:10:10 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[merge]]></category>
+		<category><![CDATA[revert]]></category>
+		<category><![CDATA[subversion]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1684</guid>
+
+					<description><![CDATA[Most of the time when I&#8217;m working with code that is checked out from Subversion it&#8217;s moving forward, version after version. There are times though where I need to revert back to a previous version (one reason you should have your code versioned in the first place). Subversion can do this, but it isn&#8217;t via [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Most of the time when I&#8217;m working with code that is checked out from <a href="http://subversion.tigris.org/">Subversion</a> it&#8217;s moving forward, version after version.  There are times though where I need to revert back to a previous version (one reason you should have your code versioned in the first place).  Subversion can do this, but it isn&#8217;t via the <a href="http://svnbook.red-bean.com/en/1.5/svn.ref.svn.c.revert.html">revert</a> command, instead it&#8217;s done with <a href="http://svnbook.red-bean.com/en/1.5/svn.ref.svn.c.merge.html">merge</a>.</p>
+<p>Most of the time this means I can revert my working copy to rev 12345 with this command:</p>
+<p><code>svn merge -r HEAD:12345 .</code></p>
+<p>The merge command requires a directory parameter, the dot just means the current directory.  This only reverts your working copy though, so don&#8217;t forget to commit after merge.</p>
+<p>Reverting back to a previous version is one of those things that I do infrequently enough that I end up searching for how to do it each time.  Perhaps writing about it will help me remember this a bit better.  If nothing else I know where to look for a quick example now.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/01/05/revert-to-a-previous-version-in-subversion/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Installing WordPress As A Subversion Checkout ( Or External ) In A Subdirectory</title>
+		<link>/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/</link>
+					<comments>/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 13 Feb 2009 03:30:19 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[subversion]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=779</guid>
+
+					<description><![CDATA[My preferred method for installing WordPress is to check it out from the Subversion repository (http://svn.automattic.com/wordpress/). Recent versions of WordPress have added support to allow wp-config.php and wp-content to live outside of the WordPress directory. Here&#8217;s the steps to make your setup work as a Subversion check out (based on Sam&#8216;s WordPress Plus Subversion slides) [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>My preferred method for installing <a href="http://wordpress.org/">WordPress</a> is to check it out from the Subversion repository (<a href="http://svn.automattic.com/wordpress/">http://svn.automattic.com/wordpress/</a>).  Recent versions of WordPress have added support to allow wp-config.php and wp-content to live outside of the WordPress directory.  Here&#8217;s the steps to make your setup work as a Subversion check out (based on <a href="http://unlettered.org/">Sam</a>&#8216;s <a href="http://unlettered.files.wordpress.com/2008/08/wp-plus-subversion.pdf">WordPress Plus Subversion</a> slides) in a subdirectory:</p>
+<ul>
+<li>Assumptions:
+<ul>
+<li>Domain is <b>example.com</b></li>
+<li>Installing in root directory of the domain: <b>/home/example.com/public_html/</b></li>
+<li>Web server and MySQL database/username already setup and working correctly</li>
+</ul>
+</li>
+<li><b>cd /home/example.com/public_html/</b></li>
+<li><b>mkdir wp</b></li>
+<li><b>svn co http://svn.automattic.com/wordpress/branches/2.7/ wp</b> (could be any branch, tag or -trunk)</li>
+<li>Install WordPress at <b>http://example.com/wp/</b></li>
+<li><b>mv wp/wp-config.php wp-config.php</b> (moves wp-config.php from /home/example.com/public_html/wp/ to /home/example.com/public_html/)</li>
+<li><b>mkdir wp-content</b></li>
+<li>
+Add WP_CONTENT_DIR and WP_CONTENT_URL after WP_LANG to wp-config.php:</p>
+<p>[sourcecode language=&#8221;php&#8221;]<br />
+&#8230;<br />
+define (&#8216;WPLANG&#8217;, &#8221;);</p>
+<p>define( &#8216;WP_CONTENT_DIR&#8217;, dirname( ABSPATH ) . &#8216;/wp-content&#8217; );<br />
+define( &#8216;WP_CONTENT_URL&#8217;, &#8216;http://example.com/wp-content&#8217; );</p>
+<p>/* That&#8217;s all, stop editing! Happy blogging. */<br />
+&#8230;<br />
+[/sourcecode]
+</li>
+<li><b>cd wp-content</b></li>
+<li><b>mkdir plugins</b></li>
+<li><b>cd plugins</b></li>
+<li><b>ln -s ../../wp/wp-content/plugins/akismet .</b></li>
+<li><b>cd ..</b></li>
+<li><b>mkdir themes</b></li>
+<li><b>cd themes</b></li>
+<li><b>ln -s ../../wp/wp-content/themes/default .</b></li>
+<li>Update WordPress settings in wp-admin:
+<ul>
+<li>Settings -&gt; General -&gt; WordPress address (URL): <b>http://example.com/wp/</b></li>
+<li>Settings -&gt; General -&gt; Blog address (URL): <b>http://example.com/</b></li>
+</ul>
+</li>
+<li>Permalinks:
+<ul>
+<li>Settings -&gt; Permalinks -&gt; Custom Structure: <b>/archives/%year%/%monthnum%/%postname%/</b> (my preferred format, you can choose your own if you&#8217;d like)</li>
+<li>.htaccess:<br />
+[sourcecode language=&#8221;php&#8221;]<br />
+RewriteEngine On<br />
+RewriteBase /</p>
+<p>RewriteRule ^wp/wp-content/(.*)$ wp-content/$1 [R=301,L]<br />
+RewriteRule ^wp-admin/(.*)$ wp/wp-admin/$1 [R=301,L]<br />
+RewriteRule ^$ /wp/index.php [L]</p>
+<p>RewriteCond %{REQUEST_FILENAME} !-f<br />
+RewriteCond %{REQUEST_FILENAME} !-d<br />
+RewriteRule . /wp/index.php [L]<br />
+[/sourcecode]
+</li>
+</ul>
+</li>
+</ul>
+<p>You can update WordPress at any time by running &#8216;svn up&#8217; in /home/example.com/public_html/wp/.  Updating when a new major release comes out means switching branches, for 2.8 that would &#8216;svn switch http://svn.automattic.com/wordpress/branches/2.8/&#8217;.</p>
+<p>When logging in remember that wp-admin is at <b>http://example.com/wp/wp-admin/</b>.</p>
+<p>I&#8217;ve also run into a few plugins that need fixing, because they lookup the WP URL via <b>get_bloginfo( &#8216;wpurl&#8217; )</b> instead of <b>get_bloginfo( &#8216;home&#8217; )</b>.  The problem with &#8216;wpurl&#8217; is it returns http://example.com/wp/, making it reference the wp-content directory that came with WordPress (http://example.com/wp/wp-content/) instead of the one that you are actually using at http://example.com/wp-content/.  The wp-content redirect in the .htaccess file should help make this a bit less painful by redirecting /wp/wp-content/ requests to /wp-content/.</p>
+<p>If you&#8217;ve setup /home/example.com/public_html/ as it&#8217;s own Subversion repository you can make WordPress an external for the /home/example.com/public_html/wp/ directory.  That way you&#8217;ll still be able to have a pristine setup of WordPress while being able to manage wp-config.php, themes and plugins in your own repository.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/feed/</wfw:commentRss>
+			<slash:comments>22</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>SVN-Notify, Linking To Trac Revisions</title>
+		<link>/2008/01/07/svn-notify-linking-to-trac-revisions/</link>
+					<comments>/2008/01/07/svn-notify-linking-to-trac-revisions/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 08 Jan 2008 06:47:51 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[howto]]></category>
+		<category><![CDATA[subversion]]></category>
+		<category><![CDATA[svn-notify]]></category>
+		<category><![CDATA[trac]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/01/07/svn-notify-linking-to-trac-revisions/</guid>
+
+					<description><![CDATA[Matt made it so that the revision number shown in SVN-Notify links to the Trac diff page for that revision. This was for the wp-svn list, but no reason it couldn&#8217;t be used elsewhere. Figured I might need something like this one day, so here it is: /usr/local/bin/svnnotify -r $REV -C -d -H HTML::ColorDiff -p [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://photomatt.net/">Matt</a> made it so that the revision number shown in <a href="http://search.cpan.org/~dwheeler/SVN-Notify/">SVN-Notify</a> links to the <a href="http://trac.edgewall.org/">Trac</a> diff page for that revision.  This was for the <a href="http://lists.automattic.com/mailman/listinfo/wp-svn">wp-svn</a> list, but no reason it couldn&#8217;t be used elsewhere.</p>
+<p>Figured I might need something like this one day, so here it is:</p>
+<p><code></p>
+<pre>
+/usr/local/bin/svnnotify -r $REV -C -d -H HTML::ColorDiff -p $REPOS 
+-t wp-svn@lists.automattic.com 
+--from m@wordpress.org 
+--reply-to wp-hackers@lists.automattic.com 
+--revision-url http://trac.wordpress.org/changeset/%s 
+--ticket-map '(#(d+))=http://trac.wordpress.org/ticket/%s' 
+--ticket-regex '([(d+)])' 
+--ticket-url http://trac.wordpress.org/changeset/%s
+</pre>
+<p></code></p>
+<p>And here&#8217;s <a href="http://comox.textdrive.com/pipermail/wp-hackers/2007-December/016874.html">Matt&#8217;s email to wp-hackers</a> that explains it a bit more.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/01/07/svn-notify-linking-to-trac-revisions/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Wed 14 Nov 2007</title>
+		<link>/2007/11/14/links-for-wed-14-nov-2007/</link>
+					<comments>/2007/11/14/links-for-wed-14-nov-2007/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 15 Nov 2007 00:30:01 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[subversion]]></category>
+		<category><![CDATA[websvn]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/14/links-for-wed-14-nov-2007/</guid>
+
+					<description><![CDATA[websvn.tigris.org &#8211; Sounds like it is similar to Trac&#8217;s repository browser. Tags: subversion websvn]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://websvn.tigris.org/">websvn.tigris.org</a> &#8211; Sounds like it is similar to Trac&#8217;s repository browser. <br /> Tags: <a href="http://del.icio.us/josephscott/subversion">subversion</a> <a href="http://del.icio.us/josephscott/websvn">websvn</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/11/14/links-for-wed-14-nov-2007/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Subversion Doesn&#8217;t Like Trailing Spaces</title>
+		<link>/2007/01/12/subversion-doesnt-like-trailing-spaces/</link>
+					<comments>/2007/01/12/subversion-doesnt-like-trailing-spaces/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 13 Jan 2007 07:25:21 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[subversion]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/01/12/subversion-doesnt-like-trailing-spaces/</guid>
+
+					<description><![CDATA[My recent Subversion success hit an old snag the other day. I was importing another FrameMaker book, which seemed to go okay, but checking it out again failed on one directory over and over. It didn&#8217;t make any sense, there was nothing unusual about the directory that I could see. I removed the whole book [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>My recent <a href="http://joseph.randomnetworks.com/archives/2007/01/03/subversion-success-story/">Subversion success</a> hit an old snag the other day.  I was importing another FrameMaker book, which seemed to go okay, but checking it out again failed on one directory over and over.  It didn&#8217;t make any sense, there was nothing unusual about the directory that I could see.  I removed the whole book and re-imported it just to see if I missed something.  The second import went fine (so I thought), but the checkout failed in the same spot once again.</p>
+<p>So I tried all the little variations of re-importing specific directories and checking out specific directories.  The failure was always the same and always on the same directory.  At one point I stopped and just looked at the error, which included the directory name, for a few minutes.  I wondered, could there possibly be some white space on the end of the directory name?</p>
+<p>Testing this theory was easy enough, filename completion in my shell confirmed that there was one space at the end of the directory name.  Unbelievable!  Who would put a space at the end of directory name!?  At this point it didn&#8217;t matter, I removed the directory with the space from the repository.  This took a couple of tries because the import on that directory didn&#8217;t really succeed properly.  So even though the error showed up on checkout, it was the importing that actually failed in the first place.</p>
+<p>Once the directory with the trailing space was renamed to exclude the space I was able to import it.  Checkout also worked normally after that.</p>
+<p>So if you have what looks like a normal file or directory that is causing errors on an import or checkout, take a moment ensure that there are no trailing spaces.  Subversion won&#8217;t be happy if there are.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/01/12/subversion-doesnt-like-trailing-spaces/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

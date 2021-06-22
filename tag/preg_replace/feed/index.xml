@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>preg_replace &#8211; Joseph Scott</title>
+	<atom:link href="/tag/preg_replace/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 14 Jan 2011 15:47:46 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Removing non-UTF8 characters from strings with PHP</title>
+		<link>/2011/01/14/removing-non-utf8-characters-from-strings-with-php/</link>
+					<comments>/2011/01/14/removing-non-utf8-characters-from-strings-with-php/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 14 Jan 2011 15:47:46 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[preg_replace]]></category>
+		<category><![CDATA[utf8]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3409</guid>
+
+					<description><![CDATA[[sourcecode lang=&#8221;php&#8221;] //reject overly long 2 byte sequences, //as well as characters above U+10000 //and replace with ? $some_string = preg_replace(&#8216;/&#8217;. &#8216;[x00-x08x10x0Bx0Cx0E-x19x7F]&#8217;. &#8216;&#124;[x00-x7F][x80-xBF]+&#8217;. &#8216;&#124;([xC0xC1]&#124;[xF0-xFF])[x80-xBF]*&#8217;. &#8216;&#124;[xC2-xDF]((?![x80-xBF])&#124;[x80-xBF]{2,})&#8217;. &#8216;&#124;[xE0-xEF](([x80-xBF](?![x80-xBF]))&#124;&#8217;. &#8216;(?![x80-xBF]{2})&#124;[x80-xBF]{3,})&#8217;. &#8216;/S&#8217;, &#8216;?&#8217;, $some_string ); //reject overly long 3 byte sequences //and UTF-16 surrogates and replace with ? $some_string = preg_replace(&#8216;/&#8217;. &#8216;xE0[x80-x9F][x80-xBF]&#8217;. &#8216;&#124;xED[xA0-xBF][x80-xBF]&#8217;. &#8216;/S&#8217;, &#8216;?&#8217;, $some_string ); [/sourcecode] Via [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>[sourcecode lang=&#8221;php&#8221;]<br />
+//reject overly long 2 byte sequences,<br />
+//as well as characters above U+10000<br />
+//and replace with ?<br />
+$some_string = preg_replace(&#8216;/&#8217;.<br />
+ &#8216;[x00-x08x10x0Bx0Cx0E-x19x7F]&#8217;.<br />
+ &#8216;|[x00-x7F][x80-xBF]+&#8217;.<br />
+ &#8216;|([xC0xC1]|[xF0-xFF])[x80-xBF]*&#8217;.<br />
+ &#8216;|[xC2-xDF]((?![x80-xBF])|[x80-xBF]{2,})&#8217;.<br />
+ &#8216;|[xE0-xEF](([x80-xBF](?![x80-xBF]))|&#8217;.<br />
+ &#8216;(?![x80-xBF]{2})|[x80-xBF]{3,})&#8217;.<br />
+ &#8216;/S&#8217;,<br />
+ &#8216;?&#8217;, $some_string );</p>
+<p>//reject overly long 3 byte sequences<br />
+//and UTF-16 surrogates and replace with ?<br />
+$some_string = preg_replace(&#8216;/&#8217;.<br />
+ &#8216;xE0[x80-x9F][x80-xBF]&#8217;.<br />
+ &#8216;|xED[xA0-xBF][x80-xBF]&#8217;.<br />
+ &#8216;/S&#8217;,<br />
+ &#8216;?&#8217;, $some_string );<br />
+[/sourcecode]</p>
+<p>Via <a href='http://magp.ie/2011/01/06/remove-non-utf8-characters-from-string-with-php/'>Remove non-UTF8 characters from string with PHP « Magp.ie</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/01/14/removing-non-utf8-characters-from-strings-with-php/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>anthony-ferrara &#8211; Joseph Scott</title>
+	<atom:link href="/tag/anthony-ferrara/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 18 Sep 2015 14:30:14 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Context Escaping</title>
+		<link>/2015/09/18/context-escaping/</link>
+					<comments>/2015/09/18/context-escaping/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 18 Sep 2015 14:30:14 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[anthony-ferrara]]></category>
+		<category><![CDATA[xhp]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12518</guid>
+
+					<description><![CDATA[Anthony Ferrara taking on the painful process of automatically determining the correct context for escaping data in templates: Imagine being able to put a variable in a JavaScript string in your template, and have the engine transparently encode it correctly for you. Awesome, right? From Tries and Lexers. The best attempt I&#8217;ve seen at this [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Anthony Ferrara taking on the painful process of automatically determining the correct context for escaping data in templates:</p>
+<blockquote><p>
+Imagine being able to put a variable in a JavaScript string in your template, and have the engine transparently encode it correctly for you. Awesome, right?
+</p></blockquote>
+<p>From <a href="http://blog.ircmaxell.com/2015/05/tries-and-lexers.html">Tries and Lexers</a>.</p>
+<p>The best attempt I&#8217;ve seen at this <a href="https://www.facebook.com/notes/facebook-engineering/xhp-a-new-way-to-write-php/294003943919">XHP</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/09/18/context-escaping/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Beware of Crypto Combinations</title>
+		<link>/2015/04/21/beware-of-crypto-combinations/</link>
+					<comments>/2015/04/21/beware-of-crypto-combinations/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 21 Apr 2015 14:50:24 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[anthony-ferrara]]></category>
+		<category><![CDATA[bcrypt]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11794</guid>
+
+					<description><![CDATA[Bcrypt has in interesting limitation, it only uses the first 72 bytes to generate a hash. Anthony Ferrara covers why you may want to live with that limitation: Security Issue: Combining Bcrypt With Other Hash Functions. The specific example he covers is pre-hashing with the raw output of hash_hmac(), which can contain null bytes: this [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://en.wikipedia.org/wiki/Bcrypt">Bcrypt</a> has in interesting limitation, it only uses the first 72 bytes to generate a hash.  Anthony Ferrara covers why you may want to live with that limitation: <a href="http://blog.ircmaxell.com/2015/03/security-issue-combining-bcrypt-with.html">Security Issue: Combining Bcrypt With Other Hash Functions</a>.</p>
+<p>The specific example he covers is pre-hashing with the raw output of <a href="http://php.net/manual/en/function.hash-hmac.php">hash_hmac()</a>, which can contain null bytes:</p>
+<blockquote><p>
+this means that the output can contain null bytes. In fact, it means that on average 1 out of every 256 passwords (or 0.39%) will have a leading null byte. So we only need to try approximately 177 passwords to get a 50% chance of finding a hash with a leading null byte. And we only need to try approximately 177 users to get a 50% chance of finding a user with a leading null byte. So trying 31329 permutations of users and passwords gives us a 25% chance of finding one that will work.</p>
+<p>&#8230;</p>
+<p>This is <strong>bad</strong>. This is <strong>really bad</strong>.
+</p></blockquote>
+<p>Oh the null byte, you have been the source of many unexpected results.</p>
+<p>If you don&#8217;t use the raw output of <code>hash_hmac()</code> then you won&#8217;t get null bytes and you&#8217;ll be fine.  By default raw output is set to false.</p>
+<blockquote><p>
+You are 100% safe if you do one of the following:</p>
+<ol>
+<li>Use straight bcrypt (don&#8217;t pre-hash)</li>
+<li>Use hex output from the pre-hash</li>
+<li>Base64 encode the raw output of a pre-hash</li>
+</ol>
+<p>If you are using raw output, encode it first, and you&#8217;re safe.
+</p></blockquote>
+<p>There are so many ways to mess up cryptography.  <a href="https://josephscott.org/archives/2015/04/which-kneecap/">This is not the kneecap you want to get shot in</a>.  Nearly every situation should stick with existing, widely used and tested, crypto options.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/04/21/beware-of-crypto-combinations/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Forward Compatibility, Another Reason for Named Parameters in PHP</title>
+		<link>/2013/06/26/forward-compatibility-another-reason-for-named-parameters-in-php/</link>
+					<comments>/2013/06/26/forward-compatibility-another-reason-for-named-parameters-in-php/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 26 Jun 2013 04:14:32 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[anthony-ferrara]]></category>
+		<category><![CDATA[forward-compatibility]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=8368</guid>
+
+					<description><![CDATA[While Anthony Ferrara&#8217;s Backwards Compatibility Is For Suckers starts off as mostly flame bait, he does bring up one important issue: forward compatibility. The PHP example he cites is the new password_hash function. It looks like this: password_hash( $password, $algo, array $options = array() ); Currently $options supports two values: salt and cost. The forward [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>While Anthony Ferrara&#8217;s <a href="http://blog.ircmaxell.com/2013/06/backwards-compatibility-is-for-suckers.html">Backwards Compatibility Is For Suckers</a> starts off as mostly flame bait, he does bring up one important issue: forward compatibility.</p>
+<p>The PHP example he cites is the new <a href="http://us3.php.net/password_hash">password_hash</a> function.  It looks like this:</p>
+<pre><code>password_hash( $password, $algo, array $options = array() );</code></pre>
+<p>Currently <code>$options</code> supports two values: <code>salt</code> and <code>cost</code>.  The forward compatibility part is that new values can be added to <code>$options</code> without having to change the function signature.</p>
+<p>This is the best you can do with PHP right now, which is a bummer.  The (much) better solution would be to have named parameter support.  Use Python as the reference for this.  No more hiding parameters in an opaque options array, instead expose all of them in the function signature.</p>
+<p>Until PHP has proper named parameter support we&#8217;ll have to continue the awkward use of arrays to hide current and future optional parameters.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/06/26/forward-compatibility-another-reason-for-named-parameters-in-php/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

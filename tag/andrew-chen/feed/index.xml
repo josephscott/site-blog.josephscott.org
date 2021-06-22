@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>andrew-chen &#8211; Joseph Scott</title>
+	<atom:link href="/tag/andrew-chen/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 18 Jun 2013 16:21:01 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Why Marketing People Don&#8217;t Like RSS Feeds</title>
+		<link>/2013/06/18/why-marketing-people-dont-like-rss-feeds/</link>
+					<comments>/2013/06/18/why-marketing-people-dont-like-rss-feeds/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 18 Jun 2013 16:21:01 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[andrew-chen]]></category>
+		<category><![CDATA[rss]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7508</guid>
+
+					<description><![CDATA[When Google Reader announced it was shutting down I noticed a specific trend in the commentary that followed. It was a particular portion of the &#8220;RSS is dead&#8221; crowd. But it wasn&#8217;t just that they were predicting the death of RSS because of Reader shutting down, they were promoting the idea of actively killing it [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>When Google Reader <a href="https://josephscott.org/archives/2013/03/google-reader-gone/">announced it was shutting down</a> I noticed a specific trend in the commentary that followed.  It was a particular portion of the &#8220;RSS is dead&#8221; crowd.  But it wasn&#8217;t just that they were predicting the death of RSS because of Reader shutting down, they were promoting the idea of actively killing it by removing support for RSS feeds from their sites.</p>
+<p>I couldn&#8217;t figure out the motivation behind this.  Their various CMSs already took care of generating feeds for these authors, meaning they had to go through more work to disable feeds than to continue to support them.</p>
+<p>The alternative they proposed was to subscribe via email.  I was lost on why they wanted to pick one over the other, when doing both was perfectly reasonable.  There was a common thread that I saw in this particular group, they tended to be marketing people.</p>
+<p>Then I came across a post by Andrew Chen, <a href="http://andrewchen.co/2013/04/15/rss-i-quit-you-please-subscribe-to-email-updates-for-this-blog-instead/"><br />
+RSS, I quit you. Please subscribe to email updates for this blog instead</a>:</p>
+<blockquote><p>
+I have 10,000s of subscribers on my RSS feed right now, and I wish I had gotten them all on email instead.
+</p></blockquote>
+<p>Then it became clear.  They were disappointed that they didn&#8217;t own their subscribers.  Services like Feedburner and Google Reader had lulled them into the idea that they had a hold on their subscribers, when they really didn&#8217;t.  At least not in the same way that having their email address does.</p>
+<p>Demanding email addresses in order to get updates from your site is a loosing position.  Give people the option to use which ever method works best for them and they will be much happier.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/06/18/why-marketing-people-dont-like-rss-feeds/feed/</wfw:commentRss>
+			<slash:comments>7</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

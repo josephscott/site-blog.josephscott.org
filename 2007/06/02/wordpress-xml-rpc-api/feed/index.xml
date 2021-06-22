@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: WordPress XML-RPC API	</title>
+	<atom:link href="/2007/06/02/wordpress-xml-rpc-api/feed/" rel="self" type="application/rss+xml" />
+	<link>/2007/06/02/wordpress-xml-rpc-api/</link>
+	<description></description>
+	<lastBuildDate>Thu, 24 Apr 2008 14:48:48 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Vladimir		</title>
+		<link>/2007/06/02/wordpress-xml-rpc-api/#comment-1854</link>
+
+		<dc:creator><![CDATA[Vladimir]]></dc:creator>
+		<pubDate>Thu, 24 Apr 2008 14:48:48 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/06/02/wordpress-xml-rpc-api/#comment-1854</guid>
+
+					<description><![CDATA[My API is opened to discuss. If you have any ideas on the improvement of comment API, I will give them due consideration and but will appreciate your feedback.]]></description>
+			<content:encoded><![CDATA[<p>My API is opened to discuss. If you have any ideas on the improvement of comment API, I will give them due consideration and but will appreciate your feedback.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2007/06/02/wordpress-xml-rpc-api/#comment-1853</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 15 Apr 2008 00:01:43 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/06/02/wordpress-xml-rpc-api/#comment-1853</guid>
+
+					<description><![CDATA[@strebel -
+
+I saw that (the author posted to some of the WordPress email lists), and having an API for comments is something we are definitely interested in having in WordPress.  Before we commit to any specific code though, we need to flush out what the API should look like first.]]></description>
+			<content:encoded><![CDATA[<p>@strebel &#8211;</p>
+<p>I saw that (the author posted to some of the WordPress email lists), and having an API for comments is something we are definitely interested in having in WordPress.  Before we commit to any specific code though, we need to flush out what the API should look like first.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: strebel		</title>
+		<link>/2007/06/02/wordpress-xml-rpc-api/#comment-1852</link>
+
+		<dc:creator><![CDATA[strebel]]></dc:creator>
+		<pubDate>Mon, 14 Apr 2008 22:07:03 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/06/02/wordpress-xml-rpc-api/#comment-1852</guid>
+
+					<description><![CDATA[What do you make of this?  Look solid?
+someone wrote a api for wp_comments
+http://commentclient.com/downloads/]]></description>
+			<content:encoded><![CDATA[<p>What do you make of this?  Look solid?<br />
+someone wrote a api for wp_comments<br />
+<a href="http://commentclient.com/downloads/" rel="nofollow ugc">http://commentclient.com/downloads/</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2007/06/02/wordpress-xml-rpc-api/#comment-1851</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 03 Apr 2008 16:40:26 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/06/02/wordpress-xml-rpc-api/#comment-1851</guid>
+
+					<description><![CDATA[@engtech -
+
+Having a comment API in XML-RPC is something that we&#039;ve talked about some in the wp-xmlrpc email list ( http://lists.automattic.com/mailman/listinfo/wp-xmlrpc ), which I encourage anyone interested in WP &#038; XML-RPC to join.
+
+So far no work has been done to really flush out specifics, but in concept I thing there is plenty of support for it.]]></description>
+			<content:encoded><![CDATA[<p>@engtech &#8211;</p>
+<p>Having a comment API in XML-RPC is something that we&#8217;ve talked about some in the wp-xmlrpc email list ( <a href="http://lists.automattic.com/mailman/listinfo/wp-xmlrpc" rel="nofollow ugc">http://lists.automattic.com/mailman/listinfo/wp-xmlrpc</a> ), which I encourage anyone interested in WP &amp; XML-RPC to join.</p>
+<p>So far no work has been done to really flush out specifics, but in concept I thing there is plenty of support for it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: engtech		</title>
+		<link>/2007/06/02/wordpress-xml-rpc-api/#comment-1850</link>
+
+		<dc:creator><![CDATA[engtech]]></dc:creator>
+		<pubDate>Thu, 03 Apr 2008 13:14:26 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/06/02/wordpress-xml-rpc-api/#comment-1850</guid>
+
+					<description><![CDATA[It would pretty cool if we could post validated comments (that skip akismet) using the XML-RPC API if logged in as an administrator.
+
+There are so many &quot;comment replacement&quot; websites out there now: http://www.webware.com/8301-1_109-9898697-2.html
+
+It would be nice if WP had an API for mirroring the data back into WordPress.
+
+What I&#039;m thinking:
+- it would have user/email/link/text fields that could be set
+- the username/password would be a valid super-user of the blog (admin only?)
+- it would have a field for optionally skipping akismet (some sites you&#039;d want to filter through akismet, other times now)
+
+This would also allow people to add blog comment administration to their 3rd party blog client software.]]></description>
+			<content:encoded><![CDATA[<p>It would pretty cool if we could post validated comments (that skip akismet) using the XML-RPC API if logged in as an administrator.</p>
+<p>There are so many &#8220;comment replacement&#8221; websites out there now: <a href="http://www.webware.com/8301-1_109-9898697-2.html" rel="nofollow ugc">http://www.webware.com/8301-1_109-9898697-2.html</a></p>
+<p>It would be nice if WP had an API for mirroring the data back into WordPress.</p>
+<p>What I&#8217;m thinking:<br />
+&#8211; it would have user/email/link/text fields that could be set<br />
+&#8211; the username/password would be a valid super-user of the blog (admin only?)<br />
+&#8211; it would have a field for optionally skipping akismet (some sites you&#8217;d want to filter through akismet, other times now)</p>
+<p>This would also allow people to add blog comment administration to their 3rd party blog client software.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>event &#8211; Joseph Scott</title>
+	<atom:link href="/tag/event/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 25 Jul 2012 16:16:34 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Difference Between A Human Click And A Trigger Click With jQuery</title>
+		<link>/2012/07/25/difference-between-a-human-click-and-a-trigger-click-with-jquery/</link>
+					<comments>/2012/07/25/difference-between-a-human-click-and-a-trigger-click-with-jquery/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 25 Jul 2012 16:16:34 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[click]]></category>
+		<category><![CDATA[event]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jquery]]></category>
+		<category><![CDATA[trigger]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6176</guid>
+
+					<description><![CDATA[I was recently working on a page that had some existing transitions that happened when a user clicked on an item. My thought was to periodically trigger a click event that would automate the process some what, allowing me to take advantage of the existing transition code. jQuery has a nifty method called .trigger that [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was recently working on a page that had some existing transitions that happened when a user clicked on an item.  My thought was to periodically trigger a click event that would automate the process some what, allowing me to take advantage of the existing transition code.</p>
+<p>jQuery has a nifty method called <a href="http://api.jquery.com/trigger/">.trigger</a> that takes care of firing the click event for me.  Very handy, but then I quickly realized that I needed to be able to tell the difference between a human click event and a <code>.trigger</code>&#8216;d click event.</p>
+<p>Fortunately I wasn&#8217;t the only one to have run into this issue and there is a solution described at <a href="http://stackoverflow.com/questions/6692031/check-if-event-is-triggered-by-a-human/6692173#6692173">http://stackoverflow.com/questions/6692031/check-if-event-is-triggered-by-a-human/6692173#6692173</a>.  The key is <code>event.originalEvent</code>, here is an example from the StackOverflow post:</p>
+<p>[sourcecode lang=&#8221;javascript&#8221;]<br />
+$( &quot;#click-me&quot; ).click( function( event ) {<br />
+    if ( event.originalEvent === undefined ) {<br />
+        alert( &#8216;not human&#8217; )<br />
+    } else {<br />
+        alert( &#8216;human&#8217; );<br />
+    }<br />
+} );<br />
+[/sourcecode]</p>
+<p>You can also try it out on jsFiddle &#8211; <a href="http://jsfiddle.net/Uf8Wv/">http://jsfiddle.net/Uf8Wv/</a></p>
+<p>This appears to be specific to jQuery, which in this case wasn&#8217;t a big deal since all of the other code on the page was using jQuery as well.  The <a href="http://api.jquery.com/category/events/event-object/">Event object</a> documentation mentions <code>event.originalEvent</code>, but doesn&#8217;t indicate that it can be used in this way.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/07/25/difference-between-a-human-click-and-a-trigger-click-with-jquery/feed/</wfw:commentRss>
+			<slash:comments>7</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

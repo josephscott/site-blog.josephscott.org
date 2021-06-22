@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ranked-search &#8211; Joseph Scott</title>
+	<atom:link href="/tag/ranked-search/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 01 Jul 2005 00:48:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Ranked Search, Merging Google And Yahoo</title>
+		<link>/2005/06/30/ranked-search-merging-google-and-yahoo/</link>
+					<comments>/2005/06/30/ranked-search-merging-google-and-yahoo/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 01 Jul 2005 00:48:07 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[ranked-search]]></category>
+		<category><![CDATA[search]]></category>
+		<category><![CDATA[yahoo]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=426</guid>
+
+					<description><![CDATA[Last week I discovered Twingine via Russell. Twingine puts the results of your query from Google and Yahoo! into frames so that you can compare the results side by side. This seemed like an interesting idea, but the interface isn&#8217;t particularly useful, it&#8217;s too much work to visually compare the two. Then I remembered Matt&#8217;s [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Last week I discovered <a href="http://www.twingine.com/">Twingine</a> via <a href="http://www.russellbeattie.com/notebook/1008510.html">Russell</a>.  Twingine puts the results of your query from <a href="http://www.google.com/">Google</a> and <a href="http://www.yahoo.com/">Yahoo!</a> into frames so that you can compare the results side by side.  This seemed like an interesting idea, but the interface isn&#8217;t particularly useful, it&#8217;s too much work to visually compare the two.  Then I remembered Matt&#8217;s <a href="http://photomatt.net/2005/06/17/new-wporg-search/">announcement of using Yahoo&#8217;s search APIs at WordPress.org</a>, which started me thinking about the availability of APIs <a href="http://developer.yahoo.net/search/index.html">from Yahoo!</a> and <a href="http://www.google.com/apis/">from Google</a>.</p>
+<p>It seemed like there should be some way of combining these two resources, taking the search results from both Google and Yahoo! and mix them in some semi-meaningful way.  So last night I started putting together the <a href="http://ranked-search.rhyll.com/">Ranked Search</a> website.  You enter a query and the site requests the top 10 results from both Yahoo! and Google via their search APIs, giving each link rank.  The first link gets rank of ten and so on through all ten links from each result set.  The idea being the the links with the highest rank are more likely to be what you are looking for.  Then I look for links that appear in both sets, merging them into one, with a new rank that is the sum of their original ranks.  All of the unique links from each set are then merged in and the new set is sorted by rank.  The highest potential score is 20 (where Google and Yahoo! both return the same link in the #1 position) and the lowest possible score is 1.  It is really basic stuff.</p>
+<p>Making requests out over the Internet to both Google and Yahoo! isn&#8217;t the fastest thing in the west.  So I put in some basic caching for every query.  The result sets from every query is cached in a <a href="http://www.postgresql.org/">PostgreSQL</a> database and is used when a exact query match is found and the results are less than 12 hours old.  If the results are more than 12 hours old the query is sent off to Google and Yahoo! and the new results are cached again.</p>
+<p>Everything is very plain and basic right now, consider it an experiment.  If you have any additional thoughts leave a comment or use my <a href="http://joseph.randomnetworks.com/contact">contact form</a> to drop me a note.</p>
+<p>Most of this information is also available on the <a href="http://ranked-search.rhyll.com/about/">about page</a> for Ranked Search.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/06/30/ranked-search-merging-google-and-yahoo/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

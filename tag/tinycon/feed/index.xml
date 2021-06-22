@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>tinycon &#8211; Joseph Scott</title>
+	<atom:link href="/tag/tinycon/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 01 Apr 2013 15:07:47 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Favicon Alerts with Tinycon</title>
+		<link>/2013/04/01/favicon-alerts-with-tinycon/</link>
+					<comments>/2013/04/01/favicon-alerts-with-tinycon/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 01 Apr 2013 15:07:47 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[favicon]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[tinycon]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=5329</guid>
+
+					<description><![CDATA[I came across a cool favicon hack recently called Tinycon, which provides a Javascript function to add a small alert bubble to a favicon image. You can see a demo of it in action at http://tommoor.github.com/tinycon/. Basic usage is super simple: [sourcecode lang=&#8221;javascript&#8221;] Tinycon.setBubble( 6 ); [/sourcecode] sets a favicon alert bubble with the number [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img loading="lazy" src="https://sharedat.net/f/QC/QCni/tinycon.png" width="188" height="43" class="alignleft" /></p>
+<p>I came across a cool favicon hack recently called <a href='http://tommoor.github.com/tinycon/'>Tinycon</a>, which provides a Javascript function to add a small alert bubble to a favicon image.  You can see a demo of it in action at <a href="http://tommoor.github.com/tinycon/">http://tommoor.github.com/tinycon/</a>.</p>
+<p>Basic usage is super simple:</p>
+<p>[sourcecode lang=&#8221;javascript&#8221;]<br />
+Tinycon.setBubble( 6 );<br />
+[/sourcecode]</p>
+<p>sets a favicon alert bubble with the number six in it.</p>
+<p>After looking at this I was surprised that Gmail hadn&#8217;t done this already.  For that matter, perhaps the Google Chrome browser could provide some native functions to make it perform even better.</p>
+<p>Code for Tinycon is available at <a href="https://github.com/tommoor/tinycon">https://github.com/tommoor/tinycon</a> under the MIT open source license.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/04/01/favicon-alerts-with-tinycon/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

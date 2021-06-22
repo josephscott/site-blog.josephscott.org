@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>css &#8211; Joseph Scott</title>
+	<atom:link href="/tag/css/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 06 Sep 2019 17:09:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Asynchronous CSS</title>
+		<link>/2019/09/06/asynchronous-css/</link>
+					<comments>/2019/09/06/asynchronous-css/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 06 Sep 2019 17:09:12 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[css]]></category>
+		<guid isPermaLink="false">/?p=17581</guid>
+
+					<description><![CDATA[If you really want asynchronous CSS ( and determining if you do is a completely different conversation ) then check out The Simplest Way to Load CSS Asynchronously at The Filament Group. They present a very easy mechanism for doing this: &#60;link rel="stylesheet" href="/path/to/my.css" media="print" onload="this.media='all'"&#62; This is a nice, clean approach.]]></description>
+										<content:encoded><![CDATA[<p>If you really want asynchronous CSS ( and determining if you do is a completely different conversation ) then check out <a href="https://www.filamentgroup.com/lab/load-css-simpler/">The Simplest Way to Load CSS Asynchronously</a> at The Filament Group. They present a very easy mechanism for doing this:</p>
+<pre><code class="language-html">&lt;link rel="stylesheet" 
+href="/path/to/my.css" 
+media="print" 
+onload="this.media='all'"&gt;</code></pre>
+<p>This is a nice, clean approach.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/09/06/asynchronous-css/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>CSS and JavaScript in One File</title>
+		<link>/2016/01/06/css-and-javascript-in-one-file/</link>
+					<comments>/2016/01/06/css-and-javascript-in-one-file/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 06 Jan 2016 16:59:58 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[javascript]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14588</guid>
+
+					<description><![CDATA[An MSDN post from 2007 describes how to format a single file to be valid CSS and JavaScript at the same time. Probably not something I&#8217;d use on a regular site, still a clever hack though.]]></description>
+										<content:encoded><![CDATA[<p>An MSDN post from 2007 describes <a href="http://blogs.msdn.com/b/shivap/archive/2007/05/01/combine-css-with-js-and-make-it-into-a-single-download.aspx">how to format a single file to be valid CSS and JavaScript at the same time</a>.</p>
+<p>Probably not something I&#8217;d use on a regular site, still a clever hack though.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/01/06/css-and-javascript-in-one-file/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>CSS Limits in Internet Explorer</title>
+		<link>/2015/11/09/css-limits-in-internet-explorer/</link>
+					<comments>/2015/11/09/css-limits-in-internet-explorer/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 09 Nov 2015 18:18:48 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[internet-explorer]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13677</guid>
+
+					<description><![CDATA[File this under things you usually find out about the hard way: Stylesheet Limits in Internet Explorer. For IE 6 &#8211; 9 the limits are: &#8211; A sheet may contain up to 4095 rules &#8211; A sheet may @import up to 31 sheets &#8211; @import nesting supports up to 4 levels deep In IE 10 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>File this under things you usually find out about the hard way: <a href="http://blogs.msdn.com/b/ieinternals/archive/2011/05/14/10164546.aspx">Stylesheet Limits in Internet Explorer</a>.  For IE 6 &#8211; 9 the limits are:</p>
+<blockquote><p>
+&#8211; A sheet may contain up to 4095 rules<br />
+&#8211; A sheet may @import up to 31 sheets<br />
+&#8211; @import nesting supports up to 4 levels deep
+</p></blockquote>
+<p>In IE 10 these were increased to:</p>
+<blockquote><p>
+&#8211; A sheet may contain up to 65534 rules<br />
+&#8211; A document may use up to 4095 stylesheets<br />
+&#8211; @import nesting is limited to 4095 levels (due to the 4095 stylesheet limit)
+</p></blockquote>
+<p>I haven&#8217;t been able to find data on similar limits for Chrome, Firefox, or Safari.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/09/css-limits-in-internet-explorer/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>CSS Specificity</title>
+		<link>/2015/09/15/css-specificity-graph/</link>
+					<comments>/2015/09/15/css-specificity-graph/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 15 Sep 2015 14:30:49 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[css]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11407</guid>
+
+					<description><![CDATA[CSS Specificity Graph Generator from Jonas Ohlsson. Related reading: The Specificity Graph.]]></description>
+										<content:encoded><![CDATA[<p><a href="/wp-content/uploads/2015/09/css-specificity-1.png"><img loading="lazy" src="/wp-content/uploads/2015/09/css-specificity-1-1024x495.png" data-sizes="(max-width: 660px) 100vw, 660px" srcset="/wp-content/uploads/2015/09/css-specificity-1-300x145.png 300w, /wp-content/uploads/2015/09/css-specificity-1-1024x495.png 1024w, /wp-content/uploads/2015/09/css-specificity-1.png 1906w" alt="css-specificity" width="660" height="319" class="aligncenter size-large wp-image-13836" /></a></p>
+<p><a href='http://jonassebastianohlsson.com/specificity-graph/'>CSS Specificity Graph Generator</a> from Jonas Ohlsson</a>.</p>
+<p>Related reading: <a href="http://csswizardry.com/2014/10/the-specificity-graph/">The Specificity Graph</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/09/15/css-specificity-graph/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>CSS Triggers</title>
+		<link>/2015/08/21/css-triggers/</link>
+					<comments>/2015/08/21/css-triggers/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 21 Aug 2015 14:22:33 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13116</guid>
+
+					<description><![CDATA[Wondering what CSS properties trigger paint, layout, and composite? Then CSS Triggers is for you.]]></description>
+										<content:encoded><![CDATA[<p>Wondering what CSS properties trigger paint, layout, and composite?  Then <a href="http://csstriggers.com/">CSS Triggers</a> is for you.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/08/21/css-triggers/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Sass vs. LESS</title>
+		<link>/2013/11/06/sass-vs-less/</link>
+					<comments>/2013/11/06/sass-vs-less/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 06 Nov 2013 14:58:56 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[less]]></category>
+		<category><![CDATA[sass]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9378</guid>
+
+					<description><![CDATA[There is a discussion about using a CSS preprocessor in WordPress. Which generally boils down to Sass vs. LESS. Think of it as Vim vs. Emacs for front end developers, perfect bike shed material.]]></description>
+										<content:encoded><![CDATA[<p>There is a discussion about <a href="http://make.wordpress.org/core/2013/11/05/22862-consider-a-css-preprocessor/">using a CSS preprocessor in WordPress</a>.  Which generally boils down to Sass vs. LESS.  Think of it as Vim vs. Emacs for front end developers, perfect bike shed material.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/11/06/sass-vs-less/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Ionicons Icon Font</title>
+		<link>/2013/10/30/ionicons-icon-font/</link>
+					<comments>/2013/10/30/ionicons-icon-font/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 30 Oct 2013 14:29:47 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[icon-font]]></category>
+		<category><![CDATA[ionicons]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9328</guid>
+
+					<description><![CDATA[Nice to see another open source icon font &#8211; Ionicons. I like the look of the Genericons better, but Ionicons has a much larger set of images.]]></description>
+										<content:encoded><![CDATA[<p><a href="/wp-content/uploads/2013/10/ionicons-1.jpg"><img loading="lazy" src="/wp-content/uploads/2013/10/ionicons-1.jpg" alt="ionicons" width="659" height="474" class="alignleft size-full wp-image-9334" srcset="/wp-content/uploads/2013/10/ionicons-1.jpg 659w, /wp-content/uploads/2013/10/ionicons-1-300x216.jpg 300w" sizes="(max-width: 659px) 100vw, 659px" /></a></p>
+<p>Nice to see another open source icon font &#8211; <a href="http://ionicons.com/">Ionicons</a>.  I like the look of the <a href="http://genericons.com/">Genericons</a> better, but Ionicons has a much larger set of images.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/10/30/ionicons-icon-font/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>CSS Arrow</title>
+		<link>/2013/07/18/css-arrow/</link>
+					<comments>/2013/07/18/css-arrow/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 18 Jul 2013 15:20:49 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[css]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6626</guid>
+
+					<description><![CDATA[Generate the CSS for an arrow design at cssarrowplease.com.]]></description>
+										<content:encoded><![CDATA[<p><img loading="lazy" src="https://sharedat.net/f/6E/6Ebh/css-arrow-please.png" width="417" height="256" class="aligncenter" /></p>
+<p>Generate the CSS for an arrow design at <a href='http://cssarrowplease.com/'>cssarrowplease.com</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/07/18/css-arrow/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Designing Hyperlinks</title>
+		<link>/2013/07/15/designing-hyperlinks/</link>
+					<comments>/2013/07/15/designing-hyperlinks/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 15 Jul 2013 23:21:40 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[html]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=8593</guid>
+
+					<description><![CDATA[Discussion on how to design hyperlinks. One point that didn&#8217;t get much coverage: Hyperlinks should appear interactable. The trend towards flattening everything misses this recommendation. Applying gray scale then blur to see if you can still see the emphasis was something I remember Cameron Moll mentioning years ago. I don&#8217;t remember too many things from [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Discussion on how to <a href='http://sixrevisions.com/usability/hyperlink-design/'>design hyperlinks</a>.  One point that didn&#8217;t get much coverage:</p>
+<blockquote><p>
+Hyperlinks should appear interactable.
+</p></blockquote>
+<p>The trend towards flattening everything misses this recommendation.</p>
+<p>Applying gray scale then blur to see if you can still see the emphasis was something I remember <a href="http://www.cameronmoll.com/">Cameron Moll</a> mentioning years ago.  I don&#8217;t remember too many things from his presentation that day, but that one has stuck with me.</p>
+<p>In the end sticking with the traditional blue link and pushing the underline further down to make the link text easier to read is the best option.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/07/15/designing-hyperlinks/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The Shapes of CSS</title>
+		<link>/2013/03/27/the-shapes-of-css/</link>
+					<comments>/2013/03/27/the-shapes-of-css/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 27 Mar 2013 16:15:35 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[shapes]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4651</guid>
+
+					<description><![CDATA[More and more you can get away with using plain CSS to create nice looking shapes. The Shapes of CSS is a demonstration site for shapes generated using a single HTML element and CSS. For some of these examples you&#8217;ll need a modern browser that supports the latest CSS tricks. The Infinity and Space Invader [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img loading="lazy" src="https://sharedat.net/f/xC/xChz/css-infinite-shapes.png" width="238" height="112" class="alignleft" /></p>
+<p>More and more you can get away with using plain CSS to create nice looking shapes.  <a href='http://css-tricks.com/examples/ShapesOfCSS/'>The Shapes of CSS</a> is a demonstration site for shapes generated using a single HTML element and CSS.  For some of these examples you&#8217;ll need a modern browser that supports the latest CSS tricks.</p>
+<p>The Infinity and Space Invader shapes particularly impressed me.  Those were &#8220;shapes&#8221; I wouldn&#8217;t have immediately thought of in the context of just CSS.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/03/27/the-shapes-of-css/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

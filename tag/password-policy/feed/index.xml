@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>password-policy &#8211; Joseph Scott</title>
+	<atom:link href="/tag/password-policy/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 15 Aug 2018 18:10:54 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Lowes Password Policy</title>
+		<link>/2018/08/15/lowes-password-policy/</link>
+					<comments>/2018/08/15/lowes-password-policy/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 15 Aug 2018 18:10:54 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[lowes]]></category>
+		<category><![CDATA[password-policy]]></category>
+		<guid isPermaLink="false">/?p=16878</guid>
+
+					<description><![CDATA[I ran into this error trying to create an account at lowes.com: In 2018 I don&#8217;t think it is unreasonable to want to have a password longer than 12 characters. I&#8217;d suggest that the minimum maximum limit should be 50 characters. There does need to be a limit though, accepting a 15,000,000 character password is [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I ran into this error trying to create an account at <a href="https://www.lowes.com/">lowes.com</a>:</p>
+<p><a href="/wp-content/uploads/2018/08/lowes-password.png"><img loading="lazy" src="/wp-content/uploads/2018/08/lowes-password.png" alt="" width="628" height="236" class="aligncenter size-full wp-image-16879" srcset="/wp-content/uploads/2018/08/lowes-password.png 628w, /wp-content/uploads/2018/08/lowes-password-300x113.png 300w" sizes="(max-width: 628px) 100vw, 628px" /></a></p>
+<p>In 2018 I don&#8217;t think it is unreasonable to want to have a password longer than 12 characters.  I&#8217;d suggest that the minimum maximum limit should be 50 characters.</p>
+<p>There does need to be a limit though, accepting a 15,000,000 character password is just asking for trouble.  What is a reasonable high end limit then?  I&#8217;d be fine with drawing the line at 1,000 characters.  I think you could even argue for something lower, like 250 characters.</p>
+<p>If you need more than 1,000 characters to come up with a good password, there are probably bigger security problems that your system needs to address.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/08/15/lowes-password-policy/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Wells Fargo Password Policy</title>
+		<link>/2015/03/03/wells-fargo-password-policy/</link>
+					<comments>/2015/03/03/wells-fargo-password-policy/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 03 Mar 2015 15:40:42 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[password-policy]]></category>
+		<category><![CDATA[wells-fargo]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11652</guid>
+
+					<description><![CDATA[Overly tight restrictions on what you can use for a password raises the little red flag in the back of my mind. Sadly banks are some of the worst at this. I recently came across the password policy page for Wells Fargo, which isn&#8217;t nearly the worst I&#8217;ve seen: Your password: &#8211; Must be 6 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Overly tight restrictions on what you can use for a password raises the little red flag in the back of my mind.  Sadly banks are some of the worst at this.  I recently came across the <a href="https://online.wellsfargo.com/das/channel/helpText?key=fieldhelp_PasswordCreation">password policy page for Wells Fargo</a>, which isn&#8217;t nearly the worst I&#8217;ve seen:</p>
+<blockquote><p>
+Your password:<br />
+&#8211; Must be 6 to 14 characters.<br />
+&#8211; Must contain at least one letter and one number.<br />
+&#8211; May not contain nine or more numbers.<br />
+&#8211; May not be identical to your Username.<br />
+&#8211; May not repeat the same number or letter more than 3 times in a row.<br />
+&#8211; May not contain more than 3 sequential numbers or letters (such as &#8216;1234&#8217; or &#8216;abcd&#8217;) in a row.<br />
+&#8211; May contain special characters (such as @, %, &#038;, #).
+</p></blockquote>
+<p>There are several things to like about this.  Avoiding sequences and repetition is good.  I wonder where the requirement to use less than 9 numbers comes from.</p>
+<p>The major pain point in this list is limiting the password length to only 14 characters.  Any time I see a maximum length that small I fear they are storing it in plain text some where.  Assuming reasonable hashing methods a maximum length closer to 70 characters would be significantly better.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/03/03/wells-fargo-password-policy/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Change Your Comcast Password</title>
+		<link>/2014/02/12/change-your-comcast-password/</link>
+					<comments>/2014/02/12/change-your-comcast-password/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 12 Feb 2014 13:54:26 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[comcast]]></category>
+		<category><![CDATA[password-policy]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9906</guid>
+
+					<description><![CDATA[ZDNet reports that over 30 Comcast mail servers were compromised recently: NullCrew FTS used a Local File Inclusion (LFI) exploit to gain access to the Zimbra LDAP and MySQL database — which houses the usernames and passwords of Comcast ISP users. I am a Comcast customer and I haven&#8217;t heard anything from them about this. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>ZDNet reports that <a href="http://www.zdnet.com/change-your-passwords-comcast-hushes-minimizes-serious-hack-7000026118/" title="Interesting how many attackers have used Pastebin to share details.">over 30 Comcast mail servers were compromised recently</a>:</p>
+<blockquote><p>
+NullCrew FTS used a Local File Inclusion (LFI) exploit to gain access to the Zimbra LDAP and MySQL database — which houses the usernames and passwords of Comcast ISP users.
+</p></blockquote>
+<p>I am a Comcast customer and I haven&#8217;t heard anything from them about this.  Which is line with what ZDNet has reported, that they haven&#8217;t been forth coming with details yet.</p>
+<p>Off I went to change my Comcast password.  That is when I ran into this disappointing password policy:</p>
+<p><a href="/wp-content/uploads/2014/02/comcast-password-limits-1.jpg" title="Another disappointing password policy."><img loading="lazy" src="/wp-content/uploads/2014/02/comcast-password-limits-1.jpg" alt="comcast-password-limits" width="272" height="222" class="aligncenter size-full wp-image-9915" /></a></p>
+<p>The good part is that they do support special characters, which is more than I can say for some other password policies I&#8217;ve seen.</p>
+<p>The bad part is that it only supports up to 16 characters and doesn&#8217;t allow spaces.  That suggests that Comcast might be storing the passwords in plain text.  Which of course would be bad.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/02/12/change-your-comcast-password/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>HackerMeter Password Policy</title>
+		<link>/2013/08/13/hackermeter-password-policy/</link>
+					<comments>/2013/08/13/hackermeter-password-policy/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 13 Aug 2013 14:19:24 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[hackermeter]]></category>
+		<category><![CDATA[password-policy]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=8844</guid>
+
+					<description><![CDATA[I created an account on HackerMeter to see what the coding exercises looked like. I didn&#8217;t even finish creating my account before I was hit with a major disappointment: A site meant to help rank hackers rejected my 40 character password. Violating this password policy is so bad they had to tell me twice. 🙂 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I created an account on <a href="http://www.hackermeter.com/">HackerMeter</a> to see what the coding exercises looked like.  I didn&#8217;t even finish creating my account before I was hit with a major disappointment:</p>
+<p><img loading="lazy" src="https://sharedat.net/f/kE/kEvq/hackermeter-password-policy-text.png" width="738" height="49" class="aligncenter" /></p>
+<p>A site meant to help rank hackers rejected my 40 character password.  Violating this password policy is so bad they had to tell me twice. <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Perhaps they should add an exercise to code a password hashing mechanism that supports more than 30 characters.  For reference, bcrypt supports up to 72 characters.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/08/13/hackermeter-password-policy/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Skype Password Policy</title>
+		<link>/2013/08/09/skype-password-policy/</link>
+					<comments>/2013/08/09/skype-password-policy/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 09 Aug 2013 13:49:09 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[password-policy]]></category>
+		<category><![CDATA[skype]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=8817</guid>
+
+					<description><![CDATA[The 20 character limit does not fill me with confidence.]]></description>
+										<content:encoded><![CDATA[<p><img loading="lazy" src="https://sharedat.net/f/VE/VEqt/skype-password.png" width="598" height="201" class="aligncenter" /></p>
+<p>The 20 character limit does not fill me with confidence.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/08/09/skype-password-policy/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>howto &#8211; Joseph Scott</title>
+	<atom:link href="/tag/howto/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 27 Aug 2019 17:33:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Writing tcpdump to Multiple Rotating Files</title>
+		<link>/2019/08/27/writing-tcpdump-to-multiple-rotating-files/</link>
+					<comments>/2019/08/27/writing-tcpdump-to-multiple-rotating-files/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 27 Aug 2019 17:33:52 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[howto]]></category>
+		<category><![CDATA[tcpdump]]></category>
+		<guid isPermaLink="false">/?p=17605</guid>
+
+					<description><![CDATA[I recently had a situation where I needed to constantly listen to network traffic, while being mindful of not filling up the disk. Fortunately tcpdump has a nice built in way of doing that: tcpdump -w tcp.pcap -s0 -C 1500 -W 15 That breaks down as: &#8211; -w tcp.pcap: write to files that all start [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I recently had a situation where I needed to constantly listen to network traffic, while being mindful of not filling up the disk.  Fortunately <a href="https://www.tcpdump.org/">tcpdump</a> has a nice built in way of doing that:</p>
+<pre><code class="language-markup">tcpdump -w tcp.pcap -s0 -C 1500 -W 15</code></pre>
+<p>That breaks down as:</p>
+<p>&#8211; <code>-w tcp.pcap</code>: write to files that all start with the name <code>tcp.pcap</code><br />
+&#8211; <code>-s0</code>: save the whole packet<br />
+&#8211; <code>-C 1500</code>: limit each capture file to 1,500 MBs<br />
+&#8211; <code>-W 15</code>: limit the number of capture files to 15</p>
+<p>On disk you&#8217;ll get the following 15 files:</p>
+<pre><code class="language-markup">tcp.pcap00
+tcp.pcap01
+tcp.pcap02
+tcp.pcap03
+tcp.pcap04
+tcp.pcap05
+tcp.pcap06
+tcp.pcap07
+tcp.pcap08
+tcp.pcap09
+tcp.pcap10
+tcp.pcap11
+tcp.pcap12
+tcp.pcap13
+tcp.pcap14
+</code></pre>
+<p>Once it finishes with <code>tcp.pcap14</code> is cycles back through the whole thing, over writing one file at a time, starting with <code>tcp.pcap00</code>.</p>
+<p>Exactly what period of time this will cover depends on how much network traffic you are capturing.  It could be 5 minutes or 15, and vary between each file.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/08/27/writing-tcpdump-to-multiple-rotating-files/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Overriding DNS in curl</title>
+		<link>/2018/11/20/overriding-dns-in-curl/</link>
+					<comments>/2018/11/20/overriding-dns-in-curl/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 21 Nov 2018 00:11:28 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[curl]]></category>
+		<category><![CDATA[howto]]></category>
+		<guid isPermaLink="false">/?p=16528</guid>
+
+					<description><![CDATA[Often I&#8217;ll run into a situation where I need to make an HTTP request for a host name against a server that is at a different IP address than the one the host name resolves to. A common reason for this is to test out changes against a sandbox before deploying the change to production. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Often I&#8217;ll run into a situation where I need to make an HTTP request for a host name against a server that is at a different IP address than the one the host name resolves to. A common reason for this is to test out changes against a sandbox before deploying the change to production.</p>
+<p>One way to deal with this in <a href="https://curl.haxx.se/">curl</a> is with the <a href="https://curl.haxx.se/docs/manpage.html#--resolve"><code>--resolve</code></a> option. Here is a simple example:</p>
+<pre class="line-numbers"><code class="language-markup">curl &#8211; resolve google.com:443:172.217.1.206 https://www.google.com/</code></pre>
+<p>Internally curl will make sure that google.com resolves to 172.217.1.206 for the purposes of that request.  No need to mess around with hosts files or anything else.</p>
+<p>For more suggestions in this area check out <a href="https://daniel.haxx.se/blog/2018/04/05/curl-another-host/">curl another host</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/11/20/overriding-dns-in-curl/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Fri 15 Feb 2008</title>
+		<link>/2008/02/15/links-for-fri-15-feb-2008/</link>
+					<comments>/2008/02/15/links-for-fri-15-feb-2008/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 16 Feb 2008 00:30:08 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[howto]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[spaces]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/02/15/links-for-fri-15-feb-2008/</guid>
+
+					<description><![CDATA[macosxhints.com &#8211; 10.5: Disable Space switching on Command-Tab in 10.5.2 &#8211; I am so happy to see this Tags: macosx spaces howto]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://www.macosxhints.com/article.php?story=2008021122525348">macosxhints.com &#8211; 10.5: Disable Space switching on Command-Tab in 10.5.2</a> &#8211; I am so happy to see this <br /> Tags: <a href="http://del.icio.us/josephscott/macosx">macosx</a> <a href="http://del.icio.us/josephscott/spaces">spaces</a> <a href="http://del.icio.us/josephscott/howto">howto</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/02/15/links-for-fri-15-feb-2008/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Mon 4 Feb 2008</title>
+		<link>/2008/02/04/links-for-mon-4-feb-2008/</link>
+					<comments>/2008/02/04/links-for-mon-4-feb-2008/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 05 Feb 2008 00:30:02 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[howto]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[theme]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/02/04/links-for-mon-4-feb-2008/</guid>
+
+					<description><![CDATA[How to highlight author comments in WordPress &#8211; It&#8217;s nice seeing the author comments stand out a little bit. Tags: wordpress theme howto]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://www.mattcutts.com/blog/highlight-author-comments-wordpress/">How to highlight author comments in WordPress</a> &#8211; It&#8217;s nice seeing the author comments stand out a little bit. <br /> Tags: <a href="http://del.icio.us/josephscott/wordpress">wordpress</a> <a href="http://del.icio.us/josephscott/theme">theme</a> <a href="http://del.icio.us/josephscott/howto">howto</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/02/04/links-for-mon-4-feb-2008/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>SVN-Notify, Linking To Trac Revisions</title>
+		<link>/2008/01/07/svn-notify-linking-to-trac-revisions/</link>
+					<comments>/2008/01/07/svn-notify-linking-to-trac-revisions/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 08 Jan 2008 06:47:51 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[howto]]></category>
+		<category><![CDATA[subversion]]></category>
+		<category><![CDATA[svn-notify]]></category>
+		<category><![CDATA[trac]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/01/07/svn-notify-linking-to-trac-revisions/</guid>
+
+					<description><![CDATA[Matt made it so that the revision number shown in SVN-Notify links to the Trac diff page for that revision. This was for the wp-svn list, but no reason it couldn&#8217;t be used elsewhere. Figured I might need something like this one day, so here it is: /usr/local/bin/svnnotify -r $REV -C -d -H HTML::ColorDiff -p [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://photomatt.net/">Matt</a> made it so that the revision number shown in <a href="http://search.cpan.org/~dwheeler/SVN-Notify/">SVN-Notify</a> links to the <a href="http://trac.edgewall.org/">Trac</a> diff page for that revision.  This was for the <a href="http://lists.automattic.com/mailman/listinfo/wp-svn">wp-svn</a> list, but no reason it couldn&#8217;t be used elsewhere.</p>
+<p>Figured I might need something like this one day, so here it is:</p>
+<p><code></p>
+<pre>
+/usr/local/bin/svnnotify -r $REV -C -d -H HTML::ColorDiff -p $REPOS 
+-t wp-svn@lists.automattic.com 
+--from m@wordpress.org 
+--reply-to wp-hackers@lists.automattic.com 
+--revision-url http://trac.wordpress.org/changeset/%s 
+--ticket-map '(#(d+))=http://trac.wordpress.org/ticket/%s' 
+--ticket-regex '([(d+)])' 
+--ticket-url http://trac.wordpress.org/changeset/%s
+</pre>
+<p></code></p>
+<p>And here&#8217;s <a href="http://comox.textdrive.com/pipermail/wp-hackers/2007-December/016874.html">Matt&#8217;s email to wp-hackers</a> that explains it a bit more.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/01/07/svn-notify-linking-to-trac-revisions/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Mac Backup To Dreamhost</title>
+		<link>/2007/04/02/mac-backup-to-dreamhost/</link>
+					<comments>/2007/04/02/mac-backup-to-dreamhost/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 02 Apr 2007 17:10:46 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[amazon]]></category>
+		<category><![CDATA[backup]]></category>
+		<category><![CDATA[dreamhost]]></category>
+		<category><![CDATA[howto]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[s3]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/04/02/mac-backup-to-dreamhost/</guid>
+
+					<description><![CDATA[When I posted a brief comparison to Amazon S3 and Dreamhost one thing I didn&#8217;t do was suggest how one could actually use Dreamhost in a similar way as S3, like backups. For S3 Jungle Disk is one option for backups. Now there is a how to on backing up your Mac to Dreamhost (part [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>When I posted a brief comparison to <a href="http://joseph.randomnetworks.com/archives/2006/10/03/amazon-s3-vs-dreamhost/">Amazon S3 and Dreamhost</a> one thing I didn&#8217;t do was suggest how one could actually use Dreamhost in a similar way as S3, like backups.  For S3 <a href="http://www.jungledisk.com/">Jungle Disk</a> is one option for backups.  Now there is a <a href="http://addisonrd.com/WordPress/2007/03/09/how-to-backup-your-mac-to-a-dreamhost-server-part-1-of-2/">how to on backing up your Mac to Dreamhost</a> (<a href="http://addisonrd.com/WordPress/2007/03/09/how-to-backup-your-mac-to-a-dreamhost-server-part-2-of-2/">part 2</a>).</p>
+<p>Another approach would involve using <a href="http://code.google.com/p/macfuse/">MacFUSE</a> with the <a href="http://code.google.com/p/macfuse/wiki/MACFUSE_FS_SSHFS">ssh module</a>.  Have I mentioned how much I&#8217;d like to see Apple include MacFUSE in OS X by default?  Well, I would, a lot.</p>
+<p>What this approach doesn&#8217;t do that Jungle Disk does is encrypt the files on your remote backup.  But on the other hand S3 has a file size limit of 5GB, as long as it isn&#8217;t <a href="http://developer.amazonwebservices.com/connect/entry.jspa?externalID=422&amp;categoryID=49">between 2GB and 4GB</a>.  So really S3 on supports files sizes from 1-2GB and 4-5GB.  Each method has pros and cons.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/04/02/mac-backup-to-dreamhost/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How to Deactivate the Snap Preview Anywhere links</title>
+		<link>/2007/02/01/how-to-deactivate-the-snap-preview-anywhere-links/</link>
+					<comments>/2007/02/01/how-to-deactivate-the-snap-preview-anywhere-links/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 01 Feb 2007 17:19:55 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[howto]]></category>
+		<category><![CDATA[snappreview]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/02/01/how-to-deactivate-the-snap-preview-anywhere-links/</guid>
+
+					<description><![CDATA[If you are annoyed by the many sites using Snap Preview on their links, there is some hope. You can disable Snap Preview via a cookie. I&#8217;ve found Snap Preview to be a pain. Looks like I&#8217;m not the only one. On the flip side, there seem to be lots of people who do like [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you are <a href="http://daily.gigaom.com/2007/01/31/constant-annoyance-of-snap-preview/">annoyed</a> by the many sites using <a href="http://www.snap.com/about/spa1A.php">Snap Preview</a> on their links, there is some hope.  You can <a href="http://www.snap.com/about/spa_faq.php#2">disable Snap Preview</a> via a cookie.</p>
+<p>I&#8217;ve found Snap Preview to be a pain.  Looks like <a href="http://performancing.com/node/5721">I&#8217;m not the only one</a>.  On the flip side, there seem to be lots of <a href="http://wordpress.com/blog/2006/12/29/snap-to-it/">people</a> <a href="http://wordpress.com/blog/2007/01/13/snap-live/">who do</a> <a href="http://scripting.wordpress.com/2007/01/25/scripting-news-for-1252007/#comment-41303">like it</a>.</p>
+<p>Time will tell if this is a trend that lasts, or a fad that fades.  In the mean time you can <a href="http://www.snap.com/about/spa1A.php">disable it</a> if it bothers you.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/02/01/how-to-deactivate-the-snap-preview-anywhere-links/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Reverse Proxy With Apache</title>
+		<link>/2005/07/05/reverse-proxy-with-apache/</link>
+					<comments>/2005/07/05/reverse-proxy-with-apache/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 05 Jul 2005 23:21:23 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[apache]]></category>
+		<category><![CDATA[howto]]></category>
+		<category><![CDATA[reverseproxy]]></category>
+		<category><![CDATA[squirrelmail]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=427</guid>
+
+					<description><![CDATA[I&#8217;ve wanted to get all of our web servers at work under one umbrella in a reverse proxy setup for some time. I wanted this so that I could expose only one web server to the outside world (some of this has to do with network topology that is beyond my control), allowing me make [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve wanted to get all of our web servers at work under one umbrella in a reverse proxy setup for some time.  I wanted this so that I could expose only one web server to the outside world (some of this has to do with network topology that is beyond my control), allowing me make all of our web services available under one URL (nice for things like SSL and multiple URL rewriting) and making it possible to filter web requests at one place.  Today I finally sat down with the intent to make it work and plan for the switch over.</p>
+<p>In the past I&#8217;d looked at doing this with <a href="http://www.apsis.ch/pound/">Pound</a>, but it fell short in one key area, URL rewriting.  Everything else I needed was already there, in one convenient spot.  I really wanted this to work, but in the end I couldn&#8217;t give up URL rewriting, it&#8217;s a requirement for what I&#8217;m trying to accomplish.  I also looked at <a href="http://www.squid-cache.org/">Squid</a> for a time.  Honestly I didn&#8217;t complete my trial of Squid, it is possible that it might me all of my requirements, but I didn&#8217;t see anything that looked like <a href="http://www.modsecurity.org/">mod_security</a> for Squid.  That was another needed feature, I&#8217;m trying to protect IIS servers so I wanted all the extra help I could get.</p>
+<p>So I eventually ended up at <a href="http://httpd.apache.org/">Apache</a>, with mod_proxy.  With the help of <a href="http://www.apacheweek.com/features/reverseproxies">this how to article</a> things went pretty smoothly.  Until I tried to bring the server hosting our <a href="http://www.squirrelmail.org/">Squirrelmail</a> install.  No matter what I tried I could get to successfully login.  Suspecting that this had to with cookies being based between the client, proxy and server I went hunting for web on the web.  Turns out the how to article above mentions a couple of proxy directives for dealing with this, <a href="http://httpd.apache.org/docs-2.1/mod/mod_proxy.html#proxypassreversecookiedomain">ProxyPassReverseCookieDomain</a> and <a href="http://httpd.apache.org/docs-2.1/mod/mod_proxy.html#proxypassreversecookiepath">ProxyPassReverseCookiePath</a>.  Unfortunately these are only available in the development version of Apache, version 2.1.  I&#8217;d spent the better part day of the tweaking my install of Apache 2.0.54 and then had to go build Apache 2.1.x to get the newer version mod_proxy.  Some of the module names have changed so I couldn&#8217;t just drop in my previous Apache config.  I also had to rebuild the <a href="http://apache.webthing.com/mod_proxy_html/">mod_proxy_html</a> and mod_security modules for Apache 2.1.x.</p>
+<p>The good news is that once I had that all sorted out the new proxy cookie directives did the trick.  So here is my little public service announcement (PSA), if you are using mod_proxy as a reverse proxy for Squirrelmail, start with Apache 2.1.x and look into ProxyPassReverseCookieDomain and ProxyPassReverseCookiePath.  I suspect this will be the case for any webapp that uses cookies.</p>
+<p>I haven&#8217;t added mod_security and SSL to the mix yet, but I&#8217;m already familiar with those modules, so I don&#8217;t expect that to be too bad.  I&#8217;d never really used mod_proxy as a reverse proxy before so this was some what new territory to me.  Oh, at some point I&#8217;ll look doing some caching in combination with reverse proxy to minimize the load on the back end web servers.</p>
+<p><strong>UPDATE 10:45am 6 Jul 2005:</strong>: I should have mentioned the trailing slash problem also shows up in the reverse proxy setup.  So if you have a reverse mapping that looks something like:</p>
+<blockquote><p><code>ProxyPass /webmail/ http://192.168.1.10/webmail/</code></p></blockquote>
+<p> then you can use mod_rewrite to send a redirect with the trailing slash:</p>
+<blockquote><p><code>RewriteRule ^/webmail$ webmail/ [R]</code></p></blockquote>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/07/05/reverse-proxy-with-apache/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

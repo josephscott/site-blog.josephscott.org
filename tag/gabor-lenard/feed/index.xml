@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>gabor-lenard &#8211; Joseph Scott</title>
+	<atom:link href="/tag/gabor-lenard/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 20 Aug 2015 15:08:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Painfully Slow</title>
+		<link>/2015/08/20/painfully-slow/</link>
+					<comments>/2015/08/20/painfully-slow/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 20 Aug 2015 15:08:51 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[gabor-lenard]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13174</guid>
+
+					<description><![CDATA[Gabor Lenard after three weeks of painfully slow Internet access: Here’s the three most important things that I became aware of during this time as a web developer: 1. Some sites never loaded 2. On some sites the text was invisible for a frustratingly long time 3. Well-designed apps worked wonderfully I fear that #2 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Gabor Lenard after <a href="https://medium.com/@zengabor/three-takeaways-for-web-developers-after-two-weeks-of-painfully-slow-internet-9e7f6d47726e">three weeks of painfully slow Internet access</a>:</p>
+<blockquote><p>
+Here’s the three most important things that I became aware of during this time as a web developer:</p>
+<p>1. Some sites never loaded<br />
+2. On some sites the text was invisible for a frustratingly long time<br />
+3. Well-designed apps worked wonderfully
+</p></blockquote>
+<p>I fear that #2 is becoming an increasingly common experience as more sites include custom fonts.  The HTTP Archive currently reports <a href="http://httparchive.org/interesting.php#fonts">56% of sites use custom fonts</a>.  Not uncommon for sites to load <a href="http://httparchive.org/trends.php#bytesFont&#038;reqFont">100KB or more of fonts</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/08/20/painfully-slow/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

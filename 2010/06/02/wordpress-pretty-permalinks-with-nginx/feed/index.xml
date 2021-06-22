@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: WordPress Pretty Permalinks with Nginx	</title>
+	<atom:link href="/2010/06/02/wordpress-pretty-permalinks-with-nginx/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/06/02/wordpress-pretty-permalinks-with-nginx/</link>
+	<description></description>
+	<lastBuildDate>Mon, 14 Jun 2021 17:10:36 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Gwyneth Llewelyn		</title>
+		<link>/2010/06/02/wordpress-pretty-permalinks-with-nginx/#comment-280548</link>
+
+		<dc:creator><![CDATA[Gwyneth Llewelyn]]></dc:creator>
+		<pubDate>Mon, 14 Jun 2021 17:10:36 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2363#comment-280548</guid>
+
+					<description><![CDATA[Mmh I know... it&#039;s been over a decade ago when this must-use plugin snippet was first launched... since then, I&#039;ve been religiously copying it to all my websites running WP over nginx.
+
+After all these years, I wonder if the underlying issue has been &#039;fixed&#039; by Automattic at the WP core level? In other words — is this &#039;pretty permalinks&#039; workaround for nginx still necessary, on contemporary (uh, 2021) versions of WP/nginx?
+
+I&#039;m just curious — leaving the must-use plugin around seems not to have any harmful effect, so, unless told otherwise, I&#039;ll keep it there...]]></description>
+			<content:encoded><![CDATA[<p>Mmh I know&#8230; it&#8217;s been over a decade ago when this must-use plugin snippet was first launched&#8230; since then, I&#8217;ve been religiously copying it to all my websites running WP over nginx.</p>
+<p>After all these years, I wonder if the underlying issue has been &#8216;fixed&#8217; by Automattic at the WP core level? In other words — is this &#8216;pretty permalinks&#8217; workaround for nginx still necessary, on contemporary (uh, 2021) versions of WP/nginx?</p>
+<p>I&#8217;m just curious — leaving the must-use plugin around seems not to have any harmful effect, so, unless told otherwise, I&#8217;ll keep it there&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Nginx and WordPress on OpenBSD 5.8 &#8211; MS69		</title>
+		<link>/2010/06/02/wordpress-pretty-permalinks-with-nginx/#comment-3445</link>
+
+		<dc:creator><![CDATA[Nginx and WordPress on OpenBSD 5.8 &#8211; MS69]]></dc:creator>
+		<pubDate>Fri, 19 Feb 2016 09:37:40 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2363#comment-3445</guid>
+
+					<description><![CDATA[[&#8230;] Notes on removing &#8216;index.php&#8217; from Permalinks (Can be done using Nginx Helper Plugin) [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Notes on removing &#8216;index.php&#8217; from Permalinks (Can be done using Nginx Helper Plugin) [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/06/02/wordpress-pretty-permalinks-with-nginx/#comment-3444</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 10 Oct 2013 15:04:45 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2363#comment-3444</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/06/02/wordpress-pretty-permalinks-with-nginx/#comment-3443&quot;&gt;Esha Upadhyay&lt;/a&gt;.
+
+I haven&#039;t specifically tried that, but could work.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/06/02/wordpress-pretty-permalinks-with-nginx/#comment-3443">Esha Upadhyay</a>.</p>
+<p>I haven&#8217;t specifically tried that, but could work.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Esha Upadhyay		</title>
+		<link>/2010/06/02/wordpress-pretty-permalinks-with-nginx/#comment-3443</link>
+
+		<dc:creator><![CDATA[Esha Upadhyay]]></dc:creator>
+		<pubDate>Thu, 10 Oct 2013 14:57:45 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2363#comment-3443</guid>
+
+					<description><![CDATA[Currently I am using Nginx Compatibility plugin for this purpose..But want to replace that with this code..Can I place above code in functions.php file of my theme..?]]></description>
+			<content:encoded><![CDATA[<p>Currently I am using Nginx Compatibility plugin for this purpose..But want to replace that with this code..Can I place above code in functions.php file of my theme..?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/06/02/wordpress-pretty-permalinks-with-nginx/#comment-3442</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Sat, 01 Jun 2013 03:31:18 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2363#comment-3442</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/06/02/wordpress-pretty-permalinks-with-nginx/#comment-3441&quot;&gt;Shelby&lt;/a&gt;.
+
+Changing the Nginx config won&#039;t impact this.  Best you could hope for was to get an update in WordPress that would make this an option.  Outside of that you&#039;ll need to stick with the simple plugin.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/06/02/wordpress-pretty-permalinks-with-nginx/#comment-3441">Shelby</a>.</p>
+<p>Changing the Nginx config won&#8217;t impact this.  Best you could hope for was to get an update in WordPress that would make this an option.  Outside of that you&#8217;ll need to stick with the simple plugin.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Shelby		</title>
+		<link>/2010/06/02/wordpress-pretty-permalinks-with-nginx/#comment-3441</link>
+
+		<dc:creator><![CDATA[Shelby]]></dc:creator>
+		<pubDate>Sat, 01 Jun 2013 01:40:01 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2363#comment-3441</guid>
+
+					<description><![CDATA[Awesome, thanks a ton for this. I know this is an old post and all, but is there any way to implement this directly into the vhost config with nginx? That way you dont have to add this file as a plugin etc?]]></description>
+			<content:encoded><![CDATA[<p>Awesome, thanks a ton for this. I know this is an old post and all, but is there any way to implement this directly into the vhost config with nginx? That way you dont have to add this file as a plugin etc?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Justin		</title>
+		<link>/2010/06/02/wordpress-pretty-permalinks-with-nginx/#comment-3440</link>
+
+		<dc:creator><![CDATA[Justin]]></dc:creator>
+		<pubDate>Sun, 04 Dec 2011 22:43:51 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2363#comment-3440</guid>
+
+					<description><![CDATA[Thanks so much for this.]]></description>
+			<content:encoded><![CDATA[<p>Thanks so much for this.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: WordPress Pretty Permalinks with Nginx &#124; Daniel Bachhuber&#039;s weblog		</title>
+		<link>/2010/06/02/wordpress-pretty-permalinks-with-nginx/#comment-3439</link>
+
+		<dc:creator><![CDATA[WordPress Pretty Permalinks with Nginx &#124; Daniel Bachhuber&#039;s weblog]]></dc:creator>
+		<pubDate>Thu, 10 Feb 2011 20:58:23 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2363#comment-3439</guid>
+
+					<description><![CDATA[[...] back at itWordPress Pretty Permalinks with Nginx Posted on February 10, 2011 by Daniel BachhuberWordPress Pretty Permalinks with Nginx. Remove the annoying &#8216;index.php&#8217; appearing in your permalinks settings [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] back at itWordPress Pretty Permalinks with Nginx Posted on February 10, 2011 by Daniel BachhuberWordPress Pretty Permalinks with Nginx. Remove the annoying &#8216;index.php&#8217; appearing in your permalinks settings [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/06/02/wordpress-pretty-permalinks-with-nginx/#comment-3438</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 04 Nov 2010 03:13:04 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2363#comment-3438</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/06/02/wordpress-pretty-permalinks-with-nginx/#comment-3437&quot;&gt;charlie&lt;/a&gt;.
+
+I didn&#039;t say it was impossible to keep them, but it is much less likely.  If it can be done via a plugin it should be done via a plugin (in most cases).]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/06/02/wordpress-pretty-permalinks-with-nginx/#comment-3437">charlie</a>.</p>
+<p>I didn&#8217;t say it was impossible to keep them, but it is much less likely.  If it can be done via a plugin it should be done via a plugin (in most cases).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: charlie		</title>
+		<link>/2010/06/02/wordpress-pretty-permalinks-with-nginx/#comment-3437</link>
+
+		<dc:creator><![CDATA[charlie]]></dc:creator>
+		<pubDate>Wed, 03 Nov 2010 22:40:31 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2363#comment-3437</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/06/02/wordpress-pretty-permalinks-with-nginx/#comment-3436&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+In my WordPress was a some modification, and if core wordpress upgrade, I merge the upgrade to my SVN repo.
+So I don&#039;t loose this modification :)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/06/02/wordpress-pretty-permalinks-with-nginx/#comment-3436">Joseph Scott</a>.</p>
+<p>In my WordPress was a some modification, and if core wordpress upgrade, I merge the upgrade to my SVN repo.<br />
+So I don&#8217;t loose this modification 🙂</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

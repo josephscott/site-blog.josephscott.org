@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>freetds &#8211; Joseph Scott</title>
+	<atom:link href="/tag/freetds/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 17 Jun 2005 00:13:33 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>SQL Server 2000 Notes</title>
+		<link>/2005/06/16/sql-server-2000-notes/</link>
+					<comments>/2005/06/16/sql-server-2000-notes/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 17 Jun 2005 00:13:33 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[adodb]]></category>
+		<category><![CDATA[csv]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[freetds]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[sqlserver]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=413</guid>
+
+					<description><![CDATA[We are purchasing some software at work that uses SQL Server 2000 as a back end. I&#8217;ve been bringing those systems up and relearning SQL Server since I haven&#8217;t look at it in more than five years. We&#8217;ll be importing some existing data for this software so I&#8217;ve started writing up a few scripts. I&#8217;m [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>We are purchasing some software at work that uses <a href="http://www.microsoft.com/sql/default.mspx">SQL Server 2000</a> as a back end.  I&#8217;ve been bringing those systems up and relearning SQL Server since I haven&#8217;t look at it in more than five years.  We&#8217;ll be importing some existing data for this software so I&#8217;ve started writing up a few scripts.  I&#8217;m using <a href="http://www.php.net/">PHP</a> with <a href="http://adodb.sourceforge.net/">ADOdb</a> for database access.  For the most part things have gone well, with some small expections/gotchas.  Fortunately none of the problems I noticed were hard to fix, but they did seem a little odd sometimes.  Here are some notes on my experiences with this process thus far:</p>
+<ol>
+<li>
+<h4>FreeTDS &#8211; Build</h4>
+<p>In order to get PHP talk to SQL Server 2000 I&#8217;m using <a href="http://www.freetds.org/">FreeTDS</a> on a <a href="http://www.freebsd.org/">FreeBSD</a> system.  The first thing to note is that SQL Server 2000 uses 8.0 TDS.  When building from FreeTDS from the ports collection be sure to override the default, which is 5.0.  You&#8217;ll also need to enable msdblib in FreeTDS, so make sure that WITH_MSDBLIB is enabled during the build also.  Then all that is needed for PHP4 to speak to SQL Server is the php4-mssql port.
+</li>
+<li>
+<h4>FreeTDS &#8211; Config</h4>
+<p>In recent versions of FreeTDS they&#8217;ve started using a <a href="http://www.freetds.org/userguide/freetdsconf.htm">freetds.conf</a> file to configure connections.  There is an example in there for connecting to SQL Server 2000, here is what I ended up using:<br />
+<code><br />
+[SQL2K]<br />
+        host = xxx.xxx.xxx.xx<br />
+        port = 1433<br />
+        tds version = 8.0<br />
+;       dump file = /var/log/freetds.log<br />
+;       dump file append = yes<br />
+;       debug level = 99<br />
+</code></p>
+<p>I had a few problems connecting initially, so it was helpful to run with debug on until I got things straightened out.  In PHP you&#8217;d use SQL2K to connect instead of the host name or IP address.
+</li>
+<li>
+<h4>FreeTDS &#8211; Domain Logins</h4>
+<p>Our user accounts are all managed by <a href="http://www.microsoft.com/windowsserver2003/technologies/directory/activedirectory/default.mspx">Active Directory</a>, besides the default accounts in SQL Server 2000 all of the permissions are handled via Windows domain accounts.  This means that all of your usernames have to be prefixed with the Windows domain.  Something like <code>EXAMPLEusername</code>.  If you run into problems check out the <a href="http://www.freetds.org/userguide/domains.htm">FreeTDS documentation about domain logins</a>.
+</li>
+<li>
+<h4>SQL Server 2000 &#8211; Quoting</h4>
+<p>Note that quotes are escaped with quotes, not back slashes.  I personally don&#8217;t care for this method, but it seems to be the only one that SQL Server 2000 supports.  If you are going to use CSV to import data you need to pay attention to this.  Although CSV is supported I ended up going to tab delimited instead.  This is the default that SQL server expects and it made some of the quoting issues easier.
+</li>
+<li>
+<h4>ADOdb &#8211; rs2tabout()</h4>
+<p>For the sake of consistency I&#8217;m using ADOdb to deal with database access in PHP.  One neat feature I found was the ability to easily <a href="http://phplens.com/adodb/tutorial.exporting.in.csv.or.tab.delimited.format.html">export a result set to CSV or tab delimited formats</a>.  This was exactly what I needed to do, so this seemed like a great solution.  Unfortunately rs2tabout() tries to escape quotes, which SQL Server choked on.  The quotes didn&#8217;t need to be escaped since tabs were being used as delimiters, so I poked at the code to see what was happening.  All of the export functions derive from a base function with several options, so I was able to call that function directly and override the defaults.  If you want data tab delimited with quote escaping turned off you can do that with:</p>
+<p><code>print(_adodb_export($rs, "t", " ", true, false, false));</code></p>
+<p>or</p>
+<p><code>$line = _adodb_export($rs, "t", " ", false, false, false);</code></p>
+</li>
+<li>
+<h4>bcp</h4>
+<p>Importing lots of data with <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/coprompt/cp_bcp_61et.asp">bcp</a> is much easier than clicking through the import/export wizard.  To make life easier you&#8217;ll need a format file for the table that your are importing data into.  The easiest way I&#8217;ve found to generate the format file is to let bcp do it for you:<br />
+<code><br />
+bcp testdb.dbo.tablename format tablename.dat -U username -P password -f tablename.fmt -c<br />
+</code><br />
+Then importing is done like this:<br />
+<code><br />
+bcp testdb.dbo.tablename in tablename.tsv -U username -P password -f tablename.fmt -e tablename.err<br />
+</code><br />
+If bcp has any problems importing data will be logged in the <code>tablename.err</code> file.  If it runs into enough errors the import will terminate, the default is ten.  In the test table that I&#8217;ve been using has 98,000+ records in it.  The process of retrieving the data and formating into tab separated values (tsv) takes about 110 seconds.  The import with bcp takes less than 5 seconds.  I like it when things go fast <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" />
+</li>
+</ol>
+<p>That pretty much covers it for now.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/06/16/sql-server-2000-notes/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

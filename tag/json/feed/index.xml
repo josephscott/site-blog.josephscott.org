@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>json &#8211; Joseph Scott</title>
+	<atom:link href="/tag/json/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 03 Sep 2018 18:01:20 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>jo, Create JSON On The Command Line</title>
+		<link>/2016/03/14/jo-create-json-on-the-command-line/</link>
+					<comments>/2016/03/14/jo-create-json-on-the-command-line/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 14 Mar 2016 17:11:28 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[jo]]></category>
+		<category><![CDATA[json]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15481</guid>
+
+					<description><![CDATA[Do you remember jq, the tool that makes it easy it parse JSON on the command line? Have you ever wondered what the opposite of jq would be? The answer is jo. It simplifies the process of creating JSON on the command line. Here is one of the simple examples the author listed: > jo [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Do you remember <a href="https://josephscott.org/archives/2013/03/jq-command-line-json-processor/">jq</a>, the tool that makes it easy it parse JSON on the command line?  Have you ever wondered what the opposite of jq would be?</p>
+<p>The answer is <a href="http://jpmens.net/2016/03/05/a-shell-command-to-create-json-jo/">jo</a>.  It simplifies the process of creating JSON on the command line.  Here is one of the simple examples the author listed:</p>
+<pre>
+> jo time=$(date +%s) dir=$HOME
+{"time":1457195712,"dir":"/Users/jpm"}
+</pre>
+<p>Along with a more interesting one:</p>
+<pre>
+> jo -p name=JP object=$(jo fruit=Orange point=$(jo x=10 y=20) number=17) sunday=false
+{
+   "name": "JP",
+   "object": {
+      "fruit": "Orange",
+      "point": {
+         "x": 10,
+         "y": 20
+      },
+      "number": 17
+   },
+   "sunday": false
+}
+</pre>
+<p>This would be handy for writing to <a href="https://josephscott.org/archives/2016/03/json-lines/">JSON Lines</a> log files.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/03/14/jo-create-json-on-the-command-line/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>JSON Lines</title>
+		<link>/2016/03/07/json-lines/</link>
+					<comments>/2016/03/07/json-lines/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 07 Mar 2016 18:11:13 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[json]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15339</guid>
+
+					<description><![CDATA[A CSV replacement, JSON Lines: JSON Lines&#8217; biggest strength is in handling lots of similar nested data structures. Not a bad idea. I may give this a try on a future project.]]></description>
+										<content:encoded><![CDATA[<p>A CSV replacement, <a href="http://jsonlines.org/">JSON Lines</a>:</p>
+<blockquote><p>
+JSON Lines&#8217; biggest strength is in handling lots of similar nested data structures.
+</p></blockquote>
+<p>Not a bad idea.  I may give this a try on a future project.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/03/07/json-lines/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>jq, Command Line JSON Processor</title>
+		<link>/2013/03/28/jq-command-line-json-processor/</link>
+					<comments>/2013/03/28/jq-command-line-json-processor/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 28 Mar 2013 14:55:00 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[jq]]></category>
+		<category><![CDATA[json]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6461</guid>
+
+					<description><![CDATA[I love being able to make quick web API calls using cURL, and most of the time I get back JSON. Unfortunately it isn&#8217;t easy to manipulate JSON strings with traditional Unix utilities. That is the void that jq fills. A basic example is pulling a single value out of the JSON string. Given a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I love being able to make quick web API calls using cURL, and most of the time I get back JSON.  Unfortunately it isn&#8217;t easy to manipulate JSON strings with traditional Unix utilities.  That is the void that <a href='http://stedolan.github.com/jq/'>jq</a> fills.</p>
+<p>A basic example is pulling a single value out of the JSON string.  Given a JSON string in a file called test.json that looks like:</p>
+<p>[sourcecode lang=&#8221;javascript&#8221;]<br />
+{<br />
+    &quot;foo&quot;: 42,<br />
+    &quot;bar&quot;: &quot;less interesting data&quot;<br />
+}<br />
+[/sourcecode]</p>
+<p>you can easily pull out the value for &#8216;foo&#8217; with:</p>
+<p>[sourcecode]<br />
+&gt; cat test.json | jq &#8216;.foo&#8217;<br />
+&gt; 42<br />
+[/sourcecode]</p>
+<p>Asking for the value of &#8216;bar&#8217; will return something you might not expect at first:</p>
+<p>[sourcecode]<br />
+&gt; cat test.json | jq &#8216;.bar&#8217;<br />
+&gt; &quot;less interesting data&quot;<br />
+[/sourcecode]</p>
+<p>By default jq will attempt to output JSON, which is why you end up with the quotes around the string.  To get the string value without the quotes you&#8217;ll need to use &#8216;-r&#8217;, or &#8216;&#8211;raw-output&#8217;:</p>
+<p>[sourcecode]<br />
+&gt; cat test.json | jq -r &#8216;.bar&#8217;<br />
+&gt; less interesting data<br />
+[/sourcecode]</p>
+<p>These are trivial examples, the <a href="http://stedolan.github.com/jq/tutorial/">tutorial</a> walks you through more features and the <a href="http://stedolan.github.com/jq/manual/">manual</a> describes the filtering and other capabilities in detail, with examples.</p>
+<p><a href="http://stedolan.github.com/jq/download/">Binaries for a number of platforms</a> are available.  Source code is hosted at <a href="https://github.com/stedolan/jq">https://github.com/stedolan/jq</a> under an MIT style open source license.</p>
+<p>Given the continued popularity of JSON it would be nice to see jq included as part of a standard Unix install; alongside sed, awk, and grep.  It has proven useful enough to me already that I&#8217;ve started installing it on the systems that I regularly use.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/03/28/jq-command-line-json-processor/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Joe Gregorio on AtomPub and XML</title>
+		<link>/2010/01/06/joe-gregorio-on-atompub-and-xml/</link>
+					<comments>/2010/01/06/joe-gregorio-on-atompub-and-xml/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 06 Jan 2010 21:24:19 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[atompub]]></category>
+		<category><![CDATA[joe-gregorio]]></category>
+		<category><![CDATA[json]]></category>
+		<category><![CDATA[xml]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1695</guid>
+
+					<description><![CDATA[In a follow up comment on his WebFinger post Joe Gregorio gives some perspective on AtomPub and XML: Look, AtomPub has this problem, and if I had to do it all over again I would build AtomPub in JSON. An implementer wants to go from bits on the wire to a native data structure they [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>In a <a href="http://bitworking.org/news/2010/01/webfinger#IDComment50460759">follow up comment on his WebFinger post</a> Joe Gregorio gives some perspective on AtomPub and XML:</p>
+<blockquote><p>
+Look, AtomPub has this problem, and if I had to do it all over again I would build AtomPub in JSON. An implementer wants to go from bits on the wire to a native data structure they can interact with in their programming language. I used to think that was laziness, or lack of knowledge, but it&#8217;s purely pragmatic. By using XML you have introduced a layer of indirection, you&#8217;ve taken a data structure and converted it into a tree based document which then has to be converted back into a native data structure, but now that has to be done on a per language basis.
+</p></blockquote>
+<p>I&#8217;m in the lazy/pragmatic camp <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>I really don’t want documents to describe data, I just want a nice way to serialize the data and right now my favored way of doing that is <a href="http://www.json.org/">JSON</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/01/06/joe-gregorio-on-atompub-and-xml/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Is Dave Winer Going to Stop Blogging?</title>
+		<link>/2006/12/30/is-dave-winer-going-to-stop-blogging/</link>
+					<comments>/2006/12/30/is-dave-winer-going-to-stop-blogging/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 30 Dec 2006 08:41:27 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[davewiner]]></category>
+		<category><![CDATA[json]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/12/30/is-dave-winer-going-to-stop-blogging/</guid>
+
+					<description><![CDATA[Remember back in March when Dave Winer said that &#34;probably before the end of 2006, I will put this site in mothballs, in archive mode, and go on to other things, Murphy-willing of course.&#34; ? Lots of people got bent out of shape, asking Dave to not stop his blog. It is now the very [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Remember back in March when <a href="http://www.scripting.com/">Dave Winer</a> said that &quot;<a href="http://www.scripting.com/2006/03/13.html#whyIWillStopBlogging">probably before the end of 2006, I will put this site in mothballs, in archive mode, and go on to other things, Murphy-willing of course.</a>&quot; ?  Lots of people got bent out of shape, asking Dave to not stop his blog.  It is now the very early in the morning of December 30th 2006.  Did Murphy step in, or did Dave change his mind at some point?</p>
+<p>Clearly Dave can still cause a big stir.  Take his recent call to <a href="http://www.scripting.com/2006/12/20.html#godBlessTheReinventers">find a tree and string up</a> <a href="http://www.crockford.com/">Douglas Crockford</a> because he came up with <a href="http://www.json.org/">JSON</a> (JavaScript Object Notation).  Which of course, is &#8220;NOT EVEN XML!&#8221;.  Lots of blog posts came from his comments on JSON, with <a href="http://kalsey.com/">Adam Kalsey</a> really <a href="http://kalsey.com/2006/12/rssjson_or_rss_30/">poking fun</a>.  There are <a href="http://kalsey.com/2006/12/more_json_stuff/">stickers, buttons</a> and a <a href="http://kalsey.com/2006/12/json_shirt/">shirt</a> available <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Another wait and see situation.</p>
+<p><b>UPDATE :</b> Looks like Dave already said <a href="http://www.scripting.com/2006/12/12.html#aReprieveUntilApril">that he&#8217;d keep blogging until at least April 2007</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/12/30/is-dave-winer-going-to-stop-blogging/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Why JSON isn’t just for JavaScript</title>
+		<link>/2006/12/20/why-json-isnt-just-for-javascript/</link>
+					<comments>/2006/12/20/why-json-isnt-just-for-javascript/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 21 Dec 2006 06:16:19 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[json]]></category>
+		<category><![CDATA[simonwillison]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/12/20/why-json-isn%e2%80%99t-just-for-javascript/</guid>
+
+					<description><![CDATA[Why JSON isn’t just for JavaScript &#8211; Simon Willison. The sweet spot for JSON is serializing simple data structures for transfer between programming languages. If you need more complex data structures (maybe with some kind of schema for validation), use XML. If you want to do full blown RPC use SOAP or XML-RPC. If you [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://simonwillison.net/2006/Dec/20/json/">Why JSON isn’t just for JavaScript</a> &#8211; Simon Willison.</p>
+<blockquote><p>
+The sweet spot for JSON is serializing simple data structures for transfer between programming languages. If you need more complex data structures (maybe with some kind of schema for validation), use XML. If you want to do full blown RPC use SOAP or XML-RPC. <b>If you just want a light-weight format for moving data around, JSON fits the bill admirably</b>.</p>
+<p>What do we lose from not using XML? The ability to use XML tools. <b>If you’re someone who breathes XSLT that might be a problem; if like me your approach when faced with XML is to parse it in to a more agreeable data structure as soon as possible you’ll find JSON far more productive</b>.
+</p></blockquote>
+<p>Emphasis mine.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/12/20/why-json-isnt-just-for-javascript/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>JavaScript Object Notation (JSON)</title>
+		<link>/2006/09/05/javascript-object-notation-json/</link>
+					<comments>/2006/09/05/javascript-object-notation-json/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 06 Sep 2006 05:43:33 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[atom]]></category>
+		<category><![CDATA[feed]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[json]]></category>
+		<category><![CDATA[json-rpc]]></category>
+		<category><![CDATA[jsonrequest]]></category>
+		<category><![CDATA[rss]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/09/05/javascript-object-notation-json/</guid>
+
+					<description><![CDATA[I&#8217;ve been thinking more and more about JavaScript Object Notation (JSON) lately. If you aren&#8217;t familiar with JSON here&#8217;s some reading: Introducing JSON JSON (Wikipedia) JSON for the masses (Dustin Diaz) Unless I see a serious counter argument, I&#8217;m ready to jump on the replace XML with JSON boat. Other proposed ideas based on JSON [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been thinking more and more about <a href="http://www.json.org/">JavaScript Object Notation (JSON)</a> lately.  If you aren&#8217;t familiar with JSON here&#8217;s some reading:</p>
+<ul>
+<li><a href="http://www.json.org/">Introducing JSON</a></li>
+<li><a href="http://en.wikipedia.org/wiki/JSON">JSON</a> (Wikipedia)</li>
+<li><a href="http://www.dustindiaz.com/json-for-the-masses/">JSON for the masses</a> (Dustin Diaz)</li>
+</ul>
+<p>Unless I see a serious counter argument, I&#8217;m ready to jump on the <a href="http://www.json.org/xml.html">replace XML with JSON</a> boat.  Other proposed ideas based on JSON include <a href="http://www.json.org/JSONRequest.html">JSONRequest</a> (a safer version of XMLHttpRequest) and <a href="http://json-rpc.org/">JSON-RPC</a> (like XML-RPC without the XML).</p>
+<p>This leads me to my next thought, should the existing feed formats (RSS &amp; ATOM) be replaced with JSON?  I&#8217;m not 100% sure that this is the right thing, but I&#8217;m giving it serious consideration.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/09/05/javascript-object-notation-json/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

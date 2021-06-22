@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: PHP Count Performance	</title>
+	<atom:link href="/2010/01/12/php-count-performance/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/01/12/php-count-performance/</link>
+	<description></description>
+	<lastBuildDate>Wed, 23 Dec 2015 16:48:59 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Php performance tips &#038; tricks &#124; Codekiri		</title>
+		<link>/2010/01/12/php-count-performance/#comment-3155</link>
+
+		<dc:creator><![CDATA[Php performance tips &#038; tricks &#124; Codekiri]]></dc:creator>
+		<pubDate>Wed, 23 Dec 2015 16:48:59 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1674#comment-3155</guid>
+
+					<description><![CDATA[[&#8230;] puesto que la estructura de datos array mantiene internamente su longitud. Sin embargo, este post demuestra que es más eficiente almacenar el valor de count en una variable que luego utilizaremos [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] puesto que la estructura de datos array mantiene internamente su longitud. Sin embargo, este post demuestra que es más eficiente almacenar el valor de count en una variable que luego utilizaremos [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/01/12/php-count-performance/#comment-3154</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 12 Jan 2010 18:27:34 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1674#comment-3154</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/01/12/php-count-performance/#comment-3153&quot;&gt;Angelo Mandato&lt;/a&gt;.
+
+It&#039;s quite possible that PHP4 would have shown an even bigger difference.  Hopefully there aren&#039;t too many cases of PHP4 being used for production sites any more.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/01/12/php-count-performance/#comment-3153">Angelo Mandato</a>.</p>
+<p>It&#8217;s quite possible that PHP4 would have shown an even bigger difference.  Hopefully there aren&#8217;t too many cases of PHP4 being used for production sites any more.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Angelo Mandato		</title>
+		<link>/2010/01/12/php-count-performance/#comment-3153</link>
+
+		<dc:creator><![CDATA[Angelo Mandato]]></dc:creator>
+		<pubDate>Tue, 12 Jan 2010 18:02:25 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1674#comment-3153</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/01/12/php-count-performance/#comment-3152&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+Good to know. I bet if you ran this test on PHP 4 you see an even bigger difference in execution time.
+
+I should have noticed the use of memory_get_peak_usage(), that&#039;s a PHP 5.2+ function.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/01/12/php-count-performance/#comment-3152">Joseph Scott</a>.</p>
+<p>Good to know. I bet if you ran this test on PHP 4 you see an even bigger difference in execution time.</p>
+<p>I should have noticed the use of memory_get_peak_usage(), that&#8217;s a PHP 5.2+ function.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/01/12/php-count-performance/#comment-3152</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 12 Jan 2010 17:54:05 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1674#comment-3152</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/01/12/php-count-performance/#comment-3151&quot;&gt;Angelo Mandato&lt;/a&gt;.
+
+I used PHP 5.2.9 to run those.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/01/12/php-count-performance/#comment-3151">Angelo Mandato</a>.</p>
+<p>I used PHP 5.2.9 to run those.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Angelo Mandato		</title>
+		<link>/2010/01/12/php-count-performance/#comment-3151</link>
+
+		<dc:creator><![CDATA[Angelo Mandato]]></dc:creator>
+		<pubDate>Tue, 12 Jan 2010 17:49:54 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1674#comment-3151</guid>
+
+					<description><![CDATA[Which version of PHP are you using for this test? The performance of count()/sizeof() is supposed to be linear in PHP 5+ since the length of the array is maintained with the array rather than calculated by the function call. I wouldn&#039;t be surprised though if calling count() once still makes a difference.]]></description>
+			<content:encoded><![CDATA[<p>Which version of PHP are you using for this test? The performance of count()/sizeof() is supposed to be linear in PHP 5+ since the length of the array is maintained with the array rather than calculated by the function call. I wouldn&#8217;t be surprised though if calling count() once still makes a difference.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

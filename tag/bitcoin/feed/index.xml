@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>bitcoin &#8211; Joseph Scott</title>
+	<atom:link href="/tag/bitcoin/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 03 Feb 2016 18:11:26 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Net Cost of Bitcoin Mining</title>
+		<link>/2016/02/03/net-cost-of-bitcoin-mining/</link>
+					<comments>/2016/02/03/net-cost-of-bitcoin-mining/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 03 Feb 2016 18:11:26 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[aaron-toponce]]></category>
+		<category><![CDATA[bitcoin]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15039</guid>
+
+					<description><![CDATA[With some rough math Aaron Toponce comes up with an estimate for Bitcoin Mining Rate and Waste: At $0.15 USD per kWh, that&#8217;s $609 spent on electricity per Bitcoin mined. Bitcoin is currently trading at $376/BTC. Using the ~$600 cost in electricity for current mining rates, Bitcoin would need to go back to the highs [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>With some rough math Aaron Toponce comes up with an estimate for <a href="https://pthree.org/2016/01/30/bitcoin-mining-rate-and-waste/">Bitcoin Mining Rate and Waste</a>:</p>
+<blockquote><p>
+At $0.15 USD per kWh, that&#8217;s $609 spent on electricity per Bitcoin mined. Bitcoin is currently trading at $376/BTC.
+</p></blockquote>
+<p>Using the ~$600 cost in electricity for current mining rates, Bitcoin would need to go back to the highs of <a href="https://www.coinbase.com/charts">2013 and 2014</a> to have a net positive value.</p>
+<p>Aaron is very direct in his conclusion:</p>
+<blockquote><p>
+I would argue that Bitcoin is the worst idea to come out of Computer Science in the history of mankind.
+</p></blockquote>
+<p>If this depends on the price per Bitcoin, then this conclusion needs to have more flexibility.  It may be that we are too early in the history of Bitcoin to write a conclusion.</p>
+<p>In terms of overall issues with Bitcoin, I don&#8217;t think this one is big enough by itself to kill Bitcoin.  Combined with other issues though, it may prove unsustainable over all.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/02/03/net-cost-of-bitcoin-mining/feed/</wfw:commentRss>
+			<slash:comments>7</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Coinbase, Something Went Wrong</title>
+		<link>/2013/12/19/coinbase-something-went-wrong/</link>
+					<comments>/2013/12/19/coinbase-something-went-wrong/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 19 Dec 2013 00:38:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[bitcoin]]></category>
+		<category><![CDATA[coinbase]]></category>
+		<category><![CDATA[error-message]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9648</guid>
+
+					<description><![CDATA[I&#8217;d heard that the Bitcoin value against the U.S. dollar has recently dropped, so I headed over to coinbase.com/charts to see the actual trends. This is what that page showed: The error message in red is: We&#8217;re sorry, but something went wrong. I&#8217;m not sure if that was supposed to be a commentary on a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;d heard that the Bitcoin value against the U.S. dollar has recently dropped, so I headed over to <a href="https://coinbase.com/charts" title="All your bitcoin are belong to us.">coinbase.com/charts</a> to see the actual trends.  This is what that page showed:</p>
+<p><img loading="lazy" src="/wp-content/uploads/2013/12/coinbase-wrong-1.jpg" alt="coinbase-wrong" width="800" height="396" class="alignleft size-full wp-image-9650" srcset="/wp-content/uploads/2013/12/coinbase-wrong-1.jpg 800w, /wp-content/uploads/2013/12/coinbase-wrong-1-300x149.jpg 300w, /wp-content/uploads/2013/12/coinbase-wrong-1-768x380.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>The error message in red is:</p>
+<blockquote><p>
+We&#8217;re sorry, but something went wrong.
+</p></blockquote>
+<p>I&#8217;m not sure if that was supposed to be a commentary on a possible Bitcoin bubble or a real error message.</p>
+<p>I found the trend data I was looking for at <a href="https://www.mtgox.com/" title="What is the story with that domain name?">mtgox.com</a>.  Turns out the value at the beginning of this month was in the range of $1,200 U.S. for a single Bitcoin.  Eighteen days later it was just under $600.  I believe the technical term for that would be &#8220;highly volatile&#8221;.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/12/19/coinbase-something-went-wrong/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Bitcoin ATM</title>
+		<link>/2013/11/18/bitcoin-atm/</link>
+					<comments>/2013/11/18/bitcoin-atm/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 18 Nov 2013 20:12:33 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[bitcoin]]></category>
+		<category><![CDATA[tim-bray]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9427</guid>
+
+					<description><![CDATA[Tim Bray wrote about using the Bitcoin ATM in Vancouver. The experience clearly isn&#8217;t on par with traditional bank ATMs, but it is a fascinating experiment. Can a Bitcoin ATM get significantly closer to a regular bank ATM? Would it even need to in order to get a decent number of people to use it? [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Tim Bray wrote about <a href="https://www.tbray.org/ongoing/When/201x/2013/11/15/I-Sold-Some-Bitcoins">using the Bitcoin ATM in Vancouver</a>.  The experience clearly isn&#8217;t on par with traditional bank ATMs, but it is a fascinating experiment.  Can a Bitcoin ATM get significantly closer to a regular bank ATM?  Would it even need to in order to get a decent number of people to use it?</p>
+<p>If an existing sizable bank started trying out Bitcoin that would be a significant move.  I would imagine a number of regulatory issues would come up.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/11/18/bitcoin-atm/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

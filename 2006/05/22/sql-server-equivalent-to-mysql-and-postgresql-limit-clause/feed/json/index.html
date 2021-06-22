@@ -1,0 +1,200 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2006/05/22/sql-server-equivalent-to-mysql-and-postgresql-limit-clause/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2006/05/22/sql-server-equivalent-to-mysql-and-postgresql-limit-clause/",
+    "feed_url": "https://blog.josephscott.org/2006/05/22/sql-server-equivalent-to-mysql-and-postgresql-limit-clause/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: SQL Server Equivalent To MySQL And PostgreSQL Limit Clause",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2006/05/22/sql-server-equivalent-to-mysql-and-postgresql-limit-clause/#comment-1322",
+            "url": "https://blog.josephscott.org/2006/05/22/sql-server-equivalent-to-mysql-and-postgresql-limit-clause/#comment-1322",
+            "content_html": "You can see a better alternative for the above query in following post .........................\n\nhttp://rttechno.blogspot.com/2009/01/paging-in-ms-sql-server-alternative-to.html",
+            "content_text": "You can see a better alternative for the above query in following post .........................\n\nhttp://rttechno.blogspot.com/2009/01/paging-in-ms-sql-server-alternative-to.html",
+            "date_published": "2009-01-12T09:10:04-07:00",
+            "authors": [
+                {
+                    "name": "Srinivasan",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/6c0637c6fdefbb8a0285fc5801de1568?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Srinivasan",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/6c0637c6fdefbb8a0285fc5801de1568?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2006/05/22/sql-server-equivalent-to-mysql-and-postgresql-limit-clause/#comment-1321",
+            "url": "https://blog.josephscott.org/2006/05/22/sql-server-equivalent-to-mysql-and-postgresql-limit-clause/#comment-1321",
+            "content_html": "@GrumpyNoMore -\n\nhttp://asktom.oracle.com/pls/asktom/f?p=100:11:0::::P11_QUESTION_ID:127412348064\n\nselect *\n  from ( select a.*, rownum rnum\n           from ( YOUR_QUERY_GOES_HERE -- including the order by ) a\n          where rownum = MIN_ROWS",
+            "content_text": "@GrumpyNoMore -\n\nhttp://asktom.oracle.com/pls/asktom/f?p=100:11:0::::P11_QUESTION_ID:127412348064\n\nselect *\n  from ( select a.*, rownum rnum\n           from ( YOUR_QUERY_GOES_HERE -- including the order by ) a\n          where rownum = MIN_ROWS",
+            "date_published": "2008-07-07T23:54:56-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://www.randomnetworks.com/",
+                    "avatar": "https://secure.gravatar.com/avatar/407fb36bbf6a01e151680be9f408b5af?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://www.randomnetworks.com/",
+                "avatar": "https://secure.gravatar.com/avatar/407fb36bbf6a01e151680be9f408b5af?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2006/05/22/sql-server-equivalent-to-mysql-and-postgresql-limit-clause/#comment-1320",
+            "url": "https://blog.josephscott.org/2006/05/22/sql-server-equivalent-to-mysql-and-postgresql-limit-clause/#comment-1320",
+            "content_html": "So what is the answer for Oracle users? The best I have come up with to get the first row only is a subquery like:\n\nSELECT firstname, lastname, score\nFROM candidates\nWHERE score =\n  ( SELECT MAX(score) FROM candidates);\n\nbut this doesn't allow for an offset and I can't see how one can be set.",
+            "content_text": "So what is the answer for Oracle users? The best I have come up with to get the first row only is a subquery like:\n\nSELECT firstname, lastname, score\nFROM candidates\nWHERE score =\n  ( SELECT MAX(score) FROM candidates);\n\nbut this doesn't allow for an offset and I can't see how one can be set.",
+            "date_published": "2008-07-04T20:37:10-06:00",
+            "authors": [
+                {
+                    "name": "GrumpyNoMore",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/56fa183b3a8f16d533b7e436d21238f6?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "GrumpyNoMore",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/56fa183b3a8f16d533b7e436d21238f6?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2006/05/22/sql-server-equivalent-to-mysql-and-postgresql-limit-clause/#comment-1319",
+            "url": "https://blog.josephscott.org/2006/05/22/sql-server-equivalent-to-mysql-and-postgresql-limit-clause/#comment-1319",
+            "content_html": "Thanks a lot, that was a very helpful post.\n\nI would add this bit:\n\nn is the offset\nx is the number you start on\n\ne.g. Show pages 0 to 25 -\nSELECT TOP 25 *\nFROM tablename\nWHERE key NOT IN (\n    SELECT TOP 0 key\n    FROM tablename\n    ORDER BY key\n)\n\ne.g. Show pages 100 to 150 -\nSELECT TOP 150 *\nFROM tablename\nWHERE key NOT IN (\n    SELECT TOP 100 key\n    FROM tablename\n    ORDER BY key\n)",
+            "content_text": "Thanks a lot, that was a very helpful post.\n\nI would add this bit:\n\nn is the offset\nx is the number you start on\n\ne.g. Show pages 0 to 25 -\nSELECT TOP 25 *\nFROM tablename\nWHERE key NOT IN (\n    SELECT TOP 0 key\n    FROM tablename\n    ORDER BY key\n)\n\ne.g. Show pages 100 to 150 -\nSELECT TOP 150 *\nFROM tablename\nWHERE key NOT IN (\n    SELECT TOP 100 key\n    FROM tablename\n    ORDER BY key\n)",
+            "date_published": "2008-06-24T21:34:17-06:00",
+            "authors": [
+                {
+                    "name": "911_Truth",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/4cf3c39520ed8f0cf33afd21be9f2cfd?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "911_Truth",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/4cf3c39520ed8f0cf33afd21be9f2cfd?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2006/05/22/sql-server-equivalent-to-mysql-and-postgresql-limit-clause/#comment-1318",
+            "url": "https://blog.josephscott.org/2006/05/22/sql-server-equivalent-to-mysql-and-postgresql-limit-clause/#comment-1318",
+            "content_html": "Hummad - this will cause a performance hit if there are 10000+ records!",
+            "content_text": "Hummad - this will cause a performance hit if there are 10000+ records!",
+            "date_published": "2008-06-14T00:53:28-06:00",
+            "authors": [
+                {
+                    "name": "Gary",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/68524a668673ab419c3054a714f35dc8?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Gary",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/68524a668673ab419c3054a714f35dc8?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2006/05/22/sql-server-equivalent-to-mysql-and-postgresql-limit-clause/#comment-1317",
+            "url": "https://blog.josephscott.org/2006/05/22/sql-server-equivalent-to-mysql-and-postgresql-limit-clause/#comment-1317",
+            "content_html": "Exact solution for SQL Server Equivalent To MySQL LIMIT clause\nfollowing is the stored procedured that i have created for this purpose\nby creating a temp table and then filter the records from it by row index\n\nHere is the stored procedure as follows\n\n\n-- ================================================\nSET ANSI_NULLS ON\nGO\nSET QUOTED_IDENTIFIER ON\nGO\n-- =============================================\n-- Author:\n-- Create date:\n-- Description:\n-- =============================================\nAlter PROCEDURE Test\n\t-- Add the parameters for the stored procedure here\n\t@page int = 0,\n\t@count int =10,\n\t@ProductCategoryId int,\n\t@ProductSubCategoryId int,\n\t@IsDeleted bit,\n\t@IsEnabled bit\nAS\nBEGIN\n\t-- SET NOCOUNT ON added to prevent extra result sets from\n\t-- interfering with SELECT statements.\n\tSET NOCOUNT ON;\n\n    -- Insert statements for procedure here\n\nSET NOCOUNT ON;\n\nCREATE TABLE #TempTBL (\n\t[ProductCategoryId] [int] NOT NULL,\n\t[ProductSubCategoryId] [int] NOT NULL,\n\t[ProductId] [int] NOT NULL,\n\t[ProductName] [nvarchar](50) NULL,\n\t[ProductSupplier] [nvarchar](50) NULL,\n\t[ProductShortDescription] [nvarchar](100) NULL,\n\t[ProductModel] [nvarchar](50) NULL,\n\t[ProductLongDescription] [nvarchar](500) NULL,\n\t[ProductRRP] [money] NULL ,\n\t[ProductNowRate] [money] NULL ,\n\t[ProductMake] [nvarchar](50) NULL,\n\t[ProductType] [nvarchar](50) NULL,\n\t[ProductImageName] [nvarchar](250) NULL ,\n\t[ProductSmallImageName] [nvarchar](250) NULL ,\n\t[ProductXImageName] [nvarchar](250) NULL ,\n\t[PutIn] [nvarchar](250) NULL,\n\t[RowId] [int] NULL,\n\t[IsEnabled] [bit] NULL ,\n\t[IsDeleted] [bit] NULL ,\n\t[DateSubmitted] [datetime] NOT NULL ,\n\t[DateUpdated] [datetime] NOT NULL ,\n\t[RowIndex]  int\n)\n\nInsert into #TempTBL\n(\n\t[ProductCategoryId] ,\n\t[ProductSubCategoryId],\n\t[ProductId],\n\t[ProductName] ,\n\t[ProductSupplier],\n\t[ProductShortDescription],\n\t[ProductModel],\n\t[ProductLongDescription],\n\t[ProductRRP],\n\t[ProductNowRate],\n\t[ProductMake],\n\t[ProductType],\n\t[ProductImageName],\n\t[ProductSmallImageName],\n\t[ProductXImageName],\n\t[PutIn],\n\t[RowId],\n\t[IsEnabled],\n\t[IsDeleted],\n\t[DateSubmitted],\n\t[DateUpdated],\n\t[RowIndex]\n)\nselect *,row_number() OVER(Order By ProductId)\nfrom Products\n\twhere ProductCategoryId=@ProductCategoryId AND\n\t\t  ProductSubCategoryId = @ProductSubCategoryId AND\n\t\t  IsDeleted = @IsDeleted AND IsEnabled = @IsEnabled\n     ORDER By ProductId ASC\n\n\nselect * from #TempTBL where RowIndex &gt;= @page * @count AND RowIndex &lt;= (@page * @count) + @count\nEND\nGO",
+            "content_text": "Exact solution for SQL Server Equivalent To MySQL LIMIT clause\nfollowing is the stored procedured that i have created for this purpose\nby creating a temp table and then filter the records from it by row index\n\nHere is the stored procedure as follows\n\n\n-- ================================================\nSET ANSI_NULLS ON\nGO\nSET QUOTED_IDENTIFIER ON\nGO\n-- =============================================\n-- Author:\n-- Create date:\n-- Description:\n-- =============================================\nAlter PROCEDURE Test\n\t-- Add the parameters for the stored procedure here\n\t@page int = 0,\n\t@count int =10,\n\t@ProductCategoryId int,\n\t@ProductSubCategoryId int,\n\t@IsDeleted bit,\n\t@IsEnabled bit\nAS\nBEGIN\n\t-- SET NOCOUNT ON added to prevent extra result sets from\n\t-- interfering with SELECT statements.\n\tSET NOCOUNT ON;\n\n    -- Insert statements for procedure here\n\nSET NOCOUNT ON;\n\nCREATE TABLE #TempTBL (\n\t[ProductCategoryId] [int] NOT NULL,\n\t[ProductSubCategoryId] [int] NOT NULL,\n\t[ProductId] [int] NOT NULL,\n\t[ProductName] [nvarchar](50) NULL,\n\t[ProductSupplier] [nvarchar](50) NULL,\n\t[ProductShortDescription] [nvarchar](100) NULL,\n\t[ProductModel] [nvarchar](50) NULL,\n\t[ProductLongDescription] [nvarchar](500) NULL,\n\t[ProductRRP] [money] NULL ,\n\t[ProductNowRate] [money] NULL ,\n\t[ProductMake] [nvarchar](50) NULL,\n\t[ProductType] [nvarchar](50) NULL,\n\t[ProductImageName] [nvarchar](250) NULL ,\n\t[ProductSmallImageName] [nvarchar](250) NULL ,\n\t[ProductXImageName] [nvarchar](250) NULL ,\n\t[PutIn] [nvarchar](250) NULL,\n\t[RowId] [int] NULL,\n\t[IsEnabled] [bit] NULL ,\n\t[IsDeleted] [bit] NULL ,\n\t[DateSubmitted] [datetime] NOT NULL ,\n\t[DateUpdated] [datetime] NOT NULL ,\n\t[RowIndex]  int\n)\n\nInsert into #TempTBL\n(\n\t[ProductCategoryId] ,\n\t[ProductSubCategoryId],\n\t[ProductId],\n\t[ProductName] ,\n\t[ProductSupplier],\n\t[ProductShortDescription],\n\t[ProductModel],\n\t[ProductLongDescription],\n\t[ProductRRP],\n\t[ProductNowRate],\n\t[ProductMake],\n\t[ProductType],\n\t[ProductImageName],\n\t[ProductSmallImageName],\n\t[ProductXImageName],\n\t[PutIn],\n\t[RowId],\n\t[IsEnabled],\n\t[IsDeleted],\n\t[DateSubmitted],\n\t[DateUpdated],\n\t[RowIndex]\n)\nselect *,row_number() OVER(Order By ProductId)\nfrom Products\n\twhere ProductCategoryId=@ProductCategoryId AND\n\t\t  ProductSubCategoryId = @ProductSubCategoryId AND\n\t\t  IsDeleted = @IsDeleted AND IsEnabled = @IsEnabled\n     ORDER By ProductId ASC\n\n\nselect * from #TempTBL where RowIndex &gt;= @page * @count AND RowIndex &lt;= (@page * @count) + @count\nEND\nGO",
+            "date_published": "2008-04-01T00:23:36-06:00",
+            "authors": [
+                {
+                    "name": "Hummad Hassan",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/f138749438c12f22e368d89590ef2946?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Hummad Hassan",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/f138749438c12f22e368d89590ef2946?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2006/05/22/sql-server-equivalent-to-mysql-and-postgresql-limit-clause/#comment-1316",
+            "url": "https://blog.josephscott.org/2006/05/22/sql-server-equivalent-to-mysql-and-postgresql-limit-clause/#comment-1316",
+            "content_html": "@php mysql tutorial -\n\nThe offset indicates how far into the result set the limit should start.",
+            "content_text": "@php mysql tutorial -\n\nThe offset indicates how far into the result set the limit should start.",
+            "date_published": "2008-03-27T07:48:30-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://www.randomnetworks.com/",
+                    "avatar": "https://secure.gravatar.com/avatar/407fb36bbf6a01e151680be9f408b5af?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://www.randomnetworks.com/",
+                "avatar": "https://secure.gravatar.com/avatar/407fb36bbf6a01e151680be9f408b5af?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2006/05/22/sql-server-equivalent-to-mysql-and-postgresql-limit-clause/#comment-1315",
+            "url": "https://blog.josephscott.org/2006/05/22/sql-server-equivalent-to-mysql-and-postgresql-limit-clause/#comment-1315",
+            "content_html": "I as working in ms sql, now in mysql. I am confused about offset part in your post, can you explain with any sample data / source code?",
+            "content_text": "I as working in ms sql, now in mysql. I am confused about offset part in your post, can you explain with any sample data / source code?",
+            "date_published": "2008-03-27T07:10:24-06:00",
+            "authors": [
+                {
+                    "name": "php mysql tutorial",
+                    "url": "http://www.phpbits.info/",
+                    "avatar": "https://secure.gravatar.com/avatar/36cb988743bc5f14c4fbf9a7b937ded2?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "php mysql tutorial",
+                "url": "http://www.phpbits.info/",
+                "avatar": "https://secure.gravatar.com/avatar/36cb988743bc5f14c4fbf9a7b937ded2?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2006/05/22/sql-server-equivalent-to-mysql-and-postgresql-limit-clause/#comment-1314",
+            "url": "https://blog.josephscott.org/2006/05/22/sql-server-equivalent-to-mysql-and-postgresql-limit-clause/#comment-1314",
+            "content_html": "Actually, regarding the comment on DB2, IBM actually supports the \"FETCH\" clause. It's not quite as robust as MySQL's \"LIMIT\" (it doesn't provide support for a starting offset), but I find it to be very useful, especially if you want to sort the results of an aggregated sub-query by one of your calculated fields. Here's an example of its usage:\n\nSELECT * FROM\n     (SELECT YEAR, MONTH, STYLE, SUM(GROSS_SALES) AS GROSS,\n           SUM(NET_SALES) AS NET\n           FROM DB.SALES WHERE YEAR=2008 AND MONTH=3\n           GROUP BY YEAR, MONTH\n     ) AS TABLE\nORDER BY NET DESC\nFETCH FIRST 10 ROWS ONLY\n\nThe above would give you the top ten styles in net sales for March-2008.\n\nI agree, the other players need to swallow their pride and adopt \"LIMIT\", but \"FETCH\" is nice too for DB2 users :)",
+            "content_text": "Actually, regarding the comment on DB2, IBM actually supports the \"FETCH\" clause. It's not quite as robust as MySQL's \"LIMIT\" (it doesn't provide support for a starting offset), but I find it to be very useful, especially if you want to sort the results of an aggregated sub-query by one of your calculated fields. Here's an example of its usage:\n\nSELECT * FROM\n     (SELECT YEAR, MONTH, STYLE, SUM(GROSS_SALES) AS GROSS,\n           SUM(NET_SALES) AS NET\n           FROM DB.SALES WHERE YEAR=2008 AND MONTH=3\n           GROUP BY YEAR, MONTH\n     ) AS TABLE\nORDER BY NET DESC\nFETCH FIRST 10 ROWS ONLY\n\nThe above would give you the top ten styles in net sales for March-2008.\n\nI agree, the other players need to swallow their pride and adopt \"LIMIT\", but \"FETCH\" is nice too for DB2 users :)",
+            "date_published": "2008-03-11T12:20:31-06:00",
+            "authors": [
+                {
+                    "name": "Jason",
+                    "url": "http://NA",
+                    "avatar": "https://secure.gravatar.com/avatar/a975c1ba4b12c23294aef5ab61cc8bff?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Jason",
+                "url": "http://NA",
+                "avatar": "https://secure.gravatar.com/avatar/a975c1ba4b12c23294aef5ab61cc8bff?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2006/05/22/sql-server-equivalent-to-mysql-and-postgresql-limit-clause/#comment-1313",
+            "url": "https://blog.josephscott.org/2006/05/22/sql-server-equivalent-to-mysql-and-postgresql-limit-clause/#comment-1313",
+            "content_html": "Is there any way of doing this without having to make the query again? What happens when the query has a considerable complexity and performance impact?\n\n@srinivasan:\nDid you even read the post?",
+            "content_text": "Is there any way of doing this without having to make the query again? What happens when the query has a considerable complexity and performance impact?\n\n@srinivasan:\nDid you even read the post?",
+            "date_published": "2008-02-12T06:59:59-07:00",
+            "authors": [
+                {
+                    "name": "Alpha",
+                    "url": "http://zorri.blogspot.com",
+                    "avatar": "https://secure.gravatar.com/avatar/77ec95207a79ecdeb5c42f33885f0000?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Alpha",
+                "url": "http://zorri.blogspot.com",
+                "avatar": "https://secure.gravatar.com/avatar/77ec95207a79ecdeb5c42f33885f0000?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>shodan &#8211; Joseph Scott</title>
+	<atom:link href="/tag/shodan/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 01 Oct 2015 15:04:33 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Public MongoDB Data</title>
+		<link>/2015/10/01/public-mongodb-data/</link>
+					<comments>/2015/10/01/public-mongodb-data/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 01 Oct 2015 15:04:33 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[mongodb]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[shodan]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13305</guid>
+
+					<description><![CDATA[Database authentication, or the lack there of: There&#8217;s a total of 595.2 TB of data exposed on the Internet via publicly accessible MongoDB instances that don&#8217;t have any form of authentication. From Shodan: It&#8217;s the Data, Stupid!]]></description>
+										<content:encoded><![CDATA[<p>Database authentication, or the lack there of:</p>
+<blockquote><p>
+There&#8217;s a total of 595.2 TB of data exposed on the Internet via publicly accessible MongoDB instances that don&#8217;t have any form of authentication.
+</p></blockquote>
+<p>From Shodan: <a href="http://blog.shodan.io/its-the-data-stupid/">It&#8217;s the Data, Stupid!</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/01/public-mongodb-data/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Shodan Stream</title>
+		<link>/2015/08/17/shodan-stream/</link>
+					<comments>/2015/08/17/shodan-stream/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 17 Aug 2015 14:01:18 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[shodan]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13317</guid>
+
+					<description><![CDATA[Shodan is providing a stream of their data: Using the Streaming API from Shodan you can directly subscribe to the raw data feed from the crawlers! The feed streams between 400-500 banners every second and depending on your API plan you have access to all or a fraction of it. It is surprising what has [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Shodan is providing a <a href="http://blog.shodan.io/shodan-real-time-stream/">stream of their data</a>:</p>
+<blockquote><p>
+Using the Streaming API from Shodan you can directly subscribe to the raw data feed from the crawlers! The feed streams between 400-500 banners every second and depending on your API plan you have access to all or a fraction of it.
+</p></blockquote>
+<p>It is surprising what has been connected to the Internet.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/08/17/shodan-stream/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

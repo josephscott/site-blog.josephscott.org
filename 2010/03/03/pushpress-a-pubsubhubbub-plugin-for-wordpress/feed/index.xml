@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: PuSHPress: A PubSubHubbub Plugin For WordPress	</title>
+	<atom:link href="/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/</link>
+	<description></description>
+	<lastBuildDate>Tue, 19 Apr 2011 14:47:53 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comment-3313</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 19 Apr 2011 14:47:53 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1963#comment-3313</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comment-3312&quot;&gt;Dan&lt;/a&gt;.
+
+There is nothing specifically built it to do this.  You can add some logging to the plugin that records all of the out going pings to make sure they are getting sent correctly.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comment-3312">Dan</a>.</p>
+<p>There is nothing specifically built it to do this.  You can add some logging to the plugin that records all of the out going pings to make sure they are getting sent correctly.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Dan		</title>
+		<link>/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comment-3312</link>
+
+		<dc:creator><![CDATA[Dan]]></dc:creator>
+		<pubDate>Mon, 18 Apr 2011 19:02:16 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1963#comment-3312</guid>
+
+					<description><![CDATA[Thank you for the reply.  How can I verify #1 is correctly occuring?]]></description>
+			<content:encoded><![CDATA[<p>Thank you for the reply.  How can I verify #1 is correctly occuring?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comment-3311</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 18 Apr 2011 18:23:57 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1963#comment-3311</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comment-3310&quot;&gt;Dan&lt;/a&gt;.
+
+Two things that could be going on:
+
+1- making sure that pings are being sent out ok for your other subdomain sites
+2- ultimately Google is the one that decides what to do with the ping data, it may be that they only do rapid updates for certain sites, I don&#039;t know]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comment-3310">Dan</a>.</p>
+<p>Two things that could be going on:</p>
+<p>1- making sure that pings are being sent out ok for your other subdomain sites<br />
+2- ultimately Google is the one that decides what to do with the ping data, it may be that they only do rapid updates for certain sites, I don&#8217;t know</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Dan		</title>
+		<link>/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comment-3310</link>
+
+		<dc:creator><![CDATA[Dan]]></dc:creator>
+		<pubDate>Sun, 17 Apr 2011 13:30:53 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1963#comment-3310</guid>
+
+					<description><![CDATA[I used WPMU to network activate this plugin.  When I posted a test post from my main domain blog I saw that Google indexed it very quickly but for my subdomain posts it was not occurring the same way.  Is there anything else I need to do?]]></description>
+			<content:encoded><![CDATA[<p>I used WPMU to network activate this plugin.  When I posted a test post from my main domain blog I saw that Google indexed it very quickly but for my subdomain posts it was not occurring the same way.  Is there anything else I need to do?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comment-3309</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 09 Mar 2011 16:47:46 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1963#comment-3309</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comment-3308&quot;&gt;Gary&lt;/a&gt;.
+
+Yes.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comment-3308">Gary</a>.</p>
+<p>Yes.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Gary		</title>
+		<link>/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comment-3308</link>
+
+		<dc:creator><![CDATA[Gary]]></dc:creator>
+		<pubDate>Wed, 09 Mar 2011 00:08:05 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1963#comment-3308</guid>
+
+					<description><![CDATA[Will this plugin support Wordpress 3.1? Thanks.]]></description>
+			<content:encoded><![CDATA[<p>Will this plugin support WordPress 3.1? Thanks.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comment-3307</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 16 Feb 2011 05:27:48 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1963#comment-3307</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comment-3306&quot;&gt;Marc&lt;/a&gt;.
+
+There is nothing in PuSHPress currently to support excluding specific categories, it just watches for publish events and sends the data along.  To address something like this right now you&#039;ll need to hack the plugin a bit to check for that category that you want to exclude.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comment-3306">Marc</a>.</p>
+<p>There is nothing in PuSHPress currently to support excluding specific categories, it just watches for publish events and sends the data along.  To address something like this right now you&#8217;ll need to hack the plugin a bit to check for that category that you want to exclude.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Marc		</title>
+		<link>/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comment-3306</link>
+
+		<dc:creator><![CDATA[Marc]]></dc:creator>
+		<pubDate>Tue, 15 Feb 2011 21:43:09 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1963#comment-3306</guid>
+
+					<description><![CDATA[First of all - awesome plugin, thanks for it.
+
+One Question... I excluded one category from my feed with a global function $query-&#062;set(&#039;cat&#039;,&#039;-1&#039;)
+
+When I check my /feed everything is fine, posts of this category don&#039;t appear. But PuSHPRess works different? When I check my Google Reader, I see these posts...
+Any idea how to fix this? Thanks :-)]]></description>
+			<content:encoded><![CDATA[<p>First of all &#8211; awesome plugin, thanks for it.</p>
+<p>One Question&#8230; I excluded one category from my feed with a global function $query-&gt;set(&#8216;cat&#8217;,&#8217;-1&#8242;)</p>
+<p>When I check my /feed everything is fine, posts of this category don&#8217;t appear. But PuSHPRess works different? When I check my Google Reader, I see these posts&#8230;<br />
+Any idea how to fix this? Thanks 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comment-3305</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 09 Aug 2010 18:58:41 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1963#comment-3305</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comment-3304&quot;&gt;PubCrawl&lt;/a&gt;.
+
+The PuSHPress plugin includes a hub, there is no need to manually ping a hub about updates.  When you publish a new post in WordPress PuSHPress knows about it, so it can immediately turn around and send out the client pings.
+
+If you are using PuSHPress to add PuSH support to your WP install the only thing you need to do is activate the plugin, it takes care of everything else.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comment-3304">PubCrawl</a>.</p>
+<p>The PuSHPress plugin includes a hub, there is no need to manually ping a hub about updates.  When you publish a new post in WordPress PuSHPress knows about it, so it can immediately turn around and send out the client pings.</p>
+<p>If you are using PuSHPress to add PuSH support to your WP install the only thing you need to do is activate the plugin, it takes care of everything else.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: PubCrawl		</title>
+		<link>/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comment-3304</link>
+
+		<dc:creator><![CDATA[PubCrawl]]></dc:creator>
+		<pubDate>Mon, 09 Aug 2010 18:53:34 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1963#comment-3304</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comment-3303&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+Yes, but... I&#039;m not *subscribing*, I&#039;m &quot;ping&quot;ing the hub to publish an update to my blog, per
+&lt;a href=&quot;http://pubsubhubbub.googlecode.com/svn/trunk/pubsubhubbub-core-0.3.html#anchor9&quot; rel=&quot;nofollow&quot;&gt;http://pubsubhubbub.googlecode.com/svn/trunk/pubsubhubbub-core-0.3.html#anchor9&lt;/a&gt;.  The way I read the spec is that to avoid polling (polling sucks, eh?) you notify the hub of new content, which then is supposed to be queued for distribution?]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comment-3303">Joseph Scott</a>.</p>
+<p>Yes, but&#8230; I&#8217;m not *subscribing*, I&#8217;m &#8220;ping&#8221;ing the hub to publish an update to my blog, per<br />
+<a href="http://pubsubhubbub.googlecode.com/svn/trunk/pubsubhubbub-core-0.3.html#anchor9" rel="nofollow">http://pubsubhubbub.googlecode.com/svn/trunk/pubsubhubbub-core-0.3.html#anchor9</a>.  The way I read the spec is that to avoid polling (polling sucks, eh?) you notify the hub of new content, which then is supposed to be queued for distribution?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

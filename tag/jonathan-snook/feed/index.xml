@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>jonathan-snook &#8211; Joseph Scott</title>
+	<atom:link href="/tag/jonathan-snook/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 28 Feb 2018 17:52:21 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Right Things Easy</title>
+		<link>/2018/02/28/right-things-easy/</link>
+					<comments>/2018/02/28/right-things-easy/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 28 Feb 2018 17:52:21 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[jonathan-snook]]></category>
+		<category><![CDATA[quotes]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15617</guid>
+
+					<description><![CDATA[From Jonathan Snook: Make the right things easy and the wrong things hard. I like this idea from a user experience point of view. How many times have you thought &#8220;oh, this should be easy&#8221;, only to discover it involved hunting for three different hidden links, and filling out a form that required five times [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>From <a href="https://snook.ca/archives/opinion/make-the-right-things-easy">Jonathan Snook</a>:</p>
+<blockquote><p>
+Make the right things easy and the wrong things hard.
+</p></blockquote>
+<p>I like this idea from a user experience point of view.  How many times have you thought &#8220;oh, this should be easy&#8221;, only to discover it involved hunting for three different hidden links, and filling out a form that required five times as many clicks and steps as it really needed.</p>
+<p>When you find yourself thinking the number of clicks to accomplish a task could be easily cut in half, then you are probably <strong>not</strong> making the right things easy.</p>
+<p>Looking at a single page or screen, ideally it would be really clear what we want the user to accomplish.  If it isn&#8217;t clear, or if accomplishing it is significantly harder than doing something else, then it is worth rethinking your approach.</p>
+<p>The developer version of this reminds me of <a href="https://en.wikiquote.org/wiki/Larry_Wall">Larry Wall on Perl</a>:</p>
+<blockquote><p>
+Easy things should be easy, and hard things should be possible.
+</p></blockquote>
+<p>From a code point of view, hard things should still be possible.  But the easy things shouldn&#8217;t be made more difficult because of those hard things.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/02/28/right-things-easy/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

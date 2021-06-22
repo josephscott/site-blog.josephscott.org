@@ -1,0 +1,66 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/pup/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/pup/",
+    "feed_url": "https://blog.josephscott.org/tag/pup/feed/json/",
+    "language": "en-US",
+    "title": "pup &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=15680",
+            "url": "https://blog.josephscott.org/2018/08/22/pup-command-line-html-parsing/",
+            "title": "pup: Command Line HTML Parsing",
+            "content_html": "<p><a href=\"https://github.com/ericchiang/pup\">pup</a>, the three sentence description nails is:</p>\n<blockquote><p>\npup is a command line tool for processing HTML. It reads from stdin, prints to stdout, and allows the user to filter parts of the page using CSS selectors.</p>\n<p>Inspired by jq, pup aims to be a fast and flexible way of exploring HTML from the terminal.\n</p></blockquote>\n<p>If you have used jq, this is going to feel familiar, just for an HTML context.  With the option to <a href=\"https://github.com/ericchiang/pup#json\">output the results as JSON</a>, you could find your self using pup in conjunction with jq.</p>\n<p>There are several examples in the <a href=\"https://github.com/ericchiang/pup\">README</a>, here are a few of my own.</p>\n<p>List all of the <code>IMG</code> tags from cnn.com:<br />\n[shell]<br />\ncurl -s https://www.cnn.com/ | pup &#8216;img&#8217;<br />\n[/shell]</p>\n<p>Now get it back as a JSON array:<br />\n[shell]<br />\ncurl -s https://www.cnn.com/ | pup &#8216;img json{}&#8217;<br />\n[/shell]</p>\n<p>List all of the <code>LINK</code> attributes that have a <code>rel=\"preload\"</code> attribute:</p>\n<p>[shell]<br />\ncurl -s https://www.cnn.com/ | pup &#8216;link[rel=&quot;preload&quot;]&#8217;<br />\n[/shell]</p>\n<p>I could see pup and jq becoming standard utilities on Unix-like systems.</p>\n",
+            "content_text": "pup, the three sentence description nails is:\n\npup is a command line tool for processing HTML. It reads from stdin, prints to stdout, and allows the user to filter parts of the page using CSS selectors.\nInspired by jq, pup aims to be a fast and flexible way of exploring HTML from the terminal.\n\nIf you have used jq, this is going to feel familiar, just for an HTML context.  With the option to output the results as JSON, you could find your self using pup in conjunction with jq.\nThere are several examples in the README, here are a few of my own.\nList all of the IMG tags from cnn.com:\n[shell]\ncurl -s https://www.cnn.com/ | pup &#8216;img&#8217;\n[/shell]\nNow get it back as a JSON array:\n[shell]\ncurl -s https://www.cnn.com/ | pup &#8216;img json{}&#8217;\n[/shell]\nList all of the LINK attributes that have a rel=\"preload\" attribute:\n[shell]\ncurl -s https://www.cnn.com/ | pup &#8216;link[rel=&quot;preload&quot;]&#8217;\n[/shell]\nI could see pup and jq becoming standard utilities on Unix-like systems.",
+            "date_published": "2018-08-22T10:52:22-06:00",
+            "date_modified": "2018-08-22T10:52:22-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "go",
+                "html",
+                "jq",
+                "pup",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=11027",
+            "url": "https://blog.josephscott.org/2014/09/29/pup-command-line-html-processor/",
+            "title": "pup, Command Line HTML Processor",
+            "content_html": "<p>Last year I mentioned a nifty little command line tool called <a href=\"https://josephscott.org/archives/2013/03/jq-command-line-json-processor/\">jq</a>.  It had a very specific purpose: make it easy to process JSON.  That same line of thinking inspired <a href=\"https://github.com/EricChiang/pup\">pup</a>, from <a href=\"https://twitter.com/erchiang\">Eric Chiang</a>:</p>\n<blockquote><p>\npup is a command line tool for processing HTML. It reads from stdin, prints to stdout, and allows the user to filter parts of the page using CSS selectors.\n</p></blockquote>\n<p>Here is a little taste of how this works:</p>\n<p>[sourcecode]<br />\ncurl -s https://wordpress.com/ |<br />\npup link<br />\n[/sourcecode]</p>\n<p>That will return all of the <code>link</code> elements on the WordPress.com home page.  You can easily tighten it down to just the shortlink:</p>\n<p>[sourcecode]<br />\ncurl -s https://wordpress.com |<br />\npup link[rel=shortlink]</p>\n<p>&lt;link rel=&quot;shortlink&quot; href=&quot;http://wp.me/1&quot;&gt;<br />\n[/sourcecode]</p>\n<p>One final step further, get just the <code>href</code> value:</p>\n<p>[sourcecode]<br />\ncurl -s https://wordpress.com |<br />\npup link[rel=shortlink] attr{href}</p>\n<p>http://wp.me/<br />\n[/sourcecode]</p>\n<p>I like it.</p>\n<p>Pup is open source, written in go and available at <a href=\"https://github.com/EricChiang/pup\">https://github.com/EricChiang/pup</a>.</p>\n",
+            "content_text": "Last year I mentioned a nifty little command line tool called jq.  It had a very specific purpose: make it easy to process JSON.  That same line of thinking inspired pup, from Eric Chiang:\n\npup is a command line tool for processing HTML. It reads from stdin, prints to stdout, and allows the user to filter parts of the page using CSS selectors.\n\nHere is a little taste of how this works:\n[sourcecode]\ncurl -s https://wordpress.com/ |\npup link\n[/sourcecode]\nThat will return all of the link elements on the WordPress.com home page.  You can easily tighten it down to just the shortlink:\n[sourcecode]\ncurl -s https://wordpress.com |\npup link[rel=shortlink]\n&lt;link rel=&quot;shortlink&quot; href=&quot;http://wp.me/1&quot;&gt;\n[/sourcecode]\nOne final step further, get just the href value:\n[sourcecode]\ncurl -s https://wordpress.com |\npup link[rel=shortlink] attr{href}\nhttp://wp.me/\n[/sourcecode]\nI like it.\nPup is open source, written in go and available at https://github.com/EricChiang/pup.",
+            "date_published": "2014-09-29T14:33:10-06:00",
+            "date_modified": "2014-09-29T14:33:10-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "eric-chiang",
+                "go",
+                "html",
+                "pup",
+                "Posts"
+            ]
+        }
+    ]
+}

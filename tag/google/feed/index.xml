@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>google &#8211; Joseph Scott</title>
+	<atom:link href="/tag/google/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 04 Jan 2021 21:34:17 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>The Google CDN</title>
+		<link>/2021/01/04/the-google-cdn/</link>
+					<comments>/2021/01/04/the-google-cdn/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 04 Jan 2021 21:34:17 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[cdn]]></category>
+		<category><![CDATA[data-center]]></category>
+		<category><![CDATA[google]]></category>
+		<guid isPermaLink="false">/?p=15808</guid>
+
+					<description><![CDATA[The Google Network Infrastructure page describes their various data center locations. What really stood out was their &#8220;Edge Nodes (Google Global Cache, or GGC)&#8221; map: Compare that to the map included in this 2014 Open Networking Summit talk: I won&#8217;t bother trying to count the dots on each map ( and I haven&#8217;t been able [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The <a href="https://peering.google.com/#/infrastructure">Google Network Infrastructure</a> page describes their various data center locations.  What really stood out was their &#8220;Edge Nodes (Google Global Cache, or GGC)&#8221; map:</p>
+<p><a href="/wp-content/uploads/2021/01/google-edge-nodes.png"><img loading="lazy" src="/wp-content/uploads/2021/01/google-edge-nodes.png" alt="" width="586" height="440" class="aligncenter size-full wp-image-18373" srcset="/wp-content/uploads/2021/01/google-edge-nodes.png 586w, /wp-content/uploads/2021/01/google-edge-nodes-300x225.png 300w" sizes="(max-width: 586px) 100vw, 586px" /></a></p>
+<p>Compare that to the map included in this <a href="https://www.youtube.com/watch?t=910&#038;v=n4gOZrUwWmc">2014 Open Networking Summit talk</a>:</p>
+<p><a href="/wp-content/uploads/2021/01/google-2014-cdn.png"><img loading="lazy" src="/wp-content/uploads/2021/01/google-2014-cdn.png" alt="" width="916" height="531" class="aligncenter size-full wp-image-18376" srcset="/wp-content/uploads/2021/01/google-2014-cdn.png 916w, /wp-content/uploads/2021/01/google-2014-cdn-300x174.png 300w, /wp-content/uploads/2021/01/google-2014-cdn-768x445.png 768w" sizes="(max-width: 916px) 100vw, 916px" /></a></p>
+<p>I won&#8217;t bother trying to count the dots on each map ( and I haven&#8217;t been able to find a list of locations any where ), but I think it is safe to say that the number has increased significantly over the last <del>six</del> seven years.</p>
+<p>At some point having a data center in your town will be at the same level as having local power, water, and sewer services.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2021/01/04/the-google-cdn/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Googlebot Mobile Experience</title>
+		<link>/2020/03/10/googlebot-mobile-experience/</link>
+					<comments>/2020/03/10/googlebot-mobile-experience/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 10 Mar 2020 22:08:54 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[google]]></category>
+		<guid isPermaLink="false">/?p=18108</guid>
+
+					<description><![CDATA[Last week Google announced mobile first indexing for the whole web. My mind goes to: what kind of mobile? We talk about &#8220;mobile&#8221; and &#8220;desktop&#8221; in very broad terms. Within the world of &#8220;mobile&#8221; there is a large range of capabilities. I want to know specifics. First stop, the list of Google crawlers. That provides [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Last week Google announced <a href="https://webmasters.googleblog.com/2020/03/announcing-mobile-first-indexing-for.html">mobile first indexing for the whole web</a>.  My mind goes to: what kind of mobile?</p>
+<p>We talk about &#8220;mobile&#8221; and &#8220;desktop&#8221; in very broad terms.  Within the world of &#8220;mobile&#8221; there is a large range of capabilities.  I want to know specifics.</p>
+<p>First stop, <a href="https://support.google.com/webmasters/answer/1061943">the list of Google crawlers</a>.  That provides details on <code>Googlebot ( Smartphone )</code>:</p>
+<pre>
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/W.X.Y.Z‡ Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+</pre>
+<p>We are looking at <code>Android 6.0.1</code> on a <a href=https://www.gsmarena.com/lg_nexus_5x-7556.php">Nexus 5X</a>.  A four year old operating system on a four year old device.</p>
+<p>The version of Chrome isn&#8217;t specifically given, however, they have been pushing to index using <a href="https://webmasters.googleblog.com/2019/05/the-new-evergreen-googlebot.html">evergreen Chrome</a>.  Looking through my own web server logs, that isn&#8217;t the case yet, at least not for mobile.  Here is the full user agent string I&#8217;m seeing:</p>
+<pre>
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+</pre>
+<p>Going back to Chrome 41.0.2272.96, a five year old browser.</p>
+<p>What does all this mean?</p>
+<p>If you want your site to provide a good &#8220;Googlebot experience&#8221;, your ideal test setup will include an old phone using an old version of Chrome.  Most people won&#8217;t keep an old copy of Chrome around, so the only variable you will be able to control for is the old phone part.</p>
+<p>Personally, I recommend what <a href="https://webpagetest.org/easy">https://webpagetest.org/easy</a> uses: Chrome emulating a <a href="https://www.gsmarena.com/motorola_moto_g4-8103.php">Motorola G4</a>, over a 400 Kbps, 400 ms RTT connection.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/03/10/googlebot-mobile-experience/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Google Search Indexing and JavaScript</title>
+		<link>/2018/11/06/google-search-indexing-and-javascript/</link>
+					<comments>/2018/11/06/google-search-indexing-and-javascript/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 06 Nov 2018 22:23:45 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[john-mueller]]></category>
+		<category><![CDATA[paul-kinlan]]></category>
+		<guid isPermaLink="false">/?p=17159</guid>
+
+					<description><![CDATA[The discussion over how much the Google indexing bot understands about JavaScript comes up over and over. Here are some of the details I&#8217;ve been able to put together. Googlebot is using Chrome 41 On the official Understand rendering on Google Search page the first thing they point out is that the bot uses Chrome [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The discussion over how much the Google indexing bot understands about JavaScript comes up over and over.  Here are some of the details I&#8217;ve been able to put together.</p>
+<h3>Googlebot is using Chrome 41</h3>
+<p>On the official <a href="https://developers.google.com/search/docs/guides/rendering">Understand rendering on Google Search</a> page the first thing they point out is that the bot uses Chrome 41.  Welcome back to 2015, no <a href="http://exploringjs.com/es6/ch_overviews.html">ES6</a> for you:</p>
+<blockquote><p>
+Chrome M41 does not support ES6 features (for example classes). If you are using ES6 make sure to transpile your JavaScript to ES5.
+</p></blockquote>
+<h3>Google Indexing is a Two-Pass Process</h3>
+<p><a href="https://paul.kinlan.me/">Paul Kinlan</a>, a developer advocate at Google, <a href="https://twitter.com/Paul_Kinlan/status/1039852756113080320">mentioned</a> this process:</p>
+<blockquote><p>
+Indexing is delayed for pure client side sides. Google indexer is two-pass, first run is without js, then week later it&#8217;s with is (or there abouts)
+</p></blockquote>
+<p>A follow up to that from <a href="https://twitter.com/JohnMu">John Mueller</a>, Webmaster Trends Analyst at Google, notes that <a href="https://twitter.com/JohnMu/status/1040152407416741890">this is true for updates as well</a>:</p>
+<blockquote><p>
+Yeah, there&#8217;s no fixed timeframe &#8212; the rendering can happen fairly quickly in some cases, but usually it&#8217;s on the order of days to a few weeks even. If your site produces new / updated content frequently &#038; you want it indexed quickly, you need that content in the HTML.
+</p></blockquote>
+<h3>The Take Away</h3>
+<p>Keep your critical, and regularly updated, content in HTML.  Keep your client side JavaScript to ES5 or below.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/11/06/google-search-indexing-and-javascript/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>No More DuckDuckGo, Back To Google Search</title>
+		<link>/2018/06/26/no-more-duckduckgo-back-to-google-search/</link>
+					<comments>/2018/06/26/no-more-duckduckgo-back-to-google-search/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 26 Jun 2018 17:55:29 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[duckduckgo]]></category>
+		<category><![CDATA[google]]></category>
+		<guid isPermaLink="false">/?p=16731</guid>
+
+					<description><![CDATA[For more than a year I&#8217;ve been using DuckDuckGo as my primary search engine on the web. Unfortunately I regularly fall back to Google in order to get the results I know are out there. It is no longer worth the hassle of having to double check things across two search engines. I&#8217;m giving up [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>For more than a year I&#8217;ve been using <a href="https://duckduckgo.com/">DuckDuckGo</a> as my primary search engine on the web.  Unfortunately I regularly fall back to Google in order to get the results I know are out there.</p>
+<p><a href="/wp-content/uploads/2018/06/DuckDuckGo-Logo-Stacked@3x.png"><img loading="lazy" src="/wp-content/uploads/2018/06/DuckDuckGo-Logo-Stacked@3x-300x239.png" alt="" width="300" height="239" class="aligncenter size-medium wp-image-16745" srcset="/wp-content/uploads/2018/06/DuckDuckGo-Logo-Stacked@3x-300x239.png 300w, /wp-content/uploads/2018/06/DuckDuckGo-Logo-Stacked@3x.png 615w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>It is no longer worth the hassle of having to double check things across two search engines.  I&#8217;m giving up on DuckDuckGo ( for now ) and switching back to Google Search as my default search engine.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/06/26/no-more-duckduckgo-back-to-google-search/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Revenue And Profit, Per Employee</title>
+		<link>/2018/05/22/revenue-and-profit-per-employee/</link>
+					<comments>/2018/05/22/revenue-and-profit-per-employee/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 22 May 2018 19:53:20 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[amazon]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[dustin-curtis]]></category>
+		<category><![CDATA[facebook]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<category><![CDATA[profit]]></category>
+		<category><![CDATA[revenue]]></category>
+		<category><![CDATA[Twitter]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15165</guid>
+
+					<description><![CDATA[Two years ago Dustin Curtis mentioned 2015 revenue and profit per employee for Yahoo, Twitter, Microsoft, Google, and Facebook. I thought this was an interesting way to look at this list, so I&#8217;m going update it, with a few changes. First, I&#8217;m going to remove Yahoo ( Oath? ). Next, I&#8217;m adding Amazon and Netflix. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Two years ago <a href="https://dustincurtis.com/">Dustin Curtis</a> mentioned 2015 <a href="https://twitter.com/dcurtis/status/694266299317243904">revenue</a> and <a href="https://twitter.com/dcurtis/status/694586397588467712">profit</a> per employee for Yahoo, Twitter, Microsoft, Google, and Facebook.</p>
+<p><a href="/wp-content/uploads/2018/05/revenue-per-employee.png"><img loading="lazy" src="/wp-content/uploads/2018/05/revenue-per-employee-1024x897.png" alt="" width="840" height="736" class="aligncenter size-large wp-image-16653" srcset="/wp-content/uploads/2018/05/revenue-per-employee-1024x897.png 1024w, /wp-content/uploads/2018/05/revenue-per-employee-300x263.png 300w, /wp-content/uploads/2018/05/revenue-per-employee-768x673.png 768w, /wp-content/uploads/2018/05/revenue-per-employee-1200x1052.png 1200w, /wp-content/uploads/2018/05/revenue-per-employee.png 1230w" sizes="(max-width: 840px) 100vw, 840px" /></a></p>
+<p><a href="/wp-content/uploads/2018/05/profit-per-employee.png"><img loading="lazy" src="/wp-content/uploads/2018/05/profit-per-employee-1024x895.png" alt="" width="840" height="734" class="aligncenter size-large wp-image-16652" srcset="/wp-content/uploads/2018/05/profit-per-employee-1024x895.png 1024w, /wp-content/uploads/2018/05/profit-per-employee-300x262.png 300w, /wp-content/uploads/2018/05/profit-per-employee-768x671.png 768w, /wp-content/uploads/2018/05/profit-per-employee.png 1192w" sizes="(max-width: 840px) 100vw, 840px" /></a></p>
+<p>I thought this was an interesting way to look at this list, so I&#8217;m going update it, with a few changes.  First, I&#8217;m going to remove Yahoo ( Oath? ).  Next, I&#8217;m adding Amazon and Netflix.</p>
+<p>The revenue/profit will be for calendar year 2017, with the exceptions of Microsoft ( 30 Jun 2017 ) and Apple ( 30 Sep 2017 ).  The numbers are pulled from the Yahoo ( Oath? ) Finance pages: &#8220;Total Revenue&#8221; and &#8220;Net Income&#8221;.</p>
+<hr />
+<h3>Total Employees</h3>
+<p><a href="https://finance.yahoo.com/quote/TWTR/profile?p=TWTR">Twitter</a>: 3,400<br />
+<a href="https://finance.yahoo.com/quote/NFLX/profile?p=NFLX">Netflix</a>: 4,800<br />
+<a href="https://finance.yahoo.com/quote/FB/profile?p=FB">Facebook</a>: 27,742<br />
+<a href="https://finance.yahoo.com/quote/GOOG/profile?p=GOOG">Google</a>: 80,110<br />
+<a href="https://finance.yahoo.com/quote/AAPL/profile?p=AAPL">Apple</a>: 100,000<br />
+<a href="https://finance.yahoo.com/quote/MSFT/profile?p=MSFT">Microsoft</a>: 124,000<br />
+<a href="https://finance.yahoo.com/quote/AMZN/profile?p=AMZN">Amazon</a>: 566,000</p>
+<hr />
+<h3>Revenue Per Employee</h3>
+<p><a href="https://finance.yahoo.com/quote/AMZN/financials?p=AMZN">Amazon</a>: <strong>$314,250</strong> ( $177,866,000,000 / 566,000 )<br />
+<a href="https://finance.yahoo.com/quote/TWTR/financials?p=TWTR">Twitter</a>: <strong>$718,617</strong> ( $2,443,299,000 / 3,400 )<br />
+<a href="https://finance.yahoo.com/quote/MSFT/financials?p=MSFT">Microsoft</a>: <strong>$725,403</strong> ( $89,950,000,000 / 124,000 )<br />
+<a href="https://finance.yahoo.com/quote/GOOG/financials?p=GOOG">Google</a>: <strong>$1,383,784</strong> ( $110,855,000,000 / 80,110 )<br />
+<a href="https://finance.yahoo.com/quote/FB/financials?p=FB">Facebook</a>: <strong>$1,465,395</strong> ( $40,653,000,000 / 27,742 )<br />
+<a href="https://finance.yahoo.com/quote/AAPL/financials?p=AAPL">Apple</a>: <strong>$2,292,340</strong> ( $229,234,000,000 / 100,000 )<br />
+<a href="https://finance.yahoo.com/quote/NFLX/financials?p=NFLX">Netflix</a>: <strong>$2,435,981</strong> ( $11,692,713,000 / 4,800 )</p>
+<hr />
+<h3>Profit Per Employee</h3>
+<p><a href="https://finance.yahoo.com/quote/TWTR/financials?p=TWTR">Twitter</a>: <strong>-$31,783</strong> ( -$108,063,000 / 3,400 )<br />
+<a href="https://finance.yahoo.com/quote/AMZN/financials?p=AMZN">Amazon</a>: <strong>$5,358</strong> ( $3,033,000,000 / 566,000 )<br />
+<a href="https://finance.yahoo.com/quote/NFLX/financials?p=NFLX">Netflix</a>: <strong>$116,443</strong> ( $558,929,000 / 4,800 )<br />
+<a href="https://finance.yahoo.com/quote/GOOG/financials?p=GOOG">Google</a>: <strong>$158,057</strong> ( $12,662,000,000 / 80,110 )<br />
+<a href="https://finance.yahoo.com/quote/MSFT/financials?p=MSFT">Microsoft</a>: <strong>$171,000</strong> ( $21,204,000,000 / 124,000 )<br />
+<a href="https://finance.yahoo.com/quote/AAPL/financials?p=AAPL">Apple</a>: <strong>$483,510</strong> ( $48,351,000,000 / 100,000 )<br />
+<a href="https://finance.yahoo.com/quote/FB/financials?p=FB">Facebook</a>: <strong>$573,859</strong> ( $15,920,000,000 / 27,742 )</p>
+<hr />
+<p>Twitter is still loosing money, but it is loosing a lot less than it was before.</p>
+<p>I didn&#8217;t realize that Netflix was so low on the number of employees, yet their revenue is in the general ball park of much larger companies.  To the studios it must look like Netflix is over there printing money.  No wonder so many other companies want to start their own streaming content service.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/05/22/revenue-and-profit-per-employee/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Google Undersea Cables</title>
+		<link>/2016/07/01/google-undersea-cables/</link>
+					<comments>/2016/07/01/google-undersea-cables/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 01 Jul 2016 20:21:03 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[google]]></category>
+		<guid isPermaLink="false">/?p=15709</guid>
+
+					<description><![CDATA[This week Google announced a new fiber cable from the US to Japan. I found this line particularly interesting: the global number of Google-owned undersea cables up to four, with more (under) the horizon submarinecablemap.com has a map of undersea cables, but I haven&#8217;t been able to identify which four belong to Google. Is long [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>This week <a href="https://cloudplatform.googleblog.com/2016/06/Google-Cloud-customers-run-at-the-speed-of-light-with-new-FASTER-undersea-pipe.html">Google announced a new fiber cable from the US to Japan</a>.  I found this line particularly interesting:</p>
+<blockquote><p>
+the global number of Google-owned undersea cables up to four, with more (under) the horizon
+</p></blockquote>
+<p><a href="/wp-content/uploads/2016/07/pacific-undersea-cables.png"><img loading="lazy" src="/wp-content/uploads/2016/07/pacific-undersea-cables.png" alt="pacific-undersea-cables" width="951" height="580" class="alignnone size-full wp-image-15713" srcset="/wp-content/uploads/2016/07/pacific-undersea-cables.png 951w, /wp-content/uploads/2016/07/pacific-undersea-cables-300x183.png 300w, /wp-content/uploads/2016/07/pacific-undersea-cables-768x468.png 768w" sizes="(max-width: 951px) 100vw, 951px" /></a></p>
+<p><a href="http://www.submarinecablemap.com/">submarinecablemap.com</a> has a map of undersea cables, but I haven&#8217;t been able to identify which four belong to Google.</p>
+<p>Is long distance connectivity going to be the new arms race between Google, Amazon, and Facebook?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/07/01/google-undersea-cables/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What Is Going On With Google Movie Showtimes?</title>
+		<link>/2016/02/19/what-is-going-on-with-google-movie-showtimes/</link>
+					<comments>/2016/02/19/what-is-going-on-with-google-movie-showtimes/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 19 Feb 2016 18:11:45 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[google]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15163</guid>
+
+					<description><![CDATA[I was using Google Movie Showtimes the other day to look up local times and noticed something really annoying: it doesn&#8217;t remember what location I want to search. Most of the time web requests from my laptop go through a proxy connection. The result, even though I&#8217;m signed into my Google account, the showtimes site [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was using <a href="http://www.google.com/movies">Google Movie Showtimes</a> the other day to look up local times and noticed something really annoying: it doesn&#8217;t remember what location I want to search.</p>
+<p>Most of the time web requests from my laptop go through a proxy connection.  The result, even though I&#8217;m signed into my Google account, the showtimes site does a geo-ip lookup and assumes I&#8217;m in New York instead of Utah.  Not a big deal, I enter in my zip code into the &#8220;Change Location&#8221; form, hit the button, then get the times I was looking for.</p>
+<p>Then things get really strange, it doesn&#8217;t remember what location I entered.  The next time I go to <a href="http://www.google.com/movies">www.google.com/movies</a> it uses geo-ip again and moves me from Utah to New York.</p>
+<p>The page is hard coded to always use geo-ip, even when I tell them I&#8217;m some where else.  Perhaps they could add a checkbox on the &#8216;Change Location&#8217; form that says &#8216;Make This My Default Location&#8217;.</p>
+<p>Using geo-ip to come up with smart defaults can be very helpful.  When it prevents me from setting the right location then it becomes irritating.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/02/19/what-is-going-on-with-google-movie-showtimes/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Brotli for Nginx</title>
+		<link>/2015/11/20/brotli-for-nginx/</link>
+					<comments>/2015/11/20/brotli-for-nginx/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 20 Nov 2015 16:15:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[brotli]]></category>
+		<category><![CDATA[cloudflare]]></category>
+		<category><![CDATA[compression]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[nginx]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14048</guid>
+
+					<description><![CDATA[Two months ago Google announced Brotli, a new compression format: Brotli is a whole new data format. This new format allows us to get 20–26% higher compression ratios over Zopfli. In our study ‘Comparison of Brotli, Deflate, Zopfli, LZMA, LZHAM and Bzip2 Compression Algorithms’ we show that Brotli is roughly as fast as zlib’s Deflate [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Two months ago Google announced <a href="http://google-opensource.blogspot.com/2015/09/introducing-brotli-new-compression.html">Brotli</a>, a new compression format:</p>
+<blockquote><p>
+Brotli is a whole new data format. This new format allows us to get 20–26% higher compression ratios over Zopfli. In our study ‘Comparison of Brotli, Deflate, Zopfli, LZMA, LZHAM and Bzip2 Compression Algorithms’ we show that Brotli is roughly as fast as zlib’s Deflate implementation. At the same time, it compresses slightly more densely than LZMA and bzip2 on the Canterbury corpus. The higher data density is achieved by a 2nd order context modeling, re-use of entropy codes, larger memory window of past data and joint distribution codes. Just like Zopfli, the new algorithm is named after Swiss bakery products. Brötli means ‘small bread’ in Swiss German.
+</p></blockquote>
+<p>Compression is a big deal for web performance, being able to send the same file with fewer bytes is a big win.</p>
+<p>There are now two Nginx modules for supporting Brotli compression: <a href="https://github.com/google/ngx_brotli">ngx_brotli from Google</a> and <a href="https://github.com/cloudflare/ngx_brotli_module">ngx_brotli_module from CloudFlare</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/20/brotli-for-nginx/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Failure Messaging</title>
+		<link>/2015/10/10/failure-messaging/</link>
+					<comments>/2015/10/10/failure-messaging/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 10 Oct 2015 14:57:40 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[google]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14039</guid>
+
+					<description><![CDATA[I ran into the Google Docs downtime yesterday trying to edit a spreadsheet. Opening the document resulted in this error message: For a few seconds this caused some serious tension. Did Google really remove my entire speadsheet? Despite the error message claiming that the file I had been editing for weeks didn&#8217;t exist, I quickly [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I ran into the Google Docs downtime yesterday trying to edit a spreadsheet.  Opening the document resulted in this error message:</p>
+<p><a href="/wp-content/uploads/2015/10/google-drive-file-not-found-1.png"><img loading="lazy" src="/wp-content/uploads/2015/10/google-drive-file-not-found-1.png" alt="google-drive-file-not-found" width="661" height="393" class="aligncenter size-full wp-image-14040" srcset="/wp-content/uploads/2015/10/google-drive-file-not-found-1.png 661w, /wp-content/uploads/2015/10/google-drive-file-not-found-1-300x178.png 300w" sizes="(max-width: 661px) 100vw, 661px" /></a></p>
+<p>For a few seconds this caused some serious tension.  Did Google really remove my entire speadsheet?  Despite the error message claiming that the file I had been editing for weeks didn&#8217;t exist, I quickly switched gears, suspecting that something was wrong with the service and not my file.  The <a href="http://www.google.com/appsstatus#hl=en&#038;v=issue&#038;sid=5&#038;iid=af2a5bd91fb838a393f4d377033142dd">Google status page confirmed my suspicions</a>.</p>
+<p>This got me thinking about how services convey failure messages.  In the broad sense there are at least two types of failure messages a service needs to provide.  The first is some sort of user error, which is the one Google provided me yesterday.  The second is a general &#8216;hey, we are down right now&#8217; message.</p>
+<p>My initial confusion and concern during the Google Docs downtime came from Google mixing up these two types of messages.  The provided me with the first type ( user error ), when really it was the second type ( system is down ).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/10/failure-messaging/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Google Style</title>
+		<link>/2015/10/08/google-style/</link>
+					<comments>/2015/10/08/google-style/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 08 Oct 2015 17:30:23 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[style-guide]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13396</guid>
+
+					<description><![CDATA[Previously I&#8217;d mentioned a style guide from Google that covered shell scripts. Turns out they have a style guide for just about everything &#8211; https://github.com/google/styleguide: “Style” covers a lot of ground, from “use camelCase for variable names” to “never use global variables” to “never use exceptions.” This project holds the style guidelines we use for [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Previously I&#8217;d mentioned <a href="https://josephscott.org/archives/2015/08/shell-style-guide/">a style guide from Google that covered shell scripts</a>.  Turns out they have a style guide for just about everything &#8211; <a href="https://github.com/google/styleguide">https://github.com/google/styleguide</a>:</p>
+<blockquote><p>
+“Style” covers a lot of ground, from “use camelCase for variable names” to “never use global variables” to “never use exceptions.” This project holds the style guidelines we use for Google code. If you are modifying a project that originated at Google, you may be pointed to this page to see the style guides that apply to that project.</p>
+<p>Our C++ Style Guide, Objective-C Style Guide, Java Style Guide, Python Style Guide, Shell Style Guide, HTML/CSS Style Guide, JavaScript Style Guide, AngularJS Style Guide, Common Lisp Style Guide, and Vimscript Style Guide are now available. We have also released cpplint, a tool to assist with style guide compliance, and google-c-style.el, an Emacs settings file for Google style.
+</p></blockquote>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/08/google-style/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: JavaScript Timing, Nothing Under 10ms	</title>
+	<atom:link href="/2007/03/02/javascript-timing-nothing-under-10ms/feed/" rel="self" type="application/rss+xml" />
+	<link>/2007/03/02/javascript-timing-nothing-under-10ms/</link>
+	<description></description>
+	<lastBuildDate>Thu, 01 May 2008 15:58:01 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2007/03/02/javascript-timing-nothing-under-10ms/#comment-1810</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 01 May 2008 15:58:01 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/03/02/javascript-timing-nothing-under-10ms/#comment-1810</guid>
+
+					<description><![CDATA[@Dan -
+
+While the two are similar, they aren&#039;t identical.  Which one to use will depend on what exactly you need to have happen.  setInterval will run until you tell it not to, setTimeout will run just once unless you reset it each time.]]></description>
+			<content:encoded><![CDATA[<p>@Dan &#8211;</p>
+<p>While the two are similar, they aren&#8217;t identical.  Which one to use will depend on what exactly you need to have happen.  setInterval will run until you tell it not to, setTimeout will run just once unless you reset it each time.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Dan		</title>
+		<link>/2007/03/02/javascript-timing-nothing-under-10ms/#comment-1809</link>
+
+		<dc:creator><![CDATA[Dan]]></dc:creator>
+		<pubDate>Thu, 01 May 2008 14:38:31 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/03/02/javascript-timing-nothing-under-10ms/#comment-1809</guid>
+
+					<description><![CDATA[hello,
+im a javascript newbie.
+
+im currently developing an AJAX based chat system.
+
+im really in doubt on what to use between setInterval and setTimeout to periodically checks for new messages and user&#039;s that is currently online.
+
+i&#039;ve read that setTimeout is widely used..
+
+so my question is which one do you think will be the best for me?
+
+thanks]]></description>
+			<content:encoded><![CDATA[<p>hello,<br />
+im a javascript newbie.</p>
+<p>im currently developing an AJAX based chat system.</p>
+<p>im really in doubt on what to use between setInterval and setTimeout to periodically checks for new messages and user&#8217;s that is currently online.</p>
+<p>i&#8217;ve read that setTimeout is widely used..</p>
+<p>so my question is which one do you think will be the best for me?</p>
+<p>thanks</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

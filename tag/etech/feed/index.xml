@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>etech &#8211; Joseph Scott</title>
+	<atom:link href="/tag/etech/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 08 Mar 2006 01:05:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>A (Re)-Introduction to JavaScript</title>
+		<link>/2006/03/07/a-re-introduction-to-javascript/</link>
+					<comments>/2006/03/07/a-re-introduction-to-javascript/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 08 Mar 2006 01:05:44 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[etech]]></category>
+		<category><![CDATA[javascript]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/03/07/a-re-introduction-to-javascript/</guid>
+
+					<description><![CDATA[Simon was kind enough to put his Etech 2006 presentation online: A (Re)-Introduction to JavaScript. There are more than 100 slides, so give yourself some time if you are going to digest all of it. Phil Windley posted his notes from Simon&#8217;s session.]]></description>
+										<content:encoded><![CDATA[<p>Simon was kind enough to put his <a href="http://simon.incutio.com/archive/2006/03/07/etech">Etech 2006 presentation</a> online: <a href="http://simon.incutio.com/slides/2006/etech/javascript/js-tutorial.001.html">A (Re)-Introduction to JavaScript</a>.  There are more than 100 slides, so give yourself some time if you are going to digest all of it.</p>
+<p>Phil Windley posted his <a href="http://www.windley.com/archives/2006/03/introduction_to.shtml">notes</a> from Simon&#8217;s session.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/03/07/a-re-introduction-to-javascript/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

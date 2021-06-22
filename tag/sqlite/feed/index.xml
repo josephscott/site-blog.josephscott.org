@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sqlite &#8211; Joseph Scott</title>
+	<atom:link href="/tag/sqlite/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 14 Aug 2019 16:38:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>SQLite As A Data Exchange Format</title>
+		<link>/2019/08/14/sqlite-as-a-data-exchange-format/</link>
+					<comments>/2019/08/14/sqlite-as-a-data-exchange-format/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 14 Aug 2019 16:38:45 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[sqlite]]></category>
+		<guid isPermaLink="false">/?p=17552</guid>
+
+					<description><![CDATA[Last month I was poking around the SQLite docs and came across three things that got me thinking about SQLite as a data exchange format. Long Term Support: They are aiming to &#8220;support SQLite through the year 2050&#8221;. Obviously this isn&#8217;t a guarantee, unforeseen things can ( and do ) always happen. What this does [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Last month I was poking around the <a href="https://www.sqlite.org/index.html">SQLite</a> docs and came across three things that got me thinking about SQLite as a data exchange format.</p>
+<p><a href="https://sqlite.org/lts.html">Long Term Support</a>: They are aiming to &#8220;support SQLite through the year 2050&#8221;.  Obviously this isn&#8217;t a guarantee, unforeseen things can ( and do ) always happen.  What this does point to is the aim of their thinking: long term.  That leads to making decisions with strong consideration for compatibility issues.</p>
+<p><a href="https://sqlite.org/fileformat2.html">Database File Format</a>: Documentation for the database files themselves.  Writing docs is usually at the bottom of the list, so it is nice to see this effort.</p>
+<p><a href="https://sqlite.org/locrsf.html">US Library of Congress</a>: SQLite is listed as one of the <a href="https://www.loc.gov/preservation/resources/rfs/data.html">recommended dataset formats by the US Library of Congress</a>.  Always nice to see a recommendation from an entity who is in the business of preserving things for the long term.  I suspect having <a href="https://www.sqlite.org/copyright.html">SQLite in the public domain</a> helps.</p>
+<p>All of this had me wondering about the potential benefits of using SQLite database files for exchanging datasets, especially for importing and exporting.</p>
+<p>A couple of things would be very helpful for forward and backwards compatibility.  Using <a href="https://www.sqlite.org/lang_createview.html">VIEWs</a> would make it possible to change the underlying table structures while exposing different versions of that data.  You might have a VIEW for each major version of your data.  Then code for processing could always deal with the VIEW version it understood.</p>
+<p>Even without VIEWs, adding data can be done by adding more tables.  If your code doesn&#8217;t know anything about that new data yet, no problem, it never queries those tables.</p>
+<p>If I were to replace the WordPress import/export format ( WXR ), which is lots of XML, I&#8217;d give consideration to SQLite as an option. It is already strongly related to the MySQL tables it uses.  Some WordPress plugins create their own tables, and those would be easy to include as well.</p>
+<p>I definitely have a soft spot in my heart for plain text, but I can&#8217;t deny a certain attraction to SQLite for exchanging data.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/08/14/sqlite-as-a-data-exchange-format/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>SQL Tutorial</title>
+		<link>/2015/11/10/sql-tutorial/</link>
+					<comments>/2015/11/10/sql-tutorial/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 10 Nov 2015 16:41:30 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[sql]]></category>
+		<category><![CDATA[sqlite]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13824</guid>
+
+					<description><![CDATA[Looking for an easy way to learn the basics of SQL ( Structured Query Language )? Check out sqlteaching.com. It has 31 lessons ranging from the basics of SELECT to CASE statements. While they use SQLite for the queries, the basics of SQL are broadly applicable.]]></description>
+										<content:encoded><![CDATA[<p>Looking for an easy way to learn the basics of <a href="https://en.wikipedia.org/wiki/SQL">SQL</a> ( Structured Query Language )?  Check out <a href="https://www.sqlteaching.com/">sqlteaching.com</a>.</p>
+<p>It has 31 lessons ranging from the basics of <code>SELECT</code> to <code>CASE</code> statements.  While they use <a href="https://www.sqlite.org/">SQLite</a> for the queries, the basics of SQL are broadly applicable.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/10/sql-tutorial/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Little Steps</title>
+		<link>/2014/10/17/little-steps/</link>
+					<comments>/2014/10/17/little-steps/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 17 Oct 2014 16:59:28 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[richard-hipp]]></category>
+		<category><![CDATA[sqlite]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11197</guid>
+
+					<description><![CDATA[Richard Hipp on improving SQLite performance, 50% faster than 3.7.17: This is 50% faster at the low-level grunt work of moving bits on and off disk and search b-trees. We have achieved this by incorporating hundreds of micro-optimizations. Each micro-optimization might improve the performance by as little as 0.05%. If we get one that improves [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Richard Hipp on improving SQLite performance, <a href="http://permalink.gmane.org/gmane.comp.db.sqlite.general/90549">50% faster than 3.7.17</a>:</p>
+<blockquote><p>
+This is 50% faster at the low-level grunt work of moving bits on and off disk and search b-trees.  We have achieved this by incorporating hundreds of micro-optimizations.  Each micro-optimization might improve the performance by as little as 0.05%.  If we get one that improves performance by 0.25%, that is considered a huge win.  Each of these optimizations is unmeasurable on a real-world system (we have to use cachegrind to get repeatable run-times) but if you do enough of them, they add up.
+</p></blockquote>
+<p>More often than not getting a big improvement in performance is about doing lots of little things.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/10/17/little-steps/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Thredis, the Peanut Butter Cup of Databases</title>
+		<link>/2013/02/25/thredis-the-peanut-butter-cup-of-databases/</link>
+					<comments>/2013/02/25/thredis-the-peanut-butter-cup-of-databases/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 25 Feb 2013 17:32:48 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[redis]]></category>
+		<category><![CDATA[sqlite]]></category>
+		<category><![CDATA[thredis]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6702</guid>
+
+					<description><![CDATA[Ever wonder what would happen if you dipped SQLite into Redis? You get Thredis, the peanut butter cup of databases: Thredis embeds an in-memory SQLite database within Redis to enable a sophisticated level of SQL (joins, sub-selects, etc, all supported), as well as introduces multi-threaded processing to take advantage of SMP systems. This is one [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Ever wonder what would happen if you dipped <a href="http://www.sqlite.org/">SQLite</a> into <a href="http://redis.io/">Redis</a>?  You get <a href="http://thredis.org/">Thredis</a>, the peanut butter cup of databases:</p>
+<blockquote><p>
+Thredis embeds an in-memory SQLite database within Redis to enable a<br />
+sophisticated level of SQL (joins, sub-selects, etc, all supported),<br />
+as well as introduces multi-threaded processing to take advantage of<br />
+SMP systems.
+</p></blockquote>
+<p>This is one wild hack, check out one of the examples:</p>
+<p>[sourcecode]<br />
+redis 127.0.0.1:6379&gt; zadd foo_zset 1 a 2 b 3 c<br />
+(integer) 3<br />
+redis 127.0.0.1:6379&gt; sql &quot;create virtual table zset using redis (foo_zset)&quot;<br />
+OK<br />
+redis 127.0.0.1:6379&gt; sql &quot;select * from zset&quot;<br />
+1) 1) &quot;key&quot;<br />
+   2) &quot;val&quot;<br />
+2) 1) &quot;1.0&quot;<br />
+   2) &quot;a&quot;<br />
+3) 1) &quot;2.0&quot;<br />
+   2) &quot;b&quot;<br />
+4) 1) &quot;3.0&quot;<br />
+   2) &quot;c&quot;<br />
+[/sourcecode]</p>
+<p>More examples are listed at <a href="http://thredis.org/">http://thredis.org/</a>, source code is available at <a href="https://github.com/grisha/thredis">https://github.com/grisha/thredis</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/02/25/thredis-the-peanut-butter-cup-of-databases/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Guide to PHP Security</title>
+		<link>/2005/10/11/guide-to-php-security/</link>
+					<comments>/2005/10/11/guide-to-php-security/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 11 Oct 2005 19:27:08 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[sql]]></category>
+		<category><![CDATA[sqlinjection]]></category>
+		<category><![CDATA[sqlite]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=502</guid>
+
+					<description><![CDATA[The chapter on SQL Injection from the book Guide to PHP Security by Ilia Alshanetsky is available in PDF format. This can be a rather fun topic so I downloaded a copy of the PDF and started reading. I&#8217;d read less two pages before I was ready to toss this chapter out the window. The [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The chapter on <a href="http://dev.mysql.com/tech-resources/articles/guide-to-php-security.html">SQL Injection</a> from the book <a href="http://www.amazon.com/gp/product/0973862106/002-2635821-4429631">Guide to PHP Security</a> by <a href="http://ilia.ws/">Ilia Alshanetsky</a> is available in <a href="http://dev.mysql.com/tech-resources/articles/guide-to-php-security-ch3.pdf">PDF format</a>.  This can be a rather fun topic so I downloaded a copy of the PDF and started reading.  I&#8217;d read less two pages before I was ready to toss this chapter out the window.</p>
+<p>The first example showed a very simple inject that terminated the original query with a ; and appended another query that deleted some data.  The example used <a href="http://www.mysql.com/">MySQL</a> functions and the author noted the following after explaining the injection:</p>
+<blockquote><p>
+Fortunately, if you use MySQL, the mysql_query() function does not permit query stacking, or executing multiple queries in a single function call.  If you try to stack queries, the call fails.</p>
+<p>However, other PHP database extensions, such as <strong>SQLite and PostgreSQL, happily perform stacked queries, executing all of the queries provided in one string and creating a serious security problem</strong>.
+</p></blockquote>
+<p>The emphasis is mine.  I couldn&#8217;t believe that the author was basically claiming that MySQL is more secure than <a href="http://www.sqlite.org/">SQLite</a> and <a href="http://www.postgresql.org/">PostgreSQL</a> because they allowed you to run multiple SQL statements in one string.  Then something else came to mind, didn&#8217;t MySQL add this feature not too long ago?  So I went hunting around and came up with the <a href="http://dev.mysql.com/doc/mysql/en/c-api-multiple-queries.html">C API Handling of Multiple Query Execution</a> in MySQL, which was introduced in version 4.1.  Although still correct, the <a href="http://us2.php.net/mysql_query">mysql_query()</a> function in <a href="http://www.php.net/">PHP</a> doesn&#8217;t allow for multiple statements, the underlying C libraries do.  I&#8217;d expect that at somepoint in the future PHP will catch up and support that feature for MySQL 4.1 and above.</p>
+<p>But back to my first point, being able to run multiple queries in a single string is not a security threat.  Not proplerly filtering data before using in an SQL statement is.  If you allow unfiltered data to be injected into your SQL statement then you&#8217;ve got problems, even if you database doesn&#8217;t support multiple statements in a single string.</p>
+<p>I hope that this isn&#8217;t typical of the rest of the book.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/10/11/guide-to-php-security/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>aol &#8211; Joseph Scott</title>
+	<atom:link href="/tag/aol/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 14 May 2015 14:45:18 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>The 1% of United States Internet Users</title>
+		<link>/2015/05/14/the-1-of-united-states-internet-users/</link>
+					<comments>/2015/05/14/the-1-of-united-states-internet-users/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 14 May 2015 14:45:18 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[aol]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[verizon]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12441</guid>
+
+					<description><![CDATA[The Verizon / AOL deal has brought up an interesting data point: AOL still has 2.1 million dial customers ( page 4 in the PDF ). Combined this with the number of Internet users in the United States ( ~279 million ) you get: ~1% of United States Internet users are on AOL dial up. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The <a href="http://qz.com/403151/why-verizon-is-buying-aol-for-4-4-billion/">Verizon / AOL deal</a> has brought up an interesting data point: <a href="http://phx.corporate-ir.net/External.File?item=UGFyZW50SUQ9Mjg1NDc0fENoaWxkSUQ9LTF8VHlwZT0z&#038;t=1">AOL still has 2.1 million dial customers</a> ( page 4 in the PDF ).</p>
+<p>Combined this with the <a href="http://www.internetlivestats.com/internet-users-by-country/">number of Internet users in the United States</a> ( ~279 million ) you get: <strong>~1% of United States Internet users are on AOL dial up</strong>.</p>
+<p>I ran www.google.com through WebPageTest, comparing <a href="http://www.webpagetest.org/result/150514_5R_SQR/">Cable</a> ( 5 Mbps down, 1Mbps up, 28ms RTT ) to <a href="http://www.webpagetest.org/result/150514_YG_SQH/">56k dialup</a> ( 49Kbps down, 30Kbps up, 120ms RTT ).  The <a href="http://www.webpagetest.org/video/compare.php?tests=150514_5R_SQR%2C150514_YG_SQH&#038;thumbSize=200&#038;ival=100&#038;end=visual">result</a>:</p>
+<div style="width: 580px;" class="wp-video"><!--[if lt IE 9]><script>document.createElement('video');</script><![endif]-->
+<video class="wp-video-shortcode" id="video-12441-1" width="580" height="257" preload="metadata" controls="controls"><source type="video/mp4" src="/wp-content/uploads/2015/05/wpt-google-dialup-1.mp4?_=1" /><a href="/wp-content/uploads/2015/05/wpt-google-dialup-1.mp4">/wp-content/uploads/2015/05/wpt-google-dialup-1.mp4</a></video></div>
+<p>And google.com is fast compared to most sites, nearly every modern web site is going to be horribly painful on a dialup connection.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/05/14/the-1-of-united-states-internet-users/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		<enclosure url="/wp-content/uploads/2015/05/wpt-google-dialup-1.mp4" length="589486" type="video/mp4" />
+
+			</item>
+		<item>
+		<title>Android Devices as the new AOL CD</title>
+		<link>/2013/07/25/android-devices-as-the-new-aol-cd/</link>
+					<comments>/2013/07/25/android-devices-as-the-new-aol-cd/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 25 Jul 2013 20:47:26 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[aol]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=8739</guid>
+
+					<description><![CDATA[Tech companies with mobile apps can practically tile walls with outdated Android devices. They’re the new AOL CDs. A footnote from Marco Arment on the Android tablet-usage gap. Definitely not a compliment.]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+Tech companies with mobile apps can practically tile walls with outdated Android devices. They’re the new AOL CDs.
+</p></blockquote>
+<p>A footnote from <a href='http://www.marco.org/2013/07/25/nexus-72'>Marco Arment on the Android tablet-usage gap</a>.</p>
+<p>Definitely not a compliment.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/07/25/android-devices-as-the-new-aol-cd/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Weblogs.com and Weblogs, Inc. Sold</title>
+		<link>/2005/10/07/weblogscom-and-weblogs-inc-sold/</link>
+					<comments>/2005/10/07/weblogscom-and-weblogs-inc-sold/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 07 Oct 2005 16:09:09 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[aol]]></category>
+		<category><![CDATA[verisign]]></category>
+		<category><![CDATA[weblogs.com]]></category>
+		<category><![CDATA[weblogsinc]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=498</guid>
+
+					<description><![CDATA[This seems to have been the week to announce purchases of blogs and blogging resources. First up, Weblogs, Inc. was sold to AOL. Later on we learned that Weblogs.com was sold to Verisign. Congrats to both Jason and Dave on these deals, they&#8217;ve both worked hard on these resources and deserve this success. Both these [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>This seems to have been the week to announce purchases of blogs and blogging resources.  First up, <a href="http://weblogsinc.com/">Weblogs, Inc.</a> was <a href="http://www.paidcontent.org/pc/arch/2005_10_05.shtml#051691">sold to AOL</a>.  Later on we learned that <a href="http://weblogs.com/">Weblogs.com</a> was sold to <a href="http://verisign.com/">Verisign</a>.  Congrats to both Jason and Dave on these deals, they&#8217;ve both worked hard on these resources and deserve this success.</p>
+<p>Both these deals have left me with more questions though.  What does AOL see in Weblogs, Inc?  Nothing against Weblogs, Inc, but AOL is huge, what attracted them enough to make a purchasing offer?  And what is up with <a href="http://archive.scripting.com/2005/10/07#whatADay">Dave Winer selling weblogs.com to Verisign</a>?  Verisign?  As others have already noted it was certainly time to weblogs.com to be run with deeper pockets and Dave probably wants to move on and do other things.  But Verisign?  The company that has been considered evil for at least the last 10 years?  I don&#8217;t trust Verisign and I won&#8217;t be surprised if they make some very foolish decisions over the next few years with weblogs.com.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/10/07/weblogscom-and-weblogs-inc-sold/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

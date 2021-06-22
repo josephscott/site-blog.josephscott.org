@@ -1,0 +1,86 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2011/06/07/http-basic-auth-with-httplib2/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2011/06/07/http-basic-auth-with-httplib2/",
+    "feed_url": "https://blog.josephscott.org/2011/06/07/http-basic-auth-with-httplib2/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: HTTP Basic Auth with httplib2",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2011/06/07/http-basic-auth-with-httplib2/#comment-3696",
+            "url": "https://blog.josephscott.org/2011/06/07/http-basic-auth-with-httplib2/#comment-3696",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2011/06/07/http-basic-auth-with-httplib2/#comment-3695\">Scott S-Allen</a>.\n\nI've also started looking at <a href=\"http://docs.python-requests.org/en/latest/index.html\" rel=\"nofollow\">Requests</a> as another option.",
+            "content_text": "In reply to Scott S-Allen.\n\nI've also started looking at Requests as another option.",
+            "date_published": "2012-05-30T09:03:01-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2011/06/07/http-basic-auth-with-httplib2/#comment-3695",
+            "url": "https://blog.josephscott.org/2011/06/07/http-basic-auth-with-httplib2/#comment-3695",
+            "content_html": "httplib2 does handle connections differently than the built-in libraries and conveniently enables an on-disk cache (.cache by default). I chose it for a project that needed to manage connections more proactively than urllib, et al. A side effect of this is the response object maintains a reference and is therefore persistent allowing other code to be a bit more lazy. That can bite, for me it allowed for some cleaner code.\n\nThe auth bit you were at odds with is the _request method (__init__.py file). While I've not poked at it in earnest, the change appears to be trivial to implement cleanly. I wanted to see if a guy could easily append the auth into the authorizations attribute but the way the first request is made precludes that from working it appears.\n\nThe one justification that may make a difference with the author is that some systems (some might say broken), do not play well without some from the start. I work with one vendor that requires basic-auth to prompt a 401 response for the next level. Like you, I simply send auth (both to the example) in the first headers and the full query URI for a single-step request and response.\n\nRegardless of all this, I used the same method as you via custom headers. It was trivial and easily maintained.",
+            "content_text": "httplib2 does handle connections differently than the built-in libraries and conveniently enables an on-disk cache (.cache by default). I chose it for a project that needed to manage connections more proactively than urllib, et al. A side effect of this is the response object maintains a reference and is therefore persistent allowing other code to be a bit more lazy. That can bite, for me it allowed for some cleaner code.\n\nThe auth bit you were at odds with is the _request method (__init__.py file). While I've not poked at it in earnest, the change appears to be trivial to implement cleanly. I wanted to see if a guy could easily append the auth into the authorizations attribute but the way the first request is made precludes that from working it appears.\n\nThe one justification that may make a difference with the author is that some systems (some might say broken), do not play well without some from the start. I work with one vendor that requires basic-auth to prompt a 401 response for the next level. Like you, I simply send auth (both to the example) in the first headers and the full query URI for a single-step request and response.\n\nRegardless of all this, I used the same method as you via custom headers. It was trivial and easily maintained.",
+            "date_published": "2012-05-29T01:27:38-06:00",
+            "authors": [
+                {
+                    "name": "Scott S-Allen",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/b14dbacef19fb17fa757efb12cb9c423?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Scott S-Allen",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/b14dbacef19fb17fa757efb12cb9c423?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2011/06/07/http-basic-auth-with-httplib2/#comment-3694",
+            "url": "https://blog.josephscott.org/2011/06/07/http-basic-auth-with-httplib2/#comment-3694",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2011/06/07/http-basic-auth-with-httplib2/#comment-3693\">Nikolay</a>.\n\nI looked at urllib/urllib2 originally, but the HTTPPasswordMgr approach did not look appealing.",
+            "content_text": "In reply to Nikolay.\n\nI looked at urllib/urllib2 originally, but the HTTPPasswordMgr approach did not look appealing.",
+            "date_published": "2011-06-27T13:17:48-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2011/06/07/http-basic-auth-with-httplib2/#comment-3693",
+            "url": "https://blog.josephscott.org/2011/06/07/http-basic-auth-with-httplib2/#comment-3693",
+            "content_html": "Why are you using <code>httplib2</code>? There is a built-in HTTP library: <a href=\"http://docs.python.org/library/urllib2.html\" rel=\"nofollow\">urllib2</a>, which will serve you will (and supports basic auth out of the box).",
+            "content_text": "Why are you using httplib2? There is a built-in HTTP library: urllib2, which will serve you will (and supports basic auth out of the box).",
+            "date_published": "2011-06-27T03:27:11-06:00",
+            "authors": [
+                {
+                    "name": "Nikolay",
+                    "url": "http://nikolay.bg/",
+                    "avatar": "https://secure.gravatar.com/avatar/75fb365927cb3f5f7b677682d6249406?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Nikolay",
+                "url": "http://nikolay.bg/",
+                "avatar": "https://secure.gravatar.com/avatar/75fb365927cb3f5f7b677682d6249406?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

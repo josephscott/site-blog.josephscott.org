@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>caddy &#8211; Joseph Scott</title>
+	<atom:link href="/tag/caddy/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 06 Aug 2015 14:01:14 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Caddy</title>
+		<link>/2015/08/06/caddy/</link>
+					<comments>/2015/08/06/caddy/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 06 Aug 2015 14:01:14 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[caddy]]></category>
+		<category><![CDATA[go]]></category>
+		<category><![CDATA[http2]]></category>
+		<category><![CDATA[markdown]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12719</guid>
+
+					<description><![CDATA[The ramp up to HTTP/2 seems to have also triggered a renewed interest in web server software. I recently came across Caddy, a web server written in Go. From the FAQ: Fundamentally, Caddy aims to make websites easier by lowering the barrier to entry. Like other web servers, Caddy is for system administrators and web [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The ramp up to HTTP/2 seems to have also triggered a renewed interest in web server software.  I recently came across <a href="https://caddyserver.com/">Caddy</a>, a web server written in Go.  From the <a href="https://caddyserver.com/docs/faq">FAQ</a>:</p>
+<blockquote><p>
+Fundamentally, Caddy aims to make websites easier by lowering the barrier to entry. Like other web servers, Caddy is for system administrators and web developers, but Caddy is also tailored for designers and writers who don&#8217;t want to deal with a lot of the technical cruft that traditionally comes along with setting up a server.</p>
+<p>Caddy has different goals and advantages. Nginx is first and foremost a capable reverse proxy, whereas Caddy&#8217;s primary goal is to be an easy-to-use static file web server. Caddy desires cross-platform independence and portability without the need for custom builds.
+</p></blockquote>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/08/06/caddy/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

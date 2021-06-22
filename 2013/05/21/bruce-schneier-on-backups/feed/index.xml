@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Bruce Schneier on Backups	</title>
+	<atom:link href="/2013/05/21/bruce-schneier-on-backups/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/05/21/bruce-schneier-on-backups/</link>
+	<description></description>
+	<lastBuildDate>Fri, 07 Jun 2013 15:42:19 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2013/05/21/bruce-schneier-on-backups/#comment-4054</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 07 Jun 2013 15:42:19 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=7626#comment-4054</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/05/21/bruce-schneier-on-backups/#comment-4053&quot;&gt;Donncha&lt;/a&gt;.
+
+I&#039;m hopeful we&#039;ll see even better syncing of mobile device data going forward.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/05/21/bruce-schneier-on-backups/#comment-4053">Donncha</a>.</p>
+<p>I&#8217;m hopeful we&#8217;ll see even better syncing of mobile device data going forward.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Donncha		</title>
+		<link>/2013/05/21/bruce-schneier-on-backups/#comment-4053</link>
+
+		<dc:creator><![CDATA[Donncha]]></dc:creator>
+		<pubDate>Fri, 07 Jun 2013 09:03:41 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=7626#comment-4053</guid>
+
+					<description><![CDATA[This is something I&#039;ve been meaning to blog about. I use an app called &quot;Folder Sync&quot; to sync all the photos off my (Android) phone every few hours to my desktop PC over SMB/wifi. Annoyingly it occasionally grabbed some of the images before Google Plus had a chance to upload them so I bought the full version and added a filter filter excluding any file newer than 2 days old. This should give G+ ample time to upload any images too!
+
+Meanwhile, backblaze is still humming away doing an initial upload. Only another 450GB of data to go ..]]></description>
+			<content:encoded><![CDATA[<p>This is something I&#8217;ve been meaning to blog about. I use an app called &#8220;Folder Sync&#8221; to sync all the photos off my (Android) phone every few hours to my desktop PC over SMB/wifi. Annoyingly it occasionally grabbed some of the images before Google Plus had a chance to upload them so I bought the full version and added a filter filter excluding any file newer than 2 days old. This should give G+ ample time to upload any images too!</p>
+<p>Meanwhile, backblaze is still humming away doing an initial upload. Only another 450GB of data to go ..</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>paywall &#8211; Joseph Scott</title>
+	<atom:link href="/tag/paywall/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 20 May 2013 13:16:29 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Getting Around the LinkedIn 3rd Degree Connection Paywall</title>
+		<link>/2013/05/20/getting-around-the-linkedin-3rd-degree-connection-paywall/</link>
+					<comments>/2013/05/20/getting-around-the-linkedin-3rd-degree-connection-paywall/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 20 May 2013 13:16:29 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[linkedin]]></category>
+		<category><![CDATA[paywall]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7679</guid>
+
+					<description><![CDATA[Last week I linked to Ted Dziuba&#8217;s post, The Speculation Trap. I noticed a LinkedIn profile link on http://teddziuba.com/, which I clicked on, curious to know a little bit more about Ted. Off I go to http://www.linkedin.com/in/teddziuba and I get presented with this really annoying message: I&#8217;m already signed into LinkedIn, and apparently Ted is [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Last week I linked to <a href="http://josephscott.org/archives/2013/05/avoid-speculation-questions/">Ted Dziuba&#8217;s post, The Speculation Trap</a>.  I noticed a LinkedIn profile link on <a href="http://teddziuba.com/">http://teddziuba.com/</a>, which I clicked on, curious to know a little bit more about Ted.  Off I go to http://www.linkedin.com/in/teddziuba and I get presented with this really annoying message:</p>
+<p><img loading="lazy" src="https://sharedat.net/f/kD/kDuY/linked-in-3rd-degree-profile.png" width="658" height="94" class="aligncenter" /></p>
+<p>I&#8217;m already signed into LinkedIn, and apparently Ted is a 3rd degree connection for me.  This triggers a response on LinkedIn that hides all of the profile information unless I upgrade to a paid account.  I like LinkedIn, but don&#8217;t have an interest in paying $20 &#8211; $75 per month for it.</p>
+<p>Turns out there is a very simple work around to the 3rd degree connection paywall.  Logout of LinkedIn, then view the profile page again.  You will be able to see the bulk of the profile information.  </p>
+<p>In my case I use Chrome as my main browser, which means a Shift-Command-N ( on the Mac ) brings up an incognito window where I&#8217;m not signed into LinkedIn.  Toss in a copy-and-paste and you have a quick way around the LinkedIn 3rd degree connection paywall.</p>
+<p>It feels wrong for a site to be more useful when I&#8217;m signed out than when I&#8217;m signed in.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/05/20/getting-around-the-linkedin-3rd-degree-connection-paywall/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Edit In Place: Version 0.2.1	</title>
+	<atom:link href="/2006/06/12/edit-in-place-version-021/feed/" rel="self" type="application/rss+xml" />
+	<link>/2006/06/12/edit-in-place-version-021/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Jun 2006 20:46:18 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Josh		</title>
+		<link>/2006/06/12/edit-in-place-version-021/#comment-1403</link>
+
+		<dc:creator><![CDATA[Josh]]></dc:creator>
+		<pubDate>Mon, 19 Jun 2006 20:46:18 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/06/12/edit-in-place-version-021/#comment-1403</guid>
+
+					<description><![CDATA[Just a quick heads-up, but you may want to strip any input strings (and do any other validation you deem necessary) because right now, if you enter a bunch of spaces, the data is saved, but there is no link to go back and edit your text with.]]></description>
+			<content:encoded><![CDATA[<p>Just a quick heads-up, but you may want to strip any input strings (and do any other validation you deem necessary) because right now, if you enter a bunch of spaces, the data is saved, but there is no link to go back and edit your text with.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: joseph		</title>
+		<link>/2006/06/12/edit-in-place-version-021/#comment-1402</link>
+
+		<dc:creator><![CDATA[joseph]]></dc:creator>
+		<pubDate>Tue, 13 Jun 2006 16:03:01 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/06/12/edit-in-place-version-021/#comment-1402</guid>
+
+					<description><![CDATA[Bofe -
+
+My bad, I had accidently posted the development version of EditInPlace example page.  The color selector example will make use of a feature that will be available in the next release (hopefully).  Sorry about that.
+
+Thanks for letting me know about this.]]></description>
+			<content:encoded><![CDATA[<p>Bofe &#8211;</p>
+<p>My bad, I had accidently posted the development version of EditInPlace example page.  The color selector example will make use of a feature that will be available in the next release (hopefully).  Sorry about that.</p>
+<p>Thanks for letting me know about this.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: bofe		</title>
+		<link>/2006/06/12/edit-in-place-version-021/#comment-1401</link>
+
+		<dc:creator><![CDATA[bofe]]></dc:creator>
+		<pubDate>Tue, 13 Jun 2006 15:57:10 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/06/12/edit-in-place-version-021/#comment-1401</guid>
+
+					<description><![CDATA[Joseph,
+
+I&#039;m having issues on the example page with the Color dropdown. Just the Save/Cancel buttons are showing up. (along with a Javascript error: $(element) has no propertiesprototype.js (line 1384))
+
+I&#039;m using Firefox 1.5.0.4 on WinXP if that&#039;s any help.
+
+Keep up the great work!]]></description>
+			<content:encoded><![CDATA[<p>Joseph,</p>
+<p>I&#8217;m having issues on the example page with the Color dropdown. Just the Save/Cancel buttons are showing up. (along with a Javascript error: $(element) has no propertiesprototype.js (line 1384))</p>
+<p>I&#8217;m using Firefox 1.5.0.4 on WinXP if that&#8217;s any help.</p>
+<p>Keep up the great work!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

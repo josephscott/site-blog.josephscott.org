@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>yadm &#8211; Joseph Scott</title>
+	<atom:link href="/tag/yadm/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 09 Jan 2020 15:51:46 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Managing Shell And Dotfiles With yadm</title>
+		<link>/2020/01/09/managing-shell-and-dotfiles-with-yadm/</link>
+					<comments>/2020/01/09/managing-shell-and-dotfiles-with-yadm/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 09 Jan 2020 15:51:46 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[yadm]]></category>
+		<guid isPermaLink="false">/?p=17857</guid>
+
+					<description><![CDATA[For a number of years I&#8217;ve been using a home grown bash script to manage my shell and dotfiles. It was just enough to do the job, but it was never anything great ( not sure I&#8217;d even call it good ). As 2019 was coming to a close, I started looking at alternatives to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>For a number of years I&#8217;ve been using a home grown bash script to manage my shell and dotfiles.  It was just enough to do the job, but it was never anything great ( not sure I&#8217;d even call it good ).</p>
+<p>As 2019 was coming to a close, I started looking at alternatives to my ugly shell script.  There are several options out there, and the one I have settled on is <a href="https://yadm.io/">yadm</a>.</p>
+<p>There are two features that have made using yadm a happy experience.  First, it is basically <a href="https://yadm.io/docs/getting_started#">a wrapper for Git</a>.  If you&#8217;ve used Git, then using yadm will immediately feel familiar.  Second, the built in <a href="https://yadm.io/docs/alternates#">alternate files</a> support.  I&#8217;ve only used it for separate Linux and Mac OS binaries, but that by itself makes the feature worth while.</p>
+<p>Once <a href="https://yadm.io/docs/install">installed</a> you are only <a href="https://yadm.io/docs/getting_started">a few commands</a> away from starting a Git repo for your shell and dotfiles.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/01/09/managing-shell-and-dotfiles-with-yadm/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

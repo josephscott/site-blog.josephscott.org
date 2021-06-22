@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>gdb &#8211; Joseph Scott</title>
+	<atom:link href="/tag/gdb/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 18 Dec 2015 16:59:55 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>GDB Logging</title>
+		<link>/2015/12/18/gdb-logging/</link>
+					<comments>/2015/12/18/gdb-logging/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 18 Dec 2015 16:59:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[gdb]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14559</guid>
+
+					<description><![CDATA[I&#8217;ve found logging in GDB to be really helpful. Repeat after me: set logging on By default it will write to the file gdb.txt. For other logging commands see the GDB logging output page.]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve found logging in <a href="https://www.gnu.org/software/gdb/">GDB</a> to be really helpful.  Repeat after me:</p>
+<blockquote><p>
+set logging on
+</p></blockquote>
+<p>By default it will write to the file <code>gdb.txt</code>.  For other logging commands see the <a href="https://sourceware.org/gdb/onlinedocs/gdb/Logging-Output.html">GDB logging output</a> page.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/18/gdb-logging/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

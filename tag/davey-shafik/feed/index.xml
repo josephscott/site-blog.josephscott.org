@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>davey-shafik &#8211; Joseph Scott</title>
+	<atom:link href="/tag/davey-shafik/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 05 Oct 2015 14:44:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>PHP 7 Exceptions and Errors</title>
+		<link>/2015/10/05/php-7-exceptions-and-errors/</link>
+					<comments>/2015/10/05/php-7-exceptions-and-errors/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 05 Oct 2015 14:44:12 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[davey-shafik]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13409</guid>
+
+					<description><![CDATA[Davey Shafik on changes to exceptions in PHP7: With PHP 7 errors and exceptions are undergoing major changes. For the first time, the PHP engine will start to emit exceptions instead of standard PHP errors for (previously) fatal, and catchable fatal errors. This means that we can now handle them much more gracefully with try&#8230;catch. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Davey Shafik on <a href="https://daveyshafik.com/archives/69237-an-exceptional-change-in-php-7-0.html">changes to exceptions in PHP7</a>:</p>
+<blockquote><p>
+With PHP 7 errors and exceptions are undergoing major changes. For the first time, the PHP engine will start to emit exceptions instead of standard PHP errors for (previously) fatal, and catchable fatal errors. This means that we can now handle them much more gracefully with try&#8230;catch.
+</p></blockquote>
+<p>While I have mixed feelings about try&#8230;catch in general, I like the idea of being able to use it to catch more ( normally fatal ) errors.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/05/php-7-exceptions-and-errors/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

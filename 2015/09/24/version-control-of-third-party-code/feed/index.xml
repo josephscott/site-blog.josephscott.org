@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Version Control of Third Party Code	</title>
+	<atom:link href="/2015/09/24/version-control-of-third-party-code/feed/" rel="self" type="application/rss+xml" />
+	<link>/2015/09/24/version-control-of-third-party-code/</link>
+	<description></description>
+	<lastBuildDate>Fri, 25 Sep 2015 18:05:04 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2015/09/24/version-control-of-third-party-code/#comment-4378</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 25 Sep 2015 18:05:04 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=12844#comment-4378</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2015/09/24/version-control-of-third-party-code/#comment-4377&quot;&gt;Shawn McKenna&lt;/a&gt;.
+
+Shawn, been awhile!
+
+Versioning all the things is not a bad approach.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2015/09/24/version-control-of-third-party-code/#comment-4377">Shawn McKenna</a>.</p>
+<p>Shawn, been awhile!</p>
+<p>Versioning all the things is not a bad approach.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Shawn McKenna		</title>
+		<link>/2015/09/24/version-control-of-third-party-code/#comment-4377</link>
+
+		<dc:creator><![CDATA[Shawn McKenna]]></dc:creator>
+		<pubDate>Fri, 25 Sep 2015 17:57:22 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=12844#comment-4377</guid>
+
+					<description><![CDATA[note: that link has not seemed to work for me.
+
+But I completely agree with you.  From a JEE standpoint it makes no sense not to version control it.  If you have a multiple version line often some jars will not work with say a particular application server (I have clients on different ones like JBoss and WebLogic), but more importantly if you have a client that lags on a version, but needs a critical fix (and say you updated the third party software in a later version) you need that older version readily available (checkout the code to a sandbox, make the modification, commit the work, and if their is continuous integration set-up like Jenkins that&#039;s all the work you need to do to have a verified build and ear file -- not counting of course if you have specific ant properties that need to be changed.) *  
+
+* note there are some philosophies believe more in a unstable branch and stable trunk (default in Mercurial), but I found that version branches should always remain stable and ultimately prefer an unstable trunk (though sometimes you might even need to have a couple of unstable tags if you are doing R&#038;D in different areas.)  But I also believe that the trunk and branch versions should all trigger a continuous integration build.  Tends to make life simpler.  A side note I never liked that concept of hazing people who break the build. 
+
+Also it is important to version control DDL as well as anything that can possible change for a client(s) like archaic PL/SQL scripts (I tend to keep migration scripts in version control as well),  etcetera, etcetera, etcetera.  
+
+Shawn from Riverbank/Modesto :)]]></description>
+			<content:encoded><![CDATA[<p>note: that link has not seemed to work for me.</p>
+<p>But I completely agree with you.  From a JEE standpoint it makes no sense not to version control it.  If you have a multiple version line often some jars will not work with say a particular application server (I have clients on different ones like JBoss and WebLogic), but more importantly if you have a client that lags on a version, but needs a critical fix (and say you updated the third party software in a later version) you need that older version readily available (checkout the code to a sandbox, make the modification, commit the work, and if their is continuous integration set-up like Jenkins that&#8217;s all the work you need to do to have a verified build and ear file &#8212; not counting of course if you have specific ant properties that need to be changed.) *  </p>
+<p>* note there are some philosophies believe more in a unstable branch and stable trunk (default in Mercurial), but I found that version branches should always remain stable and ultimately prefer an unstable trunk (though sometimes you might even need to have a couple of unstable tags if you are doing R&amp;D in different areas.)  But I also believe that the trunk and branch versions should all trigger a continuous integration build.  Tends to make life simpler.  A side note I never liked that concept of hazing people who break the build. </p>
+<p>Also it is important to version control DDL as well as anything that can possible change for a client(s) like archaic PL/SQL scripts (I tend to keep migration scripts in version control as well),  etcetera, etcetera, etcetera.  </p>
+<p>Shawn from Riverbank/Modesto 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jim		</title>
+		<link>/2015/09/24/version-control-of-third-party-code/#comment-4376</link>
+
+		<dc:creator><![CDATA[Jim]]></dc:creator>
+		<pubDate>Thu, 24 Sep 2015 16:41:06 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=12844#comment-4376</guid>
+
+					<description><![CDATA[Absolutely! I&#039;ve been pushing for exactly this approach at UCD. (But no luck so far.) Yes, it takes a little bit of disk space for the compressed tarball -- no need to save the source tree in version control, as far as I&#039;m concerned. But the benefits of configuration management and system stability are *totally* worth it.]]></description>
+			<content:encoded><![CDATA[<p>Absolutely! I&#8217;ve been pushing for exactly this approach at UCD. (But no luck so far.) Yes, it takes a little bit of disk space for the compressed tarball &#8212; no need to save the source tree in version control, as far as I&#8217;m concerned. But the benefits of configuration management and system stability are *totally* worth it.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

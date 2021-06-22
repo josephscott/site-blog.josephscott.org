@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>tim-bray &#8211; Joseph Scott</title>
+	<atom:link href="/tag/tim-bray/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 17 Nov 2014 17:14:05 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Tor Needs To Be Normal</title>
+		<link>/2014/11/17/tor-needs-to-be-normal/</link>
+					<comments>/2014/11/17/tor-needs-to-be-normal/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 17 Nov 2014 17:14:05 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[tim-bray]]></category>
+		<category><![CDATA[tor]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11409</guid>
+
+					<description><![CDATA[Or at least not abnormal. While discussing How To Be Secret, Tim Bray mentions: You’ll note that I didn’t rec­om­mend us­ing Tor. For this sce­nar­i­o, I’m un­con­vinced that there’s a value-add. The Firm can de­tect Tor traf­fic, and so us­ing it feels to me like wav­ing a bright red “Secrets here!” flag. Using Tor is [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Or at least not abnormal.</p>
+<p><a href="/wp-content/uploads/2014/11/tor-logo-1.png"><img loading="lazy" src="/wp-content/uploads/2014/11/tor-logo-1.png" alt="tor-logo" width="300" height="182" class="aligncenter size-full wp-image-11414" /></a></p>
+<p>While discussing <a href="https://www.tbray.org/ongoing/When/201x/2014/11/14/Being-Secret">How To Be Secret</a>, Tim Bray mentions:</p>
+<blockquote><p>
+You’ll note that I didn’t rec­om­mend us­ing Tor. For this sce­nar­i­o, I’m un­con­vinced that there’s a value-add. The Firm can de­tect Tor traf­fic, and so us­ing it feels to me like wav­ing a bright red “Secrets here!” flag.
+</p></blockquote>
+<p>Using Tor is not a cure all for privacy and security.  In some cases the <a href="http://thestack.com/chakravarty-tor-traffic-analysis-141114">privacy might break down</a>, and <a href="http://arstechnica.com/security/2014/11/for-a-year-one-rogue-tor-node-added-malware-to-windows-executables/">security could be even worse</a>.</p>
+<p>Even with all of the issues Tor will no doubt need to overcome in the future, it will need to be a viable option for many more years.  One way that happens is to make the use of Tor more normal than it is today.</p>
+<p>To contribute to that change, at least once a week I&#8217;m going to use Tor.  I&#8217;d give it a catchy name like &#8220;Tor on Tuesdays&#8221;, but it shouldn&#8217;t be limited to the same day each week.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/11/17/tor-needs-to-be-normal/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Bitcoin ATM</title>
+		<link>/2013/11/18/bitcoin-atm/</link>
+					<comments>/2013/11/18/bitcoin-atm/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 18 Nov 2013 20:12:33 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[bitcoin]]></category>
+		<category><![CDATA[tim-bray]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9427</guid>
+
+					<description><![CDATA[Tim Bray wrote about using the Bitcoin ATM in Vancouver. The experience clearly isn&#8217;t on par with traditional bank ATMs, but it is a fascinating experiment. Can a Bitcoin ATM get significantly closer to a regular bank ATM? Would it even need to in order to get a decent number of people to use it? [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Tim Bray wrote about <a href="https://www.tbray.org/ongoing/When/201x/2013/11/15/I-Sold-Some-Bitcoins">using the Bitcoin ATM in Vancouver</a>.  The experience clearly isn&#8217;t on par with traditional bank ATMs, but it is a fascinating experiment.  Can a Bitcoin ATM get significantly closer to a regular bank ATM?  Would it even need to in order to get a decent number of people to use it?</p>
+<p>If an existing sizable bank started trying out Bitcoin that would be a significant move.  I would imagine a number of regulatory issues would come up.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/11/18/bitcoin-atm/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Tim Bray on IETF</title>
+		<link>/2013/11/11/tim-bray-on-ietf/</link>
+					<comments>/2013/11/11/tim-bray-on-ietf/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 11 Nov 2013 13:56:50 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[ietf]]></category>
+		<category><![CDATA[tim-bray]]></category>
+		<category><![CDATA[tls]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9397</guid>
+
+					<description><![CDATA[Tim Bray on IETF 88. Worth following just for the discussion around TLS.]]></description>
+										<content:encoded><![CDATA[<p><a href="https://www.tbray.org/ongoing/When/201x/2013/11/10/IETF-88">Tim Bray on IETF 88</a>.  Worth following just for the discussion around TLS.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/11/11/tim-bray-on-ietf/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Tim Bray on WordPress</title>
+		<link>/2011/03/17/tim-bray-on-wordpress/</link>
+					<comments>/2011/03/17/tim-bray-on-wordpress/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 17 Mar 2011 20:35:58 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[tim-bray]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3874</guid>
+
+					<description><![CDATA[There are lots of good products out there, but for self-hosted blogging in 2011, it’s really hard to beat WordPress. Tim Bray · Things about Blogging]]></description>
+										<content:encoded><![CDATA[<blockquote><p>There are lots of good products out there, but for self-hosted blogging in 2011, it’s really hard to beat WordPress.</p></blockquote>
+<p><a href='http://www.tbray.org/ongoing/When/201x/2011/03/07/BNotes'>Tim Bray · Things about Blogging</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/03/17/tim-bray-on-wordpress/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

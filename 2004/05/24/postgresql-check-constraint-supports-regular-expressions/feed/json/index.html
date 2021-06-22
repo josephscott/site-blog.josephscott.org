@@ -1,0 +1,162 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2004/05/24/postgresql-check-constraint-supports-regular-expressions/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2004/05/24/postgresql-check-constraint-supports-regular-expressions/",
+    "feed_url": "https://blog.josephscott.org/2004/05/24/postgresql-check-constraint-supports-regular-expressions/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: PostgreSQL Check Constraint Supports Regular Expressions",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-383",
+            "url": "https://blog.josephscott.org/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-383",
+            "content_html": "syntax:\n\nALTER Table Table_name\nADD constraints CHECK_column_name\nCHECK (REGEXP_LIKE(column_name,'(([0-9][a-z]{1}|[a-z][0-9]{1}))'));\n\n\nconsider the above syntax whether it is an apporiate syntax to create an constraint for a particular column\n\nExample:\nALTER Table userinfo\nADD constraints CHECK_password\nCHECK (REGEXP_LIKE(password,'(([0-9][a-z]{1}|[a-z][0-9]{1}))'));\n\nunable to determine the fault ,since the query is unable to get updated..\nKindly reply at your earliest.\n\nRegards\nJayanth S.",
+            "content_text": "syntax:\n\nALTER Table Table_name\nADD constraints CHECK_column_name\nCHECK (REGEXP_LIKE(column_name,'(([0-9][a-z]{1}|[a-z][0-9]{1}))'));\n\n\nconsider the above syntax whether it is an apporiate syntax to create an constraint for a particular column\n\nExample:\nALTER Table userinfo\nADD constraints CHECK_password\nCHECK (REGEXP_LIKE(password,'(([0-9][a-z]{1}|[a-z][0-9]{1}))'));\n\nunable to determine the fault ,since the query is unable to get updated..\nKindly reply at your earliest.\n\nRegards\nJayanth S.",
+            "date_published": "2008-06-16T04:40:02-06:00",
+            "authors": [
+                {
+                    "name": "jayanth",
+                    "url": "http://gmail.com",
+                    "avatar": "https://secure.gravatar.com/avatar/bf2cd95749780b84f3cb2274ec757ee5?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "jayanth",
+                "url": "http://gmail.com",
+                "avatar": "https://secure.gravatar.com/avatar/bf2cd95749780b84f3cb2274ec757ee5?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-382",
+            "url": "https://blog.josephscott.org/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-382",
+            "content_html": "Hi Peter,\n\nIf the purpose of this check is to only allow lowercase letters (as it is stated in the description), then what we want is a case sensitive search.  With the star, the check will allow both uppercase and lowercase letters.",
+            "content_text": "Hi Peter,\n\nIf the purpose of this check is to only allow lowercase letters (as it is stated in the description), then what we want is a case sensitive search.  With the star, the check will allow both uppercase and lowercase letters.",
+            "date_published": "2006-09-16T13:18:13-06:00",
+            "authors": [
+                {
+                    "name": "Preston",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/267bb563c41ac7074f9d91d9072db40a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Preston",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/267bb563c41ac7074f9d91d9072db40a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-381",
+            "url": "https://blog.josephscott.org/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-381",
+            "content_html": "No Preston, The star means the expression is case insensitive.",
+            "content_text": "No Preston, The star means the expression is case insensitive.",
+            "date_published": "2006-09-11T03:52:04-06:00",
+            "authors": [
+                {
+                    "name": "Peter",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/3b88568ed52f0f7a5297671546466bbe?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Peter",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/3b88568ed52f0f7a5297671546466bbe?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-380",
+            "url": "https://blog.josephscott.org/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-380",
+            "content_html": "[...] One a related note, I wrote a simple example on using regular expressions in check constraints. [...]",
+            "content_text": "[...] One a related note, I wrote a simple example on using regular expressions in check constraints. [...]",
+            "date_published": "2006-02-06T11:40:36-07:00",
+            "authors": [
+                {
+                    "name": "Rhyll &gt; PostgreSQL Blog &gt; Using Regular Expressions in PostgreSQL",
+                    "url": "http://rhyll.com/postgresql/blog/2006/02/06/using-regular-expressions-in-postgresql/",
+                    "avatar": false
+                }
+            ],
+            "author": {
+                "name": "Rhyll &gt; PostgreSQL Blog &gt; Using Regular Expressions in PostgreSQL",
+                "url": "http://rhyll.com/postgresql/blog/2006/02/06/using-regular-expressions-in-postgresql/",
+                "avatar": false
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-379",
+            "url": "https://blog.josephscott.org/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-379",
+            "content_html": "[...] Postgres is one of the few databases I&#8217;m aware of that currently solves the problem. You can see an example at Joseph Scott&#8217;s Blog of using a regex in a check constraint. [...]",
+            "content_text": "[...] Postgres is one of the few databases I&#8217;m aware of that currently solves the problem. You can see an example at Joseph Scott&#8217;s Blog of using a regex in a check constraint. [...]",
+            "date_published": "2006-01-26T09:01:44-07:00",
+            "authors": [
+                {
+                    "name": "Todd Huss&#8217; blog &raquo; Blog Archive &raquo; More powerful database constraints with regular expressions",
+                    "url": "http://gabrito.com/post/more-powerful-database-constraints-with-regular-expressions",
+                    "avatar": false
+                }
+            ],
+            "author": {
+                "name": "Todd Huss&#8217; blog &raquo; Blog Archive &raquo; More powerful database constraints with regular expressions",
+                "url": "http://gabrito.com/post/more-powerful-database-constraints-with-regular-expressions",
+                "avatar": false
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-378",
+            "url": "https://blog.josephscott.org/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-378",
+            "content_html": "Thanks for the example!  One small correction, I think your last line should read:\n\n( first_name ~ '^[a-z]+$')",
+            "content_text": "Thanks for the example!  One small correction, I think your last line should read:\n\n( first_name ~ '^[a-z]+$')",
+            "date_published": "2005-06-19T20:49:27-06:00",
+            "authors": [
+                {
+                    "name": "Preston",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/7888d15d2f8e12b93ed5c035eca95ffa?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Preston",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/7888d15d2f8e12b93ed5c035eca95ffa?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-377",
+            "url": "https://blog.josephscott.org/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-377",
+            "content_html": "Jeff: Yeah, 7.4+ uses an import of the regex code in recent versions of TCL. That code is itself a new version of Henry Spencer's regex code (updated by none other than Henry Spencer himself); it is not pcre, though. Nevertheless, PostgreSQL's regex implementation is pretty featureful.",
+            "content_text": "Jeff: Yeah, 7.4+ uses an import of the regex code in recent versions of TCL. That code is itself a new version of Henry Spencer's regex code (updated by none other than Henry Spencer himself); it is not pcre, though. Nevertheless, PostgreSQL's regex implementation is pretty featureful.",
+            "date_published": "2004-07-12T03:16:04-06:00",
+            "authors": [
+                {
+                    "name": "Neil Conway",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/dfae4a909d56eb06d0ed75b8fe1e3b06?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Neil Conway",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/dfae4a909d56eb06d0ed75b8fe1e3b06?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-376",
+            "url": "https://blog.josephscott.org/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-376",
+            "content_html": "As of version 7.4, the regular expression engine used by PostgreSQL is the same as that used by tcl (the language, that is).  I haven't investigated it's capabilities yet, but I am given to understand that it supports a lot of Perl-style regex extensions.  Whether it is \"PCRE\", I can't say.",
+            "content_text": "As of version 7.4, the regular expression engine used by PostgreSQL is the same as that used by tcl (the language, that is).  I haven't investigated it's capabilities yet, but I am given to understand that it supports a lot of Perl-style regex extensions.  Whether it is \"PCRE\", I can't say.",
+            "date_published": "2004-05-26T07:30:08-06:00",
+            "authors": [
+                {
+                    "name": "Jeff Eckermann",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/fec91b7a3037be62cd46cbbf42503878?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Jeff Eckermann",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/fec91b7a3037be62cd46cbbf42503878?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

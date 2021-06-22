@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Links &#8211; Joseph Scott</title>
+	<atom:link href="/tag/links/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 02 Jul 2019 16:20:06 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Links: June 2019</title>
+		<link>/2019/07/02/links-june-2019/</link>
+					<comments>/2019/07/02/links-june-2019/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 02 Jul 2019 16:20:06 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Links]]></category>
+		<guid isPermaLink="false">/?p=17527</guid>
+
+					<description><![CDATA[Improving Redux state transfer performance with JSON.parse(), a quick case study &#8211; Parsing JSON is faster than parsing JavaScript, and if the chunks are big enough, that becomes a measurable difference. Apple will permanently remove Dashboard in macOS Catalina &#8211; I use the dashboard in MacOS every day, removing it would be disappointing. KeyDB &#8211; [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://joreteg.com/blog/improving-redux-state-transfer-performance">Improving Redux state transfer performance with JSON.parse(), a quick case study</a> &#8211; Parsing JSON is faster than parsing JavaScript, and if the chunks are big enough, that becomes a measurable difference.</p>
+<p><a href="https://www.theverge.com/2019/6/4/18652971/apple-macos-catalina-dashboard-widgets-removed-feature">Apple will permanently remove Dashboard in macOS Catalina</a> &#8211; I use the dashboard in MacOS every day, removing it would be disappointing.</p>
+<p><a href="https://keydb.dev/">KeyDB</a> &#8211; Multi-threaded fork of Redis.</p>
+<p><a href="https://levelup.gitconnected.com/how-to-get-certbot-wildcard-certificates-3d25618a81e0">How to get Certbot wildcard certificates</a> &#8211; Let’s Encrypt has made the web a better place.  My only concern at this point is that we need other services to do the same thing, to avoid becoming overly reliant on just one provider.</p>
+<p><a href="https://developer.apple.com/documentation/macos_release_notes/macos_10_15_beta_release_notes#3318257">Future versions of macOS won’t include scripting language runtimes by default</a> &#8211; No more Python, Ruby, and Perl in MacOS by default going forward.  Granted they weren&#8217;t real good about keeping them updated, but I still think is a generally bad move.  See also: <a href="/2019/06/07/windows-and-macos-living-in-an-alternate-timeline/">Windows and MacOS: Living In An Alternate Timeline</a>.</p>
+<p><a href="https://gist.github.com/paulirish/5d52fb081b3570c81e3a">What forces layout / reflow</a> &#8211; A list of the ways JavaScript can trigger a reflow.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/07/02/links-june-2019/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links: May 2019</title>
+		<link>/2019/06/03/links-may-2019/</link>
+					<comments>/2019/06/03/links-may-2019/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 03 Jun 2019 14:33:48 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Links]]></category>
+		<guid isPermaLink="false">/?p=17485</guid>
+
+					<description><![CDATA[myactivity.google.com &#8211; View history for various Google products. Google MyAccount Purchases &#8211; Shows the purchases that Google has discovered by scanning your Gmail account. I haven&#8217;t found a way to turn this off yet ( grrr! ). doesitmutate.xyz &#8211; Quick reference list for which JavaScript array operations mutate and which ones don&#8217;t. classic.minecraft.com &#8211; Browser [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://myactivity.google.com/myactivity">myactivity.google.com</a> &#8211; View history for various Google products.</p>
+<p><a href="https://myaccount.google.com/purchases">Google MyAccount Purchases</a> &#8211; Shows the purchases that Google has discovered by scanning your Gmail account.  I haven&#8217;t found a way to turn this off yet ( grrr! ).</p>
+<p><a href="https://doesitmutate.xyz/">doesitmutate.xyz</a> &#8211; Quick reference list for which JavaScript array operations mutate and which ones don&#8217;t.</p>
+<p><a href="https://classic.minecraft.net/">classic.minecraft.com</a> &#8211; Browser based version of old school Minecraft.</p>
+<p><a href="https://www.thirdpartyweb.today/">3rd Party Web</a> &#8211; Third party JS is not free!</p>
+<p><a href="https://twitter.com/AndyDavies/status/1128748618305896452">The sweetest WebPageTest script</a> &#8211; Easy way to test requests only from the site domain.</p>
+<p><a href="https://h1bsalary.online/">h1bsalary.online</a> &#8211; Search for H1B visa salaries.</p>
+<p><a href="https://micmro.github.io/PerfCascade/">PerfCascade</a> &#8211; Display HAR files as a waterfall.</p>
+<p><a href="https://proxx.app/">proxx.app</a> &#8211; Web based Minesweeper clone, be sure to turn animations off or it will have your laptop fans going at full speed.</p>
+<p><a href="https://blog.chromium.org/2019/05/improving-privacy-and-security-on-web.html">Chrome and Cookies</a> &#8211; Google is taking some steps to change how cookies work on the web.</p>
+<p><a href="https://github.com/reorx/httpstat">httpstat</a> &#8211; Show curl timing details with color and style.</p>
+<p><a href="https://www.youtube.com/watch?v=8lYHNzoPS2o">QUIC at Facebook</a> &#8211; Presentation covering issues that Facebook has seen with deploying QUIC.</p>
+<p><a href="https://github.com/facebookincubator/mvfst">mvfst</a> &#8211; A QUIC implementation from Facebook.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/06/03/links-may-2019/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links: April 2019</title>
+		<link>/2019/05/01/links-april-2019/</link>
+					<comments>/2019/05/01/links-april-2019/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 01 May 2019 14:54:18 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Links]]></category>
+		<guid isPermaLink="false">/?p=17406</guid>
+
+					<description><![CDATA[Chrome Initiators and Dependencies &#8211; Hold the shift key and hover over requests in the network panel, it will show you what initiated it and what requests it triggered. Basic RUM, Backoffice &#8211; Open source RUM perf server. ITP 2.2 &#8211; The latest on ITP in Safari, with language like &#8220;We are obliged to prevent [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://developers.google.com/web/tools/chrome-devtools/network/reference#initiators-dependencies">Chrome Initiators and Dependencies</a> &#8211; Hold the shift key and hover over requests in the network panel, it will show you what initiated it and what requests it triggered.</p>
+<p><a href="https://github.com/basicrum/backoffice">Basic RUM, Backoffice</a> &#8211; Open source RUM perf server.</p>
+<p><a href="https://webkit.org/blog/8828/intelligent-tracking-prevention-2-2/">ITP 2.2</a> &#8211; The latest on ITP in Safari, with language like &#8220;We are obliged to prevent cross-site tracking for Safari users&#8221;.</p>
+<p><a href="https://code.tutsplus.com/tutorials/form-input-validation-using-only-html5-and-regex--cms-33095">Form Input Validation Using Only HTML5 and Regex</a> &#8211; First, never only rely on client side validation.  Second, the <code>pattern</code> attribute is really neat.</p>
+<p><a href="https://a.wholelottanothing.org/2019/04/19/tips-on-industrial-strength-wifi-for-normal-people/">Tips on industrial strength WiFi for normal people</a> &#8211; Next time I redo my home wifi network I&#8217;ll take a serious look at Ubiquiti.</p>
+<p><a href="https://news.netcraft.com/archives/category/web-server-survey/">Nginx more popular than Apache</a> &#8211; Wasn&#8217;t sure this would actually happen.  Will the trend continue?</p>
+<p><a href="https://twitter.com/ChromeDevTools/status/1119317342029090816">console.trace()</a> &#8211; Because sometimes <code>console.log()</code> isn&#8217;t enough.</p>
+<p><a href="https://calendar.perfplanet.com/2015/using-webpagetest-authentication/">Using WebPageTest: Authentication</a> &#8211; A couple of methods for testing logged in pages in WebPageTest.  I do these types of tests on our private WebPageTest instance all the time.</p>
+<p><a href="https://github.com/lerocha/chinook-database">Chinook Database</a> &#8211; &#8220;Sample database for SQL Server, Oracle, MySQL, PostgreSQL, SQLite, DB2&#8221;.  Came across this while reading up on SQLite.</p>
+<p><a href="https://cancel.fm/ripcord/">Ripcord</a> &#8211; Non-browser based Slack client.  The big &#038; slow Slack client on Mac OS I restart every day has performance at the top of my list of worst features.</p>
+<p><a href="https://nicj.net/side-effects-of-boomerangs-javascript-error-tracking/">Side Effects of Boomerang’s JavaScript Error Tracking</a> &#8211; Mix and matching third party code makes this situation harder.</p>
+<p><a href="https://v8.dev/blog/code-caching-for-devs">Code caching for JavaScript developers</a> &#8211; Code that changes isn&#8217;t cached.  Sometimes you have to say it out loud to drive the issue home.</p>
+<p><a href="https://addyosmani.com/blog/lazy-loading/">Native Lazy Loading Images</a> &#8211; Chrome is going to ship a native option for lazy loading images.  I think this is a good idea.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/05/01/links-april-2019/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links: March 2019</title>
+		<link>/2019/04/01/links-march-2019/</link>
+					<comments>/2019/04/01/links-march-2019/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 01 Apr 2019 19:26:53 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Links]]></category>
+		<guid isPermaLink="false">/?p=17379</guid>
+
+					<description><![CDATA[Chrome logpoints &#8211; Use console.log() without having to add console.log(). serverless-benchmark.com &#8211; The cold start issue can be a real problem. Malcolm, Monster-In-The-Middle &#8211; HTTPS interception statistics. Choose Boring Technology &#8211; You could also describe this as &#8220;choose proven, well understood, battle tested technology&#8221;. send.firefox.com &#8211; Claims &#8220;end-to-end&#8221; encryption, which I don&#8217;t think is entirely [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://developers.google.com/web/updates/2019/01/devtools#logpoints">Chrome logpoints</a> &#8211; Use <code>console.log()</code> without having to add <code>console.log()</code>.</p>
+<p><a href="https://serverless-benchmark.com/">serverless-benchmark.com</a> &#8211; The cold start issue can be a real problem.  </p>
+<p><a href="https://malcolm.cloudflare.com/">Malcolm, Monster-In-The-Middle</a> &#8211; HTTPS interception statistics.</p>
+<p><a href="https://mcfunley.com/choose-boring-technology">Choose Boring Technology</a> &#8211; You could also describe this as &#8220;choose proven, well understood, battle tested technology&#8221;.</p>
+<p><a href="https://send.firefox.com/">send.firefox.com</a> &#8211; Claims &#8220;end-to-end&#8221; encryption, which I don&#8217;t think is entirely accurate.  Still, handy if you need to share large files.</p>
+<p><a href="https://cache-tests.fyi/">cache-tests.fyi</a> &#8211; How different browsers do caching.  An area where the only consistency is inconsistency.</p>
+<p><a href="https://twitter.com/umaar/status/805753048035393536">Battery Status API</a> &#8211; <code>navigator.getBattery()</code>.</p>
+<p><a href="https://www.youtube.com/watch?v=LXF8bM4g-J4">How Google Search indexes JavaScript sites</a> &#8211; &#8220;JavaScript is expensive&#8221;, especially if you are trying to render trillions of pages.</p>
+<p><a href="https://csswizardry.com/2019/03/cache-control-for-civilians/">Cache Control for Civilians</a> &#8211; A good general reference regarding cache control on the web.  I don&#8217;t think the query string information is accurate, but that doesn&#8217;t take away from how helpful the rest of it is.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/04/01/links-march-2019/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links: February 2019</title>
+		<link>/2019/03/01/links-february-2019/</link>
+					<comments>/2019/03/01/links-february-2019/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 01 Mar 2019 17:43:02 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Links]]></category>
+		<guid isPermaLink="false">/?p=17300</guid>
+
+					<description><![CDATA[PHP RFC: Saner string to number comparisons &#8211; I like this idea, it improves the current situation without completely breaking backwards compatibility. MySQL Challenge: 100,000 Connections &#8211; Not as crazy as it might sound. All of GitHub&#8217;s menus &#038; dialogs work without JavaScript &#8211; This is impressive and something to be commended. OpenSignal, The State [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://wiki.php.net/rfc/string_to_number_comparison">PHP RFC: Saner string to number comparisons</a> &#8211; I like this idea, it improves the current situation without completely breaking backwards compatibility.</p>
+<p><a href="https://www.percona.com/blog/2019/02/25/mysql-challenge-100k-connections/">MySQL Challenge: 100,000 Connections</a> &#8211; Not as crazy as it might sound.</p>
+<p><a href="https://twitter.com/Keithamus/status/1098260366017134592">All of GitHub&#8217;s menus &#038; dialogs work without JavaScript</a> &#8211; This is impressive and something to be commended.</p>
+<p><a href="https://www.opensignal.com/sites/opensignal-com/files/data/reports/global/data-2018-11/state_of_wifi_vs_mobile_opensignal_201811.pdf">OpenSignal, The State of Wifi vs Mobile Network Experience as 5G Arrives</a> &#8211; The killer line, from page 4: &#8220;In 33 countries, or 41% of those analyzed by OpenSignal, mobile delivers a faster download experience than Wifi&#8221;.  A whole new angle on &#8220;don&#8217;t trust the network&#8221;, this time in terms of performance.</p>
+<p><a href="https://www.fastly.com/blog/creating-standards-for-cdns">CDN Standards</a> &#8211; This is the first time I&#8217;d heard mention of the <code>CDN-Loop</code> HTTP header.</p>
+<p><a href="https://github.com/mikewest/http-state-tokens">HTTP State Tokens</a> &#8211; I need more time to think over these exact ideas, but I really like that these types of discussions are happening.</p>
+<p><a href="https://github.com/lemire/simdjson">simdjson</a> &#8211; &#8220;Parsing gigabytes of JSON per second&#8221;, nice to see people working to make a common task faster.</p>
+<p><a href="https://github.com/nst/JSONTestSuite">JSON Test Suite</a> &#8211; Parsing fast is one thing, parsing it correctly is sometimes another.</p>
+<p><a href="https://www.fastcompany.com/90299092/mozilla-most-innovative-companies-2019">Firefox third-party blocking</a> &#8211; &#8220;By summer 2019, the Firefox browser will also block, by default, all cross-site third-party trackers, strengthening privacy without your having to do a thing&#8221;.  This sounds a lot like Safari ITP.</p>
+<p><a href="http://jsonviewer.stack.hu/">JSON Viewer</a> &#8211; Browse through a JSON data structure.  Very handy getting your head around large JSON blobs.</p>
+<p><a href="https://addyosmani.com/blog/script-priorities/">Script scheduling in Chrome</a> &#8211; This changes from time to time, so it is always worth measuring instead of relying just on rules.</p>
+<p><a href="http://bradfrost.com/blog/post/dont-get-clever-with-login-forms/">don’t get clever with login forms</a> &#8211; Yes, please, keep your login form simple.  Breaking password managers is really frustrating.</p>
+<p><a href="https://yhatt.github.io/marp/">Marp</a> &#8211; &#8220;Markdown Presentation Writer&#8221;, looks like they are planning to <a href="https://github.com/marp-team/marp">break this into chunks</a>.  That includes a <a href="https://github.com/marp-team/marp-cli">CLI</a> for converting Markdown into HTML/PDF.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/03/01/links-february-2019/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links: January 2019</title>
+		<link>/2019/02/01/links-january-2019/</link>
+					<comments>/2019/02/01/links-january-2019/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 01 Feb 2019 15:41:29 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Links]]></category>
+		<guid isPermaLink="false">/?p=17257</guid>
+
+					<description><![CDATA[dwitter.net &#8211; 140 characters of JavaScript and a canvas. websocketd &#8211; Connect CGI style to a WebSocket. Example of how perf budgets change by network connection &#8211; &#8220;Network latency is a jerk.&#8221;, that and packet loss. Using DevTools from Puppeteer &#8211; The example here is setting throttled network and CPU. Correlating Performance Metrics to Page [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://www.dwitter.net/">dwitter.net</a> &#8211; 140 characters of JavaScript and a canvas.</p>
+<p><a href="http://websocketd.com/">websocketd</a> &#8211; Connect CGI style to a WebSocket.</p>
+<p><a href="https://twitter.com/katiehempenius/status/1075478356311924737">Example of how perf budgets change by network connection</a> &#8211; &#8220;Network latency is a jerk.&#8221;, that and packet loss.</p>
+<p><a href="https://twitter.com/katiehempenius/status/1085742033262837760">Using DevTools from Puppeteer</a> &#8211; The example here is setting throttled network and CPU.</p>
+<p><a href="https://discuss.httparchive.org/t/correlating-performance-metrics-to-page-characteristics/1548">Correlating Performance Metrics to Page Characteristics</a> &#8211; Great write up on which factors have the biggest impact on various metrics.</p>
+<p><a href="https://www.smashingmagazine.com/2019/01/front-end-performance-checklist-2019-pdf-pages/">Front-End Performance Checklist 2019</a> &#8211; So many resources.</p>
+<p><a href="https://github.com/dbcli/litecli">LiteCLI</a> &#8211; SQLite command line client.</p>
+<p><a href="https://github.com/pmeenan/http2priorities/tree/master/stand-alone">Stand-alone HTTP/2 prioritization test</a> &#8211; This version just requires an image hosted on the site being tested.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/02/01/links-january-2019/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links: December 2018</title>
+		<link>/2019/01/01/links-december-2018/</link>
+					<comments>/2019/01/01/links-december-2018/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 01 Jan 2019 17:01:09 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Links]]></category>
+		<guid isPermaLink="false">/?p=17215</guid>
+
+					<description><![CDATA[CTF List &#8211; A really good CTF is a work of art unto itself. memfetch &#8211; Cache wrapper for fetch. While I&#8217;m not keen on caching POST requests, I think this is otherwise a neat option. Node.js Fundamentals: Web Server Without Dependencies &#8211; You can do a fair bit without pulling in an entire framework. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://www.sjoerdlangkemper.nl/2018/12/19/practice-hacking-with-vulnerable-systems/">CTF List</a> &#8211; A really good CTF is a work of art unto itself.</p>
+<p><a href="https://remysharp.com/2018/12/24/memfetch">memfetch</a> &#8211; Cache wrapper for fetch.  While I&#8217;m not keen on caching POST requests, I think this is otherwise a neat option.</p>
+<p><a href="https://blog.bloomca.me/2018/12/22/writing-a-web-server-node.html">Node.js Fundamentals: Web Server Without Dependencies</a> &#8211; You can do a fair bit without pulling in an entire framework.</p>
+<p><a href="https://akrabat.com/route-specific-configuration-in-slim/">Route specific configuration in Slim PHP</a> &#8211; Authentication requirements are the main example that comes up for this.</p>
+<p><a href="https://www.remove.bg/">Remove Image Background</a> &#8211; It looks at photos of people and removes the background, automatically.</p>
+<p><a href="https://www.npmjs.com/package/bent">Bent</a> &#8211; Another Node.JS HTTP client, from the original author of request.</p>
+<p><a href="http://blog.chriszacharias.com/page-weight-matters">Page Weight Matters</a> &#8211; lesson from YouTube about how your RUM performance metrics might not be telling you what you think they are telling you.</p>
+<p><a href="https://3v4l.org/live">Live PHP REPL</a> &#8211; From 3v4l.org, which makes it possible to test PHP snippets with a large number of PHP versions.</p>
+<p><a href="https://calendar.perfplanet.com/2018/http2-prioritization/">HTTP/2 Prioritization</a> &#8211; This is an area that is only just started to be explored, and it can have a significant impact on how a page is rendered.</p>
+<p><a href="https://vitess.io/">Vitess</a> &#8211; MySQL scaling solution, from YouTube.</p>
+<p><a href="https://news.ycombinator.com/item?id=16729705">DNS-over-HTTPS on OS X</a> &#8211; Just three instructions, if you have <a href="https://brew.sh/">brew</a> handy.</p>
+<p><a href="https://alpaca.markets/">Alpaca Markets</a> &#8211; API first market trading.</p>
+<p><a href="https://lawsofux.com/">Laws of UX</a> &#8211; A beautiful list of example design principles.</p>
+<p><a href="https://csswizardry.com/2018/11/css-and-network-performance/">CSS and Network Performance</a> &#8211; Treat resources required for rendering a page with care.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/01/01/links-december-2018/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links: November 2018</title>
+		<link>/2018/12/03/links-november-2018/</link>
+					<comments>/2018/12/03/links-november-2018/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 03 Dec 2018 14:11:46 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Links]]></category>
+		<guid isPermaLink="false">/?p=17153</guid>
+
+					<description><![CDATA[mermaid &#8211; &#8220;Generation of diagrams and flowcharts from text in a similar manner as markdown.&#8221; &#8211; that is cool. Go play with their live editor. Lighthouse custom audits tutorial &#8211; Being able to add new audits to Lighthouse is great, now they need community around &#8220;Lighthouse Plugins&#8221;. Cross-language Performance Profile Exploration with speedscope &#8211; Make [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://mermaidjs.github.io/">mermaid</a> &#8211; &#8220;Generation of diagrams and flowcharts from text in a similar manner as markdown.&#8221; &#8211; that is cool.  Go play with their <a href="https://mermaidjs.github.io/mermaid-live-editor/">live editor</a>.</p>
+<p><a href="https://www.aymen-loukil.com/en/blog-en/google-lighthouse-custom-audits/">Lighthouse custom audits tutorial</a> &#8211; Being able to add new audits to Lighthouse is great, now they need community around &#8220;Lighthouse Plugins&#8221;.</p>
+<p><a href="https://hacks.mozilla.org/2018/11/cross-language-performance-profile-exploration-with-speedscope/">Cross-language Performance Profile Exploration with speedscope</a> &#8211; Make one good visualization/exploration tool, that can import data profiles from many sources.</p>
+<p><a href="https://firecracker-microvm.github.io/">Firecracker MicroVM, From Amazon</a> &#8211; The idea of extending the unikernel idea just enough to run generalized software, that is a trend we will continue to see more of.</p>
+<p><a href="https://www.mnot.net/blog/2018/11/27/header_compression">Designing Headers for HTTP Compression</a> &#8211; The ideal header never changes.</p>
+<p><a href="https://github.com/shssoichiro/oxipng">Oxipng</a> &#8211; Multithreaded replacement for Optipng. </p>
+<p><a href="https://http3-explained.haxx.se/en/">HTTP/3 Explained</a> &#8211; Protocol land is an interesting place to be exploring ( see HTTP/2 priorities ).</p>
+<p><a href="https://www.rmtweb.co.uk/calibri-and-cambria-fonts-for-mac">Calibri and Cambria fonts for Mac</a> &#8211; For those &#8220;missing fonts&#8221; days on Mac OS.</p>
+<p><a href="https://github.com/pmeenan/http2priorities">Test Page for HTTP/2 prioritization</a> &#8211; Good way to test for and illustrate the importance of a good priority system.</p>
+<p><a href="https://www.techempower.com/benchmarks/#section=data-r17">Web Framework Benchmarks, Round 17</a> &#8211; Would be nice to see a combined list, that took the rankings from each separate test, to see what would take the overall top spot.</p>
+<p><a href="https://ma.tt/2018/10/whats-in-my-bag-2018-edition/">What’s in My Bag, 2018 Edition</a> &#8211; Always interesting to see what other people are carrying around.  I need to check out a few of those, might be worth adding to my own bag.</p>
+<p><a href="https://blog.erratasec.com/2018/11/some-notes-about-http3.html">Some notes about HTTP/3</a> &#8211; I&#8217;m curious to see how load balancers and firewalls are going to deal with QUIC/HTTP/3.</p>
+<p><a href="https://wiki.php.net/rfc/preload">PHP RFC: Preloading</a> &#8211; Make PHP code &#8220;permanently available&#8221; as part of the server start up.  Should be helpful for really hot parts of a code base.</p>
+<p><a href="https://squoosh.app/">Squoosh</a> &#8211; Web based image optimization.</p>
+<p><a href="https://daniel.haxx.se/blog/2018/11/11/http-3/">HTTP/3</a> &#8211; What was previously called HTTP over QUIC is now called HTTP/3.  My initial reaction is that this is a good move.</p>
+<p><a href="http://xsstrike.tk/">XSStrike</a> &#8211; An XSS scanner, on my list of tools to try out.</p>
+<p><a href="https://ip-ranges.amazonaws.com/ip-ranges.json">Amazon AWS IP Ranges</a> &#8211; So many IP addresses.</p>
+<p><a href="https://github.com/GoogleChromeLabs/carlo">carlo, web rendering surface for Node applications</a> &#8211; uses <a href="https://github.com/GoogleChrome/puppeteer">Puppeteer</a> to communicate with your already installed Chrome browser.  Might be an alternative to <a href="https://electronjs.org/">Electron</a>.</p>
+<p><a href="https://github.com/zeit/pkg/">Package your Node.js project into an executable</a> &#8211; given the size of NPM dependencies, I wonder how big this gets.</p>
+<p><a href="https://twitter.com/patmeenan/status/1058067408634699777">Browser&#8217;s implementations of HTTP/2 priorities are worse that I could have imagined (Chrome and Firefox at least try)</a> &#8211; Some have put more thought into priorities than others.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/12/03/links-november-2018/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links: October 2018</title>
+		<link>/2018/11/01/links-october-2018/</link>
+					<comments>/2018/11/01/links-october-2018/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 01 Nov 2018 19:30:02 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Links]]></category>
+		<guid isPermaLink="false">/?p=17011</guid>
+
+					<description><![CDATA[Flight rules for Git &#8211; &#8220;what to do when things go wrong&#8221; for Git. (somewhat) complete salary history as a software engineer &#8211; Nicholas Zakas shares his salary history. A rare glimpse into details employers strongly discourage you from sharing. Optimizing HTTP/2 prioritization with BBR and tcp_notsent_lowat &#8211; Three settings for Linux 4.9+ to improve [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://github.com/k88hudson/git-flight-rules">Flight rules for Git</a> &#8211; &#8220;what to do when things go wrong&#8221; for Git.</p>
+<p><a href="https://humanwhocodes.com/blog/2018/10/my-somewhat-complete-salary-history-software-engineer/">(somewhat) complete salary history as a software engineer</a> &#8211; Nicholas Zakas shares his salary history.  A rare glimpse into details employers strongly discourage you from sharing.</p>
+<p><a href="https://blog.cloudflare.com/http-2-prioritization-with-nginx/">Optimizing HTTP/2 prioritization with BBR and tcp_notsent_lowat</a> &#8211; Three settings for Linux 4.9+ to improve the reliability of HTTP/2 prioritization.</p>
+<p><a href="https://publicsuffix.org/">Public Suffix List</a> &#8211; The TLDs where users can register host names.</p>
+<p><a href="https://jeremy.codes/">jeremy.codes</a> &#8211; Site with a command prompt.  Everything old is new again.</p>
+<p><a href="https://spdx.org/licenses/">SPDX License List</a> &#8211; So many licenses, I&#8217;ve only read a handful of them.</p>
+<p><a href="https://blog.sheddow.xyz/css-timing-attack/">CSS Timing Attack</a> &#8211; Do not trust user input.  And timing attacks are everywhere.</p>
+<p><a href="https://developers.google.com/web/tools/chrome-devtools/remote-debugging/">Get Started with Remote Debugging Android Devices</a> &#8211; The process is simple enough.  But I keep forgetting where this page is.</p>
+<p><a href="https://bundlephobia.com/">Bundlephobia</a> &#8211; &#8220;find the cost of adding a npm package to your bundle&#8221;, the answer is: higher than you think.</p>
+<p><a href="https://obsproject.com/">Open Broadcaster Software</a> &#8211; Producing quality broadcasting media is something of a mystery to me.</p>
+<p><a href="https://a.singlediv.com/">A Single DIV</a> &#8211; The amazing things that people have done using just one DIV.</p>
+<p><a href="https://magic.io/blog/uvloop-blazing-fast-python-networking/">uvloop</a> &#8211; Making asyncio in Python really fast.</p>
+<p><a href="https://matomo.org/">Matomo</a> &#8211; Renamed from Piwik.  The interest in self hosted analytics is going to start increasing over the next year.</p>
+<p><a href="https://github.com/antsmartian/lets-build-express">lets-build-express</a> &#8211; A good way to understand more of what Express is doing.</p>
+<p><a href="https://medium.com/@grantspilsbury/dry-node-js-server-code-without-express-4db391a9ac60">Writing a NodeJS HTTP server without Express</a> &#8211; Very simple HTTP services with NodeJS don&#8217;t really need a framework.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/11/01/links-october-2018/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links: September 2018</title>
+		<link>/2018/10/01/links-september-2018/</link>
+					<comments>/2018/10/01/links-september-2018/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 01 Oct 2018 19:53:50 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Links]]></category>
+		<guid isPermaLink="false">/?p=16961</guid>
+
+					<description><![CDATA[MS-DOS v1.25 and v2.0 &#8211; MIT licensed! Making of Underrun &#8211; An entry in js13kGames. I&#8217;m impressed. boomerang &#8211; Helpful client side JavaScript library for performance metrics. It has moved around several times, so I&#8217;m making a note here of where it lives now. How to write X in both Python 3 and JavaScript (ES2015) [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://github.com/Microsoft/MS-DOS">MS-DOS v1.25 and v2.0</a> &#8211; MIT licensed!</p>
+<p><a href="https://phoboslab.org/log/2018/09/underrun-making-of">Making of Underrun</a> &#8211; An entry in js13kGames.  I&#8217;m impressed.</p>
+<p><a href="https://github.com/akamai/boomerang">boomerang</a> &#8211; Helpful client side JavaScript library for performance metrics.  It has moved around several times, so I&#8217;m making a note here of where it lives now.</p>
+<p><a href="https://sayazamurai.github.io/python-vs-javascript/">How to write X in both Python 3 and JavaScript (ES2015)</a> &#8211; I like these language comparison lists of &#8220;how to do X in Y and Z&#8221;.  If you are familiar Y, it helps you quickly get a feel for Z.</p>
+<p><a href="http://projectpython.net/chapter00/">Project Python</a> &#8211; An interactive option for learning Python.</p>
+<p><a href="https://www.opsian.com/blog/javas-new-zgc-is-very-exciting/">Java&#8217;s new Z Garbage Collector (ZGC) is very exciting</a> &#8211; I still hear about people running into problems with &#8220;Stop The World&#8221; collection events.  The new ZGC sounds promising.</p>
+<p><a href="https://github.com/howie6879/aspider">aspider</a> &#8211; Async URL crawling in Python.</p>
+<p><a href="https://github.com/mnot/cdn-tests">Tests for CDNs and Reverse Proxies</a> &#8211; Looking into the way various CDNs behave in regards to HTTP caching.</p>
+<p><a href="https://timkadlec.com/remembers/2018-09-06-chromes-noscript-intervention/">Chrome&#8217;s NOSCRIPT Intervention</a> &#8211; Tim Kadlec tries visiting sites with NOSCRIPT enabled.  Those JavaScript bytes are expensive.</p>
+<p><a href="https://vitess.io/">Vitess</a> &#8211; A MySQL horizontal scaling system.</p>
+<p><a href="https://wildlyinaccurate.com/web-performance-review-trademe/">Typical Performance Review</a> &#8211; Joseph Wynn writes about how he dug into the performance of trademe.co.nz.  </p>
+<p><a href="https://nolanlawson.com/2018/09/01/a-tour-of-javascript-timers-on-the-web/">A tour of JavaScript timers on the web</a> &#8211; Timers in browser side JavaScript can be tricky beasts ( <a href="https://simonwillison.net/2018/Sep/2/a-tour-of-javascript-timers-on-the-web/">via</a> ).</p>
+<p><a href="https://www.androidpolice.com/2018/08/23/chrome-android-may-start-disabling-javascript-2g-connections/">Chrome for Android may start disabling JavaScript on 2G connections</a> &#8211; JavaScript bytes are expensive, so this will definitely make pages load faster.  If this change happens, it may prompt a new push to make sure pages have at least some functionality when JavaScript is disabled.</p>
+<p><a href="https://www.percona.com/blog/2018/09/03/40-million-tables-in-mysql-8-0-with-zfs/">40 million tables in MySQL 8.0 with ZFS</a> &#8211; &#8220;Just to create them, I needed at least 5Tb of fast disk storage.&#8221;  The answer for this test was compression.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/10/01/links-september-2018/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

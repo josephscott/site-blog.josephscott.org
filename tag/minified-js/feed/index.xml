@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>minified-js &#8211; Joseph Scott</title>
+	<atom:link href="/tag/minified-js/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 17 Jul 2013 15:50:59 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Minified.js</title>
+		<link>/2013/07/17/minified-js/</link>
+					<comments>/2013/07/17/minified-js/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 17 Jul 2013 15:50:59 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jquery]]></category>
+		<category><![CDATA[minified-js]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=8589</guid>
+
+					<description><![CDATA[I&#8217;m not surprised to see more and more &#8220;lightweight&#8221; JavaScript libraries pop up as jQuery has grown in size. The pendulum tends to swing hard from one direction to the other with these things. One that I came across recently is Minified.js: Minified.js is a client-side JavaScript library, comparable to jQuery and MooTools in scope. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m not surprised to see more and more &#8220;lightweight&#8221; JavaScript libraries pop up as jQuery has grown in size.  The pendulum tends to swing hard from one direction to the other with these things.</p>
+<p>One that I came across recently is <a href='http://minifiedjs.com/'>Minified.js</a>:</p>
+<blockquote><p>
+Minified.js is a client-side JavaScript library, comparable to jQuery and MooTools in scope. Its features include DOM manipulation, animation, events, cookies and HTTP requests.
+</p></blockquote>
+<p>The size of the JavaScript file you send across the wire is certainly one factor to consider, especially for mobile users.  I&#8217;m more curious to see what the performance looks like when using similar features.  In some cases that is even more important than the size of the file.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/07/17/minified-js/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

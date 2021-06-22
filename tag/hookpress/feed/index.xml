@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>hookpress &#8211; Joseph Scott</title>
+	<atom:link href="/tag/hookpress/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 14 Apr 2010 23:18:28 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Webhooks on WordPress.com</title>
+		<link>/2010/04/14/webhooks-on-wordpress-com/</link>
+					<comments>/2010/04/14/webhooks-on-wordpress-com/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 14 Apr 2010 23:18:28 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[hookpress]]></category>
+		<category><![CDATA[webhooks]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2190</guid>
+
+					<description><![CDATA[I&#8217;m thrilled to have webhooks on WordPress.com open for everyone today! Eoin Gallagher and I used mitcho&#8216;s HookPress WordPress plugin for this. I&#8217;ve been talking with mitcho and he&#8217;ll be incorporating some of our changes in the next release of HookPress. This is one of those foundational technologies that I&#8217;m really excited to have launched [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m thrilled to have <a href="http://en.blog.wordpress.com/2010/04/14/hook-line-and-sinker/">webhooks on WordPress.com</a> open for everyone today!  <a href="http://magp.ie/">Eoin Gallagher</a> and I used <a href="http://mitcho.com/">mitcho</a>&#8216;s <a href="http://wordpress.org/extend/plugins/hookpress/">HookPress</a> WordPress plugin for this.  I&#8217;ve been talking with mitcho and he&#8217;ll be incorporating some of our changes in the next release of HookPress.</p>
+<p>This is one of those foundational technologies that I&#8217;m really excited to have launched and even more excited to see what people us it for.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/04/14/webhooks-on-wordpress-com/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

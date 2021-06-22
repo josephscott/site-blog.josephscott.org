@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>square &#8211; Joseph Scott</title>
+	<atom:link href="/tag/square/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 04 May 2015 15:30:17 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Square Cash: It Is A Feature, Not A Bug</title>
+		<link>/2015/05/04/square-cash-it-is-a-feature-not-a-bug/</link>
+					<comments>/2015/05/04/square-cash-it-is-a-feature-not-a-bug/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 04 May 2015 15:30:17 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[square]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9451</guid>
+
+					<description><![CDATA[Jon White on how Square Cash manages to make deposits without asking for bank account details: There are no bank account numbers involved, how can they do this? The answer deceptively simple: they issue a refund to your debit card for the amount you are sent. &#8230; The genius of Square Cash is that someone [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Jon White on how <a href="https://cash.me/">Square Cash</a> manages to <a href="http://jonbwhite.tumblr.com/post/66853226398/how-square-moves-cash">make deposits without asking for bank account details</a>:</p>
+<blockquote><p>
+There are no bank account numbers involved, how can they do this?  The answer deceptively simple: <strong>they issue a refund to your debit card for the amount you are sent</strong>.</p>
+<p>&#8230;</p>
+<p>The genius of Square Cash is that someone realized you can process a refund without having an initial charge in the first place.
+</p></blockquote>
+<p>I wonder how many other services transfer money using this approach.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/05/04/square-cash-it-is-a-feature-not-a-bug/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

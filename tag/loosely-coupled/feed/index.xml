@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>loosely-coupled &#8211; Joseph Scott</title>
+	<atom:link href="/tag/loosely-coupled/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 22 Jun 2010 04:54:36 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>The Loosely Coupled Web</title>
+		<link>/2010/06/21/the-loosely-coupled-web/</link>
+					<comments>/2010/06/21/the-loosely-coupled-web/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 22 Jun 2010 04:54:36 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[loosely-coupled]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2428</guid>
+
+					<description><![CDATA[There are so many terms floating around for the &#8220;the web&#8221;. One that has been overly abused is &#8220;web 2.0&#8221;. Someone mentioned &#8220;web 2.0&#8221; during a conversation the other day and it reminded me that I had never written about my favorite alternative &#8220;web&#8221; term: &#8220;the loosely coupled web&#8221;. I&#8217;ve been tempted by &#8220;the open [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>There are so many terms floating around for the &#8220;the web&#8221;.  One that has been overly abused is &#8220;web 2.0&#8221;.  Someone mentioned &#8220;web 2.0&#8221; during a conversation the other day and it reminded me that I had never written about my favorite alternative &#8220;web&#8221; term: &#8220;the loosely coupled web&#8221;.  I&#8217;ve been tempted by &#8220;the open web&#8221;, but the term open has been smashed beyond recognition.</p>
+<p>What do I mean by loosely coupled?  It means I can start a new site that provides specific services, and people can easily build off it without my intervention.   A great general example of this is the core of the web itself: HTTP.  When you put up a new site browsers just work with it, right out of the box.</p>
+<p>Another example is WordPress and the XML-RPC APIs.  If you want to write a new blog client that works with WordPress you don&#8217;t need to create an account any where or sign up for anything extra.  You make use of the common APIs that WordPress provides and go to town.  RSS and Atom feeds fall into the same category.</p>
+<p>I think it is also possible to be loosely coupled in a more specific scope.  For example some of Facebook&#8217;s <a href="http://developers.facebook.com/docs/api">Graph API</a> I&#8217;d consider loosely coupled.  You need to know a little bit about it to understand how to make requests and how to read the responses, but that&#8217;s it.  And I like the low barrier that loosely coupled implies.  As you get deeper there are additional requirements, but at least to get started there is very little friction.</p>
+<p>I&#8217;m no where near the first to use this term ( a quick <a href="http://www.google.com/search?q=the+loosely+coupled+web">Google search</a> turns up plenty of hits ), but I don&#8217;t think it has received as much respect as it deserves.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/06/21/the-loosely-coupled-web/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

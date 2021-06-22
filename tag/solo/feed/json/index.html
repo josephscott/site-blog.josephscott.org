@@ -1,0 +1,65 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/solo/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/solo/",
+    "feed_url": "https://blog.josephscott.org/tag/solo/feed/json/",
+    "language": "en-US",
+    "title": "solo &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=6249",
+            "url": "https://blog.josephscott.org/2013/10/25/lockrun/",
+            "title": "lockrun",
+            "content_html": "<p>Two years ago I mentioned <a href=\"https://josephscott.org/archives/2011/09/solo/\">Solo</a>, which uses TCP/IP port binding to prevent a program from running more than once.</p>\n<p>For those that don&#8217;t want to use up ports or would rather stick to file locks for other reasons you can accomplish the same thing with <a href='http://www.unixwiz.net/tools/lockrun.html'>lockrun</a>.</p>\n<p>An example cron entry using lockrun:</p>\n<blockquote><p>\n*/5 * * * * /usr/local/bin/lockrun &#8211;lockfile=/var/run/cacti.lockrun &#8212; /usr/local/bin/cron-cacti-poller</p>\n<p>IMPORTANT: Be sure to place the lockfile in a directory that only that user has the rights to, and not in /tmp (as this Tech Tip has previously suggested). If a different user has the ability to write to the directory, s/he could create a symbolic link from the target lockfile to some system file that uses locks the same way, and get the cron job to foul up the locking.<br />\nThe file used, /var/run/cacti.lockrun, is created (if necessary), the lock acquired, and closed when finished. At no time does lockrun perform any file I/O: the file exists only to be the subject of locking requests.\n</p></blockquote>\n<p>Overall I like the Solo approach better, but it might not be a good option in every situation. In those cases lockrun looks like a good alternative.</p>\n",
+            "content_text": "Two years ago I mentioned Solo, which uses TCP/IP port binding to prevent a program from running more than once.\nFor those that don&#8217;t want to use up ports or would rather stick to file locks for other reasons you can accomplish the same thing with lockrun.\nAn example cron entry using lockrun:\n\n*/5 * * * * /usr/local/bin/lockrun &#8211;lockfile=/var/run/cacti.lockrun &#8212; /usr/local/bin/cron-cacti-poller\nIMPORTANT: Be sure to place the lockfile in a directory that only that user has the rights to, and not in /tmp (as this Tech Tip has previously suggested). If a different user has the ability to write to the directory, s/he could create a symbolic link from the target lockfile to some system file that uses locks the same way, and get the cron job to foul up the locking.\nThe file used, /var/run/cacti.lockrun, is created (if necessary), the lock acquired, and closed when finished. At no time does lockrun perform any file I/O: the file exists only to be the subject of locking requests.\n\nOverall I like the Solo approach better, but it might not be a good option in every situation. In those cases lockrun looks like a good alternative.",
+            "date_published": "2013-10-25T14:55:15-06:00",
+            "date_modified": "2013-10-25T14:55:15-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "cron",
+                "lockrun",
+                "solo",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=4792",
+            "url": "https://blog.josephscott.org/2011/09/26/solo/",
+            "title": "Solo",
+            "content_html": "<p><a href='http://timkay.com/solo/'>Solo</a> is an interesting <a href=\"http://timkay.com/solo/solo\">little Perl script</a>:</p>\n<blockquote><p>\nsolo is a very simple script (10 lines) that prevents a program from running more than one copy at a time. It is useful with cron to make sure that a job doesn&#8217;t run before a previous one has finished.</p>\n<p>* * * * * solo -port=3801 /usr/local/bin/awesome-script.sh blah blah\n</p></blockquote>\n<p>The clever part is the use of binding to TCP ports to ensure that only one copy of the script is running at a time.  No more lockfiles or filesystem tricks, just let the kernel figure out if the port is already in use.</p>\n",
+            "content_text": "Solo is an interesting little Perl script:\n\nsolo is a very simple script (10 lines) that prevents a program from running more than one copy at a time. It is useful with cron to make sure that a job doesn&#8217;t run before a previous one has finished.\n* * * * * solo -port=3801 /usr/local/bin/awesome-script.sh blah blah\n\nThe clever part is the use of binding to TCP ports to ensure that only one copy of the script is running at a time.  No more lockfiles or filesystem tricks, just let the kernel figure out if the port is already in use.",
+            "date_published": "2011-09-26T14:20:22-06:00",
+            "date_modified": "2011-09-26T14:20:22-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "cron",
+                "perl",
+                "solo",
+                "tcp/ip",
+                "Posts"
+            ]
+        }
+    ]
+}

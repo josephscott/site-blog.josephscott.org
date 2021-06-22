@@ -1,0 +1,265 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/category/general/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/category/general/",
+    "feed_url": "https://blog.josephscott.org/category/general/feed/json/",
+    "language": "en-US",
+    "title": "General &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2005/05/10/trying-out-dokuwiki/",
+            "url": "https://blog.josephscott.org/2005/05/10/trying-out-dokuwiki-and-wiki-wishlist/",
+            "title": "Trying Out DokuWiki And Wiki Wishlist",
+            "content_html": "<p>I&#8217;m trying out <a href=\"http://wiki.splitbrain.org/wiki:dokuwiki\">DokuWiki</a> for personal use.  It uses plain files for storage instead of a database and was pretty easy to setup.  Unfortunately wiki software packages are much like email clients, they all of issues and problems, you just have decided which problems you are willing to deal with.  I&#8217;m not committed to DokuWiki, so if I find something else that better fits my needs I&#8217;ll be happy to change.</p>\n<p>I was rather disappointed at the state of wiki software in general.  There were several features that few (and in many cases none that I could find) that had some of the more interesting and useful features, especially for business environments.  Here&#8217;s a short (probably incomplete) wish list:</p>\n<ul>\n<li>ACLs: More packages are supporting this now, I&#8217;m still surprised that more don&#8217;t have it though.  This implies authentication, which needs to support several different methods (Database, LDAP, PAM?).</li>\n<li>Hierarchy: Name spaces are great, but I&#8217;d really like to see the ability to structure wiki pages.  I suspect this one will be more difficult that some of the other features.  My wiki should able to generate a sitemap for me.</li>\n<li>Tags: You&#8217;d think with <a href=\"http://www.flickr.com/\">Flickr</a> and <a href=\"http://del.icio.us/\">del.icio.us</a> taking off, people would be all over this.  And no, I don&#8217;t think that having tags means not having a hierarchy, they should complement each other, not replace each other.</li>\n<li>Page Copy/Clone: I&#8217;d like to be able to start a new page as a copy of existing page (with a new title, link, etc) that optionally carries over all of the history of the page being copied.  The new page should have some way of linking back to the page that it was copied from.  Each source page should also be able to link to all pages that started as copies of it.</li>\n<li>Page Templates: This sort of similar to the idea of Page Copy/Clone, but with a twist.  I&#8217;d like to be to create templates, that aren&#8217;t really meant to be used as pages themselves (ACLs to prevent others from changing them?), but simply as a starting point for a new page.  So when creating a new page you get the option of using one of a list of existing templates in the system.  This could get tricky fast, for instance, if you update a template does it try to update all of the pages that used that template?  Hey, I didn&#8217;t say all of this would be easy.</li>\n<li>TrackBacks: Crossing over a bit into the world of blogs, every page on a wiki should have trackback support for other sites that link to it.  This can get complicated also, what do you do when your ACL doesn&#8217;t allow for public viewing of that page?  How do you prevent TrackBack spam?</li>\n<li>Page Comments: While your first thought might be that this is another blog cross over, it isn&#8217;t.  This stems more from seeing the success of page comments in the <a href=\"http://www.php.net/manual/en/\">PHP documentation</a>.  I would like to see a more complex set of comment options though (threaded, ability to sort on different attributes like date, etc).  More avenues for comment spam, would be less of an issue if ACLs required an account to comment on a page.</li>\n<li>Export: You should be able to export the wiki in part or in whole in a some reasonable format (XML?).  Difference in syntax formatting would be a problem.</li>\n<li>Fine Grained RSS: Many wiki packages support RSS, but with varying degrees of granularity.  I&#8217;d like to be able to subscribe to wiki wide changes, page changes, wiki wide comments, page comments and the various variations you&#8217;d be likely to thing of.  Perhaps all of the changes and comments for pages with the tag of joseph, or all changes and comments in a given namespace or hierarchy, with the option of being recursive.</li>\n<li>Wiki Wide Point In Time: Show the whole wiki how it looked at a given date and time.  Along with that I&#8217;d like to be able to some sort of diff or changelog given two different date and times.  This could potentially blow up into a huge feature, show me all the pages that were added between 1 Jan 2004 and 1 Jan 2005.  Show me all of the comments that were added between 1 Mar 2005 and 1 Apr 2005.  Show me all of the trackbacks added between 1 Apr 2005 and 1 May 2005.  You should be able to specify this down to the second (1 May 2005 @ 08:14:33am PST).  I think you get the idea.\n</li>\n</ul>\n<p>I&#8217;m sure there are plenty more, but this should be enough to keep most folks busy.  Some wiki packages do implement some of these features, but I haven&#8217;t found one that implements all of them and certainly not to the degree that I&#8217;m looking for.  A lot of these features stem from wanting to use a wiki in a business environment more than just for personal use.</p>\n<p>It would be interesting to start a wiki project with these sorts of goals, but I doubt I&#8217;d ever have the time.</p>\n",
+            "content_text": "I&#8217;m trying out DokuWiki for personal use.  It uses plain files for storage instead of a database and was pretty easy to setup.  Unfortunately wiki software packages are much like email clients, they all of issues and problems, you just have decided which problems you are willing to deal with.  I&#8217;m not committed to DokuWiki, so if I find something else that better fits my needs I&#8217;ll be happy to change.\nI was rather disappointed at the state of wiki software in general.  There were several features that few (and in many cases none that I could find) that had some of the more interesting and useful features, especially for business environments.  Here&#8217;s a short (probably incomplete) wish list:\n\nACLs: More packages are supporting this now, I&#8217;m still surprised that more don&#8217;t have it though.  This implies authentication, which needs to support several different methods (Database, LDAP, PAM?).\nHierarchy: Name spaces are great, but I&#8217;d really like to see the ability to structure wiki pages.  I suspect this one will be more difficult that some of the other features.  My wiki should able to generate a sitemap for me.\nTags: You&#8217;d think with Flickr and del.icio.us taking off, people would be all over this.  And no, I don&#8217;t think that having tags means not having a hierarchy, they should complement each other, not replace each other.\nPage Copy/Clone: I&#8217;d like to be able to start a new page as a copy of existing page (with a new title, link, etc) that optionally carries over all of the history of the page being copied.  The new page should have some way of linking back to the page that it was copied from.  Each source page should also be able to link to all pages that started as copies of it.\nPage Templates: This sort of similar to the idea of Page Copy/Clone, but with a twist.  I&#8217;d like to be to create templates, that aren&#8217;t really meant to be used as pages themselves (ACLs to prevent others from changing them?), but simply as a starting point for a new page.  So when creating a new page you get the option of using one of a list of existing templates in the system.  This could get tricky fast, for instance, if you update a template does it try to update all of the pages that used that template?  Hey, I didn&#8217;t say all of this would be easy.\nTrackBacks: Crossing over a bit into the world of blogs, every page on a wiki should have trackback support for other sites that link to it.  This can get complicated also, what do you do when your ACL doesn&#8217;t allow for public viewing of that page?  How do you prevent TrackBack spam?\nPage Comments: While your first thought might be that this is another blog cross over, it isn&#8217;t.  This stems more from seeing the success of page comments in the PHP documentation.  I would like to see a more complex set of comment options though (threaded, ability to sort on different attributes like date, etc).  More avenues for comment spam, would be less of an issue if ACLs required an account to comment on a page.\nExport: You should be able to export the wiki in part or in whole in a some reasonable format (XML?).  Difference in syntax formatting would be a problem.\nFine Grained RSS: Many wiki packages support RSS, but with varying degrees of granularity.  I&#8217;d like to be able to subscribe to wiki wide changes, page changes, wiki wide comments, page comments and the various variations you&#8217;d be likely to thing of.  Perhaps all of the changes and comments for pages with the tag of joseph, or all changes and comments in a given namespace or hierarchy, with the option of being recursive.\nWiki Wide Point In Time: Show the whole wiki how it looked at a given date and time.  Along with that I&#8217;d like to be able to some sort of diff or changelog given two different date and times.  This could potentially blow up into a huge feature, show me all the pages that were added between 1 Jan 2004 and 1 Jan 2005.  Show me all of the comments that were added between 1 Mar 2005 and 1 Apr 2005.  Show me all of the trackbacks added between 1 Apr 2005 and 1 May 2005.  You should be able to specify this down to the second (1 May 2005 @ 08:14:33am PST).  I think you get the idea.\n\n\nI&#8217;m sure there are plenty more, but this should be enough to keep most folks busy.  Some wiki packages do implement some of these features, but I haven&#8217;t found one that implements all of them and certainly not to the degree that I&#8217;m looking for.  A lot of these features stem from wanting to use a wiki in a business environment more than just for personal use.\nIt would be interesting to start a wiki project with these sorts of goals, but I doubt I&#8217;d ever have the time.",
+            "date_published": "2005-05-10T13:50:18-06:00",
+            "date_modified": "2005-05-10T13:50:18-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "dokuwiki",
+                "wiki",
+                "General",
+                "Web"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2005/04/18/adobe-buys-macromedia/",
+            "url": "https://blog.josephscott.org/2005/04/18/adobe-buys-macromedia/",
+            "title": "Adobe Buys Macromedia",
+            "content_html": "<p>So the big news today is that <a href=\"http://news.com.com/Adobe+to+buy+Macromedia+for+3.4+billion/2100-1014_3-5674501.html?tag=nefd.top\">Adobe is buying Macromedia</a> for $3.4 billion in stock.  Although I&#8217;m not a huge fan of flash, it does have some interesting uses.  Certainly <a href=\"http://www.flickr.com/\">Flickr</a> has found a nice use for it.  I wouldn&#8217;t want to get rid of flash, but I also can&#8217;t stand all flash sites.  I guess I&#8217;m just picking on flash because that is probably Macromedia&#8217;s most wide spread product/technology.  They certainly have plenty of <a href=\"http://www.macromedia.com/software/\">other products</a>.</p>\n<p>So what is Adobe going to do with this?  How about the ability to play flash content in <a href=\"http://www.adobe.com/products/acrobat/readermain.html\">Acrobat Reader</a>?  Adobe has shown that it is perfectly willing to take a reasonable document platform and turn into a huge ugly mess of features (maybe they were looking at MS Office for inspiration?).</p>\n<p>Over the last few years I&#8217;ve grown increasingly disappointed with Adobe and their products.  At work we use <a href=\"http://www.adobe.com/products/framemaker/main.html\">FrameMaker</a> 7.1 for our books that we print.  From FM we generate PDFs that then go to the printer.  Sounds like a relatively straight forward process right?  If only.  Just last week I spent a whole afternoon working with our editors trying to figure out why some solid black lines were turning into dotted lines when going from FM to PDF.  After going through all of the different variations possible in this process we finally discovered that FM simply doesn&#8217;t render these lines correctly when they are too close to a graphic.  Fortunately one of the editors (kudos to Robert) was able to make this work by adjusting the tint level on these lines.</p>\n<p>Hopefully both companies are doing this because they believe things (products, technologies, $$, etc.) will be better off this way.  We will all have to wait and see if that is really the case, but at this point I&#8217;m having a hard time seeing this as &#8220;a good thing&#8221;.</p>\n",
+            "content_text": "So the big news today is that Adobe is buying Macromedia for $3.4 billion in stock.  Although I&#8217;m not a huge fan of flash, it does have some interesting uses.  Certainly Flickr has found a nice use for it.  I wouldn&#8217;t want to get rid of flash, but I also can&#8217;t stand all flash sites.  I guess I&#8217;m just picking on flash because that is probably Macromedia&#8217;s most wide spread product/technology.  They certainly have plenty of other products.\nSo what is Adobe going to do with this?  How about the ability to play flash content in Acrobat Reader?  Adobe has shown that it is perfectly willing to take a reasonable document platform and turn into a huge ugly mess of features (maybe they were looking at MS Office for inspiration?).\nOver the last few years I&#8217;ve grown increasingly disappointed with Adobe and their products.  At work we use FrameMaker 7.1 for our books that we print.  From FM we generate PDFs that then go to the printer.  Sounds like a relatively straight forward process right?  If only.  Just last week I spent a whole afternoon working with our editors trying to figure out why some solid black lines were turning into dotted lines when going from FM to PDF.  After going through all of the different variations possible in this process we finally discovered that FM simply doesn&#8217;t render these lines correctly when they are too close to a graphic.  Fortunately one of the editors (kudos to Robert) was able to make this work by adjusting the tint level on these lines.\nHopefully both companies are doing this because they believe things (products, technologies, $$, etc.) will be better off this way.  We will all have to wait and see if that is really the case, but at this point I&#8217;m having a hard time seeing this as &#8220;a good thing&#8221;.",
+            "date_published": "2005-04-18T04:49:20-06:00",
+            "date_modified": "2005-04-18T04:49:20-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "General"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2005/03/19/dont-mess-with-my-xserve-g5/",
+            "url": "https://blog.josephscott.org/2005/03/19/dont-mess-with-my-xserve-g5/",
+            "title": "Don\u2019t Mess With My Xserve G5",
+            "content_html": "<p>I&#8217;ve been looking at a couple of different possibilities for expanding our file storage capacity at work, specifically I wanted to see if I&#8217;d run into any problems using FreeBSD 5.x with an <a href=\"http://www.apple.com/xserve/raid/\">Apple Xserve RAID</a> using the Apple Fibre Channel card.  So back on Thursday (17 Mar 2005) I took the spare Fibre Channel card and put it in a test box and broke the mirror on our current Xserve RAID system (connected to an Xserve G5) and plugged it in a tried it out.  The good news is that everything seems to work just fine.  FreeBSD detected the card using the <a href=\"http://www.freebsd.org/cgi/man.cgi?query=mpt&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+5.3-RELEASE+and+Ports&amp;format=html\">mpt(4)</a> driver and found the RAID array without any problems.</p>\n<p>The <a href=\"http://www.apple.com/xserve/\">Apple Xserve G5</a> was up and live the whole time, so it started beeping and sending out notifications when we unplugged one portion of the mirror that I used to test FreeBSD with.  So after I started running my tests I walked over to server room again to push the system indicator light/button on the front of the Xserve G5 (just to the left of the USB port on the <a href=\"http://images.apple.com/xserve/images/xs_indextop_010604_02.gif\">front panel</a>).  So I walk in the room, hold the button down for about a second and all of the sudden the lights in the room turned off and all of the UPSs started beeping madly.  After about of second of the power being off the building generator kicked on and we had emergency power running (nice to know the generator works), so all of the UPSs went silent again.</p>\n<p>I freaked!  I thought maybe I had some how killed a circuit by pushing this button on the Xserve G5.  I walked out of the server room and discovered that the whole building was out.  A minute later we discovered that the whole <a href=\"http://www.csus.edu/\">campus</a> and surrounding area lost power, so it wasn&#8217;t anything that I did.  I&#8217;m not sure if someone took out a power pole or what, but the power came back on after twenty minutes or so.  Just to make sure I went back and pressed the system indicator light/button to see if the power would stay on.  Fortunately nothing happened, so it was just coincidence that I happened to have pushed that button at the some moment that good sized power outage happened.</p>\n<p>Of course it doesn&#8217;t make any sense that pressing that button would cause a power outage, but I was sure spooked there for a minute.  Don&#8217;t mess with my Xserve G5 or I&#8217;ll turn the power off again <img src=\"https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png\" alt=\"\ud83d\ude42\" class=\"wp-smiley\" style=\"height: 1em; max-height: 1em;\" /></p>\n",
+            "content_text": "I&#8217;ve been looking at a couple of different possibilities for expanding our file storage capacity at work, specifically I wanted to see if I&#8217;d run into any problems using FreeBSD 5.x with an Apple Xserve RAID using the Apple Fibre Channel card.  So back on Thursday (17 Mar 2005) I took the spare Fibre Channel card and put it in a test box and broke the mirror on our current Xserve RAID system (connected to an Xserve G5) and plugged it in a tried it out.  The good news is that everything seems to work just fine.  FreeBSD detected the card using the mpt(4) driver and found the RAID array without any problems.\nThe Apple Xserve G5 was up and live the whole time, so it started beeping and sending out notifications when we unplugged one portion of the mirror that I used to test FreeBSD with.  So after I started running my tests I walked over to server room again to push the system indicator light/button on the front of the Xserve G5 (just to the left of the USB port on the front panel).  So I walk in the room, hold the button down for about a second and all of the sudden the lights in the room turned off and all of the UPSs started beeping madly.  After about of second of the power being off the building generator kicked on and we had emergency power running (nice to know the generator works), so all of the UPSs went silent again.\nI freaked!  I thought maybe I had some how killed a circuit by pushing this button on the Xserve G5.  I walked out of the server room and discovered that the whole building was out.  A minute later we discovered that the whole campus and surrounding area lost power, so it wasn&#8217;t anything that I did.  I&#8217;m not sure if someone took out a power pole or what, but the power came back on after twenty minutes or so.  Just to make sure I went back and pressed the system indicator light/button to see if the power would stay on.  Fortunately nothing happened, so it was just coincidence that I happened to have pushed that button at the some moment that good sized power outage happened.\nOf course it doesn&#8217;t make any sense that pressing that button would cause a power outage, but I was sure spooked there for a minute.  Don&#8217;t mess with my Xserve G5 or I&#8217;ll turn the power off again",
+            "date_published": "2005-03-19T00:38:22-07:00",
+            "date_modified": "2005-03-19T00:38:22-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "apple",
+                "FreeBSD",
+                "macosx",
+                "xraid",
+                "xserve",
+                "xserveraid",
+                "General",
+                "Mac OS X",
+                "OS"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2005/02/16/server-problems/",
+            "url": "https://blog.josephscott.org/2005/02/16/server-problems/",
+            "title": "Server Problems",
+            "content_html": "<p>Long story short, connectivity to the server hosting my blog is having issues.  I&#8217;ve been assigned another IP address in the mean time, so that could at least get to it.  I took this time to upgrade <a href=\"http://wordpress.org/download/\">WordPress 1.5</a>.  The new default theme is certainly nicer than the old one, but it still has many problems.  Eventually I&#8217;ll work up a template closer to what I had before.</p>\n<p>In the meantime, access to my blog will likely be spotty until these issues get worked out.</p>\n",
+            "content_text": "Long story short, connectivity to the server hosting my blog is having issues.  I&#8217;ve been assigned another IP address in the mean time, so that could at least get to it.  I took this time to upgrade WordPress 1.5.  The new default theme is certainly nicer than the old one, but it still has many problems.  Eventually I&#8217;ll work up a template closer to what I had before.\nIn the meantime, access to my blog will likely be spotty until these issues get worked out.",
+            "date_published": "2005-02-16T14:33:00-07:00",
+            "date_modified": "2005-02-16T14:33:00-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "General"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2005/02/05/ask-jeeves-buys-bloglines/",
+            "url": "https://blog.josephscott.org/2005/02/05/ask-jeeves-buys-bloglines/",
+            "title": "Ask Jeeves Buys Bloglines",
+            "content_html": "<p>Um, okay, this qualifies as a complete surprise to me.  <a href=\"http://www.bloglines.com/\">Bloglines</a> is <a href=\"http://napsterization.org/stories/archives/000397.html\">being purchased</a> by <a href=\"http://www.ask.com/\">Ask Jeeves</a>?  I saw this over on <a href=\"http://jeremy.zawodny.com/blog\">JeremY!</a>&#8216;s site and thought it must be some sort of joke.  I mean, does anyone still use Ask Jeeves?  Of all the companies that I might have guessed would purchase Bloglines, Ask Jeeves was no where even close to my short list.</p>\n<p>I hope that Mark is his getting money up front for this, in cash.</p>\n<p><strong>UPDATE 3:40pm 5 Feb 2005</strong>: Russ <a href=\"http://www.russellbeattie.com/notebook/1008295.html\">sums up my feelings about Bloglines</a>.  Please don&#8217;t mess up Bloglines.</p>\n<p><strong>UPDATE 10:50pm 7 Feb 2005</strong>: The acquisition <a href=\"http://www.wingedpig.com/archives/000191.html\">has been confirmed</a>.  Here&#8217;s to hoping this only means good things for Bloglines.</p>\n<p><strong>UPDATE 11:00pm 7 Feb 2005</strong>: More info at <a href=\"http://www.bloglines.com/about/news\">Bloglines News</a>, which points to the <a href=\"http://www.bloglines.com/about/pr_02082005\">official Press Release</a> and a <a href=\"http://www.bloglines.com/help/acquisition_faq\">Ask Jeeves/Bloglines FAQ</a>.</p>\n",
+            "content_text": "Um, okay, this qualifies as a complete surprise to me.  Bloglines is being purchased by Ask Jeeves?  I saw this over on JeremY!&#8216;s site and thought it must be some sort of joke.  I mean, does anyone still use Ask Jeeves?  Of all the companies that I might have guessed would purchase Bloglines, Ask Jeeves was no where even close to my short list.\nI hope that Mark is his getting money up front for this, in cash.\nUPDATE 3:40pm 5 Feb 2005: Russ sums up my feelings about Bloglines.  Please don&#8217;t mess up Bloglines.\nUPDATE 10:50pm 7 Feb 2005: The acquisition has been confirmed.  Here&#8217;s to hoping this only means good things for Bloglines.\nUPDATE 11:00pm 7 Feb 2005: More info at Bloglines News, which points to the official Press Release and a Ask Jeeves/Bloglines FAQ.",
+            "date_published": "2005-02-05T15:28:38-07:00",
+            "date_modified": "2005-02-05T15:28:38-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "General",
+                "Web"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2005/02/05/domain-names-and-credit-cards/",
+            "url": "https://blog.josephscott.org/2005/02/05/domain-names-and-credit-cards/",
+            "title": "Domain Names and Credit Cards",
+            "content_html": "<p>On the 12th of December 2004 I registered a new domain name.  Nothing special, just something some place that I intend to host a few projects on.  I haven&#8217;t really done anything with it yet, but that didn&#8217;t seem to stop American Express from finding out about and making my domain an offer for a credit card.  Yep, that&#8217;s right, one of my domains (not the person it registered to, the actual domain itself) has been offered an &#8220;American Express Business Gold Card-fee-Free for the first year&#8221;.  I wasn&#8217;t sure what to make of it when I say a letter that was addressed to my domain name and not me.</p>\n<p>I thought credit card companies were already doing fine gutting consumers and businesses with rates that would make <a href=\"http://duckman.pettho.com/characters/scrooge.html\">Scrooge McDuck</a> blush.  Are they really so desperate for fresh blood that they are willing to send offers to domain names now?</p>\n",
+            "content_text": "On the 12th of December 2004 I registered a new domain name.  Nothing special, just something some place that I intend to host a few projects on.  I haven&#8217;t really done anything with it yet, but that didn&#8217;t seem to stop American Express from finding out about and making my domain an offer for a credit card.  Yep, that&#8217;s right, one of my domains (not the person it registered to, the actual domain itself) has been offered an &#8220;American Express Business Gold Card-fee-Free for the first year&#8221;.  I wasn&#8217;t sure what to make of it when I say a letter that was addressed to my domain name and not me.\nI thought credit card companies were already doing fine gutting consumers and businesses with rates that would make Scrooge McDuck blush.  Are they really so desperate for fresh blood that they are willing to send offers to domain names now?",
+            "date_published": "2005-02-05T15:07:53-07:00",
+            "date_modified": "2005-02-05T15:07:53-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "Consumer",
+                "General",
+                "Web"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2005/01/29/lowering-yourself-to-the-level-of-fud-by-joe-barr/",
+            "url": "https://blog.josephscott.org/2005/01/29/lowering-yourself-to-the-level-of-fud-by-joe-barr/",
+            "title": "Lowering Yourself To The Level Of FUD, By Joe Barr",
+            "content_html": "<p>Many times over the years many in the Open Source community have accused Microsoft of spreading fear, uncertainty and doubt (FUD) about the Open Source community and projects.  To at least some extent this is certainly true, Microsoft has tried to discredit others (not just Open Source projects) in an effort to make theirs look better.  This tactic is hardly limited to large multi-national corporations, individuals do it all the time.  In this case it is Joe Barr with his <a href=\"http://trends.newsforge.com/article.pl?sid=05/01/24/2141242&amp;tid=29\">Why I love the GPL</a> article on <a href=\"http://www.newsforge.com/\">NewsForge</a>.</p>\n<p>Before I go on, the standard disclaimer goes here.  In general I prefer the BSD license instead of the GPL license, not in all cases, but in general.  I&#8217;m also a bigger fan of FreeBSD and Mac OS X than I am of &lt;insert your distro here&gt; Linux.  None of these stances has prevented me from using GPL software or Linux distributions.  And try I to do my best not let these preferences lower me to the level of name calling and FUD.</p>\n<p>The Linux community (and the greater Open Source community for that matter) have a lot to be proud of, they&#8217;ve made some incredible advances over the years.  No matter how you look at Open Source has made a huge contribution computing.  The Internet certainly would not be what it is today without projects like Bind and Apache.  So when I read Joe&#8217;s article on why he loves the GPL, I was disappointed to see him devote so much of hit to FUD against other licenses and Microsoft.  It is always disheartening to watch someone sink to tactics they belittle others for using.</p>\n<p>I&#8217;m not sure an article on supporting a specific license has to use adjectives like: greedy, gaping gaws, software pirates, BSD-bigots, fascist, bozos, kneecap-busting, air-supply cutting, baby-knifing, hollow-men, impotent, noxious and insane towards others.  Instead this makes Joe&#8217;s article feel like a mean spirited attack on everyone who doesn&#8217;t agree with his views.  In describing the &#8220;magic&#8221; of the GPL he says:</p>\n<blockquote><p>\n&#8220;If you don&#8217;t know what I&#8217;m talking about, then you are probably never going to &#8220;get it&#8221; as far as the GPL, or Linux, is concerned.&#8221;\n</p></blockquote>\n<p>Instead of keeping to reasons why he favors the GPL, his states that you&#8217;ll never get it.  After making personal attacks against Gates and Ballmer, he complains about the approach of attacking Richard Stallman as a substitute for attacking the GPL.  I guess it is okay for Joe to make personal attacks, but not others.  That certainly brings his credibility down a notch.  I&#8217;m sure that Joe meant well by his article, but I think he would have been more convincing if it didn&#8217;t sound so angry.</p>\n<p>I&#8217;m not a big Microsoft fan, but articles like this are not only not helpful, I believe they damage to the Open Source community.  If you are going to write an article like this, here are a few things to keep in mind:</p>\n<ul>\n<li>Attack others as little as possible.</li>\n<li>Stick to the facts, simply stating that something is the best (or worst) doesn&#8217;t make it so.</li>\n<li>Provide references for facts that you mention, this allows others to review the same material you did and see if they come to the same conclusion.</li>\n<li>Recognize that most things in this world aren&#8217;t 100% black or white, issues (and people) are complicated and you can rarely categorize them in simple ways.</li>\n<li>Address some of the down sides to your point of view, demonstrating that you have a view of the big picture.</li>\n</ul>\n<p>The Open Source community has a lot going for it and I want to see it continue to flourish.</p>\n",
+            "content_text": "Many times over the years many in the Open Source community have accused Microsoft of spreading fear, uncertainty and doubt (FUD) about the Open Source community and projects.  To at least some extent this is certainly true, Microsoft has tried to discredit others (not just Open Source projects) in an effort to make theirs look better.  This tactic is hardly limited to large multi-national corporations, individuals do it all the time.  In this case it is Joe Barr with his Why I love the GPL article on NewsForge.\nBefore I go on, the standard disclaimer goes here.  In general I prefer the BSD license instead of the GPL license, not in all cases, but in general.  I&#8217;m also a bigger fan of FreeBSD and Mac OS X than I am of &lt;insert your distro here&gt; Linux.  None of these stances has prevented me from using GPL software or Linux distributions.  And try I to do my best not let these preferences lower me to the level of name calling and FUD.\nThe Linux community (and the greater Open Source community for that matter) have a lot to be proud of, they&#8217;ve made some incredible advances over the years.  No matter how you look at Open Source has made a huge contribution computing.  The Internet certainly would not be what it is today without projects like Bind and Apache.  So when I read Joe&#8217;s article on why he loves the GPL, I was disappointed to see him devote so much of hit to FUD against other licenses and Microsoft.  It is always disheartening to watch someone sink to tactics they belittle others for using.\nI&#8217;m not sure an article on supporting a specific license has to use adjectives like: greedy, gaping gaws, software pirates, BSD-bigots, fascist, bozos, kneecap-busting, air-supply cutting, baby-knifing, hollow-men, impotent, noxious and insane towards others.  Instead this makes Joe&#8217;s article feel like a mean spirited attack on everyone who doesn&#8217;t agree with his views.  In describing the &#8220;magic&#8221; of the GPL he says:\n\n&#8220;If you don&#8217;t know what I&#8217;m talking about, then you are probably never going to &#8220;get it&#8221; as far as the GPL, or Linux, is concerned.&#8221;\n\nInstead of keeping to reasons why he favors the GPL, his states that you&#8217;ll never get it.  After making personal attacks against Gates and Ballmer, he complains about the approach of attacking Richard Stallman as a substitute for attacking the GPL.  I guess it is okay for Joe to make personal attacks, but not others.  That certainly brings his credibility down a notch.  I&#8217;m sure that Joe meant well by his article, but I think he would have been more convincing if it didn&#8217;t sound so angry.\nI&#8217;m not a big Microsoft fan, but articles like this are not only not helpful, I believe they damage to the Open Source community.  If you are going to write an article like this, here are a few things to keep in mind:\n\nAttack others as little as possible.\nStick to the facts, simply stating that something is the best (or worst) doesn&#8217;t make it so.\nProvide references for facts that you mention, this allows others to review the same material you did and see if they come to the same conclusion.\nRecognize that most things in this world aren&#8217;t 100% black or white, issues (and people) are complicated and you can rarely categorize them in simple ways.\nAddress some of the down sides to your point of view, demonstrating that you have a view of the big picture.\n\nThe Open Source community has a lot going for it and I want to see it continue to flourish.",
+            "date_published": "2005-01-29T14:27:38-07:00",
+            "date_modified": "2005-01-29T14:27:38-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "General",
+                "OS"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2005/01/28/information-society/",
+            "url": "https://blog.josephscott.org/2005/01/28/information-society/",
+            "title": "Information Society",
+            "content_html": "<p>I&#8217;ve been a fan of <a href=\"http://www.insoc.org/\">Information Society</a> for years (late 80s ?) and still enjoy their fun techno beat every now and then.  But I can&#8217;t remember when the first time was that I heard them, or even what song it was (although it was probably What&#8217;s On Your Mind/Pure Energy from their self titled CD).  So I&#8217;ve always like my original history with listening to them was some how lost in some section of mind that no longer wants to be actively used.  At some point I got around to purchasing their self titled CD (back then I bought on tape first) and their next two CDs, Hack and Peace and Love, Inc. and enjoyed them both immensely.  I enjoy listening to music (though Sarah is the real music buff in the family, she knows everything about 80s music), I was just always drawn to Information Society (InSoc), something about that catchy techno-pop style.</p>\n<p>I never got to see them in concert (heck, I&#8217;ve only been to one major music concert and that was for the B-52&#8217;s), which was a shame.  I need get to see a few bits of a couple of videos on MTV and most of the appearance on MTV&#8217;s dance show (what was that called, Club MTV or something like that?), so that was my only InSoc fix beyond just listening to their music.</p>\n<p>Fast forward to the mid to late 90s, during which time the InSoc that I remembered was no longer together.  But I did discover their &#8220;official&#8221; <a href=\"http://www.insoc.org/\">website</a> eventually and got to read through all of the little history bits that I never knew about.  Most of it was from when they were still more of a &#8220;local band&#8221; and weren&#8217;t known well outside of the areas they played in.  Kurt did release more work under the InSoc name, but it was very different than their previous work and I never really got into it.  There&#8217;s even still an <a href=\"http://groups-beta.google.com/group/alt.music.info-society\">active InSoc news group</a> which gets interesting posts from time to time.</p>\n<p>This brings us up to the last year or so.  VH-1 has a show Sarah likes to watch called <a href=\"http://www.vh1.com/shows/dyn/bands_reunited/series.jhtml\">Bands Reunited</a> which tries to reunite old broken up bands to bring the members back together and play one last show.  Usually their are successful, but not always.  So rumor has it that Bands Reunited is going an InSoc episode, but the feeling is that Kurt would never go for it.  A few months later I come up home one night and Sarah tells me that they had <a href=\"http://www.vh1.com/shows/dyn/bands_reunited/81584/episode.jhtml\">InSoc on Bands Reunited</a> that night, but that they Kurt didn&#8217;t show so the band didn&#8217;t play at the end of the show.  I was bummed that I missed it and of course they haven&#8217;t re-shown that episode since.  So if you&#8217;ve got a copy of it some where leave comment, I&#8217;d like to see it.</p>\n<p>So tonight I started thinking about all of this again, and came across a <a href=\"http://www.insoc.org/texts/BandReunion.HTML\">detailed report from Kurt&#8217;s point of view</a> on the Bands Reunited InSoc episode.  As much as I&#8217;d like to see InSoc play again, I can respect Kurt&#8217;s decision not to.</p>\n<p>Ahhh how I miss the days when the old InSoc was making new stuff.</p>\n",
+            "content_text": "I&#8217;ve been a fan of Information Society for years (late 80s ?) and still enjoy their fun techno beat every now and then.  But I can&#8217;t remember when the first time was that I heard them, or even what song it was (although it was probably What&#8217;s On Your Mind/Pure Energy from their self titled CD).  So I&#8217;ve always like my original history with listening to them was some how lost in some section of mind that no longer wants to be actively used.  At some point I got around to purchasing their self titled CD (back then I bought on tape first) and their next two CDs, Hack and Peace and Love, Inc. and enjoyed them both immensely.  I enjoy listening to music (though Sarah is the real music buff in the family, she knows everything about 80s music), I was just always drawn to Information Society (InSoc), something about that catchy techno-pop style.\nI never got to see them in concert (heck, I&#8217;ve only been to one major music concert and that was for the B-52&#8217;s), which was a shame.  I need get to see a few bits of a couple of videos on MTV and most of the appearance on MTV&#8217;s dance show (what was that called, Club MTV or something like that?), so that was my only InSoc fix beyond just listening to their music.\nFast forward to the mid to late 90s, during which time the InSoc that I remembered was no longer together.  But I did discover their &#8220;official&#8221; website eventually and got to read through all of the little history bits that I never knew about.  Most of it was from when they were still more of a &#8220;local band&#8221; and weren&#8217;t known well outside of the areas they played in.  Kurt did release more work under the InSoc name, but it was very different than their previous work and I never really got into it.  There&#8217;s even still an active InSoc news group which gets interesting posts from time to time.\nThis brings us up to the last year or so.  VH-1 has a show Sarah likes to watch called Bands Reunited which tries to reunite old broken up bands to bring the members back together and play one last show.  Usually their are successful, but not always.  So rumor has it that Bands Reunited is going an InSoc episode, but the feeling is that Kurt would never go for it.  A few months later I come up home one night and Sarah tells me that they had InSoc on Bands Reunited that night, but that they Kurt didn&#8217;t show so the band didn&#8217;t play at the end of the show.  I was bummed that I missed it and of course they haven&#8217;t re-shown that episode since.  So if you&#8217;ve got a copy of it some where leave comment, I&#8217;d like to see it.\nSo tonight I started thinking about all of this again, and came across a detailed report from Kurt&#8217;s point of view on the Bands Reunited InSoc episode.  As much as I&#8217;d like to see InSoc play again, I can respect Kurt&#8217;s decision not to.\nAhhh how I miss the days when the old InSoc was making new stuff.",
+            "date_published": "2005-01-28T22:52:56-07:00",
+            "date_modified": "2005-01-28T22:52:56-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "General"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2005/01/24/johnny-carson-dies-at-age-79/",
+            "url": "https://blog.josephscott.org/2005/01/24/johnny-carson-dies-at-age-79/",
+            "title": "Johnny Carson Dies At Age 79",
+            "content_html": "<p>The man who practically invented late night television, Johnny Carson, <a href=\"http://www.cnn.com/2005/SHOWBIZ/TV/01/23/carson.obit/index.html\">died</a> at the age of 79.</p>\n",
+            "content_text": "The man who practically invented late night television, Johnny Carson, died at the age of 79.",
+            "date_published": "2005-01-24T07:31:36-07:00",
+            "date_modified": "2005-01-24T07:31:36-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "General"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2005/01/12/name-change-for-jeremy-zawodny/",
+            "url": "https://blog.josephscott.org/2005/01/12/name-change-for-jeremy-zawodny/",
+            "title": "Name Change For Jeremy Zawodny",
+            "content_html": "<p>For many of us folks on the web <a href=\"http://jeremy.zawodny.com/blog/\">Jeremy</a> gives Yahoo a rather personal feel because we get to have a little peek inside via his blog.  Back in October he <a href=\"http://jeremy.zawodny.com/blog/archives/002808.html\">went back</a> to the Yahoo Search team.  I&#8217;m not sure exactly what his new position really is in relationship to Yahoo as a whole, but it certainly seems like he is becoming more and more a public face on trying to make Yahoo better.</p>\n<p>To that end I propose a name change for Jeremy.  This popped into my head the other, probably as a typo more than anything, but I think it works.  One of the simple ways to make the <a href=\"http://www.yahoo.com/\">Yahoo</a> logo stand out is to write it like this:</p>\n<blockquote><p>Yahoo!</p></blockquote>\n<p>So this lead me to typing Jeremy&#8217;s name a little different the other day:</p>\n<blockquote><p>JeremY!</p></blockquote>\n<p>Strange, no doubt, but that was what came out with the result of so much Yahoo mixing up with Jeremy when I read his blog.</p>\n",
+            "content_text": "For many of us folks on the web Jeremy gives Yahoo a rather personal feel because we get to have a little peek inside via his blog.  Back in October he went back to the Yahoo Search team.  I&#8217;m not sure exactly what his new position really is in relationship to Yahoo as a whole, but it certainly seems like he is becoming more and more a public face on trying to make Yahoo better.\nTo that end I propose a name change for Jeremy.  This popped into my head the other, probably as a typo more than anything, but I think it works.  One of the simple ways to make the Yahoo logo stand out is to write it like this:\nYahoo!\nSo this lead me to typing Jeremy&#8217;s name a little different the other day:\nJeremY!\nStrange, no doubt, but that was what came out with the result of so much Yahoo mixing up with Jeremy when I read his blog.",
+            "date_published": "2005-01-12T16:22:12-07:00",
+            "date_modified": "2005-01-12T16:22:12-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "General"
+            ]
+        }
+    ]
+}

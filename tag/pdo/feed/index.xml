@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>pdo &#8211; Joseph Scott</title>
+	<atom:link href="/tag/pdo/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 11 Jan 2010 16:13:09 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>PDO Oddness</title>
+		<link>/2010/01/11/pdo-oddness/</link>
+					<comments>/2010/01/11/pdo-oddness/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 11 Jan 2010 16:13:09 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[pdo]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1704</guid>
+
+					<description><![CDATA[There are some parts of PDO that I find strange. First up, why is the default fetch mode for the fetch function PDO::FETCH_BOTH? Returning twice as much data seems like a waste. Second, but related to the first, why can&#8217;t you change the default fetch mode using PDO::setAttribute? It&#8217;s fine to be able to override [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>There are some parts of <a href="http://us.php.net/pdo">PDO</a> that I find strange.</p>
+<p>First up, why is the default fetch mode for the <a href="http://www.php.net/manual/en/pdostatement.fetch.php">fetch</a> function PDO::FETCH_BOTH?  Returning twice as much data seems like a waste.</p>
+<p>Second, but related to the first, why can&#8217;t you change the default fetch mode using <a href="http://www.php.net/manual/en/pdo.setattribute.php">PDO::setAttribute</a>?  It&#8217;s fine to be able to override the default when calling fetch, but being able to set a more reasonable default seems like an obvious feature.</p>
+<p>And finally, why doesn&#8217;t the <a href="http://us.php.net/manual/en/pdo.connections.php">PDO DSN</a> include the username and password?  The format for the DSN is a bit different too.  Instead of using the URL style, used by many others like the <a href="http://pear.php.net/manual/en/package.database.db.intro-dsn.php">PEAR::DB DSN</a>, they came up with something else entirely.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/01/11/pdo-oddness/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

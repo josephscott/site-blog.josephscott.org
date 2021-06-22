@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: How To Check A Site For SPDY Support With OpenSSL	</title>
+	<atom:link href="/2014/12/02/how-to-check-a-site-for-spdy-support-with-openssl/feed/" rel="self" type="application/rss+xml" />
+	<link>/2014/12/02/how-to-check-a-site-for-spdy-support-with-openssl/</link>
+	<description></description>
+	<lastBuildDate>Tue, 17 Feb 2015 18:19:28 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Custom SPDY at Facebook &#124; Joseph Scott		</title>
+		<link>/2014/12/02/how-to-check-a-site-for-spdy-support-with-openssl/#comment-4288</link>
+
+		<dc:creator><![CDATA[Custom SPDY at Facebook &#124; Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 17 Feb 2015 18:19:28 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11443#comment-4288</guid>
+
+					<description><![CDATA[[&#8230;] making plans to retire SPDY in favor of HTTP/2 I started testing sites to see how many of them advertised support for HTTP/2. No surprise that Google [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] making plans to retire SPDY in favor of HTTP/2 I started testing sites to see how many of them advertised support for HTTP/2. No surprise that Google [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2014/12/02/how-to-check-a-site-for-spdy-support-with-openssl/#comment-4287</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 05 Dec 2014 14:28:10 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11443#comment-4287</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/12/02/how-to-check-a-site-for-spdy-support-with-openssl/#comment-4286&quot;&gt;Daan Kortenbach&lt;/a&gt;.
+
+In this case it wasn&#039;t a question of if SPDY was working ( it was ), but a bug in that was allowing for a ~200ms delay in some cases.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/12/02/how-to-check-a-site-for-spdy-support-with-openssl/#comment-4286">Daan Kortenbach</a>.</p>
+<p>In this case it wasn&#8217;t a question of if SPDY was working ( it was ), but a bug in that was allowing for a ~200ms delay in some cases.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Daan Kortenbach		</title>
+		<link>/2014/12/02/how-to-check-a-site-for-spdy-support-with-openssl/#comment-4286</link>
+
+		<dc:creator><![CDATA[Daan Kortenbach]]></dc:creator>
+		<pubDate>Fri, 05 Dec 2014 10:05:16 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11443#comment-4286</guid>
+
+					<description><![CDATA[If you are using Chrome and just want to see if SPDY is working, you can also use the SPDY Indicator extension. 
+I suspect you would use your solution for automated checks?]]></description>
+			<content:encoded><![CDATA[<p>If you are using Chrome and just want to see if SPDY is working, you can also use the SPDY Indicator extension.<br />
+I suspect you would use your solution for automated checks?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

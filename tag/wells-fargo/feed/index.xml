@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>wells-fargo &#8211; Joseph Scott</title>
+	<atom:link href="/tag/wells-fargo/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 03 Mar 2015 15:40:42 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Wells Fargo Password Policy</title>
+		<link>/2015/03/03/wells-fargo-password-policy/</link>
+					<comments>/2015/03/03/wells-fargo-password-policy/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 03 Mar 2015 15:40:42 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[password-policy]]></category>
+		<category><![CDATA[wells-fargo]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11652</guid>
+
+					<description><![CDATA[Overly tight restrictions on what you can use for a password raises the little red flag in the back of my mind. Sadly banks are some of the worst at this. I recently came across the password policy page for Wells Fargo, which isn&#8217;t nearly the worst I&#8217;ve seen: Your password: &#8211; Must be 6 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Overly tight restrictions on what you can use for a password raises the little red flag in the back of my mind.  Sadly banks are some of the worst at this.  I recently came across the <a href="https://online.wellsfargo.com/das/channel/helpText?key=fieldhelp_PasswordCreation">password policy page for Wells Fargo</a>, which isn&#8217;t nearly the worst I&#8217;ve seen:</p>
+<blockquote><p>
+Your password:<br />
+&#8211; Must be 6 to 14 characters.<br />
+&#8211; Must contain at least one letter and one number.<br />
+&#8211; May not contain nine or more numbers.<br />
+&#8211; May not be identical to your Username.<br />
+&#8211; May not repeat the same number or letter more than 3 times in a row.<br />
+&#8211; May not contain more than 3 sequential numbers or letters (such as &#8216;1234&#8217; or &#8216;abcd&#8217;) in a row.<br />
+&#8211; May contain special characters (such as @, %, &#038;, #).
+</p></blockquote>
+<p>There are several things to like about this.  Avoiding sequences and repetition is good.  I wonder where the requirement to use less than 9 numbers comes from.</p>
+<p>The major pain point in this list is limiting the password length to only 14 characters.  Any time I see a maximum length that small I fear they are storing it in plain text some where.  Assuming reasonable hashing methods a maximum length closer to 70 characters would be significantly better.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/03/03/wells-fargo-password-policy/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

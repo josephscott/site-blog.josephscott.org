@@ -1,0 +1,36 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/pdo/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/pdo/",
+    "feed_url": "https://blog.josephscott.org/tag/pdo/feed/json/",
+    "language": "en-US",
+    "title": "pdo &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://josephscott.org/?p=1704",
+            "url": "https://blog.josephscott.org/2010/01/11/pdo-oddness/",
+            "title": "PDO Oddness",
+            "content_html": "<p>There are some parts of <a href=\"http://us.php.net/pdo\">PDO</a> that I find strange.</p>\n<p>First up, why is the default fetch mode for the <a href=\"http://www.php.net/manual/en/pdostatement.fetch.php\">fetch</a> function PDO::FETCH_BOTH?  Returning twice as much data seems like a waste.</p>\n<p>Second, but related to the first, why can&#8217;t you change the default fetch mode using <a href=\"http://www.php.net/manual/en/pdo.setattribute.php\">PDO::setAttribute</a>?  It&#8217;s fine to be able to override the default when calling fetch, but being able to set a more reasonable default seems like an obvious feature.</p>\n<p>And finally, why doesn&#8217;t the <a href=\"http://us.php.net/manual/en/pdo.connections.php\">PDO DSN</a> include the username and password?  The format for the DSN is a bit different too.  Instead of using the URL style, used by many others like the <a href=\"http://pear.php.net/manual/en/package.database.db.intro-dsn.php\">PEAR::DB DSN</a>, they came up with something else entirely.</p>\n",
+            "content_text": "There are some parts of PDO that I find strange.\nFirst up, why is the default fetch mode for the fetch function PDO::FETCH_BOTH?  Returning twice as much data seems like a waste.\nSecond, but related to the first, why can&#8217;t you change the default fetch mode using PDO::setAttribute?  It&#8217;s fine to be able to override the default when calling fetch, but being able to set a more reasonable default seems like an obvious feature.\nAnd finally, why doesn&#8217;t the PDO DSN include the username and password?  The format for the DSN is a bit different too.  Instead of using the URL style, used by many others like the PEAR::DB DSN, they came up with something else entirely.",
+            "date_published": "2010-01-11T09:13:09-07:00",
+            "date_modified": "2010-01-11T09:13:09-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "pdo",
+                "PHP",
+                "Posts"
+            ]
+        }
+    ]
+}

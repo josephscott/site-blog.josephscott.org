@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>opml &#8211; Joseph Scott</title>
+	<atom:link href="/tag/opml/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 14 Mar 2013 13:54:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Google Reader, Gone</title>
+		<link>/2013/03/14/google-reader-gone/</link>
+					<comments>/2013/03/14/google-reader-gone/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 14 Mar 2013 13:54:45 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[google-reader]]></category>
+		<category><![CDATA[opml]]></category>
+		<category><![CDATA[rss]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7069</guid>
+
+					<description><![CDATA[Sad to hear that Google Reader is being shutdown. As of 1 July 2013 Google Reader will be gone. This is a major bummer, I use Google Reader every day. When Google Reader came along in 2005 it wiped out most of the feed reader services that were around at the time. Prior to Google [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://sharedat.net/s/3CQw"><img loading="lazy" src="https://sharedat.net/f/3C/3CQw/google-reader.png" width="147" height="184" class="alignleft" /></a></p>
+<p>Sad to hear that <a href="http://googlereader.blogspot.com/2013/03/powering-down-google-reader.html">Google Reader is being shutdown</a>.  As of 1 July 2013 <a href="http://www.google.com/reader">Google Reader</a> will be gone.  This is a major bummer, I use Google Reader every day.</p>
+<p>When Google Reader came along in 2005 it wiped out most of the feed reader services that were around at the time.  Prior to Google Reader I used Bloglines, back when Blogline was still a feed reader.  I had resisted moving from Bloglines to Google Reader, because for awhile I liked the experience in Bloglines better.  Ultimately though Google Reader soaked up most of the oxygen in the feed reader service space and I moved entirely from Bloglines to Google Reader.</p>
+<p>I suggest exporting your Google Reader data via <a href="http://www.dataliberation.org/google/reader">Google Takeout</a> soon.  It only took a few minutes to walk through the steps to export my data.  Other readers will likely support importing <a href="http://dev.opml.org/">OPML</a>, so best to export now instead of waiting until the last minute.</p>
+<p>Despite how ugly this is going to be in the short term I think this painful process may eventually yield better things ahead.  <a href="http://www.marco.org/2013/03/13/google-reader-sunset">Marco Arment put it this way</a>:</p>
+<blockquote><p>
+Now, we’ll be forced to fill the hole that Reader will leave behind, and there’s no immediately obvious alternative. We’re finally likely to see substantial innovation and competition in RSS desktop apps and sync platforms for the first time in almost a decade.
+</p></blockquote>
+<p>Technology, like nature, views a vacuum as an opportunity to fill a space.</p>
+<p>So what now?  There are a few alternatives available today, but none of them seem to be a clear winner.  I imagine over the next twelve months there will be a number of new services that show up, trying to be _the_ replacement for Google Reader.  It will be ugly for awhile, but I&#8217;m hopeful in the end we&#8217;ll see some really strong replacements come out of this.</p>
+<p>In the mean time leave your Google Reader replacement suggestions in the comments below.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/03/14/google-reader-gone/feed/</wfw:commentRss>
+			<slash:comments>9</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Errbot	</title>
+	<atom:link href="/2015/11/30/errbot/feed/" rel="self" type="application/rss+xml" />
+	<link>/2015/11/30/errbot/</link>
+	<description></description>
+	<lastBuildDate>Tue, 01 Dec 2015 15:39:20 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2015/11/30/errbot/#comment-4403</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 01 Dec 2015 15:39:20 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=13926#comment-4403</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2015/11/30/errbot/#comment-4402&quot;&gt;julien&lt;/a&gt;.
+
+The ability for a bot to inject news items into a channel from an RSS feed would definitely be a nice addition.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2015/11/30/errbot/#comment-4402">julien</a>.</p>
+<p>The ability for a bot to inject news items into a channel from an RSS feed would definitely be a nice addition.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: julien		</title>
+		<link>/2015/11/30/errbot/#comment-4402</link>
+
+		<dc:creator><![CDATA[julien]]></dc:creator>
+		<pubDate>Tue, 01 Dec 2015 08:37:34 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=13926#comment-4402</guid>
+
+					<description><![CDATA[Pretty cool! Let&#039;s see if I can create a Superfeedr plugin to subscribe to RSS feeds :)]]></description>
+			<content:encoded><![CDATA[<p>Pretty cool! Let&#8217;s see if I can create a Superfeedr plugin to subscribe to RSS feeds 🙂</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>tinkering &#8211; Joseph Scott</title>
+	<atom:link href="/tag/tinkering/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 13 Oct 2010 16:25:25 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Tinkering With Redis</title>
+		<link>/2010/10/13/tinkering-with-redis/</link>
+					<comments>/2010/10/13/tinkering-with-redis/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 13 Oct 2010 16:25:25 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[redis]]></category>
+		<category><![CDATA[tinkering]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2937</guid>
+
+					<description><![CDATA[I like to tinker with different things from time to time. Not because it is something I&#8217;m using at work, or even using any where at all. Just to see what others are doing and hopefully learn a few things along the way. So here are a few notes about tinkering with Redis. The short [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I like to tinker with different things from time to time.  Not because it is something I&#8217;m using at work, or even using any where at all.  Just to see what others are doing and hopefully learn a few things along the way.  So here are a few notes about tinkering with <a href="http://code.google.com/p/redis/">Redis</a>.</p>
+<h3>The short story</h3>
+<p>Created by Salvatore &#8220;antirez&#8221; Sanfilippo, Redis was first released in March 2009 and is under a BSD style license.</p>
+<p>Superficially Redis is like <a href="http://memcached.org/">memcached</a> in that it is a memory based key/value store.  But it is also much more than that.  Data storage can be persistent and it provides additional data types and operations.</p>
+<h3>Getting started in less than 60 seconds</h3>
+<p>On a unix style system (Mac, Linux, FreeBSD, etc.) it takes less than 30 seconds to get Redis up and running:</p>
+<ul>
+<li>curl -O http://redis.googlecode.com/files/redis-2.0.2.tar.gz</li>
+<li>tar -xzvf redis-2.0.2.tar.gz</li>
+<li>cd redis-2.0.2</li>
+<li>make</li>
+<li>./redis-server</li>
+</ul>
+<p>I really like that there are no external dependencies to worry about, just download, build and go.  As an added bonus it comes with a CLI client as well, redis-cli.</p>
+<h3>Exploring</h3>
+<p>The redis-cli tool makes it easy to explore features of Redis without having to write any code.  I recommend taking a few minutes to walk through the <a href="http://code.google.com/p/redis/wiki/IntroductionToRedisDataTypes">introduction to redis data types</a> page.  After a few minutes going through the examples there you&#8217;ll have a basic idea of the data types: string, integer (special type of string really), lists, sets, and sorted sets and a few of the operations available for each type.  One data type that page doesn&#8217;t cover yet is hashes, which are exactly what they sound like.</p>
+<p>A longer list of supported commands with links is available at <a href="http://code.google.com/p/redis/wiki/CommandReference">http://code.google.com/p/redis/wiki/CommandReference</a>, which is a good resource to explore while playing with Redis.</p>
+<h3>Beyond data storage</h3>
+<p>Fast access to data in formats that developers are familiar with is nice, but that isn&#8217;t the only thing Redis is good for.  First, check out the <a href="http://code.google.com/p/redis/wiki/BlpopCommand">blocking pop commands</a>.  This allows for one or more clients to block when popping data off an array.  If there is data in the array they immediately get that, and if there isn&#8217;t they will get immediately notified when a new item is added.  Now you&#8217;ve got a simple queueing system.</p>
+<p>After letting your imagination wander a bit with blocking pop go check out the <a href="http://code.google.com/p/redis/wiki/PublishSubscribe">pub/sub commands</a>. The publish/subscribe (pub/sub) features in Redis allow you to easily listen for updates on a channel.  Other clients can then write updates to those channels.  *Poof* you&#8217;ve now got a simple message passing system.</p>
+<h3>Back to the data</h3>
+<p>I mentioned persistence of data as something that Redis provides.  There are two ways to do that, via snapshots and the append only file.  Both of these allow Redis to reload data after a restart.  Check out the redis.conf file for more details on how these two options work.</p>
+<p>Replication is also available with a master/slave approach.  There is a <a href="http://code.google.com/p/redis/wiki/ReplicationHowto">replication how-to</a>, which is over kill because creating a new slave is wonderfully simple.</p>
+<p>A more recent feature is virtual memory.  This allows Redis to store more data than would fit in physical memory.  Relying on the the virtual memory of the operating system wasn&#8217;t really an option because it would swap out the whole process, where as Redis can be smart about swapping out the least used data.  A reasonable balance of speed with increased capacity.</p>
+<h3>More reading</h3>
+<p>I&#8217;ve really only scratched the surface of what Redis can do in these various areas.  The <a href="http://code.google.com/p/redis/wiki/index?tm=6">documentation page</a> is a good place to pick up more details.  Simon Willison has a great set of slides from his <a href="http://simonwillison.net/static/2010/redis-tutorial/">Redis tutorial</a> that I also recommend reading.</p>
+<h3>Why</h3>
+<p>Redis looks interesting not just for the feature set, but how it works as well.  Operations on data are atomic, backups are done as atomic copies so making backups is as easy as copying a file.  While there are still issues and trade offs in Redis (every system has them), there is also a general feeling of elegant simplicity that appeals to me.</p>
+<p>Who knows, perhaps someday I&#8217;ll even use Redis for something besides tinkering.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/10/13/tinkering-with-redis/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>p2 &#8211; Joseph Scott</title>
+	<atom:link href="/tag/p2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 09 Jul 2010 16:36:24 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Twitter Style Group Blog With P2</title>
+		<link>/2010/07/09/twitter-style-group-blog-with-p2/</link>
+					<comments>/2010/07/09/twitter-style-group-blog-with-p2/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 09 Jul 2010 16:36:24 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[p2]]></category>
+		<category><![CDATA[Twitter]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2483</guid>
+
+					<description><![CDATA[How-To Geek has a nice post on creating your own Twitter style group blog with P2 (the WordPress theme). I like that they walk through how to setup P2 on both WordPress.com, the hosted service, and using the WordPress.org software. We use P2 quite a bit at Automattic, it has become a critical part of [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>How-To Geek has a nice post on <a href="http://www.howtogeek.com/howto/21373/create-your-own-twitter-style-group-blog-with-p2/">creating your own Twitter style group blog with P2</a> (the WordPress theme).  I like that they walk through how to setup P2 on both <a href="http://wordpress.com/">WordPress.com</a>, the hosted service, and using the <a href="http://wordpress.org/">WordPress.org</a> software.</p>
+<p>We use P2 quite a bit at Automattic, it has become a critical part of our internal communications.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/07/09/twitter-style-group-blog-with-p2/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

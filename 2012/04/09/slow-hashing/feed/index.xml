@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Slow Hashing	</title>
+	<atom:link href="/2012/04/09/slow-hashing/feed/" rel="self" type="application/rss+xml" />
+	<link>/2012/04/09/slow-hashing/</link>
+	<description></description>
+	<lastBuildDate>Fri, 08 Mar 2013 14:41:32 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: want to download a vicious guard fish? &#124; weird things		</title>
+		<link>/2012/04/09/slow-hashing/#comment-3949</link>
+
+		<dc:creator><![CDATA[want to download a vicious guard fish? &#124; weird things]]></dc:creator>
+		<pubDate>Fri, 08 Mar 2013 14:41:32 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=5676#comment-3949</guid>
+
+					<description><![CDATA[[...] GuardFish.XSM is the DLL where all the main objects live and where the basic logic for logins, authentication, issuing tokens, hashing, and lockouts, is implemented. It helps you perform the basic CRUD operations on your key permission, role, and user objects as well as abstracting all the nitty gritty things like when to lock out a user, for how long, and watch for replay attacks and attempts to access accounts from IP addresses not commonly associated with the user trying to log in. All the default settings can be overriden in your config files to whatever you&#8217;d like so if an inspection of the users&#8217; common IP addresses followed by a security question prompt before a login from a new one is allowed sounds like too much work, you have the choice not to do it. But the hashing practices are embedded into GuardFish so you will be using BCrypt for a fairly slow hash, relatively speaking of course, giving you another layer of defense. [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] GuardFish.XSM is the DLL where all the main objects live and where the basic logic for logins, authentication, issuing tokens, hashing, and lockouts, is implemented. It helps you perform the basic CRUD operations on your key permission, role, and user objects as well as abstracting all the nitty gritty things like when to lock out a user, for how long, and watch for replay attacks and attempts to access accounts from IP addresses not commonly associated with the user trying to log in. All the default settings can be overriden in your config files to whatever you&#8217;d like so if an inspection of the users&#8217; common IP addresses followed by a security question prompt before a login from a new one is allowed sounds like too much work, you have the choice not to do it. But the hashing practices are embedded into GuardFish so you will be using BCrypt for a fairly slow hash, relatively speaking of course, giving you another layer of defense. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

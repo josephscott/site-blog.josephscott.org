@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>page-visibility &#8211; Joseph Scott</title>
+	<atom:link href="/tag/page-visibility/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 31 Oct 2013 15:06:37 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Page Visibility</title>
+		<link>/2013/10/31/page-visibility/</link>
+					<comments>/2013/10/31/page-visibility/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 31 Oct 2013 15:06:37 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[page-visibility]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6233</guid>
+
+					<description><![CDATA[The W3C recommendation on Page Visibility was updated this week. Being able to detect if a tab currently has focus is an opportunity to adjust features and performance accordingly. The HTML5 Rocks tutorial on Page visibility has example that automatically pauses a video when the tab is out of focus. The Mozilla Developer Network also [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The <a href="http://www.w3.org/TR/page-visibility/">W3C recommendation on Page Visibility</a> was updated this week.  Being able to detect if a tab currently has focus is an opportunity to adjust features and performance accordingly.</p>
+<p>The <a href="http://www.html5rocks.com/en/tutorials/pagevisibility/intro/">HTML5 Rocks tutorial on Page visibility</a> has example that automatically pauses a video when the tab is out of focus.  The <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/User_experience/Using_the_Page_Visibility_API">Mozilla Developer Network also uses the video pause example</a> for Page Visibility.  Must be the &#8220;Hello World&#8221; of Page Visibility examples.</p>
+<p>Another example would be to turn down the update frequency when a tab is out of focus.  No point in updating a page every second, even with a websocket, if the tab is in the background.  The Page Visibility API makes it easy to dial the frequency down to something more modest, like once a minute, then turn it back up again when the tab gets focus.</p>
+<p><a href="http://caniuse.com/#feat=pagevisibility">Browser support for the Page Visibility API</a> is pretty good in current versions.  The two exceptions are Opera Mini and the Android Browser.</p>
+<p>To deal with cross browser differences check out <a href="http://alxgbsn.co.uk/2013/04/04/visibility-js-a-cross-browser-plugin-for-using-the-page-visibility-api/">Visibility.js</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/10/31/page-visibility/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

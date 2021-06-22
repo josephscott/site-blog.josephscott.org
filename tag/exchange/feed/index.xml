@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>exchange &#8211; Joseph Scott</title>
+	<atom:link href="/tag/exchange/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 14 Mar 2006 20:46:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Exchange 12 Requires x64 Edition Of Windows Server 2003</title>
+		<link>/2006/03/14/exchange-12-requires-x64-edition-of-windows-server-2003/</link>
+					<comments>/2006/03/14/exchange-12-requires-x64-edition-of-windows-server-2003/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 14 Mar 2006 20:46:07 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[exchange]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/03/14/exchange-12-requires-x64-edition-of-windows-server-2003/</guid>
+
+					<description><![CDATA[Here is a little gem for all of you folks waiting for MS Exchange 12: The primary hardware difference between Exchange 2003 and Exchange 12 is the move from a 32-bit platform (Exchange 2003) to a 64-bit platform (Exchange 12). Exchange 12 will only be supported in production environments when it is running on an [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Here is a little gem for all of you folks waiting for <a href="http://www.microsoft.com/exchange/default.mspx">MS Exchange 12</a>:</p>
+<blockquote><p>
+The primary hardware difference between Exchange 2003 and Exchange 12 is the move from a 32-bit platform (Exchange 2003) to a 64-bit platform (Exchange 12).  Exchange 12 will only be supported in production environments when it is running on an x64 edition of Windows Server 2003.
+</p></blockquote>
+<p>That is from the <a href="http://blogs.technet.com/exchange/default.aspx">Microsoft Exchange Team Blog</a> (a.k.a You Had Me At EHLO&#8230;) post on <a href="http://blogs.technet.com/exchange/archive/2006/03/13/421914.aspx">How to choose server hardware for Exchange 2003 that can be effectively re-utilized for Exchange 12?</a>.</p>
+<p>At this point it means that Exchange 12 will only run on AMD Opteron and Intel Xeon with EM64 Technology based servers.  Probably not a huge issue since Exchange 12 will undoubtedly require a huge amount of resources to run reasonably.  I&#8217;m more concerned about the requirement of the x64 edition of Windows Server 2003.  This is just one more item to throw into the MS licensing stew.</p>
+<p>Migrating to Exchange is on my do to list.  Coming across this news has made me wonder if waiting to start with Exchange 12 would be better than starting with Exchange 2003.  Time for more research.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/03/14/exchange-12-requires-x64-edition-of-windows-server-2003/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>url &#8211; Joseph Scott</title>
+	<atom:link href="/tag/url/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 30 Mar 2015 14:33:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>What is a URL</title>
+		<link>/2015/03/30/what-is-a-url/</link>
+					<comments>/2015/03/30/what-is-a-url/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 30 Mar 2015 14:33:00 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[sam-ruby]]></category>
+		<category><![CDATA[url]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11583</guid>
+
+					<description><![CDATA[Sam Ruby has been working on URLs. The real gem is the interop test results page. I didn&#8217;t realize how inconsistent URL treatments were across systems, even for something as simple as &#8220;x&#8221;.]]></description>
+										<content:encoded><![CDATA[<p>Sam Ruby has been <a href='http://intertwingly.net/blog/2015/01/11/URL-Work-Status'>working on URLs</a>.  The real gem is the <a href="https://url.spec.whatwg.org/interop/test-results/">interop test results</a> page.  I didn&#8217;t realize how inconsistent URL treatments were across systems, even for something as simple as <a href="https://url.spec.whatwg.org/interop/test-results/f332d9850a">&#8220;x&#8221;</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/03/30/what-is-a-url/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Regex Pattern for Matching URLs</title>
+		<link>/2014/02/11/regex-pattern-for-matching-urls/</link>
+					<comments>/2014/02/11/regex-pattern-for-matching-urls/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 11 Feb 2014 16:02:06 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[john-gruber]]></category>
+		<category><![CDATA[regex]]></category>
+		<category><![CDATA[url]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9898</guid>
+
+					<description><![CDATA[John Gruber has posted an update to his Regex Pattern for Matching URLs post. The pattern itself now lives at https://gist.github.com/gruber/8891611. Related to this is a review of URL validation regular expressions. It compares 13 different methods, but only for URL validation, not necessarily matching. I&#8217;m not super keen on the idea of having a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>John Gruber has posted an update to his <a href="http://daringfireball.net/2010/07/improved_regex_for_matching_urls" title="Underscores in a URL?  Looks odd.">Regex Pattern for Matching URLs</a> post.  The pattern itself now lives at <a href="https://gist.github.com/gruber/8891611" title="This trend is increasing, would be nice to have named URLs for these types of things.">https://gist.github.com/gruber/8891611</a>.</p>
+<p>Related to this is a <a href="http://mathiasbynens.be/demo/url-regex" title="It has a pretty table for the test results.">review of URL validation regular expressions</a>.  It compares 13 different methods, but only for URL validation, not necessarily matching.</p>
+<p>I&#8217;m not super keen on the idea of having a list of TLDs as part of the regex, since the number of TLDs is continuing to grow.  I do like that Gruber&#8217;s regex includes comments in it, that is really helpful for longer, more complex expressions.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/02/11/regex-pattern-for-matching-urls/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Poll: Should URLs End With A Trailing Slash?</title>
+		<link>/2011/10/03/poll-should-urls-end-with-a-trailing-slash/</link>
+					<comments>/2011/10/03/poll-should-urls-end-with-a-trailing-slash/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 03 Oct 2011 14:44:09 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[poll]]></category>
+		<category><![CDATA[url]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4867</guid>
+
+					<description><![CDATA[I&#8217;m curious what to know people think of these two different URL styles: Trailing slash, like http://example.com/user/josephscott/ No trailing slash, like http://example.com/user/josephscott The difference is very small, just a single slash. The first option includes a trailing slash, the second one does not. Which do you prefer? Vote here: Should URLs End With A Trailing [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m curious what to know people think of these two different URL styles:</p>
+<ul>
+<li><strong>Trailing slash</strong>, like http://example.com/user<strong>/josephscott/</strong></li>
+<li><strong>No trailing slash</strong>, like http://example.com/user<strong>/josephscott</strong></li>
+</ul>
+<p>The difference is very small, just a single slash.  The first option includes a trailing slash, the second one does not.</p>
+<p>Which do you prefer?  Vote here:</p>
+<p><script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/5547825.js"></script><br />
+<noscript><a href="http://polldaddy.com/poll/5547825/">Should URLs End With A Trailing Slash?</a></noscript></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/10/03/poll-should-urls-end-with-a-trailing-slash/feed/</wfw:commentRss>
+			<slash:comments>7</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Hashbang URLs</title>
+		<link>/2011/05/30/hashbang-urls/</link>
+					<comments>/2011/05/30/hashbang-urls/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 30 May 2011 16:03:49 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[dan-webb]]></category>
+		<category><![CDATA[hashbangs]]></category>
+		<category><![CDATA[url]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4194</guid>
+
+					<description><![CDATA[The final line from Dan Webb&#8217;s It Is About The Hashbangs: Can we all agree to let it go the way of flash intros, please? Hashbang URLs can not go away fast enough. Please work to wipe them off the web and then pretend it never happened.]]></description>
+										<content:encoded><![CDATA[<p>The final line from Dan Webb&#8217;s <a href="http://danwebb.net/2011/5/28/it-is-about-the-hashbangs">It Is About The Hashbangs</a>:</p>
+<blockquote><p>
+Can we all agree to let it go the way of flash intros, please?
+</p></blockquote>
+<p>Hashbang URLs can not go away fast enough.  Please work to wipe them off the web and then pretend it never happened.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/05/30/hashbang-urls/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

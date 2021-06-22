@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>google-calendar &#8211; Joseph Scott</title>
+	<atom:link href="/tag/google-calendar/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 06 Dec 2013 15:41:42 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Export Gmail and Google Calendar Data</title>
+		<link>/2013/12/06/export-gmail-and-google-calendar-data/</link>
+					<comments>/2013/12/06/export-gmail-and-google-calendar-data/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 06 Dec 2013 15:41:42 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[gmail]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[google-calendar]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9534</guid>
+
+					<description><![CDATA[Great to see this news yesterday: Starting today we&#8217;re rolling out the ability to export a copy of your Gmail and Google Calendar data, making it easy to back up your data or move to another service. From Official Gmail Blog: Download a copy of your Gmail and Google Calendar data. I&#8217;m not sure how [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Great to see this news yesterday:</p>
+<blockquote><p>
+Starting today we&#8217;re rolling out the ability to export a copy of your Gmail and Google Calendar data, making it easy to back up your data or move to another service.
+</p></blockquote>
+<p>From <a href='http://gmailblog.blogspot.com/2013/12/download-copy-of-your-gmail-and-google.html'>Official Gmail Blog: Download a copy of your Gmail and Google Calendar data</a>.</p>
+<p>I&#8217;m not sure how well downloading 7GB of email is going to do in mbox format, exporting Gmail data hasn&#8217;t been enabled for my account yet.  I like that Google is taking this step though, it is the right thing to do.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/12/06/export-gmail-and-google-calendar-data/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Multiple Time Zone Support in Google Calendar</title>
+		<link>/2013/03/18/multiple-time-zone-support-in-google-calendar/</link>
+					<comments>/2013/03/18/multiple-time-zone-support-in-google-calendar/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 18 Mar 2013 15:38:54 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[google-calendar]]></category>
+		<category><![CDATA[time-zone]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7109</guid>
+
+					<description><![CDATA[At Automattic I have coworkers across many time zones. As a result I usually base time references on GMT instead of my local time zone. This gets a bit confusing in Google Calendar, which I have set to my local time zone. Then Alex Concha, one of my VaultPress teammates, mentioned that Google Calendar supports [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://sharedat.net/f/pC/pCTK/"><img loading="lazy" src="https://sharedat.net/f/pC/pCTK/google-calendar.png" width="135" height="482" class="alignleft" /></a></p>
+<p>At <a href="http://automattic.com/">Automattic</a> I have coworkers across many time zones.  As a result I usually base time references on GMT instead of my local time zone.  This gets a bit confusing in Google Calendar, which I have set to my local time zone.  Then <a href="https://twitter.com/xknown_wp">Alex Concha</a>, one of my <a href="http://vaultpress.com/">VaultPress</a> teammates, mentioned that <a href="http://support.google.com/calendar/bin/answer.py?hl=en&#038;answer=179200">Google Calendar supports showing multiple time zones</a>.  It takes just a minute to setup and you end up with an additional hour column.</p>
+<p>The &#8216;World Clock&#8217; in Google Calendar Labs is also useful for seeing the current time in multiple time zones while working inside your calendar.</p>
+<p>One more thing in Google Calendar I use to manage multiple time zones is the &#8216;Quick Add&#8217; form.  It supports things like &#8220;10pm GMT Test out Google Calendar on 19 Mar 2013&#8221;.  Calendar will pick up on the GMT reference and set the event to your local time zone.  In my case that would be 4pm local time.</p>
+<p>Multiple time zones and day light savings can make scheduling a widely distributed team more of a headache, these features in Google Calendar make it a bit less painful.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/03/18/multiple-time-zone-support-in-google-calendar/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

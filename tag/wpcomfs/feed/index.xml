@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>wpcomfs &#8211; Joseph Scott</title>
+	<atom:link href="/tag/wpcomfs/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 06 Jun 2012 16:47:42 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>wpcomfs &#8211; A WordPress.com Filesystem</title>
+		<link>/2012/06/06/wpcomfs-a-wordpress-com-filesystem/</link>
+					<comments>/2012/06/06/wpcomfs-a-wordpress-com-filesystem/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 06 Jun 2012 16:47:42 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[filesystem]]></category>
+		<category><![CDATA[fuse]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[wpcomfs]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6008</guid>
+
+					<description><![CDATA[Back in April WordPress.com announced a new REST style API. That got me thinking about writing a filesystem layer to expose that data, along similar lines to the pressfs code I&#8217;d written last year. It is still rough, and only supports read-only public data, but in the spirit of release early (and often) I&#8217;m sharing [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Back in April <a href="http://en.blog.wordpress.com/2012/04/12/integrate-cool-applications-with-wordpress-com/">WordPress.com announced</a> a new <a href="http://developer.wordpress.com/docs/api/">REST style API</a>.  That got me thinking about writing a filesystem layer to expose that data, along similar lines to the <a href="https://josephscott.org/archives/2011/05/pressfs-a-wordpress-filesystem/">pressfs</a> code I&#8217;d written last year.</p>
+<p>It is still rough, and only supports read-only public data, but in the spirit of release early (and often) I&#8217;m sharing the code for <a href="https://github.com/josephscott/wpcomfs">wpcomfs</a> at <a href="https://github.com/josephscott/wpcomfs">https://github.com/josephscott/wpcomfs</a>.</p>
+<p>Assuming you have <a href="http://fuse.sourceforge.net/">FUSE</a> with Python bindings already working on your system you can download this and start trying it out in three easy steps:</p>
+<ol>
+<li><code>mkdir /tmp/wpcomfs</code></li>
+<li><code>python wpcomfs.py /tmp/wpcomfs/</code></li>
+<li><code>mkdir /tmp/wpcomfs/sites/en.blog.wordpress.com</code></li>
+</ol>
+<p>After those steps you&#8217;ll have read-only data for <a href="http://en.blog.wordpress.com/">en.blog.wordpress.com</a> available at <code>/tmp/wpcomfs/sites/en.blog.wordpress.com</code>.</p>
+<p>The mount point <code>/tmp/wpcomfs</code> and the site en.blog.wordpress.com are just examples.  You mount wpcomfs where ever you&#8217;d like and you can expose public data for any public site hosted on <a href="http://wordpress.com/">WordPress.com</a>.  Since there are millions of sites hosted at WordPress.com wpcomfs will only load data for sites that you <code>mkdir</code>.</p>
+<p>This also works for WordPress.com sites that are using mapped domain names.  For instance <code>mkdir /tmp/wpcomfs/sites/gigaom.com</code> will provide you with a filesystem layer for <a href="http://gigaom.com/">GigaOM.com</a>.</p>
+<h3>Data</h3>
+<p>When you <code>mkdir</code> a site you get <a href="http://developer.wordpress.com/docs/api/1/get/sites/%24site/">site data</a>, <a href="http://developer.wordpress.com/docs/api/1/get/sites/%24site/posts/">recent posts</a>, and <a href="http://developer.wordpress.com/docs/api/1/get/sites/%24site/comments/">recent comments</a>.  In order to keep interactions with the filesystem responsive this data is only loaded once, when <code>mkdir</code> is run.  Running <code>rmdir /tmp/wpcomfs/sites/en.blog.wordpress.com</code> will remove the site data.</p>
+<p>The top level directory for a site looks like:</p>
+<p>[sourcecode]<br />
+$ ls -la /tmp/wpcomfs/sites/en.blog.wordpress.com/<br />
+total 14<br />
+-r&#8212;&#8212;&#8211; 1 root root    7 Jun  6 14:09 ID.txt<br />
+-r&#8212;&#8212;&#8211; 1 root root   28 Jun  6 14:09 URL.txt<br />
+dr&#8212;&#8212;&#8211; 2 root root 4096 Jun  6 14:09 comments<br />
+-r&#8212;&#8212;&#8211; 1 root root   61 Jun  6 14:09 description.txt<br />
+dr&#8212;&#8212;&#8211; 2 root root 4096 Jun  6 14:09 meta<br />
+-r&#8212;&#8212;&#8211; 1 root root   18 Jun  6 14:09 name.txt<br />
+dr&#8212;&#8212;&#8211; 2 root root 4096 Jun  6 14:09 posts<br />
+[/sourcecode]</p>
+<p>The contents of each file are available in read-only mode:</p>
+<p>[sourcecode]<br />
+$ more /tmp/wpcomfs/sites/en.blog.wordpress.com/URL.txt<br />
+http://en.blog.wordpress.com/<br />
+[/sourcecode]</p>
+<p>All of the dates exposed for files and directories in wpcomfs are based on when the site data was loaded.  Basically when <code>mkdir</code> was run for the site.</p>
+<p>You can <code>mkdir</code> as many sites as you want.  I haven&#8217;t tested an upper limit, but I imagine if you load enough of them your system will run out of memory and die.</p>
+<h3>Bugs</h3>
+<p>I have noticed a few bugs.  Specifically, in some cases post content runs into some encoding issues and doesn&#8217;t get exposed properly at the filesystem level.  Another one that I&#8217;ve seen is that the comment count number doesn&#8217;t show up correctly.  Both of these are issues in the Python code that I need to take the time to work out.</p>
+<p>While not really a bug, there are also some patterns in this code that I&#8217;m not entirely happy with.  I&#8217;m hoping with a bit more Python experience I&#8217;ll be able to simplify those.</p>
+<h3>Kick The Tires</h3>
+<p>The code is available at <a href="https://github.com/josephscott/wpcomfs">https://github.com/josephscott/wpcomfs</a>, please give a try and let me know what you think.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/06/06/wpcomfs-a-wordpress-com-filesystem/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

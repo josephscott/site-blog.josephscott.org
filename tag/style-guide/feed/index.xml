@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>style-guide &#8211; Joseph Scott</title>
+	<atom:link href="/tag/style-guide/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 08 Oct 2015 17:30:23 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Google Style</title>
+		<link>/2015/10/08/google-style/</link>
+					<comments>/2015/10/08/google-style/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 08 Oct 2015 17:30:23 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[style-guide]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13396</guid>
+
+					<description><![CDATA[Previously I&#8217;d mentioned a style guide from Google that covered shell scripts. Turns out they have a style guide for just about everything &#8211; https://github.com/google/styleguide: “Style” covers a lot of ground, from “use camelCase for variable names” to “never use global variables” to “never use exceptions.” This project holds the style guidelines we use for [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Previously I&#8217;d mentioned <a href="https://josephscott.org/archives/2015/08/shell-style-guide/">a style guide from Google that covered shell scripts</a>.  Turns out they have a style guide for just about everything &#8211; <a href="https://github.com/google/styleguide">https://github.com/google/styleguide</a>:</p>
+<blockquote><p>
+“Style” covers a lot of ground, from “use camelCase for variable names” to “never use global variables” to “never use exceptions.” This project holds the style guidelines we use for Google code. If you are modifying a project that originated at Google, you may be pointed to this page to see the style guides that apply to that project.</p>
+<p>Our C++ Style Guide, Objective-C Style Guide, Java Style Guide, Python Style Guide, Shell Style Guide, HTML/CSS Style Guide, JavaScript Style Guide, AngularJS Style Guide, Common Lisp Style Guide, and Vimscript Style Guide are now available. We have also released cpplint, a tool to assist with style guide compliance, and google-c-style.el, an Emacs settings file for Google style.
+</p></blockquote>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/08/google-style/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Shell Style Guide</title>
+		<link>/2015/08/05/shell-style-guide/</link>
+					<comments>/2015/08/05/shell-style-guide/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 05 Aug 2015 14:01:12 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[bash]]></category>
+		<category><![CDATA[style-guide]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12310</guid>
+
+					<description><![CDATA[Google Shell Style Guide ( via seanosh ): Bash is the only shell scripting language permitted for executables. Some reading material while working through bugs discovered by shellcheck.]]></description>
+										<content:encoded><![CDATA[<p>Google <a href="https://google-styleguide.googlecode.com/svn/trunk/shell.xml">Shell Style Guide</a> ( via <a href="https://twitter.com/seanosh">seanosh</a> ):</p>
+<blockquote><p>
+Bash is the only shell scripting language permitted for executables.
+</p></blockquote>
+<p>Some reading material while working through bugs discovered by <a href="http://www.shellcheck.net/">shellcheck</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/08/05/shell-style-guide/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

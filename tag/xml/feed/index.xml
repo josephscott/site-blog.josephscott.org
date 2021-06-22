@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>xml &#8211; Joseph Scott</title>
+	<atom:link href="/tag/xml/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 15 Apr 2014 15:48:58 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Read Access on Google Servers with XXE</title>
+		<link>/2014/04/15/read-access-on-google-servers/</link>
+					<comments>/2014/04/15/read-access-on-google-servers/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 15 Apr 2014 15:48:58 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[detectify]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[xml]]></category>
+		<category><![CDATA[xxe]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10201</guid>
+
+					<description><![CDATA[Detectify explains how they gained read access to production servers at Google: One system caught our eyes. The Google Toolbar button gallery. We looked at each other and jokingly said “this looks vuln!”, not knowing how right we were. They were able to leverage XML External Entity ( XXE ) processing to read local files [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Detectify explains how they <a href="http://blog.detectify.com/post/82370846588/how-we-got-read-access-on-googles-production-servers" title="These types of write ups are worth the 5 minutes or so to read.">gained read access to production servers at Google</a>:</p>
+<blockquote><p>
+One system caught our eyes. The Google Toolbar button gallery. We looked at each other and jokingly said “this looks vuln!”, not knowing how right we were.
+</p></blockquote>
+<p><a href="http://blog.detectify.com/post/82370846588/how-we-got-read-access-on-googles-production-servers"><img loading="lazy" src="/wp-content/uploads/2014/04/googlexxe_passwd_blurred_873-1-300x194.png" alt="googlexxe_passwd_blurred_873" width="300" height="194" class="aligncenter size-medium wp-image-10247" /></a></p>
+<p>They were able to leverage <a href="https://www.owasp.org/index.php/XML_External_Entity_(XXE)_Processing" title="XXE should scare you.">XML External Entity ( XXE ) processing</a> to read local files on Google&#8217;s production servers.  If you haven&#8217;t read up on XXE go watch <a href="https://josephscott.org/archives/2013/09/mike-adams-on-three-security-issues-you-thought-youd-fixed/" title="The other two were remote requests and clickjacking.">Mike Adams talk at WordCamp SF 2013</a>, the video is only 30 minutes.</p>
+<p>Be very careful when processing XML, it can come back to bite you in very bad ways.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/04/15/read-access-on-google-servers/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Joe Gregorio on AtomPub and XML</title>
+		<link>/2010/01/06/joe-gregorio-on-atompub-and-xml/</link>
+					<comments>/2010/01/06/joe-gregorio-on-atompub-and-xml/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 06 Jan 2010 21:24:19 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[atompub]]></category>
+		<category><![CDATA[joe-gregorio]]></category>
+		<category><![CDATA[json]]></category>
+		<category><![CDATA[xml]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1695</guid>
+
+					<description><![CDATA[In a follow up comment on his WebFinger post Joe Gregorio gives some perspective on AtomPub and XML: Look, AtomPub has this problem, and if I had to do it all over again I would build AtomPub in JSON. An implementer wants to go from bits on the wire to a native data structure they [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>In a <a href="http://bitworking.org/news/2010/01/webfinger#IDComment50460759">follow up comment on his WebFinger post</a> Joe Gregorio gives some perspective on AtomPub and XML:</p>
+<blockquote><p>
+Look, AtomPub has this problem, and if I had to do it all over again I would build AtomPub in JSON. An implementer wants to go from bits on the wire to a native data structure they can interact with in their programming language. I used to think that was laziness, or lack of knowledge, but it&#8217;s purely pragmatic. By using XML you have introduced a layer of indirection, you&#8217;ve taken a data structure and converted it into a tree based document which then has to be converted back into a native data structure, but now that has to be done on a per language basis.
+</p></blockquote>
+<p>I&#8217;m in the lazy/pragmatic camp <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>I really don’t want documents to describe data, I just want a nice way to serialize the data and right now my favored way of doing that is <a href="http://www.json.org/">JSON</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/01/06/joe-gregorio-on-atompub-and-xml/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>New Default XML Formats For MS Office</title>
+		<link>/2005/06/01/new-default-xml-formats-for-ms-office/</link>
+					<comments>/2005/06/01/new-default-xml-formats-for-ms-office/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 02 Jun 2005 06:03:46 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[msoffice]]></category>
+		<category><![CDATA[xml]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=399</guid>
+
+					<description><![CDATA[Tonight&#8217;s big announcement about MS Office turned out to be that the next version of MS Office will default to an XML format. The file extensions are going to change to reflect this; .DOCX (for Word), .XLSX (for Excel) and .PPTX (for Power Point). Scoble has a video interview with Brian Jones about the XML [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Tonight&#8217;s <a href="http://radio.weblogs.com/0001011/2005/06/01.html#a10287">big announcement about MS Office</a> turned out to be that <a href="http://blogs.msdn.com/brian_jones/archive/2005/06/01/424085.aspx">the next version of MS Office will default to an XML format</a>.  The file extensions are going to change to reflect this; .DOCX (for Word), .XLSX (for Excel) and .PPTX (for Power Point).  Scoble has a <a href="http://channel9.msdn.com/ShowPost.aspx?PostID=73329">video interview with Brian Jones about the XML format</a> on <a href="http://channel9.msdn.com/default.aspx">Channel 9</a>.</p>
+<p>I watched most of the interview with Brian Jones and it seems like MS might actually be doing the right thing with this format.  Of course the proof will be in the pudding and I won&#8217;t believe it until I see it in a shipping product.  The files that Word, Excel and Power Point will produce are actually zip files with several XML files with in it, along with any other pieces that might be imbedded in the document, like an image.  So the theory is that these new default formats will actually be smaller than the current binary versions because of zip compression.</p>
+<p>This is huge news, but I&#8217;m having a hard time getting excited about it.  For some reason this announcement feels akin to MS announcing that the year is no longer 2001, which everyone but MS already knows.  So what is the big deal?  Listening to Scoble and Brian Jones gush about how many new and great things they&#8217;ll be able to because the new format stores the document in plain text XML made me want chant Unix, Unix, Unix, Unix.  Hello, a good portion of the world has already figured that storing things in plain text when ever possible is a good thing.</p>
+<p>Don&#8217;t get me wrong, I&#8217;m glad MS is taking this step, and it is a big step forward for them.  I guess I just expect more from a company that has more resources that many small countries put together.  They should have someone there smart enough to push for something like this in MS Office years ago, otherwise what is the point of having $50+ billion in the bank?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/06/01/new-default-xml-formats-for-ms-office/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

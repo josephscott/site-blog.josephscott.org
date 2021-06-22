@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>pcre &#8211; Joseph Scott</title>
+	<atom:link href="/tag/pcre/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 04 May 2009 18:08:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>When Regular Expressions Get Greedy</title>
+		<link>/2009/05/04/when-regular-expressions-gets-greedy/</link>
+					<comments>/2009/05/04/when-regular-expressions-gets-greedy/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 04 May 2009 18:08:38 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[pcre]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[regex]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1214</guid>
+
+					<description><![CDATA[I&#8217;ve been using a regular expression (PHP&#8217;s preg_match function) to parse email addresses. The addresses have a consistent pattern that look like: anamehere+XXXXXXXX@mail.example.com The XXXXXX section is a random set of characters: a-z, A-Z, 0-9 and -. The regular expression&#8217;s job was to extract that random set of characters, which is easy to do: [sourcecode [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been using a regular expression (PHP&#8217;s <a href="http://us.php.net/preg_match">preg_match</a> function) to parse email addresses.  The addresses have a consistent pattern that look like:</p>
+<p><code>anamehere+XXXXXXXX@mail.example.com</code></p>
+<p>The XXXXXX section is a random set of characters: a-z, A-Z, 0-9 and -.  The regular expression&#8217;s job was to extract that random set of characters, which is easy to do:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+$email_addr = &#8216;anamehere+XXXXXX@mail.example.com&#8217;;<br />
+preg_match( &#8216;|anamehere+(.*)@.*$|&#8217;, $email_addr, $match );<br />
+$email_code = $match[1];<br />
+[/sourcecode]</p>
+<p>Since the format of the email address is consistent it was easy to pull out the section I was interested in.  Well, it was easy until it broke when the email was sent in from a specific email client.  Turns out this client set the value of the email address to something different:</p>
+<p><code>"anamehere+XXXXXX@mail.example.com" &lt;anamehere+XXXXXX@mail.example.com&gt;</code></p>
+<p>After getting over my frustration at this email client I looked at what the regular expression matched:</p>
+<p><code>XXXXXX@mail.example.com" &lt;anamehere+XXXXXX</code></p>
+<p>Well that was no good.  Instead of just matching the XXXXXX it was slurping up other portions of the email address as well.  Enter the greed factor of Perl Compatible Regular Expressions (PCRE).  If you aren&#8217;t familiar with greedy regular expressions it simply means that they try to match as much as the can.  Fortunately there is a way to turn off the greediness using the <a href="http://us.php.net/manual/en/reference.pcre.pattern.modifiers.php">U pattern modifier</a>.  By adding a U to the end of the regular expression things got much better:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+$email_addr = &#8216;anamehere+XXXXXX@mail.example.com&#8217;;<br />
+preg_match( &#8216;|anamehere+(.*)@.*$|U&#8217;, $email_addr, $match );<br />
+$email_code = $match[1];<br />
+[/sourcecode]</p>
+<p>Now even the odd ball email address was extracting just the XXXXXX in the regular expression.</p>
+<p>Using the U at the end turns off greediness for the entire regular expression.  You can turn off the greediness of a single quantifier (the * in this case) by following it with a ?.  Using that technique the regular expression is <code>anamehere+(.*?)@.*$</code> which works as well.</p>
+<p>If you find that your regular expressions are matching more that you want remember that they are greedy by default.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/05/04/when-regular-expressions-gets-greedy/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

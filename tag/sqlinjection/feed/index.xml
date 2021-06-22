@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sqlinjection &#8211; Joseph Scott</title>
+	<atom:link href="/tag/sqlinjection/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 22 Dec 2015 16:59:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>sqlmap</title>
+		<link>/2015/12/22/sqlmap/</link>
+					<comments>/2015/12/22/sqlmap/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 22 Dec 2015 16:59:56 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[sqlinjection]]></category>
+		<category><![CDATA[sqlmap]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14469</guid>
+
+					<description><![CDATA[sqlmap: penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers. Nice feature list, I need to take this out for a spin.]]></description>
+										<content:encoded><![CDATA[<p><a href="http://sqlmap.org/">sqlmap</a>:</p>
+<blockquote><p>
+penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers.
+</p></blockquote>
+<p>Nice feature list, I need to take this out for a spin.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/22/sqlmap/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Guide to PHP Security</title>
+		<link>/2005/10/11/guide-to-php-security/</link>
+					<comments>/2005/10/11/guide-to-php-security/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 11 Oct 2005 19:27:08 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[sql]]></category>
+		<category><![CDATA[sqlinjection]]></category>
+		<category><![CDATA[sqlite]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=502</guid>
+
+					<description><![CDATA[The chapter on SQL Injection from the book Guide to PHP Security by Ilia Alshanetsky is available in PDF format. This can be a rather fun topic so I downloaded a copy of the PDF and started reading. I&#8217;d read less two pages before I was ready to toss this chapter out the window. The [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The chapter on <a href="http://dev.mysql.com/tech-resources/articles/guide-to-php-security.html">SQL Injection</a> from the book <a href="http://www.amazon.com/gp/product/0973862106/002-2635821-4429631">Guide to PHP Security</a> by <a href="http://ilia.ws/">Ilia Alshanetsky</a> is available in <a href="http://dev.mysql.com/tech-resources/articles/guide-to-php-security-ch3.pdf">PDF format</a>.  This can be a rather fun topic so I downloaded a copy of the PDF and started reading.  I&#8217;d read less two pages before I was ready to toss this chapter out the window.</p>
+<p>The first example showed a very simple inject that terminated the original query with a ; and appended another query that deleted some data.  The example used <a href="http://www.mysql.com/">MySQL</a> functions and the author noted the following after explaining the injection:</p>
+<blockquote><p>
+Fortunately, if you use MySQL, the mysql_query() function does not permit query stacking, or executing multiple queries in a single function call.  If you try to stack queries, the call fails.</p>
+<p>However, other PHP database extensions, such as <strong>SQLite and PostgreSQL, happily perform stacked queries, executing all of the queries provided in one string and creating a serious security problem</strong>.
+</p></blockquote>
+<p>The emphasis is mine.  I couldn&#8217;t believe that the author was basically claiming that MySQL is more secure than <a href="http://www.sqlite.org/">SQLite</a> and <a href="http://www.postgresql.org/">PostgreSQL</a> because they allowed you to run multiple SQL statements in one string.  Then something else came to mind, didn&#8217;t MySQL add this feature not too long ago?  So I went hunting around and came up with the <a href="http://dev.mysql.com/doc/mysql/en/c-api-multiple-queries.html">C API Handling of Multiple Query Execution</a> in MySQL, which was introduced in version 4.1.  Although still correct, the <a href="http://us2.php.net/mysql_query">mysql_query()</a> function in <a href="http://www.php.net/">PHP</a> doesn&#8217;t allow for multiple statements, the underlying C libraries do.  I&#8217;d expect that at somepoint in the future PHP will catch up and support that feature for MySQL 4.1 and above.</p>
+<p>But back to my first point, being able to run multiple queries in a single string is not a security threat.  Not proplerly filtering data before using in an SQL statement is.  If you allow unfiltered data to be injected into your SQL statement then you&#8217;ve got problems, even if you database doesn&#8217;t support multiple statements in a single string.</p>
+<p>I hope that this isn&#8217;t typical of the rest of the book.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/10/11/guide-to-php-security/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

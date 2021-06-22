@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Flysystem	</title>
+	<atom:link href="/2014/04/14/flysystem/feed/" rel="self" type="application/rss+xml" />
+	<link>/2014/04/14/flysystem/</link>
+	<description></description>
+	<lastBuildDate>Wed, 16 Apr 2014 05:26:04 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2014/04/14/flysystem/#comment-4193</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 16 Apr 2014 05:26:04 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10140#comment-4193</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/04/14/flysystem/#comment-4192&quot;&gt;punkgenius&lt;/a&gt;.
+
+In this case I&#039;m actually looking at code that needs to be able to do file operations over SSH/SFTP/FTP, which is why this one caught my eye.
+
+For server access to s3 I&#039;ve gone with s3cmd instead of a FUSE option.  I like FUSE though, super handy for exposing things that aren&#039;t a filesystem as a filesystem.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/04/14/flysystem/#comment-4192">punkgenius</a>.</p>
+<p>In this case I&#8217;m actually looking at code that needs to be able to do file operations over SSH/SFTP/FTP, which is why this one caught my eye.</p>
+<p>For server access to s3 I&#8217;ve gone with s3cmd instead of a FUSE option.  I like FUSE though, super handy for exposing things that aren&#8217;t a filesystem as a filesystem.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: punkgenius		</title>
+		<link>/2014/04/14/flysystem/#comment-4192</link>
+
+		<dc:creator><![CDATA[punkgenius]]></dc:creator>
+		<pubDate>Wed, 16 Apr 2014 05:15:49 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10140#comment-4192</guid>
+
+					<description><![CDATA[there&#039;s always https://github.com/s3fs-fuse/s3fs-fuse as well, which allows you to write to disk and then have that content sync&#039;d with S3.
+
+it&#039;s pretty sweet, but is (was?) a bit buggy]]></description>
+			<content:encoded><![CDATA[<p>there&#8217;s always <a href="https://github.com/s3fs-fuse/s3fs-fuse" rel="nofollow ugc">https://github.com/s3fs-fuse/s3fs-fuse</a> as well, which allows you to write to disk and then have that content sync&#8217;d with S3.</p>
+<p>it&#8217;s pretty sweet, but is (was?) a bit buggy</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

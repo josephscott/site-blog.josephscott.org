@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Edit In Place, Version 0.3.3	</title>
+	<atom:link href="/2006/08/28/edit-in-place-version-033/feed/" rel="self" type="application/rss+xml" />
+	<link>/2006/08/28/edit-in-place-version-033/</link>
+	<description></description>
+	<lastBuildDate>Tue, 16 Sep 2008 23:29:32 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Deniz		</title>
+		<link>/2006/08/28/edit-in-place-version-033/#comment-1628</link>
+
+		<dc:creator><![CDATA[Deniz]]></dc:creator>
+		<pubDate>Tue, 16 Sep 2008 23:29:32 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/08/28/edit-in-place-version-033/#comment-1628</guid>
+
+					<description><![CDATA[Please fix this UTF-8 problem! :((]]></description>
+			<content:encoded><![CDATA[<p>Please fix this UTF-8 problem! :((</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: alex		</title>
+		<link>/2006/08/28/edit-in-place-version-033/#comment-1627</link>
+
+		<dc:creator><![CDATA[alex]]></dc:creator>
+		<pubDate>Mon, 19 Nov 2007 19:50:33 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/08/28/edit-in-place-version-033/#comment-1627</guid>
+
+					<description><![CDATA[I&#039;m having this problem too :(
+Can anyone help us?]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;m having this problem too 🙁<br />
+Can anyone help us?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Shawn		</title>
+		<link>/2006/08/28/edit-in-place-version-033/#comment-1626</link>
+
+		<dc:creator><![CDATA[Shawn]]></dc:creator>
+		<pubDate>Tue, 30 Oct 2007 15:23:56 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/08/28/edit-in-place-version-033/#comment-1626</guid>
+
+					<description><![CDATA[I am having a little trouble with this. I did get it working fine on my own website I run at home. But now I am trying to get this implemented in our helpdesk website at my work because it would make editing inventory much easier.
+
+Everything works until I hit save, at that point for some reason the new text that gets displayed in place of the old is a copy of the entire page container and all. For some reason it thinks the innerHTML of the span is the html of the entire page.
+
+My boss used code igniter to design the site and I am not sure if that is causing the problem. Any ideas where to start looking for the solution?]]></description>
+			<content:encoded><![CDATA[<p>I am having a little trouble with this. I did get it working fine on my own website I run at home. But now I am trying to get this implemented in our helpdesk website at my work because it would make editing inventory much easier.</p>
+<p>Everything works until I hit save, at that point for some reason the new text that gets displayed in place of the old is a copy of the entire page container and all. For some reason it thinks the innerHTML of the span is the html of the entire page.</p>
+<p>My boss used code igniter to design the site and I am not sure if that is causing the problem. Any ideas where to start looking for the solution?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Barya		</title>
+		<link>/2006/08/28/edit-in-place-version-033/#comment-1625</link>
+
+		<dc:creator><![CDATA[Barya]]></dc:creator>
+		<pubDate>Sat, 17 Mar 2007 16:55:23 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/08/28/edit-in-place-version-033/#comment-1625</guid>
+
+					<description><![CDATA[Good job!
+
+It could be useful feature to add file upload control.
+For example, for images updating.]]></description>
+			<content:encoded><![CDATA[<p>Good job!</p>
+<p>It could be useful feature to add file upload control.<br />
+For example, for images updating.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: joseph		</title>
+		<link>/2006/08/28/edit-in-place-version-033/#comment-1624</link>
+
+		<dc:creator><![CDATA[joseph]]></dc:creator>
+		<pubDate>Wed, 14 Feb 2007 22:57:48 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/08/28/edit-in-place-version-033/#comment-1624</guid>
+
+					<description><![CDATA[sallam-
+
+The example page doesn&#039;t save the changes anywhere, it just sends back the text it was provided.  In production you&#039;d save those changes in a database.
+
+For the client side view the source of the example page.  The server side is pretty basic and there is a link on the example page to the PHP script that the example page uses.  You can extend it from there.]]></description>
+			<content:encoded><![CDATA[<p>sallam-</p>
+<p>The example page doesn&#8217;t save the changes anywhere, it just sends back the text it was provided.  In production you&#8217;d save those changes in a database.</p>
+<p>For the client side view the source of the example page.  The server side is pretty basic and there is a link on the example page to the PHP script that the example page uses.  You can extend it from there.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: sallam		</title>
+		<link>/2006/08/28/edit-in-place-version-033/#comment-1623</link>
+
+		<dc:creator><![CDATA[sallam]]></dc:creator>
+		<pubDate>Wed, 14 Feb 2007 22:41:51 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/08/28/edit-in-place-version-033/#comment-1623</guid>
+
+					<description><![CDATA[Thanks for a very useful script.
+But how can I get it to save the text that users typed or selected?
+Every time I reload the example page, it goes back to how it was.
+
+ps. is there any how-to instructions for that great script?]]></description>
+			<content:encoded><![CDATA[<p>Thanks for a very useful script.<br />
+But how can I get it to save the text that users typed or selected?<br />
+Every time I reload the example page, it goes back to how it was.</p>
+<p>ps. is there any how-to instructions for that great script?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rodrigo		</title>
+		<link>/2006/08/28/edit-in-place-version-033/#comment-1622</link>
+
+		<dc:creator><![CDATA[Rodrigo]]></dc:creator>
+		<pubDate>Sun, 04 Feb 2007 02:44:07 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/08/28/edit-in-place-version-033/#comment-1622</guid>
+
+					<description><![CDATA[What about save the field when return is pressed?
+
+After line 149 add
+
+Event.observe(id + &#039;_edit&#039;, &#039;keypress&#039;, function(event) {
+	if (event.keyCode == Event.KEY_RETURN)
+		EditInPlace._saveClick(false, id);
+});]]></description>
+			<content:encoded><![CDATA[<p>What about save the field when return is pressed?</p>
+<p>After line 149 add</p>
+<p>Event.observe(id + &#8216;_edit&#8217;, &#8216;keypress&#8217;, function(event) {<br />
+	if (event.keyCode == Event.KEY_RETURN)<br />
+		EditInPlace._saveClick(false, id);<br />
+});</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: joseph		</title>
+		<link>/2006/08/28/edit-in-place-version-033/#comment-1621</link>
+
+		<dc:creator><![CDATA[joseph]]></dc:creator>
+		<pubDate>Sat, 20 Jan 2007 07:35:53 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/08/28/edit-in-place-version-033/#comment-1621</guid>
+
+					<description><![CDATA[ileadu-
+
+Good catch, I&#039;ve added it to my fix/feature list.
+
+Thanks.]]></description>
+			<content:encoded><![CDATA[<p>ileadu-</p>
+<p>Good catch, I&#8217;ve added it to my fix/feature list.</p>
+<p>Thanks.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: ileadu		</title>
+		<link>/2006/08/28/edit-in-place-version-033/#comment-1620</link>
+
+		<dc:creator><![CDATA[ileadu]]></dc:creator>
+		<pubDate>Sat, 20 Jan 2007 07:30:53 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/08/28/edit-in-place-version-033/#comment-1620</guid>
+
+					<description><![CDATA[field += &#039;onfocus=&quot;this.select();&quot;&#039;;
+
+lack a space
+
+field += &#039; onfocus=&quot;this.select();&quot;&#039;;]]></description>
+			<content:encoded><![CDATA[<p>field += &#8216;onfocus=&#8221;this.select();&#8221;&#8216;;</p>
+<p>lack a space</p>
+<p>field += &#8216; onfocus=&#8221;this.select();&#8221;&#8216;;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jan Terje Nilsen		</title>
+		<link>/2006/08/28/edit-in-place-version-033/#comment-1619</link>
+
+		<dc:creator><![CDATA[Jan Terje Nilsen]]></dc:creator>
+		<pubDate>Fri, 15 Dec 2006 01:36:28 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/08/28/edit-in-place-version-033/#comment-1619</guid>
+
+					<description><![CDATA[Lavi Avigdor,
+
+for example, by adding:
+ header(&quot;Content-Type: application/xhtml+xml; charset=iso-8859-1&quot;);
+on a line above:
+  $id = $_POST[&quot;id&quot;];
+in edit.php from the example files i would get support for Norwegian characters.
+
+I hope this helps you out a bit.]]></description>
+			<content:encoded><![CDATA[<p>Lavi Avigdor,</p>
+<p>for example, by adding:<br />
+ header(&#8220;Content-Type: application/xhtml+xml; charset=iso-8859-1&#8221;);<br />
+on a line above:<br />
+  $id = $_POST[&#8220;id&#8221;];<br />
+in edit.php from the example files i would get support for Norwegian characters.</p>
+<p>I hope this helps you out a bit.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>google-photos &#8211; Joseph Scott</title>
+	<atom:link href="/tag/google-photos/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 29 Dec 2015 16:59:55 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Migrating From Flickr to Google Photos</title>
+		<link>/2015/12/29/from-flickr-to-google-photos/</link>
+					<comments>/2015/12/29/from-flickr-to-google-photos/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 29 Dec 2015 16:59:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[flickr]]></category>
+		<category><![CDATA[google-photos]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14624</guid>
+
+					<description><![CDATA[Earlier this month I mentioned going all in with Google Photos. Part of that process was doing a full export of my photos and videos from Flickr and importing them into Google Photos. The Flickr Export After looking around at options I eventually settled upon this version of flickrtouchr.py to do the export. Background about [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Earlier this month I mentioned <a href="https://josephscott.org/archives/2015/12/google-photos/">going all in with Google Photos</a>.  Part of that process was doing a full export of my photos and videos from <a href="https://www.flickr.com/">Flickr</a> and importing them into <a href="https://www.google.com/photos/about/">Google Photos</a>.</p>
+<h3>The Flickr Export</h3>
+<p>After looking around at options I eventually settled upon this version of <a href="https://github.com/dan/hivelogic-flickrtouchr/tree/master">flickrtouchr.py</a> to do the export.  Background about this code is on a post <a href="http://hivelogic.com/articles/backing-up-flickr">here</a>.</p>
+<p>This worked fine with one exception.  It used <code>.jpg</code> as the extension for all of the files, even the videos.  I didn&#8217;t realized this until the export was done.  So I whipped up a simple Bash script to change the extension on the video files to <code>.mov</code>:</p>
+<p>[sourcecode lang=&#8221;bash&#8221;]<br />
+#!/bin/bash</p>
+<p>cd $1</p>
+<p>for file in *<br />
+do<br />
+    filename=$(basename $file)<br />
+    filename=&quot;${filename%.*}&quot;<br />
+    mimetype=$(file &#8211;mime-type -b &quot;$file&quot;)<br />
+    case $mimetype in<br />
+        video/quicktime)<br />
+            mv -v &quot;$filename.jpg&quot; &quot;$filename.mov&quot;<br />
+            ;;<br />
+    esac<br />
+done<br />
+[/sourcecode]</p>
+<p>In the end I had nearly 7,000 files from my Flickr account.</p>
+<h3>Importing To Google Photos</h3>
+<p>I started with using the web based uploader, since it worked fine for the one off items in the past.  Turns out the web uploader sometimes fails to upload an item.  It tells you about the failure, but doesn&#8217;t make it easy to re-try ( let alone re-try automatically ).</p>
+<p>I gave up on web uploader and switched to the <a href="https://photos.google.com/apps">Google Photos &#8220;Desktop Uploader&#8221; Mac App</a>.  If you need to upload a large number of items to Google Photos the Desktop Uploader is the way to go, don&#8217;t bother with anything else.</p>
+<p>There is one item that you need to be careful with when using the Desktop Uploader.  It will use every drop of bandwidth you have, with no rate limiting options.  I ended up letting it run over night, when nothing else was using the Internet connection at home.</p>
+<h3>Conclusion</h3>
+<p>After several experiments with other options, I&#8217;m happy with the process I outlined above.  It isn&#8217;t perfect, but it does get the job done.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/29/from-flickr-to-google-photos/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Google Photos</title>
+		<link>/2015/12/12/google-photos/</link>
+					<comments>/2015/12/12/google-photos/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 12 Dec 2015 16:59:14 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[google-photos]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14581</guid>
+
+					<description><![CDATA[I&#8217;ve been really happy with the new version of Google Photos. Happy enough that I&#8217;m willing to go all in, I&#8217;m importing all of my old photos into Google Photos. Google, please don&#8217;t make me regret this.]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been really happy with the new version of <a href="https://www.google.com/photos/">Google Photos</a>.  Happy enough that I&#8217;m willing to go all in, I&#8217;m importing all of my old photos into Google Photos.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2015/12/google-photos-logo-1.png" alt="google-photos-logo" width="362" height="64" class="aligncenter size-full wp-image-14583" srcset="/wp-content/uploads/2015/12/google-photos-logo-1.png 362w, /wp-content/uploads/2015/12/google-photos-logo-1-300x53.png 300w" sizes="(max-width: 362px) 100vw, 362px" /></p>
+<p>Google, please don&#8217;t make me regret this.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/12/google-photos/feed/</wfw:commentRss>
+			<slash:comments>9</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Photo Sharing</title>
+		<link>/2015/07/20/photo-sharing/</link>
+					<comments>/2015/07/20/photo-sharing/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 20 Jul 2015 14:01:49 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[google-photos]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13255</guid>
+
+					<description><![CDATA[Last year Justin Williams complained about the &#8216;State of Photo Sharing&#8217;: This is 2014. This doesn’t seem like a a problem that still needs solving, yet we still don’t have a de-facto platform for private and semi-private photography sharing and backup. I&#8217;d call the new Google Photos the current front runner in this category.]]></description>
+										<content:encoded><![CDATA[<p>Last year <a href="https://web.archive.org/web/20140703131501/http://carpeaqua.com/2014/04/23/state-of-photo-sharing-2014/">Justin Williams complained about the &#8216;State of Photo Sharing&#8217;</a>:</p>
+<blockquote><p>
+This is 2014. This doesn’t seem like a a problem that still needs solving, yet we still don’t have a de-facto platform for private and semi-private photography sharing and backup.
+</p></blockquote>
+<p>I&#8217;d call <a href="https://www.google.com/photos/about/">the new Google Photos</a> the current front runner in this category.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/07/20/photo-sharing/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

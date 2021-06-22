@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>blast &#8211; Joseph Scott</title>
+	<atom:link href="/tag/blast/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 14 Feb 2006 22:25:10 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>The BSD Licensed Application STack (BLAST)</title>
+		<link>/2006/02/14/the-bsd-licensed-application-stack-blast/</link>
+					<comments>/2006/02/14/the-bsd-licensed-application-stack-blast/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 14 Feb 2006 22:25:10 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[apache]]></category>
+		<category><![CDATA[blast]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[lamp]]></category>
+		<category><![CDATA[license]]></category>
+		<category><![CDATA[opensource]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/14/the-bsd-licensed-application-stack-blast/</guid>
+
+					<description><![CDATA[There are a lot of open source licenses out there. For me open source license usually implies GPL, LGPL and BSD/MIT, although there are over 50 on the OSI&#8216;s list. I tend to be partial towards the BSD/MIT licenses over (L)GPL, I&#8217;ve mentioned this before. For the purposes of this article thought, I&#8217;m going to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>There are a lot of <a href="http://www.opensource.org/licenses/">open source licenses</a> out there.  For me open source license usually implies <a href="http://www.opensource.org/licenses/gpl-license.php">GPL</a>, <a href="http://www.opensource.org/licenses/lgpl-license.php">LGPL</a> and <a href="http://www.opensource.org/licenses/bsd-license.php">BSD</a>/<a href="http://www.opensource.org/licenses/mit-license.html">MIT</a>, although there are over 50 on the <a href="http://www.opensource.org/index.php">OSI</a>&#8216;s list.  I tend to be partial towards the BSD/MIT licenses over (L)GPL, I&#8217;ve mentioned this before.  For the purposes of this article thought, I&#8217;m going to focus on BSD licensed software.  Don&#8217;t take this as a slam against the GPL, I just wanted to focus on the largest amount of flexibility and ease for developers.</p>
+<p>It really is amazing that today you can develop an entire application or service using BSD licensed software up and down the stack.  This particular license allows you to modify code and it is up to you if you want to share it.  Although it is always recommended to participate in the community, this license doesn&#8217;t make it a requirement if you want to distribute modified code (this may be a good or a bad thing depending on your point of view).  Thus all types of applications and services can be built upon BSD licensed code, from top to bottom.  If you&#8217;ve ever tried to figure out which license you have to buy from a company that offers more types of licenses than cars on the road you know that not having to go through that maze can be a great time saver.</p>
+<p>So here is what I&#8217;m thinking of when I talk about the BSD licensed application stack.  At the lowest level we need an operating system.  I prefer <a href="http://www.freebsd.org/">FreeBSD</a> for this, but there is no reason why <a href="http://www.netbsd.org/">NetBSD</a>, <a href="http://www.openbsd.org/">OpenBSD</a> or <a href="http://www.dragonflybsd.org/">DragonFly BSD</a> couldn&#8217;t be used instead.  Any of these will provide a complete operating system and depending on your wants or needs you may find one fits you better than the others.</p>
+<p>Now that we have an OS (FreeBSD), we&#8217;ll need some place to store data that our application or service will be using.  SQL databases have grown to fit this need quite well.  Because we are focusing on BSD licensed open source software one database really stands above the rest, <a href="http://www.postgresql.org/">PostgreSQL</a>.  Not only is it a perfect fit for our criteria, it is a great piece database software.  PostgreSQL supports many features that users of commercial databases have come to expect (Views, Functions, Schemas, etc).</p>
+<p>The way to deploy applications and or services today is on the web.  Here again we are fortunate because the most commonly used web server is open source and BSD licensed.  The <a href="http://httpd.apache.org/">Apache web server</a> is flexible (<a href="http://httpd.apache.org/docs/2.0/mod/mod_rewrite.html">mod_rewrite</a> anyone?) and powerful.</p>
+<p>Finally we&#8217;ll need an a programming license to get things done.  This one piece of the stack is probably the most difficult to pin down.  My pick though would have to be <a href="http://www.php.net/">PHP</a>, whose <a href="http://cvs.php.net/viewcvs.cgi/php-src/LICENSE?view=markup&amp;rev=1.21.16.1">license</a> is close to the BSD license.  It is also targeted at for web apps, but I&#8217;ve used it for command line applications as well.</p>
+<p>The BSD Licensed Application STack (BLAST) is about software that does its job well and has a license that is easy to understand and gives you the ability to get distributed changes to yourself.  Activity in the community is optional, but encouraged.  For me this means FreeBSD, PostgreSQL, Apache and PHP.</p>
+<p>Many of you reading this will be jumping up and down that this is just a rehash of <a href="http://en.wikipedia.org/wiki/L.A.M.P">L.A.M.P.</a>.  On one level this is true, Linux, Apache, MySQL and PHP/Perl (L.A.M.P.) do satisfy one part of BLAST, open source software that gets the job done.  Unfortunately the licensing for some of these products is difficult to understand and in some cases the same license is interpreted in different ways (yes MySQL I&#8217;m looking at you).</p>
+<p>The components of BLAST may change over time, (perhaps another language besides PHP?) but the intent and abilities will be the same.  Good open source code with ability to do what you want with it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/02/14/the-bsd-licensed-application-stack-blast/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

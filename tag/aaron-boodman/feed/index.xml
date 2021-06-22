@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>aaron-boodman &#8211; Joseph Scott</title>
+	<atom:link href="/tag/aaron-boodman/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 25 Nov 2015 14:57:48 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>No Branches</title>
+		<link>/2015/11/25/no-branches/</link>
+					<comments>/2015/11/25/no-branches/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 25 Nov 2015 14:57:48 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[aaron-boodman]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13924</guid>
+
+					<description><![CDATA[Aaron Boodman on How Chromium Works with &#8220;No Branches&#8221;: On many projects, it’s common to branch the source code to work on major new features. The idea is that temporary destabilization from the new code won’t affect other developers or users. Once the feature is complete, its branch is merged back into trunk, and there [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Aaron Boodman on <a href="https://medium.com/@aboodman/in-march-2011-i-drafted-an-article-explaining-how-the-team-responsible-for-google-chrome-ships-c479ba623a1b#.3xvnrtrlt">How Chromium Works</a> with &#8220;No Branches&#8221;:</p>
+<blockquote><p>
+On many projects, it’s common to branch the source code to work on major new features. The idea is that temporary destabilization from the new code won’t affect other developers or users. Once the feature is complete, its branch is merged back into trunk, and there is usually a period of instability while integration issues are ironed out.</p>
+<p>This wouldn’t work in Chrome because we release every day. We can’t tolerate huge chunks of new code suddenly showing up in trunk because it would have a high chance of taking down the canary or dev channels for an extended period. Also, the trunk of Chrome moves so fast that it isn’t practical for developers to be isolated on a branch for very long. By the time they merged, trunk would look so different that integration would be difficult and error-prone.
+</p></blockquote>
+<p>I&#8217;m a long time fan of this approach, where branching is the exception and not the rule.</p>
+<p>The whole article is worth reading.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/25/no-branches/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

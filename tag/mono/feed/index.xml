@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mono &#8211; Joseph Scott</title>
+	<atom:link href="/tag/mono/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Sat, 04 Jun 2005 05:27:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Will Steve Switch?</title>
+		<link>/2005/06/03/will-steve-switch/</link>
+					<comments>/2005/06/03/will-steve-switch/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 04 Jun 2005 05:27:44 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[ibm]]></category>
+		<category><![CDATA[intel]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[mono]]></category>
+		<category><![CDATA[pearpc]]></category>
+		<category><![CDATA[wine]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=401</guid>
+
+					<description><![CDATA[Just in case you&#8217;ve been hiding under a rock, there is a lot of buzz tonight around a News.com article that reports that Apple will announce their switch to Intel CPUs on Monday. This was reported last month and everyone panned it as yet another rumor with no substance to it. Not surprising since &#8220;news&#8221; [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Just in case you&#8217;ve been hiding under a rock, <a href="http://www.tuaw.com/2005/06/03/c-net-like-totally-sure-apple-to-drop-ibm/">there</a> <a href="http://archive.scripting.com/2005/06/03#When:9:21:38PM">is</a> <a href="http://radio.weblogs.com/0001011/2005/06/03.html#a10317">a</a> <a href="http://www.gizmodo.com/gadgets/laptops-pcs/apple/cnet-says-apple-ditching-ibm-for-intel-106466.php">lot</a> <a href="http://apple.slashdot.org/article.pl?sid=05/06/04/0238235&amp;from=rss">of</a> buzz tonight around a News.com article that reports that <a href="http://news.com.com/Apple+to+ditch+IBM%2C+switch+to+Intel+chips/2100-1006_3-5731398.html?part=rss&amp;tag=5731398&amp;subj=news">Apple will announce their switch to Intel CPUs on Monday</a>.  This was <a href="http://today.reuters.co.uk/news/newsArticle.aspx?type=technologyNews&amp;storyID=2005-05-23T085144Z_01_N23148464_RTRIDST_0_TECH-TECH-APPLE-INTEL-DC.XML">reported last month</a> and everyone panned it as yet another rumor with no substance to it.  Not surprising since &#8220;news&#8221; of Apple switching to Intel CPUs seems to crop up every couple of years.  The rumor mill has cried wolf so many times, why should we believe them now?</p>
+<p>I&#8217;m having a hard time believing this.  There really is no good way to do this kind of transition, if you do it all at once then you&#8217;ll have an OS, but no apps until developers catch up.  If you phase it in over time (which is what the News.com article suggests, starting with low end systems) then you pretty much kill sales of the already phased in systems for the same reason, lack of apps.  At least when OS X came out you could still run older Mac OS applications.</p>
+<p>There are two possible ways to deal with the problems of such a transition.  One, you get these new CPU systems into the hands of every OS X developer you can, offer them for insanely low prices ($100 for an Intel based Mac Mini?).  All you should have to do to qualify is to already be distributing an OS X application.  The second method is the same approach that transition to OS X used, provide a way for PowerPC/OS X apps to run on Intel/OS X systems.  I have no idea if that is even possible without some insanely high performance penalties.  Perhaps they&#8217;ll integrate the <a href="http://pearpc.sourceforge.net/">PearPC</a> work into Mac OS 10.5 to make this happen?  If you are going to go that far, why not integrate <a href="http://www.winehq.com/">Wine</a> into Mac OS 10.6, which will enable you to run MS Windows apps on Apple Intel/OS X systems, which by then would be the only systems they sell.</p>
+<p>Hmmm, now that I think about it that way perhaps moving to Intel isn&#8217;t such a bad idea after all.  Shall I go out on a limb here?  Sure, why not.  By 2010 Apple will only sell systems with Intel CPUs and OS X will be able to run your Windows apps.  This will give Apple enough time to bring Wine up to a more or less complete replacement for Windows XP and most of Longhorn.  You&#8217;ll even be able to run .Net apps, thanks to <a href="http://www.mono-project.com/Main_Page">Mono</a>.  And just like the base of OS X, all of this will be possible because of existing open source projects.</p>
+<p>Or maybe not <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>So, will Steve switch or not?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/06/03/will-steve-switch/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

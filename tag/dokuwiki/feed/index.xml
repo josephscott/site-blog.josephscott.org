@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>dokuwiki &#8211; Joseph Scott</title>
+	<atom:link href="/tag/dokuwiki/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 10 May 2005 21:50:18 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Trying Out DokuWiki And Wiki Wishlist</title>
+		<link>/2005/05/10/trying-out-dokuwiki-and-wiki-wishlist/</link>
+					<comments>/2005/05/10/trying-out-dokuwiki-and-wiki-wishlist/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 10 May 2005 21:50:18 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[dokuwiki]]></category>
+		<category><![CDATA[wiki]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/10/trying-out-dokuwiki/</guid>
+
+					<description><![CDATA[I&#8217;m trying out DokuWiki for personal use. It uses plain files for storage instead of a database and was pretty easy to setup. Unfortunately wiki software packages are much like email clients, they all of issues and problems, you just have decided which problems you are willing to deal with. I&#8217;m not committed to DokuWiki, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m trying out <a href="http://wiki.splitbrain.org/wiki:dokuwiki">DokuWiki</a> for personal use.  It uses plain files for storage instead of a database and was pretty easy to setup.  Unfortunately wiki software packages are much like email clients, they all of issues and problems, you just have decided which problems you are willing to deal with.  I&#8217;m not committed to DokuWiki, so if I find something else that better fits my needs I&#8217;ll be happy to change.</p>
+<p>I was rather disappointed at the state of wiki software in general.  There were several features that few (and in many cases none that I could find) that had some of the more interesting and useful features, especially for business environments.  Here&#8217;s a short (probably incomplete) wish list:</p>
+<ul>
+<li>ACLs: More packages are supporting this now, I&#8217;m still surprised that more don&#8217;t have it though.  This implies authentication, which needs to support several different methods (Database, LDAP, PAM?).</li>
+<li>Hierarchy: Name spaces are great, but I&#8217;d really like to see the ability to structure wiki pages.  I suspect this one will be more difficult that some of the other features.  My wiki should able to generate a sitemap for me.</li>
+<li>Tags: You&#8217;d think with <a href="http://www.flickr.com/">Flickr</a> and <a href="http://del.icio.us/">del.icio.us</a> taking off, people would be all over this.  And no, I don&#8217;t think that having tags means not having a hierarchy, they should complement each other, not replace each other.</li>
+<li>Page Copy/Clone: I&#8217;d like to be able to start a new page as a copy of existing page (with a new title, link, etc) that optionally carries over all of the history of the page being copied.  The new page should have some way of linking back to the page that it was copied from.  Each source page should also be able to link to all pages that started as copies of it.</li>
+<li>Page Templates: This sort of similar to the idea of Page Copy/Clone, but with a twist.  I&#8217;d like to be to create templates, that aren&#8217;t really meant to be used as pages themselves (ACLs to prevent others from changing them?), but simply as a starting point for a new page.  So when creating a new page you get the option of using one of a list of existing templates in the system.  This could get tricky fast, for instance, if you update a template does it try to update all of the pages that used that template?  Hey, I didn&#8217;t say all of this would be easy.</li>
+<li>TrackBacks: Crossing over a bit into the world of blogs, every page on a wiki should have trackback support for other sites that link to it.  This can get complicated also, what do you do when your ACL doesn&#8217;t allow for public viewing of that page?  How do you prevent TrackBack spam?</li>
+<li>Page Comments: While your first thought might be that this is another blog cross over, it isn&#8217;t.  This stems more from seeing the success of page comments in the <a href="http://www.php.net/manual/en/">PHP documentation</a>.  I would like to see a more complex set of comment options though (threaded, ability to sort on different attributes like date, etc).  More avenues for comment spam, would be less of an issue if ACLs required an account to comment on a page.</li>
+<li>Export: You should be able to export the wiki in part or in whole in a some reasonable format (XML?).  Difference in syntax formatting would be a problem.</li>
+<li>Fine Grained RSS: Many wiki packages support RSS, but with varying degrees of granularity.  I&#8217;d like to be able to subscribe to wiki wide changes, page changes, wiki wide comments, page comments and the various variations you&#8217;d be likely to thing of.  Perhaps all of the changes and comments for pages with the tag of joseph, or all changes and comments in a given namespace or hierarchy, with the option of being recursive.</li>
+<li>Wiki Wide Point In Time: Show the whole wiki how it looked at a given date and time.  Along with that I&#8217;d like to be able to some sort of diff or changelog given two different date and times.  This could potentially blow up into a huge feature, show me all the pages that were added between 1 Jan 2004 and 1 Jan 2005.  Show me all of the comments that were added between 1 Mar 2005 and 1 Apr 2005.  Show me all of the trackbacks added between 1 Apr 2005 and 1 May 2005.  You should be able to specify this down to the second (1 May 2005 @ 08:14:33am PST).  I think you get the idea.
+</li>
+</ul>
+<p>I&#8217;m sure there are plenty more, but this should be enough to keep most folks busy.  Some wiki packages do implement some of these features, but I haven&#8217;t found one that implements all of them and certainly not to the degree that I&#8217;m looking for.  A lot of these features stem from wanting to use a wiki in a business environment more than just for personal use.</p>
+<p>It would be interesting to start a wiki project with these sorts of goals, but I doubt I&#8217;d ever have the time.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/05/10/trying-out-dokuwiki-and-wiki-wishlist/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ie &#8211; Joseph Scott</title>
+	<atom:link href="/tag/ie/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 11 Nov 2005 10:20:54 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>The Story of file: in IE</title>
+		<link>/2005/11/11/the-story-of-file-in-ie/</link>
+					<comments>/2005/11/11/the-story-of-file-in-ie/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 11 Nov 2005 10:20:54 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[ie]]></category>
+		<category><![CDATA[internet-explorer]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=517</guid>
+
+					<description><![CDATA[Every now and then you come across a piece of written history that is just classic. This is one of those times: The Bizarre and Unhappy Story of &#8216;file:&#8217; URLs. Welcome to the strange tale of how Internet Explorer (IE) eventually figured out how to deal with the file: URL in a way wasn&#8217;t completely [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Every now and then you come across a piece of written history that is just classic.  This is one of those times: <a href="http://blogs.msdn.com/freeassociations/archive/2005/05/19/420059.aspx">The Bizarre and Unhappy Story of &#8216;file:&#8217; URLs</a>.  Welcome to the strange tale of how <a href="http://www.microsoft.com/windows/ie/default.mspx">Internet Explorer</a> (IE) eventually figured out how to deal with the file: URL in a way wasn&#8217;t completely broken.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/11/11/the-story-of-file-in-ie/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>IE Specific CSS</title>
+		<link>/2005/05/25/ie-specific-css/</link>
+					<comments>/2005/05/25/ie-specific-css/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 26 May 2005 03:27:13 +0000</pubDate>
+				<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[Design]]></category>
+		<category><![CDATA[How To]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[ie]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/25/ie-specific-css/</guid>
+
+					<description><![CDATA[I was working on some site design and needed to tweak it for IE (IE dev team, hello, is this thing on? Better CSS support please) in order to make look more along the lines of what I had intended (which is the way that FireFox and Safari display it). So off to Google I [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was working on some site design and needed to tweak it for IE (IE dev team, hello, is this thing on?  Better CSS support please) in order to make look more along the lines of what I had intended (which is the way that FireFox and Safari display it).  So off to Google I went hoping to find some way to easy include CSS only for IE browsers.  Low and behold it is amazingly easy!  I first came across <a href="http://www.noscope.com/journal/2004/04/conditional_comments">this example</a> which lead me to the <a href="http://www.quirksmode.org/css/condcom.html">conditional comments site</a>.  All I can say is, wow!  It works, it&#8217;s simple, doesn&#8217;t feel like a complete crazy hack (although some might say the mere fact that this has to be done at all is a hack) and it only took me a minute or two to put it all together.</p>
+<p>It is a shame that this has to be done, but at least there is an easy way to do it.  Here&#8217;s an example of including CSS that will only be used by Internet Explorer (IE):</p>
+<p><code><br />
+&lt;!--[if IE]&gt;<br />
+&lt;link rel="stylesheet" type="text/css" media="screen"<br />
+    href="/ie-style.css" /&gt;<br />
+&lt;![endif]--&gt;<br />
+</code></p>
+<p>It seems that you could include any sort of HTML (or JavaScript?) between these conditional comments.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/05/25/ie-specific-css/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

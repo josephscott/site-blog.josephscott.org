@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: PHP Helpers: html_var_dump	</title>
+	<atom:link href="/2010/02/05/php-helpers-html_var_dump/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/02/05/php-helpers-html_var_dump/</link>
+	<description></description>
+	<lastBuildDate>Fri, 05 Feb 2010 20:44:48 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/02/05/php-helpers-html_var_dump/#comment-3189</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 05 Feb 2010 20:44:48 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1862#comment-3189</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/02/05/php-helpers-html_var_dump/#comment-3188&quot;&gt;Benjam&lt;/a&gt;.
+
+I like that var_dump provides the type and length of each variable.  var_export doesn&#039;t provide either of those.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/02/05/php-helpers-html_var_dump/#comment-3188">Benjam</a>.</p>
+<p>I like that var_dump provides the type and length of each variable.  var_export doesn&#8217;t provide either of those.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Benjam		</title>
+		<link>/2010/02/05/php-helpers-html_var_dump/#comment-3188</link>
+
+		<dc:creator><![CDATA[Benjam]]></dc:creator>
+		<pubDate>Fri, 05 Feb 2010 17:07:55 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1862#comment-3188</guid>
+
+					<description><![CDATA[Why not just set the return flag for var_export?
+&lt;code&gt;
+$out .= var_export( $data, true );
+&lt;/code&gt;
+
+Or are var_dump and var_export too different for your tastes?
+
+And to aid in having to remember which vars go into which function, I wrap both in another function that chooses for me:
+&lt;code&gt;
+if ((is_string($var) &#038;&#038; ! preg_match(&#039;/^s*$/&#039;, $var))) { // non-whitespace strings
+	$var = print_r($var, true);
+}
+else {
+	if ( ! function_exists(&#039;xdebug_disable&#039;)) {
+		if (is_array($var) &#124;&#124; is_object($var)) {
+			$var = print_r($var, true);
+		}
+		else {
+			$var = var_export($var, true);
+		}
+	}
+	else {
+		$var = var_export($var, true);
+	}
+}
+&lt;/code&gt;
+
+that way, I always know what&#039;s going on with my variables and it&#039;s in the format I like.  No confusion between an empty string and FALSE or NULL.]]></description>
+			<content:encoded><![CDATA[<p>Why not just set the return flag for var_export?<br />
+<code><br />
+$out .= var_export( $data, true );<br />
+</code></p>
+<p>Or are var_dump and var_export too different for your tastes?</p>
+<p>And to aid in having to remember which vars go into which function, I wrap both in another function that chooses for me:<br />
+<code><br />
+if ((is_string($var) &amp;&amp; ! preg_match('/^s*$/', $var))) { // non-whitespace strings<br />
+	$var = print_r($var, true);<br />
+}<br />
+else {<br />
+	if ( ! function_exists('xdebug_disable')) {<br />
+		if (is_array($var) || is_object($var)) {<br />
+			$var = print_r($var, true);<br />
+		}<br />
+		else {<br />
+			$var = var_export($var, true);<br />
+		}<br />
+	}<br />
+	else {<br />
+		$var = var_export($var, true);<br />
+	}<br />
+}<br />
+</code></p>
+<p>that way, I always know what&#8217;s going on with my variables and it&#8217;s in the format I like.  No confusion between an empty string and FALSE or NULL.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>unikernel &#8211; Joseph Scott</title>
+	<atom:link href="/tag/unikernel/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 05 Jun 2015 14:47:27 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>PHP Unikernel</title>
+		<link>/2015/06/05/php-unikernel/</link>
+					<comments>/2015/06/05/php-unikernel/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 05 Jun 2015 14:47:27 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[unikernel]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12382</guid>
+
+					<description><![CDATA[I&#8217;ve mentioned unikernels previously. Then I came across rump-php: PHP packaging and infrastructure for running as Unikernels atop the Xen hypervisor, powered by rumprun and Rump Kernels. The instructions outline running two separate unikernels, one for Nginx, the other for PHP FastCGI.]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve mentioned <a href="https://josephscott.org/archives/2015/04/url-containers/">unikernels previously</a>.  Then I came across <a href="https://github.com/mato/rump-php">rump-php</a>:</p>
+<blockquote><p>
+PHP packaging and infrastructure for running as Unikernels atop the Xen hypervisor, powered by rumprun and Rump Kernels.
+</p></blockquote>
+<p>The instructions outline running two separate unikernels, one for Nginx, the other for PHP FastCGI.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/06/05/php-unikernel/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>URL Containers</title>
+		<link>/2015/04/01/url-containers/</link>
+					<comments>/2015/04/01/url-containers/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 01 Apr 2015 16:08:35 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[mirage-os]]></category>
+		<category><![CDATA[unikernel]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11929</guid>
+
+					<description><![CDATA[The push to have smaller, lighter, faster containers has produced some interesting ideas. With Mirage OS the container has become a &#8220;unikernel&#8220;. Now imagine fast forwarding this idea to an extreme end. You get this: A unikernel experiment: A VM for every URL. It is just what it sounds like, spinning up a tiny container [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The push to have smaller, lighter, faster containers has produced some interesting ideas.  With <a href="http://www.openmirage.org/">Mirage OS</a> the container has become a &#8220;<a href="http://queue.acm.org/detail.cfm?id=2566628">unikernel</a>&#8220;.</p>
+<p>Now imagine fast forwarding this idea to an extreme end.  You get this: <a href="http://www.skjegstad.com/blog/2015/03/25/mirageos-vm-per-url-experiment/">A unikernel experiment: A VM for every URL</a>.</p>
+<p>It is just what it sounds like, spinning up a tiny container for every URL on your site.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/04/01/url-containers/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>password &#8211; Joseph Scott</title>
+	<atom:link href="/tag/password/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 06 Jun 2013 17:42:27 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Password Anniversary Day</title>
+		<link>/2013/06/06/password-anniversary-day/</link>
+					<comments>/2013/06/06/password-anniversary-day/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 06 Jun 2013 17:42:27 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[bcrypt]]></category>
+		<category><![CDATA[linkedin]]></category>
+		<category><![CDATA[password]]></category>
+		<category><![CDATA[password-anniversary-day]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[sha-1]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=8075</guid>
+
+					<description><![CDATA[Exactly one year ago today it was announced that part of the LinkedIn password database had been shared online. There were many posts about it. Having your password database compromised is bad. But that turned out to not be the worst part of what happened. Although I didn&#8217;t see it mentioned in any of the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Exactly one year ago today it was announced that part of the <a href="http://www.theverge.com/2012/6/6/3067523/linkedin-password-leak-online">LinkedIn password database had been shared online</a>.  <a href="http://www.reddit.com/r/technology/comments/unt92/russian_hackers_claim_to_have_65m_linkedin/">There</a> <a href="http://blog.linkedin.com/2012/06/06/updating-your-password-on-linkedin-and-other-account-security-best-practices/">were</a> <a href="http://blog.linkedin.com/2012/06/06/linkedin-member-passwords-compromised/">many</a> <a href="http://blog.linkedin.com/2012/06/07/taking-steps-to-protect-our-members/">posts</a> <a href="http://blog.linkedin.com/2012/06/09/an-update-on-taking-steps-to-protect-our-members/">about</a> <a href="https://news.ycombinator.com/item?id=4073309">it</a>.</p>
+<p>Having your password database compromised is bad.  But that turned out to not be the worst part of what happened.  Although I didn&#8217;t see it mentioned in any of the official LinkedIn posts, people quickly realized that the passwords were hashed using SHA-1.  No salts, no stretching, just a plain, single round, SHA-1.  That made finding the plain text version of the password for millions of LinkedIn accounts fairly simple.  </p>
+<p>Using bcrypt with a decent random salt generator and good work factor would have been much better.</p>
+<p>This made it very clear to me that if a site like LinkedIn can make the mistake of using a poor password storage method, anyone can.  I made a repeating calendar entry for 6 June of every year to be &#8220;Password Anniversary Day&#8221;.  On Password Anniversary Day ( 6/6 ) I pick a few sites that I have accounts on, more or less at random, and change my password.  Just in case.</p>
+<p>My Tweet about this on 6 June 2012:</p>
+<blockquote class="twitter-tweet" data-width="550" data-dnt="true">
+<p lang="en" dir="ltr">Welcome to the first annual &quot;change your <a href="http://t.co/utIhGP9J">http://t.co/utIhGP9J</a> password&quot; day <a href="http://t.co/DP88nDF1">http://t.co/DP88nDF1</a></p>
+<p>&mdash; Joseph Scott (@josephscott) <a href="https://twitter.com/josephscott/status/210388473125945344?ref_src=twsrc%5Etfw">June 6, 2012</a></p></blockquote>
+<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p>Happy Password Anniversary Day everyone.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/06/06/password-anniversary-day/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Strange Redbox Password Policy</title>
+		<link>/2013/03/13/strange-redbox-password-policy/</link>
+					<comments>/2013/03/13/strange-redbox-password-policy/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 13 Mar 2013 16:25:04 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[password]]></category>
+		<category><![CDATA[redbox]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7057</guid>
+
+					<description><![CDATA[Another site with odd password policies, redbox.com. Requiring a minimum password length is a good idea, though you could argue that six is too small. But why limit the maximum password length to 12 characters? Any site that has a maximum password restriction below 50 characters has me wondering how exactly they are managing password [&#8230;]]]></description>
+										<content:encoded><![CDATA[<figure style="width: 305px" class="wp-caption aligncenter"><a href="https://sharedat.net/s/6COQ"><img loading="lazy" src="https://sharedat.net/f/6C/6COQ/redbox-password-warning.png" width="305" height="198" class /></a><figcaption class="wp-caption-text">Maximum of 12 characters for passwords on redbox.com</figcaption></figure>
+<p>Another site with odd password policies, <a href="http://www.redbox.com/">redbox.com</a>.  Requiring a minimum password length is a good idea, though you could argue that six is too small.  But why limit the maximum password length to 12 characters?  Any site that has a maximum password restriction below 50 characters has me wondering how exactly they are managing password storage and security.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/03/13/strange-redbox-password-policy/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Strange Microsoft Live Password Policy</title>
+		<link>/2013/02/19/strange-microsoft-live-password-policy/</link>
+					<comments>/2013/02/19/strange-microsoft-live-password-policy/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 19 Feb 2013 16:37:43 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<category><![CDATA[password]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6774</guid>
+
+					<description><![CDATA[I was considering a test account Outlook.com today, just to give it a spin. So I started through the Microsoft Live signup process. It was going ok until I got to the password fields. I entered in one of my randomly generated 40 character passwords and was presented with this message: Setting a maximum password [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was considering a test account <a href="http://outlook.com/">Outlook.com</a> today, just to give it a spin. So I started through the Microsoft Live signup process. It was going ok until I got to the password fields. I entered in one of my randomly generated 40 character passwords and was presented with this message:</p>
+<figure style="width: 320px" class="wp-caption aligncenter"><a href="https://sharedat.net/s/CeBw9"><img loading="lazy" alt="" src="https://sharedat.net/f/Ce/CeBw9/microsoft-password-policy.png" width="320" height="192" /></a><figcaption class="wp-caption-text">Microsoft Live password policy</figcaption></figure>
+<p>Setting a maximum password length of 16 characters sets off a red flag for me. So I went looking for references to the Microsoft Live password policy. I eventually found one at <a href="http://help.outlook.com/en-gb/140/cc540536.aspx">http://help.outlook.com/en-gb/140/cc540536.aspx</a> &#8211; here are the rules and restrictions (emphasis is mine):</p>
+<blockquote><p>Password rules</p>
+<ul>
+<li><strong>The password can have a maximum length of 16 characters.</strong></li>
+<li>The password is case-sensitive.</li>
+<li>The password can contain uppercase letters and lowercase letters.</li>
+<li>The password can contain numbers.</li>
+<li>The password can contain the following ASCII text characters: ` ~ ! @ # $ % ^ &amp; * ( ) _ + &#8211; = { } | [ ]  : &#8221; ; &#8216; &lt; &gt; ? , . /</li>
+</ul>
+<p>Password restrictions<br />
+<strong>The password can&#8217;t contain any of the following items:</strong></p>
+<ul>
+<li>Spaces</li>
+<li>Non-English characters</li>
+<li>The account name part of the email address. For example, if the email address is user@contoso.com, the password can&#8217;t contain user. This restriction isn&#8217;t case-sensitive. Therefore, USER or User can&#8217;t be used in the password for user@contoso.com.</li>
+</ul>
+</blockquote>
+<p>This raises the concern that perhaps Microsoft Live is storing plain text copies of passwords instead of the hash of the password. It would be completely foolish of them to store the plain text version of passwords, with serious security implications, so I hope that isn&#8217;t the case.</p>
+<p>But if they really are hashing the passwords, why set a maximum length of 16 characters (and no spaces)? I could understand not allowing for infinitely long passwords, after all even bcrypt only supports unique strings up to 72 characters, but 16 seems particularly small in todays world of password managers. Why not something more sensible like 50 or 60?</p>
+<p>Sadly none of this is new, it has had plenty of attention from <a href="http://arstechnica.com/security/2012/09/secret-microsoft-policy-limited-hotmail-passwords-to-16-characters/">Ars Technica</a>, <a href="http://thenextweb.com/microsoft/2012/09/21/this-ridiculous-microsoft-longer-accepts-long-passwords-shortens/">The Next Web</a>, and <a href="http://security.stackexchange.com/questions/20586/why-does-microsoft-limit-password-length">security.stackexchange.com</a>. Most of them point back to a <a href="http://blogs.windows.com/windows_live/b/windowslive/archive/2012/07/15/keeping-your-microsoft-account-more-secure.aspx">Microsoft blog post on &#8216;Keeping your Microsoft account more secure&#8217;</a>. The only really useful bit in the context of 16 character password limits comes from a comment by Eric Doerr (the author of the post):</p>
+<blockquote><p>
+Password length &#8211; We are working on increasing this. Unfortunately, for historical reasons, the password validation logic is decentralized across different products, so it&#8217;s a bigger change than it should be and takes longer to get to market. It&#8217;s also worth noting that the vast majority of compromised accounts are through malware and phishing. The small fraction of brute force is primarily common passwords like &#8220;123456&#8221; not due to a lack of complexity.
+</p></blockquote>
+<p>Most of these posts seem to be missing the issue of what happens when/if their password database is compromised and copied by an intruder? Under that situation there is going to be a world of difference between people who use 8 character passwords and people who use 30 character passwords.</p>
+<p>And when it comes to trying to sync password authentication against multiple types of systems it raises the concern of plain text passwords again.  Even though Ars Technica asked about, Microsoft never really answered:</p>
+<blockquote><p>
+The spokeswoman&#8217;s response appears to indicate Microsoft engineers don&#8217;t store passwords in plaintext, although the spokeswoman didn&#8217;t address that issue despite Ars specifically asking about it.
+</p></blockquote>
+<p>Another method they might be using is regular encryption, instead of a hash.  So when a password needs to be a synced out to another service they decrypt the password and then encrypt it again on the new service.  That still isn&#8217;t as good as password hashing, but it would be better than storing the plain text version.</p>
+<p>None of this fills me with warm fuzzies about how Microsoft Live is storing passwords.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/02/19/strange-microsoft-live-password-policy/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Letter and Numbers</title>
+		<link>/2007/12/03/letter-and-numbers/</link>
+					<comments>/2007/12/03/letter-and-numbers/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 03 Dec 2007 13:00:28 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[password]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/12/03/letter-and-numbers/</guid>
+
+					<description><![CDATA[On the family computer (Windows XP) we have an account setup just for the kids to use. It has it&#8217;s own password, which didn&#8217;t take long for my 5 year to memorize. One day while sitting at the computer she came up to me and asked me for my letters and numbers. I looked at [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>On the family computer (Windows XP) we have an account setup just for the kids to use.  It has it&#8217;s own password, which didn&#8217;t take long for my 5 year to memorize.</p>
+<p>One day while sitting at the computer she came up to me and asked me for my letters and numbers.  I looked at her for a minute and asked her what she meant.  Then she rattled off the password for her account and said that mommy and daddy knew her letters and numbers and she wanted to know mine.  Then it dawned on me, she was asking for the password to my account on the family computer!</p>
+<p>After suppressing the laughter that was building inside I explained that she only needed the password for her account and not for other peoples accounts.</p>
+<p>I still get a laugh out of that just thinking about it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/12/03/letter-and-numbers/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

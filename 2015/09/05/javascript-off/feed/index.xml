@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: JavaScript Off	</title>
+	<atom:link href="/2015/09/05/javascript-off/feed/" rel="self" type="application/rss+xml" />
+	<link>/2015/09/05/javascript-off/</link>
+	<description></description>
+	<lastBuildDate>Mon, 07 Sep 2015 14:18:46 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2015/09/05/javascript-off/#comment-4375</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 07 Sep 2015 14:18:46 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=9571#comment-4375</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2015/09/05/javascript-off/#comment-4374&quot;&gt;Julien&lt;/a&gt;.
+
+It something that seems to be marching forward at a quick pace.  I don&#039;t think we take enough time to evaluate the new failure conditions that happen as a result.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2015/09/05/javascript-off/#comment-4374">Julien</a>.</p>
+<p>It something that seems to be marching forward at a quick pace.  I don&#8217;t think we take enough time to evaluate the new failure conditions that happen as a result.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Julien		</title>
+		<link>/2015/09/05/javascript-off/#comment-4374</link>
+
+		<dc:creator><![CDATA[Julien]]></dc:creator>
+		<pubDate>Mon, 07 Sep 2015 10:08:12 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=9571#comment-4374</guid>
+
+					<description><![CDATA[I&#039;m actually convinced that more and more, JS is the replacing HTML at the &quot;heart&quot; of the web stack. Let&#039;s face it, the web as it was built is now more and more unbundled: your html docs are not only/always served via HTTP (it could be/have been spdy, but also things like websockets, or even SSE, or they may have been loaded locally... or just &quot;built&quot; locally via JS), CSS is now threated to be replaced by writting JS code... etc.
+
+(I&#039;m not saying it&#039;s a *good* trend... but I think this is happening and faster than we expect). It goes even further: Service Workers are now making JS execute *before* the network stack is even touched!]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;m actually convinced that more and more, JS is the replacing HTML at the &#8220;heart&#8221; of the web stack. Let&#8217;s face it, the web as it was built is now more and more unbundled: your html docs are not only/always served via HTTP (it could be/have been spdy, but also things like websockets, or even SSE, or they may have been loaded locally&#8230; or just &#8220;built&#8221; locally via JS), CSS is now threated to be replaced by writting JS code&#8230; etc.</p>
+<p>(I&#8217;m not saying it&#8217;s a *good* trend&#8230; but I think this is happening and faster than we expect). It goes even further: Service Workers are now making JS execute *before* the network stack is even touched!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

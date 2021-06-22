@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Blog ID in WordPress and XML-RPC Blog APIs	</title>
+	<atom:link href="/2008/06/10/blog-id-in-wordpress-and-xml-rpc-blog-apis/feed/" rel="self" type="application/rss+xml" />
+	<link>/2008/06/10/blog-id-in-wordpress-and-xml-rpc-blog-apis/</link>
+	<description></description>
+	<lastBuildDate>Mon, 06 Oct 2008 16:50:16 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/06/10/blog-id-in-wordpress-and-xml-rpc-blog-apis/#comment-2265</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 06 Oct 2008 16:50:16 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1103#comment-2265</guid>
+
+					<description><![CDATA[@skwirditz -
+
+Not sure why you are getting an error.  Have you looked at the raw XML-RPC request/response to make sure that they look ok?]]></description>
+			<content:encoded><![CDATA[<p>@skwirditz &#8211;</p>
+<p>Not sure why you are getting an error.  Have you looked at the raw XML-RPC request/response to make sure that they look ok?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: skwirditz		</title>
+		<link>/2008/06/10/blog-id-in-wordpress-and-xml-rpc-blog-apis/#comment-2264</link>
+
+		<dc:creator><![CDATA[skwirditz]]></dc:creator>
+		<pubDate>Fri, 03 Oct 2008 15:09:14 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1103#comment-2264</guid>
+
+					<description><![CDATA[Hello every one im using this code,, im junior programmer and this is my first time to use xmlrpc, im just wondering why i get this error -&#062; Got invalid response... Maybe i miss something in my code or i don&#039;t know
+
+return_type = &#039;xml&#039;;
+// let&#039;s the native xmlrpc extension take care of encoding request parameterss
+$r = $c-&#062;send(xmlrpc_encode_request(&#039;wp.getUsersBlogs&#039;, $_POST[&#039;stateno&#039;]));
+if ($r-&#062;faultCode())
+// HTTP transport error
+echo &#039;Got error &#039;.$r-&#062;faultCode();
+else
+{
+// HTTP request OK, but XML returned from server not parsed yet
+$v = xmlrpc_decode($r-&#062;value());
+// check if we got a valid xmlrpc response from server
+if ($v === NULL)
+echo &#039;Got invalid response&#039;;
+else
+// check if server sent a fault response
+if (xmlrpc_is_fault($v))
+echo &#039;Got xmlrpc fault &#039;.$v[&#039;faultCode&#039;];
+else
+echo&#039;Got response: &#039;.htmlentities($v);
+}
+?&#062;]]></description>
+			<content:encoded><![CDATA[<p>Hello every one im using this code,, im junior programmer and this is my first time to use xmlrpc, im just wondering why i get this error -&gt; Got invalid response&#8230; Maybe i miss something in my code or i don&#8217;t know</p>
+<p>return_type = &#8216;xml&#8217;;<br />
+// let&#8217;s the native xmlrpc extension take care of encoding request parameterss<br />
+$r = $c-&gt;send(xmlrpc_encode_request(&#8216;wp.getUsersBlogs&#8217;, $_POST[&#8216;stateno&#8217;]));<br />
+if ($r-&gt;faultCode())<br />
+// HTTP transport error<br />
+echo &#8216;Got error &#8216;.$r-&gt;faultCode();<br />
+else<br />
+{<br />
+// HTTP request OK, but XML returned from server not parsed yet<br />
+$v = xmlrpc_decode($r-&gt;value());<br />
+// check if we got a valid xmlrpc response from server<br />
+if ($v === NULL)<br />
+echo &#8216;Got invalid response&#8217;;<br />
+else<br />
+// check if server sent a fault response<br />
+if (xmlrpc_is_fault($v))<br />
+echo &#8216;Got xmlrpc fault &#8216;.$v[&#8216;faultCode&#8217;];<br />
+else<br />
+echo&#8217;Got response: &#8216;.htmlentities($v);<br />
+}<br />
+?&gt;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Chris L		</title>
+		<link>/2008/06/10/blog-id-in-wordpress-and-xml-rpc-blog-apis/#comment-2263</link>
+
+		<dc:creator><![CDATA[Chris L]]></dc:creator>
+		<pubDate>Thu, 11 Sep 2008 21:06:31 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1103#comment-2263</guid>
+
+					<description><![CDATA[I see that this fix is in WPMU now, but I am still experiencing problems with blogging clients as if the fix is not there. One diff, I note, is that you discuss subdomains but I am using subdirectories in my installation... do you think that could cause problems with the fix?
+
+Both Livewriter and Scribefire are having the same problems discussed pre-fix. I posted here: http://mu.wordpress.org/forums/topic.php?id=6235#post-57161]]></description>
+			<content:encoded><![CDATA[<p>I see that this fix is in WPMU now, but I am still experiencing problems with blogging clients as if the fix is not there. One diff, I note, is that you discuss subdomains but I am using subdirectories in my installation&#8230; do you think that could cause problems with the fix?</p>
+<p>Both Livewriter and Scribefire are having the same problems discussed pre-fix. I posted here: <a href="http://mu.wordpress.org/forums/topic.php?id=6235#post-57161" rel="nofollow ugc">http://mu.wordpress.org/forums/topic.php?id=6235#post-57161</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/06/10/blog-id-in-wordpress-and-xml-rpc-blog-apis/#comment-2262</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 11 Sep 2008 05:17:31 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1103#comment-2262</guid>
+
+					<description><![CDATA[@Tom -
+
+Documentation is one area that we need to improve for XML-RPC.  There&#039;s lots of documentation out there for the generic metaWeblog.* functions though.]]></description>
+			<content:encoded><![CDATA[<p>@Tom &#8211;</p>
+<p>Documentation is one area that we need to improve for XML-RPC.  There&#8217;s lots of documentation out there for the generic metaWeblog.* functions though.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Tom		</title>
+		<link>/2008/06/10/blog-id-in-wordpress-and-xml-rpc-blog-apis/#comment-2261</link>
+
+		<dc:creator><![CDATA[Tom]]></dc:creator>
+		<pubDate>Tue, 09 Sep 2008 19:31:02 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1103#comment-2261</guid>
+
+					<description><![CDATA[Very cool.  Thanks for the info -- very timely as I&#039;m just getting started with XML-RPC and Wordpress app development.
+
+Where can I find documentation on the methods available?
+
+thanks much
+
+tom]]></description>
+			<content:encoded><![CDATA[<p>Very cool.  Thanks for the info &#8212; very timely as I&#8217;m just getting started with XML-RPC and WordPress app development.</p>
+<p>Where can I find documentation on the methods available?</p>
+<p>thanks much</p>
+<p>tom</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/06/10/blog-id-in-wordpress-and-xml-rpc-blog-apis/#comment-2260</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 05 Aug 2008 15:27:58 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1103#comment-2260</guid>
+
+					<description><![CDATA[Go to the WPMU Trac install (http://trac.mu.wordpress.org/) and take a look at the XML-RPC file for the 1.0 release (http://trac.mu.wordpress.org/browser/tags/release-1.0/xmlrpc.php).  It has metaWeblog.newPost in there.  Obviously it won&#039;t have all the current features, but it&#039;s in there.
+
+Without the exactly XML-RPC error it&#039;s hard to say what the problem is.]]></description>
+			<content:encoded><![CDATA[<p>Go to the WPMU Trac install (<a href="http://trac.mu.wordpress.org/" rel="nofollow ugc">http://trac.mu.wordpress.org/</a>) and take a look at the XML-RPC file for the 1.0 release (<a href="http://trac.mu.wordpress.org/browser/tags/release-1.0/xmlrpc.php" rel="nofollow ugc">http://trac.mu.wordpress.org/browser/tags/release-1.0/xmlrpc.php</a>).  It has metaWeblog.newPost in there.  Obviously it won&#8217;t have all the current features, but it&#8217;s in there.</p>
+<p>Without the exactly XML-RPC error it&#8217;s hard to say what the problem is.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Areeb		</title>
+		<link>/2008/06/10/blog-id-in-wordpress-and-xml-rpc-blog-apis/#comment-2259</link>
+
+		<dc:creator><![CDATA[Areeb]]></dc:creator>
+		<pubDate>Tue, 05 Aug 2008 00:11:57 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1103#comment-2259</guid>
+
+					<description><![CDATA[I know it&#039;s old, but it&#039;s not my website, so I really don&#039;t have a choice of upgrading :). But yea, do you happen to know if metaweblog api support has only been added after 1.0?
+
+Do you know of any way to add a timestamp to posts done to WPMU-1.0? That is what I&#039;m basically trying to do...]]></description>
+			<content:encoded><![CDATA[<p>I know it&#8217;s old, but it&#8217;s not my website, so I really don&#8217;t have a choice of upgrading :). But yea, do you happen to know if metaweblog api support has only been added after 1.0?</p>
+<p>Do you know of any way to add a timestamp to posts done to WPMU-1.0? That is what I&#8217;m basically trying to do&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/06/10/blog-id-in-wordpress-and-xml-rpc-blog-apis/#comment-2258</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 04 Aug 2008 23:56:40 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1103#comment-2258</guid>
+
+					<description><![CDATA[WPMU-1.0?  Seriously?  That&#039;s very old, time to upgrade.]]></description>
+			<content:encoded><![CDATA[<p>WPMU-1.0?  Seriously?  That&#8217;s very old, time to upgrade.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Areeb		</title>
+		<link>/2008/06/10/blog-id-in-wordpress-and-xml-rpc-blog-apis/#comment-2257</link>
+
+		<dc:creator><![CDATA[Areeb]]></dc:creator>
+		<pubDate>Mon, 04 Aug 2008 23:50:40 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1103#comment-2257</guid>
+
+					<description><![CDATA[Thanks, I was able to get the blog_id that way, but everytime I try to do a metaWeblog.newpost request, it throws back an error. The website I&#039;m trying to submit to has WPMU-1.0. Has the metaWeblog support only been added after 1.0? The blogger API works fine.]]></description>
+			<content:encoded><![CDATA[<p>Thanks, I was able to get the blog_id that way, but everytime I try to do a metaWeblog.newpost request, it throws back an error. The website I&#8217;m trying to submit to has WPMU-1.0. Has the metaWeblog support only been added after 1.0? The blogger API works fine.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/06/10/blog-id-in-wordpress-and-xml-rpc-blog-apis/#comment-2256</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 04 Aug 2008 15:47:57 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1103#comment-2256</guid>
+
+					<description><![CDATA[The blog_id value is part of the data returned by blogger.getUsersBlogs.]]></description>
+			<content:encoded><![CDATA[<p>The blog_id value is part of the data returned by blogger.getUsersBlogs.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

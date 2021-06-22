@@ -1,0 +1,64 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/sql-injection/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/sql-injection/",
+    "feed_url": "https://blog.josephscott.org/tag/sql-injection/feed/json/",
+    "language": "en-US",
+    "title": "sql-injection &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=13613",
+            "url": "https://blog.josephscott.org/2015/12/08/error-based-sql-injection/",
+            "title": "Error Based SQL Injection",
+            "content_html": "<p>Looking for a new twist on SQL injection?  Try <a href=\"https://osandamalith.wordpress.com/2015/07/08/bigint-overflow-error-based-sql-injection/\">BIGINT Overflow Error Based SQL Injection</a>:</p>\n<blockquote><p>\nTo perform these injection the mysql_error() should be echoed back to us that\u2019s why this is error based injection. The MySQL version should be 5.5.5 or above. There can be lots of variations for these overflow injections.</p></blockquote>\n<p>Even error messages can betray you.</p>\n",
+            "content_text": "Looking for a new twist on SQL injection?  Try BIGINT Overflow Error Based SQL Injection:\n\nTo perform these injection the mysql_error() should be echoed back to us that\u2019s why this is error based injection. The MySQL version should be 5.5.5 or above. There can be lots of variations for these overflow injections.\nEven error messages can betray you.",
+            "date_published": "2015-12-08T08:57:07-07:00",
+            "date_modified": "2015-12-08T08:57:07-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "MySQL",
+                "security",
+                "sql-injection",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=4700",
+            "url": "https://blog.josephscott.org/2013/05/22/reddit-com-http-response-headers/",
+            "title": "reddit.com HTTP Response Headers",
+            "content_html": "<p>I found an old note to myself to look at the HTTP response headers for reddit.com.  So I did this:</p>\n<p>$ curl -v -s http://www.reddit.com/ > /dev/null<br />\n* About to connect() to www.reddit.com port 80 (#0)<br />\n*   Trying 69.22.154.10&#8230;<br />\n* connected<br />\n* Connected to www.reddit.com (69.22.154.10) port 80 (#0)<br />\n> GET / HTTP/1.1<br />\n> User-Agent: curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8r zlib/1.2.5<br />\n> Host: www.reddit.com<br />\n> Accept: */*<br />\n><br />\n< HTTP/1.1 200 OK\n< Content-Type: text/html; charset=UTF-8\n< <strong>Server: &#8216;; DROP TABLE servertypes; &#8212;</strong><br />\n< Vary: accept-encoding\n< Date: Wed, 22 May 2013 14:37:25 GMT\n< Transfer-Encoding:  chunked\n< Connection: keep-alive\n< Connection: Transfer-Encoding\n< \n{ [data not shown]\n* Connection #0 to host www.reddit.com left intact\n* Closing connection #0\n\nFun Server entry in there.  Reminded me of <a href=\"http://xkcd.com/327/\">little Bobby tables from xkcd</a>.</p>\n<p>I&#8217;m sure this has made the rounds in other places.  Unfortunately my note didn&#8217;t indicate where I first saw this.</p>\n",
+            "content_text": "I found an old note to myself to look at the HTTP response headers for reddit.com.  So I did this:\n$ curl -v -s http://www.reddit.com/ > /dev/null\n* About to connect() to www.reddit.com port 80 (#0)\n*   Trying 69.22.154.10&#8230;\n* connected\n* Connected to www.reddit.com (69.22.154.10) port 80 (#0)\n> GET / HTTP/1.1\n> User-Agent: curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8r zlib/1.2.5\n> Host: www.reddit.com\n> Accept: */*\n>\n< HTTP/1.1 200 OK\n< Content-Type: text/html; charset=UTF-8\n< Server: &#8216;; DROP TABLE servertypes; &#8212;\n< Vary: accept-encoding\n< Date: Wed, 22 May 2013 14:37:25 GMT\n< Transfer-Encoding:  chunked\n< Connection: keep-alive\n< Connection: Transfer-Encoding\n< \n{ [data not shown]\n* Connection #0 to host www.reddit.com left intact\n* Closing connection #0\n\nFun Server entry in there.  Reminded me of little Bobby tables from xkcd.\nI&#8217;m sure this has made the rounds in other places.  Unfortunately my note didn&#8217;t indicate where I first saw this.",
+            "date_published": "2013-05-22T08:46:37-06:00",
+            "date_modified": "2013-05-22T08:46:37-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "http",
+                "reddit",
+                "sql-injection",
+                "Posts"
+            ]
+        }
+    ]
+}

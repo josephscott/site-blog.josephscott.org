@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Tried Out SPDY	</title>
+	<atom:link href="/2014/04/28/tried-spdy/feed/" rel="self" type="application/rss+xml" />
+	<link>/2014/04/28/tried-spdy/</link>
+	<description></description>
+	<lastBuildDate>Sat, 10 May 2014 13:54:18 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2014/04/28/tried-spdy/#comment-4217</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Sat, 10 May 2014 13:54:18 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10358#comment-4217</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/04/28/tried-spdy/#comment-4216&quot;&gt;Zack Tollman&lt;/a&gt;.
+
+I may look at upgraded to Nginx 1.6 and then enabling it again, see if that makes any difference.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/04/28/tried-spdy/#comment-4216">Zack Tollman</a>.</p>
+<p>I may look at upgraded to Nginx 1.6 and then enabling it again, see if that makes any difference.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Zack Tollman		</title>
+		<link>/2014/04/28/tried-spdy/#comment-4216</link>
+
+		<dc:creator><![CDATA[Zack Tollman]]></dc:creator>
+		<pubDate>Sat, 10 May 2014 05:50:30 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10358#comment-4216</guid>
+
+					<description><![CDATA[If you are inclined to do it again, I would love to see it in action. SPDY is still relatively new and it certainly could be that in some situations, it is actually slower or just plain contraindicated. With your site, you have very few assets, so it is possible that SPDY would provide little gains.]]></description>
+			<content:encoded><![CDATA[<p>If you are inclined to do it again, I would love to see it in action. SPDY is still relatively new and it certainly could be that in some situations, it is actually slower or just plain contraindicated. With your site, you have very few assets, so it is possible that SPDY would provide little gains.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2014/04/28/tried-spdy/#comment-4215</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 09 May 2014 00:36:31 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10358#comment-4215</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/04/28/tried-spdy/#comment-4214&quot;&gt;Zack Tollman&lt;/a&gt;.
+
+I did run multiple tests, and the page load time was always slower with SPDY.  It was a result I was surprised by as well.
+
+It could be anything though, including the low end VM that I&#039;m using at DigitalOcean.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/04/28/tried-spdy/#comment-4214">Zack Tollman</a>.</p>
+<p>I did run multiple tests, and the page load time was always slower with SPDY.  It was a result I was surprised by as well.</p>
+<p>It could be anything though, including the low end VM that I&#8217;m using at DigitalOcean.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Zack Tollman		</title>
+		<link>/2014/04/28/tried-spdy/#comment-4214</link>
+
+		<dc:creator><![CDATA[Zack Tollman]]></dc:creator>
+		<pubDate>Fri, 09 May 2014 00:20:11 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10358#comment-4214</guid>
+
+					<description><![CDATA[Hi Joseph!
+
+I&#039;m flummoxed. What metric were you using to test this? How did you test it? Did you run multiple tests?
+
+I would love to see you turn it back on so I can poke at it ;) I&#039;m just not convinced that it would be slower.]]></description>
+			<content:encoded><![CDATA[<p>Hi Joseph!</p>
+<p>I&#8217;m flummoxed. What metric were you using to test this? How did you test it? Did you run multiple tests?</p>
+<p>I would love to see you turn it back on so I can poke at it 😉 I&#8217;m just not convinced that it would be slower.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

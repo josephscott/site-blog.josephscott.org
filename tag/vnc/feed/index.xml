@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>vnc &#8211; Joseph Scott</title>
+	<atom:link href="/tag/vnc/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 23 Oct 2007 13:00:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>JollysFastVNC</title>
+		<link>/2007/10/23/jollysfastvnc/</link>
+					<comments>/2007/10/23/jollysfastvnc/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 23 Oct 2007 13:00:38 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[jollysfastvnc]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[vnc]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/10/23/jollysfastvnc/</guid>
+
+					<description><![CDATA[The VNC client situation on Mac OS X has never been very good. I&#8217;m hoping that JollysFastVNC changes all that.]]></description>
+										<content:encoded><![CDATA[<p>The VNC client situation on Mac OS X has never been very good.  I&#8217;m hoping that <a href="http://www.jinx.de/JollysFastVNC.html">JollysFastVNC</a> changes all that.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/10/23/jollysfastvnc/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

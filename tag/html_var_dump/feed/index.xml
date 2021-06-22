@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>html_var_dump &#8211; Joseph Scott</title>
+	<atom:link href="/tag/html_var_dump/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 05 Feb 2010 16:29:46 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>PHP Helpers: html_var_dump</title>
+		<link>/2010/02/05/php-helpers-html_var_dump/</link>
+					<comments>/2010/02/05/php-helpers-html_var_dump/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 05 Feb 2010 16:29:46 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[html_var_dump]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[php-helpers]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1862</guid>
+
+					<description><![CDATA[With the last function being html_print_r this next one should come as no suprise, html_var_dump: [sourcecode lang=&#8221;php&#8221;] if ( !function_exists( &#8216;html_var_dump&#8217; ) ) { function html_var_dump( $data ) { $out = &#34;n&#60;pre class=&#8217;html-var-dump&#8217;&#34;; $out .= &#34; style=&#8217;border: 1px solid #ccc; padding: 7px;&#8217;&#62;n&#34;; ob_start( ); var_dump( $data ); $out .= esc_html( ob_get_contents( ) ); ob_end_clean( ); [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>With the last function being <a href="http://josephscott.org/archives/2010/02/php-helpers-html_print_r/">html_print_r</a> this next one should come as no suprise, <code>html_var_dump</code>:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+if ( !function_exists( &#8216;html_var_dump&#8217; ) ) {<br />
+    function html_var_dump( $data ) {<br />
+        $out = &quot;n&lt;pre class=&#8217;html-var-dump&#8217;&quot;;<br />
+        $out .= &quot; style=&#8217;border: 1px solid #ccc; padding: 7px;&#8217;&gt;n&quot;;</p>
+<p>        ob_start( );<br />
+        var_dump( $data );<br />
+        $out .= esc_html( ob_get_contents( ) );<br />
+        ob_end_clean( );</p>
+<p>        $out .= &quot;n&lt;/pre&gt;n&quot;;</p>
+<p>        return $out;<br />
+    }<br />
+}<br />
+[/sourcecode]</p>
+<p>Even though I tend to use print_r more often than <a href="http://us.php.net/var_dump">var_dump</a>, there are times where the type data that var_dump provides can be very helpful.  Unfortunately var_dump will always display data, so it needed to be wrapped in a few <a href="http://us.php.net/manual/en/ref.outcontrol.php">output control functions</a> ( ob_start, ob_get_contents, and ob_end_clean ) to capture it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/02/05/php-helpers-html_var_dump/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: MAMP Start Page Error	</title>
+	<atom:link href="/2009/07/08/mamp-start-page-error/feed/" rel="self" type="application/rss+xml" />
+	<link>/2009/07/08/mamp-start-page-error/</link>
+	<description></description>
+	<lastBuildDate>Thu, 15 Jan 2015 13:41:48 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: louis		</title>
+		<link>/2009/07/08/mamp-start-page-error/#comment-2895</link>
+
+		<dc:creator><![CDATA[louis]]></dc:creator>
+		<pubDate>Thu, 15 Jan 2015 13:41:48 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1292#comment-2895</guid>
+
+					<description><![CDATA[I am using MAMP PRO and have Document Root setup on Users/me/Sites folder. My localhost works but none of the Drupal 7 Multi-sites within the localhost Drupal sites folders. I receive 403 permissions error. 
+I have permissions on the sites folder set to 666 and the settings.php file, so it looks like no issue there. 
+I have also tried to set httpd.conf to use the Options Indexes MultiViews settings on all the options stated. Still 403 Forbidden error.
+I have no .htaccess in the Sites main folder but have tried to remove or rename the .htaccess file from the localhost folder. Still 403 Forbidden error. 
+It&#039;s been 2 months now since I purchased MAMP PRO and have yet to solve this 403 Forbidden error and would appreciate receiving any help that is offered. 
+At wits end!]]></description>
+			<content:encoded><![CDATA[<p>I am using MAMP PRO and have Document Root setup on Users/me/Sites folder. My localhost works but none of the Drupal 7 Multi-sites within the localhost Drupal sites folders. I receive 403 permissions error.<br />
+I have permissions on the sites folder set to 666 and the settings.php file, so it looks like no issue there.<br />
+I have also tried to set httpd.conf to use the Options Indexes MultiViews settings on all the options stated. Still 403 Forbidden error.<br />
+I have no .htaccess in the Sites main folder but have tried to remove or rename the .htaccess file from the localhost folder. Still 403 Forbidden error.<br />
+It&#8217;s been 2 months now since I purchased MAMP PRO and have yet to solve this 403 Forbidden error and would appreciate receiving any help that is offered.<br />
+At wits end!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: luke		</title>
+		<link>/2009/07/08/mamp-start-page-error/#comment-2894</link>
+
+		<dc:creator><![CDATA[luke]]></dc:creator>
+		<pubDate>Wed, 29 Oct 2014 01:15:43 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1292#comment-2894</guid>
+
+					<description><![CDATA[as above! no .htaccess file!]]></description>
+			<content:encoded><![CDATA[<p>as above! no .htaccess file!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Andrei		</title>
+		<link>/2009/07/08/mamp-start-page-error/#comment-2893</link>
+
+		<dc:creator><![CDATA[Andrei]]></dc:creator>
+		<pubDate>Sat, 12 Jul 2014 00:13:48 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1292#comment-2893</guid>
+
+					<description><![CDATA[Well nice to see it worked for all of you. I&#039;m still seeing the 403 Forbidden.
+&quot;Changing AllowOverride All to AllowOverride None&quot; - DONE, not working.
+&quot;Deleting the .htaccess file&quot; - Can&#039;t find one. I&#039;ve looked everywhere. Nothing!
+
+I&#039;m stuck!
+
+PS: The folder where I have my site (wordpress) it&#039;s working great. PhpMyAdmin is working great. But for the folder with an index.html i get 403 Forbidden!!!]]></description>
+			<content:encoded><![CDATA[<p>Well nice to see it worked for all of you. I&#8217;m still seeing the 403 Forbidden.<br />
+&#8220;Changing AllowOverride All to AllowOverride None&#8221; &#8211; DONE, not working.<br />
+&#8220;Deleting the .htaccess file&#8221; &#8211; Can&#8217;t find one. I&#8217;ve looked everywhere. Nothing!</p>
+<p>I&#8217;m stuck!</p>
+<p>PS: The folder where I have my site (wordpress) it&#8217;s working great. PhpMyAdmin is working great. But for the folder with an index.html i get 403 Forbidden!!!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jon Hibbitt		</title>
+		<link>/2009/07/08/mamp-start-page-error/#comment-2892</link>
+
+		<dc:creator><![CDATA[Jon Hibbitt]]></dc:creator>
+		<pubDate>Sat, 21 Apr 2012 11:44:27 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1292#comment-2892</guid>
+
+					<description><![CDATA[Thanks for this - very nasty bug, luckily found this post in 20 minutes and was able to return to work.]]></description>
+			<content:encoded><![CDATA[<p>Thanks for this &#8211; very nasty bug, luckily found this post in 20 minutes and was able to return to work.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Kaiko		</title>
+		<link>/2009/07/08/mamp-start-page-error/#comment-2891</link>
+
+		<dc:creator><![CDATA[Kaiko]]></dc:creator>
+		<pubDate>Mon, 12 Dec 2011 19:47:29 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1292#comment-2891</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/07/08/mamp-start-page-error/#comment-2849&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+I had same problem here. Wordpress put htaccess file with modrewrite params in HD root during installation. Very odd, but true. After deleting it everything works fine. It&#039;s only WP installation related problem.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/07/08/mamp-start-page-error/#comment-2849">Joseph Scott</a>.</p>
+<p>I had same problem here. WordPress put htaccess file with modrewrite params in HD root during installation. Very odd, but true. After deleting it everything works fine. It&#8217;s only WP installation related problem.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Wallaby		</title>
+		<link>/2009/07/08/mamp-start-page-error/#comment-2890</link>
+
+		<dc:creator><![CDATA[Wallaby]]></dc:creator>
+		<pubDate>Sun, 27 Mar 2011 23:57:54 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1292#comment-2890</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/07/08/mamp-start-page-error/#comment-2847&quot;&gt;Eric&lt;/a&gt;.
+
+Deleting the .htaccess file as described worked! Thanks for the help.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/07/08/mamp-start-page-error/#comment-2847">Eric</a>.</p>
+<p>Deleting the .htaccess file as described worked! Thanks for the help.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Kevin Leary		</title>
+		<link>/2009/07/08/mamp-start-page-error/#comment-2889</link>
+
+		<dc:creator><![CDATA[Kevin Leary]]></dc:creator>
+		<pubDate>Mon, 24 Jan 2011 14:49:52 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1292#comment-2889</guid>
+
+					<description><![CDATA[Thanks Joseph!
+
+I had been trying the other fixes mentioned in the MAMP forums and they seemed to cause other issues. Changing &lt;strong&gt;AllowOverride All&lt;/strong&gt; to &lt;strong&gt;AllowOverride None&lt;/strong&gt; would fix the start page, but also destroy my WordPress rewrites.
+
+This did the trick, thanks for sharing it!]]></description>
+			<content:encoded><![CDATA[<p>Thanks Joseph!</p>
+<p>I had been trying the other fixes mentioned in the MAMP forums and they seemed to cause other issues. Changing <strong>AllowOverride All</strong> to <strong>AllowOverride None</strong> would fix the start page, but also destroy my WordPress rewrites.</p>
+<p>This did the trick, thanks for sharing it!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Gabe Rosser		</title>
+		<link>/2009/07/08/mamp-start-page-error/#comment-2888</link>
+
+		<dc:creator><![CDATA[Gabe Rosser]]></dc:creator>
+		<pubDate>Sun, 14 Nov 2010 17:37:00 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1292#comment-2888</guid>
+
+					<description><![CDATA[Thank you so much! This was extremely helpful and worked perfectly the first time! Rare.]]></description>
+			<content:encoded><![CDATA[<p>Thank you so much! This was extremely helpful and worked perfectly the first time! Rare.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Adam		</title>
+		<link>/2009/07/08/mamp-start-page-error/#comment-2887</link>
+
+		<dc:creator><![CDATA[Adam]]></dc:creator>
+		<pubDate>Fri, 06 Aug 2010 14:10:58 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1292#comment-2887</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/07/08/mamp-start-page-error/#comment-2851&quot;&gt;Will&lt;/a&gt;.
+
+Yes! That did it. Took me forever to find the solution...]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/07/08/mamp-start-page-error/#comment-2851">Will</a>.</p>
+<p>Yes! That did it. Took me forever to find the solution&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Carla		</title>
+		<link>/2009/07/08/mamp-start-page-error/#comment-2886</link>
+
+		<dc:creator><![CDATA[Carla]]></dc:creator>
+		<pubDate>Mon, 26 Jul 2010 21:28:51 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1292#comment-2886</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/07/08/mamp-start-page-error/#comment-2866&quot;&gt;Emi&lt;/a&gt;.
+
+After reading these suggestions and still not finding the .htaccess file, I followed your fix and it worked. Yea! It did prompt me that I was replacing an existing file on my HD.
+
+So... from another &#039;really really dummy&#039; out there... thank you for sending in this suggestion!]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/07/08/mamp-start-page-error/#comment-2866">Emi</a>.</p>
+<p>After reading these suggestions and still not finding the .htaccess file, I followed your fix and it worked. Yea! It did prompt me that I was replacing an existing file on my HD.</p>
+<p>So&#8230; from another &#8216;really really dummy&#8217; out there&#8230; thank you for sending in this suggestion!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

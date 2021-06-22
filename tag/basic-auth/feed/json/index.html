@@ -1,0 +1,38 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/basic-auth/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/basic-auth/",
+    "feed_url": "https://blog.josephscott.org/tag/basic-auth/feed/json/",
+    "language": "en-US",
+    "title": "basic-auth &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://josephscott.org/?p=4075",
+            "url": "https://blog.josephscott.org/2011/06/07/http-basic-auth-with-httplib2/",
+            "title": "HTTP Basic Auth with httplib2",
+            "content_html": "<p>While working on <a href=\"http://josephscott.org/archives/2011/05/pressfs-a-wordpress-filesystem/\">pressfs</a> I ran into an issue with <a href=\"http://code.google.com/p/httplib2/\">httplib2</a> using <a href=\"http://www.faqs.org/rfcs/rfc2617.html\">HTTP Basic Authentication</a>.</p>\n<p>Here is some example code:</p>\n<p>[sourcecode lang=&#8221;python&#8221;]<br />\nimport httplib2</p>\n<p>if __name__ == &#8216;__main__&#8217; :<br />\n    httplib2.debuglevel = 1</p>\n<p>    h = httplib2.Http()<br />\n    h.add_credentials( &#8216;username&#8217;, &#8216;password&#8217; )</p>\n<p>    resp, content = h.request( &#8216;http://www.google.com/&#8217;, &#8216;GET&#8217; )<br />\n[/sourcecode]</p>\n<p>If you run this you&#8217;ll notice that httplib2 doesn&#8217;t actually include the HTTP Basic Auth details in the request, even though the code specifically asks it to do so.  By design it will always make one request with no authentication details and then check to see if it gets an HTTP 401 Unauthorized response back.  If and only if it gets a 401 response back will it then make a second request that includes the authentication data.</p>\n<p>Bottom line, I didn&#8217;t want to make two HTTP requests when only one was needed (huge performance hit).  There is no option to force the authentication header to be sent on the first request, so you have to do it manually:</p>\n<p>[sourcecode lang=&#8221;python&#8221;]<br />\nimport base64<br />\nimport httplib2</p>\n<p>if __name__ == &#8216;__main__&#8217; :<br />\n    httplib2.debuglevel = 1</p>\n<p>    h = httplib2.Http()<br />\n    auth = base64.encodestring( &#8216;username&#8217; + &#8216;:&#8217; + &#8216;password&#8217; )</p>\n<p>    resp, content = h.request(<br />\n        &#8216;http://www.google.com/&#8217;,<br />\n        &#8216;GET&#8217;,<br />\n        headers = { &#8216;Authorization&#8217; : &#8216;Basic &#8216; + auth }<br />\n    )<br />\n[/sourcecode]</p>\n<p>Watching the output of this you&#8217;ll see the authentication header in the request.</p>\n<p>Someone else already opened an issue about this ( <a href=\"http://code.google.com/p/httplib2/issues/detail?id=130#makechanges\">Issue 130</a> ), unfortunately Joe Gregorio has indicated that he has no intention of ever fixing this <img src=\"https://s.w.org/images/core/emoji/13.0.1/72x72/1f641.png\" alt=\"\ud83d\ude41\" class=\"wp-smiley\" style=\"height: 1em; max-height: 1em;\" /></p>\n<p>On the up side, working around this deficiency only takes a little bit of extra code.</p>\n",
+            "content_text": "While working on pressfs I ran into an issue with httplib2 using HTTP Basic Authentication.\nHere is some example code:\n[sourcecode lang=&#8221;python&#8221;]\nimport httplib2\nif __name__ == &#8216;__main__&#8217; :\n    httplib2.debuglevel = 1\n    h = httplib2.Http()\n    h.add_credentials( &#8216;username&#8217;, &#8216;password&#8217; )\n    resp, content = h.request( &#8216;http://www.google.com/&#8217;, &#8216;GET&#8217; )\n[/sourcecode]\nIf you run this you&#8217;ll notice that httplib2 doesn&#8217;t actually include the HTTP Basic Auth details in the request, even though the code specifically asks it to do so.  By design it will always make one request with no authentication details and then check to see if it gets an HTTP 401 Unauthorized response back.  If and only if it gets a 401 response back will it then make a second request that includes the authentication data.\nBottom line, I didn&#8217;t want to make two HTTP requests when only one was needed (huge performance hit).  There is no option to force the authentication header to be sent on the first request, so you have to do it manually:\n[sourcecode lang=&#8221;python&#8221;]\nimport base64\nimport httplib2\nif __name__ == &#8216;__main__&#8217; :\n    httplib2.debuglevel = 1\n    h = httplib2.Http()\n    auth = base64.encodestring( &#8216;username&#8217; + &#8216;:&#8217; + &#8216;password&#8217; )\n    resp, content = h.request(\n        &#8216;http://www.google.com/&#8217;,\n        &#8216;GET&#8217;,\n        headers = { &#8216;Authorization&#8217; : &#8216;Basic &#8216; + auth }\n    )\n[/sourcecode]\nWatching the output of this you&#8217;ll see the authentication header in the request.\nSomeone else already opened an issue about this ( Issue 130 ), unfortunately Joe Gregorio has indicated that he has no intention of ever fixing this \nOn the up side, working around this deficiency only takes a little bit of extra code.",
+            "date_published": "2011-06-07T09:48:03-06:00",
+            "date_modified": "2011-06-07T09:48:03-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "basic-auth",
+                "http",
+                "httplib2",
+                "python",
+                "Posts"
+            ]
+        }
+    ]
+}

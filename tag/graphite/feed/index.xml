@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>graphite &#8211; Joseph Scott</title>
+	<atom:link href="/tag/graphite/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 24 Nov 2015 15:11:01 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>percentileOfSeries</title>
+		<link>/2015/11/24/percentileofseries/</link>
+					<comments>/2015/11/24/percentileofseries/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 24 Nov 2015 15:11:01 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[graphite]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13945</guid>
+
+					<description><![CDATA[My new favorite Graphite function &#8211; percentileOfSeries: percentileOfSeries returns a single series which is composed of the n-percentile values taken across a wildcard series at each point. Unless interpolate is set to True, percentile values are actual values contained in one of the supplied series. I came across percentileOfSeries while looking for a way to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>My new favorite Graphite function &#8211; <a href="http://graphite.readthedocs.org/en/latest/functions.html#graphite.render.functions.percentileOfSeries">percentileOfSeries</a>:</p>
+<blockquote><p>
+percentileOfSeries returns a single series which is composed of the n-percentile values taken across a wildcard series at each point. Unless interpolate is set to True, percentile values are actual values contained in one of the supplied series.
+</p></blockquote>
+<p>I came across <code>percentileOfSeries</code> while looking for a way to combine several data points into a single trend.  It does a good job of solving that problem.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/24/percentileofseries/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

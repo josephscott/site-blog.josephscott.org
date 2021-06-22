@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>umar-hansa &#8211; Joseph Scott</title>
+	<atom:link href="/tag/umar-hansa/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 30 Dec 2014 18:51:03 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Quick Reference To The Selected Node in Chrome Console</title>
+		<link>/2014/12/30/quick-reference-to-the-selected-node-in-chrome-console/</link>
+					<comments>/2014/12/30/quick-reference-to-the-selected-node-in-chrome-console/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 30 Dec 2014 18:51:03 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[umar-hansa]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11506</guid>
+
+					<description><![CDATA[Umar Hansa mentioned a feature I didn&#8217;t know about in the Chrome dev panel: when you have a node selected in the Elements panel you can easily reference it in the Console panel with $0. On top of that $_ can be used in the Console panel to access the last result.]]></description>
+										<content:encoded><![CDATA[<p><a href="https://twitter.com/umaar">Umar Hansa</a> mentioned a feature I didn&#8217;t know about in the Chrome dev panel: when you have <a href="https://plus.google.com/+UmarHansa/posts/LcpBCdE2hVM">a node selected in the Elements panel you can easily reference it in the Console panel</a> with <code>$0</code>.</p>
+<p><a href="https://plus.google.com/+UmarHansa/posts/LcpBCdE2hVM"><img loading="lazy" src="https://lh5.googleusercontent.com/-IyxR_Z-r8hw/U4X_TMRZdZI/AAAAAAAAIfU/2z8hbPsq4W4/w510-h388-no/dollar-zero.gif" width="510" height="388" class="aligncenter" /></a></p>
+<p>On top of that <code>$_</code> can be used in the Console panel to access the last result.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/12/30/quick-reference-to-the-selected-node-in-chrome-console/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

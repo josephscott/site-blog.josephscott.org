@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ipv6 &#8211; Joseph Scott</title>
+	<atom:link href="/tag/ipv6/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 03 Feb 2011 21:30:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Action, Not Crisis</title>
+		<link>/2011/02/03/action-not-crisis/</link>
+					<comments>/2011/02/03/action-not-crisis/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 03 Feb 2011 21:30:07 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[ipv4]]></category>
+		<category><![CDATA[ipv6]]></category>
+		<category><![CDATA[russ-housley]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3490</guid>
+
+					<description><![CDATA[The depletion of the IANA IPv4 address pool is not a crisis. Next week the Internet will not be significantly different that it was a week ago. There will not be any notable short-term effects caused by the empty IANA IPv4 address pool. There is no crisis, but there is a need for action so [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+The depletion of the IANA IPv4 address pool is not a crisis.  Next week the Internet will not be significantly different that it was a week ago.  There will not be any notable short-term effects caused by the empty IANA IPv4 address pool.</p>
+<p>There is no crisis, but there is a need for action so that the Internet can continue to grow.  The transition to IPv6 requires the attention of many actors.
+</p></blockquote>
+<p><a href="http://www.ietf.org/mail-archive/web/ietf/current/msg65458.html">Russ Housley on Final IPv4 Unicast Address Allocations</a></p>
+<p><a href="http://www.vigilsec.com/">Russ Housley</a> has been the IETF Chair since March 2007.</p>
+<p>For those interested in IPv4 allocation, the <a href="http://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xhtml">IANA IPv4 Address Space Registry</a> is an interesting read.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/02/03/action-not-crisis/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Slow Loading Websites in Mac OS X Web Browsers</title>
+		<link>/2009/12/18/slow-loading-websites-in-mac-os-x-web-browsers/</link>
+					<comments>/2009/12/18/slow-loading-websites-in-mac-os-x-web-browsers/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 18 Dec 2009 16:14:21 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[dns]]></category>
+		<category><![CDATA[ipv6]]></category>
+		<category><![CDATA[macosx]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1620</guid>
+
+					<description><![CDATA[I noticed when trying to reach www.freebsd.org the last week on a mac that it took forever, just sitting there spinning on an empty page. But on the same network in loaded right away on a Windows XP system. I thought that was rather odd, but moved on and didn&#8217;t think about it again until [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I noticed when trying to reach <a href="http://www.freebsd.org/">www.freebsd.org</a> the last week on a mac that it took forever, just sitting there spinning on an empty page.  But on the same network in loaded right away on a Windows XP system.  I thought that was rather odd, but moved on and didn&#8217;t think about it again until last night.  I tried it again and noticed the same problem, using any browser on the mac it never loaded, on Windows XP showed up right away.</p>
+<p>That&#8217;s when a little inspiration showed up.  I knew that www.freebsd.org was also available via IPv6, I wonder if Mac OS X was trying to reach it via IPv6 first.  If it was then it would never succeed as my DSL provides IPv4 and I don&#8217;t have a IPv6 tunnel setup.  First I confirmed that www.freebsd.org had an IPv6 address, <code>host www.freebsd.org</code> provided this:</p>
+<p>[sourcecode highlight=&#8221;2&#8243;]<br />
+www.freebsd.org has address 69.147.83.33<br />
+www.freebsd.org has IPv6 address 2001:4f8:fff6::21<br />
+www.freebsd.org mail is handled by 0 .<br />
+[/sourcecode]</p>
+<p>The second line there confirmed that there was indeed an IPv6 DNS address for www.freebsd.org.</p>
+<p>Next was a quick trip to the network preferences on the mac.  Click the &#8216;Advanced&#8217; button for your network connection and under the TCP/IP section you&#8217;ll see an option labeled &#8216;Configure IPv6&#8217;.  Mine was set to &#8216;Automatically&#8217;, which I then changed to &#8216;Off&#8217;.  Click &#8216;OK&#8217; then &#8216;Apply&#8217;.  That turned off IPv6 support for my network connection on the mac.</p>
+<p>And sure enough www.freebsd.org loaded up right away again after that.</p>
+<p>If you aren&#8217;t using IPv6 on your network then it&#8217;s probably worth just turning it off.  I&#8217;m rather surprised that I didn&#8217;t run into this sooner.  I guess there aren&#8217;t that many websites out there advertising IPv6 addresses.</p>
+<p><b>Update:</b> I noticed that us2.php.net has an IPv6 address listed as well, which explains why I&#8217;d had problems loading that site too.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/12/18/slow-loading-websites-in-mac-os-x-web-browsers/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

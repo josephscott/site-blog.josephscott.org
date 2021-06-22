@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>async-gravatars &#8211; Joseph Scott</title>
+	<atom:link href="/tag/async-gravatars/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 19 May 2011 22:12:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Delayed Loading Gravatars</title>
+		<link>/2011/05/19/delayed-loading-gravatars/</link>
+					<comments>/2011/05/19/delayed-loading-gravatars/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 19 May 2011 22:12:07 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[async-gravatars]]></category>
+		<category><![CDATA[gravatar]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jquery]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4132</guid>
+
+					<description><![CDATA[About two months I looked at adding Gravatars to a page, where in most cases there would be 20 different Gravatars on each page view. This seemed like a good time to try out Paul Hammond&#8217;s Speed Up Your Site with Delayed Content technique for loading Gravatar images. A few quick hacks later it was [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>About two months I looked at adding <a href="http://gravatar.com/">Gravatars</a> to a page, where in most cases there would be 20 different Gravatars on each page view.  This seemed like a good time to try out Paul Hammond&#8217;s <a href="http://24ways.org/2010/speed-up-your-site-with-delayed-content">Speed Up Your Site with Delayed Content</a> technique for loading Gravatar images.  A few quick hacks later it was working and I was reasonably happy with it.</p>
+<p>Fast forward a few more weeks and I found myself wanting to add Gravatars to another page, but this time most of the page views were going involving loading 250 different Gravatar images.  I went back to my original script for delayed loading, cleaned it up a bit and applied it to this new page.  At this point I realized that this was something that would be nice to have as a simple to use, mostly drop in feature.  So I refined it a bit more, made a few more improvements and I&#8217;m now making it public as <a href="http://josephscott.org/code/javascript/async-gravatars/">Async Gravatars</a>.  The code is open source and available on Github at <a href="https://github.com/josephscott/async-gravatars">https://github.com/josephscott/async-gravatars</a>.</p>
+<p>The process and the code are actually very simple:</p>
+<h3>Step 1</h3>
+<p>Use the same SRC attribute for all of your Gravatar images in the IMG tag, with the md5 of the real Gravatar in the data-gravatar_hash attribute, like so:</p>
+<p>[sourcecode lang=&#8221;html&#8221;]<br />
+&lt;img data-gravatar_hash=&quot;713072bbe89035a79c17d19e53dd5d9b&quot;<br />
+    class=&quot;load-gravatar&quot; height=&quot;64&quot; width=&quot;64&quot;<br />
+    src=&quot;https://secure.gravatar.com/avatar/00000000000000000000000000000000?s=64&amp;d=mm&quot; /&gt;<br />
+[/sourcecode]</p>
+<p>For PHP powered sites something like this will do the trick:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+&lt;img data-gravatar_hash=&quot;&lt;?php echo md5( strtolower( trim( $email ) ) ); ?&gt;&quot;<br />
+    class=&quot;load-gravatar&quot; height=&quot;64&quot; width=&quot;64&quot;<br />
+    src=&quot;https://secure.gravatar.com/avatar/00000000000000000000000000000000?s=64&amp;d=mm&quot; /&gt;<br />
+[/sourcecode]</p>
+<p>It is important to use the same SRC for all of the images, that way your browser only needs to make on request for all of them.  And by using a real image with the same dimensions you won&#8217;t have issues with the page re-flowing when the real Gravatar gets loaded.  I should note that the one SRC value you use doesn&#8217;t have to be loaded from Gravatar.com, it can be something that you host on your own site.</p>
+<h3>Step 2</h3>
+<p>Load the <a href="http://jquery.com/">jQuery</a> code and the <a href="https://github.com/josephscott/async-gravatars/blob/master/async-gravatars.js">async-gravatars.js</a> file, then one small piece of Javascript to trigger loading of the real Gravatar images after the page has finished loading:</p>
+<p>[sourcecode lang=&#8221;javascript&#8221;]<br />
+jQuery( document ).ready( function() {<br />
+    $( &#8216;.load-gravatar&#8217; ).async_gravatars( {<br />
+        ssl: true<br />
+    } );<br />
+} );<br />
+[/sourcecode]</p>
+<p>The <code>.async_gravatars()</code> function accepts the following options, with these defaults:</p>
+<p>[sourcecode lang=&#8221;javascript&#8221;]<br />
+{<br />
+		&#8216;default_img&#8217;	: &#8216;identicon&#8217;,<br />
+		&#8216;hash_attr&#8217;		: &#8216;data-gravatar_hash&#8217;,<br />
+		&#8216;rating&#8217;		: &#8216;pg&#8217;,<br />
+		&#8216;size&#8217;			: 64,<br />
+		&#8216;ssl&#8217;			: false<br />
+}<br />
+[/sourcecode]</p>
+<h3>Step 3</h3>
+<p>Sit back and enjoy, there is no step 3!</p>
+<h3>Conclusion</h3>
+<p>If you want to see it in action I put together a little <a href="http://josephscott.org/code/javascript/async-gravatars/">demo page</a> that loads a sample of Gravatar images for some of my fellow <a href="http://automattic.com/">Automatticians</a>.  A <a href="https://github.com/josephscott/async-gravatars/blob/master/index.html">demo page</a> is also included in the Github project.</p>
+<p>The Javascript code that does the work is <a href="https://github.com/josephscott/async-gravatars/blob/master/async-gravatars.js">very simple</a>, so spend a minute or two and take a look.  If you have suggestions or improvements let me know.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/05/19/delayed-loading-gravatars/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

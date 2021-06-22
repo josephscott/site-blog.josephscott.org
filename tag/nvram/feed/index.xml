@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>nvram &#8211; Joseph Scott</title>
+	<atom:link href="/tag/nvram/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 02 Dec 2013 12:53:48 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Mac OS X App Store Not Loading, Try Resetting NVRAM</title>
+		<link>/2013/12/02/mac-os-x-app-store-not-loading-try-resetting-nvram/</link>
+					<comments>/2013/12/02/mac-os-x-app-store-not-loading-try-resetting-nvram/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 02 Dec 2013 12:53:48 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[app-store]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[nvram]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9496</guid>
+
+					<description><![CDATA[Not long after upgrading to Mac OS 10.9 the Mac OS X App Store stopped loading on my Macbook Air. Starting the app took several minutes and once the window actually came up it was empty. Clicking buttons in the App Store window did nothing. I found a suggestion that resetting NVRAM ( the equivalent [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Not long after upgrading to Mac OS 10.9 the <a href="http://www.apple.com/osx/apps/app-store.html">Mac OS X App Store</a> stopped loading on my Macbook Air.  Starting the app took several minutes and once the window actually came up it was empty.  Clicking buttons in the App Store window did nothing.</p>
+<p>I found a suggestion that <a href="http://support.apple.com/kb/ht1379">resetting NVRAM</a> ( the equivalent of PRAM on the old PowerPC Macs ) would solve the issue.  In my case that worked.  The processing of resetting NVRAM is simple and short ( from <a href="http://support.apple.com/kb/ht1379">http://support.apple.com/kb/ht1379</a> ):</p>
+<ul>
+<li>Shut down your Mac.</li>
+<li>Locate the following keys on the keyboard: Command (⌘), Option, P, and R. You will need to hold these keys down simultaneously in step 4.</li>
+<li>Turn on the computer.</li>
+<li>Press and hold the Command-Option-P-R keys before the gray screen appears.</li>
+<li>Hold the keys down until the computer restarts and you hear the startup sound for the second time.</li>
+<li>Release the keys.</li>
+</ul>
+<p>I don&#8217;t reboot very often, I usually try to avoid it, but it was worth it to get the Mac OS X App Store app working again.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/12/02/mac-os-x-app-store-not-loading-try-resetting-nvram/feed/</wfw:commentRss>
+			<slash:comments>33</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

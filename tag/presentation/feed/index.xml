@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>presentation &#8211; Joseph Scott</title>
+	<atom:link href="/tag/presentation/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 07 May 2013 14:43:28 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Scaling WordPress</title>
+		<link>/2013/05/07/scaling-wordpress/</link>
+					<comments>/2013/05/07/scaling-wordpress/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 07 May 2013 14:43:28 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[openwest]]></category>
+		<category><![CDATA[presentation]]></category>
+		<category><![CDATA[scaling]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7653</guid>
+
+					<description><![CDATA[I&#8217;ve posted the slides from my &#8216;Scaling WordPress&#8217; presentation.]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve posted the <a href="http://www.slideshare.net/josephscott/scaling-wordpress-20731197">slides from my &#8216;Scaling WordPress&#8217; presentation</a>.</p>
+<p><iframe loading="lazy" src="http://www.slideshare.net/slideshow/embed_code/20731197" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/05/07/scaling-wordpress/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Site Testing with CasperJS</title>
+		<link>/2013/05/06/site-testing-with-casperjs/</link>
+					<comments>/2013/05/06/site-testing-with-casperjs/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 06 May 2013 14:46:01 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[casperjs]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[openwest]]></category>
+		<category><![CDATA[presentation]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7648</guid>
+
+					<description><![CDATA[I&#8217;ve posted the slides and example code from my &#8216;Site Testing with CasperJS&#8217; presentation at the OpenWest conference. A PDF of the slides and all of the example code is available at https://github.com/josephscott/casperjs-2013-05.]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve posted the slides and example code from my &#8216;Site Testing with CasperJS&#8217; presentation at the OpenWest conference.</p>
+<p><iframe loading="lazy" src="http://www.slideshare.net/slideshow/embed_code/20499893" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe></p>
+<p>A PDF of the slides and all of the example code is available at <a href="https://github.com/josephscott/casperjs-2013-05">https://github.com/josephscott/casperjs-2013-05</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/05/06/site-testing-with-casperjs/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Simple Filesystems with Python and FUSE</title>
+		<link>/2013/05/03/simple-filesystems-with-python-and-fuse/</link>
+					<comments>/2013/05/03/simple-filesystems-with-python-and-fuse/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 03 May 2013 16:56:16 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[filesystem]]></category>
+		<category><![CDATA[fuse]]></category>
+		<category><![CDATA[openwest]]></category>
+		<category><![CDATA[presentation]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7640</guid>
+
+					<description><![CDATA[I&#8217;ve posted the slides and example code from my &#8216;Simple Filesystems with Python and FUSE&#8217; presentation at the OpenWest conference. A PDF of the slides and all of the example code is available at https://github.com/josephscott/python-fuse-2013-05.]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve posted the slides and example code from my &#8216;Simple Filesystems with Python and FUSE&#8217; presentation at the OpenWest conference.</p>
+<p><iframe loading="lazy" src="http://www.slideshare.net/slideshow/embed_code/20489247" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe></p>
+<p>A PDF of the slides and all of the example code is available at <a href="https://github.com/josephscott/python-fuse-2013-05">https://github.com/josephscott/python-fuse-2013-05</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/05/03/simple-filesystems-with-python-and-fuse/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>WordCamp SLC 2011 Presentation Videos Online</title>
+		<link>/2011/11/08/wordcamp-slc-2011-presentation-videos-online/</link>
+					<comments>/2011/11/08/wordcamp-slc-2011-presentation-videos-online/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 08 Nov 2011 20:52:43 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[presentation]]></category>
+		<category><![CDATA[utah]]></category>
+		<category><![CDATA[video]]></category>
+		<category><![CDATA[wcslc]]></category>
+		<category><![CDATA[wordcamp]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=5069</guid>
+
+					<description><![CDATA[Videos of WordCamp SLC 2011 Presentations are being published at WordPress.tv. Included in the first batch was my Site Performance, From Pinto to Ferrari session.]]></description>
+										<content:encoded><![CDATA[<p><a href="http://2011.slc.wordcamp.org/2011/11/08/wordcamp-slc-2011-videos-online/">Videos of WordCamp SLC 2011 Presentations</a> are being published at <a href="http://wordpress.tv/">WordPress.tv</a>.  Included in the first batch was my <a href="http://wordpress.tv/2011/11/04/joseph-scott-site-performance-from-pinto-to-ferrari/">Site Performance, From Pinto to Ferrari</a> session.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/11/08/wordcamp-slc-2011-presentation-videos-online/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Utah Open Source Conference Presentation: Anatomy of a PHP Request</title>
+		<link>/2010/10/05/utah-open-source-conference-presentation-anatomy-of-a-php-request/</link>
+					<comments>/2010/10/05/utah-open-source-conference-presentation-anatomy-of-a-php-request/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 05 Oct 2010 14:24:43 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[presentation]]></category>
+		<category><![CDATA[utosc]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2940</guid>
+
+					<description><![CDATA[The Utah Open Source Conference is coming up at the end of this week (October 7-9). I&#8217;ll be giving an updated version of my Anatomy of a PHP Request presentation on the opening day, this Thursday. The last paragraph sums it up nicely: By the end of this presentation you&#8217;ll be familiar with the series [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The <a href="http://utosc.com/pages/home/">Utah Open Source Conference</a> is coming up at the end of this week (October 7-9).  I&#8217;ll be giving an updated version of my <a href="http://utosc.com/presentation/289/">Anatomy of a PHP Request</a> presentation on the opening day, this Thursday.  The last paragraph sums it up nicely:</p>
+<blockquote><p>
+By the end of this presentation you&#8217;ll be familiar with the series of events involved with every PHP request and the tools to measure and improve the performance of your scripts.
+</p></blockquote>
+<p>If you are going to be at the conference be sure to drop by and say hi.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/10/05/utah-open-source-conference-presentation-anatomy-of-a-php-request/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>WordCamp SF 2010 Presentation Video</title>
+		<link>/2010/06/15/wordcamp-sf-2010-presentation-video/</link>
+					<comments>/2010/06/15/wordcamp-sf-2010-presentation-video/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 15 Jun 2010 23:53:00 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[presentation]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[themes]]></category>
+		<category><![CDATA[video]]></category>
+		<category><![CDATA[wordcamp]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2410</guid>
+
+					<description><![CDATA[From WordPress.TV. I&#8217;ll never get used to watching myself on video.]]></description>
+										<content:encoded><![CDATA[<p>From <a href="http://wordpress.tv/2010/05/01/joseph-scott-secure-plugins-sf10/">WordPress.TV</a>.</p>
+<p>I&#8217;ll never get used to watching myself on video.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/06/15/wordcamp-sf-2010-presentation-video/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Utah PHP Users Group Presentation: Anatomy of a PHP Request</title>
+		<link>/2010/04/09/utah-php-users-group-presentation-anatomy-of-a-php-request/</link>
+					<comments>/2010/04/09/utah-php-users-group-presentation-anatomy-of-a-php-request/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 09 Apr 2010 15:28:45 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[presentation]]></category>
+		<category><![CDATA[uphpu]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2169</guid>
+
+					<description><![CDATA[I&#8217;ll be presenting at the next Utah PHP Users Group (UPHPU) meeting on Anatomy of a PHP Request: Ever wondered what really happens when your PHP script runs? I’ll cover the major milestones in the life and times of a PHP request (read, parse, compile, execute, output ) and where to look for road bumps [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ll be presenting at the next <a href="http://uphpu.org/">Utah PHP Users Group (UPHPU)</a> meeting on <a href="http://uphpu.org/2010/04/08/uphpu-april-meeting-7pm-april-15-anatomy-of-a-php-request-joseph-scott-php-fundamentals-with-justin-carmony/#comments">Anatomy of a PHP Request</a>:</p>
+<blockquote><p>
+Ever wondered what really happens when your PHP script runs? I’ll cover the major milestones in the life and times of a PHP request (read, parse, compile, execute, output ) and where to look for road bumps along the way. There are lots of tools available to make your PHP purr like a kitten, so I’ll dive into op code caches (with APC), op code dumps (with VLD – Vulcan Logic Dumper), and profiling (with Xdebug and webgrind). It will be a great time digging a little deeper in to PHP!
+</p></blockquote>
+<p>The meeting is at:</p>
+<p>April 15, 2010 @7pm</p>
+<p>Bill Good Marketing<br />
+12393 Gateway Park Place<br />
+Suite 600<br />
+Draper, UT 84020</p>
+<p><a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=12393+Gateway+Park+Place+Suite+600+Draper,+UT+84020&amp;sll=40.525201,-111.901299&amp;sspn=0.00681,0.010772&amp;ie=UTF8&amp;hq=&amp;hnear=12393+Gateway+Park+Pl+%23600,+Draper,+Salt+Lake,+Utah+84020&amp;ll=40.525185,-111.902994&amp;spn=0.007307,0.010772&amp;t=k&amp;z=17&amp;iwloc=A">Google Map</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/04/09/utah-php-users-group-presentation-anatomy-of-a-php-request/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,199 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/json/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/json/",
+    "feed_url": "https://blog.josephscott.org/tag/json/feed/json/",
+    "language": "en-US",
+    "title": "json &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=15481",
+            "url": "https://blog.josephscott.org/2016/03/14/jo-create-json-on-the-command-line/",
+            "title": "jo, Create JSON On The Command Line",
+            "content_html": "<p>Do you remember <a href=\"https://josephscott.org/archives/2013/03/jq-command-line-json-processor/\">jq</a>, the tool that makes it easy it parse JSON on the command line?  Have you ever wondered what the opposite of jq would be?</p>\n<p>The answer is <a href=\"http://jpmens.net/2016/03/05/a-shell-command-to-create-json-jo/\">jo</a>.  It simplifies the process of creating JSON on the command line.  Here is one of the simple examples the author listed:</p>\n<pre>\n> jo time=$(date +%s) dir=$HOME\n{\"time\":1457195712,\"dir\":\"/Users/jpm\"}\n</pre>\n<p>Along with a more interesting one:</p>\n<pre>\n> jo -p name=JP object=$(jo fruit=Orange point=$(jo x=10 y=20) number=17) sunday=false\n{\n   \"name\": \"JP\",\n   \"object\": {\n      \"fruit\": \"Orange\",\n      \"point\": {\n         \"x\": 10,\n         \"y\": 20\n      },\n      \"number\": 17\n   },\n   \"sunday\": false\n}\n</pre>\n<p>This would be handy for writing to <a href=\"https://josephscott.org/archives/2016/03/json-lines/\">JSON Lines</a> log files.</p>\n",
+            "content_text": "Do you remember jq, the tool that makes it easy it parse JSON on the command line?  Have you ever wondered what the opposite of jq would be?\nThe answer is jo.  It simplifies the process of creating JSON on the command line.  Here is one of the simple examples the author listed:\n\n> jo time=$(date +%s) dir=$HOME\n{\"time\":1457195712,\"dir\":\"/Users/jpm\"}\n\nAlong with a more interesting one:\n\n> jo -p name=JP object=$(jo fruit=Orange point=$(jo x=10 y=20) number=17) sunday=false\n{\n   \"name\": \"JP\",\n   \"object\": {\n      \"fruit\": \"Orange\",\n      \"point\": {\n         \"x\": 10,\n         \"y\": 20\n      },\n      \"number\": 17\n   },\n   \"sunday\": false\n}\n\nThis would be handy for writing to JSON Lines log files.",
+            "date_published": "2016-03-14T11:11:28-06:00",
+            "date_modified": "2016-03-14T11:11:28-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "jo",
+                "json",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=15339",
+            "url": "https://blog.josephscott.org/2016/03/07/json-lines/",
+            "title": "JSON Lines",
+            "content_html": "<p>A CSV replacement, <a href=\"http://jsonlines.org/\">JSON Lines</a>:</p>\n<blockquote><p>\nJSON Lines&#8217; biggest strength is in handling lots of similar nested data structures.\n</p></blockquote>\n<p>Not a bad idea.  I may give this a try on a future project.</p>\n",
+            "content_text": "A CSV replacement, JSON Lines:\n\nJSON Lines&#8217; biggest strength is in handling lots of similar nested data structures.\n\nNot a bad idea.  I may give this a try on a future project.",
+            "date_published": "2016-03-07T11:11:13-07:00",
+            "date_modified": "2016-03-07T11:11:13-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "json",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=6461",
+            "url": "https://blog.josephscott.org/2013/03/28/jq-command-line-json-processor/",
+            "title": "jq, Command Line JSON Processor",
+            "content_html": "<p>I love being able to make quick web API calls using cURL, and most of the time I get back JSON.  Unfortunately it isn&#8217;t easy to manipulate JSON strings with traditional Unix utilities.  That is the void that <a href='http://stedolan.github.com/jq/'>jq</a> fills.</p>\n<p>A basic example is pulling a single value out of the JSON string.  Given a JSON string in a file called test.json that looks like:</p>\n<p>[sourcecode lang=&#8221;javascript&#8221;]<br />\n{<br />\n    &quot;foo&quot;: 42,<br />\n    &quot;bar&quot;: &quot;less interesting data&quot;<br />\n}<br />\n[/sourcecode]</p>\n<p>you can easily pull out the value for &#8216;foo&#8217; with:</p>\n<p>[sourcecode]<br />\n&gt; cat test.json | jq &#8216;.foo&#8217;<br />\n&gt; 42<br />\n[/sourcecode]</p>\n<p>Asking for the value of &#8216;bar&#8217; will return something you might not expect at first:</p>\n<p>[sourcecode]<br />\n&gt; cat test.json | jq &#8216;.bar&#8217;<br />\n&gt; &quot;less interesting data&quot;<br />\n[/sourcecode]</p>\n<p>By default jq will attempt to output JSON, which is why you end up with the quotes around the string.  To get the string value without the quotes you&#8217;ll need to use &#8216;-r&#8217;, or &#8216;&#8211;raw-output&#8217;:</p>\n<p>[sourcecode]<br />\n&gt; cat test.json | jq -r &#8216;.bar&#8217;<br />\n&gt; less interesting data<br />\n[/sourcecode]</p>\n<p>These are trivial examples, the <a href=\"http://stedolan.github.com/jq/tutorial/\">tutorial</a> walks you through more features and the <a href=\"http://stedolan.github.com/jq/manual/\">manual</a> describes the filtering and other capabilities in detail, with examples.</p>\n<p><a href=\"http://stedolan.github.com/jq/download/\">Binaries for a number of platforms</a> are available.  Source code is hosted at <a href=\"https://github.com/stedolan/jq\">https://github.com/stedolan/jq</a> under an MIT style open source license.</p>\n<p>Given the continued popularity of JSON it would be nice to see jq included as part of a standard Unix install; alongside sed, awk, and grep.  It has proven useful enough to me already that I&#8217;ve started installing it on the systems that I regularly use.</p>\n",
+            "content_text": "I love being able to make quick web API calls using cURL, and most of the time I get back JSON.  Unfortunately it isn&#8217;t easy to manipulate JSON strings with traditional Unix utilities.  That is the void that jq fills.\nA basic example is pulling a single value out of the JSON string.  Given a JSON string in a file called test.json that looks like:\n[sourcecode lang=&#8221;javascript&#8221;]\n{\n    &quot;foo&quot;: 42,\n    &quot;bar&quot;: &quot;less interesting data&quot;\n}\n[/sourcecode]\nyou can easily pull out the value for &#8216;foo&#8217; with:\n[sourcecode]\n&gt; cat test.json | jq &#8216;.foo&#8217;\n&gt; 42\n[/sourcecode]\nAsking for the value of &#8216;bar&#8217; will return something you might not expect at first:\n[sourcecode]\n&gt; cat test.json | jq &#8216;.bar&#8217;\n&gt; &quot;less interesting data&quot;\n[/sourcecode]\nBy default jq will attempt to output JSON, which is why you end up with the quotes around the string.  To get the string value without the quotes you&#8217;ll need to use &#8216;-r&#8217;, or &#8216;&#8211;raw-output&#8217;:\n[sourcecode]\n&gt; cat test.json | jq -r &#8216;.bar&#8217;\n&gt; less interesting data\n[/sourcecode]\nThese are trivial examples, the tutorial walks you through more features and the manual describes the filtering and other capabilities in detail, with examples.\nBinaries for a number of platforms are available.  Source code is hosted at https://github.com/stedolan/jq under an MIT style open source license.\nGiven the continued popularity of JSON it would be nice to see jq included as part of a standard Unix install; alongside sed, awk, and grep.  It has proven useful enough to me already that I&#8217;ve started installing it on the systems that I regularly use.",
+            "date_published": "2013-03-28T08:55:00-06:00",
+            "date_modified": "2018-09-03T12:01:20-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "jq",
+                "json",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=1695",
+            "url": "https://blog.josephscott.org/2010/01/06/joe-gregorio-on-atompub-and-xml/",
+            "title": "Joe Gregorio on AtomPub and XML",
+            "content_html": "<p>In a <a href=\"http://bitworking.org/news/2010/01/webfinger#IDComment50460759\">follow up comment on his WebFinger post</a> Joe Gregorio gives some perspective on AtomPub and XML:</p>\n<blockquote><p>\nLook, AtomPub has this problem, and if I had to do it all over again I would build AtomPub in JSON. An implementer wants to go from bits on the wire to a native data structure they can interact with in their programming language. I used to think that was laziness, or lack of knowledge, but it&#8217;s purely pragmatic. By using XML you have introduced a layer of indirection, you&#8217;ve taken a data structure and converted it into a tree based document which then has to be converted back into a native data structure, but now that has to be done on a per language basis.\n</p></blockquote>\n<p>I&#8217;m in the lazy/pragmatic camp <img src=\"https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png\" alt=\"\ud83d\ude42\" class=\"wp-smiley\" style=\"height: 1em; max-height: 1em;\" /></p>\n<p>I really don\u2019t want documents to describe data, I just want a nice way to serialize the data and right now my favored way of doing that is <a href=\"http://www.json.org/\">JSON</a>.</p>\n",
+            "content_text": "In a follow up comment on his WebFinger post Joe Gregorio gives some perspective on AtomPub and XML:\n\nLook, AtomPub has this problem, and if I had to do it all over again I would build AtomPub in JSON. An implementer wants to go from bits on the wire to a native data structure they can interact with in their programming language. I used to think that was laziness, or lack of knowledge, but it&#8217;s purely pragmatic. By using XML you have introduced a layer of indirection, you&#8217;ve taken a data structure and converted it into a tree based document which then has to be converted back into a native data structure, but now that has to be done on a per language basis.\n\nI&#8217;m in the lazy/pragmatic camp \nI really don\u2019t want documents to describe data, I just want a nice way to serialize the data and right now my favored way of doing that is JSON.",
+            "date_published": "2010-01-06T14:24:19-07:00",
+            "date_modified": "2010-01-06T14:24:19-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "atompub",
+                "joe-gregorio",
+                "json",
+                "xml",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2006/12/30/is-dave-winer-going-to-stop-blogging/",
+            "url": "https://blog.josephscott.org/2006/12/30/is-dave-winer-going-to-stop-blogging/",
+            "title": "Is Dave Winer Going to Stop Blogging?",
+            "content_html": "<p>Remember back in March when <a href=\"http://www.scripting.com/\">Dave Winer</a> said that &quot;<a href=\"http://www.scripting.com/2006/03/13.html#whyIWillStopBlogging\">probably before the end of 2006, I will put this site in mothballs, in archive mode, and go on to other things, Murphy-willing of course.</a>&quot; ?  Lots of people got bent out of shape, asking Dave to not stop his blog.  It is now the very early in the morning of December 30th 2006.  Did Murphy step in, or did Dave change his mind at some point?</p>\n<p>Clearly Dave can still cause a big stir.  Take his recent call to <a href=\"http://www.scripting.com/2006/12/20.html#godBlessTheReinventers\">find a tree and string up</a> <a href=\"http://www.crockford.com/\">Douglas Crockford</a> because he came up with <a href=\"http://www.json.org/\">JSON</a> (JavaScript Object Notation).  Which of course, is &#8220;NOT EVEN XML!&#8221;.  Lots of blog posts came from his comments on JSON, with <a href=\"http://kalsey.com/\">Adam Kalsey</a> really <a href=\"http://kalsey.com/2006/12/rssjson_or_rss_30/\">poking fun</a>.  There are <a href=\"http://kalsey.com/2006/12/more_json_stuff/\">stickers, buttons</a> and a <a href=\"http://kalsey.com/2006/12/json_shirt/\">shirt</a> available <img src=\"https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png\" alt=\"\ud83d\ude42\" class=\"wp-smiley\" style=\"height: 1em; max-height: 1em;\" /></p>\n<p>Another wait and see situation.</p>\n<p><b>UPDATE :</b> Looks like Dave already said <a href=\"http://www.scripting.com/2006/12/12.html#aReprieveUntilApril\">that he&#8217;d keep blogging until at least April 2007</a>.</p>\n",
+            "content_text": "Remember back in March when Dave Winer said that &quot;probably before the end of 2006, I will put this site in mothballs, in archive mode, and go on to other things, Murphy-willing of course.&quot; ?  Lots of people got bent out of shape, asking Dave to not stop his blog.  It is now the very early in the morning of December 30th 2006.  Did Murphy step in, or did Dave change his mind at some point?\nClearly Dave can still cause a big stir.  Take his recent call to find a tree and string up Douglas Crockford because he came up with JSON (JavaScript Object Notation).  Which of course, is &#8220;NOT EVEN XML!&#8221;.  Lots of blog posts came from his comments on JSON, with Adam Kalsey really poking fun.  There are stickers, buttons and a shirt available \nAnother wait and see situation.\nUPDATE : Looks like Dave already said that he&#8217;d keep blogging until at least April 2007.",
+            "date_published": "2006-12-30T00:41:27-07:00",
+            "date_modified": "2006-12-30T00:41:27-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "davewiner",
+                "json",
+                "josephscott"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2006/12/20/why-json-isn%e2%80%99t-just-for-javascript/",
+            "url": "https://blog.josephscott.org/2006/12/20/why-json-isnt-just-for-javascript/",
+            "title": "Why JSON isn\u2019t just for JavaScript",
+            "content_html": "<p><a href=\"http://simonwillison.net/2006/Dec/20/json/\">Why JSON isn\u2019t just for JavaScript</a> &#8211; Simon Willison.</p>\n<blockquote><p>\nThe sweet spot for JSON is serializing simple data structures for transfer between programming languages. If you need more complex data structures (maybe with some kind of schema for validation), use XML. If you want to do full blown RPC use SOAP or XML-RPC. <b>If you just want a light-weight format for moving data around, JSON fits the bill admirably</b>.</p>\n<p>What do we lose from not using XML? The ability to use XML tools. <b>If you\u2019re someone who breathes XSLT that might be a problem; if like me your approach when faced with XML is to parse it in to a more agreeable data structure as soon as possible you\u2019ll find JSON far more productive</b>.\n</p></blockquote>\n<p>Emphasis mine.</p>\n",
+            "content_text": "Why JSON isn\u2019t just for JavaScript &#8211; Simon Willison.\n\nThe sweet spot for JSON is serializing simple data structures for transfer between programming languages. If you need more complex data structures (maybe with some kind of schema for validation), use XML. If you want to do full blown RPC use SOAP or XML-RPC. If you just want a light-weight format for moving data around, JSON fits the bill admirably.\nWhat do we lose from not using XML? The ability to use XML tools. If you\u2019re someone who breathes XSLT that might be a problem; if like me your approach when faced with XML is to parse it in to a more agreeable data structure as soon as possible you\u2019ll find JSON far more productive.\n\nEmphasis mine.",
+            "date_published": "2006-12-20T22:16:19-07:00",
+            "date_modified": "2006-12-20T22:16:19-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "javascript",
+                "json",
+                "simonwillison",
+                "josephscott"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2006/09/05/javascript-object-notation-json/",
+            "url": "https://blog.josephscott.org/2006/09/05/javascript-object-notation-json/",
+            "title": "JavaScript Object Notation (JSON)",
+            "content_html": "<p>I&#8217;ve been thinking more and more about <a href=\"http://www.json.org/\">JavaScript Object Notation (JSON)</a> lately.  If you aren&#8217;t familiar with JSON here&#8217;s some reading:</p>\n<ul>\n<li><a href=\"http://www.json.org/\">Introducing JSON</a></li>\n<li><a href=\"http://en.wikipedia.org/wiki/JSON\">JSON</a> (Wikipedia)</li>\n<li><a href=\"http://www.dustindiaz.com/json-for-the-masses/\">JSON for the masses</a> (Dustin Diaz)</li>\n</ul>\n<p>Unless I see a serious counter argument, I&#8217;m ready to jump on the <a href=\"http://www.json.org/xml.html\">replace XML with JSON</a> boat.  Other proposed ideas based on JSON include <a href=\"http://www.json.org/JSONRequest.html\">JSONRequest</a> (a safer version of XMLHttpRequest) and <a href=\"http://json-rpc.org/\">JSON-RPC</a> (like XML-RPC without the XML).</p>\n<p>This leads me to my next thought, should the existing feed formats (RSS &amp; ATOM) be replaced with JSON?  I&#8217;m not 100% sure that this is the right thing, but I&#8217;m giving it serious consideration.</p>\n",
+            "content_text": "I&#8217;ve been thinking more and more about JavaScript Object Notation (JSON) lately.  If you aren&#8217;t familiar with JSON here&#8217;s some reading:\n\nIntroducing JSON\nJSON (Wikipedia)\nJSON for the masses (Dustin Diaz)\n\nUnless I see a serious counter argument, I&#8217;m ready to jump on the replace XML with JSON boat.  Other proposed ideas based on JSON include JSONRequest (a safer version of XMLHttpRequest) and JSON-RPC (like XML-RPC without the XML).\nThis leads me to my next thought, should the existing feed formats (RSS &amp; ATOM) be replaced with JSON?  I&#8217;m not 100% sure that this is the right thing, but I&#8217;m giving it serious consideration.",
+            "date_published": "2006-09-05T21:43:33-06:00",
+            "date_modified": "2006-09-05T21:43:33-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "atom",
+                "feed",
+                "javascript",
+                "json",
+                "json-rpc",
+                "jsonrequest",
+                "rss",
+                "josephscott"
+            ]
+        }
+    ]
+}

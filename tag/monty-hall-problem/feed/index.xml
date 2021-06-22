@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>monty-hall-problem &#8211; Joseph Scott</title>
+	<atom:link href="/tag/monty-hall-problem/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 04 Apr 2011 15:15:32 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>The Monty Hall Problem</title>
+		<link>/2011/04/04/the-monty-hall-problem/</link>
+					<comments>/2011/04/04/the-monty-hall-problem/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 04 Apr 2011 15:15:32 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[monty-hall-problem]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3946</guid>
+
+					<description><![CDATA[Suppose you&#8217;re on a game show, and you&#8217;re given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows what&#8217;s behind the doors, opens another door, say No. 3, which has a goat. He then says to you, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+Suppose you&#8217;re on a game show, and you&#8217;re given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows what&#8217;s behind the doors, opens another door, say No. 3, which has a goat. He then says to you, &#8220;Do you want to pick door No. 2?&#8221; Is it to your advantage to switch your choice?
+</p></blockquote>
+<p>From &#8220;Ask Marilyn&#8221; column in Parade magazine in 1990 as quoted on the <a href='http://en.wikipedia.org/wiki/Monty_Hall_problem'>Monty Hall problem on Wikipedia</a> [ via <a href="http://keithdevens.com/weblog/archive/2011/Apr/03/Monty-Hall">Keith Devens</a> ]</p>
+<p>I won&#8217;t give away the answer, but I will say that there is a specific choice that leads to a greater probability of getting the car.  The Wikipedia page covers this in surprising detail.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/04/04/the-monty-hall-problem/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

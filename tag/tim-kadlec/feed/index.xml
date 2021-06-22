@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>tim-kadlec &#8211; Joseph Scott</title>
+	<atom:link href="/tag/tim-kadlec/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 19 Aug 2015 14:57:11 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Completely Unpredictable</title>
+		<link>/2015/08/19/completely-unpredictable/</link>
+					<comments>/2015/08/19/completely-unpredictable/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 19 Aug 2015 14:57:11 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[tim-kadlec]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13118</guid>
+
+					<description><![CDATA[Tim Kadlec on Thriving in Unpredictability: The only thing I control is my server environment. That’s it. Everything else is completely unpredictable.So when I’m building something, and I want to make it robust—to make it resilient and give it the best chance it has to reach across this complicated mess full of unpredictability—I want to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Tim Kadlec on <a href="http://timkadlec.com/2015/06/thriving-in-unpredictability/">Thriving in Unpredictability</a>:</p>
+<blockquote><p>
+The only thing I control is my server environment. That’s it. Everything else is completely unpredictable.So when I’m building something, and I want to make it robust—to make it resilient and give it the best chance it has to reach across this complicated mess full of unpredictability—I want to take advantage of the one thing I control by letting my server output something usable and as close to working as possible.
+</p></blockquote>
+<p>While Tim was talking about the web, this is the same line of thinking that goes into native apps.  Being able to control both sides dramatically changes your assumptions about what you can get away with.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/08/19/completely-unpredictable/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

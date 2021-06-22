@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="profile" href="https://gmpg.org/xfn/11"> <meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@josephscott">
+<meta name="twitter:site" content="@josephscott">
+<meta name="twitter:title" content="Active Directory as LDAP Address Book For Thunderbird, Outlook and Mail.app">
+<meta name="twitter:description" content="At work we&#039;ve got all of our user account information Active Directory running on MS Windows 2003 servers.  Since Active Directory makes this data available via LDAP you can use it as an address"> <link media="all" href="/wp-content/cache/autoptimize/css/autoptimize_da876478aa27b35cb47c491625986a1f.css" rel="stylesheet">
+<link media="print" href="/wp-content/cache/autoptimize/css/autoptimize_4a8bc5d490127fba1e504524cfa205e6.css" rel="stylesheet">
+<title>Active Directory as LDAP Address Book For Thunderbird, Outlook and Mail.app &#8211; Joseph Scott</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="alternate" type="application/rss+xml" title="Joseph Scott &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="Joseph Scott &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Joseph Scott &raquo; Active Directory as LDAP Address Book For Thunderbird, Outlook and Mail.app Comments Feed" href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/feed/">
+<style id="twentytwenty-style-inline-css">.color-accent,.color-accent-hover:hover,.color-accent-hover:focus,:root .has-accent-color,.has-drop-cap:not(:focus):first-letter,.wp-block-button.is-style-outline,a { color: #e20842; }blockquote,.border-color-accent,.border-color-accent-hover:hover,.border-color-accent-hover:focus { border-color: #e20842; }button,.button,.faux-button,.wp-block-button__link,.wp-block-file .wp-block-file__button,input[type="button"],input[type="reset"],input[type="submit"],.bg-accent,.bg-accent-hover:hover,.bg-accent-hover:focus,:root .has-accent-background-color,.comment-reply-link { background-color: #e20842; }.fill-children-accent,.fill-children-accent * { fill: #e20842; }:root .has-background-color,button,.button,.faux-button,.wp-block-button__link,.wp-block-file__button,input[type="button"],input[type="reset"],input[type="submit"],.wp-block-button,.comment-reply-link,.has-background.has-primary-background-color:not(.has-text-color),.has-background.has-primary-background-color *:not(.has-text-color),.has-background.has-accent-background-color:not(.has-text-color),.has-background.has-accent-background-color *:not(.has-text-color) { color: #f7f7f7; }:root .has-background-background-color { background-color: #f7f7f7; }body,.entry-title a,:root .has-primary-color { color: #000000; }:root .has-primary-background-color { background-color: #000000; }cite,figcaption,.wp-caption-text,.post-meta,.entry-content .wp-block-archives li,.entry-content .wp-block-categories li,.entry-content .wp-block-latest-posts li,.wp-block-latest-comments__comment-date,.wp-block-latest-posts__post-date,.wp-block-embed figcaption,.wp-block-image figcaption,.wp-block-pullquote cite,.comment-metadata,.comment-respond .comment-notes,.comment-respond .logged-in-as,.pagination .dots,.entry-content hr:not(.has-background),hr.styled-separator,:root .has-secondary-color { color: #686868; }:root .has-secondary-background-color { background-color: #686868; }pre,fieldset,input,textarea,table,table *,hr { border-color: #d3d3d3; }caption,code,code,kbd,samp,.wp-block-table.is-style-stripes tbody tr:nth-child(odd),:root .has-subtle-background-background-color { background-color: #d3d3d3; }.wp-block-table.is-style-stripes { border-bottom-color: #d3d3d3; }.wp-block-latest-posts.is-grid li { border-top-color: #d3d3d3; }:root .has-subtle-background-color { color: #d3d3d3; }body:not(.overlay-header) .primary-menu > li > a,body:not(.overlay-header) .primary-menu > li > .icon,.modal-menu a,.footer-menu a, .footer-widgets a,#site-footer .wp-block-button.is-style-outline,.wp-block-pullquote:before,.singular:not(.overlay-header) .entry-header a,.archive-header a,.header-footer-group .color-accent,.header-footer-group .color-accent-hover:hover { color: #e20842; }.social-icons a,#site-footer button:not(.toggle),#site-footer .button,#site-footer .faux-button,#site-footer .wp-block-button__link,#site-footer .wp-block-file__button,#site-footer input[type="button"],#site-footer input[type="reset"],#site-footer input[type="submit"] { background-color: #e20842; }.social-icons a,body:not(.overlay-header) .primary-menu ul,.header-footer-group button,.header-footer-group .button,.header-footer-group .faux-button,.header-footer-group .wp-block-button:not(.is-style-outline) .wp-block-button__link,.header-footer-group .wp-block-file__button,.header-footer-group input[type="button"],.header-footer-group input[type="reset"],.header-footer-group input[type="submit"] { color: #f7f7f7; }#site-header,.footer-nav-widgets-wrapper,#site-footer,.menu-modal,.menu-modal-inner,.search-modal-inner,.archive-header,.singular .entry-header,.singular .featured-media:before,.wp-block-pullquote:before { background-color: #f7f7f7; }.header-footer-group,body:not(.overlay-header) #site-header .toggle,.menu-modal .toggle { color: #000000; }body:not(.overlay-header) .primary-menu ul { background-color: #000000; }body:not(.overlay-header) .primary-menu > li > ul:after { border-bottom-color: #000000; }body:not(.overlay-header) .primary-menu ul ul:after { border-left-color: #000000; }.site-description,body:not(.overlay-header) .toggle-inner .toggle-text,.widget .post-date,.widget .rss-date,.widget_archive li,.widget_categories li,.widget cite,.widget_pages li,.widget_meta li,.widget_nav_menu li,.powered-by-wordpress,.to-the-top,.singular .entry-header .post-meta,.singular:not(.overlay-header) .entry-header .post-meta a { color: #686868; }.header-footer-group pre,.header-footer-group fieldset,.header-footer-group input,.header-footer-group textarea,.header-footer-group table,.header-footer-group table *,.footer-nav-widgets-wrapper,#site-footer,.menu-modal nav *,.footer-widgets-outer-wrapper,.footer-top { border-color: #d3d3d3; }.header-footer-group table caption,body:not(.overlay-header) .header-inner .toggle-wrapper::before { background-color: #d3d3d3; }.overlay-header .header-inner { color: #f7f7f7; }.cover-header .entry-header * { color: #f7f7f7; }</style>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/550">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 5.7.2">
+<link rel="canonical" href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/">
+<link rel="shortlink" href="/?p=550">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2006%2F02%2F08%2Factive-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2006%2F02%2F08%2Factive-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp%2F&#038;format=xml">
+<link rel="alternate" type="application/feed+json" title="Joseph Scott &raquo; JSON Feed" href="/feed/json/">
+<link rel="alternate" type="application/feed+json" title="Joseph Scott &raquo; Active Directory as LDAP Address Book For Thunderbird, Outlook and Mail.app Comments Feed" href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/feed/json/"> <script>document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );</script> <style id="custom-background-css">body.custom-background { background-color: #f7f7f7; }</style>
+<style id="wp-custom-css">.powered-by-wordpress { display: none;}
+
+.entry-categories { display: none;}</style>
+</head>
+<body class="post-template-default single single-post postid-550 single-format-standard custom-background wp-embed-responsive singular enable-search-modal missing-post-thumbnail has-single-pagination showing-comments show-avatars footer-top-visible reduced-spacing"> <a class="skip-link screen-reader-text" href="#site-content">Skip to the content</a><header id="site-header" class="header-footer-group" role="banner"><div class="header-inner section-inner">
+<div class="header-titles-wrapper"> <button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false"> <span class="toggle-inner"> <span class="toggle-icon"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewbox="0 0 23 23"><path d="M38.710696,48.0601792 L43,52.3494831 L41.3494831,54 L37.0601792,49.710696 C35.2632422,51.1481185 32.9839107,52.0076499 30.5038249,52.0076499 C24.7027226,52.0076499 20,47.3049272 20,41.5038249 C20,35.7027226 24.7027226,31 30.5038249,31 C36.3049272,31 41.0076499,35.7027226 41.0076499,41.5038249 C41.0076499,43.9839107 40.1481185,46.2632422 38.710696,48.0601792 Z M36.3875844,47.1716785 C37.8030221,45.7026647 38.6734666,43.7048964 38.6734666,41.5038249 C38.6734666,36.9918565 35.0157934,33.3341833 30.5038249,33.3341833 C25.9918565,33.3341833 22.3341833,36.9918565 22.3341833,41.5038249 C22.3341833,46.0157934 25.9918565,49.6734666 30.5038249,49.6734666 C32.7048964,49.6734666 34.7026647,48.8030221 36.1716785,47.3875844 C36.2023931,47.347638 36.2360451,47.3092237 36.2726343,47.2726343 C36.3092237,47.2360451 36.347638,47.2023931 36.3875844,47.1716785 Z" transform="translate(-20 -31)"></path></svg> </span> <span class="toggle-text">Search</span> </span> </button><div class="header-titles"><div class="site-title faux-heading"><a href="/">Joseph Scott</a></div></div> <button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle"> <span class="toggle-inner"> <span class="toggle-icon"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="26" height="7" viewbox="0 0 26 7"><path fill-rule="evenodd" d="M332.5,45 C330.567003,45 329,43.4329966 329,41.5 C329,39.5670034 330.567003,38 332.5,38 C334.432997,38 336,39.5670034 336,41.5 C336,43.4329966 334.432997,45 332.5,45 Z M342,45 C340.067003,45 338.5,43.4329966 338.5,41.5 C338.5,39.5670034 340.067003,38 342,38 C343.932997,38 345.5,39.5670034 345.5,41.5 C345.5,43.4329966 343.932997,45 342,45 Z M351.5,45 C349.567003,45 348,43.4329966 348,41.5 C348,39.5670034 349.567003,38 351.5,38 C353.432997,38 355,39.5670034 355,41.5 C355,43.4329966 353.432997,45 351.5,45 Z" transform="translate(-329 -38)"></path></svg> </span> <span class="toggle-text">Menu</span> </span> </button>
+</div>
+<div class="header-navigation-wrapper">
+<nav class="primary-menu-wrapper" aria-label="Horizontal" role="navigation"><ul class="primary-menu reset-list-style">
+<li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><a href="https://josephscott.org/">Home</a></li>
+<li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-8"><a href="/">Blog</a></li>
+<li id="menu-item-15706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15706"><a href="/contact/">Contact</a></li>
+</ul></nav><div class="header-toggles hide-no-js"><div class="toggle-wrapper search-toggle-wrapper"> <button class="toggle search-toggle desktop-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false"> <span class="toggle-inner"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewbox="0 0 23 23"><path d="M38.710696,48.0601792 L43,52.3494831 L41.3494831,54 L37.0601792,49.710696 C35.2632422,51.1481185 32.9839107,52.0076499 30.5038249,52.0076499 C24.7027226,52.0076499 20,47.3049272 20,41.5038249 C20,35.7027226 24.7027226,31 30.5038249,31 C36.3049272,31 41.0076499,35.7027226 41.0076499,41.5038249 C41.0076499,43.9839107 40.1481185,46.2632422 38.710696,48.0601792 Z M36.3875844,47.1716785 C37.8030221,45.7026647 38.6734666,43.7048964 38.6734666,41.5038249 C38.6734666,36.9918565 35.0157934,33.3341833 30.5038249,33.3341833 C25.9918565,33.3341833 22.3341833,36.9918565 22.3341833,41.5038249 C22.3341833,46.0157934 25.9918565,49.6734666 30.5038249,49.6734666 C32.7048964,49.6734666 34.7026647,48.8030221 36.1716785,47.3875844 C36.2023931,47.347638 36.2360451,47.3092237 36.2726343,47.2726343 C36.3092237,47.2360451 36.347638,47.2023931 36.3875844,47.1716785 Z" transform="translate(-20 -31)"></path></svg> <span class="toggle-text">Search</span> </span> </button>
+</div></div>
+</div>
+</div>
+<div class="search-modal cover-modal header-footer-group" data-modal-target-string=".search-modal"><div class="search-modal-inner modal-inner"><div class="section-inner">
+<form role="search" aria-label="Search for:" method="get" class="search-form" action="/"> <label for="search-form-1"> <span class="screen-reader-text">Search for:</span> <input type="search" id="search-form-1" class="search-field" placeholder="Search &hellip;" value="" name="s"> </label> <input type="submit" class="search-submit" value="Search">
+</form> <button class="toggle search-untoggle close-search-toggle fill-children-current-color" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field"> <span class="screen-reader-text">Close search</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16"><polygon fill="" fill-rule="evenodd" points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102"></polygon></svg> </button>
+</div></div></div></header><div class="menu-modal cover-modal header-footer-group" data-modal-target-string=".menu-modal"><div class="menu-modal-inner modal-inner"><div class="menu-wrapper section-inner">
+<div class="menu-top"> <button class="toggle close-nav-toggle fill-children-current-color" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".menu-modal"> <span class="toggle-text">Close Menu</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16"><polygon fill="" fill-rule="evenodd" points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102"></polygon></svg> </button><nav class="mobile-menu" aria-label="Mobile" role="navigation"><ul class="modal-menu reset-list-style">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><div class="ancestor-wrapper"><a href="https://josephscott.org/">Home</a></div></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-8"><div class="ancestor-wrapper"><a href="/">Blog</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15706"><div class="ancestor-wrapper"><a href="/contact/">Contact</a></div></li>
+</ul></nav>
+</div>
+<div class="menu-bottom"></div>
+</div></div></div>
+<main id="site-content" role="main"><article class="post-550 post type-post status-publish format-standard hentry category-josephscott" id="post-550"><header class="entry-header has-text-align-center header-footer-group"><div class="entry-header-inner section-inner medium">
+<div class="entry-categories"> <span class="screen-reader-text">Categories</span><div class="entry-categories-inner"> <a href="/category/josephscott/" rel="category tag">josephscott</a>
+</div>
+</div>
+<h1 class="entry-title">Active Directory as LDAP Address Book For Thunderbird, Outlook and Mail.app</h1>
+<div class="post-meta-wrapper post-meta-single post-meta-single-top"><ul class="post-meta">
+<li class="post-author meta-wrapper"> <span class="meta-icon"> <span class="screen-reader-text">Post author</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewbox="0 0 18 20"><path fill="" d="M18,19 C18,19.5522847 17.5522847,20 17,20 C16.4477153,20 16,19.5522847 16,19 L16,17 C16,15.3431458 14.6568542,14 13,14 L5,14 C3.34314575,14 2,15.3431458 2,17 L2,19 C2,19.5522847 1.55228475,20 1,20 C0.44771525,20 0,19.5522847 0,19 L0,17 C0,14.2385763 2.23857625,12 5,12 L13,12 C15.7614237,12 18,14.2385763 18,17 L18,19 Z M9,10 C6.23857625,10 4,7.76142375 4,5 C4,2.23857625 6.23857625,0 9,0 C11.7614237,0 14,2.23857625 14,5 C14,7.76142375 11.7614237,10 9,10 Z M9,8 C10.6568542,8 12,6.65685425 12,5 C12,3.34314575 10.6568542,2 9,2 C7.34314575,2 6,3.34314575 6,5 C6,6.65685425 7.34314575,8 9,8 Z"></path></svg> </span> <span class="meta-text"> By <a href="/author/josephscott/">josephscott</a> </span>
+</li>
+<li class="post-date meta-wrapper"> <span class="meta-icon"> <span class="screen-reader-text">Post date</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewbox="0 0 18 19"><path fill="" d="M4.60069444,4.09375 L3.25,4.09375 C2.47334957,4.09375 1.84375,4.72334957 1.84375,5.5 L1.84375,7.26736111 L16.15625,7.26736111 L16.15625,5.5 C16.15625,4.72334957 15.5266504,4.09375 14.75,4.09375 L13.3993056,4.09375 L13.3993056,4.55555556 C13.3993056,5.02154581 13.0215458,5.39930556 12.5555556,5.39930556 C12.0895653,5.39930556 11.7118056,5.02154581 11.7118056,4.55555556 L11.7118056,4.09375 L6.28819444,4.09375 L6.28819444,4.55555556 C6.28819444,5.02154581 5.9104347,5.39930556 5.44444444,5.39930556 C4.97845419,5.39930556 4.60069444,5.02154581 4.60069444,4.55555556 L4.60069444,4.09375 Z M6.28819444,2.40625 L11.7118056,2.40625 L11.7118056,1 C11.7118056,0.534009742 12.0895653,0.15625 12.5555556,0.15625 C13.0215458,0.15625 13.3993056,0.534009742 13.3993056,1 L13.3993056,2.40625 L14.75,2.40625 C16.4586309,2.40625 17.84375,3.79136906 17.84375,5.5 L17.84375,15.875 C17.84375,17.5836309 16.4586309,18.96875 14.75,18.96875 L3.25,18.96875 C1.54136906,18.96875 0.15625,17.5836309 0.15625,15.875 L0.15625,5.5 C0.15625,3.79136906 1.54136906,2.40625 3.25,2.40625 L4.60069444,2.40625 L4.60069444,1 C4.60069444,0.534009742 4.97845419,0.15625 5.44444444,0.15625 C5.9104347,0.15625 6.28819444,0.534009742 6.28819444,1 L6.28819444,2.40625 Z M1.84375,8.95486111 L1.84375,15.875 C1.84375,16.6516504 2.47334957,17.28125 3.25,17.28125 L14.75,17.28125 C15.5266504,17.28125 16.15625,16.6516504 16.15625,15.875 L16.15625,8.95486111 L1.84375,8.95486111 Z"></path></svg> </span> <span class="meta-text"> <a href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/">Wed 8 Feb 2006</a> </span>
+</li>
+<li class="post-comment-link meta-wrapper"> <span class="meta-icon"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewbox="0 0 19 19"><path d="M9.43016863,13.2235931 C9.58624731,13.094699 9.7823475,13.0241935 9.98476849,13.0241935 L15.0564516,13.0241935 C15.8581553,13.0241935 16.5080645,12.3742843 16.5080645,11.5725806 L16.5080645,3.44354839 C16.5080645,2.64184472 15.8581553,1.99193548 15.0564516,1.99193548 L3.44354839,1.99193548 C2.64184472,1.99193548 1.99193548,2.64184472 1.99193548,3.44354839 L1.99193548,11.5725806 C1.99193548,12.3742843 2.64184472,13.0241935 3.44354839,13.0241935 L5.76612903,13.0241935 C6.24715123,13.0241935 6.63709677,13.4141391 6.63709677,13.8951613 L6.63709677,15.5301903 L9.43016863,13.2235931 Z M3.44354839,14.766129 C1.67980032,14.766129 0.25,13.3363287 0.25,11.5725806 L0.25,3.44354839 C0.25,1.67980032 1.67980032,0.25 3.44354839,0.25 L15.0564516,0.25 C16.8201997,0.25 18.25,1.67980032 18.25,3.44354839 L18.25,11.5725806 C18.25,13.3363287 16.8201997,14.766129 15.0564516,14.766129 L10.2979143,14.766129 L6.32072889,18.0506004 C5.75274472,18.5196577 4.89516129,18.1156602 4.89516129,17.3790323 L4.89516129,14.766129 L3.44354839,14.766129 Z"></path></svg> </span> <span class="meta-text"> <a href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comments">21 Comments<span class="screen-reader-text"> on Active Directory as LDAP Address Book For Thunderbird, Outlook and Mail.app</span></a> </span>
+</li>
+</ul></div>
+</div></header><div class="post-inner thin "><div class="entry-content">
+<p><span style="float: left;padding: 10px"></span></p>
+<p><br> At work we&#8217;ve got all of our user account information <a href="https://www.microsoft.com/windowsserver2003/technologies/directory/activedirectory/default.mspx">Active Directory</a> running on <a href="https://www.microsoft.com/windowsserver2003/default.mspx">MS Windows 2003</a> servers. Since Active Directory makes this data available via <a href="https://en.wikipedia.org/wiki/Ldap">LDAP</a> you can use it as an address book back end for <a href="https://www.mozilla.com/thunderbird/">Thunderbird</a>, <a href="https://office.microsoft.com/en-us/FX010857931033.aspx">Outlook</a> and <a href="https://www.apple.com/macosx/features/mail/">Maill.app</a> (the built in email client on <a href="https://www.apple.com/macosx/">Mac OS X</a>). I recently wrote up step by step instructions on how to setup each of these and thought others might benefit from this.</p>
+<p>The instructions below assume that your Active Directory forest was setup using the domain example.com and that your username is billg, so be sure to replace that with your own information. The instructions also assume that you haven&#8217;t setup SSL/TLS on your Active Directory servers. If you have then please make use of that.</p>
+<h3>Thunderbird (version 1.5)</h3>
+<pre>
+Tools -&gt; Options -&gt; Composition -&gt; Addressing
+Address Autocompletion: check "Local Address Book" and "Directory Server"
+Edit Directories -&gt; Add
+General:
+    Name: EXAMPLE.COM
+    Hostname: ldap.example.com
+    Base DN: cn=users,dc=example,dc=com
+    Port Number: 389
+    Bind DN: billg@example.com
+    (SSL is left unchecked)
+Click Ok
+Click Ok
+Make sure the new EXAMPLE.COM directory is selected for "Directory Server"
+Click Ok
+Tools -&gt; Account Settings
+(Under the EXAMPLE.COM users account section) -&gt; Composition &amp; Addressing
+Addressing: select "Use a different LDAP server."
+    Set it to the new EXAMPLE.COM directory.
+Click Ok
+Address Book: Select the EXAMPLE.COM directory, perform a search.
+    It might prompt you for a password.
+</pre>
+<h3>Outlook (version 2003 SP2)</h3>
+<pre>
+Tools -&gt; Email Accounts
+Directory: Select "Add a new directory or address book"
+Click Next
+Select "Internet Directory Server (LDAP)"
+Click Next
+"Server Information": Server Name: ldap.example.com
+"Logon Information": Check "This server requires me to log on"
+    "User Name": billg
+    "Password": B1lLGpW
+Click More Settings ...
+(It will probably warn you about not being available until after your
+    restart Outlook.  That is fine, click OK)
+"Search" tab -&gt; "Search Options": cn=users,dc=example,dc=com
+Click OK
+Click Next
+Click Finish
+(Close Outlook and open it up again)
+</pre>
+<h3>Mail (Mail 2.0.5 / Mac OS X 10.4)</h3>
+<pre>
+Mail -&gt; Preferences -&gt; Composing
+"Addressing": Check "Automatically complete addresses"
+Click Configure LDAP ...
+Click +
+"Server Info":
+	"Name": EXAMPLE.COM
+	"Server": ldap.example.com
+	"Search Base": cn=users,dc=example,dc=com
+	"Port": 389
+	(leave "Use SSL" unchecked)
+	"Scope": Subtree
+	"Authtype": Simple
+	"User Name": billg@example.com
+	"Password": B1lLGpW
+Click Save
+Click Done
+Close the Preferences window
+</pre>
+<p>I noted the version of each software that I tried this on. It many cases these same instructions will work with other versions of the same software, but I can&#8217;t guarantee that. Please remember to substitute example.com along with the billg user account and password with your own details.</p>
+<p>For those of you that are concerned about having to enter your password to access your Active Directory/LDAP address book, there is another method that I should mention. In order to get around this at work I created an Active Directory user called anonymous, with the password of anonymous. This account has limited abilities and doesn&#8217;t have permissions to any files or shares. The only thing this account does is provide a way to get LDAP user account info. Once you&#8217;ve created this account you can follow the same instructions as above substituting the username/password billg@example/B1lLGpW with anonymous@example.com/anonymous.</p>
+<p>If you have any other tips about this subject please leave a comment. If for some reason you don&#8217;t feel comfortable with that please drop me a note via <a href="http://joseph.randomnetworks.com/contact/">my contact form</a> and I&#8217;ll add the details to this article.</p>
+</div></div>
+<div class="section-inner"></div>
+<nav class="pagination-single section-inner" aria-label="Post" role="navigation"><hr class="styled-separator is-style-wide" aria-hidden="true">
+<div class="pagination-single-inner"> <a class="previous-post" href="/2006/02/08/wordpress-plugins/"> <span class="arrow" aria-hidden="true">&larr;</span> <span class="title"><span class="title-inner">WordPress Plugins</span></span> </a> <a class="next-post" href="/2006/02/08/macgyver/"> <span class="arrow" aria-hidden="true">&rarr;</span> <span class="title"><span class="title-inner">MacGyver</span></span> </a>
+</div>
+<hr class="styled-separator is-style-wide" aria-hidden="true"></nav><div class="comments-wrapper section-inner">
+<div class="comments" id="comments">
+<div class="comments-header section-inner small max-percentage"><h2 class="comment-reply-title"> 21 replies on &ldquo;Active Directory as LDAP Address Book For Thunderbird, Outlook and Mail.app&rdquo;</h2></div>
+<div class="comments-inner section-inner thin max-percentage">
+<div id="comment-1111" class="pingback even thread-even depth-1"><article id="div-comment-1111" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.hawkwings.net/2006/05/26/acrive-directory-access-over-ldap-in-mailapp/" rel="external nofollow" class="url"><span class="fn">Hawk Wings &raquo; Blog Archive &raquo; Acrive Directory access over LDAP in Mail.app</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1111"><time datetime="2006-05-25T06:09:46-06:00" title="Thu 25 May 2006 at 6:09 am">Thu 25 May 2006 at 6:09 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] Joseph Scott has posted instructions on how to use the information in an Active Directory in Windows Server 2003 as a back-end address book for Mail.app and Thunderbird, using its LDAP facility. [&#8230;]</p></div></article></div>
+<div id="comment-1112" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1112" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d872e77c" alt="Frosty" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Frosty</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1112"><time datetime="2006-06-06T08:03:42-06:00" title="Tue 6 Jun 2006 at 8:03 am">Tue 6 Jun 2006 at 8:03 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Worked nicely 🙂<br> Thanks.</p></div></article></div>
+<div id="comment-1113" class="comment even thread-even depth-1"><article id="div-comment-1113" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://frary.net/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d8733c9a" alt="BoyFrary" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">BoyFrary</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1113"><time datetime="2006-07-18T01:26:48-06:00" title="Tue 18 Jul 2006 at 1:26 am">Tue 18 Jul 2006 at 1:26 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Took a couple of tries to get this working so hopefully my detailed experiences below may help, I have used the above details to help explain. I was tying this in Outlook 2003 SP2 (Build 8010) with a domain user in our Microsoft Active Directory domain on Windows Server 2003. I had the following couple of error messages.</p>
+<p>As an authenticated domain user I expected it wouldn&#8217;t require any login information so I never ticked or completed this section (Doh!). With this configuration, Outlook had the error:</p>
+<p><b>No such object. Possibly your specified Search Base is invalid.</b></p>
+<p>So I then ticked the &#8216;This server requires me to logon&#8217; and entered &#8216;User Name: billg&#8217; and &#8216;Password: B1lLGpW&#8217;. With this configuration, Outlook had the error:</p>
+<p><b>Failed to connect to &#8216;ldap.example.com&#8217; due to invalid authentication.<br> Ensure a valid user name and password has been entered on the Microsoft LDAP configuration page for the &#8220;ldap.example.com&#8221; account.</b></p>
+<p><strong>The final configuration which &#8216;Worked nicely&#8217; was by using a domainusername logon as shown below.</strong></p>
+<p>User Name: examplebillg<br> Password : B1lLGpW </p>
+<p><i>Interestingly the configuration for both Thunderbird (version 1.5) and Mail (Mail 2.0.5 / Mac OS X 10.4) required the domain information tagged to the username so maybe this is a typo on the Outlook (version 2003 SP2) information detailed above.</i></p>
+<p>Hope this helps, BoyFrary.</p>
+</div></article></div>
+<div id="comment-1114" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1114" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d8739790" alt="Kanashii" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Kanashii</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1114"><time datetime="2006-07-24T04:19:57-06:00" title="Mon 24 Jul 2006 at 4:19 am">Mon 24 Jul 2006 at 4:19 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>BoyFray,<br> obviously the system you are talking about is a Mac. In Mac (and linux, as my desktop choice) there&#8217;s no Domain user&#8217;s ID and you dont log in the domain on boot as XP machines does. So you dont have a &#8220;precatched/stored/default&#8221; domain user that&#8217;s why you have to specify the domain/user to work properly.</p>
+<p>Thank for this post, it&#8217;s what I was looking for.</p>
+</div></article></div>
+<div id="comment-1115" class="comment even thread-even depth-1"><article id="div-comment-1115" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://j2anywhere.com/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d874219f" alt="LostInSpace2011" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">LostInSpace2011</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1115"><time datetime="2006-11-02T14:18:06-07:00" title="Thu 2 Nov 2006 at 2:18 pm">Thu 2 Nov 2006 at 2:18 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Take a look at AddressbookXLDAP <a href="http://j2anywhere.com/" rel="nofollow">http://j2anywhere.com</a> which allows the transfer of contact from the Addressbook to a centrally shared LDAP directory. Several other applications such as Thunderbird, Outlook or Mail have support for LDAP / Active directory.</p></div></article></div>
+<div id="comment-1116" class="pingback odd alt thread-odd thread-alt depth-1"><article id="div-comment-1116" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://bolt.beetlebolt.com/blog/?p=58" rel="external nofollow" class="url"><span class="fn">Where&#8217;d I leave that note? &raquo; Blog Archive &raquo; Active Directory as LDAP Address Book For Thunderbird, Outlook and Mail.app | Joseph Scott&#8217;s Blog</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1116"><time datetime="2007-02-21T06:28:09-07:00" title="Wed 21 Feb 2007 at 6:28 am">Wed 21 Feb 2007 at 6:28 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] Active Directory as LDAP Address Book For Thunderbird, Outlook and Mail.app | Joseph Scott&#8217;s B&#8230; [&#8230;]</p></div></article></div>
+<div id="comment-1117" class="comment even thread-even depth-1"><article id="div-comment-1117" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.raptech.com/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d8747f8e" alt="john r" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">john r</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1117"><time datetime="2007-03-07T11:16:02-07:00" title="Wed 7 Mar 2007 at 11:16 am">Wed 7 Mar 2007 at 11:16 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>important: dc and dn are case sensitive.</p></div></article></div>
+<div id="comment-1118" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1118" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.dura-ind.com/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16d874e6f2" alt="Lawrence" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Lawrence</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1118"><time datetime="2007-08-30T09:52:17-06:00" title="Thu 30 Aug 2007 at 9:52 am">Thu 30 Aug 2007 at 9:52 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Kanashii, no, he&#8217;s definitely on Windows, as I&#8217;m seeing the exact same thing. Office 2003 on Windows demands the domain name with username. In fact, if you read closely, the author later uses the &#8220;username@example.com&#8221; format for the username. The problem is that Windows 2003 has anonymous LDAP connections turned off by default, and the LDAP doesn&#8217;t assume existing credentials. I don&#8217;t know why, but its obvious in practice.</p></div></article></div>
+<div id="comment-1119" class="comment even thread-even depth-1"><article id="div-comment-1119" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-07f22186e0c75801bd2c8c5f73a8d874-120-60d16d874f669" alt="gkakas" src="/wp-content/uploads/gravatar-cache/07f22186e0c75801bd2c8c5f73a8d874-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">gkakas</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1119"><time datetime="2007-12-01T08:35:40-07:00" title="Sat 1 Dec 2007 at 8:35 am">Sat 1 Dec 2007 at 8:35 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Lawrence, Kanashii,</p>
+<p>He is on windows and actually his pc is a member of the domain, or he is on top of the server 😉</p>
+<p>I did not try this, but I find if valuabe because it gave me some noce ideas&#8230;</p>
+<p>thanx to all</p>
+</div></article></div>
+<div id="comment-1120" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1120" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d8755cf2" alt="Octavio" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Octavio</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1120"><time datetime="2008-01-23T05:54:57-07:00" title="Wed 23 Jan 2008 at 5:54 am">Wed 23 Jan 2008 at 5:54 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>I tried it with Thunderbird 2 and works nicely.<br> But when i create a new OU in my AD and point the Address Book there, it validate my account but shows nothing&#8230;</p></div></article></div>
+<div id="comment-1121" class="comment even thread-even depth-1"><article id="div-comment-1121" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d16d875c8ff" alt="Joseph Scott" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Joseph Scott</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1121"><time datetime="2008-01-30T07:03:46-07:00" title="Wed 30 Jan 2008 at 7:03 am">Wed 30 Jan 2008 at 7:03 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>@Octavio &#8211;</p>
+<p>Any luck figuring out why it wasn&#8217;t showing anything? Perhaps there was an incorrect search filter?</p>
+</div></article></div>
+<div id="comment-1122" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1122" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16d87620ac" alt="Yicrosoft Directory" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Yicrosoft Directory</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1122"><time datetime="2008-02-06T11:59:57-07:00" title="Wed 6 Feb 2008 at 11:59 am">Wed 6 Feb 2008 at 11:59 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>This post was such a great find, it is really helpful for me since I do use my contacts constantly. I have since forwarded this to my coworkers, hoping they will find as much use in this as I did.</p></div></article></div>
+<div id="comment-1123" class="comment even thread-even depth-1"><article id="div-comment-1123" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d8767d5c" alt="AOS" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">AOS</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1123"><time datetime="2008-02-15T02:15:03-07:00" title="Fri 15 Feb 2008 at 2:15 am">Fri 15 Feb 2008 at 2:15 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Have anybody figured out why it is not working if you changes the searchbase to f.ex an ou=users2?</p></div></article></div>
+<div id="comment-1124" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1124" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16d876f746" alt="Ritesh" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Ritesh</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1124"><time datetime="2008-02-16T02:02:11-07:00" title="Sat 16 Feb 2008 at 2:02 am">Sat 16 Feb 2008 at 2:02 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>In my thunderbird setup I set my LDAP directory as hostname = 10.22.140.69 . with search filter properties as (objectclass=*). It is working fine in thunderbird. I want to configure the same thing in MS Outlook 2007, but i am unsuccessful doing it. Please suggesst me what i m doing wrong.</p></div></article></div>
+<div id="comment-1125" class="comment even thread-even depth-1"><article id="div-comment-1125" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-ddd6a38610d25fcd107a5dc81e73ccc9-120-60d16d8772256" alt="Ed" src="/wp-content/uploads/gravatar-cache/ddd6a38610d25fcd107a5dc81e73ccc9-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Ed</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1125"><time datetime="2008-02-29T18:44:17-07:00" title="Fri 29 Feb 2008 at 6:44 pm">Fri 29 Feb 2008 at 6:44 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Thank you for sharing this!</p></div></article></div>
+<div id="comment-1126" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1126" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.standartgrupltd.net/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d877edf5" alt="Buhar Kazan?" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Buhar Kazan?</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1126"><time datetime="2008-03-02T11:12:03-07:00" title="Sun 2 Mar 2008 at 11:12 am">Sun 2 Mar 2008 at 11:12 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>This is very good article, but how can we do ldap authentication in unix with connecting the active directory in Primary Domain Server?</p>
+<p> Buhar Kazan?</p>
+</div></article></div>
+<div id="comment-1127" class="comment even thread-even depth-1"><article id="div-comment-1127" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d87873ed" alt="Makea" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Makea</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1127"><time datetime="2008-07-24T18:23:49-06:00" title="Thu 24 Jul 2008 at 6:23 pm">Thu 24 Jul 2008 at 6:23 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>This works for OS X 10.5 (Leopard) in both addressbook and mail.app:</p>
+<p>For the search base, capitalization counts: CN=Users,DC=company,DC=com</p>
+<p>For the username, use your email address:me@company.com</p>
+<p>After modifying the search base and username, the directions in this article worked great!</p>
+<p>However, with Snow Leopard, this will no longer be an issue as Exchange support will be built-in.</p>
+</div></article></div>
+<div id="comment-1128" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1128" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d878f4c6" alt="Rafal" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Rafal</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1128"><time datetime="2008-09-19T05:43:46-06:00" title="Fri 19 Sep 2008 at 5:43 am">Fri 19 Sep 2008 at 5:43 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hello<br> Maybe someone know how to edit contacts on LDAP server (AD) from Outlook.<br> I can list contacts but can not update or add new one.<br> Via AD users and Computers this task is unproblematic &#8211; i delagate control to add and change contact objects.</p>
+<p>Regards<br> Rafal</p>
+</div></article></div>
+<div id="comment-1129" class="comment even thread-even depth-1"><article id="div-comment-1129" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-d21c477102f1058e36d59058b60960bc-120-60d16d87927b3" alt="Nikolaus" src="/wp-content/uploads/gravatar-cache/d21c477102f1058e36d59058b60960bc-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Nikolaus</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1129"><time datetime="2009-01-29T03:22:40-07:00" title="Thu 29 Jan 2009 at 3:22 am">Thu 29 Jan 2009 at 3:22 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi,<br> I tried this recipe on tb 2.0.19 on linux with a 2003R2 AD. At first I thought it doesn&#8217;T work, but the integration in thunderbird seems only half-ready:</p>
+<p>&#8211; addressbook can&#8217;t query the directory and show the addresses in the overview<br> &#8211; addressbook doesn&#8217;t send correct auth, when asking for offline download<br> &#8211; the first time password is asked for is while adding recipients to a new mail.<br> BTW: the passwords are send in plain text!!</p>
+<p>In this state it&#8217;s not usable for me. I will file bugs for LDAP support in TB.</p>
+<p>Hope that helps&#8230;</p>
+</div></article></div>
+<div id="comment-1130" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1130" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-e37ec99e8f2caef5e1238d05dfc36de6-120-60d16d8794d74" alt="Robert Middleswarth" src="/wp-content/uploads/gravatar-cache/e37ec99e8f2caef5e1238d05dfc36de6-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Robert Middleswarth</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1130"><time datetime="2009-02-04T09:11:28-07:00" title="Wed 4 Feb 2009 at 9:11 am">Wed 4 Feb 2009 at 9:11 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Nikolaus #19,</p>
+<p>LDAP sends thing in plain text on port 389 that is by protocol it has to send it clear text. You have to enable SSL to stop that.</p>
+<p>Thanks<br> Robert</p>
+</div></article></div>
+<div id="comment-1131" class="comment even thread-even depth-1"><article id="div-comment-1131" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16d879d837" alt="hcp" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">hcp</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1131"><time datetime="2012-09-19T08:34:06-06:00" title="Wed 19 Sep 2012 at 8:34 am">Wed 19 Sep 2012 at 8:34 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi on Outlook 2003 and Thunderbird works nicely. But unfortunately not on Outlook 2010.</p>
+<p>Iit&#8217;s can connect to the Server but the adressbook is empty.</p>
+<p>Can anyone help?</p>
+</div></article></div>
+</div>
+</div>
+<hr class="styled-separator is-style-wide" aria-hidden="true">
+<div id="respond" class="comment-respond">
+<h2 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#respond" style="display:none;">Cancel reply</a></small>
+</h2>
+<form action="/wp-comments-post.php" method="post" id="commentform" class="section-inner thin max-percentage" novalidate>
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
+<p class="comment-form-comment"><label for="comment">Comment</label><textarea autocomplete="new-password" id="g6cdfca757" name="g6cdfca757" cols="45" rows="8" maxlength="65525" required="required"></textarea><textarea id="comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea><script data-noptimize type="text/javascript">document.getElementById("comment").setAttribute( "id", "afaf616d9592302d83b10b48c1625855" );document.getElementById("g6cdfca757").setAttribute( "id", "comment" );</script></p>
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="550" id="comment_post_ID"> <input type="hidden" name="comment_parent" id="comment_parent" value="0"></p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="6e120eda68"></p>
+<input type="hidden" id="ak_js" name="ak_js" value="59"><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea>
+</form>
+</div>
+</div></article></main><div class="footer-nav-widgets-wrapper header-footer-group"><div class="footer-inner section-inner"><aside class="footer-widgets-outer-wrapper" role="complementary"><div class="footer-widgets-wrapper"><div class="footer-widgets column-one grid-item"><div class="widget widget_search"><div class="widget-content"><form role="search" method="get" class="search-form" action="/"> <label for="search-form-2"> <span class="screen-reader-text">Search for:</span> <input type="search" id="search-form-2" class="search-field" placeholder="Search &hellip;" value="" name="s"> </label> <input type="submit" class="search-submit" value="Search">
+</form></div></div></div></div></aside></div></div>
+<footer id="site-footer" role="contentinfo" class="header-footer-group"><div class="section-inner">
+<div class="footer-credits">
+<p class="footer-copyright">&copy;
+2021 <a href="/">Joseph Scott</a></p>
+<p class="powered-by-wordpress"> <a href="https://wordpress.org/"> Powered by WordPress </a></p>
+</div> <a class="to-the-top" href="#site-header"> <span class="to-the-top-long"> To the top <span class="arrow" aria-hidden="true">&uarr;</span> </span> <span class="to-the-top-short"> Up <span class="arrow" aria-hidden="true">&uarr;</span> </span> </a>
+</div></footer> <script>/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);</script> <script defer src="/wp-content/cache/autoptimize/js/autoptimize_7f503920b823033d01081cc5ae68a469.js"></script>
+</body>
+</html>

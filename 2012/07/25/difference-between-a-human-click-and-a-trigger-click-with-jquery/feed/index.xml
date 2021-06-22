@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Difference Between A Human Click And A Trigger Click With jQuery	</title>
+	<atom:link href="/2012/07/25/difference-between-a-human-click-and-a-trigger-click-with-jquery/feed/" rel="self" type="application/rss+xml" />
+	<link>/2012/07/25/difference-between-a-human-click-and-a-trigger-click-with-jquery/</link>
+	<description></description>
+	<lastBuildDate>Thu, 11 Jul 2019 09:46:01 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Abhi		</title>
+		<link>/2012/07/25/difference-between-a-human-click-and-a-trigger-click-with-jquery/#comment-160831</link>
+
+		<dc:creator><![CDATA[Abhi]]></dc:creator>
+		<pubDate>Thu, 11 Jul 2019 09:46:01 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=6176#comment-160831</guid>
+
+					<description><![CDATA[Really Helpful. Thank you so much]]></description>
+			<content:encoded><![CDATA[<p>Really Helpful. Thank you so much</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Sammy K		</title>
+		<link>/2012/07/25/difference-between-a-human-click-and-a-trigger-click-with-jquery/#comment-120613</link>
+
+		<dc:creator><![CDATA[Sammy K]]></dc:creator>
+		<pubDate>Sat, 07 Jul 2018 06:02:41 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=6176#comment-120613</guid>
+
+					<description><![CDATA[It may sound stupid but I wanted to go ahead and update the event object in javascript like this:
+
+ event.originalEvent = &#039;click&#039; or anything else.
+
+Has anyone found a work around to that?
+
+What I am trying to achieve:
+I have been tasked with automating 13 clicks on a page and the way that I am doing this is by pasting a bunch of javascript on that page&#039;s console to simulate clicks.
+ It was worked perfectly for 12 of the buttons, but the 13th button behaved in a weird way. It would only submit if I clicked it via my actual mouse and not with javascript. Now I don&#039;t have access to that page&#039;s code, else I would have changed things directly.
+On more research( i.e your blog and other SO Pages) I found out that there is something known as orginalEvent which is undefined.
+I want a way to change that considering my current limitations.
+Please provide your thoughts if you can help! :)]]></description>
+			<content:encoded><![CDATA[<p>It may sound stupid but I wanted to go ahead and update the event object in javascript like this:</p>
+<p> event.originalEvent = &#8216;click&#8217; or anything else.</p>
+<p>Has anyone found a work around to that?</p>
+<p>What I am trying to achieve:<br />
+I have been tasked with automating 13 clicks on a page and the way that I am doing this is by pasting a bunch of javascript on that page&#8217;s console to simulate clicks.<br />
+ It was worked perfectly for 12 of the buttons, but the 13th button behaved in a weird way. It would only submit if I clicked it via my actual mouse and not with javascript. Now I don&#8217;t have access to that page&#8217;s code, else I would have changed things directly.<br />
+On more research( i.e your blog and other SO Pages) I found out that there is something known as orginalEvent which is undefined.<br />
+I want a way to change that considering my current limitations.<br />
+Please provide your thoughts if you can help! 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Andrea		</title>
+		<link>/2012/07/25/difference-between-a-human-click-and-a-trigger-click-with-jquery/#comment-118177</link>
+
+		<dc:creator><![CDATA[Andrea]]></dc:creator>
+		<pubDate>Mon, 05 Mar 2018 16:27:36 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=6176#comment-118177</guid>
+
+					<description><![CDATA[this is so great!!!! Thank you so much :) I had some tough logic and i found myself creating a bunch of variables to keep track of the &quot;enter&quot; flow and the &quot;next button human click&quot; flow. This made my life so much easier!!!! Appreciate the help :D]]></description>
+			<content:encoded><![CDATA[<p>this is so great!!!! Thank you so much 🙂 I had some tough logic and i found myself creating a bunch of variables to keep track of the &#8220;enter&#8221; flow and the &#8220;next button human click&#8221; flow. This made my life so much easier!!!! Appreciate the help 😀</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: jason		</title>
+		<link>/2012/07/25/difference-between-a-human-click-and-a-trigger-click-with-jquery/#comment-3970</link>
+
+		<dc:creator><![CDATA[jason]]></dc:creator>
+		<pubDate>Fri, 18 Mar 2016 07:14:33 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=6176#comment-3970</guid>
+
+					<description><![CDATA[This really really helped me man! Nice! Thank you!]]></description>
+			<content:encoded><![CDATA[<p>This really really helped me man! Nice! Thank you!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Uli		</title>
+		<link>/2012/07/25/difference-between-a-human-click-and-a-trigger-click-with-jquery/#comment-3969</link>
+
+		<dc:creator><![CDATA[Uli]]></dc:creator>
+		<pubDate>Thu, 22 Jan 2015 10:57:18 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=6176#comment-3969</guid>
+
+					<description><![CDATA[Thanxs - help a lot ;-)]]></description>
+			<content:encoded><![CDATA[<p>Thanxs &#8211; help a lot 😉</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2012/07/25/difference-between-a-human-click-and-a-trigger-click-with-jquery/#comment-3968</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 30 Jul 2012 17:55:50 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=6176#comment-3968</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2012/07/25/difference-between-a-human-click-and-a-trigger-click-with-jquery/#comment-3967&quot;&gt;FazerSiteGratis&lt;/a&gt;.
+
+I suppose as long as the Javascript was running in the same context as the like button it could.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2012/07/25/difference-between-a-human-click-and-a-trigger-click-with-jquery/#comment-3967">FazerSiteGratis</a>.</p>
+<p>I suppose as long as the Javascript was running in the same context as the like button it could.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: FazerSiteGratis		</title>
+		<link>/2012/07/25/difference-between-a-human-click-and-a-trigger-click-with-jquery/#comment-3967</link>
+
+		<dc:creator><![CDATA[FazerSiteGratis]]></dc:creator>
+		<pubDate>Sat, 28 Jul 2012 05:31:05 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=6176#comment-3967</guid>
+
+					<description><![CDATA[I was thinking, it&#039;s possible to use this code to automatic click on facebook &quot;like&quot; button ?
+
+Regards,
+ FazerSiteGratis.]]></description>
+			<content:encoded><![CDATA[<p>I was thinking, it&#8217;s possible to use this code to automatic click on facebook &#8220;like&#8221; button ?</p>
+<p>Regards,<br />
+ FazerSiteGratis.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>airport-extreme &#8211; Joseph Scott</title>
+	<atom:link href="/tag/airport-extreme/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 24 Apr 2014 16:43:04 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Update AirPort Extreme Firmware</title>
+		<link>/2014/04/24/update-airport-extreme-firmware/</link>
+					<comments>/2014/04/24/update-airport-extreme-firmware/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 24 Apr 2014 16:43:04 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[airport-extreme]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[wifi]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10333</guid>
+
+					<description><![CDATA[The Apple Airport Extreme has the OpenSSL Heartbleed bug. The update notice indicates that only newer models with certain features are vulnerable to this: Only AirPort Extreme and AirPort Time Capsule base stations with 802.11ac are affected, and only if they have Back to My Mac or Send Diagnostics enabled. Other AirPort base stations are [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="/wp-content/uploads/2014/04/airport-extreme-heartbleed-1.jpg"><img loading="lazy" src="/wp-content/uploads/2014/04/airport-extreme-heartbleed-1-187x300.jpg" alt="airport-extreme-heartbleed" width="187" height="300" class="aligncenter size-medium wp-image-10336" /></a></p>
+<p>The <a href="http://www.apple.com/airport-extreme/" title="I really like the clean look of the Airport Extreme.">Apple Airport Extreme</a> has the <a href="http://heartbleed.com/" title="The bug that keeps on giving.">OpenSSL Heartbleed bug</a>.  The update notice indicates that only newer models with certain features are vulnerable to this:</p>
+<blockquote><p>
+Only AirPort Extreme and AirPort Time Capsule base stations with 802.11ac are affected, and only if they have Back to My Mac or Send Diagnostics enabled. Other AirPort base stations are not impacted by this issue.
+</p></blockquote>
+<p>If you have one of these I recommend updating the firmware to <a href="http://support.apple.com/kb/HT6203" title="They don't mention heartbleed by name, but they do give enough detail that it is easy to tell what they are talking about.">version 7.7.3</a> even if you don&#8217;t have those features enabled.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/04/24/update-airport-extreme-firmware/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

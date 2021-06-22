@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>richard-hipp &#8211; Joseph Scott</title>
+	<atom:link href="/tag/richard-hipp/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 17 Oct 2014 16:59:28 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Little Steps</title>
+		<link>/2014/10/17/little-steps/</link>
+					<comments>/2014/10/17/little-steps/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 17 Oct 2014 16:59:28 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[richard-hipp]]></category>
+		<category><![CDATA[sqlite]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11197</guid>
+
+					<description><![CDATA[Richard Hipp on improving SQLite performance, 50% faster than 3.7.17: This is 50% faster at the low-level grunt work of moving bits on and off disk and search b-trees. We have achieved this by incorporating hundreds of micro-optimizations. Each micro-optimization might improve the performance by as little as 0.05%. If we get one that improves [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Richard Hipp on improving SQLite performance, <a href="http://permalink.gmane.org/gmane.comp.db.sqlite.general/90549">50% faster than 3.7.17</a>:</p>
+<blockquote><p>
+This is 50% faster at the low-level grunt work of moving bits on and off disk and search b-trees.  We have achieved this by incorporating hundreds of micro-optimizations.  Each micro-optimization might improve the performance by as little as 0.05%.  If we get one that improves performance by 0.25%, that is considered a huge win.  Each of these optimizations is unmeasurable on a real-world system (we have to use cachegrind to get repeatable run-times) but if you do enough of them, they add up.
+</p></blockquote>
+<p>More often than not getting a big improvement in performance is about doing lots of little things.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/10/17/little-steps/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

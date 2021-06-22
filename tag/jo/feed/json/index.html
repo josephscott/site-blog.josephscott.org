@@ -1,0 +1,36 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/jo/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/jo/",
+    "feed_url": "https://blog.josephscott.org/tag/jo/feed/json/",
+    "language": "en-US",
+    "title": "jo &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=15481",
+            "url": "https://blog.josephscott.org/2016/03/14/jo-create-json-on-the-command-line/",
+            "title": "jo, Create JSON On The Command Line",
+            "content_html": "<p>Do you remember <a href=\"https://josephscott.org/archives/2013/03/jq-command-line-json-processor/\">jq</a>, the tool that makes it easy it parse JSON on the command line?  Have you ever wondered what the opposite of jq would be?</p>\n<p>The answer is <a href=\"http://jpmens.net/2016/03/05/a-shell-command-to-create-json-jo/\">jo</a>.  It simplifies the process of creating JSON on the command line.  Here is one of the simple examples the author listed:</p>\n<pre>\n> jo time=$(date +%s) dir=$HOME\n{\"time\":1457195712,\"dir\":\"/Users/jpm\"}\n</pre>\n<p>Along with a more interesting one:</p>\n<pre>\n> jo -p name=JP object=$(jo fruit=Orange point=$(jo x=10 y=20) number=17) sunday=false\n{\n   \"name\": \"JP\",\n   \"object\": {\n      \"fruit\": \"Orange\",\n      \"point\": {\n         \"x\": 10,\n         \"y\": 20\n      },\n      \"number\": 17\n   },\n   \"sunday\": false\n}\n</pre>\n<p>This would be handy for writing to <a href=\"https://josephscott.org/archives/2016/03/json-lines/\">JSON Lines</a> log files.</p>\n",
+            "content_text": "Do you remember jq, the tool that makes it easy it parse JSON on the command line?  Have you ever wondered what the opposite of jq would be?\nThe answer is jo.  It simplifies the process of creating JSON on the command line.  Here is one of the simple examples the author listed:\n\n> jo time=$(date +%s) dir=$HOME\n{\"time\":1457195712,\"dir\":\"/Users/jpm\"}\n\nAlong with a more interesting one:\n\n> jo -p name=JP object=$(jo fruit=Orange point=$(jo x=10 y=20) number=17) sunday=false\n{\n   \"name\": \"JP\",\n   \"object\": {\n      \"fruit\": \"Orange\",\n      \"point\": {\n         \"x\": 10,\n         \"y\": 20\n      },\n      \"number\": 17\n   },\n   \"sunday\": false\n}\n\nThis would be handy for writing to JSON Lines log files.",
+            "date_published": "2016-03-14T11:11:28-06:00",
+            "date_modified": "2016-03-14T11:11:28-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "jo",
+                "json",
+                "Posts"
+            ]
+        }
+    ]
+}

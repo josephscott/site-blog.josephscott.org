@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>chess &#8211; Joseph Scott</title>
+	<atom:link href="/tag/chess/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Sun, 27 Dec 2015 00:02:53 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Chesscademy</title>
+		<link>/2015/12/26/chesscademy/</link>
+					<comments>/2015/12/26/chesscademy/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sun, 27 Dec 2015 00:02:53 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[chess]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14543</guid>
+
+					<description><![CDATA[Chesscademy: Learn how to play chess online through videos, chess tactics, and chess games. I&#8217;ve never been particularly good at chess. Perhaps this is an opportunity to get better.]]></description>
+										<content:encoded><![CDATA[<p><a href="https://www.chesscademy.com/">Chesscademy</a>:</p>
+<blockquote><p>
+Learn how to play chess online through videos, chess tactics, and chess games.
+</p></blockquote>
+<p>I&#8217;ve never been particularly good at chess.  Perhaps this is an opportunity to get better.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/26/chesscademy/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Chess Pieces in Unicode</title>
+		<link>/2013/05/09/chess-pieces-in-unicode/</link>
+					<comments>/2013/05/09/chess-pieces-in-unicode/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 09 May 2013 13:27:54 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[chess]]></category>
+		<category><![CDATA[unicode]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7598</guid>
+
+					<description><![CDATA[I was reading up on encoding issues and came across the chess symbols in Unicode Wikipedia page. I knew Unicode had support for all kinds of things, but chess pieces too? That was news to me. The Wikipedia entry included a codepoint and HTML entity table, which makes it easy to list out all of [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was reading up on encoding issues and came across the <a href='http://en.wikipedia.org/wiki/Chess_symbols_in_Unicode'>chess symbols in Unicode Wikipedia page</a>.  I knew Unicode had support for all kinds of things, but chess pieces too?  That was news to me.</p>
+<p>The Wikipedia entry included a codepoint and HTML entity table, which makes it easy to list out all of the pieces:</p>
+<div style="font-size: 200%;">
+White pieces:<br />
+&#9812; &#9813; &#9814; &#9815; &#9816; &#9817;</p>
+<p>Black pieces:<br />
+&#9818; &#9819; &#9820; &#9821; &#9822; &#9823;
+</p></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/05/09/chess-pieces-in-unicode/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

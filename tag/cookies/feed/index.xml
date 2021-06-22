@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>cookies &#8211; Joseph Scott</title>
+	<atom:link href="/tag/cookies/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 03 Apr 2020 19:11:48 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Safari: Full Third-Party Cookie Blocking</title>
+		<link>/2020/04/03/safari-full-third-party-cookie-blocking/</link>
+					<comments>/2020/04/03/safari-full-third-party-cookie-blocking/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 03 Apr 2020 19:11:48 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[cookies]]></category>
+		<category><![CDATA[itp]]></category>
+		<category><![CDATA[safari]]></category>
+		<guid isPermaLink="false">/?p=18143</guid>
+
+					<description><![CDATA[Remember all the way back to mid-January when I wrote about The End Of Third Party Cookies On The Web? That was triggered by the Google Chrome announcement that third-party cookies were going away in 2022. At the end I noted that I expected Safari would make a similar move, but sooner: I wouldn’t be [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Remember all the way back to mid-January when I wrote about <a href="/2020/01/15/the-end-of-third-party-cookies-on-the-web/">The End Of Third Party Cookies On The Web</a>?  That was triggered by the <a href="https://blog.chromium.org/2020/01/building-more-private-web-path-towards.html">Google Chrome announcement that third-party cookies were going away in 2022</a>.  At the end I noted that I expected Safari would make a similar move, but sooner:</p>
+<blockquote><p>
+I wouldn’t be surprised if Safari comes out and says they are going to do the same thing. If they do, I would expect them to have an even more aggressive timeline. <strong>My guess: by the end of 2020</strong>.
+</p></blockquote>
+<p>Last week Safari announced that &#8220;<a href="https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/">cookies for cross-site resources are now blocked by default across the board</a>&#8220;.  That change in defaults is part of the upgrade to Safari 13.1.</p>
+<p>So yeah, definitely a more aggressive timeline.</p>
+<p>Now some may respond with: so what, Chrome is the most popular browser in use today.  And they would be right.  What they would be missing is that <a href="https://gs.statcounter.com/browser-market-share/mobile/worldwide/#monthly-201903-202003">Safari has a nearly 25% share of the browser market on mobile devices</a>:</p>
+<p><a href="/wp-content/uploads/2020/04/sc-mobile.png"><img loading="lazy" src="/wp-content/uploads/2020/04/sc-mobile-1024x521.png" alt="" width="580" height="295" class="aligncenter size-large wp-image-18155" srcset="/wp-content/uploads/2020/04/sc-mobile-1024x521.png 1024w, /wp-content/uploads/2020/04/sc-mobile-300x153.png 300w, /wp-content/uploads/2020/04/sc-mobile-768x391.png 768w, /wp-content/uploads/2020/04/sc-mobile-1536x781.png 1536w, /wp-content/uploads/2020/04/sc-mobile-2048x1042.png 2048w, /wp-content/uploads/2020/04/sc-mobile-1200x610.png 1200w, /wp-content/uploads/2020/04/sc-mobile-1980x1007.png 1980w" sizes="(max-width: 580px) 100vw, 580px" /></a></p>
+<p>This move by Safari to start blocking third party cookies now is a big deal.  Combine that with Chrome doing the same thing in a few years means this is what the future of the web is going to look like.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/04/03/safari-full-third-party-cookie-blocking/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The End Of Third Party Cookies On The Web</title>
+		<link>/2020/01/15/the-end-of-third-party-cookies-on-the-web/</link>
+					<comments>/2020/01/15/the-end-of-third-party-cookies-on-the-web/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 15 Jan 2020 21:08:48 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[cookies]]></category>
+		<category><![CDATA[firefox]]></category>
+		<category><![CDATA[safari]]></category>
+		<guid isPermaLink="false">/?p=17971</guid>
+
+					<description><![CDATA[Safari Is Serious I&#8217;ve been dealing with the fallout of Safari ITP ( Intelligent Tracking Prevention ) since mid-2018. It hasn&#8217;t been an easy road, ITP dramatically limits the range of valid uses of third party cookies, and even for the remaining valid uses it required following a strict set of rules. As a user [&#8230;]]]></description>
+										<content:encoded><![CDATA[<h3>Safari Is Serious</h3>
+<p>I&#8217;ve been dealing with the fallout of <a href="https://webkit.org/blog/category/privacy/">Safari ITP</a> ( Intelligent Tracking Prevention ) since mid-2018.  It hasn&#8217;t been an easy road, ITP dramatically limits the range of valid uses of third party cookies, and even for the remaining valid uses it required following a strict set of rules.</p>
+<p>As a user of the web, I liked what ITP was doing.  As a developer, it made things difficult.  Kudos to <a href="https://twitter.com/johnwilander">John Wilander</a> on the WebKit team for taking the time to answer my questions.</p>
+<p>I could see that Apple was serious about this.  While I didn&#8217;t have any inside information as to what all of the browser vendors were planning, I strongly suspected that they would have no choice but to follow suit.  I commented to a co-worker:</p>
+<blockquote><p>
+Remember how happy people where when browsers started blocking pop-up ads?  This could go down a similar road.
+</p></blockquote>
+<p>The details of ITP changed over time, as Apple saw what sites were doing with the new restrictions.  During the summer of 2019 Apple published the <a href="https://webkit.org/tracking-prevention-policy/">WebKit Tracking Prevention</a> &#8211; which made it clear that they were serious, and going to push things even further:</p>
+<blockquote><p>
+There are practices on the web that we do not intend to disrupt, but which may be inadvertently affected because they rely on techniques that can also be used for tracking. We consider this to be unintended impact.</p>
+<p>&#8230;</p>
+<p>When faced with a tradeoff, we will typically prioritize user benefits over preserving current website practices. We believe that that is the role of a web browser, also known as the user agent.
+</p></blockquote>
+<p>Safari Tech Preview already has an experimental feature for disabling all third party cookies.</p>
+<h3>Chrome Samesite and Firefox ETP</h3>
+<p>In 2019 Chrome announced they were going to add support for a new <code>SameSite</code> cookie value: <code>None</code>.  <a href="https://web.dev/samesite-cookies-explained/">SameSite=None</a> changes how Chrome deals with third party cookies by default, but it is fairly easy for servers to add this new value and have everything work as before.</p>
+<p>One additional requirement for <code>SameSite=None</code> is HTTPS.  They went back and forth on that a bit, but ultimately settled on only allowing third party tracking cookies if they were done over HTTPS with the <code>secure</code> cookie attribute.  Given how wide spread HTTPS has become, I didn&#8217;t see this as a huge shift either.</p>
+<p>Both of these SameSite changes in Chrome are not scheduled to be live by default until February 2020, so we still don&#8217;t know exactly what their full impact will be.</p>
+<p>A few months later Firefox <a href="https://blog.mozilla.org/blog/2019/09/03/todays-firefox-blocks-third-party-tracking-cookies-and-cryptomining-by-default/">announced</a> that ETP ( Enhanced Tracking Protection ) would be enabled by default.  This approach was different from Chrome and Safari, in that they were using a <a href="https://disconnect.me/trackerprotection">list of things to block</a>.  They also expanded it beyond third party tracking to cryptomining.</p>
+<p>From my point of view Chrome and Firefox were both making moves in the right direction, but none of them were as big as Safari.</p>
+<h3>Then Chrome Goes Nuclear</h3>
+<p>Because Google makes so much money from ads, and they are able to do that in part because they track you every where, many people thought that Chrome would never get super serious about reducing the power of third party tracking.  That all changed this week:</p>
+<p><a href="https://twitter.com/justinschuh/status/1217115664277803011"><img loading="lazy" src="/wp-content/uploads/2020/01/chrome-cookie-tweet-1024x754.png" alt="" width="580" height="427" class="aligncenter size-large wp-image-17976" srcset="/wp-content/uploads/2020/01/chrome-cookie-tweet-1024x754.png 1024w, /wp-content/uploads/2020/01/chrome-cookie-tweet-300x221.png 300w, /wp-content/uploads/2020/01/chrome-cookie-tweet-768x566.png 768w, /wp-content/uploads/2020/01/chrome-cookie-tweet-1200x884.png 1200w, /wp-content/uploads/2020/01/chrome-cookie-tweet.png 1252w" sizes="(max-width: 580px) 100vw, 580px" /></a></p>
+<p>If Safari ITP was waging a war on third party tracking, then Chrome announced they were hitting the nuclear option: <a href="https://blog.chromium.org/2020/01/building-more-private-web-path-towards.html">Building a more private web: A path towards making third party cookies obsolete</a>.  The quote from their announcement that is getting all the attention is:</p>
+<blockquote><p>
+&#8230; we plan to phase out support for third-party cookies in Chrome. Our intention is to do this within two years.
+</p></blockquote>
+<p>No more third party cookies.  Let that sink in for a minute.</p>
+<p>Chrome is the <a href="https://gs.statcounter.com/">most used browser in the world</a> ( it isn&#8217;t even close ), a change like this is going to impact everyone on the web.  It is so big that there are going to be ramifications I haven&#8217;t even thought of yet.</p>
+<p>I wouldn&#8217;t be surprised if Safari comes out and says they are going to do the same thing.  If they do, I would expect them to have an even more aggressive timeline.  My guess: by the end of 2020.</p>
+<h3>The Clock Is Ticking</h3>
+<p>Now is the time to figure this out, it isn&#8217;t going to be any easier later on.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/01/15/the-end-of-third-party-cookies-on-the-web/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Browser Cookie Limits</title>
+		<link>/2018/10/02/browser-cookie-limits/</link>
+					<comments>/2018/10/02/browser-cookie-limits/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 02 Oct 2018 21:53:34 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[cookies]]></category>
+		<category><![CDATA[http]]></category>
+		<guid isPermaLink="false">/?p=16999</guid>
+
+					<description><![CDATA[http://browsercookielimits.squawky.net/ In Chrome 69 I got the following results: &#8211; Guessing Max Cookie Count Per Domain: 180 &#8211; Guessing Max Cookie Size Per Cookie: 4096 bytes For Firefox 62: &#8211; Guessing Max Cookie Count Per Domain: NA ( it kept trying to kill the script ) &#8211; Guessing Max Cookie Size Per Cookie: 4097 bytes [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://browsercookielimits.squawky.net/">http://browsercookielimits.squawky.net/</a></p>
+<p>In Chrome 69 I got the following results:</p>
+<p>&#8211; Guessing Max Cookie Count Per Domain: 180<br />
+&#8211; Guessing Max Cookie Size Per Cookie: 4096 bytes</p>
+<p>For Firefox 62:</p>
+<p>&#8211; Guessing Max Cookie Count Per Domain: NA ( it kept trying to kill the script )<br />
+&#8211; Guessing Max Cookie Size Per Cookie: 4097 bytes</p>
+<p>Safari 11.1.2 under Mac OS 10.13.6:</p>
+<p>&#8211; Guessing Max Cookie Count Per Domain: NA<br />
+&#8211; Guessing Max Cookie Size Per Cookie: 4097 bytes</p>
+<p>Safari 11 in iOS 11.4.1:</p>
+<p>&#8211; Guessing Max Cookie Count Per Domain: NA<br />
+&#8211; Guessing Max Cookie Size Per Cookie: 4097 bytes</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/10/02/browser-cookie-limits/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Cookies That Won&#8217;t Die: evercookie</title>
+		<link>/2011/08/01/cookies-that-wont-die-evercookie/</link>
+					<comments>/2011/08/01/cookies-that-wont-die-evercookie/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 01 Aug 2011 19:03:06 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[cookies]]></category>
+		<category><![CDATA[evercookie]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[javascript]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4567</guid>
+
+					<description><![CDATA[User tracking on the web is an interesting field. There are projects like evercookie that provide insight into the different techniques that are available given todays web client technologies. The methods listed by evercookie that I thought were particularly curious are: &#8211; Storing cookies in RGB values of auto-generated, force-cached PNGs using HTML5 Canvas tag [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>User tracking on the web is an interesting field.  There are projects like <a href='http://samy.pl/evercookie/'>evercookie</a> that provide insight into the different techniques that are available given todays web client technologies.</p>
+<p>The methods listed by evercookie that I thought were particularly curious are:</p>
+<blockquote><p>
+&#8211; Storing cookies in RGB values of auto-generated, force-cached PNGs using HTML5 Canvas tag to read pixels (cookies) back out</p>
+<p>&#8211; Storing cookies in HTTP ETags
+</p></blockquote>
+<p>And of course the various methods used by evercookie all cause the original HTTP cookie to re-spawn.</p>
+<p>The code is available at <a href="https://github.com/samyk/evercookie">https://github.com/samyk/evercookie</a> and is worth a look if you are interested in this sort of thing.  The <a href="http://samy.pl/evercookie/">evercookie page</a> has descriptions of how some of the techniques work, along with a sample piece of code to get started with.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/08/01/cookies-that-wont-die-evercookie/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

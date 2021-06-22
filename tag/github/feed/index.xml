@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>github &#8211; Joseph Scott</title>
+	<atom:link href="/tag/github/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Sat, 07 Nov 2015 15:45:06 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Language Trends</title>
+		<link>/2015/11/07/language-trends/</link>
+					<comments>/2015/11/07/language-trends/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 07 Nov 2015 15:45:06 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[github]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13644</guid>
+
+					<description><![CDATA[The Language Trends on GitHub, 2008 &#8211; 2015: PHP wins the award for most consistent.]]></description>
+										<content:encoded><![CDATA[<p>The <a href="https://github.com/blog/2047-language-trends-on-github">Language Trends on GitHub</a>, 2008 &#8211; 2015:</p>
+<p><a href="/wp-content/uploads/2015/11/github-language-trends-1.jpg"><img loading="lazy" src="/wp-content/uploads/2015/11/github-language-trends-1-1024x589.jpg" alt="github-language-trends" width="660" height="380" class="alignleft size-large wp-image-14278" srcset="/wp-content/uploads/2015/11/github-language-trends-1-1024x589.jpg 1024w, /wp-content/uploads/2015/11/github-language-trends-1-300x173.jpg 300w, /wp-content/uploads/2015/11/github-language-trends-1-768x442.jpg 768w, /wp-content/uploads/2015/11/github-language-trends-1.jpg 1200w" sizes="(max-width: 660px) 100vw, 660px" /></a></p>
+<p>PHP wins the award for most consistent.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/07/language-trends/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Top Github Languages</title>
+		<link>/2014/08/15/top-github-languages/</link>
+					<comments>/2014/08/15/top-github-languages/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 15 Aug 2014 17:17:31 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[adam-bard]]></category>
+		<category><![CDATA[github]]></category>
+		<category><![CDATA[javascript]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10770</guid>
+
+					<description><![CDATA[Adam Bard has compiled a list of the most popular used languages for projects hosted at Github for 2014 ( 1 Jan -> 31 Jul ). Number one on the list is JavaScript, and by a wide margin.]]></description>
+										<content:encoded><![CDATA[<p>Adam Bard has compiled a list of <a href="http://adambard.com/blog/top-github-languages-2014/">the most popular used languages for projects hosted at Github for 2014 ( 1 Jan -> 31 Jul )</a>.</p>
+<p>Number one on the list is JavaScript, and by a wide margin.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/08/15/top-github-languages/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: WordPress &#038; libxml2 Episode IV: A New Plugin	</title>
+	<atom:link href="/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/feed/" rel="self" type="application/rss+xml" />
+	<link>/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/</link>
+	<description></description>
+	<lastBuildDate>Tue, 28 Feb 2012 18:40:42 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Problems with source code on the Blog &#187; CraniumBulge		</title>
+		<link>/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comment-2808</link>
+
+		<dc:creator><![CDATA[Problems with source code on the Blog &#187; CraniumBulge]]></dc:creator>
+		<pubDate>Tue, 28 Feb 2012 18:40:42 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=982#comment-2808</guid>
+
+					<description><![CDATA[[...] http://josephscott.org/archives/2009/03/wordpress-libxml2-episode-iv-a-new-plugin/ [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] <a href="http://josephscott.org/archives/2009/03/wordpress-libxml2-episode-iv-a-new-plugin/" rel="nofollow ugc">http://josephscott.org/archives/2009/03/wordpress-libxml2-episode-iv-a-new-plugin/</a> [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joe Rhoney		</title>
+		<link>/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comment-2807</link>
+
+		<dc:creator><![CDATA[Joe Rhoney]]></dc:creator>
+		<pubDate>Fri, 28 Oct 2011 23:55:00 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=982#comment-2807</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comment-2806&quot;&gt;Joe Rhoney&lt;/a&gt;.
+
+Oops! Well, my code almost displayed properly. It just converted the character codes into the actual characters, let&#039;s see if I can portray it another way (for those who need to know).
+
+As seen the pattern of the character codes in the lines already included within the plugin, character codes start with an ampersand (&#038;) and end with a semicolon (;). The part in between goes as follows:
+
+For a single quote (&#039;):
+apos
+#39
+
+For a double quote (&quot;):
+quot
+#34
+
+Hope this helps somebody.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comment-2806">Joe Rhoney</a>.</p>
+<p>Oops! Well, my code almost displayed properly. It just converted the character codes into the actual characters, let&#8217;s see if I can portray it another way (for those who need to know).</p>
+<p>As seen the pattern of the character codes in the lines already included within the plugin, character codes start with an ampersand (&amp;) and end with a semicolon (;). The part in between goes as follows:</p>
+<p>For a single quote (&#8216;):<br />
+apos<br />
+#39</p>
+<p>For a double quote (&#8220;):<br />
+quot<br />
+#34</p>
+<p>Hope this helps somebody.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joe Rhoney		</title>
+		<link>/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comment-2806</link>
+
+		<dc:creator><![CDATA[Joe Rhoney]]></dc:creator>
+		<pubDate>Fri, 28 Oct 2011 23:43:51 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=982#comment-2806</guid>
+
+					<description><![CDATA[Thank you so much! Your plugin worked like magic. I just had to edit it to include the following lines since I also needed to be able to use single and double quotes.
+
+$HTTP_RAW_POST_DATA = str_replace( &#039;&amp;apos;&#039;, &#039;&#039;&#039;, $HTTP_RAW_POST_DATA );
+$HTTP_RAW_POST_DATA = str_replace( &#039;&#034;&#039;, &#039;&#034;&#039;, $HTTP_RAW_POST_DATA );
+
+(Hope this code displays properly)
+
+Looking forward to my hosting company upgrading their PHP. :]]></description>
+			<content:encoded><![CDATA[<p>Thank you so much! Your plugin worked like magic. I just had to edit it to include the following lines since I also needed to be able to use single and double quotes.</p>
+<p>$HTTP_RAW_POST_DATA = str_replace( &#8216;&apos;&#8217;, &#8216;&#039;&#8217;, $HTTP_RAW_POST_DATA );<br />
+$HTTP_RAW_POST_DATA = str_replace( &#8216;&quot;&#8217;, &#8216;&#034;&#8217;, $HTTP_RAW_POST_DATA );</p>
+<p>(Hope this code displays properly)</p>
+<p>Looking forward to my hosting company upgrading their PHP. :</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Проблема с постингом в WordPress через сторонние сервисы &#124; SEO Labs		</title>
+		<link>/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comment-2805</link>
+
+		<dc:creator><![CDATA[Проблема с постингом в WordPress через сторонние сервисы &#124; SEO Labs]]></dc:creator>
+		<pubDate>Wed, 03 Mar 2010 12:23:50 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=982#comment-2805</guid>
+
+					<description><![CDATA[[...] проверяет версию libxml2 и срабатывает только если используются 2.7.0, 2.7.1 или 2.7.2. Так что если у [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] проверяет версию libxml2 и срабатывает только если используются 2.7.0, 2.7.1 или 2.7.2. Так что если у [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Final test before ditching aplus.net hosting after they screwed me. &#171; The Minnick Family		</title>
+		<link>/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comment-2804</link>
+
+		<dc:creator><![CDATA[Final test before ditching aplus.net hosting after they screwed me. &#171; The Minnick Family]]></dc:creator>
+		<pubDate>Mon, 11 Jan 2010 16:50:20 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=982#comment-2804</guid>
+
+					<description><![CDATA[[...] http://josephscott.org/archives/2009/03/wordpress-libxml2-episode-iv-a-new-plugin/  [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] <a href="http://josephscott.org/archives/2009/03/wordpress-libxml2-episode-iv-a-new-plugin/" rel="nofollow ugc">http://josephscott.org/archives/2009/03/wordpress-libxml2-episode-iv-a-new-plugin/</a>  [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comment-2803</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 04 Nov 2009 20:46:49 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=982#comment-2803</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comment-2802&quot;&gt;Mario Groleau&lt;/a&gt;.
+
+No problem, glad that fixed it.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comment-2802">Mario Groleau</a>.</p>
+<p>No problem, glad that fixed it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Mario Groleau		</title>
+		<link>/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comment-2802</link>
+
+		<dc:creator><![CDATA[Mario Groleau]]></dc:creator>
+		<pubDate>Wed, 04 Nov 2009 17:29:32 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=982#comment-2802</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comment-2801&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+Thanks, You are a champion, it works now!]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comment-2801">Joseph Scott</a>.</p>
+<p>Thanks, You are a champion, it works now!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comment-2801</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 04 Nov 2009 15:48:54 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=982#comment-2801</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comment-2800&quot;&gt;Mario Groleau&lt;/a&gt;.
+
+The plugin looks up your libxml version number and then compares to a list of versions that are know to have this problem.  Add your libxml version to that list and see if that fixes the problem.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comment-2800">Mario Groleau</a>.</p>
+<p>The plugin looks up your libxml version number and then compares to a list of versions that are know to have this problem.  Add your libxml version to that list and see if that fixes the problem.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Mario Groleau		</title>
+		<link>/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comment-2800</link>
+
+		<dc:creator><![CDATA[Mario Groleau]]></dc:creator>
+		<pubDate>Tue, 03 Nov 2009 22:46:01 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=982#comment-2800</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comment-2799&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+Hello,
+
+Wich version? I already installed and activated the last version (0.2.2) available on WordPress repository without positive result.
+
+Thanks for your help]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comment-2799">Joseph Scott</a>.</p>
+<p>Hello,</p>
+<p>Wich version? I already installed and activated the last version (0.2.2) available on WordPress repository without positive result.</p>
+<p>Thanks for your help</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comment-2799</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 03 Nov 2009 21:06:53 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=982#comment-2799</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comment-2798&quot;&gt;Mario Groleau&lt;/a&gt;.
+
+That certainly looks like the same libxml problem where brackets are stripped.  But with that version of libxml it shouldn&#039;t be an issue.
+
+Try adding that version to the plugin and see if it solves it.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comment-2798">Mario Groleau</a>.</p>
+<p>That certainly looks like the same libxml problem where brackets are stripped.  But with that version of libxml it shouldn&#8217;t be an issue.</p>
+<p>Try adding that version to the plugin and see if it solves it.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

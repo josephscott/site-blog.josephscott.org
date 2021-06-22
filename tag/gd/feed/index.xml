@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>gd &#8211; Joseph Scott</title>
+	<atom:link href="/tag/gd/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 03 Apr 2006 07:24:01 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Moving gd Development To php.net</title>
+		<link>/2006/04/02/moving-gd-development-to-phpnet/</link>
+					<comments>/2006/04/02/moving-gd-development-to-phpnet/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 03 Apr 2006 07:24:01 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[gd]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/04/02/moving-gd-development-to-phpnet/</guid>
+
+					<description><![CDATA[Thomas Boutell is a name that brings back a flood of memories from the days of my first serious exposure to the Internet. (yeah Wired I spelled it with an I, wanna fight about it?) So it was kind of surprising to see his name show up on a post to the PHP Developers list. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.boutell.com/">Thomas Boutell</a> is a name that brings back a flood of memories from the days of my first serious exposure to the Internet. (yeah <a href="http://www.wired.com/news/culture/0,1284,64596,00.html">Wired I spelled it with an I</a>, wanna fight about it?)  So it was kind of surprising to see his name show up on a post to the <a href="http://marc.theaimsgroup.com/?l=php-dev">PHP Developers list</a>.  What was even more interesting was what Thomas proposed in that email.</p>
+<p>Thomas Boutell <a href="http://marc.theaimsgroup.com/?l=php-dev&amp;m=114382449330671&amp;w=2">proposed moving gd development to php.net</a>.  Yes that <a href="http://www.boutell.com/gd/">GD</a>.  Based on the <a href="http://marc.theaimsgroup.com/?l=php-dev&amp;m=114383770617320&amp;w=2">response from Rasmus</a>, <a href="http://marc.theaimsgroup.com/?l=php-dev&amp;m=114384428118285&amp;w=2">Pierre stepping up to maintain it</a> and the <a href="http://marc.theaimsgroup.com/?l=php-dev&amp;m=114401978132707&amp;w=2">acceptance by Thomas</a> it looks like this is going to be a done deal.  I&#8217;m glad to see that folks involved in this transition were able to come to an agreement so quickly.</p>
+<p>I wanted to take a moment to wish Thomas the best of luck on the other projects that he has moved on to.  Like many others I&#8217;ve benefited from his work on GD and other bits of code and articles, especially in my early days of working on web.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/04/02/moving-gd-development-to-phpnet/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

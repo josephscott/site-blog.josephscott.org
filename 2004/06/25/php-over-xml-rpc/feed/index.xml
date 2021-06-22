@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: PHP over XML-RPC	</title>
+	<atom:link href="/2004/06/25/php-over-xml-rpc/feed/" rel="self" type="application/rss+xml" />
+	<link>/2004/06/25/php-over-xml-rpc/</link>
+	<description></description>
+	<lastBuildDate>Fri, 17 Jun 2005 14:05:15 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: SonicChicken weblog		</title>
+		<link>/2004/06/25/php-over-xml-rpc/#comment-400</link>
+
+		<dc:creator><![CDATA[SonicChicken weblog]]></dc:creator>
+		<pubDate>Fri, 17 Jun 2005 14:05:15 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/06/25/php-over-xml-rpc/#comment-400</guid>
+
+					<description><![CDATA[[...] 
+ 	Friday June 17th 2005, 14:05 
+ 
+ Filed under: Hacking	
+ 
+ 			
+ 
+ 					I stumbled across this post from almost exactly one year ago. Joseph, I salute your effort,  [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;]<br />
+ 	Friday June 17th 2005, 14:05 </p>
+<p> Filed under: Hacking	</p>
+<p> 					I stumbled across this post from almost exactly one year ago. Joseph, I salute your effort,  [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: kenrick		</title>
+		<link>/2004/06/25/php-over-xml-rpc/#comment-399</link>
+
+		<dc:creator><![CDATA[kenrick]]></dc:creator>
+		<pubDate>Wed, 22 Dec 2004 19:38:17 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/06/25/php-over-xml-rpc/#comment-399</guid>
+
+					<description><![CDATA[Man Im having a hard time using that IXR Library with extending the introspection server... it just never works. If i dont use introspection and define a class, and instead just add the funcitons to a server it works. Any ideas? I can send you a link to what im working if you are interested.]]></description>
+			<content:encoded><![CDATA[<p>Man Im having a hard time using that IXR Library with extending the introspection server&#8230; it just never works. If i dont use introspection and define a class, and instead just add the funcitons to a server it works. Any ideas? I can send you a link to what im working if you are interested.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2004/06/25/php-over-xml-rpc/#comment-398</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Sat, 26 Jun 2004 15:55:43 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/06/25/php-over-xml-rpc/#comment-398</guid>
+
+					<description><![CDATA[Take a look at the server and client I wrote again, they both use Simon&#039;s IXR XML-RPC library.  I mentioned this in the post, I even linked to it.
+
+What I&#039;m doing here is using his library to expose all of the PHP functions over XML-RPC.]]></description>
+			<content:encoded><![CDATA[<p>Take a look at the server and client I wrote again, they both use Simon&#8217;s IXR XML-RPC library.  I mentioned this in the post, I even linked to it.</p>
+<p>What I&#8217;m doing here is using his library to expose all of the PHP functions over XML-RPC.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Mark		</title>
+		<link>/2004/06/25/php-over-xml-rpc/#comment-397</link>
+
+		<dc:creator><![CDATA[Mark]]></dc:creator>
+		<pubDate>Sat, 26 Jun 2004 15:11:17 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/06/25/php-over-xml-rpc/#comment-397</guid>
+
+					<description><![CDATA[Have you ever looked at Simon Wilson&#039;s IXR?]]></description>
+			<content:encoded><![CDATA[<p>Have you ever looked at Simon Wilson&#8217;s IXR?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

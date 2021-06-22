@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>patrick-meenan &#8211; Joseph Scott</title>
+	<atom:link href="/tag/patrick-meenan/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 26 Sep 2014 17:36:23 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Behind the Scenes at WebPageTest</title>
+		<link>/2014/09/26/behind-the-scenes-at-webpagetest/</link>
+					<comments>/2014/09/26/behind-the-scenes-at-webpagetest/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 26 Sep 2014 17:36:23 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[patrick-meenan]]></category>
+		<category><![CDATA[webpagetest]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11088</guid>
+
+					<description><![CDATA[Patrick Meenan gives an update on his Dulles, VA &#8220;data center&#8221; for webpagetest.org: As far as scaling the servers goes, I load up more VM&#8217;s than I expect to use, submit a whole lot of tests with all of the options enabled and watch the hypervisor&#8217;s utilization. I shut down VM&#8217;s until the CPU utilization [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Patrick Meenan gives an update on his <a href="http://blog.patrickmeenan.com/2014/09/updated-webpagetest-data-center-tour.html">Dulles, VA &#8220;data center&#8221; for webpagetest.org</a>:</p>
+<blockquote><p>
+As far as scaling the servers goes, I load up more VM&#8217;s than I expect to use, submit a whole lot of tests with all of the options enabled and watch the hypervisor&#8217;s utilization.  I shut down VM&#8217;s until the CPU utilization stays below 80% (one per CPU thread seems to be the sweet spot).</p>
+<p>Moving up the rack we have the unraid NAS where the tests are archived for long-term storage (as of this post the array can hold 49TB of data with 18TB used for test results).  I have a bunch of other things on the array so not all of that 30TB is free but I expect to be able to continue storing results indefinitely for the foreseeable future.
+</p></blockquote>
+<p>A big thank you to Patrick for all the work he has put into webpagetest.org.  I&#8217;m particularly impressed with the effort being put into doing tests with real mobile devices.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/09/26/behind-the-scenes-at-webpagetest/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

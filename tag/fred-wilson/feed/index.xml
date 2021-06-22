@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>fred-wilson &#8211; Joseph Scott</title>
+	<atom:link href="/tag/fred-wilson/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 05 Sep 2018 15:31:04 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Little Changes, Little Problems</title>
+		<link>/2018/09/05/little-changes-little-problems/</link>
+					<comments>/2018/09/05/little-changes-little-problems/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 05 Sep 2018 15:31:04 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[deploy]]></category>
+		<category><![CDATA[fred-wilson]]></category>
+		<guid isPermaLink="false">/?p=16954</guid>
+
+					<description><![CDATA[I am a big fan of making smaller, more frequent commits and deploys. No one wants to review the 3,000 line diff, and deploying it generally comes with a reduced level of confidence. At least when compared with the 3 line change. Fred Wilson wrote about doing a code deploy at Etsy and described this [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I am a big fan of making smaller, more frequent commits and deploys.  No one wants to review the 3,000 line diff, and deploying it generally comes with a reduced level of confidence.  At least when compared with the 3 line change.</p>
+<p>Fred Wilson wrote about <a href="https://avc.com/2011/02/continuous-deployment/">doing a code deploy at Etsy</a> and described this preference for smaller changes in a way I really liked:</p>
+<blockquote><p>
+Big changes create big problems. Little changes create little problems.
+</p></blockquote>
+<p>Of course this isn&#8217;t true for 100% of the cases, it is certainly possible for a small change to create devastating problems. What it does do is encapsulate a correct principle, that small changes are easier to reason through than large ones.</p>
+<p>Worth printing on a poster and putting it on the wall.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/09/05/little-changes-little-problems/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The Thing</title>
+		<link>/2015/11/27/the-thing/</link>
+					<comments>/2015/11/27/the-thing/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 27 Nov 2015 15:43:51 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[fred-wilson]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13708</guid>
+
+					<description><![CDATA[Fred Wilson on writing everyday, The Blank Screen, emphasis mine: Sometimes this process produces great insights for me and possibly others. Sometimes it produces garbage. But I’ve come to realize that the daily post, and its quality or lack thereof, is not really the thing. It is the ritual, the practice, the frequency, the habit, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Fred Wilson on writing everyday, <a href="http://avc.com/2015/06/the-blank-screen/">The Blank Screen</a>, emphasis mine:</p>
+<blockquote><p>
+Sometimes this process produces great insights for me and possibly others. Sometimes it produces garbage. But <strong>I’ve come to realize that the daily post, and its quality or lack thereof, is not really the thing. It is the ritual, the practice, the frequency, the habit, and the discipline that matters most to me</strong>. And, I would suspect, the same is true of the readers and commenters who frequent this blog.
+</p></blockquote>
+<p>I&#8217;ve been impressed with the discipline that Fred Wilson has in writing every day.  It certainly isn&#8217;t an easy thing, but the level of ease isn&#8217;t usually the best way to measure the resulting value.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/27/the-thing/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Split Stack Broadband</title>
+		<link>/2015/11/23/split-stack-broadband/</link>
+					<comments>/2015/11/23/split-stack-broadband/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 23 Nov 2015 15:22:13 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[broadband]]></category>
+		<category><![CDATA[fred-wilson]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13900</guid>
+
+					<description><![CDATA[Fred Wilson on A Model For A Competitive Broadband Market: I believe the telecommunications market needs to move away from vertical integration where one provider builds, manages, and delivers the entire telecommunications stack to the market. In theory I like the idea of having municipalities &#8220;owning&#8221; the underlying infrastructure, then allowing others to provide services [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Fred Wilson on <a href="http://avc.com/2015/09/a-model-for-a-competitive-broadband-market/">A Model For A Competitive Broadband Market</a>:</p>
+<blockquote><p>
+I believe the telecommunications market needs to move away from vertical integration where one provider builds, manages, and delivers the entire telecommunications stack to the market.
+</p></blockquote>
+<p>In theory I like the idea of having municipalities &#8220;owning&#8221; the underlying infrastructure, then allowing others to provide services on top of that.  In practical terms that broadly mean a two level stack: fiber in the ground and Internet services.</p>
+<p>This appeals to the &#8220;Internet as infrastructure&#8221; view point.  Internet service at home is no longer a nice to I have, I view it in the same category as other critical services like water and electricity.</p>
+<p>Competition is good for many things, and hard for some things.  When it comes to broadband, I really don&#8217;t want a different company each month ripping up the road to run fiber to a house.  Instead it makes more sense to allow central control of the fiber running to a home, then allow competition to provide services over that fiber.</p>
+<hr />
+<p>Unfortunately there are no fiber connections to my house, and I&#8217;m not aware of any plans to change that.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/23/split-stack-broadband/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Detached</title>
+		<link>/2015/10/21/detached/</link>
+					<comments>/2015/10/21/detached/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 21 Oct 2015 12:00:44 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[fred-wilson]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13455</guid>
+
+					<description><![CDATA[Try as we might, humans don&#8217;t make every decision based on purely rational processes. Fred Wilson touched on this for the world of VCs ( Been There Done That ): even though I understand that rationally, it doesn’t help with the emotional aversion to trying something again that didn’t work last time. And venture capital [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Try as we might, humans don&#8217;t make every decision based on purely rational processes.  Fred Wilson touched on this for the world of VCs ( <a href="http://avc.com/2015/08/been-there-done-that/">Been There Done That</a> ):</p>
+<blockquote><p>
+even though I understand that rationally, it doesn’t help with the emotional aversion to trying something again that didn’t work last time. And venture capital investing is not a detached cold hyper-rational exercise. It is a deeply emotional and connected experience. And thus the reluctance to go there again.
+</p></blockquote>
+<p>Of course this applies to so many things outside of venture capital.  The trick is to recognize it and be ok with saying so.  There is often a strong temptation to cover this up and come up with some other reason.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/21/detached/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Sustainable</title>
+		<link>/2015/07/02/sustainable/</link>
+					<comments>/2015/07/02/sustainable/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 02 Jul 2015 14:01:45 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[fred-wilson]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13054</guid>
+
+					<description><![CDATA[Fred Wilson, on Profits vs. Growth: But I’m a bit sick and tired of the objective of every operating plan I see is to get the business to a point where it can raise money at a much higher price. That’s nice and it’s how the VC/startup game is played. But at some point I’d [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Fred Wilson, on <a href="http://avc.com/2015/06/profits-vs-growth/">Profits vs. Growth</a>:</p>
+<blockquote><p>But I’m a bit sick and tired of the objective of every operating plan I see is to get the business to a point where it can raise money at a much higher price. That’s nice and it’s how the VC/startup game is played. But at some point I’d prefer to see an operating plan that has the objective of getting to sustainable profitability. And I do mean sustainable.</p></blockquote>
+<p>Even for those that want the regular VC/startup game to continue as is, at some point you need more giants like Google and Apple to rise up.  Other wise you&#8217;ll eventually run out of large companies interested in buying the startups VCs invest in.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/07/02/sustainable/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Trust Is A Feature</title>
+		<link>/2014/06/30/trust-feature/</link>
+					<comments>/2014/06/30/trust-feature/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 30 Jun 2014 15:42:49 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[fred-wilson]]></category>
+		<category><![CDATA[trust]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10673</guid>
+
+					<description><![CDATA[Last week Fred Wilson suggested that he would add trust to his &#8220;Top 10 Golden Rules For Successful Web Apps&#8221;: &#8230; privacy is part of the brand promise &#8230; That includes the lack of privacy. Going back to why in early 2010 I didn’t put Trust in my top ten – it may be that [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Last week Fred Wilson suggested that he would <a href="http://avc.com/2014/06/feature-friday-trust/">add trust to his &#8220;Top 10 Golden Rules For Successful Web Apps&#8221;</a>:</p>
+<blockquote><p>
+&#8230; privacy is part of the brand promise &#8230;
+</p></blockquote>
+<p>That includes the lack of privacy.</p>
+<blockquote><p>
+Going back to why in early 2010 I didn’t put Trust in my top ten – it may be that Facebook’s assault on our privacy and the loss of trust that ensued was just developing in our collective consciousness at that time. And now we live in a more paranoid state about this stuff.
+</p></blockquote>
+<p>Customer trust is no longer just a company cultural target, trust is a feature.  Being a feature means it requires specific decisions to be made about it, decisions that should not be changed lightly.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/06/30/trust-feature/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

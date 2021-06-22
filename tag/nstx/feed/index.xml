@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>nstx &#8211; Joseph Scott</title>
+	<atom:link href="/tag/nstx/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 31 Aug 2010 19:38:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>NSTX, IP-over-DNS</title>
+		<link>/2010/08/31/nstx-ip-over-dns/</link>
+					<comments>/2010/08/31/nstx-ip-over-dns/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 31 Aug 2010 19:38:51 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[dns]]></category>
+		<category><![CDATA[nstx]]></category>
+		<category><![CDATA[tcp/ip]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2600</guid>
+
+					<description><![CDATA[NSTX, IP-over-DNS &#8211; clever hack (via Jeremy Zawodny)]]></description>
+										<content:encoded><![CDATA[<p><a href="http://thomer.com/howtos/nstx.html">NSTX, IP-over-DNS</a> &#8211; clever hack (via <a href="http://jeremy.zawodny.com/linkblog/">Jeremy Zawodny</a>)</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/08/31/nstx-ip-over-dns/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

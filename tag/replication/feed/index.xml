@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>replication &#8211; Joseph Scott</title>
+	<atom:link href="/tag/replication/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 20 Jul 2011 16:38:55 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Detecting MySQL Replication Lag in HyperDB</title>
+		<link>/2011/07/20/detecting-mysql-replication-lag-in-hyperdb/</link>
+					<comments>/2011/07/20/detecting-mysql-replication-lag-in-hyperdb/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 20 Jul 2011 16:38:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[hyperdb]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[replication]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4498</guid>
+
+					<description><![CDATA[Iliya has a new post on detecting MySQL replication lag in HyperDB. It starts off with a few WordPress.com numbers: On WordPress.com we have over 218 million tables and perform tens of thousands queries per second. To scale all of this, we shard our 24 million blogs across more than 550 MySQL servers. This allows [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Iliya has a new post on <a href="http://barry.wordpress.com/2011/07/20/hyperdb-lag-detection/">detecting MySQL replication lag in HyperDB</a>.  It starts off with a few <a href="http://wordpress.com/">WordPress.com</a> numbers:</p>
+<blockquote><p>
+On WordPress.com we have over 218 million tables and perform tens of thousands queries per second. To scale all of this, we shard our 24 million blogs across more than 550 MySQL servers. This allows us to cope with load bursts and to handle database servers failures.
+</p></blockquote>
+<p>The post goes on to describe some of the reasons why you might run into replication lag in MySQL and methods <a href="http://codex.wordpress.org/HyperDB">HyperDB</a> uses to deal with that.  In the case of WordPress.com there are additional issues to consider, like replication across multiple datacenters.</p>
+<p>Something that HyperDB has had for awhile is the ability to force read queries back to the master if a write happened earlier on the same connection:</p>
+<blockquote><p>
+If a connection modifies data in a given table, then all subsequent SELECTs on the same connection for that table are sent to the master. Chances are replication won’t be fast enough to propagate the changes to the slaves on the same page load.
+</p></blockquote>
+<p>This is a fairly simple technique than can be remarkably useful.</p>
+<p>You can find out more about HyperDB on the <a href="http://codex.wordpress.org/HyperDB">HyperDB WordPress Codex page</a>, the <a href="http://wordpress.org/extend/plugins/hyperdb/">HyperDB WordPress plugin page</a>, and the <a href="http://comox.textdrive.com/mailman/listinfo/hyperdb">HyperDB mailing list</a>.  You can also grab a copy directly from the <a href="http://svn.wp-plugins.org/hyperdb/trunk/">HyperDB Subversion repository</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/07/20/detecting-mysql-replication-lag-in-hyperdb/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Mon 12 Nov 2007</title>
+		<link>/2007/11/12/links-for-mon-12-nov-2007/</link>
+					<comments>/2007/11/12/links-for-mon-12-nov-2007/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 13 Nov 2007 00:30:03 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[cluster]]></category>
+		<category><![CDATA[cybertec]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[icons]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[replication]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/12/links-for-mon-12-nov-2007/</guid>
+
+					<description><![CDATA[Google Options Make Masseuse a Multimillionaire &#8211; New York Times &#8211; The amount of money Google has been printing is amazing. Tags: google Danish Royalty Free Icons &#8211; Nice looking application icons. Tags: icons cybertec &#8211; PostgreSQL Database Company &#8211; Sch&#246;nig &#38; Sch&#246;nig GmbH &#8211; Kontakt &#8211; Synchronous replication system for PostgreSQL. Tags: postgresql cluster [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://www.nytimes.com/2007/11/12/technology/12google.html?_r=1&amp;ex=1352610000&amp;en=6166f2300d2e0283&amp;ei=5090&amp;partner=rssuserland&amp;emc=rss&amp;oref=slogin">Google Options Make Masseuse a Multimillionaire &#8211; New York Times</a> &#8211; The amount of money Google has been printing is amazing. <br /> Tags: <a href="http://del.icio.us/josephscott/google">google</a>  </p>
+</li>
+<li>
+<p><a href="http://jonas.seph.ws/index.html">Danish Royalty Free Icons</a> &#8211; Nice looking application icons. <br /> Tags: <a href="http://del.icio.us/josephscott/icons">icons</a>  </p>
+</li>
+<li>
+<p><a href="http://www.postgresql.at/english/downloads_e.html">cybertec &#8211; PostgreSQL Database Company &#8211; Sch&ouml;nig &amp; Sch&ouml;nig GmbH &#8211; Kontakt</a> &#8211; Synchronous replication system for PostgreSQL. <br /> Tags: <a href="http://del.icio.us/josephscott/postgresql">postgresql</a> <a href="http://del.icio.us/josephscott/cluster">cluster</a> <a href="http://del.icio.us/josephscott/replication">replication</a> <a href="http://del.icio.us/josephscott/cybertec">cybertec</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/11/12/links-for-mon-12-nov-2007/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Replicating from MS SQL Server to PostgreSQL</title>
+		<link>/2006/04/10/replicating-from-ms-sql-server-to-postgresql/</link>
+					<comments>/2006/04/10/replicating-from-ms-sql-server-to-postgresql/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 10 Apr 2006 21:17:27 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[replication]]></category>
+		<category><![CDATA[sqlserver]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/04/10/replicating-from-ms-sql-server-to-postgresql/</guid>
+
+					<description><![CDATA[Mangus Hagander has a detailed how to for replicating from MS SQL Server to PostgreSQL. It certainly isn&#8217;t perfect, but for those willing to go through the work this would be a very interesting way to add PostgreSQL to a SQL Server shop. I don&#8217;t plan on using this right now, but I&#8217;m definitely going [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Mangus Hagander has a detailed how to for <a href="http://people.planetpostgresql.org/mha/index.php?/archives/87-guid.html">replicating from MS SQL Server to PostgreSQL</a>.  It certainly isn&#8217;t perfect, but for those willing to go through the work this would be a very interesting way to add <a href="http://www.postgresql.org/">PostgreSQL</a> to a SQL Server shop.  I don&#8217;t plan on using this right now, but I&#8217;m definitely going to file this away as something with potential.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/04/10/replicating-from-ms-sql-server-to-postgresql/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

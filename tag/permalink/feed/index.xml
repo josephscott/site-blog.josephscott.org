@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>permalink &#8211; Joseph Scott</title>
+	<atom:link href="/tag/permalink/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 25 Apr 2013 16:04:46 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Good Links Never Die</title>
+		<link>/2013/04/25/good-links-never-die/</link>
+					<comments>/2013/04/25/good-links-never-die/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 25 Apr 2013 16:04:46 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[doc-searls]]></category>
+		<category><![CDATA[history]]></category>
+		<category><![CDATA[permalink]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7389</guid>
+
+					<description><![CDATA[We can find these historic details because links have at least a provisional permanence to them. They are, literally, paths to locations. Thanks to those, we can document the history we make, and learn from it as well. &#8211; Doc Searls on Why Durable Links Matter The Internet in general, and the web specifically, have [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+We can find these historic details because links have at least a provisional permanence to them. They are, literally, paths to locations. Thanks to those, we can document the history we make, and learn from it as well.
+</p></blockquote>
+<p>&#8211; Doc Searls on <a href="http://blogs.law.harvard.edu/doc/2013/04/07/why-durable-links-matter/">Why Durable Links Matter</a></p>
+<p>The Internet in general, and the web specifically, have given people an unprecedented power to both record and erase history.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/04/25/good-links-never-die/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>WordPress Pretty Permalinks with Nginx</title>
+		<link>/2010/06/02/wordpress-pretty-permalinks-with-nginx/</link>
+					<comments>/2010/06/02/wordpress-pretty-permalinks-with-nginx/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 02 Jun 2010 15:36:11 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[permalink]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2363</guid>
+
+					<description><![CDATA[Setting Permalinks in WordPress is simple and flexible. Core WordPress checks to see if the Apache mod_rewrite module is loaded before fully enabling permalinks. If that check fails then it includes index.php in your permalink structure in order to make sure that WordPress still gets a chance to process URLs. Servers using Nginx are able [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Setting <a href="http://codex.wordpress.org/Settings_Permalinks_SubPanel">Permalinks in WordPress</a> is simple and flexible.  Core WordPress checks to see if the Apache mod_rewrite module is loaded before fully enabling permalinks.  If that check fails then it includes index.php in your permalink structure in order to make sure that WordPress still gets a chance to process URLs.</p>
+<p>Servers using Nginx are able to do URL rewriting, but the check still fails, leaving index.php in the permalink.  Fortunately a few lines of PHP in a plugin (I like to put it in wp-content/mu-plugins/nginx.php) can fix that:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+add_filter( &#8216;got_rewrite&#8217;, &#8216;nginx_has_rewrite&#8217;, 999 );<br />
+function nginx_has_rewrite( $got_rewrite ) {<br />
+    return TRUE;<br />
+}<br />
+[/sourcecode]</p>
+<p>Those few lines of PHP will tell WordPress that full URL rewriting is available on the server, so no more index.php in the permalink structure.</p>
+<p>Before adding this make sure that you&#8217;ve already setup URL rewriting in your Nginx configuration.</p>
+<p><b>Update:</b> In the <a href="http://josephscott.org/archives/2010/06/wordpress-pretty-permalinks-with-nginx/#comment-33849">comments Sivel mentioned another alternative</a>:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+add_filter( &#8216;got_rewrite&#8217;, &#8216;__return_true&#8217;, 999 );<br />
+[/sourcecode]</p>
+<p>The <code>__return_true</code> function was added during WP 3.0 development for exactly these sorts of things, where you want to just return TRUE for a filter.  I like it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/06/02/wordpress-pretty-permalinks-with-nginx/feed/</wfw:commentRss>
+			<slash:comments>23</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

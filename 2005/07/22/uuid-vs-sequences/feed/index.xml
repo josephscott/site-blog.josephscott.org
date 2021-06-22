@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: UUID vs. Sequences	</title>
+	<atom:link href="/2005/07/22/uuid-vs-sequences/feed/" rel="self" type="application/rss+xml" />
+	<link>/2005/07/22/uuid-vs-sequences/</link>
+	<description></description>
+	<lastBuildDate>Fri, 11 Mar 2011 14:49:36 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: David		</title>
+		<link>/2005/07/22/uuid-vs-sequences/#comment-877</link>
+
+		<dc:creator><![CDATA[David]]></dc:creator>
+		<pubDate>Fri, 11 Mar 2011 14:49:36 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=442#comment-877</guid>
+
+					<description><![CDATA[In most dbs, UUID is a 128 bit datatype. If you were to store it as characters, it would take up 37 bytes, but the binary representation is more compact and takes up 16 bytes. The reason UUID&#039;s are so unique is that there is a 1:3.40282367 × 10^(38) chance of getting of the same UUID if you have a perfectly random random number generator, which you don&#039;t but even 1% of those odds means you&#039;ll never see the same UUID twice, or so they say. Since a lot of websites use UUID&#039;s for pages I tried googling 500K UUIDS in my database and none matched. 
+I am using UUID&#039;s for my db application because I need uniqueness amongst several independent machines. There is no way to do this without a central server model, so I&#039;m using UUIDs for primary keys. Obviously there is no way to ask for next record or previous record but I don&#039;t need that functionality.]]></description>
+			<content:encoded><![CDATA[<p>In most dbs, UUID is a 128 bit datatype. If you were to store it as characters, it would take up 37 bytes, but the binary representation is more compact and takes up 16 bytes. The reason UUID&#8217;s are so unique is that there is a 1:3.40282367 × 10^(38) chance of getting of the same UUID if you have a perfectly random random number generator, which you don&#8217;t but even 1% of those odds means you&#8217;ll never see the same UUID twice, or so they say. Since a lot of websites use UUID&#8217;s for pages I tried googling 500K UUIDS in my database and none matched.<br />
+I am using UUID&#8217;s for my db application because I need uniqueness amongst several independent machines. There is no way to do this without a central server model, so I&#8217;m using UUIDs for primary keys. Obviously there is no way to ask for next record or previous record but I don&#8217;t need that functionality.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2005/07/22/uuid-vs-sequences/#comment-876</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 27 May 2008 18:26:33 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=442#comment-876</guid>
+
+					<description><![CDATA[@David -
+
+There are a lot of variables that come into play there.  InnoDB does some replication of the primary key on other keys, so the increased over head could be more pain than it&#039;s worth.
+
+Your best bet is to try and it out and see if it&#039;s worth the trouble to change or not.]]></description>
+			<content:encoded><![CDATA[<p>@David &#8211;</p>
+<p>There are a lot of variables that come into play there.  InnoDB does some replication of the primary key on other keys, so the increased over head could be more pain than it&#8217;s worth.</p>
+<p>Your best bet is to try and it out and see if it&#8217;s worth the trouble to change or not.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: david welborn		</title>
+		<link>/2005/07/22/uuid-vs-sequences/#comment-875</link>
+
+		<dc:creator><![CDATA[david welborn]]></dc:creator>
+		<pubDate>Tue, 27 May 2008 18:01:37 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=442#comment-875</guid>
+
+					<description><![CDATA[I forgot to mention we&#039;re using mysql community server 5.0]]></description>
+			<content:encoded><![CDATA[<p>I forgot to mention we&#8217;re using mysql community server 5.0</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: david welborn		</title>
+		<link>/2005/07/22/uuid-vs-sequences/#comment-874</link>
+
+		<dc:creator><![CDATA[david welborn]]></dc:creator>
+		<pubDate>Tue, 27 May 2008 18:00:55 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=442#comment-874</guid>
+
+					<description><![CDATA[This article doesn&#039;t really say much re. UUID vs sequences as row identifiers.  We&#039;re faced with an issue of InnoDB tables locking because of the auto_increment columns and are seriously considering using UUIDs in their place.  What about table fragmentation (assuming the UUID is the primary key and is clustered)?]]></description>
+			<content:encoded><![CDATA[<p>This article doesn&#8217;t really say much re. UUID vs sequences as row identifiers.  We&#8217;re faced with an issue of InnoDB tables locking because of the auto_increment columns and are seriously considering using UUIDs in their place.  What about table fragmentation (assuming the UUID is the primary key and is clustered)?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Deane		</title>
+		<link>/2005/07/22/uuid-vs-sequences/#comment-873</link>
+
+		<dc:creator><![CDATA[Deane]]></dc:creator>
+		<pubDate>Sat, 23 Jul 2005 09:27:33 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=442#comment-873</guid>
+
+					<description><![CDATA[I argued here once...
+
+http://www.gadgetopia.com/post/3061
+
+...that databases should generate a sequence numbers across tables.  There should be a system table with a unique sequence applied to every new record in any table.  By querying this table, I would get the (1) ID, and (2) the table.  So a single number could identify a single record anywhere in the database.
+
+The idea being that I could execute...
+
+&quot;SELECT [number]&quot;
+
+...and get back a record from somewhere in the database, without knowing what table it was coming from.]]></description>
+			<content:encoded><![CDATA[<p>I argued here once&#8230;</p>
+<p><a href="http://www.gadgetopia.com/post/3061" rel="nofollow ugc">http://www.gadgetopia.com/post/3061</a></p>
+<p>&#8230;that databases should generate a sequence numbers across tables.  There should be a system table with a unique sequence applied to every new record in any table.  By querying this table, I would get the (1) ID, and (2) the table.  So a single number could identify a single record anywhere in the database.</p>
+<p>The idea being that I could execute&#8230;</p>
+<p>&#8220;SELECT [number]&#8221;</p>
+<p>&#8230;and get back a record from somewhere in the database, without knowing what table it was coming from.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

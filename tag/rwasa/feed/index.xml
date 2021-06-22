@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>rwasa &#8211; Joseph Scott</title>
+	<atom:link href="/tag/rwasa/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 16 Oct 2015 12:30:20 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>rwasa</title>
+		<link>/2015/10/16/rwasa/</link>
+					<comments>/2015/10/16/rwasa/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 16 Oct 2015 12:30:20 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[rwasa]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13320</guid>
+
+					<description><![CDATA[If you are keeping a collection of web servers, I&#8217;ve got a new one for you &#8211; rwasa ( emphasis mine ): rwasa is our full-featured, high performance, scalable web server designed to compete with the likes of nginx. It has been built from the ground-up with no externel library dependencies entirely in x86_64 assembly [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you are keeping a collection of web servers, I&#8217;ve got a new one for you &#8211; <a href="https://2ton.com.au/rwasa/">rwasa</a> ( emphasis mine ):</p>
+<blockquote><p>
+rwasa is our full-featured, high performance, scalable web server designed to compete with the likes of nginx. It has been built from the ground-up with no externel library dependencies <strong>entirely in x86_64 assembly</strong> language, and is the result of many years&#8217; experience with high volume web environments. In addition to all of the common things you&#8217;d expect a modern web server to do, we also include assembly language function hooks ready-made to facilitate Rapid Web Application Server (in Assembler) development.
+</p></blockquote>
+<p>Yep, written in x86_64 assembly.  Their <a href="https://2ton.com.au/rwasa/#perftests">performance tests</a> show it competing nicely against Nginx.  I didn&#8217;t see any mention of HTTP/2 support though.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/16/rwasa/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

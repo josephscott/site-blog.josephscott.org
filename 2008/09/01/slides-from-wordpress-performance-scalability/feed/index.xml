@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Slides From &#8216;WordPress Performance &#038; Scalability&#8217;	</title>
+	<atom:link href="/2008/09/01/slides-from-wordpress-performance-scalability/feed/" rel="self" type="application/rss+xml" />
+	<link>/2008/09/01/slides-from-wordpress-performance-scalability/</link>
+	<description></description>
+	<lastBuildDate>Fri, 23 Jan 2009 02:58:16 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Behind The Blog &#187; Blog Archive &#187; Suggestions for &#8220;clustering&#8221; WordPress MU servers? Or mirroring servers?		</title>
+		<link>/2008/09/01/slides-from-wordpress-performance-scalability/#comment-2353</link>
+
+		<dc:creator><![CDATA[Behind The Blog &#187; Blog Archive &#187; Suggestions for &#8220;clustering&#8221; WordPress MU servers? Or mirroring servers?]]></dc:creator>
+		<pubDate>Fri, 23 Jan 2009 02:58:16 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1170#comment-2353</guid>
+
+					<description><![CDATA[[...] here, here, here, here and here. There is a WordPress Codex piece on scaling. There&#8217;s even a slide deck from a presentation by a Joseph Scott (looks like a talk I would have enjoyed seeing). Overall it looks rather straightforward - set up [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] here, here, here, here and here. There is a WordPress Codex piece on scaling. There&#8217;s even a slide deck from a presentation by a Joseph Scott (looks like a talk I would have enjoyed seeing). Overall it looks rather straightforward &#8211; set up [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Wimzit		</title>
+		<link>/2008/09/01/slides-from-wordpress-performance-scalability/#comment-2352</link>
+
+		<dc:creator><![CDATA[Wimzit]]></dc:creator>
+		<pubDate>Thu, 22 Jan 2009 21:00:32 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1170#comment-2352</guid>
+
+					<description><![CDATA[Nice slide show, but wait there&#039;s more.  Loved the use of Ginsu.]]></description>
+			<content:encoded><![CDATA[<p>Nice slide show, but wait there&#8217;s more.  Loved the use of Ginsu.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Robert		</title>
+		<link>/2008/09/01/slides-from-wordpress-performance-scalability/#comment-2351</link>
+
+		<dc:creator><![CDATA[Robert]]></dc:creator>
+		<pubDate>Tue, 13 Jan 2009 14:39:00 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1170#comment-2351</guid>
+
+					<description><![CDATA[Thanks for this slideshow!  I&#039;ve been on a freehosted wordpress blog for a while, and I think it is finally time to jump to self hosting.]]></description>
+			<content:encoded><![CDATA[<p>Thanks for this slideshow!  I&#8217;ve been on a freehosted wordpress blog for a while, and I think it is finally time to jump to self hosting.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jed Alaurin		</title>
+		<link>/2008/09/01/slides-from-wordpress-performance-scalability/#comment-2350</link>
+
+		<dc:creator><![CDATA[Jed Alaurin]]></dc:creator>
+		<pubDate>Wed, 10 Dec 2008 03:11:55 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1170#comment-2350</guid>
+
+					<description><![CDATA[In addition, what are the most most recommended setup on a multiple blog as we look on slide 38 and what will be some pros and cons to be consider?]]></description>
+			<content:encoded><![CDATA[<p>In addition, what are the most most recommended setup on a multiple blog as we look on slide 38 and what will be some pros and cons to be consider?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jed Alaurin		</title>
+		<link>/2008/09/01/slides-from-wordpress-performance-scalability/#comment-2349</link>
+
+		<dc:creator><![CDATA[Jed Alaurin]]></dc:creator>
+		<pubDate>Wed, 10 Dec 2008 01:43:55 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1170#comment-2349</guid>
+
+					<description><![CDATA[Thanks, Joseph for the fast reply. We are on a planning stage on a project and will be using WPMU do you have an idea on setting up Apache web server in clustering?]]></description>
+			<content:encoded><![CDATA[<p>Thanks, Joseph for the fast reply. We are on a planning stage on a project and will be using WPMU do you have an idea on setting up Apache web server in clustering?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/09/01/slides-from-wordpress-performance-scalability/#comment-2348</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 09 Dec 2008 22:11:27 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1170#comment-2348</guid>
+
+					<description><![CDATA[@Jed -
+
+That was referring to MySQL replication, which sends changes that happen on the master to the slave.]]></description>
+			<content:encoded><![CDATA[<p>@Jed &#8211;</p>
+<p>That was referring to MySQL replication, which sends changes that happen on the master to the slave.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jed Alaurin		</title>
+		<link>/2008/09/01/slides-from-wordpress-performance-scalability/#comment-2347</link>
+
+		<dc:creator><![CDATA[Jed Alaurin]]></dc:creator>
+		<pubDate>Tue, 09 Dec 2008 04:12:51 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1170#comment-2347</guid>
+
+					<description><![CDATA[btw, I&#039;m refering to the PHASE 5 load balancing on slide 48.]]></description>
+			<content:encoded><![CDATA[<p>btw, I&#8217;m refering to the PHASE 5 load balancing on slide 48.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jed Alaurin		</title>
+		<link>/2008/09/01/slides-from-wordpress-performance-scalability/#comment-2346</link>
+
+		<dc:creator><![CDATA[Jed Alaurin]]></dc:creator>
+		<pubDate>Tue, 09 Dec 2008 04:10:08 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1170#comment-2346</guid>
+
+					<description><![CDATA[hi! Joseph,
+
+This a great slide! I would like to ask is the Master database master and the slave database should be synchronized? or they could run independently?
+
+Thanks and more power,
+
+Jed]]></description>
+			<content:encoded><![CDATA[<p>hi! Joseph,</p>
+<p>This a great slide! I would like to ask is the Master database master and the slave database should be synchronized? or they could run independently?</p>
+<p>Thanks and more power,</p>
+<p>Jed</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Allan		</title>
+		<link>/2008/09/01/slides-from-wordpress-performance-scalability/#comment-2345</link>
+
+		<dc:creator><![CDATA[Allan]]></dc:creator>
+		<pubDate>Sun, 28 Sep 2008 19:12:28 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1170#comment-2345</guid>
+
+					<description><![CDATA[Wish I could have been there for this presentation - I love the math stuff.
+
+Thanks!]]></description>
+			<content:encoded><![CDATA[<p>Wish I could have been there for this presentation &#8211; I love the math stuff.</p>
+<p>Thanks!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/09/01/slides-from-wordpress-performance-scalability/#comment-2344</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Sat, 06 Sep 2008 04:09:10 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1170#comment-2344</guid>
+
+					<description><![CDATA[@Richard -
+
+Good, glad to hear it was helpful]]></description>
+			<content:encoded><![CDATA[<p>@Richard &#8211;</p>
+<p>Good, glad to hear it was helpful</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

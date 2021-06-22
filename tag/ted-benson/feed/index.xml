@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ted-benson &#8211; Joseph Scott</title>
+	<atom:link href="/tag/ted-benson/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 06 Nov 2015 14:32:03 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Amazon Dash Button Hack</title>
+		<link>/2015/11/06/amazon-dash-button-hack/</link>
+					<comments>/2015/11/06/amazon-dash-button-hack/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 06 Nov 2015 14:32:03 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[amazon]]></category>
+		<category><![CDATA[ted-benson]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13638</guid>
+
+					<description><![CDATA[Ted Benson has a clever approach for hacking the Amazon Dash button: So, conceptually, problem solved. We just have to: 1. Prevent the button from actually ordering anything 2. Listen for Dash Button ARP probes, and 3. Translate those probes into spreadsheet updates The process outlined in the article is much easier than I expected. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Ted Benson has a clever approach for <a href="https://medium.com/@edwardbenson/how-i-hacked-amazon-s-5-wifi-button-to-track-baby-data-794214b0bdd8">hacking the Amazon Dash button</a>:</p>
+<blockquote><p>
+So, conceptually, problem solved. We just have to:</p>
+<p>1. Prevent the button from actually ordering anything<br />
+2. Listen for Dash Button ARP probes, and<br />
+3. Translate those probes into spreadsheet updates
+</p></blockquote>
+<p><a href="/wp-content/uploads/2015/11/cheese-dash-1.jpg"><img loading="lazy" src="/wp-content/uploads/2015/11/cheese-dash-1-150x150.jpg" alt="cheese-dash" width="150" height="150" class="alignleft size-thumbnail wp-image-14266" srcset="/wp-content/uploads/2015/11/cheese-dash-1-150x150.jpg 150w, /wp-content/uploads/2015/11/cheese-dash-1.jpg 200w" sizes="(max-width: 150px) 100vw, 150px" /></a></p>
+<p>The process outlined in the article is much easier than I expected.  I wonder if Amazon would ever be willing to make it even easier though, by optionally hooking it up to <a href="https://ifttt.com/">IFTTT</a> ( If This Then That ).</p>
+<p>At $5 the <a href="http://www.amazon.com/b/?node=10667898011&#038;lo=digital-text">dash buttons</a> are a cheap experiment.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/06/amazon-dash-button-hack/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

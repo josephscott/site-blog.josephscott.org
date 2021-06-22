@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>domains &#8211; Joseph Scott</title>
+	<atom:link href="/tag/domains/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 09 Dec 2015 17:25:54 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Domain History</title>
+		<link>/2015/12/09/domain-history/</link>
+					<comments>/2015/12/09/domain-history/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 09 Dec 2015 17:25:54 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[domains]]></category>
+		<category><![CDATA[whois]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14144</guid>
+
+					<description><![CDATA[Here is an interesting service: Domain History Checker: We track nameserver changes since 2002 for all COM, NET, ORG, INFO, BIZ and US domains. For instance, the history for twitter.com: Thanks to the Wayback Machine you can still view the spam hosted on twitter.com prior to 2006.]]></description>
+										<content:encoded><![CDATA[<p>Here is an interesting service: <a href="https://whoisrequest.com/history/">Domain History Checker</a>:</p>
+<blockquote><p>
+We track nameserver changes since 2002 for all COM, NET, ORG, INFO, BIZ and US domains.
+</p></blockquote>
+<p>For instance, the history for twitter.com:</p>
+<p><a href="/wp-content/uploads/2015/12/twitter-domain-history-1.png"><img loading="lazy" src="/wp-content/uploads/2015/12/twitter-domain-history-1-1024x808.png" alt="twitter-domain-history" width="660" height="521" class="aligncenter size-large wp-image-14553" srcset="/wp-content/uploads/2015/12/twitter-domain-history-1-1024x808.png 1024w, /wp-content/uploads/2015/12/twitter-domain-history-1-300x237.png 300w, /wp-content/uploads/2015/12/twitter-domain-history-1-768x606.png 768w, /wp-content/uploads/2015/12/twitter-domain-history-1.png 1200w" sizes="(max-width: 660px) 100vw, 660px" /></a></p>
+<p>Thanks to the <a href="https://archive.org/web/">Wayback Machine</a> you can still view the spam hosted on twitter.com prior to 2006.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/09/domain-history/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Dot Kitchen Sink</title>
+		<link>/2014/03/06/dot-kitchen-sink/</link>
+					<comments>/2014/03/06/dot-kitchen-sink/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 06 Mar 2014 16:30:39 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[dns]]></category>
+		<category><![CDATA[domains]]></category>
+		<category><![CDATA[icann]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9965</guid>
+
+					<description><![CDATA[ICANN ( the Internet Corporation for Assigned Names and Numbers ), the people responsible the IPv4 &#038; IPv6 address space and the top-level domain ( TLDs ) space, are rolling out a large list of new top-level domains. Tired of being limited to the traditional .com / .net / .org and country domains? Soon you&#8217;ll [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>ICANN ( the Internet Corporation for Assigned Names and Numbers ), the people responsible the IPv4 &#038; IPv6 address space and the top-level domain ( TLDs ) space, are rolling out a large <a href="http://newgtlds.icann.org/en/program-status/delegated-strings" title=".PLUMBING really?">list of new top-level domains</a>.  Tired of being limited to the traditional .com / .net / .org and country domains?  Soon you&#8217;ll have a bizarre set of new possibilities.</p>
+<p>Here is a sample of what is coming:</p>
+<pre>
+.DOMAINS
+.RECIPES
+.NINJA
+.EMAIL
+.ZONE
+.MONASH
+.XYZ
+.FISH
+</pre>
+<p>Some of these have obvious categories, like .recipes for recipe web sites.  Others I think are just random names people pulled out of a hat, like .ninja.</p>
+<p>The title of this post, Dot Kitchen Sink, was meant to be a joke, but there is some truth to it.  On the list  of new TLDs is .kitchen, so you could have a joseph@sink.kitchen email address or joseph.kitchen/sink/ as a web site.  Telling someone your email address in a voice conversation is only going to get harder.</p>
+<p>Time to go all the way with dot.dot just to make things even more confusing <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/03/06/dot-kitchen-sink/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

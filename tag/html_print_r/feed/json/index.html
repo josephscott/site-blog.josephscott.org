@@ -1,0 +1,37 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/html_print_r/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/html_print_r/",
+    "feed_url": "https://blog.josephscott.org/tag/html_print_r/feed/json/",
+    "language": "en-US",
+    "title": "html_print_r &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://josephscott.org/?p=1837",
+            "url": "https://blog.josephscott.org/2010/02/01/php-helpers-html_print_r/",
+            "title": "PHP Helpers: html_print_r",
+            "content_html": "<p>Before I get to the next PHP Helpers function I wanted to mention that I&#8217;ve made the code available as a Google Code Project at <a href=\"http://code.google.com/p/php-helpers/\">http://code.google.com/p/php-helpers/</a>.  I added specific licensing terms ( MIT style ) &#8211; <a href=\"http://code.google.com/p/php-helpers/source/browse/trunk/license.txt\">http://code.google.com/p/php-helpers/source/browse/trunk/license.txt</a>.  There&#8217;s also a <a href=\"http://code.google.com/p/php-helpers/source/browse/trunk/changelog.txt\">changelog</a> available to see when functions were added.</p>\n<p>With that out of the way here&#8217;s the next PHP Helpers function, <code>html_print_r</code>:</p>\n<p>[sourcecode lang=&#8221;php&#8221;]<br />\nif ( !function_exists( &#8216;html_print_r&#8217; ) ) {<br />\n    function html_print_r( $data ) {<br />\n        $out = &quot;n&lt;pre class=&#8217;html-print-r&#8217;&quot;;<br />\n        $out .= &quot; style=&#8217;border: 1px solid #ccc; padding: 7px;&#8217;&gt;n&quot;;<br />\n        $out .= esc_html( print_r( $data, TRUE ) );<br />\n        $out .= &quot;n&lt;/pre&gt;n&quot;;</p>\n<p>        return $out;<br />\n    }<br />\n}<br />\n[/sourcecode]</p>\n<p>I added this because I use PHP&#8217;s <a href=\"http://us.php.net/print_r\">print_r</a> in an HTML context quite a bit.  To make the output look reasonable I was always adding PRE tags, which got boring fast.</p>\n",
+            "content_text": "Before I get to the next PHP Helpers function I wanted to mention that I&#8217;ve made the code available as a Google Code Project at http://code.google.com/p/php-helpers/.  I added specific licensing terms ( MIT style ) &#8211; http://code.google.com/p/php-helpers/source/browse/trunk/license.txt.  There&#8217;s also a changelog available to see when functions were added.\nWith that out of the way here&#8217;s the next PHP Helpers function, html_print_r:\n[sourcecode lang=&#8221;php&#8221;]\nif ( !function_exists( &#8216;html_print_r&#8217; ) ) {\n    function html_print_r( $data ) {\n        $out = &quot;n&lt;pre class=&#8217;html-print-r&#8217;&quot;;\n        $out .= &quot; style=&#8217;border: 1px solid #ccc; padding: 7px;&#8217;&gt;n&quot;;\n        $out .= esc_html( print_r( $data, TRUE ) );\n        $out .= &quot;n&lt;/pre&gt;n&quot;;\n        return $out;\n    }\n}\n[/sourcecode]\nI added this because I use PHP&#8217;s print_r in an HTML context quite a bit.  To make the output look reasonable I was always adding PRE tags, which got boring fast.",
+            "date_published": "2010-02-01T09:33:13-07:00",
+            "date_modified": "2010-02-01T09:33:13-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "html_print_r",
+                "PHP",
+                "php-helpers",
+                "Posts"
+            ]
+        }
+    ]
+}

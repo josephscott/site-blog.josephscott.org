@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Database Powered CSS in WordPress Themes	</title>
+	<atom:link href="/2010/03/25/database-powered-css-in-wordpress-themes/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/03/25/database-powered-css-in-wordpress-themes/</link>
+	<description></description>
+	<lastBuildDate>Thu, 03 Nov 2016 14:22:33 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Umar Tanveer		</title>
+		<link>/2010/03/25/database-powered-css-in-wordpress-themes/#comment-21485</link>
+
+		<dc:creator><![CDATA[Umar Tanveer]]></dc:creator>
+		<pubDate>Thu, 03 Nov 2016 14:22:33 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1869#comment-21485</guid>
+
+					<description><![CDATA[Hi Joseph Sir, I am using wp_head method in my first theme I am creating. this article I searched is really helpful for me and learned alot.
+
+thank you!
+Umar]]></description>
+			<content:encoded><![CDATA[<p>Hi Joseph Sir, I am using wp_head method in my first theme I am creating. this article I searched is really helpful for me and learned alot.</p>
+<p>thank you!<br />
+Umar</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/03/25/database-powered-css-in-wordpress-themes/#comment-3244</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 13 Feb 2013 04:05:18 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1869#comment-3244</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/03/25/database-powered-css-in-wordpress-themes/#comment-3243&quot;&gt;Sebastian Scaramuzza&lt;/a&gt;.
+
+If you are using an object cache you could potentially leverage that and get caching for free.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/03/25/database-powered-css-in-wordpress-themes/#comment-3243">Sebastian Scaramuzza</a>.</p>
+<p>If you are using an object cache you could potentially leverage that and get caching for free.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Sebastian Scaramuzza		</title>
+		<link>/2010/03/25/database-powered-css-in-wordpress-themes/#comment-3243</link>
+
+		<dc:creator><![CDATA[Sebastian Scaramuzza]]></dc:creator>
+		<pubDate>Sat, 09 Feb 2013 00:25:47 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1869#comment-3243</guid>
+
+					<description><![CDATA[What about cache? I&#039;m a performance maniac and It would be great do something like this: 
+
+1. Generate the CSS code dynamically
+2. Cache it
+3. Then a check: Were the options updated? Yes: update cache. No: Forget it and use the cached on.
+
+In my mind this would lower the cpu load because it&#039;s just an &quot;if&quot; check. Do you think this approach is good? Could it work?]]></description>
+			<content:encoded><![CDATA[<p>What about cache? I&#8217;m a performance maniac and It would be great do something like this: </p>
+<p>1. Generate the CSS code dynamically<br />
+2. Cache it<br />
+3. Then a check: Were the options updated? Yes: update cache. No: Forget it and use the cached on.</p>
+<p>In my mind this would lower the cpu load because it&#8217;s just an &#8220;if&#8221; check. Do you think this approach is good? Could it work?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Theresa Stanton		</title>
+		<link>/2010/03/25/database-powered-css-in-wordpress-themes/#comment-3242</link>
+
+		<dc:creator><![CDATA[Theresa Stanton]]></dc:creator>
+		<pubDate>Wed, 05 Sep 2012 00:23:21 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1869#comment-3242</guid>
+
+					<description><![CDATA[Oops, my comment didn&#039;t come out right at the very end. I meant to show that I added a php end bracket at the end of the custom-css.php file.  Without it I got an error.]]></description>
+			<content:encoded><![CDATA[<p>Oops, my comment didn&#8217;t come out right at the very end. I meant to show that I added a php end bracket at the end of the custom-css.php file.  Without it I got an error.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Theresa Stanton		</title>
+		<link>/2010/03/25/database-powered-css-in-wordpress-themes/#comment-3241</link>
+
+		<dc:creator><![CDATA[Theresa Stanton]]></dc:creator>
+		<pubDate>Wed, 05 Sep 2012 00:21:33 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1869#comment-3241</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/03/25/database-powered-css-in-wordpress-themes/#comment-3240&quot;&gt;Chris&lt;/a&gt;.
+
+I finally got it to work. Looks like you may have forgotten to add this in your functions.php file:
+add_action( &#039;parse_request&#039;, &#039;my_custom_wp_request&#039; );
+
+Also, at the end of my custom-css.php file, I had to add  to it.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/03/25/database-powered-css-in-wordpress-themes/#comment-3240">Chris</a>.</p>
+<p>I finally got it to work. Looks like you may have forgotten to add this in your functions.php file:<br />
+add_action( &#8216;parse_request&#8217;, &#8216;my_custom_wp_request&#8217; );</p>
+<p>Also, at the end of my custom-css.php file, I had to add  to it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Chris		</title>
+		<link>/2010/03/25/database-powered-css-in-wordpress-themes/#comment-3240</link>
+
+		<dc:creator><![CDATA[Chris]]></dc:creator>
+		<pubDate>Mon, 30 Jan 2012 11:21:43 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1869#comment-3240</guid>
+
+					<description><![CDATA[Has anyone managed to get the third method working? drawing in the styles from a separate .php file?]]></description>
+			<content:encoded><![CDATA[<p>Has anyone managed to get the third method working? drawing in the styles from a separate .php file?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Chris		</title>
+		<link>/2010/03/25/database-powered-css-in-wordpress-themes/#comment-3239</link>
+
+		<dc:creator><![CDATA[Chris]]></dc:creator>
+		<pubDate>Wed, 25 Jan 2012 12:37:07 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1869#comment-3239</guid>
+
+					<description><![CDATA[Apologies for the repeat email, but just a quick update. I&#039;ve got it working using your first method. styles adding into the top of the header, but still not luck with the third.]]></description>
+			<content:encoded><![CDATA[<p>Apologies for the repeat email, but just a quick update. I&#8217;ve got it working using your first method. styles adding into the top of the header, but still not luck with the third.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Chris		</title>
+		<link>/2010/03/25/database-powered-css-in-wordpress-themes/#comment-3238</link>
+
+		<dc:creator><![CDATA[Chris]]></dc:creator>
+		<pubDate>Wed, 25 Jan 2012 12:10:25 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1869#comment-3238</guid>
+
+					<description><![CDATA[For some reason thats not coming out. maybe you can edit the comments / delete my last.
+
+Basically I&#039;m echoing the following: of_get_option[&#039;example_background&#039;] in place of your theme_opt[&#039;my_background_color&#039;];]]></description>
+			<content:encoded><![CDATA[<p>For some reason thats not coming out. maybe you can edit the comments / delete my last.</p>
+<p>Basically I&#8217;m echoing the following: of_get_option[&#8216;example_background&#8217;] in place of your theme_opt[&#8216;my_background_color&#8217;];</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Chris		</title>
+		<link>/2010/03/25/database-powered-css-in-wordpress-themes/#comment-3237</link>
+
+		<dc:creator><![CDATA[Chris]]></dc:creator>
+		<pubDate>Wed, 25 Jan 2012 12:08:41 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1869#comment-3237</guid>
+
+					<description><![CDATA[as it didn&#039;t come out for some reason in my last comment.
+this is what I added to custom-css.php
+
+&#060; !-- 
+body {
+    background-color: 
+}
+ -- &#062;]]></description>
+			<content:encoded><![CDATA[<p>as it didn&#8217;t come out for some reason in my last comment.<br />
+this is what I added to custom-css.php</p>
+<p>&lt; !&#8211;<br />
+body {<br />
+    background-color:<br />
+}<br />
+ &#8212; &gt;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Chris		</title>
+		<link>/2010/03/25/database-powered-css-in-wordpress-themes/#comment-3236</link>
+
+		<dc:creator><![CDATA[Chris]]></dc:creator>
+		<pubDate>Wed, 25 Jan 2012 12:05:42 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1869#comment-3236</guid>
+
+					<description><![CDATA[Hi Joseph, great post.
+However, having a little trouble getting it to work.
+I&#039;m using the options framework plugin by Devin at http://wptheming.com/options-framework-plugin/#comments.
+I&#039;ve tried all three techniques you mention but not having any success with any of them, obviously doing something wrong...
+
+I&#039;d really like to get the third method to work as it provides the flexibility I&#039;m looking for.
+
+So, adding  to my header file just above the wp_head.
+
+&#060;link rel=&#039;stylesheet&#039; type=&#039;text/css&#039; href=&#034;/?my-custom-content=css&quot; /&#062;
+
+Then adding this to functions.php.: 
+
+function my_custom_wp_request( $wp ) {
+    if (
+        !empty( $_GET[&#039;my-custom-content&#039;] )
+        &#038;&#038; $_GET[&#039;my-custom-content&#039;] == &#039;css&#039;
+    ) {
+        # get theme options
+        header( &#039;Content-Type: text/css&#039; );
+        require dirname( __FILE__ ) . &#039;/custom-css.php&#039;;
+        exit;
+    }
+}
+
+Finally adding this to: custom-css.php
+
+
+body {
+    background-color: 
+}
+
+
+of_get_option[&#039;example_background&#039;] it taken from the option theme which is from http://wptheming.com/options-framework-plugin/#comments. where of_get_option($id,$default); is returned from the options.php file.
+I have that all set up and working, just trying to get it all into a styles sheet for greater flexibility.
+
+Any suggestion would be much appreciated. 
+Cheers
+Chris]]></description>
+			<content:encoded><![CDATA[<p>Hi Joseph, great post.<br />
+However, having a little trouble getting it to work.<br />
+I&#8217;m using the options framework plugin by Devin at <a href="http://wptheming.com/options-framework-plugin/#comments" rel="nofollow ugc">http://wptheming.com/options-framework-plugin/#comments</a>.<br />
+I&#8217;ve tried all three techniques you mention but not having any success with any of them, obviously doing something wrong&#8230;</p>
+<p>I&#8217;d really like to get the third method to work as it provides the flexibility I&#8217;m looking for.</p>
+<p>So, adding  to my header file just above the wp_head.</p>
+<p>&lt;link rel=&#039;stylesheet&#039; type=&#039;text/css&#039; href=&quot;/?my-custom-content=css&#8221; /&gt;</p>
+<p>Then adding this to functions.php.: </p>
+<p>function my_custom_wp_request( $wp ) {<br />
+    if (<br />
+        !empty( $_GET[&#8216;my-custom-content&#8217;] )<br />
+        &amp;&amp; $_GET[&#8216;my-custom-content&#8217;] == &#8216;css&#8217;<br />
+    ) {<br />
+        # get theme options<br />
+        header( &#8216;Content-Type: text/css&#8217; );<br />
+        require dirname( __FILE__ ) . &#8216;/custom-css.php&#8217;;<br />
+        exit;<br />
+    }<br />
+}</p>
+<p>Finally adding this to: custom-css.php</p>
+<p>body {<br />
+    background-color:<br />
+}</p>
+<p>of_get_option[&#8216;example_background&#8217;] it taken from the option theme which is from <a href="http://wptheming.com/options-framework-plugin/#comments" rel="nofollow ugc">http://wptheming.com/options-framework-plugin/#comments</a>. where of_get_option($id,$default); is returned from the options.php file.<br />
+I have that all set up and working, just trying to get it all into a styles sheet for greater flexibility.</p>
+<p>Any suggestion would be much appreciated.<br />
+Cheers<br />
+Chris</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

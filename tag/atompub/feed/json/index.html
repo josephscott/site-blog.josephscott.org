@@ -1,0 +1,283 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/atompub/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/atompub/",
+    "feed_url": "https://blog.josephscott.org/tag/atompub/feed/json/",
+    "language": "en-US",
+    "title": "atompub &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://josephscott.org/?p=1695",
+            "url": "https://blog.josephscott.org/2010/01/06/joe-gregorio-on-atompub-and-xml/",
+            "title": "Joe Gregorio on AtomPub and XML",
+            "content_html": "<p>In a <a href=\"http://bitworking.org/news/2010/01/webfinger#IDComment50460759\">follow up comment on his WebFinger post</a> Joe Gregorio gives some perspective on AtomPub and XML:</p>\n<blockquote><p>\nLook, AtomPub has this problem, and if I had to do it all over again I would build AtomPub in JSON. An implementer wants to go from bits on the wire to a native data structure they can interact with in their programming language. I used to think that was laziness, or lack of knowledge, but it&#8217;s purely pragmatic. By using XML you have introduced a layer of indirection, you&#8217;ve taken a data structure and converted it into a tree based document which then has to be converted back into a native data structure, but now that has to be done on a per language basis.\n</p></blockquote>\n<p>I&#8217;m in the lazy/pragmatic camp <img src=\"https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png\" alt=\"\ud83d\ude42\" class=\"wp-smiley\" style=\"height: 1em; max-height: 1em;\" /></p>\n<p>I really don\u2019t want documents to describe data, I just want a nice way to serialize the data and right now my favored way of doing that is <a href=\"http://www.json.org/\">JSON</a>.</p>\n",
+            "content_text": "In a follow up comment on his WebFinger post Joe Gregorio gives some perspective on AtomPub and XML:\n\nLook, AtomPub has this problem, and if I had to do it all over again I would build AtomPub in JSON. An implementer wants to go from bits on the wire to a native data structure they can interact with in their programming language. I used to think that was laziness, or lack of knowledge, but it&#8217;s purely pragmatic. By using XML you have introduced a layer of indirection, you&#8217;ve taken a data structure and converted it into a tree based document which then has to be converted back into a native data structure, but now that has to be done on a per language basis.\n\nI&#8217;m in the lazy/pragmatic camp \nI really don\u2019t want documents to describe data, I just want a nice way to serialize the data and right now my favored way of doing that is JSON.",
+            "date_published": "2010-01-06T14:24:19-07:00",
+            "date_modified": "2010-01-06T14:24:19-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "atompub",
+                "joe-gregorio",
+                "json",
+                "xml",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=1637",
+            "url": "https://blog.josephscott.org/2009/12/21/wordpress-2-9-xml-rpc-and-atompub-changes/",
+            "title": "WordPress 2.9 \u2013 XML-RPC and AtomPub Changes",
+            "content_html": "<p>Just in time for Christmas <a href=\"http://wordpress.org/development/2009/12/wordpress-2-9/\">WordPress 2.9 is out</a>.  Here&#8217;s what has changed in the XML-RPC and AtomPub APIs since 2.8.6:</p>\n<h3>XML-RPC</h3>\n<ul>\n<li>Expose user registration option via wp.getOptions/wp.setOptions ( ticket <a href=\"http://core.trac.wordpress.org/ticket/10454\">#10454</a> )</li>\n<li>Fix bug in wp.getComment that reported spam comments with a status of hold ( ticket <a href=\"http://core.trac.wordpress.org/ticket/10510\">#10510</a> )</li>\n<li>Adjust how the XML-RPC server is activated so that the functions can be reused in other areas ( ticket <a href=\"http://core.trac.wordpress.org/ticket/10513\">#10513</a> )</li>\n<li>Fix bug in setting optional number of pages arguments for wp.getPages ( ticket <a href=\"http://core.trac.wordpress.org/ticket/10659\">#10659</a> )</li>\n<li>Reduced memory usage when processing requests ( ticket <a href=\"http://core.trac.wordpress.org/ticket/10698\">#10698</a> )</li>\n</ul>\n<h3>AtomPub</h3>\n<ul>\n<li>Fix a conflict with plugins that redefine wp_set_current_user() ( ticket <a href=\"http://core.trac.wordpress.org/ticket/10938\">#10938</a> )</li>\n</ul>\n<p>If you are using the WordPress XML-RPC/AtomPub APIs in your software or service, or are just interested in this part of WordPress, please join the <a href=\"http://lists.automattic.com/mailman/listinfo/wp-xmlrpc\">WordPress XML-RPC email list</a>.  Code changes and patches can be submitted via tickets at <a href=\"http://core.trac.wordpress.org/\">http://core.trac.wordpress.org/</a>.</p>\n",
+            "content_text": "Just in time for Christmas WordPress 2.9 is out.  Here&#8217;s what has changed in the XML-RPC and AtomPub APIs since 2.8.6:\nXML-RPC\n\nExpose user registration option via wp.getOptions/wp.setOptions ( ticket #10454 )\nFix bug in wp.getComment that reported spam comments with a status of hold ( ticket #10510 )\nAdjust how the XML-RPC server is activated so that the functions can be reused in other areas ( ticket #10513 )\nFix bug in setting optional number of pages arguments for wp.getPages ( ticket #10659 )\nReduced memory usage when processing requests ( ticket #10698 )\n\nAtomPub\n\nFix a conflict with plugins that redefine wp_set_current_user() ( ticket #10938 )\n\nIf you are using the WordPress XML-RPC/AtomPub APIs in your software or service, or are just interested in this part of WordPress, please join the WordPress XML-RPC email list.  Code changes and patches can be submitted via tickets at http://core.trac.wordpress.org/.",
+            "date_published": "2009-12-21T09:24:19-07:00",
+            "date_modified": "2009-12-21T09:24:19-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "atompub",
+                "WordPress",
+                "xml-rpc",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=1257",
+            "url": "https://blog.josephscott.org/2009/06/10/wordpress-2-8-xml-rpc-and-atompub-changes/",
+            "title": "WordPress 2.8 \u2013 XML-RPC and AtomPub Changes",
+            "content_html": "<p>Here&#8217;s what has changed in WordPress XML-RPC and AtomPub APIs from 2.7.1 to the new <a href=\"http://wordpress.org/development/2009/06/wordpress-28/\">WordPress 2.8 release</a>:</p>\n<h3>XML-RPC</h3>\n<ul>\n<li>Fixed wp.getUsersBlogs and blogger.getUsersBlogs to return the correct value for the &#8216;xmlrpc&#8217; field when WordPress is installed in separate directory ( ticket <a href=\"http://core.trac.wordpress.org/ticket/9516\">#9516</a> )</li>\n<li>Authentication is filterable now, allowing for alternative authentication methods like OAuth ( ticket <a href=\"http://core.trac.wordpress.org/ticket/8941\">#8941</a> and <a href=\"http://core.trac.wordpress.org/ticket/8938\">#8938</a> )</li>\n<li>Provide sticky status of posts via &#8216;sticky&#8217; field in metaWeblog.newPost / metaWeblog.editPost / metaWeblog.getPost ( ticket <a href=\"http://core.trac.wordpress.org/ticket/8777\">#8777</a> )</li>\n<li>Don&#8217;t duplicate post enclosures ( ticket <a href=\"http://core.trac.wordpress.org/ticket/7773\">#7773</a> )</li>\n</ul>\n<h3>AtomPub</h3>\n<ul>\n<li>Always use filterable authentication, allowing for alternative authentication methods like OAuth ( ticket <a href=\"http://core.trac.wordpress.org/ticket/9320\">#9320</a> and <a href=\"http://core.trac.wordpress.org/ticket/8938\">#8938</a> )</li>\n<li>Update image captions (summary) correctly ( ticket <a href=\"http://core.trac.wordpress.org/ticket/9148\">#9148</a> )</li>\n<li>Hooks for extending AtomPub ( ticket <a href=\"http://core.trac.wordpress.org/ticket/8827\">#8827</a> )</li>\n<li>Fix file upload updates and image processing when uploading an image ( ticket <a href=\"http://core.trac.wordpress.org/ticket/9233\">#9233</a> )</li>\n<li>Provide the correct edit URL for images ( ticket <a href=\"http://core.trac.wordpress.org/ticket/9147\">#9147</a> )</li>\n</ul>\n<p>A big thank you to everyone who submitted tickets and patches.  With 2.8 out the door now is the time to bring up new features for WordPress 2.9.  If you&#8217;ve got a patch for a new feature, even better!  Go submit a ticket at <a href=\"http://core.trac.wordpress.org/\">http://core.trac.wordpress.org/</a>.</p>\n<p>If you are using the WordPress XML-RPC/AtomPub APIs in your software or service, or are just interested in this part of WordPress, please join the <a href=\"http://lists.automattic.com/mailman/listinfo/wp-xmlrpc\">WordPress XML-RPC email list</a>.</p>\n",
+            "content_text": "Here&#8217;s what has changed in WordPress XML-RPC and AtomPub APIs from 2.7.1 to the new WordPress 2.8 release:\nXML-RPC\n\nFixed wp.getUsersBlogs and blogger.getUsersBlogs to return the correct value for the &#8216;xmlrpc&#8217; field when WordPress is installed in separate directory ( ticket #9516 )\nAuthentication is filterable now, allowing for alternative authentication methods like OAuth ( ticket #8941 and #8938 )\nProvide sticky status of posts via &#8216;sticky&#8217; field in metaWeblog.newPost / metaWeblog.editPost / metaWeblog.getPost ( ticket #8777 )\nDon&#8217;t duplicate post enclosures ( ticket #7773 )\n\nAtomPub\n\nAlways use filterable authentication, allowing for alternative authentication methods like OAuth ( ticket #9320 and #8938 )\nUpdate image captions (summary) correctly ( ticket #9148 )\nHooks for extending AtomPub ( ticket #8827 )\nFix file upload updates and image processing when uploading an image ( ticket #9233 )\nProvide the correct edit URL for images ( ticket #9147 )\n\nA big thank you to everyone who submitted tickets and patches.  With 2.8 out the door now is the time to bring up new features for WordPress 2.9.  If you&#8217;ve got a patch for a new feature, even better!  Go submit a ticket at http://core.trac.wordpress.org/.\nIf you are using the WordPress XML-RPC/AtomPub APIs in your software or service, or are just interested in this part of WordPress, please join the WordPress XML-RPC email list.",
+            "date_published": "2009-06-10T20:37:51-06:00",
+            "date_modified": "2009-06-10T20:37:51-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "atompub",
+                "WordPress",
+                "xml-rpc",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=1124",
+            "url": "https://blog.josephscott.org/2009/04/08/wordpress-theme-authors-dont-forget-the-wp_head-function/",
+            "title": "WordPress Theme Authors, Don\u2019t Forget The wp_head() Function",
+            "content_html": "<p>When creating a WordPress theme don&#8217;t forget to include a wp_head(); call in the HTML HEAD section of your theme.  It&#8217;s very simple to do, just include:</p>\n<p>[sourcecode lang=&#8221;php&#8221;]<br />\nwp_head();<br />\n[/sourcecode]</p>\n<p>Before the closing HEAD tag (&lt;/head&gt;) in your HTML.</p>\n<p>Why make such a fuss over a single function call?  Because it does a fair bit of work behind the scenes and without it some WordPress features will not work properly.  Take a look at the wp_head section of the wp-includes/default-filters.php file in WordPress, you&#8217;ll see a number of events that are tied to the wp_head action.</p>\n<p>One area where this is a particular problem is for offline blog clients that make use of the XML-RPC and AtomPub APIs in WordPress.  The &#8220;Really Simple Discoverability&#8221; (RSD) link that WordPress inserts instructs these clients on where to find the RSD URL, which contains information on how the clients can send XML-RPC and AtomPub requests.  We&#8217;ve seen a number of times now where an error reported by a <a href=\"http://iphone.wordpress.org/\">WordPress iPhone App</a> user is caused because there is no RSD link in their WordPress blog.  Looking a little deeper reveals that there was no RSD link because the theme they were using didn&#8217;t include a call to wp_head().</p>\n<p>If you are writing a WordPress theme here is your reminder, make sure that the wp_head() function is being called at the end of your HEAD section.</p>\n",
+            "content_text": "When creating a WordPress theme don&#8217;t forget to include a wp_head(); call in the HTML HEAD section of your theme.  It&#8217;s very simple to do, just include:\n[sourcecode lang=&#8221;php&#8221;]\nwp_head();\n[/sourcecode]\nBefore the closing HEAD tag (&lt;/head&gt;) in your HTML.\nWhy make such a fuss over a single function call?  Because it does a fair bit of work behind the scenes and without it some WordPress features will not work properly.  Take a look at the wp_head section of the wp-includes/default-filters.php file in WordPress, you&#8217;ll see a number of events that are tied to the wp_head action.\nOne area where this is a particular problem is for offline blog clients that make use of the XML-RPC and AtomPub APIs in WordPress.  The &#8220;Really Simple Discoverability&#8221; (RSD) link that WordPress inserts instructs these clients on where to find the RSD URL, which contains information on how the clients can send XML-RPC and AtomPub requests.  We&#8217;ve seen a number of times now where an error reported by a WordPress iPhone App user is caused because there is no RSD link in their WordPress blog.  Looking a little deeper reveals that there was no RSD link because the theme they were using didn&#8217;t include a call to wp_head().\nIf you are writing a WordPress theme here is your reminder, make sure that the wp_head() function is being called at the end of your HEAD section.",
+            "date_published": "2009-04-08T14:03:33-06:00",
+            "date_modified": "2009-04-08T14:03:33-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "atompub",
+                "iphone",
+                "themes",
+                "WordPress",
+                "xml-rpc",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=785",
+            "url": "https://blog.josephscott.org/2009/02/10/wordpress-271-released-xml-rpc-and-atompub-changes/",
+            "title": "WordPress 2.7.1 Released \u2013 XML-RPC and AtomPub Changes",
+            "content_html": "<p>Ryan just tagged the <a href=\"http://wordpress.org/development/2009/02/wordpress-271/\">2.7.1 release of WordPress</a>.  This being a maintenance release there are only a few changes to XML-RPC:</p>\n<ul>\n<li>Fixed bugs in wp.newComment (<a href=\"http://trac.wordpress.org/ticket/8672\">ticket 8672</a>)</li>\n<li>Fix break of metaWeblog.getCategories that was introduced in 2.7 (<a href=\"http://trac.wordpress.org/ticket/8494\">ticket 8494</a>)</li>\n<li>Added the new categoryDescription field to metaWeblog.getCategories in light of the problems introduced in 2.7 as part of <a href=\"http://trac.wordpress.org/ticket/8494\">ticket 8494</a></li>\n</ul>\n<p>And there were no changes to AtomPub in 2.7.1.</p>\n<p>As usual, if you have an interest in XML-RPC and AtomPub APIs in WordPress please come join the <a href=\"http://lists.automattic.com/mailman/listinfo/wp-xmlrpc\">wp-xmlrpc email list</a>.</p>\n",
+            "content_text": "Ryan just tagged the 2.7.1 release of WordPress.  This being a maintenance release there are only a few changes to XML-RPC:\n\nFixed bugs in wp.newComment (ticket 8672)\nFix break of metaWeblog.getCategories that was introduced in 2.7 (ticket 8494)\nAdded the new categoryDescription field to metaWeblog.getCategories in light of the problems introduced in 2.7 as part of ticket 8494\n\nAnd there were no changes to AtomPub in 2.7.1.\nAs usual, if you have an interest in XML-RPC and AtomPub APIs in WordPress please come join the wp-xmlrpc email list.",
+            "date_published": "2009-02-10T15:16:45-07:00",
+            "date_modified": "2009-02-10T15:16:45-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "atompub",
+                "WordPress",
+                "xml-rpc",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=524",
+            "url": "https://blog.josephscott.org/2008/12/11/wordpress-27-released-xml-rpc-and-atompub-changes/",
+            "title": "WordPress 2.7 Released \u2013 XML-RPC and AtomPub Changes",
+            "content_html": "<p>Today brings <a href=\"http://wordpress.org/development/2008/12/coltrane/\">the official release of WordPress 2.7</a>.  I love what Michael Pick has been doing with the videos for the new WordPress releases:</p>\n<p>There&#8217;s lots of information about the new UI and features in the announcement.  Here&#8217;s what&#8217;s changed for XML-RPC when you compare the 2.6 branch to the new 2.7 code:</p>\n<ul>\n<li>New method: wp.getTags (<a href=\"http://trac.wordpress.org/ticket/7744\">ticket 7744</a>)</li>\n<li>New comments API methods (<a href=\"http://trac.wordpress.org/ticket/7446\">ticket 7446</a>):\n<ul>\n<li><a href=\"http://codex.wordpress.org/XML-RPC/wp.getComment\">wp.getComment</a></li>\n<li><a href=\"http://codex.wordpress.org/XML-RPC/wp.getComments\">wp.getComments</a></li>\n<li>wp.deleteComment</li>\n<li>wp.editComment</li>\n<li>wp.newComment</li>\n<li>wp.getCommentStatusList</li>\n</ul>\n</li>\n<li>Site ID fix for wp.getUsersBlogs (<a href=\"http://trac.wordpress.org/ticket/8255\">ticket 8255</a>)</li>\n<li>New optional argument for wp.getPages &#8211; 4th parameter is now the maximum number of pages to return, which defaults to 10.</li>\n<li>metaWeblog.getPost now returns enclosure information (<a href=\"http://trac.wordpress.org/ticket/7772\">ticket 7772</a>)</li>\n<li>Correct metaWeblog.getCategories to provide the actual comment description field (<a href=\"http://trac.wordpress.org/ticket/8494\">ticket 8494</a>)</li>\n</ul>\n<p>And the changes for AtomPub:</p>\n<ul>\n<li>Specify a status code of 401 when requiring authentication (<a href=\"http://trac.wordpress.org/ticket/7361\">ticket 7361</a>)</li>\n<li>Work around for setups that do not basic HTTP basic authentication headers, like Apache when using PHP as a CGI (<a href=\"http://trac.wordpress.org/ticket/7361\">ticket 7361</a>)</li>\n</ul>\n<p>The new comments API methods are already getting some use.  The next version of the <a href=\"http://iphone.wordpress.org/\">WordPress iPhone App</a> makes use of them for comment moderation.  I also recently came across a <a href=\"http://code.google.com/p/wordpress-comments/\">WordPress comment moderation web app</a>, which gives you way to manage WP comments outside of WP.  Here&#8217;s a <a href=\"http://www.youtube.com/watch?v=sOKS-fnVkag&amp;fmt=18\">video demo</a>.</p>\n<p>If you have an interest in XML-RPC or AtomPub development in WordPress please join the <a href=\"http://lists.automattic.com/mailman/listinfo/wp-xmlrpc\">wp-xmlrpc email list</a>.</p>\n",
+            "content_text": "Today brings the official release of WordPress 2.7.  I love what Michael Pick has been doing with the videos for the new WordPress releases:\nThere&#8217;s lots of information about the new UI and features in the announcement.  Here&#8217;s what&#8217;s changed for XML-RPC when you compare the 2.6 branch to the new 2.7 code:\n\nNew method: wp.getTags (ticket 7744)\nNew comments API methods (ticket 7446):\n\nwp.getComment\nwp.getComments\nwp.deleteComment\nwp.editComment\nwp.newComment\nwp.getCommentStatusList\n\n\nSite ID fix for wp.getUsersBlogs (ticket 8255)\nNew optional argument for wp.getPages &#8211; 4th parameter is now the maximum number of pages to return, which defaults to 10.\nmetaWeblog.getPost now returns enclosure information (ticket 7772)\nCorrect metaWeblog.getCategories to provide the actual comment description field (ticket 8494)\n\nAnd the changes for AtomPub:\n\nSpecify a status code of 401 when requiring authentication (ticket 7361)\nWork around for setups that do not basic HTTP basic authentication headers, like Apache when using PHP as a CGI (ticket 7361)\n\nThe new comments API methods are already getting some use.  The next version of the WordPress iPhone App makes use of them for comment moderation.  I also recently came across a WordPress comment moderation web app, which gives you way to manage WP comments outside of WP.  Here&#8217;s a video demo.\nIf you have an interest in XML-RPC or AtomPub development in WordPress please join the wp-xmlrpc email list.",
+            "date_published": "2008-12-11T09:50:44-07:00",
+            "date_modified": "2008-12-11T09:50:44-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "atompub",
+                "WordPress",
+                "xml-rpc",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/?p=1169",
+            "url": "https://blog.josephscott.org/2008/08/20/slides-wordpress-apis/",
+            "title": "Slides: WordPress APIs",
+            "content_html": "<p>I&#8217;ve had a few requests for the slides from my WordPress APIs talk at WordCamp San Francisco last weekend.  A few minutes on SlideShare and here they are:</p>\n<div style=\"width:425px;text-align:left\"><a href=\"http://www.slideshare.net/josephscott/wordpress-apis-presentation?src=embed\" title=\"WordPress APIs\">WordPress APIs</a></p>\n<div style=\"font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px\">View SlideShare <a href=\"http://www.slideshare.net/josephscott/wordpress-apis-presentation?src=embed\" title=\"View WordPress APIs on SlideShare\">presentation</a> or <a href=\"http://www.slideshare.net/upload?src=embed\">Upload</a> your own. (tags: <a href=\"http://slideshare.net/tag/atompub\">atompub</a> <a href=\"http://slideshare.net/tag/xmlrpc\">xmlrpc</a>)</div>\n</div>\n<p>It&#8217;s very brief, time was limited.</p>\n",
+            "content_text": "I&#8217;ve had a few requests for the slides from my WordPress APIs talk at WordCamp San Francisco last weekend.  A few minutes on SlideShare and here they are:\nWordPress APIs\nView SlideShare presentation or Upload your own. (tags: atompub xmlrpc)\n\nIt&#8217;s very brief, time was limited.",
+            "date_published": "2008-08-20T16:52:31-06:00",
+            "date_modified": "2008-08-20T16:52:31-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "atompub",
+                "slideshare",
+                "wordcamp",
+                "WordPress",
+                "xmlrpc",
+                "josephscott"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/?p=1125",
+            "url": "https://blog.josephscott.org/2008/07/17/its-called-atompub/",
+            "content_html": "<blockquote><p>the community of implementors has agreed that we\u0092re all going to refer to the protocol specified in RFC 5023 as \u0093AtomPub\u0094 and nothing else. Please co-operate.</p></blockquote>\n<p><a href=\"http://www.tbray.org/ongoing/When/200x/2008/07/17/AtomPub\">Tim Bray &#8211; It\u0092s Called AtomPub</a>.</p>\n",
+            "content_text": "the community of implementors has agreed that we\u0092re all going to refer to the protocol specified in RFC 5023 as \u0093AtomPub\u0094 and nothing else. Please co-operate.\nTim Bray &#8211; It\u0092s Called AtomPub.",
+            "date_published": "2008-07-17T23:46:04-06:00",
+            "date_modified": "2008-07-17T23:46:04-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "atom",
+                "atompub",
+                "josephscott"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/?p=1122",
+            "url": "https://blog.josephscott.org/2008/07/14/wordpress-26-xml-rpc-atompub-changes/",
+            "title": "WordPress 2.6 \u2013 XML-RPC & AtomPub Changes",
+            "content_html": "<p><a href=\"http://wordpress.org/development/2008/07/wordpress-26-tyner/\">WordPress 2.6</a> has been released.</p>\n<p>For those of you interested in keeping up with XML-RPC &amp; AtomPub changes in WordPress, here&#8217;s what has changed from 2.5.1 to 2.6:</p>\n<h4>XML-RPC</h4>\n<ul>\n<li>The starify function was removed from xmlrpc.php (ticket <a href=\"http://trac.wordpress.org/ticket/6634\">6634</a>)</li>\n<li>New method &#8211; wp.getUsersBlogs  see <a href=\"http://joseph.randomnetworks.com/archives/2008/06/10/blog-id-in-wordpress-and-xml-rpc-blog-apis/\">Blog ID in WordPress and XML-RPC Blog APIs</a> for some background (ticket <a href=\"http://trac.wordpress.org/ticket/7130\">7130</a>)</li>\n<li>New field &#8211; xmlrpc in blogger.getUsersBlogs (same background as above, ticket <a href=\"http://trac.wordpress.org/ticket/7130\">7130</a>)</li>\n<li>New method &#8211; wp.getPageTemplates (ticket <a href=\"http://trac.wordpress.org/ticket/6098\">6098</a>)</li>\n<li>New field &#8211; wp_page_template in the wp.getPage method (ticket <a href=\"http://trac.wordpress.org/ticket/6098\">6098</a>)</li>\n<li>New method &#8211; wp.getOptions (ticket <a href=\"http://trac.wordpress.org/ticket/7123\">7123</a>)</li>\n<li>New method &#8211; wp.setOptions (ticket <a href=\"http://trac.wordpress.org/ticket/7123\">7123</a>)</li>\n<li>Added support for enclosures in metaWeblog.newPost and metaWeblog.editPost (ticket <a href=\"http://trac.wordpress.org/ticket/3405\">3405</a>)</li>\n<li>The &lt;!&ndash;&ndash;more&ndash;&ndash;&gt; tag is no longer embeds newlines before and after in metaWeblog.newPost and metaWeblog.editPost (ticket <a href=\"http://trac.wordpress.org/ticket/6016\">6016</a>)</li>\n<li>XML-RPC is disabled by default for new installs of WordPress.  Upgrading will <b>NOT</b> disable XML-RPC (ticket <a href=\"http://trac.wordpress.org/ticket/7157\">7157</a>)</li>\n</ul>\n<h4>AtomPub</h4>\n<ul>\n<li>If $_SERVER[&#8216;ORIG_PATH_INFO&#8217;] is set, we use that instead of $_SERVER[&#8216;PATH_INFO&#8217;] in determining the $path value (ticket <a href=\"http://trac.wordpress.org/ticket/6995\">6995</a>)</li>\n<li>Fixed problem where using clean URLs (instead of ?p=1 style) would cause wp-app.php/posts requests to return zero posts (ticket <a href=\"http://trac.wordpress.org/ticket/7249\">7249</a>)</li>\n<li>AtomPub is disabled by default for new installs of WordPress.  Upgrading will <b>NOT</b> disable AtomPub (ticket <a href=\"http://trac.wordpress.org/ticket/7157\">7157</a>)</li>\n</ul>\n<p>Since the story around disabling XML-RPC &amp; AtomPub by default has gone through a few twists, I&#8217;ll re-state the current situation: new installs of WordPress will have XML-RPC and AtomPub access disabled by default, upgrades of WordPress to version 2.6 from previous versions will not have XML-RPC and AtomPub disabled as part of the upgrade process.  There is no check box for enabling these services during the install or upgrade.  The process for turning them back on are simple check boxes in wp-admin under Settings -&gt; Writing.</p>\n<p>On the security front, there are no known security issues in XML-RPC or AtomPub.  If you think you&#8217;ve discovered one please email the details to security@wordpress.org.</p>\n<p>Another point that I&#8217;ve seen a few folks bring up is the feeling that this is just the first step in removing XML-RPC and/or AtomPub entirely or that they&#8217;ll stop getting new features.  These features are not going away and as for continued development and new features, go back and read the top of this post.  That said, we can definitely use more people looking at the XML-RPC and AtomPub code.</p>\n<p>If you are interested in XML-RPC/AtomPub, please come join us on the <a href=\"http://lists.automattic.com/mailman/listinfo/wp-xmlrpc\">wp-xmlrpc</a> email list.</p>\n",
+            "content_text": "WordPress 2.6 has been released.\nFor those of you interested in keeping up with XML-RPC &amp; AtomPub changes in WordPress, here&#8217;s what has changed from 2.5.1 to 2.6:\nXML-RPC\n\nThe starify function was removed from xmlrpc.php (ticket 6634)\nNew method &#8211; wp.getUsersBlogs  see Blog ID in WordPress and XML-RPC Blog APIs for some background (ticket 7130)\nNew field &#8211; xmlrpc in blogger.getUsersBlogs (same background as above, ticket 7130)\nNew method &#8211; wp.getPageTemplates (ticket 6098)\nNew field &#8211; wp_page_template in the wp.getPage method (ticket 6098)\nNew method &#8211; wp.getOptions (ticket 7123)\nNew method &#8211; wp.setOptions (ticket 7123)\nAdded support for enclosures in metaWeblog.newPost and metaWeblog.editPost (ticket 3405)\nThe &lt;!&ndash;&ndash;more&ndash;&ndash;&gt; tag is no longer embeds newlines before and after in metaWeblog.newPost and metaWeblog.editPost (ticket 6016)\nXML-RPC is disabled by default for new installs of WordPress.  Upgrading will NOT disable XML-RPC (ticket 7157)\n\nAtomPub\n\nIf $_SERVER[&#8216;ORIG_PATH_INFO&#8217;] is set, we use that instead of $_SERVER[&#8216;PATH_INFO&#8217;] in determining the $path value (ticket 6995)\nFixed problem where using clean URLs (instead of ?p=1 style) would cause wp-app.php/posts requests to return zero posts (ticket 7249)\nAtomPub is disabled by default for new installs of WordPress.  Upgrading will NOT disable AtomPub (ticket 7157)\n\nSince the story around disabling XML-RPC &amp; AtomPub by default has gone through a few twists, I&#8217;ll re-state the current situation: new installs of WordPress will have XML-RPC and AtomPub access disabled by default, upgrades of WordPress to version 2.6 from previous versions will not have XML-RPC and AtomPub disabled as part of the upgrade process.  There is no check box for enabling these services during the install or upgrade.  The process for turning them back on are simple check boxes in wp-admin under Settings -&gt; Writing.\nOn the security front, there are no known security issues in XML-RPC or AtomPub.  If you think you&#8217;ve discovered one please email the details to security@wordpress.org.\nAnother point that I&#8217;ve seen a few folks bring up is the feeling that this is just the first step in removing XML-RPC and/or AtomPub entirely or that they&#8217;ll stop getting new features.  These features are not going away and as for continued development and new features, go back and read the top of this post.  That said, we can definitely use more people looking at the XML-RPC and AtomPub code.\nIf you are interested in XML-RPC/AtomPub, please come join us on the wp-xmlrpc email list.",
+            "date_published": "2008-07-14T21:04:32-06:00",
+            "date_modified": "2008-07-14T21:04:32-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "atompub",
+                "WordPress",
+                "xmlrpc",
+                "josephscott"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/?p=1114",
+            "url": "https://blog.josephscott.org/2008/06/21/wordpress-26-to-have-xml-rpc-atompub-disabled-by-default/",
+            "title": "WordPress 2.6 to Have XML-RPC & AtomPub Disabled by Default",
+            "content_html": "<p>As <a href=\"http://westi.wordpress.com/2008/06/20/making-the-default-install-more-secure/\">westi has already noted</a>, the next version of <a href=\"http://wordpress.org/\">WordPress</a> will have XML-RPC and AtomPub disabled by default.  It&#8217;s easily turned on via an option in wp-admin, and can be enabled during installation as well.</p>\n<p>This reduces the number of potential ways an attacker can break in.  To be clear though, I&#8217;m not aware of any current security issues with XML-RPC or AtomPub in WordPress.</p>\n",
+            "content_text": "As westi has already noted, the next version of WordPress will have XML-RPC and AtomPub disabled by default.  It&#8217;s easily turned on via an option in wp-admin, and can be enabled during installation as well.\nThis reduces the number of potential ways an attacker can break in.  To be clear though, I&#8217;m not aware of any current security issues with XML-RPC or AtomPub in WordPress.",
+            "date_published": "2008-06-21T21:06:45-06:00",
+            "date_modified": "2008-06-21T21:06:45-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "atompub",
+                "WordPress",
+                "xmlrpc",
+                "josephscott"
+            ]
+        }
+    ]
+}

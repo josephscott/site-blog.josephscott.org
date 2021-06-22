@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>cache &#8211; Joseph Scott</title>
+	<atom:link href="/tag/cache/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 16 Oct 2019 15:59:05 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Prepare For Fewer Cache Hits As Chrome Partitions Their HTTP Cache</title>
+		<link>/2019/10/16/prepare-for-fewer-cache-hits-as-chrome-partitions-their-http-cache/</link>
+					<comments>/2019/10/16/prepare-for-fewer-cache-hits-as-chrome-partitions-their-http-cache/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 16 Oct 2019 15:59:05 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[cache]]></category>
+		<category><![CDATA[chrome]]></category>
+		<guid isPermaLink="false">/?p=17725</guid>
+
+					<description><![CDATA[Traditionally one of the advantages of loading web fonts from Google Fonts was that you&#8217;d potentially benefit from it already being in the browser cache from another site the user had previously visited. The concept is the same for any centrally loaded resource, services like cdnjs.com have popped up for exactly this reason. All of [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Traditionally one of the advantages of loading web fonts from <a href="https://fonts.google.com/">Google Fonts</a> was that you&#8217;d potentially benefit from it already being in the browser cache from another site the user had previously visited.  The concept is the same for any centrally loaded resource, services like <a href="https://cdnjs.com/">cdnjs.com</a> have popped up for exactly this reason.</p>
+<p>All of that is about to change very soon for Chrome, the <a href="https://gs.statcounter.com/">most popular browser in the world</a> ( by a long shot, it isn&#8217;t even close, though you might be surprised who is the #2 position ).  The important reference for this is: <a href="https://chromestatus.com/feature/5730772021411840">https://chromestatus.com/feature/5730772021411840</a> &#8211; <strong>Partition the HTTP Cache</strong>.</p>
+<p>Here is the summary:</p>
+<blockquote><p>
+The HTTP cache is currently one per profile, with a single namespace for all resources and subresources regardless of origin or renderer process. Splitting the cache on top frame origins helps the browser deflect side-channel attacks where one site can detect resources in another site’s cache.
+</p></blockquote>
+<h3>What This Means</h3>
+<p>Here is a simplified example of what currently happens:</p>
+<ol>
+<li>Visiting SITE1 that loads jQuery from https://code.jquery.com/jquery-3.4.1.min.js</li>
+<li>Browser loads the full jQuery file from https://code.jquery.com/jquery-3.4.1.min.js</li>
+<li>Visit SITE2, which also loads jQuery from https://code.jquery.com/jquery-3.4.1.min.js</li>
+<li>Browser has a cache hit for jquery, meaning it doesn&#8217;t need to load jQuery from code.jquery.com because it is already in the local cache</li>
+</ol>
+<p>After this change is live, that visit to SITE2 will no longer result in a cache hit.  It will still have to download the full resource from code.jquery.com.</p>
+<p>This is potentially a big performance hit, so why is Chrome making this change?</p>
+<p>Well, it turns out the details about cache hits can lead to information leakage.  The most obvious one being, using the example above, is that SITE2 would be able to determine that a user had previously visited SITE1.  Meaning sites can use this to track you across the web.  Yes, this is yet another way your privacy may be at risk.</p>
+<p>If you check out <a href="https://chromestatus.com/feature/5730772021411840">https://chromestatus.com/feature/5730772021411840</a> you&#8217;ll notice this has been marked as a security issue.</p>
+<h3>Implications</h3>
+<p>The biggest one is that using the argument that loading a common resource from a single source ( Google Fonts, jQuery, etc. ) because you believe that you&#8217;ll be more likely to get a cache hit is going out the window.</p>
+<p>With HTTP/2 I&#8217;ve been generally advocating for more locally hosted resources anyway ( like web fonts ), the reason being that the cost of a new HTTP connection, even it a large CDN like Google, often takes more time than making another request on an existing connection.  Don&#8217;t forget that those new connections can come with additional time for DNS, TCP, and HTTPS.</p>
+<p>In the not too distant future this is going to be the reality we have to deal with.</p>
+<h3>What About Other Browsers</h3>
+<p>Chrome isn&#8217;t the only one to go done this road.  It might not surprise you that <a href="https://andydavies.me/blog/2018/09/06/safari-caching-and-3rd-party-resources/">Safari has been doing this for years</a>.  Firefox is also <a href="https://github.com/whatwg/fetch/issues/904#issuecomment-491195621">considering</a> it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/10/16/prepare-for-fewer-cache-hits-as-chrome-partitions-their-http-cache/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Safari Can Be Stingy</title>
+		<link>/2018/09/18/safari-can-be-stingy/</link>
+					<comments>/2018/09/18/safari-can-be-stingy/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 18 Sep 2018 17:06:18 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[andy-davies]]></category>
+		<category><![CDATA[cache]]></category>
+		<category><![CDATA[cdn]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[safari]]></category>
+		<guid isPermaLink="false">/?p=16981</guid>
+
+					<description><![CDATA[Andy Davies dug into the shared caching situation on Safari, in Safari, Caching and Third-Party Resources. The shared cache in Safari may be more stingy that most people would have guessed: What this means is Safari caches content from third-party origins separately for each document origin, so for example if two sites, say a.com and [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Andy Davies dug into the shared caching situation on Safari, in <a href="https://andydavies.me/blog/2018/09/06/safari-caching-and-3rd-party-resources/">Safari, Caching and Third-Party Resources</a>.  The shared cache in Safari may be more stingy that most people would have guessed:</p>
+<blockquote><p>
+What this means is Safari caches content from third-party origins separately for each document origin, so for example if two sites, say a.com and b.com both use a common library, third-party.com/script.js, then script.js will be cached separately for both sites.</p>
+<p>And if someone has an ‘empty’ cache and visits the first site and then the other, script.js will be downloaded twice.
+</p></blockquote>
+<p>This is another situation of having to measure to make sure that the rule of thumb is actually helping in your specific case.  The numbers from the HTTP Archive research were not exciting:</p>
+<blockquote><p>
+The March 2018 HTTP Archive (desktop) run has data for approximately 466,000 pages and the most popular public library, jQuery 1.11.3 from ajax.googleapis.com (served over HTTPS), is used by just over 1% of them.</p>
+<p>I’m not sure what level adoption needs to reach for shared caching to achieve critical mass but 1% certainly seems unlikely to be high enough and even Google’s most popular font – OpenSans – is only requested by around 9% of pages in the HTTP Archive.
+</p></blockquote>
+<p>If 9% ends up being the upper bound for shared cache hits, we need to start re-thinking our approach.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/09/18/safari-can-be-stingy/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Facebook Cache Efficiency Exercise</title>
+		<link>/2015/10/07/facebook-cache-efficiency-exercise/</link>
+					<comments>/2015/10/07/facebook-cache-efficiency-exercise/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 07 Oct 2015 21:30:41 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[cache]]></category>
+		<category><![CDATA[facebook]]></category>
+		<category><![CDATA[webperf]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12176</guid>
+
+					<description><![CDATA[Eight years ago Yahoo reported on the browser cache experience of their users. The results showed more empty cache views than were expected: 40-60% of Yahoo!&#8217;s users have an empty cache experience and ~20% of all page views are done with an empty cache. Earlier this year Facebook recreated that experiment: Web performance: Cache efficiency [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Eight years ago <a href="http://yuiblog.com/blog/2007/01/04/performance-research-part-2/">Yahoo reported on the browser cache experience of their users.</a>  The results showed more empty cache views than were expected:</p>
+<blockquote><p>
+40-60% of Yahoo!&#8217;s users have an empty cache experience and ~20% of all page views are done with an empty cache.
+</p></blockquote>
+<p>Earlier this year Facebook recreated that experiment: <a href='https://code.facebook.com/posts/964122680272229/web-performance-cache-efficiency-exercise/'>Web performance: Cache efficiency exercise</a>.</p>
+<p>Here are a few key data points:</p>
+<ul>
+<li>24.8% of desktop requests and 26.9% of mobile were missing the cached image.</li>
+<li>On average, 44.6% of users are getting an empty cache.</li>
+<li>Mobile hits shows there is a 50% chance that a request will have a cache that is at most 12 hours old.</li>
+<li>There is a 42% chance that any request will have a cache that is, at most, 47 hours old on the desktop.</li>
+</ul>
+<blockquote><p>
+Overall our cache hit rate looks like it has improved since 2007. If we ignore Firefox v32 and newer (where we cannot log some cache hits), then the cache hit rate goes to 84.1%, up from about 80% in 2007. On the other hand, caches don’t stay populated for very long.
+</p></blockquote>
+<p>The bottom line: setting proper cache headers is good, but it doesn&#8217;t guarantee that browsers hitting your site will still have that content in their cache.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/07/facebook-cache-efficiency-exercise/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Full Page Prerendering in Chrome</title>
+		<link>/2014/05/02/full-page-prerendering-in-chrome/</link>
+					<comments>/2014/05/02/full-page-prerendering-in-chrome/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 02 May 2014 15:36:01 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[cache]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[prerender]]></category>
+		<category><![CDATA[steve-souders]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10432</guid>
+
+					<description><![CDATA[Steve Souders takeaway #1 after trying to figure out unexpected caching behavior in Chrome ( emphasis is mine ): Remember that Chrome may do DNS prefetch, TCP pre-connect, and even prerender the entire page based on the confidences in chrome://predictors. Apparently this isn&#8217;t new information, it was mentioned by Ilya Grigorik in High Performance Networking in [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Steve Souders takeaway #1 after trying to figure out <a href="http://www.stevesouders.com/blog/2014/04/30/unexpected-prerender-in-chrome/" title="Everyone is reading his site by now right?">unexpected caching behavior in Chrome</a> ( emphasis is mine ):</p>
+<blockquote><p>
+Remember that Chrome may do DNS prefetch, TCP pre-connect, and even <strong>prerender the entire page</strong> based on the confidences in chrome://predictors.
+</p></blockquote>
+<p>Apparently this isn&#8217;t new information, it was mentioned by Ilya Grigorik in <a href="http://networkedblogs.com/HK4Pk" title="There is no way to link to an individual section.">High Performance Networking in Google Chrome</a>.  But if Steve Souders didn&#8217;t know about it already then I expect that it isn&#8217;t widely known.</p>
+<p>Looking over the chrome://predictors/ results in my browser it is about what I&#8217;d expect.  One thing that would be helpful is the ability to sort by individual columns.  I&#8217;m most interested in which pages Chrome is mostly likely to attempt to prerender.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/05/02/full-page-prerendering-in-chrome/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Tue 19 Feb 2008</title>
+		<link>/2008/02/20/links-for-tue-19-feb-2008-2/</link>
+					<comments>/2008/02/20/links-for-tue-19-feb-2008-2/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 20 Feb 2008 16:15:58 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[cache]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[email]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[markmail]]></category>
+		<category><![CDATA[memcache]]></category>
+		<category><![CDATA[memcachedb]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/02/20/links-for-tue-19-feb-2008-2/</guid>
+
+					<description><![CDATA[The Making of MarkMail: PostgreSQL: More Traffic than MySQL (and a first Google spotting) &#8211; I&#039;m not really surprised that the PostgreSQL lists have more traffic than the MySQL lists. PostgreSQL seems to be much more of a community owned project than MySQL is. Tags: email markmail mysql postgresql memcachedb &#8211; Google Code &#8211; Persistent [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://markmail.blogspot.com/2008/02/postgresql-more-traffic-than-mysql-and.html">The Making of MarkMail: PostgreSQL: More Traffic than MySQL (and a first Google spotting)</a> &#8211; I&#039;m not really surprised that the PostgreSQL lists have more traffic than the MySQL lists.  PostgreSQL seems to be much more of a community owned project than MySQL is. <br /> Tags: <a href="http://del.icio.us/josephscott/email">email</a> <a href="http://del.icio.us/josephscott/markmail">markmail</a> <a href="http://del.icio.us/josephscott/mysql">mysql</a> <a href="http://del.icio.us/josephscott/postgresql">postgresql</a>  </p>
+</li>
+<li>
+<p><a href="http://code.google.com/p/memcachedb/">memcachedb &#8211; Google Code</a> &#8211; Persistent version of Memcache that uses Berkeley DB as back end storage. <br /> Tags: <a href="http://del.icio.us/josephscott/cache">cache</a> <a href="http://del.icio.us/josephscott/database">database</a> <a href="http://del.icio.us/josephscott/memcache">memcache</a> <a href="http://del.icio.us/josephscott/memcachedb">memcachedb</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/02/20/links-for-tue-19-feb-2008-2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Mon 6 Dec 1999 through Tue 6 Nov 2007</title>
+		<link>/2007/11/06/links-for-mon-6-dec-1999-through-tue-6-nov-2007/</link>
+					<comments>/2007/11/06/links-for-mon-6-dec-1999-through-tue-6-nov-2007/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 07 Nov 2007 00:30:08 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[cache]]></category>
+		<category><![CDATA[fawnt]]></category>
+		<category><![CDATA[fonts]]></category>
+		<category><![CDATA[innodb]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[mobile]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[nygirlofmydreams]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[supercache]]></category>
+		<category><![CDATA[unittest]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/06/links-for-mon-6-dec-1999-through-tue-6-nov-2007/</guid>
+
+					<description><![CDATA[WordPress Tests &#8211; SVN Repo &#8211; Unit tests repository for WordPress. Go Alex! Tags: wordpress unittest WordPress Super Cache 0.1 at Holy Shmoly! &#8211; This sounds promising, I&#8217;ll have to try it out. Even if I&#8217;m not in danger of getting Digg&#8217;d any time soon. Tags: wordpress plugin supercache cache NYGirlOfMyDreams.com &#8211; If he finds [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://svn.automattic.com/wordpress-tests/">WordPress Tests &#8211; SVN Repo</a> &#8211; Unit tests repository for WordPress.  Go Alex! <br /> Tags: <a href="http://del.icio.us/josephscott/wordpress">wordpress</a> <a href="http://del.icio.us/josephscott/unittest">unittest</a>  </p>
+</li>
+<li>
+<p><a href="http://ocaoimh.ie/2007/11/05/wordpress-super-cache-01/">WordPress Super Cache 0.1 at Holy Shmoly!</a> &#8211; This sounds promising, I&#8217;ll have to try it out.  Even if I&#8217;m not in danger of getting Digg&#8217;d any time soon. <br /> Tags: <a href="http://del.icio.us/josephscott/wordpress">wordpress</a> <a href="http://del.icio.us/josephscott/plugin">plugin</a> <a href="http://del.icio.us/josephscott/supercache">supercache</a> <a href="http://del.icio.us/josephscott/cache">cache</a>  </p>
+</li>
+<li>
+<p><a href="http://www.nygirlofmydreams.com/">NYGirlOfMyDreams.com</a> &#8211; If he finds her I expect to see a follow up on how the first date went <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <br /> Tags: <a href="http://del.icio.us/josephscott/nygirlofmydreams">nygirlofmydreams</a>  </p>
+</li>
+<li>
+<p><a href="http://www.fawnt.com/">Fawnt</a> &#8211; A font resource. <br /> Tags: <a href="http://del.icio.us/josephscott/fawnt">fawnt</a> <a href="http://del.icio.us/josephscott/fonts">fonts</a>  </p>
+</li>
+<li>
+<p><a href="http://www.russellbeattie.com/blog/mobile-browser-detection-in-php">RussellBeattie.com &#8211; Mobile Browser Detection in PHP</a> &#8211; It&#8217;s unfortunate that mobile browser detection still relies on user agent sniffing.  But if you have to do it, at least do it fast <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <br /> Tags: <a href="http://del.icio.us/josephscott/php">php</a> <a href="http://del.icio.us/josephscott/mobile">mobile</a>  </p>
+</li>
+<li>
+<p><a href="http://www.mysqlperformanceblog.com/2007/11/01/innodb-performance-optimization-basics/">Innodb Performance Optimization Basics | MySQL Performance Blog</a> &#8211; Some good tips on starting with performance tweaks on InnoDB. <br /> Tags: <a href="http://del.icio.us/josephscott/mysql">mysql</a> <a href="http://del.icio.us/josephscott/innodb">innodb</a> <a href="http://del.icio.us/josephscott/performance">performance</a>  </p>
+</li>
+<li>
+<p><a href="http://www.mysqlperformanceblog.com/2007/11/04/heikki-tuuri-answers-to-innodb-questions-part-ii/">Heikki Tuuri answers to Innodb questions, Part II | MySQL Performance Blog</a> &#8211; More details on InnoDB. <br /> Tags: <a href="http://del.icio.us/josephscott/mysql">mysql</a> <a href="http://del.icio.us/josephscott/innodb">innodb</a> <a href="http://del.icio.us/josephscott/performance">performance</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/11/06/links-for-mon-6-dec-1999-through-tue-6-nov-2007/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Sun 5 Dec 1999 through Mon 5 Nov 2007</title>
+		<link>/2007/11/05/links-for-sun-5-dec-1999-through-mon-5-nov-2007/</link>
+					<comments>/2007/11/05/links-for-sun-5-dec-1999-through-mon-5-nov-2007/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 06 Nov 2007 00:30:29 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[cache]]></category>
+		<category><![CDATA[fawnt]]></category>
+		<category><![CDATA[fonts]]></category>
+		<category><![CDATA[innodb]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[mobile]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[nygirlofmydreams]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[supercache]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/05/links-for-sun-5-dec-1999-through-mon-5-nov-2007/</guid>
+
+					<description><![CDATA[WordPress Super Cache 0.1 at Holy Shmoly! &#8211; This sounds promising, I&#8217;ll have to try it out. Even if I&#8217;m not in danger of getting Digg&#8217;d any time soon. Tags: wordpress plugin supercache cache NYGirlOfMyDreams.com &#8211; If he finds her I expect to see a follow up on how the first date went 🙂 Tags: [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://ocaoimh.ie/2007/11/05/wordpress-super-cache-01/">WordPress Super Cache 0.1 at Holy Shmoly!</a> &#8211; This sounds promising, I&#8217;ll have to try it out.  Even if I&#8217;m not in danger of getting Digg&#8217;d any time soon. <br /> Tags: <a href="http://del.icio.us/josephscott/wordpress">wordpress</a> <a href="http://del.icio.us/josephscott/plugin">plugin</a> <a href="http://del.icio.us/josephscott/supercache">supercache</a> <a href="http://del.icio.us/josephscott/cache">cache</a>  </p>
+</li>
+<li>
+<p><a href="http://www.nygirlofmydreams.com/">NYGirlOfMyDreams.com</a> &#8211; If he finds her I expect to see a follow up on how the first date went <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <br /> Tags: <a href="http://del.icio.us/josephscott/nygirlofmydreams">nygirlofmydreams</a>  </p>
+</li>
+<li>
+<p><a href="http://www.fawnt.com/">Fawnt</a> &#8211; A font resource. <br /> Tags: <a href="http://del.icio.us/josephscott/fawnt">fawnt</a> <a href="http://del.icio.us/josephscott/fonts">fonts</a>  </p>
+</li>
+<li>
+<p><a href="http://www.russellbeattie.com/blog/mobile-browser-detection-in-php">RussellBeattie.com &#8211; Mobile Browser Detection in PHP</a> &#8211; It&#8217;s unfortunate that mobile browser detection still relies on user agent sniffing.  But if you have to do it, at least do it fast <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <br /> Tags: <a href="http://del.icio.us/josephscott/php">php</a> <a href="http://del.icio.us/josephscott/mobile">mobile</a>  </p>
+</li>
+<li>
+<p><a href="http://www.mysqlperformanceblog.com/2007/11/01/innodb-performance-optimization-basics/">Innodb Performance Optimization Basics | MySQL Performance Blog</a> &#8211; Some good tips on starting with performance tweaks on InnoDB. <br /> Tags: <a href="http://del.icio.us/josephscott/mysql">mysql</a> <a href="http://del.icio.us/josephscott/innodb">innodb</a> <a href="http://del.icio.us/josephscott/performance">performance</a>  </p>
+</li>
+<li>
+<p><a href="http://www.mysqlperformanceblog.com/2007/11/04/heikki-tuuri-answers-to-innodb-questions-part-ii/">Heikki Tuuri answers to Innodb questions, Part II | MySQL Performance Blog</a> &#8211; More details on InnoDB. <br /> Tags: <a href="http://del.icio.us/josephscott/mysql">mysql</a> <a href="http://del.icio.us/josephscott/innodb">innodb</a> <a href="http://del.icio.us/josephscott/performance">performance</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/11/05/links-for-sun-5-dec-1999-through-mon-5-nov-2007/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>smallest &#8211; Joseph Scott</title>
+	<atom:link href="/tag/smallest/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 24 Mar 2020 18:53:41 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>The Smallest Possible X</title>
+		<link>/2020/03/24/the-smallest-possible-x/</link>
+					<comments>/2020/03/24/the-smallest-possible-x/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 24 Mar 2020 18:53:41 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[smallest]]></category>
+		<guid isPermaLink="false">/?p=18124</guid>
+
+					<description><![CDATA[For those times where you just want or need the smallest possible X. Where X could be gzip, SVG, PDF, or any number of other digital formats. There is a list of those at https://github.com/mathiasbynens/small/.]]></description>
+										<content:encoded><![CDATA[<p>For those times where you just want or need the smallest possible X.  Where X could be gzip, SVG, PDF, or any number of other digital formats.  There is a list of those at <a href="https://github.com/mathiasbynens/small/">https://github.com/mathiasbynens/small/</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/03/24/the-smallest-possible-x/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

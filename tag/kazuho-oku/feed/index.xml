@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>kazuho-oku &#8211; Joseph Scott</title>
+	<atom:link href="/tag/kazuho-oku/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 02 Apr 2015 15:19:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>qrintf</title>
+		<link>/2015/04/02/qrintf/</link>
+					<comments>/2015/04/02/qrintf/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 02 Apr 2015 15:19:56 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[h2o]]></category>
+		<category><![CDATA[kazuho-oku]]></category>
+		<category><![CDATA[qprintf]]></category>
+		<category><![CDATA[sprintf]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11201</guid>
+
+					<description><![CDATA[I&#8217;ve mentioned the h2o web server from Kazuho Oku previously. One of the major goals for h2o is performance. To the point that Kazuho created a sprintf/snprintf pre-processor called qrintf: sprintf (snprintf) is a great function for converting data to strings. The downside is that it is slow. Recently the functions have been one of [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve mentioned the <a href="https://github.com/h2o/h2o">h2o web server</a> from Kazuho Oku <a href="https://josephscott.org/archives/2014/10/h2o/">previously</a>.  One of the major goals for h2o is performance.  To the point that Kazuho created a sprintf/snprintf pre-processor called <a href="http://blog.kazuhooku.com/2014/10/announcing-qrintf-and-qrintf-gcc.html">qrintf</a>:</p>
+<blockquote><p>
+sprintf (snprintf) is a great function for converting data to strings. The downside is that it is slow. Recently the functions have been one of the bottlenecks of H2O, which is a high performance HTTP server / library with support for HTTP/1.x and HTTP/2.</p>
+<p>&#8230;</p>
+<p>H2O uses sprintf in three parts: building the HTTP status line, building ETag, and building the access log.</p>
+<p>By using qrintf-gcc in place of gcc, the performance of H2O jumps up by 20% in a benchmark that sends tiny files and with access logging enabled (from 82,900 reqs/sec. to 99,200 reqs/sec.).
+</p></blockquote>
+<p>A 20% improvement is not something you run into every day.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/04/02/qrintf/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Characteristics of a Fast Program</title>
+		<link>/2015/01/01/characteristics-of-a-fast-program/</link>
+					<comments>/2015/01/01/characteristics-of-a-fast-program/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 01 Jan 2015 17:52:25 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[complexity]]></category>
+		<category><![CDATA[kazuho-oku]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11376</guid>
+
+					<description><![CDATA[From a presentation on the internals of the H2O web server ( something I had previously mentioned ) by Kazuho Oku, slide 21 ( emphasis is mine ): Characteristics of a fast program: 1. Executes less instructions &#8211; speed is a result of simplicity, not complexity Getting the same result with less work and less [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>From a <a href="http://blog.kazuhooku.com/2014/11/the-internals-h2o-or-how-to-write-fast.html">presentation on the internals of the H2O web server</a> ( something I had <a href="https://josephscott.org/archives/2014/10/h2o/">previously mentioned</a> ) by Kazuho Oku, slide 21 ( emphasis is mine ):</p>
+<blockquote><p>
+Characteristics of a fast program:<br />
+1. Executes less instructions<br />
+    &#8211; <strong>speed is a result of simplicity, not complexity</strong>
+</p></blockquote>
+<p>Getting the same result with less work and less complexity is a good thing.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/01/01/characteristics-of-a-fast-program/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>h2o</title>
+		<link>/2014/10/14/h2o/</link>
+					<comments>/2014/10/14/h2o/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 14 Oct 2014 15:39:27 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[h2o]]></category>
+		<category><![CDATA[kazuho-oku]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11021</guid>
+
+					<description><![CDATA[The h2o web server looks like an interesting experiment. If the comparison to Nginx holds up that would be particularly impressive.]]></description>
+										<content:encoded><![CDATA[<p>The <a href='https://github.com/kazuho/h2o'>h2o</a> web server looks like an interesting experiment.  If the comparison to Nginx holds up that would be particularly impressive.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/10/14/h2o/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

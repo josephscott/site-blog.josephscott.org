@@ -1,0 +1,63 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/grep/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/grep/",
+    "feed_url": "https://blog.josephscott.org/tag/grep/feed/json/",
+    "language": "en-US",
+    "title": "grep &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://josephscott.org/?p=4595",
+            "url": "https://blog.josephscott.org/2011/08/08/the-key-to-making-programs-fast/",
+            "title": "The Key to Making Programs Fast",
+            "content_html": "<blockquote><p>\nThe key to making programs fast is to make them do practically nothing. <img src=\"https://s.w.org/images/core/emoji/13.0.1/72x72/1f609.png\" alt=\"\ud83d\ude09\" class=\"wp-smiley\" style=\"height: 1em; max-height: 1em;\" />\n</p></blockquote>\n<p>via <a href='http://lists.freebsd.org/pipermail/freebsd-current/2010-August/019310.html?'>Mike Haertel on why GNU grep is fast</a>, where he describes some of the tricks he used to minimize the amount of work grep needed to do in order to find strings.  Mike wrote the original version of GNU grep.</p>\n",
+            "content_text": "The key to making programs fast is to make them do practically nothing. \n\nvia Mike Haertel on why GNU grep is fast, where he describes some of the tricks he used to minimize the amount of work grep needed to do in order to find strings.  Mike wrote the original version of GNU grep.",
+            "date_published": "2011-08-08T15:27:07-06:00",
+            "date_modified": "2011-08-08T15:27:07-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "grep",
+                "mike-haertel",
+                "performance",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=2458",
+            "url": "https://blog.josephscott.org/2010/06/28/finding-php-short-tags/",
+            "title": "Finding PHP Short Tags",
+            "content_html": "<p>There are a number of ways to <a href=\"http://www.php.net/manual/en/language.basic-syntax.phpmode.php\">escape between PHP and output (usually HTML) mode</a>.  Personally I recommend sticking with the traditional <code>&lt;?php</code> style.  One method that can cause problems is the so called &#8216;short tag&#8217; style &#8211; <code>&lt;?</code> and I recommend avoiding it.</p>\n<p>So how do you know if there are PHP short tags being used some where in your code?  I use grep to search for them: <code>grep -rn \"&lt;?[^p]\" *</code></p>\n",
+            "content_text": "There are a number of ways to escape between PHP and output (usually HTML) mode.  Personally I recommend sticking with the traditional &lt;?php style.  One method that can cause problems is the so called &#8216;short tag&#8217; style &#8211; &lt;? and I recommend avoiding it.\nSo how do you know if there are PHP short tags being used some where in your code?  I use grep to search for them: grep -rn \"&lt;?[^p]\" *",
+            "date_published": "2010-06-28T09:31:19-06:00",
+            "date_modified": "2010-06-28T09:31:19-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "grep",
+                "PHP",
+                "Posts"
+            ]
+        }
+    ]
+}

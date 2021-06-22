@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>http2 &#8211; Joseph Scott</title>
+	<atom:link href="/tag/http2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 16 Apr 2019 17:18:03 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Chrome Delays Requests On Slow Connections, Even With HTTP/2</title>
+		<link>/2019/04/16/chrome-delays-requests-on-slow-connections-even-with-http-2/</link>
+					<comments>/2019/04/16/chrome-delays-requests-on-slow-connections-even-with-http-2/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 16 Apr 2019 17:18:03 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[http2]]></category>
+		<guid isPermaLink="false">/?p=17423</guid>
+
+					<description><![CDATA[While looking at recent WebPageTest results I noticed something odd about them. The ordering of HTTP/2 requests weren&#8217;t happening in the way I expected, which eventually led me to reach out to Patrick Meenan. He pointed me at two Chromium related items: &#8211; Delaying dispatch of low priority on congested networks &#8211; Issue 836552: Experiment [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>While looking at recent <a href="https://www.webpagetest.org/">WebPageTest</a> results I noticed something odd about them.  The ordering of HTTP/2 requests weren&#8217;t happening in the way I expected, which eventually led me to reach out to <a href="https://twitter.com/patmeenan">Patrick Meenan</a>.  He pointed me at two Chromium related items:</p>
+<p>&#8211; <a href="https://docs.google.com/document/d/1XcHwQnEzg-F_JQhygQdYjyU3PxMG_otXj2M8oqZNyJk/edit#heading=h.mi56i3r3gnth">Delaying dispatch of low priority on congested networks</a><br />
+&#8211; <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=836552">Issue 836552: Experiment with delaying low priority requests to H2 servers</a></p>
+<p>The long and short of it is: even with HTTP/2 Chrome will limit the number of inflight requests to 10 on slow connections.</p>
+<p>For those of you who are testing <a href="https://github.com/pmeenan/http2priorities/tree/master/stand-alone">HTTP/2 priorities</a> ( and <a href="https://github.com/andydavies/http2-prioritization-issues">here</a> ) with anything <a href="https://github.com/pmeenan/http2priorities/commit/4e9315f20efcccea73c51d781463988111c9b797#diff-fc14358ebccbbfca8b817b4c18bfeb4b">slower than &#8220;3G Fast&#8221;</a> on WebPageTest, you are likely running into this.  You&#8217;ll need to bump the network option to &#8220;3G Fast&#8221; in order to avoid the Chrome request throttling when running those types of tests.</p>
+<p>Here are a few examples.  First, a priority <a href="https://www.webpagetest.org/result/190415_A6_4417947210475290e8c6963f02dcb7fe/2/details/#waterfall_view_step1">test under &#8220;3G Slow&#8221;</a>, where you can see the throttling in action:</p>
+<p><a href="/wp-content/uploads/2019/04/chrome-with-throttling.png"><img loading="lazy" src="/wp-content/uploads/2019/04/chrome-with-throttling.png" alt="" width="946" height="647" class="aligncenter size-full wp-image-17427" srcset="/wp-content/uploads/2019/04/chrome-with-throttling.png 946w, /wp-content/uploads/2019/04/chrome-with-throttling-300x205.png 300w, /wp-content/uploads/2019/04/chrome-with-throttling-768x525.png 768w, /wp-content/uploads/2019/04/chrome-with-throttling-788x539.png 788w" sizes="(max-width: 946px) 100vw, 946px" /></a></p>
+<p>That is the newer behavior in Chrome.</p>
+<p>Next, a priority <a href="https://www.webpagetest.org/result/190415_DW_9a97759053833656569c317f830c0124/2/details/#waterfall_view_step1">test using &#8220;3G Fast&#8221;</a>, you can see all the requests fired off right away:</p>
+<p><a href="/wp-content/uploads/2019/04/chrome-no-throttling.png"><img loading="lazy" src="/wp-content/uploads/2019/04/chrome-no-throttling.png" alt="" width="947" height="649" class="aligncenter size-full wp-image-17429" srcset="/wp-content/uploads/2019/04/chrome-no-throttling.png 947w, /wp-content/uploads/2019/04/chrome-no-throttling-300x206.png 300w, /wp-content/uploads/2019/04/chrome-no-throttling-768x526.png 768w, /wp-content/uploads/2019/04/chrome-no-throttling-788x540.png 788w" sizes="(max-width: 947px) 100vw, 947px" /></a></p>
+<p>This is likely what you&#8217;d be used to seeing.</p>
+<hr />
+<p>I&#8217;ve come to expect changes in browsers ( especially Chrome ) to have significant impacts on tests where I&#8217;m looking at trending data.  If you see something strange pop up, check the Chrome versions, then see if a change in that release could be the cause.</p>
+<p>Chrome has an <a href="https://www.chromium.org/developers/calendar">estimated release schedule</a> that you might want to keep in mind.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/04/16/chrome-delays-requests-on-slow-connections-even-with-http-2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>HTTP/2 and Concatenation</title>
+		<link>/2017/11/17/http-2-and-concatenation/</link>
+					<comments>/2017/11/17/http-2-and-concatenation/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 17 Nov 2017 17:37:05 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[concatenation]]></category>
+		<category><![CDATA[http2]]></category>
+		<guid isPermaLink="false">/?p=16295</guid>
+
+					<description><![CDATA[I&#8217;ve seen it repeated over and over how HTTP/2 means that you no longer have to concatenate resources. The context is usually around JavaScript, but it is similar for CSS. Real world tests don&#8217;t always line up with that theoretical expectation, as demonstrated by Khan Academy back in 2015. Here is their summary: HTTP/2.0, with [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve seen it repeated over and over how HTTP/2 means that you no longer have to concatenate resources.  The context is usually around JavaScript, but it is similar for CSS.  Real world tests don&#8217;t always line up with that theoretical expectation, as demonstrated by <a href="http://engineering.khanacademy.org/posts/js-packaging-http2.htm">Khan Academy back in 2015</a>.  Here is their summary:</p>
+<blockquote><p>
+HTTP/2.0, with its multiplexing, header compression, and the like, offers the promise of the best of all worlds when it comes to downloading JavaScript: great local caching, great download efficiency, no wasted bytes, and a simpler serving infrastructure to boot. All you have to do is give up your packaging system and download all your JavaScript source files individually.</p>
+<p>The reality is not so rosy. Due to degraded compression performance, the size of the data download with individual source files ends up being higher than with packages, despite having achieved &#8216;no wasted bytes&#8217;. Likewise, the promised download efficiency has yet to show up in the wild, at least for us. It seems that, for the moment at least, JavaScript packaging is here to stay.
+</p></blockquote>
+<p>From what I&#8217;ve seen so far, there is some line that balances between too much concatenation and too little.  Unfortunately I think that line is going to vary from site to site.  If we are lucky, we might get some good guidelines ( always concat if loading fewer than X bytes ) that can be applied by tools and services automatically.</p>
+<p>Having hard rules that &#8220;always make things better 100% of the time&#8221; are becoming less common in the world of HTTP/2, modern browsers, and mobile clients.  There is no substitute for making measurements and comparing the results.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2017/11/17/http-2-and-concatenation/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>HPACK, Static Table Definition</title>
+		<link>/2016/01/18/hpack-static-table-definitionhpack-header-compression-for-http2/</link>
+					<comments>/2016/01/18/hpack-static-table-definitionhpack-header-compression-for-http2/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 18 Jan 2016 18:51:43 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[hpack]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[http2]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14930</guid>
+
+					<description><![CDATA[The HPACK ( header compression for HTTP/2 ) static table: The static table was created from the most frequent header fields used by popular web sites, with the addition of HTTP/2-specific pseudo-header fields (see Section 8.1.2.1 of [HTTP2]). For header fields with a few frequent values, an entry was added for each of these frequent [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The HPACK ( <a href="https://http2.github.io/http2-spec/compression.html">header compression for HTTP/2</a> ) static table:</p>
+<blockquote><p>
+The static table was created from the most frequent header fields used by popular web sites, with the addition of HTTP/2-specific pseudo-header fields (see Section 8.1.2.1 of [HTTP2]). For header fields with a few frequent values, an entry was added for each of these frequent values. For other header fields, an entry was added with an empty value.
+</p></blockquote>
+<p>Here is a <a href="https://http2.github.io/http2-spec/compression.html#static.table.entries">direct link to the list</a>.  I like number 16, <code>accept-encoding: gzip, deflate</code>, even though that means this won&#8217;t be usable with <a href="https://josephscott.org/archives/2015/12/brotli-in-browsers/">Brotli</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/01/18/hpack-static-table-definitionhpack-header-compression-for-http2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>HTTP/2 Adoption</title>
+		<link>/2015/12/03/http2-adoption/</link>
+					<comments>/2015/12/03/http2-adoption/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 03 Dec 2015 15:57:29 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http2]]></category>
+		<category><![CDATA[wordpress.com]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14434</guid>
+
+					<description><![CDATA[isthewebhttp2yet.com is tracking HTTP/2 adoption. Their &#8220;H2 True Support&#8221; list ( 2015-11-30 ) has 13,653 sites. Of those 13,653 sites 7,828 ( that is 57% ) have .wordpress.com host names.]]></description>
+										<content:encoded><![CDATA[<p><a href="http://isthewebhttp2yet.com/">isthewebhttp2yet.com</a> is tracking <a href="http://isthewebhttp2yet.com/measurements/adoption.html">HTTP/2 adoption</a>.  Their <a href="http://isthewebhttp2yet.com/data/lists/H2-true-2015-11-30.txt">&#8220;H2 True Support&#8221; list ( 2015-11-30 )</a> has 13,653 sites.</p>
+<p>Of those 13,653 sites 7,828 ( that is 57% ) have <code>.wordpress.com</code> host names.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/03/http2-adoption/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Nginx HTTP/2</title>
+		<link>/2015/10/15/nginx-http2/</link>
+					<comments>/2015/10/15/nginx-http2/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 15 Oct 2015 12:29:32 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http2]]></category>
+		<category><![CDATA[nginx]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14086</guid>
+
+					<description><![CDATA[With version 1.9.5 Nginx added support for http/2. Last night up I switched my Nginx configuration for josephscott.org from SPDY to H2. So far everything appears to be working normal, if you do find something broken please let me know.]]></description>
+										<content:encoded><![CDATA[<p>With version 1.9.5 <a href="http://nginx.org/">Nginx</a> added support for <a href="http://nginx.org/en/docs/http/ngx_http_v2_module.html">http/2</a>.  Last night up I switched my Nginx configuration for josephscott.org from SPDY to H2.</p>
+<p>So far everything appears to be working normal, if you do find something broken <a href="https://josephscott.org/contact/">please let me know</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/15/nginx-http2/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>HTTP/2 and WebSocket</title>
+		<link>/2015/08/26/http2-and-websocket/</link>
+					<comments>/2015/08/26/http2-and-websocket/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 26 Aug 2015 14:01:44 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http2]]></category>
+		<category><![CDATA[websocket]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12738</guid>
+
+					<description><![CDATA[With HTTP/2 marching towards production environments, you might be wondering how WebSocket fits in. The HTTPbis working group was thinking about that too: The WebSocket protocol enables two-way communication between a client running untrusted code in a controlled environment to a remote host that has opted-in to communications from that code. Since it requires one [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>With HTTP/2 marching towards production environments, you might be wondering how WebSocket fits in.  The HTTPbis working group was thinking about that too:</p>
+<blockquote><p>
+The WebSocket protocol enables two-way communication between a client running untrusted code in a controlled environment to a remote host that has opted-in to communications from that code.  Since it requires one TCP connection for every WebSocket connection, having multiple WebSocket connections between the same client and the same server is inefficient.  On the other hand, HTTP/2 specifies a fast, secure, multiplexed framing protocol.  This document provides bi-directional multiplexed communication by layering WebSocket on top of HTTP/2.
+</p></blockquote>
+<p>From <a href="https://tools.ietf.org/html/draft-hirano-httpbis-websocket-over-http2-01">draft-hirano-httpbis-websocket-over-http2-01</a>.</p>
+<p>The draft expired back on February 13, 2015 and I haven&#8217;t seen any other significant discussions in this area.  At this point there doesn&#8217;t appear to be any momentum to come up with a way to leverage HTTP/2 in future versions of the WebSocket protocol.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/08/26/http2-and-websocket/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>h2i</title>
+		<link>/2015/08/11/h2i/</link>
+					<comments>/2015/08/11/h2i/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 11 Aug 2015 14:16:42 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[h2i]]></category>
+		<category><![CDATA[http2]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12957</guid>
+
+					<description><![CDATA[While HTTP/2 has brought many performance improvements, the switch to a binary format has made it more opaque. Enter h2i: h2i is an interactive HTTP/2 (&#8220;h2&#8221;) console debugger. Miss the good ol&#8217; days of telnetting to your HTTP/1.n servers? We&#8217;re bringing you back.]]></description>
+										<content:encoded><![CDATA[<p>While HTTP/2 has brought many performance improvements, the switch to a binary format has made it more opaque.  Enter <a href="https://github.com/bradfitz/http2/tree/master/h2i">h2i</a>:</p>
+<blockquote><p>
+h2i is an interactive HTTP/2 (&#8220;h2&#8221;) console debugger. Miss the good ol&#8217; days of telnetting to your HTTP/1.n servers? We&#8217;re bringing you back.
+</p></blockquote>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/08/11/h2i/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>HTTP/2 Optimizations</title>
+		<link>/2015/08/07/http2-optimizations/</link>
+					<comments>/2015/08/07/http2-optimizations/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 07 Aug 2015 14:01:17 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http2]]></category>
+		<category><![CDATA[ilya-grigorik]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12721</guid>
+
+					<description><![CDATA[Slides from Ilya Grigork on HTTP/2 is here, let&#8217;s optimize!]]></description>
+										<content:encoded><![CDATA[<p>Slides from <a href="https://www.igvita.com/">Ilya Grigork</a> on <a href="https://docs.google.com/presentation/d/1r7QXGYOLCh4fcUq0jDdDwKJWNqWK1o4xMtYpKZCJYjM/present?slide=id.p19">HTTP/2 is here, let&#8217;s optimize!</a></p>
+<p><iframe loading="lazy" src="https://docs.google.com/presentation/embed?id=1r7QXGYOLCh4fcUq0jDdDwKJWNqWK1o4xMtYpKZCJYjM&amp;start=false&amp;loop=false&amp; frameborder="0" width="600" height="467"></iframe></p>
+<p>Some of the traditional HTTP/1 optimization approaches now work against the features available in HTTP/2.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/08/07/http2-optimizations/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Caddy</title>
+		<link>/2015/08/06/caddy/</link>
+					<comments>/2015/08/06/caddy/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 06 Aug 2015 14:01:14 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[caddy]]></category>
+		<category><![CDATA[go]]></category>
+		<category><![CDATA[http2]]></category>
+		<category><![CDATA[markdown]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12719</guid>
+
+					<description><![CDATA[The ramp up to HTTP/2 seems to have also triggered a renewed interest in web server software. I recently came across Caddy, a web server written in Go. From the FAQ: Fundamentally, Caddy aims to make websites easier by lowering the barrier to entry. Like other web servers, Caddy is for system administrators and web [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The ramp up to HTTP/2 seems to have also triggered a renewed interest in web server software.  I recently came across <a href="https://caddyserver.com/">Caddy</a>, a web server written in Go.  From the <a href="https://caddyserver.com/docs/faq">FAQ</a>:</p>
+<blockquote><p>
+Fundamentally, Caddy aims to make websites easier by lowering the barrier to entry. Like other web servers, Caddy is for system administrators and web developers, but Caddy is also tailored for designers and writers who don&#8217;t want to deal with a lot of the technical cruft that traditionally comes along with setting up a server.</p>
+<p>Caddy has different goals and advantages. Nginx is first and foremost a capable reverse proxy, whereas Caddy&#8217;s primary goal is to be an easy-to-use static file web server. Caddy desires cross-platform independence and portability without the need for custom builds.
+</p></blockquote>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/08/06/caddy/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>To CDN Or Not To CDN</title>
+		<link>/2015/07/24/to-cdn-or-not-to-cdn/</link>
+					<comments>/2015/07/24/to-cdn-or-not-to-cdn/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 24 Jul 2015 14:01:47 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[cdn]]></category>
+		<category><![CDATA[http2]]></category>
+		<category><![CDATA[zack-tollman]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9885</guid>
+
+					<description><![CDATA[Zack Tollman on Why we don&#8217;t use a CDN: A story about SPDY and SSL. The simple &#8220;rule&#8221; of always use a CDN may not always be a good idea. When in doubt, measure. Then measure again even when not in doubt. Expect these types of questions and discussions to come up more and more [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Zack Tollman on <a href='https://thethemefoundry.com/blog/why-we-dont-use-a-cdn-spdy-ssl/'>Why we don&#8217;t use a CDN: A story about SPDY and SSL</a>.</p>
+<p>The simple &#8220;rule&#8221; of always use a CDN may not always be a good idea.  When in doubt, measure.  Then measure again even when not in doubt.</p>
+<p>Expect these types of questions and discussions to come up more and more as HTTP/2 deployments continue.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/07/24/to-cdn-or-not-to-cdn/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

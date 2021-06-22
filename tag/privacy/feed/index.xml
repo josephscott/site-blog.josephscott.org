@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>privacy &#8211; Joseph Scott</title>
+	<atom:link href="/tag/privacy/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 24 Jan 2018 15:38:03 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Speedtest.net Android App Permissions</title>
+		<link>/2018/01/24/speedtest-net-android-app-permissions/</link>
+					<comments>/2018/01/24/speedtest-net-android-app-permissions/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 24 Jan 2018 15:38:03 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[permissions]]></category>
+		<category><![CDATA[privacy]]></category>
+		<category><![CDATA[speedtest]]></category>
+		<guid isPermaLink="false">/?p=16398</guid>
+
+					<description><![CDATA[I went to install the speedtest.net Android app and the following permission requests popped up: The first three all seemed reasonable. That last one, not so much: Device ID &#038; call information Allows the app to determine the phone number and device IDs, whether a call is active, and the remote number connected by a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I went to install the <a href="https://play.google.com/store/apps/details?id=org.zwanoo.android.speedtest&#038;hl=en">speedtest.net Android app</a> and the following permission requests popped up:</p>
+<p><a href="/wp-content/uploads/2018/01/speedtest-permissions.png"><img loading="lazy" src="/wp-content/uploads/2018/01/speedtest-permissions-576x1024.png" alt="" width="576" height="1024" class="aligncenter size-large wp-image-16399" srcset="/wp-content/uploads/2018/01/speedtest-permissions-576x1024.png 576w, /wp-content/uploads/2018/01/speedtest-permissions-169x300.png 169w, /wp-content/uploads/2018/01/speedtest-permissions-768x1365.png 768w, /wp-content/uploads/2018/01/speedtest-permissions.png 1080w" sizes="(max-width: 576px) 100vw, 576px" /></a></p>
+<p>The first three all seemed reasonable.  That last one, not so much:</p>
+<blockquote><p>
+<strong>Device ID &#038; call information</strong></p>
+<p>Allows the app to determine the phone number and device IDs, whether a call is active, and the remote number connected by a call
+</p></blockquote>
+<p>I want to run speed tests, not track phone calls.  The language isn&#8217;t exactly clear.  Is it saying it can only do that while I&#8217;m using the app?  Even if that is the case, I can&#8217;t think of any instances where I would want a speed test app to track my phone call information.</p>
+<p>There is still the option of using their web based test.  But you have to use the &#8220;desktop&#8221; view, because their mobile site only does one thing: redirect you to the app.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/01/24/speedtest-net-android-app-permissions/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Email Privacy Tester</title>
+		<link>/2016/02/12/email-privacy-tester/</link>
+					<comments>/2016/02/12/email-privacy-tester/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 12 Feb 2016 14:39:23 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[email]]></category>
+		<category><![CDATA[privacy]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15084</guid>
+
+					<description><![CDATA[Murphy&#8217;s law goes something like: Anything that can go wrong, will go wrong. I get a similar feeling when it comes to tech today: If it can be done, someone will do it. Unfortunately that comes up more often for bad things that for good. My case in point today: email and privacy. Specifically some [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Murphy&#8217;s law goes something like:</p>
+<blockquote><p>
+Anything that can go wrong, will go wrong.
+</p></blockquote>
+<p>I get a similar feeling when it comes to tech today:</p>
+<blockquote><p>
+If it can be done, someone will do it.
+</p></blockquote>
+<p>Unfortunately that comes up more often for bad things that for good.  My case in point today: email and privacy.  Specifically some of the things that can be included in email messages that allow third parties to collect information.</p>
+<p>To see what I mean, try out the <a href="https://emailprivacytester.com/">Email Privacy Tester</a>.  It will send you an email that contains many of these tracking methods and will report to you which ones worked ( after you open the email ).</p>
+<p>Most of the time I&#8217;m using the Gmail web interface for email, which with my current setup triggered zero trackers ( aside from the obvious point that it allows <strike>Google</strike> Alphabet to track me more ):</p>
+<p><a href="/wp-content/uploads/2016/02/email-privacy-gmail-1.png" rel="attachment wp-att-15172"><img loading="lazy" src="/wp-content/uploads/2016/02/email-privacy-gmail-1-1024x743.png" alt="email-privacy-gmail" width="840" height="609" class="aligncenter size-large wp-image-15172" srcset="/wp-content/uploads/2016/02/email-privacy-gmail-1-1024x743.png 1024w, /wp-content/uploads/2016/02/email-privacy-gmail-1-300x218.png 300w, /wp-content/uploads/2016/02/email-privacy-gmail-1-768x557.png 768w, /wp-content/uploads/2016/02/email-privacy-gmail-1.png 1037w" sizes="(max-width: 840px) 100vw, 840px" /></a></p>
+<p>I tried this with Gmail on iOS, it also triggered zero trackers.</p>
+<p>My current Apple Mail setup needs to be locked down more:</p>
+<p><a href="/wp-content/uploads/2016/02/email-privacy-apple-mail-1.png" rel="attachment wp-att-15175"><img loading="lazy" src="/wp-content/uploads/2016/02/email-privacy-apple-mail-1.png" alt="email-privacy-apple-mail" width="1006" height="776" class="aligncenter size-full wp-image-15175" srcset="/wp-content/uploads/2016/02/email-privacy-apple-mail-1.png 1006w, /wp-content/uploads/2016/02/email-privacy-apple-mail-1-300x231.png 300w, /wp-content/uploads/2016/02/email-privacy-apple-mail-1-768x592.png 768w" sizes="(max-width: 1006px) 100vw, 1006px" /></a></p>
+<p>In 2016 you have to assume a more defensive position by default on these sorts of things.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/02/12/email-privacy-tester/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Privacy Advocate Converts</title>
+		<link>/2016/01/14/privacy-advocate-converts/</link>
+					<comments>/2016/01/14/privacy-advocate-converts/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 14 Jan 2016 16:59:39 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[glenn-greenwald]]></category>
+		<category><![CDATA[politics]]></category>
+		<category><![CDATA[privacy]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14753</guid>
+
+					<description><![CDATA[Glenn Greenwald from Spying on Congress and Israel: NSA Cheerleaders Discover Value of Privacy Only When Their Own Is Violated: This pattern — whereby political officials who are vehement supporters of the Surveillance State transform overnight into crusading privacy advocates once they learn that they themselves have been spied on — is one that has repeated itself [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Glenn Greenwald from <a href="https://theintercept.com/2015/12/30/spying-on-congress-and-israel-nsa-cheerleaders-discover-value-of-privacy-only-when-their-own-is-violated/">Spying on Congress and Israel: NSA Cheerleaders Discover Value of Privacy Only When Their Own Is Violated</a>:</p>
+<blockquote><p>
+This pattern — whereby political officials who are vehement supporters of the Surveillance State transform overnight into crusading privacy advocates once they learn that they themselves have been spied on — is one that has repeated itself over and over. It has been seen many times as part of the Snowden revelations, but also well before that.
+</p></blockquote>
+<p>It is all fun and games until you discover the large surveillance state is targeting you too.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/01/14/privacy-advocate-converts/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Business and Privacy</title>
+		<link>/2015/11/19/business-and-privacy/</link>
+					<comments>/2015/11/19/business-and-privacy/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 19 Nov 2015 15:44:01 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[privacy]]></category>
+		<category><![CDATA[vizio]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13947</guid>
+
+					<description><![CDATA[Compare http://www.apple.com/privacy/: Our business model is very straightforward: We sell great products. We don’t build a profile based on your email content or web browsing habits to sell to advertisers. We don’t “monetize” the information you store on your iPhone or in iCloud. And we don’t read your email or your messages to get information [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Compare <a href="http://www.apple.com/privacy/">http://www.apple.com/privacy/</a>:</p>
+<blockquote><p>
+Our business model is very straightforward: We sell great products. We don’t build a profile based on your email content or web browsing habits to sell to advertisers. We don’t “monetize” the information you store on your iPhone or in iCloud. And we don’t read your email or your messages to get information to market to you. Our software and services are designed to make our devices better. Plain and simple.
+</p></blockquote>
+<p>With <a href="http://www.vizio.com/privacy">http://www.vizio.com/privacy</a>:</p>
+<blockquote><p>
+VIZIO will share Viewing Data, together with the IP address associated with the corresponding VIZIO television, with limited third parties with whom we have specifically partnered. These third parties may combine this information with other information about devices associated with that IP address, in order to customize the advertisements displayed on those other devices.
+</p></blockquote>
+<p>Part of the issue here is expectations of privacy.  We&#8217;ve had televisions around for decades, during which time tracking hasn&#8217;t been an issue, first because of technology then because of laws that were setup consistent with privacy expectations.  From <a href="http://www.propublica.org/article/own-a-vizio-smart-tv-its-watching-you">ProPublica&#8217;s &#8220;Own a Vizio Smart TV? It’s Watching You&#8221;</a>:</p>
+<blockquote><p>
+Cable TV companies and video rental companies are prohibited by law from selling information about the viewing habits of their customers. However, Vizio says that those laws &#8211; the Video Privacy Protection Act and cable subscriber protections &#8211; don’t apply to its business.
+</p></blockquote>
+<p>Time to decide if we still expect a level of privacy from our &#8220;smart&#8221; televisions.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/19/business-and-privacy/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Email and Privacy</title>
+		<link>/2015/05/13/email-and-privacy/</link>
+					<comments>/2015/05/13/email-and-privacy/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 13 May 2015 15:25:58 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[email]]></category>
+		<category><![CDATA[privacy]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10999</guid>
+
+					<description><![CDATA[A list of privacy-conscious email services.]]></description>
+										<content:encoded><![CDATA[<p>A list of <a href='http://prxbx.com/email/'>privacy-conscious email services</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/05/13/email-and-privacy/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The Privacy Decades</title>
+		<link>/2013/10/16/the-privacy-decades/</link>
+					<comments>/2013/10/16/the-privacy-decades/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 16 Oct 2013 14:53:07 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[nsa]]></category>
+		<category><![CDATA[privacy]]></category>
+		<category><![CDATA[the-west-wing]]></category>
+		<category><![CDATA[tsa]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9195</guid>
+
+					<description><![CDATA[Episode 9 of the TV show The West Wing ( &#8220;The Short List&#8221; ) dealt with how a U.S. Supreme Court Justice nominee might rule in regards to privacy. The main question being, did a right to privacy exist at all? This episode aired at the end of 1999, but it has a brief segment [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Episode 9 of the TV show The West Wing ( &#8220;The Short List&#8221; ) dealt with how a U.S. Supreme Court Justice nominee might rule in regards to privacy.  The main question being, did a right to privacy exist at all?</p>
+<p>This episode aired at the end of 1999, but it has a brief segment that could have been said yesterday:</p>
+<a href="/2013/10/16/the-privacy-decades/"><img src="/wp-content/plugins/wp-youtube-lyte/lyteCache.php?origThumbUrl=%2F%2Fi.ytimg.com%2Fvi%2Fpj4PwyfDNuI%2Fhqdefault.jpg" alt="YouTube Video"></a><br /><br /></p>
+<p>Rough transcription (emphasis mine):</p>
+<blockquote><p>
+It&#8217;s about the next 20 years. </p>
+<p>Twenties and thirties, it was the role of government.  Fifties and sixties, it was civil rights. <strong>The next two decades, are gonna be privacy</strong>.</p>
+<p>I&#8217;m talking about the Internet.  I&#8217;m talking about cellphones.  I&#8217;m talking about health records, and who&#8217;s gay and who&#8217;s not. And moreover, in a country born on a will to be free, what could be more fundamental than this?
+</p></blockquote>
+<p>Think of all the restrictions on privacy that have happened since 1999, from the TSA to the recent revelations of the NSA spying on Americans.  The question of a right to privacy is even more critical today than it was 14 years ago.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/10/16/the-privacy-decades/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

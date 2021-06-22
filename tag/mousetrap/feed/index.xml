@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mousetrap &#8211; Joseph Scott</title>
+	<atom:link href="/tag/mousetrap/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 03 Sep 2013 16:55:25 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>JavaScript Keyboard Shortcuts</title>
+		<link>/2013/09/03/javascript-keyboard-shortcuts/</link>
+					<comments>/2013/09/03/javascript-keyboard-shortcuts/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 03 Sep 2013 16:55:25 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[mousetrap]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=8977</guid>
+
+					<description><![CDATA[I came across a JavaScript library for managing keyboard shortcuts called Mousetrap. It is open source, has no other dependancies, includes a nice set of features, and is reasonably small. There are two sites that I specifically use keyboard shortcuts in everyday: Gmail and Feedly. While I only use a handful of the available shortcuts, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I came across a JavaScript library for managing keyboard shortcuts called <a href="http://craig.is/killing/mice">Mousetrap</a>.  It is open source, has no other dependancies, includes a nice set of features, and is reasonably small.</p>
+<p>There are two sites that I specifically use keyboard shortcuts in everyday: Gmail and Feedly.  While I only use a handful of the available shortcuts, the ones that I do use are extremely helpful.  Time for me to start adding a few keyboard shortcuts to internal sites I use at work.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/09/03/javascript-keyboard-shortcuts/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

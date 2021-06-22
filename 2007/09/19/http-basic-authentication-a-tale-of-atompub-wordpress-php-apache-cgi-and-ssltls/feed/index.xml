@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: HTTP Basic Authentication, A Tale of AtomPub, WordPress, PHP, Apache, CGI and SSL/TLS	</title>
+	<atom:link href="/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/feed/" rel="self" type="application/rss+xml" />
+	<link>/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/</link>
+	<description></description>
+	<lastBuildDate>Wed, 21 Jan 2009 11:19:53 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: website design		</title>
+		<link>/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/#comment-1952</link>
+
+		<dc:creator><![CDATA[website design]]></dc:creator>
+		<pubDate>Wed, 21 Jan 2009 11:19:53 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/#comment-1952</guid>
+
+					<description><![CDATA[&quot;I have cookie problem with safari in wordpress&quot; did any one have any more info on this topic? would be appreciated :~}]]></description>
+			<content:encoded><![CDATA[<p>&#8220;I have cookie problem with safari in wordpress&#8221; did any one have any more info on this topic? would be appreciated :~}</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Branson Computer Repair		</title>
+		<link>/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/#comment-1951</link>
+
+		<dc:creator><![CDATA[Branson Computer Repair]]></dc:creator>
+		<pubDate>Wed, 19 Nov 2008 13:51:29 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/#comment-1951</guid>
+
+					<description><![CDATA[&quot;....Apache does not pass the HTTP basic headers to CGI applications, so they never see them...&quot;
+
+So how do we work around this, for those of us who don&#039;t have access to an IIS server?
+
+I can&#039;t get it figured out on my WP blog, and we i=even use WP as a CMS for iother types of web sites.
+
+Can you please give me more inof on this matter? Thanks! I really appreciate it.]]></description>
+			<content:encoded><![CDATA[<p>&#8220;&#8230;.Apache does not pass the HTTP basic headers to CGI applications, so they never see them&#8230;&#8221;</p>
+<p>So how do we work around this, for those of us who don&#8217;t have access to an IIS server?</p>
+<p>I can&#8217;t get it figured out on my WP blog, and we i=even use WP as a CMS for iother types of web sites.</p>
+<p>Can you please give me more inof on this matter? Thanks! I really appreciate it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jonathan Buhacoff		</title>
+		<link>/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/#comment-1950</link>
+
+		<dc:creator><![CDATA[Jonathan Buhacoff]]></dc:creator>
+		<pubDate>Tue, 18 Nov 2008 16:38:35 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/#comment-1950</guid>
+
+					<description><![CDATA[Someone wrote that the RewriteRule method of passing the Http Basic authorization string to the CGI application is &quot;abusing&quot; mod_rewrite.  I disagree.  Just glance at the mod_rewrite docs -- it was obviously meant for much more than just URL aliasing, and method described above is a trivial usage of the module. Don&#039;t expect Apache to change its CGI security behavior to make the password available by default, because such a change is likely to make many existing scripts less secure and that would be irresponsible.  A line or two of configuration for those who need it is not so bad in comparison.]]></description>
+			<content:encoded><![CDATA[<p>Someone wrote that the RewriteRule method of passing the Http Basic authorization string to the CGI application is &#8220;abusing&#8221; mod_rewrite.  I disagree.  Just glance at the mod_rewrite docs &#8212; it was obviously meant for much more than just URL aliasing, and method described above is a trivial usage of the module. Don&#8217;t expect Apache to change its CGI security behavior to make the password available by default, because such a change is likely to make many existing scripts less secure and that would be irresponsible.  A line or two of configuration for those who need it is not so bad in comparison.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: echo &#34;hey, it works&#34; &#62; /dev/null		</title>
+		<link>/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/#comment-1949</link>
+
+		<dc:creator><![CDATA[echo &#34;hey, it works&#34; &#62; /dev/null]]></dc:creator>
+		<pubDate>Tue, 07 Oct 2008 03:22:50 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/#comment-1949</guid>
+
+					<description><![CDATA[[...] And there&#039;s a spoiler: it can&#039;t be done :)A WSSE client will send an Authorization header which, as we know, will get dropped if Apache is passing the request off to a CGI, and a X-WSSE header that looks [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] And there&#8217;s a spoiler: it can&#8217;t be done :)A WSSE client will send an Authorization header which, as we know, will get dropped if Apache is passing the request off to a CGI, and a X-WSSE header that looks [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Arnstein		</title>
+		<link>/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/#comment-1948</link>
+
+		<dc:creator><![CDATA[Arnstein]]></dc:creator>
+		<pubDate>Wed, 30 Apr 2008 13:25:42 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/#comment-1948</guid>
+
+					<description><![CDATA[Ditto&#039;ing Stephen - been hacking wp-app and .htaccess all day - unable to get it working on Dreamhost.]]></description>
+			<content:encoded><![CDATA[<p>Ditto&#8217;ing Stephen &#8211; been hacking wp-app and .htaccess all day &#8211; unable to get it working on Dreamhost.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Stephen Paul Weber		</title>
+		<link>/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/#comment-1947</link>
+
+		<dc:creator><![CDATA[Stephen Paul Weber]]></dc:creator>
+		<pubDate>Fri, 25 Apr 2008 21:31:16 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/#comment-1947</guid>
+
+					<description><![CDATA[These two solutions are displayed everywhere you look for an answer to this problem - but I have never got either one to work on my host (Dreamhost).]]></description>
+			<content:encoded><![CDATA[<p>These two solutions are displayed everywhere you look for an answer to this problem &#8211; but I have never got either one to work on my host (Dreamhost).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: matt		</title>
+		<link>/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/#comment-1946</link>
+
+		<dc:creator><![CDATA[matt]]></dc:creator>
+		<pubDate>Sun, 20 Apr 2008 02:08:42 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/#comment-1946</guid>
+
+					<description><![CDATA[I don&#039;t think HTTP authentication in wordpress is a good idea. I&#039;m sticking with the original cookies/session.
+
+Do all secure sites use SSL/TSL?]]></description>
+			<content:encoded><![CDATA[<p>I don&#8217;t think HTTP authentication in wordpress is a good idea. I&#8217;m sticking with the original cookies/session.</p>
+<p>Do all secure sites use SSL/TSL?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: echo &#34;hey, it works&#34; &#62; /dev/null		</title>
+		<link>/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/#comment-1945</link>
+
+		<dc:creator><![CDATA[echo &#34;hey, it works&#34; &#62; /dev/null]]></dc:creator>
+		<pubDate>Thu, 03 Apr 2008 00:38:04 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/#comment-1945</guid>
+
+					<description><![CDATA[[...] challenge.Solution: Provide a separate URL for the service document, probably /atom/service.PHP as a CGIWhen PHP is running as a CGI the HTTP Authorization header is not passed on to the script. Currently [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] challenge.Solution: Provide a separate URL for the service document, probably /atom/service.PHP as a CGIWhen PHP is running as a CGI the HTTP Authorization header is not passed on to the script. Currently [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: estetik		</title>
+		<link>/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/#comment-1944</link>
+
+		<dc:creator><![CDATA[estetik]]></dc:creator>
+		<pubDate>Fri, 28 Mar 2008 08:59:54 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/#comment-1944</guid>
+
+					<description><![CDATA[I don&#039;t trust on HTTP basic authentication working in wordpress.]]></description>
+			<content:encoded><![CDATA[<p>I don&#8217;t trust on HTTP basic authentication working in wordpress.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: john		</title>
+		<link>/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/#comment-1943</link>
+
+		<dc:creator><![CDATA[john]]></dc:creator>
+		<pubDate>Fri, 28 Mar 2008 02:30:56 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/#comment-1943</guid>
+
+					<description><![CDATA[i think cookie is common problem in safari]]></description>
+			<content:encoded><![CDATA[<p>i think cookie is common problem in safari</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

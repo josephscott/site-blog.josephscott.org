@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>byutv &#8211; Joseph Scott</title>
+	<atom:link href="/tag/byutv/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 16 Jul 2013 13:59:53 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Ugly URLs: Studio C</title>
+		<link>/2013/07/16/ugly-urls-studio-c/</link>
+					<comments>/2013/07/16/ugly-urls-studio-c/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 16 Jul 2013 13:59:53 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[byutv]]></category>
+		<category><![CDATA[studio-c]]></category>
+		<category><![CDATA[ugly-urls]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=8590</guid>
+
+					<description><![CDATA[Last year my sister Beth showed me Studio C, a sketch comedy show produced by BYUtv. They&#8217;ve got a few recurring characters like The Awkward Avoidance Viking: I was looking for a back episode recently, so I hit Google searching for &#8216;Studio C&#8217;. The first result was the home page for the show, then I [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Last year my sister Beth showed me <a href="http://www.byutv.org/show/c68c4e4f-6322-4a23-8b8e-a5be75b70635/studio-c">Studio C</a>, a sketch comedy show produced by BYUtv.  They&#8217;ve got a few recurring characters like The Awkward Avoidance Viking:</p>
+<a href="/2013/07/16/ugly-urls-studio-c/"><img src="/wp-content/plugins/wp-youtube-lyte/lyteCache.php?origThumbUrl=%2F%2Fi.ytimg.com%2Fvi%2FvM7IDgCuL8s%2Fhqdefault.jpg" alt="YouTube Video"></a><br /><br /></p>
+<p>I was looking for a back episode recently, so I hit Google searching for &#8216;Studio C&#8217;.  The first result was the home page for the show, then I saw the URL &#8211; <a href="http://www.byutv.org/show/c68c4e4f-6322-4a23-8b8e-a5be75b70635/studio-c">http://www.byutv.org/show/c68c4e4f-6322-4a23-8b8e-a5be75b70635/studio-c</a> &#8211; that is one ugly URL!</p>
+<p>My guess is that ugly looking piece in the middle is a unique identifier for the show that is used to look up the information needed to build the resulting page.  If you know someone who works on www.byutv.org please ask them to fix that so that it can do lookups on nice, clean URLs.</p>
+<p>A better one would be byutv.org/show/studio-c.  Don&#8217;t really need need /show/ in there, and the dash in studio-c should be optional.  Using byutv.org/studio-c would be even better, with redirects so that if someone uses /studioc/ they still end up at the right place.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/07/16/ugly-urls-studio-c/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

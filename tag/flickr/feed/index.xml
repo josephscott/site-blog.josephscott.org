@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>flickr &#8211; Joseph Scott</title>
+	<atom:link href="/tag/flickr/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 29 Dec 2015 16:59:55 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Migrating From Flickr to Google Photos</title>
+		<link>/2015/12/29/from-flickr-to-google-photos/</link>
+					<comments>/2015/12/29/from-flickr-to-google-photos/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 29 Dec 2015 16:59:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[flickr]]></category>
+		<category><![CDATA[google-photos]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14624</guid>
+
+					<description><![CDATA[Earlier this month I mentioned going all in with Google Photos. Part of that process was doing a full export of my photos and videos from Flickr and importing them into Google Photos. The Flickr Export After looking around at options I eventually settled upon this version of flickrtouchr.py to do the export. Background about [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Earlier this month I mentioned <a href="https://josephscott.org/archives/2015/12/google-photos/">going all in with Google Photos</a>.  Part of that process was doing a full export of my photos and videos from <a href="https://www.flickr.com/">Flickr</a> and importing them into <a href="https://www.google.com/photos/about/">Google Photos</a>.</p>
+<h3>The Flickr Export</h3>
+<p>After looking around at options I eventually settled upon this version of <a href="https://github.com/dan/hivelogic-flickrtouchr/tree/master">flickrtouchr.py</a> to do the export.  Background about this code is on a post <a href="http://hivelogic.com/articles/backing-up-flickr">here</a>.</p>
+<p>This worked fine with one exception.  It used <code>.jpg</code> as the extension for all of the files, even the videos.  I didn&#8217;t realized this until the export was done.  So I whipped up a simple Bash script to change the extension on the video files to <code>.mov</code>:</p>
+<p>[sourcecode lang=&#8221;bash&#8221;]<br />
+#!/bin/bash</p>
+<p>cd $1</p>
+<p>for file in *<br />
+do<br />
+    filename=$(basename $file)<br />
+    filename=&quot;${filename%.*}&quot;<br />
+    mimetype=$(file &#8211;mime-type -b &quot;$file&quot;)<br />
+    case $mimetype in<br />
+        video/quicktime)<br />
+            mv -v &quot;$filename.jpg&quot; &quot;$filename.mov&quot;<br />
+            ;;<br />
+    esac<br />
+done<br />
+[/sourcecode]</p>
+<p>In the end I had nearly 7,000 files from my Flickr account.</p>
+<h3>Importing To Google Photos</h3>
+<p>I started with using the web based uploader, since it worked fine for the one off items in the past.  Turns out the web uploader sometimes fails to upload an item.  It tells you about the failure, but doesn&#8217;t make it easy to re-try ( let alone re-try automatically ).</p>
+<p>I gave up on web uploader and switched to the <a href="https://photos.google.com/apps">Google Photos &#8220;Desktop Uploader&#8221; Mac App</a>.  If you need to upload a large number of items to Google Photos the Desktop Uploader is the way to go, don&#8217;t bother with anything else.</p>
+<p>There is one item that you need to be careful with when using the Desktop Uploader.  It will use every drop of bandwidth you have, with no rate limiting options.  I ended up letting it run over night, when nothing else was using the Internet connection at home.</p>
+<h3>Conclusion</h3>
+<p>After several experiments with other options, I&#8217;m happy with the process I outlined above.  It isn&#8217;t perfect, but it does get the job done.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/29/from-flickr-to-google-photos/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Ten Years of Flickr at Yahoo</title>
+		<link>/2015/05/05/ten-years-of-flickr-at-yahoo/</link>
+					<comments>/2015/05/05/ten-years-of-flickr-at-yahoo/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 05 May 2015 12:30:07 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[flickr]]></category>
+		<category><![CDATA[yahoo]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12349</guid>
+
+					<description><![CDATA[In March 2005 Yahoo purchased Flickr. Like most acquisitions it hasn&#8217;t been the smoothest of rides. My hope from back then: I plea with Yahoo to not mess up Flickr I remember reading Jeremy Zawdony&#8217;s thoughts on the deal and thinking that there are at least a few people at Yahoo who get it. Sadly [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>In March 2005 <a href="http://blog.flickr.net/en/2005/03/20/yahoo-actually-does-acquire-flickr/">Yahoo purchased Flickr</a>.</p>
+<p>Like most acquisitions it hasn&#8217;t been the smoothest of rides.  My hope from <a href="https://josephscott.org/archives/2005/03/yahoo-buys-flickr/">back then</a>:</p>
+<blockquote><p>
+I plea with Yahoo to not mess up Flickr
+</p></blockquote>
+<p>I remember reading <a href="http://jeremy.zawodny.com/blog/archives/004362.html">Jeremy Zawdony&#8217;s thoughts on the deal</a> and thinking that there are at least a few people at Yahoo who get it.</p>
+<p>Sadly Flickr fell on hard times at Yahoo, but never died completely.  Then there was <a href="http://blog.flickr.net/2013/05/20/a-better-brighter-flickr/">new Flickr</a>.  A ray of hope on a cloudy day.</p>
+<p>I still use Flickr for photos and small videos.  I don&#8217;t want it to die, but the service still only feels lukewarm.  Is there enough oomph left at Yahoo push Flickr ahead?</p>
+<p>Hopefully there will still be a Flickr around to talk about in 2025.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/05/05/ten-years-of-flickr-at-yahoo/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What&#8217;s TechCrunch?</title>
+		<link>/2008/05/02/whats-techcrunch/</link>
+					<comments>/2008/05/02/whats-techcrunch/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 02 May 2008 08:08:09 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[flickr]]></category>
+		<category><![CDATA[techcrunch]]></category>
+		<category><![CDATA[video]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1064</guid>
+
+					<description><![CDATA[You may have heard about Flickr launching their new video feature last month. The real gem though is the video they did to announce it: I don&#8217;t know why, but the ending still makes me laugh 🙂]]></description>
+										<content:encoded><![CDATA[<p>You may have heard about <a href="http://flickr.com/">Flickr</a> launching their new video feature last month.  The real gem though is the video they did to <a href="http://blog.flickr.net/en/2008/04/08/video-on-flickr/">announce</a> it:</p>
+<p>I don&#8217;t know why, but the ending still makes me laugh <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/05/02/whats-techcrunch/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

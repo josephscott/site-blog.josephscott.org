@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: How To Kill IE Performance	</title>
+	<atom:link href="/2010/10/15/how-to-kill-ie-performance/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/10/15/how-to-kill-ie-performance/</link>
+	<description></description>
+	<lastBuildDate>Fri, 15 Oct 2010 19:28:43 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/10/15/how-to-kill-ie-performance/#comment-3553</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 15 Oct 2010 19:28:43 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2954#comment-3553</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/10/15/how-to-kill-ie-performance/#comment-3552&quot;&gt;Nathan Rice&lt;/a&gt;.
+
+I haven&#039;t checked the jQuery source code, but I&#039;d be surprised if they weren&#039;t leveraging getElementById() to improve those types of lookups.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/10/15/how-to-kill-ie-performance/#comment-3552">Nathan Rice</a>.</p>
+<p>I haven&#8217;t checked the jQuery source code, but I&#8217;d be surprised if they weren&#8217;t leveraging getElementById() to improve those types of lookups.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Nathan Rice		</title>
+		<link>/2010/10/15/how-to-kill-ie-performance/#comment-3552</link>
+
+		<dc:creator><![CDATA[Nathan Rice]]></dc:creator>
+		<pubDate>Fri, 15 Oct 2010 19:23:24 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2954#comment-3552</guid>
+
+					<description><![CDATA[I heard somewhere that you can speed things up a bit, even when targeting classes, by being specific in the jQuery selector like so ...
+
+&lt;code&gt;$(&#039;#header .some-class-name&#039;)&lt;/code&gt;
+
+or
+
+&lt;code&gt;$(&#039;#content .some-class-name&#039;)&lt;/code&gt;
+
+or
+
+&lt;code&gt;$(&#039;#sidebar .some-class-name&#039;)&lt;/code&gt;
+
+This way, the browser doesn&#039;t have to traverse the entire DOM … it can use getelementbyid() to find the parent first, which narrows down how much of the DOM it has to look through to find the class.
+
+If true (which it may not be), then even narrowing it down a little bit will help. Obviously, the more specific you can be, the better this method will work.]]></description>
+			<content:encoded><![CDATA[<p>I heard somewhere that you can speed things up a bit, even when targeting classes, by being specific in the jQuery selector like so &#8230;</p>
+<p><code>$('#header .some-class-name')</code></p>
+<p>or</p>
+<p><code>$('#content .some-class-name')</code></p>
+<p>or</p>
+<p><code>$('#sidebar .some-class-name')</code></p>
+<p>This way, the browser doesn&#8217;t have to traverse the entire DOM … it can use getelementbyid() to find the parent first, which narrows down how much of the DOM it has to look through to find the class.</p>
+<p>If true (which it may not be), then even narrowing it down a little bit will help. Obviously, the more specific you can be, the better this method will work.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

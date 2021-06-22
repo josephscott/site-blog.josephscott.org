@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ssl &#8211; Joseph Scott</title>
+	<atom:link href="/tag/ssl/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 26 Dec 2013 17:29:03 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>NGINX TLS Time To First Byte</title>
+		<link>/2013/12/26/nginx-tls-time-to-first-byte/</link>
+					<comments>/2013/12/26/nginx-tls-time-to-first-byte/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 26 Dec 2013 17:29:03 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[https]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[ssl]]></category>
+		<category><![CDATA[time-to-first-byte]]></category>
+		<category><![CDATA[tls]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9676</guid>
+
+					<description><![CDATA[Ilya Grigorik on optimizing NGINX TLS time to first byte (TTTFB): let&#8217;s now turn to the practical matter of picking and tuning the server to deliver the best results. One would hope that the default “out of the box” experience for most servers would do a good job… unfortunately, that is not the case. Let&#8217;s [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Ilya Grigorik on <a href="http://www.igvita.com/2013/12/16/optimizing-nginx-tls-time-to-first-byte/" title="A race before the race.">optimizing NGINX TLS time to first byte (TTTFB)</a>:</p>
+<blockquote><p>
+let&#8217;s now turn to the practical matter of picking and tuning the server to deliver the best results. One would hope that the default “out of the box” experience for most servers would do a good job… unfortunately, that is not the case. Let&#8217;s take a closer look nginx
+</p></blockquote>
+<p>In the simplest terms, TLS involves more work.  The current realities of securing communications means we don&#8217;t have a good way to avoid doing that additional work, indeed we will be doing it more often than we ever have before.  The end result is that we need to spend more time thinking about how to optimize the HTTPS experience for all users.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/12/26/nginx-tls-time-to-first-byte/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Listen for SSL and SSH on the Same Port</title>
+		<link>/2013/10/29/listen-for-ssl-and-ssh-on-the-same-port/</link>
+					<comments>/2013/10/29/listen-for-ssl-and-ssh-on-the-same-port/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 29 Oct 2013 17:15:58 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[corkscrew]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[ssh]]></category>
+		<category><![CDATA[ssl]]></category>
+		<category><![CDATA[sslh]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9293</guid>
+
+					<description><![CDATA[Many corporate firewalls will limit outgoing connections to ports 80 and 443 in a vain effort to restrict access to non-web services. You could run SSH on port 80 or 443 on a VPS or dedicated server, but if you have one of those you are probably already using it to host a small web [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Many corporate firewalls will limit outgoing connections to ports 80 and 443 in a vain effort to restrict access to non-web services.  You could run SSH on port 80 or 443 on a VPS or dedicated server, but if you have one of those you are probably already using it to host a small web site. Wouldn&#8217;t it be nice if your server could listen for both SSH and HTTP/S on port 80 and 443?  That is where <a href="http://www.rutschle.net/tech/sslh.shtml">sslh</a> comes in:</p>
+<blockquote><p>
+sslh accepts connections on specified ports, and forwards them further based on tests performed on the first data packet sent by the remote client.</p>
+<p>Probes for HTTP, SSL, SSH, OpenVPN, tinc, XMPP are implemented, and any other protocol that can be tested using a regular expression, can be recognised. A typical use case is to allow serving several services on port 443 (e.g. to connect to ssh from inside a corporate firewall, which almost never block port 443) while still serving HTTPS on that port.</p>
+<p>Hence sslh acts as a protocol demultiplexer, or a switchboard. Its name comes from its original function to serve SSH and HTTPS on the same port.
+</p></blockquote>
+<p>Source code is available at <a href="https://github.com/yrutschle/sslh">https://github.com/yrutschle/sslh</a>.</p>
+<p>For small uses cases this may come in handy.  If you were constantly needing to SSH to port 80 or 443 then I&#8217;d recommend just spending a few dollars a month to get a VPS dedicated to that task.</p>
+<p>If you are stuck in a limited corporate network another tool you may find useful is <a href="http://www.agroman.net/corkscrew/">corkscrew</a>, which tunnels SSH connections through HTTP proxies.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/10/29/listen-for-ssl-and-ssh-on-the-same-port/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Google APIs and SSL</title>
+		<link>/2011/03/16/google-apis-and-ssl/</link>
+					<comments>/2011/03/16/google-apis-and-ssl/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 16 Mar 2011 16:53:03 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[ssl]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3849</guid>
+
+					<description><![CDATA[Google has announced the move for several of their APIs to require SSL when making requests. This is a good thing. If you aren&#8217;t planning on it already, now is a good time to expect new APIs to require SSL from the start. This is likely going to make TLS Server Name Indication an even [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Google has announced <a href="http://googlecode.blogspot.com/2011/03/improving-security-of-google-apis-with.html">the move for several of their APIs to require SSL</a> when making requests.  This is a good thing.</p>
+<p>If you aren&#8217;t planning on it already, now is a good time to expect new APIs to require SSL from the start.  This is likely going to make <a href="http://en.wikipedia.org/wiki/Server_Name_Indication">TLS Server Name Indication</a> an even bigger deal, as demand for SSL services increases and IP addresses become more expensive.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/03/16/google-apis-and-ssl/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Nginx, Redirect non-SSL Requests</title>
+		<link>/2011/02/07/nginx-redirect-non-ssl-requests/</link>
+					<comments>/2011/02/07/nginx-redirect-non-ssl-requests/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 07 Feb 2011 17:51:43 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[ssl]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3495</guid>
+
+					<description><![CDATA[Since I managed to do this incorrectly a couple of times I figured it was worth noting here. You already have a working site setup in Nginx that uses SSL. Now you want to make sure that any non-SSL requests to the site get redirected. Turns out to be very simple: [sourcecode lang=&#8221;plain&#8221;] server { [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Since I managed to do this incorrectly a couple of times I figured it was worth noting here.</p>
+<p>You already have a working site setup in Nginx that uses SSL.  Now you want to make sure that any non-SSL requests to the site get redirected.  Turns out to be very simple:</p>
+<p>[sourcecode lang=&#8221;plain&#8221;]<br />
+server {<br />
+  listen 80;<br />
+  server_name example.com;<br />
+  rewrite ^(.*) https://$server_name$1/ permanent;<br />
+}<br />
+[/sourcecode]</p>
+<p>This sends back an <code>HTTP/1.1 301 Moved Permanently</code> response for non-SSL requests for example.com.</p>
+<p>Three short and easy to read lines, I like it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/02/07/nginx-redirect-non-ssl-requests/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Expired SSL Cert: smtp.gmail.com</title>
+		<link>/2008/07/29/expired-ssl-cert-smtpgmailcom/</link>
+					<comments>/2008/07/29/expired-ssl-cert-smtpgmailcom/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 29 Jul 2008 18:21:57 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[gmail]]></category>
+		<category><![CDATA[ssl]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1157</guid>
+
+					<description><![CDATA[I got a warning today about the smtp.gmail.com SSL cert, turns out it expired today: Tuesday, July 29, 2008 10:58:07 AM US/Mountain. If you&#8217;ve got a contact with the Gmail team can you let them know? Thanks.]]></description>
+										<content:encoded><![CDATA[<p>I got a warning today about the smtp.gmail.com SSL cert, turns out it expired today: Tuesday, July 29, 2008 10:58:07 AM US/Mountain.  If you&#8217;ve got a contact with the Gmail team can you let them know?  Thanks.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/07/29/expired-ssl-cert-smtpgmailcom/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>HTTP Basic Authentication, A Tale of AtomPub, WordPress, PHP, Apache, CGI and SSL/TLS</title>
+		<link>/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/</link>
+					<comments>/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 19 Sep 2007 18:00:32 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[apache]]></category>
+		<category><![CDATA[atompub]]></category>
+		<category><![CDATA[basicauthentication]]></category>
+		<category><![CDATA[cgi]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[ssl]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/</guid>
+
+					<description><![CDATA[I&#8217;ve been really enjoying working with Tim Bray, Pete Lacey, Elias Torres and Sam Ruby on improving AtomPub in WordPress. This work is in WordPress 2.3, which will be released later this month. You can try it out right now by downloading the beta. Sam has also started some documentation on AtomPub in WordPress at [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been really enjoying working with <a href="http://www.tbray.org/ongoing/">Tim Bray</a>, <a href="http://wanderingbarque.com/nonintersecting/">Pete Lacey</a>, <a href="http://torrez.us/">Elias Torres</a> and <a href="http://intertwingly.net/blog/">Sam Ruby</a> on improving AtomPub in WordPress.  This work is in WordPress 2.3, which will be released later this month.  You can try it out right now by downloading <a href="http://wordpress.org/development/2007/09/wordpress-23-beta-3/">the beta</a>.  Sam has also started some documentation on AtomPub in WordPress at <a href="http://codex.wordpress.org/AtomPub">http://codex.wordpress.org/AtomPub</a>.</p>
+<p>There is a lot of ground to cover in the post so to start with I want to distinguish between two topics that are closely related, but for our purposes today are also separate and distinct from each other.  The first is authentication, specifically <a href="http://tools.ietf.org/html/rfc2617">HTTP Basic Authentication</a>.  The second is security, which will focus on <a href="http://en.wikipedia.org/wiki/Transport_Layer_Security">SSL/TLS</a> (i.e. using https:// URLs).</p>
+<p>To start with, the <a href="http://bitworking.org/projects/atom/draft-ietf-atompub-protocol-17.html">AtomPub spec</a> has a section on <a href="http://bitworking.org/projects/atom/draft-ietf-atompub-protocol-17.html#rfc.section.14">Securing the Atom Publishing Protocol</a> that deals with authentication.  In general, you can use nothing or what ever you want, but HTTP Basic Authentication with TLS needs to be able to work.  Think of it as HTTP Basic Authentication being the lowest common denominator that AtomPub clients and servers have to support, along with TLS if you&#8217;d like.</p>
+<p>In WordPress there are actually two ways that a user could be authenticated when using AtomPub, HTTP basic and cookies.  The cookie mechanism just looks to see if you sent along an authenticated WordPress cookie with your request.  Since we&#8217;d been using Tim&#8217;s <a href="http://www.tbray.org/ape/">Atom Protocol Exerciser (APE)</a> for testing, all authentication was being done via HTTP basic.  Which worked fine, most of the time.</p>
+<p>I started running APE against WordPress running under different situations and I ran into a problem with authentication when PHP was being run as a CGI under Apache.  When running as a server module (mod_php) PHP takes care of decoding HTTP basic for you (see <a href="http://us3.php.net/features.http-auth">HTTP basic authentication in PHP</a>).  When a using HTTP basic PHP will automatically populate $_SERVER[&#8216;PHP_AUTH_USER&#8217;] and $_SERVER[&#8216;PHP_AUTH_PW&#8217;] variables with the username and password that were provided.  IF and ONLY IF PHP is being run as a server module (like mod_php).  If you are running PHP as a CGI then those two variables won&#8217;t get created at all, ever, even when using HTTP basic authentication.  And since you can&#8217;t do anything in WordPress via AtomPub without authenticating you are dead in the water.  Well, not exactly.</p>
+<p>PHP not supporting HTTP basic auth when being run as a CGI is a known issue, so folks have come up with clever work ways to work around this.  One common work around is to <a href="http://www.besthostratings.com/articles/http-auth-php-cgi.html">use mod_rewrite to add HTTP basic auth into $_SERVER[&#8216;HTTP_AUTHORIZATION&#8217;]</a>:</p>
+<p><code></p>
+<pre>
+RewriteEngine on
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
+</pre>
+<p></code></p>
+<p>The idea here is that mod_rewrite watches for an HTTP basic auth attempt and then injects the HTTP header in to the PHP environment as HTTP_AUTHORIZATION.  From there is it an easy job of parsing and decoding the HTTP header and manually populating $_SERVER[&#8216;PHP_AUTH_USER&#8217;] and $_SERVER[&#8216;PHP_AUTH_PW&#8217;] yourself.  This is currently being done in the WordPress AtomPub code, so if you are on a host that runs PHP as a CGI and you have access to .htaccess and mod_rewrite then you can try it out.</p>
+<p>Unfortunately I&#8217;ve seen times where this doesn&#8217;t work either.  A modified version of this that I&#8217;ve had better success with is to pass the authentication back in via GET.  Here&#8217;s an example from a test WordPress blog that redirects AtomPub authentication:</p>
+<p><code></p>
+<pre>
+RewriteEngine on
+RewriteBase /test/atompub/
+RewriteCond %{HTTP:Authorization}  !^$
+RewriteRule wp-app.php wp-app.php?HTTP_AUTHORIZATION=%{HTTP:Authorization} [QSA,L]
+</pre>
+<p></code></p>
+<p>Instead of parsing and decoding from $_SERVER[&#8216;HTTP_AUTHORIZATION&#8217;] you would do it from $_GET[&#8216;HTTP_AUTHORIZATION&#8217;].  This isn&#8217;t exactly ideal either, but I&#8217;ve had better luck getting it to work in PHP as a CGI environments.  Code to support this isn&#8217;t in WordPress AtomPub yet, but we might add it.</p>
+<p>The four of us went back and forth on this a bit then Tim Bray asked the elephant in the room question: why doesn&#8217;t PHP support HTTP basic when running as a CGI?  I didn&#8217;t have a good answer for him, so I went hunting on Google.  It turns out that this has nothing to do with PHP, it is how Apache works.  Apache does not pass the HTTP basic headers to CGI applications, so they never see them.  This has been mentioned in several places, for brevity I&#8217;ll only quote one, from Jon Udell talking about CGI and mod_perl:</p>
+<p><a href="http://www.byte.com/art/9801/sec7/art1.htm">HTTP Authentication</a></p>
+<blockquote><p>
+&#8220;Note that such a module has complete access to the HTTP headers sent by the client. If you write a CGI script to enforce a security policy, à la the ByteCal example above, that script will normally see only the user&#8217;s name (HTTP_REMOTE_USER) and not the full credentials (HTTP_AUTHORIZATION).</p>
+<p>That&#8217;s because Apache, as a security measure, withholds the Authorization header from CGI scripts. (If you really want to build a CGI-based access-control script, you can tweak Apache to make it send this header.) But an Apache/Perl authentication module, running inside the server, knows everything that Apache knows about a request.&#8221;
+</p></blockquote>
+<p>So far I&#8217;ve used WordPress and AtomPub as an example, but this problem is not specific to either.  This is an issue with CGI applications being able to use HTTP basic authentication, and the ways people have worked around it.  While there are ways to deal with this (like the two I mentioned above), they aren&#8217;t ideal and only work if you can use .htaccess and mod_rewrite.</p>
+<p>There have been lots of alternatives to authentication that get around this issue.  Lots of people have looked at this, hopefully we&#8217;ll have a generalized way of dealing with this at some point.  Until then it looks like we&#8217;ll see API specific variations of authentication.</p>
+<p>Ok, I also mentioned that we&#8217;d talk about security.  This one is more to the point, if you aren&#8217;t using SSL/TLS then your communications aren&#8217;t secure.  Although HTTP basic doesn&#8217;t send your plain text password and username, it is the next best thing (base64 encoded).  So anyone with access to your traffic (wireless network sniffing anyone?) can easily grab your username and password.  So how do you secure this authentication process?  By doing it over SSL/TLS. If your web traffic isn&#8217;t using SSL/TLS it isn&#8217;t secure.</p>
+<p>In the context of WordPress there is a trade off here.  We can&#8217;t guarantee that every WordPress install is going to support SSL/TLS, so we can&#8217;t make it a requirement.  That said, there is nothing in WordPress (or the APIs: AtomPub and XML-RPC) that prevent you being able to use SSL/TLS.  This leaves it up the person running the WordPress blog to decide what level of security is needed.</p>
+<p>On WordPress.com we support TLS/SSL.  You can point your XML-RPC client at https://&lt;your_blog_here&gt;.wordpress.com/xmlrpc.php and it will encrypt the data back and forth between your computer and WordPress.com servers.  Same for AtomPub, only the URL would look like https://&lt;your_blog_here&gt;.wordpress.com/wp-app.php.</p>
+<p>Hopefully everyone takes away two things from this.  One, you can&#8217;t depend on HTTP basic authentication working.  Two, if you aren&#8217;t using SSL/TLS then your traffic isn&#8217;t secure.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/09/19/http-basic-authentication-a-tale-of-atompub-wordpress-php-apache-cgi-and-ssltls/feed/</wfw:commentRss>
+			<slash:comments>32</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

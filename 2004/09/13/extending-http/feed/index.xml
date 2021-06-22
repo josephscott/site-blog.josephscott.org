@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Extending HTTP	</title>
+	<atom:link href="/2004/09/13/extending-http/feed/" rel="self" type="application/rss+xml" />
+	<link>/2004/09/13/extending-http/</link>
+	<description></description>
+	<lastBuildDate>Mon, 13 Sep 2004 17:29:55 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Bob Wyman		</title>
+		<link>/2004/09/13/extending-http/#comment-573</link>
+
+		<dc:creator><![CDATA[Bob Wyman]]></dc:creator>
+		<pubDate>Mon, 13 Sep 2004 17:29:55 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/09/13/extending-http/#comment-573</guid>
+
+					<description><![CDATA[Joseph, if it makes you any more comfortable, RFC3229 was issued by the IETF as a &quot;standards track&quot; document in January of 2002 -- almost three years ago. I&#039;m not really proposing anything new other than a new instance-manipulation method which is feed specific. In part, my proposal is motivated by a desire to focus people on the standards have already been worked out at great expense in the past. We should do the best with what we have before we move on to defining completely new stuff...
+
+Personally, I&#039;m confident that the &quot;real&quot; solution to this problem is the kind of publish/subscribe &quot;push-based&quot; system that we provide at PubSub.com. However, before trying to move people off the technology they use today, we think it makes sense to make it as good as it can be. Once we&#039;ve seen the true limits of pull, we&#039;ll be able to appreciate push better and have a better understanding of how to implement and use it. If we implement RFC3229, in combination with all the other existing HTTP methods like conditional-get, compression, etc. then we will have taken polling or &quot;pull&quot; just about as far as it could possibly be taken...
+
+bob wyman]]></description>
+			<content:encoded><![CDATA[<p>Joseph, if it makes you any more comfortable, RFC3229 was issued by the IETF as a &#8220;standards track&#8221; document in January of 2002 &#8212; almost three years ago. I&#8217;m not really proposing anything new other than a new instance-manipulation method which is feed specific. In part, my proposal is motivated by a desire to focus people on the standards have already been worked out at great expense in the past. We should do the best with what we have before we move on to defining completely new stuff&#8230;</p>
+<p>Personally, I&#8217;m confident that the &#8220;real&#8221; solution to this problem is the kind of publish/subscribe &#8220;push-based&#8221; system that we provide at PubSub.com. However, before trying to move people off the technology they use today, we think it makes sense to make it as good as it can be. Once we&#8217;ve seen the true limits of pull, we&#8217;ll be able to appreciate push better and have a better understanding of how to implement and use it. If we implement RFC3229, in combination with all the other existing HTTP methods like conditional-get, compression, etc. then we will have taken polling or &#8220;pull&#8221; just about as far as it could possibly be taken&#8230;</p>
+<p>bob wyman</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

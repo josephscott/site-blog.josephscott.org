@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: ETag Survey	</title>
+	<atom:link href="/2011/09/07/etag-survey/feed/" rel="self" type="application/rss+xml" />
+	<link>/2011/09/07/etag-survey/</link>
+	<description></description>
+	<lastBuildDate>Wed, 08 Feb 2012 21:01:54 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Yung		</title>
+		<link>/2011/09/07/etag-survey/#comment-3831</link>
+
+		<dc:creator><![CDATA[Yung]]></dc:creator>
+		<pubDate>Wed, 08 Feb 2012 21:01:54 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4717#comment-3831</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/09/07/etag-survey/#comment-3830&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+Is it a piece of code that goes in the .htaccess file or is it set up in the httpd.conf file? I&#039;m at the very beginning of knowledge in this area and don&#039;t see some easy &quot;turn e-tags on&quot; button. I&#039;m hosted through GoDaddy and they tell me that it&#039;s a piece of code that goes in the .htaccess but that&#039;s all they could tell me. I have read that they are valuable to have - when done right - but can&#039;t seem to find out how to actually get it to be on the pages of my site.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/09/07/etag-survey/#comment-3830">Joseph Scott</a>.</p>
+<p>Is it a piece of code that goes in the .htaccess file or is it set up in the httpd.conf file? I&#8217;m at the very beginning of knowledge in this area and don&#8217;t see some easy &#8220;turn e-tags on&#8221; button. I&#8217;m hosted through GoDaddy and they tell me that it&#8217;s a piece of code that goes in the .htaccess but that&#8217;s all they could tell me. I have read that they are valuable to have &#8211; when done right &#8211; but can&#8217;t seem to find out how to actually get it to be on the pages of my site.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/09/07/etag-survey/#comment-3830</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 08 Feb 2012 17:32:42 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4717#comment-3830</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/09/07/etag-survey/#comment-3829&quot;&gt;Yung&lt;/a&gt;.
+
+The Etag has no required definition as far as how to generate one.  In order for it to be useful for caching though it does need to be consistent.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/09/07/etag-survey/#comment-3829">Yung</a>.</p>
+<p>The Etag has no required definition as far as how to generate one.  In order for it to be useful for caching though it does need to be consistent.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Yung		</title>
+		<link>/2011/09/07/etag-survey/#comment-3829</link>
+
+		<dc:creator><![CDATA[Yung]]></dc:creator>
+		<pubDate>Tue, 07 Feb 2012 21:21:54 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4717#comment-3829</guid>
+
+					<description><![CDATA[So, what is the proper way to do an Etag? I can&#039;t seem to find this information in an &quot;Etag for Dummies&quot; format. Where does it go? How do you ensure you have done it correctly? 
+
+Thanks!]]></description>
+			<content:encoded><![CDATA[<p>So, what is the proper way to do an Etag? I can&#8217;t seem to find this information in an &#8220;Etag for Dummies&#8221; format. Where does it go? How do you ensure you have done it correctly? </p>
+<p>Thanks!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/09/07/etag-survey/#comment-3828</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 03 Oct 2011 14:38:40 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4717#comment-3828</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/09/07/etag-survey/#comment-3827&quot;&gt;Umair Jabbar&lt;/a&gt;.
+
+If your server admins are incapable of configuring Etags correctly then it is is better to turn them off entirely.  No Etags are better than broken Etags.
+
+But the best solution is still to use Etags correctly.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/09/07/etag-survey/#comment-3827">Umair Jabbar</a>.</p>
+<p>If your server admins are incapable of configuring Etags correctly then it is is better to turn them off entirely.  No Etags are better than broken Etags.</p>
+<p>But the best solution is still to use Etags correctly.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Umair Jabbar		</title>
+		<link>/2011/09/07/etag-survey/#comment-3827</link>
+
+		<dc:creator><![CDATA[Umair Jabbar]]></dc:creator>
+		<pubDate>Mon, 03 Oct 2011 10:20:14 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4717#comment-3827</guid>
+
+					<description><![CDATA[Hi Joseph, 
+as I have read on many places the use of ETAG is not quite recommended these days, instead the if modified thing is more in use. I would like to know your views on it.
+
+- Thanks]]></description>
+			<content:encoded><![CDATA[<p>Hi Joseph,<br />
+as I have read on many places the use of ETAG is not quite recommended these days, instead the if modified thing is more in use. I would like to know your views on it.</p>
+<p>&#8211; Thanks</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Kayla		</title>
+		<link>/2011/09/07/etag-survey/#comment-3826</link>
+
+		<dc:creator><![CDATA[Kayla]]></dc:creator>
+		<pubDate>Sun, 11 Sep 2011 01:20:52 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4717#comment-3826</guid>
+
+					<description><![CDATA[This was one of my favorite pieces of your presentation today - thanks for the great conference!]]></description>
+			<content:encoded><![CDATA[<p>This was one of my favorite pieces of your presentation today &#8211; thanks for the great conference!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

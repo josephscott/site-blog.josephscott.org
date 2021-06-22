@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Design &#8211; Joseph Scott</title>
+	<atom:link href="/category/web/design/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 26 May 2005 03:27:13 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>IE Specific CSS</title>
+		<link>/2005/05/25/ie-specific-css/</link>
+					<comments>/2005/05/25/ie-specific-css/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 26 May 2005 03:27:13 +0000</pubDate>
+				<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[Design]]></category>
+		<category><![CDATA[How To]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[ie]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/25/ie-specific-css/</guid>
+
+					<description><![CDATA[I was working on some site design and needed to tweak it for IE (IE dev team, hello, is this thing on? Better CSS support please) in order to make look more along the lines of what I had intended (which is the way that FireFox and Safari display it). So off to Google I [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was working on some site design and needed to tweak it for IE (IE dev team, hello, is this thing on?  Better CSS support please) in order to make look more along the lines of what I had intended (which is the way that FireFox and Safari display it).  So off to Google I went hoping to find some way to easy include CSS only for IE browsers.  Low and behold it is amazingly easy!  I first came across <a href="http://www.noscope.com/journal/2004/04/conditional_comments">this example</a> which lead me to the <a href="http://www.quirksmode.org/css/condcom.html">conditional comments site</a>.  All I can say is, wow!  It works, it&#8217;s simple, doesn&#8217;t feel like a complete crazy hack (although some might say the mere fact that this has to be done at all is a hack) and it only took me a minute or two to put it all together.</p>
+<p>It is a shame that this has to be done, but at least there is an easy way to do it.  Here&#8217;s an example of including CSS that will only be used by Internet Explorer (IE):</p>
+<p><code><br />
+&lt;!--[if IE]&gt;<br />
+&lt;link rel="stylesheet" type="text/css" media="screen"<br />
+    href="/ie-style.css" /&gt;<br />
+&lt;![endif]--&gt;<br />
+</code></p>
+<p>It seems that you could include any sort of HTML (or JavaScript?) between these conditional comments.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/05/25/ie-specific-css/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>CSS Layout Tool</title>
+		<link>/2004/05/03/css-layout-tool/</link>
+					<comments>/2004/05/03/css-layout-tool/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 04 May 2004 00:38:47 +0000</pubDate>
+				<category><![CDATA[Design]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/05/03/css-layout-tool/</guid>
+
+					<description><![CDATA[Inknoise has a spiffy little tool to generate a CSS based page layout after you provide it with a couple of options. It will generate full , two column (left or right sidebar) and three column layout styles. You can specify the width and padding for the container (main area) and side columns. Pretty slick. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.inknoise.com/">Inknoise</a> has a spiffy little <a href="http://www.inknoise.com/experimental/layoutomatic.php">tool to generate a CSS based page layout</a> after you provide it with a couple of options.  It will generate full , two column (left or right sidebar) and three column layout styles.  You can specify the width and padding for the container (main area) and side columns.  Pretty slick.</p>
+<p>If you are just starting out on a page design this may save you some time and frustration.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2004/05/03/css-layout-tool/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

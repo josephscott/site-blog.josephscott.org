@@ -1,0 +1,62 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/dropbox/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/dropbox/",
+    "feed_url": "https://blog.josephscott.org/tag/dropbox/feed/json/",
+    "language": "en-US",
+    "title": "dropbox &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/?p=17839",
+            "url": "https://blog.josephscott.org/2019/11/26/dropbox-has-jumped-the-memory-shark/",
+            "title": "Dropbox Has Jumped The Memory Shark",
+            "content_html": "<p>It is no secret that <a href=\"https://www.dropbox.com/\">Dropbox</a> has been expanding their services well beyond just &#8220;syncing files&#8221;.  For the most part I have ignored those additional features, nailing the job of syncing files was valuable enough for me.</p>\n<p>Recently though, they have been updating the MacOS client to do more.  And again, I&#8217;ve generally ignored that, I&#8217;m really only interested in using Dropbox to sync files.  I find that so valuable that I&#8217;ve been a paying customer for a number of years.</p>\n<p>There are parts of the MacOS client update that I can&#8217;t ignore, namely the amount of the memory it now consumes:</p>\n<p><a href=\"https://blog.josephscott.org/wp-content/uploads/2019/11/dropbox.png\"><img loading=\"lazy\" src=\"https://blog.josephscott.org/wp-content/uploads/2019/11/dropbox.png\" alt=\"\" width=\"785\" height=\"356\" class=\"aligncenter size-full wp-image-17841\" srcset=\"https://blog.josephscott.org/wp-content/uploads/2019/11/dropbox.png 785w, https://blog.josephscott.org/wp-content/uploads/2019/11/dropbox-300x136.png 300w, https://blog.josephscott.org/wp-content/uploads/2019/11/dropbox-768x348.png 768w\" sizes=\"(max-width: 785px) 100vw, 785px\" /></a></p>\n<p>To be very clear, this is on MacOS 10.14.6 and Dropbox 86.3.141.  That combination ends up going through more than 650 MB of memory.  All I want to do is reliably sync files, and that feels like too much memory for that one job.</p>\n<p>As a comparison, I tried out <a href=\"https://www.synology.com/en-us/dsm/feature/drive\">Synology Drive</a>, which has a MacOS client for syncing files with a Synology NAS.  I was surprised at the difference in memory usage:</p>\n<p><a href=\"https://blog.josephscott.org/wp-content/uploads/2019/11/synology-drive.png\"><img loading=\"lazy\" src=\"https://blog.josephscott.org/wp-content/uploads/2019/11/synology-drive.png\" alt=\"\" width=\"759\" height=\"210\" class=\"aligncenter size-full wp-image-17847\" srcset=\"https://blog.josephscott.org/wp-content/uploads/2019/11/synology-drive.png 759w, https://blog.josephscott.org/wp-content/uploads/2019/11/synology-drive-300x83.png 300w\" sizes=\"(max-width: 759px) 100vw, 759px\" /></a></p>\n<p>With Synology Drive Client 2.0.1-11061 there is less than 100 MB of memory used.</p>\n<p>This isn&#8217;t a perfect comparison, I&#8217;d categorize Synology Drive as more basic than Dropbox, but broadly speaking for me they have the same purpose: sync files.  I don&#8217;t see where that warrants a difference in memory usage of more than 500 MB.</p>\n",
+            "content_text": "It is no secret that Dropbox has been expanding their services well beyond just &#8220;syncing files&#8221;.  For the most part I have ignored those additional features, nailing the job of syncing files was valuable enough for me.\nRecently though, they have been updating the MacOS client to do more.  And again, I&#8217;ve generally ignored that, I&#8217;m really only interested in using Dropbox to sync files.  I find that so valuable that I&#8217;ve been a paying customer for a number of years.\nThere are parts of the MacOS client update that I can&#8217;t ignore, namely the amount of the memory it now consumes:\n\nTo be very clear, this is on MacOS 10.14.6 and Dropbox 86.3.141.  That combination ends up going through more than 650 MB of memory.  All I want to do is reliably sync files, and that feels like too much memory for that one job.\nAs a comparison, I tried out Synology Drive, which has a MacOS client for syncing files with a Synology NAS.  I was surprised at the difference in memory usage:\n\nWith Synology Drive Client 2.0.1-11061 there is less than 100 MB of memory used.\nThis isn&#8217;t a perfect comparison, I&#8217;d categorize Synology Drive as more basic than Dropbox, but broadly speaking for me they have the same purpose: sync files.  I don&#8217;t see where that warrants a difference in memory usage of more than 500 MB.",
+            "date_published": "2019-11-26T15:36:14-07:00",
+            "date_modified": "2019-11-26T15:36:14-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "dropbox",
+                "synology"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=10482",
+            "url": "https://blog.josephscott.org/2014/05/29/dropbox-webhooks/",
+            "title": "Dropbox Webhooks",
+            "content_html": "<p>Dropbox <a href=\"https://www.dropbox.com/developers/blog/90/announcing-dropbox-webhooks\">launched support for webhooks</a>.  This is a great move.</p>\n<p>Amazon S3 does have something similar.  You can enable <a href=\"http://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html\">notifications via their Simple Notification Service ( SNS )</a>, but then you are charged for the SNS usage.  For many people that will make it less appealing than traditional direct webhooks.</p>\n<p>Dropbox continues to use a mix of Amazon Web Services ( AWS ) and separate dedicated hardware to manage user file.  I wonder if they are using any AWS services to process what are likely millions of HTTP requests for webhooks.</p>\n",
+            "content_text": "Dropbox launched support for webhooks.  This is a great move.\nAmazon S3 does have something similar.  You can enable notifications via their Simple Notification Service ( SNS ), but then you are charged for the SNS usage.  For many people that will make it less appealing than traditional direct webhooks.\nDropbox continues to use a mix of Amazon Web Services ( AWS ) and separate dedicated hardware to manage user file.  I wonder if they are using any AWS services to process what are likely millions of HTTP requests for webhooks.",
+            "date_published": "2014-05-29T15:14:18-06:00",
+            "date_modified": "2014-05-29T15:14:18-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "aws",
+                "dropbox",
+                "webhooks",
+                "Posts"
+            ]
+        }
+    ]
+}

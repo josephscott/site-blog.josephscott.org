@@ -1,0 +1,37 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/thredis/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/thredis/",
+    "feed_url": "https://blog.josephscott.org/tag/thredis/feed/json/",
+    "language": "en-US",
+    "title": "thredis &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=6702",
+            "url": "https://blog.josephscott.org/2013/02/25/thredis-the-peanut-butter-cup-of-databases/",
+            "title": "Thredis, the Peanut Butter Cup of Databases",
+            "content_html": "<p>Ever wonder what would happen if you dipped <a href=\"http://www.sqlite.org/\">SQLite</a> into <a href=\"http://redis.io/\">Redis</a>?  You get <a href=\"http://thredis.org/\">Thredis</a>, the peanut butter cup of databases:</p>\n<blockquote><p>\nThredis embeds an in-memory SQLite database within Redis to enable a<br />\nsophisticated level of SQL (joins, sub-selects, etc, all supported),<br />\nas well as introduces multi-threaded processing to take advantage of<br />\nSMP systems.\n</p></blockquote>\n<p>This is one wild hack, check out one of the examples:</p>\n<p>[sourcecode]<br />\nredis 127.0.0.1:6379&gt; zadd foo_zset 1 a 2 b 3 c<br />\n(integer) 3<br />\nredis 127.0.0.1:6379&gt; sql &quot;create virtual table zset using redis (foo_zset)&quot;<br />\nOK<br />\nredis 127.0.0.1:6379&gt; sql &quot;select * from zset&quot;<br />\n1) 1) &quot;key&quot;<br />\n   2) &quot;val&quot;<br />\n2) 1) &quot;1.0&quot;<br />\n   2) &quot;a&quot;<br />\n3) 1) &quot;2.0&quot;<br />\n   2) &quot;b&quot;<br />\n4) 1) &quot;3.0&quot;<br />\n   2) &quot;c&quot;<br />\n[/sourcecode]</p>\n<p>More examples are listed at <a href=\"http://thredis.org/\">http://thredis.org/</a>, source code is available at <a href=\"https://github.com/grisha/thredis\">https://github.com/grisha/thredis</a>.</p>\n",
+            "content_text": "Ever wonder what would happen if you dipped SQLite into Redis?  You get Thredis, the peanut butter cup of databases:\n\nThredis embeds an in-memory SQLite database within Redis to enable a\nsophisticated level of SQL (joins, sub-selects, etc, all supported),\nas well as introduces multi-threaded processing to take advantage of\nSMP systems.\n\nThis is one wild hack, check out one of the examples:\n[sourcecode]\nredis 127.0.0.1:6379&gt; zadd foo_zset 1 a 2 b 3 c\n(integer) 3\nredis 127.0.0.1:6379&gt; sql &quot;create virtual table zset using redis (foo_zset)&quot;\nOK\nredis 127.0.0.1:6379&gt; sql &quot;select * from zset&quot;\n1) 1) &quot;key&quot;\n   2) &quot;val&quot;\n2) 1) &quot;1.0&quot;\n   2) &quot;a&quot;\n3) 1) &quot;2.0&quot;\n   2) &quot;b&quot;\n4) 1) &quot;3.0&quot;\n   2) &quot;c&quot;\n[/sourcecode]\nMore examples are listed at http://thredis.org/, source code is available at https://github.com/grisha/thredis.",
+            "date_published": "2013-02-25T10:32:48-07:00",
+            "date_modified": "2013-02-25T10:32:48-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "redis",
+                "sqlite",
+                "thredis",
+                "Posts"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>whatsapp &#8211; Joseph Scott</title>
+	<atom:link href="/tag/whatsapp/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 01 Oct 2014 15:01:50 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Facebook Wants To Improve The Linux Network Stack</title>
+		<link>/2014/10/01/facebook-wants-to-improve-the-linux-network-stack/</link>
+					<comments>/2014/10/01/facebook-wants-to-improve-the-linux-network-stack/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 01 Oct 2014 15:01:50 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[facebook]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[whatsapp]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10970</guid>
+
+					<description><![CDATA[Facebook has a job posting for a &#8216;Linux Kernel Software Engineer&#8217; ( emphasis mine ): Facebook is seeking a Linux Kernel Software Engineer to join our Kernel team, with a primary focus on the networking subsystem. Our goal over the next few years is for the Linux kernel network stack to rival or exceed that [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Facebook has a <a href="https://www.facebook.com/careers/department?req=a0IA000000Cz53VMAR">job posting for a &#8216;Linux Kernel Software Engineer&#8217;</a> ( emphasis mine ):</p>
+<blockquote><p>
+Facebook is seeking a Linux Kernel Software Engineer to join our Kernel team, with a primary focus on the networking subsystem. <strong>Our goal over the next few years is for the Linux kernel network stack to rival or exceed that of FreeBSD.</strong>
+</p></blockquote>
+<p>Why the comparison with FreeBSD?  I suspect it comes from their $19 billion purchase of WhatsApp.  They were claiming <a href="http://blog.whatsapp.com/196/1-million-is-so-2011">2 million established TCP connections on a single FreeBSD server</a> back in 2012:</p>
+<blockquote><p>
+Today we have an update for those keeping score at home: we are now able to easily push our systems to over 2 million tcp connections!</p>
+<p>&#8230;</p>
+<p>Best part is that we are able to do it with plenty of CPU and memory to spare and do it sustainably
+</p></blockquote>
+<p>The post describes a few details of their FreeBSD ( and Erlang ) setup.</p>
+<p>I&#8217;m sure that Facebook would like to consolidate servers to a single operating system.  It sounds like they can&#8217;t do that until Linux can handle a similar load ( with a similar performance profile ).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/10/01/facebook-wants-to-improve-the-linux-network-stack/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

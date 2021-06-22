@@ -1,0 +1,40 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/geometry/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/geometry/",
+    "feed_url": "https://blog.josephscott.org/tag/geometry/feed/json/",
+    "language": "en-US",
+    "title": "geometry &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://joseph.randomnetworks.com/?p=468",
+            "url": "https://blog.josephscott.org/2005/08/26/hierarchical-data-using-geometric-types/",
+            "title": "Hierarchical Data Using Geometric Types",
+            "content_html": "<p>While I was scanning through the <a href=\"http://dev.mysql.com/tech-resources/articles/hierarchical-data.html\">Managing Hierarchical Data in MySQL</a> article at <a href=\"http://wwww.mysql.com/\">MySQL.com</a> I started to wonder if someone had come up with a way to manage hierarchical data using geometric types.  <a href=\"http://www.postgresql.org/\">PostgreSQL</a> supports <a href=\"http://www.postgresql.org/docs/8.0/interactive/datatype-geometric.html\">geometric types</a> like point, line, box, circle and polygon and several <a href=\"http://www.postgresql.org/docs/8.0/interactive/functions-geometry.html\">geometric functions and operators</a>.</p>\n<p>If you started out with one box (the universe) and then created new child boxes as needed then you should be able to accurately describe a hierarchy.  You&#8217;d have to be able to shrink and grow each box (and all the boxes above it) as needed to make room for more or less child boxes.  It would also be nice to have an easy to way move a branch of the hierarchy (along with everything below it) to some other position in the hierarchy.</p>\n<p>It would take some work to sit down and come up with the functions and triggers that would make managing something like this as simple as possible.  Anyone know where something like this has already been implemented?</p>\n",
+            "content_text": "While I was scanning through the Managing Hierarchical Data in MySQL article at MySQL.com I started to wonder if someone had come up with a way to manage hierarchical data using geometric types.  PostgreSQL supports geometric types like point, line, box, circle and polygon and several geometric functions and operators.\nIf you started out with one box (the universe) and then created new child boxes as needed then you should be able to accurately describe a hierarchy.  You&#8217;d have to be able to shrink and grow each box (and all the boxes above it) as needed to make room for more or less child boxes.  It would also be nice to have an easy to way move a branch of the hierarchy (along with everything below it) to some other position in the hierarchy.\nIt would take some work to sit down and come up with the functions and triggers that would make managing something like this as simple as possible.  Anyone know where something like this has already been implemented?",
+            "date_published": "2005-08-26T09:03:46-06:00",
+            "date_modified": "2005-08-26T09:03:46-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "geometry",
+                "hierarchicaldata",
+                "MySQL",
+                "PostgreSQL",
+                "spatialdata",
+                "sql",
+                "josephscott"
+            ]
+        }
+    ]
+}

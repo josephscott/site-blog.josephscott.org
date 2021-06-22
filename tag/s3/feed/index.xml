@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>s3 &#8211; Joseph Scott</title>
+	<atom:link href="/tag/s3/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 08 Apr 2008 22:59:40 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Google App Engine</title>
+		<link>/2008/04/08/google-app-engine/</link>
+					<comments>/2008/04/08/google-app-engine/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 08 Apr 2008 22:59:40 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[amazon]]></category>
+		<category><![CDATA[ec2]]></category>
+		<category><![CDATA[gae]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[googleappengine]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[s3]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1053</guid>
+
+					<description><![CDATA[Today&#8217;s big news was the announcement of Google App Engine. Plenty of people have been covering the details, I just wanted to leave a few thoughts: This looks like an amazing service. Being able to make use of Google infrastructure for your web app is a wonderful idea. Currently limited to Python, so all the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Today&#8217;s big news was the <a href="http://googleappengine.blogspot.com/2008/04/introducing-google-app-engine-our-new.html">announcement of Google App Engine</a>.  Plenty of people have been covering the details, I just wanted to leave a few thoughts:</p>
+<p>This looks like an amazing service.  Being able to make use of Google infrastructure for your web app is a wonderful idea.  Currently limited to Python, so all the Python fans are going nuts.</p>
+<p>What Google App Engine (GAE) isn&#8217;t is a direct competitor to Amazon&#8217;s web services (EC2, S3, etc).  What Amazon provides are virtualized services, what GAE provides is a specific platform.  While that platform is pretty amazing, it is also complete and total vendor lock in.  If you needed to move your application off of GAE, how would you do it?  This might give pause to those interested in buying your startup.</p>
+<p>There&#8217;s an SDK for starting your app before going live, but no way to migrate data from your test system to the live server.  I imagine as people begin to use this new platform they&#8217;ll find other issues as well.  That isn&#8217;t to say that GAE isn&#8217;t worth while, just that it isn&#8217;t a miracle cure.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/04/08/google-app-engine/feed/</wfw:commentRss>
+			<slash:comments>7</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Wed 7 Nov 2007</title>
+		<link>/2007/11/07/links-for-wed-7-nov-2007/</link>
+					<comments>/2007/11/07/links-for-wed-7-nov-2007/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 08 Nov 2007 00:30:24 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[amazon]]></category>
+		<category><![CDATA[aws]]></category>
+		<category><![CDATA[bbs]]></category>
+		<category><![CDATA[calculator]]></category>
+		<category><![CDATA[debug]]></category>
+		<category><![CDATA[ec2]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[s3]]></category>
+		<category><![CDATA[vim]]></category>
+		<category><![CDATA[wwiv]]></category>
+		<category><![CDATA[xdebug]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/07/links-for-wed-7-nov-2007/</guid>
+
+					<description><![CDATA[Box.net Technical Blog &#124; Blog Archive &#124; How to Debug PHP with Vim and XDebug on Linux &#8211; Debugging PHP from Vim. Nice. Tags: php vim debug xdebug Porting WWIV 4.23 to FreeBSD UNIX &#8211; Now that is old school hacking! Tags: wwiv bbs freebsd JavaScript-based Amazon Web Services Simple Monthly Calculator &#8211; Quick way [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://tech.blog.box.net/2007/06/20/how-to-debug-php-with-vim-and-xdebug-on-linux/">Box.net Technical Blog | Blog Archive | How to Debug PHP with Vim and XDebug on Linux</a> &#8211; Debugging PHP from Vim.  Nice. <br /> Tags: <a href="http://del.icio.us/josephscott/php">php</a> <a href="http://del.icio.us/josephscott/vim">vim</a> <a href="http://del.icio.us/josephscott/debug">debug</a> <a href="http://del.icio.us/josephscott/xdebug">xdebug</a>  </p>
+</li>
+<li>
+<p><a href="http://www.watson.org/~robert/star-lit/wwiv/">Porting WWIV 4.23 to FreeBSD UNIX</a> &#8211; Now that is old school hacking! <br /> Tags: <a href="http://del.icio.us/josephscott/wwiv">wwiv</a> <a href="http://del.icio.us/josephscott/bbs">bbs</a> <a href="http://del.icio.us/josephscott/freebsd">freebsd</a>  </p>
+</li>
+<li>
+<p><a href="http://calculator.s3.amazonaws.com/calc5.html?#">JavaScript-based Amazon Web Services Simple Monthly Calculator</a> &#8211; Quick way to determine how much it will cost you to use Amazon services (S3, EC2, etc). <br /> Tags: <a href="http://del.icio.us/josephscott/amazon">amazon</a> <a href="http://del.icio.us/josephscott/aws">aws</a> <a href="http://del.icio.us/josephscott/calculator">calculator</a> <a href="http://del.icio.us/josephscott/ec2">ec2</a> <a href="http://del.icio.us/josephscott/s3">s3</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/11/07/links-for-wed-7-nov-2007/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Mac Backup To Dreamhost</title>
+		<link>/2007/04/02/mac-backup-to-dreamhost/</link>
+					<comments>/2007/04/02/mac-backup-to-dreamhost/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 02 Apr 2007 17:10:46 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[amazon]]></category>
+		<category><![CDATA[backup]]></category>
+		<category><![CDATA[dreamhost]]></category>
+		<category><![CDATA[howto]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[s3]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/04/02/mac-backup-to-dreamhost/</guid>
+
+					<description><![CDATA[When I posted a brief comparison to Amazon S3 and Dreamhost one thing I didn&#8217;t do was suggest how one could actually use Dreamhost in a similar way as S3, like backups. For S3 Jungle Disk is one option for backups. Now there is a how to on backing up your Mac to Dreamhost (part [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>When I posted a brief comparison to <a href="http://joseph.randomnetworks.com/archives/2006/10/03/amazon-s3-vs-dreamhost/">Amazon S3 and Dreamhost</a> one thing I didn&#8217;t do was suggest how one could actually use Dreamhost in a similar way as S3, like backups.  For S3 <a href="http://www.jungledisk.com/">Jungle Disk</a> is one option for backups.  Now there is a <a href="http://addisonrd.com/WordPress/2007/03/09/how-to-backup-your-mac-to-a-dreamhost-server-part-1-of-2/">how to on backing up your Mac to Dreamhost</a> (<a href="http://addisonrd.com/WordPress/2007/03/09/how-to-backup-your-mac-to-a-dreamhost-server-part-2-of-2/">part 2</a>).</p>
+<p>Another approach would involve using <a href="http://code.google.com/p/macfuse/">MacFUSE</a> with the <a href="http://code.google.com/p/macfuse/wiki/MACFUSE_FS_SSHFS">ssh module</a>.  Have I mentioned how much I&#8217;d like to see Apple include MacFUSE in OS X by default?  Well, I would, a lot.</p>
+<p>What this approach doesn&#8217;t do that Jungle Disk does is encrypt the files on your remote backup.  But on the other hand S3 has a file size limit of 5GB, as long as it isn&#8217;t <a href="http://developer.amazonwebservices.com/connect/entry.jspa?externalID=422&amp;categoryID=49">between 2GB and 4GB</a>.  So really S3 on supports files sizes from 1-2GB and 4-5GB.  Each method has pros and cons.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/04/02/mac-backup-to-dreamhost/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Amazon Elastic Compute Cloud (Amazon EC2)</title>
+		<link>/2006/08/24/amazon-elastic-compute-cloud-amazon-ec2/</link>
+					<comments>/2006/08/24/amazon-elastic-compute-cloud-amazon-ec2/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 24 Aug 2006 23:35:21 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[amazon]]></category>
+		<category><![CDATA[ec2]]></category>
+		<category><![CDATA[s3]]></category>
+		<category><![CDATA[xen]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/08/24/amazon-elastic-compute-cloud-amazon-ec2/</guid>
+
+					<description><![CDATA[I&#8217;m starting to wonder if someone over at Amazon really does have a master plan to take over the world. Today they announced the Amazon Elastic Compute Cloud (Amazon EC2). EC2 allows you to have a &#8220;virtual computer&#8221; hosted at Amazon which is roughly equivalent to a &#8220;1.7Ghz Xeon CPU, 1.75GB of RAM, 160GB of [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m starting to wonder if someone over at <a href="http://www.amazon.com/">Amazon</a> really does have a master plan to take over the world.  Today they announced the <a href="http://www.amazon.com/gp/browse.html?node=201590011">Amazon Elastic Compute Cloud (Amazon EC2)</a>.  EC2 allows you to have a &#8220;virtual computer&#8221; hosted at Amazon which is roughly equivalent to a &#8220;1.7Ghz Xeon CPU, 1.75GB of RAM, 160GB of local disk, and 250Mb/s of network bandwidth&#8221;.  Pricing $0.10/hour, $0.20/GB of Internet traffic and $0.15/GB/month of S3 storage used.  Running a system 24&#215;7 would set you back $72/month plus S3 storage costs.</p>
+<p>The folks who thought S3 wouldn&#8217;t change things, may start changing mind now.  Amazon has a ton of information up on this new service: <a href="http://developer.amazonwebservices.com/connect/kbcategory.jspa?categoryID=84">Developer Tools</a>, <a href="http://s3.amazonaws.com/ec2-downloads/ec2.wsdl">WDSL</a>, <a href="http://developer.amazonwebservices.com/connect/forum.jspa?forumID=30&amp;start=0">Forum</a>, <a href="http://www.amazon.com/b/ref=sc_fe_c_0_201590011_4/104-6118201-0691942?ie=UTF8&amp;node=201591011&amp;no=201590011&amp;me=A36L942TSJ2AJA">FAQ</a> and a <a href="http://docs.amazonwebservices.com/AmazonEC2/gsg/2006-06-26/">Getting started guide</a>.</p>
+<p>Right now they only support Linux based systems, but hopefully we&#8217;ll see that expand.  I&#8217;m voting for FreeBSD support!  Amazon is using <a href="http://www.cl.cam.ac.uk/Research/SRG/netos/xen/">XEN</a> to virtualize these systems, so hoping for <a href="http://lists.xensource.com/archives/html/xen-devel/2006-01/msg00125.html">FreeBSD support seems reasonable</a>.</p>
+<p>I&#8217;m on the waiting list for next beta round, I look forward to trying this out.  Expect to <a href="http://www.techcrunch.com/2006/08/24/exclusive-amazon-readies-utility-computing-service/">hear</a> <a href="http://software.gigaom.com/2006/08/24/amazon-now-offering-computing-on-deman/">more</a> about this.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/08/24/amazon-elastic-compute-cloud-amazon-ec2/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

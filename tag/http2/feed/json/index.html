@@ -1,0 +1,272 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/http2/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/http2/",
+    "feed_url": "https://blog.josephscott.org/tag/http2/feed/json/",
+    "language": "en-US",
+    "title": "http2 &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/?p=17423",
+            "url": "https://blog.josephscott.org/2019/04/16/chrome-delays-requests-on-slow-connections-even-with-http-2/",
+            "title": "Chrome Delays Requests On Slow Connections, Even With HTTP/2",
+            "content_html": "<p>While looking at recent <a href=\"https://www.webpagetest.org/\">WebPageTest</a> results I noticed something odd about them.  The ordering of HTTP/2 requests weren&#8217;t happening in the way I expected, which eventually led me to reach out to <a href=\"https://twitter.com/patmeenan\">Patrick Meenan</a>.  He pointed me at two Chromium related items:</p>\n<p>&#8211; <a href=\"https://docs.google.com/document/d/1XcHwQnEzg-F_JQhygQdYjyU3PxMG_otXj2M8oqZNyJk/edit#heading=h.mi56i3r3gnth\">Delaying dispatch of low priority on congested networks</a><br />\n&#8211; <a href=\"https://bugs.chromium.org/p/chromium/issues/detail?id=836552\">Issue 836552: Experiment with delaying low priority requests to H2 servers</a></p>\n<p>The long and short of it is: even with HTTP/2 Chrome will limit the number of inflight requests to 10 on slow connections.</p>\n<p>For those of you who are testing <a href=\"https://github.com/pmeenan/http2priorities/tree/master/stand-alone\">HTTP/2 priorities</a> ( and <a href=\"https://github.com/andydavies/http2-prioritization-issues\">here</a> ) with anything <a href=\"https://github.com/pmeenan/http2priorities/commit/4e9315f20efcccea73c51d781463988111c9b797#diff-fc14358ebccbbfca8b817b4c18bfeb4b\">slower than &#8220;3G Fast&#8221;</a> on WebPageTest, you are likely running into this.  You&#8217;ll need to bump the network option to &#8220;3G Fast&#8221; in order to avoid the Chrome request throttling when running those types of tests.</p>\n<p>Here are a few examples.  First, a priority <a href=\"https://www.webpagetest.org/result/190415_A6_4417947210475290e8c6963f02dcb7fe/2/details/#waterfall_view_step1\">test under &#8220;3G Slow&#8221;</a>, where you can see the throttling in action:</p>\n<p><a href=\"https://blog.josephscott.org/wp-content/uploads/2019/04/chrome-with-throttling.png\"><img loading=\"lazy\" src=\"https://blog.josephscott.org/wp-content/uploads/2019/04/chrome-with-throttling.png\" alt=\"\" width=\"946\" height=\"647\" class=\"aligncenter size-full wp-image-17427\" srcset=\"https://blog.josephscott.org/wp-content/uploads/2019/04/chrome-with-throttling.png 946w, https://blog.josephscott.org/wp-content/uploads/2019/04/chrome-with-throttling-300x205.png 300w, https://blog.josephscott.org/wp-content/uploads/2019/04/chrome-with-throttling-768x525.png 768w, https://blog.josephscott.org/wp-content/uploads/2019/04/chrome-with-throttling-788x539.png 788w\" sizes=\"(max-width: 946px) 100vw, 946px\" /></a></p>\n<p>That is the newer behavior in Chrome.</p>\n<p>Next, a priority <a href=\"https://www.webpagetest.org/result/190415_DW_9a97759053833656569c317f830c0124/2/details/#waterfall_view_step1\">test using &#8220;3G Fast&#8221;</a>, you can see all the requests fired off right away:</p>\n<p><a href=\"https://blog.josephscott.org/wp-content/uploads/2019/04/chrome-no-throttling.png\"><img loading=\"lazy\" src=\"https://blog.josephscott.org/wp-content/uploads/2019/04/chrome-no-throttling.png\" alt=\"\" width=\"947\" height=\"649\" class=\"aligncenter size-full wp-image-17429\" srcset=\"https://blog.josephscott.org/wp-content/uploads/2019/04/chrome-no-throttling.png 947w, https://blog.josephscott.org/wp-content/uploads/2019/04/chrome-no-throttling-300x206.png 300w, https://blog.josephscott.org/wp-content/uploads/2019/04/chrome-no-throttling-768x526.png 768w, https://blog.josephscott.org/wp-content/uploads/2019/04/chrome-no-throttling-788x540.png 788w\" sizes=\"(max-width: 947px) 100vw, 947px\" /></a></p>\n<p>This is likely what you&#8217;d be used to seeing.</p>\n<hr />\n<p>I&#8217;ve come to expect changes in browsers ( especially Chrome ) to have significant impacts on tests where I&#8217;m looking at trending data.  If you see something strange pop up, check the Chrome versions, then see if a change in that release could be the cause.</p>\n<p>Chrome has an <a href=\"https://www.chromium.org/developers/calendar\">estimated release schedule</a> that you might want to keep in mind.</p>\n",
+            "content_text": "While looking at recent WebPageTest results I noticed something odd about them.  The ordering of HTTP/2 requests weren&#8217;t happening in the way I expected, which eventually led me to reach out to Patrick Meenan.  He pointed me at two Chromium related items:\n&#8211; Delaying dispatch of low priority on congested networks\n&#8211; Issue 836552: Experiment with delaying low priority requests to H2 servers\nThe long and short of it is: even with HTTP/2 Chrome will limit the number of inflight requests to 10 on slow connections.\nFor those of you who are testing HTTP/2 priorities ( and here ) with anything slower than &#8220;3G Fast&#8221; on WebPageTest, you are likely running into this.  You&#8217;ll need to bump the network option to &#8220;3G Fast&#8221; in order to avoid the Chrome request throttling when running those types of tests.\nHere are a few examples.  First, a priority test under &#8220;3G Slow&#8221;, where you can see the throttling in action:\n\nThat is the newer behavior in Chrome.\nNext, a priority test using &#8220;3G Fast&#8221;, you can see all the requests fired off right away:\n\nThis is likely what you&#8217;d be used to seeing.\n\nI&#8217;ve come to expect changes in browsers ( especially Chrome ) to have significant impacts on tests where I&#8217;m looking at trending data.  If you see something strange pop up, check the Chrome versions, then see if a change in that release could be the cause.\nChrome has an estimated release schedule that you might want to keep in mind.",
+            "date_published": "2019-04-16T11:18:03-06:00",
+            "date_modified": "2019-04-16T11:18:03-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "chrome",
+                "http2"
+            ]
+        },
+        {
+            "id": "https://blog.josephscott.org/?p=16295",
+            "url": "https://blog.josephscott.org/2017/11/17/http-2-and-concatenation/",
+            "title": "HTTP/2 and Concatenation",
+            "content_html": "<p>I&#8217;ve seen it repeated over and over how HTTP/2 means that you no longer have to concatenate resources.  The context is usually around JavaScript, but it is similar for CSS.  Real world tests don&#8217;t always line up with that theoretical expectation, as demonstrated by <a href=\"http://engineering.khanacademy.org/posts/js-packaging-http2.htm\">Khan Academy back in 2015</a>.  Here is their summary:</p>\n<blockquote><p>\nHTTP/2.0, with its multiplexing, header compression, and the like, offers the promise of the best of all worlds when it comes to downloading JavaScript: great local caching, great download efficiency, no wasted bytes, and a simpler serving infrastructure to boot. All you have to do is give up your packaging system and download all your JavaScript source files individually.</p>\n<p>The reality is not so rosy. Due to degraded compression performance, the size of the data download with individual source files ends up being higher than with packages, despite having achieved &#8216;no wasted bytes&#8217;. Likewise, the promised download efficiency has yet to show up in the wild, at least for us. It seems that, for the moment at least, JavaScript packaging is here to stay.\n</p></blockquote>\n<p>From what I&#8217;ve seen so far, there is some line that balances between too much concatenation and too little.  Unfortunately I think that line is going to vary from site to site.  If we are lucky, we might get some good guidelines ( always concat if loading fewer than X bytes ) that can be applied by tools and services automatically.</p>\n<p>Having hard rules that &#8220;always make things better 100% of the time&#8221; are becoming less common in the world of HTTP/2, modern browsers, and mobile clients.  There is no substitute for making measurements and comparing the results.</p>\n",
+            "content_text": "I&#8217;ve seen it repeated over and over how HTTP/2 means that you no longer have to concatenate resources.  The context is usually around JavaScript, but it is similar for CSS.  Real world tests don&#8217;t always line up with that theoretical expectation, as demonstrated by Khan Academy back in 2015.  Here is their summary:\n\nHTTP/2.0, with its multiplexing, header compression, and the like, offers the promise of the best of all worlds when it comes to downloading JavaScript: great local caching, great download efficiency, no wasted bytes, and a simpler serving infrastructure to boot. All you have to do is give up your packaging system and download all your JavaScript source files individually.\nThe reality is not so rosy. Due to degraded compression performance, the size of the data download with individual source files ends up being higher than with packages, despite having achieved &#8216;no wasted bytes&#8217;. Likewise, the promised download efficiency has yet to show up in the wild, at least for us. It seems that, for the moment at least, JavaScript packaging is here to stay.\n\nFrom what I&#8217;ve seen so far, there is some line that balances between too much concatenation and too little.  Unfortunately I think that line is going to vary from site to site.  If we are lucky, we might get some good guidelines ( always concat if loading fewer than X bytes ) that can be applied by tools and services automatically.\nHaving hard rules that &#8220;always make things better 100% of the time&#8221; are becoming less common in the world of HTTP/2, modern browsers, and mobile clients.  There is no substitute for making measurements and comparing the results.",
+            "date_published": "2017-11-17T10:37:05-07:00",
+            "date_modified": "2017-11-17T10:37:05-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "concatenation",
+                "http2"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=14930",
+            "url": "https://blog.josephscott.org/2016/01/18/hpack-static-table-definitionhpack-header-compression-for-http2/",
+            "title": "HPACK, Static Table Definition",
+            "content_html": "<p>The HPACK ( <a href=\"https://http2.github.io/http2-spec/compression.html\">header compression for HTTP/2</a> ) static table:</p>\n<blockquote><p>\nThe static table was created from the most frequent header fields used by popular web sites, with the addition of HTTP/2-specific pseudo-header fields (see Section 8.1.2.1 of [HTTP2]). For header fields with a few frequent values, an entry was added for each of these frequent values. For other header fields, an entry was added with an empty value.\n</p></blockquote>\n<p>Here is a <a href=\"https://http2.github.io/http2-spec/compression.html#static.table.entries\">direct link to the list</a>.  I like number 16, <code>accept-encoding: gzip, deflate</code>, even though that means this won&#8217;t be usable with <a href=\"https://josephscott.org/archives/2015/12/brotli-in-browsers/\">Brotli</a>.</p>\n",
+            "content_text": "The HPACK ( header compression for HTTP/2 ) static table:\n\nThe static table was created from the most frequent header fields used by popular web sites, with the addition of HTTP/2-specific pseudo-header fields (see Section 8.1.2.1 of [HTTP2]). For header fields with a few frequent values, an entry was added for each of these frequent values. For other header fields, an entry was added with an empty value.\n\nHere is a direct link to the list.  I like number 16, accept-encoding: gzip, deflate, even though that means this won&#8217;t be usable with Brotli.",
+            "date_published": "2016-01-18T11:51:43-07:00",
+            "date_modified": "2016-01-18T11:51:43-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "hpack",
+                "http",
+                "http2",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=14434",
+            "url": "https://blog.josephscott.org/2015/12/03/http2-adoption/",
+            "title": "HTTP/2 Adoption",
+            "content_html": "<p><a href=\"http://isthewebhttp2yet.com/\">isthewebhttp2yet.com</a> is tracking <a href=\"http://isthewebhttp2yet.com/measurements/adoption.html\">HTTP/2 adoption</a>.  Their <a href=\"http://isthewebhttp2yet.com/data/lists/H2-true-2015-11-30.txt\">&#8220;H2 True Support&#8221; list ( 2015-11-30 )</a> has 13,653 sites.</p>\n<p>Of those 13,653 sites 7,828 ( that is 57% ) have <code>.wordpress.com</code> host names.</p>\n",
+            "content_text": "isthewebhttp2yet.com is tracking HTTP/2 adoption.  Their &#8220;H2 True Support&#8221; list ( 2015-11-30 ) has 13,653 sites.\nOf those 13,653 sites 7,828 ( that is 57% ) have .wordpress.com host names.",
+            "date_published": "2015-12-03T08:57:29-07:00",
+            "date_modified": "2015-12-03T08:57:29-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "http2",
+                "wordpress.com",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=14086",
+            "url": "https://blog.josephscott.org/2015/10/15/nginx-http2/",
+            "title": "Nginx HTTP/2",
+            "content_html": "<p>With version 1.9.5 <a href=\"http://nginx.org/\">Nginx</a> added support for <a href=\"http://nginx.org/en/docs/http/ngx_http_v2_module.html\">http/2</a>.  Last night up I switched my Nginx configuration for josephscott.org from SPDY to H2.</p>\n<p>So far everything appears to be working normal, if you do find something broken <a href=\"https://josephscott.org/contact/\">please let me know</a>.</p>\n",
+            "content_text": "With version 1.9.5 Nginx added support for http/2.  Last night up I switched my Nginx configuration for josephscott.org from SPDY to H2.\nSo far everything appears to be working normal, if you do find something broken please let me know.",
+            "date_published": "2015-10-15T06:29:32-06:00",
+            "date_modified": "2015-10-15T06:29:32-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "http2",
+                "nginx",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=12738",
+            "url": "https://blog.josephscott.org/2015/08/26/http2-and-websocket/",
+            "title": "HTTP/2 and WebSocket",
+            "content_html": "<p>With HTTP/2 marching towards production environments, you might be wondering how WebSocket fits in.  The HTTPbis working group was thinking about that too:</p>\n<blockquote><p>\nThe WebSocket protocol enables two-way communication between a client running untrusted code in a controlled environment to a remote host that has opted-in to communications from that code.  Since it requires one TCP connection for every WebSocket connection, having multiple WebSocket connections between the same client and the same server is inefficient.  On the other hand, HTTP/2 specifies a fast, secure, multiplexed framing protocol.  This document provides bi-directional multiplexed communication by layering WebSocket on top of HTTP/2.\n</p></blockquote>\n<p>From <a href=\"https://tools.ietf.org/html/draft-hirano-httpbis-websocket-over-http2-01\">draft-hirano-httpbis-websocket-over-http2-01</a>.</p>\n<p>The draft expired back on February 13, 2015 and I haven&#8217;t seen any other significant discussions in this area.  At this point there doesn&#8217;t appear to be any momentum to come up with a way to leverage HTTP/2 in future versions of the WebSocket protocol.</p>\n",
+            "content_text": "With HTTP/2 marching towards production environments, you might be wondering how WebSocket fits in.  The HTTPbis working group was thinking about that too:\n\nThe WebSocket protocol enables two-way communication between a client running untrusted code in a controlled environment to a remote host that has opted-in to communications from that code.  Since it requires one TCP connection for every WebSocket connection, having multiple WebSocket connections between the same client and the same server is inefficient.  On the other hand, HTTP/2 specifies a fast, secure, multiplexed framing protocol.  This document provides bi-directional multiplexed communication by layering WebSocket on top of HTTP/2.\n\nFrom draft-hirano-httpbis-websocket-over-http2-01.\nThe draft expired back on February 13, 2015 and I haven&#8217;t seen any other significant discussions in this area.  At this point there doesn&#8217;t appear to be any momentum to come up with a way to leverage HTTP/2 in future versions of the WebSocket protocol.",
+            "date_published": "2015-08-26T08:01:44-06:00",
+            "date_modified": "2015-08-26T08:01:44-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "http2",
+                "websocket",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=12957",
+            "url": "https://blog.josephscott.org/2015/08/11/h2i/",
+            "title": "h2i",
+            "content_html": "<p>While HTTP/2 has brought many performance improvements, the switch to a binary format has made it more opaque.  Enter <a href=\"https://github.com/bradfitz/http2/tree/master/h2i\">h2i</a>:</p>\n<blockquote><p>\nh2i is an interactive HTTP/2 (&#8220;h2&#8221;) console debugger. Miss the good ol&#8217; days of telnetting to your HTTP/1.n servers? We&#8217;re bringing you back.\n</p></blockquote>\n",
+            "content_text": "While HTTP/2 has brought many performance improvements, the switch to a binary format has made it more opaque.  Enter h2i:\n\nh2i is an interactive HTTP/2 (&#8220;h2&#8221;) console debugger. Miss the good ol&#8217; days of telnetting to your HTTP/1.n servers? We&#8217;re bringing you back.",
+            "date_published": "2015-08-11T08:16:42-06:00",
+            "date_modified": "2015-08-11T08:16:42-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "h2i",
+                "http2",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=12721",
+            "url": "https://blog.josephscott.org/2015/08/07/http2-optimizations/",
+            "title": "HTTP/2 Optimizations",
+            "content_html": "<p>Slides from <a href=\"https://www.igvita.com/\">Ilya Grigork</a> on <a href=\"https://docs.google.com/presentation/d/1r7QXGYOLCh4fcUq0jDdDwKJWNqWK1o4xMtYpKZCJYjM/present?slide=id.p19\">HTTP/2 is here, let&#8217;s optimize!</a></p>\n<p><iframe loading=\"lazy\" src=\"https://docs.google.com/presentation/embed?id=1r7QXGYOLCh4fcUq0jDdDwKJWNqWK1o4xMtYpKZCJYjM&amp;start=false&amp;loop=false&amp; frameborder=\"0\" width=\"600\" height=\"467\"></iframe></p>\n<p>Some of the traditional HTTP/1 optimization approaches now work against the features available in HTTP/2.</p>\n",
+            "content_text": "Slides from Ilya Grigork on HTTP/2 is here, let&#8217;s optimize!",
+            "date_published": "2015-08-07T08:01:17-06:00",
+            "date_modified": "2015-08-07T08:01:17-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "http2",
+                "ilya-grigorik",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=12719",
+            "url": "https://blog.josephscott.org/2015/08/06/caddy/",
+            "title": "Caddy",
+            "content_html": "<p>The ramp up to HTTP/2 seems to have also triggered a renewed interest in web server software.  I recently came across <a href=\"https://caddyserver.com/\">Caddy</a>, a web server written in Go.  From the <a href=\"https://caddyserver.com/docs/faq\">FAQ</a>:</p>\n<blockquote><p>\nFundamentally, Caddy aims to make websites easier by lowering the barrier to entry. Like other web servers, Caddy is for system administrators and web developers, but Caddy is also tailored for designers and writers who don&#8217;t want to deal with a lot of the technical cruft that traditionally comes along with setting up a server.</p>\n<p>Caddy has different goals and advantages. Nginx is first and foremost a capable reverse proxy, whereas Caddy&#8217;s primary goal is to be an easy-to-use static file web server. Caddy desires cross-platform independence and portability without the need for custom builds.\n</p></blockquote>\n",
+            "content_text": "The ramp up to HTTP/2 seems to have also triggered a renewed interest in web server software.  I recently came across Caddy, a web server written in Go.  From the FAQ:\n\nFundamentally, Caddy aims to make websites easier by lowering the barrier to entry. Like other web servers, Caddy is for system administrators and web developers, but Caddy is also tailored for designers and writers who don&#8217;t want to deal with a lot of the technical cruft that traditionally comes along with setting up a server.\nCaddy has different goals and advantages. Nginx is first and foremost a capable reverse proxy, whereas Caddy&#8217;s primary goal is to be an easy-to-use static file web server. Caddy desires cross-platform independence and portability without the need for custom builds.",
+            "date_published": "2015-08-06T08:01:14-06:00",
+            "date_modified": "2015-08-06T08:01:14-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "caddy",
+                "go",
+                "http2",
+                "markdown",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=9885",
+            "url": "https://blog.josephscott.org/2015/07/24/to-cdn-or-not-to-cdn/",
+            "title": "To CDN Or Not To CDN",
+            "content_html": "<p>Zack Tollman on <a href='https://thethemefoundry.com/blog/why-we-dont-use-a-cdn-spdy-ssl/'>Why we don&#8217;t use a CDN: A story about SPDY and SSL</a>.</p>\n<p>The simple &#8220;rule&#8221; of always use a CDN may not always be a good idea.  When in doubt, measure.  Then measure again even when not in doubt.</p>\n<p>Expect these types of questions and discussions to come up more and more as HTTP/2 deployments continue.</p>\n",
+            "content_text": "Zack Tollman on Why we don&#8217;t use a CDN: A story about SPDY and SSL.\nThe simple &#8220;rule&#8221; of always use a CDN may not always be a good idea.  When in doubt, measure.  Then measure again even when not in doubt.\nExpect these types of questions and discussions to come up more and more as HTTP/2 deployments continue.",
+            "date_published": "2015-07-24T08:01:47-06:00",
+            "date_modified": "2015-07-24T08:01:47-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "cdn",
+                "http2",
+                "zack-tollman",
+                "Posts"
+            ]
+        }
+    ]
+}

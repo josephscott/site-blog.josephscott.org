@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>facebox &#8211; Joseph Scott</title>
+	<atom:link href="/tag/facebox/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 09 Jan 2008 00:30:03 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Links for Tue 8 Jan 2008</title>
+		<link>/2008/01/08/links-for-tue-8-jan-2008/</link>
+					<comments>/2008/01/08/links-for-tue-8-jan-2008/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 09 Jan 2008 00:30:03 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[facebox]]></category>
+		<category><![CDATA[fuse]]></category>
+		<category><![CDATA[grabfs]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jquery]]></category>
+		<category><![CDATA[lightbox]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[macfuse]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[putty]]></category>
+		<category><![CDATA[puttytray]]></category>
+		<category><![CDATA[screen]]></category>
+		<category><![CDATA[screenshot]]></category>
+		<category><![CDATA[ssh]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/01/08/links-for-tue-8-jan-2008/</guid>
+
+					<description><![CDATA[Recover Truncated PHP Serialized Arrays // ShaunInman.com &#8211; Another example of why databases should NEVER silenty truncate data. If the data doesn&#8217;t fit in the field then the insert/update needs to fail. Tags: php database Facebox 1.0 &#8211; Another lightbox clone in the style of Facebook. Requires JQuery. Tags: facebox jquery javascript lightbox Beastie Blog [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://www.shauninman.com/archive/2008/01/08/recovering_truncated_php_serialized_arrays">Recover Truncated PHP Serialized Arrays // ShaunInman.com</a> &#8211; Another example of why databases should NEVER silenty truncate data.  If the data doesn&#8217;t fit in the field then the insert/update needs to fail. <br /> Tags: <a href="http://del.icio.us/josephscott/php">php</a> <a href="http://del.icio.us/josephscott/database">database</a>  </p>
+</li>
+<li>
+<p><a href="http://famspam.com/facebox">Facebox 1.0</a> &#8211; Another lightbox clone in the style of Facebook.  Requires JQuery. <br /> Tags: <a href="http://del.icio.us/josephscott/facebox">facebox</a> <a href="http://del.icio.us/josephscott/jquery">jquery</a> <a href="http://del.icio.us/josephscott/javascript">javascript</a> <a href="http://del.icio.us/josephscott/lightbox">lightbox</a>  </p>
+</li>
+<li>
+<p><a href="http://beastieblog.com/?p=76">Beastie Blog | Using Screen to log yourself.</a> &#8211; I&#8217;ve never used the logging feature of screen, might use it next time I setup a new server though. <br /> Tags: <a href="http://del.icio.us/josephscott/screen">screen</a>  </p>
+</li>
+<li>
+<p><a href="http://osxbook.com/book/bonus/chapter11/grabfs/">GrabFS: The Screenshot File System</a> &#8211; Not sure I&#8217;ll ever use it, but this is just an awesome hack. <br /> Tags: <a href="http://del.icio.us/josephscott/macosx">macosx</a> <a href="http://del.icio.us/josephscott/screenshot">screenshot</a> <a href="http://del.icio.us/josephscott/grabfs">grabfs</a> <a href="http://del.icio.us/josephscott/fuse">fuse</a> <a href="http://del.icio.us/josephscott/macfuse">macfuse</a>  </p>
+</li>
+<li>
+<p><a href="http://www.xs4all.nl/~whaa/putty/">PuTTY Tray</a> &#8211; Always important to have a good ssh client for your Windows box. <br /> Tags: <a href="http://del.icio.us/josephscott/putty">putty</a> <a href="http://del.icio.us/josephscott/puttytray">puttytray</a> <a href="http://del.icio.us/josephscott/ssh">ssh</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/01/08/links-for-tue-8-jan-2008/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

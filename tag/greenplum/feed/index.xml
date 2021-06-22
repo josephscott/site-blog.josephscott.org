@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>greenplum &#8211; Joseph Scott</title>
+	<atom:link href="/tag/greenplum/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 02 Aug 2005 14:57:53 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>O&#8217;Reilly Connection</title>
+		<link>/2005/08/02/oreilly-connection/</link>
+					<comments>/2005/08/02/oreilly-connection/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 02 Aug 2005 14:57:53 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[greenplum]]></category>
+		<category><![CDATA[oreilly]]></category>
+		<category><![CDATA[oreillyconnection]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[socialnetworking]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=449</guid>
+
+					<description><![CDATA[Yesterday O&#8217;Reilly Connection was announced by Tim. I&#8217;m not sure why, but I received an early invite via email last week and started my profile. The initial work for this was done by Greenplum (business software using PostgreSQL) and continued by some O&#8217;Reilly folks. So presumably the back end database for the site is PostgreSQL. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Yesterday <a href="http://connection.oreilly.com/">O&#8217;Reilly Connection</a> was <a href="http://radar.oreilly.com/archives/2005/08/oreilly_connect.html">announced by Tim</a>.  I&#8217;m not sure why, but I received an early invite via email last week and started my profile.  The initial work for this was done by <a href="http://www.greenplum.com/">Greenplum</a> (business software using <a href="http://www.postgresql.org/">PostgreSQL</a>) and continued by some O&#8217;Reilly folks.  So presumably the back end database for the site is PostgreSQL.  I couldn&#8217;t find any other official information about what runs the site, but the web server is Apache 2 with the PHP 4 module installed.   As with basically everything else that comes out on the web lately, the site is still in &#8220;beta&#8221;.</p>
+<p>I haven&#8217;t been real excited about the whole social networking idea for websites.  Instead of trying to be everything to everyone, O&#8217;Reilly Connection seems to be focused on helping you hook up with people who have the skills that you need for a project or job.  In remains to be seen if this is something that people will be interested in enough for it to be sustained in the long haul.</p>
+<p>Perhaps going through the entire process of filing out my skills and job history will inspire to me to update my resume.  Hmmm, perhaps generating a resume from the data in your profile would be a useful service?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/08/02/oreilly-connection/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

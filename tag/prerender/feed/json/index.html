@@ -1,0 +1,39 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/prerender/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/prerender/",
+    "feed_url": "https://blog.josephscott.org/tag/prerender/feed/json/",
+    "language": "en-US",
+    "title": "prerender &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=10432",
+            "url": "https://blog.josephscott.org/2014/05/02/full-page-prerendering-in-chrome/",
+            "title": "Full Page Prerendering in Chrome",
+            "content_html": "<p>Steve Souders takeaway #1 after trying to figure out <a href=\"http://www.stevesouders.com/blog/2014/04/30/unexpected-prerender-in-chrome/\" title=\"Everyone is reading his site by now right?\">unexpected caching behavior in Chrome</a> ( emphasis is mine ):</p>\n<blockquote><p>\nRemember that Chrome may do DNS prefetch, TCP pre-connect, and even <strong>prerender the entire page</strong>\u00a0based on the confidences in chrome://predictors.\n</p></blockquote>\n<p>Apparently this isn&#8217;t new information, it was mentioned by Ilya Grigorik in <a href=\"http://networkedblogs.com/HK4Pk\" title=\"There is no way to link to an individual section.\">High Performance Networking in Google Chrome</a>.  But if Steve Souders didn&#8217;t know about it already then I expect that it isn&#8217;t widely known.</p>\n<p>Looking over the chrome://predictors/ results in my browser it is about what I&#8217;d expect.  One thing that would be helpful is the ability to sort by individual columns.  I&#8217;m most interested in which pages Chrome is mostly likely to attempt to prerender.</p>\n",
+            "content_text": "Steve Souders takeaway #1 after trying to figure out unexpected caching behavior in Chrome ( emphasis is mine ):\n\nRemember that Chrome may do DNS prefetch, TCP pre-connect, and even prerender the entire page\u00a0based on the confidences in chrome://predictors.\n\nApparently this isn&#8217;t new information, it was mentioned by Ilya Grigorik in High Performance Networking in Google Chrome.  But if Steve Souders didn&#8217;t know about it already then I expect that it isn&#8217;t widely known.\nLooking over the chrome://predictors/ results in my browser it is about what I&#8217;d expect.  One thing that would be helpful is the ability to sort by individual columns.  I&#8217;m most interested in which pages Chrome is mostly likely to attempt to prerender.",
+            "date_published": "2014-05-02T15:36:01-06:00",
+            "date_modified": "2014-05-02T15:36:01-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "cache",
+                "chrome",
+                "performance",
+                "prerender",
+                "steve-souders",
+                "Posts"
+            ]
+        }
+    ]
+}

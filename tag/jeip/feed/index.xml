@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>jeip &#8211; Joseph Scott</title>
+	<atom:link href="/tag/jeip/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 20 Feb 2013 16:33:16 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>jQuery Edit In Place ( JEIP ) 0.2.0</title>
+		<link>/2013/02/20/jquery-edit-in-place-jeip-0-2-0/</link>
+					<comments>/2013/02/20/jquery-edit-in-place-jeip-0-2-0/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 20 Feb 2013 16:33:16 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jeip]]></category>
+		<category><![CDATA[jquery]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6797</guid>
+
+					<description><![CDATA[Justin Hall was kind enough to suggest a fix for jQuery Edit In Place ( JEIP ) to work with version 1.9.x of jQuery. Version 0.2.0 of JEIP is needed if you are using jQuery 1.9.x. I also moved the code to GitHub as well &#8211; https://github.com/josephscott/jeip &#8211; so fork away. I&#8217;ve updated the links [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.justinwhall.com/">Justin Hall</a> was kind enough to suggest a fix for <a href="http://josephscott.org/code/javascript/jquery-edit-in-place/">jQuery Edit In Place ( JEIP )</a> to work with version 1.9.x of <a href="http://jquery.org/">jQuery</a>.  Version 0.2.0 of JEIP is needed if you are using jQuery 1.9.x.</p>
+<p>I also moved the code to GitHub as well &#8211; <a href="https://github.com/josephscott/jeip">https://github.com/josephscott/jeip</a> &#8211; so fork away.</p>
+<p>I&#8217;ve updated the links on the <a href="http://josephscott.org/code/javascript/jquery-edit-in-place/">JEIP page</a> and <a href="http://josephscott.org/code/javascript/jeip-demo/">demo page</a> to JEIP 0.2.0 and jQuery 1.9.1.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/02/20/jquery-edit-in-place-jeip-0-2-0/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>jQuery Edit In Place (JEIP) Demo Fixed</title>
+		<link>/2011/03/17/jquery-edit-in-place-jeip-demo-fixed/</link>
+					<comments>/2011/03/17/jquery-edit-in-place-jeip-demo-fixed/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 17 Mar 2011 17:25:40 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[jeip]]></category>
+		<category><![CDATA[jquery]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3862</guid>
+
+					<description><![CDATA[I finally got around to fixing the jQuery Edit In Place demo page. The URL has changed &#8211; http://josephscott.org/code/javascript/jeip-demo/ &#8211; but there is a redirect for the old one. I&#8217;ve had several people ask about this, sorry for the delay in bringing it back. The styles used in the demo are just a basic example, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I finally got around to fixing the <a href="http://josephscott.org/code/javascript/jquery-edit-in-place/">jQuery Edit In Place</a> <a href="http://josephscott.org/code/javascript/jeip-demo/">demo page</a>.  The URL has changed &#8211; <a href="http://josephscott.org/code/javascript/jeip-demo/">http://josephscott.org/code/javascript/jeip-demo/</a> &#8211; but there is a redirect for the old one.  I&#8217;ve had several people ask about this, sorry for the delay in bringing it back.</p>
+<p>The styles used in the demo are just a basic example, you can tweak them in any number of ways via CSS.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/03/17/jquery-edit-in-place-jeip-demo-fixed/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Introducing jQuery Edit In Place (JEIP)</title>
+		<link>/2008/11/10/introducing-jquery-edit-in-place-jeip/</link>
+					<comments>/2008/11/10/introducing-jquery-edit-in-place-jeip/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 10 Nov 2008 14:00:17 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jeip]]></category>
+		<category><![CDATA[jquery]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=189</guid>
+
+					<description><![CDATA[The first version of jQuery Edit In Place (JEIP) is ready. The UI and features basically the same as my older Prototype based edit in place code, with a few extra tidbits thrown in for good measure. It works in the typical jQuery style, as a plugin off of the main jQuery object. Here&#8217;s a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The first version of <a href="/code/javascript/jquery-edit-in-place/">jQuery Edit In Place (JEIP)</a> is ready.  The UI and features basically the same as my older <a href="http://www.prototypejs.org/">Prototype</a> based edit in place code, with a few extra tidbits thrown in for good measure.</p>
+<p>It works in the typical jQuery style, as a plugin off of the main jQuery object.  Here&#8217;s a simple example that makes all elements with a class of &#8216;edit-this&#8217; editable and sends the form data to &#8216;save.php&#8217;:</p>
+<p>[sourcecode language=&#8221;javascript&#8221;]<br />
+$( &#8220;.edit-this&#8221; ).eip( &#8220;save.php&#8221; );<br />
+[/sourcecode]</p>
+<p>Check out the <a href="/code/javascript/jquery-edit-in-place/">JEIP</a> page for a details on what data the XHR includes and what the expected response needs to be.  There&#8217;s also a long list of options that the eip function supports.</p>
+<p>You can dive in by taking a look at this <a href="/projects/code/javascript/jeip/example/">basic demo</a> and then downloading version 0.1.0 of <a href="http://jeip.googlecode.com/svn/tags/0.1.0/jeip.js">jeip.js</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/11/10/introducing-jquery-edit-in-place-jeip/feed/</wfw:commentRss>
+			<slash:comments>8</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: HTTP Plugin for MySQL	</title>
+	<atom:link href="/2014/10/06/http-plugin-for-mysql/feed/" rel="self" type="application/rss+xml" />
+	<link>/2014/10/06/http-plugin-for-mysql/</link>
+	<description></description>
+	<lastBuildDate>Tue, 07 Oct 2014 23:24:22 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2014/10/06/http-plugin-for-mysql/#comment-4259</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 07 Oct 2014 23:24:22 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11116#comment-4259</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/10/06/http-plugin-for-mysql/#comment-4258&quot;&gt;Ulf Wendel&lt;/a&gt;.
+
+If it was on par with the traditional MySQL transport that would be pretty good.
+
+&lt;blockquote&gt;
+We need proper APIs before we can fiddle with performance.
+&lt;/blockquote&gt;
+
+Definitely.  It wouldn&#039;t matter how fast it was if it didn&#039;t work properly.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/10/06/http-plugin-for-mysql/#comment-4258">Ulf Wendel</a>.</p>
+<p>If it was on par with the traditional MySQL transport that would be pretty good.</p>
+<blockquote><p>
+We need proper APIs before we can fiddle with performance.
+</p></blockquote>
+<p>Definitely.  It wouldn&#8217;t matter how fast it was if it didn&#8217;t work properly.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ulf Wendel		</title>
+		<link>/2014/10/06/http-plugin-for-mysql/#comment-4258</link>
+
+		<dc:creator><![CDATA[Ulf Wendel]]></dc:creator>
+		<pubDate>Tue, 07 Oct 2014 23:07:08 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11116#comment-4258</guid>
+
+					<description><![CDATA[I&#039;m afraid it is too early. It is not even clear whether we can keep the web server library or have to replace it.  Performance was no goal. It is a goal for the Memcache plugins but not for us. We need proper APIs before we can fiddle with performance.  
+
+The transport impacts network traffic but not so much query execution performance.  Inside MySQL its the same code for running SQL thus the same overall performance can be expected.
+
+The Memcache plugins hint the best possible performance. If you want to see how MySQL compares to a NoSQL Key-Value store, use the Memcache plugins for benchmarking.  Then, add a bit to the Memcache plugins due to the more verbose HTTP protocol to extrapolate what might be possible after hefty optimizations. The Memcache plugins are ~2x as fast as comparable SQL request because they bypass the SQL layers inside MySQL. In 2004 I learned MySQL spents ~50% of the total runtime of a simple SELECT for parsing SQL and &quot;overhead&quot; - that&#039;s still the case, thus the 100% speedup (~2x as fast) with the InnoDB Memcache plugin.
+
+The 1.0.0 maps all requests to SQL. After all its just a convenience feature for those who do not want to write a HTTP -&#062; MySQL proxy themselves. We did not do any benchmarking. We only did a quick sanity check on a laptop checking HTTP Request -&#062; Apache -&#062; PHP (SELECT 1)  -&#062; MySQL vs.  HTTP Request -&#062; Plugin (SELECT 1) -&#062; MySQL. The Plugin won. If one removed the web server overhead and compared PHP/...(connect, SELECT 1, disconnect) -&#062; C/S Protocol -&#062; MySQL vs.  HTTP -&#062; Plugin(SELECT 1) -&#062; MySQL there should be no major difference.]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;m afraid it is too early. It is not even clear whether we can keep the web server library or have to replace it.  Performance was no goal. It is a goal for the Memcache plugins but not for us. We need proper APIs before we can fiddle with performance.  </p>
+<p>The transport impacts network traffic but not so much query execution performance.  Inside MySQL its the same code for running SQL thus the same overall performance can be expected.</p>
+<p>The Memcache plugins hint the best possible performance. If you want to see how MySQL compares to a NoSQL Key-Value store, use the Memcache plugins for benchmarking.  Then, add a bit to the Memcache plugins due to the more verbose HTTP protocol to extrapolate what might be possible after hefty optimizations. The Memcache plugins are ~2x as fast as comparable SQL request because they bypass the SQL layers inside MySQL. In 2004 I learned MySQL spents ~50% of the total runtime of a simple SELECT for parsing SQL and &#8220;overhead&#8221; &#8211; that&#8217;s still the case, thus the 100% speedup (~2x as fast) with the InnoDB Memcache plugin.</p>
+<p>The 1.0.0 maps all requests to SQL. After all its just a convenience feature for those who do not want to write a HTTP -&gt; MySQL proxy themselves. We did not do any benchmarking. We only did a quick sanity check on a laptop checking HTTP Request -&gt; Apache -&gt; PHP (SELECT 1)  -&gt; MySQL vs.  HTTP Request -&gt; Plugin (SELECT 1) -&gt; MySQL. The Plugin won. If one removed the web server overhead and compared PHP/&#8230;(connect, SELECT 1, disconnect) -&gt; C/S Protocol -&gt; MySQL vs.  HTTP -&gt; Plugin(SELECT 1) -&gt; MySQL there should be no major difference.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2014/10/06/http-plugin-for-mysql/#comment-4257</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 07 Oct 2014 15:48:24 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11116#comment-4257</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/10/06/http-plugin-for-mysql/#comment-4256&quot;&gt;Ulf Wendel&lt;/a&gt;.
+
+I&#039;m curious, any benchmarks of transactions per second comparing native MySQL transport vs. HTTP?]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/10/06/http-plugin-for-mysql/#comment-4256">Ulf Wendel</a>.</p>
+<p>I&#8217;m curious, any benchmarks of transactions per second comparing native MySQL transport vs. HTTP?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ulf Wendel		</title>
+		<link>/2014/10/06/http-plugin-for-mysql/#comment-4256</link>
+
+		<dc:creator><![CDATA[Ulf Wendel]]></dc:creator>
+		<pubDate>Tue, 07 Oct 2014 13:53:35 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11116#comment-4256</guid>
+
+					<description><![CDATA[It just makes sense: a web database which cuts off half of the web developers does not sound. It ever made sense to me since I learned about CouchDB.  And, if web folks want documents, so be it.]]></description>
+			<content:encoded><![CDATA[<p>It just makes sense: a web database which cuts off half of the web developers does not sound. It ever made sense to me since I learned about CouchDB.  And, if web folks want documents, so be it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2014/10/06/http-plugin-for-mysql/#comment-4255</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 06 Oct 2014 17:43:35 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11116#comment-4255</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/10/06/http-plugin-for-mysql/#comment-4254&quot;&gt;Jake Spurlock&lt;/a&gt;.
+
+I think that could be part of it.  Though the biggest so called &quot;NoSQL&quot; systems usually point to other features beyond the transport layer as advantages over traditional DBs.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/10/06/http-plugin-for-mysql/#comment-4254">Jake Spurlock</a>.</p>
+<p>I think that could be part of it.  Though the biggest so called &#8220;NoSQL&#8221; systems usually point to other features beyond the transport layer as advantages over traditional DBs.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jake Spurlock		</title>
+		<link>/2014/10/06/http-plugin-for-mysql/#comment-4254</link>
+
+		<dc:creator><![CDATA[Jake Spurlock]]></dc:creator>
+		<pubDate>Mon, 06 Oct 2014 17:01:33 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11116#comment-4254</guid>
+
+					<description><![CDATA[MySQL wants to play the NoSQL game...]]></description>
+			<content:encoded><![CDATA[<p>MySQL wants to play the NoSQL game&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

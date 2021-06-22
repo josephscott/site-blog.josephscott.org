@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sam-ruby &#8211; Joseph Scott</title>
+	<atom:link href="/tag/sam-ruby/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 30 Mar 2015 14:33:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>What is a URL</title>
+		<link>/2015/03/30/what-is-a-url/</link>
+					<comments>/2015/03/30/what-is-a-url/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 30 Mar 2015 14:33:00 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[sam-ruby]]></category>
+		<category><![CDATA[url]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11583</guid>
+
+					<description><![CDATA[Sam Ruby has been working on URLs. The real gem is the interop test results page. I didn&#8217;t realize how inconsistent URL treatments were across systems, even for something as simple as &#8220;x&#8221;.]]></description>
+										<content:encoded><![CDATA[<p>Sam Ruby has been <a href='http://intertwingly.net/blog/2015/01/11/URL-Work-Status'>working on URLs</a>.  The real gem is the <a href="https://url.spec.whatwg.org/interop/test-results/">interop test results</a> page.  I didn&#8217;t realize how inconsistent URL treatments were across systems, even for something as simple as <a href="https://url.spec.whatwg.org/interop/test-results/f332d9850a">&#8220;x&#8221;</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/03/30/what-is-a-url/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

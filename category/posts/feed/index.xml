@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Posts &#8211; Joseph Scott</title>
+	<atom:link href="/category/posts/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 22 Aug 2018 16:52:22 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>pup: Command Line HTML Parsing</title>
+		<link>/2018/08/22/pup-command-line-html-parsing/</link>
+					<comments>/2018/08/22/pup-command-line-html-parsing/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 22 Aug 2018 16:52:22 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[go]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[jq]]></category>
+		<category><![CDATA[pup]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15680</guid>
+
+					<description><![CDATA[pup, the three sentence description nails is: pup is a command line tool for processing HTML. It reads from stdin, prints to stdout, and allows the user to filter parts of the page using CSS selectors. Inspired by jq, pup aims to be a fast and flexible way of exploring HTML from the terminal. If [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://github.com/ericchiang/pup">pup</a>, the three sentence description nails is:</p>
+<blockquote><p>
+pup is a command line tool for processing HTML. It reads from stdin, prints to stdout, and allows the user to filter parts of the page using CSS selectors.</p>
+<p>Inspired by jq, pup aims to be a fast and flexible way of exploring HTML from the terminal.
+</p></blockquote>
+<p>If you have used jq, this is going to feel familiar, just for an HTML context.  With the option to <a href="https://github.com/ericchiang/pup#json">output the results as JSON</a>, you could find your self using pup in conjunction with jq.</p>
+<p>There are several examples in the <a href="https://github.com/ericchiang/pup">README</a>, here are a few of my own.</p>
+<p>List all of the <code>IMG</code> tags from cnn.com:<br />
+[shell]<br />
+curl -s https://www.cnn.com/ | pup &#8216;img&#8217;<br />
+[/shell]</p>
+<p>Now get it back as a JSON array:<br />
+[shell]<br />
+curl -s https://www.cnn.com/ | pup &#8216;img json{}&#8217;<br />
+[/shell]</p>
+<p>List all of the <code>LINK</code> attributes that have a <code>rel="preload"</code> attribute:</p>
+<p>[shell]<br />
+curl -s https://www.cnn.com/ | pup &#8216;link[rel=&quot;preload&quot;]&#8217;<br />
+[/shell]</p>
+<p>I could see pup and jq becoming standard utilities on Unix-like systems.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/08/22/pup-command-line-html-parsing/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Lossless PNG Compression</title>
+		<link>/2018/07/10/lossless-png-compression/</link>
+					<comments>/2018/07/10/lossless-png-compression/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 10 Jul 2018 15:53:42 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[compression]]></category>
+		<category><![CDATA[png]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15634</guid>
+
+					<description><![CDATA[Lossless compression can be a very safe first step in reducing image sizes. I came across this comparison of lossless PNG compression tools, and I was surprised at the range of results. While no one single tool ranked first in all of the tests, it does show that there are some ( like ZopfliPNG ) [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Lossless compression can be a very safe first step in reducing image sizes.  I came across this <a href="https://olegkikin.com/png_optimizers/">comparison of lossless PNG compression tools</a>, and I was surprised at the range of results.  While no one single tool ranked first in all of the tests, it does show that there are some ( like <a href="https://github.com/google/zopfli/blob/master/README.zopflipng">ZopfliPNG</a> ) that do a good job most of the time.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/07/10/lossless-png-compression/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>HTTP Alternative Services</title>
+		<link>/2018/06/19/http-alternative-services/</link>
+					<comments>/2018/06/19/http-alternative-services/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 19 Jun 2018 18:34:54 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[quic]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15468</guid>
+
+					<description><![CDATA[RFC 7838: HTTP Alternative Services. This allows HTTP responses to indicate alternative servers that a client can use ( but it isn&#8217;t required to do so ). One example, from the RFC: Alt-Svc: h2=":8000" This indicates the &#8220;h2&#8221; protocol ([RFC7540]) on the same host using the indicated port 8000. Google already uses this to announce [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>RFC 7838: <a href="https://tools.ietf.org/html/rfc7838">HTTP Alternative Services</a>.</p>
+<p>This allows HTTP responses to indicate alternative servers that a client can use ( but it isn&#8217;t required to do so ). One example, from the RFC:</p>
+<blockquote><p><code>Alt-Svc: h2=":8000"</code></p>
+<p>This indicates the &#8220;h2&#8221; protocol ([RFC7540]) on the same host using<br />
+the indicated port 8000.</p></blockquote>
+<p>Google already uses this to announce <a href="https://www.chromium.org/quic">QUIC</a> as an alternative, with this header included in a response from https://www.google.com/:</p>
+<p><code>Alt-Svc: quic=":443"; ma=2592000; v="43,42,41,39,35"</code></p>
+<p>That breaks down as:</p>
+<p>&#8211; QUIC is available on port 443, of the same origin<br />
+&#8211; Max age ( ma ) for this information is 2,592,000 seconds ( default is 24 hours )<br />
+&#8211; Version negotiation hints ( v ) for QUIC</p>
+<p>That gives sites a direct option for announcing other means of making requests.  Right now QUIC is the obvious alternative, but by being an open format, others could use it too.</p>
+<p>Mark Nottingham has a good <a href="https://www.mnot.net/blog/2016/03/09/alt-svc">write up on &#8220;Alternative Services&#8221;</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/06/19/http-alternative-services/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Diffie-Hellman Key Exchange Video</title>
+		<link>/2018/05/29/diffie-hellman-key-exchange-video/</link>
+					<comments>/2018/05/29/diffie-hellman-key-exchange-video/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 29 May 2018 17:59:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[encryption]]></category>
+		<category><![CDATA[video]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15550</guid>
+
+					<description><![CDATA[Via daringfireball.net Being able to encrypt messages between people who have never met is a big deal.]]></description>
+										<content:encoded><![CDATA[<a href="/2018/05/29/diffie-hellman-key-exchange-video/"><img src="/wp-content/plugins/wp-youtube-lyte/lyteCache.php?origThumbUrl=%2F%2Fi.ytimg.com%2Fvi%2FYEBfamv-_do%2Fhqdefault.jpg" alt="YouTube Video"></a><br /><br /></p>
+<p>Via <a href="https://daringfireball.net/linked/2016/03/15/diffie-hellman-public-key-explanation">daringfireball.net</a></p>
+<p>Being able to encrypt messages between people who have never met is a big deal.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/05/29/diffie-hellman-key-exchange-video/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Revenue And Profit, Per Employee</title>
+		<link>/2018/05/22/revenue-and-profit-per-employee/</link>
+					<comments>/2018/05/22/revenue-and-profit-per-employee/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 22 May 2018 19:53:20 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[amazon]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[dustin-curtis]]></category>
+		<category><![CDATA[facebook]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<category><![CDATA[profit]]></category>
+		<category><![CDATA[revenue]]></category>
+		<category><![CDATA[Twitter]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15165</guid>
+
+					<description><![CDATA[Two years ago Dustin Curtis mentioned 2015 revenue and profit per employee for Yahoo, Twitter, Microsoft, Google, and Facebook. I thought this was an interesting way to look at this list, so I&#8217;m going update it, with a few changes. First, I&#8217;m going to remove Yahoo ( Oath? ). Next, I&#8217;m adding Amazon and Netflix. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Two years ago <a href="https://dustincurtis.com/">Dustin Curtis</a> mentioned 2015 <a href="https://twitter.com/dcurtis/status/694266299317243904">revenue</a> and <a href="https://twitter.com/dcurtis/status/694586397588467712">profit</a> per employee for Yahoo, Twitter, Microsoft, Google, and Facebook.</p>
+<p><a href="/wp-content/uploads/2018/05/revenue-per-employee.png"><img loading="lazy" src="/wp-content/uploads/2018/05/revenue-per-employee-1024x897.png" alt="" width="840" height="736" class="aligncenter size-large wp-image-16653" srcset="/wp-content/uploads/2018/05/revenue-per-employee-1024x897.png 1024w, /wp-content/uploads/2018/05/revenue-per-employee-300x263.png 300w, /wp-content/uploads/2018/05/revenue-per-employee-768x673.png 768w, /wp-content/uploads/2018/05/revenue-per-employee-1200x1052.png 1200w, /wp-content/uploads/2018/05/revenue-per-employee.png 1230w" sizes="(max-width: 840px) 100vw, 840px" /></a></p>
+<p><a href="/wp-content/uploads/2018/05/profit-per-employee.png"><img loading="lazy" src="/wp-content/uploads/2018/05/profit-per-employee-1024x895.png" alt="" width="840" height="734" class="aligncenter size-large wp-image-16652" srcset="/wp-content/uploads/2018/05/profit-per-employee-1024x895.png 1024w, /wp-content/uploads/2018/05/profit-per-employee-300x262.png 300w, /wp-content/uploads/2018/05/profit-per-employee-768x671.png 768w, /wp-content/uploads/2018/05/profit-per-employee.png 1192w" sizes="(max-width: 840px) 100vw, 840px" /></a></p>
+<p>I thought this was an interesting way to look at this list, so I&#8217;m going update it, with a few changes.  First, I&#8217;m going to remove Yahoo ( Oath? ).  Next, I&#8217;m adding Amazon and Netflix.</p>
+<p>The revenue/profit will be for calendar year 2017, with the exceptions of Microsoft ( 30 Jun 2017 ) and Apple ( 30 Sep 2017 ).  The numbers are pulled from the Yahoo ( Oath? ) Finance pages: &#8220;Total Revenue&#8221; and &#8220;Net Income&#8221;.</p>
+<hr />
+<h3>Total Employees</h3>
+<p><a href="https://finance.yahoo.com/quote/TWTR/profile?p=TWTR">Twitter</a>: 3,400<br />
+<a href="https://finance.yahoo.com/quote/NFLX/profile?p=NFLX">Netflix</a>: 4,800<br />
+<a href="https://finance.yahoo.com/quote/FB/profile?p=FB">Facebook</a>: 27,742<br />
+<a href="https://finance.yahoo.com/quote/GOOG/profile?p=GOOG">Google</a>: 80,110<br />
+<a href="https://finance.yahoo.com/quote/AAPL/profile?p=AAPL">Apple</a>: 100,000<br />
+<a href="https://finance.yahoo.com/quote/MSFT/profile?p=MSFT">Microsoft</a>: 124,000<br />
+<a href="https://finance.yahoo.com/quote/AMZN/profile?p=AMZN">Amazon</a>: 566,000</p>
+<hr />
+<h3>Revenue Per Employee</h3>
+<p><a href="https://finance.yahoo.com/quote/AMZN/financials?p=AMZN">Amazon</a>: <strong>$314,250</strong> ( $177,866,000,000 / 566,000 )<br />
+<a href="https://finance.yahoo.com/quote/TWTR/financials?p=TWTR">Twitter</a>: <strong>$718,617</strong> ( $2,443,299,000 / 3,400 )<br />
+<a href="https://finance.yahoo.com/quote/MSFT/financials?p=MSFT">Microsoft</a>: <strong>$725,403</strong> ( $89,950,000,000 / 124,000 )<br />
+<a href="https://finance.yahoo.com/quote/GOOG/financials?p=GOOG">Google</a>: <strong>$1,383,784</strong> ( $110,855,000,000 / 80,110 )<br />
+<a href="https://finance.yahoo.com/quote/FB/financials?p=FB">Facebook</a>: <strong>$1,465,395</strong> ( $40,653,000,000 / 27,742 )<br />
+<a href="https://finance.yahoo.com/quote/AAPL/financials?p=AAPL">Apple</a>: <strong>$2,292,340</strong> ( $229,234,000,000 / 100,000 )<br />
+<a href="https://finance.yahoo.com/quote/NFLX/financials?p=NFLX">Netflix</a>: <strong>$2,435,981</strong> ( $11,692,713,000 / 4,800 )</p>
+<hr />
+<h3>Profit Per Employee</h3>
+<p><a href="https://finance.yahoo.com/quote/TWTR/financials?p=TWTR">Twitter</a>: <strong>-$31,783</strong> ( -$108,063,000 / 3,400 )<br />
+<a href="https://finance.yahoo.com/quote/AMZN/financials?p=AMZN">Amazon</a>: <strong>$5,358</strong> ( $3,033,000,000 / 566,000 )<br />
+<a href="https://finance.yahoo.com/quote/NFLX/financials?p=NFLX">Netflix</a>: <strong>$116,443</strong> ( $558,929,000 / 4,800 )<br />
+<a href="https://finance.yahoo.com/quote/GOOG/financials?p=GOOG">Google</a>: <strong>$158,057</strong> ( $12,662,000,000 / 80,110 )<br />
+<a href="https://finance.yahoo.com/quote/MSFT/financials?p=MSFT">Microsoft</a>: <strong>$171,000</strong> ( $21,204,000,000 / 124,000 )<br />
+<a href="https://finance.yahoo.com/quote/AAPL/financials?p=AAPL">Apple</a>: <strong>$483,510</strong> ( $48,351,000,000 / 100,000 )<br />
+<a href="https://finance.yahoo.com/quote/FB/financials?p=FB">Facebook</a>: <strong>$573,859</strong> ( $15,920,000,000 / 27,742 )</p>
+<hr />
+<p>Twitter is still loosing money, but it is loosing a lot less than it was before.</p>
+<p>I didn&#8217;t realize that Netflix was so low on the number of employees, yet their revenue is in the general ball park of much larger companies.  To the studios it must look like Netflix is over there printing money.  No wonder so many other companies want to start their own streaming content service.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/05/22/revenue-and-profit-per-employee/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Right Things Easy</title>
+		<link>/2018/02/28/right-things-easy/</link>
+					<comments>/2018/02/28/right-things-easy/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 28 Feb 2018 17:52:21 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[jonathan-snook]]></category>
+		<category><![CDATA[quotes]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15617</guid>
+
+					<description><![CDATA[From Jonathan Snook: Make the right things easy and the wrong things hard. I like this idea from a user experience point of view. How many times have you thought &#8220;oh, this should be easy&#8221;, only to discover it involved hunting for three different hidden links, and filling out a form that required five times [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>From <a href="https://snook.ca/archives/opinion/make-the-right-things-easy">Jonathan Snook</a>:</p>
+<blockquote><p>
+Make the right things easy and the wrong things hard.
+</p></blockquote>
+<p>I like this idea from a user experience point of view.  How many times have you thought &#8220;oh, this should be easy&#8221;, only to discover it involved hunting for three different hidden links, and filling out a form that required five times as many clicks and steps as it really needed.</p>
+<p>When you find yourself thinking the number of clicks to accomplish a task could be easily cut in half, then you are probably <strong>not</strong> making the right things easy.</p>
+<p>Looking at a single page or screen, ideally it would be really clear what we want the user to accomplish.  If it isn&#8217;t clear, or if accomplishing it is significantly harder than doing something else, then it is worth rethinking your approach.</p>
+<p>The developer version of this reminds me of <a href="https://en.wikiquote.org/wiki/Larry_Wall">Larry Wall on Perl</a>:</p>
+<blockquote><p>
+Easy things should be easy, and hard things should be possible.
+</p></blockquote>
+<p>From a code point of view, hard things should still be possible.  But the easy things shouldn&#8217;t be made more difficult because of those hard things.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/02/28/right-things-easy/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The Gripe Temptation</title>
+		<link>/2016/08/03/the-gripe-temptation/</link>
+					<comments>/2016/08/03/the-gripe-temptation/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 03 Aug 2016 19:47:39 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[leah-culver]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15579</guid>
+
+					<description><![CDATA[It turns out social media seems perfect for griping and complaining! Source: New Year&#8217;s Resolution 2016 &#8211; Leah Culver&#8217;s Blog I&#8217;m in constant amazement at how tempting it is to use social media to gripe. In general I&#8217;ve found it difficult to have meaningful discussions on services like Facebook and Twitter. Instead it is much [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>It turns out social media seems perfect for griping and complaining!</p></blockquote>
+<p>Source: <em><a href="http://blog.leahculver.com/2016/03/new-years-resolution-2016.html">New Year&#8217;s Resolution 2016 &#8211; Leah Culver&#8217;s Blog</a></em></p>
+<p>I&#8217;m in constant amazement at how tempting it is to use social media to gripe.  In general I&#8217;ve found it difficult to have meaningful discussions on services like Facebook and Twitter.  Instead it is much easier to rattle off a few zingers then move on to something else.</p>
+<p>I like Leah&#8217;s resolution for the year:</p>
+<blockquote><p>
+When I think something nice, say it aloud.
+</p></blockquote>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/08/03/the-gripe-temptation/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Fuel Taxes in the United States</title>
+		<link>/2016/03/20/fuel-taxes-in-the-united-states/</link>
+					<comments>/2016/03/20/fuel-taxes-in-the-united-states/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 21 Mar 2016 00:18:16 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[taxes]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15501</guid>
+
+					<description><![CDATA[I&#8217;ve previously mentioned Utah gas and fuel tax. Wikipedia has a page on fuel taxes in the United States. The three states with the lowest rates: Alaska: $0.1225 New Jersey: $0.1450 South Carolina: $0.1675 The three states with the highest rates: Pennsylvania: $0.5040 Washington: $0.4450 New York $0.4264 Utah&#8217;s $0.2941 is 28th when ranked from [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve previously mentioned <a href="https://josephscott.org/archives/2016/02/utah-gas-tax/">Utah gas</a> and <a href="https://josephscott.org/archives/2016/03/utah-fuel-tax-rates/">fuel tax</a>.  Wikipedia has a page on <a href="https://en.wikipedia.org/wiki/Fuel_taxes_in_the_United_States">fuel taxes in the United States</a>.</p>
+<p>The three states with the lowest rates:</p>
+<ul>
+<li>Alaska: $0.1225</li>
+<li>New Jersey: $0.1450</li>
+<li>South Carolina: $0.1675</li>
+</ul>
+<p>The three states with the highest rates:</p>
+<ul>
+<li>Pennsylvania: $0.5040</li>
+<li>Washington: $0.4450</li>
+<li>New York $0.4264</li>
+</ul>
+<p>Utah&#8217;s $0.2941 is 28th when ranked from lowest to highest.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/03/20/fuel-taxes-in-the-united-states/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Cherry Picker</title>
+		<link>/2016/03/19/cherry-picker/</link>
+					<comments>/2016/03/19/cherry-picker/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 19 Mar 2016 17:11:27 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[photo]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15562</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[<p><a href="/wp-content/uploads/2016/03/cherry-picker-1.jpg" rel="attachment wp-att-15563"><img loading="lazy" src="/wp-content/uploads/2016/03/cherry-picker-1-1024x768.jpg" alt="cherry-picker" width="840" height="630" class="aligncenter size-large wp-image-15563" srcset="/wp-content/uploads/2016/03/cherry-picker-1-1024x768.jpg 1024w, /wp-content/uploads/2016/03/cherry-picker-1-300x225.jpg 300w, /wp-content/uploads/2016/03/cherry-picker-1-768x576.jpg 768w, /wp-content/uploads/2016/03/cherry-picker-1.jpg 1200w" sizes="(max-width: 840px) 100vw, 840px" /></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/03/19/cherry-picker/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Betting on Virtual Reality</title>
+		<link>/2016/03/18/betting-on-virtual-reality/</link>
+					<comments>/2016/03/18/betting-on-virtual-reality/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 18 Mar 2016 17:11:50 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[greg-linden]]></category>
+		<category><![CDATA[virtual-reality]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15452</guid>
+
+					<description><![CDATA[Greg Linden is betting against mass adoption of VR: So, Daniel and I have another bet: &#8220;Virtual reality hardware (not counting cardboard) will not sell more than 10M units/year worldwide before March 2019.&#8221; I&#8217;m saying it won&#8217;t. Daniel says it will. Loser donates $100 to the winner&#8217;s choice of charity. I&#8217;m with Greg on this [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Greg Linden is <a href="http://glinden.blogspot.com/2016/03/virtual-reality-hitting-mainstream-next.html">betting against mass adoption of VR</a>:</p>
+<blockquote><p>
+So, Daniel and I have another bet: &#8220;Virtual reality hardware (not counting cardboard) will not sell more than 10M units/year worldwide before March 2019.&#8221; I&#8217;m saying it won&#8217;t. Daniel says it will. Loser donates $100 to the winner&#8217;s choice of charity.
+</p></blockquote>
+<p>I&#8217;m with Greg on this one.  There are plenty of interesting individual applications for VR, but their numbers will be small and specialized.  At least for the next few years.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/03/18/betting-on-virtual-reality/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

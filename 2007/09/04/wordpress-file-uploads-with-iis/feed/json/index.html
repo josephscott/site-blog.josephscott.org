@@ -1,0 +1,200 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/",
+    "feed_url": "https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: WordPress File Uploads With IIS",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/#comment-1920",
+            "url": "https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/#comment-1920",
+            "content_html": "I also had to adjust the following in the php.ini then it worked\nupload_max_filesize = 128M \nDefault was 2M",
+            "content_text": "I also had to adjust the following in the php.ini then it worked\nupload_max_filesize = 128M \nDefault was 2M",
+            "date_published": "2011-10-08T01:14:28-06:00",
+            "authors": [
+                {
+                    "name": "Shannon",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/8c6977cf2bdb22fbd6a58cdff3a5d34b?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Shannon",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/8c6977cf2bdb22fbd6a58cdff3a5d34b?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/#comment-1919",
+            "url": "https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/#comment-1919",
+            "content_html": "[...] and that I was going to fix the problem. I started in the obvious place, Google, and came up with this link that got me part way there and filled me in on some inlightening stuff about php temp files.\u00a0 [...]",
+            "content_text": "[...] and that I was going to fix the problem. I started in the obvious place, Google, and came up with this link that got me part way there and filled me in on some inlightening stuff about php temp files.\u00a0 [...]",
+            "date_published": "2009-03-31T09:28:14-06:00",
+            "authors": [
+                {
+                    "name": "Office Warfare &raquo; Uploading Pictuers to Wordpress in IIS",
+                    "url": "http://officewarfare.net/index.php/2009/03/31/uploading-pictuers-to-wordpress-in-iis/",
+                    "avatar": false
+                }
+            ],
+            "author": {
+                "name": "Office Warfare &raquo; Uploading Pictuers to Wordpress in IIS",
+                "url": "http://officewarfare.net/index.php/2009/03/31/uploading-pictuers-to-wordpress-in-iis/",
+                "avatar": false
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/#comment-1918",
+            "url": "https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/#comment-1918",
+            "content_html": "Ok, this post helped, thanks, but I still had an issue when windows would not put the proper permissions on the file after Wordpress would copy it from the tmp folder to the uploads directory.  The end result was a file uploaded but not viewable.\n\nWhat solved my issue is uncommenting the following line in php.ini :  \"fastcgi.impersonate = 1;\".  This will allow IIS to copy the permissions properly.\n\nDon't forget to recyle the application pool in iis manager to reload the  re-edited php.ini.",
+            "content_text": "Ok, this post helped, thanks, but I still had an issue when windows would not put the proper permissions on the file after Wordpress would copy it from the tmp folder to the uploads directory.  The end result was a file uploaded but not viewable.\n\nWhat solved my issue is uncommenting the following line in php.ini :  \"fastcgi.impersonate = 1;\".  This will allow IIS to copy the permissions properly.\n\nDon't forget to recyle the application pool in iis manager to reload the  re-edited php.ini.",
+            "date_published": "2009-02-24T00:36:18-07:00",
+            "authors": [
+                {
+                    "name": "DanD",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/ee4e4634e0679e9680dc8bfb4fe1edc6?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "DanD",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/ee4e4634e0679e9680dc8bfb4fe1edc6?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/#comment-1917",
+            "url": "https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/#comment-1917",
+            "content_html": "OK - I gave it up for the Zip fix thing, LOL.  Its an explanation -",
+            "content_text": "OK - I gave it up for the Zip fix thing, LOL.  Its an explanation -",
+            "date_published": "2009-01-19T09:34:28-07:00",
+            "authors": [
+                {
+                    "name": "JonB",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/0d84fbf0982227ba8ab156e103ab91a9?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "JonB",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/0d84fbf0982227ba8ab156e103ab91a9?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/#comment-1916",
+            "url": "https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/#comment-1916",
+            "content_html": "Hi James -\n\nI will have some answers for you tomorrow on both your issues I think.  At least things you will be able to check.  I'm mostly a cross platform server geek. I will 'probably' post the info on your WordPress threads.\n\nRight now I'm in the midst of installs &amp; way too many checklists.\n\n/me feels like a party-crasher, LOL",
+            "content_text": "Hi James -\n\nI will have some answers for you tomorrow on both your issues I think.  At least things you will be able to check.  I'm mostly a cross platform server geek. I will 'probably' post the info on your WordPress threads.\n\nRight now I'm in the midst of installs &amp; way too many checklists.\n\n/me feels like a party-crasher, LOL",
+            "date_published": "2009-01-19T09:06:45-07:00",
+            "authors": [
+                {
+                    "name": "JonB",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/0d84fbf0982227ba8ab156e103ab91a9?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "JonB",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/0d84fbf0982227ba8ab156e103ab91a9?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/#comment-1915",
+            "url": "https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/#comment-1915",
+            "content_html": "This is at least peripherally related to two issues I am seeing.\n\nI am having troubles where my image uploader is not giving any option but full size for image uploads.  I am fairly certain this is not a permissions issue since I am able to upload the images and further I am able to select tn views using the edit feature after the image is uploaded:\n\nhttp://wordpress.org/support/topic/231020\n\nAlso, I am not able to auto-update plugins due to a permissions issue of some sort:\n\nhttp://wordpress.org/support/topic/187786\n\nI wonder if you might be able to offer any insight into the matter?  It's tough to find other Windows/WP administrators out there.\n\n(Feel free to write to me and we can take this off-line if that's better for you.)",
+            "content_text": "This is at least peripherally related to two issues I am seeing.\n\nI am having troubles where my image uploader is not giving any option but full size for image uploads.  I am fairly certain this is not a permissions issue since I am able to upload the images and further I am able to select tn views using the edit feature after the image is uploaded:\n\nhttp://wordpress.org/support/topic/231020\n\nAlso, I am not able to auto-update plugins due to a permissions issue of some sort:\n\nhttp://wordpress.org/support/topic/187786\n\nI wonder if you might be able to offer any insight into the matter?  It's tough to find other Windows/WP administrators out there.\n\n(Feel free to write to me and we can take this off-line if that's better for you.)",
+            "date_published": "2009-01-14T04:24:09-07:00",
+            "authors": [
+                {
+                    "name": "James",
+                    "url": "http://SoundUnReason.com/InkWell",
+                    "avatar": "https://secure.gravatar.com/avatar/43578f5cefdfc94aa4838bfe05932ee7?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "James",
+                "url": "http://SoundUnReason.com/InkWell",
+                "avatar": "https://secure.gravatar.com/avatar/43578f5cefdfc94aa4838bfe05932ee7?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/#comment-1914",
+            "url": "https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/#comment-1914",
+            "content_html": "@Christian\n\nBased on my experience with 5 different ASP.Net shared hosting companies, I sort of doubt that you will be able to get this to work.  Your only choice might be a VPS or dedicated server.  I have a BlogEngine.Net blog that works with IIS, but am considering using WordPress for a second blog.  I will very likely choose a Linux plan for it.",
+            "content_text": "@Christian\n\nBased on my experience with 5 different ASP.Net shared hosting companies, I sort of doubt that you will be able to get this to work.  Your only choice might be a VPS or dedicated server.  I have a BlogEngine.Net blog that works with IIS, but am considering using WordPress for a second blog.  I will very likely choose a Linux plan for it.",
+            "date_published": "2009-01-03T11:38:39-07:00",
+            "authors": [
+                {
+                    "name": "Milwaukee SEO Firm",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/0ca9c46adb0f2202062584dc82149311?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Milwaukee SEO Firm",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/0ca9c46adb0f2202062584dc82149311?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/#comment-1913",
+            "url": "https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/#comment-1913",
+            "content_html": "Joe this looks pretty good for people hosting their WP on their own servers. I have a shared hosting account with a company and can't access the services you mention.\n\nDoes anyone have a way to get uploads working in a shared hosting environment?",
+            "content_text": "Joe this looks pretty good for people hosting their WP on their own servers. I have a shared hosting account with a company and can't access the services you mention.\n\nDoes anyone have a way to get uploads working in a shared hosting environment?",
+            "date_published": "2008-11-17T08:51:52-07:00",
+            "authors": [
+                {
+                    "name": "Christian Gehrke",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/26f68d121834d22098b8417a6999b0fc?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Christian Gehrke",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/26f68d121834d22098b8417a6999b0fc?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/#comment-1912",
+            "url": "https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/#comment-1912",
+            "content_html": "Umm - Clay\n\nthe 'user' never owns the file in this kind of an environment, they aren't authenticated.\n\nIUSR is the proxy for the client. It represents the Anonymous Access view/filter of files and folders present in an IIS website. I hope this helps.",
+            "content_text": "Umm - Clay\n\nthe 'user' never owns the file in this kind of an environment, they aren't authenticated.\n\nIUSR is the proxy for the client. It represents the Anonymous Access view/filter of files and folders present in an IIS website. I hope this helps.",
+            "date_published": "2008-10-24T11:23:28-06:00",
+            "authors": [
+                {
+                    "name": "JonB",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/0d84fbf0982227ba8ab156e103ab91a9?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "JonB",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/0d84fbf0982227ba8ab156e103ab91a9?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/#comment-1911",
+            "url": "https://blog.josephscott.org/2007/09/04/wordpress-file-uploads-with-iis/#comment-1911",
+            "content_html": "i am not sure if it was covered but whatever you put in your upload_tmp_dir is deleted by PHP when the script ends, at least that's how it used to be i believe, that is a bit of a temp holding ground, you're supposed to migrate it to a permanent location after receiving the upload stream, this should be why someon's image wasn't showing up after upload, it didn't really exsist after it.\n\nthis is in reference to uploading files / using $_FILES.\n\nIf you're gonna upload, read the manual on it so you know what you're using:\nhttp://us3.php.net/file-upload\nFROM PHP SITE:\n\"The file will be deleted from the temporary directory at the end of the request if it has not been moved away or renamed. \"\n\nand from what i saw above, IUSR is being given too many rights and the user does not (and i would think should not) not own any file.",
+            "content_text": "i am not sure if it was covered but whatever you put in your upload_tmp_dir is deleted by PHP when the script ends, at least that's how it used to be i believe, that is a bit of a temp holding ground, you're supposed to migrate it to a permanent location after receiving the upload stream, this should be why someon's image wasn't showing up after upload, it didn't really exsist after it.\n\nthis is in reference to uploading files / using $_FILES.\n\nIf you're gonna upload, read the manual on it so you know what you're using:\nhttp://us3.php.net/file-upload\nFROM PHP SITE:\n\"The file will be deleted from the temporary directory at the end of the request if it has not been moved away or renamed. \"\n\nand from what i saw above, IUSR is being given too many rights and the user does not (and i would think should not) not own any file.",
+            "date_published": "2008-10-23T06:47:35-06:00",
+            "authors": [
+                {
+                    "name": "Clay",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/f9d797c656c04ccb5c3512ae6fdf7957?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Clay",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/f9d797c656c04ccb5c3512ae6fdf7957?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

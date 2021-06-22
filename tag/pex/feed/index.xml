@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>pex &#8211; Joseph Scott</title>
+	<atom:link href="/tag/pex/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 04 Nov 2015 14:57:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Python EXecutable</title>
+		<link>/2015/11/04/python-executable/</link>
+					<comments>/2015/11/04/python-executable/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 04 Nov 2015 14:57:44 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[brian-wickman]]></category>
+		<category><![CDATA[pex]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13636</guid>
+
+					<description><![CDATA[What happens when you combine Python executing __main__.py and zip files? You get pex ( Python EXecutable ): pex is a library for generating .pex (Python EXecutable) files which are executable Python environments in the spirit of virtualenvs. pex is an expansion upon the ideas outlined in PEP 441 and makes the deployment of Python [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>What happens when you combine Python executing <code>__main__.py</code> and zip files?  You get <a href="https://github.com/pantsbuild/pex">pex</a> ( Python EXecutable ):</p>
+<blockquote><p>
+pex is a library for generating .pex (Python EXecutable) files which are executable Python environments in the spirit of virtualenvs. pex is an expansion upon the ideas outlined in PEP 441 and makes the deployment of Python applications as simple as cp. pex files may even include multiple platform-specific Python distributions, meaning that a single pex file can be portable across Linux and OS X.
+</p></blockquote>
+<p>Brian Wickman covers the basics of how this works in a <a href="https://www.youtube.com/watch?v=NmpnGhRwsu0">17 minute video</a>.  The video is definitely worth watching if you are curious about this.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/04/python-executable/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

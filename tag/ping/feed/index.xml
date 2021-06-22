@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ping &#8211; Joseph Scott</title>
+	<atom:link href="/tag/ping/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 13 Oct 2014 14:31:18 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>History of Ping</title>
+		<link>/2014/10/13/history-of-ping-2/</link>
+					<comments>/2014/10/13/history-of-ping-2/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 13 Oct 2014 14:31:18 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[mike-muuss]]></category>
+		<category><![CDATA[ping]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11251</guid>
+
+					<description><![CDATA[Last month I linked to the history of the ping of death. Going back further, we have &#8220;The Story of the PING Program&#8220;: My original impetus for writing PING for 4.2a BSD UNIX came from an offhand remark in July 1983 by Dr. Dave Mills while we were attending a DARPA meeting in Norway, in [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Last month I linked to the <a href="https://josephscott.org/archives/2014/09/ping-of-death-history/">history of the ping of death</a>.  Going back further, we have &#8220;<a href="http://ftp.arl.mil/mike/ping.html">The Story of the PING Program</a>&#8220;:</p>
+<blockquote><p>
+My original impetus for writing PING for 4.2a BSD UNIX came from an offhand remark in July 1983 by Dr. Dave Mills while we were attending a DARPA meeting in Norway, in which he described some work that he had done on his &#8220;Fuzzball&#8221; LSI-11 systems to measure path latency using timed ICMP Echo packets.</p>
+<p>In December of 1983 I encountered some odd behavior of the IP network at BRL. Recalling Dr. Mills&#8217; comments, I quickly coded up the PING program, which revolved around opening an ICMP style SOCK_RAW AF_INET Berkeley-style socket(). The code compiled just fine, but it didn&#8217;t work &#8212; there was no kernel support for raw ICMP sockets! Incensed, I coded up the kernel support and had everything working well before sunrise. Not surprisingly, Chuck Kennedy (aka &#8220;Kermit&#8221;) had found and fixed the network hardware before I was able to launch my very first &#8220;ping&#8221; packet. But I&#8217;ve used it a few times since then. *grin* If I&#8217;d known then that it would be my most famous accomplishment in life, I might have worked on it another day or two and added some more options.
+</p></blockquote>
+<p>I like that <a href="https://www.freebsd.org/cgi/man.cgi?query=ping&#038;apropos=0&#038;sektion=0&#038;manpath=FreeBSD+10.0-RELEASE&#038;arch=default&#038;format=html#end">the ping man page for FreeBSD still mentions Mike Muuss</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/10/13/history-of-ping-2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>&#8220;Ping of Death&#8221; History</title>
+		<link>/2014/09/23/ping-of-death-history/</link>
+					<comments>/2014/09/23/ping-of-death-history/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 23 Sep 2014 14:55:59 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[ping]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11031</guid>
+
+					<description><![CDATA[Way back in the day the &#8216;ping of death&#8216; ( # ) provided plenty of fun by annoying co-workers. Killing a Windows box on the office network was insanely simple: ping -l 65510 target.ip.address We eventually had to come to a truce in order to get any work done. What I don&#8217;t recall ever hearing [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Way back in the day the &#8216;<a href="http://insecure.org/sploits/ping-o-death.html">ping of death</a>&#8216; ( <a href="https://web.archive.org/web/19981206105844/http://www.sophist.demon.co.uk/ping/">#</a> ) provided plenty of fun by annoying co-workers.  Killing a Windows box on the office network was insanely simple:</p>
+<blockquote><p>
+ping -l 65510 target.ip.address
+</p></blockquote>
+<p>We eventually had to come to a truce in order to get any work done.</p>
+<p>What I don&#8217;t recall ever hearing about is the origin of how the &#8216;ping of death&#8217; was discovered.  The history is noted by <a href="http://blogs.msdn.com/b/larryosterman/archive/2007/10/16/larry-and-the-ping-of-death.aspx">Larry Osterman back in 2007</a>, who apparently is the one who discovered the problem:</p>
+<blockquote><p>
+I quickly realized that my test application was the cause of the crash, and I isolated my machines from the network and started digging in.  I quickly root caused the problem &#8211; the broadcast that was sent by my test application was malformed and it exposed a bug in the bowser.sys driver.  When the bowser received this packet, it crashed.
+</p></blockquote>
+<p>But that isn&#8217;t even the best part.  Because Microsoft wasn&#8217;t yet on a switched network, it wasn&#8217;t just his Windows NT system that crashed:</p>
+<blockquote><p>
+At this point, everyone in the offices around me started to get noisy &#8211; there was a great deal of cursing going on.  What I&#8217;d not realized was that every machine had crashed at the same time as my dev machine had crashed.  And I do mean EVERY machine.  Every single machine in the corporation running Windows NT had crashed.  Twice (after allowing just enough time between crashes to allow people to start getting back to work).
+</p></blockquote>
+<p>The icing on the cake for this story is that Larry then went around and apologized to everyone who got hit by this.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/09/23/ping-of-death-history/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>History of PING</title>
+		<link>/2006/12/12/history-of-ping/</link>
+					<comments>/2006/12/12/history-of-ping/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 13 Dec 2006 00:32:38 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[history]]></category>
+		<category><![CDATA[ping]]></category>
+		<category><![CDATA[unix]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/12/12/history-of-ping/</guid>
+
+					<description><![CDATA[Do you feel like other unix geeks look down at you because of their superior knowledge of unix history? Tired of being called a young wiper snapper because you&#8217;ve only been using unix systems for ten years? Here is something that can help. The Story of the PING Program. To really ramp up on the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Do you feel like other unix geeks look down at you because of their superior knowledge of unix history?  Tired of being called a young wiper snapper because you&#8217;ve only been using unix systems for ten years?  Here is something that can help.</p>
+<p><a href="http://ftp.arl.mil/~mike/ping.html">The Story of the PING Program</a>.  To really ramp up on the geek points you&#8217;ll have to get familiar with <a href="http://www.amazon.com/exec/obidos/ASIN/0140502416/o/">The Story About Ping</a> at Amazon, specifically <a href="http://www.amazon.com/gp/discussionboard/discussion.html/ref=cm_rdp_st_rd/103-4897864-1679824?ie=UTF8&amp;ASIN=0140502416&amp;store=yourstore&amp;cdThread=Tx2DLBT9UA4M6D2&amp;reviewID=R2VDKZ4X1F992Q&amp;iid=0140502416&amp;displayType=ReviewDetail">this comment</a> from early 2000.</p>
+<p>Now you&#8217;ll be able to contribute to the old unix geezer talk around the water cooler.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/12/12/history-of-ping/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Bloglines Finally Supports XML-RPC Ping</title>
+		<link>/2006/04/28/bloglines-finally-supports-xml-rpc-ping/</link>
+					<comments>/2006/04/28/bloglines-finally-supports-xml-rpc-ping/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 29 Apr 2006 03:12:52 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[bloglines]]></category>
+		<category><![CDATA[ping]]></category>
+		<category><![CDATA[xmlrpc]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/04/28/bloglines-finally-supports-xml-rpc-ping/</guid>
+
+					<description><![CDATA[Bloglines has resisted adding an XML-RPC ping interface in favor of simply polling feeds for updates. That has finally changed with the announcement of a new ping interface. You can find the details on the API documentation page under the Ping API section.]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.bloglines.com/">Bloglines</a> has resisted adding an <a href="http://www.xmlrpc.com/weblogsCom">XML-RPC ping</a> interface in favor of simply polling feeds for updates.  That has finally changed with the <a href="http://www.bloglines.com/about/news#103">announcement of a new ping interface</a>.  You can find the details on the <a href="http://www.bloglines.com/services/api">API documentation</a> page under the Ping API section.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/04/28/bloglines-finally-supports-xml-rpc-ping/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>PINGQueue.com</title>
+		<link>/2005/11/02/pingqueuecom/</link>
+					<comments>/2005/11/02/pingqueuecom/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 03 Nov 2005 06:29:56 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[ping]]></category>
+		<category><![CDATA[pingomatic]]></category>
+		<category><![CDATA[pingqueue]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=513</guid>
+
+					<description><![CDATA[Some months ago I sat down and spent some time thinking about Ping-o-Matic and what sort possibilities there are in that kind of service. I started putting some ideas down on paper and talked to Jim about it, we agreed it sounded interesting so I started writing up some code. Thus PINGQueue.com was born. I&#8217;ve [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Some months ago I sat down and spent some time thinking about <a href="http://www.pingomatic.com/">Ping-o-Matic</a> and what sort possibilities there are in that kind of service.  I started putting some ideas down on paper and talked to <a href="http://www.sonicchicken.net/blog/wordpress/">Jim</a> about it, we agreed it sounded interesting so I started writing up some code.  Thus <a href="http://www.pingqueue.com/">PINGQueue.com</a> was born.</p>
+<p>I&#8217;ve gone through a couple revisions of the code and database and I&#8217;m fairly happy with where things are at.  There are still more features that I&#8217;d like to add, some for users and others behind the scenes, but for now I think it is at a good starting point.  So go and try it out, especially if you are looking for possible Ping-o-Matic alternatives.</p>
+<p>You can submit pings via an HTML form at <a href="http://www.pingqueue.com/">http://www.pingqueue.com/</a> or use the XML-RPC function weblogUpdates.ping at <code>http://www.pingqueue.com/rpc/</code>.   If you are using <a href="http://www.wordpress.org/">WordPress</a> then you can configure it to automatically ping PINGQueue via Options -&gt; Writing -&gt; Update Services (at the bottom of the page) and put in the URL <code>http://www.pingqueue.com/rpc/</code> in the textarea and click on the &#8216;Update Options&#8217; button.</p>
+<p>PINGQueue.com has its own <a href="http://www.pingqueue.com/blog/">blog</a> (with <a href="http://www.pingqueue.com/blog/feed/">RSS Feed</a>) and a <a href="http://www.pingqueue.com/contact/">contact form</a> if you&#8217;d like to ask questions.</p>
+<p>So try it out and let me know what you think.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/11/02/pingqueuecom/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>New Ping Service Testers Needed</title>
+		<link>/2005/09/26/new-ping-service-testers-needed/</link>
+					<comments>/2005/09/26/new-ping-service-testers-needed/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 27 Sep 2005 03:29:42 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[blog]]></category>
+		<category><![CDATA[ping]]></category>
+		<category><![CDATA[pingomatic]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=491</guid>
+
+					<description><![CDATA[I&#8217;ve been working on a ping service comparable to Ping-o-Matic, with the goal of providing a much faster response time for users. I&#8217;m at the point where I need an initial batch of users to try it out and provide feedback before it goes completely public. If you are interested then drop me a note [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been working on a ping service comparable to <a href="http://www.pingomatic.com/">Ping-o-Matic</a>, with the goal of providing a much faster response time for users.  I&#8217;m at the point where I need an initial batch of users to try it out and provide feedback before it goes completely public.  If you are interested then drop me a note using my <a href="http://joseph.randomnetworks.com/contact/">contact form</a> and I&#8217;ll point you to the website.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/09/26/new-ping-service-testers-needed/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Google Sitemaps</title>
+		<link>/2005/06/02/google-sitemaps/</link>
+					<comments>/2005/06/02/google-sitemaps/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 03 Jun 2005 05:35:36 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[ping]]></category>
+		<category><![CDATA[search]]></category>
+		<category><![CDATA[sitemap]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=400</guid>
+
+					<description><![CDATA[Last summer I wrote some thoughts about something like a mod_ping for Apache so that search engines could be easily notified when pages on a site change. I was trying to abstract the idea of pings and trackbacks in use by blogs into a general feature that could be used for any site, even one [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Last summer I wrote some thoughts about something like a <a href="http://joseph.randomnetworks.com/archives/2004/08/24/apache-module-idea-mod_ping/">mod_ping for Apache</a> so that search engines could be easily notified when pages on a site change.  I was trying to abstract the idea of pings and trackbacks in use by blogs into a general feature that could be used for any site, even one made out of static files.</p>
+<p>The <a href="http://googleblog.blogspot.com/2005/06/webmaster-friendly.html">announcement</a> about <a href="https://www.google.com/webmasters/sitemaps/stats">Google Sitemaps</a> reminded me very much about my mod_ping idea.  It isn&#8217;t the same, but the goal seems to be the same, providing a way for search engines to discover URLs and when they change.  <a href="http://blog.searchenginewatch.com/blog/050602-195224">SearchEngineWatch has an article about it</a> which provides a brief overview of what Google is up to.  More information can be found in the <a href="https://www.google.com/webmasters/sitemaps/docs/en/sitemap-generator.html">help for there sitemap generator tool</a> (and the <a href="http://sourceforge.net/projects/goog-sitemapgen">Source Forge site for the tool</a>), the <a href="https://www.google.com/webmasters/sitemaps/docs/en/faq.html#s9">Google Sitemaps FAQ</a> and the <a href="https://www.google.com/webmasters/sitemaps/docs/en/protocol.html">Sitemap protocol</a> page.</p>
+<p>They specifically mention a hope that servers (Apache &amp; IIS) will support this in the future.  In the mean time you can manually <a href="https://www.google.com/webmasters/sitemaps/docs/en/faq.html#s4">ping Google for sitemap updates</a> using something like curl, wget or even your web browser I suppose.  I&#8217;d expect this feature to be built into certain web tools, like blogs and content management systems.  I&#8217;m sure someone will get around to writing a tool for <a href="http://www.wordpress.org/">WordPress</a> to generate a sitemap file, adding to it each time an entry is published and then ping Google to let them know it has been updated.</p>
+<p>Will other web search companies adopt this?  Keep an eye on Yahoo!, MSN, AOL, A9 and IceRocket to see if this goes anywhere.  I don&#8217;t think that this will be limited to the &#8220;traditional&#8221; search folks, I&#8217;d think that someone at Technorati, PubSub and maybe Bloglines might come up with some clever uses for this.  If we are really lucky people will learn from history and come up with something like <a href="http://groups.yahoo.com/group/feedmesh/">feedmesh</a> for sitemap pings.</p>
+<p>For now I&#8217;ve whipped up a very basic sitemap file at <a href="http://joseph.randomnetworks.com/sitemap.xml">http://joseph.randomnetworks.com/sitemap.xml</a> and pinged Google to let them know about it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/06/02/google-sitemaps/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

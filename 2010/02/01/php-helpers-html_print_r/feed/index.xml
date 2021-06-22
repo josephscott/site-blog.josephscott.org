@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: PHP Helpers: html_print_r	</title>
+	<atom:link href="/2010/02/01/php-helpers-html_print_r/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/02/01/php-helpers-html_print_r/</link>
+	<description></description>
+	<lastBuildDate>Mon, 08 Feb 2010 05:36:24 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/02/01/php-helpers-html_print_r/#comment-3182</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 08 Feb 2010 05:36:24 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1837#comment-3182</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/02/01/php-helpers-html_print_r/#comment-3181&quot;&gt;Travis Ballard&lt;/a&gt;.
+
+Thanks.  That&#039;s a smaller version, but my intent wasn&#039;t to make it super small, just super useful :-)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/02/01/php-helpers-html_print_r/#comment-3181">Travis Ballard</a>.</p>
+<p>Thanks.  That&#8217;s a smaller version, but my intent wasn&#8217;t to make it super small, just super useful 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Travis Ballard		</title>
+		<link>/2010/02/01/php-helpers-html_print_r/#comment-3181</link>
+
+		<dc:creator><![CDATA[Travis Ballard]]></dc:creator>
+		<pubDate>Sat, 06 Feb 2010 19:42:21 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1837#comment-3181</guid>
+
+					<description><![CDATA[my comment on the html_var_dump would probably be more appropriate here.
+
+printf(&#039;(pre)%s(/pre)&#039;, print_r( $var, 1 ) );
+
+replace the () tags with lt/gt]]></description>
+			<content:encoded><![CDATA[<p>my comment on the html_var_dump would probably be more appropriate here.</p>
+<p>printf(&#8216;(pre)%s(/pre)&#8217;, print_r( $var, 1 ) );</p>
+<p>replace the () tags with lt/gt</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

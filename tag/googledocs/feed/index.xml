@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>googledocs &#8211; Joseph Scott</title>
+	<atom:link href="/tag/googledocs/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 22 Apr 2008 05:15:42 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Google Docs Spam</title>
+		<link>/2008/04/21/google-docs-spam/</link>
+					<comments>/2008/04/21/google-docs-spam/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 22 Apr 2008 05:15:42 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[googledocs]]></category>
+		<category><![CDATA[spam]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1058</guid>
+
+					<description><![CDATA[One of the neat things about Google Docs is the ability to share the document with others. You can do this with anyone just by knowing their email address. Google will then send an email out that looks something like: I&#8217;ve shared a document with you called &#8220;Spam sharing test&#8221;: http://docs.google.com/a/example.com/Doc?id=xxxxxxxxxxxxxx&#038;invite= It&#8217;s not an attachment [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>One of the neat things about <a href="http://documents.google.com/">Google Docs</a> is the ability to share the document with others.  You can do this with anyone just by knowing their email address.  Google will then send an email out that looks something like:</p>
+<blockquote><p>
+I&#8217;ve shared a document with you called &#8220;Spam sharing test&#8221;:<br />
+http://docs.google.com/a/example.com/Doc?id=xxxxxxxxxxxxxx&#038;invite=</p>
+<p>It&#8217;s not an attachment &#8212; it&#8217;s stored online at Google Docs. To open this document, just click the link above.<br />
+&#8212;</p>
+<p>Shared this doc with you.
+</p></blockquote>
+<p>Which is a really handy way to collaborate with others on a document.  And it seems the spammers have discovered this as well.</p>
+<p>I&#8217;ve recently started seeing emails for documents that I&#8217;ve been invited to, which turn out to be just a bunch of spam.  They&#8217;ve taken Google Docs and are using it in an attempt to mask their spam from email filters, by providing link to a service you might normally trust.  I suspect that Gmail is unlikely to mark any doc invites as spam.</p>
+<p>Currently this seems to be pretty limited, the spammers have to paste in the email addresses into an invite box.  Google could do some basic things to prevent spammy looking invites from going out (do you really mean to invite 3.78 million people to share your document?).  I&#8217;m not aware of a Google Docs API that allows you to script doc invites, but if there is one (or if they come out with one later) then you can bet the spammers will make use of that as well.</p>
+<p>This will turn into another wack-a-mole situation, where Google will (hopefully) revoke accounts and API keys for users who are sending out spam in this way.  Then the spammer will just start using another one of the 324,834 accounts that they&#8217;ve already created at Google until it gets blocked too.  Rinse, lather and repeat.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/04/21/google-docs-spam/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

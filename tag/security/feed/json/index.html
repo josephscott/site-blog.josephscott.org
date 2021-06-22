@@ -1,0 +1,272 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/security/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/security/",
+    "feed_url": "https://blog.josephscott.org/tag/security/feed/json/",
+    "language": "en-US",
+    "title": "security &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/?p=17716",
+            "url": "https://blog.josephscott.org/2019/09/27/sms-does-not-count-as-two-factor-authentication/",
+            "title": "SMS Does Not Count As Two Factor Authentication",
+            "content_html": "<p>Just so that I&#8217;m clear, here is the message:</p>\n<blockquote><p>\nSending a code via SMS to a mobile phone does not count as Two Factor Authentication ( 2FA ).\n</p></blockquote>\n<p>I saw two things recently that brought up this issue again.  First, reading the account of someone who was hit with a SIM card swap attack &#8211; where someone else calls up your mobile carrier claiming to be you and has your phone number moved to a new SIM card.  That led to all sorts of pain from accounts that considered his phone number to be a trusted source of authentication.</p>\n<p>The second trigger in all of this was seeing a notification from a financial institution that was going to start enabling &#8220;Two Factor Authentication&#8221; on accounts.  The default method was a code sent via SMS, and given the power of defaults I expect most people will pick that one.  Fortunately they do offer a way to use <a href=\"https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm\">TOTP ( Time base One Time Password )</a> codes, so the situation wasn&#8217;t as bad as it could have been.</p>\n<p>At best I&#8217;d call that 1.5FA instead of 2FA.</p>\n<p>However, I&#8217;ve reached a point where any mention of SMS as a 2FA ( Two Factor Authentication ) option should come with a large warning in red blinking text about how this really isn&#8217;t what you want to do.</p>\n<h3>What To Use Instead</h3>\n<p>I strongly prefer the TOTP option instead, with a mobile app like <a href=\"https://authy.com/\">Authy</a>, <a href=\"https://duo.com/\">Duo</a>, <a href=\"https://freeotp.github.io/\">FreeOTP</a>, or <a href=\"https://apps.apple.com/us/app/google-authenticator/id388497605\">Google Authenticator</a>.</p>\n<p>Standard disclaimer applies here, nothing is perfect.  Using a TOTP app won&#8217;t give you perfect security ( I&#8217;d argue that doesn&#8217;t exist ), but it is miles better than no 2FA and significantly better than SMS tokens.</p>\n",
+            "content_text": "Just so that I&#8217;m clear, here is the message:\n\nSending a code via SMS to a mobile phone does not count as Two Factor Authentication ( 2FA ).\n\nI saw two things recently that brought up this issue again.  First, reading the account of someone who was hit with a SIM card swap attack &#8211; where someone else calls up your mobile carrier claiming to be you and has your phone number moved to a new SIM card.  That led to all sorts of pain from accounts that considered his phone number to be a trusted source of authentication.\nThe second trigger in all of this was seeing a notification from a financial institution that was going to start enabling &#8220;Two Factor Authentication&#8221; on accounts.  The default method was a code sent via SMS, and given the power of defaults I expect most people will pick that one.  Fortunately they do offer a way to use TOTP ( Time base One Time Password ) codes, so the situation wasn&#8217;t as bad as it could have been.\nAt best I&#8217;d call that 1.5FA instead of 2FA.\nHowever, I&#8217;ve reached a point where any mention of SMS as a 2FA ( Two Factor Authentication ) option should come with a large warning in red blinking text about how this really isn&#8217;t what you want to do.\nWhat To Use Instead\nI strongly prefer the TOTP option instead, with a mobile app like Authy, Duo, FreeOTP, or Google Authenticator.\nStandard disclaimer applies here, nothing is perfect.  Using a TOTP app won&#8217;t give you perfect security ( I&#8217;d argue that doesn&#8217;t exist ), but it is miles better than no 2FA and significantly better than SMS tokens.",
+            "date_published": "2019-09-27T14:34:17-06:00",
+            "date_modified": "2019-09-27T14:34:17-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "security",
+                "two-factor-authentication"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=13613",
+            "url": "https://blog.josephscott.org/2015/12/08/error-based-sql-injection/",
+            "title": "Error Based SQL Injection",
+            "content_html": "<p>Looking for a new twist on SQL injection?  Try <a href=\"https://osandamalith.wordpress.com/2015/07/08/bigint-overflow-error-based-sql-injection/\">BIGINT Overflow Error Based SQL Injection</a>:</p>\n<blockquote><p>\nTo perform these injection the mysql_error() should be echoed back to us that\u2019s why this is error based injection. The MySQL version should be 5.5.5 or above. There can be lots of variations for these overflow injections.</p></blockquote>\n<p>Even error messages can betray you.</p>\n",
+            "content_text": "Looking for a new twist on SQL injection?  Try BIGINT Overflow Error Based SQL Injection:\n\nTo perform these injection the mysql_error() should be echoed back to us that\u2019s why this is error based injection. The MySQL version should be 5.5.5 or above. There can be lots of variations for these overflow injections.\nEven error messages can betray you.",
+            "date_published": "2015-12-08T08:57:07-07:00",
+            "date_modified": "2015-12-08T08:57:07-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "MySQL",
+                "security",
+                "sql-injection",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=13305",
+            "url": "https://blog.josephscott.org/2015/10/01/public-mongodb-data/",
+            "title": "Public MongoDB Data",
+            "content_html": "<p>Database authentication, or the lack there of:</p>\n<blockquote><p>\nThere&#8217;s a total of 595.2 TB of data exposed on the Internet via publicly accessible MongoDB instances that don&#8217;t have any form of authentication.\n</p></blockquote>\n<p>From Shodan: <a href=\"http://blog.shodan.io/its-the-data-stupid/\">It&#8217;s the Data, Stupid!</a></p>\n",
+            "content_text": "Database authentication, or the lack there of:\n\nThere&#8217;s a total of 595.2 TB of data exposed on the Internet via publicly accessible MongoDB instances that don&#8217;t have any form of authentication.\n\nFrom Shodan: It&#8217;s the Data, Stupid!",
+            "date_published": "2015-10-01T09:04:33-06:00",
+            "date_modified": "2015-10-01T09:04:33-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "mongodb",
+                "security",
+                "shodan",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=12966",
+            "url": "https://blog.josephscott.org/2015/07/07/security-and-privacy/",
+            "title": "Security and Privacy",
+            "content_html": "<p><a href=\"https://w3ctag.github.io/security-questionnaire/\">Self-Review Questionnaire: Security and Privacy</a>:</p>\n<blockquote><p>\nThis document lists a set of questions one could ask about the security and privacy impact of a new feature or specification. It is meant as a tool that groups or individuals can use as a guide during a self-review, pointing towards important questions in areas where expertise might be lacking.</p>\n<p>It is not meant as a &#8220;security checklist&#8221;, nor does an editor or group\u2019s use of this questionnaire obviate the editor or group\u2019s responsibility to obtain &#8220;wide review&#8221; of a specification\u2019s security and privacy properties before publication.\n</p></blockquote>\n<p>Very well intended features can later be avenues for abuse.  <a href=\"http://www.radicalresearch.co.uk/lab/hstssupercookies\">HSTS super cookies</a> come to mind.</p>\n",
+            "content_text": "Self-Review Questionnaire: Security and Privacy:\n\nThis document lists a set of questions one could ask about the security and privacy impact of a new feature or specification. It is meant as a tool that groups or individuals can use as a guide during a self-review, pointing towards important questions in areas where expertise might be lacking.\nIt is not meant as a &#8220;security checklist&#8221;, nor does an editor or group\u2019s use of this questionnaire obviate the editor or group\u2019s responsibility to obtain &#8220;wide review&#8221; of a specification\u2019s security and privacy properties before publication.\n\nVery well intended features can later be avenues for abuse.  HSTS super cookies come to mind.",
+            "date_published": "2015-07-07T08:01:27-06:00",
+            "date_modified": "2015-07-07T08:01:27-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "security",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=12798",
+            "url": "https://blog.josephscott.org/2015/06/08/prompt1-solutions/",
+            "title": "prompt(1) Solutions",
+            "content_html": "<p>Last week I mentioned the <a href=\"https://josephscott.org/archives/2015/06/prompt1-to-win/\">prompt.ml XSS challenge</a>.  If you are still fighting some of the levels ( I didn&#8217;t figure out all of them ) then you may want to check out the <a href=\"https://github.com/cure53/XSSChallengeWiki/wiki/prompt.ml\">solutions</a>.</p>\n",
+            "content_text": "Last week I mentioned the prompt.ml XSS challenge.  If you are still fighting some of the levels ( I didn&#8217;t figure out all of them ) then you may want to check out the solutions.",
+            "date_published": "2015-06-08T08:11:55-06:00",
+            "date_modified": "2015-06-08T08:11:55-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "security",
+                "xss",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=11232",
+            "url": "https://blog.josephscott.org/2015/06/01/prompt1-to-win/",
+            "title": "prompt(1) to win",
+            "content_html": "<p><a href=\"http://prompt.ml/\">prompt.ml</a> is another fun site to test your XSS skills.</p>\n<p>The goal is simple:</p>\n<blockquote><p>\nCall prompt(1) to win. You should make it without user interaction.\n</p></blockquote>\n",
+            "content_text": "prompt.ml is another fun site to test your XSS skills.\nThe goal is simple:\n\nCall prompt(1) to win. You should make it without user interaction.",
+            "date_published": "2015-06-01T08:23:34-06:00",
+            "date_modified": "2015-06-01T08:23:34-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "security",
+                "xss",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=11325",
+            "url": "https://blog.josephscott.org/2015/05/22/xss-tutorial/",
+            "title": "XSS Tutorial",
+            "content_html": "<p><a href='http://excess-xss.com/'>Excess-XSS.com: A comprehensive tutorial on cross-site scripting</a>.</p>\n",
+            "content_text": "Excess-XSS.com: A comprehensive tutorial on cross-site scripting.",
+            "date_published": "2015-05-22T10:19:58-06:00",
+            "date_modified": "2015-05-22T10:19:58-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "security",
+                "xss",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=11973",
+            "url": "https://blog.josephscott.org/2015/04/22/exploit-exercises/",
+            "title": "Exploit Exercises",
+            "content_html": "<p>From <a href='https://exploit-exercises.com/'>Exploit-Exercises.com</a>:</p>\n<blockquote><p>\nexploit-exercises.com provides a variety of virtual machines, documentation and challenges that can be used to learn about a variety of computer security issues such as privilege escalation, vulnerability analysis, exploit development, debugging, reverse engineering, and general cyber security issues.\n</p></blockquote>\n<p>I like the idea of having a safe playground to do hands on security experiments.  Reminds me of the <a href=\"https://github.com/stripe-ctf\">Stripe CTF ( Capture The Flag )</a> events, which were really well done.</p>\n",
+            "content_text": "From Exploit-Exercises.com:\n\nexploit-exercises.com provides a variety of virtual machines, documentation and challenges that can be used to learn about a variety of computer security issues such as privilege escalation, vulnerability analysis, exploit development, debugging, reverse engineering, and general cyber security issues.\n\nI like the idea of having a safe playground to do hands on security experiments.  Reminds me of the Stripe CTF ( Capture The Flag ) events, which were really well done.",
+            "date_published": "2015-04-22T16:04:56-06:00",
+            "date_modified": "2015-04-22T16:04:56-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "exploit-exercises",
+                "security",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=11271",
+            "url": "https://blog.josephscott.org/2014/10/15/two-factor-authentication/",
+            "title": "Two Factor Authentication",
+            "content_html": "<p>Dropbox is reminding people to <a href=\"https://blog.dropbox.com/2014/10/dropbox-wasnt-hacked/\">enable two-factor authentication</a> as an extra layer of protection for your account.</p>\n<p>There are a number of services that offer two-factor authentication now ( <a href=\"http://en.support.wordpress.com/security/two-step-authentication/\">including WordPress.com</a> ), which is really good to see.  A list has been put together at <a href=\"https://twofactorauth.org/\">twofactorauth.org</a> of sites that support it.</p>\n",
+            "content_text": "Dropbox is reminding people to enable two-factor authentication as an extra layer of protection for your account.\nThere are a number of services that offer two-factor authentication now ( including WordPress.com ), which is really good to see.  A list has been put together at twofactorauth.org of sites that support it.",
+            "date_published": "2014-10-15T15:52:16-06:00",
+            "date_modified": "2014-10-15T15:52:16-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "security",
+                "two-factor-authentication",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=10777",
+            "url": "https://blog.josephscott.org/2014/08/07/google-giving-weight-to-https-in-search-results/",
+            "title": "Google Giving Weight to HTTPS in Search Results",
+            "content_html": "<p><a href=\"https://blog.josephscott.org/wp-content/uploads/2014/08/https-all-the-things-1.jpg\"><img loading=\"lazy\" src=\"https://blog.josephscott.org/wp-content/uploads/2014/08/https-all-the-things-1.jpg\" alt=\"https-all-the-things\" width=\"400\" height=\"300\" class=\"aligncenter size-full wp-image-10791\" srcset=\"https://blog.josephscott.org/wp-content/uploads/2014/08/https-all-the-things-1.jpg 400w, https://blog.josephscott.org/wp-content/uploads/2014/08/https-all-the-things-1-300x225.jpg 300w\" sizes=\"(max-width: 400px) 100vw, 400px\" /></a></p>\n<p>Maybe not everything, but certainly more than we are doing now.</p>\n<p>So how do you encourage more sites to use HTTPS?  Well, if you are Google, you tweak the SEO black box:</p>\n<blockquote><p>\nwe&#8217;re starting to use HTTPS as a ranking signal. For now it&#8217;s only a very lightweight signal \u2014 affecting fewer than 1% of global queries, and carrying less weight than other signals such as high-quality content \u2014 while we give webmasters time to switch to HTTPS. But over time, we may decide to strengthen it, because we\u2019d like to encourage all website owners to switch from HTTP to HTTPS to keep everyone safe on the web.\n</p></blockquote>\n<p>From <a href=\"http://googlewebmastercentral.blogspot.com/2014/08/https-as-ranking-signal.html\">HTTPS as a ranking signal</a> on the Google Webmaster Central Blog.</p>\n<p>The call to have more sites use HTTPS has been out for some time.  It is hard to be motivated enough to over come the technical and financial hurdles to make the move ( and for some sites those hurdles are non-trivial ).  The SEO approach that Google is taking is the equivalent of hitting sites in the wallet ( in some cases that might be the literal result ).  When the possibility of loosing money is involved then it is easier to get people&#8217;s attention.</p>\n<p>This might be the single best use of the crazy Google SEO situation I&#8217;ve ever seen.</p>\n<p>Earlier this summer Automattic talked about working towards <a href=\"http://en.blog.wordpress.com/2014/06/05/reset-the-net/\">providing all *.wordpress.com sites with HTTPS by the end of 2014</a>.  This is something that I&#8217;m really excited to see happen.</p>\n<p>If you still aren&#8217;t supporting HTTPS for your site, I&#8217;d encourage you to map out a plan to get there.  Tim Bray posted a simple <a href=\"https://www.tbray.org/ongoing/When/201x/2012/12/02/HTTPS\">outline of the why and how of switching to HTTPS</a>.  If you are looking for a more technical view of how HTTPS works check out <a href=\"http://chimera.labs.oreilly.com/books/1230000000545/ch04.html\">the TLS chapter of &#8220;High Performance Browser Networking&#8221;</a>, which is free to read online.</p>\n",
+            "content_text": "Maybe not everything, but certainly more than we are doing now.\nSo how do you encourage more sites to use HTTPS?  Well, if you are Google, you tweak the SEO black box:\n\nwe&#8217;re starting to use HTTPS as a ranking signal. For now it&#8217;s only a very lightweight signal \u2014 affecting fewer than 1% of global queries, and carrying less weight than other signals such as high-quality content \u2014 while we give webmasters time to switch to HTTPS. But over time, we may decide to strengthen it, because we\u2019d like to encourage all website owners to switch from HTTP to HTTPS to keep everyone safe on the web.\n\nFrom HTTPS as a ranking signal on the Google Webmaster Central Blog.\nThe call to have more sites use HTTPS has been out for some time.  It is hard to be motivated enough to over come the technical and financial hurdles to make the move ( and for some sites those hurdles are non-trivial ).  The SEO approach that Google is taking is the equivalent of hitting sites in the wallet ( in some cases that might be the literal result ).  When the possibility of loosing money is involved then it is easier to get people&#8217;s attention.\nThis might be the single best use of the crazy Google SEO situation I&#8217;ve ever seen.\nEarlier this summer Automattic talked about working towards providing all *.wordpress.com sites with HTTPS by the end of 2014.  This is something that I&#8217;m really excited to see happen.\nIf you still aren&#8217;t supporting HTTPS for your site, I&#8217;d encourage you to map out a plan to get there.  Tim Bray posted a simple outline of the why and how of switching to HTTPS.  If you are looking for a more technical view of how HTTPS works check out the TLS chapter of &#8220;High Performance Browser Networking&#8221;, which is free to read online.",
+            "date_published": "2014-08-07T17:05:58-06:00",
+            "date_modified": "2014-08-07T17:05:58-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "google",
+                "https",
+                "security",
+                "seo",
+                "Posts"
+            ]
+        }
+    ]
+}

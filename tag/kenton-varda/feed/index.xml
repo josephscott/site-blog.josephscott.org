@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>kenton-varda &#8211; Joseph Scott</title>
+	<atom:link href="/tag/kenton-varda/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 03 Jul 2018 19:25:37 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Cloudflare Workers To Support WebAssembly</title>
+		<link>/2018/07/03/cloudflare-workers-to-support-webassembly/</link>
+					<comments>/2018/07/03/cloudflare-workers-to-support-webassembly/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 03 Jul 2018 19:25:37 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[cloudflare]]></category>
+		<category><![CDATA[kenton-varda]]></category>
+		<category><![CDATA[webassembly]]></category>
+		<guid isPermaLink="false">/?p=16795</guid>
+
+					<description><![CDATA[A recent thread on Hacker News discussing Cloudflare Workers brought up an interesting item from Kenton Varda, tech lead for their Workers service ( # ): On another note, currently we only support JavaScript, but we&#8217;re putting the finishing touches on WebAssembly support, which would let you run Go on Workers&#8230; stay tuned. The context [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>A recent <a href="https://news.ycombinator.com/item?id=17445602">thread on Hacker News discussing Cloudflare Workers</a> brought up an interesting item from <a href="https://twitter.com/KentonVarda?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Kenton Varda</a>, tech lead for their Workers service ( <a href="/wp-content/uploads/2018/07/cloudflare-wasm.png">#</a> ):</p>
+<blockquote><p>
+On another note, currently we only support JavaScript, but we&#8217;re putting the finishing touches on WebAssembly support, which would let you run Go on Workers&#8230; stay tuned.
+</p></blockquote>
+<p>The context was using <a href="https://golang.org/">Go</a> for Cloudflare Workers, but supporting WASM ( WebAssembly ) potentially opens the door to a broader range of programming languages.</p>
+<p>There is a list at <a href="https://github.com/appcypher/awesome-wasm-langs">https://github.com/appcypher/awesome-wasm-langs</a> with references for 30 different languages with projects to target WASM.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/07/03/cloudflare-workers-to-support-webassembly/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

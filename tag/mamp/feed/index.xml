@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mamp &#8211; Joseph Scott</title>
+	<atom:link href="/tag/mamp/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 09 Jul 2009 06:55:57 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>MAMP Start Page Error</title>
+		<link>/2009/07/08/mamp-start-page-error/</link>
+					<comments>/2009/07/08/mamp-start-page-error/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 09 Jul 2009 06:55:57 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[mamp]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1292</guid>
+
+					<description><![CDATA[A few months back I installed MAMP on my MacBook Pro to do local development. I found it a lot easier to manage than a regular MySQL install on Mac. Until things went south. Out of no where my MAMP start page broke and would only return this error: You don&#8217;t have permission to access [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>A few months back I installed <a href="http://www.mamp.info/en/index.html">MAMP</a> on my MacBook Pro to do local development.  I found it a lot easier to manage than a regular MySQL install on Mac.  Until things went south.  Out of no where my MAMP start page broke and would only return this error:</p>
+<blockquote><p>
+You don&#8217;t have permission to access /MAMP/ on this server.
+</p></blockquote>
+<p>With an HTTP 403 Forbidden error.  The Apache error log provided some additional details:</p>
+<blockquote><p>
+Options FollowSymLinks or SymLinksIfOwnerMatch is off which implies that RewriteRule directive is forbidden: /Applications/MAMP/bin/mamp/
+</p></blockquote>
+<p>That was enough for me to start looking through the Apache config file &#8211; /Applications/MAMP/conf/apache/httpd.conf &#8211; to see what needed to be fixed.  The Options directive for the start page, and the related pages like /phpMyAdmin, was limited to &#8220;Indexes MultiViews&#8221;.  I didn&#8217;t want to bother with spelling out each option that might need to be turned on so I went with &#8220;Options All&#8221;.</p>
+<p>If you have run into this problem then check the Options directive for the following directories: /Applications/MAMP/Library/icons, /Applications/MAMP/bin/phpMyAdmin, /Applications/MAMP/bin/SQLiteManager and /Applications/MAMP/bin/mamp.  Change the &#8220;Options Indexes MultiViews&#8221; line to &#8220;Options All&#8221; under each of the Directory sections.  In my config file that area starts on line 621.</p>
+<p>After making those changes re-start MAMP&#8217;s Apache and you should be good to go.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/07/08/mamp-start-page-error/feed/</wfw:commentRss>
+			<slash:comments>51</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

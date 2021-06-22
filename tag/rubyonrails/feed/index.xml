@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>rubyonrails &#8211; Joseph Scott</title>
+	<atom:link href="/tag/rubyonrails/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 24 May 2006 20:01:04 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Misunderstanding Foreign Keys</title>
+		<link>/2006/05/24/misunderstanding-foreign-keys/</link>
+					<comments>/2006/05/24/misunderstanding-foreign-keys/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 24 May 2006 20:01:04 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[rubyonrails]]></category>
+		<category><![CDATA[sql]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/05/24/misunderstanding-foreign-keys/</guid>
+
+					<description><![CDATA[Curtis Poe takes a turn at shooting down people who think foreign keys aren&#8217;t important with a O&#8217;Reilly blog post: Misunderstanding Foreign Keys. Curtis seems to have been inspired by this Are Foreign Keys Worth Your Time? blog post. It looks like Ruby on Rails is partly to blame for this attitude by not properly [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Curtis Poe takes a turn at shooting down people who think foreign keys aren&#8217;t important with a O&#8217;Reilly blog post: <a href="http://www.oreillynet.com/onlamp/blog/2006/05/misunderstanding_foreign_keys.html">Misunderstanding Foreign Keys</a>.  Curtis seems to have been inspired by this <a href="http://blog.caboo.se/articles/2006/05/01/are-foreign-keys-worth-your-time">Are Foreign Keys Worth Your Time?</a> blog post.  It looks like <a href="http://www.rubyonrails.org/">Ruby on Rails</a> is partly to blame for this attitude by not properly supporting foreign keys.  That points back to <a href="http://www.mysql.com/">MySQL</a> and their off again on again history for foreign keys.</p>
+<p>It is unfortunate that there are people who think that databases without foreign keys should be the norm and not the exception.</p>
+<p>Catching errors and problems at the application level is a good thing, by all means please do so.  But don&#8217;t, ever, EVER, use that as an excuse to not have proper checks in place at the database layer.  I&#8217;d liken this to the same people who feel that they don&#8217;t need to validate web data on the server side because they are doing that on the browser side with javascript.  So what happens when someone comes along who has javascript turned off?  So much for you data validation.  The same thing is true of the database and application relationship.  What happens when someone writes a new tool for accessing your database and all of you application level checks are skipped?</p>
+<p>Very bad things, that&#8217;s what.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/05/24/misunderstanding-foreign-keys/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

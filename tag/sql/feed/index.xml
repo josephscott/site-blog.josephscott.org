@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sql &#8211; Joseph Scott</title>
+	<atom:link href="/tag/sql/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 10 Nov 2015 16:41:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>SQL Tutorial</title>
+		<link>/2015/11/10/sql-tutorial/</link>
+					<comments>/2015/11/10/sql-tutorial/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 10 Nov 2015 16:41:30 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[sql]]></category>
+		<category><![CDATA[sqlite]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13824</guid>
+
+					<description><![CDATA[Looking for an easy way to learn the basics of SQL ( Structured Query Language )? Check out sqlteaching.com. It has 31 lessons ranging from the basics of SELECT to CASE statements. While they use SQLite for the queries, the basics of SQL are broadly applicable.]]></description>
+										<content:encoded><![CDATA[<p>Looking for an easy way to learn the basics of <a href="https://en.wikipedia.org/wiki/SQL">SQL</a> ( Structured Query Language )?  Check out <a href="https://www.sqlteaching.com/">sqlteaching.com</a>.</p>
+<p>It has 31 lessons ranging from the basics of <code>SELECT</code> to <code>CASE</code> statements.  While they use <a href="https://www.sqlite.org/">SQLite</a> for the queries, the basics of SQL are broadly applicable.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/10/sql-tutorial/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>MySQL: INSERT ON DUPLICATE and Multiple Rows</title>
+		<link>/2011/02/28/mysql-insert-on-duplicate-and-multiple-rows/</link>
+					<comments>/2011/02/28/mysql-insert-on-duplicate-and-multiple-rows/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 28 Feb 2011 18:03:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[insert]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[sql]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3653</guid>
+
+					<description><![CDATA[If you are familiar with the MySQL INSERT syntax you&#8217;ve probably already noticed the ability to insert multiple rows with one call: [sourcecode lang=&#8221;sql&#8221;] INSERT INTO table_name (a,b,c) VALUES (1,2,3), (4,5,6), (7,8,9); [/sourcecode] This can be handy if you have several rows that you need to insert, no point in making separate calls for each [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you are familiar with the MySQL <a href="http://dev.mysql.com/doc/refman/5.5/en/insert.html">INSERT </a> syntax you&#8217;ve probably already noticed the ability to insert multiple rows with one call:</p>
+<p>[sourcecode lang=&#8221;sql&#8221;]<br />
+INSERT INTO table_name (a,b,c) VALUES (1,2,3), (4,5,6), (7,8,9);<br />
+[/sourcecode]</p>
+<p>This can be handy if you have several rows that you need to insert, no point in making separate calls for each one.</p>
+<p>Another nice feature is the <a href="http://dev.mysql.com/doc/refman/5.5/en/insert-on-duplicate.html">ON DUPLICATE</a> syntax, which allows for:</p>
+<p>[sourcecode lang=&#8221;sql&#8221;]<br />
+INSERT INTO table_name (a,b,c) VALUES (1,2,3)<br />
+  ON DUPLICATE KEY UPDATE c = c + 1;<br />
+[/sourcecode]</p>
+<p>If you have a unique index on the table, then ON DUPLICATE will kick in if there is a conflict with the unique on insert.  Without ON DUPLICATE you&#8217;d generally do a SELECT first to see if the value was already in the table, then either do an INSERT or an UPDATE based on the response.</p>
+<p>What you may not have noticed is that you can combine the multi-row insert and ON DUPLICATE features to do:</p>
+<p>[sourcecode lang=&#8221;sql&#8221;]<br />
+INSERT INTO table_name (a,b,c) VALUES (1,2,3), (4,5,6), (7,8,9)<br />
+  ON DUPLICATE KEY UPDATE c = c + 1;<br />
+[/sourcecode]</p>
+<p>Where might you use something like this?  If you were looping over data and inserting using ON DUPLICATE inside the loop you could instead build the SQL string inside the loop and then issue a single database request after the loop.  </p>
+<p>Exactly what sort of savings you&#8217;ll see depends on a number of factors ( number of iterations in your loop, latency for database requests, etc. ), so run your own tests to determine if this will help for your particular situation.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/02/28/mysql-insert-on-duplicate-and-multiple-rows/feed/</wfw:commentRss>
+			<slash:comments>8</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>php-sql-parser</title>
+		<link>/2010/11/18/php-sql-parser/</link>
+					<comments>/2010/11/18/php-sql-parser/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 18 Nov 2010 17:26:02 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[parser]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[php-sql-parser]]></category>
+		<category><![CDATA[sql]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3204</guid>
+
+					<description><![CDATA[Full support for the MySQL dialect for the following statement types SELECT INSERT UPDATE DELETE REPLACE via php-sql-parser Targeting MySQL syntax is a reasonable trade off. It appears to handle reasonably complex queries as well. I&#8217;m going to keep this link handy, I&#8217;ve got a feeling there are some fun (and perhaps twisted) ways to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+Full support for the MySQL dialect for the following statement types</p>
+<ul>
+<li>SELECT</li>
+<li>INSERT</li>
+<li>UPDATE</li>
+<li>DELETE</li>
+<li>REPLACE</li>
+</blockquote>
+<p>via <a href='http://code.google.com/p/php-sql-parser/'>php-sql-parser</a></p>
+<p>Targeting MySQL syntax is a reasonable trade off.  It appears to handle <a href="http://code.google.com/p/php-sql-parser/wiki/ComplexExample">reasonably complex queries</a> as well.</p>
+<p>I&#8217;m going to keep this link handy, I&#8217;ve got a feeling there are some fun (and perhaps twisted) ways to make use of this.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/11/18/php-sql-parser/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Fri 1 Feb 2008</title>
+		<link>/2008/02/01/links-for-fri-1-feb-2008/</link>
+					<comments>/2008/02/01/links-for-fri-1-feb-2008/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 02 Feb 2008 00:30:17 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[bug]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[sql]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/02/01/links-for-fri-1-feb-2008/</guid>
+
+					<description><![CDATA[MySQL Bugs: #21456: SELECT DISTINCT(x) produces incorrect results when using order by &#8211; Version 4.1.21 has an error in the query optimizer where SELECT DISTINCT doesn&#8217;t work when using ORDER BY. Guess which version of MySQL I was using when I found this out. Tags: mysql bug sql]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://bugs.mysql.com/bug.php?id=21456">MySQL Bugs: #21456: SELECT DISTINCT(x) produces incorrect results when using order by</a> &#8211; Version 4.1.21 has an error in the query optimizer where SELECT DISTINCT doesn&#8217;t work when using ORDER BY.  Guess which version of MySQL I was using when I found this out. <br /> Tags: <a href="http://del.icio.us/josephscott/mysql">mysql</a> <a href="http://del.icio.us/josephscott/bug">bug</a> <a href="http://del.icio.us/josephscott/sql">sql</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/02/01/links-for-fri-1-feb-2008/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Jeremy Cole on MySQL Subquery Optimization</title>
+		<link>/2007/06/21/jeremy-cole-on-mysql-subquery-optimization/</link>
+					<comments>/2007/06/21/jeremy-cole-on-mysql-subquery-optimization/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 21 Jun 2007 16:56:52 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[jeremycole]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[sql]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/06/21/jeremy-cole-on-mysql-subquery-optimization/</guid>
+
+					<description><![CDATA[From Jeremy&#8217;s MySQL wish list (emphasis mine): e. Fix subquery optimization Subqueries have been available in the same broken state for over 4 years now. Why are subqueries in an IN (…) clause still optimized in an incredibly stupid and slow way, such as to make them useless? We have customers tripping over this all [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>From Jeremy&#8217;s <a href="http://jcole.us/blog/archives/2007/06/20/my-top-5-wishes-for-mysql/">MySQL wish list</a> (emphasis mine):</p>
+<blockquote><p>
+e. Fix subquery optimization</p>
+<p>Subqueries have been available in the same broken state for over 4 years now. Why are subqueries in an IN (…) clause still optimized in an incredibly stupid and slow way, such as to make them useless? We have customers tripping over this all the time. <b>MySQL can check off “subqueries” on the to-do list, since they do in fact work. The SQL standard doesn’t say anything about not sucking.</b>
+</p></blockquote>
+<p>Reading this, I had a mental image of the next SQL spec having a line in there about sub-queries that don&#8217;t suck <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/06/21/jeremy-cole-on-mysql-subquery-optimization/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Implementing a Queue in SQL</title>
+		<link>/2007/01/12/implementing-a-queue-in-sql/</link>
+					<comments>/2007/01/12/implementing-a-queue-in-sql/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 12 Jan 2007 17:34:35 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[sql]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/01/12/implementing-a-queue-in-sql/</guid>
+
+					<description><![CDATA[Greg&#8217;s Implementing a queue in SQL (Postgres version) is an interesting exercise. The goal was to implement a simple queue that can be managed via SQL. The example is a simple first in, first out (FIFO) queue, with a limit of 5 items. Two methods are demonstrated to accomplish this, the first one makes use [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Greg&#8217;s <a href="http://people.planetpostgresql.org/greg/index.php?/archives/89-guid.html">Implementing a queue in SQL (Postgres version)</a> is an interesting exercise.  The goal was to implement a simple queue that can be managed via SQL.  The example is a simple first in, first out (FIFO) queue, with a limit of 5 items.</p>
+<p>Two methods are demonstrated to accomplish this, the first one makes use of the <a href="http://www.postgresql.org/docs/8.2/interactive/rules.html">PostgreSQL Rules</a> and is very short.  The second one is a little bit longer and uses a <a href="http://www.postgresql.org/docs/8.2/interactive/plpgsql.html">PL/pgSQL function</a> as a <a href="http://www.postgresql.org/docs/8.2/interactive/triggers.html">trigger</a>.  One advantage of the second method is that it lets you know how many rows in your queue were recycled.  Both methods require only one table.</p>
+<p>There&#8217;s also a <a href="http://www.xaprb.com/blog/2007/01/11/how-to-implement-a-queue-in-sql/">queue in MySQL</a> article as well.</p>
+<p>Is it practical to implement FIFO queues in a DBMS?  Maybe not, but it is a good example of thinking outside the box.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/01/12/implementing-a-queue-in-sql/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>SQL Server CONVERT()</title>
+		<link>/2006/06/22/sql-server-convert/</link>
+					<comments>/2006/06/22/sql-server-convert/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 23 Jun 2006 05:53:41 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[convert]]></category>
+		<category><![CDATA[datepart]]></category>
+		<category><![CDATA[sql]]></category>
+		<category><![CDATA[sqlserver]]></category>
+		<category><![CDATA[to_char]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/06/22/sql-server-convert/</guid>
+
+					<description><![CDATA[I recently had the need format a datetime field in SQL Server 2000. My first thought was to look for to_char(), which does the job in PostgreSQL and Oracle. No luck there because SQL Server doesn&#8217;t have a to_char() function. After some hunting around I found out about the convert() function. This does the same [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><span style="float: left;padding: 10px"></p>
+<p></span><br />
+I recently had the need format a datetime field in SQL Server 2000.  My first thought was to look for <a href="http://www.postgresql.org/docs/8.1/static/functions-formatting.html">to_char()</a>, which does the job in <a href="http://www.postgresql.org/">PostgreSQL</a> and <a href="http://www.oracle.com/">Oracle</a>.  No luck there because SQL Server doesn&#8217;t have a to_char() function.  After some hunting around I found out about the <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/tsqlref/ts_ca-co_2f3o.asp">convert()</a> function.  This does the same thing as to_char() (more or less) but instead of using traditional date formatting codes, &#8220;style codes&#8221;.</p>
+<p>Yes, you read that right.  Instead of being able to get a four digit year by specifying Y or YYYY, you have to look up the style code that matches the format you want.  In my case I was look for DD MON YYYY format.  This turns out to be style code 106.  Here is an example:</p>
+<pre>
+SELECT CONVERT(VARCHAR(11), datetime_field, 106) AS formatted_date
+</pre>
+<p>Some time with <a href="http://www.google.com/">Google</a> turned up a page listing <a href="http://www.sql-server-helper.com/tips/date-formats.aspx">examples of various style codes</a>.  Here is <a href="http://sqljunkies.com/Article/6676BEAE-1967-402D-9578-9A1C7FD826E5.scuk">another one</a> about 40% down the page.</p>
+<p>There is an alternative to convert(), <a href="http://support.microsoft.com/default.aspx?scid=kb;EN-US;q186265">datepart()</a>.  This allows you to pull out specific parts of the datetime field.  So you could do the same thing as the convert() example above, but it would be much more verbose.</p>
+<p><b>UPDATE Fri 7 Jul 2006 @ 11:30am :</b> I really should have included a list at least some of the format codes in this post for future reference:</p>
+<ul>
+<li>100 &#8211; mon dd yyyy hh:miAM (or PM)</li>
+<li>101 &#8211; mm/dd/yy</li>
+<li>106 &#8211; dd mon yy</li>
+<li>108 &#8211; hh:mm:ss</li>
+<li>109 &#8211; mon dd yyyy hh:mi:ss:mmmAM (or PM)</li>
+<li>130 &#8211; dd mon yyyy hh:mi:ss:mmmAM (or PM)</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/06/22/sql-server-convert/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Misunderstanding Foreign Keys</title>
+		<link>/2006/05/24/misunderstanding-foreign-keys/</link>
+					<comments>/2006/05/24/misunderstanding-foreign-keys/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 24 May 2006 20:01:04 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[rubyonrails]]></category>
+		<category><![CDATA[sql]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/05/24/misunderstanding-foreign-keys/</guid>
+
+					<description><![CDATA[Curtis Poe takes a turn at shooting down people who think foreign keys aren&#8217;t important with a O&#8217;Reilly blog post: Misunderstanding Foreign Keys. Curtis seems to have been inspired by this Are Foreign Keys Worth Your Time? blog post. It looks like Ruby on Rails is partly to blame for this attitude by not properly [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Curtis Poe takes a turn at shooting down people who think foreign keys aren&#8217;t important with a O&#8217;Reilly blog post: <a href="http://www.oreillynet.com/onlamp/blog/2006/05/misunderstanding_foreign_keys.html">Misunderstanding Foreign Keys</a>.  Curtis seems to have been inspired by this <a href="http://blog.caboo.se/articles/2006/05/01/are-foreign-keys-worth-your-time">Are Foreign Keys Worth Your Time?</a> blog post.  It looks like <a href="http://www.rubyonrails.org/">Ruby on Rails</a> is partly to blame for this attitude by not properly supporting foreign keys.  That points back to <a href="http://www.mysql.com/">MySQL</a> and their off again on again history for foreign keys.</p>
+<p>It is unfortunate that there are people who think that databases without foreign keys should be the norm and not the exception.</p>
+<p>Catching errors and problems at the application level is a good thing, by all means please do so.  But don&#8217;t, ever, EVER, use that as an excuse to not have proper checks in place at the database layer.  I&#8217;d liken this to the same people who feel that they don&#8217;t need to validate web data on the server side because they are doing that on the browser side with javascript.  So what happens when someone comes along who has javascript turned off?  So much for you data validation.  The same thing is true of the database and application relationship.  What happens when someone writes a new tool for accessing your database and all of you application level checks are skipped?</p>
+<p>Very bad things, that&#8217;s what.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/05/24/misunderstanding-foreign-keys/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Guide to PHP Security</title>
+		<link>/2005/10/11/guide-to-php-security/</link>
+					<comments>/2005/10/11/guide-to-php-security/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 11 Oct 2005 19:27:08 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[sql]]></category>
+		<category><![CDATA[sqlinjection]]></category>
+		<category><![CDATA[sqlite]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=502</guid>
+
+					<description><![CDATA[The chapter on SQL Injection from the book Guide to PHP Security by Ilia Alshanetsky is available in PDF format. This can be a rather fun topic so I downloaded a copy of the PDF and started reading. I&#8217;d read less two pages before I was ready to toss this chapter out the window. The [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The chapter on <a href="http://dev.mysql.com/tech-resources/articles/guide-to-php-security.html">SQL Injection</a> from the book <a href="http://www.amazon.com/gp/product/0973862106/002-2635821-4429631">Guide to PHP Security</a> by <a href="http://ilia.ws/">Ilia Alshanetsky</a> is available in <a href="http://dev.mysql.com/tech-resources/articles/guide-to-php-security-ch3.pdf">PDF format</a>.  This can be a rather fun topic so I downloaded a copy of the PDF and started reading.  I&#8217;d read less two pages before I was ready to toss this chapter out the window.</p>
+<p>The first example showed a very simple inject that terminated the original query with a ; and appended another query that deleted some data.  The example used <a href="http://www.mysql.com/">MySQL</a> functions and the author noted the following after explaining the injection:</p>
+<blockquote><p>
+Fortunately, if you use MySQL, the mysql_query() function does not permit query stacking, or executing multiple queries in a single function call.  If you try to stack queries, the call fails.</p>
+<p>However, other PHP database extensions, such as <strong>SQLite and PostgreSQL, happily perform stacked queries, executing all of the queries provided in one string and creating a serious security problem</strong>.
+</p></blockquote>
+<p>The emphasis is mine.  I couldn&#8217;t believe that the author was basically claiming that MySQL is more secure than <a href="http://www.sqlite.org/">SQLite</a> and <a href="http://www.postgresql.org/">PostgreSQL</a> because they allowed you to run multiple SQL statements in one string.  Then something else came to mind, didn&#8217;t MySQL add this feature not too long ago?  So I went hunting around and came up with the <a href="http://dev.mysql.com/doc/mysql/en/c-api-multiple-queries.html">C API Handling of Multiple Query Execution</a> in MySQL, which was introduced in version 4.1.  Although still correct, the <a href="http://us2.php.net/mysql_query">mysql_query()</a> function in <a href="http://www.php.net/">PHP</a> doesn&#8217;t allow for multiple statements, the underlying C libraries do.  I&#8217;d expect that at somepoint in the future PHP will catch up and support that feature for MySQL 4.1 and above.</p>
+<p>But back to my first point, being able to run multiple queries in a single string is not a security threat.  Not proplerly filtering data before using in an SQL statement is.  If you allow unfiltered data to be injected into your SQL statement then you&#8217;ve got problems, even if you database doesn&#8217;t support multiple statements in a single string.</p>
+<p>I hope that this isn&#8217;t typical of the rest of the book.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/10/11/guide-to-php-security/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Hierarchical Data Using Geometric Types</title>
+		<link>/2005/08/26/hierarchical-data-using-geometric-types/</link>
+					<comments>/2005/08/26/hierarchical-data-using-geometric-types/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 26 Aug 2005 17:03:46 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[geometry]]></category>
+		<category><![CDATA[hierarchicaldata]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[spatialdata]]></category>
+		<category><![CDATA[sql]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=468</guid>
+
+					<description><![CDATA[While I was scanning through the Managing Hierarchical Data in MySQL article at MySQL.com I started to wonder if someone had come up with a way to manage hierarchical data using geometric types. PostgreSQL supports geometric types like point, line, box, circle and polygon and several geometric functions and operators. If you started out with [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>While I was scanning through the <a href="http://dev.mysql.com/tech-resources/articles/hierarchical-data.html">Managing Hierarchical Data in MySQL</a> article at <a href="http://wwww.mysql.com/">MySQL.com</a> I started to wonder if someone had come up with a way to manage hierarchical data using geometric types.  <a href="http://www.postgresql.org/">PostgreSQL</a> supports <a href="http://www.postgresql.org/docs/8.0/interactive/datatype-geometric.html">geometric types</a> like point, line, box, circle and polygon and several <a href="http://www.postgresql.org/docs/8.0/interactive/functions-geometry.html">geometric functions and operators</a>.</p>
+<p>If you started out with one box (the universe) and then created new child boxes as needed then you should be able to accurately describe a hierarchy.  You&#8217;d have to be able to shrink and grow each box (and all the boxes above it) as needed to make room for more or less child boxes.  It would also be nice to have an easy to way move a branch of the hierarchy (along with everything below it) to some other position in the hierarchy.</p>
+<p>It would take some work to sit down and come up with the functions and triggers that would make managing something like this as simple as possible.  Anyone know where something like this has already been implemented?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/08/26/hierarchical-data-using-geometric-types/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

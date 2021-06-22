@@ -1,0 +1,86 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2004/07/08/what-is-a-database-abstraction-layer/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2004/07/08/what-is-a-database-abstraction-layer/",
+    "feed_url": "https://blog.josephscott.org/2004/07/08/what-is-a-database-abstraction-layer/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: What Is A Database Abstraction Layer?",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2004/07/08/what-is-a-database-abstraction-layer/#comment-418",
+            "url": "https://blog.josephscott.org/2004/07/08/what-is-a-database-abstraction-layer/#comment-418",
+            "content_html": "Totally agree with you. I've developed a simple database abstraction layer (SDBA) that cleanly separates DB-specific access functions and provides a *very* simple interface, aimed at productivity. Different implementations of SDBA for different databases are being worked on. The query function \"understands\" SQL queries and returns different things if its a SELECT, UPDATE, or INSERT. Let me know what you think. Here it is:\nhttp://www.morewhite.com/sdba",
+            "content_text": "Totally agree with you. I've developed a simple database abstraction layer (SDBA) that cleanly separates DB-specific access functions and provides a *very* simple interface, aimed at productivity. Different implementations of SDBA for different databases are being worked on. The query function \"understands\" SQL queries and returns different things if its a SELECT, UPDATE, or INSERT. Let me know what you think. Here it is:\nhttp://www.morewhite.com/sdba",
+            "date_published": "2006-03-10T06:19:01-07:00",
+            "authors": [
+                {
+                    "name": "Artemi Krymski",
+                    "url": "http://www.morewhite.com",
+                    "avatar": "https://secure.gravatar.com/avatar/02bf641487a17d3219f5151573344520?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Artemi Krymski",
+                "url": "http://www.morewhite.com",
+                "avatar": "https://secure.gravatar.com/avatar/02bf641487a17d3219f5151573344520?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/07/08/what-is-a-database-abstraction-layer/#comment-417",
+            "url": "https://blog.josephscott.org/2004/07/08/what-is-a-database-abstraction-layer/#comment-417",
+            "content_html": "AHA!!! and here I was thinking \"Oh My, why does everybody think I'm doing the wrong thing while it looks so smart to me\".. But I'm NOT doing stupid things and it IS a smart thing.. Access layer != Abstraction layer..\n\nThanks for clearing that up Joseph.. :)",
+            "content_text": "AHA!!! and here I was thinking \"Oh My, why does everybody think I'm doing the wrong thing while it looks so smart to me\".. But I'm NOT doing stupid things and it IS a smart thing.. Access layer != Abstraction layer..\n\nThanks for clearing that up Joseph.. :)",
+            "date_published": "2004-07-19T20:49:38-06:00",
+            "authors": [
+                {
+                    "name": "Petje",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/50aef9b2b6947439dbaf3a80747aaab4?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Petje",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/50aef9b2b6947439dbaf3a80747aaab4?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/07/08/what-is-a-database-abstraction-layer/#comment-416",
+            "url": "https://blog.josephscott.org/2004/07/08/what-is-a-database-abstraction-layer/#comment-416",
+            "content_html": "Hell, why dont you just call it a  Database Access ABSTRACTION layer, since its  \u2018disassociated from any specific database access implementation(instance)\u2019.\n\n\"Database abstraction layer\" shouldnt have such a rigid definition to be only for abstracting a RDBMS in totality.\n\nI would suggest its general usage is any abstraction relating to database implementation like access, SQL portability, logging etc. but does not have to include them all.\n\nAnd if you want to then get specific which parts of db abstraction you are talking aboutyou can.\n\nI know its all just terminology but it seems a lot of ppl in these threads are selectively using the term abstraction to prove a point.",
+            "content_text": "Hell, why dont you just call it a  Database Access ABSTRACTION layer, since its  \u2018disassociated from any specific database access implementation(instance)\u2019.\n\n\"Database abstraction layer\" shouldnt have such a rigid definition to be only for abstracting a RDBMS in totality.\n\nI would suggest its general usage is any abstraction relating to database implementation like access, SQL portability, logging etc. but does not have to include them all.\n\nAnd if you want to then get specific which parts of db abstraction you are talking aboutyou can.\n\nI know its all just terminology but it seems a lot of ppl in these threads are selectively using the term abstraction to prove a point.",
+            "date_published": "2004-07-12T18:28:12-06:00",
+            "authors": [
+                {
+                    "name": "yarcles",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/6e8fd065cb004e57c6db104faf751b4f?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "yarcles",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/6e8fd065cb004e57c6db104faf751b4f?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/07/08/what-is-a-database-abstraction-layer/#comment-415",
+            "url": "https://blog.josephscott.org/2004/07/08/what-is-a-database-abstraction-layer/#comment-415",
+            "content_html": "Excellent analysis. I use a database access layer myself - mostly because I needed some way to simulate nested transactions within MySQL (which only support non-nested transactions).",
+            "content_text": "Excellent analysis. I use a database access layer myself - mostly because I needed some way to simulate nested transactions within MySQL (which only support non-nested transactions).",
+            "date_published": "2004-07-10T00:04:52-06:00",
+            "authors": [
+                {
+                    "name": "Betcour",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/81d2fa9dbbb75fa7c7830c4ea05dbb02?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Betcour",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/81d2fa9dbbb75fa7c7830c4ea05dbb02?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

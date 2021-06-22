@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Exposing PostgreSQL Regular Expression Check Constraints	</title>
+	<atom:link href="/2004/11/26/exposing-postgresql-regular-expression-check-constraints/feed/" rel="self" type="application/rss+xml" />
+	<link>/2004/11/26/exposing-postgresql-regular-expression-check-constraints/</link>
+	<description></description>
+	<lastBuildDate>Tue, 21 Dec 2004 19:02:33 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: filip		</title>
+		<link>/2004/11/26/exposing-postgresql-regular-expression-check-constraints/#comment-703</link>
+
+		<dc:creator><![CDATA[filip]]></dc:creator>
+		<pubDate>Tue, 21 Dec 2004 19:02:33 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/11/26/exposing-postgresql-regular-expression-check-constraints/#comment-703</guid>
+
+					<description><![CDATA[very interesting,
+
+how can you use the same thing if you want to compare to columns and join tables if one matches a subset of the other?
+
+e.g.
+table 1
+(id, name)
+table 2
+(id, full name)
+
+can you do a join with ILIKE to find the matching names (or subsets of names)?]]></description>
+			<content:encoded><![CDATA[<p>very interesting,</p>
+<p>how can you use the same thing if you want to compare to columns and join tables if one matches a subset of the other?</p>
+<p>e.g.<br />
+table 1<br />
+(id, name)<br />
+table 2<br />
+(id, full name)</p>
+<p>can you do a join with ILIKE to find the matching names (or subsets of names)?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

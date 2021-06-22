@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>vanilla &#8211; Joseph Scott</title>
+	<atom:link href="/tag/vanilla/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 15 Nov 2007 13:00:08 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Forum Software &#8211; Vanilla</title>
+		<link>/2007/11/15/forum-software-vanilla/</link>
+					<comments>/2007/11/15/forum-software-vanilla/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 15 Nov 2007 13:00:08 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[vanilla]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/15/forum-software-vanilla/</guid>
+
+					<description><![CDATA[I installed Vanilla the other day to try it out. I&#8217;m not excited about documentation that includes chmod 777. I did that only long enough to finish the install and then tightened it up as soon as it was done. The installation itself was simple enough. Fill out a few forms and you are up [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I installed <a href="http://getvanilla.com/">Vanilla</a> the other day to try it out.  I&#8217;m not excited about documentation that includes <code>chmod 777</code>.  I did that only long enough to finish the install and then tightened it up as soon as it was done.</p>
+<p>The installation itself was simple enough.  Fill out a few forms and you are up and running.</p>
+<p>One of the problems with forum software is that you never know how it is really going to perform until well after you have a community of users pumping topics and comments into it.  Of course by then it is a lot more work with switch if you run into problems.  Is there a standard for export/import of forums?  At least with blogs you have RSS/ATOM has a lowest common denominator for export/import.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/11/15/forum-software-vanilla/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

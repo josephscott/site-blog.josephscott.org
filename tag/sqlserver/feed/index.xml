@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sqlserver &#8211; Joseph Scott</title>
+	<atom:link href="/tag/sqlserver/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 25 Oct 2007 13:00:48 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>SQL Server Extension for PHP from Microsoft</title>
+		<link>/2007/10/25/sql-server-extension-for-php-from-microsoft/</link>
+					<comments>/2007/10/25/sql-server-extension-for-php-from-microsoft/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 25 Oct 2007 13:00:48 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[sqlserver]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/10/25/sql-server-extension-for-php-from-microsoft/</guid>
+
+					<description><![CDATA[Earlier this month Microsoft contributed a SQL Server Driver for PHP. They even have a SQL Server and PHP blog and their SQL Server forum now lists as PHP in their client list. The blog has an interesting post on development of the driver. So, what does this thing do? It is for PHP5 only [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Earlier this month Microsoft contributed a <a href="http://www.microsoft.com/sql/technologies/php/default.mspx">SQL Server Driver for PHP</a>.  They even have a <a href="http://blogs.msdn.com/sqlphp/">SQL Server and PHP blog</a> and their <a href="http://forums.microsoft.com/MSDN/ShowForum.aspx?ForumID=87&amp;SiteID=1">SQL Server forum</a> now lists as PHP in their client list.  The blog has an interesting post on <a href="http://blogs.msdn.com/sqlphp/archive/2007/10/11/transparency-in-the-design-process.aspx">development of the driver</a>.</p>
+<p>So, what does this thing do?  It is for PHP5 only (not a big deal considering PHP4 will only be getting security updates after this year) on Windows (this part is a bummer, but not surprising) to access SQL Server 2000 and 2005 (anyone running anything older than that in production?).</p>
+<p>You could work with SQL Server from PHP prior to this using <a href="http://www.freetds.org/">FreeTDS</a>.  I&#8217;ve used the <a href="http://php.net/mssql">mssql_* PHP functions</a> backed by FreeTDS on FreeBSD for years so this new driver from Microsoft isn&#8217;t a major game changer at this point.</p>
+<p>That said, I find this a pretty exciting development.</p>
+<p>Microsoft is actually providing a PHP library to work with some of their own software.  I think that is great, although the really huge win would have been if it was available for non-Microsoft operating systems.  This is great stuff though, not just talk, but real live code.  Combining this with <a href="http://joseph.randomnetworks.com/archives/2007/09/24/php-on-iis/">better PHP on IIS support</a> I have a glimmer of hope that we&#8217;ll see more good things from Microsoft for PHP.</p>
+<p>There has been plenty of PR about Microsoft doing more in this area, but providing real code and tools is what we actually need.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/10/25/sql-server-extension-for-php-from-microsoft/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>SQL Server: Escaping The Database Name</title>
+		<link>/2006/09/29/sql-server-escaping-the-database-name/</link>
+					<comments>/2006/09/29/sql-server-escaping-the-database-name/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 29 Sep 2006 17:52:20 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[mssql_select_db]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[sqlserver]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/09/29/sql-server-escaping-the-database-name/</guid>
+
+					<description><![CDATA[Welcome to another episode of being caught off guard by strange string requirements. Today I discovered (the hard way of course) that Microsoft SQL Server 2000 doesn&#8217;t like to have dashes in database names. Fine, I probably should have used an underscore instead, but this was a database being used for something else that I [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Welcome to another episode of being caught off guard by strange string requirements.  Today I discovered (the hard way of course) that Microsoft SQL Server 2000 doesn&#8217;t like to have dashes in database names.  Fine, I probably should have used an underscore instead, but this was a database being used for something else that I just need to do some quick queries against in PHP.</p>
+<p>I knew that the connection between the web server and the SQL Server systems was working because I had scripts talking to other SQL Server databases.  My problem wasn&#8217;t connecting, <a href="http://us3.php.net/manual/en/function.mssql-connect.php">mssql_connect()</a> didn&#8217;t cause an error, it was selecting which database to use.  Fortunately the answer was right there in the docs for <a href="http://us3.php.net/manual/en/function.mssql-select-db.php">mssql_select_db()</a>:</p>
+<blockquote><p>
+To escape the name of a database that contains spaces, hyphens (&#8220;-&#8220;), or any other exceptional characters, the database name must be enclosed in brackets, as is shown in the example, below. This technique must also be applied when selecting a database name that is also a reserved word (such as &#8220;primary&#8221;).
+</p></blockquote>
+<p>So just get in the habit of wrapping your SQL Server database name in brackets ( [ ] ) and you&#8217;ll be fine:</p>
+<pre>
+   $conn = mssql_connect('SQLSERVERHOST', 'username', 'password');
+   mssql_select_db('[database-name]', $conn);
+</pre>
+<p>What I want to know is, why brackets around the whole name instead of traditional character escaping?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/09/29/sql-server-escaping-the-database-name/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>SQL Server CONVERT()</title>
+		<link>/2006/06/22/sql-server-convert/</link>
+					<comments>/2006/06/22/sql-server-convert/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 23 Jun 2006 05:53:41 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[convert]]></category>
+		<category><![CDATA[datepart]]></category>
+		<category><![CDATA[sql]]></category>
+		<category><![CDATA[sqlserver]]></category>
+		<category><![CDATA[to_char]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/06/22/sql-server-convert/</guid>
+
+					<description><![CDATA[I recently had the need format a datetime field in SQL Server 2000. My first thought was to look for to_char(), which does the job in PostgreSQL and Oracle. No luck there because SQL Server doesn&#8217;t have a to_char() function. After some hunting around I found out about the convert() function. This does the same [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><span style="float: left;padding: 10px"></p>
+<p></span><br />
+I recently had the need format a datetime field in SQL Server 2000.  My first thought was to look for <a href="http://www.postgresql.org/docs/8.1/static/functions-formatting.html">to_char()</a>, which does the job in <a href="http://www.postgresql.org/">PostgreSQL</a> and <a href="http://www.oracle.com/">Oracle</a>.  No luck there because SQL Server doesn&#8217;t have a to_char() function.  After some hunting around I found out about the <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/tsqlref/ts_ca-co_2f3o.asp">convert()</a> function.  This does the same thing as to_char() (more or less) but instead of using traditional date formatting codes, &#8220;style codes&#8221;.</p>
+<p>Yes, you read that right.  Instead of being able to get a four digit year by specifying Y or YYYY, you have to look up the style code that matches the format you want.  In my case I was look for DD MON YYYY format.  This turns out to be style code 106.  Here is an example:</p>
+<pre>
+SELECT CONVERT(VARCHAR(11), datetime_field, 106) AS formatted_date
+</pre>
+<p>Some time with <a href="http://www.google.com/">Google</a> turned up a page listing <a href="http://www.sql-server-helper.com/tips/date-formats.aspx">examples of various style codes</a>.  Here is <a href="http://sqljunkies.com/Article/6676BEAE-1967-402D-9578-9A1C7FD826E5.scuk">another one</a> about 40% down the page.</p>
+<p>There is an alternative to convert(), <a href="http://support.microsoft.com/default.aspx?scid=kb;EN-US;q186265">datepart()</a>.  This allows you to pull out specific parts of the datetime field.  So you could do the same thing as the convert() example above, but it would be much more verbose.</p>
+<p><b>UPDATE Fri 7 Jul 2006 @ 11:30am :</b> I really should have included a list at least some of the format codes in this post for future reference:</p>
+<ul>
+<li>100 &#8211; mon dd yyyy hh:miAM (or PM)</li>
+<li>101 &#8211; mm/dd/yy</li>
+<li>106 &#8211; dd mon yy</li>
+<li>108 &#8211; hh:mm:ss</li>
+<li>109 &#8211; mon dd yyyy hh:mi:ss:mmmAM (or PM)</li>
+<li>130 &#8211; dd mon yyyy hh:mi:ss:mmmAM (or PM)</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/06/22/sql-server-convert/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Replicating from MS SQL Server to PostgreSQL</title>
+		<link>/2006/04/10/replicating-from-ms-sql-server-to-postgresql/</link>
+					<comments>/2006/04/10/replicating-from-ms-sql-server-to-postgresql/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 10 Apr 2006 21:17:27 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[replication]]></category>
+		<category><![CDATA[sqlserver]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/04/10/replicating-from-ms-sql-server-to-postgresql/</guid>
+
+					<description><![CDATA[Mangus Hagander has a detailed how to for replicating from MS SQL Server to PostgreSQL. It certainly isn&#8217;t perfect, but for those willing to go through the work this would be a very interesting way to add PostgreSQL to a SQL Server shop. I don&#8217;t plan on using this right now, but I&#8217;m definitely going [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Mangus Hagander has a detailed how to for <a href="http://people.planetpostgresql.org/mha/index.php?/archives/87-guid.html">replicating from MS SQL Server to PostgreSQL</a>.  It certainly isn&#8217;t perfect, but for those willing to go through the work this would be a very interesting way to add <a href="http://www.postgresql.org/">PostgreSQL</a> to a SQL Server shop.  I don&#8217;t plan on using this right now, but I&#8217;m definitely going to file this away as something with potential.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/04/10/replicating-from-ms-sql-server-to-postgresql/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Overcoming The Limitation Of Information_Schema.Views In SQL Server 2000</title>
+		<link>/2006/03/21/overcoming-the-limitation-of-information_schemaviews-in-sql-server-2000/</link>
+					<comments>/2006/03/21/overcoming-the-limitation-of-information_schemaviews-in-sql-server-2000/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 21 Mar 2006 19:56:05 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[information_schema]]></category>
+		<category><![CDATA[sp_helptext]]></category>
+		<category><![CDATA[sqlserver]]></category>
+		<category><![CDATA[view]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/03/21/overcoming-the-limitation-of-information_schemaviews-in-sql-server-2000/</guid>
+
+					<description><![CDATA[This morning I went on a hunt to find out where SQL Server 2000 keeps the view definitions for a database. I quickly came across information_schema feature (seems that having information_schema is part of the SQL92 standard) which exposes view details via information_schema.views. I was hoping that would be the end of my journey, but [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>This morning I went on a hunt to find out where SQL Server 2000 keeps the view definitions for a database.  I quickly came across information_schema feature (seems that having information_schema is part of the <a href="http://www.contrib.andrew.cmu.edu/~shadow/sql/sql1992.txt">SQL92</a> standard) which exposes view details via <a href="http://www.transactsql.com/html/infoschemaviews.html">information_schema.views</a>.  I was hoping that would be the end of my journey, but then I ran into a problem.</p>
+<p>Go back and look at the details for the <a href="http://www.transactsql.com/html/infoschemaviews.html">Information_Schema.Views</a>, pay close attention to the VIEW_DEFINITION column.  It turns out that if the view definition is more than 4000 characters then it returns NULL.  Why they didn&#8217;t just make it a TEXT field I do not know.  Of course one of the two view definitions that I was looking for was returning NULL.  At least I had figured out why, now I needed to know how to get around it.</p>
+<p>I knew I could not have been the only one to run into this, so it was back to searching for a solution.  I eventually came across a <a href="http://www.experts-exchange.com/Databases/Microsoft_SQL_Server/Q_20634183.html">post about sp_helptext</a> that gets around the 4000 character limit.  It turns out that <a href="http://msdn2.microsoft.com/en-us/library/ms176112.aspx">sp_helptext</a> will not only give you a view definition, but also triggers, functions, check constraints and stored procedures.  Quite handy to have around.  So I was able to get the view definition I was looking for (broken up across multiple rows) with:</p>
+<p><code><br />
+EXEC sp_helptext 'my_view_name'<br />
+</code></p>
+<p>You&#8217;ll still have to put all the rows back together to get the complete view definition, but that it much better than just getting NULL.  Of course if I could figure out what the Information_Schema.Views or sp_helptext is looking at to get the actual view definition I could do it myself.  So far I haven&#8217;t been able to find that information, and I&#8217;m not sure that I&#8217;m going to spend much time looking since I have a workable solution at this point.</p>
+<p>As an added bonus, go back to the <a href="http://www.transactsql.com/html/infoschemaviews.html">Information_Schema.Views</a> page again and take a look at the IS_UPDATABLE column notes.  Turns out that it always returns NO.</p>
+<p>While it was nice of Microsoft to include the Information_Schema.Views as part of SQL Server 2000, don&#8217;t depend on the data they provide, in some cases it will be wrong.  I haven&#8217;t looked to see if this is something that has been fixed in SQL Server 2005.</p>
+<p><b>UPDATE Tue 21 Mar 2006 @ 4:00pm:</b> Turns out that getting the definitions of the Information_Schema.Views and sp_helptext is fairly simple.  They are kept in the master database in SQL Server 2000.  Connect to the master database and take a look at the views, you&#8217;ll see several that are owned by INFORMATION_SCHEMA.  Then take a look at the listing for Stored Procedures.  There are tons of sp_* procedures, one of which is sp_helptext.  This lead me to running <code>exec sp_helptext 'sp_helptext'</code> to get the definition of sp_helptext.  You can also look at it by looking at the properties of sp_helptext, but you&#8217;ll be doing a lot scrolling in a little tiny window.  Ick.</p>
+<p>After looking at the definitions of both I think I&#8217;m going to stick with sp_helptext.</p>
+<p><b> UPDATE Tue 21 Mar 2006 @ 4:40pm:</b> Here is the MSDN info on <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/tsqlref/ts_ia-iz_4pbn.asp">INFORMATION_SCHEMA</a> and more specifically <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/tsqlref/ts_ia-iz_4fqr.asp">INFORMATION_SCHEMA.VIEWS</a> which includes notes about the limit of 4000 characters to view_definition and that is_updatable always returns no.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/03/21/overcoming-the-limitation-of-information_schemaviews-in-sql-server-2000/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>SQL Server 2000 Notes</title>
+		<link>/2005/06/16/sql-server-2000-notes/</link>
+					<comments>/2005/06/16/sql-server-2000-notes/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 17 Jun 2005 00:13:33 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[adodb]]></category>
+		<category><![CDATA[csv]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[freetds]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[sqlserver]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=413</guid>
+
+					<description><![CDATA[We are purchasing some software at work that uses SQL Server 2000 as a back end. I&#8217;ve been bringing those systems up and relearning SQL Server since I haven&#8217;t look at it in more than five years. We&#8217;ll be importing some existing data for this software so I&#8217;ve started writing up a few scripts. I&#8217;m [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>We are purchasing some software at work that uses <a href="http://www.microsoft.com/sql/default.mspx">SQL Server 2000</a> as a back end.  I&#8217;ve been bringing those systems up and relearning SQL Server since I haven&#8217;t look at it in more than five years.  We&#8217;ll be importing some existing data for this software so I&#8217;ve started writing up a few scripts.  I&#8217;m using <a href="http://www.php.net/">PHP</a> with <a href="http://adodb.sourceforge.net/">ADOdb</a> for database access.  For the most part things have gone well, with some small expections/gotchas.  Fortunately none of the problems I noticed were hard to fix, but they did seem a little odd sometimes.  Here are some notes on my experiences with this process thus far:</p>
+<ol>
+<li>
+<h4>FreeTDS &#8211; Build</h4>
+<p>In order to get PHP talk to SQL Server 2000 I&#8217;m using <a href="http://www.freetds.org/">FreeTDS</a> on a <a href="http://www.freebsd.org/">FreeBSD</a> system.  The first thing to note is that SQL Server 2000 uses 8.0 TDS.  When building from FreeTDS from the ports collection be sure to override the default, which is 5.0.  You&#8217;ll also need to enable msdblib in FreeTDS, so make sure that WITH_MSDBLIB is enabled during the build also.  Then all that is needed for PHP4 to speak to SQL Server is the php4-mssql port.
+</li>
+<li>
+<h4>FreeTDS &#8211; Config</h4>
+<p>In recent versions of FreeTDS they&#8217;ve started using a <a href="http://www.freetds.org/userguide/freetdsconf.htm">freetds.conf</a> file to configure connections.  There is an example in there for connecting to SQL Server 2000, here is what I ended up using:<br />
+<code><br />
+[SQL2K]<br />
+        host = xxx.xxx.xxx.xx<br />
+        port = 1433<br />
+        tds version = 8.0<br />
+;       dump file = /var/log/freetds.log<br />
+;       dump file append = yes<br />
+;       debug level = 99<br />
+</code></p>
+<p>I had a few problems connecting initially, so it was helpful to run with debug on until I got things straightened out.  In PHP you&#8217;d use SQL2K to connect instead of the host name or IP address.
+</li>
+<li>
+<h4>FreeTDS &#8211; Domain Logins</h4>
+<p>Our user accounts are all managed by <a href="http://www.microsoft.com/windowsserver2003/technologies/directory/activedirectory/default.mspx">Active Directory</a>, besides the default accounts in SQL Server 2000 all of the permissions are handled via Windows domain accounts.  This means that all of your usernames have to be prefixed with the Windows domain.  Something like <code>EXAMPLEusername</code>.  If you run into problems check out the <a href="http://www.freetds.org/userguide/domains.htm">FreeTDS documentation about domain logins</a>.
+</li>
+<li>
+<h4>SQL Server 2000 &#8211; Quoting</h4>
+<p>Note that quotes are escaped with quotes, not back slashes.  I personally don&#8217;t care for this method, but it seems to be the only one that SQL Server 2000 supports.  If you are going to use CSV to import data you need to pay attention to this.  Although CSV is supported I ended up going to tab delimited instead.  This is the default that SQL server expects and it made some of the quoting issues easier.
+</li>
+<li>
+<h4>ADOdb &#8211; rs2tabout()</h4>
+<p>For the sake of consistency I&#8217;m using ADOdb to deal with database access in PHP.  One neat feature I found was the ability to easily <a href="http://phplens.com/adodb/tutorial.exporting.in.csv.or.tab.delimited.format.html">export a result set to CSV or tab delimited formats</a>.  This was exactly what I needed to do, so this seemed like a great solution.  Unfortunately rs2tabout() tries to escape quotes, which SQL Server choked on.  The quotes didn&#8217;t need to be escaped since tabs were being used as delimiters, so I poked at the code to see what was happening.  All of the export functions derive from a base function with several options, so I was able to call that function directly and override the defaults.  If you want data tab delimited with quote escaping turned off you can do that with:</p>
+<p><code>print(_adodb_export($rs, "t", " ", true, false, false));</code></p>
+<p>or</p>
+<p><code>$line = _adodb_export($rs, "t", " ", false, false, false);</code></p>
+</li>
+<li>
+<h4>bcp</h4>
+<p>Importing lots of data with <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/coprompt/cp_bcp_61et.asp">bcp</a> is much easier than clicking through the import/export wizard.  To make life easier you&#8217;ll need a format file for the table that your are importing data into.  The easiest way I&#8217;ve found to generate the format file is to let bcp do it for you:<br />
+<code><br />
+bcp testdb.dbo.tablename format tablename.dat -U username -P password -f tablename.fmt -c<br />
+</code><br />
+Then importing is done like this:<br />
+<code><br />
+bcp testdb.dbo.tablename in tablename.tsv -U username -P password -f tablename.fmt -e tablename.err<br />
+</code><br />
+If bcp has any problems importing data will be logged in the <code>tablename.err</code> file.  If it runs into enough errors the import will terminate, the default is ten.  In the test table that I&#8217;ve been using has 98,000+ records in it.  The process of retrieving the data and formating into tab separated values (tsv) takes about 110 seconds.  The import with bcp takes less than 5 seconds.  I like it when things go fast <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" />
+</li>
+</ol>
+<p>That pretty much covers it for now.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/06/16/sql-server-2000-notes/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

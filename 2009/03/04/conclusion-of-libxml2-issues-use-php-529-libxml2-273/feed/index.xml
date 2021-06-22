@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Conclusion of libxml2 Issues &#8211; Use PHP 5.2.9 &#038; libxml2 2.7.3	</title>
+	<atom:link href="/2009/03/04/conclusion-of-libxml2-issues-use-php-529-libxml2-273/feed/" rel="self" type="application/rss+xml" />
+	<link>/2009/03/04/conclusion-of-libxml2-issues-use-php-529-libxml2-273/</link>
+	<description></description>
+	<lastBuildDate>Tue, 05 Jun 2012 06:43:26 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Manuchandraprasad		</title>
+		<link>/2009/03/04/conclusion-of-libxml2-issues-use-php-529-libxml2-273/#comment-2778</link>
+
+		<dc:creator><![CDATA[Manuchandraprasad]]></dc:creator>
+		<pubDate>Tue, 05 Jun 2012 06:43:26 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=899#comment-2778</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/03/04/conclusion-of-libxml2-issues-use-php-529-libxml2-273/#comment-2776&quot;&gt;Rod Decker&lt;/a&gt;.
+
+You can try updating php to version 5.3 and then using a wordpress plugin libxml-2 fix]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/03/04/conclusion-of-libxml2-issues-use-php-529-libxml2-273/#comment-2776">Rod Decker</a>.</p>
+<p>You can try updating php to version 5.3 and then using a wordpress plugin libxml-2 fix</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Manuchandraprasad		</title>
+		<link>/2009/03/04/conclusion-of-libxml2-issues-use-php-529-libxml2-273/#comment-2777</link>
+
+		<dc:creator><![CDATA[Manuchandraprasad]]></dc:creator>
+		<pubDate>Tue, 05 Jun 2012 06:41:12 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=899#comment-2777</guid>
+
+					<description><![CDATA[Dear Joseph,
+
+I recently troubleshooted a website hosted at bluehost.com. And i&#039;d like to point out that MarsEdit will work fine with PHP 5.3(single ini file ) and libxml version 2.7.6. Please do run a test yourself.]]></description>
+			<content:encoded><![CDATA[<p>Dear Joseph,</p>
+<p>I recently troubleshooted a website hosted at bluehost.com. And i&#8217;d like to point out that MarsEdit will work fine with PHP 5.3(single ini file ) and libxml version 2.7.6. Please do run a test yourself.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rod Decker		</title>
+		<link>/2009/03/04/conclusion-of-libxml2-issues-use-php-529-libxml2-273/#comment-2776</link>
+
+		<dc:creator><![CDATA[Rod Decker]]></dc:creator>
+		<pubDate>Mon, 24 Oct 2011 10:36:07 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=899#comment-2776</guid>
+
+					<description><![CDATA[This problem began on my blog within the last 2 weeks. Hosting provider says they haven&#039;t changed anything. They have confirmed that:
+
+&quot;Currently the PHP version &#039;5.2.17&#039; is set for your account. Also, libxml2 is installed in our server with the version 2.6.32. You can verify it in the PHP info page at http://ntresour.dot5hosting.com/test.php .&quot;
+
+I have WordPress installed on my account (NTResources.com). I assume that the PHP v. 5.2.17 is newer than the 5.2.9 you recommend, but that&#039;s an older version of libsml2. Is there any way for a mere mortal to update libxml2 or is this something that the provider must do? I&#039;m waiting to hear from them this morning and will try the plugin if they refuse to update it, but I&#039;d prefer to see the updates installed first.
+
+Thanks for any help.
+
+Rod]]></description>
+			<content:encoded><![CDATA[<p>This problem began on my blog within the last 2 weeks. Hosting provider says they haven&#8217;t changed anything. They have confirmed that:</p>
+<p>&#8220;Currently the PHP version &#8216;5.2.17&#8217; is set for your account. Also, libxml2 is installed in our server with the version 2.6.32. You can verify it in the PHP info page at <a href="http://ntresour.dot5hosting.com/test.php" rel="nofollow ugc">http://ntresour.dot5hosting.com/test.php</a> .&#8221;</p>
+<p>I have WordPress installed on my account (NTResources.com). I assume that the PHP v. 5.2.17 is newer than the 5.2.9 you recommend, but that&#8217;s an older version of libsml2. Is there any way for a mere mortal to update libxml2 or is this something that the provider must do? I&#8217;m waiting to hear from them this morning and will try the plugin if they refuse to update it, but I&#8217;d prefer to see the updates installed first.</p>
+<p>Thanks for any help.</p>
+<p>Rod</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: James		</title>
+		<link>/2009/03/04/conclusion-of-libxml2-issues-use-php-529-libxml2-273/#comment-2775</link>
+
+		<dc:creator><![CDATA[James]]></dc:creator>
+		<pubDate>Fri, 23 Sep 2011 15:10:53 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=899#comment-2775</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/03/04/conclusion-of-libxml2-issues-use-php-529-libxml2-273/#comment-2772&quot;&gt;thoughtdeveloper&lt;/a&gt;.
+
+Hoping this thread is still alive!
+
+Can you explain exactly what you needed to change to get the fix to work? My host is on PHP version 5.2.2 and libxml2 version 2.6.32 and have also refused to change anything and are pointing the finger of blame at WordPress...]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/03/04/conclusion-of-libxml2-issues-use-php-529-libxml2-273/#comment-2772">thoughtdeveloper</a>.</p>
+<p>Hoping this thread is still alive!</p>
+<p>Can you explain exactly what you needed to change to get the fix to work? My host is on PHP version 5.2.2 and libxml2 version 2.6.32 and have also refused to change anything and are pointing the finger of blame at WordPress&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: stef		</title>
+		<link>/2009/03/04/conclusion-of-libxml2-issues-use-php-529-libxml2-273/#comment-2774</link>
+
+		<dc:creator><![CDATA[stef]]></dc:creator>
+		<pubDate>Wed, 17 Mar 2010 22:16:32 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=899#comment-2774</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/03/04/conclusion-of-libxml2-issues-use-php-529-libxml2-273/#comment-2766&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+i have the already known issue with the stripped brakets using wordpress and posterous.
+
+i have already read your solution...
+
+i have installed &quot; libxml2 fix &quot; but it didn&#039;t worked.
+
+then i upgraded php and libxml2 to php 5.2.12 and libxml2 2.7.6 on a fedora core 8. and still is not working.
+
+i am using php from 3.fc8.art from a plesk repository. (i have plesk installed)
+can be the problem with the php plesk release of php?
+how to solve?
+
+thanks]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/03/04/conclusion-of-libxml2-issues-use-php-529-libxml2-273/#comment-2766">Joseph Scott</a>.</p>
+<p>i have the already known issue with the stripped brakets using wordpress and posterous.</p>
+<p>i have already read your solution&#8230;</p>
+<p>i have installed &#8221; libxml2 fix &#8221; but it didn&#8217;t worked.</p>
+<p>then i upgraded php and libxml2 to php 5.2.12 and libxml2 2.7.6 on a fedora core 8. and still is not working.</p>
+<p>i am using php from 3.fc8.art from a plesk repository. (i have plesk installed)<br />
+can be the problem with the php plesk release of php?<br />
+how to solve?</p>
+<p>thanks</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: WordPress for iPhone is good &#187; Claes Karlsson		</title>
+		<link>/2009/03/04/conclusion-of-libxml2-issues-use-php-529-libxml2-273/#comment-2773</link>
+
+		<dc:creator><![CDATA[WordPress for iPhone is good &#187; Claes Karlsson]]></dc:creator>
+		<pubDate>Sat, 31 Oct 2009 11:28:00 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=899#comment-2773</guid>
+
+					<description><![CDATA[[...] libxml2 and can only be corrected by the server admin. Here is a link to how to solve this problem Click Here I got to thank my webhosting Space2u for fixing this for me. If you live in Sweden and are in need [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] libxml2 and can only be corrected by the server admin. Here is a link to how to solve this problem Click Here I got to thank my webhosting Space2u for fixing this for me. If you live in Sweden and are in need [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: thoughtdeveloper		</title>
+		<link>/2009/03/04/conclusion-of-libxml2-issues-use-php-529-libxml2-273/#comment-2772</link>
+
+		<dc:creator><![CDATA[thoughtdeveloper]]></dc:creator>
+		<pubDate>Tue, 15 Sep 2009 18:55:21 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=899#comment-2772</guid>
+
+					<description><![CDATA[I experienced the problem with libxml2 Version 2.6.27 and PHP Version 5.2.9, and my host refused to do anything.  I used the plug-in but I had to edit the if statement to work with my older version of libxml2.  Once I did that, problem was solved.]]></description>
+			<content:encoded><![CDATA[<p>I experienced the problem with libxml2 Version 2.6.27 and PHP Version 5.2.9, and my host refused to do anything.  I used the plug-in but I had to edit the if statement to work with my older version of libxml2.  Once I did that, problem was solved.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Evil ZEN Scientist		</title>
+		<link>/2009/03/04/conclusion-of-libxml2-issues-use-php-529-libxml2-273/#comment-2771</link>
+
+		<dc:creator><![CDATA[Evil ZEN Scientist]]></dc:creator>
+		<pubDate>Thu, 06 Aug 2009 05:51:35 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=899#comment-2771</guid>
+
+					<description><![CDATA[Thanks for the blog - saved me some troubleshooting and diagnostics time.]]></description>
+			<content:encoded><![CDATA[<p>Thanks for the blog &#8211; saved me some troubleshooting and diagnostics time.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: evilzenscientist :: thoughts &#187; PHP XML parsing bug &#8211; a workaround and a fix		</title>
+		<link>/2009/03/04/conclusion-of-libxml2-issues-use-php-529-libxml2-273/#comment-2770</link>
+
+		<dc:creator><![CDATA[evilzenscientist :: thoughts &#187; PHP XML parsing bug &#8211; a workaround and a fix]]></dc:creator>
+		<pubDate>Thu, 06 Aug 2009 05:50:00 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=899#comment-2770</guid>
+
+					<description><![CDATA[[...] http://josephscott.org/archives/2009/03/conclusion-of-libxml2-issues-use-php-529-libxml2-273/ [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] <a href="http://josephscott.org/archives/2009/03/conclusion-of-libxml2-issues-use-php-529-libxml2-273/" rel="nofollow ugc">http://josephscott.org/archives/2009/03/conclusion-of-libxml2-issues-use-php-529-libxml2-273/</a> [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bug in libxml2 v2.7.0-2.7.2 Affecting Wordpress &#171; bldrco.net		</title>
+		<link>/2009/03/04/conclusion-of-libxml2-issues-use-php-529-libxml2-273/#comment-2769</link>
+
+		<dc:creator><![CDATA[Bug in libxml2 v2.7.0-2.7.2 Affecting Wordpress &#171; bldrco.net]]></dc:creator>
+		<pubDate>Sun, 05 Jul 2009 14:07:57 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=899#comment-2769</guid>
+
+					<description><![CDATA[[...] Conclusion of libxml2 Issues – Use PHP 5.2.9 &#038; libxml2 2.7.3 &#124;&#124; Joseph Scott [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Conclusion of libxml2 Issues – Use PHP 5.2.9 &amp; libxml2 2.7.3 || Joseph Scott [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

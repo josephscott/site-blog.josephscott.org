@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Misunderstanding Foreign Keys	</title>
+	<atom:link href="/2006/05/24/misunderstanding-foreign-keys/feed/" rel="self" type="application/rss+xml" />
+	<link>/2006/05/24/misunderstanding-foreign-keys/</link>
+	<description></description>
+	<lastBuildDate>Thu, 25 May 2006 15:37:41 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Todd Huss		</title>
+		<link>/2006/05/24/misunderstanding-foreign-keys/#comment-1323</link>
+
+		<dc:creator><![CDATA[Todd Huss]]></dc:creator>
+		<pubDate>Thu, 25 May 2006 15:37:41 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/05/24/misunderstanding-foreign-keys/#comment-1323</guid>
+
+					<description><![CDATA[I couldn&#039;t agree more. My current company is data driven and was built on MySQL many years ago with no foreign keys, not null constraints, etc... and it really shows with orphaned records, null&#039;s where they shouldn&#039;t be etc...! I love Ruby on Rails and use it regularly but the posts I see about doing all the validation in the model and not worrying about creating unique indexes, foreign keys, etc... are just bad design in my opinion. One of the few voices I&#039;ve heard in the Ruby community that seems to recognize the value of database constraints is Robby Russel!]]></description>
+			<content:encoded><![CDATA[<p>I couldn&#8217;t agree more. My current company is data driven and was built on MySQL many years ago with no foreign keys, not null constraints, etc&#8230; and it really shows with orphaned records, null&#8217;s where they shouldn&#8217;t be etc&#8230;! I love Ruby on Rails and use it regularly but the posts I see about doing all the validation in the model and not worrying about creating unique indexes, foreign keys, etc&#8230; are just bad design in my opinion. One of the few voices I&#8217;ve heard in the Ruby community that seems to recognize the value of database constraints is Robby Russel!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

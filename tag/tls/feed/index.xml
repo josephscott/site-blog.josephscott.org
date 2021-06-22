@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>tls &#8211; Joseph Scott</title>
+	<atom:link href="/tag/tls/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 06 Dec 2018 04:47:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>TLS Illustrated</title>
+		<link>/2018/12/05/tls-illustrated/</link>
+					<comments>/2018/12/05/tls-illustrated/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 06 Dec 2018 04:47:00 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[tls]]></category>
+		<guid isPermaLink="false">/?p=17070</guid>
+
+					<description><![CDATA[If you&#8217;ve ever wondered about the individual details of how a TLS exchange works, go take a look at The Illustrated TLS Connection. You can drill down to annotations for each byte. For a detailed look at TLS 1.3 there is The New Illustrated TLS Connection.]]></description>
+										<content:encoded><![CDATA[<p>If you&#8217;ve ever wondered about the individual details of how a TLS exchange works, go take a look at <a href="https://tls.ulfheim.net/">The Illustrated TLS Connection</a>.  You can drill down to annotations for each byte.</p>
+<p>For a detailed look at TLS 1.3 there is <a href="https://tls13.ulfheim.net/">The New Illustrated TLS Connection</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/12/05/tls-illustrated/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>TLS Security</title>
+		<link>/2014/03/04/tls-security/</link>
+					<comments>/2014/03/04/tls-security/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 04 Mar 2014 16:25:44 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[code]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[tls]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9956</guid>
+
+					<description><![CDATA[Ever get the feeling that it is going to be a bad year for TLS implementations? First the Apple iOS / Mac OS X TLS bug, then a GnuTLS bug. Gives me the feeling that we are just waiting for more of these to be discovered. Ultimately this will be a good thing, but painful [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Ever get the feeling that it is going to be a bad year for TLS implementations?</p>
+<p>First the <a href="https://www.imperialviolet.org/2014/02/22/applebug.html" title="Bummer that the iOS and OS X updates were not out on the same day.">Apple iOS / Mac OS X TLS bug</a>, then a <a href="http://www.gnutls.org/security.html#GNUTLS-SA-2014-2" title="Would like to see more analysis between the two, appears similar.">GnuTLS bug</a>.  Gives me the feeling that we are just waiting for more of these to be discovered.</p>
+<p>Ultimately this will be a good thing, but painful to get through.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/03/04/tls-security/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>NGINX TLS Time To First Byte</title>
+		<link>/2013/12/26/nginx-tls-time-to-first-byte/</link>
+					<comments>/2013/12/26/nginx-tls-time-to-first-byte/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 26 Dec 2013 17:29:03 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[https]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[ssl]]></category>
+		<category><![CDATA[time-to-first-byte]]></category>
+		<category><![CDATA[tls]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9676</guid>
+
+					<description><![CDATA[Ilya Grigorik on optimizing NGINX TLS time to first byte (TTTFB): let&#8217;s now turn to the practical matter of picking and tuning the server to deliver the best results. One would hope that the default “out of the box” experience for most servers would do a good job… unfortunately, that is not the case. Let&#8217;s [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Ilya Grigorik on <a href="http://www.igvita.com/2013/12/16/optimizing-nginx-tls-time-to-first-byte/" title="A race before the race.">optimizing NGINX TLS time to first byte (TTTFB)</a>:</p>
+<blockquote><p>
+let&#8217;s now turn to the practical matter of picking and tuning the server to deliver the best results. One would hope that the default “out of the box” experience for most servers would do a good job… unfortunately, that is not the case. Let&#8217;s take a closer look nginx
+</p></blockquote>
+<p>In the simplest terms, TLS involves more work.  The current realities of securing communications means we don&#8217;t have a good way to avoid doing that additional work, indeed we will be doing it more often than we ever have before.  The end result is that we need to spend more time thinking about how to optimize the HTTPS experience for all users.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/12/26/nginx-tls-time-to-first-byte/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Tim Bray on IETF</title>
+		<link>/2013/11/11/tim-bray-on-ietf/</link>
+					<comments>/2013/11/11/tim-bray-on-ietf/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 11 Nov 2013 13:56:50 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[ietf]]></category>
+		<category><![CDATA[tim-bray]]></category>
+		<category><![CDATA[tls]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9397</guid>
+
+					<description><![CDATA[Tim Bray on IETF 88. Worth following just for the discussion around TLS.]]></description>
+										<content:encoded><![CDATA[<p><a href="https://www.tbray.org/ongoing/When/201x/2013/11/10/IETF-88">Tim Bray on IETF 88</a>.  Worth following just for the discussion around TLS.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/11/11/tim-bray-on-ietf/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

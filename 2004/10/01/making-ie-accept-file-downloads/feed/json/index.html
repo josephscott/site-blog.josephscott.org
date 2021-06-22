@@ -1,0 +1,200 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2004/10/01/making-ie-accept-file-downloads/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2004/10/01/making-ie-accept-file-downloads/",
+    "feed_url": "https://blog.josephscott.org/2004/10/01/making-ie-accept-file-downloads/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: Making IE Accept File Downloads",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2004/10/01/making-ie-accept-file-downloads/#comment-664",
+            "url": "https://blog.josephscott.org/2004/10/01/making-ie-accept-file-downloads/#comment-664",
+            "content_html": "Using IIS and IE8. Had same problem where the csv would not open. It worked for years but when I added code to make my site IE10 compliant (in my case I told the browser to act like it was IE8, way too much code to change to make it truly IE10). Anyway the problem occured and the post from \"Harry School\" on (Fri 1 Dec 2006 at 4:39 am) worked for me.\n\nMy asp file has this in it and it works fine now.\n\nResponse.ContentType = \"application/octet-stream\"\nResponse.AddHeader \"content-disposition\",\"attachment; filename=\" &amp; sfile &amp; \".CSV\"\nResponse.CacheControl = \"Cache-Control: must-revalidate, post-check=0, pre-check=0\"\n\nI was missing the last line.\n\nThanks so much!",
+            "content_text": "Using IIS and IE8. Had same problem where the csv would not open. It worked for years but when I added code to make my site IE10 compliant (in my case I told the browser to act like it was IE8, way too much code to change to make it truly IE10). Anyway the problem occured and the post from \"Harry School\" on (Fri 1 Dec 2006 at 4:39 am) worked for me.\n\nMy asp file has this in it and it works fine now.\n\nResponse.ContentType = \"application/octet-stream\"\nResponse.AddHeader \"content-disposition\",\"attachment; filename=\" &amp; sfile &amp; \".CSV\"\nResponse.CacheControl = \"Cache-Control: must-revalidate, post-check=0, pre-check=0\"\n\nI was missing the last line.\n\nThanks so much!",
+            "date_published": "2013-08-01T16:47:29-06:00",
+            "authors": [
+                {
+                    "name": "l Laundry",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/3fac52bb7da0d101456bca39024ebdd9?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "l Laundry",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/3fac52bb7da0d101456bca39024ebdd9?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/10/01/making-ie-accept-file-downloads/#comment-663",
+            "url": "https://blog.josephscott.org/2004/10/01/making-ie-accept-file-downloads/#comment-663",
+            "content_html": "Sorry, I should have mentioned that it worked before but it doesn't now...\nIt works on my manager's laptop with his parasite-browser (sorry I don't know what else to call it - I believe this \"browser\" uses the IE-engine but runs its own interface)...\n\n&amp; yes my default browser is IE (&amp; I thought that would help...)\n\nThanks in advance for anyone who's giving this some thought.\n&amp; since I don't know much about coding, I thought this \"might be part of the puzzle\".\n\nCheers.",
+            "content_text": "Sorry, I should have mentioned that it worked before but it doesn't now...\nIt works on my manager's laptop with his parasite-browser (sorry I don't know what else to call it - I believe this \"browser\" uses the IE-engine but runs its own interface)...\n\n&amp; yes my default browser is IE (&amp; I thought that would help...)\n\nThanks in advance for anyone who's giving this some thought.\n&amp; since I don't know much about coding, I thought this \"might be part of the puzzle\".\n\nCheers.",
+            "date_published": "2011-09-09T12:05:42-06:00",
+            "authors": [
+                {
+                    "name": "Joel",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/b25a11bdf3c800d98d77c1c6ff8d745b?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joel",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/b25a11bdf3c800d98d77c1c6ff8d745b?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/10/01/making-ie-accept-file-downloads/#comment-662",
+            "url": "https://blog.josephscott.org/2004/10/01/making-ie-accept-file-downloads/#comment-662",
+            "content_html": "Hi people, I might be shouting at the wrong crowd...\n\nBut I can't get IE's authentication to \"carry over\" to Excel's web query, could any of you coders help please?\n\nThanks.",
+            "content_text": "Hi people, I might be shouting at the wrong crowd...\n\nBut I can't get IE's authentication to \"carry over\" to Excel's web query, could any of you coders help please?\n\nThanks.",
+            "date_published": "2011-09-09T11:58:12-06:00",
+            "authors": [
+                {
+                    "name": "Joel",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/b25a11bdf3c800d98d77c1c6ff8d745b?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joel",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/b25a11bdf3c800d98d77c1c6ff8d745b?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/10/01/making-ie-accept-file-downloads/#comment-661",
+            "url": "https://blog.josephscott.org/2004/10/01/making-ie-accept-file-downloads/#comment-661",
+            "content_html": "Guys, thanks everyone for the ideas. I tried various combinations. Finally, the below code worked and saved me from more agony. Many thanks to Harry School &amp; Duncan. post-check=0 and pre-check=0 did the trick.\n\n        header(\"Content-Disposition: attachment; filename=filenamehere.csv;\");\n        header(\"Content-Type: text/csv\");\n        \n        if(strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE')) \n        {\n            header('Cache-Control: must-revalidate, post-check=0, pre-check=0');\n            header('Pragma: public');\n        } \n        else \n        {\n            header('Pragma: no-cache');\n        }",
+            "content_text": "Guys, thanks everyone for the ideas. I tried various combinations. Finally, the below code worked and saved me from more agony. Many thanks to Harry School &amp; Duncan. post-check=0 and pre-check=0 did the trick.\n\n        header(\"Content-Disposition: attachment; filename=filenamehere.csv;\");\n        header(\"Content-Type: text/csv\");\n        \n        if(strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE')) \n        {\n            header('Cache-Control: must-revalidate, post-check=0, pre-check=0');\n            header('Pragma: public');\n        } \n        else \n        {\n            header('Pragma: no-cache');\n        }",
+            "date_published": "2011-06-03T02:25:50-06:00",
+            "authors": [
+                {
+                    "name": "Ram",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/f2badd649cf142a264a1fb5a15e587b9?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Ram",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/f2badd649cf142a264a1fb5a15e587b9?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/10/01/making-ie-accept-file-downloads/#comment-660",
+            "url": "https://blog.josephscott.org/2004/10/01/making-ie-accept-file-downloads/#comment-660",
+            "content_html": "Thank you so much. Your fix was the only one that worked for me. The \"if(strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE')) session_cache_limiter(\"public\");\" that is.",
+            "content_text": "Thank you so much. Your fix was the only one that worked for me. The \"if(strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE')) session_cache_limiter(\"public\");\" that is.",
+            "date_published": "2009-04-03T17:42:52-06:00",
+            "authors": [
+                {
+                    "name": "Glen H. Barratt",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/89f870e0a3a0f113613a503e39f02a2c?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Glen H. Barratt",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/89f870e0a3a0f113613a503e39f02a2c?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/10/01/making-ie-accept-file-downloads/#comment-659",
+            "url": "https://blog.josephscott.org/2004/10/01/making-ie-accept-file-downloads/#comment-659",
+            "content_html": "Thanks Duncan, your method works for my site which uses SSL that annoys the crap out of me. For both IE and FF&gt; :) Whee now I can work better!",
+            "content_text": "Thanks Duncan, your method works for my site which uses SSL that annoys the crap out of me. For both IE and FF&gt; :) Whee now I can work better!",
+            "date_published": "2009-03-31T16:35:09-06:00",
+            "authors": [
+                {
+                    "name": "Jody",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/d1a5b612cd666429d115c54a679cd657?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Jody",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/d1a5b612cd666429d115c54a679cd657?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/10/01/making-ie-accept-file-downloads/#comment-658",
+            "url": "https://blog.josephscott.org/2004/10/01/making-ie-accept-file-downloads/#comment-658",
+            "content_html": "I'm still having trouble after looking through and trying your suggestion and those in the comments. I'm running ASP.NET 2.0, IIS, Win2003.\n\nI'm generating a CSV file for users to download when they click a button on a page (the page is SiteReports.aspx). Without SSL, it works great in FF and IE7. With SSL (which I need to do), it works great in FF, but in IE7:\n\n-&gt; If I have ContentType set to 'application/octet-stream', I get a file download prompt, but the filename I gave it is replaced with 'SiteReports_aspx', with no extension, so if they user chooses 'open' from the download prompt, it opens as plain text within IE.\n-&gt; If I have ContentType set to anything else, I get 'Internet Explorer cannot download SiteReports.aspx from etc...'.\n\nI don't understand why it tries to download something with a different filename than the one I specified in Content-Disposition. I'm currently setting up my headers like this:\n\nResponse.Clear();\nResponse.Charset = String.Empty;\nResponse.ContentType = \"application/octet-stream\";\nResponse.AddHeader(\"Pragma\", \"public\");\nResponse.AddHeader(\"Cache-Control\", \"max-age=10\");\nResponse.AddHeader(\"Content-Disposition\", \"attachment; filename=test.csv\");\nResponse.Write(fileContents);\nResponse.End();\n\nAny ideas? Thanks.",
+            "content_text": "I'm still having trouble after looking through and trying your suggestion and those in the comments. I'm running ASP.NET 2.0, IIS, Win2003.\n\nI'm generating a CSV file for users to download when they click a button on a page (the page is SiteReports.aspx). Without SSL, it works great in FF and IE7. With SSL (which I need to do), it works great in FF, but in IE7:\n\n-&gt; If I have ContentType set to 'application/octet-stream', I get a file download prompt, but the filename I gave it is replaced with 'SiteReports_aspx', with no extension, so if they user chooses 'open' from the download prompt, it opens as plain text within IE.\n-&gt; If I have ContentType set to anything else, I get 'Internet Explorer cannot download SiteReports.aspx from etc...'.\n\nI don't understand why it tries to download something with a different filename than the one I specified in Content-Disposition. I'm currently setting up my headers like this:\n\nResponse.Clear();\nResponse.Charset = String.Empty;\nResponse.ContentType = \"application/octet-stream\";\nResponse.AddHeader(\"Pragma\", \"public\");\nResponse.AddHeader(\"Cache-Control\", \"max-age=10\");\nResponse.AddHeader(\"Content-Disposition\", \"attachment; filename=test.csv\");\nResponse.Write(fileContents);\nResponse.End();\n\nAny ideas? Thanks.",
+            "date_published": "2009-03-25T12:22:45-06:00",
+            "authors": [
+                {
+                    "name": "Gordon",
+                    "url": "http://gordonotspanish.blogspot.com",
+                    "avatar": "https://secure.gravatar.com/avatar/70bc491b7ca5da13d55cda4f3ad2ab93?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Gordon",
+                "url": "http://gordonotspanish.blogspot.com",
+                "avatar": "https://secure.gravatar.com/avatar/70bc491b7ca5da13d55cda4f3ad2ab93?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/10/01/making-ie-accept-file-downloads/#comment-657",
+            "url": "https://blog.josephscott.org/2004/10/01/making-ie-accept-file-downloads/#comment-657",
+            "content_html": "thanks for that. additionally the particular IE's here are only happy if content-type header offers encoding=... as well.\n\ne.g.\nheader('Content-type: application/octet-stream; encoding=UTF-8');",
+            "content_text": "thanks for that. additionally the particular IE's here are only happy if content-type header offers encoding=... as well.\n\ne.g.\nheader('Content-type: application/octet-stream; encoding=UTF-8');",
+            "date_published": "2009-03-23T06:46:30-06:00",
+            "authors": [
+                {
+                    "name": "stephan",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/85074a061f64fc7241127bcf517ab58e?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "stephan",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/85074a061f64fc7241127bcf517ab58e?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/10/01/making-ie-accept-file-downloads/#comment-656",
+            "url": "https://blog.josephscott.org/2004/10/01/making-ie-accept-file-downloads/#comment-656",
+            "content_html": "I am running into similar problem and tried all the combination given in this post but alas!\nI have asp page over SSL and trying to generate the CSV file but not working. Any help?\nesponse.Clear\n\t\t\t\tResponse.AddHeader \"Pragma: public\"\n\t\t\t\tResponse.AddHeader \"Cache-Control: no-store, no-cache, no-transform, must-revalidate, private\";\n\t\t\t\tResponse.AddHeader \"Title\", \"My Report Results\"\n\t\t\t\tResponse.ContentType = \"text/csv\"\n\t\t\t\tResponse.AddHeader \"Content-disposition\", \"Attachment;filename=Myreport.csv\"",
+            "content_text": "I am running into similar problem and tried all the combination given in this post but alas!\nI have asp page over SSL and trying to generate the CSV file but not working. Any help?\nesponse.Clear\n\t\t\t\tResponse.AddHeader \"Pragma: public\"\n\t\t\t\tResponse.AddHeader \"Cache-Control: no-store, no-cache, no-transform, must-revalidate, private\";\n\t\t\t\tResponse.AddHeader \"Title\", \"My Report Results\"\n\t\t\t\tResponse.ContentType = \"text/csv\"\n\t\t\t\tResponse.AddHeader \"Content-disposition\", \"Attachment;filename=Myreport.csv\"",
+            "date_published": "2009-03-09T18:13:28-06:00",
+            "authors": [
+                {
+                    "name": "sandy",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/ad4d0c5afaa792f7d58a0e178cf978d0?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "sandy",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/ad4d0c5afaa792f7d58a0e178cf978d0?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2004/10/01/making-ie-accept-file-downloads/#comment-655",
+            "url": "https://blog.josephscott.org/2004/10/01/making-ie-accept-file-downloads/#comment-655",
+            "content_html": "Hi,\nI have the problem which is something related to this post.\nI have trying to download the file using the download code.\nIt's work fine in IE7, Mozilla, chrome but it is not works in IE6.\nThe most socking thing is , few days ago , it is working in all the browsers, even in IE6. But today i got this error.When I have trying to use IE6 for download it shows the following message:\n\"Internet explorer was not able to open this Internet site. The requested site is either unavailable or cannot be found. Please try again later.\"\nCan any body help me?\n\nRegards,\nPkachhia",
+            "content_text": "Hi,\nI have the problem which is something related to this post.\nI have trying to download the file using the download code.\nIt's work fine in IE7, Mozilla, chrome but it is not works in IE6.\nThe most socking thing is , few days ago , it is working in all the browsers, even in IE6. But today i got this error.When I have trying to use IE6 for download it shows the following message:\n\"Internet explorer was not able to open this Internet site. The requested site is either unavailable or cannot be found. Please try again later.\"\nCan any body help me?\n\nRegards,\nPkachhia",
+            "date_published": "2009-02-23T04:09:24-07:00",
+            "authors": [
+                {
+                    "name": "pkachhia",
+                    "url": "http://www.slscorp.com",
+                    "avatar": "https://secure.gravatar.com/avatar/ee5cc3919bd23e4b87ca045d6ab95475?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "pkachhia",
+                "url": "http://www.slscorp.com",
+                "avatar": "https://secure.gravatar.com/avatar/ee5cc3919bd23e4b87ca045d6ab95475?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

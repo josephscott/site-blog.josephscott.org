@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>principle-of-least-surprise &#8211; Joseph Scott</title>
+	<atom:link href="/tag/principle-of-least-surprise/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 30 Oct 2018 18:31:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Principle Of Least Surprise: toFixed() in JavaScript</title>
+		<link>/2018/10/30/principle-of-least-surprise-tofixed-in-javascript/</link>
+					<comments>/2018/10/30/principle-of-least-surprise-tofixed-in-javascript/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 30 Oct 2018 18:31:45 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[principle-of-least-surprise]]></category>
+		<guid isPermaLink="false">/?p=17074</guid>
+
+					<description><![CDATA[The &#8220;Principle Of Least Surprise&#8221; ( sometimes referred to as &#8220;Principle Of Least Astonishment&#8221; ) as described by M. F. Cowlishaw in the paper &#8220;The design of the REXX language&#8221; in 1984: It is difficult to define exactly how to meet user expectations, but it helps to ask the question: Could there be a high [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The &#8220;Principle Of Least Surprise&#8221; ( sometimes referred to as &#8220;Principle Of Least Astonishment&#8221; ) as described by M. F. Cowlishaw in the paper &#8220;<a href="https://www.cs.tufts.edu/~nr/cs257/archive/mike-cowlishaw/rexx.pdf">The design of the REXX language</a>&#8221; in 1984:</p>
+<blockquote><p>It is difficult to define exactly how to meet user expectations, but it helps to ask the question: Could there be a high astonishment factor associated with the new feature? If a feature is accidentally misapplied by the user and causes what appears to him to be an unpredictable result, that feature has a high astonishment factor and is therefore undesirable. If a necessary feature has a high astonishment factor, it may be necessary to redesign the feature.</p></blockquote>
+<p>While being a bit on the squishy side, this still a very useful principle.</p>
+<p>I recently ran into a violation of this principle while using <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed">Number.prototype.toFixed()</a> in JavaScript.</p>
+<p>The code was capturing a time value using <a href="https://developer.mozilla.org/en-US/docs/Web/API/Performance/now">performance.now()</a>. Since it was already counting in milliseconds, and I was exposing the result as JSON, I didn&#8217;t really need 15 decimal places. No problem, I&#8217;ll use <code>toFixed()</code> to reduce it to 3 decimal places. Here is a simplified version of the code and the result:</p>
+<pre class="line-numbers"><code class="language-javascript">var now = performance.now().toFixed( 3 );
+var share = JSON.stringify( { now: now } );
+
+
+// share is now {"now": "8.618"}
+</code></pre>
+<p>That is the point where I realized something wasn&#8217;t right.  When calling <code>performance.now()</code> you get back a <code>double</code> ( <a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMHighResTimeStamp">DOMHighResTimeStamp type</a> ).  Why then was it coming out as a string in the JSON?</p>
+<p>It turns out that <code>toFixed()</code> &#8220;formats a number using fixed-point notation&#8221; by returning a string.  The <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed">MDN docs</a> do indicate that the return value is a string, but I contend that this is completely unexpected.  In order to keep the value as a <code>double</code>, you need to wrap the whole thing in <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat">parseFloat()</a>:</p>
+<pre class="line-numbers"><code class="language-javascript">var now = parseFloat( performance.now().toFixed( 3 ) );
+var share = JSON.stringify( { now: now } );
+
+
+// share is now {"now": 8.618}
+</code></pre>
+<p>It would be clearer, and less work ( <code>parseFloat()</code> can be a hit in performance ), if <code>toFixed()</code> preserved the variable type and returned a double.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/10/30/principle-of-least-surprise-tofixed-in-javascript/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

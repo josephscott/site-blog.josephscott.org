@@ -1,0 +1,86 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/google-photos/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/google-photos/",
+    "feed_url": "https://blog.josephscott.org/tag/google-photos/feed/json/",
+    "language": "en-US",
+    "title": "google-photos &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=14624",
+            "url": "https://blog.josephscott.org/2015/12/29/from-flickr-to-google-photos/",
+            "title": "Migrating From Flickr to Google Photos",
+            "content_html": "<p>Earlier this month I mentioned <a href=\"https://josephscott.org/archives/2015/12/google-photos/\">going all in with Google Photos</a>.  Part of that process was doing a full export of my photos and videos from <a href=\"https://www.flickr.com/\">Flickr</a> and importing them into <a href=\"https://www.google.com/photos/about/\">Google Photos</a>.</p>\n<h3>The Flickr Export</h3>\n<p>After looking around at options I eventually settled upon this version of <a href=\"https://github.com/dan/hivelogic-flickrtouchr/tree/master\">flickrtouchr.py</a> to do the export.  Background about this code is on a post <a href=\"http://hivelogic.com/articles/backing-up-flickr\">here</a>.</p>\n<p>This worked fine with one exception.  It used <code>.jpg</code> as the extension for all of the files, even the videos.  I didn&#8217;t realized this until the export was done.  So I whipped up a simple Bash script to change the extension on the video files to <code>.mov</code>:</p>\n<p>[sourcecode lang=&#8221;bash&#8221;]<br />\n#!/bin/bash</p>\n<p>cd $1</p>\n<p>for file in *<br />\ndo<br />\n    filename=$(basename $file)<br />\n    filename=&quot;${filename%.*}&quot;<br />\n    mimetype=$(file &#8211;mime-type -b &quot;$file&quot;)<br />\n    case $mimetype in<br />\n        video/quicktime)<br />\n            mv -v &quot;$filename.jpg&quot; &quot;$filename.mov&quot;<br />\n            ;;<br />\n    esac<br />\ndone<br />\n[/sourcecode]</p>\n<p>In the end I had nearly 7,000 files from my Flickr account.</p>\n<h3>Importing To Google Photos</h3>\n<p>I started with using the web based uploader, since it worked fine for the one off items in the past.  Turns out the web uploader sometimes fails to upload an item.  It tells you about the failure, but doesn&#8217;t make it easy to re-try ( let alone re-try automatically ).</p>\n<p>I gave up on web uploader and switched to the <a href=\"https://photos.google.com/apps\">Google Photos &#8220;Desktop Uploader&#8221; Mac App</a>.  If you need to upload a large number of items to Google Photos the Desktop Uploader is the way to go, don&#8217;t bother with anything else.</p>\n<p>There is one item that you need to be careful with when using the Desktop Uploader.  It will use every drop of bandwidth you have, with no rate limiting options.  I ended up letting it run over night, when nothing else was using the Internet connection at home.</p>\n<h3>Conclusion</h3>\n<p>After several experiments with other options, I&#8217;m happy with the process I outlined above.  It isn&#8217;t perfect, but it does get the job done.</p>\n",
+            "content_text": "Earlier this month I mentioned going all in with Google Photos.  Part of that process was doing a full export of my photos and videos from Flickr and importing them into Google Photos.\nThe Flickr Export\nAfter looking around at options I eventually settled upon this version of flickrtouchr.py to do the export.  Background about this code is on a post here.\nThis worked fine with one exception.  It used .jpg as the extension for all of the files, even the videos.  I didn&#8217;t realized this until the export was done.  So I whipped up a simple Bash script to change the extension on the video files to .mov:\n[sourcecode lang=&#8221;bash&#8221;]\n#!/bin/bash\ncd $1\nfor file in *\ndo\n    filename=$(basename $file)\n    filename=&quot;${filename%.*}&quot;\n    mimetype=$(file &#8211;mime-type -b &quot;$file&quot;)\n    case $mimetype in\n        video/quicktime)\n            mv -v &quot;$filename.jpg&quot; &quot;$filename.mov&quot;\n            ;;\n    esac\ndone\n[/sourcecode]\nIn the end I had nearly 7,000 files from my Flickr account.\nImporting To Google Photos\nI started with using the web based uploader, since it worked fine for the one off items in the past.  Turns out the web uploader sometimes fails to upload an item.  It tells you about the failure, but doesn&#8217;t make it easy to re-try ( let alone re-try automatically ).\nI gave up on web uploader and switched to the Google Photos &#8220;Desktop Uploader&#8221; Mac App.  If you need to upload a large number of items to Google Photos the Desktop Uploader is the way to go, don&#8217;t bother with anything else.\nThere is one item that you need to be careful with when using the Desktop Uploader.  It will use every drop of bandwidth you have, with no rate limiting options.  I ended up letting it run over night, when nothing else was using the Internet connection at home.\nConclusion\nAfter several experiments with other options, I&#8217;m happy with the process I outlined above.  It isn&#8217;t perfect, but it does get the job done.",
+            "date_published": "2015-12-29T09:59:55-07:00",
+            "date_modified": "2015-12-29T09:59:55-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "flickr",
+                "google-photos",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=14581",
+            "url": "https://blog.josephscott.org/2015/12/12/google-photos/",
+            "title": "Google Photos",
+            "content_html": "<p>I&#8217;ve been really happy with the new version of <a href=\"https://www.google.com/photos/\">Google Photos</a>.  Happy enough that I&#8217;m willing to go all in, I&#8217;m importing all of my old photos into Google Photos.</p>\n<p><img loading=\"lazy\" src=\"https://blog.josephscott.org/wp-content/uploads/2015/12/google-photos-logo-1.png\" alt=\"google-photos-logo\" width=\"362\" height=\"64\" class=\"aligncenter size-full wp-image-14583\" srcset=\"https://blog.josephscott.org/wp-content/uploads/2015/12/google-photos-logo-1.png 362w, https://blog.josephscott.org/wp-content/uploads/2015/12/google-photos-logo-1-300x53.png 300w\" sizes=\"(max-width: 362px) 100vw, 362px\" /></p>\n<p>Google, please don&#8217;t make me regret this.</p>\n",
+            "content_text": "I&#8217;ve been really happy with the new version of Google Photos.  Happy enough that I&#8217;m willing to go all in, I&#8217;m importing all of my old photos into Google Photos.\n\nGoogle, please don&#8217;t make me regret this.",
+            "date_published": "2015-12-12T09:59:14-07:00",
+            "date_modified": "2015-12-12T09:59:14-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "google-photos",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=13255",
+            "url": "https://blog.josephscott.org/2015/07/20/photo-sharing/",
+            "title": "Photo Sharing",
+            "content_html": "<p>Last year <a href=\"https://web.archive.org/web/20140703131501/http://carpeaqua.com/2014/04/23/state-of-photo-sharing-2014/\">Justin Williams complained about the &#8216;State of Photo Sharing&#8217;</a>:</p>\n<blockquote><p>\nThis is 2014. This doesn\u2019t seem like a a problem that still needs solving, yet we still don\u2019t have a de-facto platform for private and semi-private photography sharing and backup.\n</p></blockquote>\n<p>I&#8217;d call <a href=\"https://www.google.com/photos/about/\">the new Google Photos</a> the current front runner in this category.</p>\n",
+            "content_text": "Last year Justin Williams complained about the &#8216;State of Photo Sharing&#8217;:\n\nThis is 2014. This doesn\u2019t seem like a a problem that still needs solving, yet we still don\u2019t have a de-facto platform for private and semi-private photography sharing and backup.\n\nI&#8217;d call the new Google Photos the current front runner in this category.",
+            "date_published": "2015-07-20T08:01:49-06:00",
+            "date_modified": "2015-07-20T08:01:49-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "google-photos",
+                "Posts"
+            ]
+        }
+    ]
+}

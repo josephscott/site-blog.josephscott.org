@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Top Five WordPress SQL Queries	</title>
+	<atom:link href="/2004/10/28/top-five-wordpress-sql-queries/feed/" rel="self" type="application/rss+xml" />
+	<link>/2004/10/28/top-five-wordpress-sql-queries/</link>
+	<description></description>
+	<lastBuildDate>Tue, 08 Apr 2008 21:00:38 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: You Don&#8217;t Have To Be Pretty To Be Successful - Joseph Scott&#8217;s Blog		</title>
+		<link>/2004/10/28/top-five-wordpress-sql-queries/#comment-678</link>
+
+		<dc:creator><![CDATA[You Don&#8217;t Have To Be Pretty To Be Successful - Joseph Scott&#8217;s Blog]]></dc:creator>
+		<pubDate>Tue, 08 Apr 2008 21:00:38 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/10/28/top-five-wordpress-sql-queries/#comment-678</guid>
+
+					<description><![CDATA[[...] a webapp, WP is also sensitive to performance. I&#8217;ve written about SQL query changes that could be done in WP before with a less than enthusiastic response. Recently the LightPress [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] a webapp, WP is also sensitive to performance. I&#8217;ve written about SQL query changes that could be done in WP before with a less than enthusiastic response. Recently the LightPress [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2004/10/28/top-five-wordpress-sql-queries/#comment-677</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Sat, 11 Dec 2004 18:37:23 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/10/28/top-five-wordpress-sql-queries/#comment-677</guid>
+
+					<description><![CDATA[Rudd-0:
+
+Forcing that kind of optimization to the database makes no sense because it makes scalability more difficult.  If I have a very busy WordPress install I can easily have 3 web servers all talking to one database server to increase my capacity.  With this kind of code optimization I&#039;m still making the database server to work that could have been distributed across the three web servers.
+
+But just for kicks I put together a very simple test to see which one is faster.  Run the query with 1=1 vs an if(empty($some_var)) check for 10,000 times.  The 1=1 run took and average of more than 0.07 seconds longer than if(empty($some_var)) on each run of 10,000.  Just to make sure I ran more than a dozen sets (of 10,000 runs) with 1=1 first and then another with if(empty($some_var)) first to make sure that being second wasn&#039;t giving an advantage.  The 1=1 sets were ALWAYS slower than if(empty($some_var)).
+
+If it is basic developer knowledge that doing 1=1 for the sake of code optimizations, then that developer would be wrong (at least according to my benchmark and scalability issue).
+
+I&#039;d be happy to supply my simple benchmark code, although I&#039;d recommend just running your own tests to see what sort of results you get.]]></description>
+			<content:encoded><![CDATA[<p>Rudd-0:</p>
+<p>Forcing that kind of optimization to the database makes no sense because it makes scalability more difficult.  If I have a very busy WordPress install I can easily have 3 web servers all talking to one database server to increase my capacity.  With this kind of code optimization I&#8217;m still making the database server to work that could have been distributed across the three web servers.</p>
+<p>But just for kicks I put together a very simple test to see which one is faster.  Run the query with 1=1 vs an if(empty($some_var)) check for 10,000 times.  The 1=1 run took and average of more than 0.07 seconds longer than if(empty($some_var)) on each run of 10,000.  Just to make sure I ran more than a dozen sets (of 10,000 runs) with 1=1 first and then another with if(empty($some_var)) first to make sure that being second wasn&#8217;t giving an advantage.  The 1=1 sets were ALWAYS slower than if(empty($some_var)).</p>
+<p>If it is basic developer knowledge that doing 1=1 for the sake of code optimizations, then that developer would be wrong (at least according to my benchmark and scalability issue).</p>
+<p>I&#8217;d be happy to supply my simple benchmark code, although I&#8217;d recommend just running your own tests to see what sort of results you get.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rudd-O		</title>
+		<link>/2004/10/28/top-five-wordpress-sql-queries/#comment-676</link>
+
+		<dc:creator><![CDATA[Rudd-O]]></dc:creator>
+		<pubDate>Sat, 11 Dec 2004 10:27:38 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/10/28/top-five-wordpress-sql-queries/#comment-676</guid>
+
+					<description><![CDATA[While 1=1 may be an optimization in the code, it&#039;s absurd to EVER state that using a PHP if() (to remove the 1=1) before the query is going to be slower than letting the DB do it.  the if will always take less resources to process than the DB to figure out.  Yes, I&#039;m nitpicking here, but, dude, this is basic knowledge for a developer!]]></description>
+			<content:encoded><![CDATA[<p>While 1=1 may be an optimization in the code, it&#8217;s absurd to EVER state that using a PHP if() (to remove the 1=1) before the query is going to be slower than letting the DB do it.  the if will always take less resources to process than the DB to figure out.  Yes, I&#8217;m nitpicking here, but, dude, this is basic knowledge for a developer!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2004/10/28/top-five-wordpress-sql-queries/#comment-675</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 02 Nov 2004 16:31:53 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/10/28/top-five-wordpress-sql-queries/#comment-675</guid>
+
+					<description><![CDATA[&quot;WHERE 1=1&quot;
+I think you are right, it probably is an attempt to optimize the PHP vs the database.  I tend to thing that this is the wrong way to optimize.  I haven&#039;t seen numbers indicating one way or the other though.
+
+Page Views
+Caching can potentially be a big win.  I didn&#039;t mention that because I was looking strictly at the top 5 queries being run.]]></description>
+			<content:encoded><![CDATA[<p>&#8220;WHERE 1=1&#8221;<br />
+I think you are right, it probably is an attempt to optimize the PHP vs the database.  I tend to thing that this is the wrong way to optimize.  I haven&#8217;t seen numbers indicating one way or the other though.</p>
+<p>Page Views<br />
+Caching can potentially be a big win.  I didn&#8217;t mention that because I was looking strictly at the top 5 queries being run.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Nicolas Huillard		</title>
+		<link>/2004/10/28/top-five-wordpress-sql-queries/#comment-674</link>
+
+		<dc:creator><![CDATA[Nicolas Huillard]]></dc:creator>
+		<pubDate>Tue, 02 Nov 2004 12:10:07 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/10/28/top-five-wordpress-sql-queries/#comment-674</guid>
+
+					<description><![CDATA[1) Regarding &quot;WHERE 1=1&quot;
+This is often an optimisation of the code for maintainability. We do use this trick to simplify SQL generation code. The same query-generator could be used to add a real WHERE clause to the query, without any cost at teh PHP side. Trying to optimize the small 1s/week gain on the MySQL side might mean adding 2s/week on the PHP side, in a simply IF/THEN/ELSE statement...
+
+2) Regarding page views
+What I see here is that you have something like 5400 pages views in the week, each of them running 3 queries (I don&#039;t take the other queries into account). Compare this to the 44 UPDATEs : you could have had the same user-side result with only 44 * 3 SELECTs... Using a simple caching could improve you site&#039;s efficiency by a factor of 122 : do your SQL queries, generate a page, cache the result locally, and add cache headers to the resulting page. You choose the cache duration (say 4 hours ?), et voilà : net SQL improvement = 128 times (run queries every 4 hours, ie. 42 times a week instead of 5400).]]></description>
+			<content:encoded><![CDATA[<p>1) Regarding &#8220;WHERE 1=1&#8221;<br />
+This is often an optimisation of the code for maintainability. We do use this trick to simplify SQL generation code. The same query-generator could be used to add a real WHERE clause to the query, without any cost at teh PHP side. Trying to optimize the small 1s/week gain on the MySQL side might mean adding 2s/week on the PHP side, in a simply IF/THEN/ELSE statement&#8230;</p>
+<p>2) Regarding page views<br />
+What I see here is that you have something like 5400 pages views in the week, each of them running 3 queries (I don&#8217;t take the other queries into account). Compare this to the 44 UPDATEs : you could have had the same user-side result with only 44 * 3 SELECTs&#8230; Using a simple caching could improve you site&#8217;s efficiency by a factor of 122 : do your SQL queries, generate a page, cache the result locally, and add cache headers to the resulting page. You choose the cache duration (say 4 hours ?), et voilà : net SQL improvement = 128 times (run queries every 4 hours, ie. 42 times a week instead of 5400).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Marcel from trafficstatistic.com		</title>
+		<link>/2004/10/28/top-five-wordpress-sql-queries/#comment-673</link>
+
+		<dc:creator><![CDATA[Marcel from trafficstatistic.com]]></dc:creator>
+		<pubDate>Mon, 01 Nov 2004 15:32:15 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/10/28/top-five-wordpress-sql-queries/#comment-673</guid>
+
+					<description><![CDATA[Thanks a lot for this example, didn&#039;t know, that PQA does support now MySQL, too.]]></description>
+			<content:encoded><![CDATA[<p>Thanks a lot for this example, didn&#8217;t know, that PQA does support now MySQL, too.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

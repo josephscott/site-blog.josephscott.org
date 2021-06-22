@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>perl &#8211; Joseph Scott</title>
+	<atom:link href="/tag/perl/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 15 Apr 2020 19:25:34 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Perl Power Tools</title>
+		<link>/2020/04/15/perl-power-tools/</link>
+					<comments>/2020/04/15/perl-power-tools/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 15 Apr 2020 19:25:34 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[perl]]></category>
+		<category><![CDATA[perl-power-tools]]></category>
+		<guid isPermaLink="false">/?p=18106</guid>
+
+					<description><![CDATA[I recently found myself working in a limited shell account that did not include a utility I needed: patch. Without patch I went poking around to see what was available that would be close, or at least be coaxed into a useable replacement. That is how I discovered they included a Swiss Army Chainsaw: Perl. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I recently found myself working in a limited shell account that did not include a utility I needed: <a href="http://man7.org/linux/man-pages/man1/patch.1.html">patch</a>.  Without patch I went poking around to see what was available that would be close, or at least be coaxed into a useable replacement.  That is how I discovered they included a Swiss Army Chainsaw: Perl.</p>
+<p>Having Perl available meant I had plenty of options.  Fortunately others have already done the work of implementing patch in Perl: <a href="http://perlpowertools.com/">Perl Power Tools</a>:</p>
+<blockquote><p>
+In February 1999, Tom Christiansen announced the Perl Power Tools project to provide a unified BSD toolbox. Perl is the same (mostly) everywhere you go and the same programs could run the same everywhere instead of being reimplemented for each platform. The Perl versions would have the same switches and features.
+</p></blockquote>
+<p><a href="/wp-content/uploads/2020/04/perl-power-tools.png"><img loading="lazy" src="/wp-content/uploads/2020/04/perl-power-tools-1020x1024.png" alt="" width="580" height="582" class="aligncenter size-large wp-image-18181" srcset="/wp-content/uploads/2020/04/perl-power-tools-1020x1024.png 1020w, /wp-content/uploads/2020/04/perl-power-tools-300x300.png 300w, /wp-content/uploads/2020/04/perl-power-tools-150x150.png 150w, /wp-content/uploads/2020/04/perl-power-tools-768x771.png 768w, /wp-content/uploads/2020/04/perl-power-tools-1530x1536.png 1530w, /wp-content/uploads/2020/04/perl-power-tools-1200x1205.png 1200w, /wp-content/uploads/2020/04/perl-power-tools.png 1574w" sizes="(max-width: 580px) 100vw, 580px" /></a></p>
+<p>The Perl Power Tools implements many common Unix utilities with just Perl, which I was just what I needed in this case.</p>
+<p>I&#8217;m glad this work was already done, and still available, when I needed it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/04/15/perl-power-tools/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Underestimating Perl</title>
+		<link>/2015/04/03/underestimating-perl/</link>
+					<comments>/2015/04/03/underestimating-perl/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 03 Apr 2015 15:18:44 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[perl]]></category>
+		<category><![CDATA[rafe-colburn]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10964</guid>
+
+					<description><![CDATA[Rafe Colburn on Perl outperforming sed and awk: There are a couple of lessons here. The first is that when you’re doing simple text processing, you may as well just use Perl one-liners. The idea that sed and awk are superior because they are smaller and simpler is not borne out by real-world results. (They [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Rafe Colburn on <a href="http://rc3.org/2014/08/28/surprisingly-perl-outperforms-sed-and-awk/">Perl outperforming sed and awk</a>:</p>
+<blockquote><p>
+There are a couple of lessons here. The first is that when you’re doing simple text processing, you may as well just use Perl one-liners. The idea that sed and awk are superior because they are smaller and simpler is not borne out by real-world results. (They may be faster for some things, but it’s clearly no sure thing.) Perl is mature and is obviously highly optimized.</p>
+<p>The second is that while premature optimization may be the root of all evil, when you’re performing the same operation billions of times, even very small gains in efficiency can have huge impact. When the CPU on the server was pegged at 100% for a few days and the load average spiked at over 200, every gain in efficiency became hugely important.
+</p></blockquote>
+<p>I&#8217;ve sliced and diced a lot of text with Perl ( mostly many years ago ), it will always have a fond place in my heart.  The <a href="http://www.catonmat.net/blog/introduction-to-perl-one-liners/">one-liner abilities</a> are legendary.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/04/03/underestimating-perl/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Solo</title>
+		<link>/2011/09/26/solo/</link>
+					<comments>/2011/09/26/solo/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 26 Sep 2011 20:20:22 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[cron]]></category>
+		<category><![CDATA[perl]]></category>
+		<category><![CDATA[solo]]></category>
+		<category><![CDATA[tcp/ip]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4792</guid>
+
+					<description><![CDATA[Solo is an interesting little Perl script: solo is a very simple script (10 lines) that prevents a program from running more than one copy at a time. It is useful with cron to make sure that a job doesn&#8217;t run before a previous one has finished. * * * * * solo -port=3801 /usr/local/bin/awesome-script.sh [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href='http://timkay.com/solo/'>Solo</a> is an interesting <a href="http://timkay.com/solo/solo">little Perl script</a>:</p>
+<blockquote><p>
+solo is a very simple script (10 lines) that prevents a program from running more than one copy at a time. It is useful with cron to make sure that a job doesn&#8217;t run before a previous one has finished.</p>
+<p>* * * * * solo -port=3801 /usr/local/bin/awesome-script.sh blah blah
+</p></blockquote>
+<p>The clever part is the use of binding to TCP ports to ensure that only one copy of the script is running at a time.  No more lockfiles or filesystem tricks, just let the kernel figure out if the port is already in use.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/09/26/solo/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>SVN::Notify Looking For A New Maintainer</title>
+		<link>/2011/07/13/svnnotify-looking-for-a-new-maintainer/</link>
+					<comments>/2011/07/13/svnnotify-looking-for-a-new-maintainer/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 13 Jul 2011 18:32:09 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[perl]]></category>
+		<category><![CDATA[subversion]]></category>
+		<category><![CDATA[svn-notify]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4470</guid>
+
+					<description><![CDATA[David Wheeler announced that SVN::Notify is up for adoption. I still get quite a bit of milage out of SVN::Notify and hope that some Perl hacker out there is willing to take it over.]]></description>
+										<content:encoded><![CDATA[<p>David Wheeler announced that <a href='http://www.justatheory.com/computers/programming/perl/modules/adopt-svn-notify.html'>SVN::Notify is up for adoption</a>.  I still get quite a bit of milage out of <a href="http://search.cpan.org/dist/SVN-Notify/">SVN::Notify</a> and hope that some Perl hacker out there is willing to take it over.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/07/13/svnnotify-looking-for-a-new-maintainer/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Wed 20 Feb 2008</title>
+		<link>/2008/02/20/links-for-wed-20-feb-2008/</link>
+					<comments>/2008/02/20/links-for-wed-20-feb-2008/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 21 Feb 2008 00:00:11 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[cpan]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[perl]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xmlrpc]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/02/20/links-for-wed-20-feb-2008/</guid>
+
+					<description><![CDATA[WordPress::XMLRPC &#8211; search.cpan.org &#8211; Perl module for talking to WordPress Tags: cpan perl wordpress xmlrpc]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://search.cpan.org/~leocharre/WordPress-XMLRPC-1.06/lib/WordPress/XMLRPC.pm">WordPress::XMLRPC &#8211; search.cpan.org</a> &#8211; Perl module for talking to WordPress <br /> Tags: <a href="http://del.icio.us/josephscott/cpan">cpan</a> <a href="http://del.icio.us/josephscott/perl">perl</a> <a href="http://del.icio.us/josephscott/wordpress">wordpress</a> <a href="http://del.icio.us/josephscott/xmlrpc">xmlrpc</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/02/20/links-for-wed-20-feb-2008/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

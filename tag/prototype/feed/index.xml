@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>prototype &#8211; Joseph Scott</title>
+	<atom:link href="/tag/prototype/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 18 Jan 2007 23:19:42 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Prototype Finds a Home</title>
+		<link>/2007/01/18/prototype-finds-a-home/</link>
+					<comments>/2007/01/18/prototype-finds-a-home/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 18 Jan 2007 23:19:42 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[prototype]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/01/18/prototype-finds-a-home/</guid>
+
+					<description><![CDATA[The Javascript library framework Prototype has a new home at Prototypejs.org. With API docs, tutorials and a blog. Oh, and version 1.5.0 of Prototype is now available for download]]></description>
+										<content:encoded><![CDATA[<p>The Javascript <strike>library</strike> framework Prototype has a new home at <a href="http://prototypejs.org/">Prototypejs.org</a>.  With <a href="http://prototypejs.org/api">API docs</a>, <a href="http://prototypejs.org/learn">tutorials</a> and a <a href="http://prototypejs.org/blog">blog</a>.</p>
+<p>Oh, and version 1.5.0 of Prototype is now available for <a href="http://prototypejs.org/download">download</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/01/18/prototype-finds-a-home/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Checking Out jQuery</title>
+		<link>/2006/09/11/checking-out-jquery/</link>
+					<comments>/2006/09/11/checking-out-jquery/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 12 Sep 2006 06:28:14 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[ajax]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jquery]]></category>
+		<category><![CDATA[mootools]]></category>
+		<category><![CDATA[prototype]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/09/11/checking-out-jquery/</guid>
+
+					<description><![CDATA[I&#8217;ve been reading through some of the jQuery docs and I&#8217;m getting more and more interested. I&#8217;m aware of mootools (and Jonathan&#8217;s drag and drop example) and the latest updates to prototype. I hope to get around to playing with those as well. The compressed version of jQuery comes in at impressive 17,587 bytes. I [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been reading through some of the <a href="http://jquery.com/">jQuery</a> <a href="http://jquery.com/docs/">docs</a> and I&#8217;m getting more and more interested.  I&#8217;m aware of <a href="http://mootools.net/">mootools</a> (and Jonathan&#8217;s <a href="http://www.snook.ca/archives/javascript/mootools_drag_a/">drag and drop example</a>) and the latest <a href="http://encytemedia.com/blog/articles/2006/08/30/a-flurry-of-prototype-updates">updates</a> <a href="http://encytemedia.com/blog/articles/2006/09/05/the-flurry-continues-more-prototype-updates">to prototype</a>.  I hope to get around to playing with those as well.</p>
+<p>The <a href="http://jquery.com/src/jquery-latest.pack.js">compressed version of jQuery</a> comes in at impressive 17,587 bytes.  I do wonder if there is any slow down in performance.  Either way, it is a huge leap from the 45,778 byte <a href="http://jquery.com/src/jquery-latest.js">uncompressed version of jQuery</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/09/11/checking-out-jquery/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Too Much Of A Good Thing, JavaScripts Loops In Prototype</title>
+		<link>/2006/09/05/too-much-of-a-good-thing-javascripts-loops-in-prototype/</link>
+					<comments>/2006/09/05/too-much-of-a-good-thing-javascripts-loops-in-prototype/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 06 Sep 2006 06:13:58 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[benchmark]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[prototype]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/09/05/too-much-of-a-good-thing-javascripts-loops-in-prototype/</guid>
+
+					<description><![CDATA[Ryan Campbell investigates the cost of enumerable loops in Prototype. The resulting numbers are pretty dramatic when dealing with larger arrays. One thing to keep in mind though is that for only a few iterations over arrays with a small number of elements then the penalty is probably small enough that it won&#8217;t cause problems. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Ryan Campbell investigates <a href="http://particletree.com/notebook/beware-of-javascript-library-overkill/">the cost of enumerable loops in Prototype</a>.  The resulting numbers are pretty dramatic when dealing with larger arrays.  One thing to keep in mind though is that for only a few iterations over arrays with a small number of elements then the penalty is probably small enough that it won&#8217;t cause problems.</p>
+<p>Benchmarks using the various JavaScript libraries is something that I&#8217;d expect to see more of.  Soon or later someone will post benchmarks between Prototype, YUI and JQuery on various tests.  The benefit from having numbers like this is that eventually all libraries will adopt the fastest approach that meets their goals.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/09/05/too-much-of-a-good-thing-javascripts-loops-in-prototype/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Edit In Place: Version 0.2.1</title>
+		<link>/2006/06/12/edit-in-place-version-021/</link>
+					<comments>/2006/06/12/edit-in-place-version-021/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 12 Jun 2006 23:38:30 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[ajax]]></category>
+		<category><![CDATA[editinplace]]></category>
+		<category><![CDATA[eip]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[prototype]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/06/12/edit-in-place-version-021/</guid>
+
+					<description><![CDATA[I&#8217;ve been getting lots of great feedback on Edit In Place. As time permits I hope to fix problems and round out the feature set a bit more. To that end I&#8217;ve rolled out version 0.2.1. Here&#8217;s a list of what has changed since version 0.2.0: The bundled version of Prototype is now 1.5.0_rc0. This [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been getting lots of great feedback on <a href="http://josephscott.org/code/js/eip/">Edit In Place</a>.  As time permits I hope to fix problems and round out the feature set a bit more.  To that end I&#8217;ve rolled out <a href="http://josephscott.org/code/js/eip/releases/">version 0.2.1</a>.  Here&#8217;s a list of what has changed since <a href="http://joseph.randomnetworks.com/archives/2006/06/07/ajax-edit-in-place-with-prototype-version-020/">version 0.2.0</a>:</p>
+<ul>
+<li>The bundled version of <a href="http://prototype.conio.net/">Prototype</a> is now 1.5.0_rc0.  This was mostly to make sure that my code still worked with 1.5.0_rc0.</li>
+<li>Attempt to deal with editing, updating and saving empty strings in a reasonable way</a>
+</ul>
+<p>I&#8217;ve updated the <a href="http://josephscott.org/code/js/eip/example.html">example page</a> to include editing a string that starts out empty.  The example now has a link to my <a href="http://joseph.randomnetworks.com/tag/editinplace">Edit In Place blog entries</a>, the <a href="http://josephscott.org/code/js/eip/edit.phps">edit.php source</a> (assuming your web server knows what to do with .phps files) and the main link at the top now goes <a>http://josephscott.org/code/js/eip/</a>.</p>
+<p>Two new options have been introduced to format empty strings: empty (which is the css class to apply to empty strings, defaults to .eip_empty) and empty_text (the text to put in place of empty strings, defaults to &#8216;Click To Edit&#8217;).  These options are valid for all types (text and textarea).</p>
+<p>So go to the <a href="http://josephscott.org/code/js/eip/example.html">example page</a> and click on the grey &#8216;Click To Edit&#8217; string and you&#8217;ll get an empty text box.  Type in something and you&#8217;ll get the new string instead.  Then delete the string and you&#8217;ll get the grey &#8216;Click To Edit&#8217; string again.  You can do the same thing with the original text and textarea examples.</p>
+<p>I think that I&#8217;ve covered the empty string condition, but if you find a bug please <a href="http://joseph.randomnetworks.com/contact/">drop me a note</a>.  Include a patch if you are really feeling generous <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/06/12/edit-in-place-version-021/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>I&#8217;m Sold on Prototype</title>
+		<link>/2006/02/16/im-sold-on-prototype/</link>
+					<comments>/2006/02/16/im-sold-on-prototype/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 17 Feb 2006 07:14:39 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[ajax]]></category>
+		<category><![CDATA[firebug]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[prototype]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/16/im-sold-on-prototype/</guid>
+
+					<description><![CDATA[For years I avoided Javascript as much as possible. It was a pain to try and support all of the versions of Internet Explorer (IE) and Netscape Navigator. It just was not worth it. As time went on my aversion to Javascript lessened, but I never made the effort to really learn it as a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>For years I avoided <a href="http://en.wikipedia.org/wiki/Javascript">Javascript</a> as much as possible.  It was a pain to try and support all of the versions of <a href="http://www.microsoft.com/windows/ie/default.mspx">Internet Explorer</a> (IE) and <a href="http://en.wikipedia.org/wiki/Netscape">Netscape Navigator</a>.  It just was not worth it.  As time went on my aversion to Javascript lessened, but I never made the effort to really learn it as a language.  I would learn just enough to accomplish a small specific task.</p>
+<p>Fast forward to 2005/2006.  <a href="http://www.adaptivepath.com/publications/essays/archives/000385.php">AJAX</a> has become the buzzword of choice.  Some smart folks have learned to deal with most/many of the issues that are still there between IE and (now) Firefox.  This has given rise to Javascript libraries, with <a href="http://prototype.conio.net/">Prototype</a> being one of the more popular.</p>
+<p>After a few brief attempts trying to figure out how to do something useful in Javascript with Prototype I figured my lack of real Javascript skills were just not up to the job.  Then <a href="http://www.yahoo.com/">Yahoo</a> came out with their <a href="http://developer.yahoo.net/yui/">Yahoo! User Interface Library</a> (YUI), which got me thinking about Prototype again.  After reading through more examples and documentation I was finally able to accomplish exactly what I wanted.</p>
+<p>I&#8217;m now sold on using Prototype.  <a href="http://conio.net/">Sam Stephenson</a> deserves heaps of praise.  To help out others who are looking for documentation and examples, here is a list of resources for Prototype.</p>
+<ul>
+<li><b><a href="http://prototype.conio.net/">Prototype</a></b>: The official website for Prototype.</li>
+<li><b><a href="http://dev.rubyonrails.org/browser/spinoffs/prototype/">Prototype Subversion repository</a></b>: Sometimes looking at the source (and its history) is the only way to answer a question.</li>
+<li><b><a href="http://www.sergiopereira.com/articles/prototype.js.html">Developer Notes for prototype.js</a></b>: This site provides great examples on using Prototype and an amazing reference section.  If you use Prototype at all this is a site you&#8217;ll want to bookmarked for easy access.</li>
+<li><b><a href="http://julian.empiregn.com/2005-11/Easily_upgrade_your_forms_to_AJAX/">Easily upgrade your forms to AJAX</a></b>: A lot of AJAX activity focuses around HTML forms, this page provides a basic example on how Prototype makes that possible.</li>
+<li><b><a href="http://wiki.script.aculo.us/scriptaculous/show/Prototype">script.aculo.us prototype wiki</a></b>: Another good reference site with some examples.</li>
+<li><b><a href="http://blogs.ebusiness-apps.com/jordan/pages/Prototype%20Library%20Info.htm">Overview of the Prototype Javascript Library</a></b>: Provides a good, quick over view of what is possible.</li>
+</ul>
+<p>While trying to debug AJAX I recommend using the Firefox plugin called <a href="https://addons.mozilla.org/extensions/moreinfo.php?id=1843&amp;application=firefox">FireBug</a>.  Turn on the &#8220;XMLHttpRequest Spy&#8221; feature and you&#8217;ll be able to monitor all of the AJAX transactions that are going on.</p>
+<p>Of course Prototype isn&#8217;t perfect, there are still important limitations and issues to keep in mind.  For instance, the target platforms for Prototype are (from the <a href="http://dev.rubyonrails.org/browser/spinoffs/prototype/README">README</a>):</p>
+<blockquote cite="http://dev.rubyonrails.org/browser/spinoffs/prototype/README"><p>
+Microsoft Internet Explorer for Windows, version 6.0 and higher<br />
+Mozilla Firefox 1.0/Mozilla 1.7 and higher<br />
+Apple Safari 1.2 and higher
+</p></blockquote>
+<p>I&#8217;m also curious to see how it stacks up against the new Yahoo User Interface Library.  Either way this is an exciting time in the land of Javascript.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/02/16/im-sold-on-prototype/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

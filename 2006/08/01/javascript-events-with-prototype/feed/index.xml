@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Javascript Events With Prototype	</title>
+	<atom:link href="/2006/08/01/javascript-events-with-prototype/feed/" rel="self" type="application/rss+xml" />
+	<link>/2006/08/01/javascript-events-with-prototype/</link>
+	<description></description>
+	<lastBuildDate>Fri, 10 Oct 2008 14:40:23 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Cliff		</title>
+		<link>/2006/08/01/javascript-events-with-prototype/#comment-1466</link>
+
+		<dc:creator><![CDATA[Cliff]]></dc:creator>
+		<pubDate>Fri, 10 Oct 2008 14:40:23 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/08/01/javascript-events-with-prototype/#comment-1466</guid>
+
+					<description><![CDATA[Hi Joseph,
+
+You can actually stop listening. You do:
+$(&quot;myID&quot;).stopObserving();
+Granted, it will stop observing all actions, but sometimes, that&#039;s OK and better than registering all sorts of global variables.]]></description>
+			<content:encoded><![CDATA[<p>Hi Joseph,</p>
+<p>You can actually stop listening. You do:<br />
+$(&#8220;myID&#8221;).stopObserving();<br />
+Granted, it will stop observing all actions, but sometimes, that&#8217;s OK and better than registering all sorts of global variables.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Trucos Prototype, jQuery&#8230; y más &#124; DISEÑO WEB		</title>
+		<link>/2006/08/01/javascript-events-with-prototype/#comment-1465</link>
+
+		<dc:creator><![CDATA[Trucos Prototype, jQuery&#8230; y más &#124; DISEÑO WEB]]></dc:creator>
+		<pubDate>Mon, 05 Mar 2007 20:59:30 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/08/01/javascript-events-with-prototype/#comment-1465</guid>
+
+					<description><![CDATA[[...] Eventos javascript no intrusivos con Prototype [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Eventos javascript no intrusivos con Prototype [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott&#8217;s Blog &#187; Blog Archive &#187; AJAX Edit In Place With Prototype, Version 0.3.0		</title>
+		<link>/2006/08/01/javascript-events-with-prototype/#comment-1464</link>
+
+		<dc:creator><![CDATA[Joseph Scott&#8217;s Blog &#187; Blog Archive &#187; AJAX Edit In Place With Prototype, Version 0.3.0]]></dc:creator>
+		<pubDate>Thu, 03 Aug 2006 18:45:50 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/08/01/javascript-events-with-prototype/#comment-1464</guid>
+
+					<description><![CDATA[[...] April 2004        &#171; Javascript Events With Prototype [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] April 2004        &laquo; Javascript Events With Prototype [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: aNieto2K - &#187; Gestión de eventos en Javascript con Prototype		</title>
+		<link>/2006/08/01/javascript-events-with-prototype/#comment-1463</link>
+
+		<dc:creator><![CDATA[aNieto2K - &#187; Gestión de eventos en Javascript con Prototype]]></dc:creator>
+		<pubDate>Wed, 02 Aug 2006 22:26:03 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/08/01/javascript-events-with-prototype/#comment-1463</guid>
+
+					<description><![CDATA[[...] Si estas pensando en separar tu código HTML del Javascript, el uso de eventos y su control es algo indispensable que tendrás que controlar, Prototype te ayuda a hacerlo. [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Si estas pensando en separar tu código HTML del Javascript, el uso de eventos y su control es algo indispensable que tendrás que controlar, Prototype te ayuda a hacerlo. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

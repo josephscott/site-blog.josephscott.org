@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Blogging &#8211; Joseph Scott</title>
+	<atom:link href="/category/web/blogging/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 25 May 2005 17:46:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>A Feed By Any Other Name</title>
+		<link>/2005/05/25/a-feed-by-any-other-name/</link>
+					<comments>/2005/05/25/a-feed-by-any-other-name/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 25 May 2005 17:46:12 +0000</pubDate>
+				<category><![CDATA[Blogging]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/25/a-feed-by-any-other-name/</guid>
+
+					<description><![CDATA[Marc complains about the branding confusion for feeds. When O&#8217;Reilly decided to only support ATOM feeds they kept getting requests for RSS feeds, not because people were so up in arms that O&#8217;Reilly wasn&#8217;t supporting their preferred format, but because they didn&#8217;t realize that the information they wanted was already available as a feed. I [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://radar.oreilly.com/marc/">Marc</a> complains about the <a href="http://radar.oreilly.com/archives/2005/05/atom_has_a_bran.html">branding confusion for feeds</a>.  When O&#8217;Reilly decided to only support ATOM feeds they kept getting requests for RSS feeds, not because people were so up in arms that O&#8217;Reilly wasn&#8217;t supporting their preferred format, but because they didn&#8217;t realize that the information they wanted was already available as a feed.  I think Marc is right, ATOM suffers from an awareness problem.  For better or for worse many people (especially the less technical) equate RSS with a feed and vis-versa.  So for these folks, if you don&#8217;t have those three letters (RSS) on your feed then you don&#8217;t have a feed.</p>
+<p>The solution that O&#8217;Reilly has decided to take for this awareness problem is to more or less revert back a few years and start plastering those ugly little RSS icons in place of the currently less ugly ATOM icons.  They aren&#8217;t going to make it overly obvious what format the feed is in, this is a good idea.  What I&#8217;d like to see if for the feed links to be a bit more descriptive, like &#8220;blog post feed&#8221; or &#8220;blog comment feed&#8221; or &#8220;comments on this post feed&#8221;.  One of the things that has annoyed with how many sites describe feeds is that they don&#8217;t really describe they at all, instead relying on the format they use as their only meaningful description.  There are so many different bits of information that are made available via feeds now it simply isn&#8217;t good enough to simply go hey, here&#8217;s my feed.  Users need to know what data is included in the feed.</p>
+<p>Personally I&#8217;d love to see this whole feed format terminology more or less go away.  The bulk of the public doesn&#8217;t care if you are using HTML or XHTML for your website, or which version of each, they simply want to know where your website is at.  So let&#8217;s get people asking where your feeds are like they ask for your email address (for which they also don&#8217;t care if you use MS Exchange, Sendmail, Postfix, Qmail or Exim) and your website.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/05/25/a-feed-by-any-other-name/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Google AdSense For Feeds, Now In Beta</title>
+		<link>/2005/05/17/google-adsense-for-feeds-now-in-beta/</link>
+					<comments>/2005/05/17/google-adsense-for-feeds-now-in-beta/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 17 May 2005 22:18:00 +0000</pubDate>
+				<category><![CDATA[Blogging]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/17/google-adsense-for-feeds-now-in-beta/</guid>
+
+					<description><![CDATA[It&#8217;s official now, Google has put their AdSense for Feeds into beta. They&#8217;ve got a FAQ about it, a brief &#8220;best practices&#8221; article and an application to sign up. There will undoubtedly still be those who thing that this is just the worst thing to happen since the dawn of time. I think this is [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>It&#8217;s official now, Google has put their <a href="http://googleblog.blogspot.com/2005/05/feed-me.html">AdSense for Feeds into beta</a>.  They&#8217;ve got a <a href="https://www.google.com/support/adsense/bin/answer.py?answer=20012">FAQ about it</a>, a brief &#8220;<a href="http://www.google.com/support/adsense/bin/answer.py?answer=20134">best practices</a>&#8221; article and an <a href="http://services.google.com/ads_inquiry/aff">application to sign up</a>.</p>
+<p>There will undoubtedly still be those who thing that this is just the worst thing to happen since the dawn of time.  I think this is more or less a natural progression.  Just like many in the entertainment industry (music, movies, tv, radio, etc) didn&#8217;t (or chose not to) see the future coming and find ways to make it work for them, those who fight against this idea are in for a long loosing battle.  Instead of trying to fight it the better road is find ways to make it work for everyone (see iTunes).</p>
+<p>The writing is on the wall, ads in feeds are here, get used to it or get out out of the way.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/05/17/google-adsense-for-feeds-now-in-beta/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Solving The Via Problem</title>
+		<link>/2005/05/06/solving-the-via-problem/</link>
+					<comments>/2005/05/06/solving-the-via-problem/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 07 May 2005 06:27:57 +0000</pubDate>
+				<category><![CDATA[Blogging]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/06/solving-the-via-problem/</guid>
+
+					<description><![CDATA[Being able to link to other pages on the web is one of the things that makes the web work. Citing where the page where your found a link is something of a sub-trend with the explosion of blogging. I&#8217;ve done this myself, giving a link and then mentioning that I came across it via [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Being able to link to other pages on the web is one of the things that makes the web work.  Citing where the page where your found a link is something of a sub-trend with the explosion of blogging.  I&#8217;ve done this myself, giving a link and then mentioning that I came across it via another site.  While I generally refer to this as via, but others (like <a href="http://www.photomatt.net/">PhotoMatt</a>) use the term hat tip.  Either the idea is the same, to indicate were we came across the link.  Unfortunately all of this is rather free form, it is easy enough for people to parse this and see the relationship, but there is nothing beyond that indicate that there is a relationship between the two links.  What we really need is a way in markup to show the relationship.</p>
+<p>Ryan King has a <a href="http://theryanking.com/blog/archives/2005/05/06/hvia/">few ideas</a> on how to deal with this.  He&#8217;s referring to this problem as &#8220;hVia&#8221;.  Go read his write up and on this and come back.  Alright, lets see if I can&#8217;t take this a step further.</p>
+<p>The problem is that we want to indicate how we discovered the page that we are linking to.  There are several ways that we may want to describe how we got this URL.  Ryan uses an example from PhotoMatt about getting a URL via email.  Unfortunately in Ryan&#8217;s example that information isn&#8217;t really encoded in a meaningful way.  It does help style the text a bit, but doesn&#8217;t help us scrape this information and come up a meaningful array of data.  So how about we spell out what want out of a good solution:</p>
+<ol>
+<li>Markup that is easily parsed by computers</li>
+<li>Rendered in a way that is meaningful to people</li>
+<li>Allows for multiple types of references, examples would be (but not necessarily limited to):
+<ul>
+<li>Another URL</li>
+<li>Email</li>
+<li>IM/IRC</li>
+<li>In Person</li>
+</ul>
+</li>
+<li>Easy to style with CSS</li>
+</ol>
+<p>With all this in mind I&#8217;m going to through out a couple of possibilities.  Think of these as part of a brain storming session as opposed to firm suggestions as to the &#8220;right way&#8221; to do this.</p>
+<ol>
+<li><strong>Cite and ID</strong><br />
+Add a unique id attribute to your link and use in the cite tag as a reference.  Something like this:</p>
+<p>
+&lt;a id=&#8221;unique_ref_id&#8221; href=&#8221;http://www.example.com/&#8221;&gt;Neat Web Site&lt;/a&gt;<br />
+via &lt;cite refid=&#8221;unique_ref_id&#8221;&gt;Email from Bob&lt;/cite&gt;
+</p>
+<p>This meets most of our qualifications: it is no more complex than parsing existing (X)HTML, allows text to flow nicely for human readers, could be used for any type of reference (albeit in a free form manner) and allows for easy styling.  The weakest part of this format is that the type of reference isn&#8217;t spelled out, so parsers would have to try to make intelligent guesses about what the reference description is.
+</li>
+<li><strong>Cite, ID and Type</strong><br />
+One way to improve upon the first method is to explicitly state why type of reference we are citing.  Something like this:</p>
+<p>
+&lt;a id=&#8221;unique_ref_id&#8221; href=&#8221;http://www.example.com/&#8221;&gt;Neat Web Site&lt;/a&gt;<br />
+via &lt;cite refid=&#8221;unique_ref_id&#8221;  type=&#8221;email&#8221;&gt;Email from Bob&lt;/cite&gt;
+</p>
+<p>The only addition is the type element to the cite tag, which states outright how we were informed about the link.  In addition to email we could have used any of the types listed above.  With this hint, the data marked up with the cite tag could be treated in a semi-intelligent way.  If the type was a URL then we could aggregate that data and follow propagation of links to a site and who was most referenced.
+</li>
+</ol>
+<p>It&#8217;s getting late some I&#8217;m going to wrap this up for now.  Hopefully this gives folks something to think about.  I&#8217;d like to see more discussion about how do this successfully, so that all of our goals are met.</p>
+<p><strong>UPDATE 1:20am 7 May 2005</strong>: I forgot to mention, this is one of the complaints I have about <a href="http://del.icio.us/">del.icio.us</a>, when adding a bookmark you should be able to enter a via reference.  If there is going to be a serious discussion about how to deal with via references, then del.icio.us should at least be a consideration.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/05/06/solving-the-via-problem/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>AOL Blogs</title>
+		<link>/2005/05/06/aol-blogs/</link>
+					<comments>/2005/05/06/aol-blogs/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 06 May 2005 19:16:50 +0000</pubDate>
+				<category><![CDATA[Blogging]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/06/aol-blogs/</guid>
+
+					<description><![CDATA[Not to be left out, AOL is offering free blogs. If you have an AIM screen name you can create one in just a couple of steps. The process reminded me a lot of the steps to create an account on MSN Spaces. All of these free blog services remind me of all of the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Not to be left out, <a href="http://news.com.com/AOL+offers+free+blog+services+to+general+public/2100-1038_3-5697824.html?part=rss&amp;tag=5697824&amp;subj=news">AOL is offering free blogs</a>.  If you have an AIM screen name you can create one in just a couple of steps.  The process reminded me a lot of the steps to create an account on <a href="http://spaces.msn.com/">MSN Spaces</a>.</p>
+<p>All of these free blog services remind me of all of the old free web site providers that used to be around.  This certainly seems like the next logical step, most people would sign up for a free website and do nothing with it.  Now they can sign up for a free blog and do nothing with it <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Almost forgot, check out <a href="http://journals.aol.com/veryrandomid/blog/">my free AOL blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/05/06/aol-blogs/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Back To Del.icio.us</title>
+		<link>/2005/05/05/back-to-delicious/</link>
+					<comments>/2005/05/05/back-to-delicious/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 05 May 2005 21:55:22 +0000</pubDate>
+				<category><![CDATA[Blogging]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/05/back-to-delicious/</guid>
+
+					<description><![CDATA[So I&#8217;m giving del.icio.us another try as my primary repository for bookmarks. If you are interested in keeping up with what I&#8217;ve been bookmarking you can subscribe to my del.icio.us RSS feed or simply browse through my del.icio.us bookmarks. One of these days I setup a WordPress plugin to show the most recent added bookmarks [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>So I&#8217;m giving <a href="http://del.icio.us/">del.icio.us</a> another try as my primary repository for bookmarks.  If you are interested in keeping up with what I&#8217;ve been bookmarking you can subscribe to my <a href="http://del.icio.us/rss/josephscott">del.icio.us RSS feed</a> or simply <a href="http://del.icio.us/josephscott">browse through my del.icio.us bookmarks</a>.  One of these days I setup a <a href="http://www.wordpress.org/">WordPress</a> plugin to show the most recent added bookmarks here, until then the RSS feed will have to do.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/05/05/back-to-delicious/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>No Ads In PubSub Feeds, Yet</title>
+		<link>/2005/04/29/no-ads-in-pubsub-feeds-yet/</link>
+					<comments>/2005/04/29/no-ads-in-pubsub-feeds-yet/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 30 Apr 2005 01:45:49 +0000</pubDate>
+				<category><![CDATA[Blogging]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/04/29/no-ads-in-pubsub-feeds-yet/</guid>
+
+					<description><![CDATA[It turns out that I was mistaken the other day when I mentioned that I had spotted ads in my PubSub feed. While there are ads in the feed, they aren&#8217;t from PubSub, they are part of the original RSS feed that PubSub had picked up on, in this case it was from Freshmeat. This [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>It turns out that I was mistaken the other day when I mentioned that <a href="http://joseph.randomnetworks.com/archives/2005/04/27/ads-in-feeds-the-flood-gates-are-opening/">I had spotted ads in my PubSub feed</a>.  While there are ads in the feed, they aren&#8217;t from <a href="http://www.pubsub.com/">PubSub</a>, they are part of the original RSS feed that PubSub had picked up on, in this case it was from <a href="http://www.freshmeat.net/">Freshmeat</a>.</p>
+<p>This raises an interesting issue for PubSub, if they decide to show ads in their feeds (why not, most everyone else will start doing it), how am I as a regular user supposed to be to tell the difference between an ad placed by them and one that was part of the original data (in this case an RSS entry)?  They could certainly include some formatting that would make it obvious, but then that would also allow feed readers to also easily distinguish the ad from the data and hide the ad.  Just more to think about when it comes to ads in feeds.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/04/29/no-ads-in-pubsub-feeds-yet/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Ads In Feeds, The Flood Gates Are Opening</title>
+		<link>/2005/04/27/ads-in-feeds-the-flood-gates-are-opening/</link>
+					<comments>/2005/04/27/ads-in-feeds-the-flood-gates-are-opening/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 27 Apr 2005 21:05:11 +0000</pubDate>
+				<category><![CDATA[Blogging]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/04/27/ads-in-feeds-the-flood-gates-are-opening/</guid>
+
+					<description><![CDATA[It looks the days of most feeds having no ads are quickly coming to a close. I just noticed Google AdSense ads in the feed from The Unofficial Apple Weblog (TUAW). As has already been noted, Google been letting a few sites test out this new feature recently. When Google turns on this feature for [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>It looks the days of most feeds having no ads are quickly coming to a close.  I just noticed <a href="https://www.google.com/adsense/">Google AdSense</a> ads in the feed from <a href="http://www.tuaw.com/">The Unofficial Apple Weblog</a> (TUAW).  As has already been noted, Google been letting a few sites test out this new feature recently.  When Google turns on this feature for all AdSense users I expect the flood gates will be thrown open and feeds without ads will quickly become the minority.  Just this week I&#8217;ve gone from one of the 80+ feeds that I read having ads to four.  I don&#8217;t know how long Google is going leave this feature in the testing phase, but I&#8217;d expect that by the end of May ad free feeds will become pretty rare.</p>
+<p>When you combine the idea of <a href="http://www.google.com/">Google</a> allowing ads in feeds and their <a href="http://www.urchin.com/company/news/03282005.html">purchase</a> of <a href="http://www.urchin.com/">Urchin</a> you end up with a strong <a href="http://www.feedburner.com/">FeedBurner</a> competitor.</p>
+<p><strong>UPDATE 5:00pm 27 Apr 2005</strong>: Now my <a href="http://www.pubsub.com/">PubSub</a> feed has AdSense ads.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/04/27/ads-in-feeds-the-flood-gates-are-opening/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Ads In Slashdot Feeds, More Info</title>
+		<link>/2005/04/27/ads-in-slashdot-feeds-more-info/</link>
+					<comments>/2005/04/27/ads-in-slashdot-feeds-more-info/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 27 Apr 2005 16:34:19 +0000</pubDate>
+				<category><![CDATA[Blogging]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/04/27/ads-in-slashdot-feeds-more-info/</guid>
+
+					<description><![CDATA[I started thinking that the ads in Slashdot feeds I noticed yesterday may have just been a fluke since they disappeared as suddenly as they showed up yesterday. After looking at the Slashdot feed in Bloglines this morning though, it appears that the ads only show up in specific entries. It isn&#8217;t clear how they [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I started thinking that the <a href="http://joseph.randomnetworks.com/archives/2005/04/26/ads-in-slashdot-feeds/">ads in Slashdot feeds</a> I noticed yesterday may have just been a fluke since they disappeared as suddenly as they showed up yesterday.  After looking at the <a href="http://slashdot.org/">Slashdot</a> feed in <a href="http://www.bloglines.com/">Bloglines</a> this morning though, it appears that the ads only show up in specific entries.  It isn&#8217;t clear how they are determining which entries should have ads, but it is clear that at this point there are not ads for each entry.</p>
+<p>So I copied the URL for the one ad I came across this morning on the story about <a href="http://apple.slashdot.org/article.pl?sid=05/04/27/0615237&amp;from=rss">iTunes coming to Australia</a>.  It was run through <a href="http://www.feedstermedia.com/">feedstermedia</a> which in turn ran it through <a href="http://www.doubleclick.com/us/">DoubleClick</a> which then pointed to page on <a href="http://www.sun.com/">Sun</a>&#8216;s website (which is what the the ad was advertising).</p>
+<p>If you go to the feedstermedia.com website you&#8217;ll see there isn&#8217;t really much there.  They appear to running <a href="http://phpadsnew.com/">phpAdsNew</a> manage the feed ads.  The only other interesting tidbit was that in addition to Slashdot, <a href="http://freshmeat.net/">Freshmeat</a> and <a href="http://www.sf.net/">SourceForge</a> also have some data there.  Which points us to the <a href="http://www.ostg.com/">Open Source Technology Group</a> (OSTG); which owns Slashdot, Freshmeat and SourceForge.  None of this is really surprising, just interesting.  It looks like there may come a time when every website run by OSTG will have ads in their feeds.</p>
+<p>The general idea of ads in feeds appears to be ready to explode, with <a href="http://chris.pirillo.com/blog/_archives/2005/4/25/620873.html">Google AdSense testing them out</a>.  Talk about timing.</p>
+<p><strong>UPDATE 1:30pm 27 Apr 2005</strong>: I&#8217;m now getting ads in the Freshmeat feed that I subscribe to.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/04/27/ads-in-slashdot-feeds-more-info/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Ads In Slashdot Feeds</title>
+		<link>/2005/04/26/ads-in-slashdot-feeds/</link>
+					<comments>/2005/04/26/ads-in-slashdot-feeds/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 26 Apr 2005 17:44:52 +0000</pubDate>
+				<category><![CDATA[Blogging]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/04/26/ads-in-slashdot-feeds/</guid>
+
+					<description><![CDATA[Advertising on the web is more or less an accepted fact of life. Things have to get paid for some how and often that &#8220;how&#8221; is via advertising (at least in part). With more and more content being viewed via feeds (RSS &#38; Atom) the advertising discussion has been focusing more on how to advertise [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Advertising on the web is more or less an accepted fact of life.  Things have to get paid for some how and often that &#8220;how&#8221; is via advertising (at least in part).  With more and more content being viewed via feeds (RSS &amp; Atom) the advertising discussion has been focusing more on how to advertise in feeds in addition to websites.  The debate over advertising in feeds is going along in much the same way that advertising on websites did.</p>
+<p>At first there was something of a backlash to sites with advertising, that they had some how sold out and should be shunned.  Gradually this attitude has drifted away, with only those who really want to avoid ads still making use of browser plugins or proxy servers that filter out ads.  It is still fairly early in feed advertising game and we are still in the backlash stage.  Most feeds (at least the ones I read) don&#8217;t have advertising, but there are some.  Those who are doing it (like <a href="http://www.russellbeattie.com/notebook/">Russell</a>) often use <a href="http://www.feedburner.com/fb/a/home">FeedBurner</a> to insert ads.</p>
+<p>That seems to have changed now.  <a href="http://slashdot.org/">Slashdot</a>, the old man of geek sites, has started including ads in their feeds.  With more than 30,000 people subscribed to Slashdot on <a href="http://www.bloglines.com/">Bloglines</a>, the number of people exposed to feed advertising is going to increase significantly.  This will likely increase the heat in the debate over advertising in feeds.  In the end I believe that ads in feeds will become less of an issue and more of an accepted norm for most people.</p>
+<p>Much of the discussion about ads in feeds will continue to focus on how to do it.  For websites <a href="https://www.google.com/adsense/">Google AdSense</a> pretty much rules the market.  This is a rather unfortunate situation, I&#8217;d like to see more competition in this area.  There is the possibility that <a href="http://publisher.yahoo.com/">Yahoo! Publisher Network</a> will provide this, but so far this isn&#8217;t an available option the same way that AdSense is.  So that seems to leave most of us with FeedBurner as the only serious option for feed advertising.  I don&#8217;t think that will be the case in the long term.  In the long term I suspect that FeedBurner will get absorbed by someone else with much deeper pockets.  Although the likely targets might seem to be Google (combined with AdSense) or Yahoo! (combined with their Publisher Network), I don&#8217;t think it will be either one.  Although both Google and Yahoo! should make feed ads an option in using their services.</p>
+<p>I think the mostly likely buyer is someone much closer to the feed end of the equation.  I&#8217;m thinking of Bloglines (now owned by <a href="http://www.ask.com/">Jeeves</a>) as one of the most likely to buy out FeedBurner.  This would actually give Bloglines a business model (which so far seems to consist of simply selling out to someone else) and would be a good fit for FeedBurner because Bloglines already gets the idea of feeds and how they work.  I&#8217;m not going to bet money on it, but this is where my gut says FeedBurner should be.</p>
+<p>Speaking of Bloglines, I never did get my <a href="http://blog.ask.com/2005/02/welcome_bloglin.html">I love Bloglines</a> shirt.</p>
+<p><strong>UPDATE 3:20pm 26 Apr 2005</strong>: I&#8217;m not getting the ads in the Slashdot feed that I read via Bloglines anymore.  Perhaps this was just an experiment?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/04/26/ads-in-slashdot-feeds/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Bloglines Outage</title>
+		<link>/2005/04/16/bloglines-outage/</link>
+					<comments>/2005/04/16/bloglines-outage/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 16 Apr 2005 16:48:45 +0000</pubDate>
+				<category><![CDATA[Blogging]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/04/16/bloglines-outage/</guid>
+
+					<description><![CDATA[Now I know why I couldn&#8217;t login to Bloglines last night.]]></description>
+										<content:encoded><![CDATA[<p>Now I know why I <a href="http://www.bloglines.com/about/news#83">couldn&#8217;t login to Bloglines last night</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/04/16/bloglines-outage/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

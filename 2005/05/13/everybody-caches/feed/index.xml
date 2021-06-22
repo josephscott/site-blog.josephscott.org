@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Everybody Caches	</title>
+	<atom:link href="/2005/05/13/everybody-caches/feed/" rel="self" type="application/rss+xml" />
+	<link>/2005/05/13/everybody-caches/</link>
+	<description></description>
+	<lastBuildDate>Tue, 07 Jun 2005 21:05:53 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Dennis Trizna		</title>
+		<link>/2005/05/13/everybody-caches/#comment-805</link>
+
+		<dc:creator><![CDATA[Dennis Trizna]]></dc:creator>
+		<pubDate>Tue, 07 Jun 2005 21:05:53 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/13/everybody-caches/#comment-805</guid>
+
+					<description><![CDATA[As a SuSE newbe, we ran into the following problem dealing with data acquisition card under development, based on the PLX housekeeping chip. The problem appears to be associated with the OS and not our code, as we release memory at close. To wit:
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+My  CS major Co-op students have developed a C++ program that works just fine. We use either one or two DMA buffers (two different programs - one uses hyperthreading) that set aside just enough memory for a DMA transfer for a single pulse echo,  512  2-byte words. When I watch the hard disk light operate during acquisition, it blinks about every five seconds, suggesting caching going on. We collect data for say 15 minutes in the extreme case, creating data files of 800 MB or so. The computer has 1 GB of memory. The first aqusition goes just fine. Checking the cache buildup during the acqusition, at it appears that the OS sets up a new block of cache for each DMA transfer, which I guess makes sense from its perspective, but then uses 800 MB of memory in the process. When the program runs a second time and builds another 800 MB file, I get gaps in the output data, as eveidence by the image we create, losing azimuth sectors of data, , suggesting trigger drops. My take on this is that it occurs when the OS runs out of fresh memory for caching, then has to go back and release previous cache, ignoring trigers while it releases cache and thus missing new data transfers.
+
+Our solution has been to simply reboot the system after each acqusition.The collection occurs on the hr/hf-hr using  CRON. You don&#039;t even have to log on, and the collection runs regularly, then reboots. Clearly this is a clumsy workaround. Any sugestions?]]></description>
+			<content:encoded><![CDATA[<p>As a SuSE newbe, we ran into the following problem dealing with data acquisition card under development, based on the PLX housekeeping chip. The problem appears to be associated with the OS and not our code, as we release memory at close. To wit:<br />
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::<br />
+My  CS major Co-op students have developed a C++ program that works just fine. We use either one or two DMA buffers (two different programs &#8211; one uses hyperthreading) that set aside just enough memory for a DMA transfer for a single pulse echo,  512  2-byte words. When I watch the hard disk light operate during acquisition, it blinks about every five seconds, suggesting caching going on. We collect data for say 15 minutes in the extreme case, creating data files of 800 MB or so. The computer has 1 GB of memory. The first aqusition goes just fine. Checking the cache buildup during the acqusition, at it appears that the OS sets up a new block of cache for each DMA transfer, which I guess makes sense from its perspective, but then uses 800 MB of memory in the process. When the program runs a second time and builds another 800 MB file, I get gaps in the output data, as eveidence by the image we create, losing azimuth sectors of data, , suggesting trigger drops. My take on this is that it occurs when the OS runs out of fresh memory for caching, then has to go back and release previous cache, ignoring trigers while it releases cache and thus missing new data transfers.</p>
+<p>Our solution has been to simply reboot the system after each acqusition.The collection occurs on the hr/hf-hr using  CRON. You don&#8217;t even have to log on, and the collection runs regularly, then reboots. Clearly this is a clumsy workaround. Any sugestions?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

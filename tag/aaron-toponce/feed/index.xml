@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>aaron-toponce &#8211; Joseph Scott</title>
+	<atom:link href="/tag/aaron-toponce/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 03 Feb 2016 18:11:26 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Net Cost of Bitcoin Mining</title>
+		<link>/2016/02/03/net-cost-of-bitcoin-mining/</link>
+					<comments>/2016/02/03/net-cost-of-bitcoin-mining/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 03 Feb 2016 18:11:26 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[aaron-toponce]]></category>
+		<category><![CDATA[bitcoin]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15039</guid>
+
+					<description><![CDATA[With some rough math Aaron Toponce comes up with an estimate for Bitcoin Mining Rate and Waste: At $0.15 USD per kWh, that&#8217;s $609 spent on electricity per Bitcoin mined. Bitcoin is currently trading at $376/BTC. Using the ~$600 cost in electricity for current mining rates, Bitcoin would need to go back to the highs [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>With some rough math Aaron Toponce comes up with an estimate for <a href="https://pthree.org/2016/01/30/bitcoin-mining-rate-and-waste/">Bitcoin Mining Rate and Waste</a>:</p>
+<blockquote><p>
+At $0.15 USD per kWh, that&#8217;s $609 spent on electricity per Bitcoin mined. Bitcoin is currently trading at $376/BTC.
+</p></blockquote>
+<p>Using the ~$600 cost in electricity for current mining rates, Bitcoin would need to go back to the highs of <a href="https://www.coinbase.com/charts">2013 and 2014</a> to have a net positive value.</p>
+<p>Aaron is very direct in his conclusion:</p>
+<blockquote><p>
+I would argue that Bitcoin is the worst idea to come out of Computer Science in the history of mankind.
+</p></blockquote>
+<p>If this depends on the price per Bitcoin, then this conclusion needs to have more flexibility.  It may be that we are too early in the history of Bitcoin to write a conclusion.</p>
+<p>In terms of overall issues with Bitcoin, I don&#8217;t think this one is big enough by itself to kill Bitcoin.  Combined with other issues though, it may prove unsustainable over all.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/02/03/net-cost-of-bitcoin-mining/feed/</wfw:commentRss>
+			<slash:comments>7</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

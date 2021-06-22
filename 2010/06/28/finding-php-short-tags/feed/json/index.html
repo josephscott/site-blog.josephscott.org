@@ -1,0 +1,181 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2010/06/28/finding-php-short-tags/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2010/06/28/finding-php-short-tags/",
+    "feed_url": "https://blog.josephscott.org/2010/06/28/finding-php-short-tags/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: Finding PHP Short Tags",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2010/06/28/finding-php-short-tags/#comment-84402",
+            "url": "https://blog.josephscott.org/2010/06/28/finding-php-short-tags/#comment-84402",
+            "content_html": "In current versions of PHP, short open tags are explicitly allowed for the simple echo case: <code>&lt;?=$something?&gt;</code>, but not in other cases. To find disallowed short open tags (i.e., short tags other than the above), use this: <code>grep -rnl \"&lt;?[^p=]\\|&lt;?$\" *</code>. This borrows from Erik Olson's comment above to find short open tags at the end of a line, but doesn't find simple echo short tags, which are permitted.\r\n\r\nTRiG.",
+            "content_text": "In current versions of PHP, short open tags are explicitly allowed for the simple echo case: &lt;?=$something?&gt;, but not in other cases. To find disallowed short open tags (i.e., short tags other than the above), use this: grep -rnl \"&lt;?[^p=]\\|&lt;?$\" *. This borrows from Erik Olson's comment above to find short open tags at the end of a line, but doesn't find simple echo short tags, which are permitted.\r\n\r\nTRiG.",
+            "date_published": "2017-04-12T10:06:08-06:00",
+            "authors": [
+                {
+                    "name": "Timothy (TRiG)",
+                    "url": "https://timothy.green.name",
+                    "avatar": "https://secure.gravatar.com/avatar/a60b2f622230ff8eb06f31b3eb035206?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Timothy (TRiG)",
+                "url": "https://timothy.green.name",
+                "avatar": "https://secure.gravatar.com/avatar/a60b2f622230ff8eb06f31b3eb035206?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2010/06/28/finding-php-short-tags/#comment-37993",
+            "url": "https://blog.josephscott.org/2010/06/28/finding-php-short-tags/#comment-37993",
+            "content_html": "The only problem I find with your regex when I try it, is that it doesn't find if the line ends in \"&lt;?&quot; (which happens if that&#039;s the whole line, a common occurrence). It&#039;s not counting the newline as &quot;not p&quot;.  You&#039;ll want something more like this:\r\n\r\ngrep -rn &quot;&lt;?[^p]\\|&lt;?$&quot; *",
+            "content_text": "The only problem I find with your regex when I try it, is that it doesn't find if the line ends in \"&lt;?&quot; (which happens if that&#039;s the whole line, a common occurrence). It&#039;s not counting the newline as &quot;not p&quot;.  You&#039;ll want something more like this:\r\n\r\ngrep -rn &quot;&lt;?[^p]\\|&lt;?$&quot; *",
+            "date_published": "2017-03-06T10:25:38-07:00",
+            "authors": [
+                {
+                    "name": "Erik Olson",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/4927ddd76d6b2ae6ba5b2640c722541c?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Erik Olson",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/4927ddd76d6b2ae6ba5b2640c722541c?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2010/06/28/finding-php-short-tags/#comment-3467",
+            "url": "https://blog.josephscott.org/2010/06/28/finding-php-short-tags/#comment-3467",
+            "content_html": "[...] Scott has a simpler example that works without the -P flag. If you&#8217;re building WordPress themes, the Theme Check [...]",
+            "content_text": "[...] Scott has a simpler example that works without the -P flag. If you&#8217;re building WordPress themes, the Theme Check [...]",
+            "date_published": "2012-11-20T23:37:33-07:00",
+            "authors": [
+                {
+                    "name": "Reminder: Don&#8217;t Use the Short PHP Open Tag &#8211; &mdash; Konstantin KovsheninKonstantin Kovshenin",
+                    "url": "http://kovshenin.com/2012/reminder-dont-use-the-short-php-open-tag/",
+                    "avatar": false
+                }
+            ],
+            "author": {
+                "name": "Reminder: Don&#8217;t Use the Short PHP Open Tag &#8211; &mdash; Konstantin KovsheninKonstantin Kovshenin",
+                "url": "http://kovshenin.com/2012/reminder-dont-use-the-short-php-open-tag/",
+                "avatar": false
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2010/06/28/finding-php-short-tags/#comment-3465",
+            "url": "https://blog.josephscott.org/2010/06/28/finding-php-short-tags/#comment-3465",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2010/06/28/finding-php-short-tags/#comment-3463\">Aaron Pepper</a>.\n\nThe situation where you just need to do a simple echo would be nicer, but could potentially be accomplished with &lt;?php= $some_var ?&gt; - hopefully PHP core will support that syntax one day.",
+            "content_text": "In reply to Aaron Pepper.\n\nThe situation where you just need to do a simple echo would be nicer, but could potentially be accomplished with &lt;?php= $some_var ?&gt; - hopefully PHP core will support that syntax one day.",
+            "date_published": "2010-08-02T08:47:29-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2010/06/28/finding-php-short-tags/#comment-3463",
+            "url": "https://blog.josephscott.org/2010/06/28/finding-php-short-tags/#comment-3463",
+            "content_html": "I like to use short tags for personal and client work, when I know I have full control of the hosting environment. I'll use full php tags for public and open source code.\n\nIt kinda sucks that short tags aren't enabled by default.  is so much nicer than . Less typing, and readability is better.",
+            "content_text": "I like to use short tags for personal and client work, when I know I have full control of the hosting environment. I'll use full php tags for public and open source code.\n\nIt kinda sucks that short tags aren't enabled by default.  is so much nicer than . Less typing, and readability is better.",
+            "date_published": "2010-07-31T16:36:51-06:00",
+            "authors": [
+                {
+                    "name": "Aaron Pepper",
+                    "url": "http://peps.ca",
+                    "avatar": "https://secure.gravatar.com/avatar/c8f1d242b31debfbd0a349e8ba63e316?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Aaron Pepper",
+                "url": "http://peps.ca",
+                "avatar": "https://secure.gravatar.com/avatar/c8f1d242b31debfbd0a349e8ba63e316?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2010/06/28/finding-php-short-tags/#comment-3462",
+            "url": "https://blog.josephscott.org/2010/06/28/finding-php-short-tags/#comment-3462",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2010/06/28/finding-php-short-tags/#comment-3461\">Lance Willett</a>.\n\nNo problem, happy to hear it helped.",
+            "content_text": "In reply to Lance Willett.\n\nNo problem, happy to hear it helped.",
+            "date_published": "2010-07-03T21:56:54-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2010/06/28/finding-php-short-tags/#comment-3461",
+            "url": "https://blog.josephscott.org/2010/06/28/finding-php-short-tags/#comment-3461",
+            "content_html": "Thanks for the tip, Joseph. Very useful\u2014I've added it to my arsenal of theme testing checks.",
+            "content_text": "Thanks for the tip, Joseph. Very useful\u2014I've added it to my arsenal of theme testing checks.",
+            "date_published": "2010-07-02T11:21:13-06:00",
+            "authors": [
+                {
+                    "name": "Lance Willett",
+                    "url": "http://simpledream.net/",
+                    "avatar": "https://secure.gravatar.com/avatar/ddc339d9565077190a08a9e5da7a5f44?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Lance Willett",
+                "url": "http://simpledream.net/",
+                "avatar": "https://secure.gravatar.com/avatar/ddc339d9565077190a08a9e5da7a5f44?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2010/06/28/finding-php-short-tags/#comment-3460",
+            "url": "https://blog.josephscott.org/2010/06/28/finding-php-short-tags/#comment-3460",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2010/06/28/finding-php-short-tags/#comment-3459\">Ant</a>.\n\nThe &lt;?php tags are the only ones that you can be sure will work across all PHP installs.  That's the big one for me.",
+            "content_text": "In reply to Ant.\n\nThe &lt;?php tags are the only ones that you can be sure will work across all PHP installs.  That's the big one for me.",
+            "date_published": "2010-06-29T13:24:29-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2010/06/28/finding-php-short-tags/#comment-3459",
+            "url": "https://blog.josephscott.org/2010/06/28/finding-php-short-tags/#comment-3459",
+            "content_html": "I use &lt;?php tags, but what is problem with shorttags? I never found explanation.",
+            "content_text": "I use &lt;?php tags, but what is problem with shorttags? I never found explanation.",
+            "date_published": "2010-06-29T09:37:50-06:00",
+            "authors": [
+                {
+                    "name": "Ant",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/664e9bfc76df09b839e730bcfc72207e?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Ant",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/664e9bfc76df09b839e730bcfc72207e?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

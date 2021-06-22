@@ -1,0 +1,67 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/raid/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/raid/",
+    "feed_url": "https://blog.josephscott.org/tag/raid/feed/json/",
+    "language": "en-US",
+    "title": "raid &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2006/03/07/apple-as-a-storage-vendor/",
+            "url": "https://blog.josephscott.org/2006/03/07/apple-as-a-storage-vendor/",
+            "title": "Apple As A Storage Vendor",
+            "content_html": "<p>Om <a href=\"http://gigaom.com/2006/03/07/in-storage-apple-is-shining/\">comments on Apple&#8217;s storage sales</a> of the <a href=\"http://www.apple.com/xserve/raid/\">Xserve RAID</a> unit.  Although sales of the unit seem to be do well, especially considering that this was a market that Apple has zero presence in only a few years ago, many analysts are frowning on Apple for not doing enough to promote these.</p>\n<p>We&#8217;ve got a couple of Xserve RAID units at work (one with an Xserve G5, the other plugged in to two Dell 2850s) and I&#8217;m definitely a fan.  Right now you can <a href=\"http://store.apple.com/1-800-MY-APPLE/WebObjects/AppleStore.woa/6214002/wo/sp3mbtHRlYPa2eTYA9Y17EiOTX0/0.SLID?mco=15559A3&amp;nclm=XserveRAID\">order up an Xserve RAID</a> with all of the options for under $18,000.  This is simply amazing for 7TB in a RAID box.  Sure you could go buy 14 500GB drives from NewEgg for less than $5,000, but what would you put them <img src=\"https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png\" alt=\"\ud83d\ude42\" class=\"wp-smiley\" style=\"height: 1em; max-height: 1em;\" /></p>\n<p>I think Apple is still trying to figure out how to market their server and storage products.  I guess the folks like me who see these things and start to drool aren&#8217;t as common as the folks itching to buy the consumer level product.  More than once I&#8217;ve gone into an Apple store and told them they need to be showing off their server and storage products, not just the home systems.  My requests obviously haven&#8217;t had any impact.</p>\n",
+            "content_text": "Om comments on Apple&#8217;s storage sales of the Xserve RAID unit.  Although sales of the unit seem to be do well, especially considering that this was a market that Apple has zero presence in only a few years ago, many analysts are frowning on Apple for not doing enough to promote these.\nWe&#8217;ve got a couple of Xserve RAID units at work (one with an Xserve G5, the other plugged in to two Dell 2850s) and I&#8217;m definitely a fan.  Right now you can order up an Xserve RAID with all of the options for under $18,000.  This is simply amazing for 7TB in a RAID box.  Sure you could go buy 14 500GB drives from NewEgg for less than $5,000, but what would you put them \nI think Apple is still trying to figure out how to market their server and storage products.  I guess the folks like me who see these things and start to drool aren&#8217;t as common as the folks itching to buy the consumer level product.  More than once I&#8217;ve gone into an Apple store and told them they need to be showing off their server and storage products, not just the home systems.  My requests obviously haven&#8217;t had any impact.",
+            "date_published": "2006-03-07T17:05:39-07:00",
+            "date_modified": "2006-03-07T17:05:39-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "apple",
+                "raid",
+                "xserve",
+                "josephscott"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2004/09/27/rebuild-ide-mirror-on-freebsd/",
+            "url": "https://blog.josephscott.org/2004/09/27/rebuild-ide-mirror-on-freebsd/",
+            "title": "Rebuild IDE Mirror On FreeBSD",
+            "content_html": "<p>I&#8217;ve got a test system at work with a <a href=\"http://www.promise.com/\">Promise</a> ATA RAID controller in it.  When I first put the card and drives in it I used the BIOS on the card to establish a mirror.  This mirror took awhile to do (two 250gig IDE drives), but once it was done it worked fine.  FreeBSD made use of it without any complaints.</p>\n<p>Today I thought it would be nice to see how hard it is to rebuild the mirror, so powered off the system and pulled one of the drives.  The BIOS on the card alerted me during boot up that the mirror had an error, but I wanted to be able to still use the system while the mirror was rebuilding (since it takes so long).  That led me to <a href=\"http://www.freebsd.org/cgi/man.cgi?query=atacontrol&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+5.2.1-RELEASE+and+Ports&amp;format=html\">atacontrol</a>.  Unfortunately the man page wasn&#8217;t enough for me to figure how to get the mirror to rebuild.</p>\n<p>Some more time on Google and I came across post on the FreeBSD -current email list, <a href=\"http://groups.google.com/groups?q=atacontrol+rebuild,+how&amp;hl=en&amp;lr=&amp;ie=UTF-8&amp;group=muc.lists.freebsd.current&amp;c2coff=1&amp;selm=41365CA5.2000300%40cs.unisa.edu.au&amp;rnum=1\">Re: atacontrol rebuild, how?</a>.  This post gave me the extra bits of info that I needed to getting the rebuild going:</p>\n<blockquote><p>\nPerhaps something worth trying is the following &#8211; It&#8217;s what I have to do<br />\nto get the promisc card I use to rebuild:</p>\n<p>    &#8211; Identify the channel the drive is on (ie ad6 on ata3)</p>\n<p>atacontrol detach ata3<br />\natacontrol attach ata3<br />\natacontrol addspare ar0 ad6<br />\natacontrol rebuild</p>\n<p>The command exits straight away but if you run: atacontrol status ar0<br />\nI get a &#8216;REBUILDING 0%&#8217; message</p>\n<p>Also checking the ps output shows a rebuild thread.\n</p></blockquote>\n<p>I&#8217;d tried the detach and attach steps before, but hadn&#8217;t tried addspare.  That was the missing step, after that the rebuild started.  It is still going to take a long time, but at least the system is usable while it is rebuilding.  I haven&#8217;t tried it yet, but this should work fine for boot partitions also.  Just remember to properly identify which drive failed <img src=\"https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png\" alt=\"\ud83d\ude42\" class=\"wp-smiley\" style=\"height: 1em; max-height: 1em;\" /></p>\n",
+            "content_text": "I&#8217;ve got a test system at work with a Promise ATA RAID controller in it.  When I first put the card and drives in it I used the BIOS on the card to establish a mirror.  This mirror took awhile to do (two 250gig IDE drives), but once it was done it worked fine.  FreeBSD made use of it without any complaints.\nToday I thought it would be nice to see how hard it is to rebuild the mirror, so powered off the system and pulled one of the drives.  The BIOS on the card alerted me during boot up that the mirror had an error, but I wanted to be able to still use the system while the mirror was rebuilding (since it takes so long).  That led me to atacontrol.  Unfortunately the man page wasn&#8217;t enough for me to figure how to get the mirror to rebuild.\nSome more time on Google and I came across post on the FreeBSD -current email list, Re: atacontrol rebuild, how?.  This post gave me the extra bits of info that I needed to getting the rebuild going:\n\nPerhaps something worth trying is the following &#8211; It&#8217;s what I have to do\nto get the promisc card I use to rebuild:\n    &#8211; Identify the channel the drive is on (ie ad6 on ata3)\natacontrol detach ata3\natacontrol attach ata3\natacontrol addspare ar0 ad6\natacontrol rebuild\nThe command exits straight away but if you run: atacontrol status ar0\nI get a &#8216;REBUILDING 0%&#8217; message\nAlso checking the ps output shows a rebuild thread.\n\nI&#8217;d tried the detach and attach steps before, but hadn&#8217;t tried addspare.  That was the missing step, after that the rebuild started.  It is still going to take a long time, but at least the system is usable while it is rebuilding.  I haven&#8217;t tried it yet, but this should work fine for boot partitions also.  Just remember to properly identify which drive failed",
+            "date_published": "2004-09-27T15:27:00-06:00",
+            "date_modified": "2004-09-27T15:27:00-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "atacontrol",
+                "FreeBSD",
+                "ide",
+                "mirror",
+                "raid",
+                "How To",
+                "OS"
+            ]
+        }
+    ]
+}

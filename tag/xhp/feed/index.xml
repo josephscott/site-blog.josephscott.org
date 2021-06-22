@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>xhp &#8211; Joseph Scott</title>
+	<atom:link href="/tag/xhp/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 18 Sep 2015 14:30:14 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Context Escaping</title>
+		<link>/2015/09/18/context-escaping/</link>
+					<comments>/2015/09/18/context-escaping/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 18 Sep 2015 14:30:14 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[anthony-ferrara]]></category>
+		<category><![CDATA[xhp]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12518</guid>
+
+					<description><![CDATA[Anthony Ferrara taking on the painful process of automatically determining the correct context for escaping data in templates: Imagine being able to put a variable in a JavaScript string in your template, and have the engine transparently encode it correctly for you. Awesome, right? From Tries and Lexers. The best attempt I&#8217;ve seen at this [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Anthony Ferrara taking on the painful process of automatically determining the correct context for escaping data in templates:</p>
+<blockquote><p>
+Imagine being able to put a variable in a JavaScript string in your template, and have the engine transparently encode it correctly for you. Awesome, right?
+</p></blockquote>
+<p>From <a href="http://blog.ircmaxell.com/2015/05/tries-and-lexers.html">Tries and Lexers</a>.</p>
+<p>The best attempt I&#8217;ve seen at this <a href="https://www.facebook.com/notes/facebook-engineering/xhp-a-new-way-to-write-php/294003943919">XHP</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/09/18/context-escaping/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,97 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/replication/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/replication/",
+    "feed_url": "https://blog.josephscott.org/tag/replication/feed/json/",
+    "language": "en-US",
+    "title": "replication &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://josephscott.org/?p=4498",
+            "url": "https://blog.josephscott.org/2011/07/20/detecting-mysql-replication-lag-in-hyperdb/",
+            "title": "Detecting MySQL Replication Lag in HyperDB",
+            "content_html": "<p>Iliya has a new post on <a href=\"http://barry.wordpress.com/2011/07/20/hyperdb-lag-detection/\">detecting MySQL replication lag in HyperDB</a>.  It starts off with a few <a href=\"http://wordpress.com/\">WordPress.com</a> numbers:</p>\n<blockquote><p>\nOn WordPress.com we have over 218 million tables and perform tens of thousands queries per second. To scale all of this, we shard our 24 million blogs across more than 550 MySQL servers. This allows us to cope with load bursts and to handle database servers failures.\n</p></blockquote>\n<p>The post goes on to describe some of the reasons why you might run into replication lag in MySQL and methods <a href=\"http://codex.wordpress.org/HyperDB\">HyperDB</a> uses to deal with that.  In the case of WordPress.com there are additional issues to consider, like replication across multiple datacenters.</p>\n<p>Something that HyperDB has had for awhile is the ability to force read queries back to the master if a write happened earlier on the same connection:</p>\n<blockquote><p>\nIf a connection modifies data in a given table, then all subsequent SELECTs on the same connection for that table are sent to the master. Chances are replication won\u2019t be fast enough to propagate the changes to the slaves on the same page load.\n</p></blockquote>\n<p>This is a fairly simple technique than can be remarkably useful.</p>\n<p>You can find out more about HyperDB on the <a href=\"http://codex.wordpress.org/HyperDB\">HyperDB WordPress Codex page</a>, the <a href=\"http://wordpress.org/extend/plugins/hyperdb/\">HyperDB WordPress plugin page</a>, and the <a href=\"http://comox.textdrive.com/mailman/listinfo/hyperdb\">HyperDB mailing list</a>.  You can also grab a copy directly from the <a href=\"http://svn.wp-plugins.org/hyperdb/trunk/\">HyperDB Subversion repository</a>.</p>\n",
+            "content_text": "Iliya has a new post on detecting MySQL replication lag in HyperDB.  It starts off with a few WordPress.com numbers:\n\nOn WordPress.com we have over 218 million tables and perform tens of thousands queries per second. To scale all of this, we shard our 24 million blogs across more than 550 MySQL servers. This allows us to cope with load bursts and to handle database servers failures.\n\nThe post goes on to describe some of the reasons why you might run into replication lag in MySQL and methods HyperDB uses to deal with that.  In the case of WordPress.com there are additional issues to consider, like replication across multiple datacenters.\nSomething that HyperDB has had for awhile is the ability to force read queries back to the master if a write happened earlier on the same connection:\n\nIf a connection modifies data in a given table, then all subsequent SELECTs on the same connection for that table are sent to the master. Chances are replication won\u2019t be fast enough to propagate the changes to the slaves on the same page load.\n\nThis is a fairly simple technique than can be remarkably useful.\nYou can find out more about HyperDB on the HyperDB WordPress Codex page, the HyperDB WordPress plugin page, and the HyperDB mailing list.  You can also grab a copy directly from the HyperDB Subversion repository.",
+            "date_published": "2011-07-20T10:38:55-06:00",
+            "date_modified": "2011-07-20T10:38:55-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "hyperdb",
+                "MySQL",
+                "replication",
+                "WordPress",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2007/11/12/links-for-mon-12-nov-2007/",
+            "url": "https://blog.josephscott.org/2007/11/12/links-for-mon-12-nov-2007/",
+            "title": "Links for Mon 12 Nov 2007",
+            "content_html": "<ul>\n<li>\n<p><a href=\"http://www.nytimes.com/2007/11/12/technology/12google.html?_r=1&amp;ex=1352610000&amp;en=6166f2300d2e0283&amp;ei=5090&amp;partner=rssuserland&amp;emc=rss&amp;oref=slogin\">Google Options Make Masseuse a Multimillionaire &#8211; New York Times</a> &#8211; The amount of money Google has been printing is amazing. <br /> Tags: <a href=\"http://del.icio.us/josephscott/google\">google</a>  </p>\n</li>\n<li>\n<p><a href=\"http://jonas.seph.ws/index.html\">Danish Royalty Free Icons</a> &#8211; Nice looking application icons. <br /> Tags: <a href=\"http://del.icio.us/josephscott/icons\">icons</a>  </p>\n</li>\n<li>\n<p><a href=\"http://www.postgresql.at/english/downloads_e.html\">cybertec &#8211; PostgreSQL Database Company &#8211; Sch&ouml;nig &amp; Sch&ouml;nig GmbH &#8211; Kontakt</a> &#8211; Synchronous replication system for PostgreSQL. <br /> Tags: <a href=\"http://del.icio.us/josephscott/postgresql\">postgresql</a> <a href=\"http://del.icio.us/josephscott/cluster\">cluster</a> <a href=\"http://del.icio.us/josephscott/replication\">replication</a> <a href=\"http://del.icio.us/josephscott/cybertec\">cybertec</a>  </p>\n</li>\n</ul>\n",
+            "content_text": "Google Options Make Masseuse a Multimillionaire &#8211; New York Times &#8211; The amount of money Google has been printing is amazing.  Tags: google  \n\n\nDanish Royalty Free Icons &#8211; Nice looking application icons.  Tags: icons  \n\n\ncybertec &#8211; PostgreSQL Database Company &#8211; Sch&ouml;nig &amp; Sch&ouml;nig GmbH &#8211; Kontakt &#8211; Synchronous replication system for PostgreSQL.  Tags: postgresql cluster replication cybertec",
+            "date_published": "2007-11-12T18:30:03-07:00",
+            "date_modified": "2007-11-12T18:30:03-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "cluster",
+                "cybertec",
+                "google",
+                "icons",
+                "Links",
+                "PostgreSQL",
+                "replication",
+                "Link Dump"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2006/04/10/replicating-from-ms-sql-server-to-postgresql/",
+            "url": "https://blog.josephscott.org/2006/04/10/replicating-from-ms-sql-server-to-postgresql/",
+            "title": "Replicating from MS SQL Server to PostgreSQL",
+            "content_html": "<p>Mangus Hagander has a detailed how to for <a href=\"http://people.planetpostgresql.org/mha/index.php?/archives/87-guid.html\">replicating from MS SQL Server to PostgreSQL</a>.  It certainly isn&#8217;t perfect, but for those willing to go through the work this would be a very interesting way to add <a href=\"http://www.postgresql.org/\">PostgreSQL</a> to a SQL Server shop.  I don&#8217;t plan on using this right now, but I&#8217;m definitely going to file this away as something with potential.</p>\n",
+            "content_text": "Mangus Hagander has a detailed how to for replicating from MS SQL Server to PostgreSQL.  It certainly isn&#8217;t perfect, but for those willing to go through the work this would be a very interesting way to add PostgreSQL to a SQL Server shop.  I don&#8217;t plan on using this right now, but I&#8217;m definitely going to file this away as something with potential.",
+            "date_published": "2006-04-10T13:17:27-06:00",
+            "date_modified": "2006-04-10T13:17:27-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "Database",
+                "PostgreSQL",
+                "replication",
+                "sqlserver",
+                "josephscott"
+            ]
+        }
+    ]
+}

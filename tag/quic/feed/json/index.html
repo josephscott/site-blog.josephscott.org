@@ -1,0 +1,36 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/quic/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/quic/",
+    "feed_url": "https://blog.josephscott.org/tag/quic/feed/json/",
+    "language": "en-US",
+    "title": "quic &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=15468",
+            "url": "https://blog.josephscott.org/2018/06/19/http-alternative-services/",
+            "title": "HTTP Alternative Services",
+            "content_html": "<p>RFC 7838: <a href=\"https://tools.ietf.org/html/rfc7838\">HTTP Alternative Services</a>.</p>\n<p>This allows HTTP responses to indicate alternative servers that a client can use ( but it isn&#8217;t required to do so ). One example, from the RFC:</p>\n<blockquote><p><code>Alt-Svc: h2=\":8000\"</code></p>\n<p>This indicates the &#8220;h2&#8221; protocol ([RFC7540]) on the same host using<br />\nthe indicated port 8000.</p></blockquote>\n<p>Google already uses this to announce <a href=\"https://www.chromium.org/quic\">QUIC</a> as an alternative, with this header included in a response from https://www.google.com/:</p>\n<p><code>Alt-Svc: quic=\":443\"; ma=2592000; v=\"43,42,41,39,35\"</code></p>\n<p>That breaks down as:</p>\n<p>&#8211; QUIC is available on port 443, of the same origin<br />\n&#8211; Max age ( ma ) for this information is 2,592,000 seconds ( default is 24 hours )<br />\n&#8211; Version negotiation hints ( v ) for QUIC</p>\n<p>That gives sites a direct option for announcing other means of making requests.  Right now QUIC is the obvious alternative, but by being an open format, others could use it too.</p>\n<p>Mark Nottingham has a good <a href=\"https://www.mnot.net/blog/2016/03/09/alt-svc\">write up on &#8220;Alternative Services&#8221;</a>.</p>\n",
+            "content_text": "RFC 7838: HTTP Alternative Services.\nThis allows HTTP responses to indicate alternative servers that a client can use ( but it isn&#8217;t required to do so ). One example, from the RFC:\nAlt-Svc: h2=\":8000\"\nThis indicates the &#8220;h2&#8221; protocol ([RFC7540]) on the same host using\nthe indicated port 8000.\nGoogle already uses this to announce QUIC as an alternative, with this header included in a response from https://www.google.com/:\nAlt-Svc: quic=\":443\"; ma=2592000; v=\"43,42,41,39,35\"\nThat breaks down as:\n&#8211; QUIC is available on port 443, of the same origin\n&#8211; Max age ( ma ) for this information is 2,592,000 seconds ( default is 24 hours )\n&#8211; Version negotiation hints ( v ) for QUIC\nThat gives sites a direct option for announcing other means of making requests.  Right now QUIC is the obvious alternative, but by being an open format, others could use it too.\nMark Nottingham has a good write up on &#8220;Alternative Services&#8221;.",
+            "date_published": "2018-06-19T12:34:54-06:00",
+            "date_modified": "2018-06-19T12:34:54-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "http",
+                "quic",
+                "Posts"
+            ]
+        }
+    ]
+}

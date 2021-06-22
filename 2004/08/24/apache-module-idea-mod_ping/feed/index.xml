@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Apache Module Idea mod_ping	</title>
+	<atom:link href="/2004/08/24/apache-module-idea-mod_ping/feed/" rel="self" type="application/rss+xml" />
+	<link>/2004/08/24/apache-module-idea-mod_ping/</link>
+	<description></description>
+	<lastBuildDate>Thu, 26 Aug 2004 04:05:10 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: John Beimler		</title>
+		<link>/2004/08/24/apache-module-idea-mod_ping/#comment-555</link>
+
+		<dc:creator><![CDATA[John Beimler]]></dc:creator>
+		<pubDate>Thu, 26 Aug 2004 04:05:10 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/08/24/apache-module-idea-mod_ping/#comment-555</guid>
+
+					<description><![CDATA[Check out &lt;a href=&quot;http://www.mod-pubsub.org/&quot; rel=&quot;nofollow&quot;&gt;mod_pubsub&lt;/a&gt;, sounds similar to what you&#039;re talking about, although it does hold open a socket connection, which can get to be a mess with many subscribers.]]></description>
+			<content:encoded><![CDATA[<p>Check out <a href="http://www.mod-pubsub.org/" rel="nofollow">mod_pubsub</a>, sounds similar to what you&#8217;re talking about, although it does hold open a socket connection, which can get to be a mess with many subscribers.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

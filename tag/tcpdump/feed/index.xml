@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>tcpdump &#8211; Joseph Scott</title>
+	<atom:link href="/tag/tcpdump/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 27 Aug 2019 17:33:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Writing tcpdump to Multiple Rotating Files</title>
+		<link>/2019/08/27/writing-tcpdump-to-multiple-rotating-files/</link>
+					<comments>/2019/08/27/writing-tcpdump-to-multiple-rotating-files/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 27 Aug 2019 17:33:52 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[howto]]></category>
+		<category><![CDATA[tcpdump]]></category>
+		<guid isPermaLink="false">/?p=17605</guid>
+
+					<description><![CDATA[I recently had a situation where I needed to constantly listen to network traffic, while being mindful of not filling up the disk. Fortunately tcpdump has a nice built in way of doing that: tcpdump -w tcp.pcap -s0 -C 1500 -W 15 That breaks down as: &#8211; -w tcp.pcap: write to files that all start [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I recently had a situation where I needed to constantly listen to network traffic, while being mindful of not filling up the disk.  Fortunately <a href="https://www.tcpdump.org/">tcpdump</a> has a nice built in way of doing that:</p>
+<pre><code class="language-markup">tcpdump -w tcp.pcap -s0 -C 1500 -W 15</code></pre>
+<p>That breaks down as:</p>
+<p>&#8211; <code>-w tcp.pcap</code>: write to files that all start with the name <code>tcp.pcap</code><br />
+&#8211; <code>-s0</code>: save the whole packet<br />
+&#8211; <code>-C 1500</code>: limit each capture file to 1,500 MBs<br />
+&#8211; <code>-W 15</code>: limit the number of capture files to 15</p>
+<p>On disk you&#8217;ll get the following 15 files:</p>
+<pre><code class="language-markup">tcp.pcap00
+tcp.pcap01
+tcp.pcap02
+tcp.pcap03
+tcp.pcap04
+tcp.pcap05
+tcp.pcap06
+tcp.pcap07
+tcp.pcap08
+tcp.pcap09
+tcp.pcap10
+tcp.pcap11
+tcp.pcap12
+tcp.pcap13
+tcp.pcap14
+</code></pre>
+<p>Once it finishes with <code>tcp.pcap14</code> is cycles back through the whole thing, over writing one file at a time, starting with <code>tcp.pcap00</code>.</p>
+<p>Exactly what period of time this will cover depends on how much network traffic you are capturing.  It could be 5 minutes or 15, and vary between each file.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/08/27/writing-tcpdump-to-multiple-rotating-files/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>iOS Remote Virtual Interface</title>
+		<link>/2015/07/30/ios-remote-virtual-interface/</link>
+					<comments>/2015/07/30/ios-remote-virtual-interface/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 30 Jul 2015 14:01:16 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[ios]]></category>
+		<category><![CDATA[tcpdump]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10733</guid>
+
+					<description><![CDATA[Capturing packets on iOS devices using remote virtual interface: iOS 5 added a remote virtual interface (RVI) facility that lets you use OS X packet trace programs to capture traces from an iOS device. The basic strategy is: &#8211; Connect your iOS device to your Mac via USB. &#8211; Set up an RVI for that [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Capturing packets on iOS devices using <a href="https://developer.apple.com/library/ios/qa/qa1176/_index.html#//apple_ref/doc/uid/DTS10001707-CH1-SECRVI">remote virtual interface</a>:</p>
+<blockquote><p>
+iOS 5 added a remote virtual interface (RVI) facility that lets you use OS X packet trace programs to capture traces from an iOS device. The basic strategy is:</p>
+<p>&#8211; Connect your iOS device to your Mac via USB.<br />
+&#8211; Set up an RVI for that device. This creates a virtual network interface on your Mac that represents the iOS device&#8217;s networking stack.<br />
+&#8211; Run your OS X packet trace program, and point it at the RVI created in the previous step.
+</p></blockquote>
+<p>I tried this out, hardest part was looking up the UDID for my phone again.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/07/30/ios-remote-virtual-interface/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What Really Went Over The Wire?</title>
+		<link>/2013/04/22/what-really-went-over-the-wire/</link>
+					<comments>/2013/04/22/what-really-went-over-the-wire/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 22 Apr 2013 16:14:08 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[ios]]></category>
+		<category><![CDATA[steve-souders]]></category>
+		<category><![CDATA[tcpdump]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7546</guid>
+
+					<description><![CDATA[The point is, some days you have to drop down into tcpdump and pcap files to get the truth. &#8211; Steve Souders while tracking down how much HTML5 video data iOS actually receives. Turns out server logs were giving an incorrect picture of the amount of data that was being transmitted. It took watching individual [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+The point is, some days you have to drop down into tcpdump and pcap files to get the truth.
+</p></blockquote>
+<p>&#8211; Steve Souders while tracking down <a href="http://www.stevesouders.com/blog/2013/04/21/html5-video-bytes-on-ios/">how much HTML5 video data iOS actually receives</a>.</p>
+<p>Turns out server logs were giving an incorrect picture of the amount of data that was being transmitted.  It took watching individual packets to track down what was really happening.  Go read the post for the odd twist at the end.</p>
+<p>Reading this reminded me of <a href="http://josephscott.org/archives/2009/08/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/">using Wireshark to track down multiple packet issues in HTTP POST requests from XMLHttpRequest</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/04/22/what-really-went-over-the-wire/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Tcpdump Intro</title>
+		<link>/2012/04/11/tcpdump-intro/</link>
+					<comments>/2012/04/11/tcpdump-intro/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 11 Apr 2012 16:48:11 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[daniel-miessler]]></category>
+		<category><![CDATA[tcpdump]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=5555</guid>
+
+					<description><![CDATA[Daniel Miessler has posted a nice little introduction to tcpdump. If you&#8217;ve never used tcpdump go spend 15 minutes reading his post and trying some of the examples.]]></description>
+										<content:encoded><![CDATA[<p>Daniel Miessler has posted a nice little <a href='http://danielmiessler.com/study/tcpdump/'>introduction to tcpdump</a>.  If you&#8217;ve never used <a href="http://www.tcpdump.org/">tcpdump</a> go spend 15 minutes reading his post and trying some of the examples.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/04/11/tcpdump-intro/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

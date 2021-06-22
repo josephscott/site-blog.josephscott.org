@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: HTML5 Spec Calls For Altering Your Data	</title>
+	<atom:link href="/2011/05/04/html5-spec-calls-for-altering-your-data/feed/" rel="self" type="application/rss+xml" />
+	<link>/2011/05/04/html5-spec-calls-for-altering-your-data/</link>
+	<description></description>
+	<lastBuildDate>Mon, 16 May 2011 21:52:36 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/05/04/html5-spec-calls-for-altering-your-data/#comment-3692</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 16 May 2011 21:52:36 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4030#comment-3692</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/05/04/html5-spec-calls-for-altering-your-data/#comment-3691&quot;&gt;mdawaffe&lt;/a&gt;.
+
+I noticed the 9124 ticket was getting talked about and was likely to go into 1.6.1 - http://blog.jquery.com/2011/05/12/jquery-1-6-1-released/
+
+But I didn&#039;t catch the new bug, nice find!]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/05/04/html5-spec-calls-for-altering-your-data/#comment-3691">mdawaffe</a>.</p>
+<p>I noticed the 9124 ticket was getting talked about and was likely to go into 1.6.1 &#8211; <a href="http://blog.jquery.com/2011/05/12/jquery-1-6-1-released/" rel="nofollow ugc">http://blog.jquery.com/2011/05/12/jquery-1-6-1-released/</a></p>
+<p>But I didn&#8217;t catch the new bug, nice find!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: mdawaffe		</title>
+		<link>/2011/05/04/html5-spec-calls-for-altering-your-data/#comment-3691</link>
+
+		<dc:creator><![CDATA[mdawaffe]]></dc:creator>
+		<pubDate>Mon, 16 May 2011 21:47:45 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4030#comment-3691</guid>
+
+					<description><![CDATA[It&#039;s more consistent now: http://bugs.jquery.com/ticket/9124
+
+But the fix in 1.6.1 breaks something else: http://bugs.jquery.com/ticket/9301]]></description>
+			<content:encoded><![CDATA[<p>It&#8217;s more consistent now: <a href="http://bugs.jquery.com/ticket/9124" rel="nofollow ugc">http://bugs.jquery.com/ticket/9124</a></p>
+<p>But the fix in 1.6.1 breaks something else: <a href="http://bugs.jquery.com/ticket/9301" rel="nofollow ugc">http://bugs.jquery.com/ticket/9301</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: trusktr		</title>
+		<link>/2011/05/04/html5-spec-calls-for-altering-your-data/#comment-3690</link>
+
+		<dc:creator><![CDATA[trusktr]]></dc:creator>
+		<pubDate>Mon, 16 May 2011 08:18:24 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4030#comment-3690</guid>
+
+					<description><![CDATA[I totally agree, i thought the idea was retarded the moment I saw it. But at least we can still use underscores.]]></description>
+			<content:encoded><![CDATA[<p>I totally agree, i thought the idea was retarded the moment I saw it. But at least we can still use underscores.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Chris		</title>
+		<link>/2011/05/04/html5-spec-calls-for-altering-your-data/#comment-3689</link>
+
+		<dc:creator><![CDATA[Chris]]></dc:creator>
+		<pubDate>Tue, 10 May 2011 23:01:04 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4030#comment-3689</guid>
+
+					<description><![CDATA[Good post. Guess the only way to have multi-word, easy to read names that are consistent between the HTML and jQuery is to use underscores. It makes no sense that it ends up camel-cased, but can&#039;t start out that way.]]></description>
+			<content:encoded><![CDATA[<p>Good post. Guess the only way to have multi-word, easy to read names that are consistent between the HTML and jQuery is to use underscores. It makes no sense that it ends up camel-cased, but can&#8217;t start out that way.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/05/04/html5-spec-calls-for-altering-your-data/#comment-3688</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 05 May 2011 19:21:51 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4030#comment-3688</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/05/04/html5-spec-calls-for-altering-your-data/#comment-3686&quot;&gt;mdawaffe&lt;/a&gt;.
+
+Unfortunately that makes things even more confusing.  The new rules for figuring out this flow look like:
+
+- data-* attributes in the original HTML get dashes converted to CamelCase
+- data-* attributes added via jQuery afterwards with dashes do not get converted into CamelCase
+
+The only thing worse than altering attribute names is doing it inconsistently.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/05/04/html5-spec-calls-for-altering-your-data/#comment-3686">mdawaffe</a>.</p>
+<p>Unfortunately that makes things even more confusing.  The new rules for figuring out this flow look like:</p>
+<p>&#8211; data-* attributes in the original HTML get dashes converted to CamelCase<br />
+&#8211; data-* attributes added via jQuery afterwards with dashes do not get converted into CamelCase</p>
+<p>The only thing worse than altering attribute names is doing it inconsistently.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: mdawaffe		</title>
+		<link>/2011/05/04/html5-spec-calls-for-altering-your-data/#comment-3687</link>
+
+		<dc:creator><![CDATA[mdawaffe]]></dc:creator>
+		<pubDate>Wed, 04 May 2011 20:36:42 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4030#comment-3687</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/05/04/html5-spec-calls-for-altering-your-data/#comment-3686&quot;&gt;mdawaffe&lt;/a&gt;.
+
+That&#039;s uglier than I had intended.  Sorry to pollute your pretty blog :)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/05/04/html5-spec-calls-for-altering-your-data/#comment-3686">mdawaffe</a>.</p>
+<p>That&#8217;s uglier than I had intended.  Sorry to pollute your pretty blog 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: mdawaffe		</title>
+		<link>/2011/05/04/html5-spec-calls-for-altering-your-data/#comment-3686</link>
+
+		<dc:creator><![CDATA[mdawaffe]]></dc:creator>
+		<pubDate>Wed, 04 May 2011 20:35:15 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4030#comment-3686</guid>
+
+					<description><![CDATA[The HTML editors probably wanted to match the DOM spec for accessing CSS properties: http://www.w3.org/TR/DOM-Level-2-Style/css.html#CSS-extended
+
+In jQuery, though, doing .data( &#039;hyphenated-key&#039; ) or .data( &#039;camelCaseKey&#039; ) works, but only for keys that were prepopulated from data-* attributes.  Try this out, for example.
+
+
+&#060;script src=&#034;http://code.jquery.com/jquery-1.6.js&#034;&#062;&#060;/script&#062;
+&#060;script&#062;
+jQuery( function( $ ) {
+        console.debug( &#039;BEGIN&#039;, $.extend( {}, $( &#039;#bob&#039; ).data() ) );
+
+        $( &#039;#bob&#039; ).data( {
+                &#034;max-value&#034;: 15,
+                minValue: 12,
+        } );
+
+        console.debug( &#039;AFTER OBJECT ADD&#039;, $.extend( {}, $( &#039;#bob&#039; ).data() ) );
+
+        $( &#039;#bob&#039; ).data( &#039;another-max-value&#039;, 25 );
+        $( &#039;#bob&#039; ).data( &#039;anotherMinValue&#039;, 22 );
+
+        console.debug( &#039;AFTER STRING ADD&#039;, $.extend( {}, $( &#039;#bob&#039; ).data() ) );
+
+        console.debug( &#039;GET hello-there&#039;, $( &#039;#bob&#039; ).data( &#039;hello-there&#039; ) );
+        console.debug( &#039;GET max-value&#039;, $( &#039;#bob&#039; ).data( &#039;max-value&#039; ) );
+        console.debug( &#039;GET min-value&#039;, $( &#039;#bob&#039; ).data( &#039;min-value&#039; ) );
+        console.debug( &#039;GET another-max-value&#039;, $( &#039;#bob&#039; ).data( &#039;another-max-value&#039; ) );
+        console.debug( &#039;GET another-min-value&#039;, $( &#039;#bob&#039; ).data( &#039;another-min-value&#039; ) );
+
+        console.debug( &#039;AFTER DASH GETS&#039;, $.extend( {}, $( &#039;#bob&#039; ).data() ) );
+
+        console.debug( &#039;GET helloThere&#039;, $( &#039;#bob&#039; ).data( &#039;helloThere&#039; ) );
+        console.debug( &#039;GET maxValue&#039;, $( &#039;#bob&#039; ).data( &#039;maxValue&#039; ) );
+        console.debug( &#039;GET minValue&#039;, $( &#039;#bob&#039; ).data( &#039;minValue&#039; ) );
+        console.debug( &#039;GET anotherMaxValue&#039;, $( &#039;#bob&#039; ).data( &#039;anotherMaxValue&#039; ) );
+        console.debug( &#039;GET anotherMinValue&#039;, $( &#039;#bob&#039; ).data( &#039;anotherMinValue&#039; ) );
+
+        console.debug( &#039;AFTER CAMEL GETS&#039;, $.extend( {}, $( &#039;#bob&#039; ).data() ) );
+} );
+&#060;/script&#062;
+&#060;p id=&#034;bob&#034; data-hello-there=&#034;hi&#034;&#062;yo&#060;/p&#062;
+]]></description>
+			<content:encoded><![CDATA[<p>The HTML editors probably wanted to match the DOM spec for accessing CSS properties: <a href="http://www.w3.org/TR/DOM-Level-2-Style/css.html#CSS-extended" rel="nofollow ugc">http://www.w3.org/TR/DOM-Level-2-Style/css.html#CSS-extended</a></p>
+<p>In jQuery, though, doing .data( &#8216;hyphenated-key&#8217; ) or .data( &#8216;camelCaseKey&#8217; ) works, but only for keys that were prepopulated from data-* attributes.  Try this out, for example.</p>
+<p>&lt;script src=&quot;<a href="http://code.jquery.com/jquery-1.6.js&quot;&gt;&lt;/script&#038;gt" rel="nofollow ugc">http://code.jquery.com/jquery-1.6.js&quot;&gt;&lt;/script&#038;gt</a>;<br />
+&lt;script&gt;<br />
+jQuery( function( $ ) {<br />
+        console.debug( &#039;BEGIN&#039;, $.extend( {}, $( &#039;#bob&#039; ).data() ) );</p>
+<p>        $( &#039;#bob&#039; ).data( {<br />
+                &quot;max-value&quot;: 15,<br />
+                minValue: 12,<br />
+        } );</p>
+<p>        console.debug( &#039;AFTER OBJECT ADD&#039;, $.extend( {}, $( &#039;#bob&#039; ).data() ) );</p>
+<p>        $( &#039;#bob&#039; ).data( &#039;another-max-value&#039;, 25 );<br />
+        $( &#039;#bob&#039; ).data( &#039;anotherMinValue&#039;, 22 );</p>
+<p>        console.debug( &#039;AFTER STRING ADD&#039;, $.extend( {}, $( &#039;#bob&#039; ).data() ) );</p>
+<p>        console.debug( &#039;GET hello-there&#039;, $( &#039;#bob&#039; ).data( &#039;hello-there&#039; ) );<br />
+        console.debug( &#039;GET max-value&#039;, $( &#039;#bob&#039; ).data( &#039;max-value&#039; ) );<br />
+        console.debug( &#039;GET min-value&#039;, $( &#039;#bob&#039; ).data( &#039;min-value&#039; ) );<br />
+        console.debug( &#039;GET another-max-value&#039;, $( &#039;#bob&#039; ).data( &#039;another-max-value&#039; ) );<br />
+        console.debug( &#039;GET another-min-value&#039;, $( &#039;#bob&#039; ).data( &#039;another-min-value&#039; ) );</p>
+<p>        console.debug( &#039;AFTER DASH GETS&#039;, $.extend( {}, $( &#039;#bob&#039; ).data() ) );</p>
+<p>        console.debug( &#039;GET helloThere&#039;, $( &#039;#bob&#039; ).data( &#039;helloThere&#039; ) );<br />
+        console.debug( &#039;GET maxValue&#039;, $( &#039;#bob&#039; ).data( &#039;maxValue&#039; ) );<br />
+        console.debug( &#039;GET minValue&#039;, $( &#039;#bob&#039; ).data( &#039;minValue&#039; ) );<br />
+        console.debug( &#039;GET anotherMaxValue&#039;, $( &#039;#bob&#039; ).data( &#039;anotherMaxValue&#039; ) );<br />
+        console.debug( &#039;GET anotherMinValue&#039;, $( &#039;#bob&#039; ).data( &#039;anotherMinValue&#039; ) );</p>
+<p>        console.debug( &#039;AFTER CAMEL GETS&#039;, $.extend( {}, $( &#039;#bob&#039; ).data() ) );<br />
+} );<br />
+&lt;/script&gt;<br />
+&lt;p id=&quot;bob&quot; data-hello-there=&quot;hi&quot;&gt;yo&lt;/p&gt;</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>xkcd &#8211; Joseph Scott</title>
+	<atom:link href="/tag/xkcd/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Sat, 11 Apr 2015 15:07:57 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>xkcd: Universal Converter Box</title>
+		<link>/2015/04/11/xkcd-universal-converter-box/</link>
+					<comments>/2015/04/11/xkcd-universal-converter-box/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 11 Apr 2015 15:07:57 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[usb]]></category>
+		<category><![CDATA[xkcd]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10885</guid>
+
+					<description><![CDATA[When this image was originally posted eight months ago I remember thinking of the older connections that weren&#8217;t mentioned ( AUI is the first one that comes to mind ). Now I&#8217;m thinking of new connections that have come out since then, like USB Type-C. Type-C itself is half of a converter box inline.]]></description>
+										<content:encoded><![CDATA[<p>When this image was originally posted eight months ago I remember thinking of the older connections that weren&#8217;t mentioned ( <a href="http://en.wikipedia.org/wiki/Attachment_Unit_Interface">AUI</a> is the first one that comes to mind ).</p>
+<p><a href="/wp-content/uploads/2015/04/universal_converter_box-1.png"><img loading="lazy" src="/wp-content/uploads/2015/04/universal_converter_box-1.png" data-sizes="(max-width: 737px) 100vw, 737px" srcset="/wp-content/uploads/2015/04/universal_converter_box-1-300x228.png 300w, /wp-content/uploads/2015/04/universal_converter_box-1.png 737w" alt="universal_converter_box" width="737" height="559" class="aligncenter size-full wp-image-12137" title="Comes with a 50-lb sack of gender changers, and also an add-on device with a voltage selector and a zillion circular center pin DC adapter tips so you can power any of those devices from the 90s." /></a></p>
+<p>Now I&#8217;m thinking of new connections that have come out since then, like <a href="http://www.anandtech.com/show/8558/displayport-alternate-mode-for-usb-typec-announced">USB Type-C</a>.</p>
+<p>Type-C itself is half of a converter box inline.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/04/11/xkcd-universal-converter-box/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Heartbleed Explanation on xkcd</title>
+		<link>/2014/04/11/heartbleed-explanation-xkcd/</link>
+					<comments>/2014/04/11/heartbleed-explanation-xkcd/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 11 Apr 2014 15:53:53 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[heartbleed]]></category>
+		<category><![CDATA[openssl]]></category>
+		<category><![CDATA[xkcd]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10199</guid>
+
+					<description><![CDATA[Excellent explanation of the heartbleed bug on xkcd.]]></description>
+										<content:encoded><![CDATA[<p>Excellent <a href="http://xkcd.com/1354/" title="Remember, simple is often very hard.">explanation of the heartbleed bug on xkcd</a>.</p>
+<p><a href="http://xkcd.com/1354/"><img loading="lazy" src="http://imgs.xkcd.com/comics/heartbleed_explanation.png" width="640" height="1364" class="aligncenter" /></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/04/11/heartbleed-explanation-xkcd/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Deploying is the new Compiling</title>
+		<link>/2012/05/08/deploying-is-the-new-compiling/</link>
+					<comments>/2012/05/08/deploying-is-the-new-compiling/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 08 May 2012 16:53:14 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[comic]]></category>
+		<category><![CDATA[compiling]]></category>
+		<category><![CDATA[deploy]]></category>
+		<category><![CDATA[xkcd]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=5892</guid>
+
+					<description><![CDATA[Inspired by this classic xkcd comic I realized the excuses have changed over time: Programmer Excuses: 1992 Programmer Excuses: 2012]]></description>
+										<content:encoded><![CDATA[<p>Inspired by <a href="http://xkcd.com/303/">this classic xkcd comic</a> I realized the excuses have changed over time:</p>
+<h2>Programmer Excuses: 1992</h2>
+<a href="http://xkcd.com/303/"><img loading="lazy" alt="Programmer Excuses: 1992" src="https://lh6.googleusercontent.com/-v7nHH7SIHA8/T6GxtF-A6nI/AAAAAAAAAZk/KDbA9lc4bEk/s413/compiling-orig.png" title="'Are you stealing those LCDs?' 'Yeah, but I'm doing it while my code compiles.'" width="413" height="360" /></a>
+<p><br style="margin: 25px;" /></p>
+<h2>Programmer Excuses: 2012</h2>
+<img loading="lazy" alt="Programmer Excuses: 2012" src="https://lh6.googleusercontent.com/-mZlpI0ceJgA/T6GxtDMkMzI/AAAAAAAAAZg/slvbOJjzdkY/s413/compiling-new.png" title="This is what I imagine Facebook HQ looks like on Tuesdays during the weekly deploy." width="413" height="360" />
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/05/08/deploying-is-the-new-compiling/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

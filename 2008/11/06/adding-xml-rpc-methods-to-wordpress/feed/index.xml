@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Adding XML-RPC Methods to WordPress	</title>
+	<atom:link href="/2008/11/06/adding-xml-rpc-methods-to-wordpress/feed/" rel="self" type="application/rss+xml" />
+	<link>/2008/11/06/adding-xml-rpc-methods-to-wordpress/</link>
+	<description></description>
+	<lastBuildDate>Mon, 10 Dec 2012 12:03:50 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Jerome		</title>
+		<link>/2008/11/06/adding-xml-rpc-methods-to-wordpress/#comment-2453</link>
+
+		<dc:creator><![CDATA[Jerome]]></dc:creator>
+		<pubDate>Mon, 10 Dec 2012 12:03:50 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=126#comment-2453</guid>
+
+					<description><![CDATA[Hello
+your article is very interesting, but i haven&#039;t got a complete understanding of the hooks and filters however i&#039;m quite curious and i&#039;m wondering if the technique you explain above could be used to modify the xmlrpc behaviour for post_attachments as described here: http://stackoverflow.com/questions/7607473/how-to-create-new-post-with-photo-attached-in-wordpress-using-xmlrpc/8686869#8686869
+
+the solution works, but requires to edit core files, which i&#039;m reluctant to do…
+any advices on this would be great
+thanks]]></description>
+			<content:encoded><![CDATA[<p>Hello<br />
+your article is very interesting, but i haven&#8217;t got a complete understanding of the hooks and filters however i&#8217;m quite curious and i&#8217;m wondering if the technique you explain above could be used to modify the xmlrpc behaviour for post_attachments as described here: <a href="http://stackoverflow.com/questions/7607473/how-to-create-new-post-with-photo-attached-in-wordpress-using-xmlrpc/8686869#8686869" rel="nofollow ugc">http://stackoverflow.com/questions/7607473/how-to-create-new-post-with-photo-attached-in-wordpress-using-xmlrpc/8686869#8686869</a></p>
+<p>the solution works, but requires to edit core files, which i&#8217;m reluctant to do…<br />
+any advices on this would be great<br />
+thanks</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Luciana		</title>
+		<link>/2008/11/06/adding-xml-rpc-methods-to-wordpress/#comment-2452</link>
+
+		<dc:creator><![CDATA[Luciana]]></dc:creator>
+		<pubDate>Wed, 28 Mar 2012 23:25:39 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=126#comment-2452</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2008/11/06/adding-xml-rpc-methods-to-wordpress/#comment-2451&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+Thanks for your reply. I got it to work. I was calling the filter method from a class using add_filter( &#039;xmlrpc_methods&#039;, array(this,&#039;add_new_xmlrpc_methods&#039; )); This was causing an issue. Not sure why...]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2008/11/06/adding-xml-rpc-methods-to-wordpress/#comment-2451">Joseph Scott</a>.</p>
+<p>Thanks for your reply. I got it to work. I was calling the filter method from a class using add_filter( &#8216;xmlrpc_methods&#8217;, array(this,&#8217;add_new_xmlrpc_methods&#8217; )); This was causing an issue. Not sure why&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/11/06/adding-xml-rpc-methods-to-wordpress/#comment-2451</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 27 Mar 2012 19:21:10 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=126#comment-2451</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2008/11/06/adding-xml-rpc-methods-to-wordpress/#comment-2450&quot;&gt;Luciana&lt;/a&gt;.
+
+Are you using the full plugin example?  First thing I recommend checking when something doesn&#039;t work as expected is to look at the error logs.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2008/11/06/adding-xml-rpc-methods-to-wordpress/#comment-2450">Luciana</a>.</p>
+<p>Are you using the full plugin example?  First thing I recommend checking when something doesn&#8217;t work as expected is to look at the error logs.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Luciana		</title>
+		<link>/2008/11/06/adding-xml-rpc-methods-to-wordpress/#comment-2450</link>
+
+		<dc:creator><![CDATA[Luciana]]></dc:creator>
+		<pubDate>Tue, 27 Mar 2012 02:52:55 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=126#comment-2450</guid>
+
+					<description><![CDATA[Great article. Thanks for the post.
+I tried to consume the demo.multiplyTwoNumbers xmlrpc method from another application, but it tells me that multiply_two_numbers doesn&#039;t exist.
+I have the filter and method within a class. Does it matter?
+
+Any help is appreciated, thanks
+Luciana]]></description>
+			<content:encoded><![CDATA[<p>Great article. Thanks for the post.<br />
+I tried to consume the demo.multiplyTwoNumbers xmlrpc method from another application, but it tells me that multiply_two_numbers doesn&#8217;t exist.<br />
+I have the filter and method within a class. Does it matter?</p>
+<p>Any help is appreciated, thanks<br />
+Luciana</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/11/06/adding-xml-rpc-methods-to-wordpress/#comment-2449</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 13 Jul 2011 16:00:20 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=126#comment-2449</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2008/11/06/adding-xml-rpc-methods-to-wordpress/#comment-2448&quot;&gt;Tanvir&lt;/a&gt;.
+
+I think one of the current Google Summer of Code projects for WordPress is working to add custom post type support for XML-RPC methods.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2008/11/06/adding-xml-rpc-methods-to-wordpress/#comment-2448">Tanvir</a>.</p>
+<p>I think one of the current Google Summer of Code projects for WordPress is working to add custom post type support for XML-RPC methods.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Tanvir		</title>
+		<link>/2008/11/06/adding-xml-rpc-methods-to-wordpress/#comment-2448</link>
+
+		<dc:creator><![CDATA[Tanvir]]></dc:creator>
+		<pubDate>Wed, 13 Jul 2011 03:36:11 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=126#comment-2448</guid>
+
+					<description><![CDATA[Thnx buddy, 
+It worked great! The current XML RPC API doesn&#039;t allow us to post with a custom post type. [which is kinda #$*@^&#038; stuff. - :P] I searched the net &#038; didnt find any workable solution for me. finally I created a plugin &#038; added my method just to update any post to a given custom_post_type. 
+
+/**
+ * Method to change the Post Type from default to any given Custom Post Type.
+ *
+ * @since 3.2.1
+ * @param array $args Method Parameters - 0 = postId 1 = custom_post_name.
+ * @return bool
+ */
+function updatePostType($args) {
+	if(set_post_type($args[0], $args[1])) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+I just changed your method name &quot;multiply_two_numbers&quot; with my one :) [&quot;updatePostType&quot;]]]></description>
+			<content:encoded><![CDATA[<p>Thnx buddy,<br />
+It worked great! The current XML RPC API doesn&#8217;t allow us to post with a custom post type. [which is kinda #$*@^&amp; stuff. &#8211; :P] I searched the net &amp; didnt find any workable solution for me. finally I created a plugin &amp; added my method just to update any post to a given custom_post_type. </p>
+<p>/**<br />
+ * Method to change the Post Type from default to any given Custom Post Type.<br />
+ *<br />
+ * @since 3.2.1<br />
+ * @param array $args Method Parameters &#8211; 0 = postId 1 = custom_post_name.<br />
+ * @return bool<br />
+ */<br />
+function updatePostType($args) {<br />
+	if(set_post_type($args[0], $args[1])) {<br />
+		return true;<br />
+	} else {<br />
+		return false;<br />
+	}<br />
+}</p>
+<p>I just changed your method name &#8220;multiply_two_numbers&#8221; with my one 🙂 [&#8220;updatePostType&#8221;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Léon		</title>
+		<link>/2008/11/06/adding-xml-rpc-methods-to-wordpress/#comment-2447</link>
+
+		<dc:creator><![CDATA[Léon]]></dc:creator>
+		<pubDate>Fri, 28 Jan 2011 09:22:28 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=126#comment-2447</guid>
+
+					<description><![CDATA[I used this to add a function which allows you to post comments via mobile. It will need a signed in User, in my case an admin. But you can still post under the name and e-mailaddress the user provides. So the filter: &lt;em&gt;xmlrpc_allow_anonymous_comments&lt;/em&gt; remains false and it will nog be open to spammers.
+
+Thanks for this!]]></description>
+			<content:encoded><![CDATA[<p>I used this to add a function which allows you to post comments via mobile. It will need a signed in User, in my case an admin. But you can still post under the name and e-mailaddress the user provides. So the filter: <em>xmlrpc_allow_anonymous_comments</em> remains false and it will nog be open to spammers.</p>
+<p>Thanks for this!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: GoTop&#8217;s Blog &#187; 利用XML-RPC发布或修改包含custom_firlds的文章到Wordpress		</title>
+		<link>/2008/11/06/adding-xml-rpc-methods-to-wordpress/#comment-2446</link>
+
+		<dc:creator><![CDATA[GoTop&#8217;s Blog &#187; 利用XML-RPC发布或修改包含custom_firlds的文章到Wordpress]]></dc:creator>
+		<pubDate>Mon, 20 Dec 2010 23:21:44 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=126#comment-2446</guid>
+
+					<description><![CDATA[[...] 于是找到以下几篇文章,打算做个小插件, 实现通过XML-RPC设置custom_fields的功能, 不过想起来就觉得工程浩大&#8230; Extended API WordPress Plugin Custom XML-RPC Methods in WordPress Get all posts&#8217; IDs from WordPress blog via xmlrpc request Adding XML-RPC Methods to WordPress [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] 于是找到以下几篇文章,打算做个小插件, 实现通过XML-RPC设置custom_fields的功能, 不过想起来就觉得工程浩大&#8230; Extended API WordPress Plugin Custom XML-RPC Methods in WordPress Get all posts&#8217; IDs from WordPress blog via xmlrpc request Adding XML-RPC Methods to WordPress [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/11/06/adding-xml-rpc-methods-to-wordpress/#comment-2445</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 20 Aug 2010 01:16:10 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=126#comment-2445</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2008/11/06/adding-xml-rpc-methods-to-wordpress/#comment-2444&quot;&gt;Aaron M.&lt;/a&gt;.
+
+If you are looking to trigger an action when a post is published they you want to look at actions and filters.  If you just want to edit a post the XML-RPC metaWeblog.editPost method will do that.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2008/11/06/adding-xml-rpc-methods-to-wordpress/#comment-2444">Aaron M.</a>.</p>
+<p>If you are looking to trigger an action when a post is published they you want to look at actions and filters.  If you just want to edit a post the XML-RPC metaWeblog.editPost method will do that.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron M.		</title>
+		<link>/2008/11/06/adding-xml-rpc-methods-to-wordpress/#comment-2444</link>
+
+		<dc:creator><![CDATA[Aaron M.]]></dc:creator>
+		<pubDate>Thu, 19 Aug 2010 21:03:48 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=126#comment-2444</guid>
+
+					<description><![CDATA[Can a XML-RPC plugin manipulate the blog post content upon publish?  For instance, cleaning up posts created with Word 2007/2010.]]></description>
+			<content:encoded><![CDATA[<p>Can a XML-RPC plugin manipulate the blog post content upon publish?  For instance, cleaning up posts created with Word 2007/2010.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: New Ping Service Testers Needed	</title>
+	<atom:link href="/2005/09/26/new-ping-service-testers-needed/feed/" rel="self" type="application/rss+xml" />
+	<link>/2005/09/26/new-ping-service-testers-needed/</link>
+	<description></description>
+	<lastBuildDate>Wed, 28 Sep 2005 22:15:11 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: SonicChicken weblog &#187; Blog Archive &#187; A Pending Ping Crisis?		</title>
+		<link>/2005/09/26/new-ping-service-testers-needed/#comment-974</link>
+
+		<dc:creator><![CDATA[SonicChicken weblog &#187; Blog Archive &#187; A Pending Ping Crisis?]]></dc:creator>
+		<pubDate>Wed, 28 Sep 2005 22:15:11 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=491#comment-974</guid>
+
+					<description><![CDATA[[...] Those are some interesting points to ponder. Point #1 is particularly troublesome, so let&#8217;s think about points 2-5 first. It seems to me that we&#8217;d do well to look at some other services for ideas and inspiration. The first one that comes to my mind is DNS. No ads on DNS, and not many fees are being charged for it. Perhaps we should come up with some sort of distributed model for handling blog pings? If we have a distributed service, no single server would have to bear the entire load, and we can probably avoid the traffic cost and scaling issues. But now about point #5 &#8212; Obviously pings need to be acknowledged very quickly, but do pings need to be delivered fast? Joseph&#8217;s ping service is based on a queueing model, which seems reasonable and more practical to me. What do I care if my posts are advertised &#8220;immediately&#8221; or I have to wait 5 minutes? [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Those are some interesting points to ponder. Point #1 is particularly troublesome, so let&#8217;s think about points 2-5 first. It seems to me that we&#8217;d do well to look at some other services for ideas and inspiration. The first one that comes to my mind is DNS. No ads on DNS, and not many fees are being charged for it. Perhaps we should come up with some sort of distributed model for handling blog pings? If we have a distributed service, no single server would have to bear the entire load, and we can probably avoid the traffic cost and scaling issues. But now about point #5 &#8212; Obviously pings need to be acknowledged very quickly, but do pings need to be delivered fast? Joseph&#8217;s ping service is based on a queueing model, which seems reasonable and more practical to me. What do I care if my posts are advertised &#8220;immediately&#8221; or I have to wait 5 minutes? [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: SonicChicken weblog &#187; Blog Archive &#187; Testing new ping service		</title>
+		<link>/2005/09/26/new-ping-service-testers-needed/#comment-973</link>
+
+		<dc:creator><![CDATA[SonicChicken weblog &#187; Blog Archive &#187; Testing new ping service]]></dc:creator>
+		<pubDate>Wed, 28 Sep 2005 00:27:43 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=491#comment-973</guid>
+
+					<description><![CDATA[[...] Joseph started discussing these problems with me the other day, and the delays I&#8217;ve sometimes noticed upon clicking the Publish button came to mind. Turns out that he had an idea for a streamlined notification service, which he&#8217;s now opened up for testing. I&#8217;ve installed the new service in place of PoM, and it seems to be a significant improvement.      &#160; [link] [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Joseph started discussing these problems with me the other day, and the delays I&#8217;ve sometimes noticed upon clicking the Publish button came to mind. Turns out that he had an idea for a streamlined notification service, which he&#8217;s now opened up for testing. I&#8217;ve installed the new service in place of PoM, and it seems to be a significant improvement.      &nbsp; [link] [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jim		</title>
+		<link>/2005/09/26/new-ping-service-testers-needed/#comment-972</link>
+
+		<dc:creator><![CDATA[Jim]]></dc:creator>
+		<pubDate>Tue, 27 Sep 2005 20:56:59 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=491#comment-972</guid>
+
+					<description><![CDATA[Great work, Joseph! The response time is &lt;em&gt;excellent&lt;/em&gt;, and I can easily live with a few minutes of delay between posting and getting the services notified. (Beats the crap out of waiting 30-60 seconds after posting, waiting for interactive services to notify everybody while I sit watching the Firefox spinner...)
+
+Do you mind if I put something on my site about this? (I will leave the service URL out of the post, so you can keep tabs on the testers.)]]></description>
+			<content:encoded><![CDATA[<p>Great work, Joseph! The response time is <em>excellent</em>, and I can easily live with a few minutes of delay between posting and getting the services notified. (Beats the crap out of waiting 30-60 seconds after posting, waiting for interactive services to notify everybody while I sit watching the Firefox spinner&#8230;)</p>
+<p>Do you mind if I put something on my site about this? (I will leave the service URL out of the post, so you can keep tabs on the testers.)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Matt		</title>
+		<link>/2005/09/26/new-ping-service-testers-needed/#comment-971</link>
+
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+		<pubDate>Tue, 27 Sep 2005 04:42:44 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=491#comment-971</guid>
+
+					<description><![CDATA[If the main difference in your system is just &quot;being faster&quot; I would suggest you work with the PoM project instead of against it. We are currently handling over 40 requests per second, have over 14 million blogs in the db, and a blacklist of hundreds of thousands of domains and IPs. We&#039;re also working closely with upstream providers to stop spam, unfortunately many of the new services cropping up are just functioning as open relays for ping junk. Ping-O-Matic is also going to be much faster once we bring the partner mirrors online.]]></description>
+			<content:encoded><![CDATA[<p>If the main difference in your system is just &#8220;being faster&#8221; I would suggest you work with the PoM project instead of against it. We are currently handling over 40 requests per second, have over 14 million blogs in the db, and a blacklist of hundreds of thousands of domains and IPs. We&#8217;re also working closely with upstream providers to stop spam, unfortunately many of the new services cropping up are just functioning as open relays for ping junk. Ping-O-Matic is also going to be much faster once we bring the partner mirrors online.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: NPM As A Blocker	</title>
+	<atom:link href="/2014/03/21/npm-blocker/feed/" rel="self" type="application/rss+xml" />
+	<link>/2014/03/21/npm-blocker/</link>
+	<description></description>
+	<lastBuildDate>Mon, 24 Mar 2014 14:30:26 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2014/03/21/npm-blocker/#comment-4190</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 24 Mar 2014 14:30:26 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10081#comment-4190</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/03/21/npm-blocker/#comment-4189&quot;&gt;julien51&lt;/a&gt;.
+
+Hence the last line &quot;if it is code that you depend on in production then it should be in your source control repo&quot;.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/03/21/npm-blocker/#comment-4189">julien51</a>.</p>
+<p>Hence the last line &#8220;if it is code that you depend on in production then it should be in your source control repo&#8221;.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: julien51		</title>
+		<link>/2014/03/21/npm-blocker/#comment-4189</link>
+
+		<dc:creator><![CDATA[julien51]]></dc:creator>
+		<pubDate>Sun, 23 Mar 2014 16:06:51 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10081#comment-4189</guid>
+
+					<description><![CDATA[That is all very true, but I also think it is not a problem if you check out the dependencies in your repository.
+
+Mikeal says it better I can: http://www.futurealoof.com/posts/nodemodules-in-git.html]]></description>
+			<content:encoded><![CDATA[<p>That is all very true, but I also think it is not a problem if you check out the dependencies in your repository.</p>
+<p>Mikeal says it better I can: <a href="http://www.futurealoof.com/posts/nodemodules-in-git.html" rel="nofollow ugc">http://www.futurealoof.com/posts/nodemodules-in-git.html</a></p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>rest &#8211; Joseph Scott</title>
+	<atom:link href="/tag/rest/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 17 Feb 2006 19:38:32 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>REST Versioning</title>
+		<link>/2006/02/17/rest-versioning/</link>
+					<comments>/2006/02/17/rest-versioning/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 17 Feb 2006 19:38:32 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[rest]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/17/rest-versioning/</guid>
+
+					<description><![CDATA[Adam Kalsey has been discussing how to version his REST interface for Tagyu. It is an interesting read, mostly because there really isn&#8217;t a good standard way providing for different versions of a REST interface. In the end he came went with including versioning details in the REST URL and including pointers to the previous, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://kalsey.com/">Adam Kalsey</a> has been <a href="http://kalsey.com/2006/02/versioning_web_services/">discussing</a> <a href="http://kalsey.com/2006/02/why_web_services_versioning_is_important/">how</a> to version his <a href="http://tagyu.com/tools/rest">REST interface</a> for <a href="http://tagyu.com/">Tagyu</a>.  It is an interesting read, mostly because there really isn&#8217;t a good standard way providing for different versions of a REST interface.  <a href="http://kalsey.com/blog/2006/02/versioning_rest/">In the end</a> he came went with including versioning details in the REST URL and including pointers to the previous, next, latest and in use versions.</p>
+<p>As more and more services are exposed in similar ways I expect there to be a lot more discussion on this topic.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/02/17/rest-versioning/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>API Only Services?</title>
+		<link>/2005/07/13/api-only-services/</link>
+					<comments>/2005/07/13/api-only-services/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 13 Jul 2005 21:51:00 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[ajax]]></category>
+		<category><![CDATA[rest]]></category>
+		<category><![CDATA[soap]]></category>
+		<category><![CDATA[xml-rpc]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=432</guid>
+
+					<description><![CDATA[Along with most folks, I&#8217;m thrilled when I see APIs made available for cool services. It seems to me that this what Tim O&#8217;Reilly means when using the term Web 2.0. With open and usable APIs others are free to create entirely new &#8220;products&#8221; by mix and matching APIs from various sources. This is great [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Along with most folks, I&#8217;m thrilled when I see APIs made available for cool services.  It seems to me that this what <a href="http://tim.oreilly.com/">Tim O&#8217;Reilly</a> means when using the term <a href="http://blogs.zdnet.com/BTL/index.php?p=1565">Web 2.0</a>.  With open and usable APIs others are free to create entirely new &#8220;products&#8221; by mix and matching APIs from various sources.  This is great because it allows so many people to be involved in the process, not just the companies who came up with the original services.  The more people involved, the bigger the pool of imagination from which new products and services can emerge.</p>
+<p>For the most part, a service is made available (like <a href="http://maps.google.com/">Google Maps</a>), reaches some level of popularity and then, sometimes much later, an API is made available for others to use.  This isn&#8217;t always the case, Yahoo!&#8217;s <a href="http://myweb2.search.yahoo.com/">My Web 2.0</a> was announced and then made some initial APIs available on day one.  What I haven&#8217;t really seen much of is APIs being put out first and letting services grow around them.</p>
+<p>So are we going to see API only services in the future?  I&#8217;m not sure, but I&#8217;d argue that API only/focused services are the way to go in the future.  Just like job specialization allows companies to scale in ways not possible before, I believe that API specialization would allow the Internet to scale in ways we&#8217;ve yet to see.  Let&#8217;s take a basic example, spell check.  Virtually anytime you use a <a href="http://www.w3schools.com/tags/tag_textarea.asp">textarea</a> on a web page it would be helpful to offer a spell check feature.  When <a href="http://www.gmail.com/">Gmail</a> offered an <a href="http://en.wikipedia.org/wiki/AJAX">AJAX</a>ified spell check feature we were all impressed and wanted to use it in other places.  But who wants to recreate the wheel for spell check every where that it might be handy to have?  In part the popularity of AJAX has solved some of this problem, by providing frameworks that make adding such features to web pages easier.</p>
+<p>Going down one more layer, what actually does the spell checking?  Most languages have hooks into <a href="http://aspell.sourceforge.net/">Aspell</a> that allows them to does this.  But does everyone who wants to use spell check on their website need to have Aspell installed and working with their language of choice?  Why isn&#8217;t there a central service providing a spell check API?  Why can&#8217;t they simply make use of a publicly available spell check API (via REST/SOAP/XML-RPC, etc)?  This wouldn&#8217;t have to be limited to web pages either, any application could simply talk to the spell check server and get the information it needed.</p>
+<p>There&#8217;s no reason to only have one spell check server, competition is a good thing and if one was offline for awhile then having others to fall back on would be helpful.  For that matter there&#8217;s no reason why you couldn&#8217;t have a local spell check server just for your company/office, as long at it made use of the same APIs so that client applications would be able to use as a drop in replacement.  Imagine being able to enter a URL in Microsoft Word in a settings area and have it make use of your company spell check server, how cool would that be?  For better performance caching could be done either at some local network server and/or on the client application.  In many ways this is the Web/DNS model all over again, but for APIs.</p>
+<p>If we really are going to fully embrace the capabilities that the Internet makes possible I think that specialization at the API level is where things will go.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/07/13/api-only-services/feed/</wfw:commentRss>
+			<slash:comments>7</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

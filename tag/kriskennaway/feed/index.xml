@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>kriskennaway &#8211; Joseph Scott</title>
+	<atom:link href="/tag/kriskennaway/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 21 Nov 2007 13:00:59 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Kris Kennaway on FreeBSD 7</title>
+		<link>/2007/11/21/kris-kennaway-on-freebsd-7/</link>
+					<comments>/2007/11/21/kris-kennaway-on-freebsd-7/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 21 Nov 2007 13:00:59 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[kriskennaway]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/21/kris-kennaway-on-freebsd-7/</guid>
+
+					<description><![CDATA[Last month Kris Kennaway spoke about FreeBSD 7 (pdf). Lots of details about how FreeBSD 7 came about and what you can expect to see when 7.0 finally gets released. Perhaps the most interesting part though was the SMP focused case study involving MySQL and PostgreSQL on pages 10 through 19. The numbers for 7.0 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Last month <a href="http://people.freebsd.org/~kris/scaling/">Kris Kennaway</a> spoke about <a href="http://people.freebsd.org/~kris/scaling/7.0%20Preview.pdf">FreeBSD 7</a> (pdf).  Lots of details about how FreeBSD 7 came about and what you can expect to see when 7.0 finally gets released.</p>
+<p>Perhaps the most interesting part though was the SMP focused case study involving <a href="http://www.mysql.com/">MySQL</a> and <a href="http://www.postgresql.org/">PostgreSQL</a> on pages 10 through 19.  The numbers for 7.0 compared to previous versions of FreeBSD on transactions per second on multi-CPU systems is really impressive.  The <a href="http://www.usenix.org/events/bsdcon03/tech/roberson.html">ULE scheduler</a> gives a huge boost over the traditional 4BSD scheduler.  Looks like ULE will become the default scheduler sometime during the 7.x life time (7.1 perhaps?).  You want to see CPUs really put to use?  Check out page 13.</p>
+<p>I was rather surprised to see the MySQL numbers come in so much lower than the PostgreSQL numbers.  There seems to be a MySQL specific problem that limits how well it can scale across multiple CPUs.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/11/21/kris-kennaway-on-freebsd-7/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

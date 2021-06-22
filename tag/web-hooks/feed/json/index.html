@@ -1,0 +1,36 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/web-hooks/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/web-hooks/",
+    "feed_url": "https://blog.josephscott.org/tag/web-hooks/feed/json/",
+    "language": "en-US",
+    "title": "web-hooks &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://josephscott.org/?p=1377",
+            "url": "https://blog.josephscott.org/2009/08/19/web-hooks-in-gmail-would-be-great/",
+            "title": "Web Hooks in Gmail Would Be Great",
+            "content_html": "<p>I&#8217;ve been loosely following the <a href=\"http://webhooks.pbworks.com/\">webhooks</a> idea for awhile and I quite like it.  I&#8217;m hoping to see more sites and services add support for web hooks, allowing my own services to consume data and events more or less as they happen.</p>\n<p>Late last night while trying to get Michael to go to sleep I started thinking about the different ways we provide data to users.  Feeds (RSS &amp; Atom) have become really popular and are fine for what they do.  Then my thoughts turned to email.  I still get quite a bit of information via email.  In thinking about feeds versus email, feeds are still mostly about polling for updates (or pings or pubsubhubbub).  Email is potentially event driven, but in many cases you still have to poll for new emails.</p>\n<p><img loading=\"lazy\" alt=\"\" src=\"http://farm3.static.flickr.com/2667/3839041938_b17c07ce57_o.gif\" class=\"alignleft\" width=\"143\" height=\"59\" /></p>\n<p>That&#8217;s when in hit me.  What I really want is web hooks for my <a href=\"http://mail.google.com/\">Gmail</a> account!  I could filter in Gmail for certain email patterns and have those emails skip the inbox, go directly into my archive and have a copy of the email passed off to a URL of my choosing for further processing.  All without having to poll for new emails, they would be pushed out to the URL automatically.</p>\n<p>Now to be fair you could get something close to this already.  If you have an email server you could have Gmail forward a copy of the email to your email server which could then pass it off to a script instead of delivering it to an inbox (did this with email aliases and procmail for years).  But in my case I&#8217;m using Gmail in part because I got tired of running my own email server, I wanted to spend that time doing other things.</p>\n<p>By why limit this to just Gmail?  Why not have web hooks available for Google Reader or Google Calendar?  A hook could get called anytime a change is made to my calendar, or a new item shows up from a blog with a specific tag.  Then there&#8217;s Google Docs, hooks that would get called when ever someone besides me edits a document.  There are any number of possibilities.</p>\n<p>Now for the icing on the cake.  Combined the power of web hooks with solid APIs for the services that call these hooks (Gmail, Google Calendar/Reader/Docs, etc.) and then you have something almost magical.  The URL end points that process the hook data can turn around and update that data again, at the source.  In the Google Calendar case a web hook that was called for invites, the hook could turn around and accept or decline that invite.  This allows me to come up with my own means of processing, interacting with and responding to events.</p>\n<p>Google has already started down this road with support for <a href=\"http://code.google.com/p/support/wiki/PostCommitWebHooks\">post commit web hooks on Google Code</a>.  Hopefully that is just the beginning.</p>\n",
+            "content_text": "I&#8217;ve been loosely following the webhooks idea for awhile and I quite like it.  I&#8217;m hoping to see more sites and services add support for web hooks, allowing my own services to consume data and events more or less as they happen.\nLate last night while trying to get Michael to go to sleep I started thinking about the different ways we provide data to users.  Feeds (RSS &amp; Atom) have become really popular and are fine for what they do.  Then my thoughts turned to email.  I still get quite a bit of information via email.  In thinking about feeds versus email, feeds are still mostly about polling for updates (or pings or pubsubhubbub).  Email is potentially event driven, but in many cases you still have to poll for new emails.\n\nThat&#8217;s when in hit me.  What I really want is web hooks for my Gmail account!  I could filter in Gmail for certain email patterns and have those emails skip the inbox, go directly into my archive and have a copy of the email passed off to a URL of my choosing for further processing.  All without having to poll for new emails, they would be pushed out to the URL automatically.\nNow to be fair you could get something close to this already.  If you have an email server you could have Gmail forward a copy of the email to your email server which could then pass it off to a script instead of delivering it to an inbox (did this with email aliases and procmail for years).  But in my case I&#8217;m using Gmail in part because I got tired of running my own email server, I wanted to spend that time doing other things.\nBy why limit this to just Gmail?  Why not have web hooks available for Google Reader or Google Calendar?  A hook could get called anytime a change is made to my calendar, or a new item shows up from a blog with a specific tag.  Then there&#8217;s Google Docs, hooks that would get called when ever someone besides me edits a document.  There are any number of possibilities.\nNow for the icing on the cake.  Combined the power of web hooks with solid APIs for the services that call these hooks (Gmail, Google Calendar/Reader/Docs, etc.) and then you have something almost magical.  The URL end points that process the hook data can turn around and update that data again, at the source.  In the Google Calendar case a web hook that was called for invites, the hook could turn around and accept or decline that invite.  This allows me to come up with my own means of processing, interacting with and responding to events.\nGoogle has already started down this road with support for post commit web hooks on Google Code.  Hopefully that is just the beginning.",
+            "date_published": "2009-08-19T21:25:02-06:00",
+            "date_modified": "2009-08-19T21:25:02-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "gmail",
+                "web-hooks",
+                "Posts"
+            ]
+        }
+    ]
+}

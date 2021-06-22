@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>cary-millsap &#8211; Joseph Scott</title>
+	<atom:link href="/tag/cary-millsap/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 22 Jan 2016 17:35:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Performance Is A Feature</title>
+		<link>/2016/01/22/performance-is-a-feature/</link>
+					<comments>/2016/01/22/performance-is-a-feature/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 22 Jan 2016 17:35:51 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[cary-millsap]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14904</guid>
+
+					<description><![CDATA[Performance, like any other feature, doesn’t just “happen”; it has to be designed and built. To do performance well, you have to think about it, study it, write extra code for it, test it, and support it. &#8230; Since you can’t know how your application is going to perform in production, you need to write [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+Performance, like any other feature, doesn’t just “happen”; it has to be designed and built. To do performance well, you have to think about it, study it, write extra code for it, test it, and support it.</p>
+<p>&#8230;</p>
+<p>Since you can’t know how your application is going to perform in production, you need to write your application so that it’s easy to fix performance in production.
+</p></blockquote>
+<p>From <a href="https://josephscott.org/archives/2010/02/thinking-clearly-about-performance/">one of my favorite papers on performance</a>: <a href="http://method-r.com/papers/file/44-thinking-clearly-about-performance">Thinking Clearly About Performance</a>, by Cary Millsap.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/01/22/performance-is-a-feature/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Thinking Clearly About Performance</title>
+		<link>/2010/02/24/thinking-clearly-about-performance/</link>
+					<comments>/2010/02/24/thinking-clearly-about-performance/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 24 Feb 2010 19:05:16 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[cary-millsap]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1947</guid>
+
+					<description><![CDATA[Cary Millsap has a great paper out &#8211; Thinking Clearly About Performance. It has reminded me how critical details can be in measuring performance, throughput, response time, efficiency, skew and load. The beauty of this paper isn&#8217;t that it has some magical new technique, quite the opposite actually. The methods talked about are solid, fundamental [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://carymillsap.blogspot.com/">Cary Millsap</a> has a great paper out &#8211; <a href="http://method-r.com/downloads/doc_details/44-thinking-clearly-about-performance">Thinking Clearly About Performance</a>.  It has reminded me how critical details can be in measuring performance, throughput, response time, efficiency, skew and load.</p>
+<p>The beauty of this paper isn&#8217;t that it has some magical new technique, quite the opposite actually.  The methods talked about are solid, fundamental approaches that can be used to methodically figure out what&#8217;s going in your system.</p>
+<p>It&#8217;s only 13 pages long and is a pleasant, brisk read.  I recommend it for anyone doing software development, database administration, or system administration.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/02/24/thinking-clearly-about-performance/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>encryption &#8211; Joseph Scott</title>
+	<atom:link href="/tag/encryption/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 29 May 2018 17:59:55 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Diffie-Hellman Key Exchange Video</title>
+		<link>/2018/05/29/diffie-hellman-key-exchange-video/</link>
+					<comments>/2018/05/29/diffie-hellman-key-exchange-video/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 29 May 2018 17:59:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[encryption]]></category>
+		<category><![CDATA[video]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15550</guid>
+
+					<description><![CDATA[Via daringfireball.net Being able to encrypt messages between people who have never met is a big deal.]]></description>
+										<content:encoded><![CDATA[<a href="/2018/05/29/diffie-hellman-key-exchange-video/"><img src="/wp-content/plugins/wp-youtube-lyte/lyteCache.php?origThumbUrl=%2F%2Fi.ytimg.com%2Fvi%2FYEBfamv-_do%2Fhqdefault.jpg" alt="YouTube Video"></a><br /><br /></p>
+<p>Via <a href="https://daringfireball.net/linked/2016/03/15/diffie-hellman-public-key-explanation">daringfireball.net</a></p>
+<p>Being able to encrypt messages between people who have never met is a big deal.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/05/29/diffie-hellman-key-exchange-video/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>tcpcrypt</title>
+		<link>/2014/08/25/tcpcrypt/</link>
+					<comments>/2014/08/25/tcpcrypt/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 25 Aug 2014 14:42:21 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[encryption]]></category>
+		<category><![CDATA[tcp/ip]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10914</guid>
+
+					<description><![CDATA[TCP layer encryption: Tcpcrypt is opportunistic encryption. If the other end speaks Tcpcrypt, then your traffic will be encrypted; otherwise it will be in clear text. Thus, Tcpcrypt alone provides no guarantees—it is best effort. If, however, a Tcpcrypt connection is successful and any attackers that exist are passive, then Tcpcrypt guarantees privacy. I find [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://tcpcrypt.org/">TCP layer encryption</a>:</p>
+<blockquote><p>
+Tcpcrypt is opportunistic encryption. If the other end speaks Tcpcrypt, then your traffic will be encrypted; otherwise it will be in clear text. Thus, Tcpcrypt alone provides no guarantees—it is best effort. If, however, a Tcpcrypt connection is successful and any attackers that exist are passive, then Tcpcrypt guarantees privacy.
+</p></blockquote>
+<p>I find the idea of pushing encryption down to lower layers of the stack really appealing.  Why limit crypto to just HTTPS, why not all of my TCP traffic?</p>
+<p>There is no doubt that deploying something like this will bring up more issues and questions.  If this is a good long term solution though, the sooner we face those questions and issues the better.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/08/25/tcpcrypt/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Tue 13 Nov 2007</title>
+		<link>/2007/11/13/links-for-tue-13-nov-2007/</link>
+					<comments>/2007/11/13/links-for-tue-13-nov-2007/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 14 Nov 2007 00:30:13 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[book]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[encryption]]></category>
+		<category><![CDATA[favicon]]></category>
+		<category><![CDATA[favikon]]></category>
+		<category><![CDATA[fonts]]></category>
+		<category><![CDATA[forms]]></category>
+		<category><![CDATA[graphics]]></category>
+		<category><![CDATA[iphone]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[wphone]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/13/links-for-tue-13-nov-2007/</guid>
+
+					<description><![CDATA[40+ Excellent Freefonts For Professional Design &#124; Fonts &#124; Smashing Magazine &#8211; That&#8217;s right, another font list. Tags: fonts favikon &#8211; Web tool for creating favicons. Tags: favikon favicon graphics WPhone Admin Plugin &#8211; iPhone admin for WordPress. Tags: iphone wordpress wphone A reversible password encryption routine for PHP &#8211; Encrypt and decrypt routines writing [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://www.smashingmagazine.com/2007/11/08/40-excellent-freefonts-for-professional-design/">40+ Excellent Freefonts For Professional Design | Fonts | Smashing Magazine</a> &#8211; That&#8217;s right, another font list. <br /> Tags: <a href="http://del.icio.us/josephscott/fonts">fonts</a>  </p>
+</li>
+<li>
+<p><a href="http://favikon.com/">favikon</a> &#8211; Web tool for creating favicons. <br /> Tags: <a href="http://del.icio.us/josephscott/favikon">favikon</a> <a href="http://del.icio.us/josephscott/favicon">favicon</a> <a href="http://del.icio.us/josephscott/graphics">graphics</a>  </p>
+</li>
+<li>
+<p><a href="http://wphoneplugin.org/">WPhone Admin Plugin</a> &#8211; iPhone admin for WordPress. <br /> Tags: <a href="http://del.icio.us/josephscott/iphone">iphone</a> <a href="http://del.icio.us/josephscott/wordpress">wordpress</a> <a href="http://del.icio.us/josephscott/wphone">wphone</a>  </p>
+</li>
+<li>
+<p><a href="http://www.tonymarston.net/php-mysql/encryption.html">A reversible password encryption routine for PHP</a> &#8211; Encrypt and decrypt routines writing in PHP. <br /> Tags: <a href="http://del.icio.us/josephscott/encryption">encryption</a> <a href="http://del.icio.us/josephscott/php">php</a> <a href="http://del.icio.us/josephscott/security">security</a>  </p>
+</li>
+<li>
+<p><a href="http://css-tricks.com/tips-for-creating-great-web-forms/">Tips For Creating Great Web Forms &#8211; CSS-Tricks</a> &#8211; Making forms line up and look nice is still one of those things that is often too much work with CSS only. <br /> Tags: <a href="http://del.icio.us/josephscott/css">css</a> <a href="http://del.icio.us/josephscott/forms">forms</a>  </p>
+</li>
+<li>
+<p><a href="http://www.packtpub.com/wordpress/book">WordPress Complete</a> &#8211; Hey, it&#8217;s a WordPress book, neat. <br /> Tags: <a href="http://del.icio.us/josephscott/wordpress">wordpress</a> <a href="http://del.icio.us/josephscott/book">book</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/11/13/links-for-tue-13-nov-2007/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

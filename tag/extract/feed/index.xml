@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>extract &#8211; Joseph Scott</title>
+	<atom:link href="/tag/extract/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 25 Aug 2020 14:14:17 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>I Don&#8217;t Like PHP&#8217;s extract() Function</title>
+		<link>/2009/02/05/i-dont-like-phps-extract-function/</link>
+					<comments>/2009/02/05/i-dont-like-phps-extract-function/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 05 Feb 2009 16:00:50 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[extract]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=724</guid>
+
+					<description><![CDATA[When looking at PHP code that I&#8217;m not familiar with a common task is back tracking what operations were done to a variable for it to end up in it&#8217;s current state. More often than not this means looking through dozens of lines of code in a function or method. First on my list is [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>When looking at PHP code that I&#8217;m not familiar with a common task is back tracking what operations were done to a variable for it to end up in it&#8217;s current state. More often than not this means looking through dozens of lines of code in a function or method. First on my list is often figuring out how a variable came to be in the function in the first place. Was it a global, function argument, class variable or a return value from another function? Knowing this helps me determine if I need to start looking outside the function.</p>
+<p>Then there are the times that I can&#8217;t find any reference to where a variable came from at all. It&#8217;s just suddenly being used. One way that happens is through the <a href="http://us.php.net/extract">extract</a> function. You pass it an array and it injects the array items into the current symbol table. This makes backtracking variable information a real pain. Here&#8217;s a basic example to give you an idea:</p>
+<pre class="line-numbers"><code class="language-php">function say_hello( $person_info ) {
+    extract( $person_info );
+
+    //  ... imagine another 75 lines of code here
+
+    print "Hello {$name}!n";
+}</code></pre>
+<p>If I was looking to find out more about the $name variable there&#8217;s no obvious information. A simple search for the variable name shows it only ever being used once. No hint as to where it came from or how it got there in the first place. It isn&#8217;t until you catch the extract() call that you realize that it came from the $person_info function argument, but there&#8217;s nothing that an easy search operation will do to tell you that. If there is more than one extract() call in the function then you have to start adding debug code and running it just to determine which extract() created the variable.</p>
+<p>I like to be able to easily tell where variables came from. Operations that magically insert variables into the current symbol table make that task a lot harder. And there&#8217;s no reason that you&#8217;d ever have to use extract(), it&#8217;s purely for convenience. A convenience that can make life harder for others and for yourself when debugging code you haven&#8217;t looked at in years.</p>
+<p>There&#8217;s a companion function to extract() called <a href="http://us.php.net/manual/en/function.compact.php">compact</a>, which does the opposite. It takes a list of variable names and creates an array. I don&#8217;t have any problem with this because it&#8217;s not hiding where the data for the new array came from.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/02/05/i-dont-like-phps-extract-function/feed/</wfw:commentRss>
+			<slash:comments>26</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

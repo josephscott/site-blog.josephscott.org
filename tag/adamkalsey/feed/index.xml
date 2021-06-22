@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>adamkalsey &#8211; Joseph Scott</title>
+	<atom:link href="/tag/adamkalsey/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 21 Aug 2006 05:35:06 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Feed Crier</title>
+		<link>/2006/08/20/feed-crier/</link>
+					<comments>/2006/08/20/feed-crier/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 21 Aug 2006 05:35:06 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[adamkalsey]]></category>
+		<category><![CDATA[aim]]></category>
+		<category><![CDATA[feed]]></category>
+		<category><![CDATA[feedcrier]]></category>
+		<category><![CDATA[growl]]></category>
+		<category><![CDATA[ichat]]></category>
+		<category><![CDATA[im]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/08/20/feed-crier/</guid>
+
+					<description><![CDATA[Over the weekend Adam Kalsey announced his new service, Feed Crier. Feed Crier pushes RSS/ATOM feeds though AIM (other IM networks are reported to be supported later). Subscribing to a feed is as simple as IM&#8217;ing feedcrier with &#8216;subscribe &#8216; on AIM. Feed Crier accounts come in two flavors, free and the $4 per month [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Over the weekend <a href="http://kalsey.com/blog/">Adam Kalsey</a> <a href="http://kalsey.com/blog/2006/08/introducing_feed_crier/">announced</a> his new service, <a href="http://feedcrier.com/">Feed Crier</a>.  Feed Crier pushes RSS/ATOM feeds though <a href="http://www.aim.com/">AIM</a> (other IM networks are reported to be supported later).  Subscribing to a feed is as simple as IM&#8217;ing feedcrier with &#8216;subscribe &#8216; on <a href="http://www.aim.com/">AIM</a>.</p>
+<p>Feed Crier accounts come in two flavors, free and the $4 per month Pro account.  The free account allows you to subscribe up to 3 feeds.  The Pro account allows for unlimited feeds, no advertising (?), feed summaries and the ability to manage your feeds via the web.  I&#8217;m not sure if the no advertising feature of the Pro account means that that Feed Crier won&#8217;t display their own ads or if they&#8217;ll strip ads from feeds you subscribe to.</p>
+<p>I was able to subscribe to my own feed for this blog and got a quick response asking me to click on a URL to verify my subscription.  Once I verified Feed Crier sent me messages containing a linked title to recent entries.  Unsubscribing was just as easy, I sent &#8216;unsubscribe &#8216; to Feed Crier and quickly got a response back.</p>
+<p>I&#8217;m not a big user of IM so I don&#8217;t know that I&#8217;ll make much use of this.  As a concept though I think this is a neat idea.  With the popularity of feeds this allows you to glue pretty much any data to your IM client.  I could see this being really useful for those who want to keep very close tabs on a feed.  And if you are using this on Mac OS X then <a href="http://growl.info/">Growl</a> makes it even more awesome.</p>
+<p>I&#8217;m curious how Adam is tracking updates to feeds.  When you subscribe to a feed does Feed Crier start polling that feed?  Perhaps he&#8217;ll be looking at adding a ping server to get notifications of feed updates.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/08/20/feed-crier/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

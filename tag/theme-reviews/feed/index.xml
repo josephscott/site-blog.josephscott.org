@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>theme-reviews &#8211; Joseph Scott</title>
+	<atom:link href="/tag/theme-reviews/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 14 Mar 2011 16:55:39 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Learning By Reviewing</title>
+		<link>/2011/03/14/learning-by-reviewing/</link>
+					<comments>/2011/03/14/learning-by-reviewing/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 14 Mar 2011 16:55:39 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[theme-reviews]]></category>
+		<category><![CDATA[themes]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3779</guid>
+
+					<description><![CDATA[Joining the Reviewers Team is simple, just a matter of getting your environment setup (4-6 minutes) and grabbing a theme for review. The most interesting and valuable part is not that you’re helping out the community, but that you’re learning yourself. I personally reviewed a little less than 20 themes (and still counting) but I [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+<a href="http://make.wordpress.org/themes/about/how-to-join-wptrt/">Joining the Reviewers Team</a> is simple, just a matter of getting your environment setup (4-6 minutes) and grabbing a theme for review. The most interesting and valuable part is not that you’re helping out the community, but that you’re learning yourself. I personally reviewed a little less than 20 themes (and still counting) but <strong>I learned so much about them and the best practices of developing them, the Settings API, coding standards, and damn I learned two functions i had no clue about (<a href="http://codex.wordpress.org/Function_Reference/checked">checked()</a> and <a href="http://codex.wordpress.org/Function_Reference/selected">selected()</a>)</strong>  — hope that doesn’t make me a rookie <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" />
+</p></blockquote>
+<p>Konstantin Kovshenin from <a href='http://kovshenin.com/archives/introducing-minimal-georgia-for-wordpress/'>Introducing Minimal Georgia for WordPress</a>, emphasis mine.</p>
+<p>The <a href="http://wordpress.org/extend/themes/">WordPress.org Themes</a> are reviewed by community members.  As Konstantin points out, not only does this help the community as a whole, he also learned something new as part of the process.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/03/14/learning-by-reviewing/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

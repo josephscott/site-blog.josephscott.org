@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mike-muuss &#8211; Joseph Scott</title>
+	<atom:link href="/tag/mike-muuss/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 13 Oct 2014 14:31:18 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>History of Ping</title>
+		<link>/2014/10/13/history-of-ping-2/</link>
+					<comments>/2014/10/13/history-of-ping-2/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 13 Oct 2014 14:31:18 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[mike-muuss]]></category>
+		<category><![CDATA[ping]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11251</guid>
+
+					<description><![CDATA[Last month I linked to the history of the ping of death. Going back further, we have &#8220;The Story of the PING Program&#8220;: My original impetus for writing PING for 4.2a BSD UNIX came from an offhand remark in July 1983 by Dr. Dave Mills while we were attending a DARPA meeting in Norway, in [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Last month I linked to the <a href="https://josephscott.org/archives/2014/09/ping-of-death-history/">history of the ping of death</a>.  Going back further, we have &#8220;<a href="http://ftp.arl.mil/mike/ping.html">The Story of the PING Program</a>&#8220;:</p>
+<blockquote><p>
+My original impetus for writing PING for 4.2a BSD UNIX came from an offhand remark in July 1983 by Dr. Dave Mills while we were attending a DARPA meeting in Norway, in which he described some work that he had done on his &#8220;Fuzzball&#8221; LSI-11 systems to measure path latency using timed ICMP Echo packets.</p>
+<p>In December of 1983 I encountered some odd behavior of the IP network at BRL. Recalling Dr. Mills&#8217; comments, I quickly coded up the PING program, which revolved around opening an ICMP style SOCK_RAW AF_INET Berkeley-style socket(). The code compiled just fine, but it didn&#8217;t work &#8212; there was no kernel support for raw ICMP sockets! Incensed, I coded up the kernel support and had everything working well before sunrise. Not surprisingly, Chuck Kennedy (aka &#8220;Kermit&#8221;) had found and fixed the network hardware before I was able to launch my very first &#8220;ping&#8221; packet. But I&#8217;ve used it a few times since then. *grin* If I&#8217;d known then that it would be my most famous accomplishment in life, I might have worked on it another day or two and added some more options.
+</p></blockquote>
+<p>I like that <a href="https://www.freebsd.org/cgi/man.cgi?query=ping&#038;apropos=0&#038;sektion=0&#038;manpath=FreeBSD+10.0-RELEASE&#038;arch=default&#038;format=html#end">the ping man page for FreeBSD still mentions Mike Muuss</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/10/13/history-of-ping-2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

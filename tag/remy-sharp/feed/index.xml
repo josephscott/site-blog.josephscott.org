@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>remy-sharp &#8211; Joseph Scott</title>
+	<atom:link href="/tag/remy-sharp/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 25 Sep 2018 16:30:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>jqTerm and jq Recipes</title>
+		<link>/2018/09/25/jqterm-and-jq-recipes/</link>
+					<comments>/2018/09/25/jqterm-and-jq-recipes/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 25 Sep 2018 16:30:52 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[jq]]></category>
+		<category><![CDATA[remy-sharp]]></category>
+		<category><![CDATA[simon-willison]]></category>
+		<guid isPermaLink="false">/?p=16966</guid>
+
+					<description><![CDATA[With so much JSON being flung around from various APIs, jq has become a really helpful tool. Simon Willison mentioned two jq references that I had not seen before. jqTerm is a playground site where you can paste in JSON, experiment with different jq queries, and immediately see the result. jq recipes is a page [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>With so much JSON being flung around from various APIs, <a href="https://stedolan.github.io/jq/">jq</a> has become a really helpful tool.  Simon Willison <a href="https://simonwillison.net/2018/Aug/22/jq-recipes/">mentioned</a> two jq references that I had not seen before.</p>
+<p><a href="https://jqterm.com/">jqTerm</a> is a playground site where you can paste in JSON, experiment with different jq queries, and immediately see the result.</p>
+<p><a href="https://remysharp.com/drafts/jq-recipes">jq recipes</a> is a page from Remy Sharp that lists various uses of jq.  Each one has a demo link back to jqterm.com.  This is great for getting ideas on what you can do with jq.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/09/25/jqterm-and-jq-recipes/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

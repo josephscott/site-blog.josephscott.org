@@ -1,0 +1,168 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/curl/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/curl/",
+    "feed_url": "https://blog.josephscott.org/tag/curl/feed/json/",
+    "language": "en-US",
+    "title": "curl &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/?p=16528",
+            "url": "https://blog.josephscott.org/2018/11/20/overriding-dns-in-curl/",
+            "title": "Overriding DNS in curl",
+            "content_html": "<p>Often I&#8217;ll run into a situation where I need to make an HTTP request for a host name against a server that is at a different IP address than the one the host name resolves to. A common reason for this is to test out changes against a sandbox before deploying the change to production.</p>\n<p>One way to deal with this in <a href=\"https://curl.haxx.se/\">curl</a> is with the <a href=\"https://curl.haxx.se/docs/manpage.html#--resolve\"><code>--resolve</code></a> option. Here is a simple example:</p>\n<pre class=\"line-numbers\"><code class=\"language-markup\">curl &#8211; resolve google.com:443:172.217.1.206 https://www.google.com/</code></pre>\n<p>Internally curl will make sure that google.com resolves to 172.217.1.206 for the purposes of that request.  No need to mess around with hosts files or anything else.</p>\n<p>For more suggestions in this area check out <a href=\"https://daniel.haxx.se/blog/2018/04/05/curl-another-host/\">curl another host</a>.</p>\n",
+            "content_text": "Often I&#8217;ll run into a situation where I need to make an HTTP request for a host name against a server that is at a different IP address than the one the host name resolves to. A common reason for this is to test out changes against a sandbox before deploying the change to production.\nOne way to deal with this in curl is with the --resolve option. Here is a simple example:\ncurl &#8211; resolve google.com:443:172.217.1.206 https://www.google.com/\nInternally curl will make sure that google.com resolves to 172.217.1.206 for the purposes of that request.  No need to mess around with hosts files or anything else.\nFor more suggestions in this area check out curl another host.",
+            "date_published": "2018-11-20T17:11:28-07:00",
+            "date_modified": "2018-11-20T17:11:28-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "curl",
+                "howto"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=13099",
+            "url": "https://blog.josephscott.org/2015/07/01/multiplexed-uploads/",
+            "title": "Multiplexed Uploads",
+            "content_html": "<p>With HTTP/2 <a href=\"http://daniel.haxx.se/blog/2015/05/21/status-update-http2-multiplexed-uploads/\">cURL is going to support multiplexed uploads</a>:</p>\n<blockquote><p>\nI\u2019ve successfully used the http2-upload.c code to upload 600 parallel streams to the test server and they were all sent off fine and the responses received were stored fine.\n</p></blockquote>\n<p>Most of the discussion in HTTP/2 around multiplexing is for downloading.  I hadn&#8217;t given much thought to multiplexing uploads.</p>\n<p>Any browsers looking to implement this?</p>\n",
+            "content_text": "With HTTP/2 cURL is going to support multiplexed uploads:\n\nI\u2019ve successfully used the http2-upload.c code to upload 600 parallel streams to the test server and they were all sent off fine and the responses received were stored fine.\n\nMost of the discussion in HTTP/2 around multiplexing is for downloading.  I hadn&#8217;t given much thought to multiplexing uploads.\nAny browsers looking to implement this?",
+            "date_published": "2015-07-01T08:01:23-06:00",
+            "date_modified": "2015-07-01T08:01:23-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "curl",
+                "http2",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=12600",
+            "url": "https://blog.josephscott.org/2015/05/21/curlt-curl-with-timing/",
+            "title": "curlt: cURL With Timing",
+            "content_html": "<p>I&#8217;ve previously talked about how to get <a href=\"https://josephscott.org/archives/2011/10/timing-details-with-curl/\">timing details with cURL</a>.  On that post is <a href=\"https://josephscott.org/archives/2011/10/timing-details-with-curl/#comment-3811\">a comment by Matthias L\u00fcdtke</a> linking to a <code><a href=https://github.com/mat/dotfiles/blob/master/bin/curlt\">curlt</a></code> script.</p>\n<p>I liked that script so much that I&#8217;ve added it to my standard set of shell tools.  My slightly modified version is at <a href=\"https://github.com/josephscott/shell/blob/master/bin/curlt\">https://github.com/josephscott/shell/blob/master/bin/curlt</a>.</p>\n<p>For easy reference, here is how my <code><a href=\"https://github.com/josephscott/shell/blob/master/bin/curlt\">curlt</a></code> looks right now:</p>\n<p>[sourcecode lang=&#8221;shell&#8221;]<br />\n#!/bin/bash</p>\n<p>curl_format='{<br />\n\t&quot;time_namelookup&quot;:      %{time_namelookup},<br />\n\t&quot;time_connect&quot;:         %{time_connect},<br />\n\t&quot;time_appconnect&quot;:      %{time_appconnect},<br />\n\t&quot;time_pretransfer&quot;:     %{time_pretransfer},<br />\n\t&quot;time_redirect&quot;:        %{time_redirect},<br />\n\t&quot;time_starttransfer&quot;:   %{time_starttransfer},<br />\n\t&quot;time_total&quot;:           %{time_total}<br />\n}&#8217;</p>\n<p>curl -w &quot;$curl_format&quot; -k &#8211;compressed -v -s -o /dev/null &quot;$@&quot;<br />\n[/sourcecode]</p>\n",
+            "content_text": "I&#8217;ve previously talked about how to get timing details with cURL.  On that post is a comment by Matthias L\u00fcdtke linking to a",
+            "date_published": "2015-05-21T11:22:43-06:00",
+            "date_modified": "2015-05-21T11:22:43-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "curl",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=4943",
+            "url": "https://blog.josephscott.org/2011/10/14/timing-details-with-curl/",
+            "title": "Timing Details With cURL",
+            "content_html": "<p>Jon&#8217;s recent <a href=\"http://www.jonefox.com/blog/2011/10/10/find-the-time-to-first-byte-using-curl/\">Find the Time to First Byte Using Curl</a> post reminded me about the additional timing details that <a href=\"http://curl.haxx.se/\">cURL</a> can provide.</p>\n<p>cURL supports formatted output for the details of the request ( see the <a href=\"http://curl.haxx.se/docs/manpage.html\">cURL manpage</a> for details, under &#8220;-w, &#8211;write-out &lt;format&gt;&#8221; ). For our purposes we&#8217;ll focus just on the timing details that are provided.</p>\n<p>Step one: create a new file, curl-format.txt, and paste in:</p>\n<pre class=\"line-numbers\"><code class=\"language-markup\">time_namelookup: %{time_namelookup}\r\ntime_connect: %{time_connect}\r\ntime_appconnect: %{time_appconnect}\r\ntime_pretransfer: %{time_pretransfer}\r\ntime_redirect: %{time_redirect}\r\ntime_starttransfer: %{time_starttransfer}\r\n\u2014\u2014\u2014\r\ntime_total: %{time_total}</code></pre>\n<p>Step two, make a request:</p>\n<pre>curl -w \"@curl-format.txt\" -o /dev/null -s http://wordpress.com/\r\n</pre>\n<p>What this does:</p>\n<ul>\n<li><code>-w \"@curl-format.txt\"</code> tells cURL to use our format file</li>\n<li><code>-o /dev/null</code> redirects the output of the request to /dev/null</li>\n<li><code>-s</code> tells cURL not to show a progress meter</li>\n<li><code>http://wordpress.com/</code> is the URL we are requesting</li>\n</ul>\n<p>And here is what you get back:</p>\n<pre class=\"line-numbers\"><code class=\"language-markup\">time_namelookup: 0.001\r\ntime_connect: 0.037\r\ntime_appconnect: 0.000\r\ntime_pretransfer: 0.037\r\ntime_redirect: 0.000\r\ntime_starttransfer: 0.092\r\n\u2014\u2014\u2014\r\ntime_total: 0.164</code></pre>\n<p>Jon was looking specifically at time to first byte, which is the time_starttransfer line. The other timing details include DNS lookup, TCP connect, pre-transfer negotiations, redirects (in this case there were none), and of course the total time.</p>\n<p>The format file for this output provides a reasonable level of flexibility, for instance you could make it CSV formatted for easy parsing. You might want to do that if you were running this as a cron job to track timing details of a specific URL.</p>\n<p>For details on the other information that cURL can provide using <code>-w</code> check out the <a href=\"http://curl.haxx.se/docs/manpage.html\">cURL manpage</a>.</p>\n",
+            "content_text": "Jon&#8217;s recent Find the Time to First Byte Using Curl post reminded me about the additional timing details that cURL can provide.\ncURL supports formatted output for the details of the request ( see the cURL manpage for details, under &#8220;-w, &#8211;write-out &lt;format&gt;&#8221; ). For our purposes we&#8217;ll focus just on the timing details that are provided.\nStep one: create a new file, curl-format.txt, and paste in:\ntime_namelookup: %{time_namelookup}\r\ntime_connect: %{time_connect}\r\ntime_appconnect: %{time_appconnect}\r\ntime_pretransfer: %{time_pretransfer}\r\ntime_redirect: %{time_redirect}\r\ntime_starttransfer: %{time_starttransfer}\r\n\u2014\u2014\u2014\r\ntime_total: %{time_total}\nStep two, make a request:\ncurl -w \"@curl-format.txt\" -o /dev/null -s http://wordpress.com/\r\n\nWhat this does:\n\n-w \"@curl-format.txt\" tells cURL to use our format file\n-o /dev/null redirects the output of the request to /dev/null\n-s tells cURL not to show a progress meter\nhttp://wordpress.com/ is the URL we are requesting\n\nAnd here is what you get back:\ntime_namelookup: 0.001\r\ntime_connect: 0.037\r\ntime_appconnect: 0.000\r\ntime_pretransfer: 0.037\r\ntime_redirect: 0.000\r\ntime_starttransfer: 0.092\r\n\u2014\u2014\u2014\r\ntime_total: 0.164\nJon was looking specifically at time to first byte, which is the time_starttransfer line. The other timing details include DNS lookup, TCP connect, pre-transfer negotiations, redirects (in this case there were none), and of course the total time.\nThe format file for this output provides a reasonable level of flexibility, for instance you could make it CSV formatted for easy parsing. You might want to do that if you were running this as a cron job to track timing details of a specific URL.\nFor details on the other information that cURL can provide using -w check out the cURL manpage.",
+            "date_published": "2011-10-14T10:17:05-06:00",
+            "date_modified": "2019-04-04T13:01:39-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "curl",
+                "http",
+                "jon-fox",
+                "performance",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=2029",
+            "url": "https://blog.josephscott.org/2010/03/17/php-helpers-curl_http_request/",
+            "title": "PHP Helpers: curl_http_request",
+            "content_html": "<p><a href=\"http://curl.haxx.se/\">cURL</a> is one very handy program and library, I love having access to in PHP.  It has a ton of options though, and I can never seem to remember to flip the right knobs without reviewing the options list.  99% of the time I just want a simple function that does the right thing when making an HTTP request.  So here&#8217;s the new PHP Helpers function that sets up reasonable defaults for making HTTP requests using cURL:</p>\n<p>[sourcecode lang=&#8221;php&#8221;]<br />\nif ( !function_exists( &#8216;curl_http_request&#8217; ) ) {<br />\n    function curl_http_request( $url, $req = &#8216;GET&#8217;, $arg = array( ) ) {<br />\n        $body       = &#8221;;<br />\n        $cookies    = array( );<br />\n        $err_no     = 0;<br />\n        $err_msg    = &#8221;;<br />\n        $headers    = array( );<br />\n        $info       = array( );</p>\n<p>        $opt = array(<br />\n            &#8216;connect_timeout&#8217;   =&gt; 5,<br />\n            &#8216;cookies&#8217;           =&gt; array( ),<br />\n            &#8216;follow_location&#8217;   =&gt; TRUE,<br />\n            &#8216;http_headers&#8217;      =&gt; array( ),<br />\n            &#8216;max_redirects&#8217;     =&gt; 5,<br />\n            &#8216;timeout&#8217;           =&gt; 15,<br />\n            &#8216;password&#8217;          =&gt; &#8221;,<br />\n            &#8216;post_fields&#8217;       =&gt; array( ),<br />\n            &#8216;user_agent&#8217;        =&gt; &#8216;PHP curl_http_get&#8217;,<br />\n            &#8216;username&#8217;          =&gt; &#8221;,<br />\n            &#8216;verify_ssl&#8217;        =&gt; TRUE<br />\n        );<br />\n        foreach ( $opt as $k =&gt; $v ) {<br />\n            if ( isset( $arg[$k] ) ) {<br />\n                $opt[$k] = $arg[$k];<br />\n            }<br />\n        }</p>\n<p>        $curl_opt = array(<br />\n            CURLOPT_AUTOREFERER     =&gt; TRUE,<br />\n            CURLOPT_CONNECTTIMEOUT  =&gt; $opt[&#8216;connect_timeout&#8217;],<br />\n            CURLOPT_CUSTOMREQUEST   =&gt; $req,<br />\n            CURLOPT_ENCODING        =&gt; &#8221;,<br />\n            CURLOPT_FOLLOWLOCATION  =&gt; $opt[&#8216;follow_location&#8217;],<br />\n            CURLOPT_HEADER          =&gt; TRUE,<br />\n            CURLOPT_MAXREDIRS       =&gt; $opt[&#8216;max_redirects&#8217;],<br />\n            CURLOPT_RETURNTRANSFER  =&gt; TRUE,<br />\n            CURLOPT_TIMEOUT         =&gt; $opt[&#8216;timeout&#8217;],<br />\n            CURLOPT_USERAGENT       =&gt; $opt[&#8216;user_agent&#8217;],<br />\n        );</p>\n<p>        if (<br />\n            is_array( $opt[&#8216;cookies&#8217;] )<br />\n            &amp;&amp; count( $opt[&#8216;cookies&#8217;] ) &gt; 0<br />\n        ) {<br />\n            $curl_opt[CURLOPT_COOKIE] = implode( &#8216;;&#8217;, $opt[&#8216;cookies&#8217;] );<br />\n        }</p>\n<p>        if ( !empty( $opt[&#8216;username&#8217;] ) ) {<br />\n            $curl_opt[CURLOPT_USERPWD] = $opt[&#8216;username&#8217;] . &#8216;:&#8217; . $opt[&#8216;password&#8217;];<br />\n        }</p>\n<p>        if (<br />\n            is_array( $opt[&#8216;post_fields&#8217;] )<br />\n            &amp;&amp; count( $opt[&#8216;post_fields&#8217;] ) &gt; 0<br />\n        ) {<br />\n            $curl_opt[CURLOPT_POST] = TRUE;<br />\n            $curl_opt[CURLOPT_POSTFIELDS] = $opt[&#8216;post_fields&#8217;];<br />\n        }</p>\n<p>        if ( $req == &#8216;HEAD&#8217; ) {<br />\n            $curl_opt[CURLOPT_NOBODY] = TRUE;<br />\n        }</p>\n<p>        if (<br />\n            is_array( $opt[&#8216;http_headers&#8217;] )<br />\n            &amp;&amp; count( $opt[&#8216;http_headers&#8217;] ) &gt; 0<br />\n        ) {<br />\n            $curl_opt[CURLOPT_HTTPHEADER] = $opt[&#8216;http_headers&#8217;];<br />\n        }</p>\n<p>        if ( $opt[&#8216;verify_ssl&#8217;] === FALSE ) {<br />\n            $curl_opt[CURLOPT_SSL_VERIFYPEER] = FALSE;<br />\n            $curl_opt[CURLOPT_SSL_VERIFYHOST] = 0;<br />\n        }</p>\n<p>        $curl = curl_init( $url );<br />\n        curl_setopt_array( $curl, $curl_opt );</p>\n<p>        $body       = curl_exec( $curl );<br />\n        $err_no     = curl_errno( $curl );<br />\n        $err_msg    = curl_error( $curl );<br />\n        $info       = curl_getinfo( $curl );<br />\n        curl_close( $curl );</p>\n<p>        $header_string = trim( substr( $body, 0, $info[&#8216;header_size&#8217;] ) );<br />\n        $body = substr( $body, $info[&#8216;header_size&#8217;] );</p>\n<p>        if ( strpos( $header_string, &quot;rnrn&quot; ) !== FALSE ) {<br />\n            $header_string = end( explode( &quot;rnrn&quot;, $header_string ) );<br />\n            $header_string = str_replace( &quot;rn&quot;, &quot;n&quot;, $header_string );<br />\n        }</p>\n<p>        foreach ( explode( &quot;n&quot;, $header_string ) as $line ) {<br />\n            list( $k, $v ) = explode( &#8216;:&#8217;, $line, 2 );<br />\n            if ( empty( $v ) ) {<br />\n                continue;<br />\n            }</p>\n<p>            if ( strtolower( $k ) == &#8216;set-cookie&#8217; ) {<br />\n                $cookies[] = trim( $v );<br />\n            } else {<br />\n                $headers[$k] = trim( $v );<br />\n            }<br />\n        }</p>\n<p>        return array(<br />\n            &#8216;body&#8217;      =&gt; $body,<br />\n            &#8216;err_no&#8217;    =&gt; $err_no,<br />\n            &#8216;err_msg&#8217;   =&gt; $err_msg,<br />\n            &#8216;headers&#8217;   =&gt; $headers,<br />\n            &#8216;cookies&#8217;   =&gt; $cookies,<br />\n            &#8216;info&#8217;      =&gt; $info<br />\n        );<br />\n    } // function curl_http_request<br />\n}<br />\n[/sourcecode]</p>\n<p>It&#8217;s a bit longer that then other PHP Helper functions <img src=\"https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png\" alt=\"\ud83d\ude42\" class=\"wp-smiley\" style=\"height: 1em; max-height: 1em;\" /> .</p>\n",
+            "content_text": "cURL is one very handy program and library, I love having access to in PHP.  It has a ton of options though, and I can never seem to remember to flip the right knobs without reviewing the options list.  99% of the time I just want a simple function that does the right thing when making an HTTP request.  So here&#8217;s the new PHP Helpers function that sets up reasonable defaults for making HTTP requests using cURL:\n[sourcecode lang=&#8221;php&#8221;]\nif ( !function_exists( &#8216;curl_http_request&#8217; ) ) {\n    function curl_http_request( $url, $req = &#8216;GET&#8217;, $arg = array( ) ) {\n        $body       = &#8221;;\n        $cookies    = array( );\n        $err_no     = 0;\n        $err_msg    = &#8221;;\n        $headers    = array( );\n        $info       = array( );\n        $opt = array(\n            &#8216;connect_timeout&#8217;   =&gt; 5,\n            &#8216;cookies&#8217;           =&gt; array( ),\n            &#8216;follow_location&#8217;   =&gt; TRUE,\n            &#8216;http_headers&#8217;      =&gt; array( ),\n            &#8216;max_redirects&#8217;     =&gt; 5,\n            &#8216;timeout&#8217;           =&gt; 15,\n            &#8216;password&#8217;          =&gt; &#8221;,\n            &#8216;post_fields&#8217;       =&gt; array( ),\n            &#8216;user_agent&#8217;        =&gt; &#8216;PHP curl_http_get&#8217;,\n            &#8216;username&#8217;          =&gt; &#8221;,\n            &#8216;verify_ssl&#8217;        =&gt; TRUE\n        );\n        foreach ( $opt as $k =&gt; $v ) {\n            if ( isset( $arg[$k] ) ) {\n                $opt[$k] = $arg[$k];\n            }\n        }\n        $curl_opt = array(\n            CURLOPT_AUTOREFERER     =&gt; TRUE,\n            CURLOPT_CONNECTTIMEOUT  =&gt; $opt[&#8216;connect_timeout&#8217;],\n            CURLOPT_CUSTOMREQUEST   =&gt; $req,\n            CURLOPT_ENCODING        =&gt; &#8221;,\n            CURLOPT_FOLLOWLOCATION  =&gt; $opt[&#8216;follow_location&#8217;],\n            CURLOPT_HEADER          =&gt; TRUE,\n            CURLOPT_MAXREDIRS       =&gt; $opt[&#8216;max_redirects&#8217;],\n            CURLOPT_RETURNTRANSFER  =&gt; TRUE,\n            CURLOPT_TIMEOUT         =&gt; $opt[&#8216;timeout&#8217;],\n            CURLOPT_USERAGENT       =&gt; $opt[&#8216;user_agent&#8217;],\n        );\n        if (\n            is_array( $opt[&#8216;cookies&#8217;] )\n            &amp;&amp; count( $opt[&#8216;cookies&#8217;] ) &gt; 0\n        ) {\n            $curl_opt[CURLOPT_COOKIE] = implode( &#8216;;&#8217;, $opt[&#8216;cookies&#8217;] );\n        }\n        if ( !empty( $opt[&#8216;username&#8217;] ) ) {\n            $curl_opt[CURLOPT_USERPWD] = $opt[&#8216;username&#8217;] . &#8216;:&#8217; . $opt[&#8216;password&#8217;];\n        }\n        if (\n            is_array( $opt[&#8216;post_fields&#8217;] )\n            &amp;&amp; count( $opt[&#8216;post_fields&#8217;] ) &gt; 0\n        ) {\n            $curl_opt[CURLOPT_POST] = TRUE;\n            $curl_opt[CURLOPT_POSTFIELDS] = $opt[&#8216;post_fields&#8217;];\n        }\n        if ( $req == &#8216;HEAD&#8217; ) {\n            $curl_opt[CURLOPT_NOBODY] = TRUE;\n        }\n        if (\n            is_array( $opt[&#8216;http_headers&#8217;] )\n            &amp;&amp; count( $opt[&#8216;http_headers&#8217;] ) &gt; 0\n        ) {\n            $curl_opt[CURLOPT_HTTPHEADER] = $opt[&#8216;http_headers&#8217;];\n        }\n        if ( $opt[&#8216;verify_ssl&#8217;] === FALSE ) {\n            $curl_opt[CURLOPT_SSL_VERIFYPEER] = FALSE;\n            $curl_opt[CURLOPT_SSL_VERIFYHOST] = 0;\n        }\n        $curl = curl_init( $url );\n        curl_setopt_array( $curl, $curl_opt );\n        $body       = curl_exec( $curl );\n        $err_no     = curl_errno( $curl );\n        $err_msg    = curl_error( $curl );\n        $info       = curl_getinfo( $curl );\n        curl_close( $curl );\n        $header_string = trim( substr( $body, 0, $info[&#8216;header_size&#8217;] ) );\n        $body = substr( $body, $info[&#8216;header_size&#8217;] );\n        if ( strpos( $header_string, &quot;rnrn&quot; ) !== FALSE ) {\n            $header_string = end( explode( &quot;rnrn&quot;, $header_string ) );\n            $header_string = str_replace( &quot;rn&quot;, &quot;n&quot;, $header_string );\n        }\n        foreach ( explode( &quot;n&quot;, $header_string ) as $line ) {\n            list( $k, $v ) = explode( &#8216;:&#8217;, $line, 2 );\n            if ( empty( $v ) ) {\n                continue;\n            }\n            if ( strtolower( $k ) == &#8216;set-cookie&#8217; ) {\n                $cookies[] = trim( $v );\n            } else {\n                $headers[$k] = trim( $v );\n            }\n        }\n        return array(\n            &#8216;body&#8217;      =&gt; $body,\n            &#8216;err_no&#8217;    =&gt; $err_no,\n            &#8216;err_msg&#8217;   =&gt; $err_msg,\n            &#8216;headers&#8217;   =&gt; $headers,\n            &#8216;cookies&#8217;   =&gt; $cookies,\n            &#8216;info&#8217;      =&gt; $info\n        );\n    } // function curl_http_request\n}\n[/sourcecode]\nIt&#8217;s a bit longer that then other PHP Helper functions  .",
+            "date_published": "2010-03-17T15:07:18-06:00",
+            "date_modified": "2010-03-17T15:07:18-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "curl",
+                "curl_http_request",
+                "PHP",
+                "php-helpers",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2006/07/10/php-implementation-of-curl/",
+            "url": "https://blog.josephscott.org/2006/07/10/php-implementation-of-curl/",
+            "title": "PHP Implementation of cURL",
+            "content_html": "<p>This is just brilliant.  A <a href=\"http://code.blitzaffe.com/pages/phpclasses/category/52/fileid/7\">PHP implementation of cURL</a>.  The bottom line: with this you can use the <a href=\"http://php.net/curl\">PHP cURL</a> functions even if the extension isn&#8217;t around.  The library first checks for the extension, then the command line client and if neither of those are around then it makes use of its own code.  Even works with SSL as long as the OpenSSL extension is available.</p>\n",
+            "content_text": "This is just brilliant.  A PHP implementation of cURL.  The bottom line: with this you can use the PHP cURL functions even if the extension isn&#8217;t around.  The library first checks for the extension, then the command line client and if neither of those are around then it makes use of its own code.  Even works with SSL as long as the OpenSSL extension is available.",
+            "date_published": "2006-07-10T11:04:30-06:00",
+            "date_modified": "2006-07-10T11:04:30-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "curl",
+                "PHP",
+                "josephscott"
+            ]
+        }
+    ]
+}

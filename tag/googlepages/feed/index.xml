@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>googlepages &#8211; Joseph Scott</title>
+	<atom:link href="/tag/googlepages/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 23 Feb 2006 07:12:33 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Google Pages</title>
+		<link>/2006/02/22/google-pages/</link>
+					<comments>/2006/02/22/google-pages/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 23 Feb 2006 07:12:33 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[googlepages]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/22/google-pages/</guid>
+
+					<description><![CDATA[Just came across Google Pages (in Beta of course) a few minutes ago. This service allows you to create web pages. Unlike Blogger these seem be just plain web pages, not blogs. Think plain static pages. In order to use this service you&#8217;ll need a Gmail account. The editor is certainly very advanced. This is [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Just came across <a href="http://pages.google.com/">Google Pages</a> (in Beta of course) a few minutes ago.  This service allows you to create web pages.  Unlike <a href="http://www.blogger.com/">Blogger</a> these seem be just plain web pages, not blogs.  Think plain static pages.  In order to use this service you&#8217;ll need a <a href="http://www.gmail.com/">Gmail</a> account.</p>
+<p>The editor is certainly very advanced.  This is almost as good as a regular desktop editor.  There is a lot of AJAX going on to provide a pleasant experience.  All of the traditional HTML editor buttons are there; image, link, bold, italics, bullet lists, text color, font selection, text size, text alignment and text type (heading, subheading, minor heading and normal).  You can choose one of four different layouts and 41 styles.  For those of you who want to get in the guts you can also edit HTML directly.</p>
+<p>Just like some of their other recent service releases, the performance is very rough.  Although the editor usually works, saving can take quite a bit of time.  About half the time that I try to view my Google Pages home page it returns a 404 not found error.  I&#8217;m sure why I still expect more from Google since performance problems are nothing new.  When <a href="http://www.google.com/analytics/">Google Analytics</a> came out it was completely useless.</p>
+<p>They even let you upload images for use on your pages and presumably anywhere else.  The total space limit is set to 100MB and it isn&#8217;t clear if this will grow over time like <a href="http://gmail.com/">Gmail</a>.  My test page claimed to be &#8220;XHTML 1.0 Strict&#8221;, but running it through the <a href="http://validator.w3.org/">W3C Validator</a> showed 7 errors.</p>
+<p>I&#8217;m just not sure what to make of this.  The pages that you can generate aren&#8217;t that interesting, but the web based editor is slick.  But what do they expect people to use this service for exactly?</p>
+<p>My Google Page is at <a href="http://josephscott.googlepages.com/">http://josephscott.googlepages.com/</a></p>
+<p><strong>UPDATE Thu 23 Feb 2006 @ 10:50am:</strong> I still haven&#8217;t seen an official announcement from Google on this.  Search Engine Watch seems to have had the <a href="http://searchenginewatch.com/searchday/article.php/3586916">initial scoop</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/02/22/google-pages/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

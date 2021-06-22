@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Solving The Via Problem	</title>
+	<atom:link href="/2005/05/06/solving-the-via-problem/feed/" rel="self" type="application/rss+xml" />
+	<link>/2005/05/06/solving-the-via-problem/</link>
+	<description></description>
+	<lastBuildDate>Sat, 07 May 2005 19:29:35 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Rami Kayyali		</title>
+		<link>/2005/05/06/solving-the-via-problem/#comment-801</link>
+
+		<dc:creator><![CDATA[Rami Kayyali]]></dc:creator>
+		<pubDate>Sat, 07 May 2005 19:29:35 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/06/solving-the-via-problem/#comment-801</guid>
+
+					<description><![CDATA[Not quite sure if this might help, but a while ago I came up with the idea of &lt;a href=&quot;http://www.ramikayyali.com/archives/2005/01/13/discussions&quot; title=&quot;Blog Discussions&quot; rel=&quot;nofollow&quot;&gt;using a meta tag&lt;/a&gt; to indicate that a certain post is a reply. Maybe, for a post that has a single &quot;hat-tip&quot;, we could use the same idea with replacing &lt;code&gt;name=&quot;in-reply-to&quot;&lt;/code&gt; with &lt;code&gt;name=&quot;hat-tip&quot;&lt;/code&gt; or &lt;code&gt;name=&quot;link-via&quot;&lt;/code&gt;.]]></description>
+			<content:encoded><![CDATA[<p>Not quite sure if this might help, but a while ago I came up with the idea of <a href="http://www.ramikayyali.com/archives/2005/01/13/discussions" title="Blog Discussions" rel="nofollow">using a meta tag</a> to indicate that a certain post is a reply. Maybe, for a post that has a single &#8220;hat-tip&#8221;, we could use the same idea with replacing <code>name="in-reply-to"</code> with <code>name="hat-tip"</code> or <code>name="link-via"</code>.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: ryan king		</title>
+		<link>/2005/05/06/solving-the-via-problem/#comment-800</link>
+
+		<dc:creator><![CDATA[ryan king]]></dc:creator>
+		<pubDate>Sat, 07 May 2005 17:40:50 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/06/solving-the-via-problem/#comment-800</guid>
+
+					<description><![CDATA[First of all, I absolutely want something that will work with the current spec. People are already using via-links, there&#039;s no reason to make people wait for a new version of xhtml or use a namespace to make it work better.
+
+Of course, the q tag is for a direct quotation. I think via links are similar, yet different. We&#039;re giving attribution (which is a citation), but not for the content itself. Instead, the attribution is for a pointer to the content.]]></description>
+			<content:encoded><![CDATA[<p>First of all, I absolutely want something that will work with the current spec. People are already using via-links, there&#8217;s no reason to make people wait for a new version of xhtml or use a namespace to make it work better.</p>
+<p>Of course, the q tag is for a direct quotation. I think via links are similar, yet different. We&#8217;re giving attribution (which is a citation), but not for the content itself. Instead, the attribution is for a pointer to the content.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: joseph		</title>
+		<link>/2005/05/06/solving-the-via-problem/#comment-799</link>
+
+		<dc:creator><![CDATA[joseph]]></dc:creator>
+		<pubDate>Sat, 07 May 2005 08:11:30 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/06/solving-the-via-problem/#comment-799</guid>
+
+					<description><![CDATA[If you are looking for something to work with in the current spec then we&#039;ll probably have to think about this in a different way.  I wasn&#039;t overly concerned with following current attributes while throwing out my first few ideas.  Not worrying about encoding how we discovered the link certainly reduces the problem set.
+
+Using the id attribute becomes a problem because it needs to be unique also, which I&#039;d thought of that before :-(
+
+There are also no specific attributes for the cite tag, so we&#039;d have to use one of the general element attributes.
+
+Now that I&#039;m looking through the HTML spec, it looks like the &lt;a href=&quot;http://www.w3.org/TR/REC-html40/struct/text.html#edef-Q&quot; rel=&quot;nofollow&quot;&gt;q tag&lt;/a&gt; might be a good place to start.  Using the cite element of the q tag does a good job of providing the information in a parser friendly way, but it doesn&#039;t display very well to a human reader.
+
+Plenty more to think about.]]></description>
+			<content:encoded><![CDATA[<p>If you are looking for something to work with in the current spec then we&#8217;ll probably have to think about this in a different way.  I wasn&#8217;t overly concerned with following current attributes while throwing out my first few ideas.  Not worrying about encoding how we discovered the link certainly reduces the problem set.</p>
+<p>Using the id attribute becomes a problem because it needs to be unique also, which I&#8217;d thought of that before 🙁</p>
+<p>There are also no specific attributes for the cite tag, so we&#8217;d have to use one of the general element attributes.</p>
+<p>Now that I&#8217;m looking through the HTML spec, it looks like the <a href="http://www.w3.org/TR/REC-html40/struct/text.html#edef-Q" rel="nofollow">q tag</a> might be a good place to start.  Using the cite element of the q tag does a good job of providing the information in a parser friendly way, but it doesn&#8217;t display very well to a human reader.</p>
+<p>Plenty more to think about.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: ryan king		</title>
+		<link>/2005/05/06/solving-the-via-problem/#comment-798</link>
+
+		<dc:creator><![CDATA[ryan king]]></dc:creator>
+		<pubDate>Sat, 07 May 2005 07:01:53 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/06/solving-the-via-problem/#comment-798</guid>
+
+					<description><![CDATA[Joseph- thanks for the feedback, I have a couple of responses–
+
+We think that at this time trying to encode the vector type is too much. Personally, I&#039;d rather get a basic microformat first, then look into something like that later. Of course, I may be the only one.
+
+Second, I can&#039;t find any references to using the refid attribute in the cite tag. Are you sure this is valid XHTML? If so, I&#039;d appreciate a pointer to some info on it. Same thing goes for the type attribute.
+
+I&#039;d like to provide a way for people to encode this information, but it may be more productive to figure out the basic problem first.
+
+And, as a sidenote, I prefer the name citeVia to hVia, so it may change. Anyway, thanks for the discussion, please continue with feedback.]]></description>
+			<content:encoded><![CDATA[<p>Joseph- thanks for the feedback, I have a couple of responses–</p>
+<p>We think that at this time trying to encode the vector type is too much. Personally, I&#8217;d rather get a basic microformat first, then look into something like that later. Of course, I may be the only one.</p>
+<p>Second, I can&#8217;t find any references to using the refid attribute in the cite tag. Are you sure this is valid XHTML? If so, I&#8217;d appreciate a pointer to some info on it. Same thing goes for the type attribute.</p>
+<p>I&#8217;d like to provide a way for people to encode this information, but it may be more productive to figure out the basic problem first.</p>
+<p>And, as a sidenote, I prefer the name citeVia to hVia, so it may change. Anyway, thanks for the discussion, please continue with feedback.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

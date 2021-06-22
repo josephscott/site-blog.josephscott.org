@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Slow Loading Websites in Mac OS X Web Browsers	</title>
+	<atom:link href="/2009/12/18/slow-loading-websites-in-mac-os-x-web-browsers/feed/" rel="self" type="application/rss+xml" />
+	<link>/2009/12/18/slow-loading-websites-in-mac-os-x-web-browsers/</link>
+	<description></description>
+	<lastBuildDate>Wed, 17 Nov 2010 06:35:43 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/12/18/slow-loading-websites-in-mac-os-x-web-browsers/#comment-3135</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 17 Nov 2010 06:35:43 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1620#comment-3135</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/12/18/slow-loading-websites-in-mac-os-x-web-browsers/#comment-3134&quot;&gt;Doug&lt;/a&gt;.
+
+Not sure, they don&#039;t seem related.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/12/18/slow-loading-websites-in-mac-os-x-web-browsers/#comment-3134">Doug</a>.</p>
+<p>Not sure, they don&#8217;t seem related.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Doug		</title>
+		<link>/2009/12/18/slow-loading-websites-in-mac-os-x-web-browsers/#comment-3134</link>
+
+		<dc:creator><![CDATA[Doug]]></dc:creator>
+		<pubDate>Tue, 16 Nov 2010 18:45:19 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1620#comment-3134</guid>
+
+					<description><![CDATA[Just curious, but this tip (turning off ipv6) seems to have (so far) fixed an issue that I&#039;ve had for a long time. The sites would sometimes open very slowly, unless I nudged mail to check for new mail. THEN the site would open right away. How is that related?]]></description>
+			<content:encoded><![CDATA[<p>Just curious, but this tip (turning off ipv6) seems to have (so far) fixed an issue that I&#8217;ve had for a long time. The sites would sometimes open very slowly, unless I nudged mail to check for new mail. THEN the site would open right away. How is that related?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/12/18/slow-loading-websites-in-mac-os-x-web-browsers/#comment-3133</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 18 Dec 2009 19:18:27 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1620#comment-3133</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/12/18/slow-loading-websites-in-mac-os-x-web-browsers/#comment-3132&quot;&gt;Angelo Mandato&lt;/a&gt;.
+
+I don&#039;t think there are many DSL providers out there supporting IPv6, and I&#039;m quite sure that Qwest isn&#039;t :-)
+
+Setting up an IPv4  IPv6 tunnel has probably gotten easier since the last time I did it seven or eight years ago.  But at this point I don&#039;t have much demand for that.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/12/18/slow-loading-websites-in-mac-os-x-web-browsers/#comment-3132">Angelo Mandato</a>.</p>
+<p>I don&#8217;t think there are many DSL providers out there supporting IPv6, and I&#8217;m quite sure that Qwest isn&#8217;t 🙂</p>
+<p>Setting up an IPv4  IPv6 tunnel has probably gotten easier since the last time I did it seven or eight years ago.  But at this point I don&#8217;t have much demand for that.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Angelo Mandato		</title>
+		<link>/2009/12/18/slow-loading-websites-in-mac-os-x-web-browsers/#comment-3132</link>
+
+		<dc:creator><![CDATA[Angelo Mandato]]></dc:creator>
+		<pubDate>Fri, 18 Dec 2009 17:46:05 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1620#comment-3132</guid>
+
+					<description><![CDATA[All of the routing hardware from your computer to the web server need to support both IPv4 and IPv6. If any part of the chain cannot properly route IPv6 traffic, you&#039;ll have problems.
+
+One way to avoid those problems is to setup a tunnel, which I believe is essentially a way to go through IPv4 hardware to a specific IPv6 hardware device that then completes the IPv6 connection to the web server. The other way is to have all of the hardware be IPv6 compatible.
+
+I am unaware of any services or sites yet that are IPv6 only but almost all network infrastructure hardware have supported both IPv4 and IPv6 for a number of years now. I wouldn&#039;t be surprised if your DSL modem and beyond already supports IPv6.
+
+I bet the problem is your router. To test, you could try connecting the MAC directly to your DSL modem with the setting in OSX back to &#039;Automatic&#039;. If the site loads right up, then you know the problem is your router. If that works, I&#039;m going to be shopping for a new router for my network!]]></description>
+			<content:encoded><![CDATA[<p>All of the routing hardware from your computer to the web server need to support both IPv4 and IPv6. If any part of the chain cannot properly route IPv6 traffic, you&#8217;ll have problems.</p>
+<p>One way to avoid those problems is to setup a tunnel, which I believe is essentially a way to go through IPv4 hardware to a specific IPv6 hardware device that then completes the IPv6 connection to the web server. The other way is to have all of the hardware be IPv6 compatible.</p>
+<p>I am unaware of any services or sites yet that are IPv6 only but almost all network infrastructure hardware have supported both IPv4 and IPv6 for a number of years now. I wouldn&#8217;t be surprised if your DSL modem and beyond already supports IPv6.</p>
+<p>I bet the problem is your router. To test, you could try connecting the MAC directly to your DSL modem with the setting in OSX back to &#8216;Automatic&#8217;. If the site loads right up, then you know the problem is your router. If that works, I&#8217;m going to be shopping for a new router for my network!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/12/18/slow-loading-websites-in-mac-os-x-web-browsers/#comment-3131</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 18 Dec 2009 16:45:08 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1620#comment-3131</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/12/18/slow-loading-websites-in-mac-os-x-web-browsers/#comment-3130&quot;&gt;Nic Johnson&lt;/a&gt;.
+
+Interesting.  I wonder if there is another option some where in Mac OS X to tell it try IPv4 addresses first instead of IPv6.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/12/18/slow-loading-websites-in-mac-os-x-web-browsers/#comment-3130">Nic Johnson</a>.</p>
+<p>Interesting.  I wonder if there is another option some where in Mac OS X to tell it try IPv4 addresses first instead of IPv6.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Nic Johnson		</title>
+		<link>/2009/12/18/slow-loading-websites-in-mac-os-x-web-browsers/#comment-3130</link>
+
+		<dc:creator><![CDATA[Nic Johnson]]></dc:creator>
+		<pubDate>Fri, 18 Dec 2009 16:29:21 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1620#comment-3130</guid>
+
+					<description><![CDATA[It worked for me with IPv6 set to &quot;Automatically&quot;. I guess my ISP supports IPv6 then?]]></description>
+			<content:encoded><![CDATA[<p>It worked for me with IPv6 set to &#8220;Automatically&#8221;. I guess my ISP supports IPv6 then?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

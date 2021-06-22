@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: QCachegrind ( KCachegrind ) on Mac OS X	</title>
+	<atom:link href="/2013/07/03/qcachegrind-kcachegrind-on-mac-os-x/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/07/03/qcachegrind-kcachegrind-on-mac-os-x/</link>
+	<description></description>
+	<lastBuildDate>Fri, 28 Feb 2020 11:12:16 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: elvis ciotti		</title>
+		<link>/2013/07/03/qcachegrind-kcachegrind-on-mac-os-x/#comment-185598</link>
+
+		<dc:creator><![CDATA[elvis ciotti]]></dc:creator>
+		<pubDate>Fri, 28 Feb 2020 11:12:16 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=8353#comment-185598</guid>
+
+					<description><![CDATA[brew install qcachegrind]]></description>
+			<content:encoded><![CDATA[<p>brew install qcachegrind</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Matt		</title>
+		<link>/2013/07/03/qcachegrind-kcachegrind-on-mac-os-x/#comment-119939</link>
+
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+		<pubDate>Fri, 22 Jun 2018 18:32:30 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=8353#comment-119939</guid>
+
+					<description><![CDATA[Note: If you copy pasted the line &quot;export PATH=”$PATH:/usr/local/bin”&quot; you might need to replace the quote characters.]]></description>
+			<content:encoded><![CDATA[<p>Note: If you copy pasted the line &#8220;export PATH=”$PATH:/usr/local/bin”&#8221; you might need to replace the quote characters.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Asped		</title>
+		<link>/2013/07/03/qcachegrind-kcachegrind-on-mac-os-x/#comment-15831</link>
+
+		<dc:creator><![CDATA[Asped]]></dc:creator>
+		<pubDate>Mon, 26 Sep 2016 08:18:15 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=8353#comment-15831</guid>
+
+					<description><![CDATA[Thank you Motin! This one works for me on El Capitan.]]></description>
+			<content:encoded><![CDATA[<p>Thank you Motin! This one works for me on El Capitan.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Greg H.		</title>
+		<link>/2013/07/03/qcachegrind-kcachegrind-on-mac-os-x/#comment-4069</link>
+
+		<dc:creator><![CDATA[Greg H.]]></dc:creator>
+		<pubDate>Tue, 21 Jun 2016 00:55:36 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=8353#comment-4069</guid>
+
+					<description><![CDATA[Motin&#039;s clever trick works (and I&#039;m using macports, not homebrew), but keep in mind that you&#039;ll have to convert the curly quotes that this blogging platform inserted back to standard quotes.  This applies to both the single and double quotes.  And of course you may have to proceed the &quot;mv&quot;, &quot;echo&quot; and &quot;chmod&quot; commands with &quot;sudo &quot;.
+
+Thanks!]]></description>
+			<content:encoded><![CDATA[<p>Motin&#8217;s clever trick works (and I&#8217;m using macports, not homebrew), but keep in mind that you&#8217;ll have to convert the curly quotes that this blogging platform inserted back to standard quotes.  This applies to both the single and double quotes.  And of course you may have to proceed the &#8220;mv&#8221;, &#8220;echo&#8221; and &#8220;chmod&#8221; commands with &#8220;sudo &#8220;.</p>
+<p>Thanks!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2013/07/03/qcachegrind-kcachegrind-on-mac-os-x/#comment-4068</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 20 Jan 2016 16:55:16 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=8353#comment-4068</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/07/03/qcachegrind-kcachegrind-on-mac-os-x/#comment-4067&quot;&gt;Motin&lt;/a&gt;.
+
+Good to know, thanks.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/07/03/qcachegrind-kcachegrind-on-mac-os-x/#comment-4067">Motin</a>.</p>
+<p>Good to know, thanks.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Motin		</title>
+		<link>/2013/07/03/qcachegrind-kcachegrind-on-mac-os-x/#comment-4067</link>
+
+		<dc:creator><![CDATA[Motin]]></dc:creator>
+		<pubDate>Wed, 20 Jan 2016 13:34:21 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=8353#comment-4067</guid>
+
+					<description><![CDATA[This does no longer work in OSX El Capitan due to System Integration Protection:
+sudo ln -s /usr/local/bin/dot /usr/bin/dot
+
+Workaround:
+$ cd /Applications/qcachegrind.app/Contents/MacOS
+$ mv qcachegrind qcachegrind.bin
+$ echo &#039;#!/bin/bash
+export PATH=&quot;$PATH:/usr/local/bin&quot;
+$(dirname $0)/qcachegrind.bin
+exit 0&#039; &#062; qcachegrind
+$ chmod +x qcachegrind
+
+Then start qcachegrind as usual.]]></description>
+			<content:encoded><![CDATA[<p>This does no longer work in OSX El Capitan due to System Integration Protection:<br />
+sudo ln -s /usr/local/bin/dot /usr/bin/dot</p>
+<p>Workaround:<br />
+$ cd /Applications/qcachegrind.app/Contents/MacOS<br />
+$ mv qcachegrind qcachegrind.bin<br />
+$ echo &#8216;#!/bin/bash<br />
+export PATH=&#8221;$PATH:/usr/local/bin&#8221;<br />
+$(dirname $0)/qcachegrind.bin<br />
+exit 0&#8217; &gt; qcachegrind<br />
+$ chmod +x qcachegrind</p>
+<p>Then start qcachegrind as usual.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bill Torpey		</title>
+		<link>/2013/07/03/qcachegrind-kcachegrind-on-mac-os-x/#comment-4066</link>
+
+		<dc:creator><![CDATA[Bill Torpey]]></dc:creator>
+		<pubDate>Fri, 13 Feb 2015 23:53:53 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=8353#comment-4066</guid>
+
+					<description><![CDATA[Anupam -- thanks for that!  Love cachegrind, but hate building it -- this is great.
+
+One thing -- it looks like you still need to follow the instructions from https://gist.github.com/justfalter/1029580#file-how_to_install_qcachegrind_on_osx-txt about linking to dot if you want graphs:
+After installing dot (e.g.,
+brew install graphviz
+
+# By default, Graphviz installs dot to /usr/local/bin/dot, which qcachgrind.app
+# might not find since /usr/local/bin isn&#039;t in PATH by default (I think). In order
+# to ensure that my graphs render, I created a symlink from /usr/bin/dot to /usr/local/bin/dot:
+sudo ln -s /usr/local/bin/dot /usr/bin/dot]]></description>
+			<content:encoded><![CDATA[<p>Anupam &#8212; thanks for that!  Love cachegrind, but hate building it &#8212; this is great.</p>
+<p>One thing &#8212; it looks like you still need to follow the instructions from <a href="https://gist.github.com/justfalter/1029580#file-how_to_install_qcachegrind_on_osx-txt" rel="nofollow ugc">https://gist.github.com/justfalter/1029580#file-how_to_install_qcachegrind_on_osx-txt</a> about linking to dot if you want graphs:<br />
+After installing dot (e.g.,<br />
+brew install graphviz</p>
+<p># By default, Graphviz installs dot to /usr/local/bin/dot, which qcachgrind.app<br />
+# might not find since /usr/local/bin isn&#8217;t in PATH by default (I think). In order<br />
+# to ensure that my graphs render, I created a symlink from /usr/bin/dot to /usr/local/bin/dot:<br />
+sudo ln -s /usr/local/bin/dot /usr/bin/dot</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Anupam		</title>
+		<link>/2013/07/03/qcachegrind-kcachegrind-on-mac-os-x/#comment-4065</link>
+
+		<dc:creator><![CDATA[Anupam]]></dc:creator>
+		<pubDate>Thu, 12 Feb 2015 13:16:42 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=8353#comment-4065</guid>
+
+					<description><![CDATA[You can use homebrew to do this:
+brew install qcachegrind]]></description>
+			<content:encoded><![CDATA[<p>You can use homebrew to do this:<br />
+brew install qcachegrind</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Alex		</title>
+		<link>/2013/07/03/qcachegrind-kcachegrind-on-mac-os-x/#comment-4064</link>
+
+		<dc:creator><![CDATA[Alex]]></dc:creator>
+		<pubDate>Tue, 10 Feb 2015 03:40:47 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=8353#comment-4064</guid>
+
+					<description><![CDATA[To clarify:
+1. Install Qt opensource for mac (browser for release at http://download.qt-project.org/official_releases/qt/4.8/4.8.5/) 
+2. Add the following lines to .bash_profile
+export QTDIR=$HOME/Qt/5.4/clang_64
+export PATH=$QTDIR/bin:$PATH
+3. Clone repo
+git clone https://github.com/dtjm/kcachegrind.git
+cd kcachegrind/qcachegrind
+4. In new terminal (to make path above available) session build .app:
+qmake -spec &#039;macx-g++&#039;; make
+5. Launch qcachegrind.app]]></description>
+			<content:encoded><![CDATA[<p>To clarify:<br />
+1. Install Qt opensource for mac (browser for release at <a href="http://download.qt-project.org/official_releases/qt/4.8/4.8.5/" rel="nofollow ugc">http://download.qt-project.org/official_releases/qt/4.8/4.8.5/</a>)<br />
+2. Add the following lines to .bash_profile<br />
+export QTDIR=$HOME/Qt/5.4/clang_64<br />
+export PATH=$QTDIR/bin:$PATH<br />
+3. Clone repo<br />
+git clone <a href="https://github.com/dtjm/kcachegrind.git" rel="nofollow ugc">https://github.com/dtjm/kcachegrind.git</a><br />
+cd kcachegrind/qcachegrind<br />
+4. In new terminal (to make path above available) session build .app:<br />
+qmake -spec &#8216;macx-g++&#8217;; make<br />
+5. Launch qcachegrind.app</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

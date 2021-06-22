@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>energy &#8211; Joseph Scott</title>
+	<atom:link href="/tag/energy/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 16 Jul 2015 14:01:31 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Efficient/Clean Power for Datacenters</title>
+		<link>/2015/07/16/efficientclean-power-for-datacenters/</link>
+					<comments>/2015/07/16/efficientclean-power-for-datacenters/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 16 Jul 2015 14:01:31 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[datacenter]]></category>
+		<category><![CDATA[energy]]></category>
+		<category><![CDATA[james-hamilton]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9506</guid>
+
+					<description><![CDATA[James Hamilton on Datacenter Renewable Power Done Right ( back in 2013 ): how can running a low-scale power plant on a fossil fuel possibly be green and is on-site generation really going to be the most environmentally conscious means of powering data centers? Most datacenters lack space for large on-site generation facilities, most datacenter [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>James Hamilton on <a href="http://perspectives.mvdirona.com/2013/11/datacenter-renewable-power-done-right/">Datacenter Renewable Power Done Right</a> ( back in 2013 ):</p>
+<blockquote><p>
+how can running a low-scale power plant on a fossil fuel possibly be green and is on-site generation really going to be the most environmentally conscious means of powering data centers? Most datacenters lack space for large on-site generation facilities, most datacenter operators don’t have the skill, and generally the most efficient power generation plants are far bigger than a single datacenter could ever consume on its worst day.
+</p></blockquote>
+<p>His key point about on-site power generation at datacenters:</p>
+<blockquote><p>
+I still find myself skeptical that the world leaders in operating efficient and reliable power plans are going to be datacenter operators.
+</p></blockquote>
+<p>This may be a legitimate concern.  Then again, fifteen years ago I wouldn&#8217;t have guessed that Amazon would come to define pay as you go servers and services ( &#8220;the cloud&#8221; ).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/07/16/efficientclean-power-for-datacenters/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

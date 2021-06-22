@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>john-graham-cumming &#8211; Joseph Scott</title>
+	<atom:link href="/tag/john-graham-cumming/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 25 Sep 2015 14:30:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Trillions of Log Lines</title>
+		<link>/2015/09/25/trillions-of-log-lines/</link>
+					<comments>/2015/09/25/trillions-of-log-lines/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 25 Sep 2015 14:30:44 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[john-graham-cumming]]></category>
+		<category><![CDATA[logging]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13056</guid>
+
+					<description><![CDATA[How CloudFlare deals with trillions of log lines: From John Graham-Cumming: I got 10 trillion problems, but logging ain&#8217;t one.]]></description>
+										<content:encoded><![CDATA[<p>How CloudFlare deals with trillions of log lines:</p>
+<a href="/2015/09/25/trillions-of-log-lines/"><img src="/wp-content/plugins/wp-youtube-lyte/lyteCache.php?origThumbUrl=%2F%2Fi.ytimg.com%2Fvi%2FLA-gNoxSLCE%2Fhqdefault.jpg" alt="YouTube Video"></a><br /><br /></p>
+<p>From John Graham-Cumming: <a href="http://www.thedotpost.com/2015/06/john-graham-cumming-i-got-10-trillion-problems-but-logging-aint-one">I got 10 trillion problems, but logging ain&#8217;t one</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/09/25/trillions-of-log-lines/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

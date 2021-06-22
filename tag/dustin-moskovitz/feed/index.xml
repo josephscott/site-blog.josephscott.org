@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>dustin-moskovitz &#8211; Joseph Scott</title>
+	<atom:link href="/tag/dustin-moskovitz/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 03 Nov 2015 15:55:41 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Capacity Planning for Humans</title>
+		<link>/2015/11/03/capacity-planning-for-humans/</link>
+					<comments>/2015/11/03/capacity-planning-for-humans/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 03 Nov 2015 15:55:41 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[dustin-moskovitz]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13569</guid>
+
+					<description><![CDATA[Dustin Moskovitz talking about how to Work Hard, Live Well, emphasis is mine: The research is clear: beyond ~40–50 hours per week, the marginal returns from additional work decrease rapidly and quickly become negative. We have also demonstrated that though you can get more output for a few weeks during “crunch time” you still ultimately [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Dustin Moskovitz talking about how to <a href="https://medium.com/life-learning/work-hard-live-well-ead679cb506d">Work Hard, Live Well</a>, emphasis is mine:</p>
+<blockquote><p>
+The research is clear: beyond ~40–50 hours per week, the marginal returns from additional work decrease rapidly and quickly become negative. We have also demonstrated that though you can get more output for a few weeks during “crunch time” you still ultimately pay for it later when people inevitably need to recover. <strong>If you try to sustain crunch time for longer than that, you are merely creating the illusion of increased velocity.</strong>
+</p></blockquote>
+<p>This isn&#8217;t a new thought.  I mentioned that Alex Martelli talked about this <a href="https://josephscott.org/archives/2006/12/alex-martelli-on-highly-technical-management-of-software-development/">nine years ago</a>:</p>
+<blockquote><p>
+if you plan for 60 hour work weeks, what do you do when something blows up and demands more of your time? Keeping the normal work week schedule reasonable gives you some breathing room to work more during the occasional week where everything falls apart.
+</p></blockquote>
+<p>Think of it as capacity planning for humans.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/03/capacity-planning-for-humans/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

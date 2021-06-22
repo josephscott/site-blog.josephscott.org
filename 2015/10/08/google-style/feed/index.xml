@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Google Style	</title>
+	<atom:link href="/2015/10/08/google-style/feed/" rel="self" type="application/rss+xml" />
+	<link>/2015/10/08/google-style/</link>
+	<description></description>
+	<lastBuildDate>Thu, 08 Oct 2015 18:14:24 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2015/10/08/google-style/#comment-4385</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 08 Oct 2015 18:14:24 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=13396#comment-4385</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2015/10/08/google-style/#comment-4384&quot;&gt;Shawn McKenna&lt;/a&gt;.
+
+&lt;blockquote&gt;I created them so I do have some bias&lt;/blockquote&gt;
+
+Well, at least you have no one else to blame :-)  Given enough developers there will always be disagreements about style.
+
+The biggest help to having a style guide is having an automated tool that checks code against the guide rules.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2015/10/08/google-style/#comment-4384">Shawn McKenna</a>.</p>
+<blockquote><p>I created them so I do have some bias</p></blockquote>
+<p>Well, at least you have no one else to blame 🙂  Given enough developers there will always be disagreements about style.</p>
+<p>The biggest help to having a style guide is having an automated tool that checks code against the guide rules.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Shawn McKenna		</title>
+		<link>/2015/10/08/google-style/#comment-4384</link>
+
+		<dc:creator><![CDATA[Shawn McKenna]]></dc:creator>
+		<pubDate>Thu, 08 Oct 2015 18:05:23 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=13396#comment-4384</guid>
+
+					<description><![CDATA[At first I was incredulous after reading &quot;never use exceptions.&quot; After reading through their guide (the C++ one; in Java they do use exceptions) it ends up being a pragmatic reason and not a philosophical one.  They had coded themselves into it basically (an overuse of error codes.)  They even state: &quot;Things would probably be different if we had to do it all over again from scratch.&quot;
+
+While checked exceptions can be overused (some languages do not have this like C#, Java does), they do have a use.  Plus unchecked exceptions (runtime) are a whole lot easier to create maintainable code then without (given a good-to-great programmer.) 
+
+Style guides are important for consistency of code.  Every company should have them.  I use them for the projects that I am on (of course I created them so I do have some bias).  It helps later on, especially if you bring in another programmer, to keep maintainable and consistent code (of course you do need informal/formal code reviews as well.)]]></description>
+			<content:encoded><![CDATA[<p>At first I was incredulous after reading &#8220;never use exceptions.&#8221; After reading through their guide (the C++ one; in Java they do use exceptions) it ends up being a pragmatic reason and not a philosophical one.  They had coded themselves into it basically (an overuse of error codes.)  They even state: &#8220;Things would probably be different if we had to do it all over again from scratch.&#8221;</p>
+<p>While checked exceptions can be overused (some languages do not have this like C#, Java does), they do have a use.  Plus unchecked exceptions (runtime) are a whole lot easier to create maintainable code then without (given a good-to-great programmer.) </p>
+<p>Style guides are important for consistency of code.  Every company should have them.  I use them for the projects that I am on (of course I created them so I do have some bias).  It helps later on, especially if you bring in another programmer, to keep maintainable and consistent code (of course you do need informal/formal code reviews as well.)</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

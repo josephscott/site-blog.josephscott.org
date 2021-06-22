@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>couchcast &#8211; Joseph Scott</title>
+	<atom:link href="/tag/couchcast/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 24 Mar 2008 17:25:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Couch Cast</title>
+		<link>/2008/03/24/couch-cast/</link>
+					<comments>/2008/03/24/couch-cast/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 24 Mar 2008 17:25:38 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[couchcast]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1044</guid>
+
+					<description><![CDATA[Talking with Robert Merrill, Thom Allen and Matt Reinbold on Couch Cast today at Noon, Utah time.]]></description>
+										<content:encoded><![CDATA[<p>Talking with Robert Merrill, Thom Allen and Matt Reinbold on <a href="http://couchcast.org/">Couch Cast</a> today at Noon, Utah time.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/03/24/couch-cast/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

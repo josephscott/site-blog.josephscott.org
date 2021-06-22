@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: IE9	</title>
+	<atom:link href="/2011/03/15/ie9/feed/" rel="self" type="application/rss+xml" />
+	<link>/2011/03/15/ie9/</link>
+	<description></description>
+	<lastBuildDate>Tue, 15 Mar 2011 23:26:16 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/03/15/ie9/#comment-3679</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 15 Mar 2011 23:26:16 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3829#comment-3679</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/03/15/ie9/#comment-3678&quot;&gt;Rob&lt;/a&gt;.
+
+Firefox builds support Direct2D and friends, but they simply disable it on Windows XP.  Even if Microsoft starts shipping Win7 with IE9 and pushes it out to Win7 as a security update, Win7 is only 29% of the user base.  A significant chunk no doubt, but no where near the size of the Windows XP base, of which exactly zero of them will update to IE9 (without switching Windows versions of course).
+
+Another question that comes up, what timeline is Microsoft looking at for new IE versions?  IE6 -&#062; IE7 was five years. IE7 -&#062; IE8 was three years.  IE8 -&#062; IE9 was two years.  Is that going to fast enough to keep up with the competition?  Firefox has been doing about once a year (with a different version number scheme) and Chrome, well Chrome is just crazy ;-)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/03/15/ie9/#comment-3678">Rob</a>.</p>
+<p>Firefox builds support Direct2D and friends, but they simply disable it on Windows XP.  Even if Microsoft starts shipping Win7 with IE9 and pushes it out to Win7 as a security update, Win7 is only 29% of the user base.  A significant chunk no doubt, but no where near the size of the Windows XP base, of which exactly zero of them will update to IE9 (without switching Windows versions of course).</p>
+<p>Another question that comes up, what timeline is Microsoft looking at for new IE versions?  IE6 -&gt; IE7 was five years. IE7 -&gt; IE8 was three years.  IE8 -&gt; IE9 was two years.  Is that going to fast enough to keep up with the competition?  Firefox has been doing about once a year (with a different version number scheme) and Chrome, well Chrome is just crazy 😉</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rob		</title>
+		<link>/2011/03/15/ie9/#comment-3678</link>
+
+		<dc:creator><![CDATA[Rob]]></dc:creator>
+		<pubDate>Tue, 15 Mar 2011 23:01:44 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3829#comment-3678</guid>
+
+					<description><![CDATA[For you to say it&#039;s to force upgrades this is wrong on so many levels. Whilst I won&#039;t deny it&#039;s an element it&#039;s a simple fact that XP is now so out of date when it comes to modern technology. It&#039;s a security risk and lacks basic support for much of the modern hardware/software we rely on. This is another reason that XP can become unstable as drivers often have to be backported from Vista/Win 7.
+
+All browsers are going towards hardware acceleration IE 9 uses Microsoft&#039;s own technology (Direct2D and Direct 3D found in Vista/Win 7 DirectX 10/11) which would require a fundamental rewrite of the graphics stack in XP to the OpenGL/WebGL capabilities of Opera 11.5 which is targeted for both desktop and upcoming mobile technologies. Safari uses a form of acceleration but I&#039;m not sure about this browser (I don&#039;t use OS X).
+
+In my experience no browser has gotten the GPGPU stability up to par apart from Microsoft in IE9 due to it being based on a proven technology. Problem is that few people need this support at the moment... When we do we&#039;ll face the same problems Adobe is facing with GPGPU support in Flash. We have three different platforms to consider and only OS X/Windows is considered mature enough to implement these acceleration technologies. IE 9 is also more secure than any other version of IE how secure remains to be seen but with increasing attacks on Firefox it goes to show that there is no such thing as a &#039;secure&#039; browser&#039;.
+
+Will I use IE 9? Only for development. However almost all new PCs, unless you&#039;re in a corporate environment, will be using Win 7 so it&#039;s only a matter of time before IE 9 is given out as a update in Windows Updates. So uptake will be better than most people believe especially if Microsoft puts it out as a security update. In my testing IE 9 is a breath of fresh air from Microsoft and in many ways it&#039;s a very different beast from earlier versions of IE with some nice touches.]]></description>
+			<content:encoded><![CDATA[<p>For you to say it&#8217;s to force upgrades this is wrong on so many levels. Whilst I won&#8217;t deny it&#8217;s an element it&#8217;s a simple fact that XP is now so out of date when it comes to modern technology. It&#8217;s a security risk and lacks basic support for much of the modern hardware/software we rely on. This is another reason that XP can become unstable as drivers often have to be backported from Vista/Win 7.</p>
+<p>All browsers are going towards hardware acceleration IE 9 uses Microsoft&#8217;s own technology (Direct2D and Direct 3D found in Vista/Win 7 DirectX 10/11) which would require a fundamental rewrite of the graphics stack in XP to the OpenGL/WebGL capabilities of Opera 11.5 which is targeted for both desktop and upcoming mobile technologies. Safari uses a form of acceleration but I&#8217;m not sure about this browser (I don&#8217;t use OS X).</p>
+<p>In my experience no browser has gotten the GPGPU stability up to par apart from Microsoft in IE9 due to it being based on a proven technology. Problem is that few people need this support at the moment&#8230; When we do we&#8217;ll face the same problems Adobe is facing with GPGPU support in Flash. We have three different platforms to consider and only OS X/Windows is considered mature enough to implement these acceleration technologies. IE 9 is also more secure than any other version of IE how secure remains to be seen but with increasing attacks on Firefox it goes to show that there is no such thing as a &#8216;secure&#8217; browser&#8217;.</p>
+<p>Will I use IE 9? Only for development. However almost all new PCs, unless you&#8217;re in a corporate environment, will be using Win 7 so it&#8217;s only a matter of time before IE 9 is given out as a update in Windows Updates. So uptake will be better than most people believe especially if Microsoft puts it out as a security update. In my testing IE 9 is a breath of fresh air from Microsoft and in many ways it&#8217;s a very different beast from earlier versions of IE with some nice touches.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/03/15/ie9/#comment-3677</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 15 Mar 2011 19:01:20 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3829#comment-3677</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/03/15/ie9/#comment-3676&quot;&gt;Aaron Toponce&lt;/a&gt;.
+
+Yes, clearly one reason Microsoft is going this route with IE9 is to get more OS upgrades.  However, Windows Vista (the next version after Windows XP) has been available for more than 4 years (and Windows 7 almost 2 years), it seems unlikely that folks who have chosen not to upgrade thus far will suddenly do so just to get access to IE9.
+
+Looking at some of the versions of Windows prior to Windows XP we saw much more frequent version releases and much faster adoption.  This points to something about Windows XP being good enough for many uses, such that people aren&#039;t seeing an upgrade as compelling as it once was in the past.  Given the much broader range of high quality browser options today I doubt that IE9 will suddenly change the minds of people still on Windows XP.  As a result I believe IE9 adoption will be much weaker that the last few recent versions of IE and that it will have a small or non-existent impact on the usage of IE6.
+
+I&#039;m more concerned about people using a quality modern browser than what version of Windows they run.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/03/15/ie9/#comment-3676">Aaron Toponce</a>.</p>
+<p>Yes, clearly one reason Microsoft is going this route with IE9 is to get more OS upgrades.  However, Windows Vista (the next version after Windows XP) has been available for more than 4 years (and Windows 7 almost 2 years), it seems unlikely that folks who have chosen not to upgrade thus far will suddenly do so just to get access to IE9.</p>
+<p>Looking at some of the versions of Windows prior to Windows XP we saw much more frequent version releases and much faster adoption.  This points to something about Windows XP being good enough for many uses, such that people aren&#8217;t seeing an upgrade as compelling as it once was in the past.  Given the much broader range of high quality browser options today I doubt that IE9 will suddenly change the minds of people still on Windows XP.  As a result I believe IE9 adoption will be much weaker that the last few recent versions of IE and that it will have a small or non-existent impact on the usage of IE6.</p>
+<p>I&#8217;m more concerned about people using a quality modern browser than what version of Windows they run.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron Toponce		</title>
+		<link>/2011/03/15/ie9/#comment-3676</link>
+
+		<dc:creator><![CDATA[Aaron Toponce]]></dc:creator>
+		<pubDate>Tue, 15 Mar 2011 18:41:58 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3829#comment-3676</guid>
+
+					<description><![CDATA[You are missing the boat with IE 9- sell more Windows 7, not make the web a better place to surf. Thus, the reason it is not supported on XP (aside from some technical issues), AND the reason Microsoft wants to phase out IE 6. It is all about the bottom line. You should have learned this from Office.]]></description>
+			<content:encoded><![CDATA[<p>You are missing the boat with IE 9- sell more Windows 7, not make the web a better place to surf. Thus, the reason it is not supported on XP (aside from some technical issues), AND the reason Microsoft wants to phase out IE 6. It is all about the bottom line. You should have learned this from Office.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

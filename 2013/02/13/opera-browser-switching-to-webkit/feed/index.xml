@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Opera Browser Switching to WebKit	</title>
+	<atom:link href="/2013/02/13/opera-browser-switching-to-webkit/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/02/13/opera-browser-switching-to-webkit/</link>
+	<description></description>
+	<lastBuildDate>Wed, 13 Feb 2013 18:34:10 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2013/02/13/opera-browser-switching-to-webkit/#comment-3981</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 13 Feb 2013 18:34:10 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=6714#comment-3981</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/02/13/opera-browser-switching-to-webkit/#comment-3980&quot;&gt;julien51&lt;/a&gt;.
+
+It does make me wonder what the internal discussions for Firefox and IE look like after this announcement.  I don&#039;t see either of them wanting to switch to WebKit.  I think Opera was able to justify this move in part because it frees up more of their people to make the parts of their browser surrounding the rendering engine better.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/02/13/opera-browser-switching-to-webkit/#comment-3980">julien51</a>.</p>
+<p>It does make me wonder what the internal discussions for Firefox and IE look like after this announcement.  I don&#8217;t see either of them wanting to switch to WebKit.  I think Opera was able to justify this move in part because it frees up more of their people to make the parts of their browser surrounding the rendering engine better.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: julien51		</title>
+		<link>/2013/02/13/opera-browser-switching-to-webkit/#comment-3980</link>
+
+		<dc:creator><![CDATA[julien51]]></dc:creator>
+		<pubDate>Wed, 13 Feb 2013 18:30:28 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=6714#comment-3980</guid>
+
+					<description><![CDATA[This is indeed an interesting move. I have however seen a lot of negativity from the Mozilla folks, or even TBL himself (thru a RT).
+
+What I find the most fascinating is that it will be completely transparent for Opera to move to Webkit just because the web was built on open protocols, with a strong decoupling between the browsers and the web apps. This kind of change would not be possible if the websites we use and love were built custom for a specific type of browser, OS or device. I just hope it stays the same, despite the strong temptation my many web devs to just add Webkit specific features to their apps.]]></description>
+			<content:encoded><![CDATA[<p>This is indeed an interesting move. I have however seen a lot of negativity from the Mozilla folks, or even TBL himself (thru a RT).</p>
+<p>What I find the most fascinating is that it will be completely transparent for Opera to move to Webkit just because the web was built on open protocols, with a strong decoupling between the browsers and the web apps. This kind of change would not be possible if the websites we use and love were built custom for a specific type of browser, OS or device. I just hope it stays the same, despite the strong temptation my many web devs to just add Webkit specific features to their apps.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

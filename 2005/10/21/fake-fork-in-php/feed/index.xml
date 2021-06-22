@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Fake Fork in PHP	</title>
+	<atom:link href="/2005/10/21/fake-fork-in-php/feed/" rel="self" type="application/rss+xml" />
+	<link>/2005/10/21/fake-fork-in-php/</link>
+	<description></description>
+	<lastBuildDate>Tue, 07 Apr 2015 21:56:15 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Adam		</title>
+		<link>/2005/10/21/fake-fork-in-php/#comment-1000</link>
+
+		<dc:creator><![CDATA[Adam]]></dc:creator>
+		<pubDate>Tue, 07 Apr 2015 21:56:15 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=506#comment-1000</guid>
+
+					<description><![CDATA[How can you call sequential commands to run in the background?  In my case, I want to call one command which waits for a specific event; once this finished I want the next command to be called.  Both of these need to happen in the same &quot;background process&quot;, but sequentially.  The only way I can think of realizing this would be to call another script:
+&lt;b&gt;exec(&quot;php otherScript.php &#062; /dev/null&quot;, $array_output);&lt;/b&gt;
+
+However, I prefer not doing this.]]></description>
+			<content:encoded><![CDATA[<p>How can you call sequential commands to run in the background?  In my case, I want to call one command which waits for a specific event; once this finished I want the next command to be called.  Both of these need to happen in the same &#8220;background process&#8221;, but sequentially.  The only way I can think of realizing this would be to call another script:<br />
+<b>exec(&#8220;php otherScript.php &gt; /dev/null&#8221;, $array_output);</b></p>
+<p>However, I prefer not doing this.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Mr Thanks		</title>
+		<link>/2005/10/21/fake-fork-in-php/#comment-999</link>
+
+		<dc:creator><![CDATA[Mr Thanks]]></dc:creator>
+		<pubDate>Sun, 26 Dec 2010 19:38:20 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=506#comment-999</guid>
+
+					<description><![CDATA[Cheers mate. I was looking for this for thttpd+php on an AT91SAM board for launching mpg123.
+Works a treat!]]></description>
+			<content:encoded><![CDATA[<p>Cheers mate. I was looking for this for thttpd+php on an AT91SAM board for launching mpg123.<br />
+Works a treat!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: fork e javascript - Pagina 3 &#124; hilpers		</title>
+		<link>/2005/10/21/fake-fork-in-php/#comment-998</link>
+
+		<dc:creator><![CDATA[fork e javascript - Pagina 3 &#124; hilpers]]></dc:creator>
+		<pubDate>Sun, 18 Jan 2009 13:10:48 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=506#comment-998</guid>
+
+					<description><![CDATA[[...] HTTP. Quindi, l&#039;unica e&#039; non fare mai exit o kill dai figli.  Dai anche una occhiata a questo:  http://joseph.randomnetworks.com/arc...e-fork-in-php/  &#062;&#062; Altrimenti non ti rimane che far scrivere in un vettore IPC lo stato, &#062;&#062; e quando [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] HTTP. Quindi, l&#8217;unica e&#8217; non fare mai exit o kill dai figli.  Dai anche una occhiata a questo:  <a href="http://joseph.randomnetworks.com/arc" rel="nofollow ugc">http://joseph.randomnetworks.com/arc</a>&#8230;e-fork-in-php/  &gt;&gt; Altrimenti non ti rimane che far scrivere in un vettore IPC lo stato, &gt;&gt; e quando [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: XSet &#187; Blog Archive &#187; Parallel Processing in PHP		</title>
+		<link>/2005/10/21/fake-fork-in-php/#comment-997</link>
+
+		<dc:creator><![CDATA[XSet &#187; Blog Archive &#187; Parallel Processing in PHP]]></dc:creator>
+		<pubDate>Thu, 25 Sep 2008 13:52:41 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=506#comment-997</guid>
+
+					<description><![CDATA[[...] Of course in the LAMP development world a quick and dirty hack is often as good as a well rounded programmewd solution. Joseph Scott shows you how to use a Linux execution feature (namely forking a command into the background using and ampersand) to parallelise applications that don&#8217;t need to return anything. I&#8217;ve actually used this technique to build a one hit multiplexor for various applications: Quick and dirty fake fork for non returning scripts [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Of course in the LAMP development world a quick and dirty hack is often as good as a well rounded programmewd solution. Joseph Scott shows you how to use a Linux execution feature (namely forking a command into the background using and ampersand) to parallelise applications that don&#8217;t need to return anything. I&#8217;ve actually used this technique to build a one hit multiplexor for various applications: Quick and dirty fake fork for non returning scripts [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Observer		</title>
+		<link>/2005/10/21/fake-fork-in-php/#comment-996</link>
+
+		<dc:creator><![CDATA[Observer]]></dc:creator>
+		<pubDate>Mon, 23 Jun 2008 10:45:35 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=506#comment-996</guid>
+
+					<description><![CDATA[Another way to perform several tasks simultaneously is by using stream_select(). This is useful in the cases where you php script makes many requests to multiple other websites.
+
+In one of my web scripts, I had to make up to 24 http requests. When I done it sequentially, it took over 1 minute. Now it takes less than 10 seconds. See it and test it here: http://www.info-express.org/website-popularity-checker]]></description>
+			<content:encoded><![CDATA[<p>Another way to perform several tasks simultaneously is by using stream_select(). This is useful in the cases where you php script makes many requests to multiple other websites.</p>
+<p>In one of my web scripts, I had to make up to 24 http requests. When I done it sequentially, it took over 1 minute. Now it takes less than 10 seconds. See it and test it here: <a href="http://www.info-express.org/website-popularity-checker" rel="nofollow ugc">http://www.info-express.org/website-popularity-checker</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Daniel Molina		</title>
+		<link>/2005/10/21/fake-fork-in-php/#comment-995</link>
+
+		<dc:creator><![CDATA[Daniel Molina]]></dc:creator>
+		<pubDate>Thu, 12 Jun 2008 01:22:49 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=506#comment-995</guid>
+
+					<description><![CDATA[Sorry, but this isn&#039;t a fork fake or similar such thing. The system call fork(2) -- wrapped arround php with pcntl_fork() function -- sets the entry point to the right line of source, instead your implementation that set the entry point to the start of the script.
+
+Play a little with labels if you want the desired results. Also, see the way to save the environment and allocated variables... Be careful y you serialize the $GLOBALS variable.]]></description>
+			<content:encoded><![CDATA[<p>Sorry, but this isn&#8217;t a fork fake or similar such thing. The system call fork(2) &#8212; wrapped arround php with pcntl_fork() function &#8212; sets the entry point to the right line of source, instead your implementation that set the entry point to the start of the script.</p>
+<p>Play a little with labels if you want the desired results. Also, see the way to save the environment and allocated variables&#8230; Be careful y you serialize the $GLOBALS variable.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Stephen Hosking		</title>
+		<link>/2005/10/21/fake-fork-in-php/#comment-994</link>
+
+		<dc:creator><![CDATA[Stephen Hosking]]></dc:creator>
+		<pubDate>Sat, 17 Nov 2007 04:32:15 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=506#comment-994</guid>
+
+					<description><![CDATA[Thanks so much for this! I needed to create a background process and tried pcntl_fork, but couldn&#039;t do it because I&#039;m using Apache. So I was stuck, until I luckily hit this web page. That&#039;s really great Unix work nutting out that command line! I fiddled with it a bit, and worked out 1. You do seem to need all those options - &quot;&#038;&quot; is not enough, and 2. in &#039;&#060; &#038;- &#039; the space is not necessary, &#039;&#060;&#038;- &#039; works fine.
+
+Thanks again!]]></description>
+			<content:encoded><![CDATA[<p>Thanks so much for this! I needed to create a background process and tried pcntl_fork, but couldn&#8217;t do it because I&#8217;m using Apache. So I was stuck, until I luckily hit this web page. That&#8217;s really great Unix work nutting out that command line! I fiddled with it a bit, and worked out 1. You do seem to need all those options &#8211; &#8220;&amp;&#8221; is not enough, and 2. in &#8216;&lt; &amp;- &#8216; the space is not necessary, &#8216;&lt;&amp;- &#8216; works fine.</p>
+<p>Thanks again!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: ferdhie		</title>
+		<link>/2005/10/21/fake-fork-in-php/#comment-993</link>
+
+		<dc:creator><![CDATA[ferdhie]]></dc:creator>
+		<pubDate>Wed, 21 Mar 2007 14:26:25 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=506#comment-993</guid>
+
+					<description><![CDATA[I&#039;ve tried with ping, but the apache seems to wait for the request to return
+exec(&quot;ping yahoo.com 2&#062;&#038;1 1&#062;/tmp/ping.log &#038;&quot;);
+got any idea?]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve tried with ping, but the apache seems to wait for the request to return<br />
+exec(&#8220;ping yahoo.com 2&gt;&amp;1 1&gt;/tmp/ping.log &amp;&#8221;);<br />
+got any idea?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Breyten&#8217;s Dev Blog &#187; Blog Archive &#187; links for 2005-11-02		</title>
+		<link>/2005/10/21/fake-fork-in-php/#comment-992</link>
+
+		<dc:creator><![CDATA[Breyten&#8217;s Dev Blog &#187; Blog Archive &#187; links for 2005-11-02]]></dc:creator>
+		<pubDate>Sat, 08 Apr 2006 17:54:35 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=506#comment-992</guid>
+
+					<description><![CDATA[[...] Joseph Scott’s Blog » Fake Fork in PHP &#8220;here are times when it would be really handy to perform a fork in PHP when it is running as an Apache module. There is a way to fake this, sort of.&#8221; (tags: php) [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Joseph Scott’s Blog » Fake Fork in PHP &#8220;here are times when it would be really handy to perform a fork in PHP when it is running as an Apache module. There is a way to fake this, sort of.&#8221; (tags: php) [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

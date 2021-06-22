@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>julia-evans &#8211; Joseph Scott</title>
+	<atom:link href="/tag/julia-evans/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 15 Mar 2016 17:51:37 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Recommended Reading: Julia Evans</title>
+		<link>/2016/03/15/recommended-reading-julia-evans/</link>
+					<comments>/2016/03/15/recommended-reading-julia-evans/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 15 Mar 2016 17:51:37 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[julia-evans]]></category>
+		<category><![CDATA[recommended-reading]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15406</guid>
+
+					<description><![CDATA[For the software geeks in the house I recommend subscribing to Julia Evans. Many of her posts come up because of a question, then go on to detail what she found out while looking for the answer. I&#8217;ll give you two recent examples to demonstrate what I mean. First up: What is &#8220;the stack&#8221;?: The [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>For the software geeks in the house I recommend subscribing to <a href="http://jvns.ca/">Julia Evans</a>.  Many of her posts come up because of a question, then go on to detail what she found out while looking for the answer.  I&#8217;ll give you two recent examples to demonstrate what I mean.</p>
+<p>First up: <a href="http://jvns.ca/blog/2016/03/01/a-few-notes-on-the-stack/">What is &#8220;the stack&#8221;?</a>:</p>
+<blockquote><p>
+The basic question I want to answer here is &#8212; why do people sometimes discuss &#8220;the stack&#8221; like it&#8217;s some kind of revered fundamental object? (the answer is going to turn out to be &#8220;because it is&#8221;, and I&#8217;m going to try to make that as concrete as I can.)
+</p></blockquote>
+<p>She then touches on C, assembly, Rust, and gdb to explain what she discovered.  Good stuff.</p>
+<p>My next example: <a href="http://jvns.ca/blog/2016/03/12/how-does-perf-work-and-some-questions/">How does perf work? (in which we read the Linux kernel source)</a>:</p>
+<blockquote><p>
+So it turns out I don&#8217;t really know how perf works. And I like knowing how stuff works. Last week I read some of the man page for perf_event_open, the system call that perf uses. It&#8217;s 10,000 words but pretty helpful! I&#8217;m still quite confused about perf, so I&#8217;m going to tell you, fair reader, what I know, and then maybe you can help me out with my questions.
+</p></blockquote>
+<p>The result?  A little bit about CPUs and the Linux kernel.  Classic &#8220;source code is the ultimate truth&#8221; approach, excellent.</p>
+<p>If you write code or read code, I recommend reading <a href="http://jvns.ca/">Julia Evans</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/03/15/recommended-reading-julia-evans/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

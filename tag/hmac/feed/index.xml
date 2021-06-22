@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>hmac &#8211; Joseph Scott</title>
+	<atom:link href="/tag/hmac/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 27 Aug 2013 16:34:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Better Stateless CSRF Tokens</title>
+		<link>/2013/08/27/better-stateless-csrf-tokens/</link>
+					<comments>/2013/08/27/better-stateless-csrf-tokens/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 27 Aug 2013 16:34:45 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[csrf]]></category>
+		<category><![CDATA[hmac]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=8991</guid>
+
+					<description><![CDATA[I had great feedback on my original stateless CSRF tokens post. Here is an improved version of stateless CSRF tokens based on that feedback: [sourcecode lang=&#8221;php&#8221;] function request_token_generate( $data_str, $key, $timeout = 900 ) { $now = microtime( true ); $range = mt_rand( 4, 25 ); # $random = bin2hex( openssl_random_pseudo_bytes( $range ) ); $random [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I had great feedback on my original <a href="https://josephscott.org/archives/2013/07/stateless-csrf-tokens/">stateless CSRF tokens</a> post.  Here is an improved version of stateless CSRF tokens based on that feedback:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+function request_token_generate( $data_str, $key, $timeout = 900 ) {<br />
+    $now = microtime( true );<br />
+    $range = mt_rand( 4, 25 );<br />
+#   $random = bin2hex( openssl_random_pseudo_bytes( $range ) );<br />
+    $random = bin2hex( fread( fopen( &#8216;/dev/urandom&#8217;, &#8216;r&#8217; ), $range ) );<br />
+    $hash = hash_hmac( &#8216;sha256&#8217;, &quot;$data_str-$now-$timeout-$random&quot;, $key );</p>
+<p>    return &quot;$hash-$now-$timeout-$random&quot;;<br />
+}</p>
+<p>function request_token_verify( $token, $data_str, $key ) {<br />
+    list( $hash, $hash_time, $timeout, $random ) = explode( &#8216;-&#8216;, $token, 4 );<br />
+    if (<br />
+        empty( $hash )<br />
+        || empty( $hash_time )<br />
+        || empty( $timeout )<br />
+        || empty( $random )<br />
+    ) {<br />
+        return false;<br />
+    }</p>
+<p>    if ( microtime( true ) &gt; $hash_time + $timeout ) {<br />
+        return false;<br />
+    }</p>
+<p>    $check_string = &quot;$data_str-$hash_time-$timeout-$random&quot;;<br />
+    $check_hash = hash_hmac( &#8216;sha256&#8217;, $check_string, $key );</p>
+<p>    if ( $check_hash === $hash ) {<br />
+        return true;<br />
+    }</p>
+<p>    return false;<br />
+}<br />
+[/sourcecode]</p>
+<p>The biggest change is the addition of a random value, of various lengths, to the token.  My first version of this used OpenSSL to generate the random values.  In the end I opted to just open <code>/dev/urandom</code> directly.  I left the <code>openssl_random_pseudo_bytes()</code> call in a comment to show how that works.</p>
+<p>I updated the tests to include altering the random bits:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+$key = &#8216;5up3R53cr3T!&#8217;;<br />
+$data_str = &#8216;45873&#8217; . &#8216;delete_post_345&#8217; . &#8216;2013-05-01 14:45:32&#8217; . &#8216;0dH6hi&#8217;;<br />
+$token = request_token_generate( $data_str, $key, 15 );<br />
+echo &quot;REAL TOKEN: $tokenn&quot;;</p>
+<p>// confirm original works<br />
+echo &quot;Should be valid: &quot;;<br />
+if ( request_token_verify( $token, $data_str, $key ) ) {<br />
+    echo &quot;Valid tokenn&quot;;<br />
+} else {<br />
+    echo &quot;! INVALID ! tokenn&quot;;<br />
+}<br />
+echo &quot;n&quot;;</p>
+<p>// turn back time<br />
+list( $hash, $hash_time, $timeout, $random ) = explode( &#8216;-&#8216;, $token, 4 );<br />
+$hash_time = $hash_time &#8211; 100;<br />
+$fake_token = &quot;$hash-$hash_time-$timeout-$random&quot;;<br />
+echo &quot;FAKE: $fake_tokenn&quot;;</p>
+<p>echo &quot;Should be INVALID: &quot;;<br />
+if ( request_token_verify( $fake_token, $data_str, $key ) ) {<br />
+    echo &quot;Valid tokenn&quot;;<br />
+} else {<br />
+    echo &quot;! INVALID ! tokenn&quot;;<br />
+}<br />
+echo &quot;n&quot;;</p>
+<p>// alter timeout<br />
+list( $hash, $hash_time, $timeout, $random ) = explode( &#8216;-&#8216;, $token, 4 );<br />
+$fake_token = &quot;$hash-$hash_time-10000-$random&quot;;<br />
+echo &quot;FAKE: $fake_tokenn&quot;;</p>
+<p>echo &quot;Should be INVALID: &quot;;<br />
+if ( request_token_verify( $fake_token, $data_str, $key ) ) {<br />
+    echo &quot;Valid tokenn&quot;;<br />
+} else {<br />
+    echo &quot;! INVALID ! tokenn&quot;;<br />
+}<br />
+echo &quot;n&quot;;</p>
+<p>// new random<br />
+list( $hash, $hash_time, $timeout, $random ) = explode( &#8216;-&#8216;, $token, 4 );<br />
+$fake_token = &quot;$hash-$hash_time-$timeout-123&quot;;<br />
+echo &quot;FAKE: $fake_tokenn&quot;;</p>
+<p>echo &quot;Should be INVALID: &quot;;<br />
+if ( request_token_verify( $fake_token, $data_str, $key ) ) {<br />
+    echo &quot;Valid tokenn&quot;;<br />
+} else {<br />
+    echo &quot;! INVALID ! tokenn&quot;;<br />
+}<br />
+echo &quot;n&quot;;<br />
+[/sourcecode]</p>
+<p>The random part detects tampering in the same way the timeout does, by including it in the original data string used by the HMAC.</p>
+<p>While this is an improvement over my previous version it still isn&#8217;t the same as using a stateful CSRF token system.  Make sure you are familiar with the trade offs of each before picking one.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/08/27/better-stateless-csrf-tokens/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Stateless CSRF Tokens</title>
+		<link>/2013/07/24/stateless-csrf-tokens/</link>
+					<comments>/2013/07/24/stateless-csrf-tokens/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 24 Jul 2013 13:46:38 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[csrf]]></category>
+		<category><![CDATA[hmac]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=8476</guid>
+
+					<description><![CDATA[UPDATE: I posted improved versions of these functions in Better Stateless CSRF Tokens. I&#8217;ve been thinking about CSRF tokens lately. If you are using the built in $_SESSION feature of PHP a common pattern goes something like this ( similar to what Chris Shiflett describes ) : [sourcecode lang=&#8221;php&#8221;] session_start(); &#8230; $token = base64_encode( openssl_random_pseudo_bytes( [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>UPDATE:</strong> I posted improved versions of these functions in <a href="https://josephscott.org/archives/2013/08/better-stateless-csrf-tokens/">Better Stateless CSRF Tokens</a>.</p>
+<p>I&#8217;ve been thinking about CSRF tokens lately.  If you are using the built in <code>$_SESSION</code> feature of PHP a common pattern goes something like this ( similar to what <a href="http://shiflett.org/articles/cross-site-request-forgeries">Chris Shiflett describes</a> ) :</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+session_start();</p>
+<p>&#8230;</p>
+<p>$token = base64_encode( openssl_random_pseudo_bytes( 32 ) );<br />
+$_SESSION[&#8216;token&#8217;] = $token;<br />
+$_SESSION[&#8216;token_time&#8217;] = time();</p>
+<p>&#8230;</p>
+<p>echo &#8216;&lt;input type=&quot;hidden&quot; name=&quot;token&quot; value=&quot;&#8217; . $token . &#8216;&quot; /&gt;&#8217;;</p>
+<p>&#8230;</p>
+<p>if (<br />
+    isset( $_POST[&#8216;token&#8217;] )<br />
+    &amp;&amp; $_POST[&#8216;token&#8217;] === $_SESSION[&#8216;token&#8217;]<br />
+) {<br />
+    if ( ( time() &#8211; $_SESSION[&#8216;token_time&#8217;] ) &lt;= 300 ) {<br />
+        // valid token, within time limit<br />
+    }<br />
+}</p>
+<p>[/sourcecode]</p>
+<p>A few notes about this approach.  First, use <code><a href="http://us3.php.net/openssl_random_pseudo_bytes">openssl_random_pseudo_bytes</a></code> instead of <code><a href="http://us3.php.net/mt_rand">mt_rand</a></code> ( <a href="http://www.eschrade.com/page/generating-secure-cross-site-request-forgery-tokens-csrf/">suggested by Kevin Schroeder</a> ) when possible.  Second, be sure to only use <code><a href="http://us1.php.net/manual/en/language.operators.comparison.php">===</a></code> when comparing the token value.  You want to avoid automatic type juggling.</p>
+<p>Why worry about automatic type juggling when comparing CSRF tokens?  Try this script:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+$token = &#8216;abc123&#8217;;<br />
+$form_token = 0;</p>
+<p>if ( $form_token == $token ) {<br />
+    echo &quot;Valid tokenn&quot;;<br />
+} else {<br />
+    echo &quot;Invalid tokenn&quot;;<br />
+}<br />
+[/sourcecode]</p>
+<p>Even though <code>$token</code> and <code>$form_token</code> clearly don&#8217;t contain the same values this script will display &#8216;Valid Token&#8217; because of automatic type juggling.  That makes your CSRF token basically useless as an attacker can set the token to zero and it will be considered valid.  Switching to <code>===</code> will display the expected &#8216;Invalid token&#8217;.</p>
+<p>This is all fine and good until you want to avoid using PHP sessions.  Perhaps you have several web servers and don&#8217;t want to deal with shared session storage.  Or have servers in multiple data centers and don&#8217;t want to try and sync state across them.  What ever the reason, popping a token into <code>$_SESSION</code> isn&#8217;t an option in this case.  In short you want some sort of stateless CSRF token.</p>
+<p>One method is to generate a token based on known values that won&#8217;t change and lasts for a given period of time.  This is what WordPress does.  You can see the WordPress implementation in the inaccurately named <code><a href="http://core.trac.wordpress.org/browser/tags/3.5.2/wp-includes/pluggable.php#L1272">wp_create_nonce</a></code> and <code><a href="http://core.trac.wordpress.org/browser/tags/3.5.2/wp-includes/pluggable.php#L1240">wp_verify_nonce</a></code> functions ( WordPress nonces aren&#8217;t really nonces, they can be used more than once ).  The high level version is that WordPress takes a known set of values like the user id, NONCE_KEY, descriptive action text, and current time; then runs them through an MD5 <a href="http://us2.php.net/hash_hmac">HMAC</a>.</p>
+<p>By default the tokens are good for 24 hours.  You can adjust the time a WordPress nonce value is valid for by filtering <code>nonce_life</code>.  That isn&#8217;t very flexible though.  If you want to use different HMAC keys and timeouts across various requests then you end up having to filter both sides ( create and verify ).</p>
+<p>I got to wondering what a more flexible approach to stateless CSRF tokens would look like.  Here is what I&#8217;m thinking of:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+function request_token_generate( $data_str, $key, $timeout = 900 ) {<br />
+    $now = microtime( true );<br />
+    $hash = hash_hmac( &#8216;sha256&#8217;, &quot;$data_str|$now|$timeout&quot;, $key );</p>
+<p>    return base64_encode( $hash ) . &quot;|$now|$timeout&quot;;<br />
+}</p>
+<p>function request_token_verify( $token, $data_str, $key ) {<br />
+    list( $hash, $hash_time, $timeout ) = explode( &#8216;|&#8217;, $token, 3 );<br />
+    if ( empty( $hash ) || empty( $hash_time ) || empty( $timeout ) ) {<br />
+        return false;<br />
+    }</p>
+<p>    if ( microtime( true ) &gt; $hash_time + $timeout ) {<br />
+        return false;<br />
+    }</p>
+<p>    $hash = base64_decode( $hash );<br />
+    $check_hash = hash_hmac(<br />
+        &#8216;sha256&#8217;, &quot;$data_str|$hash_time|$timeout&quot;, $key<br />
+    );</p>
+<p>    if ( $check_hash === $hash ) {<br />
+        return true;<br />
+    }</p>
+<p>    return false;<br />
+}<br />
+[/sourcecode]</p>
+<p>For <code>request_token_generate</code> you&#8217;ll need to provide a string containing unique data about the user and request, an HMAC key value, and an optional timeout.  One example of the data string would be a combination of the internal user id, descriptive text about the action being taken, timestamp of when the password on the account was last changed, and the last 6 characters of the hashed password.  Depending on the flow of the request you might want to include the URL that the form is expected to be on and the remote client IP address.</p>
+<p>There is no specific limit on what you could include in the data string.  Anything likely to be fairly unique to that user and request would be a good candidate.  For that mater you could generate an additional unique key for each user at signup time that could be included.</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+$key = &#8216;5up3R53cr3T!&#8217;;<br />
+$data_str = &#8216;45873&#8217; . &#8216;delete_post_345&#8217;<br />
+    . &#8216;2013-05-01 14:45:32&#8217; . &#8216;2dH6hi&#8217;;<br />
+$request_token = request_token_generate( $data_str, $key );</p>
+<p>echo &quot;Token: $request_tokenn&quot;;<br />
+[/sourcecode]</p>
+<p>That will produce a token that looks something like:</p>
+<p><code>MTljOWZmNzhmOTY5Y2Y5Y2IxNjdkNzQ5YzVkYTcwNzMyMzNjMjhmNTdmZTFhZjVkNmEwNTAyMmFjMjBmMTExMQ==|1373336147.4861|900</code></p>
+<p>This is really 3 values separated by <code>|</code>, the first is the base64&#8217;d HMAC ( using SHA256 instead of MD5 ).  The second value is the timestamp for when the token was generated and the third is how long the token is good for in seconds.  Verifying the token is easy enough:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+if ( request_token_verify( $request_token, $data_str, $key ) ) {<br />
+    echo &quot;Valid tokenn&quot;;<br />
+} else {<br />
+    echo &quot;! INVALID ! tokenn&quot;;<br />
+}<br />
+[/sourcecode]</p>
+<p>The verification side needs to have access to the same values that went into building <code>$data_str</code> and the HMAC key.  You don&#8217;t need to know the timeout for the token because the timeout is included as part of the token value.</p>
+<p>This approach prevents tampering by including the timestamp and the time out values as part of the HMAC call ( as does WordPress ).  Testing this is easy enough:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+$key = &#8216;5up3R53cr3T!&#8217;;<br />
+$data_str = &#8216;45873&#8217; . &#8216;delete_post_345&#8217; . &#8216;2013-05-01 14:45:32&#8217; . &#8216;0dH6hi&#8217;;<br />
+$token = request_token_generate( $data_str, $key, 15 );</p>
+<p>// confirm original works<br />
+echo &quot;Should be valid: &quot;;<br />
+if ( request_token_verify( $token, $data_str, $key ) ) {<br />
+    echo &quot;Valid tokenn&quot;;<br />
+} else {<br />
+    echo &quot;! INVALID ! tokenn&quot;;<br />
+}</p>
+<p>// turn back time<br />
+list( $hash, $hash_time, $timeout ) = explode( &#8216;|&#8217;, $token, 3 );<br />
+$hash_time = $hash_time &#8211; 100;<br />
+$fake_token = &quot;$hash|$hash_time|$timeout&quot;;</p>
+<p>echo &quot;Should be INVALID: &quot;;<br />
+if ( request_token_verify( $fake_token, $data_str, $key ) ) {<br />
+    echo &quot;Valid tokenn&quot;;<br />
+} else {<br />
+    echo &quot;! INVALID ! tokenn&quot;;<br />
+}</p>
+<p>// alter timeout<br />
+list( $hash, $hash_time, $timeout ) = explode( &#8216;|&#8217;, $token, 3 );<br />
+$fake_token = &quot;$hash|$hash_time|10000&quot;;</p>
+<p>echo &quot;Should be INVALID: &quot;;<br />
+if ( request_token_verify( $fake_token, $data_str, $key ) ) {<br />
+    echo &quot;Valid tokenn&quot;;<br />
+} else {<br />
+    echo &quot;! INVALID ! tokenn&quot;;<br />
+}<br />
+[/sourcecode]</p>
+<p>The first test checks that the unmodified token is valid.  The second test attempts to set the timestamp back in time.  The third attempts to increase the timeout value.  The two altered tokens fail because the hash values no longer match.</p>
+<p>Overall I&#8217;m happy with this approach to stateless CSRF tokens.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/07/24/stateless-csrf-tokens/feed/</wfw:commentRss>
+			<slash:comments>10</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

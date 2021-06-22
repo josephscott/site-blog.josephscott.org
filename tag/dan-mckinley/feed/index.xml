@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>dan-mckinley &#8211; Joseph Scott</title>
+	<atom:link href="/tag/dan-mckinley/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 26 May 2015 13:20:13 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Boring As In Well Understood</title>
+		<link>/2015/05/26/boring-as-in-well-understood/</link>
+					<comments>/2015/05/26/boring-as-in-well-understood/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 26 May 2015 13:20:13 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[dan-mckinley]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11982</guid>
+
+					<description><![CDATA[A few select quotes from Dan McKinley on choosing boring technology: The nice thing about boringness (so constrained) is that the capabilities of these things are well understood. But more importantly, their failure modes are well understood. Ask any dev for their best horror story at work. It will undoubtedly involve how something failed in [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>A few select quotes from Dan McKinley on <a href='http://mcfunley.com/choose-boring-technology'>choosing boring technology</a>:</p>
+<blockquote><p>
+The nice thing about boringness (so constrained) is that the capabilities of these things are well understood. But more importantly, their failure modes are well understood.
+</p></blockquote>
+<p>Ask any dev for their best horror story at work.  It will undoubtedly involve how something failed in an unexpected way.</p>
+<blockquote><p>
+Adding technology to your company comes with a cost. As an abstract statement this is obvious: if we&#8217;re already using Ruby, adding Python to the mix doesn&#8217;t feel sensible because the resulting complexity would outweigh Python&#8217;s marginal utility.
+</p></blockquote>
+<p>The question may not be, is X better than Y.  Instead it might be is X better enough than Y to make up for the overhead of switching?</p>
+<blockquote><p>
+It&#8217;s helpful to write down exactly what it is about the current stack that makes solving the problem prohibitively expensive and difficult.
+</p></blockquote>
+<p>Switching between languages, tools, and stacks comes with a cost.  Depending on the exact challenges and problems that cost may or may not be worth it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/05/26/boring-as-in-well-understood/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

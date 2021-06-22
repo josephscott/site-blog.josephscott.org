@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: PHP Tip: Spaces Are Not empty()	</title>
+	<atom:link href="/2010/03/29/php-tip-spaces-are-not-empty/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/03/29/php-tip-spaces-are-not-empty/</link>
+	<description></description>
+	<lastBuildDate>Fri, 10 Mar 2017 16:47:30 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Rebecca		</title>
+		<link>/2010/03/29/php-tip-spaces-are-not-empty/#comment-38305</link>
+
+		<dc:creator><![CDATA[Rebecca]]></dc:creator>
+		<pubDate>Fri, 10 Mar 2017 16:47:30 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2108#comment-38305</guid>
+
+					<description><![CDATA[Thanks!  This had me stumped for a while.]]></description>
+			<content:encoded><![CDATA[<p>Thanks!  This had me stumped for a while.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/03/29/php-tip-spaces-are-not-empty/#comment-3358</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 13 Jun 2012 19:23:53 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2108#comment-3358</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/03/29/php-tip-spaces-are-not-empty/#comment-3357&quot;&gt;Sam Vloeberghs&lt;/a&gt;.
+
+That may or may not be what you want to do, depending on what legitimate contents of the variable look like.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/03/29/php-tip-spaces-are-not-empty/#comment-3357">Sam Vloeberghs</a>.</p>
+<p>That may or may not be what you want to do, depending on what legitimate contents of the variable look like.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Sam Vloeberghs		</title>
+		<link>/2010/03/29/php-tip-spaces-are-not-empty/#comment-3357</link>
+
+		<dc:creator><![CDATA[Sam Vloeberghs]]></dc:creator>
+		<pubDate>Tue, 12 Jun 2012 21:25:56 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2108#comment-3357</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/03/29/php-tip-spaces-are-not-empty/#comment-3355&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+Or use trim() on the var and than check if it&#039;s empty ( doing it the right way ) :)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/03/29/php-tip-spaces-are-not-empty/#comment-3355">Joseph Scott</a>.</p>
+<p>Or use trim() on the var and than check if it&#8217;s empty ( doing it the right way ) 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/03/29/php-tip-spaces-are-not-empty/#comment-3355</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 01 Jul 2011 21:07:37 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2108#comment-3355</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/03/29/php-tip-spaces-are-not-empty/#comment-3354&quot;&gt;Airbrush&lt;/a&gt;.
+
+If you wanted to use a regex I&#039;d do an inverted search for anything not a space (or space like character).]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/03/29/php-tip-spaces-are-not-empty/#comment-3354">Airbrush</a>.</p>
+<p>If you wanted to use a regex I&#8217;d do an inverted search for anything not a space (or space like character).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Airbrush		</title>
+		<link>/2010/03/29/php-tip-spaces-are-not-empty/#comment-3354</link>
+
+		<dc:creator><![CDATA[Airbrush]]></dc:creator>
+		<pubDate>Fri, 01 Jul 2011 14:19:48 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2108#comment-3354</guid>
+
+					<description><![CDATA[Hi Joseph,
+
+How do you check if a value of a password field is all spaces? Been trying preg_match to catch all spaces but no avail. Preg_match can catch space within a string with other characters, but if it&#039;s all spaces, it can&#039;t catch it.
+
+if (!preg_match(&quot;/^[a-zA-Z0-9@#$%=]{6,}$/&quot;, $value[&#039;password&#039;])) {
+.... error message here
+}
+
+Thanks]]></description>
+			<content:encoded><![CDATA[<p>Hi Joseph,</p>
+<p>How do you check if a value of a password field is all spaces? Been trying preg_match to catch all spaces but no avail. Preg_match can catch space within a string with other characters, but if it&#8217;s all spaces, it can&#8217;t catch it.</p>
+<p>if (!preg_match(&#8220;/^[a-zA-Z0-9@#$%=]{6,}$/&#8221;, $value[&#8216;password&#8217;])) {<br />
+&#8230;. error message here<br />
+}</p>
+<p>Thanks</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Viper007Bond		</title>
+		<link>/2010/03/29/php-tip-spaces-are-not-empty/#comment-3353</link>
+
+		<dc:creator><![CDATA[Viper007Bond]]></dc:creator>
+		<pubDate>Mon, 29 Mar 2010 23:51:56 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2108#comment-3353</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/03/29/php-tip-spaces-are-not-empty/#comment-3352&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+Exactly. I would think whitespace would be empty() in PHP, but then I remember that a standard &quot;if&quot; test would pass with a space. :)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/03/29/php-tip-spaces-are-not-empty/#comment-3352">Joseph Scott</a>.</p>
+<p>Exactly. I would think whitespace would be empty() in PHP, but then I remember that a standard &#8220;if&#8221; test would pass with a space. 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/03/29/php-tip-spaces-are-not-empty/#comment-3352</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 29 Mar 2010 22:05:11 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2108#comment-3352</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/03/29/php-tip-spaces-are-not-empty/#comment-3351&quot;&gt;Viper007Bond&lt;/a&gt;.
+
+Good idea.  I think the problem is that people come with built-in ideas of what &#039;empty&#039; means, and it&#039;s not always what PHP thinks it means.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/03/29/php-tip-spaces-are-not-empty/#comment-3351">Viper007Bond</a>.</p>
+<p>Good idea.  I think the problem is that people come with built-in ideas of what &#8217;empty&#8217; means, and it&#8217;s not always what PHP thinks it means.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Viper007Bond		</title>
+		<link>/2010/03/29/php-tip-spaces-are-not-empty/#comment-3351</link>
+
+		<dc:creator><![CDATA[Viper007Bond]]></dc:creator>
+		<pubDate>Mon, 29 Mar 2010 21:27:42 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2108#comment-3351</guid>
+
+					<description><![CDATA[How I remember it is that these two are identical:
+
+[php light=&quot;true&quot;]if ( $variable ) {[/php]
+
+[php light=&quot;true&quot;]if ( !empty( $variable ) ) {[/php]]]></description>
+			<content:encoded><![CDATA[<p>How I remember it is that these two are identical:</p>
+<p>[php light=&#8221;true&#8221;]if ( $variable ) {[/php]</p>
+<p>[php light=&#8221;true&#8221;]if ( !empty( $variable ) ) {[/php]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

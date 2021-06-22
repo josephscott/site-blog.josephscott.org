@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>underscore-php &#8211; Joseph Scott</title>
+	<atom:link href="/tag/underscore-php/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 20 Mar 2013 15:51:09 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Underscore.php</title>
+		<link>/2013/03/20/underscore-php/</link>
+					<comments>/2013/03/20/underscore-php/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 20 Mar 2013 15:51:09 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[underscore-php]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4780</guid>
+
+					<description><![CDATA[Underscore.php is a port of the popular Underscore.js to PHP. Some of these methods look useful, others left me wondering why they were included. For example, __::toArray(): [sourcecode lang=&#8221;php&#8221;] $stooge = new StdClass; $stooge-&#62;name = &#8216;moe&#8217;; $stooge-&#62;age = 40; __::toArray($stooge); // array(&#8216;name&#8217;=&#62;&#8217;moe&#8217;, &#8216;age&#8217;=&#62;40) [/sourcecode] When just casting it to an (array) does the same thing. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href='http://brianhaveri.github.com/Underscore.php/'>Underscore.php</a> is a port of the popular <a href="http://documentcloud.github.com/underscore/">Underscore.js</a> to PHP.</p>
+<p>Some of these methods look useful, others left me wondering why they were included.  For example, <code>__::toArray()</code>:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+$stooge = new StdClass;<br />
+$stooge-&gt;name = &#8216;moe&#8217;;<br />
+$stooge-&gt;age = 40;<br />
+__::toArray($stooge); // array(&#8216;name&#8217;=&gt;&#8217;moe&#8217;, &#8216;age&#8217;=&gt;40)<br />
+[/sourcecode]</p>
+<p>When just casting it to an <code>(array)</code> does the same thing.  Indeed, that is all the <code>__::toArray()</code> method does internally.</p>
+<p>Another example is <code>__::isArray()</code>, when PHP already has an <code><a href="http://php.net/is_array">is_array()</a></code> function.</p>
+<p>Perhaps all of that is just an effort to be as compatible as possible with the original Underscore.js.  Underscore.php is available under an MIT style license at <a href="https://github.com/brianhaveri/Underscore.php">https://github.com/brianhaveri/Underscore.php</a>.  I may just pluck out some of the specific functions that look the most useful and not worry about the rest.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/03/20/underscore-php/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>android &#8211; Joseph Scott</title>
+	<atom:link href="/tag/android/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 07 Aug 2018 22:03:14 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Android Version Distribution</title>
+		<link>/2018/08/07/android-version-distribution/</link>
+					<comments>/2018/08/07/android-version-distribution/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 07 Aug 2018 22:03:14 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[android]]></category>
+		<guid isPermaLink="false">/?p=16860</guid>
+
+					<description><![CDATA[Google just announced Android 9 Pie yesterday ( developer announcement, Pie 9.0 ). One of the historical challenges with many Android devices is getting timely OS updates. After seeing this announcement I was curious what the current Android version distribution looks like right now. I found two sources that report on that. First up, the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Google just <a href="https://blog.google/products/android/introducing-android-9-pie/">announced</a> Android 9 Pie yesterday ( <a href="https://android-developers.googleblog.com/2018/08/introducing-android-9-pie.html">developer announcement</a>, <a href="https://www.android.com/versions/pie-9-0/">Pie 9.0</a> ).  One of the historical challenges with many Android devices is getting timely OS updates.  After seeing this announcement I was curious what the current Android version distribution looks like right now.</p>
+<p>I found two sources that report on that.  First up, the <a href="https://developer.android.com/about/dashboards/">Android distribution dashboard</a>.</p>
+<p><a href="/wp-content/uploads/2018/08/android-distribution-dashboard.png"><img loading="lazy" src="/wp-content/uploads/2018/08/android-distribution-dashboard-1024x767.png" alt="" width="840" height="629" class="aligncenter size-large wp-image-16863" srcset="/wp-content/uploads/2018/08/android-distribution-dashboard-1024x767.png 1024w, /wp-content/uploads/2018/08/android-distribution-dashboard-300x225.png 300w, /wp-content/uploads/2018/08/android-distribution-dashboard-768x575.png 768w, /wp-content/uploads/2018/08/android-distribution-dashboard-1200x899.png 1200w, /wp-content/uploads/2018/08/android-distribution-dashboard.png 1532w" sizes="(max-width: 840px) 100vw, 840px" /></a></p>
+<p>Version 5.0 came out in November 2014 and 13.2% of devices are running a version older than that.  On the plus side, 42.9% of devices are running Android 7.0 or later.</p>
+<p>The second source is <a href="http://gs.statcounter.com/android-version-market-share/mobile-tablet/worldwide/#monthly-201707-201807">Statcounter</a>.</p>
+<p><a href="/wp-content/uploads/2018/08/android-version-statcounter.png"><img loading="lazy" src="/wp-content/uploads/2018/08/android-version-statcounter-1024x576.png" alt="" width="840" height="473" class="aligncenter size-large wp-image-16866" srcset="/wp-content/uploads/2018/08/android-version-statcounter-1024x576.png 1024w, /wp-content/uploads/2018/08/android-version-statcounter-300x169.png 300w, /wp-content/uploads/2018/08/android-version-statcounter-768x432.png 768w, /wp-content/uploads/2018/08/android-version-statcounter-1200x675.png 1200w, /wp-content/uploads/2018/08/android-version-statcounter.png 1280w" sizes="(max-width: 840px) 100vw, 840px" /></a></p>
+<p>I like that they provide historical data, making it easy to see where the trends are going.  In the last year Android 4.4 has gone from 14.2% to 6.7%.</p>
+<p>In order to get Android 8.x to show up I had to change the time frame.  Here is a chart for the last six months.</p>
+<p><a href="/wp-content/uploads/2018/08/android-version-statcounter.png"><img loading="lazy" src="/wp-content/uploads/2018/08/android-version-statcounter-1024x576.png" alt="" width="840" height="473" class="aligncenter size-large wp-image-16866" srcset="/wp-content/uploads/2018/08/android-version-statcounter-1024x576.png 1024w, /wp-content/uploads/2018/08/android-version-statcounter-300x169.png 300w, /wp-content/uploads/2018/08/android-version-statcounter-768x432.png 768w, /wp-content/uploads/2018/08/android-version-statcounter-1200x675.png 1200w, /wp-content/uploads/2018/08/android-version-statcounter.png 1280w" sizes="(max-width: 840px) 100vw, 840px" /></a></p>
+<p>That shows Android 8.0 at 10.7%, which is right in line with the 10.1% reported by the dashboard site.</p>
+<h3>Measuring Success</h3>
+<p>It is safe to say that getting major OS updates out in a shorter time frame to more devices is good for everyone.  So what would a successful upgrade distribution look like for Android?</p>
+<p>The super amazing ultimate goal would be to beat iOS.  I don&#8217;t see that being even a remote possibly for five years or more, so I will shelve that one for now.</p>
+<p>With a yearly release schedule, the one year time frame is a good benchmark to use. Right now Android 8.x is just a few days shy of 1 year old, and stands at 12.1%.  Success is if Google can increase that percentage every year.</p>
+<p>To put a line in the sand, if in two years the one year percentage for the most recent OS version is over 20%, I&#8217;d call that a solid success.  That would mean that when Android 11.0 is announced in August 2020, the device version distribution for Android 10.x would be over 20%.</p>
+<p>Mark your calendars.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/08/07/android-version-distribution/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Speedtest.net Android App Permissions</title>
+		<link>/2018/01/24/speedtest-net-android-app-permissions/</link>
+					<comments>/2018/01/24/speedtest-net-android-app-permissions/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 24 Jan 2018 15:38:03 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[permissions]]></category>
+		<category><![CDATA[privacy]]></category>
+		<category><![CDATA[speedtest]]></category>
+		<guid isPermaLink="false">/?p=16398</guid>
+
+					<description><![CDATA[I went to install the speedtest.net Android app and the following permission requests popped up: The first three all seemed reasonable. That last one, not so much: Device ID &#038; call information Allows the app to determine the phone number and device IDs, whether a call is active, and the remote number connected by a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I went to install the <a href="https://play.google.com/store/apps/details?id=org.zwanoo.android.speedtest&#038;hl=en">speedtest.net Android app</a> and the following permission requests popped up:</p>
+<p><a href="/wp-content/uploads/2018/01/speedtest-permissions.png"><img loading="lazy" src="/wp-content/uploads/2018/01/speedtest-permissions-576x1024.png" alt="" width="576" height="1024" class="aligncenter size-large wp-image-16399" srcset="/wp-content/uploads/2018/01/speedtest-permissions-576x1024.png 576w, /wp-content/uploads/2018/01/speedtest-permissions-169x300.png 169w, /wp-content/uploads/2018/01/speedtest-permissions-768x1365.png 768w, /wp-content/uploads/2018/01/speedtest-permissions.png 1080w" sizes="(max-width: 576px) 100vw, 576px" /></a></p>
+<p>The first three all seemed reasonable.  That last one, not so much:</p>
+<blockquote><p>
+<strong>Device ID &#038; call information</strong></p>
+<p>Allows the app to determine the phone number and device IDs, whether a call is active, and the remote number connected by a call
+</p></blockquote>
+<p>I want to run speed tests, not track phone calls.  The language isn&#8217;t exactly clear.  Is it saying it can only do that while I&#8217;m using the app?  Even if that is the case, I can&#8217;t think of any instances where I would want a speed test app to track my phone call information.</p>
+<p>There is still the option of using their web based test.  But you have to use the &#8220;desktop&#8221; view, because their mobile site only does one thing: redirect you to the app.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/01/24/speedtest-net-android-app-permissions/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>2013 Apps, Android vs. iOS</title>
+		<link>/2014/01/03/2013-apps-android-vs-ios/</link>
+					<comments>/2014/01/03/2013-apps-android-vs-ios/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 03 Jan 2014 18:54:04 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[ios]]></category>
+		<category><![CDATA[techcrunch]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9735</guid>
+
+					<description><![CDATA[TechCrunch ran a Best iOS And Android Apps Of 2013 article this week. I thought the platform break down was interesting: iOS only: 9 ( Seene, QuizUp, Cycloramic, BillGuard, Oyster, HeyDay, TimeHop, Clumsy Ninja, Sunrise ) iOS &#038; Android: 5 ( Newsblur, Tinder, Digg, Duolingo, Vine ) Android only: 2 ( Cover, Agent ) It [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>TechCrunch ran a <a href="http://techcrunch.com/2013/12/31/the-best-ios-and-android-apps-of-2013/" title="For some definition of 'best'.">Best iOS And Android Apps Of 2013</a> article this week.  I thought the platform break down was interesting:</p>
+<ul>
+<li><strong>iOS only:</strong> 9 ( Seene, QuizUp, Cycloramic, BillGuard, Oyster, HeyDay, TimeHop, Clumsy Ninja, Sunrise )</li>
+<li><strong>iOS &#038; Android:</strong> 5 ( Newsblur, Tinder, Digg, Duolingo, Vine )</li>
+<li><strong>Android only:</strong> 2 ( Cover, Agent )</li>
+</ul>
+<p>It looks like we are still in a holding pattern for the long predicted &#8220;Android first&#8221; tidal wave.  Instead, the Android only apps tend to focus on things that aren&#8217;t allowed on the iOS platform.  Everyone else either targets only iOS, or iOS and Android together.  </p>
+<p>I don&#8217;t see anything in the short term that is likely to significantly change that pattern.</p>
+<p>This is only one best of list, for one year, so my sample size is rather small ( to put it mildly ).  Take this with a sufficiently large grain of salt.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/01/03/2013-apps-android-vs-ios/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Google and Motorola</title>
+		<link>/2013/10/09/google-and-motorola/</link>
+					<comments>/2013/10/09/google-and-motorola/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 09 Oct 2013 15:54:22 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[motorola]]></category>
+		<category><![CDATA[samsung]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=8864</guid>
+
+					<description><![CDATA[It has been more than two years since Google announced they were going to acquire Motorola Mobility. More than a year since the deal closed. Yet it appears that Samsung is the top Android device vendor, by an enormous margin. Did Google really pay $12.5B just to have Motorola Mobility fail as an Android device [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>It has been more than two years since <a href='http://googleblog.blogspot.com/2011/08/supercharging-android-google-to-acquire.html'>Google announced they were going to acquire Motorola Mobility</a>.  More than a year since the <a href="http://googleblog.blogspot.com/2012/05/weve-acquired-motorola-mobility.html">deal closed</a>.</p>
+<p>Yet it appears that <a href="http://www.gartner.com/newsroom/id/2573415">Samsung is the top Android device vendor</a>, by an enormous margin.</p>
+<p>Did Google really pay $12.5B just to have Motorola Mobility fail as an Android device manufacturer?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/10/09/google-and-motorola/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Android Devices as the new AOL CD</title>
+		<link>/2013/07/25/android-devices-as-the-new-aol-cd/</link>
+					<comments>/2013/07/25/android-devices-as-the-new-aol-cd/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 25 Jul 2013 20:47:26 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[aol]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=8739</guid>
+
+					<description><![CDATA[Tech companies with mobile apps can practically tile walls with outdated Android devices. They’re the new AOL CDs. A footnote from Marco Arment on the Android tablet-usage gap. Definitely not a compliment.]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+Tech companies with mobile apps can practically tile walls with outdated Android devices. They’re the new AOL CDs.
+</p></blockquote>
+<p>A footnote from <a href='http://www.marco.org/2013/07/25/nexus-72'>Marco Arment on the Android tablet-usage gap</a>.</p>
+<p>Definitely not a compliment.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/07/25/android-devices-as-the-new-aol-cd/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How To Make A Lazy Argument, Play the Fanboy Card</title>
+		<link>/2011/01/10/how-to-make-a-lazy-argument-play-the-fanboy-card/</link>
+					<comments>/2011/01/10/how-to-make-a-lazy-argument-play-the-fanboy-card/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 10 Jan 2011 19:12:38 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[fanboy]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[htc]]></category>
+		<category><![CDATA[iphone]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3383</guid>
+
+					<description><![CDATA[The term fanboy is often used to describe in a negative way someone who sticks to one product or vendor just because. The term is intended to be negative because it implies that the person gave no real thought as to how good the product is or how well it fits their needs. In a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The term fanboy is often used to describe in a negative way someone who sticks to one product or vendor just because.  The term is intended to be negative because it implies that the person gave no real thought as to how good the product is or how well it fits their needs.  </p>
+<p>In a discussion about this vendor vs. that vendor playing the fanboy card is a lazy way to try and remove any legitimacy to the point of view of the other side.  After all, how can they possibly bring anything useful to a discussion if they are just a fanboy?</p>
+<p>Sadly playing the fanboy card is more often than not a lazy way of trying to ignore a different view point instead of addressing it.  This is particularly true of Google Android phones vs. the iPhone.  Aaron Toponce recently employed this method:</p>
+<blockquote><p>
+People jumped onto the iPhone bandwagon when it was announced on AT&#038;T for two reasons: Apple fanboys and superior hardware. People getting an iPhone on the Verizon network will be: Apple fanboys.
+</p></blockquote>
+<p><a href="http://pthree.org/2011/01/09/the-verizon-iphone/">Aaron Toponce &#8211; The Verizon iPhone</a></p>
+<p>The only possible reason for &#8220;People getting an iPhone on the Verizon network will be: Apple fanboys.&#8221;  By playing the fanboy card you simply get to ignore any possible counter point.  I used Aaron&#8217;s post because it illustrated the point so well, folks on both sides play this game, it isn&#8217;t limited to one side or the other.</p>
+<p>In the original post there was actually one detail provided, that the HTC Evo 4G is &#8220;head and shoulders over the iPhone 4. It’s no contest, and it’s already outdated hardware&#8221;.  I&#8217;ve never used an HTC Evo 4G before and only played with an iPhone 4 for a few minutes.  This made me curious to find out if there is any possible reason why someone would go with an iPhone 4 over an HTC Evo 4G.  Fortunately others have already done the numbers comparison for me &#8211; <a href="http://www.engadget.com/2010/06/07/iphone-4-vs-the-smartphone-elite-evo-4g-n8-pre-plus-and-hd2/">Engadget lists numbers for the iPhone 4 vs. the HTC Evo 4G</a> &#8211; with a chart for easy comparison.</p>
+<p>Since the claim was &#8220;no contest&#8221; I only looked for things listed on the chart that could reasonably be justified by someone to indeed provide some contest.</p>
+<ul>
+<li>802.11b/g/n for the iPhone 4, HTC Evo 4G only supports 802.11b/g</li>
+<li>960 x 640 resolution on the iPhone 4, HTC Evo 4G 800 x 480</li>
+<li>720p at 30fps video recording on the iPhone 4, HTC Evo 4G 720p at 24fps</li>
+<li>Gyroscope on the iPhone 4, none of the HTC Evo 4G</li>
+<li>Listed talk time, iPhone 4 &#8211; 7 hours on 3G, 14 hours on 2G and the HTC Evo 4G &#8211; 6 hours</li>
+</ul>
+<p>There are several other factors that could come into play, but I choose to limit the list to just specific numbers.  Now it is entirely possible that none of the iPhone 4 advantages listed above make any difference given individual circumstances.  The flip side is also true, some of these factors may be very important for some individuals.  This constitutes a contest between the two.</p>
+<p>The next time you get the urge to simply wave off counter points by calling the other side a fanboy, stop and think about what you are doing.  Other wise you may end up being the actual fanboy in the discussion <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/01/10/how-to-make-a-lazy-argument-play-the-fanboy-card/feed/</wfw:commentRss>
+			<slash:comments>8</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Android Reboot</title>
+		<link>/2010/11/30/android-reboot/</link>
+					<comments>/2010/11/30/android-reboot/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 30 Nov 2010 21:29:22 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[memory-leaks]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3241</guid>
+
+					<description><![CDATA[Just a minute, I have to reboot my phone. &#8211; Brother-in-law trying to take a video from his Android phone I asked him more about this, he indicated that some of the apps he had downloaded had memory leaks (he wasn&#8217;t sure which ones) and needed to reboot the phone regularly. Recording video just locks [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+Just a minute, I have to reboot my phone.
+</p></blockquote>
+<p>&#8211; Brother-in-law trying to take a video from his Android phone</p>
+<p>I asked him more about this, he indicated that some of the apps he had downloaded had memory leaks (he wasn&#8217;t sure which ones) and needed to reboot the phone regularly.  Recording video just locks up until doing a reboot.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/11/30/android-reboot/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>WordPress for Android</title>
+		<link>/2010/02/02/wordpress-for-android/</link>
+					<comments>/2010/02/02/wordpress-for-android/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 02 Feb 2010 18:59:34 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1847</guid>
+
+					<description><![CDATA[Today the WordPress Android App is out the door and open to the public ( download ). Like the other WordPress mobile apps this one is open source, and we&#8217;re excited to have other people contribute and help. There&#8217;s a developer blog, support forum, and Trac install for tickets and patches.]]></description>
+										<content:encoded><![CDATA[<p>Today the <a href="http://android.wordpress.org/">WordPress Android App</a> is out the door and open to the public ( <a href="http://android.wordpress.org/download/">download</a> ).</p>
+<p>Like the other WordPress mobile apps this one is open source, and we&#8217;re excited to have other people contribute and help.  There&#8217;s a <a href="http://dev.android.wordpress.org/">developer blog</a>, <a href="http://android.forums.wordpress.org/">support forum</a>, and <a href="https://android.trac.wordpress.org/">Trac install</a> for tickets and patches.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/02/02/wordpress-for-android/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

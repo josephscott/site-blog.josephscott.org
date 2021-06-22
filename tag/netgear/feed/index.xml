@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>netgear &#8211; Joseph Scott</title>
+	<atom:link href="/tag/netgear/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 24 Oct 2013 14:46:35 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>The Weakest Link, Routers and Switches?</title>
+		<link>/2013/10/24/the-weakest-link-routers-and-switches/</link>
+					<comments>/2013/10/24/the-weakest-link-routers-and-switches/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 24 Oct 2013 14:46:35 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[d-link]]></category>
+		<category><![CDATA[netgear]]></category>
+		<category><![CDATA[nsa]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[wifi]]></category>
+		<category><![CDATA[wired]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9044</guid>
+
+					<description><![CDATA[Wired ran an article last month about the NSA compromising routers and switches in their spying efforts: According to the Post, the government planned to expand the program to cover millions of additional foreign machines in the future and preferred hacking routers to individual PCs because it gave agencies access to data from entire networks [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Wired ran an article last month about <a href="http://www.wired.com/threatlevel/2013/09/nsa-router-hacking/">the NSA compromising routers and switches</a> in their spying efforts:</p>
+<blockquote><p>
+According to the Post, the government planned to expand the program to cover millions of additional foreign machines in the future and preferred hacking routers to individual PCs because it gave agencies access to data from entire networks of computers instead of just individual machines.
+</p></blockquote>
+<p>This totally makes sense.  More often than not the most interesting data is what is transmitted over the network.  Also saves on having to compromise multiple computers, instead just breaking into the central point they all share.</p>
+<p>Given the revelations of the NSA spying on U.S. citizens this year, it would seem likely that they would use the same approach domestically.  There are hundreds of thousands ( if not millions ) of wifi routers, switches, and cable/DSL modems deployed across the U.S. in homes and businesses.  Now combine this with the number of reports of simple compromises on some of these devices and you have a recipe for domestic spying on  a large scale.</p>
+<p>What sort of simple compromises do some wifi routers and switches have?  Checkout a report this week on a few <a href="http://shadow-file.blogspot.com/2013/10/complete-persistent-compromise-of.html">Netgear models</a>, and another report earlier in the month about certain <a href="http://www.devttys0.com/2013/10/reverse-engineering-a-d-link-backdoor/">D-Link models</a>.  Even if these vendors released updated firmware revisions that fixed all of these issues, when is the last time you updated the firmware on your home router, cable/DSL modem, or switch?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/10/24/the-weakest-link-routers-and-switches/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

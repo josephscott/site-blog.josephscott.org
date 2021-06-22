@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>utc &#8211; Joseph Scott</title>
+	<atom:link href="/tag/utc/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 18 Mar 2015 16:01:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>GMT vs UTC</title>
+		<link>/2015/03/18/gmt-vs-utc/</link>
+					<comments>/2015/03/18/gmt-vs-utc/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 18 Mar 2015 16:01:12 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[gmt]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[utc]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11796</guid>
+
+					<description><![CDATA[Some times Google will try to just tell you the answer to your search query. For example, GMT vs. UTC, includes this at the top of the results page: My understanding is that there is a small difference, fraction of a second. For my non-computing needs that difference is small enough to not matter.]]></description>
+										<content:encoded><![CDATA[<p>Some times Google will try to just tell you the answer to your search query.  For example, <a href="https://www.google.com/search?q=GMT+vs.+UTC">GMT vs. UTC</a>, includes this at the top of the results page:</p>
+<p><a href="https://www.google.com/search?q=GMT+vs.+UTC"><img loading="lazy" src="/wp-content/uploads/2015/03/gmt-vs-utc-google-1-1024x436.png" alt="gmt-vs-utc-google" width="660" height="281" class="aligncenter size-large wp-image-11840" srcset="/wp-content/uploads/2015/03/gmt-vs-utc-google-1-1024x436.png 1024w, /wp-content/uploads/2015/03/gmt-vs-utc-google-1-300x128.png 300w, /wp-content/uploads/2015/03/gmt-vs-utc-google-1-768x327.png 768w, /wp-content/uploads/2015/03/gmt-vs-utc-google-1-1200x510.png 1200w, /wp-content/uploads/2015/03/gmt-vs-utc-google-1.png 1688w" sizes="(max-width: 660px) 100vw, 660px" /></a></p>
+<p>My understanding is that there is a small difference, fraction of a second.  For my non-computing needs that difference is small enough to not matter.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/03/18/gmt-vs-utc/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

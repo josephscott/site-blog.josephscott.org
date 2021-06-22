@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: JavaScript Performance: for vs. foreach	</title>
+	<atom:link href="/2014/10/09/javascript-performance-for-vs-foreach/feed/" rel="self" type="application/rss+xml" />
+	<link>/2014/10/09/javascript-performance-for-vs-foreach/</link>
+	<description></description>
+	<lastBuildDate>Thu, 02 Jun 2016 19:53:49 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Gregory		</title>
+		<link>/2014/10/09/javascript-performance-for-vs-foreach/#comment-4265</link>
+
+		<dc:creator><![CDATA[Gregory]]></dc:creator>
+		<pubDate>Thu, 02 Jun 2016 19:53:49 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11168#comment-4265</guid>
+
+					<description><![CDATA[I believe he&#039;s talking about ivan&#039;s test though.]]></description>
+			<content:encoded><![CDATA[<p>I believe he&#8217;s talking about ivan&#8217;s test though.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2014/10/09/javascript-performance-for-vs-foreach/#comment-4264</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 19 May 2016 21:16:45 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11168#comment-4264</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/10/09/javascript-performance-for-vs-foreach/#comment-4263&quot;&gt;Joel Dare&lt;/a&gt;.
+
+That is what the screenshot was for :-)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/10/09/javascript-performance-for-vs-foreach/#comment-4263">Joel Dare</a>.</p>
+<p>That is what the screenshot was for 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joel Dare		</title>
+		<link>/2014/10/09/javascript-performance-for-vs-foreach/#comment-4263</link>
+
+		<dc:creator><![CDATA[Joel Dare]]></dc:creator>
+		<pubDate>Sat, 14 May 2016 17:16:27 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11168#comment-4263</guid>
+
+					<description><![CDATA[Since jsPerf is down, what was the result?]]></description>
+			<content:encoded><![CDATA[<p>Since jsPerf is down, what was the result?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ivan		</title>
+		<link>/2014/10/09/javascript-performance-for-vs-foreach/#comment-4262</link>
+
+		<dc:creator><![CDATA[Ivan]]></dc:creator>
+		<pubDate>Fri, 28 Nov 2014 13:49:28 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11168#comment-4262</guid>
+
+					<description><![CDATA[I believe JavaScript compiler eliminates the for loop at all in this case. I modified the test for more realistic results: http://jsperf.com/foreach-vs-loop/77]]></description>
+			<content:encoded><![CDATA[<p>I believe JavaScript compiler eliminates the for loop at all in this case. I modified the test for more realistic results: <a href="http://jsperf.com/foreach-vs-loop/77" rel="nofollow ugc">http://jsperf.com/foreach-vs-loop/77</a></p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

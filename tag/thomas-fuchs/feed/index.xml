@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>thomas-fuchs &#8211; Joseph Scott</title>
+	<atom:link href="/tag/thomas-fuchs/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 16 Apr 2014 14:12:35 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Successful Web App Requirements</title>
+		<link>/2014/04/16/successful-web-app-requirements/</link>
+					<comments>/2014/04/16/successful-web-app-requirements/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 16 Apr 2014 14:12:35 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[thomas-fuchs]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10216</guid>
+
+					<description><![CDATA[Thomas Fuchs answers the question, what do you need to make a successful web app?. The most important part of the answer may be the things that you don&#8217;t need.]]></description>
+										<content:encoded><![CDATA[<p>Thomas Fuchs answers the question, <a href="http://mir.aculo.us/2014/04/13/what-do-you-need-to-make-a-successful-web-app/" title="'A text editor' - mine is Vim.">what do you need to make a successful web app?</a>.  The most important part of the answer may be the things that you don&#8217;t need.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/04/16/successful-web-app-requirements/feed/</wfw:commentRss>
+			<slash:comments>7</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

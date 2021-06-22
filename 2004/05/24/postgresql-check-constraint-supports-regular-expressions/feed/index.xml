@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: PostgreSQL Check Constraint Supports Regular Expressions	</title>
+	<atom:link href="/2004/05/24/postgresql-check-constraint-supports-regular-expressions/feed/" rel="self" type="application/rss+xml" />
+	<link>/2004/05/24/postgresql-check-constraint-supports-regular-expressions/</link>
+	<description></description>
+	<lastBuildDate>Mon, 16 Jun 2008 11:40:02 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: jayanth		</title>
+		<link>/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-383</link>
+
+		<dc:creator><![CDATA[jayanth]]></dc:creator>
+		<pubDate>Mon, 16 Jun 2008 11:40:02 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-383</guid>
+
+					<description><![CDATA[syntax:
+
+ALTER Table Table_name
+ADD constraints CHECK_column_name
+CHECK (REGEXP_LIKE(column_name,&#039;(([0-9][a-z]{1}&#124;[a-z][0-9]{1}))&#039;));
+
+
+consider the above syntax whether it is an apporiate syntax to create an constraint for a particular column
+
+Example:
+ALTER Table userinfo
+ADD constraints CHECK_password
+CHECK (REGEXP_LIKE(password,&#039;(([0-9][a-z]{1}&#124;[a-z][0-9]{1}))&#039;));
+
+unable to determine the fault ,since the query is unable to get updated..
+Kindly reply at your earliest.
+
+Regards
+Jayanth S.]]></description>
+			<content:encoded><![CDATA[<p>syntax:</p>
+<p>ALTER Table Table_name<br />
+ADD constraints CHECK_column_name<br />
+CHECK (REGEXP_LIKE(column_name,'(([0-9][a-z]{1}|[a-z][0-9]{1}))&#8217;));</p>
+<p>consider the above syntax whether it is an apporiate syntax to create an constraint for a particular column</p>
+<p>Example:<br />
+ALTER Table userinfo<br />
+ADD constraints CHECK_password<br />
+CHECK (REGEXP_LIKE(password,'(([0-9][a-z]{1}|[a-z][0-9]{1}))&#8217;));</p>
+<p>unable to determine the fault ,since the query is unable to get updated..<br />
+Kindly reply at your earliest.</p>
+<p>Regards<br />
+Jayanth S.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Preston		</title>
+		<link>/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-382</link>
+
+		<dc:creator><![CDATA[Preston]]></dc:creator>
+		<pubDate>Sat, 16 Sep 2006 21:18:13 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-382</guid>
+
+					<description><![CDATA[Hi Peter,
+
+If the purpose of this check is to only allow lowercase letters (as it is stated in the description), then what we want is a case sensitive search.  With the star, the check will allow both uppercase and lowercase letters.]]></description>
+			<content:encoded><![CDATA[<p>Hi Peter,</p>
+<p>If the purpose of this check is to only allow lowercase letters (as it is stated in the description), then what we want is a case sensitive search.  With the star, the check will allow both uppercase and lowercase letters.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Peter		</title>
+		<link>/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-381</link>
+
+		<dc:creator><![CDATA[Peter]]></dc:creator>
+		<pubDate>Mon, 11 Sep 2006 11:52:04 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-381</guid>
+
+					<description><![CDATA[No Preston, The star means the expression is case insensitive.]]></description>
+			<content:encoded><![CDATA[<p>No Preston, The star means the expression is case insensitive.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rhyll &#62; PostgreSQL Blog &#62; Using Regular Expressions in PostgreSQL		</title>
+		<link>/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-380</link>
+
+		<dc:creator><![CDATA[Rhyll &#62; PostgreSQL Blog &#62; Using Regular Expressions in PostgreSQL]]></dc:creator>
+		<pubDate>Mon, 06 Feb 2006 19:40:36 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-380</guid>
+
+					<description><![CDATA[[...] One a related note, I wrote a simple example on using regular expressions in check constraints. [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] One a related note, I wrote a simple example on using regular expressions in check constraints. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Todd Huss&#8217; blog &#187; Blog Archive &#187; More powerful database constraints with regular expressions		</title>
+		<link>/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-379</link>
+
+		<dc:creator><![CDATA[Todd Huss&#8217; blog &#187; Blog Archive &#187; More powerful database constraints with regular expressions]]></dc:creator>
+		<pubDate>Thu, 26 Jan 2006 17:01:44 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-379</guid>
+
+					<description><![CDATA[[...] Postgres is one of the few databases I&#8217;m aware of that currently solves the problem. You can see an example at Joseph Scott&#8217;s Blog of using a regex in a check constraint. [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Postgres is one of the few databases I&#8217;m aware of that currently solves the problem. You can see an example at Joseph Scott&#8217;s Blog of using a regex in a check constraint. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Preston		</title>
+		<link>/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-378</link>
+
+		<dc:creator><![CDATA[Preston]]></dc:creator>
+		<pubDate>Mon, 20 Jun 2005 04:49:27 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-378</guid>
+
+					<description><![CDATA[Thanks for the example!  One small correction, I think your last line should read:
+
+( first_name ~ &#039;^[a-z]+$&#039;)]]></description>
+			<content:encoded><![CDATA[<p>Thanks for the example!  One small correction, I think your last line should read:</p>
+<p>( first_name ~ &#8216;^[a-z]+$&#8217;)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Neil Conway		</title>
+		<link>/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-377</link>
+
+		<dc:creator><![CDATA[Neil Conway]]></dc:creator>
+		<pubDate>Mon, 12 Jul 2004 10:16:04 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-377</guid>
+
+					<description><![CDATA[Jeff: Yeah, 7.4+ uses an import of the regex code in recent versions of TCL. That code is itself a new version of Henry Spencer&#039;s regex code (updated by none other than Henry Spencer himself); it is not pcre, though. Nevertheless, PostgreSQL&#039;s regex implementation is pretty featureful.]]></description>
+			<content:encoded><![CDATA[<p>Jeff: Yeah, 7.4+ uses an import of the regex code in recent versions of TCL. That code is itself a new version of Henry Spencer&#8217;s regex code (updated by none other than Henry Spencer himself); it is not pcre, though. Nevertheless, PostgreSQL&#8217;s regex implementation is pretty featureful.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jeff Eckermann		</title>
+		<link>/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-376</link>
+
+		<dc:creator><![CDATA[Jeff Eckermann]]></dc:creator>
+		<pubDate>Wed, 26 May 2004 14:30:08 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/05/24/postgresql-check-constraint-supports-regular-expressions/#comment-376</guid>
+
+					<description><![CDATA[As of version 7.4, the regular expression engine used by PostgreSQL is the same as that used by tcl (the language, that is).  I haven&#039;t investigated it&#039;s capabilities yet, but I am given to understand that it supports a lot of Perl-style regex extensions.  Whether it is &quot;PCRE&quot;, I can&#039;t say.]]></description>
+			<content:encoded><![CDATA[<p>As of version 7.4, the regular expression engine used by PostgreSQL is the same as that used by tcl (the language, that is).  I haven&#8217;t investigated it&#8217;s capabilities yet, but I am given to understand that it supports a lot of Perl-style regex extensions.  Whether it is &#8220;PCRE&#8221;, I can&#8217;t say.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

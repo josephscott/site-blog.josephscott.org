@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>compression &#8211; Joseph Scott</title>
+	<atom:link href="/tag/compression/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 10 Jul 2018 15:53:42 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Lossless PNG Compression</title>
+		<link>/2018/07/10/lossless-png-compression/</link>
+					<comments>/2018/07/10/lossless-png-compression/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 10 Jul 2018 15:53:42 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[compression]]></category>
+		<category><![CDATA[png]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15634</guid>
+
+					<description><![CDATA[Lossless compression can be a very safe first step in reducing image sizes. I came across this comparison of lossless PNG compression tools, and I was surprised at the range of results. While no one single tool ranked first in all of the tests, it does show that there are some ( like ZopfliPNG ) [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Lossless compression can be a very safe first step in reducing image sizes.  I came across this <a href="https://olegkikin.com/png_optimizers/">comparison of lossless PNG compression tools</a>, and I was surprised at the range of results.  While no one single tool ranked first in all of the tests, it does show that there are some ( like <a href="https://github.com/google/zopfli/blob/master/README.zopflipng">ZopfliPNG</a> ) that do a good job most of the time.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/07/10/lossless-png-compression/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Brotli Coming To Chrome</title>
+		<link>/2016/01/26/brotli-coming-to-chrome/</link>
+					<comments>/2016/01/26/brotli-coming-to-chrome/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 26 Jan 2016 16:59:11 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[brotli]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[compression]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14980</guid>
+
+					<description><![CDATA[I had mentioned that Brotli compression was coming to Firefox, but it was only listed as &#8216;in development&#8217; for Chrome. That changed this month: Intent to Ship: Brotli (Accept-encoding: br on HTTPS connection). A big issue to keep in mind: it will be limited to HTTPS connections. Perhaps this will be enough to motivate Microsoft [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I had mentioned that <a href="https://josephscott.org/archives/2015/12/brotli-in-browsers/">Brotli compression was coming to Firefox</a>, but it was only listed as &#8216;in development&#8217; for Chrome.  That changed this month: <a href="https://groups.google.com/a/chromium.org/forum/#!searchin/blink-dev/brotli/blink-dev/JufzX024oy0/WEOGbN43AwAJ">Intent to Ship: Brotli (Accept-encoding: br on HTTPS connection)</a>.</p>
+<p>A big issue to keep in mind: it will be limited to HTTPS connections.</p>
+<p>Perhaps this will be enough to motivate Microsoft and Apple to include support as well.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/01/26/brotli-coming-to-chrome/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Compressing UserTiming</title>
+		<link>/2015/12/23/compressing-usertiming/</link>
+					<comments>/2015/12/23/compressing-usertiming/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 23 Dec 2015 16:59:35 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[compression]]></category>
+		<category><![CDATA[nic-jansma]]></category>
+		<category><![CDATA[usertiming]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14602</guid>
+
+					<description><![CDATA[Nic Jansma&#8217;s Performance Calendar post Compressing UserTiming is a great read for those interested in collectioning UserTiming data and compression in general: Basically, if you have good domain-specific knowledge of your data-structures, you can often compress better than a general-case minimizer like gzip or MessagePack. Source code is available at https://github.com/nicjansma/usertiming-compression.js.]]></description>
+										<content:encoded><![CDATA[<p>Nic Jansma&#8217;s Performance Calendar post <a href="http://calendar.perfplanet.com/2015/compressing-usertiming/">Compressing UserTiming</a> is a great read for those interested in collectioning UserTiming data and compression in general:</p>
+<blockquote><p>
+Basically, if you have good domain-specific knowledge of your data-structures, you can often compress better than a general-case minimizer like gzip or MessagePack.
+</p></blockquote>
+<p>Source code is available at <a href="https://github.com/nicjansma/usertiming-compression.js">https://github.com/nicjansma/usertiming-compression.js</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/23/compressing-usertiming/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Brotli in Browsers</title>
+		<link>/2015/12/15/brotli-in-browsers/</link>
+					<comments>/2015/12/15/brotli-in-browsers/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 15 Dec 2015 16:38:42 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[brotli]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[compression]]></category>
+		<category><![CDATA[firefox]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14357</guid>
+
+					<description><![CDATA[Last month I mentioned Brotli for Nginx. On the client side, Firefox is aiming to add support for Brotli in version 44: If all goes well in testing, Firefox 44 (ETA January 2016) will negotiate brotli as a content-encoding for https resources. The negotiation will be done in the usual way via the Accept-Encoding request [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Last month I mentioned <a href="https://josephscott.org/archives/2015/11/brotli-for-nginx/">Brotli for Nginx</a>.  On the client side, <a href="http://bitsup.blogspot.com/2015/09/brotli-content-encoding-for-firefox-44.html">Firefox is aiming to add support for Brotli in version 44</a>:</p>
+<blockquote><p>
+If all goes well in testing, Firefox 44 (ETA January 2016) will negotiate brotli as a content-encoding for https resources. The negotiation will be done in the usual way via the Accept-Encoding request header and the token &#8220;br&#8221;. Servers that wish to encode a response with brotli can do so by adding &#8220;br&#8221; to the Content-Encoding response header. Firefox won&#8217;t decode brotli outside of https &#8211; so make sure to use the HTTP content negotiation framework instead of doing user agent sniffing.
+</p></blockquote>
+<p>Chrome has <a href="https://www.chromestatus.com/features/5420797577396224">Brotli support listed as &#8220;in development&#8221;</a>.  I didn&#8217;t see any indication of a current timeline for it showing up in a release version.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/15/brotli-in-browsers/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Brotli for Nginx</title>
+		<link>/2015/11/20/brotli-for-nginx/</link>
+					<comments>/2015/11/20/brotli-for-nginx/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 20 Nov 2015 16:15:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[brotli]]></category>
+		<category><![CDATA[cloudflare]]></category>
+		<category><![CDATA[compression]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[nginx]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14048</guid>
+
+					<description><![CDATA[Two months ago Google announced Brotli, a new compression format: Brotli is a whole new data format. This new format allows us to get 20–26% higher compression ratios over Zopfli. In our study ‘Comparison of Brotli, Deflate, Zopfli, LZMA, LZHAM and Bzip2 Compression Algorithms’ we show that Brotli is roughly as fast as zlib’s Deflate [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Two months ago Google announced <a href="http://google-opensource.blogspot.com/2015/09/introducing-brotli-new-compression.html">Brotli</a>, a new compression format:</p>
+<blockquote><p>
+Brotli is a whole new data format. This new format allows us to get 20–26% higher compression ratios over Zopfli. In our study ‘Comparison of Brotli, Deflate, Zopfli, LZMA, LZHAM and Bzip2 Compression Algorithms’ we show that Brotli is roughly as fast as zlib’s Deflate implementation. At the same time, it compresses slightly more densely than LZMA and bzip2 on the Canterbury corpus. The higher data density is achieved by a 2nd order context modeling, re-use of entropy codes, larger memory window of past data and joint distribution codes. Just like Zopfli, the new algorithm is named after Swiss bakery products. Brötli means ‘small bread’ in Swiss German.
+</p></blockquote>
+<p>Compression is a big deal for web performance, being able to send the same file with fewer bytes is a big win.</p>
+<p>There are now two Nginx modules for supporting Brotli compression: <a href="https://github.com/google/ngx_brotli">ngx_brotli from Google</a> and <a href="https://github.com/cloudflare/ngx_brotli_module">ngx_brotli_module from CloudFlare</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/20/brotli-for-nginx/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Zopfli Compression</title>
+		<link>/2013/03/06/zopfli-compression/</link>
+					<comments>/2013/03/06/zopfli-compression/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 06 Mar 2013 20:05:53 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[compression]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[zlib]]></category>
+		<category><![CDATA[zopfli]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6918</guid>
+
+					<description><![CDATA[Google recently announced the new Zopfli Compression Algorithm: Zopfli Compression Algorithm is a new zlib (gzip, deflate) compatible compressor. This compressor takes more time (~100x slower), but compresses around 5% better than zlib and better than any other zlib-compatible compressor we have found. Being gzip compatible means that existing clients can decompress files that have [&#8230;]]]></description>
+										<content:encoded><![CDATA[<figure style="width: 128px" class="wp-caption alignleft"><img loading="lazy" alt="Zopfli was named after a Swiss bread recipe" src="http://2.bp.blogspot.com/-jDq-ZRd-xlQ/US_LwJaVR4I/AAAAAAAACh0/9T2OTpzRj5E/s1600/zopfli.jpg" width="128" height="108" /><figcaption class="wp-caption-text">Zopfli was named after a Swiss bread recipe</figcaption></figure>
+<p>Google recently <a href="http://googledevelopers.blogspot.com/2013/02/compress-data-more-densely-with-zopfli.html">announced</a> the new <a href="https://code.google.com/p/zopfli/">Zopfli Compression Algorithm</a>:</p>
+<blockquote><p>Zopfli Compression Algorithm is a new zlib (gzip, deflate) compatible compressor. This compressor takes more time (~100x slower), but compresses around 5% better than zlib and better than any other zlib-compatible compressor we have found.</p></blockquote>
+<p>Being gzip compatible means that existing clients can decompress files that have been compressed with Zopfli. Specifically, web browsers will be able to understand this.</p>
+<p>A number of people have asked what the big deal is over such a relatively small size reduction at the cost of a much slower compression process. Lets take the lastest <a href="https://developers.google.com/speed/libraries/devguide#jquery">jQuery file from the Google CDN</a> as an example &#8211; <a href="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js</a>.</p>
+<p>First I cloned the <a href="https://code.google.com/p/zopfli/source/checkout">Zopfli source repo</a> and compiled it on my Macbook Air. Took about a minute or so to clone and build. The build process only required running <code>make</code>.</p>
+<p>Here are the results of <code>gzip -9</code> and <code>zopfli &#8211; i1000</code> on jquery.min.js:</p>
+<table>
+<thead>
+<tr>
+<th>Compression</th>
+<th>Size</th>
+<th>Compression Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>None</td>
+<td>92,629 bytes</td>
+<td>&#8211;</td>
+</tr>
+<tr>
+<td>gzip -9</td>
+<td>32,660 bytes</td>
+<td>0.009s</td>
+</tr>
+<tr>
+<td>zopfli &#8211;i1000</td>
+<td>31,686 bytes</td>
+<td>16.376s</td>
+</tr>
+</tbody>
+</table>
+<p>In this test Zopfli saved an additional 974 bytes and took over 16 seconds longer. In our Google CDN example the time it takes to do the compression doesn&#8217;t make any difference, that is something you&#8217;ll only be doing once per file. To see what the potential savings is from those extra 974 bytes we&#8217;d need to know how often the jQuery file is downloaded. I don&#8217;t know what the actual numbers are, so lets make some up. Lets say it is 1 million times per month.</p>
+<p>So 974 bytes * 1,000,000 gives us 974,000,000 bytes per month in savings. No doubt this is a drop in the bucket when compared to total bandwidth usage at Google, but it is an improvement. The improvement wouldn&#8217;t just be for Google either, everyone who views web sites that had the Zopfli compressed jQuery would have a slightly better experience as well. Smaller file means it gets downloaded faster over my existing connection. This would be extra good for mobile users.</p>
+<p>I think there are plenty of cases where using Zopfli to compress your files will be a nice little improvement.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/03/06/zopfli-compression/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Google&#8217;s plusone.js Doesn&#8217;t Support HTTP Compression</title>
+		<link>/2011/11/18/googles-plusone-js-doesnt-support-http-compression/</link>
+					<comments>/2011/11/18/googles-plusone-js-doesnt-support-http-compression/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 18 Nov 2011 17:51:47 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[compression]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=5118</guid>
+
+					<description><![CDATA[I was surprised to see that Google&#8217;s plusone.js doesn&#8217;t support HTTP compression. Here is a quick test with curl -v &#8211; compressed https://apis.google.com/js/plusone.js > /dev/null Request Headers: > GET /js/plusone.js HTTP/1.1 > User-Agent: curl/7.19.7 (universal-apple-darwin10.0) libcurl/7.19.7 OpenSSL/0.9.8r zlib/1.2.3 > Host: apis.google.com > Accept: */* > Accept-Encoding: deflate, gzip Response Headers: HTTP/1.1 200 OK < Content-Type: [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was surprised to see that <a href="https://developers.google.com/+/plugins/+1button/">Google&#8217;s plusone.js</a> doesn&#8217;t support HTTP compression.  Here is a quick test with<br />
+<code>curl -v &#8211; compressed https://apis.google.com/js/plusone.js > /dev/null</code></p>
+<p><strong>Request Headers:</strong></p>
+<pre>
+> GET /js/plusone.js HTTP/1.1
+> User-Agent: curl/7.19.7 (universal-apple-darwin10.0) libcurl/7.19.7 OpenSSL/0.9.8r zlib/1.2.3
+> Host: apis.google.com
+> Accept: */*
+> Accept-Encoding: deflate, gzip
+</pre>
+<p><strong>Response Headers:</strong></p>
+<pre>
+HTTP/1.1 200 OK
+< Content-Type: text/javascript; charset=utf-8
+< Expires: Fri, 18 Nov 2011 02:35:20 GMT
+< Date: Fri, 18 Nov 2011 02:35:20 GMT
+< Cache-Control: private, max-age=3600
+< X-Content-Type-Options: nosniff
+< X-Frame-Options: SAMEORIGIN
+< X-XSS-Protection: 1; mode=block
+< Server: GSE
+< Transfer-Encoding: chunked
+</pre>
+<p>You'll notice there is no <code>Content-Encoding: gzip</code> header in the response.</p>
+<p>We'll have to get <a href="http://stevesouders.com/">Steve Souders</a> to pester them about that.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/11/18/googles-plusone-js-doesnt-support-http-compression/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>gzip support for Amazon Web Services CloudFront</title>
+		<link>/2010/11/12/gzip-support-for-amazon-web-services-cloudfront/</link>
+					<comments>/2010/11/12/gzip-support-for-amazon-web-services-cloudfront/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 12 Nov 2010 17:11:11 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[amazon]]></category>
+		<category><![CDATA[cloudfront]]></category>
+		<category><![CDATA[compression]]></category>
+		<category><![CDATA[http]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3167</guid>
+
+					<description><![CDATA[With the recent announcement of Custom Origin support in CloudFront it is now possible to use the standard HTTP Accept-Encoding method for serving gzipped content if you are using a Custom Origin. Although not specifically mentioned in the release announcement you can verify this in the Custom Origins Appendix of the CloudFront Developer Guide. CloudFront [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>With the recent announcement of Custom Origin support in CloudFront it is now possible to use the standard HTTP Accept-Encoding method for serving gzipped content if you are using a Custom Origin. Although not specifically mentioned in the release announcement you can verify this in the Custom Origins Appendix of the CloudFront Developer Guide. CloudFront will now forward the Accept-Encoding HTTP header to your origin server where you can ensure the appropriate content is served based on the supported encodings. CloudFront will then cache multiple versions of this content, the uncompressed version and the gzipped version and serve these to clients depending on the value of their Accept-Encoding header for all future requests.</p></blockquote>
+<p>via <a href='http://www.nomitor.com/blog/2010/11/10/gzip-support-for-amazon-web-services-cloudfront/'>gzip support for Amazon Web Services CloudFront &#8211; nomitor</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/11/12/gzip-support-for-amazon-web-services-cloudfront/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>User Agent Sniffing at Google Libraries CDN</title>
+		<link>/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/</link>
+					<comments>/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 01 Nov 2010 15:06:26 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[cdn]]></category>
+		<category><![CDATA[compression]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[user-agent]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3081</guid>
+
+					<description><![CDATA[I recently took a closer look at Google Libraries, their content delivery network (CDN) for various Javascript libraries, and HTTP compression. I started with a simple test: [sourcecode syn=&#8221;plain&#8221;] curl -O -v &#8211; compressed http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js [/sourcecode] This downloads a minified version of jQuery 1.4.3, with --compressed, which means I&#8217;d like the response to be compressed. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I recently took a closer look at <a href="http://code.google.com/apis/libraries/">Google Libraries</a>, their content delivery network (CDN) for various Javascript libraries, and HTTP compression.  I started with a simple test:</p>
+<p>[sourcecode syn=&#8221;plain&#8221;]<br />
+curl -O -v &#8211;compressed http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js<br />
+[/sourcecode]</p>
+<p>This downloads a minified version of jQuery 1.4.3, with <code>--compressed</code>, which means I&#8217;d like the response to be compressed.  The HTTP request looked like:</p>
+<p>[sourcecode syn=&#8221;plain&#8221;]<br />
+&gt; GET /ajax/libs/jquery/1.4.3/jquery.min.js HTTP/1.1<br />
+&gt; User-Agent: curl/7.16.4 (i386-apple-darwin9.0) libcurl/7.16.4 OpenSSL/0.9.7l zlib/1.2.3<br />
+&gt; Host: ajax.googleapis.com<br />
+&gt; Accept: */*<br />
+&gt; Accept-Encoding: deflate, gzip<br />
+&gt;<br />
+[/sourcecode]</p>
+<p>The  response from Google was:</p>
+<p>[sourcecode syn=&#8221;plain&#8221;]<br />
+&lt; HTTP/1.1 200 OK<br />
+&lt; Content-Type: text/javascript; charset=UTF-8<br />
+&lt; Last-Modified: Fri, 15 Oct 2010 18:25:24 GMT<br />
+&lt; Date: Fri, 29 Oct 2010 03:27:16 GMT<br />
+&lt; Expires: Sat, 29 Oct 2011 03:27:16 GMT<br />
+&lt; Vary: Accept-Encoding<br />
+&lt; X-Content-Type-Options: nosniff<br />
+&lt; Server: sffe<br />
+&lt; Cache-Control: public, max-age=31536000<br />
+&lt; Age: 145355<br />
+&lt; Transfer-Encoding: chunked<br />
+&lt;<br />
+[/sourcecode]</p>
+<p>I was surprised that there was no <code>Content-Encoding: gzip</code> header in the response, meaning the response was NOT compressed.  I wasn&#8217;t quite sure what to make of this at first.  No way would Google forget to turn on HTTP compression, I must have missed something.  I stared at the HTTP response for sometime, trying to figure out what I was missing.  Nothing came to mind, so  I ran another test.</p>
+<p>This time I made a request for http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js in Firefox 3.6.12 on Mac OS X and used Firebug to inspect the HTTP transaction.  The request:</p>
+<p>[sourcecode lang=&#8221;plain&#8221;]<br />
+GET /ajax/libs/jquery/1.4.3/jquery.min.js HTTP/1.1<br />
+Host: ajax.googleapis.com<br />
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12<br />
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8<br />
+Accept-Language: en-us,en;q=0.5<br />
+Accept-Encoding: gzip,deflate<br />
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7<br />
+Keep-Alive: 115<br />
+Connection: keep-alive<br />
+Pragma: no-cache<br />
+Cache-Control: no-cache<br />
+[/sourcecode]</p>
+<p>and the response:</p>
+<p>[sourcecode lang=&#8221;plain&#8221;]<br />
+HTTP/1.1 200 OK<br />
+Content-Type: text/javascript; charset=UTF-8<br />
+Last-Modified: Fri, 15 Oct 2010 18:25:24 GMT<br />
+Date: Fri, 29 Oct 2010 03:12:35 GMT<br />
+Expires: Sat, 29 Oct 2011 03:12:35 GMT<br />
+Vary: Accept-Encoding<br />
+X-Content-Type-Options: nosniff<br />
+Server: sffe<br />
+Content-Encoding: gzip<br />
+Cache-Control: public, max-age=31536000<br />
+Content-Length: 26769<br />
+Age: 147128<br />
+[/sourcecode]</p>
+<p>This time the content was compressed.  There were several differences in the request headers between curl and Firefox, I decided to start with just one, the &#8220;User-Agent&#8221;.  I modified my initial curl request to include the User-Agent string from Firefox:</p>
+<p>[sourcecode syn=&#8221;plain&#8221;]<br />
+curl -O -v &#8211;compressed &#8211;user-agent &quot;Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12&quot; http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js<br />
+[/sourcecode]</p>
+<p>The request:</p>
+<p>[sourcecode syn=&#8221;plain&#8221;]<br />
+&gt; GET /ajax/libs/jquery/1.4.3/jquery.min.js HTTP/1.1<br />
+&gt; User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12<br />
+&gt; Host: ajax.googleapis.com<br />
+&gt; Accept: */*<br />
+&gt; Accept-Encoding: deflate, gzip<br />
+&gt;<br />
+[/sourcecode]</p>
+<p>and the response:</p>
+<p>[sourcecode syn=&#8221;plain&#8221;]<br />
+&lt; HTTP/1.1 200 OK<br />
+&lt; Content-Type: text/javascript; charset=UTF-8<br />
+&lt; Last-Modified: Fri, 15 Oct 2010 18:25:24 GMT<br />
+&lt; Date: Fri, 29 Oct 2010 03:33:09 GMT<br />
+&lt; Expires: Sat, 29 Oct 2011 03:33:09 GMT<br />
+&lt; Vary: Accept-Encoding<br />
+&lt; X-Content-Type-Options: nosniff<br />
+&lt; Server: sffe<br />
+&lt; Content-Encoding: gzip<br />
+&lt; Cache-Control: public, max-age=31536000<br />
+&lt; Content-Length: 26769<br />
+&lt; Age: 147018<br />
+&lt;<br />
+[/sourcecode]</p>
+<p>Sure enough, I got back a compressed response.  Google was sniffing the User-Agent string to determine if a compressed response should be sent.  It didn&#8217;t matter if the client asked for a compressed response ( <code>Accept-Encoding: deflate, gzip</code>) or not.  What still wasn&#8217;t clear is if this was a black list approach (singling out curl) or a white list approach (Firefox is okay).  So I tried a few other requests with various User-Agent strings.  First up, no User-Agent set at all:</p>
+<p>[sourcecode syn=&#8221;plain&#8221;]<br />
+curl -O -v &#8211;compressed &#8211;user-agent &quot;&quot; http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js<br />
+[/sourcecode]</p>
+<p>Not compressed.  Next a made up string:</p>
+<p>[sourcecode syn=&#8221;plain&#8221;]<br />
+curl -O -v &#8211;compressed &#8211;user-agent &quot;JosephScott/1.0 test/2.0&quot; http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js<br />
+[/sourcecode]</p>
+<p>Not compressed.  At this point I think Google is using a white list approach, if you aren&#8217;t on the list of approved User-Agent strings for getting a compressed response then you won&#8217;t get one, no matter how nicely you ask.</p>
+<p>I collected a few more browser samples as well, just to be sure:</p>
+<ul>
+<li>Safari 5.0.2 on Mac OS X &#8211; compressed</li>
+<li>IE 8 on Windows XP &#8211; compressed</li>
+<li>Firefox 3.6.12 on Windows XP &#8211; compressed</li>
+<li>Chrome 7.0.517.41 beta on Windows XP &#8211; compressed</li>
+<li>Opera 10.63 on Windows XP &#8211; NOT compressed</li>
+<li>Safari 5.0.2 on Windows XP &#8211; compressed</li>
+</ul>
+<p>One more time, curl using the IE 8 User-Agent string:</p>
+<p>[sourcecode syn=&#8221;plain&#8221;]<br />
+curl -O -v &#8211;compressed &#8211;user-agent &quot;Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET4.0C;&quot; http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js<br />
+[/sourcecode]</p>
+<p>Compressed.</p>
+<p>Since I can manipulate the response based on the User-Agent value I&#8217;m left to conclude that the Google Library CDN sniffs the User-Agent string to determine if it will respond with a compressed result.  From what I&#8217;ve seen so far Google Library contains a white list of approved User-Agent patterns that it checks against to determine if it will honor the compression request.</p>
+<p>If you are on a current version of one of the popular browsers you will get a compressed response.  For those using anything else you&#8217;ll have to test to confirm if Google Library will honor your request for compressed content.  Opera users are just plain out of luck, even the most recent version gets an uncompressed response.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/feed/</wfw:commentRss>
+			<slash:comments>11</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

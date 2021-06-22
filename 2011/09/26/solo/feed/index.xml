@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Solo	</title>
+	<atom:link href="/2011/09/26/solo/feed/" rel="self" type="application/rss+xml" />
+	<link>/2011/09/26/solo/</link>
+	<description></description>
+	<lastBuildDate>Sat, 02 Nov 2013 20:02:43 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/09/26/solo/#comment-3847</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Sat, 02 Nov 2013 20:02:43 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4792#comment-3847</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/09/26/solo/#comment-3846&quot;&gt;name&lt;/a&gt;.
+
+The source for the Perl script is linked in the post.  Porting it to other languages shouldn&#039;t be too bad if you don&#039;t have the option of having Perl available.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/09/26/solo/#comment-3846">name</a>.</p>
+<p>The source for the Perl script is linked in the post.  Porting it to other languages shouldn&#8217;t be too bad if you don&#8217;t have the option of having Perl available.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: name		</title>
+		<link>/2011/09/26/solo/#comment-3846</link>
+
+		<dc:creator><![CDATA[name]]></dc:creator>
+		<pubDate>Sat, 02 Nov 2013 14:59:23 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4792#comment-3846</guid>
+
+					<description><![CDATA[Hi,
+
+I would suggest to release and PHP implementation of this tiny tool.
+
+I feel this necessary because for example when you want to implement such &quot;locking&quot; in jailed environment where only PHP is available you won&#039;t be able to do it as perl is missing.
+
+Thanks!]]></description>
+			<content:encoded><![CDATA[<p>Hi,</p>
+<p>I would suggest to release and PHP implementation of this tiny tool.</p>
+<p>I feel this necessary because for example when you want to implement such &#8220;locking&#8221; in jailed environment where only PHP is available you won&#8217;t be able to do it as perl is missing.</p>
+<p>Thanks!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: lockrun &#124; Joseph Scott		</title>
+		<link>/2011/09/26/solo/#comment-3845</link>
+
+		<dc:creator><![CDATA[lockrun &#124; Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 25 Oct 2013 14:55:22 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4792#comment-3845</guid>
+
+					<description><![CDATA[[&#8230;] years ago I mentioned Solo, which uses TCP/IP port binding to prevent a program from running more than [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] years ago I mentioned Solo, which uses TCP/IP port binding to prevent a program from running more than [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: PHP Workers with Redis &#38; Solo &#124; Justin Carmony		</title>
+		<link>/2011/09/26/solo/#comment-3844</link>
+
+		<dc:creator><![CDATA[PHP Workers with Redis &#38; Solo &#124; Justin Carmony]]></dc:creator>
+		<pubDate>Tue, 10 Jan 2012 18:17:49 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4792#comment-3844</guid>
+
+					<description><![CDATA[[...] use a framework like Gearman, but for simple things, I like very simple solutions. I came across a blog post by Joseph Scott about a little 10 line perl script called solo. What it does is it will run a command, and to [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] use a framework like Gearman, but for simple things, I like very simple solutions. I came across a blog post by Joseph Scott about a little 10 line perl script called solo. What it does is it will run a command, and to [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

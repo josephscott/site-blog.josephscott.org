@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: mod_ping, Maybe I Should Have Called It PubSubHubbub	</title>
+	<atom:link href="/2010/03/04/mod_ping-maybe-i-should-have-called-it-pubsubhubbub/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/03/04/mod_ping-maybe-i-should-have-called-it-pubsubhubbub/</link>
+	<description></description>
+	<lastBuildDate>Mon, 08 Mar 2010 16:49:00 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/03/04/mod_ping-maybe-i-should-have-called-it-pubsubhubbub/#comment-3319</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 08 Mar 2010 16:49:00 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1979#comment-3319</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/03/04/mod_ping-maybe-i-should-have-called-it-pubsubhubbub/#comment-3318&quot;&gt;Alex&lt;/a&gt;.
+
+That would tell you that it had changed, but wouldn&#039;t provide you with the details of what changed.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/03/04/mod_ping-maybe-i-should-have-called-it-pubsubhubbub/#comment-3318">Alex</a>.</p>
+<p>That would tell you that it had changed, but wouldn&#8217;t provide you with the details of what changed.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Alex		</title>
+		<link>/2010/03/04/mod_ping-maybe-i-should-have-called-it-pubsubhubbub/#comment-3318</link>
+
+		<dc:creator><![CDATA[Alex]]></dc:creator>
+		<pubDate>Sun, 07 Mar 2010 23:08:42 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1979#comment-3318</guid>
+
+					<description><![CDATA[How about sending the sha1 hash of the feed and comparing with the stored hash? It&#039;s rather small compared to the entire document.]]></description>
+			<content:encoded><![CDATA[<p>How about sending the sha1 hash of the feed and comparing with the stored hash? It&#8217;s rather small compared to the entire document.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Andrew Fielden		</title>
+		<link>/2010/03/04/mod_ping-maybe-i-should-have-called-it-pubsubhubbub/#comment-3317</link>
+
+		<dc:creator><![CDATA[Andrew Fielden]]></dc:creator>
+		<pubDate>Sun, 07 Mar 2010 08:24:42 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1979#comment-3317</guid>
+
+					<description><![CDATA[I too had been thinking of this type of thing before Google released, although not by the number of years that you had been, more like at the same time that Google were and I was very pleased that Google did release theirs.
+
+I was doing mine to enable two microblogging servers to talk to the world and wanted to abstract the posting mechanism from the microblogging server so I had given some thought to the amount of information contained within the ping. Using a fat ping to ensure that the data is all contained in the message means that you will not get a potential swamping of the sever when the subscibers rush to get the update but what update to provide? For me it comes down to the fact that as a protocol it is very flexible and does not require this decision to be made to use it. Accordingly I would see it as each as to its merits.
+
+Certainly for my purposes it was more a case of the entire message with &quot;attachments&quot; files, photos etc not having to be present but just the relevant links being in the message which was accordingly very small.
+
+It may be that there are further standards or protocols that emerge that use PuSH as the carrier but I do think that with ease of use and deployment this is the type of thing that will be central to the way the web is used in the not too distant future.]]></description>
+			<content:encoded><![CDATA[<p>I too had been thinking of this type of thing before Google released, although not by the number of years that you had been, more like at the same time that Google were and I was very pleased that Google did release theirs.</p>
+<p>I was doing mine to enable two microblogging servers to talk to the world and wanted to abstract the posting mechanism from the microblogging server so I had given some thought to the amount of information contained within the ping. Using a fat ping to ensure that the data is all contained in the message means that you will not get a potential swamping of the sever when the subscibers rush to get the update but what update to provide? For me it comes down to the fact that as a protocol it is very flexible and does not require this decision to be made to use it. Accordingly I would see it as each as to its merits.</p>
+<p>Certainly for my purposes it was more a case of the entire message with &#8220;attachments&#8221; files, photos etc not having to be present but just the relevant links being in the message which was accordingly very small.</p>
+<p>It may be that there are further standards or protocols that emerge that use PuSH as the carrier but I do think that with ease of use and deployment this is the type of thing that will be central to the way the web is used in the not too distant future.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/03/04/mod_ping-maybe-i-should-have-called-it-pubsubhubbub/#comment-3316</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 05 Mar 2010 18:35:25 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1979#comment-3316</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/03/04/mod_ping-maybe-i-should-have-called-it-pubsubhubbub/#comment-3315&quot;&gt;Matt Terenzio&lt;/a&gt;.
+
+I&#039;m not sure, right now there are probably more questions than answers.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/03/04/mod_ping-maybe-i-should-have-called-it-pubsubhubbub/#comment-3315">Matt Terenzio</a>.</p>
+<p>I&#8217;m not sure, right now there are probably more questions than answers.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Matt Terenzio		</title>
+		<link>/2010/03/04/mod_ping-maybe-i-should-have-called-it-pubsubhubbub/#comment-3315</link>
+
+		<dc:creator><![CDATA[Matt Terenzio]]></dc:creator>
+		<pubDate>Fri, 05 Mar 2010 14:24:59 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1979#comment-3315</guid>
+
+					<description><![CDATA[The Google thing sounds fine for slow moving sites. Gets a little freaky for sites that change contantly but I guess that&#039;s where we are headed. I&#039;m guessing many sites will just batch things up and update every so many minutes.]]></description>
+			<content:encoded><![CDATA[<p>The Google thing sounds fine for slow moving sites. Gets a little freaky for sites that change contantly but I guess that&#8217;s where we are headed. I&#8217;m guessing many sites will just batch things up and update every so many minutes.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

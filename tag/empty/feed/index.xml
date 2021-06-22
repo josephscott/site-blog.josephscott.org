@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>empty &#8211; Joseph Scott</title>
+	<atom:link href="/tag/empty/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 29 Mar 2010 18:06:14 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>PHP Tip: Spaces Are Not empty()</title>
+		<link>/2010/03/29/php-tip-spaces-are-not-empty/</link>
+					<comments>/2010/03/29/php-tip-spaces-are-not-empty/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 29 Mar 2010 18:06:14 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[empty]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2108</guid>
+
+					<description><![CDATA[It can be really easy to get tripped up by PHP&#8217;s empty and isset functions. I just came across a bug in some code that was using empty() to check for something so I thought this was a good time to remind others about this. First a quick refresher course on isset() and empty(). The [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>It can be really easy to get tripped up by PHP&#8217;s <a href="http://us.php.net/empty/">empty</a> and <a href="http://us.php.net/manual/en/function.isset.php">isset</a> functions.  I just came across a bug in some code that was using <code>empty()</code> to check for something so I thought this was a good time to remind others about this.</p>
+<p>First a quick refresher course on <code>isset()</code> and <code>empty()</code>.  The isset function only checks to see if a specific variable was been created and has a value other than NULL.  Other than the NULL check isset doesn&#8217;t make any determinations on what value the variable holds.  The empty function on the other hand looks at the value of a variable to see if it has been set to something that could be considered &#8220;empty&#8221;.  The <a href="http://us.php.net/empty/">empty</a> doc page mentions what PHP considers &#8220;empty&#8221;:</p>
+<blockquote><p>
+Returns FALSE if var has a non-empty and non-zero value.</p>
+<p>The following things are considered to be empty:</p>
+<p>&#8220;&#8221; (an empty string)<br />
+0 (0 as an integer)<br />
+&#8220;0&#8221; (0 as a string)<br />
+NULL<br />
+FALSE<br />
+array() (an empty array)<br />
+var $var; (a variable declared, but without a value in a class)
+</p></blockquote>
+<p>So with all that in mind, what would you expect from the following code:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+$test_me = &#8216; &#8216;;</p>
+<p>if ( empty( $test_me ) ) {<br />
+    echo &quot;This is empty!n&quot;;<br />
+} else {<br />
+    echo &quot;NOT emptyn&quot;;<br />
+}<br />
+[/sourcecode]</p>
+<p>Where $test_me is set to a string that contains a single space character.  If you said &#8216;NOT empty&#8217; was the result, you are correct.  If you said &#8216;This is empty!&#8217;, well, I can understand why you&#8217;d think that, but that turned out to be the wrong answer.</p>
+<p>This is exactly what happened in the bug I saw.  An empty check was being done inside a foreach() loop to see if any work on that item in the array really needed to be done.  If empty returned TRUE then continue was called to skip work on that item and go on to the next.  Unfortunately it didn&#8217;t expect the condition where the value might just be a string full of spaces.  To people that looks empty, to PHP, not so much.</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+foreach ( $stuff as $a_thing ) {<br />
+    if ( empty( $a_thing ) ) {<br />
+        continue;<br />
+    }</p>
+<p>    &#8230;<br />
+}<br />
+[/sourcecode]</p>
+<p>A good approach, until $a_thing includes our friend the string of spaces.</p>
+<p>So how do you deal with this?  PHP provides an <a href="http://us.php.net/rtrim">rtrim</a> function to remove trailing spaces (and space line items) and you might be tempted to try this:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+if ( empty( rtrim( $test_me ) ) ) {<br />
+    &#8230;<br />
+}<br />
+[/sourcecode]</p>
+<p>But that won&#8217;t work.  The empty function can only check variables, thankfully this is noted on the <a href="http://us.php.net/empty/">empty docs page</a>:</p>
+<blockquote><p>
+Note: empty() only checks variables as anything else will result in a parse error. In other words, the following will not work: empty(trim($name)).
+</p></blockquote>
+<p>Not the end of the world, just means you have to write it like this:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+$test_me = rtrim( $test_me );<br />
+if ( empty( $test_me ) ) {<br />
+    &#8230;<br />
+}<br />
+[/sourcecode]</p>
+<p>That will remove any trailing spaces from $test_me before the empty check, so strings that consist of just spaces (or space like characters) will truly become empty in the PHP sense.</p>
+<p>If you&#8217;ve been writing PHP long enough you&#8217;ve likely run into this problem, it&#8217;s an easy one to get tripped on.  I&#8217;ve lost count the number of times I&#8217;ve been bitten by this over the years.  Perhaps writing this will save me (and hopefully others) from this mistake in the future.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/03/29/php-tip-spaces-are-not-empty/feed/</wfw:commentRss>
+			<slash:comments>8</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

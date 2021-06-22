@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>slideshare &#8211; Joseph Scott</title>
+	<atom:link href="/tag/slideshare/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 20 Aug 2008 23:52:31 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Slides: WordPress APIs</title>
+		<link>/2008/08/20/slides-wordpress-apis/</link>
+					<comments>/2008/08/20/slides-wordpress-apis/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 20 Aug 2008 23:52:31 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[atompub]]></category>
+		<category><![CDATA[slideshare]]></category>
+		<category><![CDATA[wordcamp]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xmlrpc]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1169</guid>
+
+					<description><![CDATA[I&#8217;ve had a few requests for the slides from my WordPress APIs talk at WordCamp San Francisco last weekend. A few minutes on SlideShare and here they are: WordPress APIs View SlideShare presentation or Upload your own. (tags: atompub xmlrpc) It&#8217;s very brief, time was limited.]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve had a few requests for the slides from my WordPress APIs talk at WordCamp San Francisco last weekend.  A few minutes on SlideShare and here they are:</p>
+<div style="width:425px;text-align:left"><a href="http://www.slideshare.net/josephscott/wordpress-apis-presentation?src=embed" title="WordPress APIs">WordPress APIs</a></p>
+<div style="font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px">View SlideShare <a href="http://www.slideshare.net/josephscott/wordpress-apis-presentation?src=embed" title="View WordPress APIs on SlideShare">presentation</a> or <a href="http://www.slideshare.net/upload?src=embed">Upload</a> your own. (tags: <a href="http://slideshare.net/tag/atompub">atompub</a> <a href="http://slideshare.net/tag/xmlrpc">xmlrpc</a>)</div>
+</div>
+<p>It&#8217;s very brief, time was limited.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/08/20/slides-wordpress-apis/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>apple &#8211; Joseph Scott</title>
+	<atom:link href="/tag/apple/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 20 Sep 2019 21:11:14 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>A Privacy Arms Race</title>
+		<link>/2019/09/20/a-privacy-arms-race/</link>
+					<comments>/2019/09/20/a-privacy-arms-race/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 20 Sep 2019 21:11:14 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[crashlytics]]></category>
+		<category><![CDATA[fonts]]></category>
+		<category><![CDATA[tracking]]></category>
+		<guid isPermaLink="false">/?p=17688</guid>
+
+					<description><![CDATA[I&#8217;m continually amazed how creative people can be. The news that Crashlytics is using custom fonts to track users is both fascinating and horrible. I think John Gruber does a good job of capturing the regular person response to this: The basic fact remains: custom fonts, however they’re installed, are not meant to be used [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m continually amazed how creative people can be.  The news that <a href="https://twitter.com/sandofsky/status/1172200578207772672">Crashlytics is using custom fonts to track users</a> is both fascinating and horrible.  I think John Gruber does a good job of capturing <a href="https://daringfireball.net/linked/2019/09/12/crashlytics-font-tracking">the regular person response to this</a>:</p>
+<blockquote><p>
+The basic fact remains: custom fonts, however they’re installed, are not meant to be used for tracking users.
+</p></blockquote>
+<p>Sure, custom fonts weren&#8217;t intended to provide this &#8220;feature&#8221; ( I use that term loosely ), but that is the essence of a neat hack ( in the old school traditional use of the word ).  From a purely technical point view, it is impressive to see someone come up with a method to use an existing system in a way the original creators not only never intended, but never even imagined.</p>
+<p>While part of me is impressed with the clever hack, over all, as a user, as a person, I find it tiring.  This is yet one more thing to deal with.  Each one by themselves is relatively small, but the sum of them together is awful.  Death by a thousand paper cuts.</p>
+<p>Apple has been trying to put a hard line on what they will and won&#8217;t allow, leaning on the side of making it possible for users to have some privacy controls.  A good example of this is the <a href="https://webkit.org/tracking-prevention-policy/">Webkit Tracking Prevention Policy</a>.  That in turn has contributed to Firefox and Chrome taking action to do more regarding privacy options.  None of them are perfect, but each are a definite course change from what we&#8217;ve seen in the last few decades.</p>
+<p>A clever developer figured out how to exploit fonts, and Apple and others will respond by making that harder.  Expect this to be an ongoing circle.</p>
+<p>We are in the middle of a privacy arms race.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/09/20/a-privacy-arms-race/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Back To Mac ( 2015 Edition )</title>
+		<link>/2018/07/24/back-to-mac-2015-edition/</link>
+					<comments>/2018/07/24/back-to-mac-2015-edition/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 24 Jul 2018 22:24:40 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[macbook-pro]]></category>
+		<guid isPermaLink="false">/?p=16828</guid>
+
+					<description><![CDATA[Just over a year ago I started using a new 15&#8243; Macbook Pro. The one with the controversial butterfly keyboard and touch bar. I wasn&#8217;t excited about those changes, but I figured I could adapt, even if it turned out to not be great. It definitely wasn&#8217;t great. Then, earlier this month, it died. Not [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Just over a year ago I started using a new 15&#8243; Macbook Pro.  The one with the controversial butterfly keyboard and touch bar.  I wasn&#8217;t excited about those changes, but I figured I could adapt, even if it turned out to not be great.</p>
+<p>It definitely wasn&#8217;t great.</p>
+<p>Then, earlier this month, it died.  Not sure what happened, but in the mean time I needed something to use.  So I went back to my previous 2015 Macbook Pro ( 13&#8243; ).  Switching back to the previous generation really drove home for me the differences between the two.  I was surprised how pleasant it was to be back on a regular keyboard again.</p>
+<p>Besides the keys, I&#8217;m not a fan of the touch bar.  Having real keys again is so much better.  The track pad size is also more reasonable, the new track pad is just too large.  A few times a week it would pick up on my palms and trigger a multi-touch action, usually the zoom level in my browser.</p>
+<p>This is going to sound like a small thing, but I really like the magsafe power adapter.  The power status light was something I really missed, even though it is just this tiny feature.</p>
+<p>Really, there are only two things that I miss on the 2015 previous generation Mac that the current models have: touch id and USB-C.  Having only USB-C isn&#8217;t great, but it would be nice to have one USB-C port along with magsafe, USB, audio, SD and HDMI.  Basically swap out the Thunderbolt 2 ports for USB-C ( Thunderbolt 3 ).</p>
+<p>I&#8217;ve been using Apple laptops for more than a dozen years ( before that a lot of FreeBSD on laptops ), and the  touch bar generation is the only one that hasn&#8217;t been a joy to use.</p>
+<p>Tim Cook, if you are listening, I&#8217;d love to be able to buy a 2015 style Macbook Pro with updated internals ( 32 GB of RAM, yes please! ), that kept the real keyboard ( no touch bar ) and various ports.  If it needs a different name, call it the developer edition.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/07/24/back-to-mac-2015-edition/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Revenue And Profit, Per Employee</title>
+		<link>/2018/05/22/revenue-and-profit-per-employee/</link>
+					<comments>/2018/05/22/revenue-and-profit-per-employee/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 22 May 2018 19:53:20 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[amazon]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[dustin-curtis]]></category>
+		<category><![CDATA[facebook]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<category><![CDATA[profit]]></category>
+		<category><![CDATA[revenue]]></category>
+		<category><![CDATA[Twitter]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15165</guid>
+
+					<description><![CDATA[Two years ago Dustin Curtis mentioned 2015 revenue and profit per employee for Yahoo, Twitter, Microsoft, Google, and Facebook. I thought this was an interesting way to look at this list, so I&#8217;m going update it, with a few changes. First, I&#8217;m going to remove Yahoo ( Oath? ). Next, I&#8217;m adding Amazon and Netflix. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Two years ago <a href="https://dustincurtis.com/">Dustin Curtis</a> mentioned 2015 <a href="https://twitter.com/dcurtis/status/694266299317243904">revenue</a> and <a href="https://twitter.com/dcurtis/status/694586397588467712">profit</a> per employee for Yahoo, Twitter, Microsoft, Google, and Facebook.</p>
+<p><a href="/wp-content/uploads/2018/05/revenue-per-employee.png"><img loading="lazy" src="/wp-content/uploads/2018/05/revenue-per-employee-1024x897.png" alt="" width="840" height="736" class="aligncenter size-large wp-image-16653" srcset="/wp-content/uploads/2018/05/revenue-per-employee-1024x897.png 1024w, /wp-content/uploads/2018/05/revenue-per-employee-300x263.png 300w, /wp-content/uploads/2018/05/revenue-per-employee-768x673.png 768w, /wp-content/uploads/2018/05/revenue-per-employee-1200x1052.png 1200w, /wp-content/uploads/2018/05/revenue-per-employee.png 1230w" sizes="(max-width: 840px) 100vw, 840px" /></a></p>
+<p><a href="/wp-content/uploads/2018/05/profit-per-employee.png"><img loading="lazy" src="/wp-content/uploads/2018/05/profit-per-employee-1024x895.png" alt="" width="840" height="734" class="aligncenter size-large wp-image-16652" srcset="/wp-content/uploads/2018/05/profit-per-employee-1024x895.png 1024w, /wp-content/uploads/2018/05/profit-per-employee-300x262.png 300w, /wp-content/uploads/2018/05/profit-per-employee-768x671.png 768w, /wp-content/uploads/2018/05/profit-per-employee.png 1192w" sizes="(max-width: 840px) 100vw, 840px" /></a></p>
+<p>I thought this was an interesting way to look at this list, so I&#8217;m going update it, with a few changes.  First, I&#8217;m going to remove Yahoo ( Oath? ).  Next, I&#8217;m adding Amazon and Netflix.</p>
+<p>The revenue/profit will be for calendar year 2017, with the exceptions of Microsoft ( 30 Jun 2017 ) and Apple ( 30 Sep 2017 ).  The numbers are pulled from the Yahoo ( Oath? ) Finance pages: &#8220;Total Revenue&#8221; and &#8220;Net Income&#8221;.</p>
+<hr />
+<h3>Total Employees</h3>
+<p><a href="https://finance.yahoo.com/quote/TWTR/profile?p=TWTR">Twitter</a>: 3,400<br />
+<a href="https://finance.yahoo.com/quote/NFLX/profile?p=NFLX">Netflix</a>: 4,800<br />
+<a href="https://finance.yahoo.com/quote/FB/profile?p=FB">Facebook</a>: 27,742<br />
+<a href="https://finance.yahoo.com/quote/GOOG/profile?p=GOOG">Google</a>: 80,110<br />
+<a href="https://finance.yahoo.com/quote/AAPL/profile?p=AAPL">Apple</a>: 100,000<br />
+<a href="https://finance.yahoo.com/quote/MSFT/profile?p=MSFT">Microsoft</a>: 124,000<br />
+<a href="https://finance.yahoo.com/quote/AMZN/profile?p=AMZN">Amazon</a>: 566,000</p>
+<hr />
+<h3>Revenue Per Employee</h3>
+<p><a href="https://finance.yahoo.com/quote/AMZN/financials?p=AMZN">Amazon</a>: <strong>$314,250</strong> ( $177,866,000,000 / 566,000 )<br />
+<a href="https://finance.yahoo.com/quote/TWTR/financials?p=TWTR">Twitter</a>: <strong>$718,617</strong> ( $2,443,299,000 / 3,400 )<br />
+<a href="https://finance.yahoo.com/quote/MSFT/financials?p=MSFT">Microsoft</a>: <strong>$725,403</strong> ( $89,950,000,000 / 124,000 )<br />
+<a href="https://finance.yahoo.com/quote/GOOG/financials?p=GOOG">Google</a>: <strong>$1,383,784</strong> ( $110,855,000,000 / 80,110 )<br />
+<a href="https://finance.yahoo.com/quote/FB/financials?p=FB">Facebook</a>: <strong>$1,465,395</strong> ( $40,653,000,000 / 27,742 )<br />
+<a href="https://finance.yahoo.com/quote/AAPL/financials?p=AAPL">Apple</a>: <strong>$2,292,340</strong> ( $229,234,000,000 / 100,000 )<br />
+<a href="https://finance.yahoo.com/quote/NFLX/financials?p=NFLX">Netflix</a>: <strong>$2,435,981</strong> ( $11,692,713,000 / 4,800 )</p>
+<hr />
+<h3>Profit Per Employee</h3>
+<p><a href="https://finance.yahoo.com/quote/TWTR/financials?p=TWTR">Twitter</a>: <strong>-$31,783</strong> ( -$108,063,000 / 3,400 )<br />
+<a href="https://finance.yahoo.com/quote/AMZN/financials?p=AMZN">Amazon</a>: <strong>$5,358</strong> ( $3,033,000,000 / 566,000 )<br />
+<a href="https://finance.yahoo.com/quote/NFLX/financials?p=NFLX">Netflix</a>: <strong>$116,443</strong> ( $558,929,000 / 4,800 )<br />
+<a href="https://finance.yahoo.com/quote/GOOG/financials?p=GOOG">Google</a>: <strong>$158,057</strong> ( $12,662,000,000 / 80,110 )<br />
+<a href="https://finance.yahoo.com/quote/MSFT/financials?p=MSFT">Microsoft</a>: <strong>$171,000</strong> ( $21,204,000,000 / 124,000 )<br />
+<a href="https://finance.yahoo.com/quote/AAPL/financials?p=AAPL">Apple</a>: <strong>$483,510</strong> ( $48,351,000,000 / 100,000 )<br />
+<a href="https://finance.yahoo.com/quote/FB/financials?p=FB">Facebook</a>: <strong>$573,859</strong> ( $15,920,000,000 / 27,742 )</p>
+<hr />
+<p>Twitter is still loosing money, but it is loosing a lot less than it was before.</p>
+<p>I didn&#8217;t realize that Netflix was so low on the number of employees, yet their revenue is in the general ball park of much larger companies.  To the studios it must look like Netflix is over there printing money.  No wonder so many other companies want to start their own streaming content service.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/05/22/revenue-and-profit-per-employee/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The Reverse Apple and FBI Conspiracy Theory</title>
+		<link>/2016/02/20/reverse-apple-conspiracy-theory/</link>
+					<comments>/2016/02/20/reverse-apple-conspiracy-theory/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 20 Feb 2016 18:17:21 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[robert-cringely]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15283</guid>
+
+					<description><![CDATA[By now you&#8217;ve no doubt heard something about the FBI getting a court order compelling Apple to help access the iPhone from one of the San Bernardino murders. Apple has publicly opposed the order. There is no shortage of opinions and articles flying around on who is in the right here. If you are looking [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>By now you&#8217;ve no doubt heard something about the FBI getting a court order compelling Apple to help access the iPhone from one of the San Bernardino murders.  Apple has <a href="http://www.apple.com/customer-letter/">publicly opposed the order</a>.</p>
+<p>There is no shortage of opinions and articles flying around on who is in the right here.  If you are looking for a strange little detour into the conspiracy realm check out Robert Cringely&#8217;s take on this: <a href="http://www.cringely.com/2016/02/19/the-fbi-v-apple-isnt-at-all-the-way-you-think-it-is/">The FBI v. Apple isn’t at all the way you think it is</a>.  Lots of lead up to this theory:</p>
+<blockquote><p>
+So if you are a President who is a lawyer and former teacher of constitutional law and you’ve come over time to see that this idea of secret backdoors into encrypted devices is not really a good idea, but one that’s going to come up again and again pushed by nearly everyone from the other political party (and even a few from your own) wouldn’t right now be the best of all possible times to kinda-sorta fight this fight all the way to the Supreme Court and lose?
+</p></blockquote>
+<p>Instead of the classic conspiracy theory that the government is secretly up to no good, Cringely goes with the rarely seen reverse conspiracy approach.  The government is secretly trying to do something good by leveraging the current judicial dynamics.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/02/20/reverse-apple-conspiracy-theory/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Malls Love Apple</title>
+		<link>/2016/01/13/malls-love-apple/</link>
+					<comments>/2016/01/13/malls-love-apple/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 13 Jan 2016 16:59:53 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[apple]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14858</guid>
+
+					<description><![CDATA[Last month a Bloomberg article on malls ( These Malls Didn&#8217;t Get the Memo They&#8217;re Dying ) included data estimates from Green Street Advisors on how &#8220;An Apple store leads to a 13 percent bump in a mall&#8217;s sales per square foot&#8221;: I imagine Apple trots out this number every time they negotiate lease rates [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Last month a Bloomberg article on malls ( <a href="http://www.bloomberg.com/gadfly/articles/2015-12-23/high-end-malls-defy-death">These Malls Didn&#8217;t Get the Memo They&#8217;re Dying</a> ) included data estimates from Green Street Advisors on how &#8220;An Apple store leads to a 13 percent bump in a mall&#8217;s sales per square foot&#8221;:</p>
+<p><a href="/wp-content/uploads/2016/01/apple-in-malls-1.png" rel="attachment wp-att-14893"><img loading="lazy" src="/wp-content/uploads/2016/01/apple-in-malls-1-1024x544.png" alt="apple-in-malls" width="660" height="351" class="aligncenter size-large wp-image-14893" srcset="/wp-content/uploads/2016/01/apple-in-malls-1-1024x544.png 1024w, /wp-content/uploads/2016/01/apple-in-malls-1-300x159.png 300w, /wp-content/uploads/2016/01/apple-in-malls-1-768x408.png 768w, /wp-content/uploads/2016/01/apple-in-malls-1-1200x638.png 1200w, /wp-content/uploads/2016/01/apple-in-malls-1.png 1882w" sizes="(max-width: 660px) 100vw, 660px" /></a></p>
+<p>I imagine Apple trots out this number every time they negotiate lease rates for their stores.  Some have half joked that at some point malls will start paying Apple.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/01/13/malls-love-apple/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Start of 2016</title>
+		<link>/2016/01/01/start-of-2016/</link>
+					<comments>/2016/01/01/start-of-2016/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 01 Jan 2016 16:59:57 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<category><![CDATA[new-year]]></category>
+		<category><![CDATA[politics]]></category>
+		<category><![CDATA[predictions]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14751</guid>
+
+					<description><![CDATA[Today I&#8217;m joining the time honored tradition of making predictions for the new year. Translation: wild guesses and obvious statements. 1. Apple Makes A Move To Improve Internet Services Perhaps Apple&#8217;s single biggest weak spot has been online services. It is clear they know how to do a good job making hardware, all the way [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Today I&#8217;m joining the time honored tradition of making predictions for the new year.  Translation: wild guesses and obvious statements.</p>
+<h4>1. <a href="http://www.apple.com/">Apple</a> Makes A Move To Improve Internet Services</h4>
+<p>Perhaps Apple&#8217;s single biggest weak spot has been online services.  It is clear they know how to do a good job making hardware, all the way down to the chip level in some cases, and software to run on that hardware.  Execution of large scale Internet services hasn&#8217;t gone as smoothly.</p>
+<p>In the past people have suggested that Apple might buy an existing company to help bring in large scale web DNA.  I think what is more likely is that Apple makes a few key high level hires that build out new teams.</p>
+<p>This won&#8217;t be an easy thing for Apple.  When I look around at more recent successful web startups I see lots of sharing.  That will be a significant change of pace for a company that invests heavily in secrecy.</p>
+<p>I consider <a href="https://swift.org/">Swift</a> going open source a positive sign.</p>
+<h4>2. <a href="http://www.lua.org/">Lua</a> Gets More Attention</h4>
+<p>Cloudflare has been pushing the <a href="https://blog.cloudflare.com/pushing-nginx-to-its-limit-with-lua/">Nginx + Lua</a> combination for years now.  I consider that particular combination one of the most under rated technology stacks around.</p>
+<p>If you were heavy into all the microservices talk during 2015 then Lua+Nginx is an exciting combination.  I wouldn&#8217;t be surprised if AWS launches a new service around Lua.</p>
+<p>I recommend <a href="https://openresty.org/">OpenResty</a> ( a build of Nginx with Lua ) and <a href="http://lua.space/">lua.space</a> ( community news ).</p>
+<h4>3. Flash First Video Becomes Shameful</h4>
+<p>We have pretty good support for the <a href="http://caniuse.com/#feat=video">video element</a>, it is time to move Flash for video to a <a href="http://docs.webplatform.org/wiki/html/elements/video#Flash_fallback">fallback</a> position.  You are probably already doing that for mobile devices, time to go all in.</p>
+<h4>4. More Open Source From Microsoft</h4>
+<p>Microsoft has started to gain back some geek cred with their push into making more of their code open source ( check out <a href="https://github.com/Microsoft">https://github.com/Microsoft</a> ).  My prediction is they go even further, announcing one of their larger key products will go open source.  The big bets would be Exchange or SQL Server.  The other big candidate would a component of Office.</p>
+<h4>5. Strange U.S. Presidential Politics</h4>
+<p>If you&#8217;d asked about this a year ago, I would have focused on how much I&#8217;m not keen on family dynasties for President.  At the time Jeb Bush and Hillary Clinton were safe bets on being the candidates from their respective parties.  One had a brother and father who were President, the other a husband.  Since then there have been dramatic changes on the Republican side, and very little change on the Democratic side.</p>
+<p>My prediction: things get even stranger before the general election.  This might be the year for a <a href="http://www.nbcnews.com/politics/2016-election/contested-convention-almost-everything-you-need-know-n478736">contested convention</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/01/01/start-of-2016/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Business and Privacy</title>
+		<link>/2015/11/19/business-and-privacy/</link>
+					<comments>/2015/11/19/business-and-privacy/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 19 Nov 2015 15:44:01 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[privacy]]></category>
+		<category><![CDATA[vizio]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13947</guid>
+
+					<description><![CDATA[Compare http://www.apple.com/privacy/: Our business model is very straightforward: We sell great products. We don’t build a profile based on your email content or web browsing habits to sell to advertisers. We don’t “monetize” the information you store on your iPhone or in iCloud. And we don’t read your email or your messages to get information [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Compare <a href="http://www.apple.com/privacy/">http://www.apple.com/privacy/</a>:</p>
+<blockquote><p>
+Our business model is very straightforward: We sell great products. We don’t build a profile based on your email content or web browsing habits to sell to advertisers. We don’t “monetize” the information you store on your iPhone or in iCloud. And we don’t read your email or your messages to get information to market to you. Our software and services are designed to make our devices better. Plain and simple.
+</p></blockquote>
+<p>With <a href="http://www.vizio.com/privacy">http://www.vizio.com/privacy</a>:</p>
+<blockquote><p>
+VIZIO will share Viewing Data, together with the IP address associated with the corresponding VIZIO television, with limited third parties with whom we have specifically partnered. These third parties may combine this information with other information about devices associated with that IP address, in order to customize the advertisements displayed on those other devices.
+</p></blockquote>
+<p>Part of the issue here is expectations of privacy.  We&#8217;ve had televisions around for decades, during which time tracking hasn&#8217;t been an issue, first because of technology then because of laws that were setup consistent with privacy expectations.  From <a href="http://www.propublica.org/article/own-a-vizio-smart-tv-its-watching-you">ProPublica&#8217;s &#8220;Own a Vizio Smart TV? It’s Watching You&#8221;</a>:</p>
+<blockquote><p>
+Cable TV companies and video rental companies are prohibited by law from selling information about the viewing habits of their customers. However, Vizio says that those laws &#8211; the Video Privacy Protection Act and cable subscriber protections &#8211; don’t apply to its business.
+</p></blockquote>
+<p>Time to decide if we still expect a level of privacy from our &#8220;smart&#8221; televisions.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/19/business-and-privacy/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Update AirPort Extreme Firmware</title>
+		<link>/2014/04/24/update-airport-extreme-firmware/</link>
+					<comments>/2014/04/24/update-airport-extreme-firmware/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 24 Apr 2014 16:43:04 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[airport-extreme]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[wifi]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10333</guid>
+
+					<description><![CDATA[The Apple Airport Extreme has the OpenSSL Heartbleed bug. The update notice indicates that only newer models with certain features are vulnerable to this: Only AirPort Extreme and AirPort Time Capsule base stations with 802.11ac are affected, and only if they have Back to My Mac or Send Diagnostics enabled. Other AirPort base stations are [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="/wp-content/uploads/2014/04/airport-extreme-heartbleed-1.jpg"><img loading="lazy" src="/wp-content/uploads/2014/04/airport-extreme-heartbleed-1-187x300.jpg" alt="airport-extreme-heartbleed" width="187" height="300" class="aligncenter size-medium wp-image-10336" /></a></p>
+<p>The <a href="http://www.apple.com/airport-extreme/" title="I really like the clean look of the Airport Extreme.">Apple Airport Extreme</a> has the <a href="http://heartbleed.com/" title="The bug that keeps on giving.">OpenSSL Heartbleed bug</a>.  The update notice indicates that only newer models with certain features are vulnerable to this:</p>
+<blockquote><p>
+Only AirPort Extreme and AirPort Time Capsule base stations with 802.11ac are affected, and only if they have Back to My Mac or Send Diagnostics enabled. Other AirPort base stations are not impacted by this issue.
+</p></blockquote>
+<p>If you have one of these I recommend updating the firmware to <a href="http://support.apple.com/kb/HT6203" title="They don't mention heartbleed by name, but they do give enough detail that it is easy to tell what they are talking about.">version 7.7.3</a> even if you don&#8217;t have those features enabled.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/04/24/update-airport-extreme-firmware/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Business Model Impact</title>
+		<link>/2013/11/13/business-model-impact/</link>
+					<comments>/2013/11/13/business-model-impact/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 13 Nov 2013 15:26:57 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[ben-thompson]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9399</guid>
+
+					<description><![CDATA[I disagree with Ben Thompson about the business model impact on Apple and Google. Specifically this line from Apple&#8217;s report on government requests: Unlike many other companies dealing with requests for customer data from government agencies, Apple’s main business is not about collecting information. As a result, the vast majority of the requests we receive [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I disagree with <a href="http://stratechery.com/2013/casting-stones/">Ben Thompson about the business model impact on Apple and Google</a>.  Specifically this line from Apple&#8217;s report on government requests:</p>
+<blockquote><p>
+Unlike many other companies dealing with requests for customer data from government agencies, Apple’s main business is not about collecting information. As a result, the vast majority of the requests we receive from law enforcement seek information about lost or stolen devices, and are logged as device requests.</p>
+<p>We have no interest in amassing personal information about our customers. We protect personal conversations by providing end-to-end encryption over iMessage and FaceTime. We do not store location data, Maps searches, or Siri requests in any identifiable form.
+</p></blockquote>
+<p>To which Ben said:</p>
+<blockquote><p>
+Many were quick to praise Apple for this very fact, but let’s be clear: there is nothing here worth praising. It’s an artifact of their business model.
+</p></blockquote>
+<p>Just like company culture, a business model has a large impact on a company.  Some build out specific cultures and models, others inherit them through lack of action.  Praising it might be too much, but so is completely dismissing it.</p>
+<p>I certainly wouldn&#8217;t excuse the actions of patent trolls as just an artifact of their business model.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/11/13/business-model-impact/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Apple Should Stay Focused</title>
+		<link>/2013/10/28/apple-should-stay-focused/</link>
+					<comments>/2013/10/28/apple-should-stay-focused/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 28 Oct 2013 14:33:24 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[carl-icahn]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9274</guid>
+
+					<description><![CDATA[It is no secret that Apple has lots of money in the bank, currently listed at $147 billion. It is also no secret that Carl Icahn wants Apple to spend a chunk of that money buying back their own shares. All Things D is reporting on a letter from Carl Icahn strongly recommending a larger [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>It is no secret that Apple has lots of money in the bank, currently listed at $147 billion.  It is also no secret that Carl Icahn wants Apple to spend a chunk of that money buying back their own shares.  All Things D is reporting on a <a href="http://allthingsd.com/20131024/icahn-to-apple-i-want-a-150-billion-buyback-now/">letter from Carl Icahn strongly recommending a larger scale buy back program</a>:</p>
+<blockquote><p>
+With such an enormous valuation gap and such a massive amount of cash on the balance sheet, we find it difficult to imagine why the board would not move more aggressively to buy back stock by immediately announcing a $150 Billion tender offer (financed with debt or a mix of debt and cash on the balance sheet).
+</p></blockquote>
+<p>The current buy back program is $60 billion over three years.  Why recommend more than doubling it?  Goosing the stock value of course:</p>
+<blockquote><p>
+if you execute this buyback as proposed, we expect the share price to appreciate to $1,250, assuming the market rewards EBIT growth of 7.5% per year with a more normal market multiple of 11x EBIT.
+</p></blockquote>
+<p>Icahn has made a ton of money in the investment world, I have no doubt of his ability to continue to make more.  That said, I&#8217;m going to disagree with his recommendation to have Apple spend more money on a buy back program.</p>
+<p>A large scale buy back program sends a message that they&#8217;ve run out of their own investment ideas and the only thing left to do is to try and optimize the stock value based on current products and revenue.  If the best return Apple can get by spending $90 billion is to purchase their own stock then that is a sign that they have started to give up.</p>
+<p>Apple has done well because they&#8217;ve been able to make products that people want to buy, not by trying to tweak their stock value.  Apple should stay focused on improving the products they have and developing new ones.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/10/28/apple-should-stay-focused/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

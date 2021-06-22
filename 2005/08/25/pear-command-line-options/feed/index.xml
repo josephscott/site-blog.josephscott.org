@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: PEAR Command Line Options	</title>
+	<atom:link href="/2005/08/25/pear-command-line-options/feed/" rel="self" type="application/rss+xml" />
+	<link>/2005/08/25/pear-command-line-options/</link>
+	<description></description>
+	<lastBuildDate>Sat, 13 Jun 2009 15:54:25 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: K Y Chan		</title>
+		<link>/2005/08/25/pear-command-line-options/#comment-939</link>
+
+		<dc:creator><![CDATA[K Y Chan]]></dc:creator>
+		<pubDate>Sat, 13 Jun 2009 15:54:25 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=466#comment-939</guid>
+
+					<description><![CDATA[Hi Joseph,
+
+Your post help me to understand where is the pear.conf. It is so obvious, but I spent days googling. Thanks for the hint -- it is installed in where I installed PEAR when doing a local installation of PEAR.
+
+I copy the pear.conf and renamed it as pear.ini and put it under C:Windows (default path for PEAR index.php to start the webbased PEAR package manager on my local server). Using this webbased PEAR package manager is a lot more convenient to manage PEAR.
+
+Thanks again!
+
+KYC]]></description>
+			<content:encoded><![CDATA[<p>Hi Joseph,</p>
+<p>Your post help me to understand where is the pear.conf. It is so obvious, but I spent days googling. Thanks for the hint &#8212; it is installed in where I installed PEAR when doing a local installation of PEAR.</p>
+<p>I copy the pear.conf and renamed it as pear.ini and put it under C:Windows (default path for PEAR index.php to start the webbased PEAR package manager on my local server). Using this webbased PEAR package manager is a lot more convenient to manage PEAR.</p>
+<p>Thanks again!</p>
+<p>KYC</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

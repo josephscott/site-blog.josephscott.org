@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>diff &#8211; Joseph Scott</title>
+	<atom:link href="/tag/diff/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 21 Jun 2011 23:11:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Diff Colorizer for GMail</title>
+		<link>/2011/06/21/diff-colorizer-for-gmail/</link>
+					<comments>/2011/06/21/diff-colorizer-for-gmail/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 21 Jun 2011 23:11:52 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[diff]]></category>
+		<category><![CDATA[gmail]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4338</guid>
+
+					<description><![CDATA[I get emails with diffs in them every day, and Gmail does really horrible things to them. In the Gmail web UI diffs inside emails are nearly unreadable. I don&#8217;t know why they choose to mangle them in this way, but thankfully there is a work around: Beanstalk SVN Diff Colorizer for GMail. I use [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I get emails with diffs in them every day, and Gmail does really horrible things to them.  In the Gmail web UI diffs inside emails are nearly unreadable.  I don&#8217;t know why they choose to mangle them in this way, but thankfully there is a work around: <a href='http://userstyles.org/styles/14853/beanstalk-svn-diff-colorizer-for-gmail'>Beanstalk SVN Diff Colorizer for GMail</a>.</p>
+<p>I use Google Chrome as my main browser, so I installed this as a <a href="http://www.chromium.org/developers/design-documents/user-scripts">user script</a>, clicked reload on my Gmail tab now diffs in emails are much easier to read again.</p>
+<p>The CSS is very simple:</p>
+<p>[sourcecode lang=&#8221;css&#8221;]<br />
+  ins { background-color: #cfc; }</p>
+<p>  del { background-color: #fcc; }<br />
+[/sourcecode]</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/06/21/diff-colorizer-for-gmail/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>markdown &#8211; Joseph Scott</title>
+	<atom:link href="/tag/markdown/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Sat, 19 Sep 2015 14:30:40 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Parsedown</title>
+		<link>/2015/09/19/parsedown/</link>
+					<comments>/2015/09/19/parsedown/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 19 Sep 2015 14:30:40 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[markdown]]></category>
+		<category><![CDATA[parsedown]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12013</guid>
+
+					<description><![CDATA[ParseDown, a fast Markdown parser for PHP. The benchmarks are impressive.]]></description>
+										<content:encoded><![CDATA[<p><a href='http://parsedown.org/'>ParseDown</a>, a fast Markdown parser for PHP.  The <a href="http://parsedown.org/speed">benchmarks are impressive</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/09/19/parsedown/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Caddy</title>
+		<link>/2015/08/06/caddy/</link>
+					<comments>/2015/08/06/caddy/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 06 Aug 2015 14:01:14 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[caddy]]></category>
+		<category><![CDATA[go]]></category>
+		<category><![CDATA[http2]]></category>
+		<category><![CDATA[markdown]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12719</guid>
+
+					<description><![CDATA[The ramp up to HTTP/2 seems to have also triggered a renewed interest in web server software. I recently came across Caddy, a web server written in Go. From the FAQ: Fundamentally, Caddy aims to make websites easier by lowering the barrier to entry. Like other web servers, Caddy is for system administrators and web [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The ramp up to HTTP/2 seems to have also triggered a renewed interest in web server software.  I recently came across <a href="https://caddyserver.com/">Caddy</a>, a web server written in Go.  From the <a href="https://caddyserver.com/docs/faq">FAQ</a>:</p>
+<blockquote><p>
+Fundamentally, Caddy aims to make websites easier by lowering the barrier to entry. Like other web servers, Caddy is for system administrators and web developers, but Caddy is also tailored for designers and writers who don&#8217;t want to deal with a lot of the technical cruft that traditionally comes along with setting up a server.</p>
+<p>Caddy has different goals and advantages. Nginx is first and foremost a capable reverse proxy, whereas Caddy&#8217;s primary goal is to be an easy-to-use static file web server. Caddy desires cross-platform independence and portability without the need for custom builds.
+</p></blockquote>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/08/06/caddy/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Markdown with MacDown</title>
+		<link>/2015/03/06/markdown-with-macdown/</link>
+					<comments>/2015/03/06/markdown-with-macdown/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 06 Mar 2015 18:12:42 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[macdown]]></category>
+		<category><![CDATA[markdown]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9803</guid>
+
+					<description><![CDATA[Lately I&#8217;ve been using MacDown for writing longer documents in Markdown. I tried a few other Markdown editors for Mac OS X and found that MacDown fit my needs the best. The fenced codeblock block support, with syntax highlighting via Prism, sealed the deal. Bonus points for being open source &#8211; https://github.com/uranusjr/macdown.]]></description>
+										<content:encoded><![CDATA[<p><a href="http://macdown.uranusjr.com/"><img loading="lazy" src="/wp-content/uploads/2015/03/macdown-logo-1.png" alt="macdown-logo" width="256" height="256" class="alignleft size-full wp-image-11718" srcset="/wp-content/uploads/2015/03/macdown-logo-1.png 256w, /wp-content/uploads/2015/03/macdown-logo-1-150x150.png 150w" sizes="(max-width: 256px) 100vw, 256px" /></a></p>
+<p>Lately I&#8217;ve been using <a href="http://macdown.uranusjr.com/">MacDown</a> for writing longer documents in Markdown.  I tried a few other Markdown editors for Mac OS X and found that MacDown fit my needs the best.  The <a href="http://macdown.uranusjr.com/features/">fenced codeblock block support</a>, with syntax highlighting via <a href="http://prismjs.com/">Prism</a>, sealed the deal.</p>
+<p>Bonus points for being open source &#8211; <a href="https://github.com/uranusjr/macdown">https://github.com/uranusjr/macdown</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/03/06/markdown-with-macdown/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Slides: Site Performance, From Pinto to Ferrari	</title>
+	<atom:link href="/2011/09/17/slides-site-performance-from-pinto-to-ferrari/feed/" rel="self" type="application/rss+xml" />
+	<link>/2011/09/17/slides-site-performance-from-pinto-to-ferrari/</link>
+	<description></description>
+	<lastBuildDate>Thu, 02 May 2013 03:56:07 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Bharat Tekwani		</title>
+		<link>/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3843</link>
+
+		<dc:creator><![CDATA[Bharat Tekwani]]></dc:creator>
+		<pubDate>Thu, 02 May 2013 03:56:07 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4782#comment-3843</guid>
+
+					<description><![CDATA[Thank you so much Joseph. I really appreciate it.]]></description>
+			<content:encoded><![CDATA[<p>Thank you so much Joseph. I really appreciate it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3842</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 02 May 2013 03:25:17 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4782#comment-3842</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3840&quot;&gt;Bharat Tekwani&lt;/a&gt;.
+
+The SSL alert is about a self signed cert I&#039;ve been using on the site.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3840">Bharat Tekwani</a>.</p>
+<p>The SSL alert is about a self signed cert I&#8217;ve been using on the site.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3841</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 02 May 2013 03:24:56 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4782#comment-3841</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3840&quot;&gt;Bharat Tekwani&lt;/a&gt;.
+
+Your previous comment caught me when I was checking email.  The comment moderation email from WordPress showed up at the same time :-)
+
+For Apache there is http://httpd.apache.org/docs/2.2/mod/core.html#keepalive
+
+For Nginx http://wiki.nginx.org/HttpCoreModule#keepalive_disable
+
+Both default to enabling keep-alive.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3840">Bharat Tekwani</a>.</p>
+<p>Your previous comment caught me when I was checking email.  The comment moderation email from WordPress showed up at the same time 🙂</p>
+<p>For Apache there is <a href="http://httpd.apache.org/docs/2.2/mod/core.html#keepalive" rel="nofollow ugc">http://httpd.apache.org/docs/2.2/mod/core.html#keepalive</a></p>
+<p>For Nginx <a href="http://wiki.nginx.org/HttpCoreModule#keepalive_disable" rel="nofollow ugc">http://wiki.nginx.org/HttpCoreModule#keepalive_disable</a></p>
+<p>Both default to enabling keep-alive.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bharat Tekwani		</title>
+		<link>/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3840</link>
+
+		<dc:creator><![CDATA[Bharat Tekwani]]></dc:creator>
+		<pubDate>Wed, 01 May 2013 19:20:19 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4782#comment-3840</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3839&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+That was fast. I think faster that Vin Diesel&#039;s car. :) 
+Is there any article or some sort of document that talks about how to do it..
+
+And one more thing. When I clicked on the link that I got in my email with the notification of your reply - chrome game me an error of ssl and I had to click on proceed anyway - Just FYI.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3839">Joseph Scott</a>.</p>
+<p>That was fast. I think faster that Vin Diesel&#8217;s car. 🙂<br />
+Is there any article or some sort of document that talks about how to do it..</p>
+<p>And one more thing. When I clicked on the link that I got in my email with the notification of your reply &#8211; chrome game me an error of ssl and I had to click on proceed anyway &#8211; Just FYI.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3839</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 01 May 2013 19:15:28 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4782#comment-3839</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3838&quot;&gt;Bharat Tekwani&lt;/a&gt;.
+
+HTTP keep-alive is a web server level item, so not specific to WordPress.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3838">Bharat Tekwani</a>.</p>
+<p>HTTP keep-alive is a web server level item, so not specific to WordPress.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bharat Tekwani		</title>
+		<link>/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3838</link>
+
+		<dc:creator><![CDATA[Bharat Tekwani]]></dc:creator>
+		<pubDate>Wed, 01 May 2013 19:06:45 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4782#comment-3838</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3837&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+Yes, 
+
+In your slide 41 I can see that there are multiple resources being sent in single http request. 
+
+For example, on 3rd http request from s2.wp.com 6 resources are downloaded in single http request.
+
+I am on linux sever with Apache and use latest wp (3.5.1).]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3837">Joseph Scott</a>.</p>
+<p>Yes, </p>
+<p>In your slide 41 I can see that there are multiple resources being sent in single http request. </p>
+<p>For example, on 3rd http request from s2.wp.com 6 resources are downloaded in single http request.</p>
+<p>I am on linux sever with Apache and use latest wp (3.5.1).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3837</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 29 Apr 2013 18:57:43 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4782#comment-3837</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3836&quot;&gt;Bharat Tekwani&lt;/a&gt;.
+
+HTTP keep alive perhaps?]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3836">Bharat Tekwani</a>.</p>
+<p>HTTP keep alive perhaps?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bharat Tekwani		</title>
+		<link>/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3836</link>
+
+		<dc:creator><![CDATA[Bharat Tekwani]]></dc:creator>
+		<pubDate>Fri, 26 Apr 2013 20:11:55 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4782#comment-3836</guid>
+
+					<description><![CDATA[Hey Joseph,
+
+Just watched the video and Love it. 
+
+I would really appreciate if you can point me in the right direction on where can I find more information about how to keep the connection open and not let it close and send more than one component in that connection.
+
+Is it something related to mod_concat for lighttpd where we can send more than one css or js in one http request?
+
+Is there any document or an article that talks about it specifically for wp?
+
+Thanks,]]></description>
+			<content:encoded><![CDATA[<p>Hey Joseph,</p>
+<p>Just watched the video and Love it. </p>
+<p>I would really appreciate if you can point me in the right direction on where can I find more information about how to keep the connection open and not let it close and send more than one component in that connection.</p>
+<p>Is it something related to mod_concat for lighttpd where we can send more than one css or js in one http request?</p>
+<p>Is there any document or an article that talks about it specifically for wp?</p>
+<p>Thanks,</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3835</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 08 Nov 2011 03:11:01 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4782#comment-3835</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3834&quot;&gt;mark k.&lt;/a&gt;.
+
+Unless you have a specific reason for using MyISAM (and there are a few, but aren&#039;t common for most WP sites) you should always use InnoDB.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3834">mark k.</a>.</p>
+<p>Unless you have a specific reason for using MyISAM (and there are a few, but aren&#8217;t common for most WP sites) you should always use InnoDB.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: mark k.		</title>
+		<link>/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comment-3834</link>
+
+		<dc:creator><![CDATA[mark k.]]></dc:creator>
+		<pubDate>Sun, 06 Nov 2011 14:37:35 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4782#comment-3834</guid>
+
+					<description><![CDATA[Hi, just watched the video of the presentation and since I am just in the process of moving a WP installation with 20 sites (which works kind of, but not exactly, like MS) and the first memory usage optimization that I have done is to turn off the innodb in mysql, I was kind of alarmed that you strongly recommend on using innodb instead of myism.
+
+From what I googled by now, it seems that the performance benefits are related to insertion and deletion (and some extra stability) but is it really noticeable difference on wordpress? 
+
+Maybe I&#039;m just afraid of change.... but since I&#039;m backing up and restoring right now, I don&#039;t want to add some extra work if I don&#039;t have to.]]></description>
+			<content:encoded><![CDATA[<p>Hi, just watched the video of the presentation and since I am just in the process of moving a WP installation with 20 sites (which works kind of, but not exactly, like MS) and the first memory usage optimization that I have done is to turn off the innodb in mysql, I was kind of alarmed that you strongly recommend on using innodb instead of myism.</p>
+<p>From what I googled by now, it seems that the performance benefits are related to insertion and deletion (and some extra stability) but is it really noticeable difference on wordpress? </p>
+<p>Maybe I&#8217;m just afraid of change&#8230;. but since I&#8217;m backing up and restoring right now, I don&#8217;t want to add some extra work if I don&#8217;t have to.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

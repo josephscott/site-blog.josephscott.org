@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>tom-morris &#8211; Joseph Scott</title>
+	<atom:link href="/tag/tom-morris/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Sat, 05 Sep 2015 14:06:24 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>JavaScript Off</title>
+		<link>/2015/09/05/javascript-off/</link>
+					<comments>/2015/09/05/javascript-off/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 05 Sep 2015 14:06:24 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[tom-morris]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9571</guid>
+
+					<description><![CDATA[Tom Morris on Why I&#8217;m turning JavaScript off by default: I snark a lot about JavaScript, but I’m of the opinion that most of the web would be improved if there were a lot less JavaScript running on it. Even two years ago when this was originally written, this is considered heretical in many circles. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Tom Morris on <a href="https://tommorris.org/posts/8677">Why I&#8217;m turning JavaScript off by default</a>:</p>
+<blockquote><p>
+I snark a lot about JavaScript, but I’m of the opinion that most of the web would be improved if there were a lot less JavaScript running on it.
+</p></blockquote>
+<p>Even two years ago when this was originally written, this is considered heretical in many circles.</p>
+<p>That issue aside, there is value in trying out the web with JavaScript turned off.  It simulates what happens when your JavaScript has a fatal error, or takes 3 minutes to load.  On a global Internet those are conditions that your users will run into.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/09/05/javascript-off/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

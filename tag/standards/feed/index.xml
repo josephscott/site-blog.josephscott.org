@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>standards &#8211; Joseph Scott</title>
+	<atom:link href="/tag/standards/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 20 Jul 2010 16:08:13 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>The Standards Chicken and the Egg</title>
+		<link>/2010/07/20/the-standards-chicken-and-the-egg/</link>
+					<comments>/2010/07/20/the-standards-chicken-and-the-egg/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 20 Jul 2010 16:08:13 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[david-recordon]]></category>
+		<category><![CDATA[standards]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2559</guid>
+
+					<description><![CDATA[David Recordon commenting on the first Federated Social Web Summit, Standards are best served second: At times it felt as if people were starting with the technologies and protocols and only then trying to find a product that needs PubSubHubbub enabled JSON hCards federated via OStatus! The Diaspora talk jumped out to me as they [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>David Recordon commenting on the first Federated Social Web Summit, <a href="http://davidrecordon.com/2010/07/standards-are-best-when-created-second.html">Standards are best served second</a>:</p>
+<blockquote><p>
+At times it felt as if people were starting with the technologies and protocols and only then trying to find a product that needs PubSubHubbub enabled JSON hCards federated via OStatus!</p>
+<p>The Diaspora talk jumped out to me as they twice said, &#8220;we&#8217;ve implemented this product feature as a prototype, it works, and now we want to talk about the standard version of it.&#8221; That&#8217;s the right way to build standards. Have a product problem, solve it, and then iterate with others on an open specification.
+</p></blockquote>
+<p>I think this is a good rule of thumb to follow.  Knowing when to make use of an existing standard/protocol vs. starting over can make all the difference in the world.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/07/20/the-standards-chicken-and-the-egg/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Which Should Come First, Spec or App?</title>
+		<link>/2010/05/03/which-should-come-first-spec-or-app/</link>
+					<comments>/2010/05/03/which-should-come-first-spec-or-app/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 04 May 2010 04:34:06 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[api]]></category>
+		<category><![CDATA[specifications]]></category>
+		<category><![CDATA[standards]]></category>
+		<category><![CDATA[Twitter]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2246</guid>
+
+					<description><![CDATA[I am still twice burned on specifications leading innovation — I’m more confident investing in something led by a consumer killer app. &#8211; Matt Mullenweg, commenting on his own Twitter API post]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+I am still twice burned on specifications leading innovation — I’m more confident investing in something led by a consumer killer app.
+</p></blockquote>
+<p>&#8211; Matt Mullenweg, <a href="http://ma.tt/2010/05/twitter-api/#comment-478031">commenting on his own Twitter API post</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/05/03/which-should-come-first-spec-or-app/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

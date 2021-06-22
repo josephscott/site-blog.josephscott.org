@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>devonodell &#8211; Joseph Scott</title>
+	<atom:link href="/tag/devonodell/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 08 Sep 2005 17:21:49 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>DTrace For FreeBSD</title>
+		<link>/2005/09/08/dtrace-for-freebsd/</link>
+					<comments>/2005/09/08/dtrace-for-freebsd/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 08 Sep 2005 17:21:49 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[devonodell]]></category>
+		<category><![CDATA[dtrace]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[offmyserver]]></category>
+		<category><![CDATA[raqdevil]]></category>
+		<category><![CDATA[solaris]]></category>
+		<category><![CDATA[sun]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=473</guid>
+
+					<description><![CDATA[Last month Devon O&#8217;Dell started work on porting DTrace from Solaris to FreeBSD. Devon works for Offmyserver.com, which is providing him with hardware and support for the project. Bryan Cantrill, one of the developers at Sun working on DTrace, has also offered support for the port. Recently there has been some work to make DTrace [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Last month <a href="http://www.sitetronics.com/wordpress/">Devon O&#8217;Dell</a> started work on <a href="http://www.zdnet.com.au/news/software/soa/Developer_aims_for_Dtrace_on_FreeBSD/0,2000061733,39210618,00.htm">porting DTrace from Solaris to FreeBSD</a>.  Devon works for <a href="http://www.offmyserver.com/">Offmyserver.com</a>, which is providing him with hardware and support for the project.  <a href="http://blogs.sun.com/roller/page/bmc">Bryan Cantrill</a>, one of the developers at <a href="http://www.sun.com/">Sun</a> working on <a href="http://opensolaris.org/os/community/dtrace/">DTrace</a>, has also <a href="http://blogs.sun.com/roller/page/bmc?entry=dtrace_on_freebsd">offered support</a> for the port.  Recently there has been some work to make DTrace usable <a href="http://blogs.sun.com/roller/page/bmc?entry=dtrace_and_php_demonstrated">with PHP</a> and <a href="http://blogs.sun.com/roller/page/bmc?entry=dtrace_and_ruby">with Ruby</a>.  I&#8217;ve never used DTrace, but it looks very impressive.  I look forward to being able to use this tool on my favorite server OS (<a href="http://www.freebsd.org/">FreeBSD</a> of course).</p>
+<p>Devon is also involved with <a href="http://www.raqdevil.com/">RAQdevil</a>, an Offmyserver.com project.  RAQdevil is another web control panel software package that is open source and based off of the Cobalt systems (which is now owned by Sun).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/09/08/dtrace-for-freebsd/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>cloudflare &#8211; Joseph Scott</title>
+	<atom:link href="/tag/cloudflare/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 22 Jan 2019 22:12:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Cloudflare Injected JavaScript</title>
+		<link>/2019/01/22/cloudflare-injected-javascript/</link>
+					<comments>/2019/01/22/cloudflare-injected-javascript/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 22 Jan 2019 22:12:38 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[cloudflare]]></category>
+		<category><![CDATA[email]]></category>
+		<guid isPermaLink="false">/?p=17259</guid>
+
+					<description><![CDATA[I was surprised while looking at a site using the Cloudflare CDN to see a piece of JavaScript I hadn&#8217;t come across before: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js Cloudflare has a feature called &#8220;Scrape Shield&#8221; that looks for pages with email addresses in them, then automatically injects this JavaScript to obfuscate the addresses. The idea is to reduce the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was surprised while looking at a site using the <a href="https://www.cloudflare.com/">Cloudflare CDN</a> to see a piece of JavaScript I hadn&#8217;t come across before: <code>/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js</code></p>
+<p>Cloudflare has a feature called &#8220;Scrape Shield&#8221; that looks for pages with email addresses in them, then automatically injects this JavaScript to obfuscate the addresses.  The idea is to reduce the risk that bots will harvest the email address for spam.  This feature is turned out by default.</p>
+<p>Turning it off ( if you want to do that ) is easy enough:</p>
+<p><a href="/wp-content/uploads/2019/01/scrape-shield.png"><img loading="lazy" src="/wp-content/uploads/2019/01/scrape-shield-1024x334.png" alt="" width="788" height="257" class="aligncenter size-large wp-image-17289" srcset="/wp-content/uploads/2019/01/scrape-shield-1024x334.png 1024w, /wp-content/uploads/2019/01/scrape-shield-300x98.png 300w, /wp-content/uploads/2019/01/scrape-shield-768x250.png 768w, /wp-content/uploads/2019/01/scrape-shield-788x257.png 788w" sizes="(max-width: 788px) 100vw, 788px" /></a></p>
+<p>There are more details at <a href="https://support.cloudflare.com/hc/en-us/articles/200170016-What-is-Email-Address-Obfuscation-">https://support.cloudflare.com/hc/en-us/articles/200170016-What-is-Email-Address-Obfuscation-</a> on how this works.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/01/22/cloudflare-injected-javascript/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Cloudflare Workers To Support WebAssembly</title>
+		<link>/2018/07/03/cloudflare-workers-to-support-webassembly/</link>
+					<comments>/2018/07/03/cloudflare-workers-to-support-webassembly/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 03 Jul 2018 19:25:37 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[cloudflare]]></category>
+		<category><![CDATA[kenton-varda]]></category>
+		<category><![CDATA[webassembly]]></category>
+		<guid isPermaLink="false">/?p=16795</guid>
+
+					<description><![CDATA[A recent thread on Hacker News discussing Cloudflare Workers brought up an interesting item from Kenton Varda, tech lead for their Workers service ( # ): On another note, currently we only support JavaScript, but we&#8217;re putting the finishing touches on WebAssembly support, which would let you run Go on Workers&#8230; stay tuned. The context [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>A recent <a href="https://news.ycombinator.com/item?id=17445602">thread on Hacker News discussing Cloudflare Workers</a> brought up an interesting item from <a href="https://twitter.com/KentonVarda?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Kenton Varda</a>, tech lead for their Workers service ( <a href="/wp-content/uploads/2018/07/cloudflare-wasm.png">#</a> ):</p>
+<blockquote><p>
+On another note, currently we only support JavaScript, but we&#8217;re putting the finishing touches on WebAssembly support, which would let you run Go on Workers&#8230; stay tuned.
+</p></blockquote>
+<p>The context was using <a href="https://golang.org/">Go</a> for Cloudflare Workers, but supporting WASM ( WebAssembly ) potentially opens the door to a broader range of programming languages.</p>
+<p>There is a list at <a href="https://github.com/appcypher/awesome-wasm-langs">https://github.com/appcypher/awesome-wasm-langs</a> with references for 30 different languages with projects to target WASM.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/07/03/cloudflare-workers-to-support-webassembly/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Brotli for Nginx</title>
+		<link>/2015/11/20/brotli-for-nginx/</link>
+					<comments>/2015/11/20/brotli-for-nginx/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 20 Nov 2015 16:15:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[brotli]]></category>
+		<category><![CDATA[cloudflare]]></category>
+		<category><![CDATA[compression]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[nginx]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14048</guid>
+
+					<description><![CDATA[Two months ago Google announced Brotli, a new compression format: Brotli is a whole new data format. This new format allows us to get 20–26% higher compression ratios over Zopfli. In our study ‘Comparison of Brotli, Deflate, Zopfli, LZMA, LZHAM and Bzip2 Compression Algorithms’ we show that Brotli is roughly as fast as zlib’s Deflate [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Two months ago Google announced <a href="http://google-opensource.blogspot.com/2015/09/introducing-brotli-new-compression.html">Brotli</a>, a new compression format:</p>
+<blockquote><p>
+Brotli is a whole new data format. This new format allows us to get 20–26% higher compression ratios over Zopfli. In our study ‘Comparison of Brotli, Deflate, Zopfli, LZMA, LZHAM and Bzip2 Compression Algorithms’ we show that Brotli is roughly as fast as zlib’s Deflate implementation. At the same time, it compresses slightly more densely than LZMA and bzip2 on the Canterbury corpus. The higher data density is achieved by a 2nd order context modeling, re-use of entropy codes, larger memory window of past data and joint distribution codes. Just like Zopfli, the new algorithm is named after Swiss bakery products. Brötli means ‘small bread’ in Swiss German.
+</p></blockquote>
+<p>Compression is a big deal for web performance, being able to send the same file with fewer bytes is a big win.</p>
+<p>There are now two Nginx modules for supporting Brotli compression: <a href="https://github.com/google/ngx_brotli">ngx_brotli from Google</a> and <a href="https://github.com/cloudflare/ngx_brotli_module">ngx_brotli_module from CloudFlare</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/20/brotli-for-nginx/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

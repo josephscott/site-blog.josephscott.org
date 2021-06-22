@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>https &#8211; Joseph Scott</title>
+	<atom:link href="/tag/https/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 21 Jan 2020 18:19:20 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Browser Defaults: HTTPS and Viewport</title>
+		<link>/2020/01/21/browser-defaults-https-and-viewport/</link>
+					<comments>/2020/01/21/browser-defaults-https-and-viewport/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 21 Jan 2020 18:19:20 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[browser]]></category>
+		<category><![CDATA[https]]></category>
+		<category><![CDATA[jeremy-keith]]></category>
+		<category><![CDATA[viewport]]></category>
+		<guid isPermaLink="false">/?p=17953</guid>
+
+					<description><![CDATA[Jeremy Keith suggests two changes to the browser default behavior. HTTPS First When you type in example.com with no protocol, the browser tries HTTP first. His suggestion is to change that to HTTPS instead. Then if HTTPS fails, fall back to HTTP. This falls under the &#8220;trying to be correct by default&#8221; behavior. Our browsers [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://adactio.com/">Jeremy Keith</a> suggests <a href="https://adactio.com/journal/16295">two changes to the browser default behavior</a>.</p>
+<h3>HTTPS First</h3>
+<p>When you type in <code>example.com</code> with no protocol, the browser tries HTTP first.  His suggestion is to change that to HTTPS instead.  Then if HTTPS fails, fall back to HTTP.</p>
+<p>This falls under the &#8220;trying to be correct by default&#8221; behavior.  Our browsers should generally encrypt traffic to sites by default.  If you type in <code><strong>http</strong>://example.com</code>, then you are directing it to make a request that is plain text, and it should follow that direction.  Outside of that, better to do encryption by default.</p>
+<p>I&#8217;m in favor of this kind of change.</p>
+<p>I&#8217;d even consider going one step further: flip <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security">HSTS ( HTTP Strict-Transport-Security )</a>.  Instead of requiring sites to opt-in to telling browsers that a site should be HTTPS only, default to HTTPS and require the site to opt-in to a plain HTTP version.  That is a bigger change, that will require more work &#8211; namely that we need more <a href="https://letsencrypt.org/">Let&#8217;s Encrypt</a> alternatives &#8211; but I think we can get there.</p>
+<h3>Assume Viewport</h3>
+<p>The question:</p>
+<blockquote><p>
+Responsive design has swept the web. What would happen if mobile browsers were to assume <code>width=device-width</code>?
+</p></blockquote>
+<p>The big push for this came from mobile, Safari specifically.  That ship has sailed, no point in trying to pretend that we will ever go back. I&#8217;m in favor of this kind of change.</p>
+<h3>Improving Defaults</h3>
+<p>As technology changes, it is healthy to re-evaluate our defaults.  Most people won&#8217;t change them, so a &#8220;protect the user&#8221; attitude should weigh heavily in how defaults are managed over time.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/01/21/browser-defaults-https-and-viewport/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Inspecting HTTPS With Wireshark</title>
+		<link>/2015/12/17/inspecting-https-with-wireshark/</link>
+					<comments>/2015/12/17/inspecting-https-with-wireshark/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 17 Dec 2015 16:59:15 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[https]]></category>
+		<category><![CDATA[wireshark]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14422</guid>
+
+					<description><![CDATA[A short how to on Inspecting HTTPS With Wireshark. The key is to log browser data with SSLKEYLOGFILE, then load that file into Wireshark.]]></description>
+										<content:encoded><![CDATA[<p>A short how to on <a href="https://certsimple.com/blog/ssl-wireshark-mac-osx">Inspecting HTTPS With Wireshark</a>.  The key is to log browser data with <code>SSLKEYLOGFILE</code>, then load that file into <a href="https://www.wireshark.org/">Wireshark</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/17/inspecting-https-with-wireshark/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Dynamically Generated Certificates</title>
+		<link>/2015/05/19/dynamically-generated-certificates/</link>
+					<comments>/2015/05/19/dynamically-generated-certificates/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 19 May 2015 15:08:50 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[https]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[openresty]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12371</guid>
+
+					<description><![CDATA[tl;dr: generate dynamic certificates on the fly with nginx. Leveraging OpenResty to generate certificates on demand, which follows fairly direct pattern: Generate private key Generate signing request ( CSR ) Sign the CSR with a CA Use the new key A little bit of Lua inside Nginx goes a surprisingly long way.]]></description>
+										<content:encoded><![CDATA[<blockquote><p>tl;dr: generate dynamic certificates on the fly with nginx.</p></blockquote>
+<p>Leveraging <a href="http://openresty.org/">OpenResty</a> to <a href="http://blog.dutchcoders.io/openresty-with-dynamic-generated-certificates/">generate certificates on demand</a>, which follows fairly direct pattern:</p>
+<ul>
+<li>Generate private key</li>
+<li>Generate signing request ( CSR )</li>
+<li>Sign the CSR with a CA</li>
+<li>Use the new key</li>
+</ul>
+<p>A little bit of <a href="http://www.lua.org/">Lua</a> inside <a href="http://nginx.org/">Nginx</a> goes a surprisingly long way.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/05/19/dynamically-generated-certificates/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Google Giving Weight to HTTPS in Search Results</title>
+		<link>/2014/08/07/google-giving-weight-to-https-in-search-results/</link>
+					<comments>/2014/08/07/google-giving-weight-to-https-in-search-results/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 07 Aug 2014 17:05:58 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[https]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[seo]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10777</guid>
+
+					<description><![CDATA[Maybe not everything, but certainly more than we are doing now. So how do you encourage more sites to use HTTPS? Well, if you are Google, you tweak the SEO black box: we&#8217;re starting to use HTTPS as a ranking signal. For now it&#8217;s only a very lightweight signal — affecting fewer than 1% of [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="/wp-content/uploads/2014/08/https-all-the-things-1.jpg"><img loading="lazy" src="/wp-content/uploads/2014/08/https-all-the-things-1.jpg" alt="https-all-the-things" width="400" height="300" class="aligncenter size-full wp-image-10791" srcset="/wp-content/uploads/2014/08/https-all-the-things-1.jpg 400w, /wp-content/uploads/2014/08/https-all-the-things-1-300x225.jpg 300w" sizes="(max-width: 400px) 100vw, 400px" /></a></p>
+<p>Maybe not everything, but certainly more than we are doing now.</p>
+<p>So how do you encourage more sites to use HTTPS?  Well, if you are Google, you tweak the SEO black box:</p>
+<blockquote><p>
+we&#8217;re starting to use HTTPS as a ranking signal. For now it&#8217;s only a very lightweight signal — affecting fewer than 1% of global queries, and carrying less weight than other signals such as high-quality content — while we give webmasters time to switch to HTTPS. But over time, we may decide to strengthen it, because we’d like to encourage all website owners to switch from HTTP to HTTPS to keep everyone safe on the web.
+</p></blockquote>
+<p>From <a href="http://googlewebmastercentral.blogspot.com/2014/08/https-as-ranking-signal.html">HTTPS as a ranking signal</a> on the Google Webmaster Central Blog.</p>
+<p>The call to have more sites use HTTPS has been out for some time.  It is hard to be motivated enough to over come the technical and financial hurdles to make the move ( and for some sites those hurdles are non-trivial ).  The SEO approach that Google is taking is the equivalent of hitting sites in the wallet ( in some cases that might be the literal result ).  When the possibility of loosing money is involved then it is easier to get people&#8217;s attention.</p>
+<p>This might be the single best use of the crazy Google SEO situation I&#8217;ve ever seen.</p>
+<p>Earlier this summer Automattic talked about working towards <a href="http://en.blog.wordpress.com/2014/06/05/reset-the-net/">providing all *.wordpress.com sites with HTTPS by the end of 2014</a>.  This is something that I&#8217;m really excited to see happen.</p>
+<p>If you still aren&#8217;t supporting HTTPS for your site, I&#8217;d encourage you to map out a plan to get there.  Tim Bray posted a simple <a href="https://www.tbray.org/ongoing/When/201x/2012/12/02/HTTPS">outline of the why and how of switching to HTTPS</a>.  If you are looking for a more technical view of how HTTPS works check out <a href="http://chimera.labs.oreilly.com/books/1230000000545/ch04.html">the TLS chapter of &#8220;High Performance Browser Networking&#8221;</a>, which is free to read online.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/08/07/google-giving-weight-to-https-in-search-results/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Update Nginx For Better HTTPS Performance</title>
+		<link>/2014/04/22/update-nginx-for-better-https-performance/</link>
+					<comments>/2014/04/22/update-nginx-for-better-https-performance/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 22 Apr 2014 15:37:41 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[https]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10261</guid>
+
+					<description><![CDATA[I decided to try out this suggestion from Optimizing NGINX TLS Time To First Byte (TTFB) ( which I mentioned at the end of 2013 ): After digging through the nginx source code, one stumbles onto this gem. Turns out, any nginx version prior to 1.5.6 has this issue: certificates over 4KB in size incur [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I decided to try out this suggestion from <a href="http://www.igvita.com/2013/12/16/optimizing-nginx-tls-time-to-first-byte/" title="Time to first byte is one of my favorite topics.">Optimizing NGINX TLS Time To First Byte (TTFB)</a> ( which <a href="https://josephscott.org/archives/2013/12/nginx-tls-time-to-first-byte/" title="I should have read this in full sooner.">I mentioned at the end of 2013</a> ):</p>
+<blockquote><p>
+After digging through the nginx source code, one stumbles <a href="https://github.com/nginx/nginx/commit/e52bddaaa90e64b2291f6e58ef1a2cff71604f6a#diff-0584d16332cf0d6dd9adb990a3c76a0cR539">onto this gem</a>. Turns out, any nginx version prior to 1.5.6 has this issue: certificates over 4KB in size incur an extra roundtrip, turning a two roundtrip handshake into a three roundtrip affair &#8211; yikes. Worse, in this particular case we trigger another unfortunate edge case in Windows TCP stack: the client ACKs the first few packets from the server, but then waits ~200ms before it triggers a delayed ACK for the last segment. In total, that results in extra 580ms of latency that we did not expect.
+</p></blockquote>
+<p>I&#8217;ve been using Nginx 1.4.x from the Ubuntu package collection on this site.  A few <a href="http://www.webpagetest.org/" title="Still one of my favorite performance testing resources.">webpagetest.org</a> runs showed that HTTPS negotiation was taking more than 300ms on the initial request.  After updating to Nginx 1.5.13 more tests showed HTTPS negotiation was down around 250ms.</p>
+<p>The 50ms savings isn&#8217;t nearly as dramatic as the worst case scenario described in the quote above, but I&#8217;ll take it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/04/22/update-nginx-for-better-https-performance/feed/</wfw:commentRss>
+			<slash:comments>9</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>NGINX TLS Time To First Byte</title>
+		<link>/2013/12/26/nginx-tls-time-to-first-byte/</link>
+					<comments>/2013/12/26/nginx-tls-time-to-first-byte/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 26 Dec 2013 17:29:03 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[https]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[ssl]]></category>
+		<category><![CDATA[time-to-first-byte]]></category>
+		<category><![CDATA[tls]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9676</guid>
+
+					<description><![CDATA[Ilya Grigorik on optimizing NGINX TLS time to first byte (TTTFB): let&#8217;s now turn to the practical matter of picking and tuning the server to deliver the best results. One would hope that the default “out of the box” experience for most servers would do a good job… unfortunately, that is not the case. Let&#8217;s [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Ilya Grigorik on <a href="http://www.igvita.com/2013/12/16/optimizing-nginx-tls-time-to-first-byte/" title="A race before the race.">optimizing NGINX TLS time to first byte (TTTFB)</a>:</p>
+<blockquote><p>
+let&#8217;s now turn to the practical matter of picking and tuning the server to deliver the best results. One would hope that the default “out of the box” experience for most servers would do a good job… unfortunately, that is not the case. Let&#8217;s take a closer look nginx
+</p></blockquote>
+<p>In the simplest terms, TLS involves more work.  The current realities of securing communications means we don&#8217;t have a good way to avoid doing that additional work, indeed we will be doing it more often than we ever have before.  The end result is that we need to spend more time thinking about how to optimize the HTTPS experience for all users.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/12/26/nginx-tls-time-to-first-byte/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Charles Web Debugging Proxy</title>
+		<link>/2010/11/09/charles-web-debugging-proxy/</link>
+					<comments>/2010/11/09/charles-web-debugging-proxy/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 09 Nov 2010 15:54:48 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[charles]]></category>
+		<category><![CDATA[fiddler]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[https]]></category>
+		<category><![CDATA[proxy]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3117</guid>
+
+					<description><![CDATA[Charles &#8211; cross platform HTTP/HTTPS proxy for debugging web requests on your own system. I wonder how this compares to Fiddler.]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.charlesproxy.com/">Charles</a> &#8211; cross platform HTTP/HTTPS proxy for debugging web requests on your own system.  I wonder how this compares to <a href="http://www.fiddler2.com/fiddler2/">Fiddler</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/11/09/charles-web-debugging-proxy/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: FreeBSD Users and Groups with Samba (Winbind) and Active Directory	</title>
+	<atom:link href="/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/feed/" rel="self" type="application/rss+xml" />
+	<link>/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/</link>
+	<description></description>
+	<lastBuildDate>Thu, 21 Jul 2011 17:17:26 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Will		</title>
+		<link>/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1038</link>
+
+		<dc:creator><![CDATA[Will]]></dc:creator>
+		<pubDate>Thu, 21 Jul 2011 17:17:26 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=516#comment-1038</guid>
+
+					<description><![CDATA[@Chris: thanks man! you wont believe how annoying it was to have ossec mailing me every second about that error.
+
+smbd Version 3.5.4-0.70.el5_6.1
+CentOS release 5.6 (Final)]]></description>
+			<content:encoded><![CDATA[<p>@Chris: thanks man! you wont believe how annoying it was to have ossec mailing me every second about that error.</p>
+<p>smbd Version 3.5.4-0.70.el5_6.1<br />
+CentOS release 5.6 (Final)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: zblk		</title>
+		<link>/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1037</link>
+
+		<dc:creator><![CDATA[zblk]]></dc:creator>
+		<pubDate>Fri, 06 Mar 2009 09:57:16 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=516#comment-1037</guid>
+
+					<description><![CDATA[Debian Lenny with Samba 3.2.5
+with &quot;old&quot; idmap syntax winbind generates errors about re-initialization of rid module:
+
+[2009/03/06 12:07:48,  0] winbindd/idmap.c:smb_register_idmap(142)
+  Idmap module rid already registered!
+[2009/03/06 12:07:48,  0] lib/module.c:do_smb_load_module(69)
+  Module &#039;/usr/lib/samba/idmap/rid.so&#039; initialization failed: NT_STATUS_OBJECT_NAME_COLLISION
+
+after changing it to &quot;new&quot; syntax errors have gone
+
+was:
+...
+idmap backend = rid:DOMAIN=10000-20000
+idmap uid = 10000-20000
+idmap gid = 10000-20000
+...
+
+become:
+...
+idmap domains = DOMAIN
+idmap config DOMAIN:backend = rid
+idmap config DOMAIN:range = 10000-20000
+...]]></description>
+			<content:encoded><![CDATA[<p>Debian Lenny with Samba 3.2.5<br />
+with &#8220;old&#8221; idmap syntax winbind generates errors about re-initialization of rid module:</p>
+<p>[2009/03/06 12:07:48,  0] winbindd/idmap.c:smb_register_idmap(142)<br />
+  Idmap module rid already registered!<br />
+[2009/03/06 12:07:48,  0] lib/module.c:do_smb_load_module(69)<br />
+  Module &#8216;/usr/lib/samba/idmap/rid.so&#8217; initialization failed: NT_STATUS_OBJECT_NAME_COLLISION</p>
+<p>after changing it to &#8220;new&#8221; syntax errors have gone</p>
+<p>was:<br />
+&#8230;<br />
+idmap backend = rid:DOMAIN=10000-20000<br />
+idmap uid = 10000-20000<br />
+idmap gid = 10000-20000<br />
+&#8230;</p>
+<p>become:<br />
+&#8230;<br />
+idmap domains = DOMAIN<br />
+idmap config DOMAIN:backend = rid<br />
+idmap config DOMAIN:range = 10000-20000<br />
+&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aberardo Castillo		</title>
+		<link>/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1036</link>
+
+		<dc:creator><![CDATA[Aberardo Castillo]]></dc:creator>
+		<pubDate>Fri, 14 Nov 2008 01:41:37 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=516#comment-1036</guid>
+
+					<description><![CDATA[Hi,
+
+I did apply this procedure and everything works fine. Thanks for your contribution to others.
+
+I have a case in my Lab. I have 2 AD in redundancy, and I would like to configure the server so it can authenticate the users with any of them (have redundancy as well on the authentication). is this possible? if yes, any clues or ideas to get it done?
+
+Regards,
+--Aberardo.]]></description>
+			<content:encoded><![CDATA[<p>Hi,</p>
+<p>I did apply this procedure and everything works fine. Thanks for your contribution to others.</p>
+<p>I have a case in my Lab. I have 2 AD in redundancy, and I would like to configure the server so it can authenticate the users with any of them (have redundancy as well on the authentication). is this possible? if yes, any clues or ideas to get it done?</p>
+<p>Regards,<br />
+&#8211;Aberardo.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: suresh		</title>
+		<link>/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1035</link>
+
+		<dc:creator><![CDATA[suresh]]></dc:creator>
+		<pubDate>Thu, 13 Nov 2008 09:48:18 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=516#comment-1035</guid>
+
+					<description><![CDATA[Hi
+
+Actually i am tester i dont know any thing about this , i am trying to do
+cifs mounting in freebsd  but i am getting any thing about that please help me.]]></description>
+			<content:encoded><![CDATA[<p>Hi</p>
+<p>Actually i am tester i dont know any thing about this , i am trying to do<br />
+cifs mounting in freebsd  but i am getting any thing about that please help me.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1034</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 12 Nov 2008 17:54:35 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=516#comment-1034</guid>
+
+					<description><![CDATA[@suresh -
+
+Looks like there was an error in building samba3 at some point.  I&#039;d suggest tracking that down before trying to go any further.]]></description>
+			<content:encoded><![CDATA[<p>@suresh &#8211;</p>
+<p>Looks like there was an error in building samba3 at some point.  I&#8217;d suggest tracking that down before trying to go any further.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: suresh		</title>
+		<link>/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1033</link>
+
+		<dc:creator><![CDATA[suresh]]></dc:creator>
+		<pubDate>Sat, 08 Nov 2008 09:44:44 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=516#comment-1033</guid>
+
+					<description><![CDATA[After editing /etc/make.conf file i did  make install bug i am getting below message
+
+Stop in /usr/ports/net/samba3.
+*** Error code 1
+
+Stop in /usr/ports/net/samba3.
+*** Error code 1
+
+Stop in /usr/ports/net/samba3.
+[root@freebsd61 /usr/ports/net/samba3]# pwd
+/usr/ports/net/samba3
+[root@freebsd61 /usr/por
+
+
+I am trying to install smbclient in freebsd6.1]]></description>
+			<content:encoded><![CDATA[<p>After editing /etc/make.conf file i did  make install bug i am getting below message</p>
+<p>Stop in /usr/ports/net/samba3.<br />
+*** Error code 1</p>
+<p>Stop in /usr/ports/net/samba3.<br />
+*** Error code 1</p>
+<p>Stop in /usr/ports/net/samba3.<br />
+[root@freebsd61 /usr/ports/net/samba3]# pwd<br />
+/usr/ports/net/samba3<br />
+[root@freebsd61 /usr/por</p>
+<p>I am trying to install smbclient in freebsd6.1</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jim Dillon		</title>
+		<link>/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1032</link>
+
+		<dc:creator><![CDATA[Jim Dillon]]></dc:creator>
+		<pubDate>Fri, 10 Oct 2008 20:47:33 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=516#comment-1032</guid>
+
+					<description><![CDATA[Followed this tutorial and ran into a small problem, not with the tutorial, but with my environment.  It seems that for ssh to work the user can&#039;t be in more than 15 Active Directory groups.  I was getting something like
+[sshd] initgroups(username, guid): Invalid argument.  If you experience this issue get your AD group membership down to 15 and you should be just fine.
+
+Thanks for the wonderful tutorial!]]></description>
+			<content:encoded><![CDATA[<p>Followed this tutorial and ran into a small problem, not with the tutorial, but with my environment.  It seems that for ssh to work the user can&#8217;t be in more than 15 Active Directory groups.  I was getting something like<br />
+[sshd] initgroups(username, guid): Invalid argument.  If you experience this issue get your AD group membership down to 15 and you should be just fine.</p>
+<p>Thanks for the wonderful tutorial!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joel Duckworth		</title>
+		<link>/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1031</link>
+
+		<dc:creator><![CDATA[Joel Duckworth]]></dc:creator>
+		<pubDate>Thu, 17 Apr 2008 05:52:13 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=516#comment-1031</guid>
+
+					<description><![CDATA[Thanks Chris, I&#039;ve been searching for ages trying to get to the bottom of these errors, there isn&#039;t much info on the net]]></description>
+			<content:encoded><![CDATA[<p>Thanks Chris, I&#8217;ve been searching for ages trying to get to the bottom of these errors, there isn&#8217;t much info on the net</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: John		</title>
+		<link>/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1030</link>
+
+		<dc:creator><![CDATA[John]]></dc:creator>
+		<pubDate>Fri, 22 Feb 2008 22:10:11 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=516#comment-1030</guid>
+
+					<description><![CDATA[Thanks for that tip Chris!  I&#039;ve been trying to solve this winbind/rid problem for several days on RedHat ES 5.1 which comes with samba 3.0.25b.  Thankfully googling the NT_STATUS_OBJECT_NAME_COLLISION error from winbindd-idmap.log led me to your post.]]></description>
+			<content:encoded><![CDATA[<p>Thanks for that tip Chris!  I&#8217;ve been trying to solve this winbind/rid problem for several days on RedHat ES 5.1 which comes with samba 3.0.25b.  Thankfully googling the NT_STATUS_OBJECT_NAME_COLLISION error from winbindd-idmap.log led me to your post.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jeremy		</title>
+		<link>/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1029</link>
+
+		<dc:creator><![CDATA[Jeremy]]></dc:creator>
+		<pubDate>Thu, 21 Jun 2007 13:40:29 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=516#comment-1029</guid>
+
+					<description><![CDATA[@Chris, it sure saved me some time, thanks!!!]]></description>
+			<content:encoded><![CDATA[<p>@Chris, it sure saved me some time, thanks!!!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

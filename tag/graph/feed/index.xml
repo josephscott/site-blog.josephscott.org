@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>graph &#8211; Joseph Scott</title>
+	<atom:link href="/tag/graph/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 15 Apr 2013 14:42:24 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Percentage Change in Federal Debt, 1958-2012</title>
+		<link>/2013/04/15/percentage-change-in-federal-debt-1958-2012/</link>
+					<comments>/2013/04/15/percentage-change-in-federal-debt-1958-2012/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 15 Apr 2013 14:42:24 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[debt]]></category>
+		<category><![CDATA[government]]></category>
+		<category><![CDATA[graph]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7454</guid>
+
+					<description><![CDATA[I&#8217;ve previously mentioned that the last time the US federal debt went down instead of up was 1957. This came up in a conversation again recently and I started thinking about the percentage change in the federal debt for each year. I looked at the period from 1958 to 2012, what I would call the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve previously mentioned that the <a href="http://josephscott.org/archives/2009/04/history-of-the-federal-debt/">last time the US federal debt went down instead of up was 1957</a>.  This came up in a conversation again recently and I started thinking about the percentage change in the federal debt for each year.  I looked at the period from 1958 to 2012, what I would call the modern era of federal debt.</p>
+<p>I went back to the <a href="http://www.treasurydirect.gov/govt/reports/pd/histdebt/histdebt.htm">federal debt records</a>, they go from 1790 to today.  Dumped that data into a spreadsheet, then calculated the percentage change for each year from 1958 &#8211; 2012.  I used the all actual numbers, I didn&#8217;t attempt to normalize them to 2012 dollars since each year is just a comparison of the year before.</p>
+<p>Copying that into Google Charts Javascript code generates this graph:</p>
+<p><strong>Percentage Change in Federal Debt, 1958-2012</strong><br />
+<script type="text/javascript" src="//www.google.com/jsapi"></script><br />
+<script type="text/javascript">
+google.load('visualization', '1', {packages: ['corechart']});
+</script><br />
+<script type="text/javascript">
+function drawVisualization() {
+// Create and populate the data table.
+var data = google.visualization.arrayToDataTable([
+['Year', '% Change'],
+['1958-06-30',  2.15],
+['1959-06-30',  3.03],
+['1960-06-30',  0.57],
+['1961-06-30',  0.92],
+['1962-06-30',  3.19],
+['1963-06-30',  2.57],
+['1964-06-30',  1.91],
+['1965-06-30',  1.78],
+['1966-06-30',  0.83],
+['1967-06-30',  1.97],
+['1968-06-30',  6.55],
+['1969-06-30',  1.77],
+['1970-06-30',  4.86],
+['1971-06-30',  7.34],
+['1972-06-30',  7.32],
+['1973-06-30',  7.23],
+['1974-06-30',  3.69],
+['1975-06-30',  12.24],
+['1976-06-30',  16.36],
+['1977-09-30',  12.64],
+['1978-09-30',  10.40],
+['1979-09-30',  7.13],
+['1980-09-30',  9.82],
+['1981-09-30',  9.93],
+['1982-09-30',  14.45],
+['1983-09-30',  20.59],
+['1984-09-30',  14.16],
+['1985-09-30',  15.95],
+['1986-09-30',  16.58],
+['1987-09-30',  10.59],
+['1988-09-30',  10.72],
+['1989-09-29',  9.80],
+['1990-09-28',  13.15],
+['1991-09-30',  13.36],
+['1992-09-30',  10.89],
+['1993-09-30',  8.53],
+['1994-09-30',  6.38],
+['1995-09-29',  5.99],
+['1996-09-30',  5.04],
+['1997-09-30',  3.60],
+['1998-09-30',  2.09],
+['1999-09-30',  2.35],
+['2000-09-30',  0.32],
+['2001-09-30',  2.35],
+['2002-09-30',  7.25],
+['2003-09-30',  8.91],
+['2004-09-30',  8.78],
+['2005-09-30',  7.50],
+['2006-09-30',  7.24],
+['2007-09-30',  5.89],
+['2008-09-30',  11.29],
+['2009-09-30',  18.80],
+['2010-09-30',  13.87],
+['2011-09-30',  9.06],
+['2012-09-30',  8.63]
+]);      
+// Create and draw the visualization.
+new google.visualization.LineChart(document.getElementById('visualization')).draw(data, { width: 750, height: 400 } );
+}
+google.setOnLoadCallback(drawVisualization);
+</script></p>
+<div id="visualization" style="width: 500px; height: 400px; margin-left: -100px; margin-top: -75px;"></div>
+<p>You can mouse over each point to see the exact value for any given year.</p>
+<p>A few observations on this graph.  First, these are all increases, no negative numbers.  Next, you&#8217;ll easily notice that the year with the largest percentage increase was 1983, at 20.5%.  The next highest increase was 2009, at 18.8%.</p>
+<p>The highs weren&#8217;t what most surprised me in this data, it was the lows.  In 2000 the percentage increase in federal debt from 1999 was only 0.32%.  That is the smallest percentage increase since 1957.  I knew that we&#8217;d reduced the yearly budget deficits during that period, but I had no idea how close we were to actually reducing the total federal debt.</p>
+<p>For 2000 the dollar increase of the federal debt was $17,907,308,271.43, or roughly $18 billion ( yes, billion with a b ).  That sounds like a significant amount, but compared to other years is very small.  To give you some idea of how small, in 2001 the percentage increase was 2.35%, the dollar amount was $133,285,202,313.20, more than 7 times the amount in 2000.</p>
+<p>I wanted to know more about what it would have taken to actually reduce the total debt in 2000.  The <a href="http://www.gpo.gov/fdsys/pkg/BUDGET-2000-BUD/html/BUDGET-2000-BUD-9.htm">2000 budget request</a> expenditures were listed as $1,765 billion.  To keep things simple I&#8217;m looking at this from the point of view of how much in spending cuts we would have needed in the 2000 budget to clear $18 billion that could have been used to reduce the total federal debt.</p>
+<p>A little bit of math shows that $18 billion was 1.02% of the $1,765 billion in spending listed in the <a href="http://www.gpo.gov/fdsys/pkg/BUDGET-2000-BUD/html/BUDGET-2000-BUD-9.htm">proposed 2000 federal budget</a>.</p>
+<p>Lets say we could find 1.1% in reductions in the budget to go towards paying down the debt.  That would get us $19.4 billion.  The first $18 billion would go to cover the increase that happened in the debt, leaving a $1.4 billion reduction in the total federal debt.  That is only a tiny fraction of the $5,674 billion total debt in 2000, but it would have been the first time in more than 40 years that it went down instead of up.</p>
+<p>All totally hypothetical and vastly over simplified, but this gave me a much clearer picture of the history of the federal debt.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/04/15/percentage-change-in-federal-debt-1958-2012/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

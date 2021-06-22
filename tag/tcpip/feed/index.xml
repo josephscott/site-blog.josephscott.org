@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>tcp/ip &#8211; Joseph Scott</title>
+	<atom:link href="/tag/tcpip/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 12 Sep 2019 16:37:17 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>The First 14 KB</title>
+		<link>/2019/09/12/the-first-14-kb/</link>
+					<comments>/2019/09/12/the-first-14-kb/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 12 Sep 2019 16:37:17 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[barry-pollard]]></category>
+		<category><![CDATA[tcp/ip]]></category>
+		<guid isPermaLink="false">/?p=17671</guid>
+
+					<description><![CDATA[Barry Pollard has a ground level examination of the performance adage that the first 14 KB of a page view is the most critical: Critical Resources and the First 14 KB &#8211; A Review. If you aren&#8217;t familiar with how the 14 KB guideline came to be, that is one of the first things he [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Barry Pollard has a ground level examination of the performance adage that the first 14 KB of a page view is the most critical: <a href="https://www.tunetheweb.com/blog/critical-resources-and-the-first-14kb/">Critical Resources and the First 14 KB &#8211; A Review</a>.</p>
+<p>If you aren&#8217;t familiar with how the 14 KB guideline came to be, that is one of the first things he addresses.  The short version is <a href="https://hpbn.co/building-blocks-of-tcp/#slow-start">TCP slow start</a>.</p>
+<p>That is the theoretical of what a new TCP connection looks like for a page view, what Barry Pollard does here is look at the details of what a real world process goes through.  I really like it when people examine what really happens, where the rubber meets the road, in this case that means looking at one packet at a time.</p>
+<p>The bottom line:</p>
+<blockquote><p>
+This post is also not intended to mean that page size is not important &#8211; it is massively important and I&#8217;m a big fan of optimising web performance! However I do warn against absolutism. The real world is far more complex than that. The general advice still stands: put your important resources near the top of the page so the browser can see them as soon as possible and start working on them, and ideally make your page as small as possible to allow it to download quickly. But don&#8217;t sweat too much over this magic 14 KB number.
+</p></blockquote>
+<p>When in doubt, measure for yourself what happens during a page view of your site.  And do it sometimes even when you don&#8217;t have doubt, to confirm that your theories match reality.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/09/12/the-first-14-kb/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Tracking TCP Round Trip Time in Nginx</title>
+		<link>/2015/09/11/tracking-tcp-round-trip-time-in-nginx/</link>
+					<comments>/2015/09/11/tracking-tcp-round-trip-time-in-nginx/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 11 Sep 2015 15:01:53 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[tcp/ip]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12689</guid>
+
+					<description><![CDATA[The TCP_INFO option provides information about round trip times ( RTT ) for a TCP connection. Turns out that Nginx can expose this information for you as embedded variables: $tcpinfo_rtt, $tcpinfo_rttvar, $tcpinfo_snd_cwnd, $tcpinfo_rcv_space information about the client TCP connection; available on systems that support the TCP_INFO socket option Easy to log this information. From there: [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The <a href="http://linuxgazette.net/136/pfeiffer.html">TCP_INFO</a> option provides information about round trip times ( RTT ) for a TCP connection.  Turns out that Nginx can expose this information for you as <a href="http://nginx.org/en/docs/http/ngx_http_core_module.html">embedded variables</a>:</p>
+<blockquote><p>
+$tcpinfo_rtt, $tcpinfo_rttvar, $tcpinfo_snd_cwnd, $tcpinfo_rcv_space</p>
+<p>information about the client TCP connection; available on systems that support the TCP_INFO socket option
+</p></blockquote>
+<p>Easy to log this information.  From there: periodically parse Nginx logs looking for client IP and RTT data, GEO IP lookup on the client, compute the median RTT value for each country/state, color code countries from highest to lowest RTT, then use Google Maps for the display.</p>
+<p>You&#8217;ll have yourself a nice page showing the RTT values across the world for visitors to your site.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/09/11/tracking-tcp-round-trip-time-in-nginx/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>tcpcrypt</title>
+		<link>/2014/08/25/tcpcrypt/</link>
+					<comments>/2014/08/25/tcpcrypt/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 25 Aug 2014 14:42:21 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[encryption]]></category>
+		<category><![CDATA[tcp/ip]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10914</guid>
+
+					<description><![CDATA[TCP layer encryption: Tcpcrypt is opportunistic encryption. If the other end speaks Tcpcrypt, then your traffic will be encrypted; otherwise it will be in clear text. Thus, Tcpcrypt alone provides no guarantees—it is best effort. If, however, a Tcpcrypt connection is successful and any attackers that exist are passive, then Tcpcrypt guarantees privacy. I find [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://tcpcrypt.org/">TCP layer encryption</a>:</p>
+<blockquote><p>
+Tcpcrypt is opportunistic encryption. If the other end speaks Tcpcrypt, then your traffic will be encrypted; otherwise it will be in clear text. Thus, Tcpcrypt alone provides no guarantees—it is best effort. If, however, a Tcpcrypt connection is successful and any attackers that exist are passive, then Tcpcrypt guarantees privacy.
+</p></blockquote>
+<p>I find the idea of pushing encryption down to lower layers of the stack really appealing.  Why limit crypto to just HTTPS, why not all of my TCP traffic?</p>
+<p>There is no doubt that deploying something like this will bring up more issues and questions.  If this is a good long term solution though, the sooner we face those questions and issues the better.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/08/25/tcpcrypt/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>TCP Over HTTP, A.K.A. HTTP 2.0</title>
+		<link>/2013/07/09/tcp-over-http-a-k-a-http-2-0/</link>
+					<comments>/2013/07/09/tcp-over-http-a-k-a-http-2-0/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 09 Jul 2013 16:26:16 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[rfc]]></category>
+		<category><![CDATA[tcp/ip]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=8542</guid>
+
+					<description><![CDATA[Skimming through the HTTP 2.0 draft RFC that was posted yesterday I&#8217;m left with the distinct feeling of implementing TCP on top of HTTP: I&#8217;m in the camp that believes that future versions of HTTP should continue to be a text based protocol ( with compression support ). Most weeks I look at several raw [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Skimming through the <a href='http://tools.ietf.org/html/draft-ietf-httpbis-http2-04'>HTTP 2.0 draft RFC</a> that was posted yesterday I&#8217;m left with the distinct feeling of implementing TCP on top of HTTP:</p>
+<figure style="width: 603px" class="wp-caption aligncenter"><a href="http://tools.ietf.org/html/draft-ietf-httpbis-http2-04#section-4"><img loading="lazy" src="https://sharedat.net/f/dE/dEa3/http2-framing.png" width="603" height="640" alt="HTTP 2.0 Framing" class /></a><figcaption class="wp-caption-text">HTTP 2.0 Framing</figcaption></figure>
+<p>I&#8217;m in the camp that believes that future versions of HTTP should continue to be a text based protocol ( with compression support ).  </p>
+<p>Most weeks I look at several raw HTTP requests and responses.  Yes, there will still be tools like cURL ( which I love ) to dig into HTTP transactions, so it isn&#8217;t the end of the world.  Still, I am sad to see something that is currently fairly easy to follow turn into something significantly more complex.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/07/09/tcp-over-http-a-k-a-http-2-0/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Solo</title>
+		<link>/2011/09/26/solo/</link>
+					<comments>/2011/09/26/solo/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 26 Sep 2011 20:20:22 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[cron]]></category>
+		<category><![CDATA[perl]]></category>
+		<category><![CDATA[solo]]></category>
+		<category><![CDATA[tcp/ip]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4792</guid>
+
+					<description><![CDATA[Solo is an interesting little Perl script: solo is a very simple script (10 lines) that prevents a program from running more than one copy at a time. It is useful with cron to make sure that a job doesn&#8217;t run before a previous one has finished. * * * * * solo -port=3801 /usr/local/bin/awesome-script.sh [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href='http://timkay.com/solo/'>Solo</a> is an interesting <a href="http://timkay.com/solo/solo">little Perl script</a>:</p>
+<blockquote><p>
+solo is a very simple script (10 lines) that prevents a program from running more than one copy at a time. It is useful with cron to make sure that a job doesn&#8217;t run before a previous one has finished.</p>
+<p>* * * * * solo -port=3801 /usr/local/bin/awesome-script.sh blah blah
+</p></blockquote>
+<p>The clever part is the use of binding to TCP ports to ensure that only one copy of the script is running at a time.  No more lockfiles or filesystem tricks, just let the kernel figure out if the port is already in use.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/09/26/solo/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Thanks for Trumpet Winsock</title>
+		<link>/2011/03/10/thanks-for-trumpet-winsock/</link>
+					<comments>/2011/03/10/thanks-for-trumpet-winsock/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 10 Mar 2011 17:44:31 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[tcp/ip]]></category>
+		<category><![CDATA[trumpet-winsock]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3752</guid>
+
+					<description><![CDATA[Back in the 90s when I worked for a small ISP in Modesto, where I did a little bit of everything, including tech support. There were many people still using Windows 3.x, and virtually 100% of them used Trumpet Winsock (Microsoft did have a TCP/IP stack for Windows 3.x, but I don&#8217;t know of anyone [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Back in the 90s when I worked for a small ISP in Modesto, where I did a little bit of everything, including tech support.  There were many people still using Windows 3.x, and virtually 100% of them used <a href="http://www.trumpet.com.au/index.php/downloads/trumpet-products.html">Trumpet Winsock</a> (Microsoft did have a TCP/IP stack for Windows 3.x, but I don&#8217;t know of anyone who ever used it).  During my years there I spent hours upon hours helping people properly configure Trumpet Winsock so that they could connect to the Internet.</p>
+<p>When I came across <a href="http://thanksfortrumpetwinsock.com/">Thanks for Trumpet Winsock, Peter Tattam</a> yesterday I was reminded of that era in my life.  I donated a small amount in appreciation for an application that most people used for free, and played a part in building up the Internet that we all enjoy today.</p>
+<p>If you used Trumpet Winsock back in the day (or just want to show appreciation for an important application from an earlier time) consider donating to the author, Peter Tattam, at <a href="http://thanksfortrumpetwinsock.com/">thanksfortrumpetwinsock.com</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/03/10/thanks-for-trumpet-winsock/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>NSTX, IP-over-DNS</title>
+		<link>/2010/08/31/nstx-ip-over-dns/</link>
+					<comments>/2010/08/31/nstx-ip-over-dns/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 31 Aug 2010 19:38:51 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[dns]]></category>
+		<category><![CDATA[nstx]]></category>
+		<category><![CDATA[tcp/ip]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2600</guid>
+
+					<description><![CDATA[NSTX, IP-over-DNS &#8211; clever hack (via Jeremy Zawodny)]]></description>
+										<content:encoded><![CDATA[<p><a href="http://thomer.com/howtos/nstx.html">NSTX, IP-over-DNS</a> &#8211; clever hack (via <a href="http://jeremy.zawodny.com/linkblog/">Jeremy Zawodny</a>)</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/08/31/nstx-ip-over-dns/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Lego Mapping the TCP Header</title>
+		<link>/2010/08/09/lego-mapping-the-tcp-header/</link>
+					<comments>/2010/08/09/lego-mapping-the-tcp-header/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 09 Aug 2010 16:04:12 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[lego]]></category>
+		<category><![CDATA[tcp/ip]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2598</guid>
+
+					<description><![CDATA[TCP/IP headers using Legos &#8211; awesomely geeky! I&#8217;d be tempted to spray paint some of the Legos to increase the color options. via http://jeremy.zawodny.com/linkblog/]]></description>
+										<content:encoded><![CDATA[<p><a href="http://righteousit.wordpress.com/2010/06/27/practical-visual-three-dimensional-pedagogy-for-internet-protocol-packet-header-control-fields/">TCP/IP headers using Legos</a> &#8211; awesomely geeky!  I&#8217;d be tempted to spray paint some of the Legos to increase the color options.</p>
+<p>via <a href="http://jeremy.zawodny.com/linkblog/">http://jeremy.zawodny.com/linkblog/</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/08/09/lego-mapping-the-tcp-header/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>XHR / AJAX Performance &#8211; GET or POST?</title>
+		<link>/2010/07/14/xhr-ajax-performance-get-or-post/</link>
+					<comments>/2010/07/14/xhr-ajax-performance-get-or-post/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 14 Jul 2010 15:18:45 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[ajax]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[tcp/ip]]></category>
+		<category><![CDATA[xhr]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2519</guid>
+
+					<description><![CDATA[Update, 02 Dec 2014: updated the loadimpact.com links ( which were broken ) to use copies at the Internet Archive. During the summer of 2009 I posted about XMLHttpRequest (XHR) using multiple packets for HTTP POST, but HTTP GET requests only used one (in most cases). This led to several people recommending HTTP GET requests [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>Update, 02 Dec 2014:</strong> updated the loadimpact.com links ( which were broken ) to use copies at the Internet Archive.</p>
+<hr />
+<p>During the summer of 2009 I posted about <a href="http://josephscott.org/archives/2009/08/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/">XMLHttpRequest (XHR) using multiple packets for HTTP POST</a>, but HTTP GET requests only used one (in most cases).  This led to several people recommending HTTP GET requests for AJAX when possible, to maximize performance.</p>
+<p>Fortunately someone (<a href="http://loadimpact.com/">Load Impact</a>) took actual measurements to see what this looked like in the real world &#8211; <strike><a href="http://loadimpact.com/blog/ajax-get-or-post-which-is-best">AJAX GET or POST &#8211; which is best?</a></strike> <a href="https://web.archive.org/web/20100717202029/http://loadimpact.com/blog/ajax-get-or-post-which-is-best">AJAX GET or POST &#8211; which is best? (Internet Archive )</a>.  For details check out their <strike><a href="http://loadimpact.com/info/Analysis_of_browser_specific_characteristics.pdf">analysis report (PDF)</a></strike> <a href="https://web.archive.org/web/20101006110146/http://loadimpact.com/info/Analysis_of_browser_specific_characteristics.pdf">analysis report (PDF) (Internet Archive)</a> (warning, contains gory geek details).  The short version, what they observed is that not only was HTTP POST (multiple packets) not slower, it was faster.  This is definitely contrary to the basic mental model of how this should work.</p>
+<p>If you are into front end performance and or TCP/IP go check it out, it would be great to get a solid explanation of why they are seeing these results.  On the flip side, if there is a flaw in the testing it would be good to identify that and come up with a new test.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/07/14/xhr-ajax-performance-get-or-post/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

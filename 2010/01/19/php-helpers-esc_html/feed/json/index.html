@@ -1,0 +1,48 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2010/01/19/php-helpers-esc_html/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2010/01/19/php-helpers-esc_html/",
+    "feed_url": "https://blog.josephscott.org/2010/01/19/php-helpers-esc_html/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: PHP Helpers: esc_html",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2010/01/19/php-helpers-esc_html/#comment-3173",
+            "url": "https://blog.josephscott.org/2010/01/19/php-helpers-esc_html/#comment-3173",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2010/01/19/php-helpers-esc_html/#comment-3172\">Matt</a>.\n\nFor html_print_r and html_var_dump, I did the same thing for my local code, they echo by default.  After more thought it seemed like the right thing to do.\n\nI'm not sure exactly what the right answer is for using these in a WordPress context.  Perhaps load them as a plugin and keep the conditional checks for function name collisions?\n\nThanks for the feedback.",
+            "content_text": "In reply to Matt.\n\nFor html_print_r and html_var_dump, I did the same thing for my local code, they echo by default.  After more thought it seemed like the right thing to do.\n\nI'm not sure exactly what the right answer is for using these in a WordPress context.  Perhaps load them as a plugin and keep the conditional checks for function name collisions?\n\nThanks for the feedback.",
+            "date_published": "2010-06-28T14:17:11-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2010/01/19/php-helpers-esc_html/#comment-3172",
+            "url": "https://blog.josephscott.org/2010/01/19/php-helpers-esc_html/#comment-3172",
+            "content_html": "These are great, I have always had one that I used called pre_dump, which was var_dump wrapped in PRE tags and several others that I use for debugging purposes.\n\nI recently decided to test yours out, and ran into at least 1 thing that would help me, which is to rename esc_html to something else.  I have always used auto_prepend_file to include these common helpers, and when doing so it of course conflicts with my WordPress install.\n\nAlso, and this is just me wanting to type less but, I think that html_print_r and html_var_dump should echo rather than return.\n\nI know this wasn't really designed for my specific use case, but it does perform this job well.\n\nIn any case, thank you for these, it will surely help me out.",
+            "content_text": "These are great, I have always had one that I used called pre_dump, which was var_dump wrapped in PRE tags and several others that I use for debugging purposes.\n\nI recently decided to test yours out, and ran into at least 1 thing that would help me, which is to rename esc_html to something else.  I have always used auto_prepend_file to include these common helpers, and when doing so it of course conflicts with my WordPress install.\n\nAlso, and this is just me wanting to type less but, I think that html_print_r and html_var_dump should echo rather than return.\n\nI know this wasn't really designed for my specific use case, but it does perform this job well.\n\nIn any case, thank you for these, it will surely help me out.",
+            "date_published": "2010-06-28T14:12:07-06:00",
+            "authors": [
+                {
+                    "name": "Matt",
+                    "url": "http://sivel.net/",
+                    "avatar": "https://secure.gravatar.com/avatar/0cceb204e6cfa42aadee1fec717b1d2c?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Matt",
+                "url": "http://sivel.net/",
+                "avatar": "https://secure.gravatar.com/avatar/0cceb204e6cfa42aadee1fec717b1d2c?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

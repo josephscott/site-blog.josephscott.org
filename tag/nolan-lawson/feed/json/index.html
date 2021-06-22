@@ -1,0 +1,36 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/nolan-lawson/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/nolan-lawson/",
+    "feed_url": "https://blog.josephscott.org/tag/nolan-lawson/feed/json/",
+    "language": "en-US",
+    "title": "nolan-lawson &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=12553",
+            "url": "https://blog.josephscott.org/2015/09/10/do-you-keep-your-promises/",
+            "title": "Do You Keep Your Promises?",
+            "content_html": "<p>Asynchronous JavaScript is not easy.  There has been a strong push towards <a href=\"http://www.html5rocks.com/en/tutorials/es6/promises/\">promises</a> ( hello ES6! ).  Unfortunately they also introduce some new side effects, which may not be immediately obvious.  Nolan Lawson covers a number of these in <a href=\"http://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html\">We have a problem with promises</a>.</p>\n<p>In the end:</p>\n<blockquote><p>\nThat being said, promises aren&#8217;t perfect. It&#8217;s true that they&#8217;re better than callbacks, but that&#8217;s a lot like saying that a punch in the gut is better than a kick in the teeth. Sure, one is preferable to the other, but if you had a choice, you&#8217;d probably avoid them both.</p>\n<p>While superior to callbacks, promises are still difficult to understand and error-prone, as evidenced by the fact that I felt compelled to write this blog post. Novices and experts alike will frequently mess this stuff up, and really, it&#8217;s not their fault. The problem is that promises, while similar to the patterns we use in synchronous code, are a decent substitute but not quite the same.\n</p></blockquote>\n<p>If you are in the world of JavaScript callbacks and promises, you&#8217;ll really want to check out <a href=\"http://pouchdb.com/2015/03/05/taming-the-async-beast-with-es7.html\">Taming the asynchronous beast with ES7</a> ( also by Nolan Lawson ).</p>\n<p>Going to ES7 brings async and await ( hopefully ).  Being able to write code that conceptually looks synchronous is very appealing:</p>\n<p>[sourcecode lang=&#8221;javascript&#8221;]<br />\nlet db = new PouchDB(&#8216;mydb&#8217;);<br />\ntry {<br />\n  let result = await db.post({});<br />\n  let doc = await db.get(result.id);<br />\n  console.log(doc);<br />\n} catch (err) {<br />\n  console.log(err);<br />\n}<br />\n[/sourcecode]</p>\n<p>This of course introduces yet another set of issues that you have to be aware of.  That said, this feels like the right direction.</p>\n",
+            "content_text": "Asynchronous JavaScript is not easy.  There has been a strong push towards promises ( hello ES6! ).  Unfortunately they also introduce some new side effects, which may not be immediately obvious.  Nolan Lawson covers a number of these in We have a problem with promises.\nIn the end:\n\nThat being said, promises aren&#8217;t perfect. It&#8217;s true that they&#8217;re better than callbacks, but that&#8217;s a lot like saying that a punch in the gut is better than a kick in the teeth. Sure, one is preferable to the other, but if you had a choice, you&#8217;d probably avoid them both.\nWhile superior to callbacks, promises are still difficult to understand and error-prone, as evidenced by the fact that I felt compelled to write this blog post. Novices and experts alike will frequently mess this stuff up, and really, it&#8217;s not their fault. The problem is that promises, while similar to the patterns we use in synchronous code, are a decent substitute but not quite the same.\n\nIf you are in the world of JavaScript callbacks and promises, you&#8217;ll really want to check out Taming the asynchronous beast with ES7 ( also by Nolan Lawson ).\nGoing to ES7 brings async and await ( hopefully ).  Being able to write code that conceptually looks synchronous is very appealing:\n[sourcecode lang=&#8221;javascript&#8221;]\nlet db = new PouchDB(&#8216;mydb&#8217;);\ntry {\n  let result = await db.post({});\n  let doc = await db.get(result.id);\n  console.log(doc);\n} catch (err) {\n  console.log(err);\n}\n[/sourcecode]\nThis of course introduces yet another set of issues that you have to be aware of.  That said, this feels like the right direction.",
+            "date_published": "2015-09-10T09:01:50-06:00",
+            "date_modified": "2015-09-10T09:01:50-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "javascript",
+                "nolan-lawson",
+                "Posts"
+            ]
+        }
+    ]
+}

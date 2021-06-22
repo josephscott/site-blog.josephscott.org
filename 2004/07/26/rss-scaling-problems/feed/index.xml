@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: RSS Scaling Problems	</title>
+	<atom:link href="/2004/07/26/rss-scaling-problems/feed/" rel="self" type="application/rss+xml" />
+	<link>/2004/07/26/rss-scaling-problems/</link>
+	<description></description>
+	<lastBuildDate>Wed, 28 Jul 2004 20:37:06 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2004/07/26/rss-scaling-problems/#comment-499</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 28 Jul 2004 20:37:06 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/07/26/rss-scaling-problems/#comment-499</guid>
+
+					<description><![CDATA[From what I read the biggest problem is not bandwidth, it is the sudden load spike on the systems hosting the RSS feeds when many clients try to get updates at the top of each hour.  To reduce the load the obvious thing to do is spread it out, not to reduce bandwidth but to reduce system load.  Using something like FreeCache would reduce both load and bandwidth.
+
+Another really important factor that no one seems to have mentioned is that this should be transparent to the aggregators.  Throwing in things like BitTorrent and new HTTP extensions are great ideas, but getting aggregators to support them may never happen.  Again, using something like FreeCache requires no changes to any of the RSS/ATOM clients out there.  It&#039;s a solution that will work right now, which is generally better that proposing solutions that will only work when everyone rewrites their software.]]></description>
+			<content:encoded><![CDATA[<p>From what I read the biggest problem is not bandwidth, it is the sudden load spike on the systems hosting the RSS feeds when many clients try to get updates at the top of each hour.  To reduce the load the obvious thing to do is spread it out, not to reduce bandwidth but to reduce system load.  Using something like FreeCache would reduce both load and bandwidth.</p>
+<p>Another really important factor that no one seems to have mentioned is that this should be transparent to the aggregators.  Throwing in things like BitTorrent and new HTTP extensions are great ideas, but getting aggregators to support them may never happen.  Again, using something like FreeCache requires no changes to any of the RSS/ATOM clients out there.  It&#8217;s a solution that will work right now, which is generally better that proposing solutions that will only work when everyone rewrites their software.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: th0m		</title>
+		<link>/2004/07/26/rss-scaling-problems/#comment-498</link>
+
+		<dc:creator><![CDATA[th0m]]></dc:creator>
+		<pubDate>Wed, 28 Jul 2004 20:02:05 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/07/26/rss-scaling-problems/#comment-498</guid>
+
+					<description><![CDATA[you read the slashdot article? NNTP is designed for this sole purpose of a topology. Also, if aggregators were designed better, HTTP has the Modified header and they would cause significantly less traffic. Algorythms for randomizing subscription requests could also help.
+
+Have fun! Also, check out http://writtorrent.sf.net/]]></description>
+			<content:encoded><![CDATA[<p>you read the slashdot article? NNTP is designed for this sole purpose of a topology. Also, if aggregators were designed better, HTTP has the Modified header and they would cause significantly less traffic. Algorythms for randomizing subscription requests could also help.</p>
+<p>Have fun! Also, check out <a href="http://writtorrent.sf.net/" rel="nofollow ugc">http://writtorrent.sf.net/</a></p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

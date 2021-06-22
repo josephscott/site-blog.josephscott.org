@@ -1,0 +1,29 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2004/07/06/the-powerbook-is-back/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2004/07/06/the-powerbook-is-back/",
+    "feed_url": "https://blog.josephscott.org/2004/07/06/the-powerbook-is-back/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: The PowerBook Is Back!",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2004/07/06/the-powerbook-is-back/#comment-401",
+            "url": "https://blog.josephscott.org/2004/07/06/the-powerbook-is-back/#comment-401",
+            "content_html": "[...] Now that my PowerBook is back I&#8217;ve done a fresh install of Mac OS X. Along with restoring all of my data and applications I&#8217;ve been tweaking a few settings. In the past I&#8217;ve edited /etc/rc to adjust sysctl values. It turns out that Mac OS X (at least as of 10.3.4) supports using /etc/sysctl.conf to set sysctl values. Here&#8217;s what my /etc/sysctl.conf looks like:  kern.sysv.shmmax=167772160 kern.sysv.shmmin=1 kern.sysv.shmmni=64 kern.sysv.shmseg=16 kern.sysv.shmall=65536 kern.maxproc=2048 kern.maxprocperuid=512  Update (8:42am 7 Jul 04): Hmmm, even though there is clearly code in /etc/rc to set sysctl values from /etc/sysctl.conf they don&#8217;t appear to actually change the values. I guess for now I&#8217;ll be putting these values directly into /etc/rc again. If anyone has more info on this please leave a comment. [...]",
+            "content_text": "[...] Now that my PowerBook is back I&#8217;ve done a fresh install of Mac OS X. Along with restoring all of my data and applications I&#8217;ve been tweaking a few settings. In the past I&#8217;ve edited /etc/rc to adjust sysctl values. It turns out that Mac OS X (at least as of 10.3.4) supports using /etc/sysctl.conf to set sysctl values. Here&#8217;s what my /etc/sysctl.conf looks like:  kern.sysv.shmmax=167772160 kern.sysv.shmmin=1 kern.sysv.shmmni=64 kern.sysv.shmseg=16 kern.sysv.shmall=65536 kern.maxproc=2048 kern.maxprocperuid=512  Update (8:42am 7 Jul 04): Hmmm, even though there is clearly code in /etc/rc to set sysctl values from /etc/sysctl.conf they don&#8217;t appear to actually change the values. I guess for now I&#8217;ll be putting these values directly into /etc/rc again. If anyone has more info on this please leave a comment. [...]",
+            "date_published": "2005-09-15T23:31:43-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott&#8217;s Blog &raquo; Tweaking Mac OS X Sysctl Values",
+                    "url": "http://joseph.randomnetworks.com/archives/2004/07/06/tweaking-mac-os-x-sysctl-values/",
+                    "avatar": false
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott&#8217;s Blog &raquo; Tweaking Mac OS X Sysctl Values",
+                "url": "http://joseph.randomnetworks.com/archives/2004/07/06/tweaking-mac-os-x-sysctl-values/",
+                "avatar": false
+            }
+        }
+    ]
+}

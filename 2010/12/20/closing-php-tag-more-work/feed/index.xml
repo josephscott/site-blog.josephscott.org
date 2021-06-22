@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Closing PHP Tag &#8211; More Work	</title>
+	<atom:link href="/2010/12/20/closing-php-tag-more-work/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/12/20/closing-php-tag-more-work/</link>
+	<description></description>
+	<lastBuildDate>Thu, 02 Jan 2014 16:33:04 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/12/20/closing-php-tag-more-work/#comment-3600</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 02 Jan 2014 16:33:04 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3294#comment-3600</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/12/20/closing-php-tag-more-work/#comment-3599&quot;&gt;jimvanderveen&lt;/a&gt;.
+
+I am using the SyntaxHighlighter Evolved plugin - http://wordpress.org/plugins/syntaxhighlighter/]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/12/20/closing-php-tag-more-work/#comment-3599">jimvanderveen</a>.</p>
+<p>I am using the SyntaxHighlighter Evolved plugin &#8211; <a href="http://wordpress.org/plugins/syntaxhighlighter/" rel="nofollow ugc">http://wordpress.org/plugins/syntaxhighlighter/</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: jimvanderveen		</title>
+		<link>/2010/12/20/closing-php-tag-more-work/#comment-3599</link>
+
+		<dc:creator><![CDATA[jimvanderveen]]></dc:creator>
+		<pubDate>Wed, 01 Jan 2014 20:52:42 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3294#comment-3599</guid>
+
+					<description><![CDATA[Nice formatting on the PHP example code! Is that a plugin, or part of your WordPress theme?]]></description>
+			<content:encoded><![CDATA[<p>Nice formatting on the PHP example code! Is that a plugin, or part of your WordPress theme?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/12/20/closing-php-tag-more-work/#comment-3598</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 23 Dec 2013 16:39:44 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3294#comment-3598</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/12/20/closing-php-tag-more-work/#comment-3597&quot;&gt;james&lt;/a&gt;.
+
+Unfortunately I don&#039;t have a good answer for you.  http://php.net/manual/en/internals2.opcodes.ext-stmt.php mentions it, but doesn&#039;t provide any details.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/12/20/closing-php-tag-more-work/#comment-3597">james</a>.</p>
+<p>Unfortunately I don&#8217;t have a good answer for you.  <a href="http://php.net/manual/en/internals2.opcodes.ext-stmt.php" rel="nofollow ugc">http://php.net/manual/en/internals2.opcodes.ext-stmt.php</a> mentions it, but doesn&#8217;t provide any details.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: james		</title>
+		<link>/2010/12/20/closing-php-tag-more-work/#comment-3597</link>
+
+		<dc:creator><![CDATA[james]]></dc:creator>
+		<pubDate>Sun, 22 Dec 2013 09:12:24 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3294#comment-3597</guid>
+
+					<description><![CDATA[How do you know what EXT_STMT is doing? There is no documentation on it anywhere as far as I can see.]]></description>
+			<content:encoded><![CDATA[<p>How do you know what EXT_STMT is doing? There is no documentation on it anywhere as far as I can see.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Alasdair		</title>
+		<link>/2010/12/20/closing-php-tag-more-work/#comment-3596</link>
+
+		<dc:creator><![CDATA[Alasdair]]></dc:creator>
+		<pubDate>Tue, 04 Jun 2013 21:50:38 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3294#comment-3596</guid>
+
+					<description><![CDATA[Leaving off the closing tag also helps with the use of response headers later in the execution. If the closing tag was used its very easy to accidentally add some whitespace after it and cause the output to stop the headers being set.
+
+Also helps to avoid the issue of unwanted whitespace when using includes.]]></description>
+			<content:encoded><![CDATA[<p>Leaving off the closing tag also helps with the use of response headers later in the execution. If the closing tag was used its very easy to accidentally add some whitespace after it and cause the output to stop the headers being set.</p>
+<p>Also helps to avoid the issue of unwanted whitespace when using includes.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: bob		</title>
+		<link>/2010/12/20/closing-php-tag-more-work/#comment-3595</link>
+
+		<dc:creator><![CDATA[bob]]></dc:creator>
+		<pubDate>Tue, 04 Jun 2013 20:51:52 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3294#comment-3595</guid>
+
+					<description><![CDATA[So, by giving PHP one less thing to read, it has one less thing to do? &#062;_&#062;]]></description>
+			<content:encoded><![CDATA[<p>So, by giving PHP one less thing to read, it has one less thing to do? &gt;_&gt;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/12/20/closing-php-tag-more-work/#comment-3594</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 12 Jan 2011 23:50:18 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3294#comment-3594</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/12/20/closing-php-tag-more-work/#comment-3593&quot;&gt;Michael Butler&lt;/a&gt;.
+
+Good way to look at it.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/12/20/closing-php-tag-more-work/#comment-3593">Michael Butler</a>.</p>
+<p>Good way to look at it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Michael Butler		</title>
+		<link>/2010/12/20/closing-php-tag-more-work/#comment-3593</link>
+
+		<dc:creator><![CDATA[Michael Butler]]></dc:creator>
+		<pubDate>Wed, 12 Jan 2011 21:12:44 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3294#comment-3593</guid>
+
+					<description><![CDATA[I have been excluding the closing PHP tag for a while after realizing it was optional. I now read the PHP open tag as &quot;Start doing PHP stuff&quot; and the PHP closing tag as &quot;Start outputting stuff&quot; -- as opposed to &quot;&lt;i&gt;Stop&lt;/i&gt; doing PHP stuff&quot;. 
+If you&#039;re not going to output any &quot;stuff&quot; at the bottom of your PHP script, you might as well exclude the closing tag.]]></description>
+			<content:encoded><![CDATA[<p>I have been excluding the closing PHP tag for a while after realizing it was optional. I now read the PHP open tag as &#8220;Start doing PHP stuff&#8221; and the PHP closing tag as &#8220;Start outputting stuff&#8221; &#8212; as opposed to &#8220;<i>Stop</i> doing PHP stuff&#8221;.<br />
+If you&#8217;re not going to output any &#8220;stuff&#8221; at the bottom of your PHP script, you might as well exclude the closing tag.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/12/20/closing-php-tag-more-work/#comment-3592</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 20 Dec 2010 18:50:55 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3294#comment-3592</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/12/20/closing-php-tag-more-work/#comment-3591&quot;&gt;Maarek&lt;/a&gt;.
+
+The closing PHP tag is optional, it doesn&#039;t matter how complicated your site is.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/12/20/closing-php-tag-more-work/#comment-3591">Maarek</a>.</p>
+<p>The closing PHP tag is optional, it doesn&#8217;t matter how complicated your site is.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Maarek		</title>
+		<link>/2010/12/20/closing-php-tag-more-work/#comment-3591</link>
+
+		<dc:creator><![CDATA[Maarek]]></dc:creator>
+		<pubDate>Mon, 20 Dec 2010 18:01:42 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3294#comment-3591</guid>
+
+					<description><![CDATA[Nice simple find, but not recommended for more complicated sites.  You can use that technique for inclusion files, since the include command is already nested in open/close tags.]]></description>
+			<content:encoded><![CDATA[<p>Nice simple find, but not recommended for more complicated sites.  You can use that technique for inclusion files, since the include command is already nested in open/close tags.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

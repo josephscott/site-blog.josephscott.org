@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>reverseproxy &#8211; Joseph Scott</title>
+	<atom:link href="/tag/reverseproxy/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 05 Jul 2005 23:21:23 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Reverse Proxy With Apache</title>
+		<link>/2005/07/05/reverse-proxy-with-apache/</link>
+					<comments>/2005/07/05/reverse-proxy-with-apache/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 05 Jul 2005 23:21:23 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[apache]]></category>
+		<category><![CDATA[howto]]></category>
+		<category><![CDATA[reverseproxy]]></category>
+		<category><![CDATA[squirrelmail]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=427</guid>
+
+					<description><![CDATA[I&#8217;ve wanted to get all of our web servers at work under one umbrella in a reverse proxy setup for some time. I wanted this so that I could expose only one web server to the outside world (some of this has to do with network topology that is beyond my control), allowing me make [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve wanted to get all of our web servers at work under one umbrella in a reverse proxy setup for some time.  I wanted this so that I could expose only one web server to the outside world (some of this has to do with network topology that is beyond my control), allowing me make all of our web services available under one URL (nice for things like SSL and multiple URL rewriting) and making it possible to filter web requests at one place.  Today I finally sat down with the intent to make it work and plan for the switch over.</p>
+<p>In the past I&#8217;d looked at doing this with <a href="http://www.apsis.ch/pound/">Pound</a>, but it fell short in one key area, URL rewriting.  Everything else I needed was already there, in one convenient spot.  I really wanted this to work, but in the end I couldn&#8217;t give up URL rewriting, it&#8217;s a requirement for what I&#8217;m trying to accomplish.  I also looked at <a href="http://www.squid-cache.org/">Squid</a> for a time.  Honestly I didn&#8217;t complete my trial of Squid, it is possible that it might me all of my requirements, but I didn&#8217;t see anything that looked like <a href="http://www.modsecurity.org/">mod_security</a> for Squid.  That was another needed feature, I&#8217;m trying to protect IIS servers so I wanted all the extra help I could get.</p>
+<p>So I eventually ended up at <a href="http://httpd.apache.org/">Apache</a>, with mod_proxy.  With the help of <a href="http://www.apacheweek.com/features/reverseproxies">this how to article</a> things went pretty smoothly.  Until I tried to bring the server hosting our <a href="http://www.squirrelmail.org/">Squirrelmail</a> install.  No matter what I tried I could get to successfully login.  Suspecting that this had to with cookies being based between the client, proxy and server I went hunting for web on the web.  Turns out the how to article above mentions a couple of proxy directives for dealing with this, <a href="http://httpd.apache.org/docs-2.1/mod/mod_proxy.html#proxypassreversecookiedomain">ProxyPassReverseCookieDomain</a> and <a href="http://httpd.apache.org/docs-2.1/mod/mod_proxy.html#proxypassreversecookiepath">ProxyPassReverseCookiePath</a>.  Unfortunately these are only available in the development version of Apache, version 2.1.  I&#8217;d spent the better part day of the tweaking my install of Apache 2.0.54 and then had to go build Apache 2.1.x to get the newer version mod_proxy.  Some of the module names have changed so I couldn&#8217;t just drop in my previous Apache config.  I also had to rebuild the <a href="http://apache.webthing.com/mod_proxy_html/">mod_proxy_html</a> and mod_security modules for Apache 2.1.x.</p>
+<p>The good news is that once I had that all sorted out the new proxy cookie directives did the trick.  So here is my little public service announcement (PSA), if you are using mod_proxy as a reverse proxy for Squirrelmail, start with Apache 2.1.x and look into ProxyPassReverseCookieDomain and ProxyPassReverseCookiePath.  I suspect this will be the case for any webapp that uses cookies.</p>
+<p>I haven&#8217;t added mod_security and SSL to the mix yet, but I&#8217;m already familiar with those modules, so I don&#8217;t expect that to be too bad.  I&#8217;d never really used mod_proxy as a reverse proxy before so this was some what new territory to me.  Oh, at some point I&#8217;ll look doing some caching in combination with reverse proxy to minimize the load on the back end web servers.</p>
+<p><strong>UPDATE 10:45am 6 Jul 2005:</strong>: I should have mentioned the trailing slash problem also shows up in the reverse proxy setup.  So if you have a reverse mapping that looks something like:</p>
+<blockquote><p><code>ProxyPass /webmail/ http://192.168.1.10/webmail/</code></p></blockquote>
+<p> then you can use mod_rewrite to send a redirect with the trailing slash:</p>
+<blockquote><p><code>RewriteRule ^/webmail$ webmail/ [R]</code></p></blockquote>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/07/05/reverse-proxy-with-apache/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

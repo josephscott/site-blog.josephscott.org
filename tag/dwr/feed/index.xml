@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>dwr &#8211; Joseph Scott</title>
+	<atom:link href="/tag/dwr/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 09 Oct 2007 17:50:37 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>EditInPlace and DWR</title>
+		<link>/2007/10/09/editinplace-and-dwr/</link>
+					<comments>/2007/10/09/editinplace-and-dwr/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 09 Oct 2007 17:50:37 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[dwr]]></category>
+		<category><![CDATA[editinplace]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/10/09/editinplace-and-dwr/</guid>
+
+					<description><![CDATA[I got an email from Ryan Wilson noting that he&#8217;d modified the EditInPlace code to work with DWR.]]></description>
+										<content:encoded><![CDATA[<p>I got an email from Ryan Wilson noting that he&#8217;d <a href="http://augmentedfragments.blogspot.com/2007/10/eip-meet-dwr-dwr-meet-eip.html">modified the EditInPlace code</a> to work with <a href="http://getahead.org/dwr">DWR</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/10/09/editinplace-and-dwr/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

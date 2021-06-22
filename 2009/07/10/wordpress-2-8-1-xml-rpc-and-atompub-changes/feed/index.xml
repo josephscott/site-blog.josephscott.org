@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: WordPress 2.8.1 – XML-RPC and AtomPub Changes	</title>
+	<atom:link href="/2009/07/10/wordpress-2-8-1-xml-rpc-and-atompub-changes/feed/" rel="self" type="application/rss+xml" />
+	<link>/2009/07/10/wordpress-2-8-1-xml-rpc-and-atompub-changes/</link>
+	<description></description>
+	<lastBuildDate>Mon, 13 Jul 2009 15:23:29 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/07/10/wordpress-2-8-1-xml-rpc-and-atompub-changes/#comment-2842</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 13 Jul 2009 15:23:29 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1280#comment-2842</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/07/10/wordpress-2-8-1-xml-rpc-and-atompub-changes/#comment-2841&quot;&gt;Robertd&lt;/a&gt;.
+
+What does the XML-RPC response from the server look like?]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/07/10/wordpress-2-8-1-xml-rpc-and-atompub-changes/#comment-2841">Robertd</a>.</p>
+<p>What does the XML-RPC response from the server look like?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Robertd		</title>
+		<link>/2009/07/10/wordpress-2-8-1-xml-rpc-and-atompub-changes/#comment-2841</link>
+
+		<dc:creator><![CDATA[Robertd]]></dc:creator>
+		<pubDate>Mon, 13 Jul 2009 09:36:29 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1280#comment-2841</guid>
+
+					<description><![CDATA[I am still getting this error when trying to upload pics
+
+The response to the metaWeblog.newMediaObject method received from the blog server was invalid:
+
+Invalid response document returned from XmlRpc server
+
+It was working in 2.7 fianlly but now here we go again with 2.8.1]]></description>
+			<content:encoded><![CDATA[<p>I am still getting this error when trying to upload pics</p>
+<p>The response to the metaWeblog.newMediaObject method received from the blog server was invalid:</p>
+<p>Invalid response document returned from XmlRpc server</p>
+<p>It was working in 2.7 fianlly but now here we go again with 2.8.1</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

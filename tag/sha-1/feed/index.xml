@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sha-1 &#8211; Joseph Scott</title>
+	<atom:link href="/tag/sha-1/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 06 Jun 2013 17:42:27 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Password Anniversary Day</title>
+		<link>/2013/06/06/password-anniversary-day/</link>
+					<comments>/2013/06/06/password-anniversary-day/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 06 Jun 2013 17:42:27 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[bcrypt]]></category>
+		<category><![CDATA[linkedin]]></category>
+		<category><![CDATA[password]]></category>
+		<category><![CDATA[password-anniversary-day]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[sha-1]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=8075</guid>
+
+					<description><![CDATA[Exactly one year ago today it was announced that part of the LinkedIn password database had been shared online. There were many posts about it. Having your password database compromised is bad. But that turned out to not be the worst part of what happened. Although I didn&#8217;t see it mentioned in any of the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Exactly one year ago today it was announced that part of the <a href="http://www.theverge.com/2012/6/6/3067523/linkedin-password-leak-online">LinkedIn password database had been shared online</a>.  <a href="http://www.reddit.com/r/technology/comments/unt92/russian_hackers_claim_to_have_65m_linkedin/">There</a> <a href="http://blog.linkedin.com/2012/06/06/updating-your-password-on-linkedin-and-other-account-security-best-practices/">were</a> <a href="http://blog.linkedin.com/2012/06/06/linkedin-member-passwords-compromised/">many</a> <a href="http://blog.linkedin.com/2012/06/07/taking-steps-to-protect-our-members/">posts</a> <a href="http://blog.linkedin.com/2012/06/09/an-update-on-taking-steps-to-protect-our-members/">about</a> <a href="https://news.ycombinator.com/item?id=4073309">it</a>.</p>
+<p>Having your password database compromised is bad.  But that turned out to not be the worst part of what happened.  Although I didn&#8217;t see it mentioned in any of the official LinkedIn posts, people quickly realized that the passwords were hashed using SHA-1.  No salts, no stretching, just a plain, single round, SHA-1.  That made finding the plain text version of the password for millions of LinkedIn accounts fairly simple.  </p>
+<p>Using bcrypt with a decent random salt generator and good work factor would have been much better.</p>
+<p>This made it very clear to me that if a site like LinkedIn can make the mistake of using a poor password storage method, anyone can.  I made a repeating calendar entry for 6 June of every year to be &#8220;Password Anniversary Day&#8221;.  On Password Anniversary Day ( 6/6 ) I pick a few sites that I have accounts on, more or less at random, and change my password.  Just in case.</p>
+<p>My Tweet about this on 6 June 2012:</p>
+<blockquote class="twitter-tweet" data-width="550" data-dnt="true">
+<p lang="en" dir="ltr">Welcome to the first annual &quot;change your <a href="http://t.co/utIhGP9J">http://t.co/utIhGP9J</a> password&quot; day <a href="http://t.co/DP88nDF1">http://t.co/DP88nDF1</a></p>
+<p>&mdash; Joseph Scott (@josephscott) <a href="https://twitter.com/josephscott/status/210388473125945344?ref_src=twsrc%5Etfw">June 6, 2012</a></p></blockquote>
+<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p>Happy Password Anniversary Day everyone.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/06/06/password-anniversary-day/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

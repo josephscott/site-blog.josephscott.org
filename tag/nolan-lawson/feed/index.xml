@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>nolan-lawson &#8211; Joseph Scott</title>
+	<atom:link href="/tag/nolan-lawson/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 10 Sep 2015 15:01:50 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Do You Keep Your Promises?</title>
+		<link>/2015/09/10/do-you-keep-your-promises/</link>
+					<comments>/2015/09/10/do-you-keep-your-promises/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 10 Sep 2015 15:01:50 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[nolan-lawson]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12553</guid>
+
+					<description><![CDATA[Asynchronous JavaScript is not easy. There has been a strong push towards promises ( hello ES6! ). Unfortunately they also introduce some new side effects, which may not be immediately obvious. Nolan Lawson covers a number of these in We have a problem with promises. In the end: That being said, promises aren&#8217;t perfect. It&#8217;s [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Asynchronous JavaScript is not easy.  There has been a strong push towards <a href="http://www.html5rocks.com/en/tutorials/es6/promises/">promises</a> ( hello ES6! ).  Unfortunately they also introduce some new side effects, which may not be immediately obvious.  Nolan Lawson covers a number of these in <a href="http://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html">We have a problem with promises</a>.</p>
+<p>In the end:</p>
+<blockquote><p>
+That being said, promises aren&#8217;t perfect. It&#8217;s true that they&#8217;re better than callbacks, but that&#8217;s a lot like saying that a punch in the gut is better than a kick in the teeth. Sure, one is preferable to the other, but if you had a choice, you&#8217;d probably avoid them both.</p>
+<p>While superior to callbacks, promises are still difficult to understand and error-prone, as evidenced by the fact that I felt compelled to write this blog post. Novices and experts alike will frequently mess this stuff up, and really, it&#8217;s not their fault. The problem is that promises, while similar to the patterns we use in synchronous code, are a decent substitute but not quite the same.
+</p></blockquote>
+<p>If you are in the world of JavaScript callbacks and promises, you&#8217;ll really want to check out <a href="http://pouchdb.com/2015/03/05/taming-the-async-beast-with-es7.html">Taming the asynchronous beast with ES7</a> ( also by Nolan Lawson ).</p>
+<p>Going to ES7 brings async and await ( hopefully ).  Being able to write code that conceptually looks synchronous is very appealing:</p>
+<p>[sourcecode lang=&#8221;javascript&#8221;]<br />
+let db = new PouchDB(&#8216;mydb&#8217;);<br />
+try {<br />
+  let result = await db.post({});<br />
+  let doc = await db.get(result.id);<br />
+  console.log(doc);<br />
+} catch (err) {<br />
+  console.log(err);<br />
+}<br />
+[/sourcecode]</p>
+<p>This of course introduces yet another set of issues that you have to be aware of.  That said, this feels like the right direction.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/09/10/do-you-keep-your-promises/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

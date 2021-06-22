@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Work &#8211; Joseph Scott</title>
+	<atom:link href="/category/work/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 06 Oct 2004 05:29:19 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Diving Into Postfix</title>
+		<link>/2004/10/05/diving-into-postfix/</link>
+					<comments>/2004/10/05/diving-into-postfix/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 06 Oct 2004 05:29:19 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[OWP]]></category>
+		<category><![CDATA[Work]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/10/05/diving-into-postfix/</guid>
+
+					<description><![CDATA[The time has finally come, I&#8217;m going to start testing Postfix at work, with the goal of eventually replacing Sendmail. I stopped by Borders tonight and picked Postfix: The Definitive Guide so that I&#8217;ll have some reference material around the office. I look forward to adding an entirely new component to our email system, LDAP. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The time has finally come, I&#8217;m going to start testing <a href="http://www.postfix.org/">Postfix</a> at work, with the goal of eventually replacing <a href="http://www.sendmail.org/">Sendmail</a>.  I stopped by Borders tonight and picked <a href="http://www.oreilly.com/catalog/postfix/index.html">Postfix: The Definitive Guide</a> so that I&#8217;ll have some reference material around the office.  I look forward to adding an entirely new component to our email system, LDAP.  I&#8217;m continuing to press our systems to use our LDAP user accounts for everything, this will be a big step forward.</p>
+<p>In a way this is kind of sad, I&#8217;ve been beating Sendmail into submission for more than 7 years.</p>
+<p>For all of those out there who are now screaming for Qmail, just keep that yourselves <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2004/10/05/diving-into-postfix/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>3Com Support Is Really, Really Bad</title>
+		<link>/2004/07/27/3com-support-is-really-really-bad/</link>
+					<comments>/2004/07/27/3com-support-is-really-really-bad/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 27 Jul 2004 22:21:01 +0000</pubDate>
+				<category><![CDATA[OWP]]></category>
+		<category><![CDATA[Work]]></category>
+		<category><![CDATA[3com]]></category>
+		<category><![CDATA[superstack3300]]></category>
+		<category><![CDATA[warranty]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/07/27/3com-support-is-really-really-bad/</guid>
+
+					<description><![CDATA[Several weeks ago we sent in two 3Com SuperStack 3 3300 24 10/100 Switchs into 3Com for repair. They both had spontaneously died out of the blue with in a few months of each other. Since this product was still covered under the &#8220;sort of lifetime&#8221; warranty from 3Com we figured that we&#8217;d simply send [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.flickr.com/photos/josephscott/19698570/"><img src="http://photos13.flickr.com/19698570_442af4762d_t.jpg" align="right" /></a>Several weeks ago we sent in two <a href="http://www.3com.com/products/en_US/detail.jsp?tab=features&amp;pathtype=purchase&amp;sku=3C16980A-US">3Com SuperStack 3 3300 24 10/100 Switchs</a> into 3Com for repair.  They both had spontaneously died out of the blue with in a few months of each other.  Since this product was still covered under the &#8220;sort of lifetime&#8221; warranty from 3Com we figured that we&#8217;d simply send these units in, get them repaired and then put them back into use.  Of course when ever you think something should be that easy and straight forward it rarely is.  The first unit they fixed and sent back without any problems.  After waiting a few more weeks for the second one to show up (we&#8217;d sent them both in at the same time) we finally called 3Com wanting to know where  our second device was that we&#8217;d sent in for repair.  We were told that it had arrived physically broken and that wasn&#8217;t covered under the warranty.  Obviously it was in one piece when it got sent, we&#8217;d had insured.  Long story short, UPS wasn&#8217;t going to cover the broken hardware either because 3Com had thrown away the box the device had been shipped in, which UPS wanted to confirm that the damage was done during shipping.</p>
+<p>At this point I&#8217;m trying to figure out two things about 3Com&#8217;s support.  One, why didn&#8217;t they call us when they opened up the box and found that one of the devices was in pieces?  Two, surely 3Com shipped and receives enough packages each day to know that if something arrives broken then maybe they should hold on to the box to prove it was damaged in shipping.</p>
+<p>Fast forward to this morning when a box from 3Com shows up at the office.  We figured this would be the (hopefully) fixed second 3Com switch.  What we found it the box was truly amazing.  It was indeed a 3Com switch, but it wasn&#8217;t ours.  As matter of fact it wasn&#8217;t even the same model as ours.  On top of all of this the one they sent us back looks like it has been through a fire and then sent to the bottom of the ocean.  I&#8217;d never seen a piece of network equipment look so incredibly toasted.  So my boss had the honor of calling 3Com to chew them out over the complete uselessness.  Once that was done I wanted to make sure we could all look back on this, so I took a few pictures.  The thumbnail above a close up of the <a href="http://www.flickr.com/photos/josephscott/19698570/">back expansion port</a>.  There are two more of the back, one is <a href="http://www.flickr.com/photos/josephscott/19699776/">head on from the back</a> and the other if from the <a href="http://www.flickr.com/photos/josephscott/19700093/">top side back</a>.  The last shot is from the <a href="http://www.flickr.com/photos/josephscott/19700381/">top side front</a>.  Notice how black the fan vents are on the side, ouch!</p>
+<p>Hey <a href="http://www.3com.com/">3Com</a>, don&#8217;t expect me to be recommending your equipment if this is the type of service I can expect for products with a &#8220;lifetime&#8221; warranty.  It shouldn&#8217;t be noted that their lifetime warranty isn&#8217;t really lifetime.  The warranty is good up until five years after the product has been discontinued.  It would be cheaper for us to simply buy <a href="http://www.netgear.com/">Netgear</a> switches every five years.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2004/07/27/3com-support-is-really-really-bad/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>SNMP MIB Descriptions For Tripp Lite UPS</title>
+		<link>/2004/07/07/snmp-mib-descriptions/</link>
+					<comments>/2004/07/07/snmp-mib-descriptions/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 07 Jul 2004 17:13:04 +0000</pubDate>
+				<category><![CDATA[How To]]></category>
+		<category><![CDATA[OWP]]></category>
+		<category><![CDATA[Work]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/07/07/snmp-mib-descriptions/</guid>
+
+					<description><![CDATA[At work we&#8217;ve got some Tripp Lite battery backups. I wanted to add some of the data they have to our MRTG graphing (input voltage, output load, temperature, etc) so I started by using snmpwalk to see what data the Tripp Lite exposed via SNMP. Unfortunately I didn&#8217;t get MIB text descriptions, just the numbers. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>At work we&#8217;ve got some <a href="http://www.tripplite.com/">Tripp Lite</a> battery backups.  I wanted to add some of the data they have to our <a href="http://www.mrtg.org/">MRTG</a> graphing (input voltage, output load, temperature, etc) so I started by using <a href="http://net-snmp.sourceforge.net/man/snmpwalk.html">snmpwalk</a> to see what data the Tripp Lite exposed via SNMP.  Unfortunately I didn&#8217;t get MIB text descriptions, just the numbers.  So after looking around for a bit I found the CD that came with the devices, it had some two MIB files, <a href="http://www.tripplite.com/software/snmpfw/tripplite.mib">trpplite.mib</a> and <a href="http://www.faqs.org/rfcs/rfc1628.html">Rfc1628.mib</a>.  I dumped these into /usr/share/snmp/mibs on my PowerBook figuring that snmpwalk would just pick up on the extra MIB information.  That turned out to not be the case.  For some reason snmpwalk has a <a href="http://groups.google.com/groups?hl=en&amp;lr=&amp;ie=UTF-8&amp;selm=7votf4%241klm%241%40news.net.uni-c.dk">special option to tell it to use all of the MIB definitions</a>.  Go figure.  After all of this I can now run &#8216;snmpwalk -m ALL -Os -c public -v 1 tripplitehost&#8217; and get back all of the SNMP information available.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2004/07/07/snmp-mib-descriptions/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>New Office Building To Be Official Next Week</title>
+		<link>/2004/05/07/new-office-building-to-be-official-next-week/</link>
+					<comments>/2004/05/07/new-office-building-to-be-official-next-week/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 08 May 2004 05:39:07 +0000</pubDate>
+				<category><![CDATA[OWP]]></category>
+		<category><![CDATA[Work]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/05/07/new-office-building-to-be-official-next-week/</guid>
+
+					<description><![CDATA[Ever since I first started at the Office of Water Programs, just over five years ago, there are has been discussion of moving into a new building that would give us the kind of space we need. We&#8217;ve been in that building for weeks now, but next week it becomes official with the dedication ceremony [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Ever since I first started at the Office of Water Programs, just over five years ago, there are has been discussion of moving into a new building that would give us the kind of space we need.  We&#8217;ve been in that building for weeks now, but next week it becomes official with the dedication ceremony scheduled for Tuesday May 11th.  We are expecting lots of visitors roaming around checking out our new digs.  Hopefully the food will be good <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2004/05/07/new-office-building-to-be-official-next-week/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

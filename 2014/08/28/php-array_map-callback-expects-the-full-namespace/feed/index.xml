@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: PHP array_map Callback Expects The Full Namespace	</title>
+	<atom:link href="/2014/08/28/php-array_map-callback-expects-the-full-namespace/feed/" rel="self" type="application/rss+xml" />
+	<link>/2014/08/28/php-array_map-callback-expects-the-full-namespace/</link>
+	<description></description>
+	<lastBuildDate>Sun, 21 Oct 2018 22:20:31 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Guney Ozsan		</title>
+		<link>/2014/08/28/php-array_map-callback-expects-the-full-namespace/#comment-129277</link>
+
+		<dc:creator><![CDATA[Guney Ozsan]]></dc:creator>
+		<pubDate>Sun, 21 Oct 2018 22:20:31 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10941#comment-129277</guid>
+
+					<description><![CDATA[Thanks for the notice. It helped a lot. I just wanted to note that it needs a backslash in my case to work:
+array_map( &#039;EXAMPLE\lowercase_string&#039;, $names );
+Maybe it helps someone else.]]></description>
+			<content:encoded><![CDATA[<p>Thanks for the notice. It helped a lot. I just wanted to note that it needs a backslash in my case to work:<br />
+array_map( &#8216;EXAMPLE\lowercase_string&#8217;, $names );<br />
+Maybe it helps someone else.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Zoltan Rakottyai		</title>
+		<link>/2014/08/28/php-array_map-callback-expects-the-full-namespace/#comment-119975</link>
+
+		<dc:creator><![CDATA[Zoltan Rakottyai]]></dc:creator>
+		<pubDate>Sat, 23 Jun 2018 16:21:22 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10941#comment-119975</guid>
+
+					<description><![CDATA[Hey Joseph!
+Thanks for writing about this nasty &quot;feature&quot;! 
+Had similar adventure, but a bit different and I&#039;d like to share my solution.
+My callback function was sitting inside another function, something like: 
+
+puclic function foo($a) 
+{
+  ...
+   function helper($e) { return $e + $a; }
+  ...
+}
+
+...and I couldn&#039;t figure it out how should I  namespace it, because I didn&#039;t want to take out helper  from the foo function.
+But there is a another way! Good ol&#039; lambda-style function saved me.
+Example 1: 
+  $helper = create_function(&#039;$e&#039;, &#039;return $e+&#039; . $a . &#039;;&#039;);
+  $errors = array_map($helper, $errors);
+ 
+ However, create function is deprecated since php 7.2 I ended up with cleaner solution:
+  $helper = function($e) use ($a) { //$a is inherited from parent function
+            return $e  + $a;
+   }; 
+ $errors = array_map($helper, $errors);]]></description>
+			<content:encoded><![CDATA[<p>Hey Joseph!<br />
+Thanks for writing about this nasty &#8220;feature&#8221;!<br />
+Had similar adventure, but a bit different and I&#8217;d like to share my solution.<br />
+My callback function was sitting inside another function, something like: </p>
+<p>puclic function foo($a)<br />
+{<br />
+  &#8230;<br />
+   function helper($e) { return $e + $a; }<br />
+  &#8230;<br />
+}</p>
+<p>&#8230;and I couldn&#8217;t figure it out how should I  namespace it, because I didn&#8217;t want to take out helper  from the foo function.<br />
+But there is a another way! Good ol&#8217; lambda-style function saved me.<br />
+Example 1:<br />
+  $helper = create_function(&#8216;$e&#8217;, &#8216;return $e+&#8217; . $a . &#8216;;&#8217;);<br />
+  $errors = array_map($helper, $errors);</p>
+<p> However, create function is deprecated since php 7.2 I ended up with cleaner solution:<br />
+  $helper = function($e) use ($a) { //$a is inherited from parent function<br />
+            return $e  + $a;<br />
+   };<br />
+ $errors = array_map($helper, $errors);</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

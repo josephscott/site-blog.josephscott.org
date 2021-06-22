@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>redisfs &#8211; Joseph Scott</title>
+	<atom:link href="/tag/redisfs/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 02 Mar 2011 16:34:23 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>redisfs: Replication-Friendly Redis-based filesystem</title>
+		<link>/2011/03/02/redisfs-replication-friendly-redis-based-filesystem/</link>
+					<comments>/2011/03/02/redisfs-replication-friendly-redis-based-filesystem/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 02 Mar 2011 16:34:23 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[fuse]]></category>
+		<category><![CDATA[redis]]></category>
+		<category><![CDATA[redisfs]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3678</guid>
+
+					<description><![CDATA[redisfs: replication-friendly redis-based filesystem Makes use of FUSE to provide a redis backed filesystem. The pattern matching support in the KEYS command would make lookups using that key layout reasonably efficient. Using hashes would be another way to go as well. The basic redis features would make things like filesystem snapshots possible as well. This [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href='http://www.steve.org.uk/Software/redisfs/'>redisfs: replication-friendly redis-based filesystem</a></p>
+<p>Makes use of FUSE to provide a redis backed filesystem.  The pattern matching support in the <a href="http://redis.io/commands/keys">KEYS</a> command would make lookups using that key layout reasonably efficient.  Using hashes would be another way to go as well.</p>
+<p>The basic redis features would make things like filesystem snapshots possible as well.  This could turn into something very cool.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/03/02/redisfs-replication-friendly-redis-based-filesystem/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

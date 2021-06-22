@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: CSS Border Radius Percentages and Elliptical Borders	</title>
+	<atom:link href="/2010/01/28/css-border-radius-percentages-and-elliptical-borders/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/01/28/css-border-radius-percentages-and-elliptical-borders/</link>
+	<description></description>
+	<lastBuildDate>Thu, 28 Oct 2010 20:52:26 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Bryan Elliott		</title>
+		<link>/2010/01/28/css-border-radius-percentages-and-elliptical-borders/#comment-3180</link>
+
+		<dc:creator><![CDATA[Bryan Elliott]]></dc:creator>
+		<pubDate>Thu, 28 Oct 2010 20:52:26 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1814#comment-3180</guid>
+
+					<description><![CDATA[CSS3 PIE lets you use border radii in IE6+.  Just apply the HTC to the elements you need rounded corners on.
+
+It actually has more correct support than Fx (firefox has it&#039;s percent references backwards; 25% on the X side ends up being % of height), and more robust support than Webkit (i.e., it does percentages).
+
+I have no idea how it does the job, but it&#039;s making button-creation /so damn simple/.]]></description>
+			<content:encoded><![CDATA[<p>CSS3 PIE lets you use border radii in IE6+.  Just apply the HTC to the elements you need rounded corners on.</p>
+<p>It actually has more correct support than Fx (firefox has it&#8217;s percent references backwards; 25% on the X side ends up being % of height), and more robust support than Webkit (i.e., it does percentages).</p>
+<p>I have no idea how it does the job, but it&#8217;s making button-creation /so damn simple/.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/01/28/css-border-radius-percentages-and-elliptical-borders/#comment-3179</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Sat, 30 Jan 2010 04:18:10 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1814#comment-3179</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/01/28/css-border-radius-percentages-and-elliptical-borders/#comment-3178&quot;&gt;Lloyd Budd&lt;/a&gt;.
+
+The only thing that&#039;s really different is the elliptical borders, which you can see on the Mozilla docs page - https://developer.mozilla.org/en/CSS:-moz-border-radius#Live_Examples]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/01/28/css-border-radius-percentages-and-elliptical-borders/#comment-3178">Lloyd Budd</a>.</p>
+<p>The only thing that&#8217;s really different is the elliptical borders, which you can see on the Mozilla docs page &#8211; <a href="https://developer.mozilla.org/en/CSS:-moz-border-radius#Live_Examples" rel="nofollow ugc">https://developer.mozilla.org/en/CSS:-moz-border-radius#Live_Examples</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Lloyd Budd		</title>
+		<link>/2010/01/28/css-border-radius-percentages-and-elliptical-borders/#comment-3178</link>
+
+		<dc:creator><![CDATA[Lloyd Budd]]></dc:creator>
+		<pubDate>Fri, 29 Jan 2010 04:51:28 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1814#comment-3178</guid>
+
+					<description><![CDATA[No imgs?]]></description>
+			<content:encoded><![CDATA[<p>No imgs?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

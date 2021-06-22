@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mark-nottingham &#8211; Joseph Scott</title>
+	<atom:link href="/tag/mark-nottingham/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 30 Jan 2014 17:11:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>HTTP/2 Expectations</title>
+		<link>/2014/01/30/http2-expectations/</link>
+					<comments>/2014/01/30/http2-expectations/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 30 Jan 2014 17:11:52 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[mark-nottingham]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9873</guid>
+
+					<description><![CDATA[Mark Nottingham on Nine Things to Expect from HTTP/2. If you have any interest in the future of HTTP then mnot&#8217;s blog is well worth reading.]]></description>
+										<content:encoded><![CDATA[<p>Mark Nottingham on <a href="http://www.mnot.net/blog/2014/01/30/http2_expectations" title="I am still sad that it went binary">Nine Things to Expect from HTTP/2</a>.</p>
+<p>If you have any interest in the future of HTTP then <a href="http://www.mnot.net/blog/" title="How do you say mnot?  Mnot? M-not?">mnot&#8217;s blog</a> is well worth reading.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/01/30/http2-expectations/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

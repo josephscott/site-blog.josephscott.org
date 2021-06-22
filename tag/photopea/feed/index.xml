@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>photopea &#8211; Joseph Scott</title>
+	<atom:link href="/tag/photopea/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 21 Aug 2019 13:43:27 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>photopea.com</title>
+		<link>/2019/08/21/photopea-com/</link>
+					<comments>/2019/08/21/photopea-com/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 21 Aug 2019 13:43:27 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[photopea]]></category>
+		<guid isPermaLink="false">/?p=17547</guid>
+
+					<description><![CDATA[Over the years I&#8217;ve seen a number of really neat web sites, in terms of what they were able to accomplish in a browser. Then I saw https://www.photopea.com/, and it really takes the cake. It is an image editor, think Adobe Photoshop or GNU Image Manipulation Program (GIMP), but in a web page. This is [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Over the years I&#8217;ve seen a number of really neat web sites, in terms of what they were able to accomplish in a browser.  Then I saw <a href="https://www.photopea.com/">https://www.photopea.com/</a>, and it really takes the cake.  It is an image editor, think <a href="https://www.adobe.com/products/photoshop.html">Adobe Photoshop</a> or <a href="https://www.gimp.org/">GNU Image Manipulation Program (GIMP)</a>, but in a web page.  This is one serious piece of work.</p>
+<p><a href="/wp-content/uploads/2019/08/photopea.png"><img loading="lazy" src="/wp-content/uploads/2019/08/photopea-1024x622.png" alt="" width="788" height="479" class="aligncenter size-large wp-image-17611" srcset="/wp-content/uploads/2019/08/photopea-1024x622.png 1024w, /wp-content/uploads/2019/08/photopea-300x182.png 300w, /wp-content/uploads/2019/08/photopea-768x467.png 768w, /wp-content/uploads/2019/08/photopea-788x479.png 788w, /wp-content/uploads/2019/08/photopea.png 1340w" sizes="(max-width: 788px) 100vw, 788px" /></a></p>
+<p>A few months ago the author, <a href="http://blog.ivank.net/">Ivan Kutskir</a>, did an <a href="https://old.reddit.com/r/IAmA/comments/c8ru2y/i_made_a_free_alternative_to_photoshop_that_is/">AMA ( Ask Me Anything) on Reddit</a>.  One person brought up the issue of licensing and rights for uploading the images to edit them.  The <a href="https://old.reddit.com/r/IAmA/comments/c8ru2y/i_made_a_free_alternative_to_photoshop_that_is/esp7aee/">response</a> took this to the next level:</p>
+<blockquote><p>
+Photopea runs completely in your device, just like Gimp or Photoshop do. It does not upload any of your files to the internet.</p>
+<p>You can load www.Photopea.com, disconnect from the internet and keep using it completely offline. None of your files ever leaves your computer.
+</p></blockquote>
+<p>That is some impressive JavaScript action.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/08/21/photopea-com/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

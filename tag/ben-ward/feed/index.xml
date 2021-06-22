@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ben-ward &#8211; Joseph Scott</title>
+	<atom:link href="/tag/ben-ward/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 11 Jun 2015 14:01:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Third-Party JavaScript</title>
+		<link>/2015/06/11/third-party-javascript/</link>
+					<comments>/2015/06/11/third-party-javascript/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 11 Jun 2015 14:01:56 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[ben-ward]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6284</guid>
+
+					<description><![CDATA[Slides from Ben Ward on Pragmatic Performance with Third-Party JavaScript. The performance impact of third party JavaScript will likely be even larger with HTTP/2.]]></description>
+										<content:encoded><![CDATA[<p>Slides from <a href="https://benward.me/">Ben Ward</a> on <a href="https://speakerdeck.com/benward/pragmatic-performance-with-third-party-javascript">Pragmatic Performance with Third-Party JavaScript</a>.</p>
+<p>The performance impact of third party JavaScript will likely be even larger with HTTP/2.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/06/11/third-party-javascript/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

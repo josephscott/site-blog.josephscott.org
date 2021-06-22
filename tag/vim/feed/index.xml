@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>vim &#8211; Joseph Scott</title>
+	<atom:link href="/tag/vim/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 02 Mar 2016 18:11:47 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>How I Ended Up With Vim</title>
+		<link>/2016/03/02/how-i-ended-up-with-vim/</link>
+					<comments>/2016/03/02/how-i-ended-up-with-vim/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 02 Mar 2016 18:11:47 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[vim]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15103</guid>
+
+					<description><![CDATA[I do the bulk of my editing using Vim. Here is the short version of how that came to be. Many years ago I worked in an I.T. department doing various bits of grunt work, mostly setting up new desktops and laptops. I was curious about the servers that were managed by others in the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="/wp-content/uploads/2016/03/vim_editor-1.gif" rel="attachment wp-att-15379"><img loading="lazy" src="/wp-content/uploads/2016/03/vim_editor-1.gif" alt="vim_editor" width="125" height="60" class="alignleft size-full wp-image-15379" /></a></p>
+<p>I do the bulk of my editing using <a href="http://www.vim.org/">Vim</a>.  Here is the short version of how that came to be.</p>
+<p>Many years ago I worked in an I.T. department doing various bits of grunt work, mostly setting up new desktops and laptops.  I was curious about the servers that were managed by others in the department, and I got tasked with setting user accounts on our Unix and VMS systems.  I recall the VMS system in particular being a rather manual process.  Fortunately we had good documentation on the exact steps needed to create new users.</p>
+<p>Our Unix sysadmin felt very strongly that anyone doing admin work on those systems needed a basic knowledge of <a href="https://en.wikipedia.org/wiki/Vi">vi</a>.  The reason for this was a concern over repairing systems that were in an unusable state, which usually meant booting into single user mode to clean up what ever mess had happened.  The combination of a messed up system and single user mode means that several of the tools that you were accustomed to using wouldn&#8217;t work.</p>
+<p>With a messed up server you could only depend on statically linked binaries to ( hopefully ) work.  At the time the cross section of statically linked editors were things like <a href="https://en.wikipedia.org/wiki/Cat_(Unix)">cat</a>, <a hrewf="https://en.wikipedia.org/wiki/Ed_(text_editor)">ed</a>, and vi.  So vi became the go to option, because the alternatives were worse.</p>
+<p>I had to demonstrate to our Unix sysadmin that I had enough vi skills to open a file, edit it, and save it.  Not exactly a high bar, but I remember hating it.  I&#8217;d never used a modal editor before, and I had to learn H, J, K, L for cursor movement ( terminal emulation settings, another thing that used to be surprisingly easy to do wrong ).  It drove me crazy, but I did it because I wanted learn more about these systems, and this was my path to getting access.</p>
+<p>After that job I went to work at a small I.S.P., where I was logging in and out of FreeBSD, SunOS, and Solaris systems all the time.  Being able to use vi to edit files on each of those turned out be very useful.  It also matched my work flow, which was usually: open file in vi, make changes, save and exit vi.  Get in, make changes, get out.  Repeat as needed.</p>
+<p>I tried various vi clones and found that Vim matched my expectations of a reasonable vi editor.  By the time I left the job at the I.S.P. Vim had become a habit.</p>
+<p>Fast forward to today and more often than not you&#8217;ll still find me in a terminal window editing files with Vim.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/03/02/how-i-ended-up-with-vim/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Textarea Vi</title>
+		<link>/2016/02/05/textarea-vi/</link>
+					<comments>/2016/02/05/textarea-vi/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 05 Feb 2016 18:11:20 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[vim]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15062</guid>
+
+					<description><![CDATA[For those that would like an easy option to transform a textarea into a Vi editor, check out the wasavi plugin.]]></description>
+										<content:encoded><![CDATA[<p>For those that would like an easy option to transform a textarea into a Vi editor, check out the <a href="http://appsweets.net/wasavi/">wasavi</a> plugin.</p>
+<p><a href="/wp-content/uploads/2016/02/textarea-vi-1.png" rel="attachment wp-att-15101"><img loading="lazy" src="/wp-content/uploads/2016/02/textarea-vi-1.png" alt="textarea-vi" width="937" height="525" class="aligncenter size-full wp-image-15101" srcset="/wp-content/uploads/2016/02/textarea-vi-1.png 937w, /wp-content/uploads/2016/02/textarea-vi-1-300x168.png 300w, /wp-content/uploads/2016/02/textarea-vi-1-768x430.png 768w" sizes="(max-width: 937px) 100vw, 937px" /></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/02/05/textarea-vi/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Vim Tip: Delete All Lines That Match A Pattern</title>
+		<link>/2016/02/01/vim-tip-delete-all-lines-that-match-a-pattern/</link>
+					<comments>/2016/02/01/vim-tip-delete-all-lines-that-match-a-pattern/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 01 Feb 2016 18:11:24 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[tip]]></category>
+		<category><![CDATA[vim]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14823</guid>
+
+					<description><![CDATA[The basic approach to deleting all lines that match a pattern in Vim is very simple: [sourcecode] :g/[pattern]/d [/sourcecode] If you want to do more, you can switch modes. Here is how you would delete all the lines matching a pattern, along with the line below each match: [sourcecode] :g/[pattern]/normal 2dd [/sourcecode]]]></description>
+										<content:encoded><![CDATA[<p>The basic approach to deleting all lines that match a pattern in Vim is very simple:</p>
+<p>[sourcecode]<br />
+:g/[pattern]/d<br />
+[/sourcecode]</p>
+<p>If you want to do more, you can switch modes.  Here is how you would delete all the lines matching a pattern, along with the line below each match:</p>
+<p>[sourcecode]<br />
+:g/[pattern]/normal 2dd<br />
+[/sourcecode]</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/02/01/vim-tip-delete-all-lines-that-match-a-pattern/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Thu 17 Jan 2008</title>
+		<link>/2008/01/17/links-for-thu-17-jan-2008/</link>
+					<comments>/2008/01/17/links-for-thu-17-jan-2008/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 18 Jan 2008 00:30:08 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[autocomplete]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[openid]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[vim]]></category>
+		<category><![CDATA[yahoo]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/01/17/links-for-thu-17-jan-2008/</guid>
+
+					<description><![CDATA[Autocomplete HTML/CSS/JavaScript/python/xml/php/c with CTRL-X CTRL-O &#8211; parsed.org &#8211; Add autocomplete features to Vim. Wish I&#8217;d come across this sooner. Tags: vim autocomplete php javascript html python OpenID Splash &#8211; Looks like Yahoo has taken major dive into the OpenID pool. Tags: openid yahoo]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://www.parsed.org/tip/415/">Autocomplete HTML/CSS/JavaScript/python/xml/php/c with CTRL-X CTRL-O &#8211; parsed.org</a> &#8211; Add autocomplete features to Vim.  Wish I&#8217;d come across this sooner. <br /> Tags: <a href="http://del.icio.us/josephscott/vim">vim</a> <a href="http://del.icio.us/josephscott/autocomplete">autocomplete</a> <a href="http://del.icio.us/josephscott/php">php</a> <a href="http://del.icio.us/josephscott/javascript">javascript</a> <a href="http://del.icio.us/josephscott/html">html</a> <a href="http://del.icio.us/josephscott/python">python</a>  </p>
+</li>
+<li>
+<p><a href="http://openid.yahoo.com/">OpenID Splash</a> &#8211; Looks like Yahoo has taken major dive into the OpenID pool. <br /> Tags: <a href="http://del.icio.us/josephscott/openid">openid</a> <a href="http://del.icio.us/josephscott/yahoo">yahoo</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/01/17/links-for-thu-17-jan-2008/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Wed 7 Nov 2007</title>
+		<link>/2007/11/07/links-for-wed-7-nov-2007/</link>
+					<comments>/2007/11/07/links-for-wed-7-nov-2007/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 08 Nov 2007 00:30:24 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[amazon]]></category>
+		<category><![CDATA[aws]]></category>
+		<category><![CDATA[bbs]]></category>
+		<category><![CDATA[calculator]]></category>
+		<category><![CDATA[debug]]></category>
+		<category><![CDATA[ec2]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[s3]]></category>
+		<category><![CDATA[vim]]></category>
+		<category><![CDATA[wwiv]]></category>
+		<category><![CDATA[xdebug]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/07/links-for-wed-7-nov-2007/</guid>
+
+					<description><![CDATA[Box.net Technical Blog &#124; Blog Archive &#124; How to Debug PHP with Vim and XDebug on Linux &#8211; Debugging PHP from Vim. Nice. Tags: php vim debug xdebug Porting WWIV 4.23 to FreeBSD UNIX &#8211; Now that is old school hacking! Tags: wwiv bbs freebsd JavaScript-based Amazon Web Services Simple Monthly Calculator &#8211; Quick way [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://tech.blog.box.net/2007/06/20/how-to-debug-php-with-vim-and-xdebug-on-linux/">Box.net Technical Blog | Blog Archive | How to Debug PHP with Vim and XDebug on Linux</a> &#8211; Debugging PHP from Vim.  Nice. <br /> Tags: <a href="http://del.icio.us/josephscott/php">php</a> <a href="http://del.icio.us/josephscott/vim">vim</a> <a href="http://del.icio.us/josephscott/debug">debug</a> <a href="http://del.icio.us/josephscott/xdebug">xdebug</a>  </p>
+</li>
+<li>
+<p><a href="http://www.watson.org/~robert/star-lit/wwiv/">Porting WWIV 4.23 to FreeBSD UNIX</a> &#8211; Now that is old school hacking! <br /> Tags: <a href="http://del.icio.us/josephscott/wwiv">wwiv</a> <a href="http://del.icio.us/josephscott/bbs">bbs</a> <a href="http://del.icio.us/josephscott/freebsd">freebsd</a>  </p>
+</li>
+<li>
+<p><a href="http://calculator.s3.amazonaws.com/calc5.html?#">JavaScript-based Amazon Web Services Simple Monthly Calculator</a> &#8211; Quick way to determine how much it will cost you to use Amazon services (S3, EC2, etc). <br /> Tags: <a href="http://del.icio.us/josephscott/amazon">amazon</a> <a href="http://del.icio.us/josephscott/aws">aws</a> <a href="http://del.icio.us/josephscott/calculator">calculator</a> <a href="http://del.icio.us/josephscott/ec2">ec2</a> <a href="http://del.icio.us/josephscott/s3">s3</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/11/07/links-for-wed-7-nov-2007/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

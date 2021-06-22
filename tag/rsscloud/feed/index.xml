@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>rsscloud &#8211; Joseph Scott</title>
+	<atom:link href="/tag/rsscloud/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 29 Oct 2009 17:31:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>rssCloud WordPress Plugin Update &#8211; 0.4.1</title>
+		<link>/2009/10/29/rsscloud-wordpress-plugin-update-0-4-1/</link>
+					<comments>/2009/10/29/rsscloud-wordpress-plugin-update-0-4-1/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 29 Oct 2009 17:31:12 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[rss]]></category>
+		<category><![CDATA[rsscloud]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1554</guid>
+
+					<description><![CDATA[Update &#8211; 5 Nov 2009: These features are now available on WordPress.com as well &#8211; http://en.blog.wordpress.com/2009/11/05/rsscloud-update/ Version 0.4.1 of the rssCloud WordPress plugin is now available. The biggest change is adding support for the domain parameter in notification requests. This means that rssCloud updates processed by the plugin are no longer limited to being sent [&#8230;]]]></description>
+										<content:encoded><![CDATA[<div class="post-update">
+<b>Update &#8211; 5 Nov 2009:</b><br />
+These features are now available on WordPress.com as well &#8211; <a href="http://en.blog.wordpress.com/2009/11/05/rsscloud-update/">http://en.blog.wordpress.com/2009/11/05/rsscloud-update/</a>
+</div>
+<p>Version 0.4.1 of the <a href="http://wordpress.org/extend/plugins/rsscloud/">rssCloud WordPress plugin</a> is now available.  The biggest change  is adding support for the <a href="http://rsscloud.org/walkthrough/openDiscussion.html">domain parameter</a> in notification requests.  This means that rssCloud updates processed by the plugin are no longer limited to being sent to the IP address that the request came from.  Support for the domain parameter is live on <a href="http://wordpress.com/">WordPress.com</a> as well.</p>
+<p>When a domain parameter is included with a notification request the verification process does the following:</p>
+<ul>
+<li>Sends an HTTP GET request to the {domain}:{port}{path} URL</li>
+<li>That HTTP GET includes to pieces of data: url and challenge.  The url field contains the URL of the feed that we&#8217;ll been sending pings about.  The challenge field contains a random string of characters</li>
+<li>The response back must have a status code of 2xx and the body must contain EXACTLY the contents of the challenge field.  If both of those conditions are not met then the verification process will consider this a failure</li>
+</ul>
+<p>For notification requests that have no domain parameter the verification process is unchanged from before.</p>
+<p>Another item that some may find helpful is a new constant &#8211; RSSCLOUD_FEED_URL &#8211; if that is defined they it will be used as the feed URL of the blog instead of determining it via <code>get_bloginfo( 'rss2_url' );</code>.  For plugin authors that provide options for an alternative feed URL note that can override the default in WordPress via the <code><a href="http://codex.wordpress.org/Plugin_API/Filter_Reference#Link_Filters">feed_link</a></code> filter.  That filter can be used instead of the RSSCLOUD_FEED_URL constant and will bubble up through the <code>get_bloginfo( 'rss2_url' );</code> call.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/10/29/rsscloud-wordpress-plugin-update-0-4-1/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>RSSCloud For WordPress</title>
+		<link>/2009/09/07/rsscloud-for-wordpress/</link>
+					<comments>/2009/09/07/rsscloud-for-wordpress/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 08 Sep 2009 03:35:57 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[rss]]></category>
+		<category><![CDATA[rsscloud]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1483</guid>
+
+					<description><![CDATA[RSSCloud support has been enabled on all WordPress.com blogs. If you are running a WordPress.org powered blog you can do the same thing with the RSSCloud plugin. So what does this really mean? From the point of view of WordPress and this plugin there are three main additions: Adds the &#60;cloud&#62; element to your RSS2 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://rsscloud.org/">RSSCloud</a> support has been <a href="http://en.blog.wordpress.com/2009/09/07/rss-in-the-clouds/">enabled on all WordPress.com blogs</a>.  If you are running a <a href="http://wordpress.org/">WordPress.org</a> powered blog you can do the same thing with the <a href="http://wordpress.org/extend/plugins/rsscloud/">RSSCloud plugin</a>.</p>
+<h3>So what does this really mean?</h3>
+<p>From the point of view of WordPress and this plugin there are three main additions:</p>
+<ol>
+<li>Adds the <a href="http://cyber.law.harvard.edu/rss/rss.html#optionalChannelElements">&lt;cloud&gt;</a> element to your RSS2 feed (more details <a href="http://cyber.law.harvard.edu/rss/rss.html#ltcloudgtSubelementOfLtchannelgt">here</a> and <a href="http://cyber.law.harvard.edu/rss/soapMeetsRss.html#rsscloudInterface">here</a>) which tells clients where and how to sign up for notification requests.</li>
+<li>Registers a URL handler with WordPress to process the notification signups.</li>
+<li>Sends out notification updates when a new post is published.</li>
+</ol>
+<p>The cloud element looks like this:</p>
+<p>[sourcecode lang=&#8221;html&#8221;]<br />
+&lt;cloud domain=&#8217;josephscott.org&#8217; port=&#8217;80&#8217; path=&#8217;/?rsscloud=notify&#8217;<br />
+  registerProcedure=&#8221; protocol=&#8217;http-post&#8217; /&gt;<br />
+[/sourcecode]</p>
+<p>The domain, port and path attributes combined to form a URL, http://josephscott.org:80/?rsscloud=notify in this case, where others sign up for notifications.  The registerProcedure attribute is the XML-RPC method to be called if the protocol attribute was xmlrpc.  Since the plugin uses http-post for the protocol the registerProcedure field is blank.</p>
+<p>Using this same example here is a small chunk of PHP code that uses the cURL library to sign up for notifications:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+$curl = curl_init();</p>
+<p>curl_setopt($curl, CURLOPT_URL, &#8216;http://josephscott.org/?rsscloud=notify&#8217; );<br />
+curl_setopt($curl, CURLOPT_POSTFIELDS, &#8216;notifyProcedure=&amp;protocol=http-post&amp;port=80&amp;path=/~joseph/rsscloud/&amp;url1=http://josephscott.org/feed/&#8217; );<br />
+curl_setopt($curl, CURLOPT_VERBOSE, 1);<br />
+curl_setopt($curl, CURLOPT_POST, 1);</p>
+<p>curl_exec( $curl );<br />
+print_r( curl_getinfo( $curl ) );<br />
+curl_close( $curl );<br />
+[/sourcecode]</p>
+<p>This code sends an HTTP POST request to http://josephscott.org/?rsscloud=notify asking to get a notification when the http://josephscott.org/feed/ feed is updated.  The notification is to be sent to the remote IP used in the request (this means notification requests must be sent from the IP that will be receiving the notifications), port 80 with a path of /~joseph/rsscloud/ and it will be given the update data via an HTTP POST.  The notification script will get $_POST data that looks like:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+Array<br />
+(<br />
+   [url] =&gt; http://josephscott.org/feed/<br />
+)<br />
+[/sourcecode]</p>
+<p>It is then up to notification script to turn around fetch the updated feed.</p>
+<h3>How fast does all this happen?</h3>
+<p>It depends <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>On WordPress.com the notifications happen through the <a href="http://code.trac.wordpress.org/">jobs system</a>, which means it will be sent out very, very quickly.  On a WordPress.org powered blog with the plugin it schedules notifications to get sent out as soon as possible with the <a href="http://codex.wordpress.org/Function_Reference/wp_schedule_single_event">wp_schedule_single_event( )</a> function.  Scheduled events in WordPress are checked on each page load, so if you publish a new post and then view it on the front page of your blog the notifications will get sent out in pretty quick.</p>
+<p>I think for most blogs these approaches will work fine and send out notifications with very little delay.</p>
+<h3>What does this mean for feed readers like Bloglines, Google Reader, etc.?</h3>
+<p>I believe that many (most?) public feed readers like Bloglines and Google Reader already listen for feed updates via pings (like those sent to <a href="http://pingomatic.com/">Ping-O-Matic</a>).  With an RSSCloud enabled WordPress blog they can register for updates to specific feeds.  Why would they do this if they are already getting ping updates?  Unfortunately the ping updates are similar to email, they have massive amounts of spam in them.  Since RSSCloud isn&#8217;t a stream of everything, but a specific request for specific updates they could sign up for updates to those feeds that they believe are more likely to be legitimate.</p>
+<p>Signing up is simple for a feed reader (or anyone/thing) to do:</p>
+<ol>
+<li>Look for the &lt;cloud&gt; element in the RSS feed</li>
+<li>Sign up for notifications using the data from the &lt;cloud&gt; element</li>
+<li>Process notification that are sent to it from WordPress</li>
+</ol>
+<p>Right now I believe the only feed reader that supports RSSCloud is <a href="http://www.scripting.com/">Dave Winer</a>&#8216;s <a href="http://newsriver.org/river2">River2</a>.</p>
+<p>If you are working on RSSCloud support in your feed reader <a href="http://josephscott.org/contact/">let me know</a>, I&#8217;ll be watching the RSSCloud stats on WordPress.com.  And of course if you run into problems with RSSCloud on a WordPress blog (ORG or COM) I&#8217;m happy to help track down any bugs in our implementation.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/09/07/rsscloud-for-wordpress/feed/</wfw:commentRss>
+			<slash:comments>62</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

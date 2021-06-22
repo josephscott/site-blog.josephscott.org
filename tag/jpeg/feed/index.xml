@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>jpeg &#8211; Joseph Scott</title>
+	<atom:link href="/tag/jpeg/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 12 Oct 2015 14:57:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Hacking Both Ends</title>
+		<link>/2015/10/12/hacking-both-ends/</link>
+					<comments>/2015/10/12/hacking-both-ends/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 12 Oct 2015 14:57:52 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[facebook]]></category>
+		<category><![CDATA[jpeg]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13510</guid>
+
+					<description><![CDATA[When you control the server and client sides of an application you can come up with some impressive performance hacks. Facebook&#8217;s changes to preview photos is a good example of that: There are a few tables within the JPEG header, which accounts for its size. The question then became: Would it be possible to generate [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>When you control the server and client sides of an application you can come up with some impressive performance hacks.  <a href="https://code.facebook.com/posts/991252547593574/the-technology-behind-preview-photos/">Facebook&#8217;s changes to preview photos</a> is a good example of that:</p>
+<blockquote><p>
+There are a few tables within the JPEG header, which accounts for its size. The question then became: Would it be possible to generate a fixed header that could be stored on client and therefore not need to be transmitted? In that scenario, only the payload would need to be sent, which would make this the winning format. The investigation began.
+</p></blockquote>
+<p>For some slow cases they were able to improve page load performance by 30 percent.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/12/hacking-both-ends/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

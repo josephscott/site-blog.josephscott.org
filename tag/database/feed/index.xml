@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Database &#8211; Joseph Scott</title>
+	<atom:link href="/tag/database/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 24 Feb 2010 04:20:43 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Database Indexes on Domain Names</title>
+		<link>/2010/02/23/database-indexes-on-domain-names/</link>
+					<comments>/2010/02/23/database-indexes-on-domain-names/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 24 Feb 2010 04:20:43 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1935</guid>
+
+					<description><![CDATA[As part of a separate conversation Matt suggested something I had not given much thought to before. Say you have a database column that is used to store domain names. Something as simple as `domain` varchar(255) NOT NULL. Of course you&#8217;ll want to search all of that data. Perhaps you want to lookup all of [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>As part of a separate conversation <a href="http://ma.tt/">Matt</a> suggested something I had not given much thought to before.  Say you have a database column that is used to store domain names.  Something as simple as <code>`domain` varchar(255) NOT NULL</code>.</p>
+<p>Of course you&#8217;ll want to search all of that data.  Perhaps you want to lookup all of the sub-domains for example.com.  That query might look like</p>
+<p>[sourcecode lang=&#8221;sql&#8221;]<br />
+SELECT * FROM table_name WHERE domain LIKE &#8216;%.example.com&#8217;<br />
+[/sourcecode]</p>
+<p>Having a wildcard ( % ) at the front of a LIKE comparison generally results in poor performance.  Depending on the database you may find that either it can&#8217;t make use of an index on that column, or it must do a full index scan in order to find the right entry.  To make better use of an index the wildcard should be at the end of the string, which we could do if we reverse the domain name ordering:</p>
+<p>[sourcecode lang=&#8221;sql&#8221;]<br />
+SELECT * FROM table_name WHERE domain LIKE &#8216;com.example.%&#8217;<br />
+[/sourcecode]</p>
+<p>So that&#8217;s what we do.  This of course brings up the question of how to correctly reverse the domain name parts.  In PHP this can be done with a combination of <a href="http://us.php.net/explode/">explode()</a>, <a href="http://us.php.net/array_reverse">array_reverse()</a>, and <a href="http://us.php.net/implode">implode()</a>:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+$domain = &#8216;joseph.example.com&#8217;;<br />
+$reverse_domain = implode( &#8216;.&#8217;, array_reverse( explode( &#8216;.&#8217;, $domain ) ) );<br />
+[/sourcecode]</p>
+<p>That turns <code>joseph.example.com</code> into <code>com.example.joseph</code>.  The reversed domain name gets stored in the database and that allows us to use the more efficient database query.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/02/23/database-indexes-on-domain-names/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Tue 19 Feb 2008</title>
+		<link>/2008/02/20/links-for-tue-19-feb-2008-2/</link>
+					<comments>/2008/02/20/links-for-tue-19-feb-2008-2/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 20 Feb 2008 16:15:58 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[cache]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[email]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[markmail]]></category>
+		<category><![CDATA[memcache]]></category>
+		<category><![CDATA[memcachedb]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/02/20/links-for-tue-19-feb-2008-2/</guid>
+
+					<description><![CDATA[The Making of MarkMail: PostgreSQL: More Traffic than MySQL (and a first Google spotting) &#8211; I&#039;m not really surprised that the PostgreSQL lists have more traffic than the MySQL lists. PostgreSQL seems to be much more of a community owned project than MySQL is. Tags: email markmail mysql postgresql memcachedb &#8211; Google Code &#8211; Persistent [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://markmail.blogspot.com/2008/02/postgresql-more-traffic-than-mysql-and.html">The Making of MarkMail: PostgreSQL: More Traffic than MySQL (and a first Google spotting)</a> &#8211; I&#039;m not really surprised that the PostgreSQL lists have more traffic than the MySQL lists.  PostgreSQL seems to be much more of a community owned project than MySQL is. <br /> Tags: <a href="http://del.icio.us/josephscott/email">email</a> <a href="http://del.icio.us/josephscott/markmail">markmail</a> <a href="http://del.icio.us/josephscott/mysql">mysql</a> <a href="http://del.icio.us/josephscott/postgresql">postgresql</a>  </p>
+</li>
+<li>
+<p><a href="http://code.google.com/p/memcachedb/">memcachedb &#8211; Google Code</a> &#8211; Persistent version of Memcache that uses Berkeley DB as back end storage. <br /> Tags: <a href="http://del.icio.us/josephscott/cache">cache</a> <a href="http://del.icio.us/josephscott/database">database</a> <a href="http://del.icio.us/josephscott/memcache">memcache</a> <a href="http://del.icio.us/josephscott/memcachedb">memcachedb</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/02/20/links-for-tue-19-feb-2008-2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Mon 11 Feb 2008</title>
+		<link>/2008/02/11/links-for-mon-11-feb-2008/</link>
+					<comments>/2008/02/11/links-for-mon-11-feb-2008/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 12 Feb 2008 00:30:20 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[storage]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/02/11/links-for-mon-11-feb-2008/</guid>
+
+					<description><![CDATA[Sizing PostgreSQL 8.3 Logs &#8211; Jignesh Shah&#8217;s Weblog &#8211; Interesting walk through on figuring out how to make PostgreSQL WAL keep up with your expected traffic. Tags: postgresql database storage performance]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://blogs.sun.com/jkshah/entry/sizing_postgresql_8_3_logs">Sizing PostgreSQL 8.3 Logs &#8211; Jignesh Shah&#8217;s Weblog</a> &#8211; Interesting walk through on figuring out how to make PostgreSQL WAL keep up with your expected traffic. <br /> Tags: <a href="http://del.icio.us/josephscott/postgresql">postgresql</a> <a href="http://del.icio.us/josephscott/database">database</a> <a href="http://del.icio.us/josephscott/storage">storage</a> <a href="http://del.icio.us/josephscott/performance">performance</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/02/11/links-for-mon-11-feb-2008/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Sun Buys MySQL</title>
+		<link>/2008/01/16/sun-buys-mysql/</link>
+					<comments>/2008/01/16/sun-buys-mysql/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 16 Jan 2008 17:07:44 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[sun]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/01/16/sun-buys-mysql/</guid>
+
+					<description><![CDATA[The big news today is that Sun purchased MySQL: Sun Press Kit, Sun Announcement, MySQL Announcement and Jonathan Schwartz&#8217;s Blog Announcement. Let&#8217;s get the obvious issues/questions out of the way first. The purchase price is $1 billion, $800 million cash, $200 million in options. What is this going to mean for Sun&#8217;s PostgreSQL development? How [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The big news today is that <a href="http://www.sun.com/">Sun</a> purchased <a href="http://mysql.com/">MySQL</a>: <a href="http://www.sun.com/aboutsun/media/presskits/2008-0116/index.jsp?intcmp=hp2008jan16_mysql_learn">Sun Press Kit</a>, <a href="http://www.sun.com/aboutsun/pr/2008-01/sunflash.20080116.1.xml">Sun Announcement</a>, <a href="http://mysql.com/news-and-events/sun-to-acquire-mysql.html">MySQL Announcement</a> and <a href="http://blogs.sun.com/jonathan/entry/winds_of_change_are_blowing#comments">Jonathan Schwartz&#8217;s Blog Announcement</a>.</p>
+<p>Let&#8217;s get the obvious issues/questions out of the way first.  The purchase price is $1 billion, $800 million cash, $200 million in options.  What is this going to mean for <a href="http://www.sun.com/software/products/postgresql/index.jsp">Sun&#8217;s PostgreSQL development</a>?  How will this impact the relationship between Sun and Oracle?  Historically Sun has been one of the big iron Oracle platforms.  Oracle owns a vital piece of MySQL, InnoDB.  And of course, what will this mean to the MySQL community?</p>
+<p>Now some of my own thoughts on this deal.  This seems like something of a desperate move for both companies.  In the case of MySQL, they need to find a way to stay intact as a company and bring in lots of cash.  Guess all that talk of an IPO goes out the window now.  So the list of potential buyers becomes pretty small.  It would have to be to a company with lots of hard core tech but without a major database platform of their own, which rules out Oracle, IBM and Microsoft.  Google and Yahoo might have smart folks who could make it better, but getting into the customer support business isn&#8217;t something that they&#8217;d want to do.  So how many other big tech companies are left that would be willing or able to pay the kind of money that MySQL was looking for?  Like I said, small list.</p>
+<p>Then there is the Sun side of this deal.  Recently Sun has been pushing PostgreSQL, but there isn&#8217;t one single company behind PostgreSQL, making it much more difficult to control in the manner that Sun prefers.  In this respect MySQL fits perfectly, although it is Open Source (mostly), there really isn&#8217;t much of a developer community for it.  Basically all development happens at MySQL the company.  This would allow Sun to have the same massive grip over development that it has had for its other open source products.  I think another factor is that Sun desperately wants to avoid becoming ignored in the world of big name web companies.  They&#8217;ve developed some great stuff (Dtrace, ZFS) and even open sourced their OS (Solaris), but have still have failed to get their foot in the door in any big way for tech startups.  So if you can&#8217;t convince them to like you, buy someone they already do.  And better to do it now while you still have the money to do so.</p>
+<p>Sun has just bought their way into becoming every tech company&#8217;s best friend.  Maybe now they&#8217;ll change their stock ticker symbol from <a href="http://joseph.randomnetworks.com/archives/2007/08/23/from-sunw-to-java/">JAVA</a> to MYSQL.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/01/16/sun-buys-mysql/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Tue 8 Jan 2008</title>
+		<link>/2008/01/08/links-for-tue-8-jan-2008/</link>
+					<comments>/2008/01/08/links-for-tue-8-jan-2008/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 09 Jan 2008 00:30:03 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[facebox]]></category>
+		<category><![CDATA[fuse]]></category>
+		<category><![CDATA[grabfs]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jquery]]></category>
+		<category><![CDATA[lightbox]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[macfuse]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[putty]]></category>
+		<category><![CDATA[puttytray]]></category>
+		<category><![CDATA[screen]]></category>
+		<category><![CDATA[screenshot]]></category>
+		<category><![CDATA[ssh]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/01/08/links-for-tue-8-jan-2008/</guid>
+
+					<description><![CDATA[Recover Truncated PHP Serialized Arrays // ShaunInman.com &#8211; Another example of why databases should NEVER silenty truncate data. If the data doesn&#8217;t fit in the field then the insert/update needs to fail. Tags: php database Facebox 1.0 &#8211; Another lightbox clone in the style of Facebook. Requires JQuery. Tags: facebox jquery javascript lightbox Beastie Blog [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://www.shauninman.com/archive/2008/01/08/recovering_truncated_php_serialized_arrays">Recover Truncated PHP Serialized Arrays // ShaunInman.com</a> &#8211; Another example of why databases should NEVER silenty truncate data.  If the data doesn&#8217;t fit in the field then the insert/update needs to fail. <br /> Tags: <a href="http://del.icio.us/josephscott/php">php</a> <a href="http://del.icio.us/josephscott/database">database</a>  </p>
+</li>
+<li>
+<p><a href="http://famspam.com/facebox">Facebox 1.0</a> &#8211; Another lightbox clone in the style of Facebook.  Requires JQuery. <br /> Tags: <a href="http://del.icio.us/josephscott/facebox">facebox</a> <a href="http://del.icio.us/josephscott/jquery">jquery</a> <a href="http://del.icio.us/josephscott/javascript">javascript</a> <a href="http://del.icio.us/josephscott/lightbox">lightbox</a>  </p>
+</li>
+<li>
+<p><a href="http://beastieblog.com/?p=76">Beastie Blog | Using Screen to log yourself.</a> &#8211; I&#8217;ve never used the logging feature of screen, might use it next time I setup a new server though. <br /> Tags: <a href="http://del.icio.us/josephscott/screen">screen</a>  </p>
+</li>
+<li>
+<p><a href="http://osxbook.com/book/bonus/chapter11/grabfs/">GrabFS: The Screenshot File System</a> &#8211; Not sure I&#8217;ll ever use it, but this is just an awesome hack. <br /> Tags: <a href="http://del.icio.us/josephscott/macosx">macosx</a> <a href="http://del.icio.us/josephscott/screenshot">screenshot</a> <a href="http://del.icio.us/josephscott/grabfs">grabfs</a> <a href="http://del.icio.us/josephscott/fuse">fuse</a> <a href="http://del.icio.us/josephscott/macfuse">macfuse</a>  </p>
+</li>
+<li>
+<p><a href="http://www.xs4all.nl/~whaa/putty/">PuTTY Tray</a> &#8211; Always important to have a good ssh client for your Windows box. <br /> Tags: <a href="http://del.icio.us/josephscott/putty">putty</a> <a href="http://del.icio.us/josephscott/puttytray">puttytray</a> <a href="http://del.icio.us/josephscott/ssh">ssh</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/01/08/links-for-tue-8-jan-2008/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Replicating from MS SQL Server to PostgreSQL</title>
+		<link>/2006/04/10/replicating-from-ms-sql-server-to-postgresql/</link>
+					<comments>/2006/04/10/replicating-from-ms-sql-server-to-postgresql/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 10 Apr 2006 21:17:27 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[replication]]></category>
+		<category><![CDATA[sqlserver]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/04/10/replicating-from-ms-sql-server-to-postgresql/</guid>
+
+					<description><![CDATA[Mangus Hagander has a detailed how to for replicating from MS SQL Server to PostgreSQL. It certainly isn&#8217;t perfect, but for those willing to go through the work this would be a very interesting way to add PostgreSQL to a SQL Server shop. I don&#8217;t plan on using this right now, but I&#8217;m definitely going [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Mangus Hagander has a detailed how to for <a href="http://people.planetpostgresql.org/mha/index.php?/archives/87-guid.html">replicating from MS SQL Server to PostgreSQL</a>.  It certainly isn&#8217;t perfect, but for those willing to go through the work this would be a very interesting way to add <a href="http://www.postgresql.org/">PostgreSQL</a> to a SQL Server shop.  I don&#8217;t plan on using this right now, but I&#8217;m definitely going to file this away as something with potential.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/04/10/replicating-from-ms-sql-server-to-postgresql/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Source Control for Databases</title>
+		<link>/2006/02/08/source-control-for-databases/</link>
+					<comments>/2006/02/08/source-control-for-databases/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 09 Feb 2006 06:33:30 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[sourcecontrol]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/08/source-control-for-databases/</guid>
+
+					<description><![CDATA[Josh Berkus asks a great question, what options are there for source control management (SCM) of databases? He focuses on three specific issues: Database Diffs are DDL Some Data Gets Copied, Some Doesn&#8217;t A Database SCM Tool Should Control Source and Update the Database in One Action I&#8217;d love to be able to get a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Josh Berkus asks a great question, <a href="http://blogs.ittoolbox.com/database/soup/archives/007666.asp?rss=1">what options are there for source control management (SCM) of databases</a>?  He focuses on three specific issues:</p>
+<ul>
+<li>Database Diffs are DDL</li>
+<li>Some Data Gets Copied, Some Doesn&#8217;t</li>
+<li>A Database SCM Tool Should Control Source and Update the Database in One Action</li>
+</ul>
+<p>I&#8217;d love to be able to get a SQL based diff for database schemas for different versions of an application.  A tool like that would be a huge step by itself.  So what does it take to tokenize SQL syntax?  Perhaps <a href="http://www.cpan.org/">CPAN</a>&#8216;s <a href="http://search.cpan.org/~jzucker/SQL-Statement-1.14/lib/SQL/Statement.pm">SQL::Statement</a> would good enough.  It seems to <a href="http://search.cpan.org/~jzucker/SQL-Statement-1.14/lib/SQL/Statement/Syntax.pod">understand a fair bit of SQL syntax</a>.  Additional work would have to be done get a set of ALTER TABLE commands to update the schema.</p>
+<p>Such a tool will also fall prey to the issue support multiple databases.  The two obvious targets to start with would be <a href="http://www.postgresql.org/">PostgreSQL</a> and <a href="http://www.mysql.com/">MySQL</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/02/08/source-control-for-databases/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>MySQL to PostgreSQL and UUID/GUIDs</title>
+		<link>/2005/12/08/mysql-to-postgresql-and-uuidguids/</link>
+					<comments>/2005/12/08/mysql-to-postgresql-and-uuidguids/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 08 Dec 2005 19:40:07 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[feedlounge]]></category>
+		<category><![CDATA[guid]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[uuid]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=528</guid>
+
+					<description><![CDATA[(Warning, I tend to use UUID instead of GUID. For purposes of this post consider them interchangeable.) I&#8217;ve already mentioned the announcement of FeedLounge making the move from MySQL to PostgreSQL last month, but the discussion is still on going. If you haven&#8217;t yet, go read all of the comments on the announcement. This has [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>(Warning, I tend to use UUID instead of GUID.  For purposes of this post consider them interchangeable.)</p>
+<p>I&#8217;ve already <a href="http://joseph.randomnetworks.com/archives/2005/11/21/feedlounge-switches-to-postgresql/">mentioned</a> the announcement of <a href="http://www.feedlounge.com/">FeedLounge</a> making the <a href="http://feedlounge.com/blog/2005/11/20/switched-to-postgresql/">move from MySQL to PostgreSQL</a> last month, but the discussion is still on going.  If you haven&#8217;t yet, go read all of the comments on the announcement.  This has to be some of the most productive and level headed (no flames yet) set of blog comments I&#8217;ve seen in a long time.  For those of you who are coming late to this story let me bring you up to speed:</p>
+<p>FeedLounge started with MySQL as their database, with the MyISAM table types.  They ran into problems and so moved to the <a href="http://www.innodb.com/index.php">InnoDB</a> table type in MySQL.  Still not completely happy they did more research and decided to try out <a href="http://www.postgresql.com/">PostgreSQL</a> for their database needs.  Their tests showed that MySQL InnoDB database was 34GB, in PostgreSQL it was 9.6GB.  Restores in MySQL took more than 24 hours, in PostgreSQL it was less than 5 hours.  These numbers resulted in better performance and reduced time.</p>
+<p>It has been more than two weeks since the initial announcement and there are still new comments being added.  As of this morning there are <strike>34</strike> 35 comments.  Some of the comments have come from people who are very knowledgable about MySQL and the size of InnoDB indexes <a href="http://feedlounge.com/blog/2005/11/20/switched-to-postgresql/#comment-406">became the focus</a> for why InnoDB was so much bigger than PostgreSQL.  Using InnoDB with UUIDs as the primary key was <a href="http://feedlounge.com/blog/2005/11/20/switched-to-postgresql/#comment-409">identified as a problem</a>, especially in the area of performance.</p>
+<p>Things continued to get more interesting when Heikki Tuuri (the creator of InnoDB) left a comment <a href="http://feedlounge.com/blog/2005/11/20/switched-to-postgresql/#comment-451">confirming the size problems in InnoDB</a> when using a UUID as a primary key.  It seems that using a UUID in this way causes a couple of problems, the first being that InnoDB wants to keep things in index order, which is great for indexes on sequential numbers but bad for seemingly random data (PostgreSQL can do the same thing with <a href="http://www.postgresql.org/docs/8.1/interactive/sql-cluster.html">cluster</a>).  The next problem is that secondary indexes in the same table get copies of the primary key index to making finding things faster.  This, at least in part, was what caused the size difference.</p>
+<p><a href="http://feedlounge.com/blog/2005/11/20/switched-to-postgresql/#comment-455">Heikki&#8217;s solution</a> (and others have mentioned this) is to use an auto_increment field as the primary key and create a unique secondary index on the UUID field.  This would make the primary key index size much smaller and still allow InnoDB to do index lookups on the UUID field.  That would seem to solve the problem, but there hasn&#8217;t been any feedback yet to confirm if it fixed all of the differences between InnoDB and PostgreSQL.</p>
+<p>There is something about having to add an extra field to my table to make the database perform better that doesn&#8217;t seem quite right though.  I don&#8217;t have anything concrete that I can point to showing that this isn&#8217;t a good idea, but it doesn&#8217;t feel right.  For those who are running into these same types of problems though, it might be something to try, at least until you get a chance to try out PostgreSQL.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/12/08/mysql-to-postgresql-and-uuidguids/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>FeedLounge Switches To PostgreSQL</title>
+		<link>/2005/11/21/feedlounge-switches-to-postgresql/</link>
+					<comments>/2005/11/21/feedlounge-switches-to-postgresql/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 21 Nov 2005 18:01:11 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[feedlounge]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=521</guid>
+
+					<description><![CDATA[This could turn into an interesting case study, FeedLounge has switched databases, from MySQL to PostgreSQL. The two main factors they listed were database size (34Gig for MySQL/InnoDB vs. 9.6Gig for PostgreSQL) and restoration time (24+ hours to restore database in MySQL vs. less than 5 hours for PostgreSQL). I&#8217;m surprised to here about the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>This could turn into an interesting case study, <a href="http://www.feedlounge.com/">FeedLounge</a> has <a href="http://feedlounge.com/blog/2005/11/20/switched-to-postgresql/">switched databases</a>, from <a href="http://www.mysql.com/">MySQL</a> to <a href="http://www.postgresql.org/">PostgreSQL</a>.  The two main factors they listed were database size (34Gig for MySQL/InnoDB vs. 9.6Gig for PostgreSQL) and restoration time (24+ hours to restore database in MySQL vs. less than 5 hours for PostgreSQL).</p>
+<p>I&#8217;m surprised to here about the huge difference in database size between MySQL (w/InnoDB) and PostgreSQL.  Perhaps the different indexing techniques are responsible for this, I&#8217;m not sure.  For large databases the ability to cut your storage requirements by more than 1/3 is huge.  My gut feeling though is that this would not be the norm though.  More testing is definitely in order to make this comparison more meaningful.</p>
+<p>The huge difference in database restoration time also strikes me as a bit high.  Certainly another area where further tests would be interesting to see if this pattern holds true in general.  Obviously being able to restore your database in less than 1/3 the time is a good thing.</p>
+<p>The real kicker in all this though is the chance to make use of the additional features found in PostgreSQL (they point this out in their write up).  I hope that <a href="http://www.alexking.org/">Alex</a> continues to write about how this transition progresses.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/11/21/feedlounge-switches-to-postgresql/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>PostgreSQL 8.1</title>
+		<link>/2005/11/08/postgresql-81/</link>
+					<comments>/2005/11/08/postgresql-81/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 08 Nov 2005 17:54:17 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=515</guid>
+
+					<description><![CDATA[Good news just keeps coming. PostgreSQL 8.1 has been released. There are several changes in this new version, I suspect for many having pg_autovacuum tied in as part of the database server will be a big plus. Roles and Two Phase Commit are other nice features that will be very helpful. If you are into [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Good news just keeps coming.  <a href="http://www.postgresql.org/docs/8.1/interactive/release.html#RELEASE-8-1">PostgreSQL 8.1</a> has been released.  There are several changes in this new version, I suspect for many having pg_autovacuum tied in as part of the database server will be a big plus.  Roles and Two Phase Commit are other nice features that will be very helpful.  If you are into local GUI apps for database administration then having <a href="http://www.postgresql.org/about/news.419">pgAdmin 1.4.0</a> included will be welcome, especially for Windows users.  Overall this release seems like a solid step forward.</p>
+<p>Now we just need <a href="http://www.php.net/">PHP</a> 5.1, <a href="http://httpd.apache.org/">Apache</a> 2.1 to be released and we&#8217;ll have a completely updated stack when combined with FreeBSD 6.0 and PostgreSQL 8.1.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/11/08/postgresql-81/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

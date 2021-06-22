@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: FeedLounge Switches To PostgreSQL	</title>
+	<atom:link href="/2005/11/21/feedlounge-switches-to-postgresql/feed/" rel="self" type="application/rss+xml" />
+	<link>/2005/11/21/feedlounge-switches-to-postgresql/</link>
+	<description></description>
+	<lastBuildDate>Thu, 08 Dec 2005 21:19:40 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott&#8217;s Blog &#187; MySQL to PostgreSQL and UUID/GUIDs		</title>
+		<link>/2005/11/21/feedlounge-switches-to-postgresql/#comment-1047</link>
+
+		<dc:creator><![CDATA[Joseph Scott&#8217;s Blog &#187; MySQL to PostgreSQL and UUID/GUIDs]]></dc:creator>
+		<pubDate>Thu, 08 Dec 2005 21:19:40 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=521#comment-1047</guid>
+
+					<description><![CDATA[[...] I&#8217;ve already mentioned the announcement of FeedLounge making the move from MySQL to PostgreSQL last month, but the discussion is still on going. If you haven&#8217;t yet, go read all of the comments on the announcement. This has to be some of the most productive and level headed (no flames yet) set of blog comments I&#8217;ve seen in a long time. For those of you who are coming late to this story let me bring you up to speed: [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] I&#8217;ve already mentioned the announcement of FeedLounge making the move from MySQL to PostgreSQL last month, but the discussion is still on going. If you haven&#8217;t yet, go read all of the comments on the announcement. This has to be some of the most productive and level headed (no flames yet) set of blog comments I&#8217;ve seen in a long time. For those of you who are coming late to this story let me bring you up to speed: [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: jB: no - that's definitely not good enough		</title>
+		<link>/2005/11/21/feedlounge-switches-to-postgresql/#comment-1046</link>
+
+		<dc:creator><![CDATA[jB: no - that's definitely not good enough]]></dc:creator>
+		<pubDate>Mon, 05 Dec 2005 16:12:22 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=521#comment-1046</guid>
+
+					<description><![CDATA[&lt;strong&gt;Feedlounge switched from MySQL to PostgreSQL for good&lt;/strong&gt;
+
+Feedlounge, the upcoming web-based feeds reader on steroids mentioned a while back that they switched their db-server from MySQL to PostgreSQL and by doing so, they saved alot of space and reduced their restore times dramatically.
+
+Some of the reason...]]></description>
+			<content:encoded><![CDATA[<p><strong>Feedlounge switched from MySQL to PostgreSQL for good</strong></p>
+<p>Feedlounge, the upcoming web-based feeds reader on steroids mentioned a while back that they switched their db-server from MySQL to PostgreSQL and by doing so, they saved alot of space and reduced their restore times dramatically.</p>
+<p>Some of the reason&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Daniel		</title>
+		<link>/2005/11/21/feedlounge-switches-to-postgresql/#comment-1045</link>
+
+		<dc:creator><![CDATA[Daniel]]></dc:creator>
+		<pubDate>Wed, 23 Nov 2005 18:46:06 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=521#comment-1045</guid>
+
+					<description><![CDATA[Data may get compressed on disk by PostgreSQL, as explained in: http://www.postgresql.org/docs/8.0/static/storage-toast.html
+For a database consisting mostly of large text contents, a big shrink in size can probably be achieved by the compression alone.]]></description>
+			<content:encoded><![CDATA[<p>Data may get compressed on disk by PostgreSQL, as explained in: <a href="http://www.postgresql.org/docs/8.0/static/storage-toast.html" rel="nofollow ugc">http://www.postgresql.org/docs/8.0/static/storage-toast.html</a><br />
+For a database consisting mostly of large text contents, a big shrink in size can probably be achieved by the compression alone.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Scott Sanders		</title>
+		<link>/2005/11/21/feedlounge-switches-to-postgresql/#comment-1044</link>
+
+		<dc:creator><![CDATA[Scott Sanders]]></dc:creator>
+		<pubDate>Mon, 21 Nov 2005 18:06:48 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=521#comment-1044</guid>
+
+					<description><![CDATA[You forgot to mention the queries running in one third the time on one third the total memory :)
+
+We are looking forward to partial indices (only index the unread items, for instance), as another space/time saving measure.
+
+I will write up more as I get some time on dotnot.org]]></description>
+			<content:encoded><![CDATA[<p>You forgot to mention the queries running in one third the time on one third the total memory 🙂</p>
+<p>We are looking forward to partial indices (only index the unread items, for instance), as another space/time saving measure.</p>
+<p>I will write up more as I get some time on dotnot.org</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

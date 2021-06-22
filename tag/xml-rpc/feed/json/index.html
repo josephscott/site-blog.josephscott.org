@@ -1,0 +1,282 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/xml-rpc/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/xml-rpc/",
+    "feed_url": "https://blog.josephscott.org/tag/xml-rpc/feed/json/",
+    "language": "en-US",
+    "title": "xml-rpc &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://josephscott.org/?p=4892",
+            "url": "https://blog.josephscott.org/2011/10/04/updated-libxml2-fix-plugin-for-wordpress/",
+            "title": "Updated libxml2-fix Plugin for WordPress",
+            "content_html": "<p>I made a small update to the <a href=\"http://wordpress.org/extend/plugins/libxml2-fix/\">libxml2-fix WordPress plugin</a> this morning.  There are few more odd combinations of PHP + libxml2 that have problems, so this change applies the work around as long as the libxml2 version is below 2.7.3.  That saves on having to list all of the individual versions that may have this issue.  This improvement was submitted by <a href=\"http://daniloercoli.wordpress.com/\">Danilo Ercoli</a>.</p>\n<p>I&#8217;m bummed that there are still so many hosts running known to be broken combinations of PHP + libxml2.  In the meantime we may as well make it easier for people to work around the issue.</p>\n",
+            "content_text": "I made a small update to the libxml2-fix WordPress plugin this morning.  There are few more odd combinations of PHP + libxml2 that have problems, so this change applies the work around as long as the libxml2 version is below 2.7.3.  That saves on having to list all of the individual versions that may have this issue.  This improvement was submitted by Danilo Ercoli.\nI&#8217;m bummed that there are still so many hosts running known to be broken combinations of PHP + libxml2.  In the meantime we may as well make it easier for people to work around the issue.",
+            "date_published": "2011-10-04T10:00:36-06:00",
+            "date_modified": "2011-10-04T10:00:36-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "libxml2",
+                "plugin",
+                "WordPress",
+                "xml-rpc",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=2290",
+            "url": "https://blog.josephscott.org/2010/05/18/wp-comments-notifier/",
+            "title": "wp-comments-notifier",
+            "content_html": "<p>If you use Windows for your desktop there&#8217;s a handy little tool for WordPress comment management &#8211; <a href=\"http://www.deanlee.cn/projects/wp-comments-notifiera-wordpress-comments-notifier/\">wp-comments-notifier</a>.  It uses the WordPress XML-RPC APIs to check for new comments and manage them.  How-To Geek has a <a href=\"http://www.howtogeek.com/howto/17431/manage-your-wordpress-blog-comments-from-your-windows-desktop/\">great post describing how to use it</a>.</p>\n",
+            "content_text": "If you use Windows for your desktop there&#8217;s a handy little tool for WordPress comment management &#8211; wp-comments-notifier.  It uses the WordPress XML-RPC APIs to check for new comments and manage them.  How-To Geek has a great post describing how to use it.",
+            "date_published": "2010-05-18T07:43:17-06:00",
+            "date_modified": "2010-05-18T07:43:17-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "WordPress",
+                "wp-comments-notifier",
+                "xml-rpc",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=1665",
+            "url": "https://blog.josephscott.org/2009/12/29/wordpress-plugin-update-libxml2-fix/",
+            "title": "WordPress Plugin Update: LibXML2 Fix",
+            "content_html": "<p>A small update to the <a href=\"http://wordpress.org/extend/plugins/libxml2-fix/\">LibXML2 Fix</a> WordPress plugin is now available, version 0.2.3.</p>\n<p>The only change was the addition of 2.6.27 to the list of libxml versions that the plugin looks for.  I&#8217;ve had a few reports that this version also has problems with stripping brackets.</p>\n<p>For those that haven&#8217;t been following this problem here&#8217;s the <a href=\"http://josephscott.org/code/wordpress/plugin-libxml2-fix/\">short version of the story</a>.  Some combinations of libxml and PHP don&#8217;t play nice with each other, the result being that brackets get stripped out of XML content.  This is a particular problem for XML-RPC requests in WordPress.  This plugin injects a small hack into the XML-RPC data before it gets processed in an attempt to preserve the brackets.</p>\n",
+            "content_text": "A small update to the LibXML2 Fix WordPress plugin is now available, version 0.2.3.\nThe only change was the addition of 2.6.27 to the list of libxml versions that the plugin looks for.  I&#8217;ve had a few reports that this version also has problems with stripping brackets.\nFor those that haven&#8217;t been following this problem here&#8217;s the short version of the story.  Some combinations of libxml and PHP don&#8217;t play nice with each other, the result being that brackets get stripped out of XML content.  This is a particular problem for XML-RPC requests in WordPress.  This plugin injects a small hack into the XML-RPC data before it gets processed in an attempt to preserve the brackets.",
+            "date_published": "2009-12-29T21:20:45-07:00",
+            "date_modified": "2009-12-29T21:20:45-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "libxml2",
+                "plugin",
+                "WordPress",
+                "xml-rpc",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=1637",
+            "url": "https://blog.josephscott.org/2009/12/21/wordpress-2-9-xml-rpc-and-atompub-changes/",
+            "title": "WordPress 2.9 \u2013 XML-RPC and AtomPub Changes",
+            "content_html": "<p>Just in time for Christmas <a href=\"http://wordpress.org/development/2009/12/wordpress-2-9/\">WordPress 2.9 is out</a>.  Here&#8217;s what has changed in the XML-RPC and AtomPub APIs since 2.8.6:</p>\n<h3>XML-RPC</h3>\n<ul>\n<li>Expose user registration option via wp.getOptions/wp.setOptions ( ticket <a href=\"http://core.trac.wordpress.org/ticket/10454\">#10454</a> )</li>\n<li>Fix bug in wp.getComment that reported spam comments with a status of hold ( ticket <a href=\"http://core.trac.wordpress.org/ticket/10510\">#10510</a> )</li>\n<li>Adjust how the XML-RPC server is activated so that the functions can be reused in other areas ( ticket <a href=\"http://core.trac.wordpress.org/ticket/10513\">#10513</a> )</li>\n<li>Fix bug in setting optional number of pages arguments for wp.getPages ( ticket <a href=\"http://core.trac.wordpress.org/ticket/10659\">#10659</a> )</li>\n<li>Reduced memory usage when processing requests ( ticket <a href=\"http://core.trac.wordpress.org/ticket/10698\">#10698</a> )</li>\n</ul>\n<h3>AtomPub</h3>\n<ul>\n<li>Fix a conflict with plugins that redefine wp_set_current_user() ( ticket <a href=\"http://core.trac.wordpress.org/ticket/10938\">#10938</a> )</li>\n</ul>\n<p>If you are using the WordPress XML-RPC/AtomPub APIs in your software or service, or are just interested in this part of WordPress, please join the <a href=\"http://lists.automattic.com/mailman/listinfo/wp-xmlrpc\">WordPress XML-RPC email list</a>.  Code changes and patches can be submitted via tickets at <a href=\"http://core.trac.wordpress.org/\">http://core.trac.wordpress.org/</a>.</p>\n",
+            "content_text": "Just in time for Christmas WordPress 2.9 is out.  Here&#8217;s what has changed in the XML-RPC and AtomPub APIs since 2.8.6:\nXML-RPC\n\nExpose user registration option via wp.getOptions/wp.setOptions ( ticket #10454 )\nFix bug in wp.getComment that reported spam comments with a status of hold ( ticket #10510 )\nAdjust how the XML-RPC server is activated so that the functions can be reused in other areas ( ticket #10513 )\nFix bug in setting optional number of pages arguments for wp.getPages ( ticket #10659 )\nReduced memory usage when processing requests ( ticket #10698 )\n\nAtomPub\n\nFix a conflict with plugins that redefine wp_set_current_user() ( ticket #10938 )\n\nIf you are using the WordPress XML-RPC/AtomPub APIs in your software or service, or are just interested in this part of WordPress, please join the WordPress XML-RPC email list.  Code changes and patches can be submitted via tickets at http://core.trac.wordpress.org/.",
+            "date_published": "2009-12-21T09:24:19-07:00",
+            "date_modified": "2009-12-21T09:24:19-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "atompub",
+                "WordPress",
+                "xml-rpc",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=1612",
+            "url": "https://blog.josephscott.org/2009/12/10/xml-rpc-types-dates-vs-strings/",
+            "title": "XML-RPC Types: Dates vs. Strings",
+            "content_html": "<p>The <a href=\"http://www.xmlrpc.com/spec\">XML-RPC spec</a> outlines 6 types: integer, boolean, string, double, date/time and base64.  If you count struct and array as types then we go up to 8 types.  The <a href=\"http://en.wikipedia.org/wiki/XML-RPC#Data_types\">XML-RPC page on Wikipedia</a> has examples of the XML tags for these data types.</p>\n<p>One mistake that I&#8217;ve seen commonly made (and I&#8217;ve done it myself) is to confuse dates and strings.  It&#8217;s easy to do, most databases for instance treat date input essentially as a string.  So it might seem natural that a date would be encoded in XML-RPC as:</p>\n<p>[sourcecode lang=&#8221;xml&#8221;]<br />\n&lt;string&gt;19980717T14:08:55&lt;/string&gt;<br />\n[/sourcecode]</p>\n<p>and expect the XML-RPC server to just know that it should be converting that value to a date/time.  XML-RPC libraries massage the encoded values based on the XML tag though, so this gets treated as a string.  The correct mark up for a date/time value would be:</p>\n<p>[sourcecode lang=&#8221;xml&#8221;]<br />\n&lt;datetime.iso8601&gt;19980717T14:08:55&lt;/datetime.iso8601&gt;<br />\n[/sourcecode]</p>\n<p>An XML-RPC library will then put this into a correct date context for that specific programming language.</p>\n<p>If you find that a date field in your XML-RPC request isn&#8217;t being processed correctly take a look at the raw XML, you may actually be passing it as a string.  When a problem comes up spending a minute to verify the XML tag can save you a bigger headache later on.</p>\n",
+            "content_text": "The XML-RPC spec outlines 6 types: integer, boolean, string, double, date/time and base64.  If you count struct and array as types then we go up to 8 types.  The XML-RPC page on Wikipedia has examples of the XML tags for these data types.\nOne mistake that I&#8217;ve seen commonly made (and I&#8217;ve done it myself) is to confuse dates and strings.  It&#8217;s easy to do, most databases for instance treat date input essentially as a string.  So it might seem natural that a date would be encoded in XML-RPC as:\n[sourcecode lang=&#8221;xml&#8221;]\n&lt;string&gt;19980717T14:08:55&lt;/string&gt;\n[/sourcecode]\nand expect the XML-RPC server to just know that it should be converting that value to a date/time.  XML-RPC libraries massage the encoded values based on the XML tag though, so this gets treated as a string.  The correct mark up for a date/time value would be:\n[sourcecode lang=&#8221;xml&#8221;]\n&lt;datetime.iso8601&gt;19980717T14:08:55&lt;/datetime.iso8601&gt;\n[/sourcecode]\nAn XML-RPC library will then put this into a correct date context for that specific programming language.\nIf you find that a date field in your XML-RPC request isn&#8217;t being processed correctly take a look at the raw XML, you may actually be passing it as a string.  When a problem comes up spending a minute to verify the XML tag can save you a bigger headache later on.",
+            "date_published": "2009-12-10T07:00:57-07:00",
+            "date_modified": "2009-12-10T07:00:57-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "xml-rpc",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=1280",
+            "url": "https://blog.josephscott.org/2009/07/10/wordpress-2-8-1-xml-rpc-and-atompub-changes/",
+            "title": "WordPress 2.8.1 \u2013 XML-RPC and AtomPub Changes",
+            "content_html": "<p>The <a href=\"http://wordpress.org/development/2009/07/wordpress-2-8-1/\">2.8.1 release of WordPress</a> is now available.  This is mostly a bug fix release so there are only a few small changes in the area of XML-RPC and no changes in AtomPub:</p>\n<ul>\n<li>metaWeblog.getPost now returns the correct value for the date_created_gmt field for draft posts ( ticket <a href=\"http://core.trac.wordpress.org/ticket/10244\">#10244</a> )</li>\n<li>RSD API endpoint URLs now use HTTPS if FORCE_SSL_ADMIN or FORCE_SSL_LOGIN is defined and true ( ticket <a href=\"http://core.trac.wordpress.org/ticket/10330\">#10330</a> )</li>\n</ul>\n",
+            "content_text": "The 2.8.1 release of WordPress is now available.  This is mostly a bug fix release so there are only a few small changes in the area of XML-RPC and no changes in AtomPub:\n\nmetaWeblog.getPost now returns the correct value for the date_created_gmt field for draft posts ( ticket #10244 )\nRSD API endpoint URLs now use HTTPS if FORCE_SSL_ADMIN or FORCE_SSL_LOGIN is defined and true ( ticket #10330 )",
+            "date_published": "2009-07-10T16:12:54-06:00",
+            "date_modified": "2009-07-10T16:12:54-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "WordPress",
+                "xml-rpc",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=1257",
+            "url": "https://blog.josephscott.org/2009/06/10/wordpress-2-8-xml-rpc-and-atompub-changes/",
+            "title": "WordPress 2.8 \u2013 XML-RPC and AtomPub Changes",
+            "content_html": "<p>Here&#8217;s what has changed in WordPress XML-RPC and AtomPub APIs from 2.7.1 to the new <a href=\"http://wordpress.org/development/2009/06/wordpress-28/\">WordPress 2.8 release</a>:</p>\n<h3>XML-RPC</h3>\n<ul>\n<li>Fixed wp.getUsersBlogs and blogger.getUsersBlogs to return the correct value for the &#8216;xmlrpc&#8217; field when WordPress is installed in separate directory ( ticket <a href=\"http://core.trac.wordpress.org/ticket/9516\">#9516</a> )</li>\n<li>Authentication is filterable now, allowing for alternative authentication methods like OAuth ( ticket <a href=\"http://core.trac.wordpress.org/ticket/8941\">#8941</a> and <a href=\"http://core.trac.wordpress.org/ticket/8938\">#8938</a> )</li>\n<li>Provide sticky status of posts via &#8216;sticky&#8217; field in metaWeblog.newPost / metaWeblog.editPost / metaWeblog.getPost ( ticket <a href=\"http://core.trac.wordpress.org/ticket/8777\">#8777</a> )</li>\n<li>Don&#8217;t duplicate post enclosures ( ticket <a href=\"http://core.trac.wordpress.org/ticket/7773\">#7773</a> )</li>\n</ul>\n<h3>AtomPub</h3>\n<ul>\n<li>Always use filterable authentication, allowing for alternative authentication methods like OAuth ( ticket <a href=\"http://core.trac.wordpress.org/ticket/9320\">#9320</a> and <a href=\"http://core.trac.wordpress.org/ticket/8938\">#8938</a> )</li>\n<li>Update image captions (summary) correctly ( ticket <a href=\"http://core.trac.wordpress.org/ticket/9148\">#9148</a> )</li>\n<li>Hooks for extending AtomPub ( ticket <a href=\"http://core.trac.wordpress.org/ticket/8827\">#8827</a> )</li>\n<li>Fix file upload updates and image processing when uploading an image ( ticket <a href=\"http://core.trac.wordpress.org/ticket/9233\">#9233</a> )</li>\n<li>Provide the correct edit URL for images ( ticket <a href=\"http://core.trac.wordpress.org/ticket/9147\">#9147</a> )</li>\n</ul>\n<p>A big thank you to everyone who submitted tickets and patches.  With 2.8 out the door now is the time to bring up new features for WordPress 2.9.  If you&#8217;ve got a patch for a new feature, even better!  Go submit a ticket at <a href=\"http://core.trac.wordpress.org/\">http://core.trac.wordpress.org/</a>.</p>\n<p>If you are using the WordPress XML-RPC/AtomPub APIs in your software or service, or are just interested in this part of WordPress, please join the <a href=\"http://lists.automattic.com/mailman/listinfo/wp-xmlrpc\">WordPress XML-RPC email list</a>.</p>\n",
+            "content_text": "Here&#8217;s what has changed in WordPress XML-RPC and AtomPub APIs from 2.7.1 to the new WordPress 2.8 release:\nXML-RPC\n\nFixed wp.getUsersBlogs and blogger.getUsersBlogs to return the correct value for the &#8216;xmlrpc&#8217; field when WordPress is installed in separate directory ( ticket #9516 )\nAuthentication is filterable now, allowing for alternative authentication methods like OAuth ( ticket #8941 and #8938 )\nProvide sticky status of posts via &#8216;sticky&#8217; field in metaWeblog.newPost / metaWeblog.editPost / metaWeblog.getPost ( ticket #8777 )\nDon&#8217;t duplicate post enclosures ( ticket #7773 )\n\nAtomPub\n\nAlways use filterable authentication, allowing for alternative authentication methods like OAuth ( ticket #9320 and #8938 )\nUpdate image captions (summary) correctly ( ticket #9148 )\nHooks for extending AtomPub ( ticket #8827 )\nFix file upload updates and image processing when uploading an image ( ticket #9233 )\nProvide the correct edit URL for images ( ticket #9147 )\n\nA big thank you to everyone who submitted tickets and patches.  With 2.8 out the door now is the time to bring up new features for WordPress 2.9.  If you&#8217;ve got a patch for a new feature, even better!  Go submit a ticket at http://core.trac.wordpress.org/.\nIf you are using the WordPress XML-RPC/AtomPub APIs in your software or service, or are just interested in this part of WordPress, please join the WordPress XML-RPC email list.",
+            "date_published": "2009-06-10T20:37:51-06:00",
+            "date_modified": "2009-06-10T20:37:51-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "atompub",
+                "WordPress",
+                "xml-rpc",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=1169",
+            "url": "https://blog.josephscott.org/2009/04/15/libxml2-fix-version-02/",
+            "title": "LibXML2 Fix \u2013 Version 0.2",
+            "content_html": "<p>I&#8217;ve updated my <a href=\"http://wordpress.org/extend/plugins/libxml2-fix/\">LibXML2 Fix</a> WordPress plugin so that the work around is enabled even if you have libxml2 2.7.3 installed but have a PHP version that is less that 5.2.9.  This should fix servers who decided to update libxml2 without updating PHP.</p>\n<p>Further details and history are at my <a href=\"http://josephscott.org/code/wordpress/plugin-libxml2-fix/\">LibXML2 Fix plugin page</a>.</p>\n<p><strong>Update:</strong> Rein caught a typo in version 0.2, so make sure that you get version 0.2.2.</p>\n",
+            "content_text": "I&#8217;ve updated my LibXML2 Fix WordPress plugin so that the work around is enabled even if you have libxml2 2.7.3 installed but have a PHP version that is less that 5.2.9.  This should fix servers who decided to update libxml2 without updating PHP.\nFurther details and history are at my LibXML2 Fix plugin page.\nUpdate: Rein caught a typo in version 0.2, so make sure that you get version 0.2.2.",
+            "date_published": "2009-04-15T16:12:28-06:00",
+            "date_modified": "2009-04-15T16:12:28-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "libxml2",
+                "plugin",
+                "WordPress",
+                "xml-rpc",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=1124",
+            "url": "https://blog.josephscott.org/2009/04/08/wordpress-theme-authors-dont-forget-the-wp_head-function/",
+            "title": "WordPress Theme Authors, Don\u2019t Forget The wp_head() Function",
+            "content_html": "<p>When creating a WordPress theme don&#8217;t forget to include a wp_head(); call in the HTML HEAD section of your theme.  It&#8217;s very simple to do, just include:</p>\n<p>[sourcecode lang=&#8221;php&#8221;]<br />\nwp_head();<br />\n[/sourcecode]</p>\n<p>Before the closing HEAD tag (&lt;/head&gt;) in your HTML.</p>\n<p>Why make such a fuss over a single function call?  Because it does a fair bit of work behind the scenes and without it some WordPress features will not work properly.  Take a look at the wp_head section of the wp-includes/default-filters.php file in WordPress, you&#8217;ll see a number of events that are tied to the wp_head action.</p>\n<p>One area where this is a particular problem is for offline blog clients that make use of the XML-RPC and AtomPub APIs in WordPress.  The &#8220;Really Simple Discoverability&#8221; (RSD) link that WordPress inserts instructs these clients on where to find the RSD URL, which contains information on how the clients can send XML-RPC and AtomPub requests.  We&#8217;ve seen a number of times now where an error reported by a <a href=\"http://iphone.wordpress.org/\">WordPress iPhone App</a> user is caused because there is no RSD link in their WordPress blog.  Looking a little deeper reveals that there was no RSD link because the theme they were using didn&#8217;t include a call to wp_head().</p>\n<p>If you are writing a WordPress theme here is your reminder, make sure that the wp_head() function is being called at the end of your HEAD section.</p>\n",
+            "content_text": "When creating a WordPress theme don&#8217;t forget to include a wp_head(); call in the HTML HEAD section of your theme.  It&#8217;s very simple to do, just include:\n[sourcecode lang=&#8221;php&#8221;]\nwp_head();\n[/sourcecode]\nBefore the closing HEAD tag (&lt;/head&gt;) in your HTML.\nWhy make such a fuss over a single function call?  Because it does a fair bit of work behind the scenes and without it some WordPress features will not work properly.  Take a look at the wp_head section of the wp-includes/default-filters.php file in WordPress, you&#8217;ll see a number of events that are tied to the wp_head action.\nOne area where this is a particular problem is for offline blog clients that make use of the XML-RPC and AtomPub APIs in WordPress.  The &#8220;Really Simple Discoverability&#8221; (RSD) link that WordPress inserts instructs these clients on where to find the RSD URL, which contains information on how the clients can send XML-RPC and AtomPub requests.  We&#8217;ve seen a number of times now where an error reported by a WordPress iPhone App user is caused because there is no RSD link in their WordPress blog.  Looking a little deeper reveals that there was no RSD link because the theme they were using didn&#8217;t include a call to wp_head().\nIf you are writing a WordPress theme here is your reminder, make sure that the wp_head() function is being called at the end of your HEAD section.",
+            "date_published": "2009-04-08T14:03:33-06:00",
+            "date_modified": "2009-04-08T14:03:33-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "atompub",
+                "iphone",
+                "themes",
+                "WordPress",
+                "xml-rpc",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=1009",
+            "url": "https://blog.josephscott.org/2009/03/23/slow-loading-rsd-urls-in-wordpress/",
+            "title": "Slow Loading RSD URLs In WordPress",
+            "content_html": "<p>A common mechanism for XML-RPC clients to find out information about your WordPress blog is to look for the <a href=\"http://cyber.law.harvard.edu/blogs/gems/tech/rsd.html\">Really Simple Discovery (RSD)</a> URL.  The RSD contains information about the available APIs that WordPress supports.  A typical discovery process would look something like this:</p>\n<ol>\n<li>Request your blog URL, http://example.com/ and look for the RSD link element</li>\n<li>Request the RSD URL and parse the provided info</li>\n<li>Determine which API information to use</li>\n<li>Communicate with your blog via the determined API</li>\n</ol>\n<p>On rare occasions I&#8217;ve seen reports where the RSD URL (which looks like http://example.com/xmlrpc.php?rsd in WordPress) will take a very long time to load (3 minutes or more) even though the rest of the site responds very quickly.  This can cause problems for XML-RPC clients (like the <a href=\"http://iphone.wordpress.org/\">WordPress iPhone app</a>) if they timeout trying to get the RSD data.  The reports of this problem were few and far between, without much of a common thread.  Until today.</p>\n<p><a href=\"http://core.trac.wordpress.org/ticket/9380\">Ticket 9380</a> showed up earlier today, reported by foks.  Foks noticed that the SSL check being done when the RSD URL was requested didn&#8217;t have a timeout set, so if the conditions were just right it will wait for the system level timeout before failing.  That explained why the RSD request would take so long in some cases.  If you&#8217;ve run into this problem you can use the trivial one line patch or grab a copy of the <a href=\"http://core.trac.wordpress.org/browser/branches/2.7/wp-includes/functions.php?rev=10831\">wp-includes/functions.php</a> file from the WordPress 2.7.x branch at <a href=\"http://core.trac.wordpress.org/browser/branches/2.7/wp-includes/functions.php?rev=10831&amp;format=txt\">http://core.trac.wordpress.org/browser/branches/2.7/wp-includes/functions.php?rev=10831&amp;format=txt</a> and try it out.</p>\n<p>This fix has been applied to both the 2.7.x branch (meaning it will be part of a 2.7.2 release if there is one) and -trunk (meaning it will be part of the upcoming 2.8 release).</p>\n",
+            "content_text": "A common mechanism for XML-RPC clients to find out information about your WordPress blog is to look for the Really Simple Discovery (RSD) URL.  The RSD contains information about the available APIs that WordPress supports.  A typical discovery process would look something like this:\n\nRequest your blog URL, http://example.com/ and look for the RSD link element\nRequest the RSD URL and parse the provided info\nDetermine which API information to use\nCommunicate with your blog via the determined API\n\nOn rare occasions I&#8217;ve seen reports where the RSD URL (which looks like http://example.com/xmlrpc.php?rsd in WordPress) will take a very long time to load (3 minutes or more) even though the rest of the site responds very quickly.  This can cause problems for XML-RPC clients (like the WordPress iPhone app) if they timeout trying to get the RSD data.  The reports of this problem were few and far between, without much of a common thread.  Until today.\nTicket 9380 showed up earlier today, reported by foks.  Foks noticed that the SSL check being done when the RSD URL was requested didn&#8217;t have a timeout set, so if the conditions were just right it will wait for the system level timeout before failing.  That explained why the RSD request would take so long in some cases.  If you&#8217;ve run into this problem you can use the trivial one line patch or grab a copy of the wp-includes/functions.php file from the WordPress 2.7.x branch at http://core.trac.wordpress.org/browser/branches/2.7/wp-includes/functions.php?rev=10831&amp;format=txt and try it out.\nThis fix has been applied to both the 2.7.x branch (meaning it will be part of a 2.7.2 release if there is one) and -trunk (meaning it will be part of the upcoming 2.8 release).",
+            "date_published": "2009-03-23T15:52:51-06:00",
+            "date_modified": "2009-03-23T15:52:51-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "rsd",
+                "WordPress",
+                "xml-rpc",
+                "Posts"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>new-year &#8211; Joseph Scott</title>
+	<atom:link href="/tag/new-year/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 01 Jan 2016 16:59:57 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Start of 2016</title>
+		<link>/2016/01/01/start-of-2016/</link>
+					<comments>/2016/01/01/start-of-2016/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 01 Jan 2016 16:59:57 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<category><![CDATA[new-year]]></category>
+		<category><![CDATA[politics]]></category>
+		<category><![CDATA[predictions]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14751</guid>
+
+					<description><![CDATA[Today I&#8217;m joining the time honored tradition of making predictions for the new year. Translation: wild guesses and obvious statements. 1. Apple Makes A Move To Improve Internet Services Perhaps Apple&#8217;s single biggest weak spot has been online services. It is clear they know how to do a good job making hardware, all the way [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Today I&#8217;m joining the time honored tradition of making predictions for the new year.  Translation: wild guesses and obvious statements.</p>
+<h4>1. <a href="http://www.apple.com/">Apple</a> Makes A Move To Improve Internet Services</h4>
+<p>Perhaps Apple&#8217;s single biggest weak spot has been online services.  It is clear they know how to do a good job making hardware, all the way down to the chip level in some cases, and software to run on that hardware.  Execution of large scale Internet services hasn&#8217;t gone as smoothly.</p>
+<p>In the past people have suggested that Apple might buy an existing company to help bring in large scale web DNA.  I think what is more likely is that Apple makes a few key high level hires that build out new teams.</p>
+<p>This won&#8217;t be an easy thing for Apple.  When I look around at more recent successful web startups I see lots of sharing.  That will be a significant change of pace for a company that invests heavily in secrecy.</p>
+<p>I consider <a href="https://swift.org/">Swift</a> going open source a positive sign.</p>
+<h4>2. <a href="http://www.lua.org/">Lua</a> Gets More Attention</h4>
+<p>Cloudflare has been pushing the <a href="https://blog.cloudflare.com/pushing-nginx-to-its-limit-with-lua/">Nginx + Lua</a> combination for years now.  I consider that particular combination one of the most under rated technology stacks around.</p>
+<p>If you were heavy into all the microservices talk during 2015 then Lua+Nginx is an exciting combination.  I wouldn&#8217;t be surprised if AWS launches a new service around Lua.</p>
+<p>I recommend <a href="https://openresty.org/">OpenResty</a> ( a build of Nginx with Lua ) and <a href="http://lua.space/">lua.space</a> ( community news ).</p>
+<h4>3. Flash First Video Becomes Shameful</h4>
+<p>We have pretty good support for the <a href="http://caniuse.com/#feat=video">video element</a>, it is time to move Flash for video to a <a href="http://docs.webplatform.org/wiki/html/elements/video#Flash_fallback">fallback</a> position.  You are probably already doing that for mobile devices, time to go all in.</p>
+<h4>4. More Open Source From Microsoft</h4>
+<p>Microsoft has started to gain back some geek cred with their push into making more of their code open source ( check out <a href="https://github.com/Microsoft">https://github.com/Microsoft</a> ).  My prediction is they go even further, announcing one of their larger key products will go open source.  The big bets would be Exchange or SQL Server.  The other big candidate would a component of Office.</p>
+<h4>5. Strange U.S. Presidential Politics</h4>
+<p>If you&#8217;d asked about this a year ago, I would have focused on how much I&#8217;m not keen on family dynasties for President.  At the time Jeb Bush and Hillary Clinton were safe bets on being the candidates from their respective parties.  One had a brother and father who were President, the other a husband.  Since then there have been dramatic changes on the Republican side, and very little change on the Democratic side.</p>
+<p>My prediction: things get even stranger before the general election.  This might be the year for a <a href="http://www.nbcnews.com/politics/2016-election/contested-convention-almost-everything-you-need-know-n478736">contested convention</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/01/01/start-of-2016/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

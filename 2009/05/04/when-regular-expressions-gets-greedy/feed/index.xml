@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: When Regular Expressions Get Greedy	</title>
+	<atom:link href="/2009/05/04/when-regular-expressions-gets-greedy/feed/" rel="self" type="application/rss+xml" />
+	<link>/2009/05/04/when-regular-expressions-gets-greedy/</link>
+	<description></description>
+	<lastBuildDate>Mon, 04 May 2009 20:21:43 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/05/04/when-regular-expressions-gets-greedy/#comment-2963</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 04 May 2009 20:21:43 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1214#comment-2963</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/05/04/when-regular-expressions-gets-greedy/#comment-2962&quot;&gt;Beau Lebens&lt;/a&gt;.
+
+True, but that wouldn&#039;t have illustrated what happens when you get hit by greedy regular expressions :-)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/05/04/when-regular-expressions-gets-greedy/#comment-2962">Beau Lebens</a>.</p>
+<p>True, but that wouldn&#8217;t have illustrated what happens when you get hit by greedy regular expressions 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Beau Lebens		</title>
+		<link>/2009/05/04/when-regular-expressions-gets-greedy/#comment-2962</link>
+
+		<dc:creator><![CDATA[Beau Lebens]]></dc:creator>
+		<pubDate>Mon, 04 May 2009 20:16:12 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1214#comment-2962</guid>
+
+					<description><![CDATA[You could also have just used a more restrictive character range/class in your regex to avoid this.
+
+something like:
+
+&#039;&#124;anamehere+([^@]+)@.*$&#124;
+
+or
+
+&#039;&#124;anamehere+([a-zA-Z0-9-]*)@.*$&#124;
+
+:)]]></description>
+			<content:encoded><![CDATA[<p>You could also have just used a more restrictive character range/class in your regex to avoid this.</p>
+<p>something like:</p>
+<p>&#8216;|anamehere+([^@]+)@.*$|</p>
+<p>or</p>
+<p>&#8216;|anamehere+([a-zA-Z0-9-]*)@.*$|</p>
+<p>🙂</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>rfc &#8211; Joseph Scott</title>
+	<atom:link href="/tag/rfc/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 04 Jun 2015 14:36:11 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>HTTP/2, RFC 7540</title>
+		<link>/2015/06/04/http2-rfc-7540/</link>
+					<comments>/2015/06/04/http2-rfc-7540/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 04 Jun 2015 14:36:11 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http2]]></category>
+		<category><![CDATA[rfc]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12723</guid>
+
+					<description><![CDATA[HTTP/2 is official, with RFC 7540. Alongside RFC 7541, HPACK: Header Compression for HTTP/2. Worth reading these related posts: HTTP/2 is Done by Mark Nottingham ( chair of the IETF HTTP Working Group ) and RFC 7540 is HTTP/2 from Daniel Stenberg ( author of cURL ).]]></description>
+										<content:encoded><![CDATA[<p>HTTP/2 is official, with <a href="https://tools.ietf.org/html/rfc7540">RFC 7540</a>.  Alongside <a href="http://tools.ietf.org/html/rfc7541">RFC 7541</a>, HPACK: Header Compression for HTTP/2.</p>
+<p>Worth reading these related posts: <a href="https://www.mnot.net/blog/2015/02/18/http2">HTTP/2 is Done</a> by Mark Nottingham ( chair of the IETF HTTP Working Group ) and <a href="http://daniel.haxx.se/blog/2015/05/15/rfc-7540-is-http2/">RFC 7540 is HTTP/2</a> from Daniel Stenberg ( author of <a href="http://curl.haxx.se/">cURL</a> ).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/06/04/http2-rfc-7540/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>TCP Over HTTP, A.K.A. HTTP 2.0</title>
+		<link>/2013/07/09/tcp-over-http-a-k-a-http-2-0/</link>
+					<comments>/2013/07/09/tcp-over-http-a-k-a-http-2-0/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 09 Jul 2013 16:26:16 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[rfc]]></category>
+		<category><![CDATA[tcp/ip]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=8542</guid>
+
+					<description><![CDATA[Skimming through the HTTP 2.0 draft RFC that was posted yesterday I&#8217;m left with the distinct feeling of implementing TCP on top of HTTP: I&#8217;m in the camp that believes that future versions of HTTP should continue to be a text based protocol ( with compression support ). Most weeks I look at several raw [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Skimming through the <a href='http://tools.ietf.org/html/draft-ietf-httpbis-http2-04'>HTTP 2.0 draft RFC</a> that was posted yesterday I&#8217;m left with the distinct feeling of implementing TCP on top of HTTP:</p>
+<figure style="width: 603px" class="wp-caption aligncenter"><a href="http://tools.ietf.org/html/draft-ietf-httpbis-http2-04#section-4"><img loading="lazy" src="https://sharedat.net/f/dE/dEa3/http2-framing.png" width="603" height="640" alt="HTTP 2.0 Framing" class /></a><figcaption class="wp-caption-text">HTTP 2.0 Framing</figcaption></figure>
+<p>I&#8217;m in the camp that believes that future versions of HTTP should continue to be a text based protocol ( with compression support ).  </p>
+<p>Most weeks I look at several raw HTTP requests and responses.  Yes, there will still be tools like cURL ( which I love ) to dig into HTTP transactions, so it isn&#8217;t the end of the world.  Still, I am sad to see something that is currently fairly easy to follow turn into something significantly more complex.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/07/09/tcp-over-http-a-k-a-http-2-0/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

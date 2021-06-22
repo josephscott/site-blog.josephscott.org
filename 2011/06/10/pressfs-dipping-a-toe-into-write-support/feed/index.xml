@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: pressfs &#8211; Dipping a Toe into Write Support	</title>
+	<atom:link href="/2011/06/10/pressfs-dipping-a-toe-into-write-support/feed/" rel="self" type="application/rss+xml" />
+	<link>/2011/06/10/pressfs-dipping-a-toe-into-write-support/</link>
+	<description></description>
+	<lastBuildDate>Mon, 13 Jun 2011 16:52:54 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/06/10/pressfs-dipping-a-toe-into-write-support/#comment-3752</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 13 Jun 2011 16:52:54 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4301#comment-3752</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/06/10/pressfs-dipping-a-toe-into-write-support/#comment-3751&quot;&gt;scribu&lt;/a&gt;.
+
+There definitely needs more experimenting around different ways to structure the data.  As you mentioned in the issue linked above, sites with thousands and thousands of posts would benefit from a more hierarchical structure.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/06/10/pressfs-dipping-a-toe-into-write-support/#comment-3751">scribu</a>.</p>
+<p>There definitely needs more experimenting around different ways to structure the data.  As you mentioned in the issue linked above, sites with thousands and thousands of posts would benefit from a more hierarchical structure.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: scribu		</title>
+		<link>/2011/06/10/pressfs-dipping-a-toe-into-write-support/#comment-3751</link>
+
+		<dc:creator><![CDATA[scribu]]></dc:creator>
+		<pubDate>Mon, 13 Jun 2011 16:30:15 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4301#comment-3751</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/06/10/pressfs-dipping-a-toe-into-write-support/#comment-3750&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+Yep, thanks. Openend Issue #1:
+
+https://github.com/josephscott/pressfs/issues/1]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/06/10/pressfs-dipping-a-toe-into-write-support/#comment-3750">Joseph Scott</a>.</p>
+<p>Yep, thanks. Openend Issue #1:</p>
+<p><a href="https://github.com/josephscott/pressfs/issues/1" rel="nofollow ugc">https://github.com/josephscott/pressfs/issues/1</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/06/10/pressfs-dipping-a-toe-into-write-support/#comment-3750</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 13 Jun 2011 16:15:28 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4301#comment-3750</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/06/10/pressfs-dipping-a-toe-into-write-support/#comment-3749&quot;&gt;scribu&lt;/a&gt;.
+
+Nice catch!  I usually have WP_DEBUG turned on for my dev instance, I must have turned it off at some point.  I&#039;ve pushed out a fix to github, so you should be able to give this another try.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/06/10/pressfs-dipping-a-toe-into-write-support/#comment-3749">scribu</a>.</p>
+<p>Nice catch!  I usually have WP_DEBUG turned on for my dev instance, I must have turned it off at some point.  I&#8217;ve pushed out a fix to github, so you should be able to give this another try.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: scribu		</title>
+		<link>/2011/06/10/pressfs-dipping-a-toe-into-write-support/#comment-3749</link>
+
+		<dc:creator><![CDATA[scribu]]></dc:creator>
+		<pubDate>Mon, 13 Jun 2011 16:05:39 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4301#comment-3749</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/06/10/pressfs-dipping-a-toe-into-write-support/#comment-3748&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+Ah, I had WP_DEBUG on:
+
+
+Notice: Undefined property: PressFS::$ID in /home/lomo/tweets.scribu.net/wp-content/plugins/pressfs/class-pressfs.php on line 33
+{&quot;_is_error&quot;:false,&quot;_error_msg&quot;:&quot;&quot;,&quot;users&quot;:{&quot;scribu&quot;:{&quot;id&quot;:&quot;1&quot;,&quot;login&quot;:&quot;scribu&quot;,&quot;nice-name&quot;:&quot;scribu&quot;,&quot;email&quot;:&quot;scribu@gmail.com&quot;,&quot;url&quot;:&quot;&quot;,&quot;registered&quot;:&quot;2010-10-06 22:32:56&quot;,&quot;display-name&quot;:&quot;scribu&quot;,&quot;first-name&quot;:&quot;&quot;,&quot;last-name&quot;:&quot;&quot;}}}
+
+
+A perfect example of why preventing notices is important. :)
+
+If I disable WP_DEBUG, it works ok.
+
+By the way, for those that are wondering how to stop the program, I found this command works pretty well:
+
+sudo umount ~/your/mount/point]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/06/10/pressfs-dipping-a-toe-into-write-support/#comment-3748">Joseph Scott</a>.</p>
+<p>Ah, I had WP_DEBUG on:</p>
+<p>Notice: Undefined property: PressFS::$ID in /home/lomo/tweets.scribu.net/wp-content/plugins/pressfs/class-pressfs.php on line 33<br />
+{&#8220;_is_error&#8221;:false,&#8221;_error_msg&#8221;:&#8221;&#8221;,&#8221;users&#8221;:{&#8220;scribu&#8221;:{&#8220;id&#8221;:&#8221;1&#8243;,&#8221;login&#8221;:&#8221;scribu&#8221;,&#8221;nice-name&#8221;:&#8221;scribu&#8221;,&#8221;email&#8221;:&#8221;scribu@gmail.com&#8221;,&#8221;url&#8221;:&#8221;&#8221;,&#8221;registered&#8221;:&#8221;2010-10-06 22:32:56&#8243;,&#8221;display-name&#8221;:&#8221;scribu&#8221;,&#8221;first-name&#8221;:&#8221;&#8221;,&#8221;last-name&#8221;:&#8221;&#8221;}}}</p>
+<p>A perfect example of why preventing notices is important. 🙂</p>
+<p>If I disable WP_DEBUG, it works ok.</p>
+<p>By the way, for those that are wondering how to stop the program, I found this command works pretty well:</p>
+<p>sudo umount ~/your/mount/point</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/06/10/pressfs-dipping-a-toe-into-write-support/#comment-3748</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 13 Jun 2011 15:35:00 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4301#comment-3748</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/06/10/pressfs-dipping-a-toe-into-write-support/#comment-3747&quot;&gt;scribu&lt;/a&gt;.
+
+Ouch, simplejson didn&#039;t like the text your site sent back.  Try adding this &lt;code&gt;print &quot;&#062;&#062; JSON : &quot;, content&lt;/code&gt; on line 450, which would look like:
+
+&lt;code&gt;
+        print &quot;&#062;&#062; WP REQUEST : &quot; + req_url
+        http = httplib2.Http()
+        resp, content = http.request(
+            req_url,
+            &#039;POST&#039;,
+            urllib.urlencode( post_vars ),
+            headers = req_headers
+        )
+        print &quot;&#062;&#062; JSON : &quot;, content
+
+&lt;/code&gt;
+
+That string is likely to be quite long (depending on how many posts you have), so make sure your terminal buffer is cranked up.  From the error you mentioned the invalid JSON is right at the beginning of the string.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/06/10/pressfs-dipping-a-toe-into-write-support/#comment-3747">scribu</a>.</p>
+<p>Ouch, simplejson didn&#8217;t like the text your site sent back.  Try adding this <code>print "&gt;&gt; JSON : ", content</code> on line 450, which would look like:</p>
+<p><code><br />
+        print "&gt;&gt; WP REQUEST : " + req_url<br />
+        http = httplib2.Http()<br />
+        resp, content = http.request(<br />
+            req_url,<br />
+            'POST',<br />
+            urllib.urlencode( post_vars ),<br />
+            headers = req_headers<br />
+        )<br />
+        print "&gt;&gt; JSON : ", content</p>
+<p></code></p>
+<p>That string is likely to be quite long (depending on how many posts you have), so make sure your terminal buffer is cranked up.  From the error you mentioned the invalid JSON is right at the beginning of the string.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: scribu		</title>
+		<link>/2011/06/10/pressfs-dipping-a-toe-into-write-support/#comment-3747</link>
+
+		<dc:creator><![CDATA[scribu]]></dc:creator>
+		<pubDate>Sun, 12 Jun 2011 08:40:39 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4301#comment-3747</guid>
+
+					<description><![CDATA[I just installed this on a test site. Going to the mount directory, I see the 4 main dirs: categories, posts, tags and users, but they&#039;re all empty.
+
+Console output:
+
+
+&#062;&#062; WP REQUEST : http://mysite.com/?pressfs=1&#038;call=get_post_list
+Traceback (most recent call last):
+  File &quot;pressfs.py&quot;, line 306, in readdir
+    posts = self.wp_request( &#039;get_post_list&#039; )[&#039;posts&#039;]
+  File &quot;pressfs.py&quot;, line 452, in wp_request
+    &#039;data&#039;	: simplejson.loads( content ),
+  File &quot;/usr/lib/python2.7/dist-packages/simplejson/__init__.py&quot;, line 384, in loads
+    return _default_decoder.decode(s)
+  File &quot;/usr/lib/python2.7/dist-packages/simplejson/decoder.py&quot;, line 402, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File &quot;/usr/lib/python2.7/dist-packages/simplejson/decoder.py&quot;, line 420, in raw_decode
+    raise JSONDecodeError(&quot;No JSON object could be decoded&quot;, s, idx)
+simplejson.decoder.JSONDecodeError: No JSON object could be decoded: line 2 column 1 (char 1)
+   unique: 254, error: -22 (Invalid argument), outsize: 16
+]]></description>
+			<content:encoded><![CDATA[<p>I just installed this on a test site. Going to the mount directory, I see the 4 main dirs: categories, posts, tags and users, but they&#8217;re all empty.</p>
+<p>Console output:</p>
+<p>&gt;&gt; WP REQUEST : <a href="http://mysite.com/?pressfs=1&#038;call=get_post_list" rel="nofollow ugc">http://mysite.com/?pressfs=1&#038;call=get_post_list</a><br />
+Traceback (most recent call last):<br />
+  File &#8220;pressfs.py&#8221;, line 306, in readdir<br />
+    posts = self.wp_request( &#8216;get_post_list&#8217; )[&#8216;posts&#8217;]<br />
+  File &#8220;pressfs.py&#8221;, line 452, in wp_request<br />
+    &#8216;data&#8217;	: simplejson.loads( content ),<br />
+  File &#8220;/usr/lib/python2.7/dist-packages/simplejson/__init__.py&#8221;, line 384, in loads<br />
+    return _default_decoder.decode(s)<br />
+  File &#8220;/usr/lib/python2.7/dist-packages/simplejson/decoder.py&#8221;, line 402, in decode<br />
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())<br />
+  File &#8220;/usr/lib/python2.7/dist-packages/simplejson/decoder.py&#8221;, line 420, in raw_decode<br />
+    raise JSONDecodeError(&#8220;No JSON object could be decoded&#8221;, s, idx)<br />
+simplejson.decoder.JSONDecodeError: No JSON object could be decoded: line 2 column 1 (char 1)<br />
+   unique: 254, error: -22 (Invalid argument), outsize: 16</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>cdn &#8211; Joseph Scott</title>
+	<atom:link href="/tag/cdn/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 04 Jan 2021 21:34:17 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>The Google CDN</title>
+		<link>/2021/01/04/the-google-cdn/</link>
+					<comments>/2021/01/04/the-google-cdn/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 04 Jan 2021 21:34:17 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[cdn]]></category>
+		<category><![CDATA[data-center]]></category>
+		<category><![CDATA[google]]></category>
+		<guid isPermaLink="false">/?p=15808</guid>
+
+					<description><![CDATA[The Google Network Infrastructure page describes their various data center locations. What really stood out was their &#8220;Edge Nodes (Google Global Cache, or GGC)&#8221; map: Compare that to the map included in this 2014 Open Networking Summit talk: I won&#8217;t bother trying to count the dots on each map ( and I haven&#8217;t been able [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The <a href="https://peering.google.com/#/infrastructure">Google Network Infrastructure</a> page describes their various data center locations.  What really stood out was their &#8220;Edge Nodes (Google Global Cache, or GGC)&#8221; map:</p>
+<p><a href="/wp-content/uploads/2021/01/google-edge-nodes.png"><img loading="lazy" src="/wp-content/uploads/2021/01/google-edge-nodes.png" alt="" width="586" height="440" class="aligncenter size-full wp-image-18373" srcset="/wp-content/uploads/2021/01/google-edge-nodes.png 586w, /wp-content/uploads/2021/01/google-edge-nodes-300x225.png 300w" sizes="(max-width: 586px) 100vw, 586px" /></a></p>
+<p>Compare that to the map included in this <a href="https://www.youtube.com/watch?t=910&#038;v=n4gOZrUwWmc">2014 Open Networking Summit talk</a>:</p>
+<p><a href="/wp-content/uploads/2021/01/google-2014-cdn.png"><img loading="lazy" src="/wp-content/uploads/2021/01/google-2014-cdn.png" alt="" width="916" height="531" class="aligncenter size-full wp-image-18376" srcset="/wp-content/uploads/2021/01/google-2014-cdn.png 916w, /wp-content/uploads/2021/01/google-2014-cdn-300x174.png 300w, /wp-content/uploads/2021/01/google-2014-cdn-768x445.png 768w" sizes="(max-width: 916px) 100vw, 916px" /></a></p>
+<p>I won&#8217;t bother trying to count the dots on each map ( and I haven&#8217;t been able to find a list of locations any where ), but I think it is safe to say that the number has increased significantly over the last <del>six</del> seven years.</p>
+<p>At some point having a data center in your town will be at the same level as having local power, water, and sewer services.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2021/01/04/the-google-cdn/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Safari Can Be Stingy</title>
+		<link>/2018/09/18/safari-can-be-stingy/</link>
+					<comments>/2018/09/18/safari-can-be-stingy/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 18 Sep 2018 17:06:18 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[andy-davies]]></category>
+		<category><![CDATA[cache]]></category>
+		<category><![CDATA[cdn]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[safari]]></category>
+		<guid isPermaLink="false">/?p=16981</guid>
+
+					<description><![CDATA[Andy Davies dug into the shared caching situation on Safari, in Safari, Caching and Third-Party Resources. The shared cache in Safari may be more stingy that most people would have guessed: What this means is Safari caches content from third-party origins separately for each document origin, so for example if two sites, say a.com and [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Andy Davies dug into the shared caching situation on Safari, in <a href="https://andydavies.me/blog/2018/09/06/safari-caching-and-3rd-party-resources/">Safari, Caching and Third-Party Resources</a>.  The shared cache in Safari may be more stingy that most people would have guessed:</p>
+<blockquote><p>
+What this means is Safari caches content from third-party origins separately for each document origin, so for example if two sites, say a.com and b.com both use a common library, third-party.com/script.js, then script.js will be cached separately for both sites.</p>
+<p>And if someone has an ‘empty’ cache and visits the first site and then the other, script.js will be downloaded twice.
+</p></blockquote>
+<p>This is another situation of having to measure to make sure that the rule of thumb is actually helping in your specific case.  The numbers from the HTTP Archive research were not exciting:</p>
+<blockquote><p>
+The March 2018 HTTP Archive (desktop) run has data for approximately 466,000 pages and the most popular public library, jQuery 1.11.3 from ajax.googleapis.com (served over HTTPS), is used by just over 1% of them.</p>
+<p>I’m not sure what level adoption needs to reach for shared caching to achieve critical mass but 1% certainly seems unlikely to be high enough and even Google’s most popular font – OpenSans – is only requested by around 9% of pages in the HTTP Archive.
+</p></blockquote>
+<p>If 9% ends up being the upper bound for shared cache hits, we need to start re-thinking our approach.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/09/18/safari-can-be-stingy/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>To CDN Or Not To CDN</title>
+		<link>/2015/07/24/to-cdn-or-not-to-cdn/</link>
+					<comments>/2015/07/24/to-cdn-or-not-to-cdn/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 24 Jul 2015 14:01:47 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[cdn]]></category>
+		<category><![CDATA[http2]]></category>
+		<category><![CDATA[zack-tollman]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9885</guid>
+
+					<description><![CDATA[Zack Tollman on Why we don&#8217;t use a CDN: A story about SPDY and SSL. The simple &#8220;rule&#8221; of always use a CDN may not always be a good idea. When in doubt, measure. Then measure again even when not in doubt. Expect these types of questions and discussions to come up more and more [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Zack Tollman on <a href='https://thethemefoundry.com/blog/why-we-dont-use-a-cdn-spdy-ssl/'>Why we don&#8217;t use a CDN: A story about SPDY and SSL</a>.</p>
+<p>The simple &#8220;rule&#8221; of always use a CDN may not always be a good idea.  When in doubt, measure.  Then measure again even when not in doubt.</p>
+<p>Expect these types of questions and discussions to come up more and more as HTTP/2 deployments continue.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/07/24/to-cdn-or-not-to-cdn/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>User Agent Sniffing at Google Libraries CDN</title>
+		<link>/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/</link>
+					<comments>/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 01 Nov 2010 15:06:26 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[cdn]]></category>
+		<category><![CDATA[compression]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[user-agent]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3081</guid>
+
+					<description><![CDATA[I recently took a closer look at Google Libraries, their content delivery network (CDN) for various Javascript libraries, and HTTP compression. I started with a simple test: [sourcecode syn=&#8221;plain&#8221;] curl -O -v &#8211; compressed http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js [/sourcecode] This downloads a minified version of jQuery 1.4.3, with --compressed, which means I&#8217;d like the response to be compressed. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I recently took a closer look at <a href="http://code.google.com/apis/libraries/">Google Libraries</a>, their content delivery network (CDN) for various Javascript libraries, and HTTP compression.  I started with a simple test:</p>
+<p>[sourcecode syn=&#8221;plain&#8221;]<br />
+curl -O -v &#8211;compressed http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js<br />
+[/sourcecode]</p>
+<p>This downloads a minified version of jQuery 1.4.3, with <code>--compressed</code>, which means I&#8217;d like the response to be compressed.  The HTTP request looked like:</p>
+<p>[sourcecode syn=&#8221;plain&#8221;]<br />
+&gt; GET /ajax/libs/jquery/1.4.3/jquery.min.js HTTP/1.1<br />
+&gt; User-Agent: curl/7.16.4 (i386-apple-darwin9.0) libcurl/7.16.4 OpenSSL/0.9.7l zlib/1.2.3<br />
+&gt; Host: ajax.googleapis.com<br />
+&gt; Accept: */*<br />
+&gt; Accept-Encoding: deflate, gzip<br />
+&gt;<br />
+[/sourcecode]</p>
+<p>The  response from Google was:</p>
+<p>[sourcecode syn=&#8221;plain&#8221;]<br />
+&lt; HTTP/1.1 200 OK<br />
+&lt; Content-Type: text/javascript; charset=UTF-8<br />
+&lt; Last-Modified: Fri, 15 Oct 2010 18:25:24 GMT<br />
+&lt; Date: Fri, 29 Oct 2010 03:27:16 GMT<br />
+&lt; Expires: Sat, 29 Oct 2011 03:27:16 GMT<br />
+&lt; Vary: Accept-Encoding<br />
+&lt; X-Content-Type-Options: nosniff<br />
+&lt; Server: sffe<br />
+&lt; Cache-Control: public, max-age=31536000<br />
+&lt; Age: 145355<br />
+&lt; Transfer-Encoding: chunked<br />
+&lt;<br />
+[/sourcecode]</p>
+<p>I was surprised that there was no <code>Content-Encoding: gzip</code> header in the response, meaning the response was NOT compressed.  I wasn&#8217;t quite sure what to make of this at first.  No way would Google forget to turn on HTTP compression, I must have missed something.  I stared at the HTTP response for sometime, trying to figure out what I was missing.  Nothing came to mind, so  I ran another test.</p>
+<p>This time I made a request for http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js in Firefox 3.6.12 on Mac OS X and used Firebug to inspect the HTTP transaction.  The request:</p>
+<p>[sourcecode lang=&#8221;plain&#8221;]<br />
+GET /ajax/libs/jquery/1.4.3/jquery.min.js HTTP/1.1<br />
+Host: ajax.googleapis.com<br />
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12<br />
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8<br />
+Accept-Language: en-us,en;q=0.5<br />
+Accept-Encoding: gzip,deflate<br />
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7<br />
+Keep-Alive: 115<br />
+Connection: keep-alive<br />
+Pragma: no-cache<br />
+Cache-Control: no-cache<br />
+[/sourcecode]</p>
+<p>and the response:</p>
+<p>[sourcecode lang=&#8221;plain&#8221;]<br />
+HTTP/1.1 200 OK<br />
+Content-Type: text/javascript; charset=UTF-8<br />
+Last-Modified: Fri, 15 Oct 2010 18:25:24 GMT<br />
+Date: Fri, 29 Oct 2010 03:12:35 GMT<br />
+Expires: Sat, 29 Oct 2011 03:12:35 GMT<br />
+Vary: Accept-Encoding<br />
+X-Content-Type-Options: nosniff<br />
+Server: sffe<br />
+Content-Encoding: gzip<br />
+Cache-Control: public, max-age=31536000<br />
+Content-Length: 26769<br />
+Age: 147128<br />
+[/sourcecode]</p>
+<p>This time the content was compressed.  There were several differences in the request headers between curl and Firefox, I decided to start with just one, the &#8220;User-Agent&#8221;.  I modified my initial curl request to include the User-Agent string from Firefox:</p>
+<p>[sourcecode syn=&#8221;plain&#8221;]<br />
+curl -O -v &#8211;compressed &#8211;user-agent &quot;Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12&quot; http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js<br />
+[/sourcecode]</p>
+<p>The request:</p>
+<p>[sourcecode syn=&#8221;plain&#8221;]<br />
+&gt; GET /ajax/libs/jquery/1.4.3/jquery.min.js HTTP/1.1<br />
+&gt; User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12<br />
+&gt; Host: ajax.googleapis.com<br />
+&gt; Accept: */*<br />
+&gt; Accept-Encoding: deflate, gzip<br />
+&gt;<br />
+[/sourcecode]</p>
+<p>and the response:</p>
+<p>[sourcecode syn=&#8221;plain&#8221;]<br />
+&lt; HTTP/1.1 200 OK<br />
+&lt; Content-Type: text/javascript; charset=UTF-8<br />
+&lt; Last-Modified: Fri, 15 Oct 2010 18:25:24 GMT<br />
+&lt; Date: Fri, 29 Oct 2010 03:33:09 GMT<br />
+&lt; Expires: Sat, 29 Oct 2011 03:33:09 GMT<br />
+&lt; Vary: Accept-Encoding<br />
+&lt; X-Content-Type-Options: nosniff<br />
+&lt; Server: sffe<br />
+&lt; Content-Encoding: gzip<br />
+&lt; Cache-Control: public, max-age=31536000<br />
+&lt; Content-Length: 26769<br />
+&lt; Age: 147018<br />
+&lt;<br />
+[/sourcecode]</p>
+<p>Sure enough, I got back a compressed response.  Google was sniffing the User-Agent string to determine if a compressed response should be sent.  It didn&#8217;t matter if the client asked for a compressed response ( <code>Accept-Encoding: deflate, gzip</code>) or not.  What still wasn&#8217;t clear is if this was a black list approach (singling out curl) or a white list approach (Firefox is okay).  So I tried a few other requests with various User-Agent strings.  First up, no User-Agent set at all:</p>
+<p>[sourcecode syn=&#8221;plain&#8221;]<br />
+curl -O -v &#8211;compressed &#8211;user-agent &quot;&quot; http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js<br />
+[/sourcecode]</p>
+<p>Not compressed.  Next a made up string:</p>
+<p>[sourcecode syn=&#8221;plain&#8221;]<br />
+curl -O -v &#8211;compressed &#8211;user-agent &quot;JosephScott/1.0 test/2.0&quot; http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js<br />
+[/sourcecode]</p>
+<p>Not compressed.  At this point I think Google is using a white list approach, if you aren&#8217;t on the list of approved User-Agent strings for getting a compressed response then you won&#8217;t get one, no matter how nicely you ask.</p>
+<p>I collected a few more browser samples as well, just to be sure:</p>
+<ul>
+<li>Safari 5.0.2 on Mac OS X &#8211; compressed</li>
+<li>IE 8 on Windows XP &#8211; compressed</li>
+<li>Firefox 3.6.12 on Windows XP &#8211; compressed</li>
+<li>Chrome 7.0.517.41 beta on Windows XP &#8211; compressed</li>
+<li>Opera 10.63 on Windows XP &#8211; NOT compressed</li>
+<li>Safari 5.0.2 on Windows XP &#8211; compressed</li>
+</ul>
+<p>One more time, curl using the IE 8 User-Agent string:</p>
+<p>[sourcecode syn=&#8221;plain&#8221;]<br />
+curl -O -v &#8211;compressed &#8211;user-agent &quot;Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET4.0C;&quot; http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js<br />
+[/sourcecode]</p>
+<p>Compressed.</p>
+<p>Since I can manipulate the response based on the User-Agent value I&#8217;m left to conclude that the Google Library CDN sniffs the User-Agent string to determine if it will respond with a compressed result.  From what I&#8217;ve seen so far Google Library contains a white list of approved User-Agent patterns that it checks against to determine if it will honor the compression request.</p>
+<p>If you are on a current version of one of the popular browsers you will get a compressed response.  For those using anything else you&#8217;ll have to test to confirm if Google Library will honor your request for compressed content.  Opera users are just plain out of luck, even the most recent version gets an uncompressed response.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/feed/</wfw:commentRss>
+			<slash:comments>11</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>safari &#8211; Joseph Scott</title>
+	<atom:link href="/tag/safari/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 03 Apr 2020 19:11:48 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Safari: Full Third-Party Cookie Blocking</title>
+		<link>/2020/04/03/safari-full-third-party-cookie-blocking/</link>
+					<comments>/2020/04/03/safari-full-third-party-cookie-blocking/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 03 Apr 2020 19:11:48 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[cookies]]></category>
+		<category><![CDATA[itp]]></category>
+		<category><![CDATA[safari]]></category>
+		<guid isPermaLink="false">/?p=18143</guid>
+
+					<description><![CDATA[Remember all the way back to mid-January when I wrote about The End Of Third Party Cookies On The Web? That was triggered by the Google Chrome announcement that third-party cookies were going away in 2022. At the end I noted that I expected Safari would make a similar move, but sooner: I wouldn’t be [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Remember all the way back to mid-January when I wrote about <a href="/2020/01/15/the-end-of-third-party-cookies-on-the-web/">The End Of Third Party Cookies On The Web</a>?  That was triggered by the <a href="https://blog.chromium.org/2020/01/building-more-private-web-path-towards.html">Google Chrome announcement that third-party cookies were going away in 2022</a>.  At the end I noted that I expected Safari would make a similar move, but sooner:</p>
+<blockquote><p>
+I wouldn’t be surprised if Safari comes out and says they are going to do the same thing. If they do, I would expect them to have an even more aggressive timeline. <strong>My guess: by the end of 2020</strong>.
+</p></blockquote>
+<p>Last week Safari announced that &#8220;<a href="https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/">cookies for cross-site resources are now blocked by default across the board</a>&#8220;.  That change in defaults is part of the upgrade to Safari 13.1.</p>
+<p>So yeah, definitely a more aggressive timeline.</p>
+<p>Now some may respond with: so what, Chrome is the most popular browser in use today.  And they would be right.  What they would be missing is that <a href="https://gs.statcounter.com/browser-market-share/mobile/worldwide/#monthly-201903-202003">Safari has a nearly 25% share of the browser market on mobile devices</a>:</p>
+<p><a href="/wp-content/uploads/2020/04/sc-mobile.png"><img loading="lazy" src="/wp-content/uploads/2020/04/sc-mobile-1024x521.png" alt="" width="580" height="295" class="aligncenter size-large wp-image-18155" srcset="/wp-content/uploads/2020/04/sc-mobile-1024x521.png 1024w, /wp-content/uploads/2020/04/sc-mobile-300x153.png 300w, /wp-content/uploads/2020/04/sc-mobile-768x391.png 768w, /wp-content/uploads/2020/04/sc-mobile-1536x781.png 1536w, /wp-content/uploads/2020/04/sc-mobile-2048x1042.png 2048w, /wp-content/uploads/2020/04/sc-mobile-1200x610.png 1200w, /wp-content/uploads/2020/04/sc-mobile-1980x1007.png 1980w" sizes="(max-width: 580px) 100vw, 580px" /></a></p>
+<p>This move by Safari to start blocking third party cookies now is a big deal.  Combine that with Chrome doing the same thing in a few years means this is what the future of the web is going to look like.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/04/03/safari-full-third-party-cookie-blocking/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The End Of Third Party Cookies On The Web</title>
+		<link>/2020/01/15/the-end-of-third-party-cookies-on-the-web/</link>
+					<comments>/2020/01/15/the-end-of-third-party-cookies-on-the-web/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 15 Jan 2020 21:08:48 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[cookies]]></category>
+		<category><![CDATA[firefox]]></category>
+		<category><![CDATA[safari]]></category>
+		<guid isPermaLink="false">/?p=17971</guid>
+
+					<description><![CDATA[Safari Is Serious I&#8217;ve been dealing with the fallout of Safari ITP ( Intelligent Tracking Prevention ) since mid-2018. It hasn&#8217;t been an easy road, ITP dramatically limits the range of valid uses of third party cookies, and even for the remaining valid uses it required following a strict set of rules. As a user [&#8230;]]]></description>
+										<content:encoded><![CDATA[<h3>Safari Is Serious</h3>
+<p>I&#8217;ve been dealing with the fallout of <a href="https://webkit.org/blog/category/privacy/">Safari ITP</a> ( Intelligent Tracking Prevention ) since mid-2018.  It hasn&#8217;t been an easy road, ITP dramatically limits the range of valid uses of third party cookies, and even for the remaining valid uses it required following a strict set of rules.</p>
+<p>As a user of the web, I liked what ITP was doing.  As a developer, it made things difficult.  Kudos to <a href="https://twitter.com/johnwilander">John Wilander</a> on the WebKit team for taking the time to answer my questions.</p>
+<p>I could see that Apple was serious about this.  While I didn&#8217;t have any inside information as to what all of the browser vendors were planning, I strongly suspected that they would have no choice but to follow suit.  I commented to a co-worker:</p>
+<blockquote><p>
+Remember how happy people where when browsers started blocking pop-up ads?  This could go down a similar road.
+</p></blockquote>
+<p>The details of ITP changed over time, as Apple saw what sites were doing with the new restrictions.  During the summer of 2019 Apple published the <a href="https://webkit.org/tracking-prevention-policy/">WebKit Tracking Prevention</a> &#8211; which made it clear that they were serious, and going to push things even further:</p>
+<blockquote><p>
+There are practices on the web that we do not intend to disrupt, but which may be inadvertently affected because they rely on techniques that can also be used for tracking. We consider this to be unintended impact.</p>
+<p>&#8230;</p>
+<p>When faced with a tradeoff, we will typically prioritize user benefits over preserving current website practices. We believe that that is the role of a web browser, also known as the user agent.
+</p></blockquote>
+<p>Safari Tech Preview already has an experimental feature for disabling all third party cookies.</p>
+<h3>Chrome Samesite and Firefox ETP</h3>
+<p>In 2019 Chrome announced they were going to add support for a new <code>SameSite</code> cookie value: <code>None</code>.  <a href="https://web.dev/samesite-cookies-explained/">SameSite=None</a> changes how Chrome deals with third party cookies by default, but it is fairly easy for servers to add this new value and have everything work as before.</p>
+<p>One additional requirement for <code>SameSite=None</code> is HTTPS.  They went back and forth on that a bit, but ultimately settled on only allowing third party tracking cookies if they were done over HTTPS with the <code>secure</code> cookie attribute.  Given how wide spread HTTPS has become, I didn&#8217;t see this as a huge shift either.</p>
+<p>Both of these SameSite changes in Chrome are not scheduled to be live by default until February 2020, so we still don&#8217;t know exactly what their full impact will be.</p>
+<p>A few months later Firefox <a href="https://blog.mozilla.org/blog/2019/09/03/todays-firefox-blocks-third-party-tracking-cookies-and-cryptomining-by-default/">announced</a> that ETP ( Enhanced Tracking Protection ) would be enabled by default.  This approach was different from Chrome and Safari, in that they were using a <a href="https://disconnect.me/trackerprotection">list of things to block</a>.  They also expanded it beyond third party tracking to cryptomining.</p>
+<p>From my point of view Chrome and Firefox were both making moves in the right direction, but none of them were as big as Safari.</p>
+<h3>Then Chrome Goes Nuclear</h3>
+<p>Because Google makes so much money from ads, and they are able to do that in part because they track you every where, many people thought that Chrome would never get super serious about reducing the power of third party tracking.  That all changed this week:</p>
+<p><a href="https://twitter.com/justinschuh/status/1217115664277803011"><img loading="lazy" src="/wp-content/uploads/2020/01/chrome-cookie-tweet-1024x754.png" alt="" width="580" height="427" class="aligncenter size-large wp-image-17976" srcset="/wp-content/uploads/2020/01/chrome-cookie-tweet-1024x754.png 1024w, /wp-content/uploads/2020/01/chrome-cookie-tweet-300x221.png 300w, /wp-content/uploads/2020/01/chrome-cookie-tweet-768x566.png 768w, /wp-content/uploads/2020/01/chrome-cookie-tweet-1200x884.png 1200w, /wp-content/uploads/2020/01/chrome-cookie-tweet.png 1252w" sizes="(max-width: 580px) 100vw, 580px" /></a></p>
+<p>If Safari ITP was waging a war on third party tracking, then Chrome announced they were hitting the nuclear option: <a href="https://blog.chromium.org/2020/01/building-more-private-web-path-towards.html">Building a more private web: A path towards making third party cookies obsolete</a>.  The quote from their announcement that is getting all the attention is:</p>
+<blockquote><p>
+&#8230; we plan to phase out support for third-party cookies in Chrome. Our intention is to do this within two years.
+</p></blockquote>
+<p>No more third party cookies.  Let that sink in for a minute.</p>
+<p>Chrome is the <a href="https://gs.statcounter.com/">most used browser in the world</a> ( it isn&#8217;t even close ), a change like this is going to impact everyone on the web.  It is so big that there are going to be ramifications I haven&#8217;t even thought of yet.</p>
+<p>I wouldn&#8217;t be surprised if Safari comes out and says they are going to do the same thing.  If they do, I would expect them to have an even more aggressive timeline.  My guess: by the end of 2020.</p>
+<h3>The Clock Is Ticking</h3>
+<p>Now is the time to figure this out, it isn&#8217;t going to be any easier later on.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/01/15/the-end-of-third-party-cookies-on-the-web/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Safari ITP: per page, per iframe</title>
+		<link>/2019/12/11/safari-itp-per-page-per-iframe/</link>
+					<comments>/2019/12/11/safari-itp-per-page-per-iframe/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 11 Dec 2019 18:20:39 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[itp]]></category>
+		<category><![CDATA[john-wilander]]></category>
+		<category><![CDATA[safari]]></category>
+		<guid isPermaLink="false">/?p=17870</guid>
+
+					<description><![CDATA[I was recently chatting with John Wilander ( @johnwilander ) from the WebKit team at Apple about Safari ITP ( Intelligent Tracking Prevention ) and he mentioned something that has been really helpful: Think of it as a per-page, per-frame thing The Storage Request Access API has very specific conditions in relationship to ITP, and [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was recently chatting with John Wilander ( <a href="https://twitter.com/johnwilander">@johnwilander</a> ) from the WebKit team at Apple about Safari ITP ( Intelligent Tracking Prevention ) and he mentioned something that has been really helpful:</p>
+<blockquote><p>
+Think of it as a per-page, per-frame thing
+</p></blockquote>
+<p><a href="/wp-content/uploads/2019/12/safari-itp.png"><img loading="lazy" src="/wp-content/uploads/2019/12/safari-itp.png" alt="" width="765" height="268" class="aligncenter size-full wp-image-17873" srcset="/wp-content/uploads/2019/12/safari-itp.png 765w, /wp-content/uploads/2019/12/safari-itp-300x105.png 300w" sizes="(max-width: 765px) 100vw, 765px" /></a></p>
+<p>The <a href="https://webkit.org/blog/8124/introducing-storage-access-api/">Storage Request Access API</a> has very specific conditions in relationship to ITP, and a whole section on when those permissions can be automatically removed.  That part is worth extra attention:</p>
+<blockquote><p>
+<strong>Access Removal</strong></p>
+<p>Storage access is granted for the life of the document as long as the document’s frame is attached to the DOM. This means:</p>
+<p>&#8211; Access is removed when the sub frame navigates.<br />
+&#8211; Access is removed when the sub frame is detached from the DOM.<br />
+&#8211; Access is removed when the top frame navigates.<br />
+&#8211; Access is removed when the webpage goes away, such as a tab close.
+</p></blockquote>
+<p>Not much wiggle room there.</p>
+<p>The mental model of &#8220;<strong>Safari ITP: per-page, per-frame</strong>&#8221; sums it up nicely.  Thank you <a href="https://twitter.com/johnwilander">@johnwilander</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/12/11/safari-itp-per-page-per-iframe/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>New Safari ITP Debug Mode For MacOS 10.14 Mojave Too</title>
+		<link>/2019/11/19/new-safari-itp-debug-mode-for-macos-10-14-mojave-too/</link>
+					<comments>/2019/11/19/new-safari-itp-debug-mode-for-macos-10-14-mojave-too/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 19 Nov 2019 18:17:34 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[itp]]></category>
+		<category><![CDATA[safari]]></category>
+		<guid isPermaLink="false">/?p=17828</guid>
+
+					<description><![CDATA[In a write up about the Safari ITP ( Intelligent Tracking Prevention ) 2.3 update, there is section that talks about changes to &#8220;ITP Debug Mode In Safari on macOS Catalina&#8221; ( Catalina is 10.15, if you, like me, can never remember which code name goes with which version ). I am still using MacOS [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>In a write up about the <a href="https://webkit.org/blog/9521/intelligent-tracking-prevention-2-3/">Safari ITP ( Intelligent Tracking Prevention ) 2.3 update</a>, there is section that talks about changes to &#8220;ITP Debug Mode In Safari on macOS Catalina&#8221; ( Catalina is 10.15, if you, like me, can never remember which code name goes with which version ). I am still using MacOS ( writing it like macOS just looks wrong ) 10.14 Mojave, so I hadn&#8217;t worried about the details of those changes.</p>
+<p>Well, turns out those debug changes are not limited to MacOS 10.15. I was running tests to duplicate a Safari ITP related issue and kept getting zero debug output. After tweaking my tests every way I could think of and still getting no debug output, I finally went back and re-read the <a href="https://webkit.org/blog/8387/itp-debug-mode-in-safari-technology-preview-62/">original Safari ITP Debug Mode documentation</a>, to make sure I hadn&#8217;t missed something.</p>
+<p>Still nothing.</p>
+<p>After more frustration I finally landed on the <a href="https://webkit.org/blog/9521/intelligent-tracking-prevention-2-3/">ITP 2.3 update post</a> and decided to try to the &#8220;ITP Debug Mode In Safari on macOS Catalina&#8221; on my MacOS 10.14 ( Mojava ) laptop. <strong>*POOF*</strong> &#8211; debug starting producing output again.</p>
+<p>I don&#8217;t know why they indicate that this is specific to MacOS 10.15 ( Catalina ), because it isn&#8217;t. Here are the versions I&#8217;m running, using the new debug mode details:</p>
+<p>&#8211; MacOS 10.14.6<br />
+&#8211; Safari 13.0.3<br />
+&#8211; Safari Technology Preview 95</p>
+<p>For easy reference, the new command to see the ITP debug log is:</p>
+<pre><code class="language-markup">log stream -info | grep ITPDebug</code></pre>
+<p>Go read the <a href="https://webkit.org/blog/9521/intelligent-tracking-prevention-2-3/">ITP 2.3 post</a> for more details, other debug settings have changed too.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/11/19/new-safari-itp-debug-mode-for-macos-10-14-mojave-too/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Safari Is Working On Native Lazy-Loading Images</title>
+		<link>/2019/09/30/safari-is-working-on-native-lazy-loading-images/</link>
+					<comments>/2019/09/30/safari-is-working-on-native-lazy-loading-images/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 30 Sep 2019 19:15:24 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[safari]]></category>
+		<category><![CDATA[webkit]]></category>
+		<guid isPermaLink="false">/?p=17737</guid>
+
+					<description><![CDATA[This little Webkit gem is really nice to see: Bug 200764 &#8211; Main implementation for lazy image loading. Chrome recently started supporting native lazy-loading, being the first, and so far only browser to do so. This concept is such a good idea, it would be a shame for it to remain Chrome only. Having it [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>This little <a href="https://webkit.org/">Webkit</a> gem is really nice to see: <a href="https://bugs.webkit.org/show_bug.cgi?id=200764">Bug 200764 &#8211; Main implementation for lazy image loading</a>.</p>
+<p>Chrome recently started supporting <a href="https://web.dev/native-lazy-loading">native lazy-loading</a>, being the first, and so far <a href="https://caniuse.com/#search=loading">only</a> browser to do so.  This concept is such a good idea, it would be a shame for it to remain Chrome only.  Having it show up in a future version of Safari would be awesome.</p>
+<p>I found two Mozilla bugs filed regarding lazy loading support, <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1542784">1542784</a> and <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=947427">947427</a>.  Unfortunately there hasn&#8217;t been any movement on either one.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/09/30/safari-is-working-on-native-lazy-loading-images/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Safari Can Be Stingy</title>
+		<link>/2018/09/18/safari-can-be-stingy/</link>
+					<comments>/2018/09/18/safari-can-be-stingy/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 18 Sep 2018 17:06:18 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[andy-davies]]></category>
+		<category><![CDATA[cache]]></category>
+		<category><![CDATA[cdn]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[safari]]></category>
+		<guid isPermaLink="false">/?p=16981</guid>
+
+					<description><![CDATA[Andy Davies dug into the shared caching situation on Safari, in Safari, Caching and Third-Party Resources. The shared cache in Safari may be more stingy that most people would have guessed: What this means is Safari caches content from third-party origins separately for each document origin, so for example if two sites, say a.com and [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Andy Davies dug into the shared caching situation on Safari, in <a href="https://andydavies.me/blog/2018/09/06/safari-caching-and-3rd-party-resources/">Safari, Caching and Third-Party Resources</a>.  The shared cache in Safari may be more stingy that most people would have guessed:</p>
+<blockquote><p>
+What this means is Safari caches content from third-party origins separately for each document origin, so for example if two sites, say a.com and b.com both use a common library, third-party.com/script.js, then script.js will be cached separately for both sites.</p>
+<p>And if someone has an ‘empty’ cache and visits the first site and then the other, script.js will be downloaded twice.
+</p></blockquote>
+<p>This is another situation of having to measure to make sure that the rule of thumb is actually helping in your specific case.  The numbers from the HTTP Archive research were not exciting:</p>
+<blockquote><p>
+The March 2018 HTTP Archive (desktop) run has data for approximately 466,000 pages and the most popular public library, jQuery 1.11.3 from ajax.googleapis.com (served over HTTPS), is used by just over 1% of them.</p>
+<p>I’m not sure what level adoption needs to reach for shared caching to achieve critical mass but 1% certainly seems unlikely to be high enough and even Google’s most popular font – OpenSans – is only requested by around 9% of pages in the HTTP Archive.
+</p></blockquote>
+<p>If 9% ends up being the upper bound for shared cache hits, we need to start re-thinking our approach.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/09/18/safari-can-be-stingy/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>iOS Tapping</title>
+		<link>/2016/01/11/ios-tapping/</link>
+					<comments>/2016/01/11/ios-tapping/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 11 Jan 2016 17:52:14 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[ios]]></category>
+		<category><![CDATA[safari]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14608</guid>
+
+					<description><![CDATA[WebKit is changing tap timing, from More Responsive Tapping on iOS: We know that responsive tapping is really important to web developers — so much so that many are willing to employ JavaScript frameworks to avoid the delay using touch handlers. Instead of waiting for WebKit to fire a click after a delay, these libraries [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>WebKit is changing tap timing, from <a href="https://webkit.org/blog/5610/more-responsive-tapping-on-ios/">More Responsive Tapping on iOS</a>:</p>
+<blockquote><p>
+We know that responsive tapping is really important to web developers — so much so that many are willing to employ JavaScript frameworks to avoid the delay using touch handlers. Instead of waiting for WebKit to fire a click after a delay, these libraries prevent the default behavior of the touchend event and call click() immediately so that the element is clicked the moment the user stops touching the element. While this may make a link feel fast, it can also reduce responsiveness in other ways, including page load time and scrolling. To address this, we baked fast tapping optimizations into WebKit so well-scaled mobile web pages will be able to achieve responsive tapping out of the box without the drawbacks of third-party frameworks.
+</p></blockquote>
+<p>I&#8217;m looking forward to removing one more piece of JavaScript that only existed to work around suboptimal browser behavior.</p>
+<p>Unfortunately there is still a fair bit of waiting involved.  First, the next version of mobile Safari, which means iOS 10.  Based on previous schedules that should happen during 2016.  Then we need come up with work arounds for the still fairly large number of iPhones that won&#8217;t be able to upgrade to iOS 10.</p>
+<p>Add &#8216;de-couple mobile Safari from iOS releases&#8217; to my iOS 10 wish list.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/01/11/ios-tapping/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Safari Minimal UI</title>
+		<link>/2014/04/03/ios-7-1-mobile-safari-minimal-ui-perpetual-beta/</link>
+					<comments>/2014/04/03/ios-7-1-mobile-safari-minimal-ui-perpetual-beta/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 03 Apr 2014 02:35:16 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[ios]]></category>
+		<category><![CDATA[safari]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10056</guid>
+
+					<description><![CDATA[iOS 7.1 added a new minimal-ui option to the viewport setting of Safari: Put simply, the minimal-ui property allows you to display your responsive web page without the browser chrome taking up valuable screen real-estate. &#8211; via Jonathan Hollin This is a nice option, but as with all nifty features it will be abused in [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>iOS 7.1 added a new <code>minimal-ui</code> option to the <code>viewport</code> setting of Safari:</p>
+<blockquote><p>
+Put simply, the minimal-ui property allows you to display your responsive web page without the browser chrome taking up valuable screen real-estate.
+</p></blockquote>
+<p>&#8211; <a href="http://darkblue.sdf.org/weblog/ios-7-dot-1-mobile-safari-minimal-ui.html" title="'Perptual Beta', that should be the sub-title for every web site.">via Jonathan Hollin</a></p>
+<p>This is a nice option, but as with all nifty features it will be abused in horrible ways by some and brilliant ways by others.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/04/03/ios-7-1-mobile-safari-minimal-ui-perpetual-beta/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>iOS6 Safari Caching POST Responses</title>
+		<link>/2012/09/24/ios6-safari-caching-post-responses/</link>
+					<comments>/2012/09/24/ios6-safari-caching-post-responses/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 24 Sep 2012 14:29:28 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[ios]]></category>
+		<category><![CDATA[safari]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6385</guid>
+
+					<description><![CDATA[With the release of iOS6 mobile Safari started caching POST responses. Mark Nottingham talks through the related RFCs to see how this lines up with the HTTP specs. Worth a read for the details, here is the conclusion: even without the benefit of this context, they&#8217;re still clearly violating the spec; the original permission to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>With the release of iOS6 mobile Safari started caching POST responses.  <a href="http://www.mnot.net/blog/2012/09/24/caching_POST">Mark Nottingham talks through the related RFCs</a> to see how this lines up with the HTTP specs.  Worth a read for the details, here is the conclusion:</p>
+<blockquote><p>
+even without the benefit of this context, they&#8217;re still clearly violating the spec; the original permission to cache in 2616 was contingent upon there being explicit freshness information (basically, Expires or Cache-Control: max-age).</p>
+<p>So, it&#8217;s a bug. Unfortunately, it&#8217;s one that will make people trust caches even less, which is bad for the Web. Hopefully, they&#8217;ll do a quick fix before developers feel they need to work around this for the next five years.
+</p></blockquote>
+<p>Over the years I&#8217;ve run across a handful of services and applications that claim to be able to cache HTTP POST responses.  In every case that turned out to be a bad decision.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/09/24/ios6-safari-caching-post-responses/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

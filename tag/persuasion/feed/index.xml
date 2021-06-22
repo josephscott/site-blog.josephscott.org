@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>persuasion &#8211; Joseph Scott</title>
+	<atom:link href="/tag/persuasion/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 26 Nov 2013 16:15:02 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Persuading Programmers</title>
+		<link>/2013/11/26/persuading-programmers/</link>
+					<comments>/2013/11/26/persuading-programmers/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 26 Nov 2013 16:15:02 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[brett-slatkin]]></category>
+		<category><![CDATA[persuasion]]></category>
+		<category><![CDATA[programmers]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9434</guid>
+
+					<description><![CDATA[I was trying to convince another team to take a different approach to a problem. I tried to make my arguments with code, prototyping alternatives to prove my point. My suggestions fell on deaf ears. But that&#8217;s because I was doing it wrong. I should have taken the time to build relationships with that team [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+I was trying to convince another team to take a different approach to a problem. I tried to make my arguments with code, prototyping alternatives to prove my point. My suggestions fell on deaf ears. But that&#8217;s because I was doing it wrong. I should have taken the time to build relationships with that team so we understood each other&#8217;s perspectives. Without that we were talking past each other. I remained unswayed by their arguments, they ignored mine.
+</p></blockquote>
+<p>&#8211; Brett Slatkin, <a href="http://www.onebigfluke.com/2013/11/programming-is-a-social-endeavor.html">Programming is primarily a social endeavor</a></p>
+<p>This is a good general rule, definitely not limited to just programming.  It reminds me of the saying &#8220;people don&#8217;t care how much you know, until they know how much you care&#8221;.</p>
+<p>Just because programming is a strongly technology driven arena doesn&#8217;t prevent it from having the same human interaction issues that every other human endeavor has had.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/11/26/persuading-programmers/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

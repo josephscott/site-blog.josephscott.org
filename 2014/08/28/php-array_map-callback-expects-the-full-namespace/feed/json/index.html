@@ -1,0 +1,48 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2014/08/28/php-array_map-callback-expects-the-full-namespace/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2014/08/28/php-array_map-callback-expects-the-full-namespace/",
+    "feed_url": "https://blog.josephscott.org/2014/08/28/php-array_map-callback-expects-the-full-namespace/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: PHP array_map Callback Expects The Full Namespace",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2014/08/28/php-array_map-callback-expects-the-full-namespace/#comment-129277",
+            "url": "https://blog.josephscott.org/2014/08/28/php-array_map-callback-expects-the-full-namespace/#comment-129277",
+            "content_html": "Thanks for the notice. It helped a lot. I just wanted to note that it needs a backslash in my case to work:\r\narray_map( 'EXAMPLE\\lowercase_string', $names );\r\nMaybe it helps someone else.",
+            "content_text": "Thanks for the notice. It helped a lot. I just wanted to note that it needs a backslash in my case to work:\r\narray_map( 'EXAMPLE\\lowercase_string', $names );\r\nMaybe it helps someone else.",
+            "date_published": "2018-10-21T16:20:31-06:00",
+            "authors": [
+                {
+                    "name": "Guney Ozsan",
+                    "url": "https://github.com/guneyozsan",
+                    "avatar": "https://secure.gravatar.com/avatar/19bcab4c25eb264b21619cd7a8a15481?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Guney Ozsan",
+                "url": "https://github.com/guneyozsan",
+                "avatar": "https://secure.gravatar.com/avatar/19bcab4c25eb264b21619cd7a8a15481?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2014/08/28/php-array_map-callback-expects-the-full-namespace/#comment-119975",
+            "url": "https://blog.josephscott.org/2014/08/28/php-array_map-callback-expects-the-full-namespace/#comment-119975",
+            "content_html": "Hey Joseph!\r\nThanks for writing about this nasty \"feature\"! \r\nHad similar adventure, but a bit different and I'd like to share my solution.\r\nMy callback function was sitting inside another function, something like: \r\n\r\npuclic function foo($a) \r\n{\r\n  ...\r\n   function helper($e) { return $e + $a; }\r\n  ...\r\n}\r\n\r\n...and I couldn't figure it out how should I  namespace it, because I didn't want to take out helper  from the foo function.\r\nBut there is a another way! Good ol' lambda-style function saved me.\r\nExample 1: \r\n  $helper = create_function('$e', 'return $e+' . $a . ';');\r\n  $errors = array_map($helper, $errors);\r\n \r\n However, create function is deprecated since php 7.2 I ended up with cleaner solution:\r\n  $helper = function($e) use ($a) { //$a is inherited from parent function\r\n            return $e  + $a;\r\n   }; \r\n $errors = array_map($helper, $errors);",
+            "content_text": "Hey Joseph!\r\nThanks for writing about this nasty \"feature\"! \r\nHad similar adventure, but a bit different and I'd like to share my solution.\r\nMy callback function was sitting inside another function, something like: \r\n\r\npuclic function foo($a) \r\n{\r\n  ...\r\n   function helper($e) { return $e + $a; }\r\n  ...\r\n}\r\n\r\n...and I couldn't figure it out how should I  namespace it, because I didn't want to take out helper  from the foo function.\r\nBut there is a another way! Good ol' lambda-style function saved me.\r\nExample 1: \r\n  $helper = create_function('$e', 'return $e+' . $a . ';');\r\n  $errors = array_map($helper, $errors);\r\n \r\n However, create function is deprecated since php 7.2 I ended up with cleaner solution:\r\n  $helper = function($e) use ($a) { //$a is inherited from parent function\r\n            return $e  + $a;\r\n   }; \r\n $errors = array_map($helper, $errors);",
+            "date_published": "2018-06-23T10:21:22-06:00",
+            "authors": [
+                {
+                    "name": "Zoltan Rakottyai",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/7d4d174b306a29976085c61f68e5c9a7?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Zoltan Rakottyai",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/7d4d174b306a29976085c61f68e5c9a7?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

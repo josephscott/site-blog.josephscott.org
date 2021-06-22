@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Active Directory With nss_ldap And pam_ldap On FreeBSD	</title>
+	<atom:link href="/2004/06/21/active-directory-with-nss_ldap-and-pam_ldap/feed/" rel="self" type="application/rss+xml" />
+	<link>/2004/06/21/active-directory-with-nss_ldap-and-pam_ldap/</link>
+	<description></description>
+	<lastBuildDate>Mon, 01 May 2006 02:17:57 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Jeremy		</title>
+		<link>/2004/06/21/active-directory-with-nss_ldap-and-pam_ldap/#comment-396</link>
+
+		<dc:creator><![CDATA[Jeremy]]></dc:creator>
+		<pubDate>Mon, 01 May 2006 02:17:57 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/06/21/active-directory-with-nss_ldap-and-pam_ldap/#comment-396</guid>
+
+					<description><![CDATA[There is now a FreeBSD port of &lt;a href=&quot;http://www.freshports.org/security/pam_mkhomedir&quot; rel=&quot;nofollow&quot;&gt;pam_mkhomedir&lt;/a&gt;.]]></description>
+			<content:encoded><![CDATA[<p>There is now a FreeBSD port of <a href="http://www.freshports.org/security/pam_mkhomedir" rel="nofollow">pam_mkhomedir</a>.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott&#8217;s Blog &#187; FreeBSD Users and Groups with Samba (Winbind) and Active Directory		</title>
+		<link>/2004/06/21/active-directory-with-nss_ldap-and-pam_ldap/#comment-395</link>
+
+		<dc:creator><![CDATA[Joseph Scott&#8217;s Blog &#187; FreeBSD Users and Groups with Samba (Winbind) and Active Directory]]></dc:creator>
+		<pubDate>Tue, 08 Nov 2005 23:57:21 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/06/21/active-directory-with-nss_ldap-and-pam_ldap/#comment-395</guid>
+
+					<description><![CDATA[[...] One of the most popular posts on this blog is the how to: Active Directory With nss_ldap And pam_ldap On FreeBSD. That was almost a year and half ago and things have changed a bit since then. One of the reasons that I&#8217;d recommended using LDAP at the time was because Winbind (part of Samba) was troublesome (at least on FreeBSD) and that there wasn&#8217;t an easy way to provide a consistent UID to SID mapping across systems. Since then Winbind seems to be quite stable on FreeBSD and with the idmap_rid option you can easily keep the UID to SID mapping consistent across multiple systems. With the release of FreeBSD 6.0 this month I&#8217;m ready to update the steps needed to make FreeBSD use Active Directory (AD) users and groups, this time via Samba (Winbind) instead of LDAP. [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] One of the most popular posts on this blog is the how to: Active Directory With nss_ldap And pam_ldap On FreeBSD. That was almost a year and half ago and things have changed a bit since then. One of the reasons that I&#8217;d recommended using LDAP at the time was because Winbind (part of Samba) was troublesome (at least on FreeBSD) and that there wasn&#8217;t an easy way to provide a consistent UID to SID mapping across systems. Since then Winbind seems to be quite stable on FreeBSD and with the idmap_rid option you can easily keep the UID to SID mapping consistent across multiple systems. With the release of FreeBSD 6.0 this month I&#8217;m ready to update the steps needed to make FreeBSD use Active Directory (AD) users and groups, this time via Samba (Winbind) instead of LDAP. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Blog @ jason.jafanet.com &#187; Blog Archive &#187; Authenticating *Nix to Windows Active Directory		</title>
+		<link>/2004/06/21/active-directory-with-nss_ldap-and-pam_ldap/#comment-394</link>
+
+		<dc:creator><![CDATA[Blog @ jason.jafanet.com &#187; Blog Archive &#187; Authenticating *Nix to Windows Active Directory]]></dc:creator>
+		<pubDate>Fri, 05 Aug 2005 20:15:35 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/06/21/active-directory-with-nss_ldap-and-pam_ldap/#comment-394</guid>
+
+					<description><![CDATA[[...]  [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;]  [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Kevin		</title>
+		<link>/2004/06/21/active-directory-with-nss_ldap-and-pam_ldap/#comment-393</link>
+
+		<dc:creator><![CDATA[Kevin]]></dc:creator>
+		<pubDate>Wed, 22 Sep 2004 13:09:12 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/06/21/active-directory-with-nss_ldap-and-pam_ldap/#comment-393</guid>
+
+					<description><![CDATA[Information on a patch for the Linux PAM module for use on FreeBSD can be found at
+http://lists.freebsd.org/pipermail/freebsd-questions/2003-October/021555.html
+Works fine here (5.2.1-RELEASE)]]></description>
+			<content:encoded><![CDATA[<p>Information on a patch for the Linux PAM module for use on FreeBSD can be found at<br />
+<a href="http://lists.freebsd.org/pipermail/freebsd-questions/2003-October/021555.html" rel="nofollow ugc">http://lists.freebsd.org/pipermail/freebsd-questions/2003-October/021555.html</a><br />
+Works fine here (5.2.1-RELEASE)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: ramana		</title>
+		<link>/2004/06/21/active-directory-with-nss_ldap-and-pam_ldap/#comment-392</link>
+
+		<dc:creator><![CDATA[ramana]]></dc:creator>
+		<pubDate>Tue, 07 Sep 2004 02:40:07 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/06/21/active-directory-with-nss_ldap-and-pam_ldap/#comment-392</guid>
+
+					<description><![CDATA[For Linux there is better alternative to creating home directories which it does not assume pam authentication to be used and much more transparent to applications with many more features.
+
+see http://www.intraperson.com/autodir.html
+
+If there is similar think like autofs kernel module in freeBSD I will come forward to port Autodir to freeBSD.]]></description>
+			<content:encoded><![CDATA[<p>For Linux there is better alternative to creating home directories which it does not assume pam authentication to be used and much more transparent to applications with many more features.</p>
+<p>see <a href="http://www.intraperson.com/autodir.html" rel="nofollow ugc">http://www.intraperson.com/autodir.html</a></p>
+<p>If there is similar think like autofs kernel module in freeBSD I will come forward to port Autodir to freeBSD.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: ODC		</title>
+		<link>/2004/06/21/active-directory-with-nss_ldap-and-pam_ldap/#comment-391</link>
+
+		<dc:creator><![CDATA[ODC]]></dc:creator>
+		<pubDate>Fri, 06 Aug 2004 20:26:07 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/06/21/active-directory-with-nss_ldap-and-pam_ldap/#comment-391</guid>
+
+					<description><![CDATA[msSFU30PosixMember seems to be enabled in the AD schema.
+
+I&#039;m not sure if BSD allows for upg&#039;s (aux groups) but it works for me under linux.
+
+&#039;getent group&#039; gives
+
+Boxers:x:10000:
+
+to
+
+Boxers:x:10001:mtyson,ehollyfield,rbalboa
+
+&#039;id mtyson&#039; gives
+
+uid=10000(mtyson) gid=10000 groups=10000,10001(Boxers)
+
+Hope that helps.]]></description>
+			<content:encoded><![CDATA[<p>msSFU30PosixMember seems to be enabled in the AD schema.</p>
+<p>I&#8217;m not sure if BSD allows for upg&#8217;s (aux groups) but it works for me under linux.</p>
+<p>&#8216;getent group&#8217; gives</p>
+<p>Boxers:x:10000:</p>
+<p>to</p>
+<p>Boxers:x:10001:mtyson,ehollyfield,rbalboa</p>
+<p>&#8216;id mtyson&#8217; gives</p>
+<p>uid=10000(mtyson) gid=10000 groups=10000,10001(Boxers)</p>
+<p>Hope that helps.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2004/06/21/active-directory-with-nss_ldap-and-pam_ldap/#comment-390</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 05 Aug 2004 21:36:38 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/06/21/active-directory-with-nss_ldap-and-pam_ldap/#comment-390</guid>
+
+					<description><![CDATA[Looking at the info for an account via LDAP, I don&#039;t see an attribute called msSFU30PosixMember.  For that matter I don&#039;t see an attribute called posixMember either.  Hmmmmm.]]></description>
+			<content:encoded><![CDATA[<p>Looking at the info for an account via LDAP, I don&#8217;t see an attribute called msSFU30PosixMember.  For that matter I don&#8217;t see an attribute called posixMember either.  Hmmmmm.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: ODC		</title>
+		<link>/2004/06/21/active-directory-with-nss_ldap-and-pam_ldap/#comment-389</link>
+
+		<dc:creator><![CDATA[ODC]]></dc:creator>
+		<pubDate>Thu, 05 Aug 2004 19:22:41 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/06/21/active-directory-with-nss_ldap-and-pam_ldap/#comment-389</guid>
+
+					<description><![CDATA[You should change the line:
+
+nss_map_attribute uniquemember posixMember
+
+to:
+
+nss_map_attribute uniquemember msSFU30PosixMember
+
+if you want to have the linux/unix clients get extended group info / unix private groups]]></description>
+			<content:encoded><![CDATA[<p>You should change the line:</p>
+<p>nss_map_attribute uniquemember posixMember</p>
+<p>to:</p>
+<p>nss_map_attribute uniquemember msSFU30PosixMember</p>
+<p>if you want to have the linux/unix clients get extended group info / unix private groups</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: chris m		</title>
+		<link>/2004/06/21/active-directory-with-nss_ldap-and-pam_ldap/#comment-388</link>
+
+		<dc:creator><![CDATA[chris m]]></dc:creator>
+		<pubDate>Fri, 16 Jul 2004 19:34:48 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/06/21/active-directory-with-nss_ldap-and-pam_ldap/#comment-388</guid>
+
+					<description><![CDATA[anyone got this working with Windows 2003?]]></description>
+			<content:encoded><![CDATA[<p>anyone got this working with Windows 2003?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: The		</title>
+		<link>/2004/06/21/active-directory-with-nss_ldap-and-pam_ldap/#comment-387</link>
+
+		<dc:creator><![CDATA[The]]></dc:creator>
+		<pubDate>Mon, 21 Jun 2004 18:15:08 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/06/21/active-directory-with-nss_ldap-and-pam_ldap/#comment-387</guid>
+
+					<description><![CDATA[&lt;strong&gt;re: Integrating Unix and Windows systems - authentication and authorization via Kerberos and LDAP&lt;/strong&gt;]]></description>
+			<content:encoded><![CDATA[<p><strong>re: Integrating Unix and Windows systems &#8211; authentication and authorization via Kerberos and LDAP</strong></p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

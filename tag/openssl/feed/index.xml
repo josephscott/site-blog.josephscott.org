@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>openssl &#8211; Joseph Scott</title>
+	<atom:link href="/tag/openssl/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 02 Dec 2014 16:15:21 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>How To Check A Site For SPDY Support With OpenSSL</title>
+		<link>/2014/12/02/how-to-check-a-site-for-spdy-support-with-openssl/</link>
+					<comments>/2014/12/02/how-to-check-a-site-for-spdy-support-with-openssl/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 02 Dec 2014 16:15:21 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[openssl]]></category>
+		<category><![CDATA[spdy]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11443</guid>
+
+					<description><![CDATA[A Stack Overflow thread with an example on how to check a server for SPDY support with OpenSSL: openssl s_client -connect google.com:443 -nextprotoneg '' The result I got from &#8220;OpenSSL 1.0.1f 6 Jan 2014&#8221; looked like this ( emphasis mine ): CONNECTED(00000003) Protocols advertised by server: spdy/5a1, h2-14, spdy/3.1, spdy/3, http/1.1 139790806673056:error:140920E3:SSL routines:SSL3_GET_SERVER_HELLO:parse tlsext:s3_clnt.c:1061: --- [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>A <a href="http://stackoverflow.com/questions/23742928/how-to-detect-if-a-server-is-using-spdy/23792880#23792880">Stack Overflow thread</a> with an example on how to check a server for <a href="http://www.chromium.org/spdy">SPDY</a> support with <a href="https://www.openssl.org/">OpenSSL</a>:</p>
+<pre>
+openssl s_client -connect google.com:443 -nextprotoneg ''
+</pre>
+<p>The result I got from &#8220;OpenSSL 1.0.1f 6 Jan 2014&#8221; looked like this ( emphasis mine ):</p>
+<pre>
+CONNECTED(00000003)
+<strong>Protocols advertised by server: spdy/5a1, h2-14, spdy/3.1, spdy/3, http/1.1</strong>
+139790806673056:error:140920E3:SSL routines:SSL3_GET_SERVER_HELLO:parse tlsext:s3_clnt.c:1061:
+---
+no peer certificate available
+---
+No client certificate CA names sent
+---
+SSL handshake has read 110 bytes and written 7 bytes
+---
+New, (NONE), Cipher is (NONE)
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+Next protocol: (2) 
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : 0000
+    Session-ID: 
+    Session-ID-ctx: 
+    Master-Key: 
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1417496091
+    Timeout   : 300 (sec)
+    Verify return code: 0 (ok)
+---
+</pre>
+<p>The &#8220;Protocols advertised by server:&#8221; is the line you need.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/12/02/how-to-check-a-site-for-spdy-support-with-openssl/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Heartbleed Explanation on xkcd</title>
+		<link>/2014/04/11/heartbleed-explanation-xkcd/</link>
+					<comments>/2014/04/11/heartbleed-explanation-xkcd/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 11 Apr 2014 15:53:53 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[heartbleed]]></category>
+		<category><![CDATA[openssl]]></category>
+		<category><![CDATA[xkcd]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10199</guid>
+
+					<description><![CDATA[Excellent explanation of the heartbleed bug on xkcd.]]></description>
+										<content:encoded><![CDATA[<p>Excellent <a href="http://xkcd.com/1354/" title="Remember, simple is often very hard.">explanation of the heartbleed bug on xkcd</a>.</p>
+<p><a href="http://xkcd.com/1354/"><img loading="lazy" src="http://imgs.xkcd.com/comics/heartbleed_explanation.png" width="640" height="1364" class="aligncenter" /></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/04/11/heartbleed-explanation-xkcd/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Mass Session Hijacking With Heartbleed</title>
+		<link>/2014/04/09/mass-session-hijacking-heartbleed/</link>
+					<comments>/2014/04/09/mass-session-hijacking-heartbleed/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 09 Apr 2014 14:28:05 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[heartbleed]]></category>
+		<category><![CDATA[openssl]]></category>
+		<category><![CDATA[security]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10180</guid>
+
+					<description><![CDATA[The original proof of concept scripts for heartbleed are being expanded into more specialized session hijacking tools. Here is one from Michael Davis: I altered the proof of concept code written by Jared Stafford to continuously query a given server for memory chunks and parse those chunks for session ids. Some very simple checks are [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The original proof of concept scripts for heartbleed are being expanded into more specialized session hijacking tools.  <a href="https://www.michael-p-davis.com/using-heartbleed-for-hijacking-user-sessions/" title="I expect there are plenty more of these around.">Here is one from Michael Davis</a>:</p>
+<blockquote><p>
+I altered the proof of concept code written by Jared Stafford to continuously query a given server for memory chunks and parse those chunks for session ids.</p>
+<p>Some very simple checks are in place to only spit out unique session IDs.
+</p></blockquote>
+<p>For a more complete example of how to then use the session ID to gain access to an account check out Matthew Sullivan&#8217;s <a href="https://www.mattslifebytes.com/?p=533" title="This example targets Jira.">Hijacking user sessions with the Heartbleed vulnerability</a> post.</p>
+<p>Even these scripts still involve manual actions afterwards.  There is no doubt that the <a href="http://heartbleed.com/" title="If you have not upgraded yet, do it now!">heartbleed bug</a> is going to continue to be used as the foundation for more and more automated attack scripts.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/04/09/mass-session-hijacking-heartbleed/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Heartbleed, Update OpenSSL Now!</title>
+		<link>/2014/04/08/heartbleed-update-openssl-now/</link>
+					<comments>/2014/04/08/heartbleed-update-openssl-now/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 08 Apr 2014 15:20:14 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[heartbleed]]></category>
+		<category><![CDATA[openssl]]></category>
+		<category><![CDATA[security]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10158</guid>
+
+					<description><![CDATA[A very bad bug, Heartbleed, has been found in OpenSSL: Bug is in the OpenSSL&#8217;s implementation of the TLS/DTLS (transport layer security protocols) heartbeat extension (RFC6520). When it is exploited it leads to the leak of memory contents from the server to the client and from the client to the server. &#8211; via heartbleed.com This [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://heartbleed.com/"><img loading="lazy" src="/wp-content/uploads/2014/04/heartbleed-1-247x300.png" alt="heartbleed" width="247" height="300" class="alignleft size-medium wp-image-10172" /></a></p>
+<p>A very bad bug, <a href="http://heartbleed.com/" title="The bug really is as bad as the name implies.">Heartbleed</a>, has been found in <a href="https://www.openssl.org/" title="Wonder if they will ever rename it to OpenTLS.">OpenSSL</a>:</p>
+<blockquote><p>
+Bug is in the OpenSSL&#8217;s implementation of the TLS/DTLS (transport layer security protocols) heartbeat extension (RFC6520). When it is exploited it leads to the leak of memory contents from the server to the client and from the client to the server.
+</p></blockquote>
+<p>&#8211; via <a href='http://heartbleed.com/' title="This bug really is worth a dedicated site.">heartbleed.com</a></p>
+<p>This is a <strong>stop what ever you are doing and upgrade to a fixed version of OpenSSL NOW!</strong> level bug.  More from heartbleed.com:</p>
+<blockquote><p>
+Without using any privileged information or credentials we were able steal from ourselves the secret keys used for our X.509 certificates, user names and passwords, instant messages, emails and business critical documents and communication.
+</p></blockquote>
+<p>This is just about as bad as it can get.</p>
+<p>A few tools have been thrown together if you want test for this vulnerability.  The really scary one is <a href="http://filippo.io/Heartbleed/" title="I expect this thing is going to be heavily abused.">http://filippo.io/Heartbleed/</a>, which will allow you to run a live check against a hostname and show you the resulting memory dump.  Source code for that site is available <a href="https://github.com/FiloSottile/Heartbleed" title="Github repo, where else?">here</a>.  If you are looking for a script to test locally take a look at <a href="https://github.com/titanous/heartbleeder">https://github.com/titanous/heartbleeder</a>.</p>
+<p>OpenSSL versions impacted according to heartbleed.com:</p>
+<blockquote>
+<ul>
+<li>OpenSSL 1.0.1 through 1.0.1f (inclusive) are vulnerable</li>
+<li>OpenSSL 1.0.1g is NOT vulnerable</li>
+<li>OpenSSL 1.0.0 branch is NOT vulnerable</li>
+<li>OpenSSL 0.9.8 branch is NOT vulnerable</li>
+</ul>
+<p>Bug was introduced to OpenSSL in December 2011 and has been out in the wild since OpenSSL release 1.0.1 on 14th of March 2012. OpenSSL 1.0.1g released on 7th of April 2014 fixes the bug.
+</p></blockquote>
+<p>You can find out which version of OpenSSL you are running with <code>openssl version -v -b</code>.  The <code>-b</code> is important because some updates are not changing the version number.  For instance the fixed version on Ubuntu 13.10 reports:</p>
+<blockquote><p>
+OpenSSL 1.0.1e 11 Feb 2013<br />
+built on: Mon Apr  7 20:33:19 UTC 2014
+</p></blockquote>
+<p>The version wasn&#8217;t changed, so you&#8217;ll need to know the build date.</p>
+<p>Heartbleed was announced yesterday ( 7 Apr 2014 ), I expect that we are going to see more fallout from this over the next few days.  <strong>Tools to exploit this are already widely available, not updating is not an option.</strong></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/04/08/heartbleed-update-openssl-now/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

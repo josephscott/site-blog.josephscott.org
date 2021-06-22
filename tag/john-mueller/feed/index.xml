@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>john-mueller &#8211; Joseph Scott</title>
+	<atom:link href="/tag/john-mueller/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 06 Nov 2018 22:23:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Google Search Indexing and JavaScript</title>
+		<link>/2018/11/06/google-search-indexing-and-javascript/</link>
+					<comments>/2018/11/06/google-search-indexing-and-javascript/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 06 Nov 2018 22:23:45 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[john-mueller]]></category>
+		<category><![CDATA[paul-kinlan]]></category>
+		<guid isPermaLink="false">/?p=17159</guid>
+
+					<description><![CDATA[The discussion over how much the Google indexing bot understands about JavaScript comes up over and over. Here are some of the details I&#8217;ve been able to put together. Googlebot is using Chrome 41 On the official Understand rendering on Google Search page the first thing they point out is that the bot uses Chrome [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The discussion over how much the Google indexing bot understands about JavaScript comes up over and over.  Here are some of the details I&#8217;ve been able to put together.</p>
+<h3>Googlebot is using Chrome 41</h3>
+<p>On the official <a href="https://developers.google.com/search/docs/guides/rendering">Understand rendering on Google Search</a> page the first thing they point out is that the bot uses Chrome 41.  Welcome back to 2015, no <a href="http://exploringjs.com/es6/ch_overviews.html">ES6</a> for you:</p>
+<blockquote><p>
+Chrome M41 does not support ES6 features (for example classes). If you are using ES6 make sure to transpile your JavaScript to ES5.
+</p></blockquote>
+<h3>Google Indexing is a Two-Pass Process</h3>
+<p><a href="https://paul.kinlan.me/">Paul Kinlan</a>, a developer advocate at Google, <a href="https://twitter.com/Paul_Kinlan/status/1039852756113080320">mentioned</a> this process:</p>
+<blockquote><p>
+Indexing is delayed for pure client side sides. Google indexer is two-pass, first run is without js, then week later it&#8217;s with is (or there abouts)
+</p></blockquote>
+<p>A follow up to that from <a href="https://twitter.com/JohnMu">John Mueller</a>, Webmaster Trends Analyst at Google, notes that <a href="https://twitter.com/JohnMu/status/1040152407416741890">this is true for updates as well</a>:</p>
+<blockquote><p>
+Yeah, there&#8217;s no fixed timeframe &#8212; the rendering can happen fairly quickly in some cases, but usually it&#8217;s on the order of days to a few weeks even. If your site produces new / updated content frequently &#038; you want it indexed quickly, you need that content in the HTML.
+</p></blockquote>
+<h3>The Take Away</h3>
+<p>Keep your critical, and regularly updated, content in HTML.  Keep your client side JavaScript to ES5 or below.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/11/06/google-search-indexing-and-javascript/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

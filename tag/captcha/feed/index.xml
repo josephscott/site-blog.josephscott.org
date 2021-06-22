@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>captcha &#8211; Joseph Scott</title>
+	<atom:link href="/tag/captcha/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 07 Aug 2007 16:36:20 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>CAPTCHA versus Email</title>
+		<link>/2007/08/07/captcha-versus-email/</link>
+					<comments>/2007/08/07/captcha-versus-email/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 07 Aug 2007 16:36:20 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[captcha]]></category>
+		<category><![CDATA[spam]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/08/07/captcha-versus-email/</guid>
+
+					<description><![CDATA[Alex King had a great post last month asking people which they thought was more annoying, CAPTCHA or Challenge Response E-mail. The comments suggest that most people find email more annoying, assuming that the CAPTCHA weren&#8217;t incomprehensible. Has anyone done any formal studies, watching regular users, to find out which one people find easier to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Alex King had a great post last month asking people which they thought was more annoying, <a href="http://alexking.org/blog/2007/07/26/captcha-or-challenge">CAPTCHA or Challenge Response E-mail</a>.  The comments suggest that most people find email more annoying, assuming that the CAPTCHA weren&#8217;t incomprehensible.</p>
+<p>Has anyone done any formal studies, watching regular users, to find out which one people find easier to use?  Another factor to look for might be which one causes the most errors or failures to complete the process.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/08/07/captcha-versus-email/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

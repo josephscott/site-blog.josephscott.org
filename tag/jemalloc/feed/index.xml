@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>jemalloc &#8211; Joseph Scott</title>
+	<atom:link href="/tag/jemalloc/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 17 Apr 2013 15:24:57 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Percona MySQL jemalloc Benchmarks</title>
+		<link>/2013/04/17/percona-mysql-jemalloc-benchmarks/</link>
+					<comments>/2013/04/17/percona-mysql-jemalloc-benchmarks/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 17 Apr 2013 15:24:57 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[jemalloc]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[percona]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7496</guid>
+
+					<description><![CDATA[Last week I mentioned Percona MySQL was switching to jemalloc. This week mysqlperformanceblog.com published benchmarks comparing MySQL 5.5.30, Percona MySQL 5.5.30, and MySQL 5.6.10.]]></description>
+										<content:encoded><![CDATA[<p>Last week I mentioned <a href="https://josephscott.org/archives/2013/04/percona-mysql-server-switching-to-jemalloc/">Percona MySQL was switching to jemalloc</a>.  This week mysqlperformanceblog.com published <a href="http://www.mysqlperformanceblog.com/2013/04/15/memory-allocators-mysql-performance-improvements-in-pecona-server-5-5-30-30-2/">benchmarks comparing MySQL 5.5.30, Percona MySQL 5.5.30, and MySQL 5.6.10</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/04/17/percona-mysql-jemalloc-benchmarks/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Percona MySQL Server Switching to jemalloc</title>
+		<link>/2013/04/12/percona-mysql-server-switching-to-jemalloc/</link>
+					<comments>/2013/04/12/percona-mysql-server-switching-to-jemalloc/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2013 15:06:34 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[jemalloc]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[percona]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7427</guid>
+
+					<description><![CDATA[I was reading through the Percona MySQL Server 5.5.30-30.2 release notes and noticed this gem: Percona Server for MySQL will now be shipped with the libjemalloc library. Benchmark showing the impact of memory allocators on MySQL performance can be found in this blogpost. (Ignacio Nin) The &#8220;Impact of memory allocators on MySQL performance&#8221; post is [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was reading through the <a href="http://www.mysqlperformanceblog.com/2013/04/10/percona-server-for-mysql-5-5-30-30-2-now-available/">Percona MySQL Server 5.5.30-30.2 release notes</a> and noticed this gem:</p>
+<blockquote><p>
+Percona Server for MySQL will now be shipped with the libjemalloc library. Benchmark showing the impact of memory allocators on MySQL performance can be found in this <a href="http://www.mysqlperformanceblog.com/2012/07/05/impact-of-memory-allocators-on-mysql-performance/">blogpost</a>. (Ignacio Nin)
+</p></blockquote>
+<p>The &#8220;<a href="http://www.mysqlperformanceblog.com/2012/07/05/impact-of-memory-allocators-on-mysql-performance/">Impact of memory allocators on MySQL performance</a>&#8221; post is worth a read.  Alternatives like lockless, jemalloc, and tcmalloc appear to provide better performance than traditional glibc.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/04/12/percona-mysql-server-switching-to-jemalloc/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sun &#8211; Joseph Scott</title>
+	<atom:link href="/tag/sun/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 31 May 2010 17:09:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Amazon Multi-Zone MySQL</title>
+		<link>/2010/05/31/amazon-multi-zone-mysql/</link>
+					<comments>/2010/05/31/amazon-multi-zone-mysql/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 31 May 2010 17:09:45 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[amazon]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[oracle]]></category>
+		<category><![CDATA[sun]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2323</guid>
+
+					<description><![CDATA[Amazon recently announced support for multi-zone MySQL instances with automatic failover. The general idea is that Amazon will make the on demand MySQL service they offer more fault tolerant, which is a wonderful thing to have. It&#8217;s not there yet, but being able to send reads to another replicated server MySQL instance is on the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Amazon recently announced support for <a href="http://aws.typepad.com/aws/2010/05/amazon-rds-multi-az-deployment.html">multi-zone MySQL instances with automatic failover</a>.  The general idea is that Amazon will make the on demand MySQL service they offer more fault tolerant, which is a wonderful thing to have.  It&#8217;s not there yet, but being able to send reads to another replicated server MySQL instance is on the future feature list.  When <a href="http://aws.amazon.com/rds/">Amazon Relation Database Service (RDS)</a> was announced it was clear that Amazon was going to continue building out core infrastructure services, so these additional high availability options are nice to see, but not a huge surprise.</p>
+<p>As happy as I am to see Amazon doing this, my general feeling is one of disappointment that <a href="http://sun.com/">Sun</a> didn&#8217;t do more in this area when they purchased <a href="http://mysql.com/">MySQL</a>.  Not long after the Sun/MySQL deal I wrote <a href="http://joseph.randomnetworks.com/archives/2008/04/28/sun-should-be-in-the-consumer-cloud-services-business/">Sun Should Be in the Consumer Cloud Services Business</a>.  My thought was that Sun should offer an EC2/S3 style pay as you go service for MySQL.  And it should be open to anyone with a credit card, making this basically a consumer play, but could be used by big companies as well.</p>
+<p>Now Sun and MySQL are in the hands of <a href="http://www.oracle.com/">Oracle</a>.  The opportunity for Oracle to offer a similar service is still there, but I see it as being even less likely now than when it was just Sun+MySQL.</p>
+<p>It&#8217;s surprising to me to see capable companies you might normally think of as being in the best position to offer these types of services continue to let Amazon run further and further ahead of the pack.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/05/31/amazon-multi-zone-mysql/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Payment Systems As A Strategic Advantage</title>
+		<link>/2008/05/07/payment-systems-as-a-strategic-advantage/</link>
+					<comments>/2008/05/07/payment-systems-as-a-strategic-advantage/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 07 May 2008 10:01:04 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[amazon]]></category>
+		<category><![CDATA[aws]]></category>
+		<category><![CDATA[checkout]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[paymentsystems]]></category>
+		<category><![CDATA[paypal]]></category>
+		<category><![CDATA[sun]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1065</guid>
+
+					<description><![CDATA[A couple of days after suggesting that Sun should offer cloud services they announced that they would be supporting Amazon EC2 by having it run Sun&#8217;s OpenSolaris and offer MySQL support for instances running on top of EC2. Nice, but not any where near what I&#8217;m hoping for. So I started looking at the other [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>A couple of days after suggesting that <a href="http://joseph.randomnetworks.com/archives/2008/04/28/sun-should-be-in-the-consumer-cloud-services-business/">Sun should offer cloud services</a> they <a href="http://www.sun.com/aboutsun/pr/2008-05/sunflash.20080505.3.xml">announced</a> that they would be supporting Amazon EC2 by having it run Sun&#8217;s OpenSolaris and offer MySQL support for instances running on top of EC2.  Nice, but not any where near what I&#8217;m hoping for.  So I started looking at the other side of the coin, what things are keeping Sun from being able to offer pay as you go consumer services?  One thing quickly came to mind: dealing with many payment transactions, often for small amounts.</p>
+<p>The beauty of pay as you go cloud services is that you pay for what you use.  If you only use a small amount, you only pay a small amount.  My S3 bill each month rarely goes over $5, because I only use it in small amounts.  Amazon charges my credit card and sends me an email with the details.  But for most companies doing lots of credit card transactions for small amounts simply isn&#8217;t worth it.  The fees associated with credit card transactions add up fast when dealing with such small transactions.  At least for most companies.</p>
+<p>Amazon has been doing large volumes of credit card transactions for a number of years, I&#8217;d be very surprised if they don&#8217;t have some custom fee structure for processing them.  When you do the volume of transactions that a company like Amazon does, that gives you a little more leverage.  So part of what has allowed Amazon to grow into the pay as go cloud services market is the fact that they already had a large payment system in place that allows them to process even fairly small transactions efficiently.</p>
+<p>This gives <a href="http://checkout.google.com/">Google Checkout</a> an even more important role than just being a competitor to <a href="http://paypal.com/">PayPal</a>.  With AdWords and AdSense already going, Google already has plenty of reason to want the same sort of leverage Amazon has for processing payments.  With Google App Engine expected to have a similar pay as go structure as AWS, there will be even more focus on processing small amounts without taking a big hit on fees.</p>
+<p>Now back to Sun.  As far as I know Sun has nothing that even comes close to Amazon&#8217;s volume of transactions or Google&#8217;s small fee services.  So they&#8217;ve had no reason to build up an efficient payment system that can handle small amounts.  This leaves them with two choices, build one to try and gain the needed leverage to reduce the fees involved, or partner with someone else who already has.  So far they&#8217;ve gone with the later, specifically Amazon and their EC2 service.</p>
+<p>One way around the small transaction amount problem is to have customers pay in advance.  Sun could still offer pay as you go services, but you have pay for them upfront in $100 increments.  Each month your usage fee would be deducted from the amount you already paid them.  If I only used $10 this month, I&#8217;d still have $90 left in my account.  This isn&#8217;t nearly as attractive from the small customer side as simply paying $10 per month from their credit card, but not horrendous either, especially if you could get the minimum pay in advance amount down to something under $50.</p>
+<p>I&#8217;d really like to see more competition in the cloud services space, but so far Amazon has it pretty much all to itself (which a small niche potentially going to Google App Engine).  And unless companies like Sun can find ways to process small payments efficiently we might not be seeing any for a long time to come.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/05/07/payment-systems-as-a-strategic-advantage/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Sun Should Be in the Consumer Cloud Services Business</title>
+		<link>/2008/04/28/sun-should-be-in-the-consumer-cloud-services-business/</link>
+					<comments>/2008/04/28/sun-should-be-in-the-consumer-cloud-services-business/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 28 Apr 2008 17:11:40 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[cloudservices]]></category>
+		<category><![CDATA[datacenter]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[solaris]]></category>
+		<category><![CDATA[sun]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1061</guid>
+
+					<description><![CDATA[When Google App Engine was announced one of the features that was heavily pushed was it&#8217;s ability to scale. Combined with Amazon&#8217;s AWS products, I&#8217;ve been thinking about other companies who could/should be in the cloud services business. There&#8217;s the obvious ones that everyone talks about like Microsoft and Yahoo, but then another name came [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>When <a href="http://code.google.com/appengine/">Google App Engine</a> was announced one of the features that was heavily pushed was it&#8217;s ability to scale.  Combined with Amazon&#8217;s AWS products, I&#8217;ve been thinking about other companies who could/should be in the cloud services business.  There&#8217;s the obvious ones that everyone talks about like Microsoft and Yahoo, but then another name came to mind: <a href="http://www.sun.com/">Sun</a>.</p>
+<p>What service should Sun offer to the world?  I&#8217;ll give you a hint, they recently spent $1 billion dollars <a href="http://joseph.randomnetworks.com/archives/2008/01/16/sun-buys-mysql/">acquiring the company</a> behind the product.  Yep, none other than <a href="http://mysql.com/">MySQL</a>.</p>
+<p>Love it or hate it, MySQL is widely used by many companies and individuals.  What I&#8217;d like to see from Sun is a MySQL cloud service that works just like your current MySQL server(s), only better.  It should scale such that I don&#8217;t have to worry about performance and replicate data sufficiently that I&#8217;ll always have access to my data.  There&#8217;s no need for a new API, since MySQL already supports network connectivity.</p>
+<p>With MySQL already in such wide spread use, the benefits would be easy to see.  For instance, I could use such a service to power my WordPress blog with only a few changes to my wp-config.php file.  Effectively requiring zero code changes.</p>
+<p>Pricing wise I&#8217;d expect something similar to EC2 or S3, a general pay as you go schedule.  Perhaps even with a very low use free option, just enough for people to get hooked.  But if I were <a href="http://blogs.sun.com/jonathan/">Jonathan Schwartz</a> I wouldn&#8217;t stop there.</p>
+<p>As nice as it is to have an easy to use pay as you go web service, there are many companies that would like the performance, scalability and reliability of such a service but don&#8217;t want to send all their data to Sun.  Enter Sun&#8217;s <a href="http://www.sun.com/products/sunmd/s20/">Modular Datacenter</a>, a.k.a. data center in a box.  Okay, a very big box, but a box none the less.  Take all the lessons they learn making the MySQL cloud service work and put them in the data center box and sell it.</p>
+<p>This would also appeal to hosting companies, who could then offer the same sort of service to the users.  Imagine some place like <a href="http://www.theplanet.com/">The Planet</a> having a few of these in their data centers.  They&#8217;d get the benefits of the cloud service without having to haul all that traffic over their Internet connections.</p>
+<p>In my ideal world this wouldn&#8217;t be limited to MySQL.  I&#8217;d love to see this same sort of thing for <a href="http://www.postgresql.org/">PostgreSQL</a>, since Sun has also been pushing <a href="http://www.sun.com/software/products/postgresql/index.jsp">PostgreSQL for Solaris</a> as well.  Sadly I&#8217;m not holding my breath on that one.  With PostgreSQL being a much more community based project, there&#8217;s nothing to stop some other company from providing this service.</p>
+<p>Perhaps Sun should have <a href="http://joseph.randomnetworks.com/archives/2007/08/23/from-sunw-to-java/">changed their stock ticker</a> to MYSQ instead of JAVA.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/04/28/sun-should-be-in-the-consumer-cloud-services-business/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Thu 7 Feb 2008</title>
+		<link>/2008/02/07/links-for-thu-7-feb-2008/</link>
+					<comments>/2008/02/07/links-for-thu-7-feb-2008/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 08 Feb 2008 00:30:16 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[ixr]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[movabletype]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[sun]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xmlrpc]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/02/07/links-for-thu-7-feb-2008/</guid>
+
+					<description><![CDATA[scot hacker?s foobar blog &#62; Notes on a Massive WordPress Migration &#8211; Lots of details on how they moved CDT from MovableType to WordPress. Tags: movabletype wordpress Why Did I Change My Mind? &#124; AlwaysOn &#8211; Logic behind MySQL selling to Sun instead of going ahead with the IPO. Tags: mysql sun ixr &#8211; Google [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://birdhouse.org/blog/2008/02/07/notes-on-a-massive-wordpress-migration/#more-2785">scot hacker?s foobar blog &gt; Notes on a Massive WordPress Migration</a> &#8211; Lots of details on how they moved CDT from MovableType to WordPress. <br /> Tags: <a href="http://del.icio.us/josephscott/movabletype">movabletype</a> <a href="http://del.icio.us/josephscott/wordpress">wordpress</a>  </p>
+</li>
+<li>
+<p><a href="http://alwayson.goingon.com/permalink/post/23603">Why Did I Change My Mind? | AlwaysOn</a> &#8211; Logic behind MySQL selling to Sun instead of going ahead with the IPO. <br /> Tags: <a href="http://del.icio.us/josephscott/mysql">mysql</a> <a href="http://del.icio.us/josephscott/sun">sun</a>  </p>
+</li>
+<li>
+<p><a href="http://code.google.com/p/ixr/">ixr &#8211; Google Code</a> &#8211; Looks like Simon took his IXR XML-RPC library here <br /> Tags: <a href="http://del.icio.us/josephscott/php">php</a> <a href="http://del.icio.us/josephscott/xmlrpc">xmlrpc</a> <a href="http://del.icio.us/josephscott/ixr">ixr</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/02/07/links-for-thu-7-feb-2008/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Sun Buys MySQL</title>
+		<link>/2008/01/16/sun-buys-mysql/</link>
+					<comments>/2008/01/16/sun-buys-mysql/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 16 Jan 2008 17:07:44 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[sun]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/01/16/sun-buys-mysql/</guid>
+
+					<description><![CDATA[The big news today is that Sun purchased MySQL: Sun Press Kit, Sun Announcement, MySQL Announcement and Jonathan Schwartz&#8217;s Blog Announcement. Let&#8217;s get the obvious issues/questions out of the way first. The purchase price is $1 billion, $800 million cash, $200 million in options. What is this going to mean for Sun&#8217;s PostgreSQL development? How [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The big news today is that <a href="http://www.sun.com/">Sun</a> purchased <a href="http://mysql.com/">MySQL</a>: <a href="http://www.sun.com/aboutsun/media/presskits/2008-0116/index.jsp?intcmp=hp2008jan16_mysql_learn">Sun Press Kit</a>, <a href="http://www.sun.com/aboutsun/pr/2008-01/sunflash.20080116.1.xml">Sun Announcement</a>, <a href="http://mysql.com/news-and-events/sun-to-acquire-mysql.html">MySQL Announcement</a> and <a href="http://blogs.sun.com/jonathan/entry/winds_of_change_are_blowing#comments">Jonathan Schwartz&#8217;s Blog Announcement</a>.</p>
+<p>Let&#8217;s get the obvious issues/questions out of the way first.  The purchase price is $1 billion, $800 million cash, $200 million in options.  What is this going to mean for <a href="http://www.sun.com/software/products/postgresql/index.jsp">Sun&#8217;s PostgreSQL development</a>?  How will this impact the relationship between Sun and Oracle?  Historically Sun has been one of the big iron Oracle platforms.  Oracle owns a vital piece of MySQL, InnoDB.  And of course, what will this mean to the MySQL community?</p>
+<p>Now some of my own thoughts on this deal.  This seems like something of a desperate move for both companies.  In the case of MySQL, they need to find a way to stay intact as a company and bring in lots of cash.  Guess all that talk of an IPO goes out the window now.  So the list of potential buyers becomes pretty small.  It would have to be to a company with lots of hard core tech but without a major database platform of their own, which rules out Oracle, IBM and Microsoft.  Google and Yahoo might have smart folks who could make it better, but getting into the customer support business isn&#8217;t something that they&#8217;d want to do.  So how many other big tech companies are left that would be willing or able to pay the kind of money that MySQL was looking for?  Like I said, small list.</p>
+<p>Then there is the Sun side of this deal.  Recently Sun has been pushing PostgreSQL, but there isn&#8217;t one single company behind PostgreSQL, making it much more difficult to control in the manner that Sun prefers.  In this respect MySQL fits perfectly, although it is Open Source (mostly), there really isn&#8217;t much of a developer community for it.  Basically all development happens at MySQL the company.  This would allow Sun to have the same massive grip over development that it has had for its other open source products.  I think another factor is that Sun desperately wants to avoid becoming ignored in the world of big name web companies.  They&#8217;ve developed some great stuff (Dtrace, ZFS) and even open sourced their OS (Solaris), but have still have failed to get their foot in the door in any big way for tech startups.  So if you can&#8217;t convince them to like you, buy someone they already do.  And better to do it now while you still have the money to do so.</p>
+<p>Sun has just bought their way into becoming every tech company&#8217;s best friend.  Maybe now they&#8217;ll change their stock ticker symbol from <a href="http://joseph.randomnetworks.com/archives/2007/08/23/from-sunw-to-java/">JAVA</a> to MYSQL.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/01/16/sun-buys-mysql/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>From SUNW to JAVA</title>
+		<link>/2007/08/23/from-sunw-to-java/</link>
+					<comments>/2007/08/23/from-sunw-to-java/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 23 Aug 2007 18:44:45 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[stock]]></category>
+		<category><![CDATA[sun]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/08/23/from-sunw-to-java/</guid>
+
+					<description><![CDATA[Today Jonathan Schwartz announced Sun is changing their stock symbol from SUNW to JAVA: JAVA is a technology whose value is near infinite to the internet, and a brand that&#8217;s inseparably a part of Sun (and our profitability). And so next week, we&#8217;re going to embrace that reality by changing our trading symbol, from SUNW [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Today Jonathan Schwartz announced Sun is <a href="http://blogs.sun.com/jonathan/entry/java_is_everywhere">changing their stock symbol from SUNW to JAVA</a>:</p>
+<blockquote><p>
+JAVA is a technology whose value is near infinite to the internet, and a brand that&#8217;s inseparably a part of Sun (and our profitability). And so next week, we&#8217;re going to embrace that reality by changing our trading symbol, from SUNW to JAVA.
+</p></blockquote>
+<p>This seems really odd.  One of the reasons given for doing this was to introduce &#8220;Sun to new investors, developers and consumers&#8221;.  Any investor interested in a &#8220;Java&#8221; technology company that doesn&#8217;t know what Sun&#8217;s role in Java is shouldn&#8217;t be investing in them now just because their ticker symbol changed.  Any developer who doesn&#8217;t know what Sun&#8217;s role in Java is needs to do some more reading.  And any consumer that knows anything at all about Java equates it with slow software that brings their system to its knees when it starts up.</p>
+<p>On the one hand he is the &#8220;Chief Executive Officer and President&#8221; of Sun, so hopefully he and others have really thought this through before they go and spend millions of dollars re-branding.  Then again, who knows.</p>
+<p>If they really wanted to go with a new ticker symbol that would resonate with the tech geek crowd they should have picked ZFS instead.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/08/23/from-sunw-to-java/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>DTrace For FreeBSD</title>
+		<link>/2005/09/08/dtrace-for-freebsd/</link>
+					<comments>/2005/09/08/dtrace-for-freebsd/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 08 Sep 2005 17:21:49 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[devonodell]]></category>
+		<category><![CDATA[dtrace]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[offmyserver]]></category>
+		<category><![CDATA[raqdevil]]></category>
+		<category><![CDATA[solaris]]></category>
+		<category><![CDATA[sun]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=473</guid>
+
+					<description><![CDATA[Last month Devon O&#8217;Dell started work on porting DTrace from Solaris to FreeBSD. Devon works for Offmyserver.com, which is providing him with hardware and support for the project. Bryan Cantrill, one of the developers at Sun working on DTrace, has also offered support for the port. Recently there has been some work to make DTrace [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Last month <a href="http://www.sitetronics.com/wordpress/">Devon O&#8217;Dell</a> started work on <a href="http://www.zdnet.com.au/news/software/soa/Developer_aims_for_Dtrace_on_FreeBSD/0,2000061733,39210618,00.htm">porting DTrace from Solaris to FreeBSD</a>.  Devon works for <a href="http://www.offmyserver.com/">Offmyserver.com</a>, which is providing him with hardware and support for the project.  <a href="http://blogs.sun.com/roller/page/bmc">Bryan Cantrill</a>, one of the developers at <a href="http://www.sun.com/">Sun</a> working on <a href="http://opensolaris.org/os/community/dtrace/">DTrace</a>, has also <a href="http://blogs.sun.com/roller/page/bmc?entry=dtrace_on_freebsd">offered support</a> for the port.  Recently there has been some work to make DTrace usable <a href="http://blogs.sun.com/roller/page/bmc?entry=dtrace_and_php_demonstrated">with PHP</a> and <a href="http://blogs.sun.com/roller/page/bmc?entry=dtrace_and_ruby">with Ruby</a>.  I&#8217;ve never used DTrace, but it looks very impressive.  I look forward to being able to use this tool on my favorite server OS (<a href="http://www.freebsd.org/">FreeBSD</a> of course).</p>
+<p>Devon is also involved with <a href="http://www.raqdevil.com/">RAQdevil</a>, an Offmyserver.com project.  RAQdevil is another web control panel software package that is open source and based off of the Cobalt systems (which is now owned by Sun).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/09/08/dtrace-for-freebsd/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

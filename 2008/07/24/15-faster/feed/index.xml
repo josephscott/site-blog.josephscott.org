@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: 15% Faster	</title>
+	<atom:link href="/2008/07/24/15-faster/feed/" rel="self" type="application/rss+xml" />
+	<link>/2008/07/24/15-faster/</link>
+	<description></description>
+	<lastBuildDate>Wed, 20 Aug 2008 04:39:38 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/07/24/15-faster/#comment-2302</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 20 Aug 2008 04:39:38 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1146#comment-2302</guid>
+
+					<description><![CDATA[For a long time PHP5 was slower than PHP4, from what I hear with 5.3 (possibly 5.2?) that&#039;s no longer the case.  It would be interesting to see what the numbers look like for PHP4 versus PHP5 when 5.3 comes out.]]></description>
+			<content:encoded><![CDATA[<p>For a long time PHP5 was slower than PHP4, from what I hear with 5.3 (possibly 5.2?) that&#8217;s no longer the case.  It would be interesting to see what the numbers look like for PHP4 versus PHP5 when 5.3 comes out.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jacob Santos		</title>
+		<link>/2008/07/24/15-faster/#comment-2301</link>
+
+		<dc:creator><![CDATA[Jacob Santos]]></dc:creator>
+		<pubDate>Sat, 16 Aug 2008 19:11:02 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1146#comment-2301</guid>
+
+					<description><![CDATA[That is a little bit misleading. It is 15% faster from PHP 5.2 to PHP 5.3. If someone is on PHP4, then it will be many times faster than just 15%.]]></description>
+			<content:encoded><![CDATA[<p>That is a little bit misleading. It is 15% faster from PHP 5.2 to PHP 5.3. If someone is on PHP4, then it will be many times faster than just 15%.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

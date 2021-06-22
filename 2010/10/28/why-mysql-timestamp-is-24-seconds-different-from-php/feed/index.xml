@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Why MySQL timestamp is 24 seconds different from PHP	</title>
+	<atom:link href="/2010/10/28/why-mysql-timestamp-is-24-seconds-different-from-php/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/10/28/why-mysql-timestamp-is-24-seconds-different-from-php/</link>
+	<description></description>
+	<lastBuildDate>Fri, 29 Oct 2010 16:04:44 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/10/28/why-mysql-timestamp-is-24-seconds-different-from-php/#comment-3559</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 29 Oct 2010 16:04:44 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3064#comment-3559</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/10/28/why-mysql-timestamp-is-24-seconds-different-from-php/#comment-3558&quot;&gt;Anton Oliinyk&lt;/a&gt;.
+
+No problem, that was a handy piece of information to know about.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/10/28/why-mysql-timestamp-is-24-seconds-different-from-php/#comment-3558">Anton Oliinyk</a>.</p>
+<p>No problem, that was a handy piece of information to know about.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Anton Oliinyk		</title>
+		<link>/2010/10/28/why-mysql-timestamp-is-24-seconds-different-from-php/#comment-3558</link>
+
+		<dc:creator><![CDATA[Anton Oliinyk]]></dc:creator>
+		<pubDate>Fri, 29 Oct 2010 14:06:17 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3064#comment-3558</guid>
+
+					<description><![CDATA[Joseph, thanks for referring to me.
+It was a discovery for me too.]]></description>
+			<content:encoded><![CDATA[<p>Joseph, thanks for referring to me.<br />
+It was a discovery for me too.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/10/28/why-mysql-timestamp-is-24-seconds-different-from-php/#comment-3557</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 28 Oct 2010 16:30:37 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3064#comment-3557</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/10/28/why-mysql-timestamp-is-24-seconds-different-from-php/#comment-3556&quot;&gt;Donncha O Caoimh&lt;/a&gt;.
+
+Yeah, makes me wonder how many times I may have been hit by this and not noticed.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/10/28/why-mysql-timestamp-is-24-seconds-different-from-php/#comment-3556">Donncha O Caoimh</a>.</p>
+<p>Yeah, makes me wonder how many times I may have been hit by this and not noticed.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Donncha O Caoimh		</title>
+		<link>/2010/10/28/why-mysql-timestamp-is-24-seconds-different-from-php/#comment-3556</link>
+
+		<dc:creator><![CDATA[Donncha O Caoimh]]></dc:creator>
+		<pubDate>Thu, 28 Oct 2010 16:26:44 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3064#comment-3556</guid>
+
+					<description><![CDATA[Never noticed that, but I probably have hit it from time to time but didn&#039;t realise what was causing my code to break. Thanks!]]></description>
+			<content:encoded><![CDATA[<p>Never noticed that, but I probably have hit it from time to time but didn&#8217;t realise what was causing my code to break. Thanks!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>opensourceconversations &#8211; Joseph Scott</title>
+	<atom:link href="/tag/opensourceconversations/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 07 Dec 2006 23:06:48 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Alex Martelli on Highly-technical Management of Software Development</title>
+		<link>/2006/12/07/alex-martelli-on-highly-technical-management-of-software-development/</link>
+					<comments>/2006/12/07/alex-martelli-on-highly-technical-management-of-software-development/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 07 Dec 2006 23:06:48 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[alexmartelli]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[management]]></category>
+		<category><![CDATA[opensourceconversations]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/12/07/alex-martelli-on-highly-technical-management-of-software-development/</guid>
+
+					<description><![CDATA[I recently listened to Alex Martelli speak on Highly-technical Management of Software Development via Open Source Conversations. Even though he is focusing on managing software development, many of his points apply to other technical and non-technical aspects of a company. I&#8217;m almost ashamed to admit this, but I hadn&#8217;t thought about some of the reasons [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I recently listened to Alex Martelli speak on <a href="http://osc.gigavox.com/shows/detail1372.html">Highly-technical Management of Software Development</a> via <a href="http://osc.gigavox.com/">Open Source Conversations</a>.  Even though he is focusing on managing software development, many of his points apply to other technical and non-technical aspects of a company.</p>
+<p>I&#8217;m almost ashamed to admit this, but I hadn&#8217;t thought about some of the reasons he gives for NOT working more than about 40 hours a week as the norm.  Like, if you plan for 60 hour work weeks, what do you do when something blows up and demands more of your time?  Keeping the normal work week schedule reasonable gives you some breathing room to work more during the occasional week where everything falls apart.  In hindsight I&#8217;m thinking: duh, why haven&#8217;t I ever put it that way?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/12/07/alex-martelli-on-highly-technical-management-of-software-development/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

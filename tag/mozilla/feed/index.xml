@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mozilla &#8211; Joseph Scott</title>
+	<atom:link href="/tag/mozilla/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 27 Sep 2011 19:49:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Firefox Desperate To Mimic Chrome, Even Their Mistakes</title>
+		<link>/2011/09/27/firefox-desperate-to-mimic-chrome-even-their-mistakes/</link>
+					<comments>/2011/09/27/firefox-desperate-to-mimic-chrome-even-their-mistakes/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 27 Sep 2011 19:49:38 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[copy-paste]]></category>
+		<category><![CDATA[firefox]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[mozilla]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4841</guid>
+
+					<description><![CDATA[Recently Firefox has been pushing a more aggressive upgrade schedule. There is little doubt that they are feeling the pressure from Google Chrome, which is becoming increasingly popular and has an aggressive upgrade cycle as well. In the last year Chrome has become nearly as popular as Firefox. Many of the recent changes with Firefox, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Recently <a href="http://www.mozilla.org/en-US/firefox/new/">Firefox</a> has been pushing a more aggressive upgrade schedule.  There is little doubt that they are feeling the pressure from <a href="http://www.google.com/chrome">Google Chrome</a>, which is becoming increasingly popular and has an aggressive upgrade cycle as well.</p>
+<p>In the <a href="http://gs.statcounter.com/#browser-ww-monthly-201009-201108">last year Chrome has become nearly as popular as Firefox</a>.  Many of the recent changes with Firefox, like the shorter release cycles, make it look like it is trying to play catch up with Chrome.  Perhaps desperately so.  Unfortunately with <a href="http://www.mozilla.org/en-US/firefox/7.0/releasenotes/">release of Firefox 7</a> it appears they are also desperate to copy the same mistakes Chrome has made.</p>
+<p>It is no secret that <a href="http://josephscott.org/archives/2010/09/chrome-how-being-clever-is-worse-than-being-simple/">I really don&#8217;t like the way Chrome broke copy and paste in the URL field</a>.  That was a horrible decision that irritates me on an almost daily basis.  When I select something to be copied I expect to have an exact copy of what was selected, altering that under the hood completely breaks the concept of copy and paste.</p>
+<p>So guess what new &#8220;feature&#8221; was added to <a href="http://www.mozilla.org/en-US/firefox/7.0/releasenotes/">Firefox 7</a>?  You got it:</p>
+<blockquote><p>
+The &#8216;http://&/#8217; URL prefix is now hidden by default
+</p></blockquote>
+<p>And it behaves in exactly the same broken way that Chrome does.  </p>
+<p>To the Mozilla team: look, I understand that you&#8217;re concerned about losing market share to Chrome, but please, please, please don&#8217;t mimic their mistakes.  Now in order to copy and paste the URL properly I have to copy everything but the first character of the hostname, then manually type in that first character then paste in the remainder.  Absolutely horrible.  This is one feature of Chrome that no one should ever copy, and I&#8217;d be thrilled to see it removed from Chrome as well.</p>
+<p>If you want to no longer show &#8216;http://&/#8217; in the URL field, fine, but please stop breaking copy and paste.</p>
+<p><strong>UPDATE:</strong> Turns out Firefox has an option for disabling this &#8220;feature&#8221; ( <a href="https://twitter.com/#!/ozh/status/118775509990637568">kudos to @ozh</a> ):</p>
+<ul>
+<li>Enter about:config in the URL field</li>
+<li>Filter on browser.urlbar.trimURLs</li>
+<li>Set the value for browser.urlbar.trimURLs to false</li>
+</ul>
+<p>Not great that this is on by default, but at least there is an easy way to turn it off.  Now, if only it were that easy to turn off this &#8220;feature&#8221; in Chrome.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/09/27/firefox-desperate-to-mimic-chrome-even-their-mistakes/feed/</wfw:commentRss>
+			<slash:comments>18</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Long Lost Brother Of Microsoft BackOffice Logo?</title>
+		<link>/2009/03/31/long-lost-brother-of-microsoft-backoffice-logo/</link>
+					<comments>/2009/03/31/long-lost-brother-of-microsoft-backoffice-logo/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 31 Mar 2009 16:31:00 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[backoffice]]></category>
+		<category><![CDATA[logo]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<category><![CDATA[mozilla]]></category>
+		<category><![CDATA[weave]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1078</guid>
+
+					<description><![CDATA[&#160; The Mozilla Weave project released version 0.3 recently and their logo looked really familiar. Perhaps it was the long lost brother of the Microsoft BackOffice logo? Maybe it&#8217;s just because I worked in an IT department many years ago where that BackOffice logo seemed to be everywhere, but I can&#8217;t look at that Weave [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img style="float: left" src="http://farm4.static.flickr.com/3566/3399597819_1235295d42_m.jpg" /></p>
+<p><img style="float: left;margin-left: 30px" src="http://farm4.static.flickr.com/3622/3399597839_cf2dac473a_o.gif" /></p>
+<div style="clear: both" />&nbsp;</div>
+<p>The <a href="http://labs.mozilla.com/projects/weave/">Mozilla Weave</a> project released <a href="http://labs.mozilla.com/2009/03/weave-03-released/">version 0.3</a> recently and their logo looked really familiar.  Perhaps it was the long lost brother of the <a href="http://www.microsoft.com/PRODUCTS/servers/designed/">Microsoft BackOffice</a> logo?</p>
+<p>Maybe it&#8217;s just because I worked in an IT department many years ago where that BackOffice logo seemed to be everywhere, but I can&#8217;t look at that Weave logo without thinking of BackOffice.  It&#8217;s like a shiny monochrome version of Microsoft&#8217;s rainbow.</p>
+<p>What do you think, definite relation, or am I just scarred from my time with Microsoft BackOffice all those years ago?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/03/31/long-lost-brother-of-microsoft-backoffice-logo/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Kottke: WebOS</title>
+		<link>/2005/08/24/kottke-webos/</link>
+					<comments>/2005/08/24/kottke-webos/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 24 Aug 2005 16:32:41 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[kottke]]></category>
+		<category><![CDATA[mozilla]]></category>
+		<category><![CDATA[webos]]></category>
+		<category><![CDATA[yahoo]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=465</guid>
+
+					<description><![CDATA[Kottke posted some ideas on how the WebOS will develop. It&#8217;s an interesting read that looks at the development of a WebOS from the point of view of Google, Yahoo, Mozilla, Microsoft and Apple. No matter how the details play out, I&#8217;d expect all of the players involved to fight pretty hard to for their [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Kottke posted some <a href="http://www.kottke.org/05/08/googleos-webos">ideas on how the WebOS will develop</a>.  It&#8217;s an interesting read that looks at the development of a WebOS from the point of view of <a href="http://www.google.com/">Google</a>, <a href="http://www.yahoo.com/">Yahoo</a>, <a href="http://www.mozilla.org/">Mozilla</a>, <a href="http://www.microsoft.com/">Microsoft</a> and <a href="http://www.apple.com/">Apple</a>.  No matter how the details play out, I&#8217;d expect all of the players involved to fight pretty hard to for their share of the market.  This will be most true of Microsoft, who has the most resources to fight with and has the most to loose.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/08/24/kottke-webos/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

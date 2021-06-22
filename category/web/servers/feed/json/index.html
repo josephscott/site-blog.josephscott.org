@@ -1,0 +1,113 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/category/web/servers/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/category/web/servers/",
+    "feed_url": "https://blog.josephscott.org/category/web/servers/feed/json/",
+    "language": "en-US",
+    "title": "Servers &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2004/09/13/extending-http/",
+            "url": "https://blog.josephscott.org/2004/09/13/extending-http/",
+            "title": "Extending HTTP",
+            "content_html": "<p>There has been a lot of <a href=\"http://radio.weblogs.com/0001011/2004/09/08.html#a8200\">discussion</a> <a href=\"http://www.infoworld.com/article/04/07/30/31OPconnection_1.html\">lately</a> <a href=\"http://inessential.com/?comments=1&amp;postid=2758\">about</a> <a href=\"http://photomatt.net/2004/09/09/rss-bandwidth-usage/\">RSS bandwidth</a> use.  This morning I came across Bob Wyman&#8217;s <a href=\"http://bobwyman.pubsub.com/main/2004/09/using_rfc3229_w.html\">RFC3229 with Feeds</a>.  Instead of getting an entire feed, <a href=\"http://www.ietf.org/rfc/rfc3229.txt\">RFC 3229</a> would extend HTTP to allow sending deltas instead of the whole thing.  I&#8217;ve got mixed feelings about this idea.  I don&#8217;t think that standards (like HTTP), should be pressed in stone and never change, but by the same token changes made to it have to be taken very carefully.  I haven&#8217;t read through everything on the ideas behind RFC 3229, but my gut feeling is that this seems a little on the strong side to solve a bandwidth problem for feeds.</p>\n<p>Only time will tell what ideas really catch on to deal with feeds and the load (both system and network) they impose, but I suspect that the ideas most likely to be adopted will be the ones that have the lowest work to benefit ratio (the least amount of work for the most benefit).  It may be that there will be two or three likely winning ideas in the end: server side, client side and both.  Extending HTTP would fit into the both category and seems the least likely to catch on because both sides would have to implement it in order to see any benefit.</p>\n",
+            "content_text": "There has been a lot of discussion lately about RSS bandwidth use.  This morning I came across Bob Wyman&#8217;s RFC3229 with Feeds.  Instead of getting an entire feed, RFC 3229 would extend HTTP to allow sending deltas instead of the whole thing.  I&#8217;ve got mixed feelings about this idea.  I don&#8217;t think that standards (like HTTP), should be pressed in stone and never change, but by the same token changes made to it have to be taken very carefully.  I haven&#8217;t read through everything on the ideas behind RFC 3229, but my gut feeling is that this seems a little on the strong side to solve a bandwidth problem for feeds.\nOnly time will tell what ideas really catch on to deal with feeds and the load (both system and network) they impose, but I suspect that the ideas most likely to be adopted will be the ones that have the lowest work to benefit ratio (the least amount of work for the most benefit).  It may be that there will be two or three likely winning ideas in the end: server side, client side and both.  Extending HTTP would fit into the both category and seems the least likely to catch on because both sides would have to implement it in order to see any benefit.",
+            "date_published": "2004-09-13T08:50:08-06:00",
+            "date_modified": "2004-09-13T08:50:08-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "Blogging",
+                "Servers",
+                "Web"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2004/08/24/apache-module-idea-mod_ping/",
+            "url": "https://blog.josephscott.org/2004/08/24/apache-module-idea-mod_ping/",
+            "title": "Apache Module Idea mod_ping",
+            "content_html": "<p>While trying to get my thoughts down on <a href=\"http://joseph.randomnetworks.com/archives/2004/08/24/why-hasnt-anyone-figured-out-how-to-do-feed-searches/\">feed searching</a> a thought came to me about one of the problems with traditional web search engines, figuring out when pages are updated.  For dynamic content like feeds this problem has been addressed by using XML-RPC to ping sites to let them know there is new information available.  So why couldn&#8217;t this be used for static pages that are updated via FTP, WebDAV or FrontPage?  Adding pings to those protocols isn&#8217;t realistic, but the web server would be able determine when content changes pretty easily.  Enter the idea of an Apache module, mod_ping.  This module would have a small database (dbm perhaps?) that simply stores the time stamps for the files being served out by Apache.  If the time stamp on the file matches the most recent one in the database for that file then mod_ping would do nothing.  If the time stamp on the file was newer than the one in the database then it would ping a configured list of services (like Google and Yahoo) letting them know that the page has been updated and that they should come along and reindex it when they get the chance.</p>\n<p>Configuration of such a beast would have to be pretty flexible.  Once enabled in Apache the configuration of mod_ping could be done in individual .htaccess files.  Perhaps even using regexs so that you could easily exclude or include certain types of files, or directories.  It would also need configuration directives to specify what URLs to ping.</p>\n<p>There are two hurdles to mod_ping right now.  The first is that it only exists in my head.  The second is that Google and Yahoo would have to be convinced to support ping requests.  Perhaps it should be a for pay service with the benefit to customers being that their pages are being indexed in a timely manner.  For that matter this could be done with blogs too, pinging Google and Yahoo when a brand new page comes into being because of a new post.  Its all about getting web pages indexed faster so that searches are more meaningful.</p>\n",
+            "content_text": "While trying to get my thoughts down on feed searching a thought came to me about one of the problems with traditional web search engines, figuring out when pages are updated.  For dynamic content like feeds this problem has been addressed by using XML-RPC to ping sites to let them know there is new information available.  So why couldn&#8217;t this be used for static pages that are updated via FTP, WebDAV or FrontPage?  Adding pings to those protocols isn&#8217;t realistic, but the web server would be able determine when content changes pretty easily.  Enter the idea of an Apache module, mod_ping.  This module would have a small database (dbm perhaps?) that simply stores the time stamps for the files being served out by Apache.  If the time stamp on the file matches the most recent one in the database for that file then mod_ping would do nothing.  If the time stamp on the file was newer than the one in the database then it would ping a configured list of services (like Google and Yahoo) letting them know that the page has been updated and that they should come along and reindex it when they get the chance.\nConfiguration of such a beast would have to be pretty flexible.  Once enabled in Apache the configuration of mod_ping could be done in individual .htaccess files.  Perhaps even using regexs so that you could easily exclude or include certain types of files, or directories.  It would also need configuration directives to specify what URLs to ping.\nThere are two hurdles to mod_ping right now.  The first is that it only exists in my head.  The second is that Google and Yahoo would have to be convinced to support ping requests.  Perhaps it should be a for pay service with the benefit to customers being that their pages are being indexed in a timely manner.  For that matter this could be done with blogs too, pinging Google and Yahoo when a brand new page comes into being because of a new post.  Its all about getting web pages indexed faster so that searches are more meaningful.",
+            "date_published": "2004-08-24T15:47:46-06:00",
+            "date_modified": "2004-08-24T15:47:46-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "Blogging",
+                "Servers",
+                "Web"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2004/07/22/redirect-to-ssl-using-apaches-htaccess/",
+            "url": "https://blog.josephscott.org/2004/07/22/redirect-to-ssl-using-apaches-htaccess/",
+            "title": "Redirect To SSL Using Apache\u2019s .htaccess",
+            "content_html": "<p><span style=\"float: left;padding: 10px\"></p>\n<p></span><br />\nThere are plenty of times I want to require users to be accessing a site only via SSL.  My first try at this was to simple create a .htaccess file that contained SSLRequireSSL, which basically tells Apache that access to a site can only be allowed if SSL is being used.  This accomplished what I wanted, but it brought a side issue to requiring SSL, users often leave off (or forget) the the s in https.  So after a little bit of digging around I found another approach to this.  The new .htaccess file looks like this:<br />\n<code><br />\nRewriteEngine On<br />\nRewriteCond %{SERVER_PORT} !443<br />\nRewriteRule (.*) https://www.example.com/require-secure/ [R]<br />\n</code><br />\nThe first line tells Apache we are going to use mod_rewrite.  The second line only matches if the port being used to access the site is 443 (the port reserved for https use).  If that second line matches then the third takes kicks in, which simply redirects the user to the SSL version of your URL.  This still enforces the use of SSL, but saves you from trying figure why you can&#8217;t get to your site just because you forget the s in https.</p>\n<p><b>UPDATE Tue 23 May 2006 @ 3:50pm :</b> <a href=\"http://joseph.randomnetworks.com/archives/2004/07/22/redirect-to-ssl-using-apaches-htaccess/#comment-477\">Comment #4 by Nicol\u00e1s Ech\u00e1niz</a> has an even better version of this that isn&#8217;t limited to checking a specific port (443) for SSL:</p>\n<p><code><br />\nRewriteEngine On<br />\nRewriteCond %{HTTPS} off<br />\nRewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}<br />\n</code></p>\n",
+            "content_text": "There are plenty of times I want to require users to be accessing a site only via SSL.  My first try at this was to simple create a .htaccess file that contained SSLRequireSSL, which basically tells Apache that access to a site can only be allowed if SSL is being used.  This accomplished what I wanted, but it brought a side issue to requiring SSL, users often leave off (or forget) the the s in https.  So after a little bit of digging around I found another approach to this.  The new .htaccess file looks like this:\n\nRewriteEngine On\nRewriteCond %{SERVER_PORT} !443\nRewriteRule (.*) https://www.example.com/require-secure/ [R]\n\nThe first line tells Apache we are going to use mod_rewrite.  The second line only matches if the port being used to access the site is 443 (the port reserved for https use).  If that second line matches then the third takes kicks in, which simply redirects the user to the SSL version of your URL.  This still enforces the use of SSL, but saves you from trying figure why you can&#8217;t get to your site just because you forget the s in https.\nUPDATE Tue 23 May 2006 @ 3:50pm : Comment #4 by Nicol\u00e1s Ech\u00e1niz has an even better version of this that isn&#8217;t limited to checking a specific port (443) for SSL:\n\nRewriteEngine On\nRewriteCond %{HTTPS} off\nRewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}",
+            "date_published": "2004-07-22T16:06:47-06:00",
+            "date_modified": "2004-07-22T16:06:47-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "How To",
+                "Servers",
+                "Web"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2004/05/12/internet-archive-freecache/",
+            "url": "https://blog.josephscott.org/2004/05/12/internet-archive-freecache/",
+            "title": "Internet Archive: FreeCache",
+            "content_html": "<p>Ok, another cool idea that I&#8217;m surprised hasn&#8217;t shown up before, <a href=\"http://www.archive.org/web/freecache.php\">Internet Archive: FreeCache</a>.  I wonder if there is a way to get bittorrent to take advantage of this?</p>\n",
+            "content_text": "Ok, another cool idea that I&#8217;m surprised hasn&#8217;t shown up before, Internet Archive: FreeCache.  I wonder if there is a way to get bittorrent to take advantage of this?",
+            "date_published": "2004-05-12T19:59:07-06:00",
+            "date_modified": "2004-05-12T19:59:07-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "Servers",
+                "Web"
+            ]
+        }
+    ]
+}

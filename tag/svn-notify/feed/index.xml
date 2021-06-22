@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>svn-notify &#8211; Joseph Scott</title>
+	<atom:link href="/tag/svn-notify/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 13 Jul 2011 18:32:09 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>SVN::Notify Looking For A New Maintainer</title>
+		<link>/2011/07/13/svnnotify-looking-for-a-new-maintainer/</link>
+					<comments>/2011/07/13/svnnotify-looking-for-a-new-maintainer/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 13 Jul 2011 18:32:09 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[perl]]></category>
+		<category><![CDATA[subversion]]></category>
+		<category><![CDATA[svn-notify]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4470</guid>
+
+					<description><![CDATA[David Wheeler announced that SVN::Notify is up for adoption. I still get quite a bit of milage out of SVN::Notify and hope that some Perl hacker out there is willing to take it over.]]></description>
+										<content:encoded><![CDATA[<p>David Wheeler announced that <a href='http://www.justatheory.com/computers/programming/perl/modules/adopt-svn-notify.html'>SVN::Notify is up for adoption</a>.  I still get quite a bit of milage out of <a href="http://search.cpan.org/dist/SVN-Notify/">SVN::Notify</a> and hope that some Perl hacker out there is willing to take it over.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/07/13/svnnotify-looking-for-a-new-maintainer/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Setting up SVNSync and SVN-Notify</title>
+		<link>/2010/01/15/setting-up-svnsync-and-svn-notify/</link>
+					<comments>/2010/01/15/setting-up-svnsync-and-svn-notify/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 15 Jan 2010 15:58:31 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[subversion]]></category>
+		<category><![CDATA[svn-notify]]></category>
+		<category><![CDATA[svnsync]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1627</guid>
+
+					<description><![CDATA[Long story short, I wanted to get commit emails for a Subversion repo. I don&#8217;t have any admin rights to the repo so I figured the easiest way was to just setup a local repo, keep up to date with the live repo with svnsync and then configure svn-notify on my local repo. The local [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Long story short, I wanted to get commit emails for a Subversion repo.  I don&#8217;t have any admin rights to the repo so I figured the easiest way was to just setup a local repo, keep up to date with the live repo with svnsync and then configure svn-notify on my local repo.  The local repo is only used for svn-notify, I&#8217;m not using it to checkout copies of the code or anything else.</p>
+<p>A good resource to getting started with svnsync is <a href="http://svn.apache.org/repos/asf/subversion/trunk/notes/svnsync.txt">http://svn.apache.org/repos/asf/subversion/trunk/notes/svnsync.txt</a>.  Go take a look at that first, should make the rest of this easy to follow.</p>
+<p>I assume that you already have subversion/svnsync and svn-notify installed and ready to go.  I&#8217;m not going to cover installing those.</p>
+<p>Here are the steps I followed to put this all together, first svnsync:</p>
+<ol>
+<li>Create local svn repo: <code>svnadmin create /home/svn/repo-name</code></li>
+<li>Edit <code>/home/svn/repo-name/hooks/pre-revprop-change</code> so that it looks like:
+<p>[sourcecode]<br />
+#!/bin/sh<br />
+USER=&quot;$3&quot;</p>
+<p>if [ &quot;$USER&quot; = &quot;svnsync&quot; ]; then exit 0; fi</p>
+<p>echo &quot;Only the svnsync user can change revprops&quot; &gt;&amp;2<br />
+exit 1<br />
+[/sourcecode]</p>
+<p>This limits changes to the local repo to only the &#8216;svnsync&#8217; user.
+</li>
+<li>Make it executable: <code>chmod +x /home/svn/repo-name/hooks/pre-revprop-change</code></li>
+<li>Initialize the sync between repos: <code>svnsync init &#8211; username svnsync file:///home/svn/repo-name http://svn.example.com/repo-name</code></li>
+<li>Run the first sync: <code>svnsync sync file:///home/svn/repo-name</code></li>
+<li>Schedule a cron job to run the sync periodically, say once every hour (on a nice odd number like 17 after the hour): <code>17 * * * * /usr/local/bin/svnsync &#8211; non-interactive sync file:///home/svn/repo-name</code></li>
+</ol>
+<p>With svnsync in place adding svn-notify for our locally synced repo is pretty easy.  Edit /home/svn/repo-name/hooks/post-commit  to look like:</p>
+<p>[sourcecode]<br />
+#!/bin/sh</p>
+<p>REPOS=&quot;$1&quot;<br />
+REV=&quot;$2&quot;</p>
+<p>delayed_notify( ) {<br />
+sleep 10</p>
+<p>/usr/local/bin/svnnotify &#8211;repos-path &quot;$1&quot; &#8211;revision &quot;$2&quot;<br />
+&#8211;to commit-list@example.com<br />
+&#8211;from commit-list@example.com<br />
+&#8211;with-diff<br />
+&#8211;subject-cx<br />
+&#8211;subject-prefix &#8216;REPO-NAME &#8216;<br />
+&#8211;handler HTML::ColorDiff<br />
+}</p>
+<p>delayed_notify $1 $2 &gt; /dev/null 2&gt;&amp;1 &amp;<br />
+[/sourcecode]</p>
+<p>Then make that hook executable: <code>chmod +x /home/svn/repo-name/hooks/post-commit</code></p>
+<p>There are two downsides to this approach.  First, the commit emails don&#8217;t go out right away after a commit, svnsync has to be run first.  In my example above that means it could be an hour after the commit before the email goes out.  I don&#8217;t consider this a big deal and the gap can be reduced by syncing more often.  <strike>The second problem bugs me, the user listed for all of the commits is the svnsync user, instead of the actual user that committed the change to the master repo.  Since all of the commits are replayed as the svnsync user there doesn&#8217;t appear to be an easy way to fix this.  If you know of one let me know.</strike></p>
+<p>And there we go, now you can get commit emails for a repo that you don&#8217;t have any admin rights to.  Not glamorous or ideal, but better than nothing.</p>
+<p><b>Update: </b> A big thank you <a href="http://blog.ftwr.co.uk/">Peter Westwood</a> (a.k.a westi) for suggesting a technique to delay svn-notify long enough for svnsync to finish replaying the rev-prop changes.  I tried it out and it solved the problem where all commit emails showed the &#8216;svnsync&#8217; user for every commit.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/01/15/setting-up-svnsync-and-svn-notify/feed/</wfw:commentRss>
+			<slash:comments>12</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>SVN-Notify, Linking To Trac Revisions</title>
+		<link>/2008/01/07/svn-notify-linking-to-trac-revisions/</link>
+					<comments>/2008/01/07/svn-notify-linking-to-trac-revisions/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 08 Jan 2008 06:47:51 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[howto]]></category>
+		<category><![CDATA[subversion]]></category>
+		<category><![CDATA[svn-notify]]></category>
+		<category><![CDATA[trac]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/01/07/svn-notify-linking-to-trac-revisions/</guid>
+
+					<description><![CDATA[Matt made it so that the revision number shown in SVN-Notify links to the Trac diff page for that revision. This was for the wp-svn list, but no reason it couldn&#8217;t be used elsewhere. Figured I might need something like this one day, so here it is: /usr/local/bin/svnnotify -r $REV -C -d -H HTML::ColorDiff -p [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://photomatt.net/">Matt</a> made it so that the revision number shown in <a href="http://search.cpan.org/~dwheeler/SVN-Notify/">SVN-Notify</a> links to the <a href="http://trac.edgewall.org/">Trac</a> diff page for that revision.  This was for the <a href="http://lists.automattic.com/mailman/listinfo/wp-svn">wp-svn</a> list, but no reason it couldn&#8217;t be used elsewhere.</p>
+<p>Figured I might need something like this one day, so here it is:</p>
+<p><code></p>
+<pre>
+/usr/local/bin/svnnotify -r $REV -C -d -H HTML::ColorDiff -p $REPOS 
+-t wp-svn@lists.automattic.com 
+--from m@wordpress.org 
+--reply-to wp-hackers@lists.automattic.com 
+--revision-url http://trac.wordpress.org/changeset/%s 
+--ticket-map '(#(d+))=http://trac.wordpress.org/ticket/%s' 
+--ticket-regex '([(d+)])' 
+--ticket-url http://trac.wordpress.org/changeset/%s
+</pre>
+<p></code></p>
+<p>And here&#8217;s <a href="http://comox.textdrive.com/pipermail/wp-hackers/2007-December/016874.html">Matt&#8217;s email to wp-hackers</a> that explains it a bit more.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/01/07/svn-notify-linking-to-trac-revisions/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

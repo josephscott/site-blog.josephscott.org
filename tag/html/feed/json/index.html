@@ -1,0 +1,294 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/html/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/html/",
+    "feed_url": "https://blog.josephscott.org/tag/html/feed/json/",
+    "language": "en-US",
+    "title": "html &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=15680",
+            "url": "https://blog.josephscott.org/2018/08/22/pup-command-line-html-parsing/",
+            "title": "pup: Command Line HTML Parsing",
+            "content_html": "<p><a href=\"https://github.com/ericchiang/pup\">pup</a>, the three sentence description nails is:</p>\n<blockquote><p>\npup is a command line tool for processing HTML. It reads from stdin, prints to stdout, and allows the user to filter parts of the page using CSS selectors.</p>\n<p>Inspired by jq, pup aims to be a fast and flexible way of exploring HTML from the terminal.\n</p></blockquote>\n<p>If you have used jq, this is going to feel familiar, just for an HTML context.  With the option to <a href=\"https://github.com/ericchiang/pup#json\">output the results as JSON</a>, you could find your self using pup in conjunction with jq.</p>\n<p>There are several examples in the <a href=\"https://github.com/ericchiang/pup\">README</a>, here are a few of my own.</p>\n<p>List all of the <code>IMG</code> tags from cnn.com:<br />\n[shell]<br />\ncurl -s https://www.cnn.com/ | pup &#8216;img&#8217;<br />\n[/shell]</p>\n<p>Now get it back as a JSON array:<br />\n[shell]<br />\ncurl -s https://www.cnn.com/ | pup &#8216;img json{}&#8217;<br />\n[/shell]</p>\n<p>List all of the <code>LINK</code> attributes that have a <code>rel=\"preload\"</code> attribute:</p>\n<p>[shell]<br />\ncurl -s https://www.cnn.com/ | pup &#8216;link[rel=&quot;preload&quot;]&#8217;<br />\n[/shell]</p>\n<p>I could see pup and jq becoming standard utilities on Unix-like systems.</p>\n",
+            "content_text": "pup, the three sentence description nails is:\n\npup is a command line tool for processing HTML. It reads from stdin, prints to stdout, and allows the user to filter parts of the page using CSS selectors.\nInspired by jq, pup aims to be a fast and flexible way of exploring HTML from the terminal.\n\nIf you have used jq, this is going to feel familiar, just for an HTML context.  With the option to output the results as JSON, you could find your self using pup in conjunction with jq.\nThere are several examples in the README, here are a few of my own.\nList all of the IMG tags from cnn.com:\n[shell]\ncurl -s https://www.cnn.com/ | pup &#8216;img&#8217;\n[/shell]\nNow get it back as a JSON array:\n[shell]\ncurl -s https://www.cnn.com/ | pup &#8216;img json{}&#8217;\n[/shell]\nList all of the LINK attributes that have a rel=\"preload\" attribute:\n[shell]\ncurl -s https://www.cnn.com/ | pup &#8216;link[rel=&quot;preload&quot;]&#8217;\n[/shell]\nI could see pup and jq becoming standard utilities on Unix-like systems.",
+            "date_published": "2018-08-22T10:52:22-06:00",
+            "date_modified": "2018-08-22T10:52:22-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "go",
+                "html",
+                "jq",
+                "pup",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=13739",
+            "url": "https://blog.josephscott.org/2015/11/13/responsive-images/",
+            "title": "Responsive Images",
+            "content_html": "<p>Jake Archibald on <a href=\"https://jakearchibald.com/2015/anatomy-of-responsive-images/\">The anatomy of responsive images</a>:</p>\n<blockquote><p>\nIn order for the browser to pick the right image, it needs to know:</p>\n<p>&#8211; URLs for the image at various sizes<br />\n&#8211; The decoded width of each of those image resources<br />\n&#8211; The width of the `&lt;img&gt;`\n</p></blockquote>\n<p><code>Picture</code>&#8216;s and <code>img</code>&#8216;s oh my!</p>\n",
+            "content_text": "Jake Archibald on The anatomy of responsive images:\n\nIn order for the browser to pick the right image, it needs to know:\n&#8211; URLs for the image at various sizes\n&#8211; The decoded width of each of those image resources\n&#8211; The width of the `&lt;img&gt;`\n\nPicture&#8216;s and img&#8216;s oh my!",
+            "date_published": "2015-11-13T07:30:10-07:00",
+            "date_modified": "2015-11-13T07:30:10-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "html",
+                "jake-archibald",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=12863",
+            "url": "https://blog.josephscott.org/2015/06/24/autofill-fields/",
+            "title": "Autofill Fields",
+            "content_html": "<p>The HTML spec section on <a href=\"https://html.spec.whatwg.org/multipage/forms.html#autofill\">autofill</a> has a list of <a href=\"https://html.spec.whatwg.org/multipage/forms.html#autofill-field\">autofill field keywords</a>.  Things like <code>address-line1</code>, <code>cc-exp-month</code>, and so on.</p>\n<p>There are examples of how to use these in the <a href=\"http://updates.html5rocks.com/2015/06/checkout-faster-with-Autofill\">Help users checkout faster with Autofill</a> article at html5rocks.com.</p>\n",
+            "content_text": "The HTML spec section on autofill has a list of autofill field keywords.  Things like address-line1, cc-exp-month, and so on.\nThere are examples of how to use these in the Help users checkout faster with Autofill article at html5rocks.com.",
+            "date_published": "2015-06-24T08:22:49-06:00",
+            "date_modified": "2015-06-24T08:22:49-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "autofill",
+                "html",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=11027",
+            "url": "https://blog.josephscott.org/2014/09/29/pup-command-line-html-processor/",
+            "title": "pup, Command Line HTML Processor",
+            "content_html": "<p>Last year I mentioned a nifty little command line tool called <a href=\"https://josephscott.org/archives/2013/03/jq-command-line-json-processor/\">jq</a>.  It had a very specific purpose: make it easy to process JSON.  That same line of thinking inspired <a href=\"https://github.com/EricChiang/pup\">pup</a>, from <a href=\"https://twitter.com/erchiang\">Eric Chiang</a>:</p>\n<blockquote><p>\npup is a command line tool for processing HTML. It reads from stdin, prints to stdout, and allows the user to filter parts of the page using CSS selectors.\n</p></blockquote>\n<p>Here is a little taste of how this works:</p>\n<p>[sourcecode]<br />\ncurl -s https://wordpress.com/ |<br />\npup link<br />\n[/sourcecode]</p>\n<p>That will return all of the <code>link</code> elements on the WordPress.com home page.  You can easily tighten it down to just the shortlink:</p>\n<p>[sourcecode]<br />\ncurl -s https://wordpress.com |<br />\npup link[rel=shortlink]</p>\n<p>&lt;link rel=&quot;shortlink&quot; href=&quot;http://wp.me/1&quot;&gt;<br />\n[/sourcecode]</p>\n<p>One final step further, get just the <code>href</code> value:</p>\n<p>[sourcecode]<br />\ncurl -s https://wordpress.com |<br />\npup link[rel=shortlink] attr{href}</p>\n<p>http://wp.me/<br />\n[/sourcecode]</p>\n<p>I like it.</p>\n<p>Pup is open source, written in go and available at <a href=\"https://github.com/EricChiang/pup\">https://github.com/EricChiang/pup</a>.</p>\n",
+            "content_text": "Last year I mentioned a nifty little command line tool called jq.  It had a very specific purpose: make it easy to process JSON.  That same line of thinking inspired pup, from Eric Chiang:\n\npup is a command line tool for processing HTML. It reads from stdin, prints to stdout, and allows the user to filter parts of the page using CSS selectors.\n\nHere is a little taste of how this works:\n[sourcecode]\ncurl -s https://wordpress.com/ |\npup link\n[/sourcecode]\nThat will return all of the link elements on the WordPress.com home page.  You can easily tighten it down to just the shortlink:\n[sourcecode]\ncurl -s https://wordpress.com |\npup link[rel=shortlink]\n&lt;link rel=&quot;shortlink&quot; href=&quot;http://wp.me/1&quot;&gt;\n[/sourcecode]\nOne final step further, get just the href value:\n[sourcecode]\ncurl -s https://wordpress.com |\npup link[rel=shortlink] attr{href}\nhttp://wp.me/\n[/sourcecode]\nI like it.\nPup is open source, written in go and available at https://github.com/EricChiang/pup.",
+            "date_published": "2014-09-29T14:33:10-06:00",
+            "date_modified": "2014-09-29T14:33:10-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "eric-chiang",
+                "go",
+                "html",
+                "pup",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=10104",
+            "url": "https://blog.josephscott.org/2014/04/17/cure53h5sc/",
+            "title": "HTML5 Security Cheatsheet",
+            "content_html": "<p>A list of web related security issues is being collected at <a href=\"https://html5sec.org/\" title=\"I like the live test links.\">html5sec.org</a>, with a <a href=\"https://github.com/cure53/H5SC\" title=\"Yep, everything is on GitHub.\">GitHub repo</a> to send in updates.</p>\n<p>There are so many ways that bad things can happen in a web environment that sharing details in an open and public way like this is really important.</p>\n",
+            "content_text": "A list of web related security issues is being collected at html5sec.org, with a GitHub repo to send in updates.\nThere are so many ways that bad things can happen in a web environment that sharing details in an open and public way like this is really important.",
+            "date_published": "2014-04-17T14:22:33-06:00",
+            "date_modified": "2014-04-17T14:22:33-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "html",
+                "security",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=8593",
+            "url": "https://blog.josephscott.org/2013/07/15/designing-hyperlinks/",
+            "title": "Designing Hyperlinks",
+            "content_html": "<p>Discussion on how to <a href='http://sixrevisions.com/usability/hyperlink-design/'>design hyperlinks</a>.  One point that didn&#8217;t get much coverage:</p>\n<blockquote><p>\nHyperlinks should appear interactable.\n</p></blockquote>\n<p>The trend towards flattening everything misses this recommendation.</p>\n<p>Applying gray scale then blur to see if you can still see the emphasis was something I remember <a href=\"http://www.cameronmoll.com/\">Cameron Moll</a> mentioning years ago.  I don&#8217;t remember too many things from his presentation that day, but that one has stuck with me.</p>\n<p>In the end sticking with the traditional blue link and pushing the underline further down to make the link text easier to read is the best option.</p>\n",
+            "content_text": "Discussion on how to design hyperlinks.  One point that didn&#8217;t get much coverage:\n\nHyperlinks should appear interactable.\n\nThe trend towards flattening everything misses this recommendation.\nApplying gray scale then blur to see if you can still see the emphasis was something I remember Cameron Moll mentioning years ago.  I don&#8217;t remember too many things from his presentation that day, but that one has stuck with me.\nIn the end sticking with the traditional blue link and pushing the underline further down to make the link text easier to read is the best option.",
+            "date_published": "2013-07-15T23:21:40-06:00",
+            "date_modified": "2013-07-15T23:21:40-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "css",
+                "html",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=6627",
+            "url": "https://blog.josephscott.org/2013/03/01/html-purifier/",
+            "title": "HTML Purifier",
+            "content_html": "<p><a href=\"https://sharedat.net/s/fCDw\"><img loading=\"lazy\" src=\"https://sharedat.net/f/fC/fCDw/html-purifier.png\" width=\"505\" height=\"168\" class=\"aligncenter\" /></a></p>\n<p>In the world of HTML filtering in PHP <a href='http://htmlpurifier.org/'>HTML Purifier</a> appears to be the current top dog.  WordPress long ago forked <a href=\"http://sourceforge.net/projects/kses/\">kses</a> for HTML filtering, which is fine, but as <a href=\"http://urbangiraffe.com/\">John Godley</a> ( a co-worker at <a href=\"http://automattic.com/\">Automattic</a> ) put it:</p>\n<blockquote><p>\nThere is nothing fundamentally wrong with the way WordPress and bbPress filters comments, and in fact there has been no security alert related to this. However, this doesn\u2019t detract from the desire to make things better, and the fact that HTML Purifier is much more thorough and exhaustive.\n</p></blockquote>\n<p>He wrote the <a href=\"http://wordpress.org/extend/plugins/html-purified/\">HTML Purified WordPress plugin</a>, which &#8220;replaces the default WordPress comments filters with HTML Purifier&#8221;.</p>\n<p>For new PHP projects, or ones that allow you to easily swap in/out libraries, it looks like HTML Purifier is the current <a href=\"http://htmlpurifier.org/comparison\">best option for HTML filtering</a>.</p>\n",
+            "content_text": "In the world of HTML filtering in PHP HTML Purifier appears to be the current top dog.  WordPress long ago forked kses for HTML filtering, which is fine, but as John Godley ( a co-worker at Automattic ) put it:\n\nThere is nothing fundamentally wrong with the way WordPress and bbPress filters comments, and in fact there has been no security alert related to this. However, this doesn\u2019t detract from the desire to make things better, and the fact that HTML Purifier is much more thorough and exhaustive.\n\nHe wrote the HTML Purified WordPress plugin, which &#8220;replaces the default WordPress comments filters with HTML Purifier&#8221;.\nFor new PHP projects, or ones that allow you to easily swap in/out libraries, it looks like HTML Purifier is the current best option for HTML filtering.",
+            "date_published": "2013-03-01T14:15:13-07:00",
+            "date_modified": "2013-03-01T14:15:13-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "filter",
+                "html",
+                "html-purifier",
+                "PHP",
+                "WordPress",
+                "wordpress-plugin",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=503",
+            "url": "https://blog.josephscott.org/2008/12/02/minimum-html-5-document/",
+            "title": "Minimum HTML 5 Document",
+            "content_html": "<p>Dustin Diaz recently posted about <a href=\"http://www.dustindiaz.com/skinny-on-doctypes/\">skinny doctypes</a>, which basically boiled down to:</p>\n<p>[sourcecode lang=&#8221;html&#8221;]</p>\n<p>[/sourcecode]</p>\n<p>Folks in the comments pointed out that this is the doctype that <a href=\"http://www.w3.org/html/wg/html5/\">HTML 5</a> uses.  I&#8217;d only been glancing at HTML 5 from time to time, but this got me to look at it a little bit closer.  I went to the <a href=\"http://validator.w3.org/\">W3C Validator</a> to see what the minimum HTML 5 document looked like.  Here&#8217;s the smallest document that still validated:</p>\n<p>[sourcecode lang=&#8221;html&#8221;]</p>\n<p>    <title></title></p>\n<p>[/sourcecode]</p>\n<p>Now this is what I&#8217;m talking about, simple and to the point.</p>\n<p>The validator does give one warning for this document, but it&#8217;s simply to mention that HTML 5 conformance is still experimental.</p>\n",
+            "content_text": "Dustin Diaz recently posted about skinny doctypes, which basically boiled down to:\n[sourcecode lang=&#8221;html&#8221;]\n[/sourcecode]\nFolks in the comments pointed out that this is the doctype that HTML 5 uses.  I&#8217;d only been glancing at HTML 5 from time to time, but this got me to look at it a little bit closer.  I went to the W3C Validator to see what the minimum HTML 5 document looked like.  Here&#8217;s the smallest document that still validated:\n[sourcecode lang=&#8221;html&#8221;]\n    \n[/sourcecode]\nNow this is what I&#8217;m talking about, simple and to the point.\nThe validator does give one warning for this document, but it&#8217;s simply to mention that HTML 5 conformance is still experimental.",
+            "date_published": "2008-12-02T09:00:52-07:00",
+            "date_modified": "2008-12-02T09:00:52-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "html",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2008/01/17/links-for-thu-17-jan-2008/",
+            "url": "https://blog.josephscott.org/2008/01/17/links-for-thu-17-jan-2008/",
+            "title": "Links for Thu 17 Jan 2008",
+            "content_html": "<ul>\n<li>\n<p><a href=\"http://www.parsed.org/tip/415/\">Autocomplete HTML/CSS/JavaScript/python/xml/php/c with CTRL-X CTRL-O &#8211; parsed.org</a> &#8211; Add autocomplete features to Vim.  Wish I&#8217;d come across this sooner. <br /> Tags: <a href=\"http://del.icio.us/josephscott/vim\">vim</a> <a href=\"http://del.icio.us/josephscott/autocomplete\">autocomplete</a> <a href=\"http://del.icio.us/josephscott/php\">php</a> <a href=\"http://del.icio.us/josephscott/javascript\">javascript</a> <a href=\"http://del.icio.us/josephscott/html\">html</a> <a href=\"http://del.icio.us/josephscott/python\">python</a>  </p>\n</li>\n<li>\n<p><a href=\"http://openid.yahoo.com/\">OpenID Splash</a> &#8211; Looks like Yahoo has taken major dive into the OpenID pool. <br /> Tags: <a href=\"http://del.icio.us/josephscott/openid\">openid</a> <a href=\"http://del.icio.us/josephscott/yahoo\">yahoo</a>  </p>\n</li>\n</ul>\n",
+            "content_text": "Autocomplete HTML/CSS/JavaScript/python/xml/php/c with CTRL-X CTRL-O &#8211; parsed.org &#8211; Add autocomplete features to Vim.  Wish I&#8217;d come across this sooner.  Tags: vim autocomplete php javascript html python  \n\n\nOpenID Splash &#8211; Looks like Yahoo has taken major dive into the OpenID pool.  Tags: openid yahoo",
+            "date_published": "2008-01-17T17:30:08-07:00",
+            "date_modified": "2008-01-17T17:30:08-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "autocomplete",
+                "html",
+                "javascript",
+                "Links",
+                "openid",
+                "PHP",
+                "python",
+                "vim",
+                "yahoo",
+                "Link Dump"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2008/01/14/links-for-mon-14-jan-2008/",
+            "url": "https://blog.josephscott.org/2008/01/14/links-for-mon-14-jan-2008/",
+            "title": "Links for Mon 14 Jan 2008",
+            "content_html": "<ul>\n<li>\n<p><a href=\"http://woork.blogspot.com/2008/01/digg-like-navigation-bar-using-css.html\">woork: Digg-like navigation bar using CSS</a> &#8211; Add this to my collection of pretty rounded menu bars. <br /> Tags: <a href=\"http://del.icio.us/josephscott/css\">css</a> <a href=\"http://del.icio.us/josephscott/digg\">digg</a> <a href=\"http://del.icio.us/josephscott/menubar\">menubar</a>  </p>\n</li>\n<li>\n<p><a href=\"http://htmlpurifier.org/\">HTML Purifier &#8211; Filter your HTML the standards-compliant way!</a> &#8211; Makes some big claims, would be interesting to see it put to the test. <br /> Tags: <a href=\"http://del.icio.us/josephscott/html\">html</a> <a href=\"http://del.icio.us/josephscott/php\">php</a> <a href=\"http://del.icio.us/josephscott/htmlpurifier\">htmlpurifier</a> <a href=\"http://del.icio.us/josephscott/filter\">filter</a> <a href=\"http://del.icio.us/josephscott/xss\">xss</a>  </p>\n</li>\n<li>\n<p><a href=\"http://trac.macosforge.org/projects/zfs/wiki/\">zfs &#8211; Trac</a> &#8211; Source and binaries for ZFS on Mac OS X.  Seems safe to say that we&#8217;ll see ZFS as a built in feature in some future release of OS X (10.6 perhaps?). <br /> Tags: <a href=\"http://del.icio.us/josephscott/zfs\">zfs</a> <a href=\"http://del.icio.us/josephscott/macosx\">macosx</a> <a href=\"http://del.icio.us/josephscott/filesystem\">filesystem</a>  </p>\n</li>\n</ul>\n",
+            "content_text": "woork: Digg-like navigation bar using CSS &#8211; Add this to my collection of pretty rounded menu bars.  Tags: css digg menubar  \n\n\nHTML Purifier &#8211; Filter your HTML the standards-compliant way! &#8211; Makes some big claims, would be interesting to see it put to the test.  Tags: html php htmlpurifier filter xss  \n\n\nzfs &#8211; Trac &#8211; Source and binaries for ZFS on Mac OS X.  Seems safe to say that we&#8217;ll see ZFS as a built in feature in some future release of OS X (10.6 perhaps?).  Tags: zfs macosx filesystem",
+            "date_published": "2008-01-14T17:30:15-07:00",
+            "date_modified": "2008-01-14T17:30:15-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "css",
+                "digg",
+                "filesystem",
+                "filter",
+                "html",
+                "htmlpurifier",
+                "Links",
+                "macosx",
+                "menubar",
+                "PHP",
+                "xss",
+                "zfs",
+                "Link Dump"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Scaling WordPress	</title>
+	<atom:link href="/2013/05/07/scaling-wordpress/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/05/07/scaling-wordpress/</link>
+	<description></description>
+	<lastBuildDate>Thu, 09 May 2013 15:02:46 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Jared Olson		</title>
+		<link>/2013/05/07/scaling-wordpress/#comment-4044</link>
+
+		<dc:creator><![CDATA[Jared Olson]]></dc:creator>
+		<pubDate>Thu, 09 May 2013 15:02:46 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=7653#comment-4044</guid>
+
+					<description><![CDATA[Great slide show.  Wish I could have seen the presentation.  I might have to try this setup out on one of my sites in the future.]]></description>
+			<content:encoded><![CDATA[<p>Great slide show.  Wish I could have seen the presentation.  I might have to try this setup out on one of my sites in the future.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2013/05/07/scaling-wordpress/#comment-4043</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 07 May 2013 22:31:06 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=7653#comment-4043</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/05/07/scaling-wordpress/#comment-4042&quot;&gt;Vernon Fowler&lt;/a&gt;.
+
+Newer versions of MySQL default to InnoDB now instead of MyISAM.  This was long over due.
+
+As far as bbPress and BuddyPress, use InnoDB unless you have a good and specific reason not to.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/05/07/scaling-wordpress/#comment-4042">Vernon Fowler</a>.</p>
+<p>Newer versions of MySQL default to InnoDB now instead of MyISAM.  This was long over due.</p>
+<p>As far as bbPress and BuddyPress, use InnoDB unless you have a good and specific reason not to.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vernon Fowler		</title>
+		<link>/2013/05/07/scaling-wordpress/#comment-4042</link>
+
+		<dc:creator><![CDATA[Vernon Fowler]]></dc:creator>
+		<pubDate>Tue, 07 May 2013 22:25:37 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=7653#comment-4042</guid>
+
+					<description><![CDATA[On slide 15 you mention to &quot;Use InnoDB, unless you have a good reason not to&quot;. Should the current / next version of WordPress specify this storage engine out of the box? Should plugins that create tables also specify this storage engine?
+
+Currently I have a mix of mostly MyISAM and InnoDB for just a few tables that were created by a plugin. Do you have any recommendations for a bbPress and BuddyPress site in relation to database storage engines?
+
+Thanks for your time.]]></description>
+			<content:encoded><![CDATA[<p>On slide 15 you mention to &#8220;Use InnoDB, unless you have a good reason not to&#8221;. Should the current / next version of WordPress specify this storage engine out of the box? Should plugins that create tables also specify this storage engine?</p>
+<p>Currently I have a mix of mostly MyISAM and InnoDB for just a few tables that were created by a plugin. Do you have any recommendations for a bbPress and BuddyPress site in relation to database storage engines?</p>
+<p>Thanks for your time.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

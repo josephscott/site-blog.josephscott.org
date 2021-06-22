@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>marco-arment &#8211; Joseph Scott</title>
+	<atom:link href="/tag/marco-arment/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 30 Jan 2020 18:12:36 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Low Power Mode on Mac OS</title>
+		<link>/2020/01/30/low-power-mode-on-mac-os/</link>
+					<comments>/2020/01/30/low-power-mode-on-mac-os/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 30 Jan 2020 18:12:36 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[macos]]></category>
+		<category><![CDATA[marco-arment]]></category>
+		<category><![CDATA[power-management]]></category>
+		<guid isPermaLink="false">/?p=18029</guid>
+
+					<description><![CDATA[Back in 2018 Marco Arment suggested Low Power Mode on the Mac: Sometimes, you just need Low Power Mode: the switch added to iOS a few years ago to conserve battery life when you need it, at the expense of full performance and background tasks. There’s no such feature on Mac laptops, but there should [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Back in 2018 Marco Arment suggested <a href="https://marco.org/2018/07/31/mac-low-power-mode">Low Power Mode on the Mac</a>:</p>
+<blockquote><p>
+Sometimes, you just need Low Power Mode: the switch added to iOS a few years ago to conserve battery life when you need it, at the expense of full performance and background tasks.</p>
+<p>There’s no such feature on Mac laptops, but there should be.
+</p></blockquote>
+<p><a href="/wp-content/uploads/2020/01/low-power-mode.png"><img loading="lazy" src="/wp-content/uploads/2020/01/low-power-mode.png" alt="" width="546" height="106" class="aligncenter size-full wp-image-18047" srcset="/wp-content/uploads/2020/01/low-power-mode.png 546w, /wp-content/uploads/2020/01/low-power-mode-300x58.png 300w" sizes="(max-width: 546px) 100vw, 546px" /></a></p>
+<p>Yes, Yes, <strong>Yes!</strong></p>
+<p>Marco has been using a <a href=https://www.rugarciap.com/turbo-boost-switcher-for-os-x/">third party kernel extension to do this</a> and posted <a href="https://marco.org/2020/01/13/macos-low-power-mode-redux">updated results for a 16-inch Macbook Pro</a>:</p>
+<blockquote><p>
+anecdotally, I’m seeing similar battery gains by disabling Turbo Boost that I’ve seen with previous laptops: significantly longer battery life that I’d estimate to be between 30–50%.
+</p></blockquote>
+<p>A big <strong>+1</strong> from me for a &#8220;low power mode&#8221; option in MacOS.  Add it to MacOS 10.16 and talk about it on stage during the announcement.  Brag about how much longer the battery can go in low power mode.</p>
+<p>My oldest child has an iPhone 5S and generally leaves it in low power mode all day, as she tends to favor availability over everything else.  If there were a similar option in MacOS I suspect many people would do the same thing for their laptops.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/01/30/low-power-mode-on-mac-os/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Hack vs. PHP</title>
+		<link>/2015/07/28/hack-vs-php/</link>
+					<comments>/2015/07/28/hack-vs-php/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 28 Jul 2015 14:01:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[hack]]></category>
+		<category><![CDATA[hhvm]]></category>
+		<category><![CDATA[marco-arment]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10094</guid>
+
+					<description><![CDATA[Marco Arment rightly pointed out that Hack Isn&#8217;t PHP: Unlike HHVM, adopting Hack is a huge risk. HHVM was great because you could switch to it and switch away from it freely, with almost no effort (especially to switch away). You were still writing PHP. But once you convert a file to Hack and use [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Marco Arment rightly pointed out that <a href="http://www.marco.org/2014/03/21/hack">Hack Isn&#8217;t PHP</a>:</p>
+<blockquote><p>
+Unlike HHVM, adopting Hack is a huge risk. HHVM was great because you could switch to it and switch away from it freely, with almost no effort (especially to switch away). You were still writing PHP. But once you convert a file to Hack and use any of its new features, it’s no longer valid PHP, so you must always use Hack and HHVM from that point forward (or undertake an expensive rewrite).
+</p></blockquote>
+<p>That was 18 months ago.  It got me wondering.  Is anyone writing new projects starting with <a href="http://hacklang.org/">Hack</a>?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/07/28/hack-vs-php/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>New Tab / Window Links</title>
+		<link>/2014/01/14/new-tab-window-links/</link>
+					<comments>/2014/01/14/new-tab-window-links/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 14 Jan 2014 15:15:48 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[browser]]></category>
+		<category><![CDATA[marco-arment]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9787</guid>
+
+					<description><![CDATA[Marco Arment on forcing a link to open in a new tab or window (emphasis is mine): Most people know how to open your article’s outbound links in new tabs or windows, especially readers of a tech site. Modern browsers make multiple-tab/window management very easy for almost everyone who wants them, and the people who [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Marco Arment on <a href="http://www.marco.org/2014/01/10/target-blank" title="I wonder why they went with blank instead of new.">forcing a link to open in a new tab or window</a> (emphasis is mine):</p>
+<blockquote><p>
+<strong>Most people know how to open your article’s outbound links in new tabs or windows</strong>, especially readers of a tech site. Modern browsers make multiple-tab/window management very easy for almost everyone who wants them, and the <strong>people who don’t know how to manage them usually don’t want them</strong>.
+</p></blockquote>
+<p>Up until last year I would have agreed with him.</p>
+<p>What changed was watching a friend browsing the web and noticing that they never opened links in new tabs, even though it would have made things easier.  I asked if they were familiar with using the middle click on a mouse to open the link in a new tab ( this was Firefox on a Windows system ).  I wasn&#8217;t surprised when I got a no back.</p>
+<p>I took a few minutes to walk them through middle clicking to open links in a new tab and general tab management.  They were thrilled with this new piece of information, declaring how much this had changed ( for the better ) their web browsing experience.</p>
+<p>This is only one data point, but it reminded me to very careful about my assumptions of what people know, especially for things that I take for granted.  The little voice in your head that says &#8220;everyone knows that&#8221; can easily be wrong.</p>
+<p>It simply isn&#8217;t true that every single Internet user has already made up their own personal policy on forcing links to open in a new tab or window.  In some cases they didn&#8217;t even realize they had that feature in the first place.</p>
+<p>For web sites with a mostly technical audience I think Marco is right, those are visitors who likely already know what they want and don&#8217;t want.  But believe it or not there are still people who use computers and browsers to do things that don&#8217;t involve reading about computers and browsers.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/01/14/new-tab-window-links/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Subversion Success Story	</title>
+	<atom:link href="/2007/01/03/subversion-success-story/feed/" rel="self" type="application/rss+xml" />
+	<link>/2007/01/03/subversion-success-story/</link>
+	<description></description>
+	<lastBuildDate>Thu, 27 Dec 2007 07:59:29 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: balraj		</title>
+		<link>/2007/01/03/subversion-success-story/#comment-1774</link>
+
+		<dc:creator><![CDATA[balraj]]></dc:creator>
+		<pubDate>Thu, 27 Dec 2007 07:59:29 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/01/03/subversion-success-story/#comment-1774</guid>
+
+					<description><![CDATA[For one of our clients, we are creating technical documents using FrameMaker 8 DITA feature. There will be hundreds of XML files. We have experience using SVN for version control using WebDAV. However, the client wants the XML repository to be MySQL while version control using SVN.
+
+Anyone having experience integrating FrameMaker, SVN, and MySQL. The working environment is Unix/Linux.]]></description>
+			<content:encoded><![CDATA[<p>For one of our clients, we are creating technical documents using FrameMaker 8 DITA feature. There will be hundreds of XML files. We have experience using SVN for version control using WebDAV. However, the client wants the XML repository to be MySQL while version control using SVN.</p>
+<p>Anyone having experience integrating FrameMaker, SVN, and MySQL. The working environment is Unix/Linux.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Marshall Gaddis		</title>
+		<link>/2007/01/03/subversion-success-story/#comment-1773</link>
+
+		<dc:creator><![CDATA[Marshall Gaddis]]></dc:creator>
+		<pubDate>Thu, 19 Jul 2007 23:19:38 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/01/03/subversion-success-story/#comment-1773</guid>
+
+					<description><![CDATA[Has anybody tried to use the TortoiseSVN diff feature on FrameMaker files? I&#039;ve heard there&#039;s a plug-in or something of the sort that makes this possible, but I haven&#039;t been able to track it down.]]></description>
+			<content:encoded><![CDATA[<p>Has anybody tried to use the TortoiseSVN diff feature on FrameMaker files? I&#8217;ve heard there&#8217;s a plug-in or something of the sort that makes this possible, but I haven&#8217;t been able to track it down.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: joseph		</title>
+		<link>/2007/01/03/subversion-success-story/#comment-1772</link>
+
+		<dc:creator><![CDATA[joseph]]></dc:creator>
+		<pubDate>Wed, 24 Jan 2007 23:05:24 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/01/03/subversion-success-story/#comment-1772</guid>
+
+					<description><![CDATA[Gordon-
+
+Right now each person works in different parts of the repository, so locking hasn&#039;t been an issue.  We have discussed it though.
+
+If you need to do locking it would have to be done at the Subversion level, since FrameMaker won&#039;t be aware of the fact that other people have copies of the repository checked out elsewhere.
+
+More info on locking in Subversion is at:
+
+http://svnbook.red-bean.com/en/1.2/svn.advanced.locking.html]]></description>
+			<content:encoded><![CDATA[<p>Gordon-</p>
+<p>Right now each person works in different parts of the repository, so locking hasn&#8217;t been an issue.  We have discussed it though.</p>
+<p>If you need to do locking it would have to be done at the Subversion level, since FrameMaker won&#8217;t be aware of the fact that other people have copies of the repository checked out elsewhere.</p>
+<p>More info on locking in Subversion is at:</p>
+<p><a href="http://svnbook.red-bean.com/en/1.2/svn.advanced.locking.html" rel="nofollow ugc">http://svnbook.red-bean.com/en/1.2/svn.advanced.locking.html</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Gordon		</title>
+		<link>/2007/01/03/subversion-success-story/#comment-1771</link>
+
+		<dc:creator><![CDATA[Gordon]]></dc:creator>
+		<pubDate>Tue, 23 Jan 2007 08:54:10 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/01/03/subversion-success-story/#comment-1771</guid>
+
+					<description><![CDATA[Ohhh goody, someone else using Subversion!
+
+Question: Do you use a locking method, or do you go down the compare route?
+
+If the former, which fits a linear approach I guess, is there anyway to get FrameMaker to notify users when they try to OPEN a locked file? FM seems to let people open them but they only get the warning when they try and submit their changes.
+
+Of course it might be the way we are working that is wrong, any advice is appreciated.]]></description>
+			<content:encoded><![CDATA[<p>Ohhh goody, someone else using Subversion!</p>
+<p>Question: Do you use a locking method, or do you go down the compare route?</p>
+<p>If the former, which fits a linear approach I guess, is there anyway to get FrameMaker to notify users when they try to OPEN a locked file? FM seems to let people open them but they only get the warning when they try and submit their changes.</p>
+<p>Of course it might be the way we are working that is wrong, any advice is appreciated.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: joseph		</title>
+		<link>/2007/01/03/subversion-success-story/#comment-1770</link>
+
+		<dc:creator><![CDATA[joseph]]></dc:creator>
+		<pubDate>Mon, 22 Jan 2007 15:45:11 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/01/03/subversion-success-story/#comment-1770</guid>
+
+					<description><![CDATA[TimP -
+
+Sort of.  Part of this move to Subversion prompted a discussion about tracking all of the files involved in a specific FrameMaker book.  That is really something that FrameMaker would have to track.  However, we been looking more closely at our directory structure, trying to organize it so that everything used for the book is under one directory.  For example:
+
+- Title
+ -- Chapters
+ -- Graphics
+
+Then when a new edition comes out we tag in Subversion so that we can always easily go back and see what things looked like for that edition.
+
+So the general answer to your question is no, Subversion isn&#039;t aware of FrameMaker documents.  But it is possible to organize your file structure so that using Subversion tags gives the equivalent of that feature.]]></description>
+			<content:encoded><![CDATA[<p>TimP &#8211;</p>
+<p>Sort of.  Part of this move to Subversion prompted a discussion about tracking all of the files involved in a specific FrameMaker book.  That is really something that FrameMaker would have to track.  However, we been looking more closely at our directory structure, trying to organize it so that everything used for the book is under one directory.  For example:</p>
+<p>&#8211; Title<br />
+ &#8212; Chapters<br />
+ &#8212; Graphics</p>
+<p>Then when a new edition comes out we tag in Subversion so that we can always easily go back and see what things looked like for that edition.</p>
+<p>So the general answer to your question is no, Subversion isn&#8217;t aware of FrameMaker documents.  But it is possible to organize your file structure so that using Subversion tags gives the equivalent of that feature.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: TimP		</title>
+		<link>/2007/01/03/subversion-success-story/#comment-1769</link>
+
+		<dc:creator><![CDATA[TimP]]></dc:creator>
+		<pubDate>Mon, 22 Jan 2007 13:01:21 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/01/03/subversion-success-story/#comment-1769</guid>
+
+					<description><![CDATA[Joseph,
+
+The way you are working with SVN, Can you track which files and versions in SVN wee used to make a given FrameMaker document?
+
+TIm]]></description>
+			<content:encoded><![CDATA[<p>Joseph,</p>
+<p>The way you are working with SVN, Can you track which files and versions in SVN wee used to make a given FrameMaker document?</p>
+<p>TIm</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: joseph		</title>
+		<link>/2007/01/03/subversion-success-story/#comment-1768</link>
+
+		<dc:creator><![CDATA[joseph]]></dc:creator>
+		<pubDate>Fri, 12 Jan 2007 17:16:24 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/01/03/subversion-success-story/#comment-1768</guid>
+
+					<description><![CDATA[Tim-
+
+Storing files in Subversion is easy enough.  What we went with is to have all of the file management taken care of with Subversion (TortoiseSVN since all of the end users are on Windows) and all of the book/document management done in FrameMaker.
+
+If that matches up to what you are trying to do then I don&#039;t see why it wouldn&#039;t work.]]></description>
+			<content:encoded><![CDATA[<p>Tim-</p>
+<p>Storing files in Subversion is easy enough.  What we went with is to have all of the file management taken care of with Subversion (TortoiseSVN since all of the end users are on Windows) and all of the book/document management done in FrameMaker.</p>
+<p>If that matches up to what you are trying to do then I don&#8217;t see why it wouldn&#8217;t work.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: TimP		</title>
+		<link>/2007/01/03/subversion-success-story/#comment-1767</link>
+
+		<dc:creator><![CDATA[TimP]]></dc:creator>
+		<pubDate>Fri, 12 Jan 2007 15:25:57 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/01/03/subversion-success-story/#comment-1767</guid>
+
+					<description><![CDATA[I&#039;ve been looking for a success story using FrameMaker and SVN. It sounds like you&#039;ve done a great job--congratulations!
+
+I&#039;d like to use SVN as a version control repository for FrameMaker with WebDAV. I&#039;d also like to store smaller FrameMaker files (a few paragraphs each) and assemble them into larger FrameMaker documents (not books, for page flow reasons) as text sets, and manage it all with SVN.
+
+Does this sound possible? If it is, where do I find help in pulling it together?]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve been looking for a success story using FrameMaker and SVN. It sounds like you&#8217;ve done a great job&#8211;congratulations!</p>
+<p>I&#8217;d like to use SVN as a version control repository for FrameMaker with WebDAV. I&#8217;d also like to store smaller FrameMaker files (a few paragraphs each) and assemble them into larger FrameMaker documents (not books, for page flow reasons) as text sets, and manage it all with SVN.</p>
+<p>Does this sound possible? If it is, where do I find help in pulling it together?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: joseph		</title>
+		<link>/2007/01/03/subversion-success-story/#comment-1766</link>
+
+		<dc:creator><![CDATA[joseph]]></dc:creator>
+		<pubDate>Fri, 05 Jan 2007 06:51:01 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/01/03/subversion-success-story/#comment-1766</guid>
+
+					<description><![CDATA[I am aware of the ability to WebDAV using a Subversion back end.  In this case though we really wanted a managed revision system.  Commit logs and atomic commits were concepts that we spent sometime explanation.  A couple of meetings to prep them and written documentation on common actions went a long way towards making for a smooth transition.  After a couple of days the group was sold on it.]]></description>
+			<content:encoded><![CDATA[<p>I am aware of the ability to WebDAV using a Subversion back end.  In this case though we really wanted a managed revision system.  Commit logs and atomic commits were concepts that we spent sometime explanation.  A couple of meetings to prep them and written documentation on common actions went a long way towards making for a smooth transition.  After a couple of days the group was sold on it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Adam Kalsey		</title>
+		<link>/2007/01/03/subversion-success-story/#comment-1765</link>
+
+		<dc:creator><![CDATA[Adam Kalsey]]></dc:creator>
+		<pubDate>Fri, 05 Jan 2007 04:06:29 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/01/03/subversion-success-story/#comment-1765</guid>
+
+					<description><![CDATA[Did you know that Subversion can work as a WebDAV repository too? You can enable WebDAV to a repository and you&#039;ll have automatic version control. Of course there&#039;s no way to enter commit logs, and to grab an old version you still need a svn client, but I&#039;ve used the svn over webDAV approach as a good way of offering revision control to business users. Add in a web viewer for SVN and you have the makings of a simple document management system.]]></description>
+			<content:encoded><![CDATA[<p>Did you know that Subversion can work as a WebDAV repository too? You can enable WebDAV to a repository and you&#8217;ll have automatic version control. Of course there&#8217;s no way to enter commit logs, and to grab an old version you still need a svn client, but I&#8217;ve used the svn over webDAV approach as a good way of offering revision control to business users. Add in a web viewer for SVN and you have the makings of a simple document management system.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

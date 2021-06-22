@@ -1,0 +1,35 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/mamp/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/mamp/",
+    "feed_url": "https://blog.josephscott.org/tag/mamp/feed/json/",
+    "language": "en-US",
+    "title": "mamp &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://josephscott.org/?p=1292",
+            "url": "https://blog.josephscott.org/2009/07/08/mamp-start-page-error/",
+            "title": "MAMP Start Page Error",
+            "content_html": "<p>A few months back I installed <a href=\"http://www.mamp.info/en/index.html\">MAMP</a> on my MacBook Pro to do local development.  I found it a lot easier to manage than a regular MySQL install on Mac.  Until things went south.  Out of no where my MAMP start page broke and would only return this error:</p>\n<blockquote><p>\nYou don&#8217;t have permission to access /MAMP/ on this server.\n</p></blockquote>\n<p>With an HTTP 403 Forbidden error.  The Apache error log provided some additional details:</p>\n<blockquote><p>\nOptions FollowSymLinks or SymLinksIfOwnerMatch is off which implies that RewriteRule directive is forbidden: /Applications/MAMP/bin/mamp/\n</p></blockquote>\n<p>That was enough for me to start looking through the Apache config file &#8211; /Applications/MAMP/conf/apache/httpd.conf &#8211; to see what needed to be fixed.  The Options directive for the start page, and the related pages like /phpMyAdmin, was limited to &#8220;Indexes MultiViews&#8221;.  I didn&#8217;t want to bother with spelling out each option that might need to be turned on so I went with &#8220;Options All&#8221;.</p>\n<p>If you have run into this problem then check the Options directive for the following directories: /Applications/MAMP/Library/icons, /Applications/MAMP/bin/phpMyAdmin, /Applications/MAMP/bin/SQLiteManager and /Applications/MAMP/bin/mamp.  Change the &#8220;Options Indexes MultiViews&#8221; line to &#8220;Options All&#8221; under each of the Directory sections.  In my config file that area starts on line 621.</p>\n<p>After making those changes re-start MAMP&#8217;s Apache and you should be good to go.</p>\n",
+            "content_text": "A few months back I installed MAMP on my MacBook Pro to do local development.  I found it a lot easier to manage than a regular MySQL install on Mac.  Until things went south.  Out of no where my MAMP start page broke and would only return this error:\n\nYou don&#8217;t have permission to access /MAMP/ on this server.\n\nWith an HTTP 403 Forbidden error.  The Apache error log provided some additional details:\n\nOptions FollowSymLinks or SymLinksIfOwnerMatch is off which implies that RewriteRule directive is forbidden: /Applications/MAMP/bin/mamp/\n\nThat was enough for me to start looking through the Apache config file &#8211; /Applications/MAMP/conf/apache/httpd.conf &#8211; to see what needed to be fixed.  The Options directive for the start page, and the related pages like /phpMyAdmin, was limited to &#8220;Indexes MultiViews&#8221;.  I didn&#8217;t want to bother with spelling out each option that might need to be turned on so I went with &#8220;Options All&#8221;.\nIf you have run into this problem then check the Options directive for the following directories: /Applications/MAMP/Library/icons, /Applications/MAMP/bin/phpMyAdmin, /Applications/MAMP/bin/SQLiteManager and /Applications/MAMP/bin/mamp.  Change the &#8220;Options Indexes MultiViews&#8221; line to &#8220;Options All&#8221; under each of the Directory sections.  In my config file that area starts on line 621.\nAfter making those changes re-start MAMP&#8217;s Apache and you should be good to go.",
+            "date_published": "2009-07-08T23:55:57-06:00",
+            "date_modified": "2009-07-08T23:55:57-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "mamp",
+                "Posts"
+            ]
+        }
+    ]
+}

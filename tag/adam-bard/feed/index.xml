@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>adam-bard &#8211; Joseph Scott</title>
+	<atom:link href="/tag/adam-bard/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 15 Aug 2014 17:17:31 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Top Github Languages</title>
+		<link>/2014/08/15/top-github-languages/</link>
+					<comments>/2014/08/15/top-github-languages/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 15 Aug 2014 17:17:31 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[adam-bard]]></category>
+		<category><![CDATA[github]]></category>
+		<category><![CDATA[javascript]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10770</guid>
+
+					<description><![CDATA[Adam Bard has compiled a list of the most popular used languages for projects hosted at Github for 2014 ( 1 Jan -> 31 Jul ). Number one on the list is JavaScript, and by a wide margin.]]></description>
+										<content:encoded><![CDATA[<p>Adam Bard has compiled a list of <a href="http://adambard.com/blog/top-github-languages-2014/">the most popular used languages for projects hosted at Github for 2014 ( 1 Jan -> 31 Jul )</a>.</p>
+<p>Number one on the list is JavaScript, and by a wide margin.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/08/15/top-github-languages/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

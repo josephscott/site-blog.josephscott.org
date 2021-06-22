@@ -1,0 +1,200 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/",
+    "feed_url": "https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: Under Appreciated Code: strtotime",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3787",
+            "url": "https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3787",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3786\">Angelo Mandato</a>.\n\nhaha, running out of seconds since 1 Jan 1970 is going be a major let done.  Sometime around Tue Jan 19 03:14:07 2038 we will all really be wishing they'd used an unsigned 32bit int instead of a signed one.\n\nOf course everyone will have updated to 64bit time storage by then ;-)",
+            "content_text": "In reply to Angelo Mandato.\n\nhaha, running out of seconds since 1 Jan 1970 is going be a major let done.  Sometime around Tue Jan 19 03:14:07 2038 we will all really be wishing they'd used an unsigned 32bit int instead of a signed one.\n\nOf course everyone will have updated to 64bit time storage by then ;-)",
+            "date_published": "2011-08-26T07:40:55-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3786",
+            "url": "https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3786",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3785\">Joseph Scott</a>.\n\nJust wait till 2038 for the Millennium bug, that will be happening about when we're looking at retirement!",
+            "content_text": "In reply to Joseph Scott.\n\nJust wait till 2038 for the Millennium bug, that will be happening about when we're looking at retirement!",
+            "date_published": "2011-08-26T07:33:40-06:00",
+            "authors": [
+                {
+                    "name": "Angelo Mandato",
+                    "url": "http://angelo.mandato.com",
+                    "avatar": "https://secure.gravatar.com/avatar/b90f2940d863e219ef05f655f6193aa8?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Angelo Mandato",
+                "url": "http://angelo.mandato.com",
+                "avatar": "https://secure.gravatar.com/avatar/b90f2940d863e219ef05f655f6193aa8?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3785",
+            "url": "https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3785",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3784\">Angelo Mandato</a>.\n\nYep, two digit years stink.",
+            "content_text": "In reply to Angelo Mandato.\n\nYep, two digit years stink.",
+            "date_published": "2011-08-26T07:29:04-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3784",
+            "url": "https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3784",
+            "content_html": "No worries here, I'm just giving my opinion. I too like the function, I also like get_headers, but these functions have their problems too.\n\nI used to use strtotime all the time for converting readable dates in any non-critical situations. Sometime in 2002 strtotime inverted a date on me, I believe it was a date in the International format YY/MM/DD that the strtotime function translated to the US format MM/DD/YY. I use preg_match to parse my dates in these situations, I mainly rely on strtotime for parsing RFC defined dates and even then if the application was for banking or for life/death use I wouldn't even touch strtotime.\n\nYou may want to read up on some of the other problems with strtotime(), it isn\u2019t just translating English to logic. http://php.net/manual/en/function.strtotime.php :-)",
+            "content_text": "No worries here, I'm just giving my opinion. I too like the function, I also like get_headers, but these functions have their problems too.\n\nI used to use strtotime all the time for converting readable dates in any non-critical situations. Sometime in 2002 strtotime inverted a date on me, I believe it was a date in the International format YY/MM/DD that the strtotime function translated to the US format MM/DD/YY. I use preg_match to parse my dates in these situations, I mainly rely on strtotime for parsing RFC defined dates and even then if the application was for banking or for life/death use I wouldn't even touch strtotime.\n\nYou may want to read up on some of the other problems with strtotime(), it isn\u2019t just translating English to logic. http://php.net/manual/en/function.strtotime.php :-)",
+            "date_published": "2011-08-26T07:19:31-06:00",
+            "authors": [
+                {
+                    "name": "Angelo Mandato",
+                    "url": "http://angelo.mandato.com",
+                    "avatar": "https://secure.gravatar.com/avatar/b90f2940d863e219ef05f655f6193aa8?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Angelo Mandato",
+                "url": "http://angelo.mandato.com",
+                "avatar": "https://secure.gravatar.com/avatar/b90f2940d863e219ef05f655f6193aa8?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3783",
+            "url": "https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3783",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3782\">Angelo Mandato</a>.\n\nI don't think I ever suggested that strtotime() was right absolutely 100% of the time.  I hate to quote myself, but \"If it works, use it. If it doesn\u2019t, do something else\".  Obviously the more critical the code path, the more testing that needs to be done to make sure it does actually work for various cases.\n\nYou may want to read up on some of the other formats that strtotime() supports, it isn't just English style wording.  http://php.net/manual/en/function.strtotime.php\n\nIf it doesn't work for you, don't use it.  Not a big deal :-)",
+            "content_text": "In reply to Angelo Mandato.\n\nI don't think I ever suggested that strtotime() was right absolutely 100% of the time.  I hate to quote myself, but \"If it works, use it. If it doesn\u2019t, do something else\".  Obviously the more critical the code path, the more testing that needs to be done to make sure it does actually work for various cases.\n\nYou may want to read up on some of the other formats that strtotime() supports, it isn't just English style wording.  http://php.net/manual/en/function.strtotime.php\n\nIf it doesn't work for you, don't use it.  Not a big deal :-)",
+            "date_published": "2011-08-26T06:49:40-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3782",
+            "url": "https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3782",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3781\">Joseph Scott</a>.\n\ni like the function, I like to have as many tools/options as possible in my toolbox. I just would not trust such a solution for anything that needs to be absolutely 100%.\n\nAssumptions are the biggest bugs in programming. Assuming a function that translates english to logic will always be correct is a poor assumption. Good enough for a vanilla web site, but not good enough when your money or your life is on the line.",
+            "content_text": "In reply to Joseph Scott.\n\ni like the function, I like to have as many tools/options as possible in my toolbox. I just would not trust such a solution for anything that needs to be absolutely 100%.\n\nAssumptions are the biggest bugs in programming. Assuming a function that translates english to logic will always be correct is a poor assumption. Good enough for a vanilla web site, but not good enough when your money or your life is on the line.",
+            "date_published": "2011-08-26T06:42:35-06:00",
+            "authors": [
+                {
+                    "name": "Angelo Mandato",
+                    "url": "http://angelo.mandato.com",
+                    "avatar": "https://secure.gravatar.com/avatar/b90f2940d863e219ef05f655f6193aa8?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Angelo Mandato",
+                "url": "http://angelo.mandato.com",
+                "avatar": "https://secure.gravatar.com/avatar/b90f2940d863e219ef05f655f6193aa8?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3781",
+            "url": "https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3781",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3780\">Angelo Mandato</a>.\n\nI'm not sure I understand the your problem with strtotime().  If it works, use it.  If it doesn't, do something else.  What I've found is that it works for many cases, making it very handy.",
+            "content_text": "In reply to Angelo Mandato.\n\nI'm not sure I understand the your problem with strtotime().  If it works, use it.  If it doesn't, do something else.  What I've found is that it works for many cases, making it very handy.",
+            "date_published": "2011-08-26T05:44:02-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3780",
+            "url": "https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3780",
+            "content_html": "As far as simplicity, this use for this function is really cool and may be a good alternative for someone who doesn't understand the equivalent computer logic.\n\nAs a developer, I do not like this function used in this way since logic and the english language do not mix well. To truly be bullet proof, the use of mktime() will solve the above examples with simple arithmetic. The problem with a function like this is expectations, what if someone wanted 'first day of last month excluding March and September'.\n\nPersonally, I would be pretty upset if this kind of code was found in a banking web site or in a defibrillator. Otherwise, cool stuff!",
+            "content_text": "As far as simplicity, this use for this function is really cool and may be a good alternative for someone who doesn't understand the equivalent computer logic.\n\nAs a developer, I do not like this function used in this way since logic and the english language do not mix well. To truly be bullet proof, the use of mktime() will solve the above examples with simple arithmetic. The problem with a function like this is expectations, what if someone wanted 'first day of last month excluding March and September'.\n\nPersonally, I would be pretty upset if this kind of code was found in a banking web site or in a defibrillator. Otherwise, cool stuff!",
+            "date_published": "2011-08-25T11:07:52-06:00",
+            "authors": [
+                {
+                    "name": "Angelo Mandato",
+                    "url": "http://angelo.mandato.com",
+                    "avatar": "https://secure.gravatar.com/avatar/b90f2940d863e219ef05f655f6193aa8?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Angelo Mandato",
+                "url": "http://angelo.mandato.com",
+                "avatar": "https://secure.gravatar.com/avatar/b90f2940d863e219ef05f655f6193aa8?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3779",
+            "url": "https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3779",
+            "content_html": "Not a PHP guy but had the opportunity to get involved with some PHP code recently and this function definitely stood out as a great help. It's always the simple ones!",
+            "content_text": "Not a PHP guy but had the opportunity to get involved with some PHP code recently and this function definitely stood out as a great help. It's always the simple ones!",
+            "date_published": "2011-07-19T09:45:44-06:00",
+            "authors": [
+                {
+                    "name": "Jonathan Brazil",
+                    "url": "http://www.jbwan.me",
+                    "avatar": "https://secure.gravatar.com/avatar/a2071456433a74dfbf195d03b509a755?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Jonathan Brazil",
+                "url": "http://www.jbwan.me",
+                "avatar": "https://secure.gravatar.com/avatar/a2071456433a74dfbf195d03b509a755?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3778",
+            "url": "https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3778",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2011/07/19/under-appreciated-code-strtotime/#comment-3777\">Gordon Brander</a>.\n\nAs long as you don't count the self described magic methods - http://php.net/manual/en/language.oop5.magic.php ;-)",
+            "content_text": "In reply to Gordon Brander.\n\nAs long as you don't count the self described magic methods - http://php.net/manual/en/language.oop5.magic.php ;-)",
+            "date_published": "2011-07-19T09:26:14-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

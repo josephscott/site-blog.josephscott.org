@@ -1,0 +1,204 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/https/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/https/",
+    "feed_url": "https://blog.josephscott.org/tag/https/feed/json/",
+    "language": "en-US",
+    "title": "https &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/?p=17953",
+            "url": "https://blog.josephscott.org/2020/01/21/browser-defaults-https-and-viewport/",
+            "title": "Browser Defaults: HTTPS and Viewport",
+            "content_html": "<p><a href=\"https://adactio.com/\">Jeremy Keith</a> suggests <a href=\"https://adactio.com/journal/16295\">two changes to the browser default behavior</a>.</p>\n<h3>HTTPS First</h3>\n<p>When you type in <code>example.com</code> with no protocol, the browser tries HTTP first.  His suggestion is to change that to HTTPS instead.  Then if HTTPS fails, fall back to HTTP.</p>\n<p>This falls under the &#8220;trying to be correct by default&#8221; behavior.  Our browsers should generally encrypt traffic to sites by default.  If you type in <code><strong>http</strong>://example.com</code>, then you are directing it to make a request that is plain text, and it should follow that direction.  Outside of that, better to do encryption by default.</p>\n<p>I&#8217;m in favor of this kind of change.</p>\n<p>I&#8217;d even consider going one step further: flip <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security\">HSTS ( HTTP Strict-Transport-Security )</a>.  Instead of requiring sites to opt-in to telling browsers that a site should be HTTPS only, default to HTTPS and require the site to opt-in to a plain HTTP version.  That is a bigger change, that will require more work &#8211; namely that we need more <a href=\"https://letsencrypt.org/\">Let&#8217;s Encrypt</a> alternatives &#8211; but I think we can get there.</p>\n<h3>Assume Viewport</h3>\n<p>The question:</p>\n<blockquote><p>\nResponsive design has swept the web. What would happen if mobile browsers were to assume <code>width=device-width</code>?\n</p></blockquote>\n<p>The big push for this came from mobile, Safari specifically.  That ship has sailed, no point in trying to pretend that we will ever go back. I&#8217;m in favor of this kind of change.</p>\n<h3>Improving Defaults</h3>\n<p>As technology changes, it is healthy to re-evaluate our defaults.  Most people won&#8217;t change them, so a &#8220;protect the user&#8221; attitude should weigh heavily in how defaults are managed over time.</p>\n",
+            "content_text": "Jeremy Keith suggests two changes to the browser default behavior.\nHTTPS First\nWhen you type in example.com with no protocol, the browser tries HTTP first.  His suggestion is to change that to HTTPS instead.  Then if HTTPS fails, fall back to HTTP.\nThis falls under the &#8220;trying to be correct by default&#8221; behavior.  Our browsers should generally encrypt traffic to sites by default.  If you type in http://example.com, then you are directing it to make a request that is plain text, and it should follow that direction.  Outside of that, better to do encryption by default.\nI&#8217;m in favor of this kind of change.\nI&#8217;d even consider going one step further: flip HSTS ( HTTP Strict-Transport-Security ).  Instead of requiring sites to opt-in to telling browsers that a site should be HTTPS only, default to HTTPS and require the site to opt-in to a plain HTTP version.  That is a bigger change, that will require more work &#8211; namely that we need more Let&#8217;s Encrypt alternatives &#8211; but I think we can get there.\nAssume Viewport\nThe question:\n\nResponsive design has swept the web. What would happen if mobile browsers were to assume width=device-width?\n\nThe big push for this came from mobile, Safari specifically.  That ship has sailed, no point in trying to pretend that we will ever go back. I&#8217;m in favor of this kind of change.\nImproving Defaults\nAs technology changes, it is healthy to re-evaluate our defaults.  Most people won&#8217;t change them, so a &#8220;protect the user&#8221; attitude should weigh heavily in how defaults are managed over time.",
+            "date_published": "2020-01-21T11:19:20-07:00",
+            "date_modified": "2020-01-21T11:19:20-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "browser",
+                "https",
+                "jeremy-keith",
+                "viewport"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=14422",
+            "url": "https://blog.josephscott.org/2015/12/17/inspecting-https-with-wireshark/",
+            "title": "Inspecting HTTPS With Wireshark",
+            "content_html": "<p>A short how to on <a href=\"https://certsimple.com/blog/ssl-wireshark-mac-osx\">Inspecting HTTPS With Wireshark</a>.  The key is to log browser data with <code>SSLKEYLOGFILE</code>, then load that file into <a href=\"https://www.wireshark.org/\">Wireshark</a>.</p>\n",
+            "content_text": "A short how to on Inspecting HTTPS With Wireshark.  The key is to log browser data with SSLKEYLOGFILE, then load that file into Wireshark.",
+            "date_published": "2015-12-17T09:59:15-07:00",
+            "date_modified": "2015-12-17T09:59:15-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "https",
+                "wireshark",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=12371",
+            "url": "https://blog.josephscott.org/2015/05/19/dynamically-generated-certificates/",
+            "title": "Dynamically Generated Certificates",
+            "content_html": "<blockquote><p>tl;dr: generate dynamic certificates on the fly with nginx.</p></blockquote>\n<p>Leveraging <a href=\"http://openresty.org/\">OpenResty</a> to <a href=\"http://blog.dutchcoders.io/openresty-with-dynamic-generated-certificates/\">generate certificates on demand</a>, which follows fairly direct pattern:</p>\n<ul>\n<li>Generate private key</li>\n<li>Generate signing request ( CSR )</li>\n<li>Sign the CSR with a CA</li>\n<li>Use the new key</li>\n</ul>\n<p>A little bit of <a href=\"http://www.lua.org/\">Lua</a> inside <a href=\"http://nginx.org/\">Nginx</a> goes a surprisingly long way.</p>\n",
+            "content_text": "tl;dr: generate dynamic certificates on the fly with nginx.\nLeveraging OpenResty to generate certificates on demand, which follows fairly direct pattern:\n\nGenerate private key\nGenerate signing request ( CSR )\nSign the CSR with a CA\nUse the new key\n\nA little bit of Lua inside Nginx goes a surprisingly long way.",
+            "date_published": "2015-05-19T11:08:50-06:00",
+            "date_modified": "2015-05-19T11:08:50-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "https",
+                "lua",
+                "nginx",
+                "openresty",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=10777",
+            "url": "https://blog.josephscott.org/2014/08/07/google-giving-weight-to-https-in-search-results/",
+            "title": "Google Giving Weight to HTTPS in Search Results",
+            "content_html": "<p><a href=\"https://blog.josephscott.org/wp-content/uploads/2014/08/https-all-the-things-1.jpg\"><img loading=\"lazy\" src=\"https://blog.josephscott.org/wp-content/uploads/2014/08/https-all-the-things-1.jpg\" alt=\"https-all-the-things\" width=\"400\" height=\"300\" class=\"aligncenter size-full wp-image-10791\" srcset=\"https://blog.josephscott.org/wp-content/uploads/2014/08/https-all-the-things-1.jpg 400w, https://blog.josephscott.org/wp-content/uploads/2014/08/https-all-the-things-1-300x225.jpg 300w\" sizes=\"(max-width: 400px) 100vw, 400px\" /></a></p>\n<p>Maybe not everything, but certainly more than we are doing now.</p>\n<p>So how do you encourage more sites to use HTTPS?  Well, if you are Google, you tweak the SEO black box:</p>\n<blockquote><p>\nwe&#8217;re starting to use HTTPS as a ranking signal. For now it&#8217;s only a very lightweight signal \u2014 affecting fewer than 1% of global queries, and carrying less weight than other signals such as high-quality content \u2014 while we give webmasters time to switch to HTTPS. But over time, we may decide to strengthen it, because we\u2019d like to encourage all website owners to switch from HTTP to HTTPS to keep everyone safe on the web.\n</p></blockquote>\n<p>From <a href=\"http://googlewebmastercentral.blogspot.com/2014/08/https-as-ranking-signal.html\">HTTPS as a ranking signal</a> on the Google Webmaster Central Blog.</p>\n<p>The call to have more sites use HTTPS has been out for some time.  It is hard to be motivated enough to over come the technical and financial hurdles to make the move ( and for some sites those hurdles are non-trivial ).  The SEO approach that Google is taking is the equivalent of hitting sites in the wallet ( in some cases that might be the literal result ).  When the possibility of loosing money is involved then it is easier to get people&#8217;s attention.</p>\n<p>This might be the single best use of the crazy Google SEO situation I&#8217;ve ever seen.</p>\n<p>Earlier this summer Automattic talked about working towards <a href=\"http://en.blog.wordpress.com/2014/06/05/reset-the-net/\">providing all *.wordpress.com sites with HTTPS by the end of 2014</a>.  This is something that I&#8217;m really excited to see happen.</p>\n<p>If you still aren&#8217;t supporting HTTPS for your site, I&#8217;d encourage you to map out a plan to get there.  Tim Bray posted a simple <a href=\"https://www.tbray.org/ongoing/When/201x/2012/12/02/HTTPS\">outline of the why and how of switching to HTTPS</a>.  If you are looking for a more technical view of how HTTPS works check out <a href=\"http://chimera.labs.oreilly.com/books/1230000000545/ch04.html\">the TLS chapter of &#8220;High Performance Browser Networking&#8221;</a>, which is free to read online.</p>\n",
+            "content_text": "Maybe not everything, but certainly more than we are doing now.\nSo how do you encourage more sites to use HTTPS?  Well, if you are Google, you tweak the SEO black box:\n\nwe&#8217;re starting to use HTTPS as a ranking signal. For now it&#8217;s only a very lightweight signal \u2014 affecting fewer than 1% of global queries, and carrying less weight than other signals such as high-quality content \u2014 while we give webmasters time to switch to HTTPS. But over time, we may decide to strengthen it, because we\u2019d like to encourage all website owners to switch from HTTP to HTTPS to keep everyone safe on the web.\n\nFrom HTTPS as a ranking signal on the Google Webmaster Central Blog.\nThe call to have more sites use HTTPS has been out for some time.  It is hard to be motivated enough to over come the technical and financial hurdles to make the move ( and for some sites those hurdles are non-trivial ).  The SEO approach that Google is taking is the equivalent of hitting sites in the wallet ( in some cases that might be the literal result ).  When the possibility of loosing money is involved then it is easier to get people&#8217;s attention.\nThis might be the single best use of the crazy Google SEO situation I&#8217;ve ever seen.\nEarlier this summer Automattic talked about working towards providing all *.wordpress.com sites with HTTPS by the end of 2014.  This is something that I&#8217;m really excited to see happen.\nIf you still aren&#8217;t supporting HTTPS for your site, I&#8217;d encourage you to map out a plan to get there.  Tim Bray posted a simple outline of the why and how of switching to HTTPS.  If you are looking for a more technical view of how HTTPS works check out the TLS chapter of &#8220;High Performance Browser Networking&#8221;, which is free to read online.",
+            "date_published": "2014-08-07T17:05:58-06:00",
+            "date_modified": "2014-08-07T17:05:58-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "google",
+                "https",
+                "security",
+                "seo",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=10261",
+            "url": "https://blog.josephscott.org/2014/04/22/update-nginx-for-better-https-performance/",
+            "title": "Update Nginx For Better HTTPS Performance",
+            "content_html": "<p>I decided to try out this suggestion from <a href=\"http://www.igvita.com/2013/12/16/optimizing-nginx-tls-time-to-first-byte/\" title=\"Time to first byte is one of my favorite topics.\">Optimizing NGINX TLS Time To First Byte (TTFB)</a> ( which <a href=\"https://josephscott.org/archives/2013/12/nginx-tls-time-to-first-byte/\" title=\"I should have read this in full sooner.\">I mentioned at the end of 2013</a> ):</p>\n<blockquote><p>\nAfter digging through the nginx source code, one stumbles <a href=\"https://github.com/nginx/nginx/commit/e52bddaaa90e64b2291f6e58ef1a2cff71604f6a#diff-0584d16332cf0d6dd9adb990a3c76a0cR539\">onto this gem</a>. Turns out, any nginx version prior to 1.5.6 has this issue: certificates over 4KB in size incur an extra roundtrip, turning a two roundtrip handshake into a three roundtrip affair &#8211; yikes. Worse, in this particular case we trigger another unfortunate edge case in Windows TCP stack: the client ACKs the first few packets from the server, but then waits ~200ms before it triggers a delayed ACK for the last segment. In total, that results in extra 580ms of latency that we did not expect.\n</p></blockquote>\n<p>I&#8217;ve been using Nginx 1.4.x from the Ubuntu package collection on this site.  A few <a href=\"http://www.webpagetest.org/\" title=\"Still one of my favorite performance testing resources.\">webpagetest.org</a> runs showed that HTTPS negotiation was taking more than 300ms on the initial request.  After updating to Nginx 1.5.13 more tests showed HTTPS negotiation was down around 250ms.</p>\n<p>The 50ms savings isn&#8217;t nearly as dramatic as the worst case scenario described in the quote above, but I&#8217;ll take it.</p>\n",
+            "content_text": "I decided to try out this suggestion from Optimizing NGINX TLS Time To First Byte (TTFB) ( which I mentioned at the end of 2013 ):\n\nAfter digging through the nginx source code, one stumbles onto this gem. Turns out, any nginx version prior to 1.5.6 has this issue: certificates over 4KB in size incur an extra roundtrip, turning a two roundtrip handshake into a three roundtrip affair &#8211; yikes. Worse, in this particular case we trigger another unfortunate edge case in Windows TCP stack: the client ACKs the first few packets from the server, but then waits ~200ms before it triggers a delayed ACK for the last segment. In total, that results in extra 580ms of latency that we did not expect.\n\nI&#8217;ve been using Nginx 1.4.x from the Ubuntu package collection on this site.  A few webpagetest.org runs showed that HTTPS negotiation was taking more than 300ms on the initial request.  After updating to Nginx 1.5.13 more tests showed HTTPS negotiation was down around 250ms.\nThe 50ms savings isn&#8217;t nearly as dramatic as the worst case scenario described in the quote above, but I&#8217;ll take it.",
+            "date_published": "2014-04-22T15:37:41-06:00",
+            "date_modified": "2014-04-22T15:37:41-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "https",
+                "nginx",
+                "performance",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=9676",
+            "url": "https://blog.josephscott.org/2013/12/26/nginx-tls-time-to-first-byte/",
+            "title": "NGINX TLS Time To First Byte",
+            "content_html": "<p>Ilya Grigorik on <a href=\"http://www.igvita.com/2013/12/16/optimizing-nginx-tls-time-to-first-byte/\" title=\"A race before the race.\">optimizing NGINX TLS time to first byte (TTTFB)</a>:</p>\n<blockquote><p>\nlet&#8217;s now turn to the practical matter of picking and tuning the server to deliver the best results. One would hope that the default \u201cout of the box\u201d experience for most servers would do a good job\u2026 unfortunately, that is not the case. Let&#8217;s take a closer look nginx\n</p></blockquote>\n<p>In the simplest terms, TLS involves more work.  The current realities of securing communications means we don&#8217;t have a good way to avoid doing that additional work, indeed we will be doing it more often than we ever have before.  The end result is that we need to spend more time thinking about how to optimize the HTTPS experience for all users.</p>\n",
+            "content_text": "Ilya Grigorik on optimizing NGINX TLS time to first byte (TTTFB):\n\nlet&#8217;s now turn to the practical matter of picking and tuning the server to deliver the best results. One would hope that the default \u201cout of the box\u201d experience for most servers would do a good job\u2026 unfortunately, that is not the case. Let&#8217;s take a closer look nginx\n\nIn the simplest terms, TLS involves more work.  The current realities of securing communications means we don&#8217;t have a good way to avoid doing that additional work, indeed we will be doing it more often than we ever have before.  The end result is that we need to spend more time thinking about how to optimize the HTTPS experience for all users.",
+            "date_published": "2013-12-26T17:29:03-07:00",
+            "date_modified": "2013-12-26T17:29:03-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "https",
+                "nginx",
+                "ssl",
+                "time-to-first-byte",
+                "tls",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=3117",
+            "url": "https://blog.josephscott.org/2010/11/09/charles-web-debugging-proxy/",
+            "title": "Charles Web Debugging Proxy",
+            "content_html": "<p><a href=\"http://www.charlesproxy.com/\">Charles</a> &#8211; cross platform HTTP/HTTPS proxy for debugging web requests on your own system.  I wonder how this compares to <a href=\"http://www.fiddler2.com/fiddler2/\">Fiddler</a>.</p>\n",
+            "content_text": "Charles &#8211; cross platform HTTP/HTTPS proxy for debugging web requests on your own system.  I wonder how this compares to Fiddler.",
+            "date_published": "2010-11-09T08:54:48-07:00",
+            "date_modified": "2010-11-09T08:54:48-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "charles",
+                "fiddler",
+                "http",
+                "https",
+                "proxy",
+                "Asides"
+            ]
+        }
+    ]
+}

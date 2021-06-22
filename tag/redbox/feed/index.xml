@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>redbox &#8211; Joseph Scott</title>
+	<atom:link href="/tag/redbox/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 13 Mar 2013 16:25:04 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Strange Redbox Password Policy</title>
+		<link>/2013/03/13/strange-redbox-password-policy/</link>
+					<comments>/2013/03/13/strange-redbox-password-policy/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 13 Mar 2013 16:25:04 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[password]]></category>
+		<category><![CDATA[redbox]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7057</guid>
+
+					<description><![CDATA[Another site with odd password policies, redbox.com. Requiring a minimum password length is a good idea, though you could argue that six is too small. But why limit the maximum password length to 12 characters? Any site that has a maximum password restriction below 50 characters has me wondering how exactly they are managing password [&#8230;]]]></description>
+										<content:encoded><![CDATA[<figure style="width: 305px" class="wp-caption aligncenter"><a href="https://sharedat.net/s/6COQ"><img loading="lazy" src="https://sharedat.net/f/6C/6COQ/redbox-password-warning.png" width="305" height="198" class /></a><figcaption class="wp-caption-text">Maximum of 12 characters for passwords on redbox.com</figcaption></figure>
+<p>Another site with odd password policies, <a href="http://www.redbox.com/">redbox.com</a>.  Requiring a minimum password length is a good idea, though you could argue that six is too small.  But why limit the maximum password length to 12 characters?  Any site that has a maximum password restriction below 50 characters has me wondering how exactly they are managing password storage and security.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/03/13/strange-redbox-password-policy/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

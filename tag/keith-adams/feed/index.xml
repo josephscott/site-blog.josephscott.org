@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>keith-adams &#8211; Joseph Scott</title>
+	<atom:link href="/tag/keith-adams/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 14 Sep 2015 14:30:25 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Seriously, PHP</title>
+		<link>/2015/09/14/seriously-php/</link>
+					<comments>/2015/09/14/seriously-php/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 14 Sep 2015 14:30:25 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[facebook]]></category>
+		<category><![CDATA[keith-adams]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12400</guid>
+
+					<description><![CDATA[Taking PHP Seriously ( from two years ago ): Keith Adams outlines PHP&#8217;s strengths and Facebook&#8217;s attempts at remedying the inconsistencies and misfeatures in the core language.]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.infoq.com/presentations/php-history">Taking PHP Seriously</a> ( from two years ago ):</p>
+<blockquote><p>
+Keith Adams outlines PHP&#8217;s strengths and Facebook&#8217;s attempts at remedying the inconsistencies and misfeatures in the core language.
+</p></blockquote>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/09/14/seriously-php/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

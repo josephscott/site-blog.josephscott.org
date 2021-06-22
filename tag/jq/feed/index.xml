@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>jq &#8211; Joseph Scott</title>
+	<atom:link href="/tag/jq/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 25 Sep 2018 16:30:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>jqTerm and jq Recipes</title>
+		<link>/2018/09/25/jqterm-and-jq-recipes/</link>
+					<comments>/2018/09/25/jqterm-and-jq-recipes/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 25 Sep 2018 16:30:52 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[jq]]></category>
+		<category><![CDATA[remy-sharp]]></category>
+		<category><![CDATA[simon-willison]]></category>
+		<guid isPermaLink="false">/?p=16966</guid>
+
+					<description><![CDATA[With so much JSON being flung around from various APIs, jq has become a really helpful tool. Simon Willison mentioned two jq references that I had not seen before. jqTerm is a playground site where you can paste in JSON, experiment with different jq queries, and immediately see the result. jq recipes is a page [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>With so much JSON being flung around from various APIs, <a href="https://stedolan.github.io/jq/">jq</a> has become a really helpful tool.  Simon Willison <a href="https://simonwillison.net/2018/Aug/22/jq-recipes/">mentioned</a> two jq references that I had not seen before.</p>
+<p><a href="https://jqterm.com/">jqTerm</a> is a playground site where you can paste in JSON, experiment with different jq queries, and immediately see the result.</p>
+<p><a href="https://remysharp.com/drafts/jq-recipes">jq recipes</a> is a page from Remy Sharp that lists various uses of jq.  Each one has a demo link back to jqterm.com.  This is great for getting ideas on what you can do with jq.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/09/25/jqterm-and-jq-recipes/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>pup: Command Line HTML Parsing</title>
+		<link>/2018/08/22/pup-command-line-html-parsing/</link>
+					<comments>/2018/08/22/pup-command-line-html-parsing/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 22 Aug 2018 16:52:22 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[go]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[jq]]></category>
+		<category><![CDATA[pup]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15680</guid>
+
+					<description><![CDATA[pup, the three sentence description nails is: pup is a command line tool for processing HTML. It reads from stdin, prints to stdout, and allows the user to filter parts of the page using CSS selectors. Inspired by jq, pup aims to be a fast and flexible way of exploring HTML from the terminal. If [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://github.com/ericchiang/pup">pup</a>, the three sentence description nails is:</p>
+<blockquote><p>
+pup is a command line tool for processing HTML. It reads from stdin, prints to stdout, and allows the user to filter parts of the page using CSS selectors.</p>
+<p>Inspired by jq, pup aims to be a fast and flexible way of exploring HTML from the terminal.
+</p></blockquote>
+<p>If you have used jq, this is going to feel familiar, just for an HTML context.  With the option to <a href="https://github.com/ericchiang/pup#json">output the results as JSON</a>, you could find your self using pup in conjunction with jq.</p>
+<p>There are several examples in the <a href="https://github.com/ericchiang/pup">README</a>, here are a few of my own.</p>
+<p>List all of the <code>IMG</code> tags from cnn.com:<br />
+[shell]<br />
+curl -s https://www.cnn.com/ | pup &#8216;img&#8217;<br />
+[/shell]</p>
+<p>Now get it back as a JSON array:<br />
+[shell]<br />
+curl -s https://www.cnn.com/ | pup &#8216;img json{}&#8217;<br />
+[/shell]</p>
+<p>List all of the <code>LINK</code> attributes that have a <code>rel="preload"</code> attribute:</p>
+<p>[shell]<br />
+curl -s https://www.cnn.com/ | pup &#8216;link[rel=&quot;preload&quot;]&#8217;<br />
+[/shell]</p>
+<p>I could see pup and jq becoming standard utilities on Unix-like systems.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/08/22/pup-command-line-html-parsing/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>jq, Command Line JSON Processor</title>
+		<link>/2013/03/28/jq-command-line-json-processor/</link>
+					<comments>/2013/03/28/jq-command-line-json-processor/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 28 Mar 2013 14:55:00 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[jq]]></category>
+		<category><![CDATA[json]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6461</guid>
+
+					<description><![CDATA[I love being able to make quick web API calls using cURL, and most of the time I get back JSON. Unfortunately it isn&#8217;t easy to manipulate JSON strings with traditional Unix utilities. That is the void that jq fills. A basic example is pulling a single value out of the JSON string. Given a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I love being able to make quick web API calls using cURL, and most of the time I get back JSON.  Unfortunately it isn&#8217;t easy to manipulate JSON strings with traditional Unix utilities.  That is the void that <a href='http://stedolan.github.com/jq/'>jq</a> fills.</p>
+<p>A basic example is pulling a single value out of the JSON string.  Given a JSON string in a file called test.json that looks like:</p>
+<p>[sourcecode lang=&#8221;javascript&#8221;]<br />
+{<br />
+    &quot;foo&quot;: 42,<br />
+    &quot;bar&quot;: &quot;less interesting data&quot;<br />
+}<br />
+[/sourcecode]</p>
+<p>you can easily pull out the value for &#8216;foo&#8217; with:</p>
+<p>[sourcecode]<br />
+&gt; cat test.json | jq &#8216;.foo&#8217;<br />
+&gt; 42<br />
+[/sourcecode]</p>
+<p>Asking for the value of &#8216;bar&#8217; will return something you might not expect at first:</p>
+<p>[sourcecode]<br />
+&gt; cat test.json | jq &#8216;.bar&#8217;<br />
+&gt; &quot;less interesting data&quot;<br />
+[/sourcecode]</p>
+<p>By default jq will attempt to output JSON, which is why you end up with the quotes around the string.  To get the string value without the quotes you&#8217;ll need to use &#8216;-r&#8217;, or &#8216;&#8211;raw-output&#8217;:</p>
+<p>[sourcecode]<br />
+&gt; cat test.json | jq -r &#8216;.bar&#8217;<br />
+&gt; less interesting data<br />
+[/sourcecode]</p>
+<p>These are trivial examples, the <a href="http://stedolan.github.com/jq/tutorial/">tutorial</a> walks you through more features and the <a href="http://stedolan.github.com/jq/manual/">manual</a> describes the filtering and other capabilities in detail, with examples.</p>
+<p><a href="http://stedolan.github.com/jq/download/">Binaries for a number of platforms</a> are available.  Source code is hosted at <a href="https://github.com/stedolan/jq">https://github.com/stedolan/jq</a> under an MIT style open source license.</p>
+<p>Given the continued popularity of JSON it would be nice to see jq included as part of a standard Unix install; alongside sed, awk, and grep.  It has proven useful enough to me already that I&#8217;ve started installing it on the systems that I regularly use.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/03/28/jq-command-line-json-processor/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

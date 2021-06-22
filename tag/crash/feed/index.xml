@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>crash &#8211; Joseph Scott</title>
+	<atom:link href="/tag/crash/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 30 Apr 2012 15:12:59 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Chrome 19 Beta Crashes on stevesouders.com</title>
+		<link>/2012/04/30/chrome-19-beta-crashes-on-stevesouders-com/</link>
+					<comments>/2012/04/30/chrome-19-beta-crashes-on-stevesouders-com/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 30 Apr 2012 15:12:59 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[crash]]></category>
+		<category><![CDATA[steve-souders]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=5864</guid>
+
+					<description><![CDATA[I&#8217;m using Chrome 19.0.1084.36 beta as my primary browser, and I noticed something really odd recently. Chrome 19 beta crashes any time I visit stevesouders.com (Steve is the web performance guru at Google). This isn&#8217;t an isolated single tab crash, the whole Chrome browser comes tumbling down. I tried it with Firefox 12 and Safari [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img loading="lazy" alt="Chrome Logo" src="https://lh3.googleusercontent.com/--A5QmRolO3c/T5od2-Od7WI/AAAAAAAAAZE/H3WbNojW7so/s385/Chrome-logo-2011-03-16.jpg" title="Chrome Logo" class="alignleft" width="192" height="192" /></p>
+<p>I&#8217;m using <a href="https://www.google.com/chrome">Chrome</a> 19.0.1084.36 beta as my primary browser, and I noticed something really odd recently.  Chrome 19 beta crashes any time I visit <a href="http://stevesouders.com/">stevesouders.com</a> (Steve is the web performance guru at Google).</p>
+<p>This isn&#8217;t an isolated single tab crash, the whole Chrome browser comes tumbling down.  I tried it with Firefox 12 and Safari 5.1.5 and both worked fine.</p>
+<p>I think this makes Chrome 19 the worst performing browser when viewing stevesouders.com <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/04/30/chrome-19-beta-crashes-on-stevesouders-com/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

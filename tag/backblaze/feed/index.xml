@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>backblaze &#8211; Joseph Scott</title>
+	<atom:link href="/tag/backblaze/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 02 Oct 2015 07:30:22 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Hard Drive Reliability</title>
+		<link>/2015/10/02/hard-drive-reliability/</link>
+					<comments>/2015/10/02/hard-drive-reliability/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 02 Oct 2015 07:30:22 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[backblaze]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13357</guid>
+
+					<description><![CDATA[From the Backblaze Hard Drive Reliability Stats for Q2 2015: As far as 3TB drives go, we have replaced nearly all of our Seagate 3TB drives. The annual failure rate graph does not paint a pretty picture for Seagate. It is great to see companies that have to deal with hard drives on a large [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>From the <a href="https://www.backblaze.com/blog/hard-drive-reliability-stats-for-q2-2015/">Backblaze Hard Drive Reliability Stats for Q2 2015</a>:</p>
+<blockquote><p>
+As far as 3TB drives go, we have replaced nearly all of our Seagate 3TB drives.
+</p></blockquote>
+<p>The <a href="https://www.backblaze.com/blog/wp-content/uploads/2015/07/blog-fail-drives-manufacture-2015-june.jpg">annual failure rate graph</a> does not paint a pretty picture for Seagate.</p>
+<p>It is great to see companies that have to deal with hard drives on a large scale publish information like this.  While I might have to make similar decision ( what hard drive to buy for a home file server ), I&#8217;ll never have 47,561 drives spinning at my house.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/02/hard-drive-reliability/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

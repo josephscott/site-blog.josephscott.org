@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Password Anniversary Day	</title>
+	<atom:link href="/2013/06/06/password-anniversary-day/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/06/06/password-anniversary-day/</link>
+	<description></description>
+	<lastBuildDate>Thu, 06 Jun 2013 19:10:14 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2013/06/06/password-anniversary-day/#comment-4058</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 06 Jun 2013 19:10:14 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=8075#comment-4058</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/06/06/password-anniversary-day/#comment-4057&quot;&gt;Aaron Toponce&lt;/a&gt;.
+
+As a user I don&#039;t have much control over the password storage method, so the best I can do is change it periodically.
+
+If this raises the awareness level at all of how to properly store passwords then I&#039;d consider this a huge win.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/06/06/password-anniversary-day/#comment-4057">Aaron Toponce</a>.</p>
+<p>As a user I don&#8217;t have much control over the password storage method, so the best I can do is change it periodically.</p>
+<p>If this raises the awareness level at all of how to properly store passwords then I&#8217;d consider this a huge win.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron Toponce		</title>
+		<link>/2013/06/06/password-anniversary-day/#comment-4057</link>
+
+		<dc:creator><![CDATA[Aaron Toponce]]></dc:creator>
+		<pubDate>Thu, 06 Jun 2013 19:05:13 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=8075#comment-4057</guid>
+
+					<description><![CDATA[Well, rotating your passwords won&#039;t change the storage method used by the provider. All it does is if the DB is linked, there&#039;s an expiration date on how long the password will last, as you&#039;re well aware.
+
+With that, I really like this idea. I&#039;m generally not a fan of rotating passwords, but creating a &quot;Password Anniversary Day&quot; might raise enough awareness for all provides to either use bcrypt() or 5k key stretching rotations, complete with random salts.]]></description>
+			<content:encoded><![CDATA[<p>Well, rotating your passwords won&#8217;t change the storage method used by the provider. All it does is if the DB is linked, there&#8217;s an expiration date on how long the password will last, as you&#8217;re well aware.</p>
+<p>With that, I really like this idea. I&#8217;m generally not a fan of rotating passwords, but creating a &#8220;Password Anniversary Day&#8221; might raise enough awareness for all provides to either use bcrypt() or 5k key stretching rotations, complete with random salts.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

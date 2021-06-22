@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>javascript &#8211; Joseph Scott</title>
+	<atom:link href="/tag/javascript/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 02 Oct 2020 01:25:02 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>JavaScript Parentheses</title>
+		<link>/2020/10/01/javascript-parentheses/</link>
+					<comments>/2020/10/01/javascript-parentheses/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 02 Oct 2020 01:25:02 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[javascript]]></category>
+		<guid isPermaLink="false">/?p=18302</guid>
+
+					<description><![CDATA[Last week I generated some unexpected results by using my_function() instead of my_function as a setTimeout callback. If you&#8217;ve never done that, what happens is my_function() will call the function right away. That makes for an especially unhelpful result with setTimeout, where you would expect it to get called when the timer fires. I don&#8217;t [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Last week I generated some unexpected results by using <code>my_function()</code> instead of <code>my_function</code> as a <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout" title="setTimeout">setTimeout</a> callback.</p>
+<p>If you&#8217;ve never done that, what happens is <code>my_function()</code> will call the function right away.  That makes for an especially unhelpful result with <code>setTimeout</code>, where you would expect it to get called when the timer fires.</p>
+<p>I don&#8217;t even remember how many years ago I learned about the difference between the two, and I still managed to miss it at first glance.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/10/01/javascript-parentheses/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>More Vanilla JavaScript: htmldom.dev</title>
+		<link>/2020/04/10/more-vanilla-javascript-htmldom-dev/</link>
+					<comments>/2020/04/10/more-vanilla-javascript-htmldom-dev/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 10 Apr 2020 19:34:24 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[javascript]]></category>
+		<guid isPermaLink="false">/?p=18131</guid>
+
+					<description><![CDATA[Previously I mentioned You Might Not Need jQuery. Another resource for writing vanilla JavaScript is https://htmldom.dev/. The htmldom.dev examples are focused IE 11 and modern browsers. Each example is rated basic, intermediate, or advanced. I wouldn&#8217;t worry about that too much though, even the advanced ones that I looked at came with plenty of explanatory [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Previously I mentioned <a href="/2020/02/19/you-might-not-need-jquery/">You Might Not Need jQuery</a>.  Another resource for writing vanilla JavaScript is <a href="https://htmldom.dev/">https://htmldom.dev/</a>.</p>
+<p><a href="/wp-content/uploads/2020/04/htmldom-dev.png"><img loading="lazy" src="/wp-content/uploads/2020/04/htmldom-dev-1024x956.png" alt="" width="580" height="541" class="aligncenter size-large wp-image-18169" srcset="/wp-content/uploads/2020/04/htmldom-dev-1024x956.png 1024w, /wp-content/uploads/2020/04/htmldom-dev-300x280.png 300w, /wp-content/uploads/2020/04/htmldom-dev-768x717.png 768w, /wp-content/uploads/2020/04/htmldom-dev-1536x1434.png 1536w, /wp-content/uploads/2020/04/htmldom-dev-1200x1120.png 1200w, /wp-content/uploads/2020/04/htmldom-dev.png 1682w" sizes="(max-width: 580px) 100vw, 580px" /></a></p>
+<p>The htmldom.dev examples are focused IE 11 and modern browsers.  Each example is rated <code>basic</code>, <code>intermediate</code>, or <code>advanced</code>.  I wouldn&#8217;t worry about that too much though, even the advanced ones that I looked at came with plenty of explanatory text, making it a helpful resource for those at all levels of JavaScript experience.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/04/10/more-vanilla-javascript-htmldom-dev/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>You Might Not Need jQuery</title>
+		<link>/2020/02/19/you-might-not-need-jquery/</link>
+					<comments>/2020/02/19/you-might-not-need-jquery/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 19 Feb 2020 21:20:47 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jquery]]></category>
+		<guid isPermaLink="false">/?p=18077</guid>
+
+					<description><![CDATA[The first stable version of jQuery was released in August 2006 ( 1.0 ), more than 13 years ago. I am happy to say that the world of web browsers has changed significantly since then. In 2020, You Might Not Need jQuery any more. I&#8217;m being completely serious here, writing plain JavaScript without jQuery is [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The first stable version of <a href="https://jquery.org/">jQuery</a> was released in <a href="https://jquery.org/history/">August 2006 ( 1.0 )</a>, more than 13 years ago.  I am happy to say that the world of web browsers has changed significantly since then.</p>
+<p>In 2020, <a href="http://youmightnotneedjquery.com/">You Might Not Need jQuery</a> any more.  I&#8217;m being completely serious here, writing plain JavaScript without jQuery is a totally viable option for many sites.</p>
+<p>There is a great resource at <a href="http://youmightnotneedjquery.com/">youmightnotneedjquery.com</a> for vanilla JavaScript versions of common jQuery calls, that vary depending on the version of Internet Explorer that you want to support.</p>
+<p>When it was released jQuery was super helpful as a compatibility layer to make writing JavaScript that worked across browsers.  Today, for many people and sites, that compatibility layer is no longer needed.  But it continues to get used in those cases out of habit and convenience in continuing to carry around old code.</p>
+<p>Including jQuery comes with a cost.  The current version, <a href="https://code.jquery.com/jquery-3.4.1.min.js">3.4.1</a>, is 88,145 bytes minified.  Even with Brotli that is more than 29 KB over the wire.  If updating the JavaScript on your site would require fewer bytes than that, start making <a href="http://youmightnotneedjquery.com/">the switch</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/02/19/you-might-not-need-jquery/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Google Search Indexing and JavaScript</title>
+		<link>/2018/11/06/google-search-indexing-and-javascript/</link>
+					<comments>/2018/11/06/google-search-indexing-and-javascript/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 06 Nov 2018 22:23:45 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[john-mueller]]></category>
+		<category><![CDATA[paul-kinlan]]></category>
+		<guid isPermaLink="false">/?p=17159</guid>
+
+					<description><![CDATA[The discussion over how much the Google indexing bot understands about JavaScript comes up over and over. Here are some of the details I&#8217;ve been able to put together. Googlebot is using Chrome 41 On the official Understand rendering on Google Search page the first thing they point out is that the bot uses Chrome [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The discussion over how much the Google indexing bot understands about JavaScript comes up over and over.  Here are some of the details I&#8217;ve been able to put together.</p>
+<h3>Googlebot is using Chrome 41</h3>
+<p>On the official <a href="https://developers.google.com/search/docs/guides/rendering">Understand rendering on Google Search</a> page the first thing they point out is that the bot uses Chrome 41.  Welcome back to 2015, no <a href="http://exploringjs.com/es6/ch_overviews.html">ES6</a> for you:</p>
+<blockquote><p>
+Chrome M41 does not support ES6 features (for example classes). If you are using ES6 make sure to transpile your JavaScript to ES5.
+</p></blockquote>
+<h3>Google Indexing is a Two-Pass Process</h3>
+<p><a href="https://paul.kinlan.me/">Paul Kinlan</a>, a developer advocate at Google, <a href="https://twitter.com/Paul_Kinlan/status/1039852756113080320">mentioned</a> this process:</p>
+<blockquote><p>
+Indexing is delayed for pure client side sides. Google indexer is two-pass, first run is without js, then week later it&#8217;s with is (or there abouts)
+</p></blockquote>
+<p>A follow up to that from <a href="https://twitter.com/JohnMu">John Mueller</a>, Webmaster Trends Analyst at Google, notes that <a href="https://twitter.com/JohnMu/status/1040152407416741890">this is true for updates as well</a>:</p>
+<blockquote><p>
+Yeah, there&#8217;s no fixed timeframe &#8212; the rendering can happen fairly quickly in some cases, but usually it&#8217;s on the order of days to a few weeks even. If your site produces new / updated content frequently &#038; you want it indexed quickly, you need that content in the HTML.
+</p></blockquote>
+<h3>The Take Away</h3>
+<p>Keep your critical, and regularly updated, content in HTML.  Keep your client side JavaScript to ES5 or below.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/11/06/google-search-indexing-and-javascript/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Principle Of Least Surprise: toFixed() in JavaScript</title>
+		<link>/2018/10/30/principle-of-least-surprise-tofixed-in-javascript/</link>
+					<comments>/2018/10/30/principle-of-least-surprise-tofixed-in-javascript/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 30 Oct 2018 18:31:45 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[principle-of-least-surprise]]></category>
+		<guid isPermaLink="false">/?p=17074</guid>
+
+					<description><![CDATA[The &#8220;Principle Of Least Surprise&#8221; ( sometimes referred to as &#8220;Principle Of Least Astonishment&#8221; ) as described by M. F. Cowlishaw in the paper &#8220;The design of the REXX language&#8221; in 1984: It is difficult to define exactly how to meet user expectations, but it helps to ask the question: Could there be a high [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The &#8220;Principle Of Least Surprise&#8221; ( sometimes referred to as &#8220;Principle Of Least Astonishment&#8221; ) as described by M. F. Cowlishaw in the paper &#8220;<a href="https://www.cs.tufts.edu/~nr/cs257/archive/mike-cowlishaw/rexx.pdf">The design of the REXX language</a>&#8221; in 1984:</p>
+<blockquote><p>It is difficult to define exactly how to meet user expectations, but it helps to ask the question: Could there be a high astonishment factor associated with the new feature? If a feature is accidentally misapplied by the user and causes what appears to him to be an unpredictable result, that feature has a high astonishment factor and is therefore undesirable. If a necessary feature has a high astonishment factor, it may be necessary to redesign the feature.</p></blockquote>
+<p>While being a bit on the squishy side, this still a very useful principle.</p>
+<p>I recently ran into a violation of this principle while using <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed">Number.prototype.toFixed()</a> in JavaScript.</p>
+<p>The code was capturing a time value using <a href="https://developer.mozilla.org/en-US/docs/Web/API/Performance/now">performance.now()</a>. Since it was already counting in milliseconds, and I was exposing the result as JSON, I didn&#8217;t really need 15 decimal places. No problem, I&#8217;ll use <code>toFixed()</code> to reduce it to 3 decimal places. Here is a simplified version of the code and the result:</p>
+<pre class="line-numbers"><code class="language-javascript">var now = performance.now().toFixed( 3 );
+var share = JSON.stringify( { now: now } );
+
+
+// share is now {"now": "8.618"}
+</code></pre>
+<p>That is the point where I realized something wasn&#8217;t right.  When calling <code>performance.now()</code> you get back a <code>double</code> ( <a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMHighResTimeStamp">DOMHighResTimeStamp type</a> ).  Why then was it coming out as a string in the JSON?</p>
+<p>It turns out that <code>toFixed()</code> &#8220;formats a number using fixed-point notation&#8221; by returning a string.  The <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed">MDN docs</a> do indicate that the return value is a string, but I contend that this is completely unexpected.  In order to keep the value as a <code>double</code>, you need to wrap the whole thing in <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat">parseFloat()</a>:</p>
+<pre class="line-numbers"><code class="language-javascript">var now = parseFloat( performance.now().toFixed( 3 ) );
+var share = JSON.stringify( { now: now } );
+
+
+// share is now {"now": 8.618}
+</code></pre>
+<p>It would be clearer, and less work ( <code>parseFloat()</code> can be a hit in performance ), if <code>toFixed()</code> preserved the variable type and returned a double.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/10/30/principle-of-least-surprise-tofixed-in-javascript/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Script Scheduling in Chrome</title>
+		<link>/2018/05/01/script-scheduling-in-chrome/</link>
+					<comments>/2018/05/01/script-scheduling-in-chrome/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 01 May 2018 15:11:41 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[javascript]]></category>
+		<guid isPermaLink="false">/?p=16572</guid>
+
+					<description><![CDATA[If you care about how the JavaScript on your web pages get loaded, there is an interesting Google Doc discussion on Chromium: Scheduling Scripts Intuitively and Performantly. The doc starts out with a table outlining six different combinations, along with the resulting network and scheduling priority. That is followed by a discussion of the various [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you care about how the JavaScript on your web pages get loaded, there is an interesting Google Doc discussion on Chromium: <a href="https://docs.google.com/document/d/16rHWLu-0abC9WWLhLBFlIRtbSnOFzhKAXsCamsp0oAs/edit#heading=h.dfqvzwugue3e">Scheduling Scripts Intuitively and Performantly</a>.</p>
+<p>The doc starts out with a table outlining six different combinations, along with the resulting network and scheduling priority.</p>
+<p><a href="/wp-content/uploads/2018/04/chrome-script-scheduling.png"><img loading="lazy" src="/wp-content/uploads/2018/04/chrome-script-scheduling-1020x1024.png" alt="" width="840" height="843" class="aligncenter size-large wp-image-16576" srcset="/wp-content/uploads/2018/04/chrome-script-scheduling-1020x1024.png 1020w, /wp-content/uploads/2018/04/chrome-script-scheduling-150x150.png 150w, /wp-content/uploads/2018/04/chrome-script-scheduling-300x300.png 300w, /wp-content/uploads/2018/04/chrome-script-scheduling-768x771.png 768w, /wp-content/uploads/2018/04/chrome-script-scheduling-1200x1205.png 1200w" sizes="(max-width: 840px) 100vw, 840px" /></a></p>
+<p>That is followed by a discussion of the various issues that arise from these possible combinations.  What really caught my eye was the idea of an <code>IMPORTANCE</code> attribute, as part of the <a href="https://github.com/WICG/priority-hints/blob/master/EXAMPLES.md">priority hints</a> API from the WICG ( Web Incubator Community Group ):</p>
+<blockquote><p>
+&#8211; We will define a new standard importance attribute that will map to current browser priorities: critical, high, medium, low, unimportant<br />
+&#8211; Developers would be able to assign resources into one of these importance groups or define resources as more or less important than said groups.
+</p></blockquote>
+<p>We&#8217;ll see if that quickly becomes a big mess of overloading soup, as the doc cites this example:</p>
+<blockquote><p>
+If we chose to align <code>&lt;script async&gt;</code>’s priority to low, <code>&lt;script async importance=high&gt;</code> may be a useful primitive to provide high loading/exec priority.
+</p></blockquote>
+<p>I like the idea of being able to communicate to browsers the relative importance of a given resource.  From there it can figure out how best to increase or decrease the network and scheduling priority.  The exact details of how it does that could vary based on a number of considerations ( HTTP/1 vs HTTP/2 is the first that comes to mind ).</p>
+<h3>How Can This Be Used For Evil?</h3>
+<p>It wouldn&#8217;t surprise me if scripts started fighting over setting the <code>IMPORTANCE</code> attribute of other resources to <code>unimportant</code>.  Or their own to <code>critical</code>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/05/01/script-scheduling-in-chrome/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Elevator Saga</title>
+		<link>/2016/02/11/elevator-saga/</link>
+					<comments>/2016/02/11/elevator-saga/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 11 Feb 2016 18:11:08 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[javascript]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14891</guid>
+
+					<description><![CDATA[Elements of a fun coding challenge: take something that can start off simple and quickly ramp up to be much more complex. Elevator Saga is a fun coding challenge. Prepare for your productivity to plummet. The premise is straight forward: manage an elevator with logic written in JavaScript. Each challenge adds new variables and increased [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Elements of a fun coding challenge: take something that can start off simple and quickly ramp up to be much more complex.  <a href="http://play.elevatorsaga.com/">Elevator Saga</a> is a fun coding challenge.  Prepare for your productivity to plummet.</p>
+<p>The premise is straight forward: manage an elevator with logic written in JavaScript.  Each challenge adds new variables and increased difficulty.  The <a href="http://play.elevatorsaga.com/documentation.html#docs">API documentation</a> provides you with the tools that you&#8217;ll have to work with.</p>
+<p><a href="/wp-content/uploads/2016/02/elevator-saga-1.png" rel="attachment wp-att-15146"><img loading="lazy" src="/wp-content/uploads/2016/02/elevator-saga-1-1024x542.png" alt="elevator-saga" width="840" height="445" class="aligncenter size-large wp-image-15146" srcset="/wp-content/uploads/2016/02/elevator-saga-1-1024x542.png 1024w, /wp-content/uploads/2016/02/elevator-saga-1-300x159.png 300w, /wp-content/uploads/2016/02/elevator-saga-1-768x407.png 768w, /wp-content/uploads/2016/02/elevator-saga-1-1200x636.png 1200w" sizes="(max-width: 840px) 100vw, 840px" /></a></p>
+<p>Think about all these options the next time you ride an elevator in the real world.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/02/11/elevator-saga/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Secure Handlebars</title>
+		<link>/2016/02/04/secure-handlebars/</link>
+					<comments>/2016/02/04/secure-handlebars/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 04 Feb 2016 18:11:38 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[yahoo]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15056</guid>
+
+					<description><![CDATA[Even JavaScript needs to deal with escaping content for the web. The hard, but ideal, approach is to automatically escape data with the proper context. With that in mind I started reading about Secure Handlebars from Yahoo, which claims: Automatic Contextual XSS Escaping made robust, easy, and fast They support automatic escaping for HTML, HTML [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Even JavaScript needs to deal with escaping content for the web.  The hard, but ideal, approach is to automatically escape data with the proper context.  With that in mind I started reading about <a href="http://yahoo.github.io/secure-handlebars/">Secure Handlebars</a> from Yahoo, which claims:</p>
+<blockquote><p>
+Automatic Contextual XSS Escaping made robust, easy, and fast
+</p></blockquote>
+<p>They support <a href="https://github.com/yahoo/secure-handlebars/#supported-contexts">automatic escaping</a> for HTML, HTML comments, HTML attributes, URI ( in HTML Attribute ), and CSS ( in HTML Attributes ) contexts.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/02/04/secure-handlebars/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>CSS and JavaScript in One File</title>
+		<link>/2016/01/06/css-and-javascript-in-one-file/</link>
+					<comments>/2016/01/06/css-and-javascript-in-one-file/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 06 Jan 2016 16:59:58 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[javascript]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14588</guid>
+
+					<description><![CDATA[An MSDN post from 2007 describes how to format a single file to be valid CSS and JavaScript at the same time. Probably not something I&#8217;d use on a regular site, still a clever hack though.]]></description>
+										<content:encoded><![CDATA[<p>An MSDN post from 2007 describes <a href="http://blogs.msdn.com/b/shivap/archive/2007/05/01/combine-css-with-js-and-make-it-into-a-single-download.aspx">how to format a single file to be valid CSS and JavaScript at the same time</a>.</p>
+<p>Probably not something I&#8217;d use on a regular site, still a clever hack though.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/01/06/css-and-javascript-in-one-file/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Microtasks</title>
+		<link>/2016/01/04/microtasks/</link>
+					<comments>/2016/01/04/microtasks/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 04 Jan 2016 16:59:54 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[jake-archibald]]></category>
+		<category><![CDATA[javascript]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13640</guid>
+
+					<description><![CDATA[Jake Archibald covers JavaScript tasks, microtasks, queues and schedules in browsers. A good time geeking out on the JavaScript event loop.]]></description>
+										<content:encoded><![CDATA[<p>Jake Archibald covers JavaScript <a href="https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/">tasks, microtasks, queues and schedules</a> in browsers.  A good time geeking out on the JavaScript event loop.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/01/04/microtasks/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

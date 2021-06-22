@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>gmail &#8211; Joseph Scott</title>
+	<atom:link href="/tag/gmail/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 20 Apr 2015 14:38:10 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Gmail &#8220;is:unread&#8221;</title>
+		<link>/2015/04/20/gmail-isunread/</link>
+					<comments>/2015/04/20/gmail-isunread/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 20 Apr 2015 14:38:10 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[gmail]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12213</guid>
+
+					<description><![CDATA[There are a number of special Gmail search operators. One I use regularly is very simple: is:unread. I have a few labels that end up with a mix of read / unread messages when ordered by date. Being able to pull up just the unread ones makes it easy to quickly skim them for anything [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>There are a number of special <a href="https://support.google.com/mail/answer/7190?hl=en">Gmail search operators</a>.  One I use regularly is very simple: <code>is:unread</code>.</p>
+<p>I have a few labels that end up with a mix of read / unread messages when ordered by date.  Being able to pull up just the unread ones makes it easy to quickly skim them for anything else interesting that I might have missed.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/04/20/gmail-isunread/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Export Gmail and Google Calendar Data</title>
+		<link>/2013/12/06/export-gmail-and-google-calendar-data/</link>
+					<comments>/2013/12/06/export-gmail-and-google-calendar-data/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 06 Dec 2013 15:41:42 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[gmail]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[google-calendar]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9534</guid>
+
+					<description><![CDATA[Great to see this news yesterday: Starting today we&#8217;re rolling out the ability to export a copy of your Gmail and Google Calendar data, making it easy to back up your data or move to another service. From Official Gmail Blog: Download a copy of your Gmail and Google Calendar data. I&#8217;m not sure how [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Great to see this news yesterday:</p>
+<blockquote><p>
+Starting today we&#8217;re rolling out the ability to export a copy of your Gmail and Google Calendar data, making it easy to back up your data or move to another service.
+</p></blockquote>
+<p>From <a href='http://gmailblog.blogspot.com/2013/12/download-copy-of-your-gmail-and-google.html'>Official Gmail Blog: Download a copy of your Gmail and Google Calendar data</a>.</p>
+<p>I&#8217;m not sure how well downloading 7GB of email is going to do in mbox format, exporting Gmail data hasn&#8217;t been enabled for my account yet.  I like that Google is taking this step though, it is the right thing to do.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/12/06/export-gmail-and-google-calendar-data/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Diff Colorizer for GMail</title>
+		<link>/2011/06/21/diff-colorizer-for-gmail/</link>
+					<comments>/2011/06/21/diff-colorizer-for-gmail/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 21 Jun 2011 23:11:52 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[diff]]></category>
+		<category><![CDATA[gmail]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4338</guid>
+
+					<description><![CDATA[I get emails with diffs in them every day, and Gmail does really horrible things to them. In the Gmail web UI diffs inside emails are nearly unreadable. I don&#8217;t know why they choose to mangle them in this way, but thankfully there is a work around: Beanstalk SVN Diff Colorizer for GMail. I use [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I get emails with diffs in them every day, and Gmail does really horrible things to them.  In the Gmail web UI diffs inside emails are nearly unreadable.  I don&#8217;t know why they choose to mangle them in this way, but thankfully there is a work around: <a href='http://userstyles.org/styles/14853/beanstalk-svn-diff-colorizer-for-gmail'>Beanstalk SVN Diff Colorizer for GMail</a>.</p>
+<p>I use Google Chrome as my main browser, so I installed this as a <a href="http://www.chromium.org/developers/design-documents/user-scripts">user script</a>, clicked reload on my Gmail tab now diffs in emails are much easier to read again.</p>
+<p>The CSS is very simple:</p>
+<p>[sourcecode lang=&#8221;css&#8221;]<br />
+  ins { background-color: #cfc; }</p>
+<p>  del { background-color: #fcc; }<br />
+[/sourcecode]</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/06/21/diff-colorizer-for-gmail/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Gmail Feature Request: Last X Search Terms</title>
+		<link>/2010/07/01/gmail-feature-request-last-x-search-terms/</link>
+					<comments>/2010/07/01/gmail-feature-request-last-x-search-terms/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 01 Jul 2010 15:18:46 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[email]]></category>
+		<category><![CDATA[feature-request]]></category>
+		<category><![CDATA[gmail]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[search]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2465</guid>
+
+					<description><![CDATA[I was looking for something in my Gmail account recently and couldn&#8217;t find it via search. I came back a few hours later thinking that maybe I had made a typo, or threw off the search in some other way, but I couldn&#8217;t remember the exact terms that I&#8217;d used last time. It would be [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was looking for something in my Gmail account recently and couldn&#8217;t find it via search.  I came back a few hours later thinking that maybe I had made a typo, or threw off the search in some other way, but I couldn&#8217;t remember the exact terms that I&#8217;d used last time.</p>
+<p>It would be really handy if Gmail kept a list of my last dozen or so search terms.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/07/01/gmail-feature-request-last-x-search-terms/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Gmail Feature Adjustment Request</title>
+		<link>/2010/04/28/gmail-feature-adjustment-request/</link>
+					<comments>/2010/04/28/gmail-feature-adjustment-request/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 28 Apr 2010 17:20:58 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[feature-request]]></category>
+		<category><![CDATA[gmail]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2238</guid>
+
+					<description><![CDATA[I&#8217;ve been using the Gmail web interface quite a bit, and for the most part I&#8217;ve adjusted to how it works. There is one thing that still bothers me though. When you have an email thread open and a new email comes in on that same thread it adds a little update notice to the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<figure style="width: 500px" class="wp-caption alignnone"><img loading="lazy" alt="Gmail Update Notice" src="http://farm5.static.flickr.com/4066/4560456019_c59bc5b188.jpg" width="500" height="375" /><figcaption class="wp-caption-text">Gmail Update Notice</figcaption></figure>
+<p>I&#8217;ve been using the Gmail web interface quite a bit, and for the most part I&#8217;ve adjusted to how it works.  There is one thing that still bothers me though.  When you have an email thread open and a new email comes in on that same thread it adds a little update notice to the bottom of your browser window.  In the image above that is what the orange arrow is pointing to (the little yellow box at the bottom).</p>
+<p>That&#8217;s all fine and good, except for one alloying aspect.  My mouse rarely hangs out at the bottom of the browser window.  All of the menu items are at the top, along with the bookmarks on the toolbar.  Even in the Gmail interface, all of the UI elements that I use the most are along the top (and on the left side).  So I end up making a special trip to the bottom of the screen just for that update notice.</p>
+<p>So here&#8217;s my request, move the update notice box from the bottom of the screen, to some place near the top.  Looking around the Gmail UI it seems that right above the thick blue bar would be great, where the green arrow is pointing to above.  It&#8217;s a small change that would make the update notice box more pleasant to click on.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/04/28/gmail-feature-adjustment-request/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Web Hooks in Gmail Would Be Great</title>
+		<link>/2009/08/19/web-hooks-in-gmail-would-be-great/</link>
+					<comments>/2009/08/19/web-hooks-in-gmail-would-be-great/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 20 Aug 2009 04:25:02 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[gmail]]></category>
+		<category><![CDATA[web-hooks]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1377</guid>
+
+					<description><![CDATA[I&#8217;ve been loosely following the webhooks idea for awhile and I quite like it. I&#8217;m hoping to see more sites and services add support for web hooks, allowing my own services to consume data and events more or less as they happen. Late last night while trying to get Michael to go to sleep I [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been loosely following the <a href="http://webhooks.pbworks.com/">webhooks</a> idea for awhile and I quite like it.  I&#8217;m hoping to see more sites and services add support for web hooks, allowing my own services to consume data and events more or less as they happen.</p>
+<p>Late last night while trying to get Michael to go to sleep I started thinking about the different ways we provide data to users.  Feeds (RSS &amp; Atom) have become really popular and are fine for what they do.  Then my thoughts turned to email.  I still get quite a bit of information via email.  In thinking about feeds versus email, feeds are still mostly about polling for updates (or pings or pubsubhubbub).  Email is potentially event driven, but in many cases you still have to poll for new emails.</p>
+<p><img loading="lazy" alt="" src="http://farm3.static.flickr.com/2667/3839041938_b17c07ce57_o.gif" class="alignleft" width="143" height="59" /></p>
+<p>That&#8217;s when in hit me.  What I really want is web hooks for my <a href="http://mail.google.com/">Gmail</a> account!  I could filter in Gmail for certain email patterns and have those emails skip the inbox, go directly into my archive and have a copy of the email passed off to a URL of my choosing for further processing.  All without having to poll for new emails, they would be pushed out to the URL automatically.</p>
+<p>Now to be fair you could get something close to this already.  If you have an email server you could have Gmail forward a copy of the email to your email server which could then pass it off to a script instead of delivering it to an inbox (did this with email aliases and procmail for years).  But in my case I&#8217;m using Gmail in part because I got tired of running my own email server, I wanted to spend that time doing other things.</p>
+<p>By why limit this to just Gmail?  Why not have web hooks available for Google Reader or Google Calendar?  A hook could get called anytime a change is made to my calendar, or a new item shows up from a blog with a specific tag.  Then there&#8217;s Google Docs, hooks that would get called when ever someone besides me edits a document.  There are any number of possibilities.</p>
+<p>Now for the icing on the cake.  Combined the power of web hooks with solid APIs for the services that call these hooks (Gmail, Google Calendar/Reader/Docs, etc.) and then you have something almost magical.  The URL end points that process the hook data can turn around and update that data again, at the source.  In the Google Calendar case a web hook that was called for invites, the hook could turn around and accept or decline that invite.  This allows me to come up with my own means of processing, interacting with and responding to events.</p>
+<p>Google has already started down this road with support for <a href="http://code.google.com/p/support/wiki/PostCommitWebHooks">post commit web hooks on Google Code</a>.  Hopefully that is just the beginning.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/08/19/web-hooks-in-gmail-would-be-great/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Expired SSL Cert: smtp.gmail.com</title>
+		<link>/2008/07/29/expired-ssl-cert-smtpgmailcom/</link>
+					<comments>/2008/07/29/expired-ssl-cert-smtpgmailcom/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 29 Jul 2008 18:21:57 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[gmail]]></category>
+		<category><![CDATA[ssl]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1157</guid>
+
+					<description><![CDATA[I got a warning today about the smtp.gmail.com SSL cert, turns out it expired today: Tuesday, July 29, 2008 10:58:07 AM US/Mountain. If you&#8217;ve got a contact with the Gmail team can you let them know? Thanks.]]></description>
+										<content:encoded><![CDATA[<p>I got a warning today about the smtp.gmail.com SSL cert, turns out it expired today: Tuesday, July 29, 2008 10:58:07 AM US/Mountain.  If you&#8217;ve got a contact with the Gmail team can you let them know?  Thanks.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/07/29/expired-ssl-cert-smtpgmailcom/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Gmail False Positives Are On The Rise</title>
+		<link>/2008/02/05/gmail-false-positives-are-on-the-rise/</link>
+					<comments>/2008/02/05/gmail-false-positives-are-on-the-rise/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 06 Feb 2008 01:59:40 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[email]]></category>
+		<category><![CDATA[gmail]]></category>
+		<category><![CDATA[spam]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/02/05/gmail-false-positives-are-on-the-rise/</guid>
+
+					<description><![CDATA[Like so many other folks I&#8217;ve been routing my email through Gmail. For me this was mostly about dealing with spam. On an average day I get 300+, so off to Gmail it goes. It&#8217;s never been perfect, usually letting through less than 10 a day, but that was manageable. Now I&#8217;ve got a whole [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Like so many other folks I&#8217;ve been routing my email through <a>Gmail</a>.  For me this was mostly about dealing with spam.  On an average day I get 300+, so off to Gmail it goes.  It&#8217;s never been perfect, usually letting through less than 10 a day, but that was manageable.  Now I&#8217;ve got a whole new problem.</p>
+<p>Sometime after the new year (as far as I can tell) Gmail started marking legit emails as spam.  After trolling through my spam folder I found several emails that weren&#8217;t spam, so they never made it to my inbox.  Hard to make out exactly what the trend is, so far it&#8217;s about 10 a week.</p>
+<p>I would much rather have some spam hit my inbox than to have legit email get marked as spam.  I&#8217;m now left with the reality that I&#8217;ll have to dig through the spam folder at the end of every day to make sure I didn&#8217;t miss anything, not a pleasant thought.  My confidence and happiness with Gmail has gone done several notches because of this.</p>
+<p>Just in case this is a system wide issue you may want to take a peek at your Gmail spam folder and see if you are having the same problem.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/02/05/gmail-false-positives-are-on-the-rise/feed/</wfw:commentRss>
+			<slash:comments>13</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Gmail Now Supports IMAP</title>
+		<link>/2007/10/23/gmail-now-supports-imap/</link>
+					<comments>/2007/10/23/gmail-now-supports-imap/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 24 Oct 2007 03:02:28 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[email]]></category>
+		<category><![CDATA[gmail]]></category>
+		<category><![CDATA[imap]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/10/23/gmail-now-supports-imap/</guid>
+
+					<description><![CDATA[I&#8217;ve been waiting for this news since Gmail was first launched: Gmail now provides IMAP access. Not all Gmail accounts have this feature turned on yet. My regular Gmail account does not, but my Google Apps for Domains account does. I would have been willing to upgrade to the Premier Edition at $50 per year [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been waiting for this news since <a href="http://gmail.com/">Gmail</a> was first launched: <a href="http://mail.google.com/support/bin/answer.py?ctx=%67mail&amp;hl=en&amp;answer=75725">Gmail now provides IMAP access</a>.  Not all Gmail accounts have this feature turned on yet.  My regular Gmail account does not, but my Google Apps for Domains account does.  I would have been willing to upgrade to the Premier Edition at $50 per year per account to get this, but I&#8217;ll take it for free as well <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Looks like <a href="http://www.downloadsquad.com/2007/10/23/gmail-gets-imap/">downloadsquad was the first to report this</a>.</p>
+<p>I&#8217;m off to go try it out with a few email clients and see how it goes.</p>
+<p>Official announcements on <a href="http://googleblog.blogspot.com/2007/10/free-imap-for-gmail.html">the official Google Blog</a> and <a href="http://gmailblog.blogspot.com/2007/10/sync-your-inbox-across-devices-with.html">Gmail blog</a>.</p>
+<p>Another helpful link: <a href="http://mail.google.com/support/bin/answer.py?answer=77657">How do actions sync in IMAP</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/10/23/gmail-now-supports-imap/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

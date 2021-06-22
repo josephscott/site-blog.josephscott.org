@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>statsd &#8211; Joseph Scott</title>
+	<atom:link href="/tag/statsd/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 20 Apr 2020 19:14:32 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Fake Statsd Server</title>
+		<link>/2020/04/20/fake-statsd-server/</link>
+					<comments>/2020/04/20/fake-statsd-server/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 20 Apr 2020 19:14:32 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[netcat]]></category>
+		<category><![CDATA[statsd]]></category>
+		<guid isPermaLink="false">/?p=18192</guid>
+
+					<description><![CDATA[I was working on modifying data being sent to statsd and wanted an easy way to confirm the changes in my development environment. What I needed was a fake statsd server that would just log what it was receiving. One simple way to do that is netcat: nc -u -l 8125 With this netcat will [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was working on modifying data being sent to <a href="https://github.com/statsd/statsd">statsd</a> and wanted an easy way to confirm the changes in my development environment.  What I needed was a fake statsd server that would just log what it was receiving.</p>
+<p>One simple way to do that is <a href="https://nc110.sourceforge.io/">netcat</a>:</p>
+<pre><code class="language-markup">nc -u -l 8125</code></pre>
+<p>With this netcat will listen on UDP port 8125, the default statsd port, and write what ever it receives to stdout.</p>
+<p>This solution hits the sweet spot.  It did exactly the job I needed, in an easy to understand way, using a tool I already had installed.  Doesn&#8217;t get much better than that.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/04/20/fake-statsd-server/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

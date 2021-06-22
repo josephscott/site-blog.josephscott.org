@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>soasta &#8211; Joseph Scott</title>
+	<atom:link href="/tag/soasta/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 28 Sep 2015 14:49:08 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>RUM for AngularJS</title>
+		<link>/2015/09/28/rum-for-angularjs/</link>
+					<comments>/2015/09/28/rum-for-angularjs/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 28 Sep 2015 14:49:08 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[real-user-monitoring]]></category>
+		<category><![CDATA[soasta]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12593</guid>
+
+					<description><![CDATA[Soasta on how they deal with real user monitoring in AngularJS: First, we now listen for AngularJS routing events, such as $routeChangeStart. Once we see that the visitor is about to view new content, we start listening in preparation for gathering performance metrics for the soft navigation. Second, and most importantly, when the page is [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Soasta on how they deal with <a href="http://www.soasta.com/blog/angularjs-real-user-monitoring-single-page-applications/">real user monitoring in AngularJS</a>:</p>
+<blockquote><p>
+First, we now listen for AngularJS routing events, such as $routeChangeStart. Once we see that the visitor is about to view new content, we start listening in preparation for gathering performance metrics for the soft navigation.</p>
+<p>Second, and most importantly, when the page is first loading, and when a soft navigation starts, we begin monitoring the HTML document for any new downloadable resources that get inserted. We do this via a MutationObserver.
+</p></blockquote>
+<p>Real user monitoring techniques for single page apps are becoming a big deal, and don&#8217;t easily have a one size fits all solution.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/09/28/rum-for-angularjs/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>dply &#8211; Joseph Scott</title>
+	<atom:link href="/tag/dply/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 08 May 2018 18:55:08 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>The Free VM</title>
+		<link>/2018/05/08/the-free-vm/</link>
+					<comments>/2018/05/08/the-free-vm/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 08 May 2018 18:55:08 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[digital-ocean]]></category>
+		<category><![CDATA[dply]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[virtual-machine]]></category>
+		<guid isPermaLink="false">/?p=15901</guid>
+
+					<description><![CDATA[If you&#8217;ve ever been shopping at Costco during lunch time, you know all about &#8220;free samples&#8221;. The Internet has taken this marketing approach to whole new levels. Enter dply.co, which will give you a free VM, for two hours. Use it for two hours and it costs you nothing, or pay if you want to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you&#8217;ve ever been shopping at Costco during lunch time, you know all about &#8220;free samples&#8221;.  The Internet has taken this marketing approach to whole new levels.</p>
+<p>Enter <a href="https://dply.co/">dply.co</a>, which will give you a free VM, for two hours.  Use it for two hours and it costs you nothing, or pay if you want to use it for longer than that.  They spell out the process on their <a href="https://dply.co/how">how it works</a> page.  The specs listed on that page are out of date, increases were <a href="https://twitter.com/dply_co/status/953299015017394176">announced</a> in January:</p>
+<p><a href="/wp-content/uploads/2018/05/dply.png"><img loading="lazy" src="/wp-content/uploads/2018/05/dply-1024x486.png" alt="" width="840" height="399" class="aligncenter size-large wp-image-16601" srcset="/wp-content/uploads/2018/05/dply-1024x486.png 1024w, /wp-content/uploads/2018/05/dply-300x142.png 300w, /wp-content/uploads/2018/05/dply-768x364.png 768w, /wp-content/uploads/2018/05/dply-1200x569.png 1200w, /wp-content/uploads/2018/05/dply.png 1252w" sizes="(max-width: 840px) 100vw, 840px" /></a></p>
+<p>What this boils down to is reselling <a href="https://www.digitalocean.com/">DigitalOcean</a>.</p>
+<p>I&#8217;ve tried it out a few times, and it works about how you&#8217;d expect.  It spins up a new VM, gives you the details, then automatically destroys it at the end of two hours.  You can pay for longer periods at any time.</p>
+<p>The only requirement for spinning up a VM is a Github account.  It doesn&#8217;t ask for payment details unless you want to extend past the free two hours.</p>
+<p>This won&#8217;t be disrupting the major players in the on-demand server market, instead it is attempting to fill a different niche.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/05/08/the-free-vm/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Timing Details With cURL	</title>
+	<atom:link href="/2011/10/14/timing-details-with-curl/feed/" rel="self" type="application/rss+xml" />
+	<link>/2011/10/14/timing-details-with-curl/</link>
+	<description></description>
+	<lastBuildDate>Tue, 22 Sep 2020 17:08:01 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: David Bond		</title>
+		<link>/2011/10/14/timing-details-with-curl/#comment-224021</link>
+
+		<dc:creator><![CDATA[David Bond]]></dc:creator>
+		<pubDate>Tue, 22 Sep 2020 17:08:01 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4943#comment-224021</guid>
+
+					<description><![CDATA[Almost - in later versions, you have to put &quot;n&quot; at the end of each line in the format file.]]></description>
+			<content:encoded><![CDATA[<p>Almost &#8211; in later versions, you have to put &#8220;n&#8221; at the end of each line in the format file.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Pawan		</title>
+		<link>/2011/10/14/timing-details-with-curl/#comment-118527</link>
+
+		<dc:creator><![CDATA[Pawan]]></dc:creator>
+		<pubDate>Mon, 09 Apr 2018 04:40:19 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4943#comment-118527</guid>
+
+					<description><![CDATA[How do we print out in newline in windows dos prompt ?]]></description>
+			<content:encoded><![CDATA[<p>How do we print out in newline in windows dos prompt ?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: josephscott		</title>
+		<link>/2011/10/14/timing-details-with-curl/#comment-39286</link>
+
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 27 Mar 2017 03:34:24 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4943#comment-39286</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/10/14/timing-details-with-curl/#comment-39170&quot;&gt;Santhosh&lt;/a&gt;.
+
+They are described in the cURL man page - https://curl.haxx.se/docs/manpage.html]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/10/14/timing-details-with-curl/#comment-39170">Santhosh</a>.</p>
+<p>They are described in the cURL man page &#8211; <a href="https://curl.haxx.se/docs/manpage.html" rel="nofollow ugc">https://curl.haxx.se/docs/manpage.html</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Santhosh		</title>
+		<link>/2011/10/14/timing-details-with-curl/#comment-39170</link>
+
+		<dc:creator><![CDATA[Santhosh]]></dc:creator>
+		<pubDate>Fri, 24 Mar 2017 06:08:43 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4943#comment-39170</guid>
+
+					<description><![CDATA[Could someone explain the meaning of each parameter?
+
+            time_namelookup:
+                    time_connect:  
+             time_appconnect:  
+              time_pretransfer:  
+                    time_redirect: 
+            time_starttransfer:  
+                           time_total:]]></description>
+			<content:encoded><![CDATA[<p>Could someone explain the meaning of each parameter?</p>
+<p>            time_namelookup:<br />
+                    time_connect:<br />
+             time_appconnect:<br />
+              time_pretransfer:<br />
+                    time_redirect:<br />
+            time_starttransfer:<br />
+                           time_total:</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Colegatron		</title>
+		<link>/2011/10/14/timing-details-with-curl/#comment-35477</link>
+
+		<dc:creator><![CDATA[Colegatron]]></dc:creator>
+		<pubDate>Thu, 09 Feb 2017 10:38:45 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4943#comment-35477</guid>
+
+					<description><![CDATA[Thank you so much for this tip, this is awesome! 
+20 years using curl and never figured out about using a file to format the output.]]></description>
+			<content:encoded><![CDATA[<p>Thank you so much for this tip, this is awesome!<br />
+20 years using curl and never figured out about using a file to format the output.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: josephscott		</title>
+		<link>/2011/10/14/timing-details-with-curl/#comment-27737</link>
+
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 06 Dec 2016 16:03:15 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4943#comment-27737</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/10/14/timing-details-with-curl/#comment-27706&quot;&gt;Myapp&lt;/a&gt;.
+
+I don&#039;t have any examples on that.  I&#039;d say curl_easy_getinfo() might be a good place to start though - https://curl.haxx.se/libcurl/c/curl_easy_getinfo.html]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/10/14/timing-details-with-curl/#comment-27706">Myapp</a>.</p>
+<p>I don&#8217;t have any examples on that.  I&#8217;d say curl_easy_getinfo() might be a good place to start though &#8211; <a href="https://curl.haxx.se/libcurl/c/curl_easy_getinfo.html" rel="nofollow ugc">https://curl.haxx.se/libcurl/c/curl_easy_getinfo.html</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Myapp		</title>
+		<link>/2011/10/14/timing-details-with-curl/#comment-27706</link>
+
+		<dc:creator><![CDATA[Myapp]]></dc:creator>
+		<pubDate>Tue, 06 Dec 2016 11:06:41 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4943#comment-27706</guid>
+
+					<description><![CDATA[Nice post.
+Can you please help by specifying how to get these timing details while using libcurl in C/C++?]]></description>
+			<content:encoded><![CDATA[<p>Nice post.<br />
+Can you please help by specifying how to get these timing details while using libcurl in C/C++?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: quick and dirty response time testing &#8211; Carls SLOG		</title>
+		<link>/2011/10/14/timing-details-with-curl/#comment-23435</link>
+
+		<dc:creator><![CDATA[quick and dirty response time testing &#8211; Carls SLOG]]></dc:creator>
+		<pubDate>Fri, 11 Nov 2016 09:26:17 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4943#comment-23435</guid>
+
+					<description><![CDATA[[&#8230;] /2011/10/14/timing-details-with-curl/ [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] <a href="/2011/10/14/timing-details-with-curl/" rel="nofollow ugc">/2011/10/14/timing-details-with-curl/</a> [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: HTTPS对性能影响分析（三） &#8211; 运维那点事		</title>
+		<link>/2011/10/14/timing-details-with-curl/#comment-3912</link>
+
+		<dc:creator><![CDATA[HTTPS对性能影响分析（三） &#8211; 运维那点事]]></dc:creator>
+		<pubDate>Sat, 25 Jun 2016 11:26:35 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4943#comment-3912</guid>
+
+					<description><![CDATA[[&#8230;] 上面命令中的w参数表示指定输出格式，time_connect变量表示TCP握手的耗时，time_appconnect变量表示SSL握手的耗时（更多变量请查看文档和实例），s参数和o参数用来关闭标准输出。 [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] 上面命令中的w参数表示指定输出格式，time_connect变量表示TCP握手的耗时，time_appconnect变量表示SSL握手的耗时（更多变量请查看文档和实例），s参数和o参数用来关闭标准输出。 [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Mikita Prajapati		</title>
+		<link>/2011/10/14/timing-details-with-curl/#comment-3911</link>
+
+		<dc:creator><![CDATA[Mikita Prajapati]]></dc:creator>
+		<pubDate>Tue, 24 May 2016 06:47:50 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4943#comment-3911</guid>
+
+					<description><![CDATA[Very Nice Post for Basic Understanding.]]></description>
+			<content:encoded><![CDATA[<p>Very Nice Post for Basic Understanding.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

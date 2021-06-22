@@ -1,0 +1,271 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/performance/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/performance/",
+    "feed_url": "https://blog.josephscott.org/tag/performance/feed/json/",
+    "language": "en-US",
+    "title": "performance &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/?p=17737",
+            "url": "https://blog.josephscott.org/2019/09/30/safari-is-working-on-native-lazy-loading-images/",
+            "title": "Safari Is Working On Native Lazy-Loading Images",
+            "content_html": "<p>This little <a href=\"https://webkit.org/\">Webkit</a> gem is really nice to see: <a href=\"https://bugs.webkit.org/show_bug.cgi?id=200764\">Bug 200764 &#8211; Main implementation for lazy image loading</a>.</p>\n<p>Chrome recently started supporting <a href=\"https://web.dev/native-lazy-loading\">native lazy-loading</a>, being the first, and so far <a href=\"https://caniuse.com/#search=loading\">only</a> browser to do so.  This concept is such a good idea, it would be a shame for it to remain Chrome only.  Having it show up in a future version of Safari would be awesome.</p>\n<p>I found two Mozilla bugs filed regarding lazy loading support, <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1542784\">1542784</a> and <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=947427\">947427</a>.  Unfortunately there hasn&#8217;t been any movement on either one.</p>\n",
+            "content_text": "This little Webkit gem is really nice to see: Bug 200764 &#8211; Main implementation for lazy image loading.\nChrome recently started supporting native lazy-loading, being the first, and so far only browser to do so.  This concept is such a good idea, it would be a shame for it to remain Chrome only.  Having it show up in a future version of Safari would be awesome.\nI found two Mozilla bugs filed regarding lazy loading support, 1542784 and 947427.  Unfortunately there hasn&#8217;t been any movement on either one.",
+            "date_published": "2019-09-30T13:15:24-06:00",
+            "date_modified": "2019-09-30T13:15:24-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "performance",
+                "safari",
+                "webkit"
+            ]
+        },
+        {
+            "id": "https://blog.josephscott.org/?p=17232",
+            "url": "https://blog.josephscott.org/2018/12/19/real-user-monitoring-audience-shifts-the-youtube-lesson/",
+            "title": "Real User Monitoring, Audience Shifts: The YouTube Lesson",
+            "content_html": "<p>What you measure, and how you interpret it, is important.  Chris Zacharias described that lesson in the history of YouTube, in <a href=\"http://blog.chriszacharias.com/page-weight-matters\">Page Weight Matters</a>.</p>\n<p>After deploying a customized video page that dropped the page weight from 1.2 MB to 98 KB he found their &#8220;average aggregate page latency&#8221; had increased.  That of course didn&#8217;t make any sense, how do you make a huge performance improvement and end up with real user monitoring ( RUM ) results that show the average experience getting worse.  It wasn&#8217;t until they dug down to a more granular level that the answer became apparent:</p>\n<blockquote><p>\nWhen we plotted the data geographically and compared it to our total numbers broken out by region, there was a disproportionate increase in traffic from places like Southeast Asia, South America, Africa, and even remote regions of Siberia. Further investigation revealed that, in these places, the average page load time under Feather was over TWO MINUTES! This meant that a regular video page, at over a megabyte, was taking more than TWENTY MINUTES to load! This was the penalty incurred before the video stream even had a chance to show the first frame. Correspondingly, entire populations of people simply could not use YouTube because it took too long to see anything. Under Feather, despite it taking over two minutes to get to the first frame of video, watching a video actually became a real possibility. Over the week, word of Feather had spread in these areas and our numbers were completely skewed as a result. Large numbers of people who were previously unable to use YouTube before were suddenly able to.\n</p></blockquote>\n<p>It isn&#8217;t hard to imagine a similar process happening to sites today.</p>\n<p>Take a site that is so big and slow on mobile devices that only 3% of their page views are on mobile devices.  It just isn&#8217;t worth trying to load the page on anything except laptops and desktops on fast wifi connections.  Then they take the time to dramatically reshape the site, improving mobile page load by 10X.  That in turn increases their mobile views from 3% to 48%.  Such a huge shift in the audience is going to impact a number of metrics.  The total average of some modern measurements like first contentful paint could actually get worse in that scenario, instead of better.</p>\n<p>Audience shifts like that can have unexpected results.  That is the same reason why it is hard to compare RUM performance results across different sites.  Unless the makeup of their audience is very similar, it is easy for the comparison to give unexpected results.</p>\n",
+            "content_text": "What you measure, and how you interpret it, is important.  Chris Zacharias described that lesson in the history of YouTube, in Page Weight Matters.\nAfter deploying a customized video page that dropped the page weight from 1.2 MB to 98 KB he found their &#8220;average aggregate page latency&#8221; had increased.  That of course didn&#8217;t make any sense, how do you make a huge performance improvement and end up with real user monitoring ( RUM ) results that show the average experience getting worse.  It wasn&#8217;t until they dug down to a more granular level that the answer became apparent:\n\nWhen we plotted the data geographically and compared it to our total numbers broken out by region, there was a disproportionate increase in traffic from places like Southeast Asia, South America, Africa, and even remote regions of Siberia. Further investigation revealed that, in these places, the average page load time under Feather was over TWO MINUTES! This meant that a regular video page, at over a megabyte, was taking more than TWENTY MINUTES to load! This was the penalty incurred before the video stream even had a chance to show the first frame. Correspondingly, entire populations of people simply could not use YouTube because it took too long to see anything. Under Feather, despite it taking over two minutes to get to the first frame of video, watching a video actually became a real possibility. Over the week, word of Feather had spread in these areas and our numbers were completely skewed as a result. Large numbers of people who were previously unable to use YouTube before were suddenly able to.\n\nIt isn&#8217;t hard to imagine a similar process happening to sites today.\nTake a site that is so big and slow on mobile devices that only 3% of their page views are on mobile devices.  It just isn&#8217;t worth trying to load the page on anything except laptops and desktops on fast wifi connections.  Then they take the time to dramatically reshape the site, improving mobile page load by 10X.  That in turn increases their mobile views from 3% to 48%.  Such a huge shift in the audience is going to impact a number of metrics.  The total average of some modern measurements like first contentful paint could actually get worse in that scenario, instead of better.\nAudience shifts like that can have unexpected results.  That is the same reason why it is hard to compare RUM performance results across different sites.  Unless the makeup of their audience is very similar, it is easy for the comparison to give unexpected results.",
+            "date_published": "2018-12-19T07:50:21-07:00",
+            "date_modified": "2018-12-19T07:50:21-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "chris-zacharias",
+                "performance",
+                "real-user-monitoring",
+                "youtube"
+            ]
+        },
+        {
+            "id": "https://blog.josephscott.org/?p=16387",
+            "url": "https://blog.josephscott.org/2018/01/26/the-five-second-dns-lookup/",
+            "title": "The Five Second DNS Lookup",
+            "content_html": "<p>I was reviewing the waterfall results from a <a href=\"https://www.webpagetest.org/\">WebPageTest.org</a> test recently and I came across a third party resource that look 5 seconds to do a DNS lookup:</p>\n<p><a href=\"https://blog.josephscott.org/wp-content/uploads/2018/01/dns-time.jpg\"><img loading=\"lazy\" src=\"https://blog.josephscott.org/wp-content/uploads/2018/01/dns-time-1024x644.jpg\" alt=\"\" width=\"840\" height=\"528\" class=\"aligncenter size-large wp-image-16388\" srcset=\"https://blog.josephscott.org/wp-content/uploads/2018/01/dns-time-1024x644.jpg 1024w, https://blog.josephscott.org/wp-content/uploads/2018/01/dns-time-300x189.jpg 300w, https://blog.josephscott.org/wp-content/uploads/2018/01/dns-time-768x483.jpg 768w, https://blog.josephscott.org/wp-content/uploads/2018/01/dns-time.jpg 1192w\" sizes=\"(max-width: 840px) 100vw, 840px\" /></a></p>\n<p>To be exact it took 5.031 seconds.  The parameters of the test itself were nothing exciting, Chrome from Virginia with the &#8220;Cable&#8221; network profile ( 5/1 Mbps, 28 ms RTT ).  The DNS lookup for the initial page request only took 0.059 seconds, so this wasn&#8217;t a function of the test parameters.</p>\n<p><a href=\"https://blog.josephscott.org/wp-content/uploads/2018/01/dns-time-bar.png\"><img loading=\"lazy\" src=\"https://blog.josephscott.org/wp-content/uploads/2018/01/dns-time-bar.png\" alt=\"\" width=\"814\" height=\"40\" class=\"aligncenter size-full wp-image-16392\" srcset=\"https://blog.josephscott.org/wp-content/uploads/2018/01/dns-time-bar.png 814w, https://blog.josephscott.org/wp-content/uploads/2018/01/dns-time-bar-300x15.png 300w, https://blog.josephscott.org/wp-content/uploads/2018/01/dns-time-bar-768x38.png 768w\" sizes=\"(max-width: 814px) 100vw, 814px\" /></a></p>\n<p>When you see an entry like that it is a good reminder not to take DNS performance for granted.</p>\n",
+            "content_text": "I was reviewing the waterfall results from a WebPageTest.org test recently and I came across a third party resource that look 5 seconds to do a DNS lookup:\n\nTo be exact it took 5.031 seconds.  The parameters of the test itself were nothing exciting, Chrome from Virginia with the &#8220;Cable&#8221; network profile ( 5/1 Mbps, 28 ms RTT ).  The DNS lookup for the initial page request only took 0.059 seconds, so this wasn&#8217;t a function of the test parameters.\n\nWhen you see an entry like that it is a good reminder not to take DNS performance for granted.",
+            "date_published": "2018-01-26T14:58:48-07:00",
+            "date_modified": "2018-01-26T14:58:48-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "dns",
+                "performance"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=14904",
+            "url": "https://blog.josephscott.org/2016/01/22/performance-is-a-feature/",
+            "title": "Performance Is A Feature",
+            "content_html": "<blockquote><p>\nPerformance, like any other feature, doesn\u2019t just \u201chappen\u201d; it has to be designed and built. To do performance well, you have to think about it, study it, write extra code for it, test it, and support it.</p>\n<p>&#8230;</p>\n<p>Since you can\u2019t know how your application is going to perform in production, you need to write your application so that it\u2019s easy to fix performance in production.\n</p></blockquote>\n<p>From <a href=\"https://josephscott.org/archives/2010/02/thinking-clearly-about-performance/\">one of my favorite papers on performance</a>: <a href=\"http://method-r.com/papers/file/44-thinking-clearly-about-performance\">Thinking Clearly About Performance</a>, by Cary Millsap.</p>\n",
+            "content_text": "Performance, like any other feature, doesn\u2019t just \u201chappen\u201d; it has to be designed and built. To do performance well, you have to think about it, study it, write extra code for it, test it, and support it.\n&#8230;\nSince you can\u2019t know how your application is going to perform in production, you need to write your application so that it\u2019s easy to fix performance in production.\n\nFrom one of my favorite papers on performance: Thinking Clearly About Performance, by Cary Millsap.",
+            "date_published": "2016-01-22T10:35:51-07:00",
+            "date_modified": "2016-01-22T10:35:51-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "cary-millsap",
+                "performance",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=14142",
+            "url": "https://blog.josephscott.org/2015/12/28/measuring-the-performance-of-single-page-applications/",
+            "title": "Measuring the Performance of Single Page Applications",
+            "content_html": "<p>Slides from Nic Jansma on <a href=\"http://www.slideshare.net/nicjansma/measuring-the-performance-of-single-page-applications\">measuring the performance of single page applications</a>:</p>\n<p><iframe loading=\"lazy\" src=\"//www.slideshare.net/slideshow/embed_code/key/JPWRcJHkRyy3Kd\" width=\"595\" height=\"485\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;\" allowfullscreen> </iframe></p>\n<p>This is an area that I&#8217;ll be spending some time on in 2016.</p>\n",
+            "content_text": "Slides from Nic Jansma on measuring the performance of single page applications:\n \nThis is an area that I&#8217;ll be spending some time on in 2016.",
+            "date_published": "2015-12-28T11:39:40-07:00",
+            "date_modified": "2015-12-28T11:39:40-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "nic-jansma",
+                "performance",
+                "slides",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=13516",
+            "url": "https://blog.josephscott.org/2015/10/20/wikimedia-performance-metrics/",
+            "title": "Wikimedia Performance Metrics",
+            "content_html": "<p>Nice to see a public <a href=\"https://performance.wikimedia.org/#!/month\">performance dashboard for Wikimedia</a>.  For more fun check out their public Grafana graphs, specifically: <a href=\"https://grafana.wikimedia.org/dashboard/db/performance-metrics\">Performance Metrics</a>, <a href=\"https://grafana.wikimedia.org/dashboard/db/resourceloader\">Resource Loader</a>, and <a href=\"https://grafana.wikimedia.org/dashboard/db/webpagetest\">WebPageTest</a> ( though there are plenty of others ).</p>\n<p><a href=\"https://blog.josephscott.org/wp-content/uploads/2015/10/wikimedia-perf-1.png\"><img loading=\"lazy\" src=\"https://blog.josephscott.org/wp-content/uploads/2015/10/wikimedia-perf-1-1024x364.png\" alt=\"wikimedia-perf\" width=\"660\" height=\"235\" class=\"aligncenter size-large wp-image-14138\" srcset=\"https://blog.josephscott.org/wp-content/uploads/2015/10/wikimedia-perf-1-1024x364.png 1024w, https://blog.josephscott.org/wp-content/uploads/2015/10/wikimedia-perf-1-300x107.png 300w, https://blog.josephscott.org/wp-content/uploads/2015/10/wikimedia-perf-1-768x273.png 768w, https://blog.josephscott.org/wp-content/uploads/2015/10/wikimedia-perf-1-1200x427.png 1200w, https://blog.josephscott.org/wp-content/uploads/2015/10/wikimedia-perf-1.png 1414w\" sizes=\"(max-width: 660px) 100vw, 660px\" /></a></p>\n",
+            "content_text": "Nice to see a public performance dashboard for Wikimedia.  For more fun check out their public Grafana graphs, specifically: Performance Metrics, Resource Loader, and WebPageTest ( though there are plenty of others ).",
+            "date_published": "2015-10-20T09:30:18-06:00",
+            "date_modified": "2015-10-20T09:30:18-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "performance",
+                "wikimedia",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=13512",
+            "url": "https://blog.josephscott.org/2015/10/19/improving-mobile-performance/",
+            "title": "Improving Mobile Performance",
+            "content_html": "<p>Back in August Digiday wrote about <a href=\"http://digiday.com/publishers/gq-com-cut-page-load-time-80-percent/\">how GQ cut its webpage load time by 80 percent</a> ( emphasis mine ):</p>\n<blockquote><p>\nBefore GQ relaunched its website July 1, pages took a painfully long <strong>seven seconds to load</strong>. With GQ\u2019s mobile visitor at 53 percent of its traffic and growing, that was an unacceptable lag.\n</p></blockquote>\n<p>Always good to hear about sites doing more to improve the performance of their site ( mobile or not ).  Unfortunately the only data point they provided was that the page took &#8220;seven seconds to load&#8221;.  It isn&#8217;t clear what they were measuring that took seven seconds, or under what conditions the test was run.</p>\n<p>So I went to <a href=\"http://www.webpagetest.org/\">webpagetest.org</a> and ran my own tests:</p>\n<ul>\n<li>Chrome, Cable ( 5Mbps/1Mbps 28ms RTT ) from Dulles, VA: <a href=\"http://www.webpagetest.org/result/151019_PP_R1Q/\">http://www.webpagetest.org/result/151019_PP_R1Q/</a></li>\n<li>Chrome ( mobile emu ), 3GSlow ( 780Kpbs/330Kbps 200ms RTT ) from Dulles, VA: <a href=\"http://www.webpagetest.org/result/151019_FQ_RJ5/\">http://www.webpagetest.org/result/151019_FQ_RJ5/</a></li>\n</ul>\n<p>The mobile site is definitely lighter than the desktop one.  Fully loaded desktop first view is 9.5MB and mobile is 5.1MB.  Unfortunately under these test conditions the first view mobile site still took 61.6 seconds to fully load.</p>\n",
+            "content_text": "Back in August Digiday wrote about how GQ cut its webpage load time by 80 percent ( emphasis mine ):\n\nBefore GQ relaunched its website July 1, pages took a painfully long seven seconds to load. With GQ\u2019s mobile visitor at 53 percent of its traffic and growing, that was an unacceptable lag.\n\nAlways good to hear about sites doing more to improve the performance of their site ( mobile or not ).  Unfortunately the only data point they provided was that the page took &#8220;seven seconds to load&#8221;.  It isn&#8217;t clear what they were measuring that took seven seconds, or under what conditions the test was run.\nSo I went to webpagetest.org and ran my own tests:\n\nChrome, Cable ( 5Mbps/1Mbps 28ms RTT ) from Dulles, VA: http://www.webpagetest.org/result/151019_PP_R1Q/\nChrome ( mobile emu ), 3GSlow ( 780Kpbs/330Kbps 200ms RTT ) from Dulles, VA: http://www.webpagetest.org/result/151019_FQ_RJ5/\n\nThe mobile site is definitely lighter than the desktop one.  Fully loaded desktop first view is 9.5MB and mobile is 5.1MB.  Unfortunately under these test conditions the first view mobile site still took 61.6 seconds to fully load.",
+            "date_published": "2015-10-19T08:15:30-06:00",
+            "date_modified": "2015-10-19T08:15:30-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "performance",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=13510",
+            "url": "https://blog.josephscott.org/2015/10/12/hacking-both-ends/",
+            "title": "Hacking Both Ends",
+            "content_html": "<p>When you control the server and client sides of an application you can come up with some impressive performance hacks.  <a href=\"https://code.facebook.com/posts/991252547593574/the-technology-behind-preview-photos/\">Facebook&#8217;s changes to preview photos</a> is a good example of that:</p>\n<blockquote><p>\nThere are a few tables within the JPEG header, which accounts for its size. The question then became: Would it be possible to generate a fixed header that could be stored on client and therefore not need to be transmitted? In that scenario, only the payload would need to be sent, which would make this the winning format. The investigation began.\n</p></blockquote>\n<p>For some slow cases they were able to improve page load performance by 30 percent.</p>\n",
+            "content_text": "When you control the server and client sides of an application you can come up with some impressive performance hacks.  Facebook&#8217;s changes to preview photos is a good example of that:\n\nThere are a few tables within the JPEG header, which accounts for its size. The question then became: Would it be possible to generate a fixed header that could be stored on client and therefore not need to be transmitted? In that scenario, only the payload would need to be sent, which would make this the winning format. The investigation began.\n\nFor some slow cases they were able to improve page load performance by 30 percent.",
+            "date_published": "2015-10-12T08:57:52-06:00",
+            "date_modified": "2015-10-12T08:57:52-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "facebook",
+                "jpeg",
+                "performance",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=12593",
+            "url": "https://blog.josephscott.org/2015/09/28/rum-for-angularjs/",
+            "title": "RUM for AngularJS",
+            "content_html": "<p>Soasta on how they deal with <a href=\"http://www.soasta.com/blog/angularjs-real-user-monitoring-single-page-applications/\">real user monitoring in AngularJS</a>:</p>\n<blockquote><p>\nFirst, we now listen for AngularJS routing events, such as $routeChangeStart. Once we see that the visitor is about to view new content, we start listening in preparation for gathering performance metrics for the soft navigation.</p>\n<p>Second, and most importantly, when the page is first loading, and when a soft navigation starts, we begin monitoring the HTML document for any new downloadable resources that get inserted. We do this via a MutationObserver.\n</p></blockquote>\n<p>Real user monitoring techniques for single page apps are becoming a big deal, and don&#8217;t easily have a one size fits all solution.</p>\n",
+            "content_text": "Soasta on how they deal with real user monitoring in AngularJS:\n\nFirst, we now listen for AngularJS routing events, such as $routeChangeStart. Once we see that the visitor is about to view new content, we start listening in preparation for gathering performance metrics for the soft navigation.\nSecond, and most importantly, when the page is first loading, and when a soft navigation starts, we begin monitoring the HTML document for any new downloadable resources that get inserted. We do this via a MutationObserver.\n\nReal user monitoring techniques for single page apps are becoming a big deal, and don&#8217;t easily have a one size fits all solution.",
+            "date_published": "2015-09-28T08:49:08-06:00",
+            "date_modified": "2015-09-28T08:49:08-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "performance",
+                "real-user-monitoring",
+                "soasta",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=13167",
+            "url": "https://blog.josephscott.org/2015/09/16/maplatency-com/",
+            "title": "MapLatency.com",
+            "content_html": "<p><a href=\"https://blog.josephscott.org/wp-content/uploads/2015/09/maplatency-1.png\"><img loading=\"lazy\" src=\"https://blog.josephscott.org/wp-content/uploads/2015/09/maplatency-1-1024x649.png\" data-sizes=\"(max-width: 660px) 100vw, 660px\" srcset=\"https://blog.josephscott.org/wp-content/uploads/2015/09/maplatency-1-300x190.png 300w, https://blog.josephscott.org/wp-content/uploads/2015/09/maplatency-1-1024x649.png 1024w, https://blog.josephscott.org/wp-content/uploads/2015/09/maplatency-1.png 1200w\" alt=\"maplatency\" width=\"660\" height=\"418\" class=\"aligncenter size-large wp-image-13841\" /></a></p>\n<p><a href=\"http://www.maplatency.com/\">MapLatency.com</a>: global checks for ping, dns, page load, and HTTP GET.</p>\n",
+            "content_text": "MapLatency.com: global checks for ping, dns, page load, and HTTP GET.",
+            "date_published": "2015-09-16T08:30:37-06:00",
+            "date_modified": "2015-09-16T08:30:37-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "performance",
+                "Posts"
+            ]
+        }
+    ]
+}

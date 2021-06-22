@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>bsdtalk &#8211; Joseph Scott</title>
+	<atom:link href="/tag/bsdtalk/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 18 Jul 2006 15:00:41 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Greg Lehey Interview On BSDTalk</title>
+		<link>/2006/07/18/greg-lehey-interview-on-bsdtalk/</link>
+					<comments>/2006/07/18/greg-lehey-interview-on-bsdtalk/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 18 Jul 2006 15:00:41 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[bsdtalk]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[greglehey]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/07/18/greg-lehey-interview-on-bsdtalk/</guid>
+
+					<description><![CDATA[BSDTalk posted an interview with Greg Lehey (a.k.a. Grog) this morning. Greg has a long history in the unix world and has contributed a fair bit to FreeBSD over the years. I knew that he had worked for Linuxcare during the dot.com boom, but I didn&#8217;t realize that he now works for MySQL (and has [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://bsdtalk.blogspot.com/">BSDTalk</a> posted an <a href="http://bsdtalk.blogspot.com/2006/07/bsdtalk055-interview-with-greg-lehey.html">interview with Greg Lehey</a> (a.k.a. Grog) this morning.  <a href="http://www.lemis.com/grog/">Greg</a> has a long history in the unix world and has contributed a fair bit to <a href="http://www.freebsd.org/">FreeBSD</a> over the years.</p>
+<p>I knew that he had worked for <a href="http://en.wikipedia.org/wiki/Linuxcare">Linuxcare</a> during the dot.com boom, but I didn&#8217;t realize that he now works for <a href="http://www.mysql.com/">MySQL</a> (and has for almost a year).</p>
+<p>Greg is a very intelligent guy, even if he does use emacs <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/07/18/greg-lehey-interview-on-bsdtalk/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

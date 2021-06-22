@@ -1,0 +1,200 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/",
+    "feed_url": "https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: XMLHttpRequest (XHR) Uses Multiple Packets for HTTP POST?",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-34109",
+            "url": "https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-34109",
+            "content_html": "@Nicholas Humfrey You sure about that? I tested Chrome 55.0.2883.95 and it still sends two TCP packets.",
+            "content_text": "@Nicholas Humfrey You sure about that? I tested Chrome 55.0.2883.95 and it still sends two TCP packets.",
+            "date_published": "2017-01-26T02:48:56-07:00",
+            "authors": [
+                {
+                    "name": "laike9m",
+                    "url": "https://laike9m.com",
+                    "avatar": "https://secure.gravatar.com/avatar/820c611835bb6eea4851c318a3b73345?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "laike9m",
+                "url": "https://laike9m.com",
+                "avatar": "https://secure.gravatar.com/avatar/820c611835bb6eea4851c318a3b73345?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-17709",
+            "url": "https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-17709",
+            "content_html": "October 2016 and I am experiencing this problem with Safari 9.1.3 (10601.7.8) on Mac OS and also on iOS 10.0.2.\r\nIt is sending the HTTP headers in one packet and the body in a second packet, even for a very small request.\r\n\r\nI am implementing a tiny IPv6 HTTP server on Arduino, which can't currently cope with requests spanning multiple packets. So very frustrating that it works with Chrome but not Safari.\r\n\r\nThe good news however it that Chrome 53.0.2785.143 (also on Mac) is sending a single packet, containing both the headers and body.",
+            "content_text": "October 2016 and I am experiencing this problem with Safari 9.1.3 (10601.7.8) on Mac OS and also on iOS 10.0.2.\r\nIt is sending the HTTP headers in one packet and the body in a second packet, even for a very small request.\r\n\r\nI am implementing a tiny IPv6 HTTP server on Arduino, which can't currently cope with requests spanning multiple packets. So very frustrating that it works with Chrome but not Safari.\r\n\r\nThe good news however it that Chrome 53.0.2785.143 (also on Mac) is sending a single packet, containing both the headers and body.",
+            "date_published": "2016-10-11T12:48:20-06:00",
+            "authors": [
+                {
+                    "name": "Nicholas Humfrey",
+                    "url": "http://njh.me/",
+                    "avatar": "https://secure.gravatar.com/avatar/dfd2fe00e768ea764a9fedcf9792a0cd?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Nicholas Humfrey",
+                "url": "http://njh.me/",
+                "avatar": "https://secure.gravatar.com/avatar/dfd2fe00e768ea764a9fedcf9792a0cd?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-15434",
+            "url": "https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-15434",
+            "content_html": "Maybe now, 2016, the world is changed?",
+            "content_text": "Maybe now, 2016, the world is changed?",
+            "date_published": "2016-09-23T20:56:26-06:00",
+            "authors": [
+                {
+                    "name": "dc",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/3f14efa0b2eb34021e7b256b4eeb5783?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "dc",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/3f14efa0b2eb34021e7b256b4eeb5783?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3035",
+            "url": "https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3035",
+            "content_html": "In case you're curious about why this happens in IE-- the headers are sent by WinINET, but the calling pattern of XHR through URLMon to WinINET results in going async, which means that the POST body bytes aren't typically supplied to WinINET until after the headers have been sent. This is something that we looked at changing in IE10 but ran out of time. In practice, the performance impact is pretty small.\n\nTo chandru's question: The issue here is that the POST body can get lost if the browsing process is torn down in the window between the headers being sent to WinINET and the body being sent down. As a consequence, while a window is closing, you could end up with the headers and no body. (Fiddler will warn if it sees this happen).",
+            "content_text": "In case you're curious about why this happens in IE-- the headers are sent by WinINET, but the calling pattern of XHR through URLMon to WinINET results in going async, which means that the POST body bytes aren't typically supplied to WinINET until after the headers have been sent. This is something that we looked at changing in IE10 but ran out of time. In practice, the performance impact is pretty small.\n\nTo chandru's question: The issue here is that the POST body can get lost if the browsing process is torn down in the window between the headers being sent to WinINET and the body being sent down. As a consequence, while a window is closing, you could end up with the headers and no body. (Fiddler will warn if it sees this happen).",
+            "date_published": "2013-01-17T13:59:52-07:00",
+            "authors": [
+                {
+                    "name": "ericlaw1979",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/89c27d27b73dd3690b3dad59f3a539d1?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "ericlaw1979",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/89c27d27b73dd3690b3dad59f3a539d1?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3034",
+            "url": "https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3034",
+            "content_html": "After pulling my hair out for four days while working on an HTTP server implementation using .NET sockets, I was able to determine that i may actually get a minimum of one packet but usually about 5 packets for a single HTTP post on most mobile browsers. This for an AJAX call with a content length of about 11 Kb.",
+            "content_text": "After pulling my hair out for four days while working on an HTTP server implementation using .NET sockets, I was able to determine that i may actually get a minimum of one packet but usually about 5 packets for a single HTTP post on most mobile browsers. This for an AJAX call with a content length of about 11 Kb.",
+            "date_published": "2012-01-16T17:01:46-07:00",
+            "authors": [
+                {
+                    "name": "Steve Esco",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/7276a909058ca3aa3982b240a10cfb24?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Steve Esco",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/7276a909058ca3aa3982b240a10cfb24?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3031",
+            "url": "https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3031",
+            "content_html": "[...] \u4e4b\u6240\u4ee5\u7528get\u6027\u80fd\u66f4\u597d\u7684\u539f\u56e0\u662f\u6709\u6d4b\u8bd5\u8868\u660e\uff0c\u5373\u4f7f\u6570\u636e\u5f88\u5c0f\uff0c\u5927\u90e8\u5206\u6d4f\u89c8\u5668\uff08\u9664\u4e86Firefox\uff09\u5728\u4f7f\u7528post\u65f6\u4e5f\u4f1a\u53d1\u9001\u4e24\u4e2aTCP\u7684packet\uff0c\u6240\u4ee5\u6027\u80fd\u4e0a\u4f1a\u6709\u635f\u5931 [...]",
+            "content_text": "[...] \u4e4b\u6240\u4ee5\u7528get\u6027\u80fd\u66f4\u597d\u7684\u539f\u56e0\u662f\u6709\u6d4b\u8bd5\u8868\u660e\uff0c\u5373\u4f7f\u6570\u636e\u5f88\u5c0f\uff0c\u5927\u90e8\u5206\u6d4f\u89c8\u5668\uff08\u9664\u4e86Firefox\uff09\u5728\u4f7f\u7528post\u65f6\u4e5f\u4f1a\u53d1\u9001\u4e24\u4e2aTCP\u7684packet\uff0c\u6240\u4ee5\u6027\u80fd\u4e0a\u4f1a\u6709\u635f\u5931 [...]",
+            "date_published": "2011-09-06T03:14:16-06:00",
+            "authors": [
+                {
+                    "name": "9UED | \u4e13\u6ce8\u4e8e\u7528\u6237\u4f53\u9a8c | \u6d4f\u89c8\u5668\u52a0\u8f7d\u4e0e\u9875\u9762de\u6027\u80fd\u4f18\u5316",
+                    "url": "http://www.9ued.com/5.html",
+                    "avatar": false
+                }
+            ],
+            "author": {
+                "name": "9UED | \u4e13\u6ce8\u4e8e\u7528\u6237\u4f53\u9a8c | \u6d4f\u89c8\u5668\u52a0\u8f7d\u4e0e\u9875\u9762de\u6027\u80fd\u4f18\u5316",
+                "url": "http://www.9ued.com/5.html",
+                "avatar": false
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3030",
+            "url": "https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3030",
+            "content_html": "[...] XMLHttpRequest XHR Uses Multiple Packets for HTTP POST? | Joseph Scott. [...]",
+            "content_text": "[...] XMLHttpRequest XHR Uses Multiple Packets for HTTP POST? | Joseph Scott. [...]",
+            "date_published": "2010-12-09T11:26:20-07:00",
+            "authors": [
+                {
+                    "name": "XMLHttpRequest XHR Uses Multiple Packets for HTTP POST? | Joseph Scott &laquo; the joy of coding",
+                    "url": "http://0x1ff.wordpress.com/2010/12/09/xmlhttprequest-xhr-uses-multiple-packets-for-http-post-joseph-scott/",
+                    "avatar": false
+                }
+            ],
+            "author": {
+                "name": "XMLHttpRequest XHR Uses Multiple Packets for HTTP POST? | Joseph Scott &laquo; the joy of coding",
+                "url": "http://0x1ff.wordpress.com/2010/12/09/xmlhttprequest-xhr-uses-multiple-packets-for-http-post-joseph-scott/",
+                "avatar": false
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3029",
+            "url": "https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3029",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3028\">Maurits</a>.\n\nNice, glad it helped.",
+            "content_text": "In reply to Maurits.\n\nNice, glad it helped.",
+            "date_published": "2010-01-19T07:11:22-07:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3028",
+            "url": "https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3028",
+            "content_html": "Thank you very much! We have such a web app that is doing lots of updates and to us this is enormously important. After doing some wiresharking and emulating some loss, jitter, low bandwidth and reordering (using tc) and reading your post I decided to change all the ajax post requests to ajax get requests hoping it had something to do with the 2 packet issue. And it did: after that no more strange 404's on the ajax calls appeared in the apache access log. I still didn't figure out why exactly, but emulating these conditions is no easy task either, so I may never find out.",
+            "content_text": "Thank you very much! We have such a web app that is doing lots of updates and to us this is enormously important. After doing some wiresharking and emulating some loss, jitter, low bandwidth and reordering (using tc) and reading your post I decided to change all the ajax post requests to ajax get requests hoping it had something to do with the 2 packet issue. And it did: after that no more strange 404's on the ajax calls appeared in the apache access log. I still didn't figure out why exactly, but emulating these conditions is no easy task either, so I may never find out.",
+            "date_published": "2010-01-19T05:57:46-07:00",
+            "authors": [
+                {
+                    "name": "Maurits",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/dfab01f67ca4d6dd3b3a739f9770f12f?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Maurits",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/dfab01f67ca4d6dd3b3a739f9770f12f?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3027",
+            "url": "https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3027",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2009/08/27/xmlhttprequest-xhr-uses-multiple-packets-for-http-post/#comment-3026\">chandru</a>.\n\nIt's over TCP so any lost packets would be resent by the networking layer, below the browser.",
+            "content_text": "In reply to chandru.\n\nIt's over TCP so any lost packets would be resent by the networking layer, below the browser.",
+            "date_published": "2009-11-16T09:36:48-07:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

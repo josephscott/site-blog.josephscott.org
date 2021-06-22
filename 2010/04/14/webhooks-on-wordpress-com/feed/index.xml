@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Webhooks on WordPress.com	</title>
+	<atom:link href="/2010/04/14/webhooks-on-wordpress-com/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/04/14/webhooks-on-wordpress-com/</link>
+	<description></description>
+	<lastBuildDate>Wed, 04 Jan 2012 06:15:08 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/04/14/webhooks-on-wordpress-com/#comment-3408</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 04 Jan 2012 06:15:08 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2190#comment-3408</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/04/14/webhooks-on-wordpress-com/#comment-3407&quot;&gt;Mikael&lt;/a&gt;.
+
+You may need to debug on the plugin side then.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/04/14/webhooks-on-wordpress-com/#comment-3407">Mikael</a>.</p>
+<p>You may need to debug on the plugin side then.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Mikael		</title>
+		<link>/2010/04/14/webhooks-on-wordpress-com/#comment-3407</link>
+
+		<dc:creator><![CDATA[Mikael]]></dc:creator>
+		<pubDate>Thu, 29 Dec 2011 10:42:33 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2190#comment-3407</guid>
+
+					<description><![CDATA[Hi
+
+I been trying on my third-party( stand alone site) for a day now to apply the hookpress plugin, but I don&#039;t get any of the fields to be sent to the server side php script. I tried with the $_REQUEST[&#039;field_name&#039;] and the same with $_POST the only thing that is sent is hook=edit_post none of the other things are sent to the server.
+
+/Mikael]]></description>
+			<content:encoded><![CDATA[<p>Hi</p>
+<p>I been trying on my third-party( stand alone site) for a day now to apply the hookpress plugin, but I don&#8217;t get any of the fields to be sent to the server side php script. I tried with the $_REQUEST[&#8216;field_name&#8217;] and the same with $_POST the only thing that is sent is hook=edit_post none of the other things are sent to the server.</p>
+<p>/Mikael</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

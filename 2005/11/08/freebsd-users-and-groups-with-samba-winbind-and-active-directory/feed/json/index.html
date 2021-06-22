@@ -1,0 +1,200 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/",
+    "feed_url": "https://blog.josephscott.org/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: FreeBSD Users and Groups with Samba (Winbind) and Active Directory",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1038",
+            "url": "https://blog.josephscott.org/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1038",
+            "content_html": "@Chris: thanks man! you wont believe how annoying it was to have ossec mailing me every second about that error.\n\nsmbd Version 3.5.4-0.70.el5_6.1\nCentOS release 5.6 (Final)",
+            "content_text": "@Chris: thanks man! you wont believe how annoying it was to have ossec mailing me every second about that error.\n\nsmbd Version 3.5.4-0.70.el5_6.1\nCentOS release 5.6 (Final)",
+            "date_published": "2011-07-21T17:17:26-06:00",
+            "authors": [
+                {
+                    "name": "Will",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/ba2620cc1c9cdd05bd83b282becf8d1c?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Will",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/ba2620cc1c9cdd05bd83b282becf8d1c?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1037",
+            "url": "https://blog.josephscott.org/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1037",
+            "content_html": "Debian Lenny with Samba 3.2.5\nwith \"old\" idmap syntax winbind generates errors about re-initialization of rid module:\n\n[2009/03/06 12:07:48,  0] winbindd/idmap.c:smb_register_idmap(142)\n  Idmap module rid already registered!\n[2009/03/06 12:07:48,  0] lib/module.c:do_smb_load_module(69)\n  Module '/usr/lib/samba/idmap/rid.so' initialization failed: NT_STATUS_OBJECT_NAME_COLLISION\n\nafter changing it to \"new\" syntax errors have gone\n\nwas:\n...\nidmap backend = rid:DOMAIN=10000-20000\nidmap uid = 10000-20000\nidmap gid = 10000-20000\n...\n\nbecome:\n...\nidmap domains = DOMAIN\nidmap config DOMAIN:backend = rid\nidmap config DOMAIN:range = 10000-20000\n...",
+            "content_text": "Debian Lenny with Samba 3.2.5\nwith \"old\" idmap syntax winbind generates errors about re-initialization of rid module:\n\n[2009/03/06 12:07:48,  0] winbindd/idmap.c:smb_register_idmap(142)\n  Idmap module rid already registered!\n[2009/03/06 12:07:48,  0] lib/module.c:do_smb_load_module(69)\n  Module '/usr/lib/samba/idmap/rid.so' initialization failed: NT_STATUS_OBJECT_NAME_COLLISION\n\nafter changing it to \"new\" syntax errors have gone\n\nwas:\n...\nidmap backend = rid:DOMAIN=10000-20000\nidmap uid = 10000-20000\nidmap gid = 10000-20000\n...\n\nbecome:\n...\nidmap domains = DOMAIN\nidmap config DOMAIN:backend = rid\nidmap config DOMAIN:range = 10000-20000\n...",
+            "date_published": "2009-03-06T02:57:16-07:00",
+            "authors": [
+                {
+                    "name": "zblk",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/955302261bd1c42a2f2c47abd873b97e?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "zblk",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/955302261bd1c42a2f2c47abd873b97e?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1036",
+            "url": "https://blog.josephscott.org/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1036",
+            "content_html": "Hi,\n\nI did apply this procedure and everything works fine. Thanks for your contribution to others.\n\nI have a case in my Lab. I have 2 AD in redundancy, and I would like to configure the server so it can authenticate the users with any of them (have redundancy as well on the authentication). is this possible? if yes, any clues or ideas to get it done?\n\nRegards,\n--Aberardo.",
+            "content_text": "Hi,\n\nI did apply this procedure and everything works fine. Thanks for your contribution to others.\n\nI have a case in my Lab. I have 2 AD in redundancy, and I would like to configure the server so it can authenticate the users with any of them (have redundancy as well on the authentication). is this possible? if yes, any clues or ideas to get it done?\n\nRegards,\n--Aberardo.",
+            "date_published": "2008-11-13T18:41:37-07:00",
+            "authors": [
+                {
+                    "name": "Aberardo Castillo",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/bc95d26699e9d3e99374ce226cdd90e6?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Aberardo Castillo",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/bc95d26699e9d3e99374ce226cdd90e6?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1035",
+            "url": "https://blog.josephscott.org/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1035",
+            "content_html": "Hi\n\nActually i am tester i dont know any thing about this , i am trying to do\ncifs mounting in freebsd  but i am getting any thing about that please help me.",
+            "content_text": "Hi\n\nActually i am tester i dont know any thing about this , i am trying to do\ncifs mounting in freebsd  but i am getting any thing about that please help me.",
+            "date_published": "2008-11-13T02:48:18-07:00",
+            "authors": [
+                {
+                    "name": "suresh",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/0ffa6cf21a4bfd273da249beaef3863c?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "suresh",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/0ffa6cf21a4bfd273da249beaef3863c?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1034",
+            "url": "https://blog.josephscott.org/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1034",
+            "content_html": "@suresh -\n\nLooks like there was an error in building samba3 at some point.  I'd suggest tracking that down before trying to go any further.",
+            "content_text": "@suresh -\n\nLooks like there was an error in building samba3 at some point.  I'd suggest tracking that down before trying to go any further.",
+            "date_published": "2008-11-12T10:54:35-07:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://www.randomnetworks.com/",
+                    "avatar": "https://secure.gravatar.com/avatar/407fb36bbf6a01e151680be9f408b5af?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://www.randomnetworks.com/",
+                "avatar": "https://secure.gravatar.com/avatar/407fb36bbf6a01e151680be9f408b5af?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1033",
+            "url": "https://blog.josephscott.org/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1033",
+            "content_html": "After editing /etc/make.conf file i did  make install bug i am getting below message\n\nStop in /usr/ports/net/samba3.\n*** Error code 1\n\nStop in /usr/ports/net/samba3.\n*** Error code 1\n\nStop in /usr/ports/net/samba3.\n[root@freebsd61 /usr/ports/net/samba3]# pwd\n/usr/ports/net/samba3\n[root@freebsd61 /usr/por\n\n\nI am trying to install smbclient in freebsd6.1",
+            "content_text": "After editing /etc/make.conf file i did  make install bug i am getting below message\n\nStop in /usr/ports/net/samba3.\n*** Error code 1\n\nStop in /usr/ports/net/samba3.\n*** Error code 1\n\nStop in /usr/ports/net/samba3.\n[root@freebsd61 /usr/ports/net/samba3]# pwd\n/usr/ports/net/samba3\n[root@freebsd61 /usr/por\n\n\nI am trying to install smbclient in freebsd6.1",
+            "date_published": "2008-11-08T02:44:44-07:00",
+            "authors": [
+                {
+                    "name": "suresh",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/0ffa6cf21a4bfd273da249beaef3863c?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "suresh",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/0ffa6cf21a4bfd273da249beaef3863c?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1032",
+            "url": "https://blog.josephscott.org/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1032",
+            "content_html": "Followed this tutorial and ran into a small problem, not with the tutorial, but with my environment.  It seems that for ssh to work the user can't be in more than 15 Active Directory groups.  I was getting something like\n[sshd] initgroups(username, guid): Invalid argument.  If you experience this issue get your AD group membership down to 15 and you should be just fine.\n\nThanks for the wonderful tutorial!",
+            "content_text": "Followed this tutorial and ran into a small problem, not with the tutorial, but with my environment.  It seems that for ssh to work the user can't be in more than 15 Active Directory groups.  I was getting something like\n[sshd] initgroups(username, guid): Invalid argument.  If you experience this issue get your AD group membership down to 15 and you should be just fine.\n\nThanks for the wonderful tutorial!",
+            "date_published": "2008-10-10T13:47:33-06:00",
+            "authors": [
+                {
+                    "name": "Jim Dillon",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/64eb3b79711772bc3573d5028b405749?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Jim Dillon",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/64eb3b79711772bc3573d5028b405749?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1031",
+            "url": "https://blog.josephscott.org/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1031",
+            "content_html": "Thanks Chris, I've been searching for ages trying to get to the bottom of these errors, there isn't much info on the net",
+            "content_text": "Thanks Chris, I've been searching for ages trying to get to the bottom of these errors, there isn't much info on the net",
+            "date_published": "2008-04-16T22:52:13-06:00",
+            "authors": [
+                {
+                    "name": "Joel Duckworth",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/ca53c02819020634fe8aa138ab8f1cb7?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joel Duckworth",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/ca53c02819020634fe8aa138ab8f1cb7?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1030",
+            "url": "https://blog.josephscott.org/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1030",
+            "content_html": "Thanks for that tip Chris!  I've been trying to solve this winbind/rid problem for several days on RedHat ES 5.1 which comes with samba 3.0.25b.  Thankfully googling the NT_STATUS_OBJECT_NAME_COLLISION error from winbindd-idmap.log led me to your post.",
+            "content_text": "Thanks for that tip Chris!  I've been trying to solve this winbind/rid problem for several days on RedHat ES 5.1 which comes with samba 3.0.25b.  Thankfully googling the NT_STATUS_OBJECT_NAME_COLLISION error from winbindd-idmap.log led me to your post.",
+            "date_published": "2008-02-22T15:10:11-07:00",
+            "authors": [
+                {
+                    "name": "John",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/53849c72097e8945a54d3ad235b2ef7e?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "John",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/53849c72097e8945a54d3ad235b2ef7e?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1029",
+            "url": "https://blog.josephscott.org/2005/11/08/freebsd-users-and-groups-with-samba-winbind-and-active-directory/#comment-1029",
+            "content_html": "@Chris, it sure saved me some time, thanks!!!",
+            "content_text": "@Chris, it sure saved me some time, thanks!!!",
+            "date_published": "2007-06-21T05:40:29-06:00",
+            "authors": [
+                {
+                    "name": "Jeremy",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/06960da71107e6450e64b8183b570657?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Jeremy",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/06960da71107e6450e64b8183b570657?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

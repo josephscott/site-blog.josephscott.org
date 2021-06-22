@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sp_helptext &#8211; Joseph Scott</title>
+	<atom:link href="/tag/sp_helptext/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 21 Mar 2006 19:56:05 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Overcoming The Limitation Of Information_Schema.Views In SQL Server 2000</title>
+		<link>/2006/03/21/overcoming-the-limitation-of-information_schemaviews-in-sql-server-2000/</link>
+					<comments>/2006/03/21/overcoming-the-limitation-of-information_schemaviews-in-sql-server-2000/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 21 Mar 2006 19:56:05 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[information_schema]]></category>
+		<category><![CDATA[sp_helptext]]></category>
+		<category><![CDATA[sqlserver]]></category>
+		<category><![CDATA[view]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/03/21/overcoming-the-limitation-of-information_schemaviews-in-sql-server-2000/</guid>
+
+					<description><![CDATA[This morning I went on a hunt to find out where SQL Server 2000 keeps the view definitions for a database. I quickly came across information_schema feature (seems that having information_schema is part of the SQL92 standard) which exposes view details via information_schema.views. I was hoping that would be the end of my journey, but [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>This morning I went on a hunt to find out where SQL Server 2000 keeps the view definitions for a database.  I quickly came across information_schema feature (seems that having information_schema is part of the <a href="http://www.contrib.andrew.cmu.edu/~shadow/sql/sql1992.txt">SQL92</a> standard) which exposes view details via <a href="http://www.transactsql.com/html/infoschemaviews.html">information_schema.views</a>.  I was hoping that would be the end of my journey, but then I ran into a problem.</p>
+<p>Go back and look at the details for the <a href="http://www.transactsql.com/html/infoschemaviews.html">Information_Schema.Views</a>, pay close attention to the VIEW_DEFINITION column.  It turns out that if the view definition is more than 4000 characters then it returns NULL.  Why they didn&#8217;t just make it a TEXT field I do not know.  Of course one of the two view definitions that I was looking for was returning NULL.  At least I had figured out why, now I needed to know how to get around it.</p>
+<p>I knew I could not have been the only one to run into this, so it was back to searching for a solution.  I eventually came across a <a href="http://www.experts-exchange.com/Databases/Microsoft_SQL_Server/Q_20634183.html">post about sp_helptext</a> that gets around the 4000 character limit.  It turns out that <a href="http://msdn2.microsoft.com/en-us/library/ms176112.aspx">sp_helptext</a> will not only give you a view definition, but also triggers, functions, check constraints and stored procedures.  Quite handy to have around.  So I was able to get the view definition I was looking for (broken up across multiple rows) with:</p>
+<p><code><br />
+EXEC sp_helptext 'my_view_name'<br />
+</code></p>
+<p>You&#8217;ll still have to put all the rows back together to get the complete view definition, but that it much better than just getting NULL.  Of course if I could figure out what the Information_Schema.Views or sp_helptext is looking at to get the actual view definition I could do it myself.  So far I haven&#8217;t been able to find that information, and I&#8217;m not sure that I&#8217;m going to spend much time looking since I have a workable solution at this point.</p>
+<p>As an added bonus, go back to the <a href="http://www.transactsql.com/html/infoschemaviews.html">Information_Schema.Views</a> page again and take a look at the IS_UPDATABLE column notes.  Turns out that it always returns NO.</p>
+<p>While it was nice of Microsoft to include the Information_Schema.Views as part of SQL Server 2000, don&#8217;t depend on the data they provide, in some cases it will be wrong.  I haven&#8217;t looked to see if this is something that has been fixed in SQL Server 2005.</p>
+<p><b>UPDATE Tue 21 Mar 2006 @ 4:00pm:</b> Turns out that getting the definitions of the Information_Schema.Views and sp_helptext is fairly simple.  They are kept in the master database in SQL Server 2000.  Connect to the master database and take a look at the views, you&#8217;ll see several that are owned by INFORMATION_SCHEMA.  Then take a look at the listing for Stored Procedures.  There are tons of sp_* procedures, one of which is sp_helptext.  This lead me to running <code>exec sp_helptext 'sp_helptext'</code> to get the definition of sp_helptext.  You can also look at it by looking at the properties of sp_helptext, but you&#8217;ll be doing a lot scrolling in a little tiny window.  Ick.</p>
+<p>After looking at the definitions of both I think I&#8217;m going to stick with sp_helptext.</p>
+<p><b> UPDATE Tue 21 Mar 2006 @ 4:40pm:</b> Here is the MSDN info on <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/tsqlref/ts_ia-iz_4pbn.asp">INFORMATION_SCHEMA</a> and more specifically <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/tsqlref/ts_ia-iz_4fqr.asp">INFORMATION_SCHEMA.VIEWS</a> which includes notes about the limit of 4000 characters to view_definition and that is_updatable always returns no.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/03/21/overcoming-the-limitation-of-information_schemaviews-in-sql-server-2000/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

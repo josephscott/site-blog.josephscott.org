@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>time-zone &#8211; Joseph Scott</title>
+	<atom:link href="/tag/time-zone/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 18 Mar 2013 15:38:54 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Multiple Time Zone Support in Google Calendar</title>
+		<link>/2013/03/18/multiple-time-zone-support-in-google-calendar/</link>
+					<comments>/2013/03/18/multiple-time-zone-support-in-google-calendar/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 18 Mar 2013 15:38:54 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[google-calendar]]></category>
+		<category><![CDATA[time-zone]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7109</guid>
+
+					<description><![CDATA[At Automattic I have coworkers across many time zones. As a result I usually base time references on GMT instead of my local time zone. This gets a bit confusing in Google Calendar, which I have set to my local time zone. Then Alex Concha, one of my VaultPress teammates, mentioned that Google Calendar supports [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://sharedat.net/f/pC/pCTK/"><img loading="lazy" src="https://sharedat.net/f/pC/pCTK/google-calendar.png" width="135" height="482" class="alignleft" /></a></p>
+<p>At <a href="http://automattic.com/">Automattic</a> I have coworkers across many time zones.  As a result I usually base time references on GMT instead of my local time zone.  This gets a bit confusing in Google Calendar, which I have set to my local time zone.  Then <a href="https://twitter.com/xknown_wp">Alex Concha</a>, one of my <a href="http://vaultpress.com/">VaultPress</a> teammates, mentioned that <a href="http://support.google.com/calendar/bin/answer.py?hl=en&#038;answer=179200">Google Calendar supports showing multiple time zones</a>.  It takes just a minute to setup and you end up with an additional hour column.</p>
+<p>The &#8216;World Clock&#8217; in Google Calendar Labs is also useful for seeing the current time in multiple time zones while working inside your calendar.</p>
+<p>One more thing in Google Calendar I use to manage multiple time zones is the &#8216;Quick Add&#8217; form.  It supports things like &#8220;10pm GMT Test out Google Calendar on 19 Mar 2013&#8221;.  Calendar will pick up on the GMT reference and set the event to your local time zone.  In my case that would be 4pm local time.</p>
+<p>Multiple time zones and day light savings can make scheduling a widely distributed team more of a headache, these features in Google Calendar make it a bit less painful.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/03/18/multiple-time-zone-support-in-google-calendar/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>worldtimebuddy</title>
+		<link>/2011/05/24/worldtimebuddy/</link>
+					<comments>/2011/05/24/worldtimebuddy/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 24 May 2011 14:05:38 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[clock]]></category>
+		<category><![CDATA[time-zone]]></category>
+		<category><![CDATA[worldtimebuddy]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4077</guid>
+
+					<description><![CDATA[worldtimebuddy &#8211; handy little site for tracking the date and time across multiple time zones. Especially when your team of five people spans a range of 18 hours across time zones on three different continents. Only downside is the mobile experience, there doesn&#8217;t seem to be any way to change the time setting when I [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href='http://www.worldtimebuddy.com/'>worldtimebuddy</a> &#8211; handy little site for tracking the date and time across multiple time zones.  Especially when your team of five people spans a range of 18 hours across time zones on three different continents.</p>
+<p>Only downside is the mobile experience, there doesn&#8217;t seem to be any way to change the time setting when I viewed the site with an iPhone.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/05/24/worldtimebuddy/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Detecting Client Side Time Zone Offset Via Javascript</title>
+		<link>/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/</link>
+					<comments>/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 05 Aug 2009 20:40:52 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[time-zone]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1347</guid>
+
+					<description><![CDATA[Dealing with time zones can cause some real pains. As a result when storing a date/time in an application it is standard to store the date/time as GMT. This makes it easier on the application in comparing dates, but isn&#8217;t very friendly for users. The next step is for an applications to provide an option [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Dealing with time zones can cause some real pains.  As a result when storing a date/time in an application it is standard to store the date/time as GMT.  This makes it easier on the application in comparing dates, but isn&#8217;t very friendly for users.  The next step is for an applications to provide an option to indicate what time zone dates should be displayed as.  But what if we could skip that step and detect what time zone the client is in automatically?  Turns out Javascript can help out here.  The Date object has access to the time zone offset, here&#8217;s a simple function to get the number of hours the browser is plus or minus from GMT:</p>
+<p>[sourcecode lang=&#8221;javascript&#8221;]<br />
+function get_time_zone_offset( ) {<br />
+     var current_date = new Date( );<br />
+     var gmt_offset = current_date.getTimezoneOffset( ) / 60;<br />
+     return gmt_offset;<br />
+}<br />
+[/sourcecode]</p>
+<p>The getTimezoneOffset method of the Date object returns the difference in minutes from GMT, so dividing by 60 gives us the offset in hours.  By grabbing the offset as part of a login form you can detect the time zone offset for each user automatically.  An example HTML snippet might help make this more clear:</p>
+<p>[sourcecode lang=&#8221;javascript&#8221;]<br />
+&lt;p&gt;<br />
+Time Zone offset: &lt;span id=&quot;offset&quot;&gt;&lt;/span&gt;<br />
+&lt;/p&gt;</p>
+<p>&lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js&quot;&gt;&lt;/script&gt;</p>
+<p>&lt;script type=&quot;text/javascript&quot;&gt;<br />
+function get_time_zone_offset( ) {<br />
+    var current_date = new Date( );<br />
+    var gmt_offset = current_date.getTimezoneOffset( ) / 60;<br />
+    return gmt_offset;<br />
+}</p>
+<p>$(&#8216;#offset&#8217;).html( get_time_zone_offset( ) );<br />
+&lt;/script&gt;<br />
+[/sourcecode]</p>
+<p>Save that as an HTML file, load it into your browser and it will show you what it detected for your time zone offset.  If you do decide to use this as part of your login form be sure to filter it for only valid values.  Never blindly trust data from a web browser.  Keep in mind that it can be a negative number and a have decimal values (for those areas that don&#8217;t use whole hour offsets for their time zone).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/08/05/detecting-client-side-time-zone-offset-via-javascript/feed/</wfw:commentRss>
+			<slash:comments>9</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

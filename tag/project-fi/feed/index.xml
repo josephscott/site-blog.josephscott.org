@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>project-fi &#8211; Joseph Scott</title>
+	<atom:link href="/tag/project-fi/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 24 Apr 2015 14:01:20 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Google Project Fi, @gmail.com Only</title>
+		<link>/2015/04/24/google-project-fi-gmail-com-only/</link>
+					<comments>/2015/04/24/google-project-fi-gmail-com-only/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 24 Apr 2015 14:01:20 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[project-fi]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12271</guid>
+
+					<description><![CDATA[The &#8220;network of networks&#8221; approach of Google Project Fi is an interesting move. I like the idea of being able to leverage multiple networks, in this case Sprint, T-Mobile, and wifi connections. Any chance Google Fiber cities will see Google wifi access points that specifically target Project Fi users? I clicked on &#8220;request invite&#8221;, which [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The &#8220;network of networks&#8221; approach of <a href="https://fi.google.com/about/">Google Project Fi</a> is an interesting move.  I like the idea of being able to leverage multiple networks, in this case Sprint, T-Mobile, and wifi connections.</p>
+<p>Any chance Google Fiber cities will see Google wifi access points that specifically target Project Fi users?</p>
+<p>I clicked on &#8220;request invite&#8221;, which provided this disappointing response:</p>
+<p><a href="/wp-content/uploads/2015/04/google-fi-gmail-1.png"><img loading="lazy" src="/wp-content/uploads/2015/04/google-fi-gmail-1.png" data-sizes="(max-width: 522px) 100vw, 522px" srcset="/wp-content/uploads/2015/04/google-fi-gmail-1-300x221.png 300w, /wp-content/uploads/2015/04/google-fi-gmail-1.png 522w" alt="google-fi-gmail" width="522" height="385" class="aligncenter size-full wp-image-12273" /></a></p>
+<blockquote><p>
+For now, Project Fi is available only for accounts with an @gmail.com address
+</p></blockquote>
+<p>Just in case you weren&#8217;t sure that <a href="https://josephscott.org/archives/2015/03/new-google-contacts/">non-@gmail.com accounts are second class Google citizens</a>.</p>
+<p>Combine this with the pain Slack is having with <a href="https://josephscott.org/archives/2015/04/yet-another-slack-account/">multiple user accounts</a> and I wonder if user management is the next level up on scaling challenges.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/04/24/google-project-fi-gmail-com-only/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>john-gruber &#8211; Joseph Scott</title>
+	<atom:link href="/tag/john-gruber/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 11 Feb 2014 16:02:06 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Regex Pattern for Matching URLs</title>
+		<link>/2014/02/11/regex-pattern-for-matching-urls/</link>
+					<comments>/2014/02/11/regex-pattern-for-matching-urls/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 11 Feb 2014 16:02:06 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[john-gruber]]></category>
+		<category><![CDATA[regex]]></category>
+		<category><![CDATA[url]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9898</guid>
+
+					<description><![CDATA[John Gruber has posted an update to his Regex Pattern for Matching URLs post. The pattern itself now lives at https://gist.github.com/gruber/8891611. Related to this is a review of URL validation regular expressions. It compares 13 different methods, but only for URL validation, not necessarily matching. I&#8217;m not super keen on the idea of having a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>John Gruber has posted an update to his <a href="http://daringfireball.net/2010/07/improved_regex_for_matching_urls" title="Underscores in a URL?  Looks odd.">Regex Pattern for Matching URLs</a> post.  The pattern itself now lives at <a href="https://gist.github.com/gruber/8891611" title="This trend is increasing, would be nice to have named URLs for these types of things.">https://gist.github.com/gruber/8891611</a>.</p>
+<p>Related to this is a <a href="http://mathiasbynens.be/demo/url-regex" title="It has a pretty table for the test results.">review of URL validation regular expressions</a>.  It compares 13 different methods, but only for URL validation, not necessarily matching.</p>
+<p>I&#8217;m not super keen on the idea of having a list of TLDs as part of the regex, since the number of TLDs is continuing to grow.  I do like that Gruber&#8217;s regex includes comments in it, that is really helpful for longer, more complex expressions.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/02/11/regex-pattern-for-matching-urls/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

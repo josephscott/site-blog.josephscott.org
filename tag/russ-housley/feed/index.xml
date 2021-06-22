@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>russ-housley &#8211; Joseph Scott</title>
+	<atom:link href="/tag/russ-housley/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 03 Feb 2011 21:30:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Action, Not Crisis</title>
+		<link>/2011/02/03/action-not-crisis/</link>
+					<comments>/2011/02/03/action-not-crisis/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 03 Feb 2011 21:30:07 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[ipv4]]></category>
+		<category><![CDATA[ipv6]]></category>
+		<category><![CDATA[russ-housley]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3490</guid>
+
+					<description><![CDATA[The depletion of the IANA IPv4 address pool is not a crisis. Next week the Internet will not be significantly different that it was a week ago. There will not be any notable short-term effects caused by the empty IANA IPv4 address pool. There is no crisis, but there is a need for action so [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+The depletion of the IANA IPv4 address pool is not a crisis.  Next week the Internet will not be significantly different that it was a week ago.  There will not be any notable short-term effects caused by the empty IANA IPv4 address pool.</p>
+<p>There is no crisis, but there is a need for action so that the Internet can continue to grow.  The transition to IPv6 requires the attention of many actors.
+</p></blockquote>
+<p><a href="http://www.ietf.org/mail-archive/web/ietf/current/msg65458.html">Russ Housley on Final IPv4 Unicast Address Allocations</a></p>
+<p><a href="http://www.vigilsec.com/">Russ Housley</a> has been the IETF Chair since March 2007.</p>
+<p>For those interested in IPv4 allocation, the <a href="http://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xhtml">IANA IPv4 Address Space Registry</a> is an interesting read.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/02/03/action-not-crisis/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

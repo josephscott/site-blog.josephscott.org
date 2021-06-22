@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>firesheep &#8211; Joseph Scott</title>
+	<atom:link href="/tag/firesheep/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 25 Oct 2010 21:51:29 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Firesheep</title>
+		<link>/2010/10/25/firesheep/</link>
+					<comments>/2010/10/25/firesheep/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 25 Oct 2010 21:51:29 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[firefox]]></category>
+		<category><![CDATA[firesheep]]></category>
+		<category><![CDATA[security]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3051</guid>
+
+					<description><![CDATA[Plenty of talk today about Eric Butler and Firesheep. Remember the mid-90s when the Security Administrator Tool for Analyzing Networks (SATAN) brought down the entire Internet because anyone could down load it and run it against servers? Yeah, didn&#8217;t happen. Hopefully all of this discussion about the potential implications of Firesheep will cause people to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Plenty of talk today about <a href='http://codebutler.com/firesheep'>Eric Butler and Firesheep</a>.  Remember the mid-90s when the <a href="http://www.porcupine.org/satan/">Security Administrator Tool for Analyzing Networks (SATAN)</a> brought down the entire Internet because anyone could down load it and run it against servers?  Yeah, didn&#8217;t happen.</p>
+<p>Hopefully all of this discussion about the potential implications of Firesheep will cause people to take a fresh look at the security precautions they use on their site.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/10/25/firesheep/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

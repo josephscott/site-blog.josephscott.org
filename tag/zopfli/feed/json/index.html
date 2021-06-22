@@ -1,0 +1,38 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/zopfli/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/zopfli/",
+    "feed_url": "https://blog.josephscott.org/tag/zopfli/feed/json/",
+    "language": "en-US",
+    "title": "zopfli &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=6918",
+            "url": "https://blog.josephscott.org/2013/03/06/zopfli-compression/",
+            "title": "Zopfli Compression",
+            "content_html": "<figure style=\"width: 128px\" class=\"wp-caption alignleft\"><img loading=\"lazy\" alt=\"Zopfli was named after a Swiss bread recipe\" src=\"http://2.bp.blogspot.com/-jDq-ZRd-xlQ/US_LwJaVR4I/AAAAAAAACh0/9T2OTpzRj5E/s1600/zopfli.jpg\" width=\"128\" height=\"108\" /><figcaption class=\"wp-caption-text\">Zopfli was named after a Swiss bread recipe</figcaption></figure>\n<p>Google recently <a href=\"http://googledevelopers.blogspot.com/2013/02/compress-data-more-densely-with-zopfli.html\">announced</a> the new <a href=\"https://code.google.com/p/zopfli/\">Zopfli Compression Algorithm</a>:</p>\n<blockquote><p>Zopfli Compression Algorithm is a new zlib (gzip, deflate) compatible compressor. This compressor takes more time (~100x slower), but compresses around 5% better than zlib and better than any other zlib-compatible compressor we have found.</p></blockquote>\n<p>Being gzip compatible means that existing clients can decompress files that have been compressed with Zopfli. Specifically, web browsers will be able to understand this.</p>\n<p>A number of people have asked what the big deal is over such a relatively small size reduction at the cost of a much slower compression process. Lets take the lastest <a href=\"https://developers.google.com/speed/libraries/devguide#jquery\">jQuery file from the Google CDN</a> as an example &#8211; <a href=\"http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js\">http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js</a>.</p>\n<p>First I cloned the <a href=\"https://code.google.com/p/zopfli/source/checkout\">Zopfli source repo</a> and compiled it on my Macbook Air. Took about a minute or so to clone and build. The build process only required running <code>make</code>.</p>\n<p>Here are the results of <code>gzip -9</code> and <code>zopfli &#8211; i1000</code> on jquery.min.js:</p>\n<table>\n<thead>\n<tr>\n<th>Compression</th>\n<th>Size</th>\n<th>Compression Time</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>None</td>\n<td>92,629 bytes</td>\n<td>&#8211;</td>\n</tr>\n<tr>\n<td>gzip -9</td>\n<td>32,660 bytes</td>\n<td>0.009s</td>\n</tr>\n<tr>\n<td>zopfli &#8211;i1000</td>\n<td>31,686 bytes</td>\n<td>16.376s</td>\n</tr>\n</tbody>\n</table>\n<p>In this test Zopfli saved an additional 974 bytes and took over 16 seconds longer. In our Google CDN example the time it takes to do the compression doesn&#8217;t make any difference, that is something you&#8217;ll only be doing once per file. To see what the potential savings is from those extra 974 bytes we&#8217;d need to know how often the jQuery file is downloaded. I don&#8217;t know what the actual numbers are, so lets make some up. Lets say it is 1 million times per month.</p>\n<p>So 974 bytes * 1,000,000 gives us 974,000,000 bytes per month in savings. No doubt this is a drop in the bucket when compared to total bandwidth usage at Google, but it is an improvement. The improvement wouldn&#8217;t just be for Google either, everyone who views web sites that had the Zopfli compressed jQuery would have a slightly better experience as well. Smaller file means it gets downloaded faster over my existing connection. This would be extra good for mobile users.</p>\n<p>I think there are plenty of cases where using Zopfli to compress your files will be a nice little improvement.</p>\n",
+            "content_text": "Zopfli was named after a Swiss bread recipe\nGoogle recently announced the new Zopfli Compression Algorithm:\nZopfli Compression Algorithm is a new zlib (gzip, deflate) compatible compressor. This compressor takes more time (~100x slower), but compresses around 5% better than zlib and better than any other zlib-compatible compressor we have found.\nBeing gzip compatible means that existing clients can decompress files that have been compressed with Zopfli. Specifically, web browsers will be able to understand this.\nA number of people have asked what the big deal is over such a relatively small size reduction at the cost of a much slower compression process. Lets take the lastest jQuery file from the Google CDN as an example &#8211; http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js.\nFirst I cloned the Zopfli source repo and compiled it on my Macbook Air. Took about a minute or so to clone and build. The build process only required running make.\nHere are the results of gzip -9 and zopfli &#8211; i1000 on jquery.min.js:\n\n\n\nCompression\nSize\nCompression Time\n\n\n\n\nNone\n92,629 bytes\n&#8211;\n\n\ngzip -9\n32,660 bytes\n0.009s\n\n\nzopfli &#8211;i1000\n31,686 bytes\n16.376s\n\n\n\nIn this test Zopfli saved an additional 974 bytes and took over 16 seconds longer. In our Google CDN example the time it takes to do the compression doesn&#8217;t make any difference, that is something you&#8217;ll only be doing once per file. To see what the potential savings is from those extra 974 bytes we&#8217;d need to know how often the jQuery file is downloaded. I don&#8217;t know what the actual numbers are, so lets make some up. Lets say it is 1 million times per month.\nSo 974 bytes * 1,000,000 gives us 974,000,000 bytes per month in savings. No doubt this is a drop in the bucket when compared to total bandwidth usage at Google, but it is an improvement. The improvement wouldn&#8217;t just be for Google either, everyone who views web sites that had the Zopfli compressed jQuery would have a slightly better experience as well. Smaller file means it gets downloaded faster over my existing connection. This would be extra good for mobile users.\nI think there are plenty of cases where using Zopfli to compress your files will be a nice little improvement.",
+            "date_published": "2013-03-06T13:05:53-07:00",
+            "date_modified": "2013-03-06T13:05:53-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "compression",
+                "google",
+                "zlib",
+                "zopfli",
+                "Posts"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>openresty &#8211; Joseph Scott</title>
+	<atom:link href="/tag/openresty/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 19 May 2015 15:08:50 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Dynamically Generated Certificates</title>
+		<link>/2015/05/19/dynamically-generated-certificates/</link>
+					<comments>/2015/05/19/dynamically-generated-certificates/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 19 May 2015 15:08:50 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[https]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[openresty]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12371</guid>
+
+					<description><![CDATA[tl;dr: generate dynamic certificates on the fly with nginx. Leveraging OpenResty to generate certificates on demand, which follows fairly direct pattern: Generate private key Generate signing request ( CSR ) Sign the CSR with a CA Use the new key A little bit of Lua inside Nginx goes a surprisingly long way.]]></description>
+										<content:encoded><![CDATA[<blockquote><p>tl;dr: generate dynamic certificates on the fly with nginx.</p></blockquote>
+<p>Leveraging <a href="http://openresty.org/">OpenResty</a> to <a href="http://blog.dutchcoders.io/openresty-with-dynamic-generated-certificates/">generate certificates on demand</a>, which follows fairly direct pattern:</p>
+<ul>
+<li>Generate private key</li>
+<li>Generate signing request ( CSR )</li>
+<li>Sign the CSR with a CA</li>
+<li>Use the new key</li>
+</ul>
+<p>A little bit of <a href="http://www.lua.org/">Lua</a> inside <a href="http://nginx.org/">Nginx</a> goes a surprisingly long way.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/05/19/dynamically-generated-certificates/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: On-page Editing, Pro or Con?	</title>
+	<atom:link href="/2011/03/30/on-page-editing-pro-or-con/feed/" rel="self" type="application/rss+xml" />
+	<link>/2011/03/30/on-page-editing-pro-or-con/</link>
+	<description></description>
+	<lastBuildDate>Thu, 14 Apr 2011 05:33:19 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: John		</title>
+		<link>/2011/03/30/on-page-editing-pro-or-con/#comment-3682</link>
+
+		<dc:creator><![CDATA[John]]></dc:creator>
+		<pubDate>Thu, 14 Apr 2011 05:33:19 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3921#comment-3682</guid>
+
+					<description><![CDATA[I continually find myself creating html pages that I embed into the on page editor.  Call me old fashioned but the current on page editors of cms systems still has a long way to go]]></description>
+			<content:encoded><![CDATA[<p>I continually find myself creating html pages that I embed into the on page editor.  Call me old fashioned but the current on page editors of cms systems still has a long way to go</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/03/30/on-page-editing-pro-or-con/#comment-3681</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 30 Mar 2011 19:33:49 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3921#comment-3681</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/03/30/on-page-editing-pro-or-con/#comment-3680&quot;&gt;Gordon Brander&lt;/a&gt;.
+
+There is definitely something positive to be said for having a consistent admin interface even when the public facing side of the site changes.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/03/30/on-page-editing-pro-or-con/#comment-3680">Gordon Brander</a>.</p>
+<p>There is definitely something positive to be said for having a consistent admin interface even when the public facing side of the site changes.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Gordon Brander		</title>
+		<link>/2011/03/30/on-page-editing-pro-or-con/#comment-3680</link>
+
+		<dc:creator><![CDATA[Gordon Brander]]></dc:creator>
+		<pubDate>Wed, 30 Mar 2011 19:24:56 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3921#comment-3680</guid>
+
+					<description><![CDATA[&lt;blockquote cite=&quot;http://josephscott.org/archives/2011/03/on-page-editing-pro-or-con/&quot;&gt;on-page editing should be placed on a layer that is as close the user as possible&lt;/blockquote&gt;
+
+That&#039;s a great rule of thumb. I believe it corresponds to another rule of thumb in UX design: make interactions as direct as possible. For example: rotating something in Powerpoint requires fiddling with knobs and buttons in a separate window. On the iPad, you just touch the thing you want to manipulate.
+
+Another fringe issue with on-page editing is that it puts more burden on theme developers, since they have to style both the client-facing site and the admin. It&#039;s been interesting to see how the Drupal community copes with this (by default all of it&#039;s admin panels are displayed in the context of the site). A whole host of modules have been developed with the aim of easily giving Drupal a stock admin interface.]]></description>
+			<content:encoded><![CDATA[<blockquote cite="http://josephscott.org/archives/2011/03/on-page-editing-pro-or-con/"><p>on-page editing should be placed on a layer that is as close the user as possible</p></blockquote>
+<p>That&#8217;s a great rule of thumb. I believe it corresponds to another rule of thumb in UX design: make interactions as direct as possible. For example: rotating something in Powerpoint requires fiddling with knobs and buttons in a separate window. On the iPad, you just touch the thing you want to manipulate.</p>
+<p>Another fringe issue with on-page editing is that it puts more burden on theme developers, since they have to style both the client-facing site and the admin. It&#8217;s been interesting to see how the Drupal community copes with this (by default all of it&#8217;s admin panels are displayed in the context of the site). A whole host of modules have been developed with the aim of easily giving Drupal a stock admin interface.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

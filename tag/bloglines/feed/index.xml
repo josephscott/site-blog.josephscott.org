@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>bloglines &#8211; Joseph Scott</title>
+	<atom:link href="/tag/bloglines/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 24 Jun 2009 21:12:42 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Leaving Bloglines For Google Reader</title>
+		<link>/2009/06/24/leaving-bloglines-for-google-reader/</link>
+					<comments>/2009/06/24/leaving-bloglines-for-google-reader/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 24 Jun 2009 21:12:42 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[bloglines]]></category>
+		<category><![CDATA[google-reader]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1282</guid>
+
+					<description><![CDATA[I started using Bloglines in early 2004 to read feeds. Despite the rise of Google Reader I stuck with Bloglines, which had that well broken in feeling after using it for so long. I put up with the occasional outage and semi-regular bugs because most of the time it worked well enough. This month I [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I started using <a href="http://bloglines.com/">Bloglines</a> in early 2004 to read feeds.  Despite the rise of <a href="http://www.google.com/reader">Google Reader</a> I stuck with Bloglines, which had that well broken in feeling after using it for so long.  I put up with the occasional outage and semi-regular bugs because most of the time it worked well enough.</p>
+<p>This month I finally decided it was time to retire my Bloglines account and move over to Google Reader.  The comfort of sticking with a service that I&#8217;d known and loved for so long was finally over come by feeds that were way behind, bugs that made it impossible to use at times and outages that took the service completely offline.</p>
+<p>That isn&#8217;t to say that Google Reader is perfect, there are some things that I&#8217;d like to have changed.  I will often quickly scan through new items via the &#8216;All Items&#8217; view (using the keyboard short cuts), but find it is really annoying that I can&#8217;t unsubscribe from a feed from there.  Instead I have to view just that feed and then I get the unsubscribe option.</p>
+<p>Good bye Bloglines, you served me well, but the time has come for us to part ways.  Oh and by the way, I never did get my <a href="http://joseph.randomnetworks.com/archives/2005/03/14/i-love-bloglines-shirt-in-the-mail/">I Love Bloglines</a> shirt.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/06/24/leaving-bloglines-for-google-reader/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Mark Fletcher Leaving Bloglines</title>
+		<link>/2006/06/06/mark-fletcher-leaving-bloglines/</link>
+					<comments>/2006/06/06/mark-fletcher-leaving-bloglines/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 06 Jun 2006 15:28:05 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[ask]]></category>
+		<category><![CDATA[bloglines]]></category>
+		<category><![CDATA[markfletcher]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/06/06/mark-fletcher-leaving-bloglines/</guid>
+
+					<description><![CDATA[This morning Mark Fletcher announced that he was leaving Bloglines. To his credit he did stay with Bloglines for more than a year after their Askquisition. Good luck Mark, hope to see a new start up soon.]]></description>
+										<content:encoded><![CDATA[<p>This morning Mark Fletcher <a href="http://www.wingedpig.com/archives/2006/06/moving_on_230.html">announced</a> that he was leaving <a href="http://www.bloglines.com/">Bloglines</a>.  To his credit he did stay with Bloglines for more than a year after their <a href="http://www.wingedpig.com/archives/2005/02/nobody_expects_the_bloglines_a_190.html">Askquisition</a>.</p>
+<p>Good luck Mark, hope to see a new start up soon.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/06/06/mark-fletcher-leaving-bloglines/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Bloglines Finally Supports XML-RPC Ping</title>
+		<link>/2006/04/28/bloglines-finally-supports-xml-rpc-ping/</link>
+					<comments>/2006/04/28/bloglines-finally-supports-xml-rpc-ping/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 29 Apr 2006 03:12:52 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[bloglines]]></category>
+		<category><![CDATA[ping]]></category>
+		<category><![CDATA[xmlrpc]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/04/28/bloglines-finally-supports-xml-rpc-ping/</guid>
+
+					<description><![CDATA[Bloglines has resisted adding an XML-RPC ping interface in favor of simply polling feeds for updates. That has finally changed with the announcement of a new ping interface. You can find the details on the API documentation page under the Ping API section.]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.bloglines.com/">Bloglines</a> has resisted adding an <a href="http://www.xmlrpc.com/weblogsCom">XML-RPC ping</a> interface in favor of simply polling feeds for updates.  That has finally changed with the <a href="http://www.bloglines.com/about/news#103">announcement of a new ping interface</a>.  You can find the details on the <a href="http://www.bloglines.com/services/api">API documentation</a> page under the Ping API section.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/04/28/bloglines-finally-supports-xml-rpc-ping/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>When Will Bloglines Be Back?</title>
+		<link>/2006/04/11/when-will-bloglines-be-back/</link>
+					<comments>/2006/04/11/when-will-bloglines-be-back/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 11 Apr 2006 20:51:21 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[bloglines]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/04/11/when-will-bloglines-be-back/</guid>
+
+					<description><![CDATA[This is sad, Bloglines has been offline since early this morning. No word yet on what has happened, I just hope it gets fixed soon. 🙁]]></description>
+										<content:encoded><![CDATA[<p>This is sad, <a href="http://www.bloglines.com/">Bloglines</a> has been offline since early this morning.  No word yet on what has happened, I just hope it gets fixed soon.</p>
+<p><img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/04/11/when-will-bloglines-be-back/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Bloglines Sorting Is Messed Up</title>
+		<link>/2006/01/09/bloglines-sorting-is-messed-up/</link>
+					<comments>/2006/01/09/bloglines-sorting-is-messed-up/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 10 Jan 2006 00:24:49 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[bloglines]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=537</guid>
+
+					<description><![CDATA[Ug, just when I was preparing to write something positive about Bloglines, they have messed up my sorting. There doesn&#8217;t appear to be any way to change it back either. I tried resorting my list, but it didn&#8217;t do anything. I&#8217;m hoping this gets fixed soon, as it stands now it is bad enough for [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Ug, just when I was preparing to write something positive about <a href="http://www.bloglines.com/">Bloglines</a>, they have messed up my sorting.  There doesn&#8217;t appear to be any way to change it back either.  I tried resorting my list, but it didn&#8217;t do anything.  I&#8217;m hoping this gets fixed soon, as it stands now it is bad enough for me to look for another option.</p>
+<p><strong>UPDATE 6:17pm 9 Jan 2006:</strong> The ability to resort seems to have been fixed/restored.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/01/09/bloglines-sorting-is-messed-up/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

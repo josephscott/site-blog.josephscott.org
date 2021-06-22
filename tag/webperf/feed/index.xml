@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>webperf &#8211; Joseph Scott</title>
+	<atom:link href="/tag/webperf/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 07 Oct 2015 21:30:41 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Facebook Cache Efficiency Exercise</title>
+		<link>/2015/10/07/facebook-cache-efficiency-exercise/</link>
+					<comments>/2015/10/07/facebook-cache-efficiency-exercise/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 07 Oct 2015 21:30:41 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[cache]]></category>
+		<category><![CDATA[facebook]]></category>
+		<category><![CDATA[webperf]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12176</guid>
+
+					<description><![CDATA[Eight years ago Yahoo reported on the browser cache experience of their users. The results showed more empty cache views than were expected: 40-60% of Yahoo!&#8217;s users have an empty cache experience and ~20% of all page views are done with an empty cache. Earlier this year Facebook recreated that experiment: Web performance: Cache efficiency [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Eight years ago <a href="http://yuiblog.com/blog/2007/01/04/performance-research-part-2/">Yahoo reported on the browser cache experience of their users.</a>  The results showed more empty cache views than were expected:</p>
+<blockquote><p>
+40-60% of Yahoo!&#8217;s users have an empty cache experience and ~20% of all page views are done with an empty cache.
+</p></blockquote>
+<p>Earlier this year Facebook recreated that experiment: <a href='https://code.facebook.com/posts/964122680272229/web-performance-cache-efficiency-exercise/'>Web performance: Cache efficiency exercise</a>.</p>
+<p>Here are a few key data points:</p>
+<ul>
+<li>24.8% of desktop requests and 26.9% of mobile were missing the cached image.</li>
+<li>On average, 44.6% of users are getting an empty cache.</li>
+<li>Mobile hits shows there is a 50% chance that a request will have a cache that is at most 12 hours old.</li>
+<li>There is a 42% chance that any request will have a cache that is, at most, 47 hours old on the desktop.</li>
+</ul>
+<blockquote><p>
+Overall our cache hit rate looks like it has improved since 2007. If we ignore Firefox v32 and newer (where we cannot log some cache hits), then the cache hit rate goes to 84.1%, up from about 80% in 2007. On the other hand, caches don’t stay populated for very long.
+</p></blockquote>
+<p>The bottom line: setting proper cache headers is good, but it doesn&#8217;t guarantee that browsers hitting your site will still have that content in their cache.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/07/facebook-cache-efficiency-exercise/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>timing.js</title>
+		<link>/2015/07/31/timing-js/</link>
+					<comments>/2015/07/31/timing-js/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 31 Jul 2015 14:01:41 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[addy-osmani]]></category>
+		<category><![CDATA[bookmarklet]]></category>
+		<category><![CDATA[webperf]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11061</guid>
+
+					<description><![CDATA[Another handy little webperf bookmarklet, addyosmani/timing.js: Timing.js is a small set of helpers for working with the Navigation Timing API to identify where your application is spending its time. Useful as a standalone script, DevTools Snippet or bookmarklet. For the front page of josephscott.org I get this in the console of Chrome 45:]]></description>
+										<content:encoded><![CDATA[<p>Another handy little webperf bookmarklet, <a href='https://github.com/addyosmani/timing.js'>addyosmani/timing.js</a>:</p>
+<blockquote><p>
+Timing.js is a small set of helpers for working with the Navigation Timing API to identify where your application is spending its time. Useful as a standalone script, DevTools Snippet or bookmarklet.
+</p></blockquote>
+<p>For the front page of josephscott.org I get this in the console of Chrome 45:</p>
+<p><a href="/wp-content/uploads/2015/07/timing-js-josephscott-org-1.png"><img loading="lazy" src="/wp-content/uploads/2015/07/timing-js-josephscott-org-1.png" data-sizes="(max-width: 678px) 100vw, 678px" srcset="/wp-content/uploads/2015/07/timing-js-josephscott-org-1-300x104.png 300w, /wp-content/uploads/2015/07/timing-js-josephscott-org-1.png 678w" alt="timing-js-josephscott-org" width="678" height="236" class="aligncenter size-full wp-image-13364" /></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/07/31/timing-js/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Speed Index</title>
+		<link>/2015/07/29/speed-index/</link>
+					<comments>/2015/07/29/speed-index/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 29 Jul 2015 14:01:07 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[speedindex]]></category>
+		<category><![CDATA[webpagetest]]></category>
+		<category><![CDATA[webperf]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13061</guid>
+
+					<description><![CDATA[Speed Index is a great feature of WebPageTest. If you had to pick just one webperf metric to look at Speed Index would likely be it. The NCC Group has a really good walk through on how Speed Index is calculated. If you&#8217;ve had a hard time wrapping your head around Speed Index this article [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index">Speed Index</a> is a great feature of <a href="http://www.webpagetest.org/">WebPageTest</a>.  If you had to pick just one webperf metric to look at Speed Index would likely be it.</p>
+<p>The NCC Group has a really good walk through on <a href="https://community.nccgroup-webperf.com/2015/06/speed-index-how-it-works-and-what-it-means/">how Speed Index is calculated</a>.  If you&#8217;ve had a hard time wrapping your head around Speed Index this article is worth the time to read.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/07/29/speed-index/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Google PageSpeed Insights: Chrome 27 and iOS 6 Safari</title>
+		<link>/2015/04/08/google-pagespeed-insights-chrome-27-and-ios-6-safari/</link>
+					<comments>/2015/04/08/google-pagespeed-insights-chrome-27-and-ios-6-safari/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 08 Apr 2015 16:33:14 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[page-speed]]></category>
+		<category><![CDATA[webperf]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12084</guid>
+
+					<description><![CDATA[I&#8217;ve been using Google PageSpeed Insights quite a bit recently. There isn&#8217;t much information on how exactly the tests are run, which can make it hard to reproduce the results. Then I noticed the user agent strings coming from PageSpeed Insights ( emphasis mine ): Desktop Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; Google [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been using Google <a href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Insights</a> quite a bit recently.  There isn&#8217;t much information on how exactly the tests are run, which can make it hard to reproduce the results.  Then I noticed the user agent strings coming from PageSpeed Insights ( emphasis mine ):</p>
+<p><strong>Desktop</strong></p>
+<blockquote><p>
+  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; Google Page Speed Insights)  <strong>Chrome/27.0.1453</strong> Safari/537.36
+</p></blockquote>
+<p><strong>Mobile</strong></p>
+<blockquote><p>
+  Mozilla/5.0 (iPhone; CPU iPhone OS 6_0_1 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko; Google Page Speed Insights) <strong>Version/6.0</strong> Mobile/10A525 Safari/8536.25
+</p></blockquote>
+<p>The only difference between these and normal user agent strings is the <code>; Google Page Speed Insights</code>.</p>
+<p>If these user agent strings are what they claim to be, the Insight desktop is using <strong>Chrome 27</strong> <a href="http://googlechromereleases.blogspot.com/2013/05/stable-channel-release.html">released in May 2013</a> and Insight mobile is using <strong>Safari from iOS 6</strong> <a href="https://support.apple.com/kb/DL1606?locale=en_US">released in Nov 2012</a>.</p>
+<p>This explains some of the inconsistency I noticed in comparing PageSpeed Insights results with <a href="https://developer.chrome.com/devtools/docs/device-mode">Chrome mobile device emulation</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/04/08/google-pagespeed-insights-chrome-27-and-ios-6-safari/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Nginx 1.7.8 &#8211; Fixes 200ms Delay With SPDY</title>
+		<link>/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/</link>
+					<comments>/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 03 Dec 2014 18:03:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[spdy]]></category>
+		<category><![CDATA[webperf]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11433</guid>
+
+					<description><![CDATA[Nginx 1.7.8 is now available, and I&#8217;m really happy to see this entry in the changelog: Feature: now the &#8220;tcp_nodelay&#8221; directive works with SPDY connections. To be more specific, this commit. The Story Back in September I spun up a private instance of webpagetest ( WPT ). One of the first things I did was [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://nginx.org/">Nginx 1.7.8</a> is now available, and I&#8217;m really happy to see this entry in the <a href="http://nginx.org/en/CHANGES">changelog</a>:</p>
+<blockquote><p>
+Feature: now the &#8220;tcp_nodelay&#8221; directive works with SPDY connections.
+</p></blockquote>
+<p>To be more specific, <a href='http://trac.nginx.org/nginx/changeset/2c10db908b8c4a9c0532c58830275d5ad84ae686/nginx/src'>this commit</a>.</p>
+<hr />
+<h3>The Story</h3>
+<p>Back in September I spun up a <a href="https://sites.google.com/a/webpagetest.org/docs/private-instances">private instance</a> of <a href="http://webpagetest.org/">webpagetest</a> ( WPT ).  One of the first things I did was run near optimal condition tests.  I wanted to see what the lower bound were for a few performance tests.  The test system was very close to one of <a href="http://automattic.com/">our</a> data centers ( less than 1ms ping times ), so I configured tests to use Chrome as the browser, with no traffic shaping.</p>
+<p>Like a kid with a new toy on Christmas morning I started running tests against this private WPT instance.  Quickly something odd came up.  In some cases we were seeing requests for very small ( sometimes less than 1kb ) resources take much longer than they should have.  And by &#8220;much longer&#8221;, I mean these were 3 to 4 times slower than requests for larger resources.</p>
+<p>Long story short, these slower small requests were seeing ~200ms delays in time to first byte ( TTFB ).  But it only happened with <a href="http://en.wikipedia.org/wiki/SPDY">SPDY</a>, with compression enabled, for small files ( my tests showed 1,602 bytes or smaller ), when the small file was the first resource requested in the SPDY connection.  Once I was able to list all of the variables that needed to be in place it was very simple to reproduce the problem using WPT.</p>
+<p>Some of you will look at the mention of a ~200ms delay and immediately recognize this as a <a href="http://support.microsoft.com/kb/214397">delayed ack issue</a>:</p>
+<blockquote><p>
+When a Microsoft TCP stack receives a data packet, a 200-ms delay timer goes off. When an ACK is eventually sent, the delay timer is reset and will initiate another 200-ms delay when the next data packet is received.
+</p></blockquote>
+<p>( Note that the WPT tester system in our instance uses Windows, so that we can test Internet Explorer )</p>
+<p>But that is why Nginx has a <a href="http://nginx.org/en/docs/http/ngx_http_core_module.html#tcp_nodelay">tcp_nodelay</a> option.  Unfortunately it wasn&#8217;t being applied when these variables came together in a SPDY connection.  I started a <a href="http://www.webpagetest.org/forums/showthread.php?tid=13322">thread in the WPT forums</a> about this and we all basically agreed that this was the issue.</p>
+<p>The systems team at <a href="http://automattic.com/">Automattic</a> reached out the Nginx team, describing what we were observing and how to reproduce it.  They sent back a patch, which I ran through my tests and confirmed that it fixed the problem.  The patch led to the <a href="http://trac.nginx.org/nginx/changeset/2c10db908b8c4a9c0532c58830275d5ad84ae686/nginx/src">commit</a> I mentioned above.  And now that change is part of the Nginx 1.7.8 release.</p>
+<h3>Waterfall</h3>
+<p>Here is what this looks like in action.  First, a WPT waterfall graph using Nginx 1.7.7:</p>
+<p><a href="/wp-content/uploads/2014/12/nginx-177-1.png"><img loading="lazy" src="/wp-content/uploads/2014/12/nginx-177-1.png" alt="nginx-177" width="966" height="433" class="aligncenter size-full wp-image-11467" srcset="/wp-content/uploads/2014/12/nginx-177-1.png 966w, /wp-content/uploads/2014/12/nginx-177-1-300x134.png 300w, /wp-content/uploads/2014/12/nginx-177-1-768x344.png 768w" sizes="(max-width: 966px) 100vw, 966px" /></a></p>
+<p>That TTFB of 212ms is significantly slower than it should be.  Compare that with the same test conditions using Nginx 1.7.8:</p>
+<p><a href="/wp-content/uploads/2014/12/nginx-178-1.png"><img loading="lazy" src="/wp-content/uploads/2014/12/nginx-178-1.png" alt="nginx-178" width="970" height="425" class="aligncenter size-full wp-image-11468" srcset="/wp-content/uploads/2014/12/nginx-178-1.png 970w, /wp-content/uploads/2014/12/nginx-178-1-300x131.png 300w, /wp-content/uploads/2014/12/nginx-178-1-768x336.png 768w" sizes="(max-width: 970px) 100vw, 970px" /></a></p>
+<p>A TTFB of 15ms is inline with what I expected to see.  Going from 212ms to 15ms is a 14x improvement!  The total request time dropped from 266ms to 69ms, a 3.8X improvement.  I&#8217;ll take gains like that anytime.</p>
+<h3>Reproducing This Yourself</h3>
+<p>I ran numerous tests during this process.  To make running new tests easier I put together a simple script to take care of the Nginx build and configuration:</p>
+View the code on <a href="https://gist.github.com/b79e79a8b7e17ca1bdb7">Gist</a>.
+<p>For each test I&#8217;d spin up a new DigitalOcean VM with Ubuntu 14.04 LTS.  The build script would complete in a few minutes and then I&#8217;d run new WPT tests.</p>
+<p>Conveniently it turns out that the default <a href="http://trac.nginx.org/nginx/browser/nginx/docs/html/index.html">Welcome to nginx!</a> page is small enough to trigger the ~200ms delay.</p>
+<p>With all of that in place you can run a test at <a href="http://www.webpagetest.org/">webpagetest.org</a> to see this in action.  I&#8217;ve been using the following test config:</p>
+<p>&#8211; Test Location: Dulles, VA<br />
+&#8211; Browser: Chrome<br />
+&#8211; Connection: Native Connection ( No Traffic Shaping )<br />
+&#8211; &#8220;Ignore SSL Certificate Errors&#8221; ( under the Advanced tab ) &#8212; this is need because I&#8217;ve been using a self signed cert</p>
+<p>The &#8220;Dulles, VA&#8221; location has a fast enough route to DigitalOcean &#8220;New York 3&#8221; that you can still observe the ~200ms TTFB difference between Nginx 1.7.7 and 1.7.8.</p>
+<hr />
+<p>A big thank you to the Nginx team for fixing this.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/feed/</wfw:commentRss>
+			<slash:comments>9</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The 54MB Legend</title>
+		<link>/2014/11/03/the-54mb-legend/</link>
+					<comments>/2014/11/03/the-54mb-legend/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 03 Nov 2014 20:55:17 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[perf.fail]]></category>
+		<category><![CDATA[webperf]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11363</guid>
+
+					<description><![CDATA[There are times when I hear about a web performance failure so bad that it borders on legend. This is one of those times. From the perf.fail blog comes: LG G Watch site delivers an images-gone-wrong 54MB RWD experience. Honestly the first thing I did after reading that was open the page in Chrome with [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>There are times when I hear about a web performance failure so bad that it borders on legend.  This is one of those times.</p>
+<p>From the perf.fail blog comes: <a href="http://perf.fail/post/101500047374/lg-g-watch-site-delivers-an-images-gone-wrong-54mb-rwd">LG G Watch site delivers an images-gone-wrong 54MB RWD experience</a>.  Honestly the first thing I did after reading that was open the page in Chrome with the network panel showing, just to confirm this was real:</p>
+<p><a href="/wp-content/uploads/2014/11/gwatch-network-panel-1.png"><img loading="lazy" src="/wp-content/uploads/2014/11/gwatch-network-panel-1.png" alt="gwatch-network-panel" width="754" height="178" class="aligncenter size-full wp-image-11367" srcset="/wp-content/uploads/2014/11/gwatch-network-panel-1.png 754w, /wp-content/uploads/2014/11/gwatch-network-panel-1-300x71.png 300w" sizes="(max-width: 754px) 100vw, 754px" /></a></p>
+<p>A 54MB first view experience.  But that doesn&#8217;t really do it justice.  To really get a feel for this you need to check out the webpagetest waterfall graph for the site:</p>
+<p><a href="http://www.webpagetest.org/result/141103_AT_c15ae54c965e66c9218b6b511bcaca24/"><img loading="lazy" src="/wp-content/uploads/2014/11/gwatch-waterfall-1-178x1024.png" alt="gwatch-waterfall" width="178" height="1024" class="aligncenter size-large wp-image-11369" /></a></p>
+<p>348 requests, now that is impressive.</p>
+<p>To be fair though, this isn&#8217;t a complete webperf fail.  The repeat view experience is only 35KB, with 3 requests.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/11/03/the-54mb-legend/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Latency on US Home Internet Connections</title>
+		<link>/2014/09/25/latency-on-us-home-internet-connections/</link>
+					<comments>/2014/09/25/latency-on-us-home-internet-connections/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 25 Sep 2014 16:01:06 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[latency]]></category>
+		<category><![CDATA[webperf]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11057</guid>
+
+					<description><![CDATA[In web performance circles you&#8217;ll often hear about how the latency of a connection can be a bigger issue than bandwidth. The FCC broadband measurement report has a graph that illustrates this nicely: Once you hit 15 Mbps the bottleneck shifts towards latency. That led me to wonder what latency looked like for home connections [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>In web performance circles you&#8217;ll often hear about how the latency of a connection can be a bigger issue than bandwidth.  The <a href="http://www.fcc.gov/reports/measuring-broadband-america-2014#Findings">FCC broadband measurement report has a graph</a> that illustrates this nicely:</p>
+<p><a href="/wp-content/uploads/2014/09/web-loading-time-1.png"><img loading="lazy" src="/wp-content/uploads/2014/09/web-loading-time-1.png" alt="web-loading-time" width="629" height="406" class="aligncenter size-full wp-image-11078" srcset="/wp-content/uploads/2014/09/web-loading-time-1.png 629w, /wp-content/uploads/2014/09/web-loading-time-1-300x194.png 300w" sizes="(max-width: 629px) 100vw, 629px" /></a></p>
+<p>Once you hit 15 Mbps the bottleneck shifts towards latency.</p>
+<p>That led me to wonder what latency looked like for home connections in the US.  Turns out the <a href="http://www.fcc.gov/reports/measuring-broadband-america-2014#Findings">FCC has been collecting latency data</a> as well ( emphasis is mine ):</p>
+<blockquote><p>
+In all our tests and results, latency is defined as the round-trip time from the consumer&#8217;s home to the closest speed measurement server within the provider&#8217;s network and back.</p>
+<p>Across all terrestrial technologies during peak periods, <strong>latency averaged 34.9 ms</strong>.</p>
+<p>&#8230;</p>
+<p>Fiber-to-the-home services provided 24 ms round-trip latency on average, while cable-based services averaged 32 ms, and DSL-based services averaged 49 ms.</p>
+<p>The highest average round-trip latency for an individual terrestrial service tier, i.e. excluding satellite, was 57.91 ms (Qwest/Centurylink), while the lowest average latency within a single service tier was 17.83 ms (Cablevision).
+</p></blockquote>
+<p>No surprise that fiber connections on average have a lower latency than cable or DSL:</p>
+<p><a href="/wp-content/uploads/2014/09/latency-1.png"><img loading="lazy" src="/wp-content/uploads/2014/09/latency-1.png" alt="latency" width="622" height="376" class="aligncenter size-full wp-image-11079" srcset="/wp-content/uploads/2014/09/latency-1.png 622w, /wp-content/uploads/2014/09/latency-1-300x181.png 300w" sizes="(max-width: 622px) 100vw, 622px" /></a></p>
+<p>The lower bound is in the 20 ms range, so that would be your best case scenario at this point.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/09/25/latency-on-us-home-internet-connections/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

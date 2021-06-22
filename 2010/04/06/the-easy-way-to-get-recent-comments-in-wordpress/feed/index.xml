@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: The Easy Way To Get Recent Comments In WordPress	</title>
+	<atom:link href="/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/</link>
+	<description></description>
+	<lastBuildDate>Sat, 27 Aug 2011 12:05:42 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: yash		</title>
+		<link>/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/#comment-3391</link>
+
+		<dc:creator><![CDATA[yash]]></dc:creator>
+		<pubDate>Sat, 27 Aug 2011 12:05:42 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2127#comment-3391</guid>
+
+					<description><![CDATA[hi i want to show recent comment with fb avatar on home page
+
+facebook avatar display on my post page but not on home page recent comment
+
+please have a look the code of home page &quot;recent comment&quot;
+
+http://pastebin.com/wqWfVGwM
+
+-- This code display facebook avatar !
+
+http://pastebin.com/e09Gv2Ft
+
+i want to use below code with fb avatar (http://pastebin.com/wqWfVGwM) it does not display fb avatar
+
+please reply me]]></description>
+			<content:encoded><![CDATA[<p>hi i want to show recent comment with fb avatar on home page</p>
+<p>facebook avatar display on my post page but not on home page recent comment</p>
+<p>please have a look the code of home page &#8220;recent comment&#8221;</p>
+<p><a href="http://pastebin.com/wqWfVGwM" rel="nofollow ugc">http://pastebin.com/wqWfVGwM</a></p>
+<p>&#8212; This code display facebook avatar !</p>
+<p><a href="http://pastebin.com/e09Gv2Ft" rel="nofollow ugc">http://pastebin.com/e09Gv2Ft</a></p>
+<p>i want to use below code with fb avatar (<a href="http://pastebin.com/wqWfVGwM" rel="nofollow ugc">http://pastebin.com/wqWfVGwM</a>) it does not display fb avatar</p>
+<p>please reply me</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/#comment-3390</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 27 Jan 2011 05:26:16 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2127#comment-3390</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/#comment-3389&quot;&gt;Mike&lt;/a&gt;.
+
+:-)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/#comment-3389">Mike</a>.</p>
+<p>🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Mike		</title>
+		<link>/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/#comment-3389</link>
+
+		<dc:creator><![CDATA[Mike]]></dc:creator>
+		<pubDate>Wed, 26 Jan 2011 17:03:13 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2127#comment-3389</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/#comment-3388&quot;&gt;Mike&lt;/a&gt;.
+
+And...I&#039;ve answered my own question.
+
+Yes, there is a &#039;comment_excerpt&#039; function directly built in and all you need is the comment ID, which is already brought in using the get_comments function.
+
+http://codex.wordpress.org/Function_Reference/comment_excerpt]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/#comment-3388">Mike</a>.</p>
+<p>And&#8230;I&#8217;ve answered my own question.</p>
+<p>Yes, there is a &#8216;comment_excerpt&#8217; function directly built in and all you need is the comment ID, which is already brought in using the get_comments function.</p>
+<p><a href="http://codex.wordpress.org/Function_Reference/comment_excerpt" rel="nofollow ugc">http://codex.wordpress.org/Function_Reference/comment_excerpt</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Mike		</title>
+		<link>/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/#comment-3388</link>
+
+		<dc:creator><![CDATA[Mike]]></dc:creator>
+		<pubDate>Wed, 26 Jan 2011 16:59:22 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2127#comment-3388</guid>
+
+					<description><![CDATA[Found this through Google and thank you for clarifying that this can be done more efficiently.  I&#039;ve switched my previous code (which was a custom query) to this.
+
+The only issue that I&#039;m having is that I want just a sample of the comment, like a preview of the comment in the footer of my website.  Having long comments will break my layout.
+
+I&#039;m using &#039;echo $comment-&#062;comment_content&#039; to display the comment.  Is there a &#039;$comment-&#062;excerpt&#039; or something similar that can be used?
+
+Thanks!]]></description>
+			<content:encoded><![CDATA[<p>Found this through Google and thank you for clarifying that this can be done more efficiently.  I&#8217;ve switched my previous code (which was a custom query) to this.</p>
+<p>The only issue that I&#8217;m having is that I want just a sample of the comment, like a preview of the comment in the footer of my website.  Having long comments will break my layout.</p>
+<p>I&#8217;m using &#8216;echo $comment-&gt;comment_content&#8217; to display the comment.  Is there a &#8216;$comment-&gt;excerpt&#8217; or something similar that can be used?</p>
+<p>Thanks!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/#comment-3387</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 07 Dec 2010 15:56:23 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2127#comment-3387</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/#comment-3386&quot;&gt;Drew&lt;/a&gt;.
+
+It might take a bit more work, but it is definitely possible.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/#comment-3386">Drew</a>.</p>
+<p>It might take a bit more work, but it is definitely possible.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Drew		</title>
+		<link>/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/#comment-3386</link>
+
+		<dc:creator><![CDATA[Drew]]></dc:creator>
+		<pubDate>Tue, 07 Dec 2010 04:26:09 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2127#comment-3386</guid>
+
+					<description><![CDATA[Would it be possible to only show the comments that occurred on a particular page?]]></description>
+			<content:encoded><![CDATA[<p>Would it be possible to only show the comments that occurred on a particular page?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/#comment-3385</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 19 Nov 2010 21:31:10 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2127#comment-3385</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/#comment-3384&quot;&gt;tim&lt;/a&gt;.
+
+get_comments() should be improved so that it can filter out private posts.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/#comment-3384">tim</a>.</p>
+<p>get_comments() should be improved so that it can filter out private posts.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: tim		</title>
+		<link>/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/#comment-3384</link>
+
+		<dc:creator><![CDATA[tim]]></dc:creator>
+		<pubDate>Fri, 19 Nov 2010 18:21:29 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2127#comment-3384</guid>
+
+					<description><![CDATA[Hi, this is good, indeed, this is how the Recent Comments widget does it.  However, I did notice a problem.  If I have a private post and someone comments on it, immediately the comment shows up in Recent Comments (and by extension, anything using get_comments) along with the topic of the private post.  Not so good.
+
+Are there any arguments I can add to &quot;get_comments&quot; so that it filters out Private post comments?  Per &lt;a href=&quot;http://core.trac.wordpress.org/changeset/13800&quot; rel=&quot;nofollow&quot;&gt;this bug fix&lt;/a&gt;, the dashboard uses: 
+
+ if ( in_array( $comment-&#062;comment_approved, $allowed_states ) &#038;&#038; current_user_can( &#039;read_post&#039;, $comment-&#062;comment_post_ID ) )
+
+Anyway we can do the same with get_comments?]]></description>
+			<content:encoded><![CDATA[<p>Hi, this is good, indeed, this is how the Recent Comments widget does it.  However, I did notice a problem.  If I have a private post and someone comments on it, immediately the comment shows up in Recent Comments (and by extension, anything using get_comments) along with the topic of the private post.  Not so good.</p>
+<p>Are there any arguments I can add to &#8220;get_comments&#8221; so that it filters out Private post comments?  Per <a href="http://core.trac.wordpress.org/changeset/13800" rel="nofollow">this bug fix</a>, the dashboard uses: </p>
+<p> if ( in_array( $comment-&gt;comment_approved, $allowed_states ) &amp;&amp; current_user_can( &#8216;read_post&#8217;, $comment-&gt;comment_post_ID ) )</p>
+<p>Anyway we can do the same with get_comments?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/#comment-3383</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Sun, 07 Nov 2010 05:43:22 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2127#comment-3383</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/#comment-3382&quot;&gt;Garrett Boon&lt;/a&gt;.
+
+http://codex.wordpress.org/Function_Reference/get_comment_link]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/#comment-3382">Garrett Boon</a>.</p>
+<p><a href="http://codex.wordpress.org/Function_Reference/get_comment_link" rel="nofollow ugc">http://codex.wordpress.org/Function_Reference/get_comment_link</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Garrett Boon		</title>
+		<link>/2010/04/06/the-easy-way-to-get-recent-comments-in-wordpress/#comment-3382</link>
+
+		<dc:creator><![CDATA[Garrett Boon]]></dc:creator>
+		<pubDate>Sat, 06 Nov 2010 18:02:57 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2127#comment-3382</guid>
+
+					<description><![CDATA[So, I am using this code:
+$args = array(
+	&#039;status&#039; =&#062; &#039;approve&#039;,
+	&#039;number&#039; =&#062; &#039;5&#039;,
+	);
+$comments = get_comments($args);
+foreach($comments as $comm) :
+	echo($comm-&#062;comment_author . &#039;: &#039; . $comm-&#062;comment_content . &#039;&#039; );
+endforeach;
+
+It works fine. However, do you know of a way that I can add a link to the actual comment?]]></description>
+			<content:encoded><![CDATA[<p>So, I am using this code:<br />
+$args = array(<br />
+	&#8216;status&#8217; =&gt; &#8216;approve&#8217;,<br />
+	&#8216;number&#8217; =&gt; &#8216;5&#8217;,<br />
+	);<br />
+$comments = get_comments($args);<br />
+foreach($comments as $comm) :<br />
+	echo($comm-&gt;comment_author . &#8216;: &#8216; . $comm-&gt;comment_content . &#8221; );<br />
+endforeach;</p>
+<p>It works fine. However, do you know of a way that I can add a link to the actual comment?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

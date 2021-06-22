@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Software For A New Windows 2000 Server	</title>
+	<atom:link href="/2004/06/16/software-for-a-new-windows-2000-server/feed/" rel="self" type="application/rss+xml" />
+	<link>/2004/06/16/software-for-a-new-windows-2000-server/</link>
+	<description></description>
+	<lastBuildDate>Tue, 26 Jul 2005 13:22:09 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott&#8217;s Blog &#187; Active Directory With nss_ldap And pam_ldap On FreeBSD		</title>
+		<link>/2004/06/16/software-for-a-new-windows-2000-server/#comment-384</link>
+
+		<dc:creator><![CDATA[Joseph Scott&#8217;s Blog &#187; Active Directory With nss_ldap And pam_ldap On FreeBSD]]></dc:creator>
+		<pubDate>Tue, 26 Jul 2005 13:22:09 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/06/16/software-for-a-new-windows-2000-server/#comment-384</guid>
+
+					<description><![CDATA[[...] Back in January of I had mentioned using SFU with nss_ldap on FreeBSD on my old blog. Now that I&#8217;ve got a couple of fresh Windows 2000 servers with Active Directory and SFU (Windows Services For Unix) I figured now was a good time to write a howto on making FreeBSD use nss_ldap and pam_ldap in conjunction with Active Directory. I&#8217;m using Windows 2000, SFU 3.5, FreeBSD 5.2.1-RELEASE, nss_ldap 1.204_5 and pam_ldap 1.6.9 for this write up. [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Back in January of I had mentioned using SFU with nss_ldap on FreeBSD on my old blog. Now that I&#8217;ve got a couple of fresh Windows 2000 servers with Active Directory and SFU (Windows Services For Unix) I figured now was a good time to write a howto on making FreeBSD use nss_ldap and pam_ldap in conjunction with Active Directory. I&#8217;m using Windows 2000, SFU 3.5, FreeBSD 5.2.1-RELEASE, nss_ldap 1.204_5 and pam_ldap 1.6.9 for this write up. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

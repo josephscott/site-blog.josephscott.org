@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>shapes &#8211; Joseph Scott</title>
+	<atom:link href="/tag/shapes/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 27 Mar 2013 16:15:35 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>The Shapes of CSS</title>
+		<link>/2013/03/27/the-shapes-of-css/</link>
+					<comments>/2013/03/27/the-shapes-of-css/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 27 Mar 2013 16:15:35 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[shapes]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4651</guid>
+
+					<description><![CDATA[More and more you can get away with using plain CSS to create nice looking shapes. The Shapes of CSS is a demonstration site for shapes generated using a single HTML element and CSS. For some of these examples you&#8217;ll need a modern browser that supports the latest CSS tricks. The Infinity and Space Invader [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img loading="lazy" src="https://sharedat.net/f/xC/xChz/css-infinite-shapes.png" width="238" height="112" class="alignleft" /></p>
+<p>More and more you can get away with using plain CSS to create nice looking shapes.  <a href='http://css-tricks.com/examples/ShapesOfCSS/'>The Shapes of CSS</a> is a demonstration site for shapes generated using a single HTML element and CSS.  For some of these examples you&#8217;ll need a modern browser that supports the latest CSS tricks.</p>
+<p>The Infinity and Space Invader shapes particularly impressed me.  Those were &#8220;shapes&#8221; I wouldn&#8217;t have immediately thought of in the context of just CSS.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/03/27/the-shapes-of-css/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

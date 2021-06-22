@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Qwest Redirecting DNS lookups	</title>
+	<atom:link href="/2008/09/29/qwest-redirecting-dns-lookups/feed/" rel="self" type="application/rss+xml" />
+	<link>/2008/09/29/qwest-redirecting-dns-lookups/</link>
+	<description></description>
+	<lastBuildDate>Sun, 28 Dec 2008 20:14:47 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: jmn		</title>
+		<link>/2008/09/29/qwest-redirecting-dns-lookups/#comment-2391</link>
+
+		<dc:creator><![CDATA[jmn]]></dc:creator>
+		<pubDate>Sun, 28 Dec 2008 20:14:47 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1178#comment-2391</guid>
+
+					<description><![CDATA[When I clicked on the opt out link, it either didn&#039;t work or it took me to an error page. I was so livid I posted a complaint on www.complaints.com.]]></description>
+			<content:encoded><![CDATA[<p>When I clicked on the opt out link, it either didn&#8217;t work or it took me to an error page. I was so livid I posted a complaint on <a href="http://www.complaints.com/" rel="nofollow ugc">http://www.complaints.com/</a>.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Michael		</title>
+		<link>/2008/09/29/qwest-redirecting-dns-lookups/#comment-2390</link>
+
+		<dc:creator><![CDATA[Michael]]></dc:creator>
+		<pubDate>Thu, 25 Dec 2008 08:11:00 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1178#comment-2390</guid>
+
+					<description><![CDATA[Thank you for this. I just started to experience very slow page lookup. Very odd because I have the Moto 3347 modem set for opendns.  I run scutil --dns and get this:  Mac OS X 10.5 setup
+
+DNS configuration
+
+resolver #1
+  nameserver[0] : 208.67.222.222
+  nameserver[1] : 208.67.220.220
+  nameserver[2] : 205.171.3.26
+  nameserver[3] : 205.171.2.26
+
+4 dns servers? Really. I opted out of this, lets see what happens.]]></description>
+			<content:encoded><![CDATA[<p>Thank you for this. I just started to experience very slow page lookup. Very odd because I have the Moto 3347 modem set for opendns.  I run scutil &#8211;dns and get this:  Mac OS X 10.5 setup</p>
+<p>DNS configuration</p>
+<p>resolver #1<br />
+  nameserver[0] : 208.67.222.222<br />
+  nameserver[1] : 208.67.220.220<br />
+  nameserver[2] : 205.171.3.26<br />
+  nameserver[3] : 205.171.2.26</p>
+<p>4 dns servers? Really. I opted out of this, lets see what happens.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Matt Heidenreich		</title>
+		<link>/2008/09/29/qwest-redirecting-dns-lookups/#comment-2389</link>
+
+		<dc:creator><![CDATA[Matt Heidenreich]]></dc:creator>
+		<pubDate>Mon, 01 Dec 2008 23:58:49 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1178#comment-2389</guid>
+
+					<description><![CDATA[Thanks a lot for this post.  I have been experiencing a lot of issues with the VPN at work in the past few weeks because of strange DNS issues.  We even tried to hard-code all the DNS entires and that didn&#039;t help us at all.  I went ahead with the opt-out and after about 3 minutes I lost all internet connection, so I rebooted the router/modem and when it came back up I was finally able to access our internal network resources over the VPN without having to use the IP addresses to gain access.  The strangest thing with this experience was that the VPN used to work just fine, but then all of a sudden I wasn&#039;t able to get any internal work address to resove to anything but a qwest ip address (63.226.162.129).
+
+Thanks again,
+
+Matt]]></description>
+			<content:encoded><![CDATA[<p>Thanks a lot for this post.  I have been experiencing a lot of issues with the VPN at work in the past few weeks because of strange DNS issues.  We even tried to hard-code all the DNS entires and that didn&#8217;t help us at all.  I went ahead with the opt-out and after about 3 minutes I lost all internet connection, so I rebooted the router/modem and when it came back up I was finally able to access our internal network resources over the VPN without having to use the IP addresses to gain access.  The strangest thing with this experience was that the VPN used to work just fine, but then all of a sudden I wasn&#8217;t able to get any internal work address to resove to anything but a qwest ip address (63.226.162.129).</p>
+<p>Thanks again,</p>
+<p>Matt</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Affordable Custom Web Design		</title>
+		<link>/2008/09/29/qwest-redirecting-dns-lookups/#comment-2388</link>
+
+		<dc:creator><![CDATA[Affordable Custom Web Design]]></dc:creator>
+		<pubDate>Tue, 25 Nov 2008 23:40:11 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1178#comment-2388</guid>
+
+					<description><![CDATA[Here in Missouri, we have a choice between 2 major ISPs that offer DSL service. I decied to gowith Centurytel, after a very simialr service issue with SBCGlobal.
+They weren&#039;t redirecting us or anyting like that. But they were doing some shady practices and then providing the infamous &quot;opt-out&quot; when we never opted in to begin with.]]></description>
+			<content:encoded><![CDATA[<p>Here in Missouri, we have a choice between 2 major ISPs that offer DSL service. I decied to gowith Centurytel, after a very simialr service issue with SBCGlobal.<br />
+They weren&#8217;t redirecting us or anyting like that. But they were doing some shady practices and then providing the infamous &#8220;opt-out&#8221; when we never opted in to begin with.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: DCinDenver		</title>
+		<link>/2008/09/29/qwest-redirecting-dns-lookups/#comment-2387</link>
+
+		<dc:creator><![CDATA[DCinDenver]]></dc:creator>
+		<pubDate>Sat, 22 Nov 2008 05:22:45 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1178#comment-2387</guid>
+
+					<description><![CDATA[Thanks for this. This has caused many problems with users in my office and not being able to connect to Outlook while connected to the VPN. We&#039;ve had 2 people test it so far and so far so good. Funny thing is that none of these users got an e-mail from Qwest notifying them of this. Anyway, thanks again. I think this may have resolved our problem. Freakin Qwest!!!]]></description>
+			<content:encoded><![CDATA[<p>Thanks for this. This has caused many problems with users in my office and not being able to connect to Outlook while connected to the VPN. We&#8217;ve had 2 people test it so far and so far so good. Funny thing is that none of these users got an e-mail from Qwest notifying them of this. Anyway, thanks again. I think this may have resolved our problem. Freakin Qwest!!!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Qwest Starts Hijacking DNS at GeekFun		</title>
+		<link>/2008/09/29/qwest-redirecting-dns-lookups/#comment-2386</link>
+
+		<dc:creator><![CDATA[Qwest Starts Hijacking DNS at GeekFun]]></dc:creator>
+		<pubDate>Tue, 18 Nov 2008 18:08:36 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1178#comment-2386</guid>
+
+					<description><![CDATA[[...] guess this may have started a few months ago, but I just noticed today that Qwest.net, my ISP and DSL provider, has started hijacking incorrect [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] guess this may have started a few months ago, but I just noticed today that Qwest.net, my ISP and DSL provider, has started hijacking incorrect [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: goblinbox		</title>
+		<link>/2008/09/29/qwest-redirecting-dns-lookups/#comment-2385</link>
+
+		<dc:creator><![CDATA[goblinbox]]></dc:creator>
+		<pubDate>Thu, 16 Oct 2008 22:00:19 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1178#comment-2385</guid>
+
+					<description><![CDATA[Who is your ISP? Is it qwest.net or MSN?]]></description>
+			<content:encoded><![CDATA[<p>Who is your ISP? Is it qwest.net or MSN?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Scott		</title>
+		<link>/2008/09/29/qwest-redirecting-dns-lookups/#comment-2384</link>
+
+		<dc:creator><![CDATA[Scott]]></dc:creator>
+		<pubDate>Sat, 11 Oct 2008 16:07:41 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1178#comment-2384</guid>
+
+					<description><![CDATA[Geez, I&#039;ve been using Qwest for years and just today, I noticed this new DNS redirecting crap. Thankfully, you &quot;beta testers&quot; helped work out the kinks because it was only a 2 click process to opt out instead of 4 layers.]]></description>
+			<content:encoded><![CDATA[<p>Geez, I&#8217;ve been using Qwest for years and just today, I noticed this new DNS redirecting crap. Thankfully, you &#8220;beta testers&#8221; helped work out the kinks because it was only a 2 click process to opt out instead of 4 layers.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: j		</title>
+		<link>/2008/09/29/qwest-redirecting-dns-lookups/#comment-2383</link>
+
+		<dc:creator><![CDATA[j]]></dc:creator>
+		<pubDate>Fri, 10 Oct 2008 13:03:19 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1178#comment-2383</guid>
+
+					<description><![CDATA[yay! It worked! I hope they don&#039;t try to pull some mandatory - tough luck you are stuck with it - thing on us in the future....]]></description>
+			<content:encoded><![CDATA[<p>yay! It worked! I hope they don&#8217;t try to pull some mandatory &#8211; tough luck you are stuck with it &#8211; thing on us in the future&#8230;.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: j		</title>
+		<link>/2008/09/29/qwest-redirecting-dns-lookups/#comment-2382</link>
+
+		<dc:creator><![CDATA[j]]></dc:creator>
+		<pubDate>Fri, 10 Oct 2008 12:57:02 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1178#comment-2382</guid>
+
+					<description><![CDATA[OMG I am REALLY p.o.&#039;d. How DARE they set me up with this sucky service that I don&#039;t want anyway. It says on the bottom of their page &quot;powered by yahoo&quot;, yet the only page, so far, that I could not access was my yahoo page. I cannot access my email at all cus this stupid thing redirects me &quot;cannot locate website&quot; everytime. I had no problem finding the &quot;opt out&quot; however... hopefully, it will work, cus it hasn&#039;t yet, it&#039;s still &quot;processing&quot;. What a bunch of crap.]]></description>
+			<content:encoded><![CDATA[<p>OMG I am REALLY p.o.&#8217;d. How DARE they set me up with this sucky service that I don&#8217;t want anyway. It says on the bottom of their page &#8220;powered by yahoo&#8221;, yet the only page, so far, that I could not access was my yahoo page. I cannot access my email at all cus this stupid thing redirects me &#8220;cannot locate website&#8221; everytime. I had no problem finding the &#8220;opt out&#8221; however&#8230; hopefully, it will work, cus it hasn&#8217;t yet, it&#8217;s still &#8220;processing&#8221;. What a bunch of crap.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

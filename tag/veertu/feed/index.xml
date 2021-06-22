@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>veertu &#8211; Joseph Scott</title>
+	<atom:link href="/tag/veertu/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Sat, 16 Jan 2016 16:59:54 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Veertu</title>
+		<link>/2016/01/16/veertu/</link>
+					<comments>/2016/01/16/veertu/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 16 Jan 2016 16:59:54 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[veertu]]></category>
+		<category><![CDATA[virtual-machine]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14839</guid>
+
+					<description><![CDATA[Another VM option for Mac OS X, Veertu: Veertu is a 100% user-space implementation and leverages OS X for scheduling, CPU management, memory management and more. Since Veertu is the only solution that uses OS X’s hypervisor and VMNet framework (first introduced in OS X Yosemite), it is approved by Apple for sale in the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Another VM option for Mac OS X, <a href="http://veertu.com/">Veertu</a>:</p>
+<blockquote><p>
+Veertu is a 100% user-space implementation and leverages OS X for scheduling, CPU management, memory management and more. Since Veertu is the only solution that uses OS X’s hypervisor and VMNet framework (first introduced in OS X Yosemite), it is approved by Apple for sale in the App Store.
+</p></blockquote>
+<p>It is using <a href="https://developer.apple.com/library/mac/releasenotes/MacOSX/WhatsNewInOSX/Articles/MacOSX10_10.html#//apple_ref/doc/uid/TP40014484-SW1">Hypervisor.framework</a>:</p>
+<blockquote><p>
+The Hypervisor framework allows virtualization vendors to build virtualization solutions on top of OS X without needing to deploy third-party kernel extensions (KEXTs). Included is a lightweight hypervisor that enables virtualization of the host CPUs.
+</p></blockquote>
+<p>I&#8217;m going to try this out with Ubuntu 15.10.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/01/16/veertu/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

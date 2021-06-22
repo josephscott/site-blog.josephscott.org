@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>memory-leaks &#8211; Joseph Scott</title>
+	<atom:link href="/tag/memory-leaks/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 30 Nov 2010 21:29:22 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Android Reboot</title>
+		<link>/2010/11/30/android-reboot/</link>
+					<comments>/2010/11/30/android-reboot/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 30 Nov 2010 21:29:22 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[memory-leaks]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3241</guid>
+
+					<description><![CDATA[Just a minute, I have to reboot my phone. &#8211; Brother-in-law trying to take a video from his Android phone I asked him more about this, he indicated that some of the apps he had downloaded had memory leaks (he wasn&#8217;t sure which ones) and needed to reboot the phone regularly. Recording video just locks [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+Just a minute, I have to reboot my phone.
+</p></blockquote>
+<p>&#8211; Brother-in-law trying to take a video from his Android phone</p>
+<p>I asked him more about this, he indicated that some of the apps he had downloaded had memory leaks (he wasn&#8217;t sure which ones) and needed to reboot the phone regularly.  Recording video just locks up until doing a reboot.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/11/30/android-reboot/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,124 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2005/06/16/sql-server-2000-notes/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2005/06/16/sql-server-2000-notes/",
+    "feed_url": "https://blog.josephscott.org/2005/06/16/sql-server-2000-notes/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: SQL Server 2000 Notes",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2005/06/16/sql-server-2000-notes/#comment-845",
+            "url": "https://blog.josephscott.org/2005/06/16/sql-server-2000-notes/#comment-845",
+            "content_html": "hey it  should  be either IF @EMP_INS = 'NULL' or simply IF @EMP_INS  IS NULL,  but how can you use assignment operator as well as is keyword?\n\n\nall d  best\nhimansu\n09853436485",
+            "content_text": "hey it  should  be either IF @EMP_INS = 'NULL' or simply IF @EMP_INS  IS NULL,  but how can you use assignment operator as well as is keyword?\n\n\nall d  best\nhimansu\n09853436485",
+            "date_published": "2008-09-26T07:32:48-06:00",
+            "authors": [
+                {
+                    "name": "himansu sekher das",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/89c31b3629305eeb410ea40078dabc21?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "himansu sekher das",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/89c31b3629305eeb410ea40078dabc21?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2005/06/16/sql-server-2000-notes/#comment-844",
+            "url": "https://blog.josephscott.org/2005/06/16/sql-server-2000-notes/#comment-844",
+            "content_html": "joseph i am not able to insert the value in the table please help me code is as follow:\n\nCREATE PROC EMPDTL_INPU\n\n( @EMP_INS VARCHAR(12), @EMP_ID INT, @FNAME VARCHAR(20), @LNAME VARCHAR(20), @SEX CHAR(1), @C_NUMBER VARCHAR(20), @EMAIL_ID VARCHAR(20), @ADDRESS VARCHAR(20), @ZIP VARCHAR(20) )\n\nAS\n\n@EMP_INS = (select @EMP_ID = EMP_ID from EMP_DTL where EMP_ID ='@EMP_ID')\n\nCHECK = @EMP_INS\n\nIF @EMP_INS = IS NULL\n\nTHEN\n\nBEGIN\n\nInsert into EMP_DTL(EMP_ID, FNAME, LNAME, SEX, C_NUMBER, EMAIL_ID, ADDRESS, ZIP)\nVALUES(@EMP_ID, @FNAME, @LNAME, @SEX, @C_NUMBER, @EMAIL_ID, @ADDRESS, @ZIP)\n\nEND IF\n\nupdate EMP_DTL\nset\nEMP_ID = @EMP_ID, FNAME = @FNAME, LNAME = @LNAME, SEX = @SEX, C_NUMBER = @C_NUMBER, EMAIL_ID= @ EMAIL_ID, ADDRESS = @ADDRESS, ZIP = @ZIP\nwhere EMP_ID = @EMP_ID\n\nEND",
+            "content_text": "joseph i am not able to insert the value in the table please help me code is as follow:\n\nCREATE PROC EMPDTL_INPU\n\n( @EMP_INS VARCHAR(12), @EMP_ID INT, @FNAME VARCHAR(20), @LNAME VARCHAR(20), @SEX CHAR(1), @C_NUMBER VARCHAR(20), @EMAIL_ID VARCHAR(20), @ADDRESS VARCHAR(20), @ZIP VARCHAR(20) )\n\nAS\n\n@EMP_INS = (select @EMP_ID = EMP_ID from EMP_DTL where EMP_ID ='@EMP_ID')\n\nCHECK = @EMP_INS\n\nIF @EMP_INS = IS NULL\n\nTHEN\n\nBEGIN\n\nInsert into EMP_DTL(EMP_ID, FNAME, LNAME, SEX, C_NUMBER, EMAIL_ID, ADDRESS, ZIP)\nVALUES(@EMP_ID, @FNAME, @LNAME, @SEX, @C_NUMBER, @EMAIL_ID, @ADDRESS, @ZIP)\n\nEND IF\n\nupdate EMP_DTL\nset\nEMP_ID = @EMP_ID, FNAME = @FNAME, LNAME = @LNAME, SEX = @SEX, C_NUMBER = @C_NUMBER, EMAIL_ID= @ EMAIL_ID, ADDRESS = @ADDRESS, ZIP = @ZIP\nwhere EMP_ID = @EMP_ID\n\nEND",
+            "date_published": "2008-08-01T04:52:38-06:00",
+            "authors": [
+                {
+                    "name": "gunjan rathore",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/3d51f8f925bf426b74d786dde2432aea?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "gunjan rathore",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/3d51f8f925bf426b74d786dde2432aea?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2005/06/16/sql-server-2000-notes/#comment-843",
+            "url": "https://blog.josephscott.org/2005/06/16/sql-server-2000-notes/#comment-843",
+            "content_html": "@Jim -\n\nThat's one of the reasons I started a blog in the first place, secondary memory for my brain :-)",
+            "content_text": "@Jim -\n\nThat's one of the reasons I started a blog in the first place, secondary memory for my brain :-)",
+            "date_published": "2008-01-31T23:16:47-07:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://www.randomnetworks.com/",
+                    "avatar": "https://secure.gravatar.com/avatar/407fb36bbf6a01e151680be9f408b5af?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://www.randomnetworks.com/",
+                "avatar": "https://secure.gravatar.com/avatar/407fb36bbf6a01e151680be9f408b5af?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2005/06/16/sql-server-2000-notes/#comment-842",
+            "url": "https://blog.josephscott.org/2005/06/16/sql-server-2000-notes/#comment-842",
+            "content_html": "Dude, your blog comes to the rescue once again (I hope)! I'm having trouble with PHP on Neptune not wanting to talk to the database. I totally missed the FreeTDS settings, among other things you mentioned here. I should probably start documenting things this way myself.",
+            "content_text": "Dude, your blog comes to the rescue once again (I hope)! I'm having trouble with PHP on Neptune not wanting to talk to the database. I totally missed the FreeTDS settings, among other things you mentioned here. I should probably start documenting things this way myself.",
+            "date_published": "2008-01-31T12:26:27-07:00",
+            "authors": [
+                {
+                    "name": "Jim",
+                    "url": "http://sonicchicken.net/blog/",
+                    "avatar": "https://secure.gravatar.com/avatar/897bf16bff8239d695e71d8ee1a1ce36?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Jim",
+                "url": "http://sonicchicken.net/blog/",
+                "avatar": "https://secure.gravatar.com/avatar/897bf16bff8239d695e71d8ee1a1ce36?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2005/06/16/sql-server-2000-notes/#comment-841",
+            "url": "https://blog.josephscott.org/2005/06/16/sql-server-2000-notes/#comment-841",
+            "content_html": "[...] I&#8217;ve been reasonably happy with SQL Server 2000, especially after I got it working with PHP from FreeBSD. Today though, I ran into something that I was surprised to see in SQL Server, there is a maximum row size of 8060 bytes. I was disappointed that Microsoft&#8217;s current production database system would still have this kind of limitation. [...]",
+            "content_text": "[...] I&#8217;ve been reasonably happy with SQL Server 2000, especially after I got it working with PHP from FreeBSD. Today though, I ran into something that I was surprised to see in SQL Server, there is a maximum row size of 8060 bytes. I was disappointed that Microsoft&#8217;s current production database system would still have this kind of limitation. [...]",
+            "date_published": "2005-08-30T13:48:44-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott&#8217;s Blog &raquo; SQL Server 2000: Maximum Row Size 8060 Bytes",
+                    "url": "http://joseph.randomnetworks.com/?p=469",
+                    "avatar": false
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott&#8217;s Blog &raquo; SQL Server 2000: Maximum Row Size 8060 Bytes",
+                "url": "http://joseph.randomnetworks.com/?p=469",
+                "avatar": false
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2005/06/16/sql-server-2000-notes/#comment-840",
+            "url": "https://blog.josephscott.org/2005/06/16/sql-server-2000-notes/#comment-840",
+            "content_html": "[...] &gt;Quote Changes In PostgreSQL Saturday 18 June 2005 @ 11:31am  \tAfter complaining about SQL Server 2000 not using the back slash to escape quotes it looks li [...]",
+            "content_text": "[...] &gt;Quote Changes In PostgreSQL Saturday 18 June 2005 @ 11:31am  \tAfter complaining about SQL Server 2000 not using the back slash to escape quotes it looks li [...]",
+            "date_published": "2005-06-18T11:31:46-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott&#8217;s Blog &raquo; Quote Changes In PostgreSQL",
+                    "url": "http://joseph.randomnetworks.com/?p=414",
+                    "avatar": false
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott&#8217;s Blog &raquo; Quote Changes In PostgreSQL",
+                "url": "http://joseph.randomnetworks.com/?p=414",
+                "avatar": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>yahoo &#8211; Joseph Scott</title>
+	<atom:link href="/tag/yahoo/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 04 Feb 2016 18:11:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Secure Handlebars</title>
+		<link>/2016/02/04/secure-handlebars/</link>
+					<comments>/2016/02/04/secure-handlebars/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 04 Feb 2016 18:11:38 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[yahoo]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15056</guid>
+
+					<description><![CDATA[Even JavaScript needs to deal with escaping content for the web. The hard, but ideal, approach is to automatically escape data with the proper context. With that in mind I started reading about Secure Handlebars from Yahoo, which claims: Automatic Contextual XSS Escaping made robust, easy, and fast They support automatic escaping for HTML, HTML [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Even JavaScript needs to deal with escaping content for the web.  The hard, but ideal, approach is to automatically escape data with the proper context.  With that in mind I started reading about <a href="http://yahoo.github.io/secure-handlebars/">Secure Handlebars</a> from Yahoo, which claims:</p>
+<blockquote><p>
+Automatic Contextual XSS Escaping made robust, easy, and fast
+</p></blockquote>
+<p>They support <a href="https://github.com/yahoo/secure-handlebars/#supported-contexts">automatic escaping</a> for HTML, HTML comments, HTML attributes, URI ( in HTML Attribute ), and CSS ( in HTML Attributes ) contexts.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/02/04/secure-handlebars/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>A Not So Delicious Yahoo</title>
+		<link>/2015/05/06/a-not-so-delicious-yahoo/</link>
+					<comments>/2015/05/06/a-not-so-delicious-yahoo/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 06 May 2015 14:54:52 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[delicious]]></category>
+		<category><![CDATA[yahoo]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12358</guid>
+
+					<description><![CDATA[Speaking of 2005 Yahoo deals, here is another: del.icio.us sells to Yahoo. Not a good sign that my original Yahoo and Del.iciou.us announcement links both return error pages now. Internet Archive saves the day ( and history ) yet again. This lasted six years, after which Yahoo sold Delicious to the founders of YouTube ( [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Speaking of <a href="https://josephscott.org/archives/2015/05/ten-years-of-flickr-at-yahoo/">2005 Yahoo deals</a>, here is another: <a href="https://web.archive.org/web/20051211085824/http://blog.del.icio.us/blog/2005/12/yahoo.html#comment-11975076">del.icio.us sells to Yahoo</a>.  Not a good sign that <a href="https://josephscott.org/archives/2005/12/yahoo-buys-delicious/">my original Yahoo and Del.iciou.us announcement links</a> both return error pages now.  <a href="https://archive.org/">Internet Archive</a> saves the day ( and history ) yet again.</p>
+<p>This lasted six years, after which <a href="http://techcrunch.com/2011/04/27/yahoo-sells-delicious-to-youtube-founders/">Yahoo sold Delicious to the founders of YouTube</a> ( in 2011 ).</p>
+<p>Based on my personal usage, I&#8217;d grade the Flickr purchase better than the Delicious one.  I still use Flickr, but haven&#8217;t touched Delicious in a very long time.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/05/06/a-not-so-delicious-yahoo/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Ten Years of Flickr at Yahoo</title>
+		<link>/2015/05/05/ten-years-of-flickr-at-yahoo/</link>
+					<comments>/2015/05/05/ten-years-of-flickr-at-yahoo/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 05 May 2015 12:30:07 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[flickr]]></category>
+		<category><![CDATA[yahoo]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12349</guid>
+
+					<description><![CDATA[In March 2005 Yahoo purchased Flickr. Like most acquisitions it hasn&#8217;t been the smoothest of rides. My hope from back then: I plea with Yahoo to not mess up Flickr I remember reading Jeremy Zawdony&#8217;s thoughts on the deal and thinking that there are at least a few people at Yahoo who get it. Sadly [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>In March 2005 <a href="http://blog.flickr.net/en/2005/03/20/yahoo-actually-does-acquire-flickr/">Yahoo purchased Flickr</a>.</p>
+<p>Like most acquisitions it hasn&#8217;t been the smoothest of rides.  My hope from <a href="https://josephscott.org/archives/2005/03/yahoo-buys-flickr/">back then</a>:</p>
+<blockquote><p>
+I plea with Yahoo to not mess up Flickr
+</p></blockquote>
+<p>I remember reading <a href="http://jeremy.zawodny.com/blog/archives/004362.html">Jeremy Zawdony&#8217;s thoughts on the deal</a> and thinking that there are at least a few people at Yahoo who get it.</p>
+<p>Sadly Flickr fell on hard times at Yahoo, but never died completely.  Then there was <a href="http://blog.flickr.net/2013/05/20/a-better-brighter-flickr/">new Flickr</a>.  A ray of hope on a cloudy day.</p>
+<p>I still use Flickr for photos and small videos.  I don&#8217;t want it to die, but the service still only feels lukewarm.  Is there enough oomph left at Yahoo push Flickr ahead?</p>
+<p>Hopefully there will still be a Flickr around to talk about in 2025.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/05/05/ten-years-of-flickr-at-yahoo/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What Yahoo Finance Looks Like Without Flash</title>
+		<link>/2011/11/09/what-yahoo-finance-looks-like-without-flash/</link>
+					<comments>/2011/11/09/what-yahoo-finance-looks-like-without-flash/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 09 Nov 2011 20:30:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[yahoo]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=5075</guid>
+
+					<description><![CDATA[I was wondering about the stock price for Google today and out of habit went to finance.yahoo.com to see a chart. Specifically I wanted to see the 1 year chart. I don&#8217;t have Flash installed on my primary browser, which triggered Yahoo Finance to redirect me away from the 1 year chart page to http://finance.yahoo.com/chart/flash#symbol=GOOG;range=1y [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was wondering about the stock price for Google today and out of habit went to <a href="http://finance.yahoo.com/">finance.yahoo.com</a> to see a chart.  Specifically I wanted to see the <a href="http://finance.yahoo.com/echarts?s=GOOG+Interactive#symbol=GOOG;range=1y">1 year chart</a>.  I don&#8217;t have Flash installed on my primary browser, which triggered Yahoo Finance to redirect me away from the 1 year chart page to <a href="http://finance.yahoo.com/chart/flash#symbol=GOOG;range=1y">http://finance.yahoo.com/chart/flash#symbol=GOOG;range=1y</a> instead.  Which looks like this:</p>
+<figure style="width: 808px" class="wp-caption alignnone"><img loading="lazy" alt="Yahoo Finance Chart Without Flash" src="https://lh4.googleusercontent.com/-mBpEmUfa6-I/Trrf8vojx7I/AAAAAAAAAQg/Bd1o5co4w3M/s808/yahoo-finance-no-flash.png" title="Yahoo Finance Chart Without Flash" width="808" height="336" /><figcaption class="wp-caption-text">Yahoo Finance Chart Without Flash</figcaption></figure>
+<p>Seriously, that is what the page looks in my Chrome 16 beta browser without Flash installed.</p>
+<p>If you are going to continue using Flash for these charts, why on earth would you redirect people without it to such a useless page?</p>
+<p><strong>Update :</strong> <a href="https://twitter.com/azitzer">@azitzer</a> (product manager for Yahoo Finance) <a href="https://twitter.com/azitzer/status/134417603841101824">noticed this</a> and to their credit <a href="https://twitter.com/azitzer/status/135237048721358849">fixed it</a>.  Still requires Flash to get the regular graph, but at least now the redirect doesn&#8217;t send you to a mostly empty page.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/11/09/what-yahoo-finance-looks-like-without-flash/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The Cost of Not Being Cool</title>
+		<link>/2010/09/22/the-cost-of-not-being-cool/</link>
+					<comments>/2010/09/22/the-cost-of-not-being-cool/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 22 Sep 2010 17:05:38 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[amazon]]></category>
+		<category><![CDATA[cool]]></category>
+		<category><![CDATA[net-income]]></category>
+		<category><![CDATA[revenue]]></category>
+		<category><![CDATA[yahoo]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2844</guid>
+
+					<description><![CDATA[Here are two sets of net income numbers for the first two quarters of 2010: A: $299M / $206M B: $310M / $213M What two companies would you guess this information belonged to? I&#8217;ll give you a hint, they are both tech (web) companies. They&#8217;ve both been around for more than a decade. Still not [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Here are two sets of net income numbers for the first two quarters of 2010:</p>
+<p>A: $299M / $206M<br />
+B: $310M / $213M</p>
+<p>What two companies would you guess this information belonged to?  I&#8217;ll give you a hint, they are both tech (web) companies.  They&#8217;ve both been around for more than a decade.</p>
+<p>Still not enough?  Alright, the two companies are Yahoo and Amazon.  Now, which set of numbers belongs to which company?  Enough with the suspense, the answer is <a href="http://finance.yahoo.com/q/is?s=AMZN">Amazon is set A</a> and <a href="http://finance.yahoo.com/q/is?s=YHOO">Yahoo is set B</a>.  Surprised?  Yeah, so was I.  Who knew that the net income of Yahoo was larger than that of Amazon for the first half of 2010?</p>
+<p>Yahoo has become an easy target to beat up on.  As an outsider looking at the numerous reports of how Yahoo is dead I was surprised to see they make a profit at all.  Granted the &#8216;Net Income&#8217; line on an income statement isn&#8217;t the whole story of a company, so here are a few more.  Yahoo is much more efficient at generating a net income as a percentage of revenue compared to Amazon.  For 2009 Yahoo&#8217;s net income was <a href="http://finance.yahoo.com/q/is?s=YHOO&#038;annual">$597M on $6,460M in revenue</a>.  Amazon&#8217;s net income was significantly higher at <a href="http://finance.yahoo.com/q/is?s=AMZN&#038;annual">$902M, but that was on $24,509M in revenue</a>.  As a percentage that&#8217;s a hefty difference (9.2% vs. 3.6%).</p>
+<p>I think few people would rate Yahoo above Amazon though, at least based on general perception of how the two companies are doing.  The bottom line?  Yahoo just isn&#8217;t cool.  This led me to the question, what is the cost of not being cool for a company?</p>
+<p>Paul Graham recently wrote about <a href="http://www.paulgraham.com/yahoo.html">his impression about what was wrong at Yahoo</a> and Michael Arrington <a href="http://techcrunch.com/2010/09/16/yahoos-three-year-plan-1-billion-users-and-10-billion-in-revenue/">wasn&#8217;t impressed with Yahoo&#8217;s three year plan</a>.  I still remember Yahoo as a search company, one I have long since left.  That said, I have a Flickr account that I generally enjoy (I have a few complaints, but I have at least a few complaints on nearly every web service I&#8217;ve ever used).  On the flip side, I have a Delicious account that I haven&#8217;t touched in years.</p>
+<p>All of this discussion is only worth while if you ask the hard questions though.  If you were in charge at Yahoo what would you do to help turn improve things?  Both the perception of the company (uncool) and performance (flat, or dropping).</p>
+<p>I think the first thing on my list would be to make some serious commitments to their developer community.  With the search back end being replaced by Bing many of their APIs were given end of life dates.  This makes developers hesitant to trust that you won&#8217;t pull the carpet out from under them again.</p>
+<p>Next would be to beef up execution of current and new products.  It is no secret that a number of people have left Yahoo in the last years or so.  Time to re-focus those that are still there and bring in any needed new talent to make things top notch.</p>
+<p>I&#8217;ll be honest, looking out towards the future I&#8217;d like to see Yahoo do well.  I&#8217;m not convinced that is how things will turn out, but I think it is possible and I wish them the best of luck at making it happen.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/09/22/the-cost-of-not-being-cool/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Qwest Redirecting DNS lookups</title>
+		<link>/2008/09/29/qwest-redirecting-dns-lookups/</link>
+					<comments>/2008/09/29/qwest-redirecting-dns-lookups/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 29 Sep 2008 16:49:46 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[dns]]></category>
+		<category><![CDATA[qwest]]></category>
+		<category><![CDATA[web.help]]></category>
+		<category><![CDATA[yahoo]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1178</guid>
+
+					<description><![CDATA[Qwest has started redirecting DNS queries to their own servers. Not because I asked them to, they did it to start pushing their own search results page when DNS queries failed (like so many others have and some still do). This new &#8220;service&#8221; is called Web.Help. In order to do this they reset my DSL [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.qwest.com/">Qwest</a> has started redirecting DNS queries to their own servers.  Not because I asked them to, they did it to start pushing their own search results page when DNS queries failed (like so many others have and some still do).  This new &#8220;service&#8221; is called <a href="http://www.qwest.net/web.help/">Web.Help</a>.  In order to do this they reset my DSL line this morning (which was irritating), but they did at least provide some links on what this.</p>
+<p>After reading through some of their information on their new &#8220;service&#8221; I found a link indicating that I could opt out (not that I ever opted in).  I&#8217;m not sure what they were thinking here though, instead of the &#8220;opt out&#8221; taking me to a page where I could opt out, it took me to another documentation page on their new service.  I had to dig through three or four layers of &#8220;opt out&#8221; links before I got to a page that would actually turn this off.  Which of course reset my DSL connection again about 5 minutes later.  We&#8217;ll see where this ends up.</p>
+<p>The search results they were showing for failed DNS queries were from <a href="http://yahoo.com/">Yahoo</a>.  I wonder if Yahoo is paying Qwest to do this.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/09/29/qwest-redirecting-dns-lookups/feed/</wfw:commentRss>
+			<slash:comments>13</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The Top Search Result For Prologue</title>
+		<link>/2008/03/03/the-top-search-result-for-prologue/</link>
+					<comments>/2008/03/03/the-top-search-result-for-prologue/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 03 Mar 2008 22:24:08 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[prologue]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[yahoo]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1031</guid>
+
+					<description><![CDATA[The top search result for prologue on Google is Matt&#8216;s Prologue theme announcement. That same announcement post is number 5 on Yahoo! and on Live Search / MSN Search it doesn&#8217;t show up on the first page of results at all. Feel free to speculate on those data points.]]></description>
+										<content:encoded><![CDATA[<p>The top search result for <code>prologue</code> on Google is <a href="http://ma.tt/">Matt</a>&#8216;s <a href="http://wordpress.com/blog/2008/01/28/introducing-prologue/">Prologue theme announcement</a>.  That same announcement post is number 5 on Yahoo! and on Live Search / MSN Search it doesn&#8217;t show up on the first page of results at all.</p>
+<p>Feel free to speculate on those data points.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/03/03/the-top-search-result-for-prologue/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Google Thinks I&#8217;m Spyware, Yahoo Gains A New Search User</title>
+		<link>/2008/02/23/google-thinks-im-spyware-yahoo-gains-a-new-search-user/</link>
+					<comments>/2008/02/23/google-thinks-im-spyware-yahoo-gains-a-new-search-user/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 23 Feb 2008 20:12:25 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[yahoo]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/02/23/google-thinks-im-spyware-yahoo-gains-a-new-search-user/</guid>
+
+					<description><![CDATA[Earth to Google, I am not a virus or spyware. I&#8217;ve been using your services for years, I have deleted all of my Google cookies and answered your captcha several times in the last few days, yet you still insist on not processing my search requests. Since most of my searches are done from the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://flickr.com/photos/josephscott/2285950673/"><img src="http://farm4.static.flickr.com/3182/2285950673_1a4a499249.jpg" /></a></p>
+<p>Earth to Google, I am not a virus or spyware.  I&#8217;ve been using your services for years, I have deleted all of my Google cookies and answered your captcha several times in the last few days, yet you still insist on not processing my search requests.  Since most of my searches are done from the search field in Firefox it is very easy for me to switch to another search engine.  Which I&#8217;ve now done.</p>
+<p>I realize that I&#8217;m just one lone user in a sea of millions, so my switch to using <a href="http://www.yahoo.com/">Yahoo</a> for search is unlikely to make a dent for you.  For me though this is a big deal.  I&#8217;ve relied on your services for years and hate the idea that I won&#8217;t be able to continue to use them for years to come.  You better not screw up Gmail or Gcal, exporting all that data to another service would not be fun.</p>
+<p>At some point in the future I&#8217;ll be checking back, hopefully by then you&#8217;ll have gotten over your &#8220;Joseph is a virus&#8221; obsession.  Because I&#8217;m sure there are lots of spyware applications out there looking for city boundary maps of the city of Sandy, Utah.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/02/23/google-thinks-im-spyware-yahoo-gains-a-new-search-user/feed/</wfw:commentRss>
+			<slash:comments>8</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Thu 17 Jan 2008</title>
+		<link>/2008/01/17/links-for-thu-17-jan-2008/</link>
+					<comments>/2008/01/17/links-for-thu-17-jan-2008/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 18 Jan 2008 00:30:08 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[autocomplete]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[openid]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[vim]]></category>
+		<category><![CDATA[yahoo]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/01/17/links-for-thu-17-jan-2008/</guid>
+
+					<description><![CDATA[Autocomplete HTML/CSS/JavaScript/python/xml/php/c with CTRL-X CTRL-O &#8211; parsed.org &#8211; Add autocomplete features to Vim. Wish I&#8217;d come across this sooner. Tags: vim autocomplete php javascript html python OpenID Splash &#8211; Looks like Yahoo has taken major dive into the OpenID pool. Tags: openid yahoo]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://www.parsed.org/tip/415/">Autocomplete HTML/CSS/JavaScript/python/xml/php/c with CTRL-X CTRL-O &#8211; parsed.org</a> &#8211; Add autocomplete features to Vim.  Wish I&#8217;d come across this sooner. <br /> Tags: <a href="http://del.icio.us/josephscott/vim">vim</a> <a href="http://del.icio.us/josephscott/autocomplete">autocomplete</a> <a href="http://del.icio.us/josephscott/php">php</a> <a href="http://del.icio.us/josephscott/javascript">javascript</a> <a href="http://del.icio.us/josephscott/html">html</a> <a href="http://del.icio.us/josephscott/python">python</a>  </p>
+</li>
+<li>
+<p><a href="http://openid.yahoo.com/">OpenID Splash</a> &#8211; Looks like Yahoo has taken major dive into the OpenID pool. <br /> Tags: <a href="http://del.icio.us/josephscott/openid">openid</a> <a href="http://del.icio.us/josephscott/yahoo">yahoo</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/01/17/links-for-thu-17-jan-2008/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The Yahoo Service I Use The Most</title>
+		<link>/2007/11/26/the-yahoo-service-i-use-the-most/</link>
+					<comments>/2007/11/26/the-yahoo-service-i-use-the-most/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 26 Nov 2007 16:32:20 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[delicious]]></category>
+		<category><![CDATA[yahoo]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/26/the-yahoo-service-i-use-the-most/</guid>
+
+					<description><![CDATA[I was thinking a little bit about the Yahoo/Google/Microsoft battles this morning. Sure, I almost always uses Google for search, but then it dawned on me that there is a Yahoo site that I use on a regular basis (if not daily, darn close to it), del.icio.us. It is far and away the Yahoo service [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was thinking a little bit about the Yahoo/Google/Microsoft battles this morning.  Sure, I almost always uses Google for search, but then it dawned on me that there is a Yahoo site that I use on a regular basis (if not daily, darn close to it), <a href="http://del.icio.us/">del.icio.us</a>.  It is far and away the Yahoo service that I use the most.  Coming in second would have to be Flickr, but that is a pretty distant second.</p>
+<p>It has been almost two years since Yahoo purchased del.icio.us.  And more than a year since I&#8217;ve seen any talk about how much traffic they get.  It would be nice to get an anniversary update.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/11/26/the-yahoo-service-i-use-the-most/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

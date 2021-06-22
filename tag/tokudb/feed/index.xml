@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>tokudb &#8211; Joseph Scott</title>
+	<atom:link href="/tag/tokudb/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 10 May 2013 15:58:02 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>TokuDB and MongoDB</title>
+		<link>/2013/05/10/tokudb-and-mongodb/</link>
+					<comments>/2013/05/10/tokudb-and-mongodb/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 10 May 2013 15:58:02 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[baron-schwartz]]></category>
+		<category><![CDATA[mongodb]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[tokudb]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7607</guid>
+
+					<description><![CDATA[Baron Schwartz on TokuDB going open source: I think TokuDB will rapidly become the storage engine of choice for MongoDB, and could catapult MongoDB into the lead in the NoSQL database arena. This would have profound implications for opensource databases of all flavors, not just NoSQL databases. It is easy to forget how long it [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Baron Schwartz on <a href="http://www.xaprb.com/blog/2013/04/29/what-tokudb-might-mean-for-mongodb/">TokuDB going open source</a>:</p>
+<blockquote><p>
+I think TokuDB will rapidly become the storage engine of choice for MongoDB, and could catapult MongoDB into the lead in the NoSQL database arena. This would have profound implications for opensource databases of all flavors, not just NoSQL databases.
+</p></blockquote>
+<p>It is easy to forget how long it took MySQL to get to where it is today ( and it still has plenty of issues ).  When I look at MongoDB I see it going through a similar path to MySQL ( and most other software ) to reach a point of critical features, stability, and mass.  Improving the underlying storage engine, by using an existing open source one, could move it down that path much faster.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/05/10/tokudb-and-mongodb/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

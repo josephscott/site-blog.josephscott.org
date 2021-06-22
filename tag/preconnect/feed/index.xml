@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>preconnect &#8211; Joseph Scott</title>
+	<atom:link href="/tag/preconnect/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 29 Oct 2015 13:33:43 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Preconnect</title>
+		<link>/2015/10/29/preconnect/</link>
+					<comments>/2015/10/29/preconnect/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 29 Oct 2015 13:33:43 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[ilya-grigorik]]></category>
+		<category><![CDATA[preconnect]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13538</guid>
+
+					<description><![CDATA[Chrome 46, released a few weeks ago, includes support for the preconnect resource hint. Ilya Grigorik has a good write up on Eliminating Roundtrips with Preconnect: The preconnect HTML hint allows the application to tell the browser which sockets it will need ahead of initiating the actual requests; preconnect eliminates DNS, TCP, and TLS roundtrips [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://www.chromestatus.com/feature/5560623895150592">Chrome 46</a>, released a few weeks ago, includes support for the <a href="https://w3c.github.io/resource-hints/#dfn-preconnect">preconnect resource hint</a>.  Ilya Grigorik has a good write up on <a href="https://www.igvita.com/2015/08/17/eliminating-roundtrips-with-preconnect/">Eliminating Roundtrips with Preconnect</a>:</p>
+<blockquote><p>
+The preconnect HTML hint allows the application to tell the browser which sockets it will need ahead of initiating the actual requests; preconnect eliminates DNS, TCP, and TLS roundtrips from the request&#8217;s critical path.
+</p></blockquote>
+<p>Using it is easy:</p>
+<p>[sourcecode lang=&#8221;html&#8221;]<br />
+&lt;link rel=&quot;preconnect&quot; href=&quot;//example.com&quot;&gt;<br />
+&lt;link rel=&quot;preconnect&quot; href=&quot;//cdn.example.com&quot; crossorigin&gt;<br />
+[/sourcecode]</p>
+<p>Currently preconnect is only supported on <a href="http://caniuse.com/#search=Preconnect">Firefox and Chrome</a> ( it first appeared in Firefox 39, back in July ).  This is a potentially powerful feature, definitely worth experimenting with.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/29/preconnect/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>IE9 Preconnect</title>
+		<link>/2011/02/11/ie9-preconnect/</link>
+					<comments>/2011/02/11/ie9-preconnect/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 11 Feb 2011 17:00:45 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[ie9]]></category>
+		<category><![CDATA[internet-explorer]]></category>
+		<category><![CDATA[preconnect]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3509</guid>
+
+					<description><![CDATA[I was playing around on WebSiteTest today – trying out it new IE9 test feature, and I noticed something new that IE9 does: preconnect. What is preconnect?  Preconnect is making a connection to a site before you have a request to use that connection for.  The browser may have an inkling that it will need [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+I was playing around on WebSiteTest today – trying out it new IE9 test feature, and I noticed something new that IE9 does: preconnect.</p>
+<p>What is preconnect?  Preconnect is making a connection to a site before you have a request to use that connection for.  The browser may have an inkling that it will need the connection, but if you don’t have a request in hand yet, it is a speculative request, and therefore a preconnect.
+</p></blockquote>
+<p>via <a href='http://www.belshe.com/2011/02/10/the-era-of-browser-preconnect/'>Mike&#8217;s Lookout » Blog Archive » The Era of Browser Preconnect</a></p>
+<p>Interesting behavior from IE9, making connections to sites in the hope that there will be additional resources that need to be downloaded.  If IE9 becomes widely adopted (which seems likely) then taking this behavior into consideration when building a site may be useful.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/02/11/ie9-preconnect/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

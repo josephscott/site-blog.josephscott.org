@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>plugin &#8211; Joseph Scott</title>
+	<atom:link href="/tag/plugin/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 04 Oct 2011 16:00:36 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Updated libxml2-fix Plugin for WordPress</title>
+		<link>/2011/10/04/updated-libxml2-fix-plugin-for-wordpress/</link>
+					<comments>/2011/10/04/updated-libxml2-fix-plugin-for-wordpress/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 04 Oct 2011 16:00:36 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[libxml2]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xml-rpc]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4892</guid>
+
+					<description><![CDATA[I made a small update to the libxml2-fix WordPress plugin this morning. There are few more odd combinations of PHP + libxml2 that have problems, so this change applies the work around as long as the libxml2 version is below 2.7.3. That saves on having to list all of the individual versions that may have [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I made a small update to the <a href="http://wordpress.org/extend/plugins/libxml2-fix/">libxml2-fix WordPress plugin</a> this morning.  There are few more odd combinations of PHP + libxml2 that have problems, so this change applies the work around as long as the libxml2 version is below 2.7.3.  That saves on having to list all of the individual versions that may have this issue.  This improvement was submitted by <a href="http://daniloercoli.wordpress.com/">Danilo Ercoli</a>.</p>
+<p>I&#8217;m bummed that there are still so many hosts running known to be broken combinations of PHP + libxml2.  In the meantime we may as well make it easier for people to work around the issue.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/10/04/updated-libxml2-fix-plugin-for-wordpress/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>PuSHPress 0.1.7</title>
+		<link>/2011/05/27/pushpress-0-1-7/</link>
+					<comments>/2011/05/27/pushpress-0-1-7/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 27 May 2011 19:15:22 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[pubsubhubbub]]></category>
+		<category><![CDATA[pushpress]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4187</guid>
+
+					<description><![CDATA[Version 0.1.7 of the PuSHPress WordPress plugin is now live. This includes fixes to various edge cases that have come up over time. Details are available in the changelog. Thank you to John Godley, Andrew Nacin, Hugo Hallqvist (couldn&#8217;t find a link for him), and Mike Adams for reporting issues and submitting patches.]]></description>
+										<content:encoded><![CDATA[<p><a href="http://code.google.com/p/pubsubhubbub/"><img loading="lazy" alt="" src="http://code.google.com/apis/pubsubhubbub/images/hubbub.png" title="PubSubHubbub" class="alignleft" width="113" height="38" /></a></p>
+<p>Version 0.1.7 of the <a href="http://wordpress.org/extend/plugins/pushpress/">PuSHPress WordPress plugin</a> is now live.  This includes fixes to various edge cases that have come up over time.  Details are available in the <a href="http://wordpress.org/extend/plugins/pushpress/changelog/">changelog</a>.</p>
+<p>Thank you to <a href="http://urbangiraffe.com/">John Godley</a>, <a href="http://andrewnacin.com/">Andrew Nacin</a>, Hugo Hallqvist (couldn&#8217;t find a link for him), and <a href="http://blogwaffe.com/">Mike Adams</a> for reporting issues and submitting patches.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/05/27/pushpress-0-1-7/feed/</wfw:commentRss>
+			<slash:comments>13</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>PuSHPress: A PubSubHubbub Plugin For WordPress</title>
+		<link>/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/</link>
+					<comments>/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 03 Mar 2010 16:49:50 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[pubsubhubbub]]></category>
+		<category><![CDATA[pushpress]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1963</guid>
+
+					<description><![CDATA[PubSubHubbub, or PuSH, is now supported on all WordPress.com blogs. For those running sites using the WordPress.org software the PuSHPress plugin is available to do the same thing. The big difference in this plugin compared to the other PuSH WordPress plugins is that it includes a PuSH hub built in. A little bit of PubSubHubbub [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://code.google.com/p/pubsubhubbub/">PubSubHubbub</a>, or <a href="http://en.blog.wordpress.com/2010/03/03/rub-a-dub-dub-in-the-pubsubhubbub/">PuSH, is now supported on all WordPress.com blogs</a>.  For those running sites using the WordPress.org software the <a href="http://wordpress.org/extend/plugins/pushpress/">PuSHPress plugin</a> is available to do the same thing.  The big difference in this plugin compared to the other PuSH WordPress plugins is that it includes a PuSH hub built in.</p>
+<h3>A little bit of PubSubHubbub background</h3>
+<p>Like <a href="http://josephscott.org/archives/2009/09/rsscloud-for-wordpress/">rssCloud</a>, PuSH adds a line to your feed to let clients know where they can send PuSH subscription requests.  In the RSS2 feed this looks like:</p>
+<p>[sourcecode lang=&#8221;xml&#8221;]<br />
+&lt;atom:link rel=&quot;hub&quot; href=&quot;http://josephscott.org/?pushpress=hub&quot;&gt;<br />
+[/sourcecode]</p>
+<p>and in Atom looks like:</p>
+<p>[sourcecode lang=&#8221;xml&#8221;]<br />
+&lt;link rel=&quot;hub&quot; href=&quot;http://josephscott.org/?pushpress=hub&quot;&gt;<br />
+[/sourcecode]</p>
+<p>The href attribute contains the URL that subscribers can send requests to.  Details on <a href="http://pubsubhubbub.googlecode.com/svn/trunk/pubsubhubbub-core-0.3.html#subscribing">what that request looks like</a> are in the <a href="http://pubsubhubbub.googlecode.com/svn/trunk/pubsubhubbub-core-0.3.html">PubSubHubbub Spec</a>.  The short version, it&#8217;s a simple HTTP POST call with some specific field names.</p>
+<p>Here&#8217;s an example PHP subscription request asking that updates to http://example.com/feed/ be sent to http://example.com/push/ via the hub at http://example.com/?pushpress=hub</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+$curl = curl_init( );</p>
+<p>curl_setopt( $curl, CURLOPT_URL, &#8216;http://example.com/?pushpress=hub&#8217; );<br />
+curl_setopt( $curl, CURLOPT_POSTFIELDS, &#8216;hub.callback=http://example.com/push/&amp;hub.mode=subscribe&amp;hub.secret=not-telling-you&amp;hub.verify=sync&amp;hub.topic=http://example.com/feed/&amp;hub.verify_token=133t-$7r1n9&#8217; );<br />
+curl_setopt( $curl, CURLOPT_VERBOSE, 1 );<br />
+curl_setopt( $curl, CURLOPT_POST, 1 );</p>
+<p>curl_exec( $curl );<br />
+print_r( curl_getinfo( $curl ) );<br />
+curl_close( $curl );<br />
+[/sourcecode]</p>
+<p>The hub at example.com will then send new content (in feed format) right after it&#8217;s published to URL provided in hub.callback.</p>
+<h3>Why the PuSHPress plugin?</h3>
+<p>I love that there are large, open PuSH hubs available for anyone to use.  There&#8217;s a list at <a href="http://code.google.com/p/pubsubhubbub/wiki/Hubs">http://code.google.com/p/pubsubhubbub/wiki/Hubs</a>.  In PuSH since most of the hard work (figuring out what&#8217;s new in a feed and sending that out to subscribers) is done via the hub this is very handy and really great for testing.</p>
+<p>I also think there&#8217;s a role for a readily available simple hub that anyone can put up and use, in this case built on top of WordPress.  And by leveraging WordPress the hub part can be greatly simplified.  The real bonus for users is choice, they can relay the updates through 3rd party hubs, or use the built in hub in PuSHPress.</p>
+<p>It&#8217;s worth noting that PuSHPress has a WordPress filter on the array of hubs; pushpress_hubs.  This allows other plugins to easily add to or replace the hubs mentioned in the feeds by PuSHPress.</p>
+<p>To help keep things simple and limit potential abuse the PuSHPress plugin will only allow subscriptions for the RSS2 and Atom feeds of the WordPress blog that it is installed on.</p>
+<p>My thanks to <a href="http://www.onebigfluke.com/">Brett Slatkin</a> for helping test PuSHPress.  His tests revealed a few bugs that were quickly addressed.</p>
+<h3>How fast?</h3>
+<p>When talking about these realtime-ish update features this question often comes up.  Fair enough, I&#8217;d want to know too <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>The PuSHPress plugin schedules pings to go out right away via the <a href="http://codex.wordpress.org/Function_Reference/wp_schedule_single_event">wp_schedule_single_event</a> function in WordPress.  I suspect for most people this will be quite fast.  If your server is under tremendous load and really slow, then this will be really slow too, just like the rest of the server <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>On WordPress.com the details are a bit different.  Instead of scheduling pings to be sent out with wp_schedule_single_event it adds them to our asynchronous jobs system ( more info available at <a href="http://code.trac.wordpress.org/">http://code.trac.wordpress.org/</a> ).  The jobs system is setup to do exactly these kinds of tasks really, really fast.  Don&#8217;t be surprised if the ping shows up before you get a chance to finish the first Mississippi.</p>
+<h3>The future</h3>
+<p>So where is all this going?  Who knows, but it is fun to watch!  <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<h3>Further reading</h3>
+<p>If you have an interest in this area there are plenty of resources:</p>
+<ul>
+<li><a href="http://code.google.com/p/pubsubhubbub/">PubSubHubbub project site</a></li>
+<li><a href="http://groups.google.com/group/pubsubhubbub">Google Group</a></li>
+<li><a href="http://pubsubhubbub.googlecode.com/svn/trunk/pubsubhubbub-core-0.3.html">Spec</a></li>
+</ul>
+<p>The spec is a quick read and to the point, worth reading.</p>
+<p>And there you have it, a little more in-depth discussion of PuSHPress.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/03/03/pushpress-a-pubsubhubbub-plugin-for-wordpress/feed/</wfw:commentRss>
+			<slash:comments>60</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>WordPress Plugin Update: LibXML2 Fix</title>
+		<link>/2009/12/29/wordpress-plugin-update-libxml2-fix/</link>
+					<comments>/2009/12/29/wordpress-plugin-update-libxml2-fix/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 30 Dec 2009 04:20:45 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[libxml2]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xml-rpc]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1665</guid>
+
+					<description><![CDATA[A small update to the LibXML2 Fix WordPress plugin is now available, version 0.2.3. The only change was the addition of 2.6.27 to the list of libxml versions that the plugin looks for. I&#8217;ve had a few reports that this version also has problems with stripping brackets. For those that haven&#8217;t been following this problem [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>A small update to the <a href="http://wordpress.org/extend/plugins/libxml2-fix/">LibXML2 Fix</a> WordPress plugin is now available, version 0.2.3.</p>
+<p>The only change was the addition of 2.6.27 to the list of libxml versions that the plugin looks for.  I&#8217;ve had a few reports that this version also has problems with stripping brackets.</p>
+<p>For those that haven&#8217;t been following this problem here&#8217;s the <a href="http://josephscott.org/code/wordpress/plugin-libxml2-fix/">short version of the story</a>.  Some combinations of libxml and PHP don&#8217;t play nice with each other, the result being that brackets get stripped out of XML content.  This is a particular problem for XML-RPC requests in WordPress.  This plugin injects a small hack into the XML-RPC data before it gets processed in an attempt to preserve the brackets.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/12/29/wordpress-plugin-update-libxml2-fix/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>rssCloud WordPress Plugin Update &#8211; 0.4.1</title>
+		<link>/2009/10/29/rsscloud-wordpress-plugin-update-0-4-1/</link>
+					<comments>/2009/10/29/rsscloud-wordpress-plugin-update-0-4-1/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 29 Oct 2009 17:31:12 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[rss]]></category>
+		<category><![CDATA[rsscloud]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1554</guid>
+
+					<description><![CDATA[Update &#8211; 5 Nov 2009: These features are now available on WordPress.com as well &#8211; http://en.blog.wordpress.com/2009/11/05/rsscloud-update/ Version 0.4.1 of the rssCloud WordPress plugin is now available. The biggest change is adding support for the domain parameter in notification requests. This means that rssCloud updates processed by the plugin are no longer limited to being sent [&#8230;]]]></description>
+										<content:encoded><![CDATA[<div class="post-update">
+<b>Update &#8211; 5 Nov 2009:</b><br />
+These features are now available on WordPress.com as well &#8211; <a href="http://en.blog.wordpress.com/2009/11/05/rsscloud-update/">http://en.blog.wordpress.com/2009/11/05/rsscloud-update/</a>
+</div>
+<p>Version 0.4.1 of the <a href="http://wordpress.org/extend/plugins/rsscloud/">rssCloud WordPress plugin</a> is now available.  The biggest change  is adding support for the <a href="http://rsscloud.org/walkthrough/openDiscussion.html">domain parameter</a> in notification requests.  This means that rssCloud updates processed by the plugin are no longer limited to being sent to the IP address that the request came from.  Support for the domain parameter is live on <a href="http://wordpress.com/">WordPress.com</a> as well.</p>
+<p>When a domain parameter is included with a notification request the verification process does the following:</p>
+<ul>
+<li>Sends an HTTP GET request to the {domain}:{port}{path} URL</li>
+<li>That HTTP GET includes to pieces of data: url and challenge.  The url field contains the URL of the feed that we&#8217;ll been sending pings about.  The challenge field contains a random string of characters</li>
+<li>The response back must have a status code of 2xx and the body must contain EXACTLY the contents of the challenge field.  If both of those conditions are not met then the verification process will consider this a failure</li>
+</ul>
+<p>For notification requests that have no domain parameter the verification process is unchanged from before.</p>
+<p>Another item that some may find helpful is a new constant &#8211; RSSCLOUD_FEED_URL &#8211; if that is defined they it will be used as the feed URL of the blog instead of determining it via <code>get_bloginfo( 'rss2_url' );</code>.  For plugin authors that provide options for an alternative feed URL note that can override the default in WordPress via the <code><a href="http://codex.wordpress.org/Plugin_API/Filter_Reference#Link_Filters">feed_link</a></code> filter.  That filter can be used instead of the RSSCLOUD_FEED_URL constant and will bubble up through the <code>get_bloginfo( 'rss2_url' );</code> call.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/10/29/rsscloud-wordpress-plugin-update-0-4-1/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>RSSCloud For WordPress</title>
+		<link>/2009/09/07/rsscloud-for-wordpress/</link>
+					<comments>/2009/09/07/rsscloud-for-wordpress/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 08 Sep 2009 03:35:57 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[rss]]></category>
+		<category><![CDATA[rsscloud]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1483</guid>
+
+					<description><![CDATA[RSSCloud support has been enabled on all WordPress.com blogs. If you are running a WordPress.org powered blog you can do the same thing with the RSSCloud plugin. So what does this really mean? From the point of view of WordPress and this plugin there are three main additions: Adds the &#60;cloud&#62; element to your RSS2 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://rsscloud.org/">RSSCloud</a> support has been <a href="http://en.blog.wordpress.com/2009/09/07/rss-in-the-clouds/">enabled on all WordPress.com blogs</a>.  If you are running a <a href="http://wordpress.org/">WordPress.org</a> powered blog you can do the same thing with the <a href="http://wordpress.org/extend/plugins/rsscloud/">RSSCloud plugin</a>.</p>
+<h3>So what does this really mean?</h3>
+<p>From the point of view of WordPress and this plugin there are three main additions:</p>
+<ol>
+<li>Adds the <a href="http://cyber.law.harvard.edu/rss/rss.html#optionalChannelElements">&lt;cloud&gt;</a> element to your RSS2 feed (more details <a href="http://cyber.law.harvard.edu/rss/rss.html#ltcloudgtSubelementOfLtchannelgt">here</a> and <a href="http://cyber.law.harvard.edu/rss/soapMeetsRss.html#rsscloudInterface">here</a>) which tells clients where and how to sign up for notification requests.</li>
+<li>Registers a URL handler with WordPress to process the notification signups.</li>
+<li>Sends out notification updates when a new post is published.</li>
+</ol>
+<p>The cloud element looks like this:</p>
+<p>[sourcecode lang=&#8221;html&#8221;]<br />
+&lt;cloud domain=&#8217;josephscott.org&#8217; port=&#8217;80&#8217; path=&#8217;/?rsscloud=notify&#8217;<br />
+  registerProcedure=&#8221; protocol=&#8217;http-post&#8217; /&gt;<br />
+[/sourcecode]</p>
+<p>The domain, port and path attributes combined to form a URL, http://josephscott.org:80/?rsscloud=notify in this case, where others sign up for notifications.  The registerProcedure attribute is the XML-RPC method to be called if the protocol attribute was xmlrpc.  Since the plugin uses http-post for the protocol the registerProcedure field is blank.</p>
+<p>Using this same example here is a small chunk of PHP code that uses the cURL library to sign up for notifications:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+$curl = curl_init();</p>
+<p>curl_setopt($curl, CURLOPT_URL, &#8216;http://josephscott.org/?rsscloud=notify&#8217; );<br />
+curl_setopt($curl, CURLOPT_POSTFIELDS, &#8216;notifyProcedure=&amp;protocol=http-post&amp;port=80&amp;path=/~joseph/rsscloud/&amp;url1=http://josephscott.org/feed/&#8217; );<br />
+curl_setopt($curl, CURLOPT_VERBOSE, 1);<br />
+curl_setopt($curl, CURLOPT_POST, 1);</p>
+<p>curl_exec( $curl );<br />
+print_r( curl_getinfo( $curl ) );<br />
+curl_close( $curl );<br />
+[/sourcecode]</p>
+<p>This code sends an HTTP POST request to http://josephscott.org/?rsscloud=notify asking to get a notification when the http://josephscott.org/feed/ feed is updated.  The notification is to be sent to the remote IP used in the request (this means notification requests must be sent from the IP that will be receiving the notifications), port 80 with a path of /~joseph/rsscloud/ and it will be given the update data via an HTTP POST.  The notification script will get $_POST data that looks like:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+Array<br />
+(<br />
+   [url] =&gt; http://josephscott.org/feed/<br />
+)<br />
+[/sourcecode]</p>
+<p>It is then up to notification script to turn around fetch the updated feed.</p>
+<h3>How fast does all this happen?</h3>
+<p>It depends <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>On WordPress.com the notifications happen through the <a href="http://code.trac.wordpress.org/">jobs system</a>, which means it will be sent out very, very quickly.  On a WordPress.org powered blog with the plugin it schedules notifications to get sent out as soon as possible with the <a href="http://codex.wordpress.org/Function_Reference/wp_schedule_single_event">wp_schedule_single_event( )</a> function.  Scheduled events in WordPress are checked on each page load, so if you publish a new post and then view it on the front page of your blog the notifications will get sent out in pretty quick.</p>
+<p>I think for most blogs these approaches will work fine and send out notifications with very little delay.</p>
+<h3>What does this mean for feed readers like Bloglines, Google Reader, etc.?</h3>
+<p>I believe that many (most?) public feed readers like Bloglines and Google Reader already listen for feed updates via pings (like those sent to <a href="http://pingomatic.com/">Ping-O-Matic</a>).  With an RSSCloud enabled WordPress blog they can register for updates to specific feeds.  Why would they do this if they are already getting ping updates?  Unfortunately the ping updates are similar to email, they have massive amounts of spam in them.  Since RSSCloud isn&#8217;t a stream of everything, but a specific request for specific updates they could sign up for updates to those feeds that they believe are more likely to be legitimate.</p>
+<p>Signing up is simple for a feed reader (or anyone/thing) to do:</p>
+<ol>
+<li>Look for the &lt;cloud&gt; element in the RSS feed</li>
+<li>Sign up for notifications using the data from the &lt;cloud&gt; element</li>
+<li>Process notification that are sent to it from WordPress</li>
+</ol>
+<p>Right now I believe the only feed reader that supports RSSCloud is <a href="http://www.scripting.com/">Dave Winer</a>&#8216;s <a href="http://newsriver.org/river2">River2</a>.</p>
+<p>If you are working on RSSCloud support in your feed reader <a href="http://josephscott.org/contact/">let me know</a>, I&#8217;ll be watching the RSSCloud stats on WordPress.com.  And of course if you run into problems with RSSCloud on a WordPress blog (ORG or COM) I&#8217;m happy to help track down any bugs in our implementation.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/09/07/rsscloud-for-wordpress/feed/</wfw:commentRss>
+			<slash:comments>62</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>LibXML2 Fix &#8211; Version 0.2</title>
+		<link>/2009/04/15/libxml2-fix-version-02/</link>
+					<comments>/2009/04/15/libxml2-fix-version-02/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 15 Apr 2009 23:12:28 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[libxml2]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xml-rpc]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1169</guid>
+
+					<description><![CDATA[I&#8217;ve updated my LibXML2 Fix WordPress plugin so that the work around is enabled even if you have libxml2 2.7.3 installed but have a PHP version that is less that 5.2.9. This should fix servers who decided to update libxml2 without updating PHP. Further details and history are at my LibXML2 Fix plugin page. Update: [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve updated my <a href="http://wordpress.org/extend/plugins/libxml2-fix/">LibXML2 Fix</a> WordPress plugin so that the work around is enabled even if you have libxml2 2.7.3 installed but have a PHP version that is less that 5.2.9.  This should fix servers who decided to update libxml2 without updating PHP.</p>
+<p>Further details and history are at my <a href="http://josephscott.org/code/wordpress/plugin-libxml2-fix/">LibXML2 Fix plugin page</a>.</p>
+<p><strong>Update:</strong> Rein caught a typo in version 0.2, so make sure that you get version 0.2.2.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/04/15/libxml2-fix-version-02/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>WordPress &#038; libxml2 Episode IV: A New Plugin</title>
+		<link>/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/</link>
+					<comments>/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 17 Mar 2009 20:31:28 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[libxml2]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xml-rpc]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=982</guid>
+
+					<description><![CDATA[Despite the libxml2 problems having been solved by the release of PHP 5.2.9 and libxml2 2.7.3 there are still hosts out there who refuse to update their known to be broken setup. This really bummed me out, I didn&#8217;t want to include a hack to deal with this in core WordPress. Just as I was [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Despite the libxml2 problems having been solved by the <a href="http://josephscott.org/archives/2009/03/conclusion-of-libxml2-issues-use-php-529-libxml2-273/">release of PHP 5.2.9 and libxml2 2.7.3</a> there are still hosts out there who refuse to update their known to be broken setup.  This really bummed me out, I didn&#8217;t want to include a hack to deal with this in core WordPress.</p>
+<p>Just as I was ready to throw in the towel and look at getting a work around into core WordPress <a href="http://blog.ftwr.co.uk/">Peter Westwood</a> suggested a method that would allow this &#8220;fix&#8221; to work in a plugin.  His idea was spot on and I wrote a small <a href="http://josephscott.org/code/wordpress/plugin-libxml2-fix/#comment-2690">WordPress plugin, LibXML2 Fix</a>, the next day and tested it on a WordPress install with this problem.  It fixed the stripped brackets problem for XML-RPC requests, so I&#8217;ve submitted it to the <a href="http://wordpress.org/extend/plugins/">plugin directory</a> and it&#8217;s now available at <a href="http://wordpress.org/extend/plugins/libxml2-fix/">http://wordpress.org/extend/plugins/libxml2-fix/</a>.</p>
+<p>To be clear, the best way to fix this is to upgrade to PHP 5.2.9+ and libxml2 2.7.3+.  But if you are stuck in a hosting situation where that&#8217;s not possible then the <a href="http://josephscott.org/code/wordpress/plugin-libxml2-fix/">LibXML2 Fixed</a> plugin will fix XML-RPC requests so that brackets don&#8217;t get stripped.</p>
+<p>I&#8217;ve closed ticket <a href="http://core.trac.wordpress.org/ticket/7771">7771</a> and will be pointing people to this plugin if they can&#8217;t upgrade PHP and libxml2.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/feed/</wfw:commentRss>
+			<slash:comments>30</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Thu 27 Dec 2007</title>
+		<link>/2007/12/27/links-for-thu-27-dec-2007/</link>
+					<comments>/2007/12/27/links-for-thu-27-dec-2007/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 28 Dec 2007 00:30:10 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[addressbook]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[gravatar]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[plugin]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/12/27/links-for-thu-27-dec-2007/</guid>
+
+					<description><![CDATA[The Google Enigma &#8211; This was a really interesting read. Are huge tech companies like Google changing everything about business, or confirming what we already know? I have to wonder if Facebook will be going through a similar analysis one day. Tags: google business 5xm.org / Avatars &#8211; Plugin for Mac OS X address book [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://www.strategy-business.com/press/freearticle/07404?pg=all">The Google Enigma</a> &#8211; This was a really interesting read.  Are huge tech companies like Google changing everything about business, or confirming what we already know?  I have to wonder if Facebook will be going through a similar analysis one day. <br /> Tags: <a href="http://del.icio.us/josephscott/google">google</a> <a href="http://del.icio.us/josephscott/business">business</a>  </p>
+</li>
+<li>
+<p><a href="http://5xm.org/avatars">5xm.org / Avatars</a> &#8211; Plugin for Mac OS X address book application to download gravatar images for your contacts. <br /> Tags: <a href="http://del.icio.us/josephscott/addressbook">addressbook</a> <a href="http://del.icio.us/josephscott/macosx">macosx</a> <a href="http://del.icio.us/josephscott/gravatar">gravatar</a> <a href="http://del.icio.us/josephscott/plugin">plugin</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/12/27/links-for-thu-27-dec-2007/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Mon 6 Dec 1999 through Tue 6 Nov 2007</title>
+		<link>/2007/11/06/links-for-mon-6-dec-1999-through-tue-6-nov-2007/</link>
+					<comments>/2007/11/06/links-for-mon-6-dec-1999-through-tue-6-nov-2007/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 07 Nov 2007 00:30:08 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[cache]]></category>
+		<category><![CDATA[fawnt]]></category>
+		<category><![CDATA[fonts]]></category>
+		<category><![CDATA[innodb]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[mobile]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[nygirlofmydreams]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[supercache]]></category>
+		<category><![CDATA[unittest]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/06/links-for-mon-6-dec-1999-through-tue-6-nov-2007/</guid>
+
+					<description><![CDATA[WordPress Tests &#8211; SVN Repo &#8211; Unit tests repository for WordPress. Go Alex! Tags: wordpress unittest WordPress Super Cache 0.1 at Holy Shmoly! &#8211; This sounds promising, I&#8217;ll have to try it out. Even if I&#8217;m not in danger of getting Digg&#8217;d any time soon. Tags: wordpress plugin supercache cache NYGirlOfMyDreams.com &#8211; If he finds [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://svn.automattic.com/wordpress-tests/">WordPress Tests &#8211; SVN Repo</a> &#8211; Unit tests repository for WordPress.  Go Alex! <br /> Tags: <a href="http://del.icio.us/josephscott/wordpress">wordpress</a> <a href="http://del.icio.us/josephscott/unittest">unittest</a>  </p>
+</li>
+<li>
+<p><a href="http://ocaoimh.ie/2007/11/05/wordpress-super-cache-01/">WordPress Super Cache 0.1 at Holy Shmoly!</a> &#8211; This sounds promising, I&#8217;ll have to try it out.  Even if I&#8217;m not in danger of getting Digg&#8217;d any time soon. <br /> Tags: <a href="http://del.icio.us/josephscott/wordpress">wordpress</a> <a href="http://del.icio.us/josephscott/plugin">plugin</a> <a href="http://del.icio.us/josephscott/supercache">supercache</a> <a href="http://del.icio.us/josephscott/cache">cache</a>  </p>
+</li>
+<li>
+<p><a href="http://www.nygirlofmydreams.com/">NYGirlOfMyDreams.com</a> &#8211; If he finds her I expect to see a follow up on how the first date went <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <br /> Tags: <a href="http://del.icio.us/josephscott/nygirlofmydreams">nygirlofmydreams</a>  </p>
+</li>
+<li>
+<p><a href="http://www.fawnt.com/">Fawnt</a> &#8211; A font resource. <br /> Tags: <a href="http://del.icio.us/josephscott/fawnt">fawnt</a> <a href="http://del.icio.us/josephscott/fonts">fonts</a>  </p>
+</li>
+<li>
+<p><a href="http://www.russellbeattie.com/blog/mobile-browser-detection-in-php">RussellBeattie.com &#8211; Mobile Browser Detection in PHP</a> &#8211; It&#8217;s unfortunate that mobile browser detection still relies on user agent sniffing.  But if you have to do it, at least do it fast <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <br /> Tags: <a href="http://del.icio.us/josephscott/php">php</a> <a href="http://del.icio.us/josephscott/mobile">mobile</a>  </p>
+</li>
+<li>
+<p><a href="http://www.mysqlperformanceblog.com/2007/11/01/innodb-performance-optimization-basics/">Innodb Performance Optimization Basics | MySQL Performance Blog</a> &#8211; Some good tips on starting with performance tweaks on InnoDB. <br /> Tags: <a href="http://del.icio.us/josephscott/mysql">mysql</a> <a href="http://del.icio.us/josephscott/innodb">innodb</a> <a href="http://del.icio.us/josephscott/performance">performance</a>  </p>
+</li>
+<li>
+<p><a href="http://www.mysqlperformanceblog.com/2007/11/04/heikki-tuuri-answers-to-innodb-questions-part-ii/">Heikki Tuuri answers to Innodb questions, Part II | MySQL Performance Blog</a> &#8211; More details on InnoDB. <br /> Tags: <a href="http://del.icio.us/josephscott/mysql">mysql</a> <a href="http://del.icio.us/josephscott/innodb">innodb</a> <a href="http://del.icio.us/josephscott/performance">performance</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/11/06/links-for-mon-6-dec-1999-through-tue-6-nov-2007/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

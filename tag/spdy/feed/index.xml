@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>spdy &#8211; Joseph Scott</title>
+	<atom:link href="/tag/spdy/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 17 Feb 2015 18:18:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Custom SPDY at Facebook</title>
+		<link>/2015/02/17/custom-spdy-at-facebook/</link>
+					<comments>/2015/02/17/custom-spdy-at-facebook/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 17 Feb 2015 18:18:12 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[facebook]]></category>
+		<category><![CDATA[http2]]></category>
+		<category><![CDATA[spdy]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11616</guid>
+
+					<description><![CDATA[With the Chrome browser already making plans to retire SPDY in favor of HTTP/2 I started testing sites to see how many of them advertised support for HTTP/2. No surprise that Google does: $ openssl s_client -connect google.com:443 -nextprotoneg &#8221; CONNECTED(00000003) Protocols advertised by server: h2-15, h2-14, spdy/3.1, spdy/3, http/1.1 The h2-15 and h2-14 refer [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>With <a href="http://blog.chromium.org/2015/02/hello-http2-goodbye-spdy-http-is_9.html">the Chrome browser already making plans to retire SPDY in favor of HTTP/2</a> I started testing sites to see how many of them <a href="https://josephscott.org/archives/2014/12/how-to-check-a-site-for-spdy-support-with-openssl/">advertised support for HTTP/2</a>.  No surprise that Google does:</p>
+<blockquote><p>
+$ openssl s_client -connect google.com:443 -nextprotoneg &#8221;<br />
+CONNECTED(00000003)<br />
+Protocols advertised by server: <strong>h2-15, h2-14, spdy/3.1, spdy/3, http/1.1</strong>
+</p></blockquote>
+<p>The <code>h2-15</code> and <code>h2-14</code> refer to the HTTP/2 draft version ( <a href="https://tools.ietf.org/html/draft-ietf-httpbis-http2-14">14</a> and <a href="https://tools.ietf.org/html/draft-ietf-httpbis-http2-15">15</a> in this case, draft <a href="https://tools.ietf.org/html/draft-ietf-httpbis-http2-17">17</a> was published last week ).</p>
+<p>The response I got from Facebook turned up something interesting:</p>
+<blockquote><p>
+$ openssl s_client -connect facebook.com:443 -nextprotoneg &#8221;<br />
+CONNECTED(00000003)<br />
+Protocols advertised by server: <strong>spdy/3.1-fb-0.5</strong>, spdy/3.1, spdy/3, http/1.1
+</p></blockquote>
+<p>I don&#8217;t recall seeing <code>spdy/3.1-fb-0.5</code> before.  It comes from the <a href="https://github.com/facebook/proxygen/blob/master/proxygen/lib/http/codec/compress/HPACKCodec.cpp#L27">Facebook proxygen HTTP library</a>.</p>
+<p><a href="https://code.google.com/p/chromium/codesearch#chromium/src/net/socket/ssl_client_socket.cc&#038;q=spdy/3.1&#038;sq=package:chromium&#038;l=31&#038;dr=C">Chrome doesn&#8217;t check for this version of SPDY</a>, I&#8217;m assuming no other regular browsers do either.  My guess is the only clients that support this are Facebook mobile apps.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/02/17/custom-spdy-at-facebook/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Nginx 1.7.8 &#8211; Fixes 200ms Delay With SPDY</title>
+		<link>/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/</link>
+					<comments>/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 03 Dec 2014 18:03:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[spdy]]></category>
+		<category><![CDATA[webperf]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11433</guid>
+
+					<description><![CDATA[Nginx 1.7.8 is now available, and I&#8217;m really happy to see this entry in the changelog: Feature: now the &#8220;tcp_nodelay&#8221; directive works with SPDY connections. To be more specific, this commit. The Story Back in September I spun up a private instance of webpagetest ( WPT ). One of the first things I did was [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://nginx.org/">Nginx 1.7.8</a> is now available, and I&#8217;m really happy to see this entry in the <a href="http://nginx.org/en/CHANGES">changelog</a>:</p>
+<blockquote><p>
+Feature: now the &#8220;tcp_nodelay&#8221; directive works with SPDY connections.
+</p></blockquote>
+<p>To be more specific, <a href='http://trac.nginx.org/nginx/changeset/2c10db908b8c4a9c0532c58830275d5ad84ae686/nginx/src'>this commit</a>.</p>
+<hr />
+<h3>The Story</h3>
+<p>Back in September I spun up a <a href="https://sites.google.com/a/webpagetest.org/docs/private-instances">private instance</a> of <a href="http://webpagetest.org/">webpagetest</a> ( WPT ).  One of the first things I did was run near optimal condition tests.  I wanted to see what the lower bound were for a few performance tests.  The test system was very close to one of <a href="http://automattic.com/">our</a> data centers ( less than 1ms ping times ), so I configured tests to use Chrome as the browser, with no traffic shaping.</p>
+<p>Like a kid with a new toy on Christmas morning I started running tests against this private WPT instance.  Quickly something odd came up.  In some cases we were seeing requests for very small ( sometimes less than 1kb ) resources take much longer than they should have.  And by &#8220;much longer&#8221;, I mean these were 3 to 4 times slower than requests for larger resources.</p>
+<p>Long story short, these slower small requests were seeing ~200ms delays in time to first byte ( TTFB ).  But it only happened with <a href="http://en.wikipedia.org/wiki/SPDY">SPDY</a>, with compression enabled, for small files ( my tests showed 1,602 bytes or smaller ), when the small file was the first resource requested in the SPDY connection.  Once I was able to list all of the variables that needed to be in place it was very simple to reproduce the problem using WPT.</p>
+<p>Some of you will look at the mention of a ~200ms delay and immediately recognize this as a <a href="http://support.microsoft.com/kb/214397">delayed ack issue</a>:</p>
+<blockquote><p>
+When a Microsoft TCP stack receives a data packet, a 200-ms delay timer goes off. When an ACK is eventually sent, the delay timer is reset and will initiate another 200-ms delay when the next data packet is received.
+</p></blockquote>
+<p>( Note that the WPT tester system in our instance uses Windows, so that we can test Internet Explorer )</p>
+<p>But that is why Nginx has a <a href="http://nginx.org/en/docs/http/ngx_http_core_module.html#tcp_nodelay">tcp_nodelay</a> option.  Unfortunately it wasn&#8217;t being applied when these variables came together in a SPDY connection.  I started a <a href="http://www.webpagetest.org/forums/showthread.php?tid=13322">thread in the WPT forums</a> about this and we all basically agreed that this was the issue.</p>
+<p>The systems team at <a href="http://automattic.com/">Automattic</a> reached out the Nginx team, describing what we were observing and how to reproduce it.  They sent back a patch, which I ran through my tests and confirmed that it fixed the problem.  The patch led to the <a href="http://trac.nginx.org/nginx/changeset/2c10db908b8c4a9c0532c58830275d5ad84ae686/nginx/src">commit</a> I mentioned above.  And now that change is part of the Nginx 1.7.8 release.</p>
+<h3>Waterfall</h3>
+<p>Here is what this looks like in action.  First, a WPT waterfall graph using Nginx 1.7.7:</p>
+<p><a href="/wp-content/uploads/2014/12/nginx-177-1.png"><img loading="lazy" src="/wp-content/uploads/2014/12/nginx-177-1.png" alt="nginx-177" width="966" height="433" class="aligncenter size-full wp-image-11467" srcset="/wp-content/uploads/2014/12/nginx-177-1.png 966w, /wp-content/uploads/2014/12/nginx-177-1-300x134.png 300w, /wp-content/uploads/2014/12/nginx-177-1-768x344.png 768w" sizes="(max-width: 966px) 100vw, 966px" /></a></p>
+<p>That TTFB of 212ms is significantly slower than it should be.  Compare that with the same test conditions using Nginx 1.7.8:</p>
+<p><a href="/wp-content/uploads/2014/12/nginx-178-1.png"><img loading="lazy" src="/wp-content/uploads/2014/12/nginx-178-1.png" alt="nginx-178" width="970" height="425" class="aligncenter size-full wp-image-11468" srcset="/wp-content/uploads/2014/12/nginx-178-1.png 970w, /wp-content/uploads/2014/12/nginx-178-1-300x131.png 300w, /wp-content/uploads/2014/12/nginx-178-1-768x336.png 768w" sizes="(max-width: 970px) 100vw, 970px" /></a></p>
+<p>A TTFB of 15ms is inline with what I expected to see.  Going from 212ms to 15ms is a 14x improvement!  The total request time dropped from 266ms to 69ms, a 3.8X improvement.  I&#8217;ll take gains like that anytime.</p>
+<h3>Reproducing This Yourself</h3>
+<p>I ran numerous tests during this process.  To make running new tests easier I put together a simple script to take care of the Nginx build and configuration:</p>
+View the code on <a href="https://gist.github.com/b79e79a8b7e17ca1bdb7">Gist</a>.
+<p>For each test I&#8217;d spin up a new DigitalOcean VM with Ubuntu 14.04 LTS.  The build script would complete in a few minutes and then I&#8217;d run new WPT tests.</p>
+<p>Conveniently it turns out that the default <a href="http://trac.nginx.org/nginx/browser/nginx/docs/html/index.html">Welcome to nginx!</a> page is small enough to trigger the ~200ms delay.</p>
+<p>With all of that in place you can run a test at <a href="http://www.webpagetest.org/">webpagetest.org</a> to see this in action.  I&#8217;ve been using the following test config:</p>
+<p>&#8211; Test Location: Dulles, VA<br />
+&#8211; Browser: Chrome<br />
+&#8211; Connection: Native Connection ( No Traffic Shaping )<br />
+&#8211; &#8220;Ignore SSL Certificate Errors&#8221; ( under the Advanced tab ) &#8212; this is need because I&#8217;ve been using a self signed cert</p>
+<p>The &#8220;Dulles, VA&#8221; location has a fast enough route to DigitalOcean &#8220;New York 3&#8221; that you can still observe the ~200ms TTFB difference between Nginx 1.7.7 and 1.7.8.</p>
+<hr />
+<p>A big thank you to the Nginx team for fixing this.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/feed/</wfw:commentRss>
+			<slash:comments>9</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How To Check A Site For SPDY Support With OpenSSL</title>
+		<link>/2014/12/02/how-to-check-a-site-for-spdy-support-with-openssl/</link>
+					<comments>/2014/12/02/how-to-check-a-site-for-spdy-support-with-openssl/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 02 Dec 2014 16:15:21 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[openssl]]></category>
+		<category><![CDATA[spdy]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11443</guid>
+
+					<description><![CDATA[A Stack Overflow thread with an example on how to check a server for SPDY support with OpenSSL: openssl s_client -connect google.com:443 -nextprotoneg '' The result I got from &#8220;OpenSSL 1.0.1f 6 Jan 2014&#8221; looked like this ( emphasis mine ): CONNECTED(00000003) Protocols advertised by server: spdy/5a1, h2-14, spdy/3.1, spdy/3, http/1.1 139790806673056:error:140920E3:SSL routines:SSL3_GET_SERVER_HELLO:parse tlsext:s3_clnt.c:1061: --- [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>A <a href="http://stackoverflow.com/questions/23742928/how-to-detect-if-a-server-is-using-spdy/23792880#23792880">Stack Overflow thread</a> with an example on how to check a server for <a href="http://www.chromium.org/spdy">SPDY</a> support with <a href="https://www.openssl.org/">OpenSSL</a>:</p>
+<pre>
+openssl s_client -connect google.com:443 -nextprotoneg ''
+</pre>
+<p>The result I got from &#8220;OpenSSL 1.0.1f 6 Jan 2014&#8221; looked like this ( emphasis mine ):</p>
+<pre>
+CONNECTED(00000003)
+<strong>Protocols advertised by server: spdy/5a1, h2-14, spdy/3.1, spdy/3, http/1.1</strong>
+139790806673056:error:140920E3:SSL routines:SSL3_GET_SERVER_HELLO:parse tlsext:s3_clnt.c:1061:
+---
+no peer certificate available
+---
+No client certificate CA names sent
+---
+SSL handshake has read 110 bytes and written 7 bytes
+---
+New, (NONE), Cipher is (NONE)
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+Next protocol: (2) 
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : 0000
+    Session-ID: 
+    Session-ID-ctx: 
+    Master-Key: 
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1417496091
+    Timeout   : 300 (sec)
+    Verify return code: 0 (ok)
+---
+</pre>
+<p>The &#8220;Protocols advertised by server:&#8221; is the line you need.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/12/02/how-to-check-a-site-for-spdy-support-with-openssl/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Tried Out SPDY</title>
+		<link>/2014/04/28/tried-spdy/</link>
+					<comments>/2014/04/28/tried-spdy/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 28 Apr 2014 13:52:14 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[spdy]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10358</guid>
+
+					<description><![CDATA[Zack Tollman suggested I try out SPDY with my updated Nginx install. While I&#8217;m sad at the idea of giving up a plain text HTTP API, I was curious to see what SPDY looked like on this site. I was disappointed with the results. The fastest page load time out of 5 runs without SPDY [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Zack Tollman suggested I <a href="https://josephscott.org/archives/2014/04/update-nginx-for-better-https-performance/#comment-15955" title="Comments like these make writing posts more enjoyable.">try out SPDY</a> with my updated Nginx install.  While I&#8217;m sad at the idea of giving up a plain text HTTP API, I was curious to see what SPDY looked like on this site.</p>
+<p>I was disappointed with the results.  The fastest page load time out of 5 runs without SPDY was 1.039 s.  With SPDY the fastest result was 1.273 s.  I then did several more runs of the same test with SPDY enabled to see if any of them could get close to the 1.0 s base line.  None of them did, most came in close to 2 seconds.  I had honestly expected to see SPDY perform better.  That said this type of testing is not particularly rigorous, so take these numbers with a sufficiently large grain of salt.</p>
+<p>Given the initial poor showing of SPDY in these tests I&#8217;m going to leave it turned off for now.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/04/28/tried-spdy/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>jeremycole &#8211; Joseph Scott</title>
+	<atom:link href="/tag/jeremycole/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 21 Jun 2007 16:56:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Jeremy Cole on MySQL Subquery Optimization</title>
+		<link>/2007/06/21/jeremy-cole-on-mysql-subquery-optimization/</link>
+					<comments>/2007/06/21/jeremy-cole-on-mysql-subquery-optimization/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 21 Jun 2007 16:56:52 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[jeremycole]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[sql]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/06/21/jeremy-cole-on-mysql-subquery-optimization/</guid>
+
+					<description><![CDATA[From Jeremy&#8217;s MySQL wish list (emphasis mine): e. Fix subquery optimization Subqueries have been available in the same broken state for over 4 years now. Why are subqueries in an IN (…) clause still optimized in an incredibly stupid and slow way, such as to make them useless? We have customers tripping over this all [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>From Jeremy&#8217;s <a href="http://jcole.us/blog/archives/2007/06/20/my-top-5-wishes-for-mysql/">MySQL wish list</a> (emphasis mine):</p>
+<blockquote><p>
+e. Fix subquery optimization</p>
+<p>Subqueries have been available in the same broken state for over 4 years now. Why are subqueries in an IN (…) clause still optimized in an incredibly stupid and slow way, such as to make them useless? We have customers tripping over this all the time. <b>MySQL can check off “subqueries” on the to-do list, since they do in fact work. The SQL standard doesn’t say anything about not sucking.</b>
+</p></blockquote>
+<p>Reading this, I had a mental image of the next SQL spec having a line in there about sub-queries that don&#8217;t suck <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/06/21/jeremy-cole-on-mysql-subquery-optimization/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

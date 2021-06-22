@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Still Working On EditInPlace	</title>
+	<atom:link href="/2006/07/12/still-working-on-editinplace/feed/" rel="self" type="application/rss+xml" />
+	<link>/2006/07/12/still-working-on-editinplace/</link>
+	<description></description>
+	<lastBuildDate>Fri, 25 May 2007 01:39:40 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Ken		</title>
+		<link>/2006/07/12/still-working-on-editinplace/#comment-1424</link>
+
+		<dc:creator><![CDATA[Ken]]></dc:creator>
+		<pubDate>Fri, 25 May 2007 01:39:40 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/07/12/still-working-on-editinplace/#comment-1424</guid>
+
+					<description><![CDATA[Uhm, i&#039;m using your old one and using with CakePHP, it&#039;s been behaved quite good so far. I&#039;m loving it. I also spent hours to write a CakePHP helper for your EditInPlace js.
+
+Thanks for your brilliant work! Cheers]]></description>
+			<content:encoded><![CDATA[<p>Uhm, i&#8217;m using your old one and using with CakePHP, it&#8217;s been behaved quite good so far. I&#8217;m loving it. I also spent hours to write a CakePHP helper for your EditInPlace js.</p>
+<p>Thanks for your brilliant work! Cheers</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Alex Brown		</title>
+		<link>/2006/07/12/still-working-on-editinplace/#comment-1423</link>
+
+		<dc:creator><![CDATA[Alex Brown]]></dc:creator>
+		<pubDate>Fri, 09 Feb 2007 23:18:24 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/07/12/still-working-on-editinplace/#comment-1423</guid>
+
+					<description><![CDATA[I have the same issue. The problem is when the mouse moves from my  to a  element inside of the  the mouseout event gets trigger. I&#039;m trying to figure out a solution that doesn&#039;t require handling mousemove messages and checking if the pointer is inside the div. If you can figure it out that would make me happy because I&#039;m inherently lazy ;)
+
+Thanks for your work on EditInPlace... it&#039;s much appreciated.]]></description>
+			<content:encoded><![CDATA[<p>I have the same issue. The problem is when the mouse moves from my  to a  element inside of the  the mouseout event gets trigger. I&#8217;m trying to figure out a solution that doesn&#8217;t require handling mousemove messages and checking if the pointer is inside the div. If you can figure it out that would make me happy because I&#8217;m inherently lazy 😉</p>
+<p>Thanks for your work on EditInPlace&#8230; it&#8217;s much appreciated.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: joseph		</title>
+		<link>/2006/07/12/still-working-on-editinplace/#comment-1422</link>
+
+		<dc:creator><![CDATA[joseph]]></dc:creator>
+		<pubDate>Thu, 31 Aug 2006 22:46:04 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/07/12/still-working-on-editinplace/#comment-1422</guid>
+
+					<description><![CDATA[Darrin-
+I haven&#039;t seen what you are describing.  I&#039;ll put it on the to do list though to remind me to look into it.]]></description>
+			<content:encoded><![CDATA[<p>Darrin-<br />
+I haven&#8217;t seen what you are describing.  I&#8217;ll put it on the to do list though to remind me to look into it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Darrin Lythgoe		</title>
+		<link>/2006/07/12/still-working-on-editinplace/#comment-1421</link>
+
+		<dc:creator><![CDATA[Darrin Lythgoe]]></dc:creator>
+		<pubDate>Thu, 31 Aug 2006 22:13:26 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/07/12/still-working-on-editinplace/#comment-1421</guid>
+
+					<description><![CDATA[Hi Joseph,
+I have noticed that EditInPlace behaves strangely when there are HTML tags embedded within the moused-over text. For example, if I have a paragraph with some parts italicized, the italicized portions do not respond to a mouseover or mouseclick event in Firefox. IE throws an error. Have you seen that at all?
+
+Thanks,
+Darrin]]></description>
+			<content:encoded><![CDATA[<p>Hi Joseph,<br />
+I have noticed that EditInPlace behaves strangely when there are HTML tags embedded within the moused-over text. For example, if I have a paragraph with some parts italicized, the italicized portions do not respond to a mouseover or mouseclick event in Firefox. IE throws an error. Have you seen that at all?</p>
+<p>Thanks,<br />
+Darrin</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

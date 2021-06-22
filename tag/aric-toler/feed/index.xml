@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>aric-toler &#8211; Joseph Scott</title>
+	<atom:link href="/tag/aric-toler/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 02 Jan 2020 22:59:10 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Guide To Using Reverse Image Search For Investigations</title>
+		<link>/2020/01/02/guide-to-using-reverse-image-search-for-investigations/</link>
+					<comments>/2020/01/02/guide-to-using-reverse-image-search-for-investigations/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 02 Jan 2020 22:59:10 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[aric-toler]]></category>
+		<category><![CDATA[image-search]]></category>
+		<category><![CDATA[search]]></category>
+		<guid isPermaLink="false">/?p=17940</guid>
+
+					<description><![CDATA[If you&#8217;ve ever wondered about reverse image searching I recommend Guide To Using Reverse Image Search For Investigations by Aric Toler ( via Simon Willison ). Reverse image searching is something I had not done very often, so after reading that I did quick run through Yandex, Bing, Google, and TinEye. I used a photo [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you&#8217;ve ever wondered about reverse image searching I recommend <a href="https://www.bellingcat.com/resources/how-tos/2019/12/26/guide-to-using-reverse-image-search-for-investigations/">Guide To Using Reverse Image Search For Investigations</a> by <a href="https://twitter.com/AricToler">Aric Toler</a> ( via <a href="https://simonwillison.net/2019/Dec/30/reverse-image-search-investigations/">Simon Willison</a> ).</p>
+<p>Reverse image searching is something I had not done very often, so after reading that I did quick run through <a href="https://yandex.com/images/">Yandex</a>, <a href="https://www.bing.com/images/">Bing</a>, <a href="http://images.google.com/">Google</a>, and <a href="https://tineye.com/">TinEye</a>.  I used a photo that has not been posted online before. It was mostly of a face, and there are other photos of the face online.</p>
+<p>TinEye provided no results, which is what I expected.  Comparing Yandex, Bing, and Google was interesting though.  Yandex and Bing did a better job of pulling out the face from the image and trying to match with images that had the same or similar face.  Google on the other hand seemed to focus more on the colors in the photo.  The results were all had faces, but they were faces where the over all image had similar colors, instead of trying to find the closest face matches.</p>
+<p>The whole field of being able to look at an image, identify people, places, and things, then find other images that are similar is amazing.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/01/02/guide-to-using-reverse-image-search-for-investigations/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

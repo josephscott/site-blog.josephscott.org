@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: GPlusFS: Google+ Data as a Filesystem	</title>
+	<atom:link href="/2011/09/20/gplusfs-google-data-as-a-filesystem/feed/" rel="self" type="application/rss+xml" />
+	<link>/2011/09/20/gplusfs-google-data-as-a-filesystem/</link>
+	<description></description>
+	<lastBuildDate>Wed, 21 Sep 2011 15:01:47 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2011/09/20/gplusfs-google-data-as-a-filesystem/#comment-3849</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 21 Sep 2011 15:01:47 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4794#comment-3849</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2011/09/20/gplusfs-google-data-as-a-filesystem/#comment-3848&quot;&gt;HarleyPig&lt;/a&gt;.
+
+Basic backups would certainly be one use for this.  More so if Google exposes more of the data via this API.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2011/09/20/gplusfs-google-data-as-a-filesystem/#comment-3848">HarleyPig</a>.</p>
+<p>Basic backups would certainly be one use for this.  More so if Google exposes more of the data via this API.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: HarleyPig		</title>
+		<link>/2011/09/20/gplusfs-google-data-as-a-filesystem/#comment-3848</link>
+
+		<dc:creator><![CDATA[HarleyPig]]></dc:creator>
+		<pubDate>Wed, 21 Sep 2011 14:55:44 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=4794#comment-3848</guid>
+
+					<description><![CDATA[I forked your project and made it private.  Then I cloned my new repo and mounted a directory under my repo.  Then I just added the files to my repo and committed them.
+
+A very simple way to back up my google data.  Admittedly, it&#039;s not a lot, but it&#039;s a beginning.  Thank you for the gplusfs idea.]]></description>
+			<content:encoded><![CDATA[<p>I forked your project and made it private.  Then I cloned my new repo and mounted a directory under my repo.  Then I just added the files to my repo and committed them.</p>
+<p>A very simple way to back up my google data.  Admittedly, it&#8217;s not a lot, but it&#8217;s a beginning.  Thank you for the gplusfs idea.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

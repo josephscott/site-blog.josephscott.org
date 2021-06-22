@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>incognito-mode &#8211; Joseph Scott</title>
+	<atom:link href="/tag/incognito-mode/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 28 Feb 2012 15:03:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Automatic Incognito Mode For Specific Sites In Chrome</title>
+		<link>/2012/02/28/automatic-incognito-mode-for-specific-sites-in-chrome/</link>
+					<comments>/2012/02/28/automatic-incognito-mode-for-specific-sites-in-chrome/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 28 Feb 2012 15:03:45 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[incognito-mode]]></category>
+		<category><![CDATA[incognito-regex]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=5428</guid>
+
+					<description><![CDATA[There are some sites on the web where I always use the Chrome incognito feature. It got to the point where I realized I only wanted to see those sites (like facebook.com) in incognito mode. So I went looking for a way to force Chrome to open an incognito mode window anytime I went to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>There are some sites on the web where I always use the <a href="http://support.google.com/chrome/bin/answer.py?hl=en&#038;answer=95464">Chrome incognito feature</a>.  It got to the point where I realized I only wanted to see those sites (like facebook.com) in incognito mode.  So I went looking for a way to force Chrome to open an incognito mode window anytime I went to one of those URLs.  Fortunately someone else had the same idea.</p>
+<p>A few minutes spent hunting around the <a href="https://chrome.google.com/webstore/category/home">Chrome web store</a> turned up an extension called <a href='https://chrome.google.com/webstore/detail/phodabgmalihpnmmlgoplifofcdnjoll'>Incognito Regex</a>.</p>
+<figure style="width: 571px" class="wp-caption alignleft"><img loading="lazy" alt="Incognito Regex" src="https://lh6.googleusercontent.com/-kT0xudkNDng/T0zpCV3IFgI/AAAAAAAAAVo/8I3AYXpn30k/s571/incognito-regex.png" title="Incognito Regex" width="571" height="364" /><figcaption class="wp-caption-text">Incognito Regex</figcaption></figure>
+<p>The Incognito Regex extension was exactly what I wanted.  You enter in URL regular expressions that you want to trigger incognito mode and it makes sure that any request that matches one of those is opened in an incognito window.</p>
+<p>Don&#8217;t like how Google is now tracking you in more detail across their properties?  Add some of their sites to the Incognito Regex list and let Chrome help you keep things separate.</p>
+<p>Until we see something like this become a standard feature in Chrome the Icognito Regex extension is going on my must have list for Chrome extensions.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/02/28/automatic-incognito-mode-for-specific-sites-in-chrome/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

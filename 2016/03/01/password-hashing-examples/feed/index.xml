@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Password Hashing Examples	</title>
+	<atom:link href="/2016/03/01/password-hashing-examples/feed/" rel="self" type="application/rss+xml" />
+	<link>/2016/03/01/password-hashing-examples/</link>
+	<description></description>
+	<lastBuildDate>Tue, 01 Mar 2016 23:38:58 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2016/03/01/password-hashing-examples/#comment-4463</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 01 Mar 2016 23:38:58 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=15280#comment-4463</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2016/03/01/password-hashing-examples/#comment-4462&quot;&gt;Aaron Toponce&lt;/a&gt;.
+
+Having bcrypt in production systems for years now is a strong point its favor.  This is a case where you can&#039;t substitute for the passage of time ( in terms of giving people a chance to look for a weakness in Argon2 ).]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2016/03/01/password-hashing-examples/#comment-4462">Aaron Toponce</a>.</p>
+<p>Having bcrypt in production systems for years now is a strong point its favor.  This is a case where you can&#8217;t substitute for the passage of time ( in terms of giving people a chance to look for a weakness in Argon2 ).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron Toponce		</title>
+		<link>/2016/03/01/password-hashing-examples/#comment-4462</link>
+
+		<dc:creator><![CDATA[Aaron Toponce]]></dc:creator>
+		<pubDate>Tue, 01 Mar 2016 23:33:03 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=15280#comment-4462</guid>
+
+					<description><![CDATA[Like Scott mentions in the article, PBKDF2 should be in the same security camp as md5crypt, sha256crypt, and sha512crypt. All suffer with low memory requirements, simple circuit designs, and as a result, are a password crackers dream with fast GPUs and FPGAs. However, PBKDF2, md5crypt, sha256crypt, and sha512crypt can increase work effort by increasing the number of rounds, before storing to disk. No matter how you dice it, it WILL slow down the cracker. But it compared to bcrypt, really, it&#039;s child&#039;s play.
+
+However, Scott only mentions one problem with scrypt as a password hashing function- improper memory hardness. Turns out, scrypt is a bit more sensitive than that with the time-memory-trade-off (TMTO). See http://www.openwall.com/lists/crypt-dev/2013/03/21/1 and http://www.openwall.com/lists/crypt-dev/2013/03/17/1. TL;DR- don&#039;t recommend scrypt as a password hashing function. Use it for key derivation, however.
+
+You&#039;re also right to sit it out on Argon2. It&#039;s just too new. Let it bake for about 5 years. If at that time, it is still considered sufficiently secure as a password hashing function, then you could start comfortably migrating production to it.
+
+So, for the time being, stick with bcrypt.]]></description>
+			<content:encoded><![CDATA[<p>Like Scott mentions in the article, PBKDF2 should be in the same security camp as md5crypt, sha256crypt, and sha512crypt. All suffer with low memory requirements, simple circuit designs, and as a result, are a password crackers dream with fast GPUs and FPGAs. However, PBKDF2, md5crypt, sha256crypt, and sha512crypt can increase work effort by increasing the number of rounds, before storing to disk. No matter how you dice it, it WILL slow down the cracker. But it compared to bcrypt, really, it&#8217;s child&#8217;s play.</p>
+<p>However, Scott only mentions one problem with scrypt as a password hashing function- improper memory hardness. Turns out, scrypt is a bit more sensitive than that with the time-memory-trade-off (TMTO). See <a href="http://www.openwall.com/lists/crypt-dev/2013/03/21/1" rel="nofollow ugc">http://www.openwall.com/lists/crypt-dev/2013/03/21/1</a> and <a href="http://www.openwall.com/lists/crypt-dev/2013/03/17/1" rel="nofollow ugc">http://www.openwall.com/lists/crypt-dev/2013/03/17/1</a>. TL;DR- don&#8217;t recommend scrypt as a password hashing function. Use it for key derivation, however.</p>
+<p>You&#8217;re also right to sit it out on Argon2. It&#8217;s just too new. Let it bake for about 5 years. If at that time, it is still considered sufficiently secure as a password hashing function, then you could start comfortably migrating production to it.</p>
+<p>So, for the time being, stick with bcrypt.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

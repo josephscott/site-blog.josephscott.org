@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Mac OS X App Store Not Loading, Try Resetting NVRAM	</title>
+	<atom:link href="/2013/12/02/mac-os-x-app-store-not-loading-try-resetting-nvram/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/12/02/mac-os-x-app-store-not-loading-try-resetting-nvram/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Jun 2017 02:15:03 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Hualet Wang		</title>
+		<link>/2013/12/02/mac-os-x-app-store-not-loading-try-resetting-nvram/#comment-108565</link>
+
+		<dc:creator><![CDATA[Hualet Wang]]></dc:creator>
+		<pubDate>Mon, 19 Jun 2017 02:15:03 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=9496#comment-108565</guid>
+
+					<description><![CDATA[For those that the anwsers above can not solve your problem: see if your system time is correct.]]></description>
+			<content:encoded><![CDATA[<p>For those that the anwsers above can not solve your problem: see if your system time is correct.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Meysa		</title>
+		<link>/2013/12/02/mac-os-x-app-store-not-loading-try-resetting-nvram/#comment-108387</link>
+
+		<dc:creator><![CDATA[Meysa]]></dc:creator>
+		<pubDate>Fri, 16 Jun 2017 05:18:31 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=9496#comment-108387</guid>
+
+					<description><![CDATA[Please help, when i try to download free apps on my app store. my app store can&#039;t show the green button after i click &quot;get&quot; button... There&#039;s no respon, no green button.... :(( anyone have solution?]]></description>
+			<content:encoded><![CDATA[<p>Please help, when i try to download free apps on my app store. my app store can&#8217;t show the green button after i click &#8220;get&#8221; button&#8230; There&#8217;s no respon, no green button&#8230;. :(( anyone have solution?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: C		</title>
+		<link>/2013/12/02/mac-os-x-app-store-not-loading-try-resetting-nvram/#comment-50750</link>
+
+		<dc:creator><![CDATA[C]]></dc:creator>
+		<pubDate>Sun, 02 Apr 2017 02:12:45 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=9496#comment-50750</guid>
+
+					<description><![CDATA[Yay!  This worked!!! Thank you for the help, this problem was driving me CRAZY!]]></description>
+			<content:encoded><![CDATA[<p>Yay!  This worked!!! Thank you for the help, this problem was driving me CRAZY!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: paul		</title>
+		<link>/2013/12/02/mac-os-x-app-store-not-loading-try-resetting-nvram/#comment-30180</link>
+
+		<dc:creator><![CDATA[paul]]></dc:creator>
+		<pubDate>Thu, 22 Dec 2016 21:11:55 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=9496#comment-30180</guid>
+
+					<description><![CDATA[My Safari and Appstore were not working after update and it didn’t work for me either but this did
+
+Edit your Keychain.
+The Keychain holds passwords and certificates used to create authenticated connections from apps such as Mac App Store. If the issue still happens after following the previous steps, try editing your Keychain.
+	1.	Open Keychain Access located in /Applications/Utilities/
+	2.	Select Certificates from the left hand column under Category
+	3.	Type Class into the search field in the top right corner of the Keychain Access window and press return.
+	4.	Look through the list of results for any certificates that have a blue + over the icon.
+	5.	Double-click on a certificate that has the blue + over the icon to ‘Get info’ on the certificate.
+	6.	Click the disclosure triangle to the left of the word Trust to reveal the certificates permissions.
+	7.	Change Secure Sockets Layer (SSL): to ‘No Value Specified’ then close the window.
+	8.	Confirm the Administrator password in the window that will appear.
+	9.	Double-click on the same certificate that was opened in step 5.
+	10.	Again Click the disclosure triangle to the left of the word Trust to reveal the certificates permissions.
+	11.	Change When using this certificate: to ‘Use System Defaults’ then close the window.
+	12.	Again confirm the Administrator password in the window that will appear.
+	13.	Repeat steps 5 through 12 for any certificates that have a blue + over the icon. (Generally there are only one or two that will need to be edited.)
+	14.	Restart the system and test for the issue.
+         
+         https://support.apple.com/en-us/HT203811
+         https://www.youtube.com/watch?v=LZp8Hmow0hk]]></description>
+			<content:encoded><![CDATA[<p>My Safari and Appstore were not working after update and it didn’t work for me either but this did</p>
+<p>Edit your Keychain.<br />
+The Keychain holds passwords and certificates used to create authenticated connections from apps such as Mac App Store. If the issue still happens after following the previous steps, try editing your Keychain.<br />
+	1.	Open Keychain Access located in /Applications/Utilities/<br />
+	2.	Select Certificates from the left hand column under Category<br />
+	3.	Type Class into the search field in the top right corner of the Keychain Access window and press return.<br />
+	4.	Look through the list of results for any certificates that have a blue + over the icon.<br />
+	5.	Double-click on a certificate that has the blue + over the icon to ‘Get info’ on the certificate.<br />
+	6.	Click the disclosure triangle to the left of the word Trust to reveal the certificates permissions.<br />
+	7.	Change Secure Sockets Layer (SSL): to ‘No Value Specified’ then close the window.<br />
+	8.	Confirm the Administrator password in the window that will appear.<br />
+	9.	Double-click on the same certificate that was opened in step 5.<br />
+	10.	Again Click the disclosure triangle to the left of the word Trust to reveal the certificates permissions.<br />
+	11.	Change When using this certificate: to ‘Use System Defaults’ then close the window.<br />
+	12.	Again confirm the Administrator password in the window that will appear.<br />
+	13.	Repeat steps 5 through 12 for any certificates that have a blue + over the icon. (Generally there are only one or two that will need to be edited.)<br />
+	14.	Restart the system and test for the issue.</p>
+<p>         <a href="https://support.apple.com/en-us/HT203811" rel="nofollow ugc">https://support.apple.com/en-us/HT203811</a><br />
+         <a href="https://www.youtube.com/watch?v=LZp8Hmow0hk" rel="nofollow ugc">https://www.youtube.com/watch?v=LZp8Hmow0hk</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: JT		</title>
+		<link>/2013/12/02/mac-os-x-app-store-not-loading-try-resetting-nvram/#comment-28438</link>
+
+		<dc:creator><![CDATA[JT]]></dc:creator>
+		<pubDate>Mon, 12 Dec 2016 12:21:36 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=9496#comment-28438</guid>
+
+					<description><![CDATA[This helped! Thanks!
+(OSX 10.9.5 maverick)]]></description>
+			<content:encoded><![CDATA[<p>This helped! Thanks!<br />
+(OSX 10.9.5 maverick)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Michael		</title>
+		<link>/2013/12/02/mac-os-x-app-store-not-loading-try-resetting-nvram/#comment-4151</link>
+
+		<dc:creator><![CDATA[Michael]]></dc:creator>
+		<pubDate>Thu, 05 May 2016 01:49:06 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=9496#comment-4151</guid>
+
+					<description><![CDATA[This worked for me. The secret for me was to repeat the process a few times.]]></description>
+			<content:encoded><![CDATA[<p>This worked for me. The secret for me was to repeat the process a few times.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Victoria		</title>
+		<link>/2013/12/02/mac-os-x-app-store-not-loading-try-resetting-nvram/#comment-4150</link>
+
+		<dc:creator><![CDATA[Victoria]]></dc:creator>
+		<pubDate>Sun, 17 Apr 2016 20:02:49 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=9496#comment-4150</guid>
+
+					<description><![CDATA[This worked for me too.]]></description>
+			<content:encoded><![CDATA[<p>This worked for me too.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Amy		</title>
+		<link>/2013/12/02/mac-os-x-app-store-not-loading-try-resetting-nvram/#comment-4149</link>
+
+		<dc:creator><![CDATA[Amy]]></dc:creator>
+		<pubDate>Sun, 20 Mar 2016 21:16:05 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=9496#comment-4149</guid>
+
+					<description><![CDATA[Thank you! This worked for me. Again, thank you! 
+Amy (Scotland, MBPro 15&quot; Mid 2009, 2.8 GHz Intel Core 2 Duo)]]></description>
+			<content:encoded><![CDATA[<p>Thank you! This worked for me. Again, thank you!<br />
+Amy (Scotland, MBPro 15&#8243; Mid 2009, 2.8 GHz Intel Core 2 Duo)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: NFNicole		</title>
+		<link>/2013/12/02/mac-os-x-app-store-not-loading-try-resetting-nvram/#comment-4148</link>
+
+		<dc:creator><![CDATA[NFNicole]]></dc:creator>
+		<pubDate>Fri, 11 Mar 2016 06:08:32 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=9496#comment-4148</guid>
+
+					<description><![CDATA[THANK YOU!!! I was about to throw something at this incredibly expensive macbook pro. you saved the day.]]></description>
+			<content:encoded><![CDATA[<p>THANK YOU!!! I was about to throw something at this incredibly expensive macbook pro. you saved the day.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: P		</title>
+		<link>/2013/12/02/mac-os-x-app-store-not-loading-try-resetting-nvram/#comment-4147</link>
+
+		<dc:creator><![CDATA[P]]></dc:creator>
+		<pubDate>Tue, 26 Jan 2016 10:44:15 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=9496#comment-4147</guid>
+
+					<description><![CDATA[I had the same problem yesterday, I have written a post how to resolve it there with screenshots please check it out
+
+http://www.panayiotisgeorgiou.net/macbook-app-store-not-working/
+
+Thanks,
+P.]]></description>
+			<content:encoded><![CDATA[<p>I had the same problem yesterday, I have written a post how to resolve it there with screenshots please check it out</p>
+<p><a href="http://www.panayiotisgeorgiou.net/macbook-app-store-not-working/" rel="nofollow ugc">http://www.panayiotisgeorgiou.net/macbook-app-store-not-working/</a></p>
+<p>Thanks,<br />
+P.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

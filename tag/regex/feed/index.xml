@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>regex &#8211; Joseph Scott</title>
+	<atom:link href="/tag/regex/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 02 Jan 2015 19:15:31 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Regex Golf, Bonus Levels</title>
+		<link>/2015/01/02/regex-golf-bonus-levels/</link>
+					<comments>/2015/01/02/regex-golf-bonus-levels/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 02 Jan 2015 19:15:31 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[regex]]></category>
+		<category><![CDATA[regex-golf]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11527</guid>
+
+					<description><![CDATA[Remember Regex Golf ( I linked to it previously )? I was looking at the site again and noticed they now have bonus levels.]]></description>
+										<content:encoded><![CDATA[<p>Remember <a href="http://regex.alf.nu/">Regex Golf</a> ( I <a href="https://josephscott.org/archives/2014/03/regex-golf/">linked to it previously</a> )?  I was looking at the site again and noticed they now have <a href="http://regex.alf.nu/096c2851405041e914554d6569c7b12b282e5b8c">bonus levels</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/01/02/regex-golf-bonus-levels/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Regex Golf</title>
+		<link>/2014/03/10/regex-golf/</link>
+					<comments>/2014/03/10/regex-golf/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 10 Mar 2014 16:19:12 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[regex]]></category>
+		<category><![CDATA[regex-golf]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9988</guid>
+
+					<description><![CDATA[Test your regular expression skills with Regex Golf. Be warned, once you start, you&#8217;ll find the next few hours disappear while you try to improve your score.]]></description>
+										<content:encoded><![CDATA[<p>Test your regular expression skills with <a href="http://regex.alf.nu/" title="Ignore the golf part, goal is to get a higher score, not a lower one.">Regex Golf</a>.</p>
+<p>Be warned, once you start, you&#8217;ll find the next few hours disappear while you try to improve your score.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/03/10/regex-golf/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Regex Pattern for Matching URLs</title>
+		<link>/2014/02/11/regex-pattern-for-matching-urls/</link>
+					<comments>/2014/02/11/regex-pattern-for-matching-urls/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 11 Feb 2014 16:02:06 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[john-gruber]]></category>
+		<category><![CDATA[regex]]></category>
+		<category><![CDATA[url]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9898</guid>
+
+					<description><![CDATA[John Gruber has posted an update to his Regex Pattern for Matching URLs post. The pattern itself now lives at https://gist.github.com/gruber/8891611. Related to this is a review of URL validation regular expressions. It compares 13 different methods, but only for URL validation, not necessarily matching. I&#8217;m not super keen on the idea of having a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>John Gruber has posted an update to his <a href="http://daringfireball.net/2010/07/improved_regex_for_matching_urls" title="Underscores in a URL?  Looks odd.">Regex Pattern for Matching URLs</a> post.  The pattern itself now lives at <a href="https://gist.github.com/gruber/8891611" title="This trend is increasing, would be nice to have named URLs for these types of things.">https://gist.github.com/gruber/8891611</a>.</p>
+<p>Related to this is a <a href="http://mathiasbynens.be/demo/url-regex" title="It has a pretty table for the test results.">review of URL validation regular expressions</a>.  It compares 13 different methods, but only for URL validation, not necessarily matching.</p>
+<p>I&#8217;m not super keen on the idea of having a list of TLDs as part of the regex, since the number of TLDs is continuing to grow.  I do like that Gruber&#8217;s regex includes comments in it, that is really helpful for longer, more complex expressions.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/02/11/regex-pattern-for-matching-urls/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Comparing E-mail Address Validating Regular Expressions</title>
+		<link>/2010/06/01/comparing-e-mail-address-validating-regular-expressions/</link>
+					<comments>/2010/06/01/comparing-e-mail-address-validating-regular-expressions/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 01 Jun 2010 16:24:37 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[email]]></category>
+		<category><![CDATA[regex]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2357</guid>
+
+					<description><![CDATA[Validating an email address with a regular expression is something nearly every developer struggles with. So when I came across Comparing E-mail Address Validating Regular Expressions I wanted to make sure I left myself a note here so that I could find it again later 🙂 Several expressions were collected and run over an array [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Validating an email address with a regular expression is something nearly every developer struggles with.  So when I came across <a href="http://fightingforalostcause.net/misc/2006/compare-email-regex.php">Comparing E-mail Address Validating Regular Expressions</a> I wanted to make sure I left myself a note here so that I could find it again later <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Several expressions were collected and run over an array of email string tests, so far this one has come out on top:</p>
+<blockquote><p>
+/^([w!#$%&amp;&#8217;*+-/=?^`{|}~]+.)*[w!#$%&amp;&#8217;*+-/=?^`{|}~]+@((((([a-z0-9]{1}[a-z0-9-]{0,62}[a-z0-9]{1})|[a-z]).)+[a-z]{2,6})|(d{1,3}.){3}d{1,3}(:d{1,5})?)$/i
+</p></blockquote>
+<p>Keep in mind that no regular expression can verify that an email address is actually legitimate, the only real test is to actually talk to the SMTP server responsible for that domain&#8217;s email and make sure it will accept it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/06/01/comparing-e-mail-address-validating-regular-expressions/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>When Regular Expressions Get Greedy</title>
+		<link>/2009/05/04/when-regular-expressions-gets-greedy/</link>
+					<comments>/2009/05/04/when-regular-expressions-gets-greedy/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 04 May 2009 18:08:38 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[pcre]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[regex]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1214</guid>
+
+					<description><![CDATA[I&#8217;ve been using a regular expression (PHP&#8217;s preg_match function) to parse email addresses. The addresses have a consistent pattern that look like: anamehere+XXXXXXXX@mail.example.com The XXXXXX section is a random set of characters: a-z, A-Z, 0-9 and -. The regular expression&#8217;s job was to extract that random set of characters, which is easy to do: [sourcecode [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been using a regular expression (PHP&#8217;s <a href="http://us.php.net/preg_match">preg_match</a> function) to parse email addresses.  The addresses have a consistent pattern that look like:</p>
+<p><code>anamehere+XXXXXXXX@mail.example.com</code></p>
+<p>The XXXXXX section is a random set of characters: a-z, A-Z, 0-9 and -.  The regular expression&#8217;s job was to extract that random set of characters, which is easy to do:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+$email_addr = &#8216;anamehere+XXXXXX@mail.example.com&#8217;;<br />
+preg_match( &#8216;|anamehere+(.*)@.*$|&#8217;, $email_addr, $match );<br />
+$email_code = $match[1];<br />
+[/sourcecode]</p>
+<p>Since the format of the email address is consistent it was easy to pull out the section I was interested in.  Well, it was easy until it broke when the email was sent in from a specific email client.  Turns out this client set the value of the email address to something different:</p>
+<p><code>"anamehere+XXXXXX@mail.example.com" &lt;anamehere+XXXXXX@mail.example.com&gt;</code></p>
+<p>After getting over my frustration at this email client I looked at what the regular expression matched:</p>
+<p><code>XXXXXX@mail.example.com" &lt;anamehere+XXXXXX</code></p>
+<p>Well that was no good.  Instead of just matching the XXXXXX it was slurping up other portions of the email address as well.  Enter the greed factor of Perl Compatible Regular Expressions (PCRE).  If you aren&#8217;t familiar with greedy regular expressions it simply means that they try to match as much as the can.  Fortunately there is a way to turn off the greediness using the <a href="http://us.php.net/manual/en/reference.pcre.pattern.modifiers.php">U pattern modifier</a>.  By adding a U to the end of the regular expression things got much better:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+$email_addr = &#8216;anamehere+XXXXXX@mail.example.com&#8217;;<br />
+preg_match( &#8216;|anamehere+(.*)@.*$|U&#8217;, $email_addr, $match );<br />
+$email_code = $match[1];<br />
+[/sourcecode]</p>
+<p>Now even the odd ball email address was extracting just the XXXXXX in the regular expression.</p>
+<p>Using the U at the end turns off greediness for the entire regular expression.  You can turn off the greediness of a single quantifier (the * in this case) by following it with a ?.  Using that technique the regular expression is <code>anamehere+(.*?)@.*$</code> which works as well.</p>
+<p>If you find that your regular expressions are matching more that you want remember that they are greedy by default.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/05/04/when-regular-expressions-gets-greedy/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

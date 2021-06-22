@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Live Updating a Node.js Web Server	</title>
+	<atom:link href="/2012/03/14/live-updating-a-node-js-web-server/feed/" rel="self" type="application/rss+xml" />
+	<link>/2012/03/14/live-updating-a-node-js-web-server/</link>
+	<description></description>
+	<lastBuildDate>Wed, 14 Mar 2012 16:35:04 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2012/03/14/live-updating-a-node-js-web-server/#comment-3946</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 14 Mar 2012 16:35:04 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=5534#comment-3946</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2012/03/14/live-updating-a-node-js-web-server/#comment-3945&quot;&gt;Guillermo Rauch&lt;/a&gt;.
+
+Graceful restarts is definitely something to include on the restart feature list.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2012/03/14/live-updating-a-node-js-web-server/#comment-3945">Guillermo Rauch</a>.</p>
+<p>Graceful restarts is definitely something to include on the restart feature list.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Guillermo Rauch		</title>
+		<link>/2012/03/14/live-updating-a-node-js-web-server/#comment-3945</link>
+
+		<dc:creator><![CDATA[Guillermo Rauch]]></dc:creator>
+		<pubDate>Wed, 14 Mar 2012 16:14:47 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=5534#comment-3945</guid>
+
+					<description><![CDATA[Something I failed to emphasize in my article is that unlike most hot core reloaders, `up` ensures the existing requests keep running and complete, and new ones go towards the new code.
+
+This is something `hotnode` can&#039;t possibly do, since it doesn&#039;t have knowledge of what the process is doing (for example, if it&#039;s transferring HTTP requests).
+
+`hotnode` could still be good for development where you don&#039;t care so much for not dropping requests, even though in my experience it&#039;s still not as pleasant.]]></description>
+			<content:encoded><![CDATA[<p>Something I failed to emphasize in my article is that unlike most hot core reloaders, `up` ensures the existing requests keep running and complete, and new ones go towards the new code.</p>
+<p>This is something `hotnode` can&#8217;t possibly do, since it doesn&#8217;t have knowledge of what the process is doing (for example, if it&#8217;s transferring HTTP requests).</p>
+<p>`hotnode` could still be good for development where you don&#8217;t care so much for not dropping requests, even though in my experience it&#8217;s still not as pleasant.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

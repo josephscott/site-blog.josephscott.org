@@ -1,0 +1,264 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/php/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/php/",
+    "feed_url": "https://blog.josephscott.org/tag/php/feed/json/",
+    "language": "en-US",
+    "title": "PHP &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/?p=17035",
+            "url": "https://blog.josephscott.org/2018/10/17/php-exit-die-with-strings/",
+            "title": "PHP exit() / die() With Strings",
+            "content_html": "<p><strong>Short Version:</strong> Don&#8217;t do it!</p>\n<p>I recently had a discussion about calling PHP <a href=\"http://php.net/manual/en/function.exit.php\">exit()</a> ( which is what <a href=\"http://php.net/die\">die()</a> gets mapped to ) with a string instead of an integer. While the PHP docs indicate that calling it with a string is ok, I submit that is almost never the right thing to do ( like 99.999999999% of the time ).</p>\n<p>Here is an example of what I mean:</p>\n<pre class=\"line-numbers\"><code class=\"language-php\">&lt;?php\r\nexit( 'Something went wrong.' );</code></pre>\n<p>Why is this a problem? It sets the <a href=\"https://en.wikipedia.org/wiki/Exit_status#POSIX\">exit status</a> to zero. Why is that a problem? Because <a href=\"https://www.freebsd.org/cgi/man.cgi?query=sysexits&amp;sektion=3\">the</a> <a href=\"http://tldp.org/LDP/abs/html/exitcodes.html\">common</a> <a href=\"https://www.gnu.org/software/bash/manual/html_node/Exit-Status.html\">convention</a> is that ( <a href=\"https://en.wikipedia.org/wiki/Exit_status#POSIX\">#</a> ):</p>\n<blockquote><p>systems typically use a convention of zero for success and nonzero for error</p></blockquote>\n<p>There is an easy way to see this behavior using the command line:</p>\n<pre class=\"line-numbers\"><code class=\"language-markup\">$ php -r \"exit( 'Something went wrong.' );\"\r\nSomething went wrong.\r\n$ echo $?\r\n0</code></pre>\n<p>Even though the text of the message was about a problem, the status code said everything is fine.  That is the status code equivalent of:</p>\n<p><a href=\"https://blog.josephscott.org/wp-content/uploads/2018/10/fire-1.jpg\"><img loading=\"lazy\" src=\"https://blog.josephscott.org/wp-content/uploads/2018/10/fire-1-1024x485.jpg\" alt=\"\" width=\"840\" height=\"398\" class=\"aligncenter size-large wp-image-17059\" srcset=\"https://blog.josephscott.org/wp-content/uploads/2018/10/fire-1.jpg 1024w, https://blog.josephscott.org/wp-content/uploads/2018/10/fire-1-300x142.jpg 300w, https://blog.josephscott.org/wp-content/uploads/2018/10/fire-1-768x364.jpg 768w\" sizes=\"(max-width: 840px) 100vw, 840px\" /></a></p>\n<p>If you are calling <code>exit()</code> and everything really is fine, make sure the status code you return is zero. For any other type of condition, make sure the exit code is something NOT zero. For example:</p>\n<pre class=\"line-numbers\"><code class=\"language-markup\">$ php -r \"exit( 14 );\"\r\n$ echo $?\r\n14</code></pre>\n<p>The <a href=\"https://secure.php.net/manual/en/function.exit.php\">PHP docs</a> indicate that valid status values &#8220;should be in the range 0 to 254&#8221;.  That leaves 1 to 254 for error conditions.</p>\n",
+            "content_text": "Short Version: Don&#8217;t do it!\nI recently had a discussion about calling PHP exit() ( which is what die() gets mapped to ) with a string instead of an integer. While the PHP docs indicate that calling it with a string is ok, I submit that is almost never the right thing to do ( like 99.999999999% of the time ).\nHere is an example of what I mean:\n&lt;?php\r\nexit( 'Something went wrong.' );\nWhy is this a problem? It sets the exit status to zero. Why is that a problem? Because the common convention is that ( # ):\nsystems typically use a convention of zero for success and nonzero for error\nThere is an easy way to see this behavior using the command line:\n$ php -r \"exit( 'Something went wrong.' );\"\r\nSomething went wrong.\r\n$ echo $?\r\n0\nEven though the text of the message was about a problem, the status code said everything is fine.  That is the status code equivalent of:\n\nIf you are calling exit() and everything really is fine, make sure the status code you return is zero. For any other type of condition, make sure the exit code is something NOT zero. For example:\n$ php -r \"exit( 14 );\"\r\n$ echo $?\r\n14\nThe PHP docs indicate that valid status values &#8220;should be in the range 0 to 254&#8221;.  That leaves 1 to 254 for error conditions.",
+            "date_published": "2018-10-17T14:37:33-06:00",
+            "date_modified": "2018-10-17T14:37:33-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "PHP"
+            ]
+        },
+        {
+            "id": "https://blog.josephscott.org/?p=15743",
+            "url": "https://blog.josephscott.org/2016/07/25/my-new-favorite-error/",
+            "title": "My New Favorite Error",
+            "content_html": "<blockquote><p>\nPHP Fatal error:  Unknown: Cannot use output buffering in output buffering display handlers in Unknown on line 0\n</p></blockquote>\n<p>I still haven&#8217;t found the mysterious <code>line 0</code>.</p>\n",
+            "content_text": "PHP Fatal error:  Unknown: Cannot use output buffering in output buffering display handlers in Unknown on line 0\n\nI still haven&#8217;t found the mysterious line 0.",
+            "date_published": "2016-07-25T07:37:38-06:00",
+            "date_modified": "2016-07-25T07:37:38-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "error-message",
+                "PHP"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=15017",
+            "url": "https://blog.josephscott.org/2016/02/02/php-yay-preprocessor/",
+            "title": "PHP Yay Preprocessor",
+            "content_html": "<p>Not enough preprocessor in your <code>PHP: Hypertext Preprocessor</code>?  Enter <a href=\"https://github.com/marcioAlmada/yay\">YAY</a>:</p>\n<blockquote><p>\nYAY! is a high level parser combinator based PHP preprocessor that allows anyone to augment PHP with PHP\n</p></blockquote>\n<p>I can see the strong temptation to use something like this.  If carried too far though you essentially end up with the PHP equivalent of CoffeeScript.</p>\n",
+            "content_text": "Not enough preprocessor in your PHP: Hypertext Preprocessor?  Enter YAY:\n\nYAY! is a high level parser combinator based PHP preprocessor that allows anyone to augment PHP with PHP\n\nI can see the strong temptation to use something like this.  If carried too far though you essentially end up with the PHP equivalent of CoffeeScript.",
+            "date_published": "2016-02-02T11:11:20-07:00",
+            "date_modified": "2016-02-02T11:11:20-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "PHP",
+                "yay",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=14960",
+            "url": "https://blog.josephscott.org/2016/01/29/swoole/",
+            "title": "Swoole",
+            "content_html": "<p><a href=\"http://www.swoole.com/index.en.html\">Swoole</a> is another effort to bring event-driven async features to PHP:</p>\n<blockquote><p>\nSwoole is an event-driven, asynchronous &#038; concurrent networking communication framework with higher performance written only in C for PHP.\n</p></blockquote>\n<p>While I&#8217;m not sure about using this as an application server for PHP ( I have mixed feelings about PHP app servers in general ), I do like their TCP server example:</p>\n<p>[sourcecode lang=&#8221;php&#8221;]<br />\n$serv = new swoole_server(&quot;127.0.0.1&quot;, 9501);<br />\n$serv-&gt;set(array(<br />\n    &#8216;worker_num&#8217; =&gt; 8,<br />\n    &#8216;daemonize&#8217; =&gt; true,<br />\n));<br />\n$serv-&gt;on(&#8216;connect&#8217;, function ($serv, $fd){<br />\n    echo &quot;Client:Connect.n&quot;;<br />\n});<br />\n$serv-&gt;on(&#8216;receive&#8217;, function ($serv, $fd, $from_id, $data) {<br />\n    $serv-&gt;send($fd, &#8216;Swoole: &#8216;.$data);<br />\n    $serv-&gt;close($fd);<br />\n});<br />\n$serv-&gt;on(&#8216;close&#8217;, function ($serv, $fd) {<br />\n    echo &quot;Client: Close.n&quot;;<br />\n});<br />\n$serv-&gt;start();<br />\n[/sourcecode]</p>\n",
+            "content_text": "Swoole is another effort to bring event-driven async features to PHP:\n\nSwoole is an event-driven, asynchronous &#038; concurrent networking communication framework with higher performance written only in C for PHP.\n\nWhile I&#8217;m not sure about using this as an application server for PHP ( I have mixed feelings about PHP app servers in general ), I do like their TCP server example:\n[sourcecode lang=&#8221;php&#8221;]\n$serv = new swoole_server(&quot;127.0.0.1&quot;, 9501);\n$serv-&gt;set(array(\n    &#8216;worker_num&#8217; =&gt; 8,\n    &#8216;daemonize&#8217; =&gt; true,\n));\n$serv-&gt;on(&#8216;connect&#8217;, function ($serv, $fd){\n    echo &quot;Client:Connect.n&quot;;\n});\n$serv-&gt;on(&#8216;receive&#8217;, function ($serv, $fd, $from_id, $data) {\n    $serv-&gt;send($fd, &#8216;Swoole: &#8216;.$data);\n    $serv-&gt;close($fd);\n});\n$serv-&gt;on(&#8216;close&#8217;, function ($serv, $fd) {\n    echo &quot;Client: Close.n&quot;;\n});\n$serv-&gt;start();\n[/sourcecode]",
+            "date_published": "2016-01-29T09:59:33-07:00",
+            "date_modified": "2016-01-29T09:59:33-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "PHP",
+                "swoole",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=14628",
+            "url": "https://blog.josephscott.org/2016/01/08/php-speaking-fastcgi/",
+            "title": "PHP Speaking FastCGI",
+            "content_html": "<p><a href=\"https://github.com/adoy/PHP-FastCGI-Client\">PHP-FastCGI-Client</a> is a handy tool for speaking the FastCGI protocol.</p>\n",
+            "content_text": "PHP-FastCGI-Client is a handy tool for speaking the FastCGI protocol.",
+            "date_published": "2016-01-08T09:59:00-07:00",
+            "date_modified": "2016-01-08T09:59:00-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "fastcgi",
+                "PHP",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=14484",
+            "url": "https://blog.josephscott.org/2015/12/04/php7/",
+            "title": "PHP7",
+            "content_html": "<p><a href=\"http://php.net/archive/2015.php#id2015-12-03-1\">PHP7 is officially out the door</a>.  Next up is getting <a href=\"https://github.com/gophp7/gophp7-ext/wiki/extensions-catalog\">extensions updated</a>.  That is going be a blocker for many sites.</p>\n<p>Then there is the discussion around how long it will take hosts to make PHP7 available and when projects like WordPress will up their minimum requirements.</p>\n<p>For WordPress the math is something like: <a href=\"https://wordpress.org/about/requirements/\">current PHP 5.2.4 minimum</a> + <a href=\"https://wordpress.org/about/stats/\">PHP 5.4 being the most used version</a> + <a href=\"http://php.net/supported-versions.php\">PHP 7 scheduled to be EOL&#8217;d in December 2018</a> + the large performance improvements in PHP7.  It&#8217;s tempting to pick a future date, then scream it from the roof tops so everyone knows it is coming.</p>\n<p>My wishful thinking date for WordPress to move the minimum requirement to PHP7 is June 2017.  If I were to guess though, it will be more like January 2020.</p>\n",
+            "content_text": "PHP7 is officially out the door.  Next up is getting extensions updated.  That is going be a blocker for many sites.\nThen there is the discussion around how long it will take hosts to make PHP7 available and when projects like WordPress will up their minimum requirements.\nFor WordPress the math is something like: current PHP 5.2.4 minimum + PHP 5.4 being the most used version + PHP 7 scheduled to be EOL&#8217;d in December 2018 + the large performance improvements in PHP7.  It&#8217;s tempting to pick a future date, then scream it from the roof tops so everyone knows it is coming.\nMy wishful thinking date for WordPress to move the minimum requirement to PHP7 is June 2017.  If I were to guess though, it will be more like January 2020.",
+            "date_published": "2015-12-04T08:57:22-07:00",
+            "date_modified": "2015-12-04T08:57:22-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "PHP",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=13873",
+            "url": "https://blog.josephscott.org/2015/11/12/supported-versions-of-php/",
+            "title": "Supported Versions of PHP",
+            "content_html": "<p>PHP 5.5 is already in the &#8220;security support only&#8221; category:</p>\n<blockquote><p>\nEach release branch of PHP is fully supported for two years from its initial stable release. During this period, bugs and security issues that have been reported are fixed and are released in regular point releases.</p>\n<p>After this two year period of active support, each branch is then supported for an additional year for critical security issues only. Releases during this period are made on an as-needed basis: there may be multiple point releases, or none, depending on the number of reports.\n</p></blockquote>\n<p>From <a href=\"http://php.net/supported-versions.php\">PHP: Supported Versions</a>.</p>\n<p>The issue of how long to support previous releases is a big deal.  There is already plenty of work to do in terms of pushing forward on new releases, working on previous releases just adds to the stack.</p>\n<p>When possible the biggest help to everyone is making it clear when and for how long previous releases are going to be supported.  This is something that Ubuntu has done a good job at.  They established <a href=\"http://www.ubuntu.com/info/release-end-of-life\">a pattern of LTS ( Long Term Support ) vs regular releases</a>, making the expectations clear ( though their move to <a href=\"http://fridge.ubuntu.com/2013/03/19/changes-in-ubuntu-releases-decided-by-the-ubuntu-technical-board/\">reduce non-LTS release support from 18 to 9 months</a> definitely caused confusion/problems for people ).</p>\n<p>If you want your favorite project to support previous releases longer, understand that means getting involved and providing resources ( time, money, people ).</p>\n",
+            "content_text": "PHP 5.5 is already in the &#8220;security support only&#8221; category:\n\nEach release branch of PHP is fully supported for two years from its initial stable release. During this period, bugs and security issues that have been reported are fixed and are released in regular point releases.\nAfter this two year period of active support, each branch is then supported for an additional year for critical security issues only. Releases during this period are made on an as-needed basis: there may be multiple point releases, or none, depending on the number of reports.\n\nFrom PHP: Supported Versions.\nThe issue of how long to support previous releases is a big deal.  There is already plenty of work to do in terms of pushing forward on new releases, working on previous releases just adds to the stack.\nWhen possible the biggest help to everyone is making it clear when and for how long previous releases are going to be supported.  This is something that Ubuntu has done a good job at.  They established a pattern of LTS ( Long Term Support ) vs regular releases, making the expectations clear ( though their move to reduce non-LTS release support from 18 to 9 months definitely caused confusion/problems for people ).\nIf you want your favorite project to support previous releases longer, understand that means getting involved and providing resources ( time, money, people ).",
+            "date_published": "2015-11-12T08:56:30-07:00",
+            "date_modified": "2015-11-12T08:56:30-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "PHP",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=13644",
+            "url": "https://blog.josephscott.org/2015/11/07/language-trends/",
+            "title": "Language Trends",
+            "content_html": "<p>The <a href=\"https://github.com/blog/2047-language-trends-on-github\">Language Trends on GitHub</a>, 2008 &#8211; 2015:</p>\n<p><a href=\"https://blog.josephscott.org/wp-content/uploads/2015/11/github-language-trends-1.jpg\"><img loading=\"lazy\" src=\"https://blog.josephscott.org/wp-content/uploads/2015/11/github-language-trends-1-1024x589.jpg\" alt=\"github-language-trends\" width=\"660\" height=\"380\" class=\"alignleft size-large wp-image-14278\" srcset=\"https://blog.josephscott.org/wp-content/uploads/2015/11/github-language-trends-1-1024x589.jpg 1024w, https://blog.josephscott.org/wp-content/uploads/2015/11/github-language-trends-1-300x173.jpg 300w, https://blog.josephscott.org/wp-content/uploads/2015/11/github-language-trends-1-768x442.jpg 768w, https://blog.josephscott.org/wp-content/uploads/2015/11/github-language-trends-1.jpg 1200w\" sizes=\"(max-width: 660px) 100vw, 660px\" /></a></p>\n<p>PHP wins the award for most consistent.</p>\n",
+            "content_text": "The Language Trends on GitHub, 2008 &#8211; 2015:\n\nPHP wins the award for most consistent.",
+            "date_published": "2015-11-07T08:45:06-07:00",
+            "date_modified": "2015-11-07T08:45:06-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "github",
+                "PHP",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=13593",
+            "url": "https://blog.josephscott.org/2015/11/02/asset-management-for-php/",
+            "title": "Asset Management for PHP",
+            "content_html": "<p>Looking for one more asset management tool to use?  Check out <a href=\"https://github.com/kriswallsmith/assetic\">assetic</a>:</p>\n<p>[sourcecode lang=&#8221;php&#8221;]<br />\nuse AsseticAssetAssetCollection;<br />\nuse AsseticAssetFileAsset;<br />\nuse AsseticAssetGlobAsset;</p>\n<p>$js = new AssetCollection( [<br />\n    new GlobAsset(&#8216;/path/to/js/*&#8217;),<br />\n    new FileAsset(&#8216;/path/to/another.js&#8217;),<br />\n] );</p>\n<p>echo $js-&gt;dump();<br />\n[/sourcecode]</p>\n",
+            "content_text": "Looking for one more asset management tool to use?  Check out assetic:\n[sourcecode lang=&#8221;php&#8221;]\nuse AsseticAssetAssetCollection;\nuse AsseticAssetFileAsset;\nuse AsseticAssetGlobAsset;\n$js = new AssetCollection( [\n    new GlobAsset(&#8216;/path/to/js/*&#8217;),\n    new FileAsset(&#8216;/path/to/another.js&#8217;),\n] );\necho $js-&gt;dump();\n[/sourcecode]",
+            "date_published": "2015-11-02T07:57:40-07:00",
+            "date_modified": "2015-11-02T07:57:40-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "assetic",
+                "PHP",
+                "Posts"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=13550",
+            "url": "https://blog.josephscott.org/2015/10/28/php7-extensions/",
+            "title": "PHP7 & Extensions",
+            "content_html": "<p>Another big issue with <a href=\"https://josephscott.org/archives/2015/10/migrating-to-php-7/\">migrating to PHP7</a>: extensions.  The folks at goPHP7 have an <a href=\"https://github.com/gophp7/gophp7-ext/wiki/extensions-catalog\">Extension Catalog</a>, a list of which extensions currently support PHP7 and which ones do not.</p>\n<p>The good news is that most ( though not all ) of the core extensions are listed as working under PHP7.  The bad news is that very few of the non-core extensions work with PHP7.</p>\n",
+            "content_text": "Another big issue with migrating to PHP7: extensions.  The folks at goPHP7 have an Extension Catalog, a list of which extensions currently support PHP7 and which ones do not.\nThe good news is that most ( though not all ) of the core extensions are listed as working under PHP7.  The bad news is that very few of the non-core extensions work with PHP7.",
+            "date_published": "2015-10-28T07:27:53-06:00",
+            "date_modified": "2015-10-28T07:27:53-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "PHP",
+                "Posts"
+            ]
+        }
+    ]
+}

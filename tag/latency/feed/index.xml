@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>latency &#8211; Joseph Scott</title>
+	<atom:link href="/tag/latency/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 29 Jun 2015 15:29:42 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Verizon Enterprise Latency</title>
+		<link>/2015/06/29/verizon-enterprise-latency/</link>
+					<comments>/2015/06/29/verizon-enterprise-latency/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 29 Jun 2015 15:29:42 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[latency]]></category>
+		<category><![CDATA[verizon]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12991</guid>
+
+					<description><![CDATA[IP Latency Statistics for Verizon Enterprise Solutions.]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.verizonenterprise.com/about/network/latency/#latency">IP Latency Statistics</a> for Verizon Enterprise Solutions.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/06/29/verizon-enterprise-latency/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Worldwide Network Latency</title>
+		<link>/2015/06/26/worldwide-network-latency/</link>
+					<comments>/2015/06/26/worldwide-network-latency/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 26 Jun 2015 13:57:19 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[latency]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12993</guid>
+
+					<description><![CDATA[Network latency between points around the world. I&#8217;ve asked dotcom-tools.com about how this data is being collected, but haven&#8217;t received a response.]]></description>
+										<content:encoded><![CDATA[<p><a href="https://www.dotcom-tools.com/internet-backbone-latency.aspx">Network latency</a> between points around the world.</p>
+<p>I&#8217;ve asked dotcom-tools.com about how this data is being collected, but haven&#8217;t received a response.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/06/26/worldwide-network-latency/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>AT&#038;T Network Latency</title>
+		<link>/2014/10/07/att-network-latency/</link>
+					<comments>/2014/10/07/att-network-latency/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 07 Oct 2014 15:54:10 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[att]]></category>
+		<category><![CDATA[latency]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11007</guid>
+
+					<description><![CDATA[AT&#038;T has a nice page displaying network latency between cities across their network.]]></description>
+										<content:encoded><![CDATA[<p>AT&#038;T has a nice page displaying <a href="http://ipnetwork.bgtmo.ip.att.net/pws/network_delay.html">network latency between cities</a> across their network.</p>
+<p><a href="/wp-content/uploads/2014/10/att-latency-1.png"><img loading="lazy" src="/wp-content/uploads/2014/10/att-latency-1.png" alt="att-latency" width="824" height="687" class="aligncenter size-full wp-image-11189" srcset="/wp-content/uploads/2014/10/att-latency-1.png 824w, /wp-content/uploads/2014/10/att-latency-1-300x250.png 300w, /wp-content/uploads/2014/10/att-latency-1-768x640.png 768w" sizes="(max-width: 824px) 100vw, 824px" /></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/10/07/att-network-latency/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Latency on US Home Internet Connections</title>
+		<link>/2014/09/25/latency-on-us-home-internet-connections/</link>
+					<comments>/2014/09/25/latency-on-us-home-internet-connections/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 25 Sep 2014 16:01:06 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[latency]]></category>
+		<category><![CDATA[webperf]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11057</guid>
+
+					<description><![CDATA[In web performance circles you&#8217;ll often hear about how the latency of a connection can be a bigger issue than bandwidth. The FCC broadband measurement report has a graph that illustrates this nicely: Once you hit 15 Mbps the bottleneck shifts towards latency. That led me to wonder what latency looked like for home connections [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>In web performance circles you&#8217;ll often hear about how the latency of a connection can be a bigger issue than bandwidth.  The <a href="http://www.fcc.gov/reports/measuring-broadband-america-2014#Findings">FCC broadband measurement report has a graph</a> that illustrates this nicely:</p>
+<p><a href="/wp-content/uploads/2014/09/web-loading-time-1.png"><img loading="lazy" src="/wp-content/uploads/2014/09/web-loading-time-1.png" alt="web-loading-time" width="629" height="406" class="aligncenter size-full wp-image-11078" srcset="/wp-content/uploads/2014/09/web-loading-time-1.png 629w, /wp-content/uploads/2014/09/web-loading-time-1-300x194.png 300w" sizes="(max-width: 629px) 100vw, 629px" /></a></p>
+<p>Once you hit 15 Mbps the bottleneck shifts towards latency.</p>
+<p>That led me to wonder what latency looked like for home connections in the US.  Turns out the <a href="http://www.fcc.gov/reports/measuring-broadband-america-2014#Findings">FCC has been collecting latency data</a> as well ( emphasis is mine ):</p>
+<blockquote><p>
+In all our tests and results, latency is defined as the round-trip time from the consumer&#8217;s home to the closest speed measurement server within the provider&#8217;s network and back.</p>
+<p>Across all terrestrial technologies during peak periods, <strong>latency averaged 34.9 ms</strong>.</p>
+<p>&#8230;</p>
+<p>Fiber-to-the-home services provided 24 ms round-trip latency on average, while cable-based services averaged 32 ms, and DSL-based services averaged 49 ms.</p>
+<p>The highest average round-trip latency for an individual terrestrial service tier, i.e. excluding satellite, was 57.91 ms (Qwest/Centurylink), while the lowest average latency within a single service tier was 17.83 ms (Cablevision).
+</p></blockquote>
+<p>No surprise that fiber connections on average have a lower latency than cable or DSL:</p>
+<p><a href="/wp-content/uploads/2014/09/latency-1.png"><img loading="lazy" src="/wp-content/uploads/2014/09/latency-1.png" alt="latency" width="622" height="376" class="aligncenter size-full wp-image-11079" srcset="/wp-content/uploads/2014/09/latency-1.png 622w, /wp-content/uploads/2014/09/latency-1-300x181.png 300w" sizes="(max-width: 622px) 100vw, 622px" /></a></p>
+<p>The lower bound is in the 20 ms range, so that would be your best case scenario at this point.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/09/25/latency-on-us-home-internet-connections/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

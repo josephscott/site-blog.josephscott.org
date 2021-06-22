@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>casperjs &#8211; Joseph Scott</title>
+	<atom:link href="/tag/casperjs/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 06 May 2013 14:46:01 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Site Testing with CasperJS</title>
+		<link>/2013/05/06/site-testing-with-casperjs/</link>
+					<comments>/2013/05/06/site-testing-with-casperjs/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 06 May 2013 14:46:01 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[casperjs]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[openwest]]></category>
+		<category><![CDATA[presentation]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7648</guid>
+
+					<description><![CDATA[I&#8217;ve posted the slides and example code from my &#8216;Site Testing with CasperJS&#8217; presentation at the OpenWest conference. A PDF of the slides and all of the example code is available at https://github.com/josephscott/casperjs-2013-05.]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve posted the slides and example code from my &#8216;Site Testing with CasperJS&#8217; presentation at the OpenWest conference.</p>
+<p><iframe loading="lazy" src="http://www.slideshare.net/slideshow/embed_code/20499893" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe></p>
+<p>A PDF of the slides and all of the example code is available at <a href="https://github.com/josephscott/casperjs-2013-05">https://github.com/josephscott/casperjs-2013-05</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/05/06/site-testing-with-casperjs/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>I am Speaking at the OpenWest Conference</title>
+		<link>/2013/03/12/i-am-speaking-at-the-openwest-conference/</link>
+					<comments>/2013/03/12/i-am-speaking-at-the-openwest-conference/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 12 Mar 2013 16:13:52 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[casperjs]]></category>
+		<category><![CDATA[fuse]]></category>
+		<category><![CDATA[openwest]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[speaking]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7033</guid>
+
+					<description><![CDATA[The OpenWest Conference is happening May 2-4, 2013 (formerly the Utah Open Source Conference) at Utah Valley University in Orem, Utah. This year the keynote speakers are Rasmus Lerdorf, creator of PHP, and Mark Callaghan, lead of the MySQL engineering team at Facebook. For my part I&#8217;ll be giving three different presentations this time around. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.openwest.org/"><img loading="lazy" class="alignleft" alt="" src="http://www.openwest.org/wp-content/uploads/2013/01/speaker_300.jpg" width="300" height="388" /></a></p>
+<p>The <a href="http://www.openwest.org/">OpenWest Conference</a> is happening May 2-4, 2013 (formerly the Utah Open Source Conference) at Utah Valley University in Orem, Utah.</p>
+<p>This year the <a href="http://www.openwest.org/keynote/">keynote speakers</a> are Rasmus Lerdorf, creator of PHP, and Mark Callaghan, lead of the MySQL engineering team at Facebook.</p>
+<p>For my part I&#8217;ll be giving three different presentations this time around.  First up is &#8220;Simple Filesystems with Python and FUSE&#8221;, where I&#8217;ll cover the basics of getting a simple filesystem up and running written in Python using the FUSE library.  Next up is &#8220;Site Testing with CasperJS&#8221;, which is an intro to using <a href="http://casperjs.org/">CasperJS</a> to run user tests against your site.  Last, but not least, is &#8220;Scaling WordPress&#8221;, where I&#8217;ll talk about some of the methods that WordPress.com (the largest WordPress install in the world) uses to host tens of millions of sites that add up to billions of page views per month.</p>
+<p>I tried to keep my session titles direct and to the point.  At times there will up to ten sessions running at once ( <a href="http://www.openwest.org/custom/grid.php">OpenWest session schedule</a> ), so I wanted people to be able to tell at a glance what my sessions are about.</p>
+<p><a href="http://www.openwest.org/tickets/">Tickets for OpenWest</a> are available at $80.  Every open source group in the area has been given a discount code though, so you can bring that down significantly.</p>
+<p>If you&#8217;ll be at the OpenWest conference be sure to say hi.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/03/12/i-am-speaking-at-the-openwest-conference/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

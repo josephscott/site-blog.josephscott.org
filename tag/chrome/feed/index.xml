@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>chrome &#8211; Joseph Scott</title>
+	<atom:link href="/tag/chrome/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 15 Jan 2020 21:08:48 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>The End Of Third Party Cookies On The Web</title>
+		<link>/2020/01/15/the-end-of-third-party-cookies-on-the-web/</link>
+					<comments>/2020/01/15/the-end-of-third-party-cookies-on-the-web/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 15 Jan 2020 21:08:48 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[cookies]]></category>
+		<category><![CDATA[firefox]]></category>
+		<category><![CDATA[safari]]></category>
+		<guid isPermaLink="false">/?p=17971</guid>
+
+					<description><![CDATA[Safari Is Serious I&#8217;ve been dealing with the fallout of Safari ITP ( Intelligent Tracking Prevention ) since mid-2018. It hasn&#8217;t been an easy road, ITP dramatically limits the range of valid uses of third party cookies, and even for the remaining valid uses it required following a strict set of rules. As a user [&#8230;]]]></description>
+										<content:encoded><![CDATA[<h3>Safari Is Serious</h3>
+<p>I&#8217;ve been dealing with the fallout of <a href="https://webkit.org/blog/category/privacy/">Safari ITP</a> ( Intelligent Tracking Prevention ) since mid-2018.  It hasn&#8217;t been an easy road, ITP dramatically limits the range of valid uses of third party cookies, and even for the remaining valid uses it required following a strict set of rules.</p>
+<p>As a user of the web, I liked what ITP was doing.  As a developer, it made things difficult.  Kudos to <a href="https://twitter.com/johnwilander">John Wilander</a> on the WebKit team for taking the time to answer my questions.</p>
+<p>I could see that Apple was serious about this.  While I didn&#8217;t have any inside information as to what all of the browser vendors were planning, I strongly suspected that they would have no choice but to follow suit.  I commented to a co-worker:</p>
+<blockquote><p>
+Remember how happy people where when browsers started blocking pop-up ads?  This could go down a similar road.
+</p></blockquote>
+<p>The details of ITP changed over time, as Apple saw what sites were doing with the new restrictions.  During the summer of 2019 Apple published the <a href="https://webkit.org/tracking-prevention-policy/">WebKit Tracking Prevention</a> &#8211; which made it clear that they were serious, and going to push things even further:</p>
+<blockquote><p>
+There are practices on the web that we do not intend to disrupt, but which may be inadvertently affected because they rely on techniques that can also be used for tracking. We consider this to be unintended impact.</p>
+<p>&#8230;</p>
+<p>When faced with a tradeoff, we will typically prioritize user benefits over preserving current website practices. We believe that that is the role of a web browser, also known as the user agent.
+</p></blockquote>
+<p>Safari Tech Preview already has an experimental feature for disabling all third party cookies.</p>
+<h3>Chrome Samesite and Firefox ETP</h3>
+<p>In 2019 Chrome announced they were going to add support for a new <code>SameSite</code> cookie value: <code>None</code>.  <a href="https://web.dev/samesite-cookies-explained/">SameSite=None</a> changes how Chrome deals with third party cookies by default, but it is fairly easy for servers to add this new value and have everything work as before.</p>
+<p>One additional requirement for <code>SameSite=None</code> is HTTPS.  They went back and forth on that a bit, but ultimately settled on only allowing third party tracking cookies if they were done over HTTPS with the <code>secure</code> cookie attribute.  Given how wide spread HTTPS has become, I didn&#8217;t see this as a huge shift either.</p>
+<p>Both of these SameSite changes in Chrome are not scheduled to be live by default until February 2020, so we still don&#8217;t know exactly what their full impact will be.</p>
+<p>A few months later Firefox <a href="https://blog.mozilla.org/blog/2019/09/03/todays-firefox-blocks-third-party-tracking-cookies-and-cryptomining-by-default/">announced</a> that ETP ( Enhanced Tracking Protection ) would be enabled by default.  This approach was different from Chrome and Safari, in that they were using a <a href="https://disconnect.me/trackerprotection">list of things to block</a>.  They also expanded it beyond third party tracking to cryptomining.</p>
+<p>From my point of view Chrome and Firefox were both making moves in the right direction, but none of them were as big as Safari.</p>
+<h3>Then Chrome Goes Nuclear</h3>
+<p>Because Google makes so much money from ads, and they are able to do that in part because they track you every where, many people thought that Chrome would never get super serious about reducing the power of third party tracking.  That all changed this week:</p>
+<p><a href="https://twitter.com/justinschuh/status/1217115664277803011"><img loading="lazy" src="/wp-content/uploads/2020/01/chrome-cookie-tweet-1024x754.png" alt="" width="580" height="427" class="aligncenter size-large wp-image-17976" srcset="/wp-content/uploads/2020/01/chrome-cookie-tweet-1024x754.png 1024w, /wp-content/uploads/2020/01/chrome-cookie-tweet-300x221.png 300w, /wp-content/uploads/2020/01/chrome-cookie-tweet-768x566.png 768w, /wp-content/uploads/2020/01/chrome-cookie-tweet-1200x884.png 1200w, /wp-content/uploads/2020/01/chrome-cookie-tweet.png 1252w" sizes="(max-width: 580px) 100vw, 580px" /></a></p>
+<p>If Safari ITP was waging a war on third party tracking, then Chrome announced they were hitting the nuclear option: <a href="https://blog.chromium.org/2020/01/building-more-private-web-path-towards.html">Building a more private web: A path towards making third party cookies obsolete</a>.  The quote from their announcement that is getting all the attention is:</p>
+<blockquote><p>
+&#8230; we plan to phase out support for third-party cookies in Chrome. Our intention is to do this within two years.
+</p></blockquote>
+<p>No more third party cookies.  Let that sink in for a minute.</p>
+<p>Chrome is the <a href="https://gs.statcounter.com/">most used browser in the world</a> ( it isn&#8217;t even close ), a change like this is going to impact everyone on the web.  It is so big that there are going to be ramifications I haven&#8217;t even thought of yet.</p>
+<p>I wouldn&#8217;t be surprised if Safari comes out and says they are going to do the same thing.  If they do, I would expect them to have an even more aggressive timeline.  My guess: by the end of 2020.</p>
+<h3>The Clock Is Ticking</h3>
+<p>Now is the time to figure this out, it isn&#8217;t going to be any easier later on.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/01/15/the-end-of-third-party-cookies-on-the-web/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Prepare For Fewer Cache Hits As Chrome Partitions Their HTTP Cache</title>
+		<link>/2019/10/16/prepare-for-fewer-cache-hits-as-chrome-partitions-their-http-cache/</link>
+					<comments>/2019/10/16/prepare-for-fewer-cache-hits-as-chrome-partitions-their-http-cache/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 16 Oct 2019 15:59:05 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[cache]]></category>
+		<category><![CDATA[chrome]]></category>
+		<guid isPermaLink="false">/?p=17725</guid>
+
+					<description><![CDATA[Traditionally one of the advantages of loading web fonts from Google Fonts was that you&#8217;d potentially benefit from it already being in the browser cache from another site the user had previously visited. The concept is the same for any centrally loaded resource, services like cdnjs.com have popped up for exactly this reason. All of [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Traditionally one of the advantages of loading web fonts from <a href="https://fonts.google.com/">Google Fonts</a> was that you&#8217;d potentially benefit from it already being in the browser cache from another site the user had previously visited.  The concept is the same for any centrally loaded resource, services like <a href="https://cdnjs.com/">cdnjs.com</a> have popped up for exactly this reason.</p>
+<p>All of that is about to change very soon for Chrome, the <a href="https://gs.statcounter.com/">most popular browser in the world</a> ( by a long shot, it isn&#8217;t even close, though you might be surprised who is the #2 position ).  The important reference for this is: <a href="https://chromestatus.com/feature/5730772021411840">https://chromestatus.com/feature/5730772021411840</a> &#8211; <strong>Partition the HTTP Cache</strong>.</p>
+<p>Here is the summary:</p>
+<blockquote><p>
+The HTTP cache is currently one per profile, with a single namespace for all resources and subresources regardless of origin or renderer process. Splitting the cache on top frame origins helps the browser deflect side-channel attacks where one site can detect resources in another site’s cache.
+</p></blockquote>
+<h3>What This Means</h3>
+<p>Here is a simplified example of what currently happens:</p>
+<ol>
+<li>Visiting SITE1 that loads jQuery from https://code.jquery.com/jquery-3.4.1.min.js</li>
+<li>Browser loads the full jQuery file from https://code.jquery.com/jquery-3.4.1.min.js</li>
+<li>Visit SITE2, which also loads jQuery from https://code.jquery.com/jquery-3.4.1.min.js</li>
+<li>Browser has a cache hit for jquery, meaning it doesn&#8217;t need to load jQuery from code.jquery.com because it is already in the local cache</li>
+</ol>
+<p>After this change is live, that visit to SITE2 will no longer result in a cache hit.  It will still have to download the full resource from code.jquery.com.</p>
+<p>This is potentially a big performance hit, so why is Chrome making this change?</p>
+<p>Well, it turns out the details about cache hits can lead to information leakage.  The most obvious one being, using the example above, is that SITE2 would be able to determine that a user had previously visited SITE1.  Meaning sites can use this to track you across the web.  Yes, this is yet another way your privacy may be at risk.</p>
+<p>If you check out <a href="https://chromestatus.com/feature/5730772021411840">https://chromestatus.com/feature/5730772021411840</a> you&#8217;ll notice this has been marked as a security issue.</p>
+<h3>Implications</h3>
+<p>The biggest one is that using the argument that loading a common resource from a single source ( Google Fonts, jQuery, etc. ) because you believe that you&#8217;ll be more likely to get a cache hit is going out the window.</p>
+<p>With HTTP/2 I&#8217;ve been generally advocating for more locally hosted resources anyway ( like web fonts ), the reason being that the cost of a new HTTP connection, even it a large CDN like Google, often takes more time than making another request on an existing connection.  Don&#8217;t forget that those new connections can come with additional time for DNS, TCP, and HTTPS.</p>
+<p>In the not too distant future this is going to be the reality we have to deal with.</p>
+<h3>What About Other Browsers</h3>
+<p>Chrome isn&#8217;t the only one to go done this road.  It might not surprise you that <a href="https://andydavies.me/blog/2018/09/06/safari-caching-and-3rd-party-resources/">Safari has been doing this for years</a>.  Firefox is also <a href="https://github.com/whatwg/fetch/issues/904#issuecomment-491195621">considering</a> it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/10/16/prepare-for-fewer-cache-hits-as-chrome-partitions-their-http-cache/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Chrome Release Schedule</title>
+		<link>/2019/07/30/chrome-release-schedule/</link>
+					<comments>/2019/07/30/chrome-release-schedule/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 30 Jul 2019 19:18:40 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[chrome]]></category>
+		<guid isPermaLink="false">/?p=17569</guid>
+
+					<description><![CDATA[The Google Chrome browser changes at a fairly rapid rate. Knowing what is coming up next and when isn&#8217;t always easy. There are a few places that I look at from time to time to get an idea of what is happening. First up is the &#8220;Chromium Development Calendar and Release Info&#8221; site. Specifically the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The <a href="https://www.google.com/chrome/">Google Chrome browser</a> changes at a fairly rapid rate.  Knowing what is coming up next and when isn&#8217;t always easy.  There are a few places that I look at from time to time to get an idea of what is happening.</p>
+<p>First up is the &#8220;<a href="https://www.chromium.org/developers/calendar">Chromium Development Calendar and Release Info</a>&#8221; site.  Specifically the &#8220;Estimated Stable Dates&#8221;.</p>
+<p><a href="/wp-content/uploads/2019/07/chrome-estimated-stable-dates.png"><img loading="lazy" src="/wp-content/uploads/2019/07/chrome-estimated-stable-dates.png" alt="" width="480" height="424" class="aligncenter size-full wp-image-17570" srcset="/wp-content/uploads/2019/07/chrome-estimated-stable-dates.png 480w, /wp-content/uploads/2019/07/chrome-estimated-stable-dates-300x265.png 300w" sizes="(max-width: 480px) 100vw, 480px" /></a></p>
+<p>This is great if the main thing you are looking for is the &#8220;when&#8221; of Chrome releases.  For example, Chrome 76 is supposed to get the &#8220;stable&#8221; release today, 30 July 2019.</p>
+<p>Next is the &#8220;<a href="https://www.chromestatus.com/features/schedule">Chrome Platform Status, Release Timeline</a>&#8221; page.</p>
+<p><a href="/wp-content/uploads/2019/07/chrome-release-timeline.png"><img loading="lazy" src="/wp-content/uploads/2019/07/chrome-release-timeline-1024x538.png" alt="" width="788" height="414" class="aligncenter size-large wp-image-17575" srcset="/wp-content/uploads/2019/07/chrome-release-timeline-1024x538.png 1024w, /wp-content/uploads/2019/07/chrome-release-timeline-300x158.png 300w, /wp-content/uploads/2019/07/chrome-release-timeline-768x404.png 768w, /wp-content/uploads/2019/07/chrome-release-timeline-788x414.png 788w, /wp-content/uploads/2019/07/chrome-release-timeline.png 1315w" sizes="(max-width: 788px) 100vw, 788px" /></a></p>
+<p>If you want to find about the &#8220;what&#8221; is changing in the next Chrome release, this is an excellent resource.  It has a list of changes, with links to more information about each one.  Under Chrome 76, I&#8217;m looking forward to change #21- &#8220;<a href="https://www.chromestatus.com/feature/5645767347798016">Lazily load iframes and images via ‘loading’ attribute</a>&#8220;, under &#8220;Blink > Loader&#8221;.</p>
+<p>These things aren&#8217;t set is stone, I&#8217;ve seen things shift around.  If you are watching a specific feature, like I am with image lazy loading, you&#8217;ll want to check in on it regularly.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/07/30/chrome-release-schedule/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Chrome Delays Requests On Slow Connections, Even With HTTP/2</title>
+		<link>/2019/04/16/chrome-delays-requests-on-slow-connections-even-with-http-2/</link>
+					<comments>/2019/04/16/chrome-delays-requests-on-slow-connections-even-with-http-2/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 16 Apr 2019 17:18:03 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[http2]]></category>
+		<guid isPermaLink="false">/?p=17423</guid>
+
+					<description><![CDATA[While looking at recent WebPageTest results I noticed something odd about them. The ordering of HTTP/2 requests weren&#8217;t happening in the way I expected, which eventually led me to reach out to Patrick Meenan. He pointed me at two Chromium related items: &#8211; Delaying dispatch of low priority on congested networks &#8211; Issue 836552: Experiment [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>While looking at recent <a href="https://www.webpagetest.org/">WebPageTest</a> results I noticed something odd about them.  The ordering of HTTP/2 requests weren&#8217;t happening in the way I expected, which eventually led me to reach out to <a href="https://twitter.com/patmeenan">Patrick Meenan</a>.  He pointed me at two Chromium related items:</p>
+<p>&#8211; <a href="https://docs.google.com/document/d/1XcHwQnEzg-F_JQhygQdYjyU3PxMG_otXj2M8oqZNyJk/edit#heading=h.mi56i3r3gnth">Delaying dispatch of low priority on congested networks</a><br />
+&#8211; <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=836552">Issue 836552: Experiment with delaying low priority requests to H2 servers</a></p>
+<p>The long and short of it is: even with HTTP/2 Chrome will limit the number of inflight requests to 10 on slow connections.</p>
+<p>For those of you who are testing <a href="https://github.com/pmeenan/http2priorities/tree/master/stand-alone">HTTP/2 priorities</a> ( and <a href="https://github.com/andydavies/http2-prioritization-issues">here</a> ) with anything <a href="https://github.com/pmeenan/http2priorities/commit/4e9315f20efcccea73c51d781463988111c9b797#diff-fc14358ebccbbfca8b817b4c18bfeb4b">slower than &#8220;3G Fast&#8221;</a> on WebPageTest, you are likely running into this.  You&#8217;ll need to bump the network option to &#8220;3G Fast&#8221; in order to avoid the Chrome request throttling when running those types of tests.</p>
+<p>Here are a few examples.  First, a priority <a href="https://www.webpagetest.org/result/190415_A6_4417947210475290e8c6963f02dcb7fe/2/details/#waterfall_view_step1">test under &#8220;3G Slow&#8221;</a>, where you can see the throttling in action:</p>
+<p><a href="/wp-content/uploads/2019/04/chrome-with-throttling.png"><img loading="lazy" src="/wp-content/uploads/2019/04/chrome-with-throttling.png" alt="" width="946" height="647" class="aligncenter size-full wp-image-17427" srcset="/wp-content/uploads/2019/04/chrome-with-throttling.png 946w, /wp-content/uploads/2019/04/chrome-with-throttling-300x205.png 300w, /wp-content/uploads/2019/04/chrome-with-throttling-768x525.png 768w, /wp-content/uploads/2019/04/chrome-with-throttling-788x539.png 788w" sizes="(max-width: 946px) 100vw, 946px" /></a></p>
+<p>That is the newer behavior in Chrome.</p>
+<p>Next, a priority <a href="https://www.webpagetest.org/result/190415_DW_9a97759053833656569c317f830c0124/2/details/#waterfall_view_step1">test using &#8220;3G Fast&#8221;</a>, you can see all the requests fired off right away:</p>
+<p><a href="/wp-content/uploads/2019/04/chrome-no-throttling.png"><img loading="lazy" src="/wp-content/uploads/2019/04/chrome-no-throttling.png" alt="" width="947" height="649" class="aligncenter size-full wp-image-17429" srcset="/wp-content/uploads/2019/04/chrome-no-throttling.png 947w, /wp-content/uploads/2019/04/chrome-no-throttling-300x206.png 300w, /wp-content/uploads/2019/04/chrome-no-throttling-768x526.png 768w, /wp-content/uploads/2019/04/chrome-no-throttling-788x540.png 788w" sizes="(max-width: 947px) 100vw, 947px" /></a></p>
+<p>This is likely what you&#8217;d be used to seeing.</p>
+<hr />
+<p>I&#8217;ve come to expect changes in browsers ( especially Chrome ) to have significant impacts on tests where I&#8217;m looking at trending data.  If you see something strange pop up, check the Chrome versions, then see if a change in that release could be the cause.</p>
+<p>Chrome has an <a href="https://www.chromium.org/developers/calendar">estimated release schedule</a> that you might want to keep in mind.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/04/16/chrome-delays-requests-on-slow-connections-even-with-http-2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Google Search Indexing and JavaScript</title>
+		<link>/2018/11/06/google-search-indexing-and-javascript/</link>
+					<comments>/2018/11/06/google-search-indexing-and-javascript/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 06 Nov 2018 22:23:45 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[john-mueller]]></category>
+		<category><![CDATA[paul-kinlan]]></category>
+		<guid isPermaLink="false">/?p=17159</guid>
+
+					<description><![CDATA[The discussion over how much the Google indexing bot understands about JavaScript comes up over and over. Here are some of the details I&#8217;ve been able to put together. Googlebot is using Chrome 41 On the official Understand rendering on Google Search page the first thing they point out is that the bot uses Chrome [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The discussion over how much the Google indexing bot understands about JavaScript comes up over and over.  Here are some of the details I&#8217;ve been able to put together.</p>
+<h3>Googlebot is using Chrome 41</h3>
+<p>On the official <a href="https://developers.google.com/search/docs/guides/rendering">Understand rendering on Google Search</a> page the first thing they point out is that the bot uses Chrome 41.  Welcome back to 2015, no <a href="http://exploringjs.com/es6/ch_overviews.html">ES6</a> for you:</p>
+<blockquote><p>
+Chrome M41 does not support ES6 features (for example classes). If you are using ES6 make sure to transpile your JavaScript to ES5.
+</p></blockquote>
+<h3>Google Indexing is a Two-Pass Process</h3>
+<p><a href="https://paul.kinlan.me/">Paul Kinlan</a>, a developer advocate at Google, <a href="https://twitter.com/Paul_Kinlan/status/1039852756113080320">mentioned</a> this process:</p>
+<blockquote><p>
+Indexing is delayed for pure client side sides. Google indexer is two-pass, first run is without js, then week later it&#8217;s with is (or there abouts)
+</p></blockquote>
+<p>A follow up to that from <a href="https://twitter.com/JohnMu">John Mueller</a>, Webmaster Trends Analyst at Google, notes that <a href="https://twitter.com/JohnMu/status/1040152407416741890">this is true for updates as well</a>:</p>
+<blockquote><p>
+Yeah, there&#8217;s no fixed timeframe &#8212; the rendering can happen fairly quickly in some cases, but usually it&#8217;s on the order of days to a few weeks even. If your site produces new / updated content frequently &#038; you want it indexed quickly, you need that content in the HTML.
+</p></blockquote>
+<h3>The Take Away</h3>
+<p>Keep your critical, and regularly updated, content in HTML.  Keep your client side JavaScript to ES5 or below.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/11/06/google-search-indexing-and-javascript/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Fixing Chrome 69 URLs</title>
+		<link>/2018/09/11/fixing-chrome-69-urls/</link>
+					<comments>/2018/09/11/fixing-chrome-69-urls/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 11 Sep 2018 21:34:26 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[chrome]]></category>
+		<guid isPermaLink="false">/?p=16988</guid>
+
+					<description><![CDATA[In Chrome 69 Google decided that showing accurate URLs is no longer import. To fix this mistake, change the setting at chrome://flags/#omnibox-ui-hide-steady-state-url-scheme-and-subdomains to &#8220;Disabled&#8221;.]]></description>
+										<content:encoded><![CDATA[<p>In Chrome 69 Google decided that <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=881410">showing accurate URLs is no longer import</a>.  To fix this mistake, change the setting at <a href="chrome://flags/#omnibox-ui-hide-steady-state-url-scheme-and-subdomains">chrome://flags/#omnibox-ui-hide-steady-state-url-scheme-and-subdomains</a> to &#8220;Disabled&#8221;.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/09/11/fixing-chrome-69-urls/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Script Scheduling in Chrome</title>
+		<link>/2018/05/01/script-scheduling-in-chrome/</link>
+					<comments>/2018/05/01/script-scheduling-in-chrome/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 01 May 2018 15:11:41 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[javascript]]></category>
+		<guid isPermaLink="false">/?p=16572</guid>
+
+					<description><![CDATA[If you care about how the JavaScript on your web pages get loaded, there is an interesting Google Doc discussion on Chromium: Scheduling Scripts Intuitively and Performantly. The doc starts out with a table outlining six different combinations, along with the resulting network and scheduling priority. That is followed by a discussion of the various [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you care about how the JavaScript on your web pages get loaded, there is an interesting Google Doc discussion on Chromium: <a href="https://docs.google.com/document/d/16rHWLu-0abC9WWLhLBFlIRtbSnOFzhKAXsCamsp0oAs/edit#heading=h.dfqvzwugue3e">Scheduling Scripts Intuitively and Performantly</a>.</p>
+<p>The doc starts out with a table outlining six different combinations, along with the resulting network and scheduling priority.</p>
+<p><a href="/wp-content/uploads/2018/04/chrome-script-scheduling.png"><img loading="lazy" src="/wp-content/uploads/2018/04/chrome-script-scheduling-1020x1024.png" alt="" width="840" height="843" class="aligncenter size-large wp-image-16576" srcset="/wp-content/uploads/2018/04/chrome-script-scheduling-1020x1024.png 1020w, /wp-content/uploads/2018/04/chrome-script-scheduling-150x150.png 150w, /wp-content/uploads/2018/04/chrome-script-scheduling-300x300.png 300w, /wp-content/uploads/2018/04/chrome-script-scheduling-768x771.png 768w, /wp-content/uploads/2018/04/chrome-script-scheduling-1200x1205.png 1200w" sizes="(max-width: 840px) 100vw, 840px" /></a></p>
+<p>That is followed by a discussion of the various issues that arise from these possible combinations.  What really caught my eye was the idea of an <code>IMPORTANCE</code> attribute, as part of the <a href="https://github.com/WICG/priority-hints/blob/master/EXAMPLES.md">priority hints</a> API from the WICG ( Web Incubator Community Group ):</p>
+<blockquote><p>
+&#8211; We will define a new standard importance attribute that will map to current browser priorities: critical, high, medium, low, unimportant<br />
+&#8211; Developers would be able to assign resources into one of these importance groups or define resources as more or less important than said groups.
+</p></blockquote>
+<p>We&#8217;ll see if that quickly becomes a big mess of overloading soup, as the doc cites this example:</p>
+<blockquote><p>
+If we chose to align <code>&lt;script async&gt;</code>’s priority to low, <code>&lt;script async importance=high&gt;</code> may be a useful primitive to provide high loading/exec priority.
+</p></blockquote>
+<p>I like the idea of being able to communicate to browsers the relative importance of a given resource.  From there it can figure out how best to increase or decrease the network and scheduling priority.  The exact details of how it does that could vary based on a number of considerations ( HTTP/1 vs HTTP/2 is the first that comes to mind ).</p>
+<h3>How Can This Be Used For Evil?</h3>
+<p>It wouldn&#8217;t surprise me if scripts started fighting over setting the <code>IMPORTANCE</code> attribute of other resources to <code>unimportant</code>.  Or their own to <code>critical</code>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/05/01/script-scheduling-in-chrome/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Chrome Network Panel Filter: Domain</title>
+		<link>/2016/03/09/chrome-network-panel-filter-domain/</link>
+					<comments>/2016/03/09/chrome-network-panel-filter-domain/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 09 Mar 2016 18:11:10 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[chrome]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15459</guid>
+
+					<description><![CDATA[I regularly pull up the Chrome network panel to see what requests are being made. You can easily filter on different types of requests ( CSS, JS, XHR, etc. ), along with a general filter form that supports several different fields ( method, scheme, status-code, etc. ). Yesterday I needed to look for particular host [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I regularly pull up the Chrome network panel to see what requests are being made.  You can easily filter on different types of requests ( CSS, JS, XHR, etc. ), along with a <a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading?hl=en#filter-requests">general filter form that supports several different fields</a> ( method, scheme, status-code, etc. ).</p>
+<p>Yesterday I needed to look for particular host names.  Fortunately the filter field supports this with <code>domain:</code>.  But it does one better than that.  If you type just <code>domain:</code> it will give you a list of host names used in requests for that page, along with wildcard options.</p>
+<p>Here is what that looks like when viewing www.google.com:</p>
+<p><a href="/wp-content/uploads/2016/03/chrome-network-filter-domain-1.png" rel="attachment wp-att-15460"><img loading="lazy" src="/wp-content/uploads/2016/03/chrome-network-filter-domain-1.png" alt="chrome-network-filter-domain" width="430" height="269" class="aligncenter size-full wp-image-15460" srcset="/wp-content/uploads/2016/03/chrome-network-filter-domain-1.png 430w, /wp-content/uploads/2016/03/chrome-network-filter-domain-1-300x188.png 300w" sizes="(max-width: 430px) 100vw, 430px" /></a></p>
+<p>In my case that was even more useful that just filtering the requests by domain.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/03/09/chrome-network-panel-filter-domain/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Brotli Coming To Chrome</title>
+		<link>/2016/01/26/brotli-coming-to-chrome/</link>
+					<comments>/2016/01/26/brotli-coming-to-chrome/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 26 Jan 2016 16:59:11 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[brotli]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[compression]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14980</guid>
+
+					<description><![CDATA[I had mentioned that Brotli compression was coming to Firefox, but it was only listed as &#8216;in development&#8217; for Chrome. That changed this month: Intent to Ship: Brotli (Accept-encoding: br on HTTPS connection). A big issue to keep in mind: it will be limited to HTTPS connections. Perhaps this will be enough to motivate Microsoft [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I had mentioned that <a href="https://josephscott.org/archives/2015/12/brotli-in-browsers/">Brotli compression was coming to Firefox</a>, but it was only listed as &#8216;in development&#8217; for Chrome.  That changed this month: <a href="https://groups.google.com/a/chromium.org/forum/#!searchin/blink-dev/brotli/blink-dev/JufzX024oy0/WEOGbN43AwAJ">Intent to Ship: Brotli (Accept-encoding: br on HTTPS connection)</a>.</p>
+<p>A big issue to keep in mind: it will be limited to HTTPS connections.</p>
+<p>Perhaps this will be enough to motivate Microsoft and Apple to include support as well.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/01/26/brotli-coming-to-chrome/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Brotli in Browsers</title>
+		<link>/2015/12/15/brotli-in-browsers/</link>
+					<comments>/2015/12/15/brotli-in-browsers/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 15 Dec 2015 16:38:42 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[brotli]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[compression]]></category>
+		<category><![CDATA[firefox]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14357</guid>
+
+					<description><![CDATA[Last month I mentioned Brotli for Nginx. On the client side, Firefox is aiming to add support for Brotli in version 44: If all goes well in testing, Firefox 44 (ETA January 2016) will negotiate brotli as a content-encoding for https resources. The negotiation will be done in the usual way via the Accept-Encoding request [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Last month I mentioned <a href="https://josephscott.org/archives/2015/11/brotli-for-nginx/">Brotli for Nginx</a>.  On the client side, <a href="http://bitsup.blogspot.com/2015/09/brotli-content-encoding-for-firefox-44.html">Firefox is aiming to add support for Brotli in version 44</a>:</p>
+<blockquote><p>
+If all goes well in testing, Firefox 44 (ETA January 2016) will negotiate brotli as a content-encoding for https resources. The negotiation will be done in the usual way via the Accept-Encoding request header and the token &#8220;br&#8221;. Servers that wish to encode a response with brotli can do so by adding &#8220;br&#8221; to the Content-Encoding response header. Firefox won&#8217;t decode brotli outside of https &#8211; so make sure to use the HTTP content negotiation framework instead of doing user agent sniffing.
+</p></blockquote>
+<p>Chrome has <a href="https://www.chromestatus.com/features/5420797577396224">Brotli support listed as &#8220;in development&#8221;</a>.  I didn&#8217;t see any indication of a current timeline for it showing up in a release version.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/15/brotli-in-browsers/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

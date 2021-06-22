@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>wordpress.com &#8211; Joseph Scott</title>
+	<atom:link href="/tag/wordpress-com/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 03 Dec 2015 15:57:29 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>HTTP/2 Adoption</title>
+		<link>/2015/12/03/http2-adoption/</link>
+					<comments>/2015/12/03/http2-adoption/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 03 Dec 2015 15:57:29 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http2]]></category>
+		<category><![CDATA[wordpress.com]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14434</guid>
+
+					<description><![CDATA[isthewebhttp2yet.com is tracking HTTP/2 adoption. Their &#8220;H2 True Support&#8221; list ( 2015-11-30 ) has 13,653 sites. Of those 13,653 sites 7,828 ( that is 57% ) have .wordpress.com host names.]]></description>
+										<content:encoded><![CDATA[<p><a href="http://isthewebhttp2yet.com/">isthewebhttp2yet.com</a> is tracking <a href="http://isthewebhttp2yet.com/measurements/adoption.html">HTTP/2 adoption</a>.  Their <a href="http://isthewebhttp2yet.com/data/lists/H2-true-2015-11-30.txt">&#8220;H2 True Support&#8221; list ( 2015-11-30 )</a> has 13,653 sites.</p>
+<p>Of those 13,653 sites 7,828 ( that is 57% ) have <code>.wordpress.com</code> host names.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/03/http2-adoption/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>WordPress.com #3 in Worldwide DNS Performance</title>
+		<link>/2015/03/25/wordpress-com-3-in-worldwide-dns-performance/</link>
+					<comments>/2015/03/25/wordpress-com-3-in-worldwide-dns-performance/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 25 Mar 2015 15:07:33 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[dns]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[wordpress.com]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11912</guid>
+
+					<description><![CDATA[Two weeks ago I mentioned dnsperf.com. After that I reached out to @jimaek about adding WordPress.com to the list of measured providers. It has been super exciting to see WordPress.com DNS performance rank #3 worldwide: We are behind second place EdgeCast by just 0.66ms. Serious kudos to our systems and network operations teams on including [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Two weeks ago <a href="https://josephscott.org/archives/2015/03/dns-performance/">I mentioned dnsperf.com</a>.  After that I reached out to <a href="https://twitter.com/jimaek">@jimaek</a> about adding <a href="https://wordpress.com/">WordPress.com</a> to the list of measured providers.</p>
+<p>It has been super exciting to see <a href="http://www.dnsperf.com/">WordPress.com DNS performance rank #3 worldwide</a>:</p>
+<p><img loading="lazy" src="/wp-content/uploads/2015/03/dnsperf-wpcom-1-1.png" alt="dnsperf-wpcom-1" width="830" height="452" class="aligncenter size-full wp-image-11916" srcset="/wp-content/uploads/2015/03/dnsperf-wpcom-1-1.png 830w, /wp-content/uploads/2015/03/dnsperf-wpcom-1-1-300x163.png 300w, /wp-content/uploads/2015/03/dnsperf-wpcom-1-1-768x418.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></p>
+<p>We are behind second place EdgeCast by just 0.66ms.</p>
+<p>Serious kudos to our systems and network operations teams on including DNS as part of our Anycast network, which made this level of performance possible.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/03/25/wordpress-com-3-in-worldwide-dns-performance/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>WordPress.com DDoS Details</title>
+		<link>/2011/03/07/wordpress-com-ddos-details/</link>
+					<comments>/2011/03/07/wordpress-com-ddos-details/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 07 Mar 2011 17:33:38 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[barry-abrahamson]]></category>
+		<category><![CDATA[ddos]]></category>
+		<category><![CDATA[wordpress.com]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3714</guid>
+
+					<description><![CDATA[What we saw was not one single attack, but 6 separate attacks beginning at 2:10AM PST on March 3rd. All of these attacks were directed at a single site hosted on WordPress.com’s servers. WordPress.com DDoS Details, Barry Abrahamson (lead sysadmin at Automattic). Includes a couple of graphs to give you an idea on the size [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+What we saw was not one single attack, but 6 separate attacks beginning at 2:10AM PST on March 3rd. All of these attacks were directed at a single site hosted on WordPress.com’s servers.
+</p></blockquote>
+<p><a href='http://barry.wordpress.com/2011/03/07/wordpress-com-ddos-details/'>WordPress.com DDoS Details, Barry Abrahamson</a> (lead sysadmin at Automattic).</p>
+<p>Includes a couple of graphs to give you an idea on the size of the attacks.  Our operations team works very hard to make sure most of the attacks (they happen every day) have no impact on the rest of WordPress.com.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/03/07/wordpress-com-ddos-details/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>WordPress.com &#8211; 4 million blogs</title>
+		<link>/2008/09/03/wordpresscom-4-million-blogs/</link>
+					<comments>/2008/09/03/wordpresscom-4-million-blogs/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 03 Sep 2008 22:08:49 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[wordpress.com]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1171</guid>
+
+					<description><![CDATA[To answer my own question, it took just over 4 months to go from 3 million blogs to 4 million. The sign up rate continues to increase, if that trend continues WordPress.com will hit 5 million in less than 4 months (end of December?). The next big line to cross? Breaking 40 million page views [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://wordpress.com/" title="WordPress.com - 4 million blogs by josephscott, on Flickr"><img loading="lazy" src="http://farm4.static.flickr.com/3095/2825481505_ee2f461fab_o.jpg" width="520" height="147" alt="WordPress.com - 4 million blogs" /></a></p>
+<p>To answer my own question, it took just over 4 months to go from <a href="http://joseph.randomnetworks.com/archives/2008/04/29/wordpresscom-3-million-blogs/">3 million blogs</a> to 4 million.  The <a href="http://wordpress.com/stats/signups/">sign up rate</a> continues to increase, if that trend continues <a href="http://wordpress.com/">WordPress.com</a> will hit 5 million in less than 4 months (end of December?).</p>
+<p>The next big line to cross?  Breaking 40 million <a href="http://wordpress.com/stats/traffic/">page views</a> a day.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/09/03/wordpresscom-4-million-blogs/feed/</wfw:commentRss>
+			<slash:comments>12</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>WordPress.com &#8211; 3 Million Blogs</title>
+		<link>/2008/04/29/wordpresscom-3-million-blogs/</link>
+					<comments>/2008/04/29/wordpresscom-3-million-blogs/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 29 Apr 2008 20:42:58 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[wordpress.com]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1062</guid>
+
+					<description><![CDATA[WordPress.com has passed 3 million blogs. Here are the current sign up rates, any guesses for when we&#8217;ll hit 4 million?]]></description>
+										<content:encoded><![CDATA[<div style="text-align:center"><a href="http://wordpress.com/" title="WordPress.com 3 Million Blogs"><img loading="lazy" src="http://farm3.static.flickr.com/2253/2452959910_71c150e441_o.jpg" alt="WordPress.com 3 Million Blogs" border="1" width="403" height="133" /></a></div>
+<p>WordPress.com has passed 3 million blogs.  Here are the current <a href="http://wordpress.com/stats/signups/">sign up rates</a>, any guesses for when we&#8217;ll hit 4 million?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/04/29/wordpresscom-3-million-blogs/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Search WordPress.com</title>
+		<link>/2008/04/14/search-wordpresscom/</link>
+					<comments>/2008/04/14/search-wordpresscom/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 14 Apr 2008 20:19:29 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[search]]></category>
+		<category><![CDATA[wordpress.com]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1056</guid>
+
+					<description><![CDATA[WordPress.com has a new search feature. Now you can comb through all the posts and pages on blogs hosted at WordPress.com. http://en.search.wordpress.com/]]></description>
+										<content:encoded><![CDATA[<p><a href="http://wordpress.com/">WordPress.com</a> has <a href="http://wordpress.com/blog/2008/04/14/search-wordpresscom/">a new search feature</a>.  Now you can comb through all the posts and pages on blogs hosted at WordPress.com.</p>
+<p><a href="http://en.search.wordpress.com/">http://en.search.wordpress.com/</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/04/14/search-wordpresscom/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>2 Million Plus</title>
+		<link>/2007/12/17/2-million-plus/</link>
+					<comments>/2007/12/17/2-million-plus/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 17 Dec 2007 22:36:26 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[wordpress.com]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/12/17/2-million-plus/</guid>
+
+					<description><![CDATA[The number of blogs on wordpress.com as of this afternoon.]]></description>
+										<content:encoded><![CDATA[<p>The number of blogs on <a href="http://wordpress.com/">wordpress.com</a> as of this afternoon.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/12/17/2-million-plus/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

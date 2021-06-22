@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Active Directory as LDAP Address Book For Thunderbird, Outlook and Mail.app	</title>
+	<atom:link href="/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/feed/" rel="self" type="application/rss+xml" />
+	<link>/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/</link>
+	<description></description>
+	<lastBuildDate>Wed, 19 Sep 2012 08:34:06 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: hcp		</title>
+		<link>/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1131</link>
+
+		<dc:creator><![CDATA[hcp]]></dc:creator>
+		<pubDate>Wed, 19 Sep 2012 08:34:06 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1131</guid>
+
+					<description><![CDATA[Hi on Outlook 2003 and Thunderbird works nicely. But unfortunately not on Outlook 2010.
+
+Iit&#039;s can connect to the Server but the adressbook is empty. 
+
+Can anyone help?]]></description>
+			<content:encoded><![CDATA[<p>Hi on Outlook 2003 and Thunderbird works nicely. But unfortunately not on Outlook 2010.</p>
+<p>Iit&#8217;s can connect to the Server but the adressbook is empty. </p>
+<p>Can anyone help?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Robert Middleswarth		</title>
+		<link>/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1130</link>
+
+		<dc:creator><![CDATA[Robert Middleswarth]]></dc:creator>
+		<pubDate>Wed, 04 Feb 2009 16:11:28 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1130</guid>
+
+					<description><![CDATA[Nikolaus #19,
+
+LDAP sends thing in plain text on port 389 that is by protocol it has to send it clear text.  You have to enable SSL to stop that.
+
+Thanks
+Robert]]></description>
+			<content:encoded><![CDATA[<p>Nikolaus #19,</p>
+<p>LDAP sends thing in plain text on port 389 that is by protocol it has to send it clear text.  You have to enable SSL to stop that.</p>
+<p>Thanks<br />
+Robert</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Nikolaus		</title>
+		<link>/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1129</link>
+
+		<dc:creator><![CDATA[Nikolaus]]></dc:creator>
+		<pubDate>Thu, 29 Jan 2009 10:22:40 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1129</guid>
+
+					<description><![CDATA[Hi,
+I tried this recipe on tb 2.0.19 on linux with a 2003R2 AD. At first I thought it doesn&#039;T work, but the integration in thunderbird seems only half-ready:
+
+- addressbook can&#039;t query the directory and show the addresses in the overview
+- addressbook doesn&#039;t send correct auth, when asking for offline download
+- the first time password is asked for is while adding recipients to a new mail.
+ BTW: the passwords are send in plain text!!
+
+In this state it&#039;s not usable for me. I will file bugs for LDAP support in TB.
+
+Hope that helps...]]></description>
+			<content:encoded><![CDATA[<p>Hi,<br />
+I tried this recipe on tb 2.0.19 on linux with a 2003R2 AD. At first I thought it doesn&#8217;T work, but the integration in thunderbird seems only half-ready:</p>
+<p>&#8211; addressbook can&#8217;t query the directory and show the addresses in the overview<br />
+&#8211; addressbook doesn&#8217;t send correct auth, when asking for offline download<br />
+&#8211; the first time password is asked for is while adding recipients to a new mail.<br />
+ BTW: the passwords are send in plain text!!</p>
+<p>In this state it&#8217;s not usable for me. I will file bugs for LDAP support in TB.</p>
+<p>Hope that helps&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rafal		</title>
+		<link>/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1128</link>
+
+		<dc:creator><![CDATA[Rafal]]></dc:creator>
+		<pubDate>Fri, 19 Sep 2008 12:43:46 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1128</guid>
+
+					<description><![CDATA[Hello
+Maybe someone know how to edit contacts on LDAP server (AD) from Outlook.
+I can list contacts but can not update or add new one.
+Via AD users and Computers this task is unproblematic - i delagate control to add and change contact objects.
+
+Regards
+Rafal]]></description>
+			<content:encoded><![CDATA[<p>Hello<br />
+Maybe someone know how to edit contacts on LDAP server (AD) from Outlook.<br />
+I can list contacts but can not update or add new one.<br />
+Via AD users and Computers this task is unproblematic &#8211; i delagate control to add and change contact objects.</p>
+<p>Regards<br />
+Rafal</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Makea		</title>
+		<link>/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1127</link>
+
+		<dc:creator><![CDATA[Makea]]></dc:creator>
+		<pubDate>Fri, 25 Jul 2008 01:23:49 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1127</guid>
+
+					<description><![CDATA[This works for OS X 10.5 (Leopard) in both addressbook and mail.app:
+
+For the search base, capitalization counts: CN=Users,DC=company,DC=com
+
+For the username, use your email address:me@company.com
+
+After modifying the search base and username, the directions in this article worked great!
+
+However, with Snow Leopard, this will no longer be an issue as Exchange support will be built-in.]]></description>
+			<content:encoded><![CDATA[<p>This works for OS X 10.5 (Leopard) in both addressbook and mail.app:</p>
+<p>For the search base, capitalization counts: CN=Users,DC=company,DC=com</p>
+<p>For the username, use your email address:me@company.com</p>
+<p>After modifying the search base and username, the directions in this article worked great!</p>
+<p>However, with Snow Leopard, this will no longer be an issue as Exchange support will be built-in.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Buhar Kazan?		</title>
+		<link>/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1126</link>
+
+		<dc:creator><![CDATA[Buhar Kazan?]]></dc:creator>
+		<pubDate>Sun, 02 Mar 2008 18:12:03 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1126</guid>
+
+					<description><![CDATA[This is very good article, but how can we do ldap authentication in unix with connecting the active directory in Primary Domain Server?
+
+ Buhar Kazan?]]></description>
+			<content:encoded><![CDATA[<p>This is very good article, but how can we do ldap authentication in unix with connecting the active directory in Primary Domain Server?</p>
+<p> Buhar Kazan?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ed		</title>
+		<link>/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1125</link>
+
+		<dc:creator><![CDATA[Ed]]></dc:creator>
+		<pubDate>Sat, 01 Mar 2008 01:44:17 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1125</guid>
+
+					<description><![CDATA[Thank you for sharing this!]]></description>
+			<content:encoded><![CDATA[<p>Thank you for sharing this!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ritesh		</title>
+		<link>/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1124</link>
+
+		<dc:creator><![CDATA[Ritesh]]></dc:creator>
+		<pubDate>Sat, 16 Feb 2008 09:02:11 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1124</guid>
+
+					<description><![CDATA[In my thunderbird setup I set my LDAP directory as hostname = 10.22.140.69 .  with search filter properties as (objectclass=*). It is working fine in thunderbird. I want to configure the same thing in MS  Outlook 2007, but i am unsuccessful doing it. Please suggesst me what i m doing wrong.]]></description>
+			<content:encoded><![CDATA[<p>In my thunderbird setup I set my LDAP directory as hostname = 10.22.140.69 .  with search filter properties as (objectclass=*). It is working fine in thunderbird. I want to configure the same thing in MS  Outlook 2007, but i am unsuccessful doing it. Please suggesst me what i m doing wrong.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: AOS		</title>
+		<link>/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1123</link>
+
+		<dc:creator><![CDATA[AOS]]></dc:creator>
+		<pubDate>Fri, 15 Feb 2008 09:15:03 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1123</guid>
+
+					<description><![CDATA[Have anybody figured out why it is not working if you changes the searchbase to f.ex an ou=users2?]]></description>
+			<content:encoded><![CDATA[<p>Have anybody figured out why it is not working if you changes the searchbase to f.ex an ou=users2?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Yicrosoft Directory		</title>
+		<link>/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1122</link>
+
+		<dc:creator><![CDATA[Yicrosoft Directory]]></dc:creator>
+		<pubDate>Wed, 06 Feb 2008 18:59:57 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/08/active-directory-as-ldap-address-book-for-thunderbird-outlook-and-mailapp/#comment-1122</guid>
+
+					<description><![CDATA[This post was such a great find, it is really helpful for me since I do use my contacts constantly. I have since forwarded this to my coworkers, hoping they will find as much use in this as I did.]]></description>
+			<content:encoded><![CDATA[<p>This post was such a great find, it is really helpful for me since I do use my contacts constantly. I have since forwarded this to my coworkers, hoping they will find as much use in this as I did.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

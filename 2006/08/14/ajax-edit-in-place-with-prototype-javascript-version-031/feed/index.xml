@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: AJAX Edit In Place With Prototype (Javascript), Version 0.3.1	</title>
+	<atom:link href="/2006/08/14/ajax-edit-in-place-with-prototype-javascript-version-031/feed/" rel="self" type="application/rss+xml" />
+	<link>/2006/08/14/ajax-edit-in-place-with-prototype-javascript-version-031/</link>
+	<description></description>
+	<lastBuildDate>Thu, 08 Feb 2007 19:46:50 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Tessa Lau		</title>
+		<link>/2006/08/14/ajax-edit-in-place-with-prototype-javascript-version-031/#comment-1480</link>
+
+		<dc:creator><![CDATA[Tessa Lau]]></dc:creator>
+		<pubDate>Thu, 08 Feb 2007 19:46:50 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/08/14/ajax-edit-in-place-with-prototype-javascript-version-031/#comment-1480</guid>
+
+					<description><![CDATA[There seems to be a bug when the text contains quotation marks.  For example, if I change the text in the example.html from:
+
+You can edit this line with a single click.
+
+to:
+
+You can &quot;edit&quot; this line with a single click.
+
+Then when you click on the line, the text in the textarea is &quot;You can &quot;.  Everything after the first quotation mark is dropped.]]></description>
+			<content:encoded><![CDATA[<p>There seems to be a bug when the text contains quotation marks.  For example, if I change the text in the example.html from:</p>
+<p>You can edit this line with a single click.</p>
+<p>to:</p>
+<p>You can &#8220;edit&#8221; this line with a single click.</p>
+<p>Then when you click on the line, the text in the textarea is &#8220;You can &#8220;.  Everything after the first quotation mark is dropped.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

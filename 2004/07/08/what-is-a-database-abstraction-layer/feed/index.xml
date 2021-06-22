@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: What Is A Database Abstraction Layer?	</title>
+	<atom:link href="/2004/07/08/what-is-a-database-abstraction-layer/feed/" rel="self" type="application/rss+xml" />
+	<link>/2004/07/08/what-is-a-database-abstraction-layer/</link>
+	<description></description>
+	<lastBuildDate>Fri, 10 Mar 2006 14:19:01 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Artemi Krymski		</title>
+		<link>/2004/07/08/what-is-a-database-abstraction-layer/#comment-418</link>
+
+		<dc:creator><![CDATA[Artemi Krymski]]></dc:creator>
+		<pubDate>Fri, 10 Mar 2006 14:19:01 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/07/08/what-is-a-database-abstraction-layer/#comment-418</guid>
+
+					<description><![CDATA[Totally agree with you. I&#039;ve developed a simple database abstraction layer (SDBA) that cleanly separates DB-specific access functions and provides a *very* simple interface, aimed at productivity. Different implementations of SDBA for different databases are being worked on. The query function &quot;understands&quot; SQL queries and returns different things if its a SELECT, UPDATE, or INSERT. Let me know what you think. Here it is:
+http://www.morewhite.com/sdba]]></description>
+			<content:encoded><![CDATA[<p>Totally agree with you. I&#8217;ve developed a simple database abstraction layer (SDBA) that cleanly separates DB-specific access functions and provides a *very* simple interface, aimed at productivity. Different implementations of SDBA for different databases are being worked on. The query function &#8220;understands&#8221; SQL queries and returns different things if its a SELECT, UPDATE, or INSERT. Let me know what you think. Here it is:<br />
+<a href="http://www.morewhite.com/sdba" rel="nofollow ugc">http://www.morewhite.com/sdba</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Petje		</title>
+		<link>/2004/07/08/what-is-a-database-abstraction-layer/#comment-417</link>
+
+		<dc:creator><![CDATA[Petje]]></dc:creator>
+		<pubDate>Tue, 20 Jul 2004 03:49:38 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/07/08/what-is-a-database-abstraction-layer/#comment-417</guid>
+
+					<description><![CDATA[AHA!!! and here I was thinking &quot;Oh My, why does everybody think I&#039;m doing the wrong thing while it looks so smart to me&quot;.. But I&#039;m NOT doing stupid things and it IS a smart thing.. Access layer != Abstraction layer..
+
+Thanks for clearing that up Joseph.. :)]]></description>
+			<content:encoded><![CDATA[<p>AHA!!! and here I was thinking &#8220;Oh My, why does everybody think I&#8217;m doing the wrong thing while it looks so smart to me&#8221;.. But I&#8217;m NOT doing stupid things and it IS a smart thing.. Access layer != Abstraction layer..</p>
+<p>Thanks for clearing that up Joseph.. 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: yarcles		</title>
+		<link>/2004/07/08/what-is-a-database-abstraction-layer/#comment-416</link>
+
+		<dc:creator><![CDATA[yarcles]]></dc:creator>
+		<pubDate>Tue, 13 Jul 2004 01:28:12 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/07/08/what-is-a-database-abstraction-layer/#comment-416</guid>
+
+					<description><![CDATA[Hell, why dont you just call it a  Database Access ABSTRACTION layer, since its  ‘disassociated from any specific database access implementation(instance)’.
+
+&quot;Database abstraction layer&quot; shouldnt have such a rigid definition to be only for abstracting a RDBMS in totality.
+
+I would suggest its general usage is any abstraction relating to database implementation like access, SQL portability, logging etc. but does not have to include them all.
+
+And if you want to then get specific which parts of db abstraction you are talking aboutyou can.
+
+I know its all just terminology but it seems a lot of ppl in these threads are selectively using the term abstraction to prove a point.]]></description>
+			<content:encoded><![CDATA[<p>Hell, why dont you just call it a  Database Access ABSTRACTION layer, since its  ‘disassociated from any specific database access implementation(instance)’.</p>
+<p>&#8220;Database abstraction layer&#8221; shouldnt have such a rigid definition to be only for abstracting a RDBMS in totality.</p>
+<p>I would suggest its general usage is any abstraction relating to database implementation like access, SQL portability, logging etc. but does not have to include them all.</p>
+<p>And if you want to then get specific which parts of db abstraction you are talking aboutyou can.</p>
+<p>I know its all just terminology but it seems a lot of ppl in these threads are selectively using the term abstraction to prove a point.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Betcour		</title>
+		<link>/2004/07/08/what-is-a-database-abstraction-layer/#comment-415</link>
+
+		<dc:creator><![CDATA[Betcour]]></dc:creator>
+		<pubDate>Sat, 10 Jul 2004 07:04:52 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/07/08/what-is-a-database-abstraction-layer/#comment-415</guid>
+
+					<description><![CDATA[Excellent analysis. I use a database access layer myself - mostly because I needed some way to simulate nested transactions within MySQL (which only support non-nested transactions).]]></description>
+			<content:encoded><![CDATA[<p>Excellent analysis. I use a database access layer myself &#8211; mostly because I needed some way to simulate nested transactions within MySQL (which only support non-nested transactions).</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

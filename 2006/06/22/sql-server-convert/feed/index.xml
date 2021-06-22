@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: SQL Server CONVERT()	</title>
+	<atom:link href="/2006/06/22/sql-server-convert/feed/" rel="self" type="application/rss+xml" />
+	<link>/2006/06/22/sql-server-convert/</link>
+	<description></description>
+	<lastBuildDate>Tue, 04 Dec 2007 20:46:43 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: SQLserver date manipulation and formatting at SonicChicken blog		</title>
+		<link>/2006/06/22/sql-server-convert/#comment-1416</link>
+
+		<dc:creator><![CDATA[SQLserver date manipulation and formatting at SonicChicken blog]]></dc:creator>
+		<pubDate>Tue, 04 Dec 2007 20:46:43 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/06/22/sql-server-convert/#comment-1416</guid>
+
+					<description><![CDATA[[...] slick features, but one area where they are definitely sucking is date manipulation and formatting. Joseph complained about this a while ago, but it&#8217;s time to me to chime in [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] slick features, but one area where they are definitely sucking is date manipulation and formatting. Joseph complained about this a while ago, but it&#8217;s time to me to chime in [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: joseph		</title>
+		<link>/2006/06/22/sql-server-convert/#comment-1415</link>
+
+		<dc:creator><![CDATA[joseph]]></dc:creator>
+		<pubDate>Fri, 23 Jun 2006 14:51:27 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/06/22/sql-server-convert/#comment-1415</guid>
+
+					<description><![CDATA[Which is way more verbose than it needs to be.  With to_char() it is much easier:
+
+SELECT to_char(date_field, &#039;YYYY MON DD&#039;) AS formatted_date
+
+Having to pull out each part of the date and then concatenate them together is just way more verbose than it needs to be.]]></description>
+			<content:encoded><![CDATA[<p>Which is way more verbose than it needs to be.  With to_char() it is much easier:</p>
+<p>SELECT to_char(date_field, &#8216;YYYY MON DD&#8217;) AS formatted_date</p>
+<p>Having to pull out each part of the date and then concatenate them together is just way more verbose than it needs to be.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Deane		</title>
+		<link>/2006/06/22/sql-server-convert/#comment-1414</link>
+
+		<dc:creator><![CDATA[Deane]]></dc:creator>
+		<pubDate>Fri, 23 Jun 2006 14:46:01 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/06/22/sql-server-convert/#comment-1414</guid>
+
+					<description><![CDATA[To really format a date up, I&#039;ve found that you often need to break it up using the datepart functions:
+
+&lt;code&gt;SELECT YEAR(date_field) + &#039;/&#039; + MONTH(date_field) + [etc]&lt;/code&gt;]]></description>
+			<content:encoded><![CDATA[<p>To really format a date up, I&#8217;ve found that you often need to break it up using the datepart functions:</p>
+<p><code>SELECT YEAR(date_field) + '/' + MONTH(date_field) + [etc]</code></p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

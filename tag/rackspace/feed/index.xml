@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>rackspace &#8211; Joseph Scott</title>
+	<atom:link href="/tag/rackspace/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 24 Jun 2014 16:04:33 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>OnMetal</title>
+		<link>/2014/06/24/onmetal/</link>
+					<comments>/2014/06/24/onmetal/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 24 Jun 2014 16:04:33 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[onmetal]]></category>
+		<category><![CDATA[rackspace]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10647</guid>
+
+					<description><![CDATA[From Rackspace OnMetal: The Right Way To Scale: OnMetal servers are single-tenant, bare-metal servers provisioned via the same OpenStack API as our cloud. They can be spun up as quickly as VMs to offer the agility of multi-tenant environments with the performance of single-tenant hardware. Going from an EC2 style &#8220;spin up a VM via [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>From Rackspace <a href="http://www.rackspace.com/blog/onmetal-the-right-way-to-scale/">OnMetal: The Right Way To Scale</a>:</p>
+<blockquote><p>
+OnMetal servers are single-tenant, bare-metal servers provisioned via the same OpenStack API as our cloud. They can be spun up as quickly as VMs to offer the agility of multi-tenant environments with the performance of single-tenant hardware.
+</p></blockquote>
+<p>Going from an EC2 style &#8220;spin up a VM via API call&#8221; to a &#8220;spin up a whole server via API call&#8221; seems like the next logical step.  There are more challenges when it comes to managing this at a whole server level instead of VMs, but with new challenges come new opportunities.</p>
+<p>One important note, there is reportedly no VM layer on these servers.  It isn&#8217;t just a single-tenant VM, but an actual bare-metal server.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/06/24/onmetal/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

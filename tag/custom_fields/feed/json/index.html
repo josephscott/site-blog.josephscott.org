@@ -1,0 +1,46 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/custom_fields/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/custom_fields/",
+    "feed_url": "https://blog.josephscott.org/tag/custom_fields/feed/json/",
+    "language": "en-US",
+    "title": "custom_fields &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://joseph.randomnetworks.com/?p=1049",
+            "url": "https://blog.josephscott.org/2008/03/29/wordpresss-25/",
+            "title": "WordPresss 2.5",
+            "content_html": "<p><a href=\"http://wordpress.org/\">WordPress</a> 2.5 is officially out the door.  <a href=\"http://ma.tt/\">Matt</a> hits the long list of highlights of what is new in the <a href=\"http://wordpress.org/development/2008/03/wordpress-25-brecker/\">release announcement</a>.  This coincides with the new layout at <a href=\"http://wordpress.org/\">WordPress.rog</a>.  <a href=\"http://blog.ftwr.co.uk/\">Peter Westwood</a> (one of the WordPress core developers) put together a <a href=\"http://blog.ftwr.co.uk/archives/2008/03/29/wordpress-25-contributors/\">tag cloud of people who contributed to this release</a>.</p>\n<p>For the XML-RPC blog client developers out there 2.5 adds four new methods:</p>\n<ul>\n<li>wp.deleteCategory( blog_id, username, password, category_id ) &#8211; Delete a category.</li>\n<li>wp.getCommentCount( blog_id, username, password, post_id ) &#8211; Provides a struct of all the comment counts ( approved, awaiting_moderation, spam, total_comments ) for a given post_id.  The post_id parameter is optional (or can be set to zero), if it is not provided then the same struct is returned, but for the entire blog instead of just one post.</li>\n<li>wp.getPostStatusList( blog_id, username, password ) &#8211; Provides a struct of all the valid post statuses ( draft, pending, private, publish ) and their descriptions ( Draft, Pending Review, Private, Published ).</li>\n<li>wp.getPageStatusList( blog_id, username, password ) &#8211; Provides a struct of all the valid page statuses ( draft, private, publish ) and their descriptions ( Draft, Private, Published).</li>\n</ul>\n<p>To go along with the new status methods, you can now explicitly set the post and page status using the post_status and page_status fields.  Like wise the status is also exposed via the various get* methods.  One note about future posts, for the purposes of XML-RPC clients we set the post_status to publish when the actual database value is future.</p>\n<p>The wp.suggestCategories method has been fixed to return data in the same format that it did originally.  I never heard anyone complain about this though, so I guess it isn&#8217;t getting much use.</p>\n<p>Custom fields for posts and pages are now exposed and manageable from metaWeblog.getPost/newPost/editPost, wp.getPage/newPage/editPage via the custom_fields field.  I was really happy to get this in, I think there is a lot of potential in being able to manage custom fields externally.</p>\n<p>The mt_allow_comments field now understands the value of 2 to be the same as the value of zero.  This was done because other platforms expect to be able use the value 2, so some clients assume that we support it.  Now we do, but from the WordPress point of view is does exactly the same thing as zero.</p>\n<p>If the field date_created_gmt is provided in metaWeblog.newPost/editPost, wp.newPage/editPage then it is used instead of the dateCreated field.  This same field was already exposed via metaWeblog.getPost, wp.getPage.  By definition the date_created_gmt field is always GMT, even if you don&#8217;t provide a time zone offset or a trailing Z.  I&#8217;m hoping this will help ease the many headaches that have been brought on by trying to deal with date/time issues in the XML-RPC blog APIs.</p>\n<p>If you are a developer that makes use of the WordPress XML-RPC interface, or are interested in doing development work on the WordPress XML-RPC code please subscribe to the <a href=\"http://lists.automattic.com/mailman/listinfo/wp-xmlrpc\">wp-xmlrpc email list</a>.  Along with various tickets in <a href=\"http://trac.wordpress.org/\">Trac</a> this is where we discuss ideas and issues for the XML-RPC APIs that WordPress supports.</p>\n",
+            "content_text": "WordPress 2.5 is officially out the door.  Matt hits the long list of highlights of what is new in the release announcement.  This coincides with the new layout at WordPress.rog.  Peter Westwood (one of the WordPress core developers) put together a tag cloud of people who contributed to this release.\nFor the XML-RPC blog client developers out there 2.5 adds four new methods:\n\nwp.deleteCategory( blog_id, username, password, category_id ) &#8211; Delete a category.\nwp.getCommentCount( blog_id, username, password, post_id ) &#8211; Provides a struct of all the comment counts ( approved, awaiting_moderation, spam, total_comments ) for a given post_id.  The post_id parameter is optional (or can be set to zero), if it is not provided then the same struct is returned, but for the entire blog instead of just one post.\nwp.getPostStatusList( blog_id, username, password ) &#8211; Provides a struct of all the valid post statuses ( draft, pending, private, publish ) and their descriptions ( Draft, Pending Review, Private, Published ).\nwp.getPageStatusList( blog_id, username, password ) &#8211; Provides a struct of all the valid page statuses ( draft, private, publish ) and their descriptions ( Draft, Private, Published).\n\nTo go along with the new status methods, you can now explicitly set the post and page status using the post_status and page_status fields.  Like wise the status is also exposed via the various get* methods.  One note about future posts, for the purposes of XML-RPC clients we set the post_status to publish when the actual database value is future.\nThe wp.suggestCategories method has been fixed to return data in the same format that it did originally.  I never heard anyone complain about this though, so I guess it isn&#8217;t getting much use.\nCustom fields for posts and pages are now exposed and manageable from metaWeblog.getPost/newPost/editPost, wp.getPage/newPage/editPage via the custom_fields field.  I was really happy to get this in, I think there is a lot of potential in being able to manage custom fields externally.\nThe mt_allow_comments field now understands the value of 2 to be the same as the value of zero.  This was done because other platforms expect to be able use the value 2, so some clients assume that we support it.  Now we do, but from the WordPress point of view is does exactly the same thing as zero.\nIf the field date_created_gmt is provided in metaWeblog.newPost/editPost, wp.newPage/editPage then it is used instead of the dateCreated field.  This same field was already exposed via metaWeblog.getPost, wp.getPage.  By definition the date_created_gmt field is always GMT, even if you don&#8217;t provide a time zone offset or a trailing Z.  I&#8217;m hoping this will help ease the many headaches that have been brought on by trying to deal with date/time issues in the XML-RPC blog APIs.\nIf you are a developer that makes use of the WordPress XML-RPC interface, or are interested in doing development work on the WordPress XML-RPC code please subscribe to the wp-xmlrpc email list.  Along with various tickets in Trac this is where we discuss ideas and issues for the XML-RPC APIs that WordPress supports.",
+            "date_published": "2008-03-29T14:51:08-06:00",
+            "date_modified": "2008-03-29T14:51:08-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "custom_fields",
+                "date_created_gmt",
+                "mt_allow_comments",
+                "page_status",
+                "post_status",
+                "WordPress",
+                "wp.deleteCategory",
+                "wp.getCommentCount",
+                "wp.getPageStatusList",
+                "wp.getPostStatusList",
+                "wp.suggestCategories",
+                "xmlrpc",
+                "josephscott"
+            ]
+        }
+    ]
+}

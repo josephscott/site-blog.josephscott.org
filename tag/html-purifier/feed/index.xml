@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>html-purifier &#8211; Joseph Scott</title>
+	<atom:link href="/tag/html-purifier/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 01 Mar 2013 21:15:13 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>HTML Purifier</title>
+		<link>/2013/03/01/html-purifier/</link>
+					<comments>/2013/03/01/html-purifier/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 01 Mar 2013 21:15:13 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[filter]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[html-purifier]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[wordpress-plugin]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6627</guid>
+
+					<description><![CDATA[In the world of HTML filtering in PHP HTML Purifier appears to be the current top dog. WordPress long ago forked kses for HTML filtering, which is fine, but as John Godley ( a co-worker at Automattic ) put it: There is nothing fundamentally wrong with the way WordPress and bbPress filters comments, and in [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://sharedat.net/s/fCDw"><img loading="lazy" src="https://sharedat.net/f/fC/fCDw/html-purifier.png" width="505" height="168" class="aligncenter" /></a></p>
+<p>In the world of HTML filtering in PHP <a href='http://htmlpurifier.org/'>HTML Purifier</a> appears to be the current top dog.  WordPress long ago forked <a href="http://sourceforge.net/projects/kses/">kses</a> for HTML filtering, which is fine, but as <a href="http://urbangiraffe.com/">John Godley</a> ( a co-worker at <a href="http://automattic.com/">Automattic</a> ) put it:</p>
+<blockquote><p>
+There is nothing fundamentally wrong with the way WordPress and bbPress filters comments, and in fact there has been no security alert related to this. However, this doesn’t detract from the desire to make things better, and the fact that HTML Purifier is much more thorough and exhaustive.
+</p></blockquote>
+<p>He wrote the <a href="http://wordpress.org/extend/plugins/html-purified/">HTML Purified WordPress plugin</a>, which &#8220;replaces the default WordPress comments filters with HTML Purifier&#8221;.</p>
+<p>For new PHP projects, or ones that allow you to easily swap in/out libraries, it looks like HTML Purifier is the current <a href="http://htmlpurifier.org/comparison">best option for HTML filtering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/03/01/html-purifier/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Finding PHP Short Tags	</title>
+	<atom:link href="/2010/06/28/finding-php-short-tags/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/06/28/finding-php-short-tags/</link>
+	<description></description>
+	<lastBuildDate>Wed, 12 Apr 2017 16:06:08 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Timothy (TRiG)		</title>
+		<link>/2010/06/28/finding-php-short-tags/#comment-84402</link>
+
+		<dc:creator><![CDATA[Timothy (TRiG)]]></dc:creator>
+		<pubDate>Wed, 12 Apr 2017 16:06:08 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2458#comment-84402</guid>
+
+					<description><![CDATA[In current versions of PHP, short open tags are explicitly allowed for the simple echo case: &lt;code&gt;&#060;?=$something?&#062;&lt;/code&gt;, but not in other cases. To find disallowed short open tags (i.e., short tags other than the above), use this: &lt;code&gt;grep -rnl &quot;&#060;?[^p=]\&#124;&#060;?$&quot; *&lt;/code&gt;. This borrows from Erik Olson&#039;s comment above to find short open tags at the end of a line, but doesn&#039;t find simple echo short tags, which are permitted.
+
+TRiG.]]></description>
+			<content:encoded><![CDATA[<p>In current versions of PHP, short open tags are explicitly allowed for the simple echo case: <code>&lt;?=$something?&gt;</code>, but not in other cases. To find disallowed short open tags (i.e., short tags other than the above), use this: <code>grep -rnl "&lt;?[^p=]\|&lt;?$" *</code>. This borrows from Erik Olson&#8217;s comment above to find short open tags at the end of a line, but doesn&#8217;t find simple echo short tags, which are permitted.</p>
+<p>TRiG.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Erik Olson		</title>
+		<link>/2010/06/28/finding-php-short-tags/#comment-37993</link>
+
+		<dc:creator><![CDATA[Erik Olson]]></dc:creator>
+		<pubDate>Mon, 06 Mar 2017 17:25:38 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2458#comment-37993</guid>
+
+					<description><![CDATA[The only problem I find with your regex when I try it, is that it doesn&#039;t find if the line ends in &quot;&#060;?&#034; (which happens if that&#039;s the whole line, a common occurrence). It&#039;s not counting the newline as &#034;not p&#034;.  You&#039;ll want something more like this:
+
+grep -rn &#034;&#060;?[^p]\&#124;&#060;?$&#034; *]]></description>
+			<content:encoded><![CDATA[<p>The only problem I find with your regex when I try it, is that it doesn&#8217;t find if the line ends in &#8220;&lt;?&quot; (which happens if that&#039;s the whole line, a common occurrence). It&#039;s not counting the newline as &quot;not p&quot;.  You&#039;ll want something more like this:</p>
+<p>grep -rn &quot;&lt;?[^p]\|&lt;?$&quot; *</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Reminder: Don&#8217;t Use the Short PHP Open Tag &#8211; &#8212; Konstantin KovsheninKonstantin Kovshenin		</title>
+		<link>/2010/06/28/finding-php-short-tags/#comment-3467</link>
+
+		<dc:creator><![CDATA[Reminder: Don&#8217;t Use the Short PHP Open Tag &#8211; &#8212; Konstantin KovsheninKonstantin Kovshenin]]></dc:creator>
+		<pubDate>Wed, 21 Nov 2012 06:37:33 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2458#comment-3467</guid>
+
+					<description><![CDATA[[...] Scott has a simpler example that works without the -P flag. If you&#8217;re building WordPress themes, the Theme Check [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Scott has a simpler example that works without the -P flag. If you&#8217;re building WordPress themes, the Theme Check [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/06/28/finding-php-short-tags/#comment-3465</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 02 Aug 2010 15:47:29 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2458#comment-3465</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/06/28/finding-php-short-tags/#comment-3463&quot;&gt;Aaron Pepper&lt;/a&gt;.
+
+The situation where you just need to do a simple echo would be nicer, but could potentially be accomplished with &#060;?php= $some_var ?&#062; - hopefully PHP core will support that syntax one day.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/06/28/finding-php-short-tags/#comment-3463">Aaron Pepper</a>.</p>
+<p>The situation where you just need to do a simple echo would be nicer, but could potentially be accomplished with &lt;?php= $some_var ?&gt; &#8211; hopefully PHP core will support that syntax one day.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron Pepper		</title>
+		<link>/2010/06/28/finding-php-short-tags/#comment-3463</link>
+
+		<dc:creator><![CDATA[Aaron Pepper]]></dc:creator>
+		<pubDate>Sat, 31 Jul 2010 23:36:51 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2458#comment-3463</guid>
+
+					<description><![CDATA[I like to use short tags for personal and client work, when I know I have full control of the hosting environment. I&#039;ll use full php tags for public and open source code.
+
+It kinda sucks that short tags aren&#039;t enabled by default.  is so much nicer than . Less typing, and readability is better.]]></description>
+			<content:encoded><![CDATA[<p>I like to use short tags for personal and client work, when I know I have full control of the hosting environment. I&#8217;ll use full php tags for public and open source code.</p>
+<p>It kinda sucks that short tags aren&#8217;t enabled by default.  is so much nicer than . Less typing, and readability is better.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/06/28/finding-php-short-tags/#comment-3462</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Sun, 04 Jul 2010 04:56:54 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2458#comment-3462</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/06/28/finding-php-short-tags/#comment-3461&quot;&gt;Lance Willett&lt;/a&gt;.
+
+No problem, happy to hear it helped.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/06/28/finding-php-short-tags/#comment-3461">Lance Willett</a>.</p>
+<p>No problem, happy to hear it helped.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Lance Willett		</title>
+		<link>/2010/06/28/finding-php-short-tags/#comment-3461</link>
+
+		<dc:creator><![CDATA[Lance Willett]]></dc:creator>
+		<pubDate>Fri, 02 Jul 2010 18:21:13 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2458#comment-3461</guid>
+
+					<description><![CDATA[Thanks for the tip, Joseph. Very useful—I&#039;ve added it to my arsenal of theme testing checks.]]></description>
+			<content:encoded><![CDATA[<p>Thanks for the tip, Joseph. Very useful—I&#8217;ve added it to my arsenal of theme testing checks.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/06/28/finding-php-short-tags/#comment-3460</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 29 Jun 2010 20:24:29 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2458#comment-3460</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/06/28/finding-php-short-tags/#comment-3459&quot;&gt;Ant&lt;/a&gt;.
+
+The &#060;?php tags are the only ones that you can be sure will work across all PHP installs.  That&#039;s the big one for me.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/06/28/finding-php-short-tags/#comment-3459">Ant</a>.</p>
+<p>The &lt;?php tags are the only ones that you can be sure will work across all PHP installs.  That&#8217;s the big one for me.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ant		</title>
+		<link>/2010/06/28/finding-php-short-tags/#comment-3459</link>
+
+		<dc:creator><![CDATA[Ant]]></dc:creator>
+		<pubDate>Tue, 29 Jun 2010 16:37:50 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2458#comment-3459</guid>
+
+					<description><![CDATA[I use &#060;?php tags, but what is problem with shorttags? I never found explanation.]]></description>
+			<content:encoded><![CDATA[<p>I use &lt;?php tags, but what is problem with shorttags? I never found explanation.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

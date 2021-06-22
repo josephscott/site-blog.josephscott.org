@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ddos &#8211; Joseph Scott</title>
+	<atom:link href="/tag/ddos/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 07 Mar 2011 17:33:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>WordPress.com DDoS Details</title>
+		<link>/2011/03/07/wordpress-com-ddos-details/</link>
+					<comments>/2011/03/07/wordpress-com-ddos-details/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 07 Mar 2011 17:33:38 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[barry-abrahamson]]></category>
+		<category><![CDATA[ddos]]></category>
+		<category><![CDATA[wordpress.com]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3714</guid>
+
+					<description><![CDATA[What we saw was not one single attack, but 6 separate attacks beginning at 2:10AM PST on March 3rd. All of these attacks were directed at a single site hosted on WordPress.com’s servers. WordPress.com DDoS Details, Barry Abrahamson (lead sysadmin at Automattic). Includes a couple of graphs to give you an idea on the size [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+What we saw was not one single attack, but 6 separate attacks beginning at 2:10AM PST on March 3rd. All of these attacks were directed at a single site hosted on WordPress.com’s servers.
+</p></blockquote>
+<p><a href='http://barry.wordpress.com/2011/03/07/wordpress-com-ddos-details/'>WordPress.com DDoS Details, Barry Abrahamson</a> (lead sysadmin at Automattic).</p>
+<p>Includes a couple of graphs to give you an idea on the size of the attacks.  Our operations team works very hard to make sure most of the attacks (they happen every day) have no impact on the rest of WordPress.com.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/03/07/wordpress-com-ddos-details/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

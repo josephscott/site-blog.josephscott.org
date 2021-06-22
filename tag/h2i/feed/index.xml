@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>h2i &#8211; Joseph Scott</title>
+	<atom:link href="/tag/h2i/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 11 Aug 2015 14:16:42 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>h2i</title>
+		<link>/2015/08/11/h2i/</link>
+					<comments>/2015/08/11/h2i/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 11 Aug 2015 14:16:42 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[h2i]]></category>
+		<category><![CDATA[http2]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12957</guid>
+
+					<description><![CDATA[While HTTP/2 has brought many performance improvements, the switch to a binary format has made it more opaque. Enter h2i: h2i is an interactive HTTP/2 (&#8220;h2&#8221;) console debugger. Miss the good ol&#8217; days of telnetting to your HTTP/1.n servers? We&#8217;re bringing you back.]]></description>
+										<content:encoded><![CDATA[<p>While HTTP/2 has brought many performance improvements, the switch to a binary format has made it more opaque.  Enter <a href="https://github.com/bradfitz/http2/tree/master/h2i">h2i</a>:</p>
+<blockquote><p>
+h2i is an interactive HTTP/2 (&#8220;h2&#8221;) console debugger. Miss the good ol&#8217; days of telnetting to your HTTP/1.n servers? We&#8217;re bringing you back.
+</p></blockquote>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/08/11/h2i/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

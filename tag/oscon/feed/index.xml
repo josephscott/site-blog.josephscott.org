@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>oscon &#8211; Joseph Scott</title>
+	<atom:link href="/tag/oscon/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 28 Jul 2006 03:08:22 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Google Code Project Hosting</title>
+		<link>/2006/07/27/google-code-project-hosting/</link>
+					<comments>/2006/07/27/google-code-project-hosting/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 28 Jul 2006 03:08:22 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[googlecode]]></category>
+		<category><![CDATA[oscon]]></category>
+		<category><![CDATA[oscon2006]]></category>
+		<category><![CDATA[sourceforge]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/07/27/google-code-project-hosting/</guid>
+
+					<description><![CDATA[Seems Google has been busy lately, announcing their Google Code Project Hosting at OSCON. NewsForge has an interview with Greg Stein and Chris DiBona about the new offering. More comments on the new service can be found at Slashdot and Techcrunch. From the very beginning Greg came out and said that they aren&#8217;t competing with [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Seems <a href="http://www.google.com/">Google</a> has been busy lately, announcing their <a href="http://code.google.com/hosting/">Google Code Project Hosting</a> at <a href="http://conferences.oreillynet.com/os2006/">OSCON</a>.  <a href="http://www.newsforge.com/">NewsForge</a> has an <a href="http://www.newsforge.com/article.pl?sid=06/07/27/1833251">interview with Greg Stein and Chris DiBona</a> about the new offering.  More comments on the new service can be found at <a href="http://developers.slashdot.org/developers/06/07/27/2015248.shtml">Slashdot</a> and <a href="http://www.techcrunch.com/2006/07/27/google-challenges-sourceforge-in-open-source-project-hosting/">Techcrunch</a>.</p>
+<p>From the very beginning Greg came out and said that they aren&#8217;t competing with <a href="http://www.sf.net/">SourceForge.net</a>.  At some level this is certainly true because the feature set that Google is targeting is different that SF (SourceForge).  In general though this is direct competition to SF, and it is good to see.  SF has had problems for years and have never really been able to keep up with the demand.  It isn&#8217;t clear that Google will be able to either, but hopefully the competition will drive everyone to be better.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/07/27/google-code-project-hosting/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Javascript Boot Camp</title>
+		<link>/2006/07/27/javascript-boot-camp/</link>
+					<comments>/2006/07/27/javascript-boot-camp/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 27 Jul 2006 19:59:50 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[oscon]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/07/27/javascript-boot-camp/</guid>
+
+					<description><![CDATA[I haven&#8217;t been to OSCON (O&#8217;Reilly Open Source Convention) in years, so I&#8217;m glad to see that more and more presenters are making their slides available online. It isn&#8217;t the same as being there, but it is better than nothing. The Javascript Boot Camp Tutorial has slides and source code available. I just finished a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I haven&#8217;t been to <a href="http://www.oreillynet.com/conferences/blog/oscon/">OSCON</a> (O&#8217;Reilly Open Source Convention) in years, so I&#8217;m glad to see that more and more presenters are making their slides available online.  It isn&#8217;t the same as being there, but it is better than nothing.</p>
+<p>The <a href="http://www.slash7.com/articles/2006/07/26/javascript-boot-camp-tutorial">Javascript Boot Camp Tutorial</a> has slides and source code available.  I just finished a quick run through of the PDF slides, very cool.  These slides are a great intro into Javascript.  I think I&#8217;ll keep a copy around for reference later.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/07/27/javascript-boot-camp/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

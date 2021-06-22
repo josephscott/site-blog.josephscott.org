@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>page-speed &#8211; Joseph Scott</title>
+	<atom:link href="/tag/page-speed/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 08 Apr 2015 16:33:14 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Google PageSpeed Insights: Chrome 27 and iOS 6 Safari</title>
+		<link>/2015/04/08/google-pagespeed-insights-chrome-27-and-ios-6-safari/</link>
+					<comments>/2015/04/08/google-pagespeed-insights-chrome-27-and-ios-6-safari/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 08 Apr 2015 16:33:14 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[page-speed]]></category>
+		<category><![CDATA[webperf]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12084</guid>
+
+					<description><![CDATA[I&#8217;ve been using Google PageSpeed Insights quite a bit recently. There isn&#8217;t much information on how exactly the tests are run, which can make it hard to reproduce the results. Then I noticed the user agent strings coming from PageSpeed Insights ( emphasis mine ): Desktop Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; Google [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been using Google <a href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Insights</a> quite a bit recently.  There isn&#8217;t much information on how exactly the tests are run, which can make it hard to reproduce the results.  Then I noticed the user agent strings coming from PageSpeed Insights ( emphasis mine ):</p>
+<p><strong>Desktop</strong></p>
+<blockquote><p>
+  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; Google Page Speed Insights)  <strong>Chrome/27.0.1453</strong> Safari/537.36
+</p></blockquote>
+<p><strong>Mobile</strong></p>
+<blockquote><p>
+  Mozilla/5.0 (iPhone; CPU iPhone OS 6_0_1 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko; Google Page Speed Insights) <strong>Version/6.0</strong> Mobile/10A525 Safari/8536.25
+</p></blockquote>
+<p>The only difference between these and normal user agent strings is the <code>; Google Page Speed Insights</code>.</p>
+<p>If these user agent strings are what they claim to be, the Insight desktop is using <strong>Chrome 27</strong> <a href="http://googlechromereleases.blogspot.com/2013/05/stable-channel-release.html">released in May 2013</a> and Insight mobile is using <strong>Safari from iOS 6</strong> <a href="https://support.apple.com/kb/DL1606?locale=en_US">released in Nov 2012</a>.</p>
+<p>This explains some of the inconsistency I noticed in comparing PageSpeed Insights results with <a href="https://developer.chrome.com/devtools/docs/device-mode">Chrome mobile device emulation</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/04/08/google-pagespeed-insights-chrome-27-and-ios-6-safari/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

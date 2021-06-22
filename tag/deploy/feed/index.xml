@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>deploy &#8211; Joseph Scott</title>
+	<atom:link href="/tag/deploy/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 05 Sep 2018 15:31:04 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Little Changes, Little Problems</title>
+		<link>/2018/09/05/little-changes-little-problems/</link>
+					<comments>/2018/09/05/little-changes-little-problems/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 05 Sep 2018 15:31:04 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[deploy]]></category>
+		<category><![CDATA[fred-wilson]]></category>
+		<guid isPermaLink="false">/?p=16954</guid>
+
+					<description><![CDATA[I am a big fan of making smaller, more frequent commits and deploys. No one wants to review the 3,000 line diff, and deploying it generally comes with a reduced level of confidence. At least when compared with the 3 line change. Fred Wilson wrote about doing a code deploy at Etsy and described this [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I am a big fan of making smaller, more frequent commits and deploys.  No one wants to review the 3,000 line diff, and deploying it generally comes with a reduced level of confidence.  At least when compared with the 3 line change.</p>
+<p>Fred Wilson wrote about <a href="https://avc.com/2011/02/continuous-deployment/">doing a code deploy at Etsy</a> and described this preference for smaller changes in a way I really liked:</p>
+<blockquote><p>
+Big changes create big problems. Little changes create little problems.
+</p></blockquote>
+<p>Of course this isn&#8217;t true for 100% of the cases, it is certainly possible for a small change to create devastating problems. What it does do is encapsulate a correct principle, that small changes are easier to reason through than large ones.</p>
+<p>Worth printing on a poster and putting it on the wall.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/09/05/little-changes-little-problems/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The Joy of Deploy</title>
+		<link>/2012/07/11/the-joy-of-deploy/</link>
+					<comments>/2012/07/11/the-joy-of-deploy/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 11 Jul 2012 15:49:12 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[automattic]]></category>
+		<category><![CDATA[deploy]]></category>
+		<category><![CDATA[vaultpress]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6130</guid>
+
+					<description><![CDATA[Last week I started spending time on the VaultPress team at Automattic. VaultPress was something I hadn&#8217;t worked on previously and had only loosely followed, so the code base was something I wasn&#8217;t familiar with. With my relatively fresh eyes (as far as not having worked on VaultPress before) I spent the first day or [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Last week I started spending time on the <a href="http://vaultpress.com/">VaultPress</a> team at <a href="http://automattic.com/">Automattic</a>.  VaultPress was something I hadn&#8217;t worked on previously and had only loosely followed, so the code base was something I wasn&#8217;t familiar with.</p>
+<p>With my relatively fresh eyes (as far as not having worked on VaultPress before) I spent the first day or so just making observational notes about the service.  Developers often suffer from having an intimate knowledge of a system, which can make it hard to picture how a regular user (who isn&#8217;t familiar with all the ins and outs) views things.  This was my chance to avoid that before diving into the code base.</p>
+<p>The next day, after assembling my notes, I started diving into VaultPress.  Support, bug tickets, documentation, feature requests, code, the whole thing.  I picked one of the very minor items from my notes and found the piece of code that needed to be updated.  After running a few tests to make sure the change worked as expected, I committed and deployed the new code.</p>
+<p>There is something magical about deploying code on a system that just a day or two ago you had never touched before.  The joy of watching that first deploy (even for something simple) go live really gets you over that first hurdle of becoming comfortable with a new project.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/07/11/the-joy-of-deploy/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Deploying is the new Compiling</title>
+		<link>/2012/05/08/deploying-is-the-new-compiling/</link>
+					<comments>/2012/05/08/deploying-is-the-new-compiling/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 08 May 2012 16:53:14 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[comic]]></category>
+		<category><![CDATA[compiling]]></category>
+		<category><![CDATA[deploy]]></category>
+		<category><![CDATA[xkcd]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=5892</guid>
+
+					<description><![CDATA[Inspired by this classic xkcd comic I realized the excuses have changed over time: Programmer Excuses: 1992 Programmer Excuses: 2012]]></description>
+										<content:encoded><![CDATA[<p>Inspired by <a href="http://xkcd.com/303/">this classic xkcd comic</a> I realized the excuses have changed over time:</p>
+<h2>Programmer Excuses: 1992</h2>
+<a href="http://xkcd.com/303/"><img loading="lazy" alt="Programmer Excuses: 1992" src="https://lh6.googleusercontent.com/-v7nHH7SIHA8/T6GxtF-A6nI/AAAAAAAAAZk/KDbA9lc4bEk/s413/compiling-orig.png" title="'Are you stealing those LCDs?' 'Yeah, but I'm doing it while my code compiles.'" width="413" height="360" /></a>
+<p><br style="margin: 25px;" /></p>
+<h2>Programmer Excuses: 2012</h2>
+<img loading="lazy" alt="Programmer Excuses: 2012" src="https://lh6.googleusercontent.com/-mZlpI0ceJgA/T6GxtDMkMzI/AAAAAAAAAZg/slvbOJjzdkY/s413/compiling-new.png" title="This is what I imagine Facebook HQ looks like on Tuesdays during the weekly deploy." width="413" height="360" />
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/05/08/deploying-is-the-new-compiling/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

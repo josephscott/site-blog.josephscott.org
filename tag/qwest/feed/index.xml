@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>qwest &#8211; Joseph Scott</title>
+	<atom:link href="/tag/qwest/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 03 Nov 2010 20:14:03 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>From Qwest DSL to Comcast Cable</title>
+		<link>/2010/11/03/from-qwest-dsl-to-comcast-cable/</link>
+					<comments>/2010/11/03/from-qwest-dsl-to-comcast-cable/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 03 Nov 2010 20:14:03 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[cable]]></category>
+		<category><![CDATA[comcast]]></category>
+		<category><![CDATA[dsl]]></category>
+		<category><![CDATA[qwest]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3112</guid>
+
+					<description><![CDATA[I changed Internet providers, from Qwest DSL: to Comcast Cable: When I signed up they told me it was for 12Mbs down and 2Mbs up, so I&#8217;d consider this good so far.]]></description>
+										<content:encoded><![CDATA[<p>I changed Internet providers, from Qwest DSL:</p>
+<p><img src="http://farm2.static.flickr.com/1110/5143318159_2cf1b78ab0_o.png"></p>
+<p>to Comcast Cable:</p>
+<p><img src="http://farm2.static.flickr.com/1234/5143924496_291c4d93cf_o.png"></p>
+<p>When I signed up they told me it was for 12Mbs down and 2Mbs up, so I&#8217;d consider this good so far.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/11/03/from-qwest-dsl-to-comcast-cable/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Qwest Redirecting DNS lookups</title>
+		<link>/2008/09/29/qwest-redirecting-dns-lookups/</link>
+					<comments>/2008/09/29/qwest-redirecting-dns-lookups/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 29 Sep 2008 16:49:46 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[dns]]></category>
+		<category><![CDATA[qwest]]></category>
+		<category><![CDATA[web.help]]></category>
+		<category><![CDATA[yahoo]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1178</guid>
+
+					<description><![CDATA[Qwest has started redirecting DNS queries to their own servers. Not because I asked them to, they did it to start pushing their own search results page when DNS queries failed (like so many others have and some still do). This new &#8220;service&#8221; is called Web.Help. In order to do this they reset my DSL [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.qwest.com/">Qwest</a> has started redirecting DNS queries to their own servers.  Not because I asked them to, they did it to start pushing their own search results page when DNS queries failed (like so many others have and some still do).  This new &#8220;service&#8221; is called <a href="http://www.qwest.net/web.help/">Web.Help</a>.  In order to do this they reset my DSL line this morning (which was irritating), but they did at least provide some links on what this.</p>
+<p>After reading through some of their information on their new &#8220;service&#8221; I found a link indicating that I could opt out (not that I ever opted in).  I&#8217;m not sure what they were thinking here though, instead of the &#8220;opt out&#8221; taking me to a page where I could opt out, it took me to another documentation page on their new service.  I had to dig through three or four layers of &#8220;opt out&#8221; links before I got to a page that would actually turn this off.  Which of course reset my DSL connection again about 5 minutes later.  We&#8217;ll see where this ends up.</p>
+<p>The search results they were showing for failed DNS queries were from <a href="http://yahoo.com/">Yahoo</a>.  I wonder if Yahoo is paying Qwest to do this.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/09/29/qwest-redirecting-dns-lookups/feed/</wfw:commentRss>
+			<slash:comments>13</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

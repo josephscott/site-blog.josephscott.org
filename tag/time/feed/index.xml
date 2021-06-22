@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>time &#8211; Joseph Scott</title>
+	<atom:link href="/tag/time/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 14 Mar 2016 03:22:22 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Fifty Years of Standardized Daylight Savings Time</title>
+		<link>/2016/03/13/fifty-years-of-standardized-daylight-savings-time/</link>
+					<comments>/2016/03/13/fifty-years-of-standardized-daylight-savings-time/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 14 Mar 2016 03:22:22 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[time]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15503</guid>
+
+					<description><![CDATA[The Uniform Time Act of 1966 standardized time zones and daylight savings in the United States: It is the policy of the United States to promote the adoption and observance of uniform time within the standard time zones prescribed by the Act entitled &#8220;An Act to save daylight and to provide standard time for the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The <a href="https://www.gpo.gov/fdsys/pkg/STATUTE-80/pdf/STATUTE-80-Pg107.pdf">Uniform Time Act of 1966</a> standardized time zones and daylight savings in the United States:</p>
+<blockquote><p>
+It is the policy of the United States to promote the adoption and observance of uniform time within the standard time zones prescribed by the Act entitled &#8220;An Act to save daylight and to provide standard time for the United States&#8221;
+</p></blockquote>
+<p>Prior to that each state picked their own schedule for moving clocks forward and back.  Now it is overseen by <a href="https://www.transportation.gov/regulations/time-act">Department of Transportation</a>.</p>
+<hr />
+<p>This is not my favorite weekend.  I&#8217;d be happy to not change my clock again.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/03/13/fifty-years-of-standardized-daylight-savings-time/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Why MySQL timestamp is 24 seconds different from PHP</title>
+		<link>/2010/10/28/why-mysql-timestamp-is-24-seconds-different-from-php/</link>
+					<comments>/2010/10/28/why-mysql-timestamp-is-24-seconds-different-from-php/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 28 Oct 2010 16:08:48 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[leap-second]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[time]]></category>
+		<category><![CDATA[timestamp]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3064</guid>
+
+					<description><![CDATA[You may find that timestamp value returned by MySQL UNIX_TIMESTAMP() function is 24 seconds grater than those returned by PHP functions and classes like strtotime(), mktime(), DateTime::getTimestamp(), Zend_Date::getTimestamp(). via Why MySQL timestamp is 24 seconds different from PHP &#124; Pumka.net Blog. Turns out MySQL applies leap seconds, but PHP doesn&#8217;t.]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+You may find that timestamp value returned by MySQL UNIX_TIMESTAMP() function is 24 seconds grater than those returned by PHP functions and classes like strtotime(), mktime(), DateTime::getTimestamp(), Zend_Date::getTimestamp().
+</p></blockquote>
+<p>via <a href='http://blog.pumka.net/2010/10/24/why-mysql-timestamp-is-24-seconds-different-from-php/'>Why MySQL timestamp is 24 seconds different from PHP | Pumka.net Blog</a>.</p>
+<p>Turns out MySQL applies leap seconds, but PHP doesn&#8217;t.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/10/28/why-mysql-timestamp-is-24-seconds-different-from-php/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

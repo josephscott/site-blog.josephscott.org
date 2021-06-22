@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>phantomjs &#8211; Joseph Scott</title>
+	<atom:link href="/tag/phantomjs/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 17 Apr 2015 16:50:19 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>NightmareJS</title>
+		<link>/2015/04/17/nightmarejs/</link>
+					<comments>/2015/04/17/nightmarejs/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 17 Apr 2015 16:50:19 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[nightmarejs]]></category>
+		<category><![CDATA[phantomjs]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11186</guid>
+
+					<description><![CDATA[If you&#8217;ve ever felt like PhantomJS was too verbose, you may want to try NightmareJS. It is a wrapper around PhantomJS that uses English language style commands: [sourcecode lang=&#8221;js&#8221;] new Nightmare() .goto(&#8216;http://yahoo.com&/#8217;) .type(&#8216;input[title=&#34;Search&#34;]&#8217;, &#8216;github nightmare&#8217;) .click(&#8216;.searchsubmit&#8217;) .run(); [/sourcecode]]]></description>
+										<content:encoded><![CDATA[<p>If you&#8217;ve ever felt like <a href="http://phantomjs.org/">PhantomJS</a> was too verbose, you may want to try <a href="http://www.nightmarejs.org/">NightmareJS</a>.  It is a wrapper around PhantomJS that uses English language style commands:</p>
+<p>[sourcecode lang=&#8221;js&#8221;]<br />
+new Nightmare()<br />
+  .goto(&#8216;http://yahoo.com&/#8217;)<br />
+  .type(&#8216;input[title=&quot;Search&quot;]&#8217;, &#8216;github nightmare&#8217;)<br />
+  .click(&#8216;.searchsubmit&#8217;)<br />
+  .run();<br />
+[/sourcecode]</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/04/17/nightmarejs/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>PhantomJS: Headless WebKit with JavaScript API</title>
+		<link>/2011/03/28/phantomjs-headless-webkit-with-javascript-api/</link>
+					<comments>/2011/03/28/phantomjs-headless-webkit-with-javascript-api/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 28 Mar 2011 15:19:42 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[phantomjs]]></category>
+		<category><![CDATA[webkit]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3898</guid>
+
+					<description><![CDATA[PhantomJS: Headless WebKit with JavaScript API. The rendering example looks promising for capturing screenshots of URLs.]]></description>
+										<content:encoded><![CDATA[<p><a href='http://www.phantomjs.org/'>PhantomJS</a>: Headless WebKit with JavaScript API</a>.  The <a href="http://code.google.com/p/phantomjs/wiki/QuickStart#Rendering">rendering</a> example looks promising for capturing screenshots of URLs.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/03/28/phantomjs-headless-webkit-with-javascript-api/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

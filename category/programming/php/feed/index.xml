@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>PHP &#8211; Joseph Scott</title>
+	<atom:link href="/category/programming/php/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 25 May 2005 17:20:06 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Cheat Sheats</title>
+		<link>/2005/05/25/cheat-sheats/</link>
+					<comments>/2005/05/25/cheat-sheats/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 25 May 2005 17:20:06 +0000</pubDate>
+				<category><![CDATA[How To]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/25/cheat-sheats/</guid>
+
+					<description><![CDATA[If you haven&#8217;t come across the cheat sheets site for MySQL, PHP, mod_rewrite and CSS then go take a few minutes and check it out. Most of these are things that I usually only often enough that I remember where to look information but not the actual information itself, so these cheat sheets should come [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you haven&#8217;t come across the <a href="http://www.ilovejackdaniels.com/cheat-sheets/">cheat sheets</a> site for MySQL, PHP, mod_rewrite and CSS then go take a few minutes and check it out.  Most of these are things that I usually only often enough that I remember where to look information but not the actual information itself, so these cheat sheets should come in handy.  I recommend using the PDF versions for printing over the PNG versions, I was able to get much better print quality out of the PDFs.</p>
+<p>I&#8217;d love to see a few more these for MS SQL server, Oracle, PostgreSQL and Vim.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/05/25/cheat-sheats/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>phpBeans, Hmmmmm.</title>
+		<link>/2005/02/11/phpbeans-hmmmmm/</link>
+					<comments>/2005/02/11/phpbeans-hmmmmm/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 11 Feb 2005 23:23:09 +0000</pubDate>
+				<category><![CDATA[PHP]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/02/11/phpbeans-hmmmmm/</guid>
+
+					<description><![CDATA[If you&#8217;ve been around programming for even a little bit you&#8217;re likely to have seen references to JavaBeans. In an effort to provide a similar remote method invocation (RMI) for PHP there is now a phpBeans project. I&#8217;m not entirely convinced that this is the way to go when compared to SOAP/XML-RPC/REST, but it an [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you&#8217;ve been around programming for even a little bit you&#8217;re likely to have seen references to <a href="http://java.sun.com/products/javabeans/">JavaBeans</a>.  In an effort to provide a similar remote method invocation (RMI) for <a href="http://www.php.net/">PHP</a> there is now a <a href="http://www.phpbeans.com/">phpBeans</a> project.  I&#8217;m not entirely convinced that this is the way to go when compared to SOAP/XML-RPC/REST, but it an interesting additional option.</p>
+<p>One of the things that could really propel something like phpBeans is the ability to make use of it in other languages.  There is already a Ruby client, but I&#8217;m thinking that adding Java, Perl and Python clients would cover enough ground that many more people would be interested in it.  In that respect SOAP/XML-RPC/REST has already beat the beans idea because both sides (client and server) can be in any language.  That sort of flexibility certainly isn&#8217;t free, but it sure can be nice.</p>
+<p>So I still haven&#8217;t come to any major conclusion on the idea of phpBeans.  If I get a change I&#8217;ll try it out and see if it is something I want to pursue more seriously.  It certainly has possibilities.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/02/11/phpbeans-hmmmmm/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Two Complaints With PHP5</title>
+		<link>/2004/11/05/two-complaints-with-php5/</link>
+					<comments>/2004/11/05/two-complaints-with-php5/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 05 Nov 2004 22:55:05 +0000</pubDate>
+				<category><![CDATA[PHP]]></category>
+		<category><![CDATA[Programming]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/11/05/two-complaints-with-php5/</guid>
+
+					<description><![CDATA[I&#8217;ve come around again to looking at PHP5 for a few projects. I started with some small self contained pieces that could be easily tested on their own. To be fair I wrote this code to only work with PHP5, trying to take full advantage of the new features. I quickly developed two complaints: NO [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve come around again to looking at PHP5 for a few projects.  I started with some small self contained pieces that could be easily tested on their own.  To be fair I wrote this code to only work with PHP5, trying to take full advantage of the new features.  I quickly developed two complaints:</p>
+<ol>
+<li><strong>NO MULTIPLE INHERITANCE?</strong><br />
+I like being able to re-use code, multiple inheritance should be a no brainer here.  After digging around Google trying to figure why they would leave this out of PHP5 the most common excuse seems to be that it might be confusing for some people.  After all, what if method foo() exists in multiple parents?  Big whoop, establish a rule on how to deal with that and move on.  Perl&#8217;s solution to this I believe is left to right, with ways to override that if needed.  Continuing the argument against multiple inheritance it has been said in order to implement you can use <a href="http://www.php.net/manual/en/language.oop5.interfaces.php">interfaces</a>.  This is completely bogus!  Interfaces have a use, multiple inheritance isn&#8217;t it.  How can you have code re-use in an interface since it is specifically there not to implement code?</li>
+<li><strong>EXCEPTIONS DON&#8217;T HANDLE ERRORS?</strong><br />
+After getting over the feeling that PHP5 is trying to impress Java, I&#8217;ve been happy with having <a href="http://www.php.net/manual/en/language.oop5.exceptions.php">exceptions</a> in PHP5.  Unfortunately I was foolish enough to assume that normal errors in PHP would throw exceptions that I would be able to easily catch.  Bzzzt, wrong!  Turns out that exceptions are basically a &#8216;userland&#8217; sort of thing, the system will still chuck errors the way PHP4 did.  To get around this I wrote a simple error handling function that simple took an error and threw an exception using the error information.  This adds another layer of code calling <a href="http://us2.php.net/set_error_handler">set_error_handler()</a> and <a href="http://us2.php.net/manual/en/function.restore-error-handler.php">restore_error_handler()</a> before and after a try and catch block that might cause a PHP error.  Although I couldn&#8217;t find any documentation to confirm this, I suspect this was done in an effort to try and preserve backwards compatibility with PHP4.  I would have rather seen additional knob that would use <a href="http://us2.php.net/manual/en/function.set-exception-handler.php">set_exception_handler()</a> or something to make PHP4 code happy.</li>
+</ol>
+<p>I generally try not to run around ranting against this and that, I just feel strongly that PHP5 missed out on some very useful and very important steps.  I&#8217;m still a big fan of PHP, I consider it one of the best languages for web apps.  Unfortunately that doesn&#8217;t keep me from being disappointed in what could have been for PHP5.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2004/11/05/two-complaints-with-php5/feed/</wfw:commentRss>
+			<slash:comments>8</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Top Five WordPress SQL Queries</title>
+		<link>/2004/10/28/top-five-wordpress-sql-queries/</link>
+					<comments>/2004/10/28/top-five-wordpress-sql-queries/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 28 Oct 2004 07:00:41 +0000</pubDate>
+				<category><![CDATA[Database]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/10/28/top-five-wordpress-sql-queries/</guid>
+
+					<description><![CDATA[Recently I mentioned a tool to analyze database queries, PQA (Practical Query Analysis). Originally this tool was designed to work with PostgreSQL and now has some support for MySQL. So I turned on query logging for my MySQL server that hosts my WordPress back end. Then I put together a little script to run PQA [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Recently I <a href="http://joseph.randomnetworks.com/archives/2004/10/20/link-dump-2004-10-20/">mentioned</a> a tool to analyze database queries, <a href="http://pqa.projects.postgresql.org/">PQA (Practical Query Analysis)</a>.  Originally this tool was designed to work with <a href="http://www.postgresql.org/">PostgreSQL</a> and now has some support for <a href="http://www.mysql.com/">MySQL</a>.  So I turned on query logging for my MySQL server that hosts my <a href="http://www.wordpress.org/">WordPress</a> back end.  Then I put together a little script to run PQA against the MySQL query log:</p>
+<blockquote><p>
+#!/bin/sh</p>
+<p>/home/joseph/bin/pqa.rb -file /var/db/mysql/query.log -top 5 -normalize -logtype mysql
+</p></blockquote>
+<p>Nothing fancy: told it where the log was, how many &#8220;top&#8221; queries I wanted, normalize the queries and that the this was for MySQL (instead of PostgreSQL).  I don&#8217;t get a lot of traffic to my site, so I&#8217;ve let the log run for almost a week to get a sample size of more than 100,000 queries.  Now that I&#8217;ve hit that here are the results:</p>
+<blockquote><p>
+######## Overall statistics<br />
+101332 queries (150 unique) parsed in 27.470525 seconds<br />
+######## Queries by type<br />
+SELECTs: 101191  (100%)<br />
+INSERTs: 35      (0%)<br />
+UPDATEs: 44  (0%)<br />
+DELETEs: 13      (0%)<br />
+######## Most frequent queries<br />
+16465 times: SELECT * FROM wp_users WHERE user_login = &#8221;<br />
+14423 times: SELECT post_date, post_name FROM wp_posts WHERE ID = 0<br />
+5391 times: SELECT option_name, option_value FROM wp_options<br />
+5391 times: SELECT * FROM wp_users<br />
+5347 times: SELECT * FROM wp_categories WHERE 0=0
+</p></blockquote>
+<p>Before I get into the queries themselves, lets talk about what other info this provided.  I&#8217;ve got 101,332 queries, of which there are only 150 unique queries.  PQA took about 27 seconds to process all of this info.  Far and away the most common type of query was SELECT, this shouldn&#8217;t come as any surprise.  A few INSERTS (new blog entries, comments, trackbacks, etc) and a few UPDATES (editing blog entries) and a few DELETES.  This isn&#8217;t quite normal because the DELETES were the result of a comment spam attack.  Fortunately there were only 13 of them so this doesn&#8217;t really impact our results much.</p>
+<p>Now let take a look at the top five most executed queries and see what we can learn.</p>
+<p><strong>#1 (16465/101332): SELECT * FROM wp_users WHERE user_login = &#8221;</strong><br />
+The wp_users table keeps information about the registered users of a WordPress install, in this case I&#8217;m the only one.  What should strike you as odd is the WHERE clause in this query, it is looking for user details for a username that is empty.  My gut feeling is that this query should never, ever, ever be run by WordPress.  Unless your WordPress install allows for blank usernames then this query will always return an empty result set.  Unfortunately it will have to look through the wp_users table first (hopefully it is looking at an index on user_login) to determine this.  Being able to avoid more than 16% of the total queries should help with speed, especially on systems that are running several copies of WordPress.</p>
+<p><strong>#2 (14423/101332): SELECT post_date, post_name FROM wp_posts WHERE ID = 0</strong><br />
+As you can probably guess, the wp_posts table stores WordPress blog entries.  Unlike the #1 query this one looks like it might be reasonable, but once again that WHERE clause caught my eye and made me wonder.  So I started looking through all of the rows in the wp_posts table for my WordPress install.  None of them have an ID of 0.  Just like the first query I suspect that this query should never need to be run because it will always return nothing.  At this point I can&#8217;t say this with 100% certainty though because I don&#8217;t know enough about the WordPress internals.  My gut feeling is again that this query could be done away with, removing another 14% of the total queries.</p>
+<p><strong>#3 (5391/101332): SELECT option_name, option_value FROM wp_options</strong><br />
+This query doesn&#8217;t have a WHERE clause for me to pick on.  The wp_options table is used to store all of the different options that can be set for a WordPress install.  All this query does is fetch all of those options.  I doubt this has any possibilities for removal or optimization.</p>
+<p><strong>#4 (5391/101332): SELECT * FROM wp_users</strong><br />
+This should look familiar, the only difference between this query and #1 above is the lack of a WHERE clause.  I&#8217;ve got mixed feelings about this query.  On the one hand I&#8217;m suspect of most queries that simply do a SELECT *, especially without a WHERE clause to limit it.  What holds me back here is that I don&#8217;t think this query could be changed without a lot of changes to the source code of WordPress.  Unless you have a lot of users in your WordPress install there isn&#8217;t much (like none at all) optimization that can be done here.</p>
+<p><strong>#5 (5347/101332): SELECT * FROM wp_categories WHERE 0=0</strong><br />
+A new table to look at, wp_categories.  This is a small table that holds information about entry categories (big surprise eh?).  Once again our friend the WHERE clause provides with a bad feeling.  If you aren&#8217;t familiar with SQL, the clause 0=0 always evaluates to true.  In the context of this query it is completely useless.  Some of you might be saying, so what, how much of a penalty could something small be performance wise?  I asked myself the same question, so I put together a simple benchmark that ran this query with and without the WHERE 0=0 clause.  In my simple tests the addition of WHERE 0=0 on this query against my WordPress database added an additional 0.0001 seconds PER QUERY!  So why am I getting so excited about this, after all in my case that means that I&#8217;m only loosing about 1 second every two weeks, give or take.  Well you would be right, for me personally it won&#8217;t make a much of a difference, but for a system that hosts many WordPress installs it could add up very quickly.  Also this is one of those small optimizations that can add up when thrown together with other little optimizations through out the system.</p>
+<p>So what have we learned from the top five WordPress queries?  Well, about 30% of the SELECTs could likely be done away with entirely (#1 and #2).  Another %5 of the SELECTs can gain a slight speed improvement of about one ten-thousandths of a second (#5).  I&#8217;ll definitely be using PQA to look at more queries on other projects in the future.</p>
+<p>There are some things to keep in mind here.  These are total queries run over about one week, not all of them are being run on the same page necessarily.  It is entirely possible that each of these queries is being run without the other four being present for a given page.  I don&#8217;t think this is likely, but certainly a possibility.  Another data point that might be helpful is the number of page views turn the same time period.  I decided it wasn&#8217;t worth worrying about that at this point, since my focus was simply of the queries themselves.</p>
+<p>For those of you who are now looking at me thinking, hey ding-a-ling, WordPress is an open source project, why don&#8217;t you take this information and send it to the developers so that everyone can benefit from this.  Well, I already did.  Alright that isn&#8217;t really true, I sent them some similar reports about other queries.  One example would be <a href="http://mosquito.wordpress.org/bug_view_page.php?bug_id=0000033">three queries with WHERE 1=1</a> in them.  I even included a diff.  You&#8217;ll notice that this was sent in back in June, more than 4 months ago and it is still open.  I haven&#8217;t been able to get much attention to getting these sorts of changes into the WordPress source.</p>
+<p>If you are interested in doing some additional research yourself into some of the SQL queries that are used in WordPress check out my entry on <a href="http://joseph.randomnetworks.com/archives/2004/06/02/mysql-queries-in-wordpress/">MySQL Queries In WordPress</a>, which explains how to turn on displaying all the queries run at the bottom of each page.</p>
+<p><strong>UPDATE 10:40am 11 Dec 2004</strong>: It was suggested in a comment (see #4) that 1=1 is a code optimization that is faster than checking to see if variable is empty first.  See comment #5 for my response.  Bottom line: my simple tests show that 1=1 is always slower than if(empty($some_var)) and that 1=1 breaks simple scalability schemes (multiple front end web servers, one big db server).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2004/10/28/top-five-wordpress-sql-queries/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Making IE Accept File Downloads</title>
+		<link>/2004/10/01/making-ie-accept-file-downloads/</link>
+					<comments>/2004/10/01/making-ie-accept-file-downloads/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 01 Oct 2004 21:31:33 +0000</pubDate>
+				<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[How To]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[Programming]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/10/01/making-ie-accept-file-downloads/</guid>
+
+					<description><![CDATA[I&#8217;ve been adding more report features to our internal web app at work. Getting them to the point they are at now is another story, for now let me tell the tale of convincing Internet Explorer (IE) to download a comma separated value (CSV) version of these reports. Here is the situation, a secure (SSL) [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been adding more report features to our internal web app at work.  Getting them to the point they are at now is another story, for now let me tell the tale of convincing Internet Explorer (IE) to download a comma separated value (CSV) version of these reports.  Here is the situation, a secure (SSL) connection to Apache to an internal website written in PHP talking to a PostgreSQL database with IE 6 on the client end.  The initial version of the reports just displayed in an HTML table as part of the site.  It was suggested that the data should be available as CSV so that employees could easily manipulate or graph the data in Excel.  Sounded reasonable enough.  After a couple of tries it looked like I had everything working.  All of my initial tests were done using Firefox on Windows, with a little bit of testing using Safari on OS X.  I know we still have some folks at work who are still using IE (that too is another story) so I tested that one out last.  Everything worked, right up until I tried to download the CSV version of the reports.</p>
+<p>Instead of prompting me with a dialog box to determine if I wanted to open the file or save, IE simply came back and indicated that it couldn&#8217;t save the file and presented with me with one option, &#8216;OK&#8217;.  Of course &#8216;OK&#8217; isn&#8217;t really &#8216;OK&#8217;, because it terminated the download and dropped me back into the website.  Just great, I thought I was pretty much done and then IE showed its unpleasant side.  Knowing that someone else must have ran into this problem I went on a hunt for a solution.  After trying out several ideas over a couple of hours I came across the solution.  Here is what I believe to be the minimum solution to make IE correctly download a file presented to it from PHP.</p>
+<p>First, when talking to IE there is an additional session parameter that must be set for the download to work (this was the last piece of the puzzle that I found).  This has to be done before starting the session.</p>
+<blockquote>
+<pre>
+if(strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE')) {
+    session_cache_limiter("public");
+}
+session_start();
+</pre>
+</blockquote>
+<p>Once you have built your CSV string and are ready to send it to the browser you&#8217;ll need to add a couple of headers first.</p>
+<blockquote>
+<pre>
+header('Content-type: application/octet-stream');
+header('Content-Disposition: attachment; filename="report.csv"');
+print($csv);
+</pre>
+</blockquote>
+<p>Now that it all seems to be working it doesn&#8217;t look very impressive, but it was certainly disappointing to have my initial solution work in Safari, Firefox and Opera but not IE.  I hope this saves someone else the hours I spent figuring out why IE hates me.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2004/10/01/making-ie-accept-file-downloads/feed/</wfw:commentRss>
+			<slash:comments>87</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>New PHP4 and PHP5 Releases</title>
+		<link>/2004/09/24/new-php4-and-php5-releases/</link>
+					<comments>/2004/09/24/new-php4-and-php5-releases/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 24 Sep 2004 16:40:32 +0000</pubDate>
+				<category><![CDATA[PHP]]></category>
+		<category><![CDATA[Programming]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/09/24/new-php4-and-php5-releases/</guid>
+
+					<description><![CDATA[In the last two days there has been a new release of PHP4 (4.3.9) and PHP5 (5.0.2). When the first non-beta release of PHP5 came out I started trying it out. There are definitely some cool new features that were sorely needed in PHP, especially in the area of OO code. I&#8217;m still a bit [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>In the last two days there has been a new release of <a href="http://www.php.net/ChangeLog-4.php#4.3.9">PHP4 (4.3.9)</a> and <a href="http://www.php.net/ChangeLog-5.php#5.0.2">PHP5 (5.0.2)</a>.  When the first non-beta release of PHP5 came out I started trying it out.  There are definitely some cool new features that were sorely needed in PHP, especially in the area of OO code.  I&#8217;m still a bit bitter that they didn&#8217;t do multiple inheritance, I would have been happy with something similar to the way Perl does it (left to right depth first).</p>
+<p>After trying out a couple of different applications that we run at work I decided to stick with PHP4 for production work for the time being.  As much as I&#8217;d like to make use of PHP5 features, I just don&#8217;t see a major move to PHP4 for at least another 12 to 18 months.  I must admit one surprise here, seeing apps that are already being written exclusively for PHP5.  That must make for a relatively small target audience compared to the entire PHP community.</p>
+<p>Another use for a blog, making predictions about the future so that the whole world can look back and see how wrong you were.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2004/09/24/new-php4-and-php5-releases/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Programming In PHP</title>
+		<link>/2004/09/14/programming-in-php/</link>
+					<comments>/2004/09/14/programming-in-php/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 14 Sep 2004 22:34:58 +0000</pubDate>
+				<category><![CDATA[PHP]]></category>
+		<category><![CDATA[Programming]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/09/14/programming-in-php/</guid>
+
+					<description><![CDATA[One of the great things about PHP is its flexibility and options. One of the bad things about PHP is its flexibility and options. The result is that programmers can&#8217;t be 100% sure what the conditions are (think php.ini options) that their software will be running under. So here are some tips that every PHP [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>One of the great things about PHP is its flexibility and options.  One of the bad things about PHP is its flexibility and options.  The result is that programmers can&#8217;t be 100% sure what the conditions are (think php.ini options) that their software will be running under.  So here are some tips that every PHP programmer should keep in mind, specifically while in development mode:</p>
+<ol>
+<li><strong>Magic Quotes</strong>: Ideally set this via .htaccess with php_value, either on or off, which ever way you want to work with your data.  My personal preference of late is to turn this off and make sure that my code escapes everything.  This avoids trying to guess when you need to escape something and when you don&#8217;t.  This can be tricky when you have systems (databases usually) that have different formats for escaping quotes.  Look at magic_quotes_gpc and magic_quotes_runtime settings.</li>
+<li><strong>Error Level</strong>: There are multiple <a href="http://us2.php.net/manual/en/ref.errorfunc.php#errorfunc.constants">error levels</a> in PHP.  When you are in development mode please, please, please set this to E_ALL (or maybe even to E_STRICT if you are using PHP 5).  This can be done from within your code using the <a href="http://us2.php.net/error_reporting">error_reporting()</a> function.  Once you are ready to make a release of your software you can turn the error level down if you want.</li>
+<li><strong>Display Errors</strong>: Along with cranking up the errors, displaying them makes them pretty obvious during the development process.  This is also easily turned on using the <a href="http://us4.php.net/ini_set">ini_set()</a> function.  This is all it takes: <code>ini_set('display_errors', '1');</code>.  This one isn&#8217;t quite as big a deal as the others because there is nothing wrong with watching errors in a log file, but I&#8217;ve found that if the errors aren&#8217;t being displayed in the page they are often forgotten about.  And again, this is something that can be turned off when you make a release of your software.  But if you&#8217;ve fixed all of the bugs that display errors or warnings then you shouldn&#8217;t need to <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></li>
+</ol>
+<p>So when an error pops up in your page, don&#8217;t just turn off display errors or lower the error level, fix it.  These settings I recommended above are the default for PHP on my systems, so if you have warnings and errors in your code they end up all of the page when I run your software.  This makes your software look pretty low in the quality department.  Keep in mind that as the author of a software package, you don&#8217;t know what people will have these options set to on their server, so your software should force them to a known value that you can rely upon.</p>
+<p>I&#8217;ve been putting off this little rant for quite sometime, but lately the number of software packages that I&#8217;ve tried out that ignore one or all of the above suggestions was really high.  In some cases large security holes were opened because of these assumptions (think magic quotes and sql injection attacks).  Following these suggestions is much easier if you implement them at the beginning of a project instead of after version 1.0 has already shipped.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2004/09/14/programming-in-php/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Answer To Peter Bowyer&#8217;s Question</title>
+		<link>/2004/08/04/answer-to-peter-bowyers-question/</link>
+					<comments>/2004/08/04/answer-to-peter-bowyers-question/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 04 Aug 2004 23:27:05 +0000</pubDate>
+				<category><![CDATA[PHP]]></category>
+		<category><![CDATA[Programming]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/08/04/answer-to-peter-bowyers-question/</guid>
+
+					<description><![CDATA[Peter Bowyer asked a question on his blog about optional case statements in PHP. After a couple of minutes I came up with two possible solutions. I tried to post the solutions as a comment to the blog entry, but it kept asking for a login in order to post a comment. I don&#8217;t have [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Peter Bowyer asked a question on his blog about <a href="http://peter.mapledesign.co.uk/weblog/archives/optional_case_statements_possible_in_php.html">optional case statements in PHP</a>.  After a couple of minutes I came up with two possible solutions.  I tried to post the solutions as a comment to the blog entry, but it kept asking for a login in order to post a comment.  I don&#8217;t have an account at his blog and I couldn&#8217;t find any info on how to create one.  So I&#8217;m using this post to show a solution to his question.  Hopefully the TrackBack to his entry works so he&#8217;ll be able to find this.  Follow the link above to read the original question, below are the two possible solutions I came up with:</p>
+<p>Solution 1)<br />
+<code></p>
+<pre>
+$foo = 'baz';
+switch($foo){
+        case 'bar':
+            print 'BAA';
+            break;
+        case 'moo' &amp;&amp; !empty($varisset):
+            print 'ANIMAL!';
+            break;
+        case 'brrrrr' &amp;&amp; !empty($varisset):
+            print 'COLD?';
+            break;
+} // switch
+</pre>
+<p></code></p>
+<p>Solution 2)<br />
+<code></p>
+<pre>
+$foo = 'moo';
+switch($foo){
+        case 'bar':
+            print 'BAA';
+            break;
+        case (!empty($varisset)):
+            switch($foo) {
+                case 'moo':
+                    print 'ANIMAL!';
+                    break;
+                case 'brrrrr':
+                    print 'COLD?';
+                    break;
+            } //switch
+            break;
+} // switch
+</pre>
+<p></code></p>
+<p>I&#8217;ve only done some basic testing to see if these work.  I haven&#8217;t done any sort of benchmarking to see if one is faster than the other.  I&#8217;d guess that solution 2 would be faster, but I don&#8217;t have any data to back that up.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2004/08/04/answer-to-peter-bowyers-question/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Zend&#8217;s PHP Certification</title>
+		<link>/2004/07/20/zend-certification/</link>
+					<comments>/2004/07/20/zend-certification/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 20 Jul 2004 20:56:44 +0000</pubDate>
+				<category><![CDATA[PHP]]></category>
+		<category><![CDATA[Programming]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/07/20/zend-certification/</guid>
+
+					<description><![CDATA[It was likely to happen eventually, Zend has announced a PHP certification. Despite having just announced the release of PHP 5, the certification will only focus on PHP 4. The thinking behind that seems to be that it will still be awhile before PHP 5 becomes wide spread. I&#8217;m not sure yet how I feel [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>It was likely to happen eventually, <a href="http://www.zend.com/">Zend</a> has announced a <a href="http://www.zend.com/store/education/certification/zend-php-certification.php">PHP certification</a>.  Despite having just <a href="http://www.zend.com/news/zendpr.php?id=74">announced the release of PHP 5</a>, the certification will only focus on PHP 4.  The thinking behind that seems to be that it will still be awhile before PHP 5 becomes wide spread.  I&#8217;m not sure yet how I feel about this idea.  In general I have really mixed feelings about certification because some people are able to get certified that don&#8217;t really &#8220;know&#8221; anything about what they got certified in.  On the other hand not everyone who has a certification falls into that category.</p>
+<p>For some additional info on Zend&#8217;s PHP certification you can read comments by <a href="http://shiflett.org/archive/49">Chris Shiflett</a>, <a href="http://blog.coggeshall.org/archives/127_Become_an_official_certified_PHP_Engineer.html">John Coggeshall</a> and <a href="http://blogs.phparch.com/mt/index.php?p=16">Marco Tabini</a></p>
+<p>On a related note, Zend has secured an additional <a href="http://www.zend.com/news/zendpr.php?id=77">$8 million investment</a>.  They now have a new U.S. headquarters in Cupertino, California.  I wonder how far from Apple HQ they are?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2004/07/20/zend-certification/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>PHP 5.0 Released</title>
+		<link>/2004/07/13/php-50-released/</link>
+					<comments>/2004/07/13/php-50-released/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 14 Jul 2004 01:27:27 +0000</pubDate>
+				<category><![CDATA[PHP]]></category>
+		<category><![CDATA[Programming]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/07/13/php-50-released/</guid>
+
+					<description><![CDATA[The day has finally come, PHP 5.0 has been released. If for some reason you&#8217;ve been off the planet lately, PHP 5 is huge update to the guts of the PHP language. There is a long list of features and changes in this release. The MySQL client libraries are no longer included in releases (license [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The day has finally come, <a href="http://php.net/">PHP 5.0 has been released</a>.  If for some reason you&#8217;ve been off the planet lately, PHP 5 is huge update to the guts of the PHP language.  There is a long list of features and changes in this release.  The MySQL client libraries are no longer included in releases (license issues aside this just makes sense, especially how old the client libraries they were including were) and <a href="http://www.sqlite.org/">SQLite</a> is now included.  The OO support has been heavily changed, most of which I&#8217;m happy with.  I&#8217;m a bit disappointed that multiple inheritance is supported, in favor of the Java model of interfaces.  I would have been happy with the Perl model of multiple inheritance.</p>
+<p>There are has been lots of discussion about the new features of PHP 5, a good place to start is at the <a href="http://talks.php.net/index.php/PHP">archive of PHP talks</a>, many of which talk about PHP 5.  Undoubtedly there will be some new books coming out about coding with PHP 5 in mind.</p>
+<p>On another PHP front, <a href="http://www.roadsend.com/home/index.php?pageID=compiler">Roadsend has release a PHP compiler</a> for PHP 4.  The <a href="http://www.roadsend.com/home/index.php?SMC=1&amp;pageID=benchmarks">benchmarks</a> they list do show some impressive improvements in some areas.  I think in the long run this sort of idea will either get swallowed up by the PHP project or only be useful to a smaller group of people.</p>
+<p>So far I&#8217;ve resisted pretty heavily getting to involved with PHP 5.  Now that there is non-beta release I&#8217;m going to swallow my pride and try it out.  Initially my biggest concern is that all of my existing code based on PHP 4 works under PHP 5.</p>
+<p><strong>Update (6:47 pm 13 Jul 2004)</strong>: Turns out there is <a href="http://www.php.net/manual/en/migration5.php">PHP 4 to PHP 5 migration</a> manual.</p>
+<p><strong>Update (3:09 pm 15 Jul 2004)</strong>: Because OO support in PHP 5 has so many changes it may be helpful to read through the <a href="http://www.php.net/manual/en/language.oop5.php">Classes and Object documentation specific to PHP 5</a>.  There are some sections that haven&#8217;t been filled in yet, but is still a good resource.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2004/07/13/php-50-released/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

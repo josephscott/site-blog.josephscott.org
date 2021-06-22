@@ -1,0 +1,37 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/html_var_dump/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/html_var_dump/",
+    "feed_url": "https://blog.josephscott.org/tag/html_var_dump/feed/json/",
+    "language": "en-US",
+    "title": "html_var_dump &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://josephscott.org/?p=1862",
+            "url": "https://blog.josephscott.org/2010/02/05/php-helpers-html_var_dump/",
+            "title": "PHP Helpers: html_var_dump",
+            "content_html": "<p>With the last function being <a href=\"http://josephscott.org/archives/2010/02/php-helpers-html_print_r/\">html_print_r</a> this next one should come as no suprise, <code>html_var_dump</code>:</p>\n<p>[sourcecode lang=&#8221;php&#8221;]<br />\nif ( !function_exists( &#8216;html_var_dump&#8217; ) ) {<br />\n    function html_var_dump( $data ) {<br />\n        $out = &quot;n&lt;pre class=&#8217;html-var-dump&#8217;&quot;;<br />\n        $out .= &quot; style=&#8217;border: 1px solid #ccc; padding: 7px;&#8217;&gt;n&quot;;</p>\n<p>        ob_start( );<br />\n        var_dump( $data );<br />\n        $out .= esc_html( ob_get_contents( ) );<br />\n        ob_end_clean( );</p>\n<p>        $out .= &quot;n&lt;/pre&gt;n&quot;;</p>\n<p>        return $out;<br />\n    }<br />\n}<br />\n[/sourcecode]</p>\n<p>Even though I tend to use print_r more often than <a href=\"http://us.php.net/var_dump\">var_dump</a>, there are times where the type data that var_dump provides can be very helpful.  Unfortunately var_dump will always display data, so it needed to be wrapped in a few <a href=\"http://us.php.net/manual/en/ref.outcontrol.php\">output control functions</a> ( ob_start, ob_get_contents, and ob_end_clean ) to capture it.</p>\n",
+            "content_text": "With the last function being html_print_r this next one should come as no suprise, html_var_dump:\n[sourcecode lang=&#8221;php&#8221;]\nif ( !function_exists( &#8216;html_var_dump&#8217; ) ) {\n    function html_var_dump( $data ) {\n        $out = &quot;n&lt;pre class=&#8217;html-var-dump&#8217;&quot;;\n        $out .= &quot; style=&#8217;border: 1px solid #ccc; padding: 7px;&#8217;&gt;n&quot;;\n        ob_start( );\n        var_dump( $data );\n        $out .= esc_html( ob_get_contents( ) );\n        ob_end_clean( );\n        $out .= &quot;n&lt;/pre&gt;n&quot;;\n        return $out;\n    }\n}\n[/sourcecode]\nEven though I tend to use print_r more often than var_dump, there are times where the type data that var_dump provides can be very helpful.  Unfortunately var_dump will always display data, so it needed to be wrapped in a few output control functions ( ob_start, ob_get_contents, and ob_end_clean ) to capture it.",
+            "date_published": "2010-02-05T09:29:46-07:00",
+            "date_modified": "2010-02-05T09:29:46-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "html_var_dump",
+                "PHP",
+                "php-helpers",
+                "Posts"
+            ]
+        }
+    ]
+}

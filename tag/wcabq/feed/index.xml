@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>wcabq &#8211; Joseph Scott</title>
+	<atom:link href="/tag/wcabq/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Sat, 17 Sep 2011 17:34:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Slides: Site Performance, From Pinto to Ferrari</title>
+		<link>/2011/09/17/slides-site-performance-from-pinto-to-ferrari/</link>
+					<comments>/2011/09/17/slides-site-performance-from-pinto-to-ferrari/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 17 Sep 2011 17:34:56 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[batcache]]></category>
+		<category><![CDATA[hyperdb]]></category>
+		<category><![CDATA[memcached]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[slides]]></category>
+		<category><![CDATA[wcabq]]></category>
+		<category><![CDATA[wcslc]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4782</guid>
+
+					<description><![CDATA[Here are the slides from my &#8220;Site Performance, From Pinto to Ferrari&#8221; talk that I gave at WordCamp SLC 2011 and Wordcamp Albuquerque 2011. Site Performance &#8211; From Pinto to Ferrari View more presentations from Joseph Scott]]></description>
+										<content:encoded><![CDATA[<p>Here are the slides from my &#8220;Site Performance, From Pinto to Ferrari&#8221; talk that I gave at <a href="http://2011.slc.wordcamp.org/">WordCamp SLC 2011</a> and <a href="http://2011.albuquerque.wordcamp.org/">Wordcamp Albuquerque 2011</a>.</p>
+<div style="width:425px" id="__ss_9299193"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/josephscott/site-performance-from-pinto-to-ferrari" title="Site Performance - From Pinto to Ferrari" target="_blank">Site Performance &#8211; From Pinto to Ferrari</a></strong> <iframe loading="lazy" src="http://www.slideshare.net/slideshow/embed_code/9299193" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> </p>
+<div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/josephscott" target="_blank">Joseph Scott</a> </div>
+</p></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/09/17/slides-site-performance-from-pinto-to-ferrari/feed/</wfw:commentRss>
+			<slash:comments>12</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

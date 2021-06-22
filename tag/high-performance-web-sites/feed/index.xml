@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>high-performance-web-sites &#8211; Joseph Scott</title>
+	<atom:link href="/tag/high-performance-web-sites/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 20 Jan 2011 18:02:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Reading on the Kindle &#8211; High Performance Web Sites</title>
+		<link>/2011/01/20/reading-on-the-kindle-high-performance-web-sites/</link>
+					<comments>/2011/01/20/reading-on-the-kindle-high-performance-web-sites/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 20 Jan 2011 18:02:44 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[books]]></category>
+		<category><![CDATA[high-performance-web-sites]]></category>
+		<category><![CDATA[kindle]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3442</guid>
+
+					<description><![CDATA[For Christmas my dad sent me an Amazon Kindle (thanks dad!). Prior to this I&#8217;d handled previous generations of Kindles, but never really used one for any length of time. I wanted to get a feel for what reading on it would be like, so I purchased High Performance Web Sites by Steve Souders. Earlier [&#8230;]]]></description>
+										<content:encoded><![CDATA[<figure style="width: 180px" class="wp-caption alignleft"><img loading="lazy" alt="My Kindle" src="http://farm6.static.flickr.com/5043/5373184182_8a6cbbff23_m.jpg" title="My Kindle" width="180" height="240" /><figcaption class="wp-caption-text">My Kindle</figcaption></figure>
+<p>For Christmas my dad sent me an <a href="http://www.amazon.com/kindle/">Amazon Kindle</a> (thanks dad!).  Prior to this I&#8217;d handled previous generations of Kindles, but never really used one for any length of time.  I wanted to get a feel for what reading on it would be like, so I purchased <a href="http://oreilly.com/catalog/9780596529307/">High Performance Web Sites</a> by <a href="http://stevesouders.com/">Steve Souders</a>.  Earlier this week I finished reading it, cover to cover (a description which doesn&#8217;t work very well for e-books).</p>
+<p>I held off on making any comments about reading on the Kindle until I&#8217;d finished reading an entire book, to make sure I&#8217;d spent a reasonable amount of time using it.  As a reading experience I&#8217;d describe it as very good.  I liked not having to worry about where I left off, even when switching to other books.  Reading for long stretches wasn&#8217;t a problem either, long battery life and not weighing much help quite a bit.</p>
+<p>In regular use, I really only had one thing that bothered me at first.  The brief flash when changing pages was very distracting.  Not enough to be a pain or anything, but it would remind me that I was using an electronic device instead of reading book.  Like those moments in a movie when your are jolted out of the story and reminded that you are watching a movie and you become disconnected from the story instead of being lost in it.  I found that the more I read, the less of an issue that became and at one point made the specific decision to not think about it any more.</p>
+<p>For those that travel regularly, the Kindle would be amazing.  You can load it up with several books in this one small device and not have to worry about packing multiple, bulky books.</p>
+<p>I still have many concerns that others have expressed over e-books, namely that I don&#8217;t really have a book.  As a result there are several things that you can&#8217;t do, like loaning the book to a friend or selling it.  This won&#8217;t keep me from reading more on the Kindle, but it is something that I think about quite a bit.   I don&#8217;t feel like I&#8217;ve come up with the right balance yet.</p>
+<p>Another possible pain point that I haven&#8217;t explored enough yet is random access.  You can search and bookmark on the Kindle, but I&#8217;m so used to being able to turn directly to a specific page in a book that I&#8217;m not sure if the experience will be the same.  I&#8217;ll have to revisit this after I&#8217;ve had more time and use with the Kindle.</p>
+<h3>High Performance Web Sites</h3>
+<p>I&#8217;ve been following Steve Souders work on front end web performance for years and have been very impressed.  I&#8217;d never gotten around to actually reading his High Performance Web Sites book until now though.</p>
+<p>If you do web development in any fashion (and who doesn&#8217;t now a days) Steve&#8217;s work is required reading.  If you haven&#8217;t kept up with his research over the years, this book is a good place to start.  It provides a solid foundation for understanding the various aspects of front end web performance.</p>
+<p>This book was published almost 4 years ago now, so there have been several advancements since then.  The pace of browser upgrades has increased, but many users still use older browsers, so many of the rules mentioned in the book still apply to a large number of users.</p>
+<p>Here is the <a href="http://gs.statcounter.com/#browser_version-ww-monthly-200912-201012-bar">current break down of browser version usage from StatCounter</a>.  While Firefox, and more recently Chrome, have helped quite a bit there are still 15% of users on IE7 (released in October 2006) and almost 9% on IE6 (released in 2001).  Nearly one quarter of global users are still on an old version of IE.</p>
+<p>In summary, if you haven&#8217;t been following along on the web performance front, this book is an excellent place to start.</p>
+<h3>Next</h3>
+<p>I&#8217;ve already started reading another book, <a href="http://www.amazon.com/gp/product/0060521996?ie=UTF8&#038;tag=claytonchrist-20&#038;linkCode=as2&#038;camp=1789&#038;creative=390957&#038;creativeASIN=0060521996">The Innnovator&#8217;s Dilemma</a> by <a href="http://www.claytonchristensen.com/">Clayton Christensen</a>.  This time in old fashioned paper back style.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/01/20/reading-on-the-kindle-high-performance-web-sites/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

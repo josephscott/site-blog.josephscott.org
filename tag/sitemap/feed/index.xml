@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sitemap &#8211; Joseph Scott</title>
+	<atom:link href="/tag/sitemap/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 03 Jun 2005 05:35:36 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Google Sitemaps</title>
+		<link>/2005/06/02/google-sitemaps/</link>
+					<comments>/2005/06/02/google-sitemaps/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 03 Jun 2005 05:35:36 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[ping]]></category>
+		<category><![CDATA[search]]></category>
+		<category><![CDATA[sitemap]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=400</guid>
+
+					<description><![CDATA[Last summer I wrote some thoughts about something like a mod_ping for Apache so that search engines could be easily notified when pages on a site change. I was trying to abstract the idea of pings and trackbacks in use by blogs into a general feature that could be used for any site, even one [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Last summer I wrote some thoughts about something like a <a href="http://joseph.randomnetworks.com/archives/2004/08/24/apache-module-idea-mod_ping/">mod_ping for Apache</a> so that search engines could be easily notified when pages on a site change.  I was trying to abstract the idea of pings and trackbacks in use by blogs into a general feature that could be used for any site, even one made out of static files.</p>
+<p>The <a href="http://googleblog.blogspot.com/2005/06/webmaster-friendly.html">announcement</a> about <a href="https://www.google.com/webmasters/sitemaps/stats">Google Sitemaps</a> reminded me very much about my mod_ping idea.  It isn&#8217;t the same, but the goal seems to be the same, providing a way for search engines to discover URLs and when they change.  <a href="http://blog.searchenginewatch.com/blog/050602-195224">SearchEngineWatch has an article about it</a> which provides a brief overview of what Google is up to.  More information can be found in the <a href="https://www.google.com/webmasters/sitemaps/docs/en/sitemap-generator.html">help for there sitemap generator tool</a> (and the <a href="http://sourceforge.net/projects/goog-sitemapgen">Source Forge site for the tool</a>), the <a href="https://www.google.com/webmasters/sitemaps/docs/en/faq.html#s9">Google Sitemaps FAQ</a> and the <a href="https://www.google.com/webmasters/sitemaps/docs/en/protocol.html">Sitemap protocol</a> page.</p>
+<p>They specifically mention a hope that servers (Apache &amp; IIS) will support this in the future.  In the mean time you can manually <a href="https://www.google.com/webmasters/sitemaps/docs/en/faq.html#s4">ping Google for sitemap updates</a> using something like curl, wget or even your web browser I suppose.  I&#8217;d expect this feature to be built into certain web tools, like blogs and content management systems.  I&#8217;m sure someone will get around to writing a tool for <a href="http://www.wordpress.org/">WordPress</a> to generate a sitemap file, adding to it each time an entry is published and then ping Google to let them know it has been updated.</p>
+<p>Will other web search companies adopt this?  Keep an eye on Yahoo!, MSN, AOL, A9 and IceRocket to see if this goes anywhere.  I don&#8217;t think that this will be limited to the &#8220;traditional&#8221; search folks, I&#8217;d think that someone at Technorati, PubSub and maybe Bloglines might come up with some clever uses for this.  If we are really lucky people will learn from history and come up with something like <a href="http://groups.yahoo.com/group/feedmesh/">feedmesh</a> for sitemap pings.</p>
+<p>For now I&#8217;ve whipped up a very basic sitemap file at <a href="http://joseph.randomnetworks.com/sitemap.xml">http://joseph.randomnetworks.com/sitemap.xml</a> and pinged Google to let them know about it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/06/02/google-sitemaps/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Oracle Calls It MINUS, PostgreSQL Calls It EXCEPT	</title>
+	<atom:link href="/2004/08/18/oracle-calls-it-minus-postgresql-calls-it-except/feed/" rel="self" type="application/rss+xml" />
+	<link>/2004/08/18/oracle-calls-it-minus-postgresql-calls-it-except/</link>
+	<description></description>
+	<lastBuildDate>Thu, 14 Jun 2012 16:52:00 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Noah Yetter		</title>
+		<link>/2004/08/18/oracle-calls-it-minus-postgresql-calls-it-except/#comment-518</link>
+
+		<dc:creator><![CDATA[Noah Yetter]]></dc:creator>
+		<pubDate>Thu, 14 Jun 2012 16:52:00 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/08/18/oracle-calls-it-minus-postgresql-calls-it-except/#comment-518</guid>
+
+					<description><![CDATA[8 years later MySQL is up to 5.6, and still no MINUS.  GG.]]></description>
+			<content:encoded><![CDATA[<p>8 years later MySQL is up to 5.6, and still no MINUS.  GG.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Antonin Faltynek		</title>
+		<link>/2004/08/18/oracle-calls-it-minus-postgresql-calls-it-except/#comment-517</link>
+
+		<dc:creator><![CDATA[Antonin Faltynek]]></dc:creator>
+		<pubDate>Fri, 13 Jan 2012 12:23:14 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/08/18/oracle-calls-it-minus-postgresql-calls-it-except/#comment-517</guid>
+
+					<description><![CDATA[In some cases (large result sets) EXCEPT can be much more slower then &#039;NOT IN&#039; or &#039;LEFT JOIN&#039;. But as a quick replacement it is same.]]></description>
+			<content:encoded><![CDATA[<p>In some cases (large result sets) EXCEPT can be much more slower then &#8216;NOT IN&#8217; or &#8216;LEFT JOIN&#8217;. But as a quick replacement it is same.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Scott Clancy		</title>
+		<link>/2004/08/18/oracle-calls-it-minus-postgresql-calls-it-except/#comment-516</link>
+
+		<dc:creator><![CDATA[Scott Clancy]]></dc:creator>
+		<pubDate>Tue, 20 Sep 2011 20:54:02 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/08/18/oracle-calls-it-minus-postgresql-calls-it-except/#comment-516</guid>
+
+					<description><![CDATA[Thanks for the info.  I tried this but the results were the same as if I had used NOT IN and encountered a NULL - i.e, it acted as though the &#039;expression&#039; was false]]></description>
+			<content:encoded><![CDATA[<p>Thanks for the info.  I tried this but the results were the same as if I had used NOT IN and encountered a NULL &#8211; i.e, it acted as though the &#8216;expression&#8217; was false</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

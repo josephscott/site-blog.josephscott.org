@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: WordPress 2.7 Released &#8211; XML-RPC and AtomPub Changes	</title>
+	<atom:link href="/2008/12/11/wordpress-27-released-xml-rpc-and-atompub-changes/feed/" rel="self" type="application/rss+xml" />
+	<link>/2008/12/11/wordpress-27-released-xml-rpc-and-atompub-changes/</link>
+	<description></description>
+	<lastBuildDate>Fri, 06 Feb 2009 17:19:07 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/12/11/wordpress-27-released-xml-rpc-and-atompub-changes/#comment-2575</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 06 Feb 2009 17:19:07 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=524#comment-2575</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2008/12/11/wordpress-27-released-xml-rpc-and-atompub-changes/#comment-2574&quot;&gt;LouwDV&lt;/a&gt;.
+
+That&#039;s an odd error, make sure that your WordPress install is not missing any files.  Also go through the regular debug checks, disable all of your plugins and see if the problem still happens.  Switch to the default WordPress theme and see if it still happens.  Either of those (plugins and themes) could cause problems, so best to rule them out quickly.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2008/12/11/wordpress-27-released-xml-rpc-and-atompub-changes/#comment-2574">LouwDV</a>.</p>
+<p>That&#8217;s an odd error, make sure that your WordPress install is not missing any files.  Also go through the regular debug checks, disable all of your plugins and see if the problem still happens.  Switch to the default WordPress theme and see if it still happens.  Either of those (plugins and themes) could cause problems, so best to rule them out quickly.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: LouwDV		</title>
+		<link>/2008/12/11/wordpress-27-released-xml-rpc-and-atompub-changes/#comment-2574</link>
+
+		<dc:creator><![CDATA[LouwDV]]></dc:creator>
+		<pubDate>Fri, 06 Feb 2009 10:38:35 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=524#comment-2574</guid>
+
+					<description><![CDATA[I&#039;m new to wordpress and i&#039;m running on 2.7.I&#039;ve got the weirdest thing that when i make changes to the settings/writing page, specifically to enable xml-rpc, and click &quot;save changes&quot; I get the following message:
+
+Forbidden
+You don&#039;t have permission to access /wp-admin/options.php on this server.
+
+Additionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.
+Apache/1.3.41 Server at worship.bergtee.co.za Port 80
+
+Please Help! Thanks, Louw]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;m new to wordpress and i&#8217;m running on 2.7.I&#8217;ve got the weirdest thing that when i make changes to the settings/writing page, specifically to enable xml-rpc, and click &#8220;save changes&#8221; I get the following message:</p>
+<p>Forbidden<br />
+You don&#8217;t have permission to access /wp-admin/options.php on this server.</p>
+<p>Additionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.<br />
+Apache/1.3.41 Server at worship.bergtee.co.za Port 80</p>
+<p>Please Help! Thanks, Louw</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/12/11/wordpress-27-released-xml-rpc-and-atompub-changes/#comment-2573</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 29 Jan 2009 18:59:45 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=524#comment-2573</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2008/12/11/wordpress-27-released-xml-rpc-and-atompub-changes/#comment-2571&quot;&gt;n-blue&lt;/a&gt;.
+
+Ah, I should have suggested disabling plugins earlier in trying to track down the problem.  Thanks for following up on that.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2008/12/11/wordpress-27-released-xml-rpc-and-atompub-changes/#comment-2571">n-blue</a>.</p>
+<p>Ah, I should have suggested disabling plugins earlier in trying to track down the problem.  Thanks for following up on that.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: n-blue		</title>
+		<link>/2008/12/11/wordpress-27-released-xml-rpc-and-atompub-changes/#comment-2572</link>
+
+		<dc:creator><![CDATA[n-blue]]></dc:creator>
+		<pubDate>Thu, 29 Jan 2009 05:57:11 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=524#comment-2572</guid>
+
+					<description><![CDATA[to add:
+Just update Custom Smilies 1.2 to 2.6  also work fine.
+http://wordpress.org/extend/plugins/custom-smilies-se/]]></description>
+			<content:encoded><![CDATA[<p>to add:<br />
+Just update Custom Smilies 1.2 to 2.6  also work fine.<br />
+<a href="http://wordpress.org/extend/plugins/custom-smilies-se/" rel="nofollow ugc">http://wordpress.org/extend/plugins/custom-smilies-se/</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: n-blue		</title>
+		<link>/2008/12/11/wordpress-27-released-xml-rpc-and-atompub-changes/#comment-2571</link>
+
+		<dc:creator><![CDATA[n-blue]]></dc:creator>
+		<pubDate>Thu, 29 Jan 2009 05:38:50 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=524#comment-2571</guid>
+
+					<description><![CDATA[I am here again.
+After spend lot of time I found some suggestin at this site:
+http://www.crankup.net/windows-live-writer-error
+
+In my case it caused by plug-in. After checking plugin one-by-one I found Custom Smilies 1.2 causing this issue. Just disable it WLW will work well as before but sadily no emoticon at all.]]></description>
+			<content:encoded><![CDATA[<p>I am here again.<br />
+After spend lot of time I found some suggestin at this site:<br />
+<a href="http://www.crankup.net/windows-live-writer-error" rel="nofollow ugc">http://www.crankup.net/windows-live-writer-error</a></p>
+<p>In my case it caused by plug-in. After checking plugin one-by-one I found Custom Smilies 1.2 causing this issue. Just disable it WLW will work well as before but sadily no emoticon at all.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/12/11/wordpress-27-released-xml-rpc-and-atompub-changes/#comment-2570</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 08 Jan 2009 15:38:16 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=524#comment-2570</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2008/12/11/wordpress-27-released-xml-rpc-and-atompub-changes/#comment-2569&quot;&gt;Ajay&lt;/a&gt;.
+
+This is mostly likely the libxml2 problem I outlined http://josephscott.org/archives/2008/12/problems-with-libxml2-for-wordpress-xml-rpc-users/]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2008/12/11/wordpress-27-released-xml-rpc-and-atompub-changes/#comment-2569">Ajay</a>.</p>
+<p>This is mostly likely the libxml2 problem I outlined <a href="http://josephscott.org/archives/2008/12/problems-with-libxml2-for-wordpress-xml-rpc-users/" rel="nofollow ugc">http://josephscott.org/archives/2008/12/problems-with-libxml2-for-wordpress-xml-rpc-users/</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ajay		</title>
+		<link>/2008/12/11/wordpress-27-released-xml-rpc-and-atompub-changes/#comment-2569</link>
+
+		<dc:creator><![CDATA[Ajay]]></dc:creator>
+		<pubDate>Thu, 08 Jan 2009 15:34:43 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=524#comment-2569</guid>
+
+					<description><![CDATA[I&#039;m facing the same problem as Chris L above. The tags are stripped when uploading and it is a real pain fixing the same.
+
+WLW is one of the best desktop publishing apps out there and it is irritating that WordPress 2.7 broke it.
+
+2.6.5 works perfectly with WLW.]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;m facing the same problem as Chris L above. The tags are stripped when uploading and it is a real pain fixing the same.</p>
+<p>WLW is one of the best desktop publishing apps out there and it is irritating that WordPress 2.7 broke it.</p>
+<p>2.6.5 works perfectly with WLW.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/12/11/wordpress-27-released-xml-rpc-and-atompub-changes/#comment-2568</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 22 Dec 2008 18:21:37 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=524#comment-2568</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2008/12/11/wordpress-27-released-xml-rpc-and-atompub-changes/#comment-2567&quot;&gt;Chris L&lt;/a&gt;.
+
+Did you upgrade anything else at the same time as WordPress?  I believe that the new versions of libxml2 have introduces bugs that may cause problems.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2008/12/11/wordpress-27-released-xml-rpc-and-atompub-changes/#comment-2567">Chris L</a>.</p>
+<p>Did you upgrade anything else at the same time as WordPress?  I believe that the new versions of libxml2 have introduces bugs that may cause problems.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Chris L		</title>
+		<link>/2008/12/11/wordpress-27-released-xml-rpc-and-atompub-changes/#comment-2567</link>
+
+		<dc:creator><![CDATA[Chris L]]></dc:creator>
+		<pubDate>Mon, 22 Dec 2008 07:53:28 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=524#comment-2567</guid>
+
+					<description><![CDATA[It also looks like the  tags are getting stripped, so I Get posts that look like:
+
+pTesting. Don’t pay attention to the man behind the curtain./p]]></description>
+			<content:encoded><![CDATA[<p>It also looks like the  tags are getting stripped, so I Get posts that look like:</p>
+<p>pTesting. Don’t pay attention to the man behind the curtain./p</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Chris L		</title>
+		<link>/2008/12/11/wordpress-27-released-xml-rpc-and-atompub-changes/#comment-2566</link>
+
+		<dc:creator><![CDATA[Chris L]]></dc:creator>
+		<pubDate>Sun, 21 Dec 2008 22:32:36 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=524#comment-2566</guid>
+
+					<description><![CDATA[Since I upgraded  to 2.7 (from 2.6), my posts through XMLRPC are replacing some characters with entities and essentially mangling my posts. This happens with both my own PHP script that posts through the interface using cURL and with Windows Live Writer...  any ideas?]]></description>
+			<content:encoded><![CDATA[<p>Since I upgraded  to 2.7 (from 2.6), my posts through XMLRPC are replacing some characters with entities and essentially mangling my posts. This happens with both my own PHP script that posts through the interface using cURL and with Windows Live Writer&#8230;  any ideas?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

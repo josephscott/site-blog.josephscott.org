@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>amd &#8211; Joseph Scott</title>
+	<atom:link href="/tag/amd/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 13 Dec 2013 16:36:35 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Is Facebook Planning a Move to ARM Based Servers?</title>
+		<link>/2013/12/13/is-facebook-planning-a-move-to-arm-based-servers/</link>
+					<comments>/2013/12/13/is-facebook-planning-a-move-to-arm-based-servers/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 13 Dec 2013 16:36:35 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[amd]]></category>
+		<category><![CDATA[arm-cpu]]></category>
+		<category><![CDATA[facebook]]></category>
+		<category><![CDATA[hhvm]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9594</guid>
+
+					<description><![CDATA[Update: Hacker News user tdmackey pointed out that Facebook has a job opening for a &#8220;Software Engineer, ARM Server&#8220;, with a specific goal in mind: We aim to evaluate further improving the efficiency of our web tier by porting HipHopVM to new server hardware platforms based on power-efficient ARM. It isn&#8217;t clear if they&#8217;ll end [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>Update:</strong> Hacker News user <a href="https://news.ycombinator.com/item?id=6902300" title="HN threads can be really helpful sometimes.">tdmackey pointed out</a> that Facebook has a job opening for a &#8220;<a href="https://www.facebook.com/careers/department?dept=engineering&#038;req=a0IA0000006cPTMMA2" title="Not exactly a secret">Software Engineer, ARM Server</a>&#8220;, with a specific goal in mind:</p>
+<blockquote><p>
+We aim to evaluate further improving the efficiency of our web tier by porting HipHopVM to new server hardware platforms based on power-efficient ARM.
+</p></blockquote>
+<p>It isn&#8217;t clear if they&#8217;ll end up deploying a large number of ARM servers to production, but they are definitely looking to take them out for a test drive.</p>
+<hr />
+<p>The <a href="http://www.hhvm.com/blog/2027/faster-and-cheaper-the-evolution-of-the-hhvm-jit" title="How long until HHVM is compatible with standard PHP">latest update from Facebook about the HHVM JIT</a> ended with this interesting note, emphasis mine:</p>
+<blockquote><p>
+It’s also been crucial in <strong>our efforts to get hhvm running on ARM processors</strong> by isolating and reducing the amount of architecture-specific code we need to reimplement. Watch for an upcoming post devoted to our ARM port for more details!
+</p></blockquote>
+<p>Why the big push to get HHVM ( the PHP Hip Hop Virtual Machine ) running on ARM CPUs?  That seems to imply at least a desire to test out ARM based servers in Facebook data centers.</p>
+<p>I went through two posts from <a href="http://perspectives.mvdirona.com/" title="If you are into data center issues go read his site.">James Hamilton</a> &#8211; <a href="http://perspectives.mvdirona.com/2012/01/02/ARMV8Architecture.aspx" title="'Up to 128 cores', wow!">ARM V8 Architecture</a> and <a href="http://perspectives.mvdirona.com/2012/10/29/AMDAnnouncesServerTargetedARMPart.aspx" title="It is good for Intel to have some competition.">AMD Announces Server Targeted ARM</a>, to catch up on ARM server expectations.  Using ARM CPUs in data center servers may very well be the future.  The AMD ARM server announced in October 2012 was expected to be:</p>
+<blockquote><p>
+This will be 4-core, 64 bit, more than 2Ghz part that is expected to sample in 2013 and ship in volume in early 2014.
+</p></blockquote>
+<p>The latest news from AMD I could find on this was from a <a href="http://www.amd.com/us/press-releases/Pages/amd-details-embedded-2013sept9.aspx" title="9/9 is a nice symmetrical date." >September 2013 press release</a>:</p>
+<blockquote><p>
+“Hierofalcon” is the first 64-bit ARM-based platform from AMD targeting embedded data center applications, communications infrastructure and industrial solutions. It will include up to eight ARM Cortex<img src="https://s.w.org/images/core/emoji/13.0.1/72x72/2122.png" alt="™" class="wp-smiley" style="height: 1em; max-height: 1em;" />-A57 CPUs expected to run up to 2.0 GHz, and provides high-performance memory with two 64-bit DDR3/4 channels with error correction code (ECC) for high reliability applications. The highly integrated SoC includes 10 Gb KR Ethernet and PCI-Express Gen 3 for high-speed network connectivity, making it ideal for control plane applications. The “Hierofalcon” series also provides enhanced security with support for ARM TrustZone® technology and a dedicated cryptographic security co-processor, aligning to the increased need for networked, secure systems. “Hierofalcon” is expected to be sampling in the second quarter of 2014 with production in the second half of the year.
+</p></blockquote>
+<p>Instead of &#8220;more than 2Ghz&#8221; we are looking at &#8220;up to 2Ghz&#8221; and the schedule has been pushed back.  That said the over all trajectory appears to be the same.  Enough of the right features will be in place for an ARM server to be a potentially viable option.</p>
+<p>If Facebook isn&#8217;t already testing ARM servers I expect that they will be during 2014.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/12/13/is-facebook-planning-a-move-to-arm-based-servers/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

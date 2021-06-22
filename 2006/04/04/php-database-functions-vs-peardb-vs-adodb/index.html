@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="profile" href="https://gmpg.org/xfn/11"> <meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@josephscott">
+<meta name="twitter:site" content="@josephscott">
+<meta name="twitter:title" content="PHP Database Functions vs. PEAR::DB vs. ADOdb (and PDO)">
+<meta name="twitter:description" content="I started putting together a few small PHP scripts to move data around.  I&#039;ve been using PEAR::DB a fair bit for this sort of thing, but I figured there wasn&#039;t really much reason for it in this case s"> <link media="all" href="/wp-content/cache/autoptimize/css/autoptimize_da876478aa27b35cb47c491625986a1f.css" rel="stylesheet">
+<link media="print" href="/wp-content/cache/autoptimize/css/autoptimize_4a8bc5d490127fba1e504524cfa205e6.css" rel="stylesheet">
+<title>PHP Database Functions vs. PEAR::DB vs. ADOdb (and PDO) &#8211; Joseph Scott</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="alternate" type="application/rss+xml" title="Joseph Scott &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="Joseph Scott &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Joseph Scott &raquo; PHP Database Functions vs. PEAR::DB vs. ADOdb (and PDO) Comments Feed" href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/feed/">
+<style id="twentytwenty-style-inline-css">.color-accent,.color-accent-hover:hover,.color-accent-hover:focus,:root .has-accent-color,.has-drop-cap:not(:focus):first-letter,.wp-block-button.is-style-outline,a { color: #e20842; }blockquote,.border-color-accent,.border-color-accent-hover:hover,.border-color-accent-hover:focus { border-color: #e20842; }button,.button,.faux-button,.wp-block-button__link,.wp-block-file .wp-block-file__button,input[type="button"],input[type="reset"],input[type="submit"],.bg-accent,.bg-accent-hover:hover,.bg-accent-hover:focus,:root .has-accent-background-color,.comment-reply-link { background-color: #e20842; }.fill-children-accent,.fill-children-accent * { fill: #e20842; }:root .has-background-color,button,.button,.faux-button,.wp-block-button__link,.wp-block-file__button,input[type="button"],input[type="reset"],input[type="submit"],.wp-block-button,.comment-reply-link,.has-background.has-primary-background-color:not(.has-text-color),.has-background.has-primary-background-color *:not(.has-text-color),.has-background.has-accent-background-color:not(.has-text-color),.has-background.has-accent-background-color *:not(.has-text-color) { color: #f7f7f7; }:root .has-background-background-color { background-color: #f7f7f7; }body,.entry-title a,:root .has-primary-color { color: #000000; }:root .has-primary-background-color { background-color: #000000; }cite,figcaption,.wp-caption-text,.post-meta,.entry-content .wp-block-archives li,.entry-content .wp-block-categories li,.entry-content .wp-block-latest-posts li,.wp-block-latest-comments__comment-date,.wp-block-latest-posts__post-date,.wp-block-embed figcaption,.wp-block-image figcaption,.wp-block-pullquote cite,.comment-metadata,.comment-respond .comment-notes,.comment-respond .logged-in-as,.pagination .dots,.entry-content hr:not(.has-background),hr.styled-separator,:root .has-secondary-color { color: #686868; }:root .has-secondary-background-color { background-color: #686868; }pre,fieldset,input,textarea,table,table *,hr { border-color: #d3d3d3; }caption,code,code,kbd,samp,.wp-block-table.is-style-stripes tbody tr:nth-child(odd),:root .has-subtle-background-background-color { background-color: #d3d3d3; }.wp-block-table.is-style-stripes { border-bottom-color: #d3d3d3; }.wp-block-latest-posts.is-grid li { border-top-color: #d3d3d3; }:root .has-subtle-background-color { color: #d3d3d3; }body:not(.overlay-header) .primary-menu > li > a,body:not(.overlay-header) .primary-menu > li > .icon,.modal-menu a,.footer-menu a, .footer-widgets a,#site-footer .wp-block-button.is-style-outline,.wp-block-pullquote:before,.singular:not(.overlay-header) .entry-header a,.archive-header a,.header-footer-group .color-accent,.header-footer-group .color-accent-hover:hover { color: #e20842; }.social-icons a,#site-footer button:not(.toggle),#site-footer .button,#site-footer .faux-button,#site-footer .wp-block-button__link,#site-footer .wp-block-file__button,#site-footer input[type="button"],#site-footer input[type="reset"],#site-footer input[type="submit"] { background-color: #e20842; }.social-icons a,body:not(.overlay-header) .primary-menu ul,.header-footer-group button,.header-footer-group .button,.header-footer-group .faux-button,.header-footer-group .wp-block-button:not(.is-style-outline) .wp-block-button__link,.header-footer-group .wp-block-file__button,.header-footer-group input[type="button"],.header-footer-group input[type="reset"],.header-footer-group input[type="submit"] { color: #f7f7f7; }#site-header,.footer-nav-widgets-wrapper,#site-footer,.menu-modal,.menu-modal-inner,.search-modal-inner,.archive-header,.singular .entry-header,.singular .featured-media:before,.wp-block-pullquote:before { background-color: #f7f7f7; }.header-footer-group,body:not(.overlay-header) #site-header .toggle,.menu-modal .toggle { color: #000000; }body:not(.overlay-header) .primary-menu ul { background-color: #000000; }body:not(.overlay-header) .primary-menu > li > ul:after { border-bottom-color: #000000; }body:not(.overlay-header) .primary-menu ul ul:after { border-left-color: #000000; }.site-description,body:not(.overlay-header) .toggle-inner .toggle-text,.widget .post-date,.widget .rss-date,.widget_archive li,.widget_categories li,.widget cite,.widget_pages li,.widget_meta li,.widget_nav_menu li,.powered-by-wordpress,.to-the-top,.singular .entry-header .post-meta,.singular:not(.overlay-header) .entry-header .post-meta a { color: #686868; }.header-footer-group pre,.header-footer-group fieldset,.header-footer-group input,.header-footer-group textarea,.header-footer-group table,.header-footer-group table *,.footer-nav-widgets-wrapper,#site-footer,.menu-modal nav *,.footer-widgets-outer-wrapper,.footer-top { border-color: #d3d3d3; }.header-footer-group table caption,body:not(.overlay-header) .header-inner .toggle-wrapper::before { background-color: #d3d3d3; }.overlay-header .header-inner { color: #f7f7f7; }.cover-header .entry-header * { color: #f7f7f7; }</style>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/594">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 5.7.2">
+<link rel="canonical" href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/">
+<link rel="shortlink" href="/?p=594">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2006%2F04%2F04%2Fphp-database-functions-vs-peardb-vs-adodb%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2006%2F04%2F04%2Fphp-database-functions-vs-peardb-vs-adodb%2F&#038;format=xml">
+<link rel="alternate" type="application/feed+json" title="Joseph Scott &raquo; JSON Feed" href="/feed/json/">
+<link rel="alternate" type="application/feed+json" title="Joseph Scott &raquo; PHP Database Functions vs. PEAR::DB vs. ADOdb (and PDO) Comments Feed" href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/feed/json/"> <script>document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );</script> <style id="custom-background-css">body.custom-background { background-color: #f7f7f7; }</style>
+<style id="wp-custom-css">.powered-by-wordpress { display: none;}
+
+.entry-categories { display: none;}</style>
+</head>
+<body class="post-template-default single single-post postid-594 single-format-standard custom-background wp-embed-responsive singular enable-search-modal missing-post-thumbnail has-single-pagination showing-comments show-avatars footer-top-visible reduced-spacing"> <a class="skip-link screen-reader-text" href="#site-content">Skip to the content</a><header id="site-header" class="header-footer-group" role="banner"><div class="header-inner section-inner">
+<div class="header-titles-wrapper"> <button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false"> <span class="toggle-inner"> <span class="toggle-icon"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewbox="0 0 23 23"><path d="M38.710696,48.0601792 L43,52.3494831 L41.3494831,54 L37.0601792,49.710696 C35.2632422,51.1481185 32.9839107,52.0076499 30.5038249,52.0076499 C24.7027226,52.0076499 20,47.3049272 20,41.5038249 C20,35.7027226 24.7027226,31 30.5038249,31 C36.3049272,31 41.0076499,35.7027226 41.0076499,41.5038249 C41.0076499,43.9839107 40.1481185,46.2632422 38.710696,48.0601792 Z M36.3875844,47.1716785 C37.8030221,45.7026647 38.6734666,43.7048964 38.6734666,41.5038249 C38.6734666,36.9918565 35.0157934,33.3341833 30.5038249,33.3341833 C25.9918565,33.3341833 22.3341833,36.9918565 22.3341833,41.5038249 C22.3341833,46.0157934 25.9918565,49.6734666 30.5038249,49.6734666 C32.7048964,49.6734666 34.7026647,48.8030221 36.1716785,47.3875844 C36.2023931,47.347638 36.2360451,47.3092237 36.2726343,47.2726343 C36.3092237,47.2360451 36.347638,47.2023931 36.3875844,47.1716785 Z" transform="translate(-20 -31)"></path></svg> </span> <span class="toggle-text">Search</span> </span> </button><div class="header-titles"><div class="site-title faux-heading"><a href="/">Joseph Scott</a></div></div> <button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle"> <span class="toggle-inner"> <span class="toggle-icon"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="26" height="7" viewbox="0 0 26 7"><path fill-rule="evenodd" d="M332.5,45 C330.567003,45 329,43.4329966 329,41.5 C329,39.5670034 330.567003,38 332.5,38 C334.432997,38 336,39.5670034 336,41.5 C336,43.4329966 334.432997,45 332.5,45 Z M342,45 C340.067003,45 338.5,43.4329966 338.5,41.5 C338.5,39.5670034 340.067003,38 342,38 C343.932997,38 345.5,39.5670034 345.5,41.5 C345.5,43.4329966 343.932997,45 342,45 Z M351.5,45 C349.567003,45 348,43.4329966 348,41.5 C348,39.5670034 349.567003,38 351.5,38 C353.432997,38 355,39.5670034 355,41.5 C355,43.4329966 353.432997,45 351.5,45 Z" transform="translate(-329 -38)"></path></svg> </span> <span class="toggle-text">Menu</span> </span> </button>
+</div>
+<div class="header-navigation-wrapper">
+<nav class="primary-menu-wrapper" aria-label="Horizontal" role="navigation"><ul class="primary-menu reset-list-style">
+<li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><a href="https://josephscott.org/">Home</a></li>
+<li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-8"><a href="/">Blog</a></li>
+<li id="menu-item-15706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15706"><a href="/contact/">Contact</a></li>
+</ul></nav><div class="header-toggles hide-no-js"><div class="toggle-wrapper search-toggle-wrapper"> <button class="toggle search-toggle desktop-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false"> <span class="toggle-inner"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewbox="0 0 23 23"><path d="M38.710696,48.0601792 L43,52.3494831 L41.3494831,54 L37.0601792,49.710696 C35.2632422,51.1481185 32.9839107,52.0076499 30.5038249,52.0076499 C24.7027226,52.0076499 20,47.3049272 20,41.5038249 C20,35.7027226 24.7027226,31 30.5038249,31 C36.3049272,31 41.0076499,35.7027226 41.0076499,41.5038249 C41.0076499,43.9839107 40.1481185,46.2632422 38.710696,48.0601792 Z M36.3875844,47.1716785 C37.8030221,45.7026647 38.6734666,43.7048964 38.6734666,41.5038249 C38.6734666,36.9918565 35.0157934,33.3341833 30.5038249,33.3341833 C25.9918565,33.3341833 22.3341833,36.9918565 22.3341833,41.5038249 C22.3341833,46.0157934 25.9918565,49.6734666 30.5038249,49.6734666 C32.7048964,49.6734666 34.7026647,48.8030221 36.1716785,47.3875844 C36.2023931,47.347638 36.2360451,47.3092237 36.2726343,47.2726343 C36.3092237,47.2360451 36.347638,47.2023931 36.3875844,47.1716785 Z" transform="translate(-20 -31)"></path></svg> <span class="toggle-text">Search</span> </span> </button>
+</div></div>
+</div>
+</div>
+<div class="search-modal cover-modal header-footer-group" data-modal-target-string=".search-modal"><div class="search-modal-inner modal-inner"><div class="section-inner">
+<form role="search" aria-label="Search for:" method="get" class="search-form" action="/"> <label for="search-form-1"> <span class="screen-reader-text">Search for:</span> <input type="search" id="search-form-1" class="search-field" placeholder="Search &hellip;" value="" name="s"> </label> <input type="submit" class="search-submit" value="Search">
+</form> <button class="toggle search-untoggle close-search-toggle fill-children-current-color" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field"> <span class="screen-reader-text">Close search</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16"><polygon fill="" fill-rule="evenodd" points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102"></polygon></svg> </button>
+</div></div></div></header><div class="menu-modal cover-modal header-footer-group" data-modal-target-string=".menu-modal"><div class="menu-modal-inner modal-inner"><div class="menu-wrapper section-inner">
+<div class="menu-top"> <button class="toggle close-nav-toggle fill-children-current-color" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".menu-modal"> <span class="toggle-text">Close Menu</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16"><polygon fill="" fill-rule="evenodd" points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102"></polygon></svg> </button><nav class="mobile-menu" aria-label="Mobile" role="navigation"><ul class="modal-menu reset-list-style">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><div class="ancestor-wrapper"><a href="https://josephscott.org/">Home</a></div></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-8"><div class="ancestor-wrapper"><a href="/">Blog</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15706"><div class="ancestor-wrapper"><a href="/contact/">Contact</a></div></li>
+</ul></nav>
+</div>
+<div class="menu-bottom"></div>
+</div></div></div>
+<main id="site-content" role="main"><article class="post-594 post type-post status-publish format-standard hentry category-josephscott" id="post-594"><header class="entry-header has-text-align-center header-footer-group"><div class="entry-header-inner section-inner medium">
+<div class="entry-categories"> <span class="screen-reader-text">Categories</span><div class="entry-categories-inner"> <a href="/category/josephscott/" rel="category tag">josephscott</a>
+</div>
+</div>
+<h1 class="entry-title">PHP Database Functions vs. PEAR::DB vs. ADOdb (and PDO)</h1>
+<div class="post-meta-wrapper post-meta-single post-meta-single-top"><ul class="post-meta">
+<li class="post-author meta-wrapper"> <span class="meta-icon"> <span class="screen-reader-text">Post author</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewbox="0 0 18 20"><path fill="" d="M18,19 C18,19.5522847 17.5522847,20 17,20 C16.4477153,20 16,19.5522847 16,19 L16,17 C16,15.3431458 14.6568542,14 13,14 L5,14 C3.34314575,14 2,15.3431458 2,17 L2,19 C2,19.5522847 1.55228475,20 1,20 C0.44771525,20 0,19.5522847 0,19 L0,17 C0,14.2385763 2.23857625,12 5,12 L13,12 C15.7614237,12 18,14.2385763 18,17 L18,19 Z M9,10 C6.23857625,10 4,7.76142375 4,5 C4,2.23857625 6.23857625,0 9,0 C11.7614237,0 14,2.23857625 14,5 C14,7.76142375 11.7614237,10 9,10 Z M9,8 C10.6568542,8 12,6.65685425 12,5 C12,3.34314575 10.6568542,2 9,2 C7.34314575,2 6,3.34314575 6,5 C6,6.65685425 7.34314575,8 9,8 Z"></path></svg> </span> <span class="meta-text"> By <a href="/author/josephscott/">josephscott</a> </span>
+</li>
+<li class="post-date meta-wrapper"> <span class="meta-icon"> <span class="screen-reader-text">Post date</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewbox="0 0 18 19"><path fill="" d="M4.60069444,4.09375 L3.25,4.09375 C2.47334957,4.09375 1.84375,4.72334957 1.84375,5.5 L1.84375,7.26736111 L16.15625,7.26736111 L16.15625,5.5 C16.15625,4.72334957 15.5266504,4.09375 14.75,4.09375 L13.3993056,4.09375 L13.3993056,4.55555556 C13.3993056,5.02154581 13.0215458,5.39930556 12.5555556,5.39930556 C12.0895653,5.39930556 11.7118056,5.02154581 11.7118056,4.55555556 L11.7118056,4.09375 L6.28819444,4.09375 L6.28819444,4.55555556 C6.28819444,5.02154581 5.9104347,5.39930556 5.44444444,5.39930556 C4.97845419,5.39930556 4.60069444,5.02154581 4.60069444,4.55555556 L4.60069444,4.09375 Z M6.28819444,2.40625 L11.7118056,2.40625 L11.7118056,1 C11.7118056,0.534009742 12.0895653,0.15625 12.5555556,0.15625 C13.0215458,0.15625 13.3993056,0.534009742 13.3993056,1 L13.3993056,2.40625 L14.75,2.40625 C16.4586309,2.40625 17.84375,3.79136906 17.84375,5.5 L17.84375,15.875 C17.84375,17.5836309 16.4586309,18.96875 14.75,18.96875 L3.25,18.96875 C1.54136906,18.96875 0.15625,17.5836309 0.15625,15.875 L0.15625,5.5 C0.15625,3.79136906 1.54136906,2.40625 3.25,2.40625 L4.60069444,2.40625 L4.60069444,1 C4.60069444,0.534009742 4.97845419,0.15625 5.44444444,0.15625 C5.9104347,0.15625 6.28819444,0.534009742 6.28819444,1 L6.28819444,2.40625 Z M1.84375,8.95486111 L1.84375,15.875 C1.84375,16.6516504 2.47334957,17.28125 3.25,17.28125 L14.75,17.28125 C15.5266504,17.28125 16.15625,16.6516504 16.15625,15.875 L16.15625,8.95486111 L1.84375,8.95486111 Z"></path></svg> </span> <span class="meta-text"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/">Tue 4 Apr 2006</a> </span>
+</li>
+<li class="post-comment-link meta-wrapper"> <span class="meta-icon"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewbox="0 0 19 19"><path d="M9.43016863,13.2235931 C9.58624731,13.094699 9.7823475,13.0241935 9.98476849,13.0241935 L15.0564516,13.0241935 C15.8581553,13.0241935 16.5080645,12.3742843 16.5080645,11.5725806 L16.5080645,3.44354839 C16.5080645,2.64184472 15.8581553,1.99193548 15.0564516,1.99193548 L3.44354839,1.99193548 C2.64184472,1.99193548 1.99193548,2.64184472 1.99193548,3.44354839 L1.99193548,11.5725806 C1.99193548,12.3742843 2.64184472,13.0241935 3.44354839,13.0241935 L5.76612903,13.0241935 C6.24715123,13.0241935 6.63709677,13.4141391 6.63709677,13.8951613 L6.63709677,15.5301903 L9.43016863,13.2235931 Z M3.44354839,14.766129 C1.67980032,14.766129 0.25,13.3363287 0.25,11.5725806 L0.25,3.44354839 C0.25,1.67980032 1.67980032,0.25 3.44354839,0.25 L15.0564516,0.25 C16.8201997,0.25 18.25,1.67980032 18.25,3.44354839 L18.25,11.5725806 C18.25,13.3363287 16.8201997,14.766129 15.0564516,14.766129 L10.2979143,14.766129 L6.32072889,18.0506004 C5.75274472,18.5196577 4.89516129,18.1156602 4.89516129,17.3790323 L4.89516129,14.766129 L3.44354839,14.766129 Z"></path></svg> </span> <span class="meta-text"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comments">29 Comments<span class="screen-reader-text"> on PHP Database Functions vs. PEAR::DB vs. ADOdb (and PDO)</span></a> </span>
+</li>
+</ul></div>
+</div></header><div class="post-inner thin "><div class="entry-content">
+<p>I started putting together a few small <a href="http://www.php.net/">PHP</a> scripts to move data around. I&#8217;ve been using <a href="https://pear.php.net/package/DB/">PEAR::DB</a> a fair bit for this sort of thing, but I figured there wasn&#8217;t really much reason for it in this case since I knew these were only going to be talking to specific databases and wouldn&#8217;t be ported for anything else. This got me to wondering what sort of performance penalty I was paying for using PEAR::DB instead of the specific PHP functions. This lead to a few simple test scripts against a <a href="https://www.postgresql.org/">PostgreSQL</a> database.</p>
+<p>The first script uses the <a href="http://us3.php.net/pgsql">PHP PostgreSQL functions</a> directly:</p>
+<pre>
+ini_set("display_errors", 1);
+$time_start = microtime(true);
+$db = pg_connect("host=dbserver dbname=testdb user=test password=testpw");
+
+$runs = 250;
+for($i = 0; $i = '25-MAR-06'";
+    $rs = pg_query($db, $sql);
+    while($row = pg_fetch_assoc($rs)) { }
+}
+
+$time_end = microtime(true);
+$time = $time_end - $time_start;
+print("TIME: {$time}n");
+</pre>
+<p>Nothing too exciting, just run the same query 250 times and ditch the results. This query happens to return 273 rows against my test database. I ran this script from the command line 10 times. The fastest time for this script was 3.6526100635529 seconds. Normally I&#8217;d include error checks in these, but I was only interested in how fast I could get through data. The second script made use of PEAR::DB:</p>
+<pre>
+ini_set("display_errors", 1);
+require_once("PEAR.php");
+require_once("DB.php");
+$time_start = microtime(true);
+
+$db = DB::Connect("pgsql://test:testpw@dbserver/testdb");
+$runs = 250;
+for($i = 0; $i = '25-MAR-06'";
+    $rs = $db-&gt;query($sql);
+    while($row = $rs-&gt;fetchRow()) { }
+}
+
+$time_end = microtime(true);
+$time = $time_end - $time_start;
+print("TIME: {$time}n");
+</pre>
+<p>Same conditions, run 10 times from the command line with the same 273 rows returned from the query. The fastest time was 6.5583028793335 seconds. So PEAR::DB added an additional 2.90569281578 seconds to the process, an increase of almost 80%.</p>
+<p>Just add more data to the mix I put together another script using <a href="http://adodb.sourceforge.net/">ADOdb</a>:</p>
+<pre>
+ini_set("display_errors", 1);
+require_once("./adodb/adodb.inc.php");
+$time_start = microtime(true);
+
+$ADODB_FETCH_MODE = ADODB_FETCH_ASSOC;
+$db = NewADOConnection("postgres://test:testpw@dbserver/testdb");
+$runs = 250;
+for($i = 0; $i = '25-MAR-06'";
+    $rs = $db-&gt;Execute($sql);
+    while(!$rs-&gt;EOF) { $rs-&gt;MoveNext(); }
+}
+
+$time_end = microtime(true);
+$time = $time_end - $time_start;
+print("TIME: {$time}n");
+</pre>
+<p>Once again 10 runs from the command line with 273 rows being returned from the query. The fastest time was 5.3411331176758 seconds. Faster than PEAR::DB by more than a second, but still well behind the script that used the direct database functions by 1.68852305412 seconds. This is about 46% slower compared to PEAR::DB&#8217;s almost 80%.</p>
+<p>I should note that I tried to include <a href="https://pear.php.net/package/MDB2/">PEAR::MDB2</a> in the test but it kept giving me reference errors. I modified my test script to deal with a couple of them, but gave up after more of them showed up.</p>
+<p>What does all this mean? Here is what I take from it:</p>
+<ol>
+<li>If you need performance over supporting multiple databases and use of PEAR packages that require PEAR::DB (like <a href="https://pear.php.net/package/DB_DataObject/">PEAR::DB_DataObject</a>) then stick with calling the database functions directly. No way to beat that from a performance perspective.</li>
+<li>If you need to support multiple databases and don&#8217;t have to worry about other PEAR packages then go with ADOdb. It is faster than PEAR:DB good margin.</li>
+<li>If you are using other PEAR packages that require PEAR::DB then go with that.</li>
+</ol>
+<p>This wasn&#8217;t intended to be an exhaustive test, I just wanted to get a feeling for the relative speed of these three options. For reference I used PHP 5.1.2 on a <a href="https://www.freebsd.org/">FreeBSD</a> 6 system. If you run a similar comparison be sure to look at the relative differences between the times, not the times themselves.</p>
+<p><b>UPDATE Tue 4 Apr 2006 @ 4:30pm :</b> <a href="http://www.gnegg.ch/">Philip Hofstetter</a> pointed out that I should have included the new <a href="http://www.php.net/pdo">PDO</a> functions in my test. So here it is:</p>
+<pre>
+ini_set("display_errors", 1);
+$time_start = microtime(true);
+$db = new PDO("pgsql:host=dbserver dbname=testdb user=test password=testpw");
+
+$runs = 250;
+for($i = 0; $i = '25-MAR-06'";
+    foreach($db-&gt;query($sql) as $row) { }
+}
+
+$time_end = microtime(true);
+$time = $time_end - $time_start;
+print("TIME: {$time}n");
+</pre>
+<p>Once again 10 runs from the command line, with the query returning 273 rows. The fastest time was 4.287976026535 seconds. So PDO comes in at number two, beating ADOdb by more than a second. But still behind direct function calls by more than six tenths of a second, adding only 17% over head. PDO will only work with PHP 5, so if you want/need your app to work with PHP 4 then don&#8217;t even include PDO on your list of options.</p>
+<p><b>UPDATE Tue 11 Apr 2006 @ 12:10am :</b> Deane over at <a href="http://www.gadgetopia.com/">Gadgetopia.com</a> wanted to know <a href="http://www.gadgetopia.com/post/5201">how the ADOdb extension</a> faired in this test. So here we are one more time 🙂</p>
+<p>After installing the ADOdb extension I ran the same exact test script for ADOdb 10 times from the command line with the same query returning 273 rows. The unmodified script returned times that were very close to the numbers with ADOdb without the extension. The fastest time was 5.3139600753784 seconds, only 0.027173 seconds faster than plain ADOdb. To test out the speed of the extension I made one change to the test script, using <code>adodb_movenext($rs);</code> instead of <code>$rs-&gt;MoveNext();</code> in the while loop:</p>
+<pre>
+ini_set("display_errors", 1);
+require_once("./adodb/adodb.inc.php");
+$time_start = microtime(true);
+
+$ADODB_FETCH_MODE = ADODB_FETCH_ASSOC;
+$db = NewADOConnection("postgres://test:testpw@dbserver/testdb");
+
+$runs = 250;
+for($i = 0; $i = '25-MAR-06'";
+    $rs = $db-&gt;Execute($sql);
+
+    while(!$rs-&gt;EOF) {
+#       $rs-&gt;MoveNext();
+        adodb_movenext($rs);
+    }
+}
+$time_end = microtime(true);
+$time = $time_end - $time_start;
+print("TIME: {$time}n");
+</pre>
+<p>Another 10 runs from the command line and the fastest time was 4.2841749191284 seconds. This is 1.0569582 seconds faster than ADOdb without the extension. This is ever so slightly faster than PDO, beating it out by 0.0038011. Calling the direct database functions are still 0.6315648 seconds faster than ADOdb + ADOdb-extension.</p>
+<p>To make things easier here is a table of the results. Remember that the focus is on the relative differences, not the specific times, which will vary with different hardware/OS/etc. All times are given in seconds.</p>
+<table border="1" cellspacing="0" cellpadding="5">
+<tr>
+<th>Library/Function</th>
+<th>Time</th>
+<th>Absolute Difference</th>
+</tr>
+<tr>
+<td>Direct database functions</td>
+<td>3.6526100635529</td>
+<td>0</td>
+</tr>
+<tr>
+<td>ADOdb + ADOdb/extension</td>
+<td>4.2841749191284</td>
+<td>0.6315648</td>
+</tr>
+<tr>
+<td>PDO</td>
+<td>4.287976026535</td>
+<td>0.6353659</td>
+</tr>
+<tr>
+<td>ADOdb (w/o extension)</td>
+<td>5.3411331176758</td>
+<td>1.688523</td>
+</tr>
+<tr>
+<td>PEAR::DB</td>
+<td>6.5583028793335</td>
+<td>2.9056928</td>
+</tr>
+</table>
+<p>Using the specific database functions still wins, I suspect they always will. Interesting that PDO didn&#8217;t beat out ADOdb + ADOdb/extension, although the times are so close that it is probably a wash.</p>
+</div></div>
+<div class="section-inner"></div>
+<nav class="pagination-single section-inner" aria-label="Post" role="navigation"><hr class="styled-separator is-style-wide" aria-hidden="true">
+<div class="pagination-single-inner"> <a class="previous-post" href="/2006/04/02/moving-gd-development-to-phpnet/"> <span class="arrow" aria-hidden="true">&larr;</span> <span class="title"><span class="title-inner">Moving gd Development To php.net</span></span> </a> <a class="next-post" href="/2006/04/05/boot-camp/"> <span class="arrow" aria-hidden="true">&rarr;</span> <span class="title"><span class="title-inner">Boot Camp</span></span> </a>
+</div>
+<hr class="styled-separator is-style-wide" aria-hidden="true"></nav><div class="comments-wrapper section-inner">
+<div class="comments" id="comments">
+<div class="comments-header section-inner small max-percentage"><h2 class="comment-reply-title"> 29 replies on &ldquo;PHP Database Functions vs. PEAR::DB vs. ADOdb (and PDO)&rdquo;</h2></div>
+<div class="comments-inner section-inner thin max-percentage">
+<div id="comment-1223" class="comment even thread-even depth-1"><article id="div-comment-1223" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.thebusypixel.com/" rel="external nofollow" class="url"><img id="grav-887a73246366289834e82e62d5decda0-120-60d16e5bf2548" alt="kenrick" src="/wp-content/uploads/gravatar-cache/887a73246366289834e82e62d5decda0-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">kenrick</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1223"><time datetime="2006-04-04T13:27:15-06:00" title="Tue 4 Apr 2006 at 1:27 pm">Tue 4 Apr 2006 at 1:27 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>you really should also run that test with an opcode cache like ionCube or the turkMM as (at least with adodb) its significantly faster.</p></div></article></div>
+<div id="comment-1224" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1224" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d16e5c029bd" alt="joseph" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">joseph</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1224"><time datetime="2006-04-04T13:32:54-06:00" title="Tue 4 Apr 2006 at 1:32 pm">Tue 4 Apr 2006 at 1:32 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>If I were running for a website I would, but as I stated in the post I ran all of these tests from the command line. An opcode cache doesn&#8217;t do anything for your when running scripts from the command line interface (CLI).</p></div></article></div>
+<div id="comment-1225" class="comment even thread-even depth-1"><article id="div-comment-1225" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.gnegg.ch/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16e5c07414" alt="Philip Hofstetter" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Philip Hofstetter</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1225"><time datetime="2006-04-04T13:44:18-06:00" title="Tue 4 Apr 2006 at 1:44 pm">Tue 4 Apr 2006 at 1:44 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi Joseph,</p>
+<p>it looks like we both seem to be having out benchmark-day today (thanks for your comments on my blog, btw).</p>
+<p>What would really interest me here is PDO&#8217;s performance. I guess a lot of performance is lost due to both benchmarked libraries being written in PHP. Maybe native PDO is infact as speedy (or nearly as speedy) as the pure PostgreSQL API is.</p>
+<p>If you have the opportuniy, maybe go ahead and test it with PDO.</p>
+<p>Philip</p>
+</div></article></div>
+<div id="comment-1226" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1226" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d16e5c0c917" alt="joseph" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">joseph</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1226"><time datetime="2006-04-04T14:16:33-06:00" title="Tue 4 Apr 2006 at 2:16 pm">Tue 4 Apr 2006 at 2:16 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Completely forgot about PDO. I&#8217;ll add that one to the post.</p></div></article></div>
+<div id="comment-1227" class="comment even thread-even depth-1"><article id="div-comment-1227" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.thebusypixel.com/" rel="external nofollow" class="url"><img id="grav-887a73246366289834e82e62d5decda0-120-60d16e5c0d007" alt="kenrick" src="/wp-content/uploads/gravatar-cache/887a73246366289834e82e62d5decda0-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">kenrick</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1227"><time datetime="2006-04-04T15:24:36-06:00" title="Tue 4 Apr 2006 at 3:24 pm">Tue 4 Apr 2006 at 3:24 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>yeah i missed where you said the command line, my penalty for skimming. so are you running this as a bash script or just calling the script like php myscript.php? i was not aware that if you ran a script ie; php run_me.php that it would bypass any opcode cache you have. i am surprised that it would do that, since an opcode cache is used to keep php from going through the whole tokening compiling bit over and over again, i don&#8217;t think thats very optimal.</p>
+<p>Any links to docs on this would be super helpful, thanks!</p>
+</div></article></div>
+<div id="comment-1228" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1228" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d16e5c12468" alt="joseph" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">joseph</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1228"><time datetime="2006-04-04T15:36:23-06:00" title="Tue 4 Apr 2006 at 3:36 pm">Tue 4 Apr 2006 at 3:36 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Kenrick-<br> Opcode caches are able to work because they are part of a persistent process, usually Apache with mod_php. Because the Apache process doesn&#8217;t exit between requests the opcode cache is able to keep things around. I haven&#8217;t confirmed this, but I suppose it would be possble to use an opcode cache that used files instead of memory. I&#8217;m not sure that you&#8217;d see any sort of gain from that though. I&#8217;ll note that the system that I did this on is using APC for opcode cache, but like I said, I don&#8217;t think that command line apps see any benefit from it.</p>
+<p>I ran these scripts using the PHP binary, like: &#8216;php ./time-adodb.php&#8217;. There is a whole section on using PHP from the command line in the docs:</p>
+<p><a href="http://us2.php.net/manual/en/features.commandline.php" rel="nofollow">Chapter 43. Using PHP from the command line</a></p>
+</div></article></div>
+<div id="comment-1229" class="comment even thread-even depth-1"><article id="div-comment-1229" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.thebusypixel.com/" rel="external nofollow" class="url"><img id="grav-887a73246366289834e82e62d5decda0-120-60d16e5c12ba2" alt="Kenrick" src="/wp-content/uploads/gravatar-cache/887a73246366289834e82e62d5decda0-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Kenrick</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1229"><time datetime="2006-04-07T08:09:50-06:00" title="Fri 7 Apr 2006 at 8:09 am">Fri 7 Apr 2006 at 8:09 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Yep you&#8217;re right about the opcode not working from command line. I contacted Nick from ionCube and he confirmed that it doesn&#8217;t work.</p>
+<p>This little test you did has become really helpful for me this week. I run some scripts from the command line for some cron jobs, and I know now I could make them faster by just using the php functions instead of adodb. Thanks.</p>
+</div></article></div>
+<div id="comment-1230" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1230" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://pooteeweet.org/" rel="external nofollow" class="url"><img id="grav-54787afbd0e7c30936101c2fa84bd89b-120-60d16e5c13865" alt="Lukas" src="/wp-content/uploads/gravatar-cache/54787afbd0e7c30936101c2fa84bd89b-120.png" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Lukas</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1230"><time datetime="2006-05-20T03:22:03-06:00" title="Sat 20 May 2006 at 3:22 am">Sat 20 May 2006 at 3:22 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>What were these reference issues in MDB2?</p>
+<p>There are some benchmarks in the following two threads:<br> <a href="http://marc.theaimsgroup.com/?l=pear-dev&#038;m=108237909630724&#038;w=2" rel="nofollow ugc">http://marc.theaimsgroup.com/?l=pear-dev&#038;m=108237909630724&#038;w=2</a><br> <a href="https://sourceforge.net/mailarchive/message.php?msg_id=10269486" rel="nofollow ugc">http://sourceforge.net/mailarchive/message.php?msg_id=10269486</a></p>
+</div></article></div>
+<div id="comment-1231" class="pingback even thread-even depth-1"><article id="div-comment-1231" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://warpedvisions.org/2006/05/23/php-db-apis-compared/" rel="external nofollow" class="url"><span class="fn">warpedvisions.org &raquo; Blog Archive &raquo; Php DB APIs compared</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1231"><time datetime="2006-05-23T08:53:07-06:00" title="Tue 23 May 2006 at 8:53 am">Tue 23 May 2006 at 8:53 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] May 23rd, 2006 in Links PHP Database Functions vs. PEAR::DB vs. ADOdb (and PDO). [&#8230;]</p></div></article></div>
+<div id="comment-1232" class="pingback odd alt thread-odd thread-alt depth-1"><article id="div-comment-1232" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://59ideas.com/blog/223/links-for-2006-06-19/" rel="external nofollow" class="url"><span class="fn">links for 2006-06-19 at 59ideas</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1232"><time datetime="2006-06-19T08:20:07-06:00" title="Mon 19 Jun 2006 at 8:20 am">Mon 19 Jun 2006 at 8:20 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] Joseph Scott’s Blog » Blog Archive » PHP Database Functions vs. PEAR::DB vs. ADOdb (and PDO) comparing database function performance (tags: php) [&#8230;]</p></div></article></div>
+<div id="comment-1233" class="comment even thread-even depth-1"><article id="div-comment-1233" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.neofoto.nl/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16e5c18ff2" alt="neographikal" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">neographikal</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1233"><time datetime="2006-08-19T01:49:56-06:00" title="Sat 19 Aug 2006 at 1:49 am">Sat 19 Aug 2006 at 1:49 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Well actually: the results wouldn&#8217;t be affected by an op-code cacher: the timing starts *after* the includes for the dbaselayers 🙂</p></div></article></div>
+<div id="comment-1234" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1234" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16e5c1d246" alt="Robert" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Robert</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1234"><time datetime="2007-01-17T11:05:05-07:00" title="Wed 17 Jan 2007 at 11:05 am">Wed 17 Jan 2007 at 11:05 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I wonder how the tests would be affected if you used PREPARE/EXECUTE (prepare only once, then execute inside the loop) instead of using QUERY inside the loop. My guess is that the native PHP functions would pull away even more, leaving the libraries in the dust.</p>
+<p>Also, IIRC ADOdb does &#8220;fake&#8221; prepares (it just does some string parsing for you) while PEAR does real prepares (can anyone confirm this?). If this is true, PEAR might get a boost relative to ADOdb when using the PREPARE/EXECUTE method.</p>
+</div></article></div>
+<div id="comment-1235" class="comment even thread-even depth-1"><article id="div-comment-1235" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.joho.se/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16e5c21401" alt="joho" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">joho</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1235"><time datetime="2007-01-19T13:01:24-07:00" title="Fri 19 Jan 2007 at 1:01 pm">Fri 19 Jan 2007 at 1:01 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>The curious cat wonders what the same benchmarks look like with ADOdbLite (<a href="http://adodblite.sourceforge.net/" rel="nofollow ugc">http://adodblite.sourceforge.net</a>) &#8230;</p></div></article></div>
+<div id="comment-1236" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1236" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.blueo2.com/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16e5c25897" alt="Brian Nelson" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Brian Nelson</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1236"><time datetime="2007-08-01T19:39:42-06:00" title="Wed 1 Aug 2007 at 7:39 pm">Wed 1 Aug 2007 at 7:39 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I would be very interested in seeing the construction and destruction of connections factored in. Very rarely do I connect, do 300 operations, and disconnect. a connect, do 5-6 operations, disconnect, make new object approach might give more interesting numbers. 🙂 Also, there&#8217;s no escaping of variables in native library calls, so you might want to add that in as well to the native calls vs. using bind variables in ADODB/PDO/etc</p>
+<p>Cheers,<br> Brian</p>
+</div></article></div>
+<div id="comment-1237" class="comment even thread-even depth-1"><article id="div-comment-1237" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16e5c29d8a" alt="Habes" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Habes</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1237"><time datetime="2008-01-30T03:20:37-07:00" title="Wed 30 Jan 2008 at 3:20 am">Wed 30 Jan 2008 at 3:20 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Read this article please:</p>
+<p><a href="https://www.ibm.com/developerworks/library/os-php-dbmistake/index.html" rel="nofollow ugc">http://www.ibm.com/developerworks/library/os-php-dbmistake/index.html</a></p>
+</div></article></div>
+<div id="comment-1238" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1238" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d16e5c2faf5" alt="Joseph Scott" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Joseph Scott</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1238"><time datetime="2008-01-30T07:08:26-07:00" title="Wed 30 Jan 2008 at 7:08 am">Wed 30 Jan 2008 at 7:08 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>@Habes &#8211;</p>
+<p>I&#8217;m not sure what your point it is, that IBM article has nothing to do with comparing the speed of accessing a database from PHP using different methods.</p>
+<p>The IBM article does point out some interesting issues, just not the same ones that are mentioned here.</p>
+</div></article></div>
+<div id="comment-1239" class="comment even thread-even depth-1"><article id="div-comment-1239" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.nerdboy1024.com/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16e5c36af8" alt="Nerdboy1024" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Nerdboy1024</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1239"><time datetime="2008-04-08T23:13:01-06:00" title="Tue 8 Apr 2008 at 11:13 pm">Tue 8 Apr 2008 at 11:13 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>nice read joseph, i&#8217;ve actually developed a CRM in php&amp;adodb for mySQL, after running running into a problem i jumped on IRC to see if i could get some help. after being insulted for choosing adodb by #php on 3 servers(even being insulted by an eggbot) i ended up figuring it out solo. Why are .php against adodb, even tho it clearly performs well concidering it&#8217;s capabilities to function over multi databases?</p></div></article></div>
+<div id="comment-1240" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1240" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d16e5c3f370" alt="Joseph Scott" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Joseph Scott</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1240"><time datetime="2008-04-09T09:43:37-06:00" title="Wed 9 Apr 2008 at 9:43 am">Wed 9 Apr 2008 at 9:43 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>@Nerdboy1024 &#8211;</p>
+<p>Some projects have avoided it because the distribution of adodb is rather large, and would increase the size of their own project. Also, for projects that only want to focus on one database (like MySQL), then the overhead of adodb doesn&#8217;t give them anything extra.</p>
+<p>Those would be my guesses.</p>
+</div></article></div>
+<div id="comment-1241" class="comment even thread-even depth-1"><article id="div-comment-1241" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.tonylandis.com/" rel="external nofollow" class="url"><img id="grav-1bcc71e7d6de236e2a7cd211a6ac9f2c-120-60d16e5c40428" alt="Tony Landis" src="/wp-content/uploads/gravatar-cache/1bcc71e7d6de236e2a7cd211a6ac9f2c-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Tony Landis</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1241"><time datetime="2008-06-03T20:52:56-06:00" title="Tue 3 Jun 2008 at 8:52 pm">Tue 3 Jun 2008 at 8:52 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi Joseph,</p>
+<p>Thanks for the benchmark. However, it does not take into consideration the real world aspect of library inclusion overhead.</p>
+<p>See: <a href="http://www.tonylandis.com/articles/accurate-web-application-benchmarking-methodology.htm" rel="nofollow ugc">http://www.tonylandis.com/articles/accurate-web-application-benchmarking-methodology.htm</a></p>
+</div></article></div>
+<div id="comment-1242" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1242" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d16e5c45dcc" alt="Joseph Scott" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Joseph Scott</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1242"><time datetime="2008-06-04T08:45:17-06:00" title="Wed 4 Jun 2008 at 8:45 am">Wed 4 Jun 2008 at 8:45 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>@Tony Landis &#8211;</p>
+<p>True, it does not include the over head required to import the library code. For those worried about performance that over head is likely to be very, very, very small since they&#8217;ll be using some sort of cache like APC.</p>
+<p>You technique also includes many other factors that I wasn&#8217;t interested in measuring, my only concern was the relative performance of talking do the database in different ways.</p>
+<p>I read through the results of your tests, I didn&#8217;t see anything using the ADOdb extension, which speeds things up quite a bit.</p>
+</div></article></div>
+<div id="comment-1243" class="comment even thread-even depth-1"><article id="div-comment-1243" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.tonylandis.com/" rel="external nofollow" class="url"><img id="grav-1bcc71e7d6de236e2a7cd211a6ac9f2c-120-60d16e5c4655b" alt="Tony Landis" src="/wp-content/uploads/gravatar-cache/1bcc71e7d6de236e2a7cd211a6ac9f2c-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Tony Landis</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1243"><time datetime="2008-06-04T12:47:54-06:00" title="Wed 4 Jun 2008 at 12:47 pm">Wed 4 Jun 2008 at 12:47 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi Joseph,</p>
+<p>I agree that the ADOdb extension would change things. I suspect that PDO and ADOdb performance would be nearly a tie.</p>
+<p>I do have to disagree that the overhead to import code is small &#8211; as my tests showed, even with APC enabled, ADODdb performed at a bit less than half the speed of ADOdb. And since many hosting environments offer neither APC or the ADOdb extension, ADOdb is going to use a great deal more resources in most cases&#8230; so it should be a concern where performance is an issue.</p>
+<p>Ultimately, my tests were to determine if there is it was an advantage or a disadvantage to add a large distribution such as the ADOdb library, and I understand that your tests were targeted differently.</p>
+</div></article></div>
+<div id="comment-1244" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1244" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d16e5c4bafb" alt="Joseph Scott" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Joseph Scott</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1244"><time datetime="2008-06-04T13:46:35-06:00" title="Wed 4 Jun 2008 at 1:46 pm">Wed 4 Jun 2008 at 1:46 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>@Tony Landis (21) &#8211;</p>
+<p>If you suspect that they would be nearly a tie, why leave it out? And if you are worried about performance, why even consider a host where you can&#8217;t use something like APC or the ADOdb extension? Usually this means a dedicated server, something where you have a lot more control.</p>
+<p>You tests showed ADOdb with APC improving by more than 700%, on the low end. A good chunk of that is because of APC, since it doesn&#8217;t have to re-compile the PHP scripts every time. Which goes back to my point, using something APC offsets library size in a big way. Not entirely, but much better than without it.</p>
+<p>It seems obvious on the surface that ADOdb is probably not going to be as fast as PDO, I don&#8217;t think anyone will find that surprising.</p>
+<p>If you were looking to demonstrate performance issues, why didn&#8217;t you include benchmarks for the mysql/mysqli functions? Wouldn&#8217;t those be even faster than PDO?</p>
+<p>Just a note on &#8220;performance&#8221; in general. It isn&#8217;t a substitute for scalability. Not that improved performance isn&#8217;t an important part of being scalable, but no amount of increased performance will make up for scalability.</p>
+</div></article></div>
+<div id="comment-1245" class="comment even thread-even depth-1"><article id="div-comment-1245" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.tonylandis.com/" rel="external nofollow" class="url"><img id="grav-1bcc71e7d6de236e2a7cd211a6ac9f2c-120-60d16e5c4c067" alt="Tony Landis" src="/wp-content/uploads/gravatar-cache/1bcc71e7d6de236e2a7cd211a6ac9f2c-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Tony Landis</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1245"><time datetime="2008-06-05T12:18:07-06:00" title="Thu 5 Jun 2008 at 12:18 pm">Thu 5 Jun 2008 at 12:18 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Joseph,</p>
+<p>I left out ADOdb with the extension because, as I stated, my tests were to determine if there is it was an advantage or a disadvantage to add a large distribution such as the ADOdb library. Also, it is my feeling that PDO is widely adopted (and will become even more so) by web hosts than the ADOdb extension.</p>
+<p>As to why I didn&#8217;t benchmark the mysql/mysqli functions &#8211; I was benchmarking database abstraction libraries. Of course they should perform faster than any abstraction library but that is beside the point if abstraction is required, right?</p>
+<p>Are you suggesting that using any of these libraries are less suitable for use in a scalable application?</p>
+</div></article></div>
+<div id="comment-1246" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1246" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16e5c50783" alt="DH" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">DH</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1246"><time datetime="2008-07-23T12:41:56-06:00" title="Wed 23 Jul 2008 at 12:41 pm">Wed 23 Jul 2008 at 12:41 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Found this on google, and I wanted to update the stats a bit:</p>
+<p>PDO, 2500 iterations: 2.94587302208<br> pg_query, 2500 iterations: 2.72805809975</p>
+<p>So they&#8217;ve improved PDO in the last year or two.</p>
+<p>It&#8217;s ~8% slower than direct pg_* functions, at least for relatively simple selects, as opposed to the ~16% when this post was originally written.</p>
+</div></article></div>
+<div id="comment-1247" class="comment even thread-even depth-1"><article id="div-comment-1247" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16e5c552d0" alt="Max" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Max</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1247"><time datetime="2008-10-23T06:07:24-06:00" title="Thu 23 Oct 2008 at 6:07 am">Thu 23 Oct 2008 at 6:07 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>1. [dumped PDO driver]: 3.225413084 sec<br> 2. [dumped DB driver]: 6.618566036 sec<br> 3. [dumped MDB2 driver]: 4.775002956 sec<br> 4. [dumped mysql driver]: 3.155264854 sec</p>
+<p> &#8216;mysql&#8217;,<br> &#8216;hostspec&#8217; =&gt; &#8216;localhost&#8217;,<br> &#8216;database&#8217; =&gt; &#8216;mysql&#8217;,<br> &#8216;username&#8217; =&gt; &#8216;root&#8217;,<br> &#8216;password&#8217; =&gt; &#8216;pass&#8217;<br> );</p>
+<p> if ($type == &#8220;DB&#8221;)<br> {<br> require_once(&#8220;DB.php&#8221;);</p>
+<p> $db = DB::connect($dsn);<br> if (PEAR::isError($db)) { die($db-&gt;getMessage()); }<br> $db-&gt;setFetchMode(DB_FETCHMODE_ASSOC);</p>
+<p> for ($i=1; $iquery( $sql);</p>
+<p> if (PEAR::isError($res)) {die($res-&gt;getMessage());}</p>
+<p> echo &#8220;&#8221;;<br> while( $res-&gt;fetchInto( $row ) )<br> {<br> process_row($row);<br> }<br> echo &#8220;&#8221;;<br> }<br> }<br> elseif($type == &#8220;MDB2&#8221;)<br> {<br> require_once(&#8220;MDB2.php&#8221;);</p>
+<p> $mdb2 =&amp; MDB2::connect($dsn);<br> if (PEAR::isError($mdb2)) { die($mdb2-&gt;getMessage()); }</p>
+<p> for ($i=1; $iquery( $sql);</p>
+<p> if (PEAR::isError($res)) {die($res-&gt;getMessage());}</p>
+<p> echo &#8220;&#8221;;<br> while ($row = $res-&gt;fetchRow(MDB2_FETCHMODE_ASSOC))<br> {<br> process_row($row);<br> }<br> echo &#8220;&#8221;;<br> }<br> }<br> elseif ($type == &#8220;PDO&#8221;)<br> {<br> $pdo = new PDO(&#8220;mysql:dbname=&#8221;.$dsn[&#8216;database&#8217;], $dsn[&#8216;username&#8217;], $dsn[&#8216;password&#8217;]); //PDO::FETCH_ASSOC</p>
+<p> for ($i=1; $i&lt;=$num; $i++)<br> {<br> echo &#8220;&#8221;;<br> foreach ($pdo-&gt;query($sql) as $row)<br> {<br> process_row($row);<br> }<br> echo &#8220;&#8221;;<br> }<br> }<br> elseif ($type == &#8220;mysql&#8221;)<br> {<br> mysql_connect($dsn[&#8216;hostspec&#8217;], $dsn[&#8216;username&#8217;], $dsn[&#8216;password&#8217;]);<br> mysql_select_db($dsn[&#8216;database&#8217;]);</p>
+<p> for ($i=1; $i&lt;=$num; $i++)<br> {<br> echo &#8220;&#8221;;<br> if ($res = mysql_query($sql))<br> {<br> while($row = mysql_fetch_assoc($res))<br> {<br> process_row($row);<br> }<br> }<br> echo &#8220;&#8221;;<br> }<br> }<br> }</p>
+<p>function process_row($row)<br> {<br> ob_start();<br> echo sizeof($row);<br> //print_r();<br> ob_end_clean();<br> }</p>
+<p>$types = array(&#8220;PDO&#8221;, &#8220;DB&#8221;, &#8220;MDB2&#8221;, &#8220;mysql&#8221;);<br> $sql = &#8216;SELECT * FROM user&#8217;;</p>
+<p>require($_SERVER[&#8216;DOCUMENT_ROOT&#8217;].&#8221;/inc/class/class_timer.php&#8221;);<br> $timer = Timer::getInstance();<br> $timer-&gt;saveTime(&#8216;start&#8217;);<br> foreach ($types as $type)<br> {<br> dump_users($type, $sql, 500);<br> $timer-&gt;saveTime(&#8216;dumped &#8216;.$type.&#8217; driver&#8217;);<br> }</p>
+<p>echo $timer-&gt;getReport(1);</p>
+<p>?&gt;</p>
+</div></article></div>
+<div id="comment-1248" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1248" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-e7889cdb01a117e7788016077042eafe-120-60d16e5c560d4" alt="Alexandre Morgaut" src="/wp-content/uploads/gravatar-cache/e7889cdb01a117e7788016077042eafe-120.png" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Alexandre Morgaut</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1248"><time datetime="2009-01-23T10:22:32-07:00" title="Fri 23 Jan 2009 at 10:22 am">Fri 23 Jan 2009 at 10:22 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Well the question now is: What about dbx and oDBC access performances with this bench ?</p>
+<p>Surely that ODBC will be one of the slowest but I really don&#8217;t know for dbx !!!<br> I think that as it is based on vendors drivers it should be slower than using it directly, but will it be faster than ODBC, DB, &amp; MDB2 ???</p>
+</div></article></div>
+<div id="comment-1249" class="comment even thread-even depth-1"><article id="div-comment-1249" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d16e5c5a818" alt="Joseph Scott" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Joseph Scott</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1249"><time datetime="2009-02-02T09:27:08-07:00" title="Mon 2 Feb 2009 at 9:27 am">Mon 2 Feb 2009 at 9:27 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>It&#8217;s been a long time since I put together that benchmark. At this point I don&#8217;t have any plans to add to it.</p></div></article></div>
+<div id="comment-1250" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1250" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="https://lotso.livejournal.com/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16e5c5f2d8" alt="lotso" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">lotso</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1250"><time datetime="2009-05-31T06:38:18-06:00" title="Sun 31 May 2009 at 6:38 am">Sun 31 May 2009 at 6:38 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>My own data shows</p>
+<p>pgsql TIME: 1.2292530536652<br> adodb TIME: 3.7784049510956<br> pear TIME: 6.3551380634308<br> pdo TIME: 1.2426941394806</p>
+<p>from selecting from 1521 rows over 250times from the DB in my laptop.</p>
+</div></article></div>
+<div id="comment-1251" class="comment even thread-even depth-1"><article id="div-comment-1251" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16e5c638f6" alt="Vincent Pazeller" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Vincent Pazeller</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#comment-1251"><time datetime="2011-10-24T15:20:36-06:00" title="Mon 24 Oct 2011 at 3:20 pm">Mon 24 Oct 2011 at 3:20 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi!</p>
+<p>Nice to have a comparison of speeds. Howewer, It would be even nicer with small charts&#8230; the query you use deals with around 200 records. It would be VERY interesting to know how the different libraries behave when dealing with 1000, 10000, 100000. This would allow you to draw very simple charts and have an idea of how the different systems deal with complexity&#8230;</p>
+<p>Another interesting statistic would be: what is the amount of memory used by these systems?</p>
+<p>Thank you for your work anyways 😉</p>
+<p>Regards</p>
+</div></article></div>
+</div>
+</div>
+<hr class="styled-separator is-style-wide" aria-hidden="true">
+<div id="respond" class="comment-respond">
+<h2 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2006/04/04/php-database-functions-vs-peardb-vs-adodb/#respond" style="display:none;">Cancel reply</a></small>
+</h2>
+<form action="/wp-comments-post.php" method="post" id="commentform" class="section-inner thin max-percentage" novalidate>
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
+<p class="comment-form-comment"><label for="comment">Comment</label><textarea autocomplete="new-password" id="a55b3ff945" name="a55b3ff945" cols="45" rows="8" maxlength="65525" required="required"></textarea><textarea id="comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea><script data-noptimize type="text/javascript">document.getElementById("comment").setAttribute( "id", "aa8bcd780095bbcfcd234db594167a0b" );document.getElementById("a55b3ff945").setAttribute( "id", "comment" );</script></p>
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="594" id="comment_post_ID"> <input type="hidden" name="comment_parent" id="comment_parent" value="0"></p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="8e13de335c"></p>
+<input type="hidden" id="ak_js" name="ak_js" value="5"><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea>
+</form>
+</div>
+</div></article></main><div class="footer-nav-widgets-wrapper header-footer-group"><div class="footer-inner section-inner"><aside class="footer-widgets-outer-wrapper" role="complementary"><div class="footer-widgets-wrapper"><div class="footer-widgets column-one grid-item"><div class="widget widget_search"><div class="widget-content"><form role="search" method="get" class="search-form" action="/"> <label for="search-form-2"> <span class="screen-reader-text">Search for:</span> <input type="search" id="search-form-2" class="search-field" placeholder="Search &hellip;" value="" name="s"> </label> <input type="submit" class="search-submit" value="Search">
+</form></div></div></div></div></aside></div></div>
+<footer id="site-footer" role="contentinfo" class="header-footer-group"><div class="section-inner">
+<div class="footer-credits">
+<p class="footer-copyright">&copy;
+2021 <a href="/">Joseph Scott</a></p>
+<p class="powered-by-wordpress"> <a href="https://wordpress.org/"> Powered by WordPress </a></p>
+</div> <a class="to-the-top" href="#site-header"> <span class="to-the-top-long"> To the top <span class="arrow" aria-hidden="true">&uarr;</span> </span> <span class="to-the-top-short"> Up <span class="arrow" aria-hidden="true">&uarr;</span> </span> </a>
+</div></footer> <script>/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);</script> <script defer src="/wp-content/cache/autoptimize/js/autoptimize_7f503920b823033d01081cc5ae68a469.js"></script>
+</body>
+</html>

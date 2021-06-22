@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>flif &#8211; Joseph Scott</title>
+	<atom:link href="/tag/flif/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Sat, 21 Nov 2015 15:57:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>FLIF</title>
+		<link>/2015/11/21/flif/</link>
+					<comments>/2015/11/21/flif/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 21 Nov 2015 15:57:45 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[flif]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13971</guid>
+
+					<description><![CDATA[FLIF, a new &#8220;Free Lossless Image Format&#8221;: FLIF is a novel lossless image format which outperforms PNG, lossless WebP, lossless BPG and lossless JPEG2000 in terms of compression ratio. &#8230; Even if the best image format was picked out of PNG, JPEG 2000, WebP or BPG for a given image, depending on the type of [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://flif.info/">FLIF</a>, a new &#8220;Free Lossless Image Format&#8221;:</p>
+<blockquote><p>
+FLIF is a novel lossless image format which outperforms PNG, lossless WebP, lossless BPG and lossless JPEG2000 in terms of compression ratio.</p>
+<p>&#8230;</p>
+<p>Even if the best image format was picked out of PNG, JPEG 2000, WebP or BPG for a given image, depending on the type of image (photograph, line art, etc), then FLIF still beats that by an average of 10% in our comparisons.
+</p></blockquote>
+<p>Source code is available at <a href="https://github.com/FLIF-hub/FLIF">https://github.com/FLIF-hub/FLIF</a>.</p>
+<p>The million dollar question is if browsers will ever support this format.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/21/flif/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

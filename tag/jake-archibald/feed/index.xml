@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>jake-archibald &#8211; Joseph Scott</title>
+	<atom:link href="/tag/jake-archibald/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 04 Jan 2016 16:59:54 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Microtasks</title>
+		<link>/2016/01/04/microtasks/</link>
+					<comments>/2016/01/04/microtasks/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 04 Jan 2016 16:59:54 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[jake-archibald]]></category>
+		<category><![CDATA[javascript]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13640</guid>
+
+					<description><![CDATA[Jake Archibald covers JavaScript tasks, microtasks, queues and schedules in browsers. A good time geeking out on the JavaScript event loop.]]></description>
+										<content:encoded><![CDATA[<p>Jake Archibald covers JavaScript <a href="https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/">tasks, microtasks, queues and schedules</a> in browsers.  A good time geeking out on the JavaScript event loop.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/01/04/microtasks/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Responsive Images</title>
+		<link>/2015/11/13/responsive-images/</link>
+					<comments>/2015/11/13/responsive-images/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 13 Nov 2015 14:30:10 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[jake-archibald]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13739</guid>
+
+					<description><![CDATA[Jake Archibald on The anatomy of responsive images: In order for the browser to pick the right image, it needs to know: &#8211; URLs for the image at various sizes &#8211; The decoded width of each of those image resources &#8211; The width of the `&#60;img&#62;` Picture&#8216;s and img&#8216;s oh my!]]></description>
+										<content:encoded><![CDATA[<p>Jake Archibald on <a href="https://jakearchibald.com/2015/anatomy-of-responsive-images/">The anatomy of responsive images</a>:</p>
+<blockquote><p>
+In order for the browser to pick the right image, it needs to know:</p>
+<p>&#8211; URLs for the image at various sizes<br />
+&#8211; The decoded width of each of those image resources<br />
+&#8211; The width of the `&lt;img&gt;`
+</p></blockquote>
+<p><code>Picture</code>&#8216;s and <code>img</code>&#8216;s oh my!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/13/responsive-images/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

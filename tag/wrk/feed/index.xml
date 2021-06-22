@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>wrk &#8211; Joseph Scott</title>
+	<atom:link href="/tag/wrk/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 23 Jun 2015 14:07:36 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>wrk</title>
+		<link>/2015/06/23/wrk/</link>
+					<comments>/2015/06/23/wrk/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 23 Jun 2015 14:07:36 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[wrk]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11630</guid>
+
+					<description><![CDATA[wrk is an alternative to Apache Bench, a.k.a. ab: wrk is a modern HTTP benchmarking tool capable of generating significant load when run on a single multi-core CPU. It combines a multithreaded design with scalable event notification systems such as epoll and kqueu You can also control requests inside wrk via Lua: wrk supports executing [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href='https://github.com/wg/wrk'>wrk</a> is an alternative to <a href="http://httpd.apache.org/docs/trunk/programs/ab.html">Apache Bench</a>, a.k.a. ab:</p>
+<blockquote><p>
+wrk is a modern HTTP benchmarking tool capable of generating significant load when run on a single multi-core CPU. It combines a multithreaded design with scalable event notification systems such as epoll and kqueu
+</p></blockquote>
+<p>You can also <a href="https://github.com/wg/wrk/blob/master/SCRIPTING">control requests inside wrk via Lua</a>:</p>
+<blockquote><p>
+wrk supports executing a LuaJIT script during three distinct phases: setup, running, and done. Each wrk thread has an independent scripting environment and the setup &#038; done phases execute in a separate environment which does not participate in the running phase.
+</p></blockquote>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/06/23/wrk/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

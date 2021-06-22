@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Edit In Place: Version 0.2.2	</title>
+	<atom:link href="/2006/06/15/edit-in-place-version-022/feed/" rel="self" type="application/rss+xml" />
+	<link>/2006/06/15/edit-in-place-version-022/</link>
+	<description></description>
+	<lastBuildDate>Tue, 26 Aug 2014 19:43:35 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Devin		</title>
+		<link>/2006/06/15/edit-in-place-version-022/#comment-1413</link>
+
+		<dc:creator><![CDATA[Devin]]></dc:creator>
+		<pubDate>Tue, 26 Aug 2014 19:43:35 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/06/15/edit-in-place-version-022/#comment-1413</guid>
+
+					<description><![CDATA[Hi Joseph,  I realize this is super old, but I inherited a web app that&#039;s utilizing your EIP version 0.2.2 and they&#039;d rather not rework everything, so I&#039;m going with it.
+
+The problem I&#039;m having is that the selects are reordering the options based on the key of the key/value pairs provided.  In my case, the key is employee IDs and the value is employee name.  Since the name is what is displayed, I want it to be in order of the name.  Is there an option that will either change the auto-order to go off the value instead of the key, or just leave it in the order that they are added?
+
+Thanks!]]></description>
+			<content:encoded><![CDATA[<p>Hi Joseph,  I realize this is super old, but I inherited a web app that&#8217;s utilizing your EIP version 0.2.2 and they&#8217;d rather not rework everything, so I&#8217;m going with it.</p>
+<p>The problem I&#8217;m having is that the selects are reordering the options based on the key of the key/value pairs provided.  In my case, the key is employee IDs and the value is employee name.  Since the name is what is displayed, I want it to be in order of the name.  Is there an option that will either change the auto-order to go off the value instead of the key, or just leave it in the order that they are added?</p>
+<p>Thanks!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ovidiu Ion		</title>
+		<link>/2006/06/15/edit-in-place-version-022/#comment-1412</link>
+
+		<dc:creator><![CDATA[Ovidiu Ion]]></dc:creator>
+		<pubDate>Thu, 26 Apr 2007 10:55:15 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/06/15/edit-in-place-version-022/#comment-1412</guid>
+
+					<description><![CDATA[Thanks for the script.
+
+I made a little change to the script to get all the element by class name (in my case class .editable, .editableTextarea, etc), using the document.getElementsByClassName from prototype.
+
+Thanks again.]]></description>
+			<content:encoded><![CDATA[<p>Thanks for the script.</p>
+<p>I made a little change to the script to get all the element by class name (in my case class .editable, .editableTextarea, etc), using the document.getElementsByClassName from prototype.</p>
+<p>Thanks again.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Neil Merton		</title>
+		<link>/2006/06/15/edit-in-place-version-022/#comment-1411</link>
+
+		<dc:creator><![CDATA[Neil Merton]]></dc:creator>
+		<pubDate>Wed, 02 Aug 2006 22:15:24 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/06/15/edit-in-place-version-022/#comment-1411</guid>
+
+					<description><![CDATA[Hi Joseph,
+
+May I firstly congratulation you! Your&#039;s is the first EIP script that I&#039;ve actually managed to get working (using ColdFusion)!
+
+There&#039;s just one thing I want to double-check:
+
+If I a list of items to have the EIP ability I list them in between the script tags? e.g.
+
+
+Event.observe(window, &#039;load&#039;, init, false);
+function init()
+{
+	EditInPlace.makeEditable( { type: &#039;text&#039;, id: &#039;price7&#039;, save_url: &#039;books.cfc?method=PriceUpdate&#039; } );
+	EditInPlace.makeEditable( { type: &#039;text&#039;, id: &#039;price2&#039;, save_url: &#039;books.cfc?method=PriceUpdate&#039; } );
+	EditInPlace.makeEditable( { type: &#039;text&#039;, id: &#039;price4&#039;, save_url: &#039;books.cfc?method=PriceUpdate&#039; } );
+	EditInPlace.makeEditable( { type: &#039;text&#039;, id: &#039;price1&#039;, save_url: &#039;books.cfc?method=PriceUpdate&#039; } );
+	EditInPlace.makeEditable( { type: &#039;text&#039;, id: &#039;price5&#039;, save_url: &#039;books.cfc?method=PriceUpdate&#039; } );
+	EditInPlace.makeEditable( { type: &#039;text&#039;, id: &#039;price3&#039;, save_url: &#039;books.cfc?method=PriceUpdate&#039; } );
+	EditInPlace.makeEditable( { type: &#039;text&#039;, id: &#039;price6&#039;, save_url: &#039;books.cfc?method=PriceUpdate&#039; } );
+}
+
+
+Again - huge thanks :)]]></description>
+			<content:encoded><![CDATA[<p>Hi Joseph,</p>
+<p>May I firstly congratulation you! Your&#8217;s is the first EIP script that I&#8217;ve actually managed to get working (using ColdFusion)!</p>
+<p>There&#8217;s just one thing I want to double-check:</p>
+<p>If I a list of items to have the EIP ability I list them in between the script tags? e.g.</p>
+<p>Event.observe(window, &#8216;load&#8217;, init, false);<br />
+function init()<br />
+{<br />
+	EditInPlace.makeEditable( { type: &#8216;text&#8217;, id: &#8216;price7&#8217;, save_url: &#8216;books.cfc?method=PriceUpdate&#8217; } );<br />
+	EditInPlace.makeEditable( { type: &#8216;text&#8217;, id: &#8216;price2&#8217;, save_url: &#8216;books.cfc?method=PriceUpdate&#8217; } );<br />
+	EditInPlace.makeEditable( { type: &#8216;text&#8217;, id: &#8216;price4&#8217;, save_url: &#8216;books.cfc?method=PriceUpdate&#8217; } );<br />
+	EditInPlace.makeEditable( { type: &#8216;text&#8217;, id: &#8216;price1&#8217;, save_url: &#8216;books.cfc?method=PriceUpdate&#8217; } );<br />
+	EditInPlace.makeEditable( { type: &#8216;text&#8217;, id: &#8216;price5&#8217;, save_url: &#8216;books.cfc?method=PriceUpdate&#8217; } );<br />
+	EditInPlace.makeEditable( { type: &#8216;text&#8217;, id: &#8216;price3&#8217;, save_url: &#8216;books.cfc?method=PriceUpdate&#8217; } );<br />
+	EditInPlace.makeEditable( { type: &#8216;text&#8217;, id: &#8216;price6&#8217;, save_url: &#8216;books.cfc?method=PriceUpdate&#8217; } );<br />
+}</p>
+<p>Again &#8211; huge thanks 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: joseph		</title>
+		<link>/2006/06/15/edit-in-place-version-022/#comment-1410</link>
+
+		<dc:creator><![CDATA[joseph]]></dc:creator>
+		<pubDate>Tue, 25 Jul 2006 15:43:24 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/06/15/edit-in-place-version-022/#comment-1410</guid>
+
+					<description><![CDATA[ileadu-
+
+A few other people have mentioned onblur (focus off of form field) support.  I&#039;ve added it to my todo list.]]></description>
+			<content:encoded><![CDATA[<p>ileadu-</p>
+<p>A few other people have mentioned onblur (focus off of form field) support.  I&#8217;ve added it to my todo list.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: ileadu		</title>
+		<link>/2006/06/15/edit-in-place-version-022/#comment-1409</link>
+
+		<dc:creator><![CDATA[ileadu]]></dc:creator>
+		<pubDate>Tue, 25 Jul 2006 15:16:09 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/06/15/edit-in-place-version-022/#comment-1409</guid>
+
+					<description><![CDATA[Hi,
+There is a suggestion.
+&#039;Cancel&#039; button is unnecessary.
+I think that cancelling edit should be applied when the input field is not on focus.
+How do you think about that?]]></description>
+			<content:encoded><![CDATA[<p>Hi,<br />
+There is a suggestion.<br />
+&#8216;Cancel&#8217; button is unnecessary.<br />
+I think that cancelling edit should be applied when the input field is not on focus.<br />
+How do you think about that?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: chris		</title>
+		<link>/2006/06/15/edit-in-place-version-022/#comment-1408</link>
+
+		<dc:creator><![CDATA[chris]]></dc:creator>
+		<pubDate>Tue, 11 Jul 2006 01:38:16 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/06/15/edit-in-place-version-022/#comment-1408</guid>
+
+					<description><![CDATA[Hi Joseph,
+I&#039;ve just stumbled across your work on the edit in place script and its given me a couple of ideas for a projects we&#039;re working on - but theres something i&#039;m not sure about. With the textarea edit in place, do you think its possible to run it along side the the &quot;Dojo Editor widget&quot; (http://dojotoolkit.org/docs/rich_text.html)? The idea i&#039;m playing with is having an initial prompt where the text area is allocated (click to add a description), then when they click it changes to the editor, they add a description, click save (which then writes to the db) and will then see it as normal text (should they want to come back and update the description). Obviously i&#039;m thinking of potential issues which would prevent it from degrading gracefully or impact usability at all. What do you think? Am i barking mad? ;0) Any thoughts on this would be much appreciated..
+Thanks,
+Chris]]></description>
+			<content:encoded><![CDATA[<p>Hi Joseph,<br />
+I&#8217;ve just stumbled across your work on the edit in place script and its given me a couple of ideas for a projects we&#8217;re working on &#8211; but theres something i&#8217;m not sure about. With the textarea edit in place, do you think its possible to run it along side the the &#8220;Dojo Editor widget&#8221; (<a href="http://dojotoolkit.org/docs/rich_text.html" rel="nofollow ugc">http://dojotoolkit.org/docs/rich_text.html</a>)? The idea i&#8217;m playing with is having an initial prompt where the text area is allocated (click to add a description), then when they click it changes to the editor, they add a description, click save (which then writes to the db) and will then see it as normal text (should they want to come back and update the description). Obviously i&#8217;m thinking of potential issues which would prevent it from degrading gracefully or impact usability at all. What do you think? Am i barking mad? ;0) Any thoughts on this would be much appreciated..<br />
+Thanks,<br />
+Chris</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Christophe		</title>
+		<link>/2006/06/15/edit-in-place-version-022/#comment-1407</link>
+
+		<dc:creator><![CDATA[Christophe]]></dc:creator>
+		<pubDate>Sun, 02 Jul 2006 17:08:38 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/06/15/edit-in-place-version-022/#comment-1407</guid>
+
+					<description><![CDATA[Hello joseph
+
+Well done for your script which works fine for me ( i have done some modification: like creating a function that dynamically make editable area wich a particular tage name and where the id starts with &quot;edit_&quot;  i can post it if you are interested)
+
+
+Anyway  here the reason i write this comment:
+I found a problem:
+when you edit something and click on &quot;SAVE&quot;  you have a red &quot;Saving...&quot; message displayed. the problem is when the server takes a longt time to execute the save you have plenty of time to double click on the &quot;Saving...&quot; message. ANd when you do that the script thinks we want to edit this text that can be a problem
+As i know my english is crap, i have taken some screenshots:
+
+http://afrenchtouch.free.fr/upload/eip1.jpg
+when you double click again on saving... and save the changes:
+http://afrenchtouch.free.fr/upload/eip2.jpg
+
+regards]]></description>
+			<content:encoded><![CDATA[<p>Hello joseph</p>
+<p>Well done for your script which works fine for me ( i have done some modification: like creating a function that dynamically make editable area wich a particular tage name and where the id starts with &#8220;edit_&#8221;  i can post it if you are interested)</p>
+<p>Anyway  here the reason i write this comment:<br />
+I found a problem:<br />
+when you edit something and click on &#8220;SAVE&#8221;  you have a red &#8220;Saving&#8230;&#8221; message displayed. the problem is when the server takes a longt time to execute the save you have plenty of time to double click on the &#8220;Saving&#8230;&#8221; message. ANd when you do that the script thinks we want to edit this text that can be a problem<br />
+As i know my english is crap, i have taken some screenshots:</p>
+<p><a href="http://afrenchtouch.free.fr/upload/eip1.jpg" rel="nofollow ugc">http://afrenchtouch.free.fr/upload/eip1.jpg</a><br />
+when you double click again on saving&#8230; and save the changes:<br />
+<a href="http://afrenchtouch.free.fr/upload/eip2.jpg" rel="nofollow ugc">http://afrenchtouch.free.fr/upload/eip2.jpg</a></p>
+<p>regards</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Sheldon		</title>
+		<link>/2006/06/15/edit-in-place-version-022/#comment-1406</link>
+
+		<dc:creator><![CDATA[Sheldon]]></dc:creator>
+		<pubDate>Fri, 30 Jun 2006 01:57:09 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/06/15/edit-in-place-version-022/#comment-1406</guid>
+
+					<description><![CDATA[Hello,
+
+I read the 24 ways article and also thought it was amazing but my javascript skills are a long way from being able to do what you do.  Your hard work is helping me get ever closer to my goal so thanks for writing about it.
+
+The one thing I&#039;m having difficulty with is that I need to pass additional form variables to edit.php.  I&#039;ve looked though your code and I think I get it to work but calling it a kludge would be the nicest thing you would say about it.  I want to make it flexible and set it up so I can pass extra values thought the makeEditable function.  Is this something you&#039;re thinking about adding?  Is it already there and I just don&#039;t see it?
+
+Thanks again for your hard work.
+
+Sheldon]]></description>
+			<content:encoded><![CDATA[<p>Hello,</p>
+<p>I read the 24 ways article and also thought it was amazing but my javascript skills are a long way from being able to do what you do.  Your hard work is helping me get ever closer to my goal so thanks for writing about it.</p>
+<p>The one thing I&#8217;m having difficulty with is that I need to pass additional form variables to edit.php.  I&#8217;ve looked though your code and I think I get it to work but calling it a kludge would be the nicest thing you would say about it.  I want to make it flexible and set it up so I can pass extra values thought the makeEditable function.  Is this something you&#8217;re thinking about adding?  Is it already there and I just don&#8217;t see it?</p>
+<p>Thanks again for your hard work.</p>
+<p>Sheldon</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Sergiu Oprean		</title>
+		<link>/2006/06/15/edit-in-place-version-022/#comment-1405</link>
+
+		<dc:creator><![CDATA[Sergiu Oprean]]></dc:creator>
+		<pubDate>Sat, 17 Jun 2006 23:00:23 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/06/15/edit-in-place-version-022/#comment-1405</guid>
+
+					<description><![CDATA[Hi!
+I am not very good at JS, I just start learning it and I have a problem I can not solve:
+I am trying to use your eip for one of my projects.
+Everything was fine until I tried to use eip in a div that was previouse loaded using AJAX.
+First time, it&#039;s ok, but when the content id dynamic regenerated (including the code necesary for eip), the eip it&#039;s not working!
+
+I tried using other events here, no results ...
+&lt;code&gt;Event.observe(window, &#039;load&#039;, init, true);&lt;/code&gt;
+
+When I look at the page source (in Firefox) without selecting a certain part, I see the original page source, not the current one (the one modified using AJAX). I think this has something to do with my problem
+On options would be to load the div content into a iframe, but this is not what I want.
+
+Do you have any idea on how to solve this?]]></description>
+			<content:encoded><![CDATA[<p>Hi!<br />
+I am not very good at JS, I just start learning it and I have a problem I can not solve:<br />
+I am trying to use your eip for one of my projects.<br />
+Everything was fine until I tried to use eip in a div that was previouse loaded using AJAX.<br />
+First time, it&#8217;s ok, but when the content id dynamic regenerated (including the code necesary for eip), the eip it&#8217;s not working!</p>
+<p>I tried using other events here, no results &#8230;<br />
+<code>Event.observe(window, 'load', init, true);</code></p>
+<p>When I look at the page source (in Firefox) without selecting a certain part, I see the original page source, not the current one (the one modified using AJAX). I think this has something to do with my problem<br />
+On options would be to load the div content into a iframe, but this is not what I want.</p>
+<p>Do you have any idea on how to solve this?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

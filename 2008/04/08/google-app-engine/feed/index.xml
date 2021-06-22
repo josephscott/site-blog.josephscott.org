@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Google App Engine	</title>
+	<atom:link href="/2008/04/08/google-app-engine/feed/" rel="self" type="application/rss+xml" />
+	<link>/2008/04/08/google-app-engine/</link>
+	<description></description>
+	<lastBuildDate>Wed, 17 Sep 2008 13:41:51 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Howard Young		</title>
+		<link>/2008/04/08/google-app-engine/#comment-2228</link>
+
+		<dc:creator><![CDATA[Howard Young]]></dc:creator>
+		<pubDate>Wed, 17 Sep 2008 13:41:51 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1053#comment-2228</guid>
+
+					<description><![CDATA[@Joseph, You have valid concerns where developing for the App Engine, you&#039;re locked into Google&#039;s platform.  However, GAE is based on Django 0.96, and it should not be that difficult to move your application to another CC such as EC2 or to your own server.
+
+As @Deane stated, you need to build an abstraction layer between the GAE Model and whatever backend database you want to use.]]></description>
+			<content:encoded><![CDATA[<p>@Joseph, You have valid concerns where developing for the App Engine, you&#8217;re locked into Google&#8217;s platform.  However, GAE is based on Django 0.96, and it should not be that difficult to move your application to another CC such as EC2 or to your own server.</p>
+<p>As @Deane stated, you need to build an abstraction layer between the GAE Model and whatever backend database you want to use.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/04/08/google-app-engine/#comment-2227</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 09 Apr 2008 16:46:06 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1053#comment-2227</guid>
+
+					<description><![CDATA[@Matthew Reinbold -
+
+I&#039;m saving my outrage for people who look at GAE and pronounce all other hosting of any type dead :-)
+
+I do the same thing for folks who declared that with Amazon EC2 every other option is useless.]]></description>
+			<content:encoded><![CDATA[<p>@Matthew Reinbold &#8211;</p>
+<p>I&#8217;m saving my outrage for people who look at GAE and pronounce all other hosting of any type dead 🙂</p>
+<p>I do the same thing for folks who declared that with Amazon EC2 every other option is useless.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Matthew Reinbold		</title>
+		<link>/2008/04/08/google-app-engine/#comment-2226</link>
+
+		<dc:creator><![CDATA[Matthew Reinbold]]></dc:creator>
+		<pubDate>Wed, 09 Apr 2008 05:45:34 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1053#comment-2226</guid>
+
+					<description><![CDATA[Goodness man, where is your blogger sense of moral outrage? Your seething sensationalism? Your rational, thoughtful approach advocating - of all things - patience is the antithesis of proper Internet punditry! You are a web blanket, wrapped around a fire extinguisher, born by stunt doubles from Ladder 49 (itself something of a spark snuffer).
+
+That said - good point. ;)]]></description>
+			<content:encoded><![CDATA[<p>Goodness man, where is your blogger sense of moral outrage? Your seething sensationalism? Your rational, thoughtful approach advocating &#8211; of all things &#8211; patience is the antithesis of proper Internet punditry! You are a web blanket, wrapped around a fire extinguisher, born by stunt doubles from Ladder 49 (itself something of a spark snuffer).</p>
+<p>That said &#8211; good point. 😉</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/04/08/google-app-engine/#comment-2225</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 09 Apr 2008 02:37:19 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1053#comment-2225</guid>
+
+					<description><![CDATA[@Matthew -
+
+We have no idea what the pricing will be.  Presumably cheap(-ish), but until we have hard numbers there is no way to compare it with any other options.
+
+True that it is a database, storage and bandwidth, but everything except the bandwidth is proprietary to Google.  Want to take your app off of GAE and move it to your own dedicated servers?  Fine, re-write your app then because you&#039;ll no longer have any of the GAE code/libraries/services.
+
+I should point out that I still think GAE is very cool, but just like with Amazon&#039;s services, it isn&#039;t with out drawbacks.  No solution is perfect, they are all trade offs.  What&#039;s important is that you are able to make an informed decision by knowing what the trade offs are.  And ideally, be able to adjust and scale to different trade offs as your needs change.]]></description>
+			<content:encoded><![CDATA[<p>@Matthew &#8211;</p>
+<p>We have no idea what the pricing will be.  Presumably cheap(-ish), but until we have hard numbers there is no way to compare it with any other options.</p>
+<p>True that it is a database, storage and bandwidth, but everything except the bandwidth is proprietary to Google.  Want to take your app off of GAE and move it to your own dedicated servers?  Fine, re-write your app then because you&#8217;ll no longer have any of the GAE code/libraries/services.</p>
+<p>I should point out that I still think GAE is very cool, but just like with Amazon&#8217;s services, it isn&#8217;t with out drawbacks.  No solution is perfect, they are all trade offs.  What&#8217;s important is that you are able to make an informed decision by knowing what the trade offs are.  And ideally, be able to adjust and scale to different trade offs as your needs change.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Matthew Reinbold		</title>
+		<link>/2008/04/08/google-app-engine/#comment-2224</link>
+
+		<dc:creator><![CDATA[Matthew Reinbold]]></dc:creator>
+		<pubDate>Wed, 09 Apr 2008 02:20:04 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1053#comment-2224</guid>
+
+					<description><![CDATA[Ok - so the Google Application Engine isn&#039;t Amazon S3. I&#039;m still seeking clarity on how this just isn&#039;t super cheap Python hosting with no upper limit - they have a db, some storage, and bandwidth in and out. Is this really just web hosting that can scale really, really big?]]></description>
+			<content:encoded><![CDATA[<p>Ok &#8211; so the Google Application Engine isn&#8217;t Amazon S3. I&#8217;m still seeking clarity on how this just isn&#8217;t super cheap Python hosting with no upper limit &#8211; they have a db, some storage, and bandwidth in and out. Is this really just web hosting that can scale really, really big?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/04/08/google-app-engine/#comment-2223</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 08 Apr 2008 23:50:36 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1053#comment-2223</guid>
+
+					<description><![CDATA[@Deane -
+
+All of this from Google&#039;s point of view is great, anyone targeting their platform gives them a huge amount of indirect control.
+
+What would be great is if the community comes up with a reverse engineered compatibility layer for GAE, that could be used on any hardware behind the scenes.  I think the scale and scope of such a project makes it pretty unlikely though.  And Google could potentially change GAE in such a way as to break compatibility.
+
+This conversation is starting to sound more and more like how we&#039;d talk about Microsoft.]]></description>
+			<content:encoded><![CDATA[<p>@Deane &#8211;</p>
+<p>All of this from Google&#8217;s point of view is great, anyone targeting their platform gives them a huge amount of indirect control.</p>
+<p>What would be great is if the community comes up with a reverse engineered compatibility layer for GAE, that could be used on any hardware behind the scenes.  I think the scale and scope of such a project makes it pretty unlikely though.  And Google could potentially change GAE in such a way as to break compatibility.</p>
+<p>This conversation is starting to sound more and more like how we&#8217;d talk about Microsoft.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Deane		</title>
+		<link>/2008/04/08/google-app-engine/#comment-2222</link>
+
+		<dc:creator><![CDATA[Deane]]></dc:creator>
+		<pubDate>Tue, 08 Apr 2008 23:25:33 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1053#comment-2222</guid>
+
+					<description><![CDATA[Not only will people buying your start-up hesitate, but it give Google the ability to lowball you from a position of serious leverage.  Taken to a bit of an extreme, this gives Google almost complete right of first refusal on your start-up.
+
+My advice: build a complete data storage abstraction layer so your app has no idea where its data is actually being stored and retrieved from.
+
+Or run it off a file-based SQLite database sitting in the root...]]></description>
+			<content:encoded><![CDATA[<p>Not only will people buying your start-up hesitate, but it give Google the ability to lowball you from a position of serious leverage.  Taken to a bit of an extreme, this gives Google almost complete right of first refusal on your start-up.</p>
+<p>My advice: build a complete data storage abstraction layer so your app has no idea where its data is actually being stored and retrieved from.</p>
+<p>Or run it off a file-based SQLite database sitting in the root&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

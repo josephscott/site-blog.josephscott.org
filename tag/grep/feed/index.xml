@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>grep &#8211; Joseph Scott</title>
+	<atom:link href="/tag/grep/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 08 Aug 2011 21:27:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>The Key to Making Programs Fast</title>
+		<link>/2011/08/08/the-key-to-making-programs-fast/</link>
+					<comments>/2011/08/08/the-key-to-making-programs-fast/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 08 Aug 2011 21:27:07 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[grep]]></category>
+		<category><![CDATA[mike-haertel]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4595</guid>
+
+					<description><![CDATA[The key to making programs fast is to make them do practically nothing. 😉 via Mike Haertel on why GNU grep is fast, where he describes some of the tricks he used to minimize the amount of work grep needed to do in order to find strings. Mike wrote the original version of GNU grep.]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+The key to making programs fast is to make them do practically nothing. <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" />
+</p></blockquote>
+<p>via <a href='http://lists.freebsd.org/pipermail/freebsd-current/2010-August/019310.html?'>Mike Haertel on why GNU grep is fast</a>, where he describes some of the tricks he used to minimize the amount of work grep needed to do in order to find strings.  Mike wrote the original version of GNU grep.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/08/08/the-key-to-making-programs-fast/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Finding PHP Short Tags</title>
+		<link>/2010/06/28/finding-php-short-tags/</link>
+					<comments>/2010/06/28/finding-php-short-tags/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 28 Jun 2010 16:31:19 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[grep]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2458</guid>
+
+					<description><![CDATA[There are a number of ways to escape between PHP and output (usually HTML) mode. Personally I recommend sticking with the traditional &#60;?php style. One method that can cause problems is the so called &#8216;short tag&#8217; style &#8211; &#60;? and I recommend avoiding it. So how do you know if there are PHP short tags [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>There are a number of ways to <a href="http://www.php.net/manual/en/language.basic-syntax.phpmode.php">escape between PHP and output (usually HTML) mode</a>.  Personally I recommend sticking with the traditional <code>&lt;?php</code> style.  One method that can cause problems is the so called &#8216;short tag&#8217; style &#8211; <code>&lt;?</code> and I recommend avoiding it.</p>
+<p>So how do you know if there are PHP short tags being used some where in your code?  I use grep to search for them: <code>grep -rn "&lt;?[^p]" *</code></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/06/28/finding-php-short-tags/feed/</wfw:commentRss>
+			<slash:comments>9</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

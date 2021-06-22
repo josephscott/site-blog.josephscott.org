@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mdutil &#8211; Joseph Scott</title>
+	<atom:link href="/tag/mdutil/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 25 Nov 2013 16:49:31 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Mac OS X: Spotlight Server is Disabled</title>
+		<link>/2013/11/25/mac-os-x-spotlight-server-is-disabled/</link>
+					<comments>/2013/11/25/mac-os-x-spotlight-server-is-disabled/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 25 Nov 2013 16:49:31 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[mdutil]]></category>
+		<category><![CDATA[spotlight]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9463</guid>
+
+					<description><![CDATA[I recently ran into an error on Mac OS 10.9 about Spotlight being disabled: mdutil[81198:507] Metadata.framework [Error]: mdsCopyStorePaths failed: (268435459) (ipc/send) invalid destination port Spotlight server is disabled. I had turned off Spotlight indexing, so I thought that is what it meant by Spotlight being disabled. That wasn&#8217;t the case. Fortunately fixing this error is [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I recently ran into an error on Mac OS 10.9 about Spotlight being disabled:</p>
+<pre>
+mdutil[81198:507] Metadata.framework [Error]: mdsCopyStorePaths failed: (268435459) (ipc/send) invalid destination port
+Spotlight server is disabled.
+</pre>
+<p>I had turned off Spotlight indexing, so I thought that is what it meant by Spotlight being disabled.  That wasn&#8217;t the case.</p>
+<p>Fortunately fixing this error is simple, run this as root:</p>
+<pre>
+launchctl load -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
+</pre>
+<p>The I turned Spotlight indexing off again with <code>mdutil -a -i off</code>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/11/25/mac-os-x-spotlight-server-is-disabled/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

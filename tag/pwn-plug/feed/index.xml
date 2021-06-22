@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>pwn-plug &#8211; Joseph Scott</title>
+	<atom:link href="/tag/pwn-plug/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 08 Mar 2012 16:03:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Pwn Plug</title>
+		<link>/2012/03/08/pwn-plug/</link>
+					<comments>/2012/03/08/pwn-plug/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 08 Mar 2012 16:03:44 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[pwn-plug]]></category>
+		<category><![CDATA[security]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=5449</guid>
+
+					<description><![CDATA[Wired has a write up on the Pwn Plug &#8211; The Little White Box That Can Hack Your Network. No doubt something like the Pwn Plug would have shown up in the movie Sneakers if they were to make that movie today. Devices like this are reason enough to be suspicious of any item plugged [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Wired has a write up on the <a href="http://www.pwnieexpress.com/eliteplug.html">Pwn Plug</a> &#8211; <a href='http://www.wired.com/wiredenterprise/2012/03/pwnie/'>The Little White Box That Can Hack Your Network</a>.</p>
+<p><img loading="lazy" alt="" src="http://www.pwnieexpress.com/images/action_printer_thumb.JPG" title="Pwn Plug" class="alignnone" width="500" height="332" /></p>
+<p>No doubt something like the Pwn Plug would have shown up in the movie <a href="http://www.imdb.com/title/tt0105435/">Sneakers</a> if they were to make that movie today.</p>
+<p>Devices like this are reason enough to be suspicious of any item plugged into your network that you don&#8217;t recognize.  But this is almost small enough to fit behind a wall plate, which would make it much harder to find.  Combined that with a pass through feature that could capture live traffic from the device plugged into the other side and you&#8217;d be in real trouble.</p>
+<p>Another approach would be to have a specialized version that targets wireless networks.  Combined with a reasonable sized battery you could include such a device inside a regular postal package.  Once the package was delivered into the target building you&#8217;d be able to probe for weaknesses in the wireless networks.  All without ever being physically close to the target building.  For that matter you could be hundreds or even thousands of miles away.</p>
+<p>The bonus step for such a device? Include a pull string trigger that would start a complete wipe of the device when the postal package was opened.  Of course the device could also be hidden as part of a larger, less suspicious item.</p>
+<p>As technology continues to improve, and shrink, the limiting factor for these types of attacks is your imagination.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/03/08/pwn-plug/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

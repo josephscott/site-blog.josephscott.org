@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>camlistore &#8211; Joseph Scott</title>
+	<atom:link href="/tag/camlistore/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 04 Sep 2013 16:31:14 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Camlistore</title>
+		<link>/2013/09/04/camlistore/</link>
+					<comments>/2013/09/04/camlistore/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 04 Sep 2013 16:31:14 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[brad-fitzpatrick]]></category>
+		<category><![CDATA[camlistore]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=8881</guid>
+
+					<description><![CDATA[The tagline for Camlistore is &#8220;Camlistore is your personal storage system for life&#8221;, but even after watching the demo video I&#8217;m still not entirely sure how to categorize it. Perhaps the best way to describe it is a generalized storage system for all of your stuff, that can be exposed and queried in many different [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The tagline for <a href='http://camlistore.org/'>Camlistore</a> is &#8220;Camlistore is your personal storage system for life&#8221;, but even after watching the demo video I&#8217;m still not entirely sure how to categorize it.</p>
+<a href="/2013/09/04/camlistore/"><img src="/wp-content/plugins/wp-youtube-lyte/lyteCache.php?origThumbUrl=%2F%2Fi.ytimg.com%2Fvi%2FyxSzQIwXM1k%2Fhqdefault.jpg" alt="YouTube Video"></a><br /><br /></p>
+<p>Perhaps the best way to describe it is a generalized storage system for all of your stuff, that can be exposed and queried in many different ways.</p>
+<p>The <a href="http://camlistore.org/docs/overview">overview page</a> outlines a number of the very ambitious features.  Given <a href="http://bradfitz.com/">Brad Fitzpatrick</a>&#8216;s track record I wouldn&#8217;t bet against it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/09/04/camlistore/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

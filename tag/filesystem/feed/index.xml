@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>filesystem &#8211; Joseph Scott</title>
+	<atom:link href="/tag/filesystem/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 17 Jul 2015 14:01:43 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Ori File System</title>
+		<link>/2015/07/17/ori-file-system/</link>
+					<comments>/2015/07/17/ori-file-system/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 17 Jul 2015 14:01:43 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[filesystem]]></category>
+		<category><![CDATA[ori]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9850</guid>
+
+					<description><![CDATA[Ori, &#8220;A Secure Distributed File System&#8221;: Ori is a distributed file system built for offline operation and empowers the user with control over synchronization operations and conflict resolution. We provide history through light weight snapshots and allow users to verify the history has not been tampered with. Through the use of replication instances can be [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://ori.scs.stanford.edu/">Ori</a>, &#8220;A Secure Distributed File System&#8221;:</p>
+<blockquote><p>
+Ori is a distributed file system built for offline operation and empowers the user with control over synchronization operations and conflict resolution. We provide history through light weight snapshots and allow users to verify the history has not been tampered with. Through the use of replication instances can be resilient and recover damaged data from other nodes.
+</p></blockquote>
+<p>I think I&#8217;m becoming a filesystem junkie.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/07/17/ori-file-system/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Flysystem</title>
+		<link>/2014/04/14/flysystem/</link>
+					<comments>/2014/04/14/flysystem/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 14 Apr 2014 13:36:38 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[filesystem]]></category>
+		<category><![CDATA[flysystem]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10140</guid>
+
+					<description><![CDATA[Flysystem for PHP: Flysystem is a filesystem abstraction which allows you to easily swap out a local filesystem for a remote one. A common API for accessing files stored locally, on S3, FTP, SFTP, Dropbox, Rackspace, Zip, and WebDAV. Abstraction layers usually impose a performance penalty, I wonder how big that is in this case. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href='http://flysystem.thephpleague.com/' title="Guess what sort of mascot this would use.">Flysystem</a> for PHP:</p>
+<blockquote><p>
+Flysystem is a filesystem abstraction which allows you to easily swap out a local filesystem for a remote one.
+</p></blockquote>
+<p>A common API for accessing files stored locally, on S3, FTP, SFTP, Dropbox, Rackspace, Zip, and WebDAV.  Abstraction layers usually impose a performance penalty, I wonder how big that is in this case.  Even with a performance penalty a shared API may be preferred for some situations.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/04/14/flysystem/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Simple Filesystems with Python and FUSE</title>
+		<link>/2013/05/03/simple-filesystems-with-python-and-fuse/</link>
+					<comments>/2013/05/03/simple-filesystems-with-python-and-fuse/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 03 May 2013 16:56:16 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[filesystem]]></category>
+		<category><![CDATA[fuse]]></category>
+		<category><![CDATA[openwest]]></category>
+		<category><![CDATA[presentation]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7640</guid>
+
+					<description><![CDATA[I&#8217;ve posted the slides and example code from my &#8216;Simple Filesystems with Python and FUSE&#8217; presentation at the OpenWest conference. A PDF of the slides and all of the example code is available at https://github.com/josephscott/python-fuse-2013-05.]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve posted the slides and example code from my &#8216;Simple Filesystems with Python and FUSE&#8217; presentation at the OpenWest conference.</p>
+<p><iframe loading="lazy" src="http://www.slideshare.net/slideshow/embed_code/20489247" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe></p>
+<p>A PDF of the slides and all of the example code is available at <a href="https://github.com/josephscott/python-fuse-2013-05">https://github.com/josephscott/python-fuse-2013-05</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/05/03/simple-filesystems-with-python-and-fuse/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>wpcomfs &#8211; A WordPress.com Filesystem</title>
+		<link>/2012/06/06/wpcomfs-a-wordpress-com-filesystem/</link>
+					<comments>/2012/06/06/wpcomfs-a-wordpress-com-filesystem/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 06 Jun 2012 16:47:42 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[filesystem]]></category>
+		<category><![CDATA[fuse]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[wpcomfs]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6008</guid>
+
+					<description><![CDATA[Back in April WordPress.com announced a new REST style API. That got me thinking about writing a filesystem layer to expose that data, along similar lines to the pressfs code I&#8217;d written last year. It is still rough, and only supports read-only public data, but in the spirit of release early (and often) I&#8217;m sharing [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Back in April <a href="http://en.blog.wordpress.com/2012/04/12/integrate-cool-applications-with-wordpress-com/">WordPress.com announced</a> a new <a href="http://developer.wordpress.com/docs/api/">REST style API</a>.  That got me thinking about writing a filesystem layer to expose that data, along similar lines to the <a href="https://josephscott.org/archives/2011/05/pressfs-a-wordpress-filesystem/">pressfs</a> code I&#8217;d written last year.</p>
+<p>It is still rough, and only supports read-only public data, but in the spirit of release early (and often) I&#8217;m sharing the code for <a href="https://github.com/josephscott/wpcomfs">wpcomfs</a> at <a href="https://github.com/josephscott/wpcomfs">https://github.com/josephscott/wpcomfs</a>.</p>
+<p>Assuming you have <a href="http://fuse.sourceforge.net/">FUSE</a> with Python bindings already working on your system you can download this and start trying it out in three easy steps:</p>
+<ol>
+<li><code>mkdir /tmp/wpcomfs</code></li>
+<li><code>python wpcomfs.py /tmp/wpcomfs/</code></li>
+<li><code>mkdir /tmp/wpcomfs/sites/en.blog.wordpress.com</code></li>
+</ol>
+<p>After those steps you&#8217;ll have read-only data for <a href="http://en.blog.wordpress.com/">en.blog.wordpress.com</a> available at <code>/tmp/wpcomfs/sites/en.blog.wordpress.com</code>.</p>
+<p>The mount point <code>/tmp/wpcomfs</code> and the site en.blog.wordpress.com are just examples.  You mount wpcomfs where ever you&#8217;d like and you can expose public data for any public site hosted on <a href="http://wordpress.com/">WordPress.com</a>.  Since there are millions of sites hosted at WordPress.com wpcomfs will only load data for sites that you <code>mkdir</code>.</p>
+<p>This also works for WordPress.com sites that are using mapped domain names.  For instance <code>mkdir /tmp/wpcomfs/sites/gigaom.com</code> will provide you with a filesystem layer for <a href="http://gigaom.com/">GigaOM.com</a>.</p>
+<h3>Data</h3>
+<p>When you <code>mkdir</code> a site you get <a href="http://developer.wordpress.com/docs/api/1/get/sites/%24site/">site data</a>, <a href="http://developer.wordpress.com/docs/api/1/get/sites/%24site/posts/">recent posts</a>, and <a href="http://developer.wordpress.com/docs/api/1/get/sites/%24site/comments/">recent comments</a>.  In order to keep interactions with the filesystem responsive this data is only loaded once, when <code>mkdir</code> is run.  Running <code>rmdir /tmp/wpcomfs/sites/en.blog.wordpress.com</code> will remove the site data.</p>
+<p>The top level directory for a site looks like:</p>
+<p>[sourcecode]<br />
+$ ls -la /tmp/wpcomfs/sites/en.blog.wordpress.com/<br />
+total 14<br />
+-r&#8212;&#8212;&#8211; 1 root root    7 Jun  6 14:09 ID.txt<br />
+-r&#8212;&#8212;&#8211; 1 root root   28 Jun  6 14:09 URL.txt<br />
+dr&#8212;&#8212;&#8211; 2 root root 4096 Jun  6 14:09 comments<br />
+-r&#8212;&#8212;&#8211; 1 root root   61 Jun  6 14:09 description.txt<br />
+dr&#8212;&#8212;&#8211; 2 root root 4096 Jun  6 14:09 meta<br />
+-r&#8212;&#8212;&#8211; 1 root root   18 Jun  6 14:09 name.txt<br />
+dr&#8212;&#8212;&#8211; 2 root root 4096 Jun  6 14:09 posts<br />
+[/sourcecode]</p>
+<p>The contents of each file are available in read-only mode:</p>
+<p>[sourcecode]<br />
+$ more /tmp/wpcomfs/sites/en.blog.wordpress.com/URL.txt<br />
+http://en.blog.wordpress.com/<br />
+[/sourcecode]</p>
+<p>All of the dates exposed for files and directories in wpcomfs are based on when the site data was loaded.  Basically when <code>mkdir</code> was run for the site.</p>
+<p>You can <code>mkdir</code> as many sites as you want.  I haven&#8217;t tested an upper limit, but I imagine if you load enough of them your system will run out of memory and die.</p>
+<h3>Bugs</h3>
+<p>I have noticed a few bugs.  Specifically, in some cases post content runs into some encoding issues and doesn&#8217;t get exposed properly at the filesystem level.  Another one that I&#8217;ve seen is that the comment count number doesn&#8217;t show up correctly.  Both of these are issues in the Python code that I need to take the time to work out.</p>
+<p>While not really a bug, there are also some patterns in this code that I&#8217;m not entirely happy with.  I&#8217;m hoping with a bit more Python experience I&#8217;ll be able to simplify those.</p>
+<h3>Kick The Tires</h3>
+<p>The code is available at <a href="https://github.com/josephscott/wpcomfs">https://github.com/josephscott/wpcomfs</a>, please give a try and let me know what you think.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/06/06/wpcomfs-a-wordpress-com-filesystem/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>GPlusFS: Google+ Data as a Filesystem</title>
+		<link>/2011/09/20/gplusfs-google-data-as-a-filesystem/</link>
+					<comments>/2011/09/20/gplusfs-google-data-as-a-filesystem/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 20 Sep 2011 14:21:33 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[filesystem]]></category>
+		<category><![CDATA[fuse]]></category>
+		<category><![CDATA[gplusfs]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4794</guid>
+
+					<description><![CDATA[With the basics of a Google+ API announced last week I started poking around. I liked that there was an option to simply sign up for an API key, allowing me to quickly try it out from the command line using cURL. The JSON formatted results were easy enough to understand. That led to hooking [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img loading="lazy" alt="" src="https://lh5.googleusercontent.com/-9Knvs3vTsv4/TngVMTJXG7I/AAAAAAAAAKs/-CoAtvU79Gg/google-plus.png" title="Google+" class="alignleft" width="260" height="50" /></p>
+<p>With the <a href="http://googleplusplatform.blogspot.com/2011/09/getting-started-on-google-api.html">basics of a Google+ API announced last week</a> I started poking around.  I liked that there was an option to simply <a href="https://code.google.com/apis/console#access">sign up for an API key</a>, allowing me to quickly try it out from the command line using cURL.  The JSON formatted results were easy enough to understand.</p>
+<p>That led to hooking up FUSE and Python to provide the ability to mount the <a href="http://developers.google.com/+/api/latest/people">people.get data</a> as a filesystem.  A bit more hacking and <a href="https://github.com/josephscott/gplusfs">gplusfs</a> was born.  It is still basic, but has been working fine so far with my profile.  This is all still read-only, since the Google+ API is read-only.</p>
+<p>Here is what a directory listing of my profile looks like:</p>
+<p>[sourcecode lang=&#8221;plain&#8221;]<br />
+&gt; ls -la *<br />
+-r&#8212;&#8212;&#8211; 1 root root   57 1970-01-01 00:00 aboutMe.txt<br />
+-r&#8212;&#8212;&#8211; 1 root root   12 1970-01-01 00:00 displayName.txt<br />
+-r&#8212;&#8212;&#8211; 1 root root    4 1970-01-01 00:00 gender.txt<br />
+-r&#8212;&#8212;&#8211; 1 root root   21 1970-01-01 00:00 id.txt<br />
+-r&#8212;&#8212;&#8211; 1 root root 5117 1970-01-01 00:00 image.jpg<br />
+-r&#8212;&#8212;&#8211; 1 root root   11 1970-01-01 00:00 kind.txt<br />
+-r&#8212;&#8212;&#8211; 1 root root   45 1970-01-01 00:00 url.txt</p>
+<p>organizations:<br />
+total 1<br />
+dr&#8212;&#8212;&#8211; 2 root root  0 1970-01-01 00:00 ./<br />
+dr&#8212;&#8212;&#8211; 2 root root  0 1970-01-01 00:00 ../<br />
+-r&#8212;&#8212;&#8211; 1 root root 10 1970-01-01 00:00 work.txt</p>
+<p>urls:<br />
+total 1<br />
+dr&#8212;&#8212;&#8211; 2 root root  0 1970-01-01 00:00 ./<br />
+dr&#8212;&#8212;&#8211; 2 root root  0 1970-01-01 00:00 ../<br />
+-r&#8212;&#8212;&#8211; 1 root root 63 1970-01-01 00:00 json.txt<br />
+-r&#8212;&#8212;&#8211; 1 root root 45 1970-01-01 00:00 profile.txt<br />
+[/sourcecode]</p>
+<p>For JSON values that are strings I used the key name for the file, with an added .txt extension.  The size of the file is determined by the length of the string.  It works the way you&#8217;d expect:</p>
+<p>[sourcecode lang=&#8221;plain&#8221;]<br />
+&gt; more displayName.txt<br />
+Joseph Scott<br />
+[/sourcecode]</p>
+<p>For the profile image the API provides the URL of the image, gplusfs grabs a copy of the image and exposes that to the filesystem instead of the URL string.</p>
+<p>The other special case is list values, which are exposed as directories.  The JSON data provides multiple values for these, so breaking these out as separate directories with their own files seemed like the path of least surprise.</p>
+<p>The source code is available at <a href="https://github.com/josephscott/gplusfs">https://github.com/josephscott/gplusfs</a> and configuration wise it just needs your Google+ user id and an <a href="http://developers.google.com/+/api/oauth#apikey">API key</a>.  Give it a spin and let me know if you run into any issues with your profile data.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/09/20/gplusfs-google-data-as-a-filesystem/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>pressfs &#8211; Read Only Media Support</title>
+		<link>/2011/06/29/pressfs-read-only-media-support/</link>
+					<comments>/2011/06/29/pressfs-read-only-media-support/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 29 Jun 2011 14:26:15 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[filesystem]]></category>
+		<category><![CDATA[fuse]]></category>
+		<category><![CDATA[pressfs]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4353</guid>
+
+					<description><![CDATA[Last night I tagged version 0.3.0 of pressfs, which includes read only support for media files managed by WordPress. You access these files via the new top level directory: /media. Entries in /media look like: [sourcecode lang=&#8221;text&#8221;] -r&#8212;&#8212; &#8211; 1 joseph root 47487 2010-08-03 20:52 boat.jpg [/sourcecode] Copying media files is as easy as cp [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Last night I tagged version 0.3.0 of <a href="https://github.com/josephscott/pressfs">pressfs</a>, which includes read only support for media files managed by WordPress.  You access these files via the new top level directory: /media.  Entries in /media look like:</p>
+<p>[sourcecode lang=&#8221;text&#8221;]<br />
+-r&#8212;&#8212;&#8211; 1 joseph root   47487 2010-08-03 20:52 boat.jpg<br />
+[/sourcecode]</p>
+<p>Copying media files is as easy as <code>cp /var/wp/media/boat.jpg /tmp/boat.jpg</code></p>
+<p>To support read only media files I added two new methods to the pressfs WordPress plugin: <code>get_media_list</code> and <code>get_media_file</code>.  The new <code>get_media_file</code> method is a bit different in that it does not return JSON, instead it returns the raw data of the file.</p>
+<p>There are still some questions about the best way to structure this data for WordPress installs that have a large number of media files.  For now I just wanted something functional that people could use.</p>
+<p>The source is at <a href="https://github.com/josephscott/pressfs">https://github.com/josephscott/pressfs</a> or you can download <a href="https://github.com/josephscott/pressfs/zipball/0.3.0">pressfs 0.3.0 as a zip file</a>.  A <a href="https://github.com/josephscott/pressfs/tarball/0.3.0">tar.gz of pressfs 0.3.0</a> is also available.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/06/29/pressfs-read-only-media-support/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>pressfs &#8211; Dipping a Toe into Write Support</title>
+		<link>/2011/06/10/pressfs-dipping-a-toe-into-write-support/</link>
+					<comments>/2011/06/10/pressfs-dipping-a-toe-into-write-support/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 10 Jun 2011 15:05:51 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[filesystem]]></category>
+		<category><![CDATA[fuse]]></category>
+		<category><![CDATA[pressfs]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4301</guid>
+
+					<description><![CDATA[When I first announced pressfs I knew that write support was going to come up as a requested feature. As I mentioned in that post, before I made the initial release I&#8217;d already been working with write code. After more testing and code clean up I&#8217;ve updated pressfs to version 0.2.0, which has (very) limited [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>When I <a href="http://josephscott.org/archives/2011/05/pressfs-a-wordpress-filesystem/">first announced pressfs</a> I knew that write support was going to come up as a requested feature.  As I mentioned in that post, before I made the initial release I&#8217;d already been working with write code.  After more testing and code clean up I&#8217;ve updated pressfs to version 0.2.0, which has (very) limited write support.</p>
+<p>And by limited, I mean really, really, really limited.</p>
+<p>There are exactly two things that you can edit using pressfs in version 0.2.0: post content and a the url value for a user account (under contact info).  Example paths for these looks like:</p>
+<p>/var/wp/users/LOGIN/url<br />
+/var/wp/posts/POSTID-POSTNAME/content</p>
+<p>I knew that post content was something people wanted to be able to edit, and adding another field that wasn&#8217;t related to posts made me think about how to properly abstract the code that determines which files are writable.</p>
+<p>While I&#8217;ve tested this repeatedly against my dev install of WordPress, I can&#8217;t stress enough that you need to be careful.  Read only is pretty safe, with no real way to mess up your WordPress install.  Now that we are venturing into the write waters the code needs more people to test it before I&#8217;d consider it safe.</p>
+<p>Now, with that out of the way, go give this a try &#8211; the <a href="https://github.com/josephscott/pressfs">pressfs code is available on github</a>.  Creating a new mount point is easy enough, and I recommend using a non-root account to do it.  If your uid is 3000 it is as simple as: </p>
+<p><code>python pressfs.py /var/wp/ -o uid=3000</code></p>
+<p>And if you do find a problem, use the <code>-d</code> option to have pressfs run in the foreground, it will display filesystem activity and python errors.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/06/10/pressfs-dipping-a-toe-into-write-support/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>pressfs &#8211; A WordPress Filesystem</title>
+		<link>/2011/05/31/pressfs-a-wordpress-filesystem/</link>
+					<comments>/2011/05/31/pressfs-a-wordpress-filesystem/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 31 May 2011 14:46:38 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[filesystem]]></category>
+		<category><![CDATA[fuse]]></category>
+		<category><![CDATA[pressfs]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4204</guid>
+
+					<description><![CDATA[Here is something else I&#8217;ve been toying with: pressfs, a WordPress filesystem. Currently it exposes user, post, tag, and category data in a read-only filesystem. The Short Version This is a Python script that uses FUSE to expose data from a WordPress site as a filesystem. For the impatient you can give this a try [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Here is something else I&#8217;ve been toying with: <a href="https://github.com/josephscott/pressfs">pressfs</a>, a WordPress filesystem.  Currently it exposes user, post, tag, and category data in a read-only filesystem.</p>
+<h3>The Short Version</h3>
+<p>This is a <a href="http://www.python.org/">Python</a> script that uses <a href="http://fuse.sourceforge.net/">FUSE</a> to expose data from a <a href="http://wordpress.org/">WordPress</a> site as a filesystem.</p>
+<p>For the impatient you can give this a try in just a few steps:</p>
+<ul>
+<li>get the <a href="https://github.com/josephscott/pressfs">pressfs source code</a> from Github</li>
+<li>install and activate the pressfs WordPress plugin</li>
+<li>copy example-config.ini config.ini</li>
+<li>edit config.ini, set values in WordPress section</li>
+<li>python pressfs.py /your/mount/point/</li>
+</ul>
+<p>This code is still roughly beta quality, try it out on a test/dev WordPress install first.  Authentication is just HTTP basic, so please use it over SSL.  It also needs to use an administrator level WordPress account (something that might change in the future).</p>
+<h3>History</h3>
+<p>A little over two years ago I started thinking about writing a WordPress plugin to act as a WebDAV server so that we could expose media uploads as an easily mounted filesystem.  I poked around a bit, but quickly put the idea on the shelf and worked on other things.  Fast forward to early 2011, after I got <a href="http://josephscott.org/archives/2011/05/an-irc-experiment-raifbot/">raifbot</a> into a functional state I started taking a more serious look at WordPress + WebDAV.  As a concept this is definitely plausible, but after trying several different approaches I decided I wasn&#8217;t interested in dealing with the edge cases I ran into (<a href="http://nginx.org/">nginx</a> not having built in support for <a href="http://en.wikipedia.org/wiki/Chunked_transfer_encoding">chunked encoding</a> was particularly irksome).</p>
+<p>Although I wasn&#8217;t happy with the WebDAV issues, I still kept thinking about ways we could expose WordPress resources as a filesystem.  A few weeks later I started experimenting with the idea of using FUSE to expose WordPress data as a filesystem.  It was a rough start, but I finally got it to a point where it was time to share with others and get more feedback.</p>
+<h3>Python</h3>
+<p>I don&#8217;t have much experience writing Python code, which isn&#8217;t surprising since my full time job has involved WordPress and WordPress related development (lots of PHP code).  Sure, I&#8217;ve tweaked a few Python scripts from time to time, read <a href="http://diveintopython.org/">Dive Into Python</a> and toyed with some of the examples, but I&#8217;ve never sat down to write new code for a new project in Python until now. I welcome feedback on improving the code, just remember this is my first time sailing this ship, so be gentle <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>The requirements for running pressfs aren&#8217;t terribly exotic.  Obvious you need to have the FUSE library installed and the <a href="http://sourceforge.net/projects/fuse/files/fuse-python/">fuse-python</a> bindings.  Other external libraries it uses include httplib2 and simplejson.  I think all of the other imported code are standard for most python installs.</p>
+<p>There are only a handful of examples and tutorials on getting started with fuse-python, which I had to experiment with repeatedly (along with tons of debugging) to figure out how the pieces fit together.  I&#8217;ll likely be posting tutorials and how-to&#8217;s about python-fuse, both to help others and to make sure I have a clear idea of how the various features work.</p>
+<h3>The WordPress Plugin</h3>
+<p>I choose to write a new WordPress plugin to expose the data I needed because I wanted to be able to tweak it on a whim.  Using JSON to exchange data was a nice bonus as well.  So for now at least you&#8217;ll need to have this active on any site that you want to use pressfs with.</p>
+<h3>Directory Layout</h3>
+<p>If you have pressfs mounted on <code>/var/wordpress</code> you&#8217;ll see something like this:</p>
+<ul>
+<li>/var/wordress/categories/</li>
+<li>/var/wordpress/posts/</li>
+<li>/var/wordpress/tags/</li>
+<li>/var/wordpress/users/</li>
+</ul>
+<p>The categories directory will list all of the categories, using the category slug.  Each individual category is a directory with the following files in it: count, description, id, name, parent, and slug.  These all contain what you would expect.</p>
+<p>The posts directory lists the posts on your site, with the format of &lt;POSTID&gt;-&lt;NAME&gt; (or if NAME isn&#8217;t available &lt;POSTID&gt;-&lt;TITLE&gt;).  Each post directory has the following files in it: content, date-gmt, id, name, password, status, title, type, and url.  Shouldn&#8217;t be any surprises about the contents of each of those files.</p>
+<p>The tags directory lists the tags on your site, using the slug.  Each tag directory contains: count, description, id, name, and slug.</p>
+<p>The users directory lists all the users on your site, with directory entries using the username field.  Each user directory contains these files: display-name, email, id, login, nice-name, registered, and url.</p>
+<p>Want to see the description field for category photos:<br />
+<code>more /var/wordress/categories/photos/description</code></p>
+<p>Want to see the post body for the post id 123, which has the name summer-vacation:<br />
+<code>more /var/wordpress/posts/123-summer-vacation/content</code></p>
+<p>Want the email field from user josephscott:<br />
+<code>more /var/wordpress/users/josephscott/email</code></p>
+<h3>The Future</h3>
+<p>The largest limitation that I expect people to ask about is moving from read-only to allowing write operations.  The good news is that I already have experimental code that allows for writes of specific fields.  I have more testing and cleaning up of the code to do, but I intended to add write support in a future version.</p>
+<p>Next up is exposing more WordPress data.  I already have test code for exposing media upload files, so that will get added eventually.  Beyond that I&#8217;d like to expose other less obvious items as well, like settings.</p>
+<p>While I&#8217;ve revised this a few times before getting to this point, I&#8217;m not sure I&#8217;ve got everything just right.  For instance, is the current directory layout really the best way to go?  Don&#8217;t be surprised if there are significant changes as development goes along.</p>
+<h3>Conclusion</h3>
+<p>Now that I&#8217;ve gotten my feet wet with WordPress  + python-fuse I&#8217;m excited about doing more with this.  This was also a good way to start learning more Python, for something that resembles a real application, which I&#8217;ve wanted to do for some time now.</p>
+<p>In the short term I&#8217;d like to hear how this works (or doesn&#8217;t) for others.  If you run into a problem re-mount pressfs with <code>python pressfs.py /your/mount/point/ -d</code>, which will keep the process running in the foreground, with details on what each operation does (including errors).  That should provide enough details to figure out where the problem is.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/05/31/pressfs-a-wordpress-filesystem/feed/</wfw:commentRss>
+			<slash:comments>26</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Mon 14 Jan 2008</title>
+		<link>/2008/01/14/links-for-mon-14-jan-2008/</link>
+					<comments>/2008/01/14/links-for-mon-14-jan-2008/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 15 Jan 2008 00:30:15 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[digg]]></category>
+		<category><![CDATA[filesystem]]></category>
+		<category><![CDATA[filter]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[htmlpurifier]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[menubar]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[xss]]></category>
+		<category><![CDATA[zfs]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/01/14/links-for-mon-14-jan-2008/</guid>
+
+					<description><![CDATA[woork: Digg-like navigation bar using CSS &#8211; Add this to my collection of pretty rounded menu bars. Tags: css digg menubar HTML Purifier &#8211; Filter your HTML the standards-compliant way! &#8211; Makes some big claims, would be interesting to see it put to the test. Tags: html php htmlpurifier filter xss zfs &#8211; Trac &#8211; [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://woork.blogspot.com/2008/01/digg-like-navigation-bar-using-css.html">woork: Digg-like navigation bar using CSS</a> &#8211; Add this to my collection of pretty rounded menu bars. <br /> Tags: <a href="http://del.icio.us/josephscott/css">css</a> <a href="http://del.icio.us/josephscott/digg">digg</a> <a href="http://del.icio.us/josephscott/menubar">menubar</a>  </p>
+</li>
+<li>
+<p><a href="http://htmlpurifier.org/">HTML Purifier &#8211; Filter your HTML the standards-compliant way!</a> &#8211; Makes some big claims, would be interesting to see it put to the test. <br /> Tags: <a href="http://del.icio.us/josephscott/html">html</a> <a href="http://del.icio.us/josephscott/php">php</a> <a href="http://del.icio.us/josephscott/htmlpurifier">htmlpurifier</a> <a href="http://del.icio.us/josephscott/filter">filter</a> <a href="http://del.icio.us/josephscott/xss">xss</a>  </p>
+</li>
+<li>
+<p><a href="http://trac.macosforge.org/projects/zfs/wiki/">zfs &#8211; Trac</a> &#8211; Source and binaries for ZFS on Mac OS X.  Seems safe to say that we&#8217;ll see ZFS as a built in feature in some future release of OS X (10.6 perhaps?). <br /> Tags: <a href="http://del.icio.us/josephscott/zfs">zfs</a> <a href="http://del.icio.us/josephscott/macosx">macosx</a> <a href="http://del.icio.us/josephscott/filesystem">filesystem</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/01/14/links-for-mon-14-jan-2008/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>MacFUSE</title>
+		<link>/2007/01/12/macfuse/</link>
+					<comments>/2007/01/12/macfuse/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 12 Jan 2007 08:58:59 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[amitsingh]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[filesystem]]></category>
+		<category><![CDATA[fuse]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[macfuse]]></category>
+		<category><![CDATA[macosx]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/01/12/macfuse/</guid>
+
+					<description><![CDATA[Google Mac Engineering Manager Amit Singh announced a port of FUSE (Filesystem in Userspace) to Mac OS X: MacFUSE. It would be really great if Apple would integrate into this OS X. It has a BSD license so that shouldn&#8217;t prevent them from using it. Making it work with the Finder would be helpful though.]]></description>
+										<content:encoded><![CDATA[<p>Google Mac Engineering Manager Amit Singh <a href="http://googlemac.blogspot.com/2007/01/taming-mac-os-x-file-systems.html">announced</a> a port of <a href="http://fuse.sourceforge.net/">FUSE</a> (Filesystem in Userspace) to Mac OS X: <a href="http://code.google.com/p/macfuse/">MacFUSE</a>.</p>
+<p>It would be really great if Apple would integrate into this OS X.  It has a BSD license so that shouldn&#8217;t prevent them from using it.  Making it work with the Finder would be helpful though.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/01/12/macfuse/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

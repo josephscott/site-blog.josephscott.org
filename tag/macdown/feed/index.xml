@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>macdown &#8211; Joseph Scott</title>
+	<atom:link href="/tag/macdown/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 06 Mar 2015 18:12:42 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Markdown with MacDown</title>
+		<link>/2015/03/06/markdown-with-macdown/</link>
+					<comments>/2015/03/06/markdown-with-macdown/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 06 Mar 2015 18:12:42 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[macdown]]></category>
+		<category><![CDATA[markdown]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9803</guid>
+
+					<description><![CDATA[Lately I&#8217;ve been using MacDown for writing longer documents in Markdown. I tried a few other Markdown editors for Mac OS X and found that MacDown fit my needs the best. The fenced codeblock block support, with syntax highlighting via Prism, sealed the deal. Bonus points for being open source &#8211; https://github.com/uranusjr/macdown.]]></description>
+										<content:encoded><![CDATA[<p><a href="http://macdown.uranusjr.com/"><img loading="lazy" src="/wp-content/uploads/2015/03/macdown-logo-1.png" alt="macdown-logo" width="256" height="256" class="alignleft size-full wp-image-11718" srcset="/wp-content/uploads/2015/03/macdown-logo-1.png 256w, /wp-content/uploads/2015/03/macdown-logo-1-150x150.png 150w" sizes="(max-width: 256px) 100vw, 256px" /></a></p>
+<p>Lately I&#8217;ve been using <a href="http://macdown.uranusjr.com/">MacDown</a> for writing longer documents in Markdown.  I tried a few other Markdown editors for Mac OS X and found that MacDown fit my needs the best.  The <a href="http://macdown.uranusjr.com/features/">fenced codeblock block support</a>, with syntax highlighting via <a href="http://prismjs.com/">Prism</a>, sealed the deal.</p>
+<p>Bonus points for being open source &#8211; <a href="https://github.com/uranusjr/macdown">https://github.com/uranusjr/macdown</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/03/06/markdown-with-macdown/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

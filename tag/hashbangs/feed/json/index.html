@@ -1,0 +1,64 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/hashbangs/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/hashbangs/",
+    "feed_url": "https://blog.josephscott.org/tag/hashbangs/feed/json/",
+    "language": "en-US",
+    "title": "hashbangs &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=5964",
+            "url": "https://blog.josephscott.org/2012/05/30/twitter-backing-away-from-hashbang-urls/",
+            "title": "Twitter Backing Away From Hashbang URLs",
+            "content_html": "<p>The big news from Twitter&#8217;s <a href=\"http://engineering.twitter.com/2012/05/improving-performance-on-twittercom.html\">Improving performance on twitter.com</a> was the first step in backing away from hashbang (#!) URLs:</p>\n<blockquote><p>\n&#8230; our primary reason for this change is to improve initial page-load performance.</p>\n<p>The first thing that you might notice is that permalink URLs are now simpler: they no longer use the hashbang (#!). While hashbang-style URLs have a handful of limitations, our primary reason for this change is to improve initial page-load performance.</p>\n<p>When you come to twitter.com, we want you to see content as soon as possible. With hashbang URLs, the browser needs to download an HTML page, download and execute some JavaScript, recognize the hashbang path (which is only visible to the browser), then fetch and render the content for that URL. By removing the need to handle routing on the client, we remove many of these steps and reduce the time it takes for you to find out what\u2019s happening on twitter.com.\n</p></blockquote>\n<p>I&#8217;m not surprised that they found doing one thing faster than doing that one thing plus four more.</p>\n<p>I, like many others, are happy to see this go.  <a href=\"http://rc3.org/2012/05/29/twitter-finally-rejects-their-all-javascript-approach/\">Rafe Colburn put it this way:</a></p>\n<blockquote><p>\nIt feels good to see terrible ideas die, even when it takes awhile.\n</p></blockquote>\n<p><a href=\"http://functionsource.com/post/conditional-tier-rendering-twitter-achieves-level-5-5-of-the-render-game\">Dion Almaer</a> concludes:</p>\n<blockquote><p>\nIt\u2019s about the experience stupid.\n</p></blockquote>\n<p>Providing a good user experience with &#8220;traditional&#8221; methods is better than providing a poorer user experience using the hotest new trends.</p>\n<p>The sad part about Twitter&#8217;s path down the hashbang road is that they are now left with two unappealing options.  Either they continue to include a backwards compatibility piece of Javascript on every page load, or break all of the previous hashbang URLs.  So far it appears that they are going with the first option, including a piece of Javascript on each page that looks for a hashbang URL.</p>\n",
+            "content_text": "The big news from Twitter&#8217;s Improving performance on twitter.com was the first step in backing away from hashbang (#!) URLs:\n\n&#8230; our primary reason for this change is to improve initial page-load performance.\nThe first thing that you might notice is that permalink URLs are now simpler: they no longer use the hashbang (#!). While hashbang-style URLs have a handful of limitations, our primary reason for this change is to improve initial page-load performance.\nWhen you come to twitter.com, we want you to see content as soon as possible. With hashbang URLs, the browser needs to download an HTML page, download and execute some JavaScript, recognize the hashbang path (which is only visible to the browser), then fetch and render the content for that URL. By removing the need to handle routing on the client, we remove many of these steps and reduce the time it takes for you to find out what\u2019s happening on twitter.com.\n\nI&#8217;m not surprised that they found doing one thing faster than doing that one thing plus four more.\nI, like many others, are happy to see this go.  Rafe Colburn put it this way:\n\nIt feels good to see terrible ideas die, even when it takes awhile.\n\nDion Almaer concludes:\n\nIt\u2019s about the experience stupid.\n\nProviding a good user experience with &#8220;traditional&#8221; methods is better than providing a poorer user experience using the hotest new trends.\nThe sad part about Twitter&#8217;s path down the hashbang road is that they are now left with two unappealing options.  Either they continue to include a backwards compatibility piece of Javascript on every page load, or break all of the previous hashbang URLs.  So far it appears that they are going with the first option, including a piece of Javascript on each page that looks for a hashbang URL.",
+            "date_published": "2012-05-30T09:30:05-06:00",
+            "date_modified": "2012-05-30T09:30:05-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "hashbangs",
+                "performance",
+                "Twitter",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=4194",
+            "url": "https://blog.josephscott.org/2011/05/30/hashbang-urls/",
+            "title": "Hashbang URLs",
+            "content_html": "<p>The final line from Dan Webb&#8217;s <a href=\"http://danwebb.net/2011/5/28/it-is-about-the-hashbangs\">It Is About The Hashbangs</a>:</p>\n<blockquote><p>\nCan we all agree to let it go the way of flash intros, please?\n</p></blockquote>\n<p>Hashbang URLs can not go away fast enough.  Please work to wipe them off the web and then pretend it never happened.</p>\n",
+            "content_text": "The final line from Dan Webb&#8217;s It Is About The Hashbangs:\n\nCan we all agree to let it go the way of flash intros, please?\n\nHashbang URLs can not go away fast enough.  Please work to wipe them off the web and then pretend it never happened.",
+            "date_published": "2011-05-30T10:03:49-06:00",
+            "date_modified": "2011-05-30T10:03:49-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "dan-webb",
+                "hashbangs",
+                "url",
+                "Posts"
+            ]
+        }
+    ]
+}

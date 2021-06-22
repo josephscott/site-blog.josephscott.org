@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Showing Your Last Tweet With Javascript	</title>
+	<atom:link href="/2009/09/03/showing-your-last-tweet-with-javascript/feed/" rel="self" type="application/rss+xml" />
+	<link>/2009/09/03/showing-your-last-tweet-with-javascript/</link>
+	<description></description>
+	<lastBuildDate>Fri, 08 Jan 2010 16:55:17 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3042</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 08 Jan 2010 16:55:17 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1446#comment-3042</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3041&quot;&gt;dhme&lt;/a&gt;.
+
+Odd, any idea which line is causing problems with the _?]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3041">dhme</a>.</p>
+<p>Odd, any idea which line is causing problems with the _?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: dhme		</title>
+		<link>/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3041</link>
+
+		<dc:creator><![CDATA[dhme]]></dc:creator>
+		<pubDate>Fri, 08 Jan 2010 11:39:47 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1446#comment-3041</guid>
+
+					<description><![CDATA[Hi, I try to do it, but as I can see it doesn’t work if there is a “_” in the twitter username.
+
+Does anybody help me?
+
+Thanks a lot]]></description>
+			<content:encoded><![CDATA[<p>Hi, I try to do it, but as I can see it doesn’t work if there is a “_” in the twitter username.</p>
+<p>Does anybody help me?</p>
+<p>Thanks a lot</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3040</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 23 Oct 2009 02:10:00 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1446#comment-3040</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3039&quot;&gt;Austin&lt;/a&gt;.
+
+In defense of my jQuery laziness http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js only transmits 19kb over the wire :-)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3039">Austin</a>.</p>
+<p>In defense of my jQuery laziness <a href="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" rel="nofollow ugc">http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js</a> only transmits 19kb over the wire 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Austin		</title>
+		<link>/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3039</link>
+
+		<dc:creator><![CDATA[Austin]]></dc:creator>
+		<pubDate>Fri, 23 Oct 2009 00:48:32 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1446#comment-3039</guid>
+
+					<description><![CDATA[It&#039;s a great idea and would be even better by dropping jQuery&#039;s 57kb of bloat.
+
+Assign the tweet wrapper element to a variable:
+
+&lt;code&gt;var lastTweet = document.getElementById(&#039;last_tweet&#039;);&lt;/code&gt;
+
+Then you can replace
+
+&lt;code&gt;$(&#039;#last_tweet&#039;).html(&lt;/code&gt;
+
+with
+
+&lt;code&gt;lastTweet.innerHTML = &lt;/code&gt;
+
+and
+
+&lt;code&gt;$(&#039;#last_tweet&#039;).addClass(&#039;last_tweet_box&#039;);&lt;/code&gt;
+
+with
+
+&lt;code&gt;lastTweet.className = &#039;last_tweet_box&#039;;&lt;/code&gt;
+
+It&#039;s guaranteed to be faster, too!]]></description>
+			<content:encoded><![CDATA[<p>It&#8217;s a great idea and would be even better by dropping jQuery&#8217;s 57kb of bloat.</p>
+<p>Assign the tweet wrapper element to a variable:</p>
+<p><code>var lastTweet = document.getElementById('last_tweet');</code></p>
+<p>Then you can replace</p>
+<p><code>$('#last_tweet').html(</code></p>
+<p>with</p>
+<p><code>lastTweet.innerHTML = </code></p>
+<p>and</p>
+<p><code>$('#last_tweet').addClass('last_tweet_box');</code></p>
+<p>with</p>
+<p><code>lastTweet.className = 'last_tweet_box';</code></p>
+<p>It&#8217;s guaranteed to be faster, too!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3038</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 20 Oct 2009 15:17:01 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1446#comment-3038</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3037&quot;&gt;Bouke&lt;/a&gt;.
+
+True, there are definitely other ways to do this.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3037">Bouke</a>.</p>
+<p>True, there are definitely other ways to do this.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bouke		</title>
+		<link>/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3037</link>
+
+		<dc:creator><![CDATA[Bouke]]></dc:creator>
+		<pubDate>Sun, 18 Oct 2009 22:06:14 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1446#comment-3037</guid>
+
+					<description><![CDATA[Nice example, but you could make better use of JQuery by using an AJAX-call, like this:
+
+&lt;code&gt;
+$.ajax({
+   url: &quot;http://twitter.com/statuses/user_timeline/josephscott.json&quot;,
+   data: { count: 1 },
+   dataType: &quot;jsonp&quot;,
+   success: twitter_callback_function
+});
+&lt;/code&gt;]]></description>
+			<content:encoded><![CDATA[<p>Nice example, but you could make better use of JQuery by using an AJAX-call, like this:</p>
+<p><code><br />
+$.ajax({<br />
+   url: "http://twitter.com/statuses/user_timeline/josephscott.json",<br />
+   data: { count: 1 },<br />
+   dataType: "jsonp",<br />
+   success: twitter_callback_function<br />
+});<br />
+</code></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Matt		</title>
+		<link>/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3036</link>
+
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+		<pubDate>Fri, 04 Sep 2009 14:16:37 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1446#comment-3036</guid>
+
+					<description><![CDATA[Nice! :)]]></description>
+			<content:encoded><![CDATA[<p>Nice! 🙂</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

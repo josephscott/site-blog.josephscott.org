@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>meteor &#8211; Joseph Scott</title>
+	<atom:link href="/tag/meteor/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 12 Apr 2012 16:29:13 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Is Meteor The Future Of Node.JS Development?</title>
+		<link>/2012/04/12/is-meteor-the-future-of-node-js-development/</link>
+					<comments>/2012/04/12/is-meteor-the-future-of-node-js-development/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 12 Apr 2012 16:29:13 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[meteor]]></category>
+		<category><![CDATA[nodejs]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=5709</guid>
+
+					<description><![CDATA[What does the next step in the evolution of Node.js look like? One answer to that question is Meteor. I found their screencast very interesting: The idea of having a built-in framework that takes care of updates for you, on the fly, is compelling. I also liked the example of being able to work with [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>What does the next step in the evolution of <a href="http://nodejs.org/">Node.js</a> look like?  One answer to that question is <a href='http://www.meteor.com/'>Meteor</a>.  I found their <a href="http://www.meteor.com/screencast">screencast</a> very interesting:</p>
+<p><iframe loading="lazy" src="http://player.vimeo.com/video/40104996?title=0&amp;byline=0&amp;portrait=0" width="600" height="450" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></p>
+<p>The idea of having a built-in framework that takes care of updates for you, on the fly, is compelling.  I also liked the example of being able to work with the MongoDB data right from the client (that also scares me).</p>
+<p>I&#8217;m not ready to abandon all other web development platforms and move strictly to Meteor, but I&#8217;ll definitely be watching it.  I&#8217;d like to dig deeper into the details of what makes Meteor tick. </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/04/12/is-meteor-the-future-of-node-js-development/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

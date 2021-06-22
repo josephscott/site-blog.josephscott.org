@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Tinkering With Redis	</title>
+	<atom:link href="/2010/10/13/tinkering-with-redis/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/10/13/tinkering-with-redis/</link>
+	<description></description>
+	<lastBuildDate>Fri, 15 Oct 2010 15:10:41 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/10/13/tinkering-with-redis/#comment-3551</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 15 Oct 2010 15:10:41 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2937#comment-3551</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/10/13/tinkering-with-redis/#comment-3550&quot;&gt;Julien&lt;/a&gt;.
+
+The clustering piece that antirez is working on definitely sounds interesting.  I&#039;m not convinced it is the right approach for everyone (looks like another SPOF).
+
+There are certainly other issues in Redis, some of them bigger than others depending on how you use it.  I don&#039;t see any of them being complete show stoppers though and on the flip side there seems to be plenty of potential for the future of Redis.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/10/13/tinkering-with-redis/#comment-3550">Julien</a>.</p>
+<p>The clustering piece that antirez is working on definitely sounds interesting.  I&#8217;m not convinced it is the right approach for everyone (looks like another SPOF).</p>
+<p>There are certainly other issues in Redis, some of them bigger than others depending on how you use it.  I don&#8217;t see any of them being complete show stoppers though and on the flip side there seems to be plenty of potential for the future of Redis.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Julien		</title>
+		<link>/2010/10/13/tinkering-with-redis/#comment-3550</link>
+
+		<dc:creator><![CDATA[Julien]]></dc:creator>
+		<pubDate>Fri, 15 Oct 2010 11:40:28 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2937#comment-3550</guid>
+
+					<description><![CDATA[Can&#039;t agree more :) We&#039;ve been using Redis for a few months in prod at Superfeedr and we love it! Only missing feature (but I know antirez is working hard on it) : clustering!]]></description>
+			<content:encoded><![CDATA[<p>Can&#8217;t agree more 🙂 We&#8217;ve been using Redis for a few months in prod at Superfeedr and we love it! Only missing feature (but I know antirez is working hard on it) : clustering!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

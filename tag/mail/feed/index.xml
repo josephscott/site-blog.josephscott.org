@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mail &#8211; Joseph Scott</title>
+	<atom:link href="/tag/mail/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 09 Nov 2007 00:30:21 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Links for Thu 8 Nov 2007</title>
+		<link>/2007/11/08/links-for-thu-8-nov-2007/</link>
+					<comments>/2007/11/08/links-for-thu-8-nov-2007/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 09 Nov 2007 00:30:21 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[atompub]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[mail]]></category>
+		<category><![CDATA[metaweblog]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[sendmail]]></category>
+		<category><![CDATA[stats]]></category>
+		<category><![CDATA[utah]]></category>
+		<category><![CDATA[vote]]></category>
+		<category><![CDATA[windowslivewriter]]></category>
+		<category><![CDATA[xmlrpc]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/08/links-for-thu-8-nov-2007/</guid>
+
+					<description><![CDATA[State of Utah Elections Office &#8211; The number of registered voters in the State of Utah, by county. Just under 1.5 million total. Tags: utah vote stats The BabelFish Blog, Limitations of MetaWeblog API &#8211; Couple of years old, but a good list of complaints. Tags: xmlrpc metaweblog PHP mail() and The Path of No [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://elections.utah.gov/voterstatistics.html">State of Utah Elections Office</a> &#8211; The number of registered voters in the State of Utah, by county.  Just under 1.5 million total. <br /> Tags: <a href="http://del.icio.us/josephscott/utah">utah</a> <a href="http://del.icio.us/josephscott/vote">vote</a> <a href="http://del.icio.us/josephscott/stats">stats</a>  </p>
+</li>
+<li>
+<p><a href="http://www.bblfish.net/blog/page7.html#2005/06/20/22-28-18-208">The BabelFish Blog, Limitations of MetaWeblog API</a> &#8211; Couple of years old, but a good list of complaints. <br /> Tags: <a href="http://del.icio.us/josephscott/xmlrpc">xmlrpc</a> <a href="http://del.icio.us/josephscott/metaweblog">metaweblog</a>  </p>
+</li>
+<li>
+<p><a href="http://allinthehead.com/retro/315/php-mail-and-the-path-of-no-return">PHP mail() and The Path of No Return ? All in the head</a> &#8211; If you are using PHP&#8217;s mail() function then make sure that Sendmail is happy with the From address on the envelope. <br /> Tags: <a href="http://del.icio.us/josephscott/php">php</a> <a href="http://del.icio.us/josephscott/mail">mail</a> <a href="http://del.icio.us/josephscott/sendmail">sendmail</a>  </p>
+</li>
+<li>
+<p><a href="http://jcheng.wordpress.com/2007/11/06/wlwatompub-part-4-categories/">WLW+AtomPub, Part 4: Categories | whateverblog.</a> &#8211; Sounds like categories in AtomPub will still need some work. <br /> Tags: <a href="http://del.icio.us/josephscott/windowslivewriter">windowslivewriter</a> <a href="http://del.icio.us/josephscott/atompub">atompub</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/11/08/links-for-thu-8-nov-2007/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,142 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/redis/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/redis/",
+    "feed_url": "https://blog.josephscott.org/tag/redis/feed/json/",
+    "language": "en-US",
+    "title": "redis &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=6702",
+            "url": "https://blog.josephscott.org/2013/02/25/thredis-the-peanut-butter-cup-of-databases/",
+            "title": "Thredis, the Peanut Butter Cup of Databases",
+            "content_html": "<p>Ever wonder what would happen if you dipped <a href=\"http://www.sqlite.org/\">SQLite</a> into <a href=\"http://redis.io/\">Redis</a>?  You get <a href=\"http://thredis.org/\">Thredis</a>, the peanut butter cup of databases:</p>\n<blockquote><p>\nThredis embeds an in-memory SQLite database within Redis to enable a<br />\nsophisticated level of SQL (joins, sub-selects, etc, all supported),<br />\nas well as introduces multi-threaded processing to take advantage of<br />\nSMP systems.\n</p></blockquote>\n<p>This is one wild hack, check out one of the examples:</p>\n<p>[sourcecode]<br />\nredis 127.0.0.1:6379&gt; zadd foo_zset 1 a 2 b 3 c<br />\n(integer) 3<br />\nredis 127.0.0.1:6379&gt; sql &quot;create virtual table zset using redis (foo_zset)&quot;<br />\nOK<br />\nredis 127.0.0.1:6379&gt; sql &quot;select * from zset&quot;<br />\n1) 1) &quot;key&quot;<br />\n   2) &quot;val&quot;<br />\n2) 1) &quot;1.0&quot;<br />\n   2) &quot;a&quot;<br />\n3) 1) &quot;2.0&quot;<br />\n   2) &quot;b&quot;<br />\n4) 1) &quot;3.0&quot;<br />\n   2) &quot;c&quot;<br />\n[/sourcecode]</p>\n<p>More examples are listed at <a href=\"http://thredis.org/\">http://thredis.org/</a>, source code is available at <a href=\"https://github.com/grisha/thredis\">https://github.com/grisha/thredis</a>.</p>\n",
+            "content_text": "Ever wonder what would happen if you dipped SQLite into Redis?  You get Thredis, the peanut butter cup of databases:\n\nThredis embeds an in-memory SQLite database within Redis to enable a\nsophisticated level of SQL (joins, sub-selects, etc, all supported),\nas well as introduces multi-threaded processing to take advantage of\nSMP systems.\n\nThis is one wild hack, check out one of the examples:\n[sourcecode]\nredis 127.0.0.1:6379&gt; zadd foo_zset 1 a 2 b 3 c\n(integer) 3\nredis 127.0.0.1:6379&gt; sql &quot;create virtual table zset using redis (foo_zset)&quot;\nOK\nredis 127.0.0.1:6379&gt; sql &quot;select * from zset&quot;\n1) 1) &quot;key&quot;\n   2) &quot;val&quot;\n2) 1) &quot;1.0&quot;\n   2) &quot;a&quot;\n3) 1) &quot;2.0&quot;\n   2) &quot;b&quot;\n4) 1) &quot;3.0&quot;\n   2) &quot;c&quot;\n[/sourcecode]\nMore examples are listed at http://thredis.org/, source code is available at https://github.com/grisha/thredis.",
+            "date_published": "2013-02-25T10:32:48-07:00",
+            "date_modified": "2013-02-25T10:32:48-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "redis",
+                "sqlite",
+                "thredis",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=5024",
+            "url": "https://blog.josephscott.org/2011/11/01/redis-hash-efficiency/",
+            "title": "Redis Hash Efficiency",
+            "content_html": "<p>Instagram on switching from plain key => value storage to hashes in <a href=\"http://redis.io/\">Redis</a>:</p>\n<blockquote><p>\nThe size difference was pretty striking; with our 1,000,000 key prototype (encoded into 1,000 hashes of 1,000 sub-keys each), Redis only needs 16MB to store the information. Expanding to 300 million keys, the total is just under 5GB\u2014which in fact, even fits in the much cheaper m1.large instance type on Amazon, about 1/3 of the cost of the larger instance we would have needed otherwise. Best of all, lookups in hashes are still O(1), making them very quick.\n</p></blockquote>\n<p>via <a href='http://instagram-engineering.tumblr.com/post/12202313862/storing-hundreds-of-millions-of-simple-key-value-pairs'>Instagram Engineering \u2022 Storing hundreds of millions of simple key-value pairs in Redis</a>.</p>\n<p>The original key => value storage method used 70MB for 1,000,000 entries.  Making their 300,000,000 target usage in the neighborhood of 21GB.  Going from 21GB to 5GB is a huge win.</p>\n",
+            "content_text": "Instagram on switching from plain key => value storage to hashes in Redis:\n\nThe size difference was pretty striking; with our 1,000,000 key prototype (encoded into 1,000 hashes of 1,000 sub-keys each), Redis only needs 16MB to store the information. Expanding to 300 million keys, the total is just under 5GB\u2014which in fact, even fits in the much cheaper m1.large instance type on Amazon, about 1/3 of the cost of the larger instance we would have needed otherwise. Best of all, lookups in hashes are still O(1), making them very quick.\n\nvia Instagram Engineering \u2022 Storing hundreds of millions of simple key-value pairs in Redis.\nThe original key => value storage method used 70MB for 1,000,000 entries.  Making their 300,000,000 target usage in the neighborhood of 21GB.  Going from 21GB to 5GB is a huge win.",
+            "date_published": "2011-11-01T14:06:17-06:00",
+            "date_modified": "2011-11-01T14:06:17-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "instagram",
+                "redis",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=3678",
+            "url": "https://blog.josephscott.org/2011/03/02/redisfs-replication-friendly-redis-based-filesystem/",
+            "title": "redisfs: Replication-Friendly Redis-based filesystem",
+            "content_html": "<p><a href='http://www.steve.org.uk/Software/redisfs/'>redisfs: replication-friendly redis-based filesystem</a></p>\n<p>Makes use of FUSE to provide a redis backed filesystem.  The pattern matching support in the <a href=\"http://redis.io/commands/keys\">KEYS</a> command would make lookups using that key layout reasonably efficient.  Using hashes would be another way to go as well.</p>\n<p>The basic redis features would make things like filesystem snapshots possible as well.  This could turn into something very cool.</p>\n",
+            "content_text": "redisfs: replication-friendly redis-based filesystem\nMakes use of FUSE to provide a redis backed filesystem.  The pattern matching support in the KEYS command would make lookups using that key layout reasonably efficient.  Using hashes would be another way to go as well.\nThe basic redis features would make things like filesystem snapshots possible as well.  This could turn into something very cool.",
+            "date_published": "2011-03-02T09:34:23-07:00",
+            "date_modified": "2011-03-02T09:34:23-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "fuse",
+                "redis",
+                "redisfs",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=3648",
+            "url": "https://blog.josephscott.org/2011/02/26/redis-sharding-at-craigslist/",
+            "title": "Redis Sharding at Craigslist",
+            "content_html": "<p><a href=\"http://blog.zawodny.com/2011/02/26/redis-sharding-at-craigslist/\">Redis Sharding at\u00a0Craigslist</a></p>\n",
+            "content_text": "Redis Sharding at\u00a0Craigslist",
+            "date_published": "2011-02-26T15:08:02-07:00",
+            "date_modified": "2011-02-26T15:08:02-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "craigslist",
+                "redis",
+                "Asides"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=2937",
+            "url": "https://blog.josephscott.org/2010/10/13/tinkering-with-redis/",
+            "title": "Tinkering With Redis",
+            "content_html": "<p>I like to tinker with different things from time to time.  Not because it is something I&#8217;m using at work, or even using any where at all.  Just to see what others are doing and hopefully learn a few things along the way.  So here are a few notes about tinkering with <a href=\"http://code.google.com/p/redis/\">Redis</a>.</p>\n<h3>The short story</h3>\n<p>Created by Salvatore &#8220;antirez&#8221; Sanfilippo, Redis was first released in March 2009 and is under a BSD style license.</p>\n<p>Superficially Redis is like <a href=\"http://memcached.org/\">memcached</a> in that it is a memory based key/value store.  But it is also much more than that.  Data storage can be persistent and it provides additional data types and operations.</p>\n<h3>Getting started in less than 60 seconds</h3>\n<p>On a unix style system (Mac, Linux, FreeBSD, etc.) it takes less than 30 seconds to get Redis up and running:</p>\n<ul>\n<li>curl -O http://redis.googlecode.com/files/redis-2.0.2.tar.gz</li>\n<li>tar -xzvf redis-2.0.2.tar.gz</li>\n<li>cd redis-2.0.2</li>\n<li>make</li>\n<li>./redis-server</li>\n</ul>\n<p>I really like that there are no external dependencies to worry about, just download, build and go.  As an added bonus it comes with a CLI client as well, redis-cli.</p>\n<h3>Exploring</h3>\n<p>The redis-cli tool makes it easy to explore features of Redis without having to write any code.  I recommend taking a few minutes to walk through the <a href=\"http://code.google.com/p/redis/wiki/IntroductionToRedisDataTypes\">introduction to redis data types</a> page.  After a few minutes going through the examples there you&#8217;ll have a basic idea of the data types: string, integer (special type of string really), lists, sets, and sorted sets and a few of the operations available for each type.  One data type that page doesn&#8217;t cover yet is hashes, which are exactly what they sound like.</p>\n<p>A longer list of supported commands with links is available at <a href=\"http://code.google.com/p/redis/wiki/CommandReference\">http://code.google.com/p/redis/wiki/CommandReference</a>, which is a good resource to explore while playing with Redis.</p>\n<h3>Beyond data storage</h3>\n<p>Fast access to data in formats that developers are familiar with is nice, but that isn&#8217;t the only thing Redis is good for.  First, check out the <a href=\"http://code.google.com/p/redis/wiki/BlpopCommand\">blocking pop commands</a>.  This allows for one or more clients to block when popping data off an array.  If there is data in the array they immediately get that, and if there isn&#8217;t they will get immediately notified when a new item is added.  Now you&#8217;ve got a simple queueing system.</p>\n<p>After letting your imagination wander a bit with blocking pop go check out the <a href=\"http://code.google.com/p/redis/wiki/PublishSubscribe\">pub/sub commands</a>. The publish/subscribe (pub/sub) features in Redis allow you to easily listen for updates on a channel.  Other clients can then write updates to those channels.  *Poof* you&#8217;ve now got a simple message passing system.</p>\n<h3>Back to the data</h3>\n<p>I mentioned persistence of data as something that Redis provides.  There are two ways to do that, via snapshots and the append only file.  Both of these allow Redis to reload data after a restart.  Check out the redis.conf file for more details on how these two options work.</p>\n<p>Replication is also available with a master/slave approach.  There is a <a href=\"http://code.google.com/p/redis/wiki/ReplicationHowto\">replication how-to</a>, which is over kill because creating a new slave is wonderfully simple.</p>\n<p>A more recent feature is virtual memory.  This allows Redis to store more data than would fit in physical memory.  Relying on the the virtual memory of the operating system wasn&#8217;t really an option because it would swap out the whole process, where as Redis can be smart about swapping out the least used data.  A reasonable balance of speed with increased capacity.</p>\n<h3>More reading</h3>\n<p>I&#8217;ve really only scratched the surface of what Redis can do in these various areas.  The <a href=\"http://code.google.com/p/redis/wiki/index?tm=6\">documentation page</a> is a good place to pick up more details.  Simon Willison has a great set of slides from his <a href=\"http://simonwillison.net/static/2010/redis-tutorial/\">Redis tutorial</a> that I also recommend reading.</p>\n<h3>Why</h3>\n<p>Redis looks interesting not just for the feature set, but how it works as well.  Operations on data are atomic, backups are done as atomic copies so making backups is as easy as copying a file.  While there are still issues and trade offs in Redis (every system has them), there is also a general feeling of elegant simplicity that appeals to me.</p>\n<p>Who knows, perhaps someday I&#8217;ll even use Redis for something besides tinkering.</p>\n",
+            "content_text": "I like to tinker with different things from time to time.  Not because it is something I&#8217;m using at work, or even using any where at all.  Just to see what others are doing and hopefully learn a few things along the way.  So here are a few notes about tinkering with Redis.\nThe short story\nCreated by Salvatore &#8220;antirez&#8221; Sanfilippo, Redis was first released in March 2009 and is under a BSD style license.\nSuperficially Redis is like memcached in that it is a memory based key/value store.  But it is also much more than that.  Data storage can be persistent and it provides additional data types and operations.\nGetting started in less than 60 seconds\nOn a unix style system (Mac, Linux, FreeBSD, etc.) it takes less than 30 seconds to get Redis up and running:\n\ncurl -O http://redis.googlecode.com/files/redis-2.0.2.tar.gz\ntar -xzvf redis-2.0.2.tar.gz\ncd redis-2.0.2\nmake\n./redis-server\n\nI really like that there are no external dependencies to worry about, just download, build and go.  As an added bonus it comes with a CLI client as well, redis-cli.\nExploring\nThe redis-cli tool makes it easy to explore features of Redis without having to write any code.  I recommend taking a few minutes to walk through the introduction to redis data types page.  After a few minutes going through the examples there you&#8217;ll have a basic idea of the data types: string, integer (special type of string really), lists, sets, and sorted sets and a few of the operations available for each type.  One data type that page doesn&#8217;t cover yet is hashes, which are exactly what they sound like.\nA longer list of supported commands with links is available at http://code.google.com/p/redis/wiki/CommandReference, which is a good resource to explore while playing with Redis.\nBeyond data storage\nFast access to data in formats that developers are familiar with is nice, but that isn&#8217;t the only thing Redis is good for.  First, check out the blocking pop commands.  This allows for one or more clients to block when popping data off an array.  If there is data in the array they immediately get that, and if there isn&#8217;t they will get immediately notified when a new item is added.  Now you&#8217;ve got a simple queueing system.\nAfter letting your imagination wander a bit with blocking pop go check out the pub/sub commands. The publish/subscribe (pub/sub) features in Redis allow you to easily listen for updates on a channel.  Other clients can then write updates to those channels.  *Poof* you&#8217;ve now got a simple message passing system.\nBack to the data\nI mentioned persistence of data as something that Redis provides.  There are two ways to do that, via snapshots and the append only file.  Both of these allow Redis to reload data after a restart.  Check out the redis.conf file for more details on how these two options work.\nReplication is also available with a master/slave approach.  There is a replication how-to, which is over kill because creating a new slave is wonderfully simple.\nA more recent feature is virtual memory.  This allows Redis to store more data than would fit in physical memory.  Relying on the the virtual memory of the operating system wasn&#8217;t really an option because it would swap out the whole process, where as Redis can be smart about swapping out the least used data.  A reasonable balance of speed with increased capacity.\nMore reading\nI&#8217;ve really only scratched the surface of what Redis can do in these various areas.  The documentation page is a good place to pick up more details.  Simon Willison has a great set of slides from his Redis tutorial that I also recommend reading.\nWhy\nRedis looks interesting not just for the feature set, but how it works as well.  Operations on data are atomic, backups are done as atomic copies so making backups is as easy as copying a file.  While there are still issues and trade offs in Redis (every system has them), there is also a general feeling of elegant simplicity that appeals to me.\nWho knows, perhaps someday I&#8217;ll even use Redis for something besides tinkering.",
+            "date_published": "2010-10-13T10:25:25-06:00",
+            "date_modified": "2010-10-13T10:25:25-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "redis",
+                "tinkering",
+                "Posts"
+            ]
+        }
+    ]
+}

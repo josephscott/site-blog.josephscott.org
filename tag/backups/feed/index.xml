@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>backups &#8211; Joseph Scott</title>
+	<atom:link href="/tag/backups/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 21 May 2013 14:52:13 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Bruce Schneier on Backups</title>
+		<link>/2013/05/21/bruce-schneier-on-backups/</link>
+					<comments>/2013/05/21/bruce-schneier-on-backups/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 21 May 2013 14:52:13 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[backups]]></category>
+		<category><![CDATA[bruce-schneier]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=7626</guid>
+
+					<description><![CDATA[Bruce Schneier talking about the importance of backups: Remember the rule: no one ever wants backups, but everyone always wants restores. The smaller or more portable the computing device, the more painful good backups seem to be. Making regular backups of servers isn&#8217;t too bad, and desktops are manageable. Laptops, that is where things start [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Bruce Schneier talking about <a href="http://www.schneier.com/blog/archives/2013/04/the_importance_2.html">the importance of backups</a>:</p>
+<blockquote><p>
+Remember the rule: no one ever wants backups, but everyone always wants restores.
+</p></blockquote>
+<p>The smaller or more portable the computing device, the more painful good backups seem to be.  Making regular backups of servers isn&#8217;t too bad, and desktops are manageable.  Laptops, that is where things start to get icky.  Modern cloud solutions usually end up being a requirement.</p>
+<p>Then we get to tablets and phones.  At that point the only viable backup solution is cloud based.  No one wants to regularly plug their phone or tablet into something else to let it do backups.  This is one of the reasons why the promise of iCloud was so great and not living up to the promise has been so disappointing.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/05/21/bruce-schneier-on-backups/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

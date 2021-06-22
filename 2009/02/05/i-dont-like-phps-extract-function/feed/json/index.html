@@ -1,0 +1,200 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/",
+    "feed_url": "https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: I Don&#8217;t Like PHP&#8217;s extract() Function",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2700",
+            "url": "https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2700",
+            "content_html": "Great point why cause more friction! \n\nI feel if there's a NEED to use extract() through either non-understanding or it's the current practice of the codebase you're working on then at least come up with a convention to name its resulting variables like $extVariable so it's not completely magic especially if it's used hundreds of lines later.",
+            "content_text": "Great point why cause more friction! \n\nI feel if there's a NEED to use extract() through either non-understanding or it's the current practice of the codebase you're working on then at least come up with a convention to name its resulting variables like $extVariable so it's not completely magic especially if it's used hundreds of lines later.",
+            "date_published": "2016-03-04T17:20:59-07:00",
+            "authors": [
+                {
+                    "name": "Leo",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/9989db030670a90dbab102272d764c89?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Leo",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/9989db030670a90dbab102272d764c89?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2699",
+            "url": "https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2699",
+            "content_html": "I think that when we're using MVC, instead of using extract we can call our array $controller and pass it to the template.\n\nWhen someone is reading our code, if we use MVC that person must know that we use MVC. So when he reads he knows that everything related to $controller came from the controller that called to that template. And that's it.",
+            "content_text": "I think that when we're using MVC, instead of using extract we can call our array $controller and pass it to the template.\n\nWhen someone is reading our code, if we use MVC that person must know that we use MVC. So when he reads he knows that everything related to $controller came from the controller that called to that template. And that's it.",
+            "date_published": "2016-02-23T08:18:12-07:00",
+            "authors": [
+                {
+                    "name": "I'm Luis! ^-^",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/92041ac151d5c6489760708e0edbaf5b?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "I'm Luis! ^-^",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/92041ac151d5c6489760708e0edbaf5b?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2698",
+            "url": "https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2698",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2697\">Flaral</a>.\n\nIt isn't less readable when you are debugging something a year later and trying to figure out where <code>$object_four</code> came from.",
+            "content_text": "In reply to Flaral.\n\nIt isn't less readable when you are debugging something a year later and trying to figure out where $object_four came from.",
+            "date_published": "2015-09-30T08:31:32-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "https://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "https://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2697",
+            "url": "https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2697",
+            "content_html": "What about when passing an array of objects?\n\nIt's less readable to do:\n\n$args[\"object_four\"]-&gt;getInfo();\n\nThan to do:\n\nExtract($args);\n\n$object_four-&gt;getInfo();",
+            "content_text": "What about when passing an array of objects?\n\nIt's less readable to do:\n\n$args[\"object_four\"]-&gt;getInfo();\n\nThan to do:\n\nExtract($args);\n\n$object_four-&gt;getInfo();",
+            "date_published": "2015-09-29T23:55:09-06:00",
+            "authors": [
+                {
+                    "name": "Flaral",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/ae55873463aba7e9883d1e28922f5865?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Flaral",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/ae55873463aba7e9883d1e28922f5865?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2696",
+            "url": "https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2696",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2695\">Robert Wilde</a>.\n\nI don't think there is anything preventing the use of <code>list()</code> for that.",
+            "content_text": "In reply to Robert Wilde.\n\nI don't think there is anything preventing the use of list() for that.",
+            "date_published": "2015-09-14T08:37:02-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "https://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "https://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2695",
+            "url": "https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2695",
+            "content_html": "Interested to know if this method of using list() can be used with shortcode_atts().\n\nThis is the most common place I find extract() and where it becomes a annoyance.\n\nThanks for the insight so far, very helpful.",
+            "content_text": "Interested to know if this method of using list() can be used with shortcode_atts().\n\nThis is the most common place I find extract() and where it becomes a annoyance.\n\nThanks for the insight so far, very helpful.",
+            "date_published": "2015-09-13T19:39:54-06:00",
+            "authors": [
+                {
+                    "name": "Robert Wilde",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/9ca638ca19b146a3d4dc3ea7ee270b85?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Robert Wilde",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/9ca638ca19b146a3d4dc3ea7ee270b85?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2694",
+            "url": "https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2694",
+            "content_html": "Hi, very good point. I was used to:\n<code>\n$secured = array();\n$secured = secure_input($_POST);\nextract($secured, EXTR_PREFIX_ALL, 'post');\n</code>\nBecause after that came the insertion into DB. But after reading your opinions it looks to me now really unnecessary to extract. Keep posting such best practices ;)",
+            "content_text": "Hi, very good point. I was used to:\n\n$secured = array();\n$secured = secure_input($_POST);\nextract($secured, EXTR_PREFIX_ALL, 'post');\n\nBecause after that came the insertion into DB. But after reading your opinions it looks to me now really unnecessary to extract. Keep posting such best practices ;)",
+            "date_published": "2014-05-15T05:13:09-06:00",
+            "authors": [
+                {
+                    "name": "Michal Zuber",
+                    "url": "http://michalzuber.wordpress.com/",
+                    "avatar": "https://secure.gravatar.com/avatar/9a9f49389aaad182d8e8645a0a65e764?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Michal Zuber",
+                "url": "http://michalzuber.wordpress.com/",
+                "avatar": "https://secure.gravatar.com/avatar/9a9f49389aaad182d8e8645a0a65e764?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2693",
+            "url": "https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2693",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2692\">jagall</a>.\n\nThe extract() function expects an array.  Looks like you are calling it with some other data type.",
+            "content_text": "In reply to jagall.\n\nThe extract() function expects an array.  Looks like you are calling it with some other data type.",
+            "date_published": "2012-06-24T15:33:45-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2692",
+            "url": "https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2692",
+            "content_html": "Hi guys, I am getting this error in a log file in my cache folder which is created each time a page is loaded:\n\nPHP Warning:  extract() [<a href=\"function.extract\" rel=\"nofollow\">function.extract</a>]: First argument should be an array in ......\n\nHas anybody any ideas, as I am stumped. Not a programmer so you know.\nCheers",
+            "content_text": "Hi guys, I am getting this error in a log file in my cache folder which is created each time a page is loaded:\n\nPHP Warning:  extract() [function.extract]: First argument should be an array in ......\n\nHas anybody any ideas, as I am stumped. Not a programmer so you know.\nCheers",
+            "date_published": "2012-06-21T15:33:02-06:00",
+            "authors": [
+                {
+                    "name": "jagall",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/36cebdebc2adef1ac14b17e3d28353f9?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "jagall",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/36cebdebc2adef1ac14b17e3d28353f9?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2691",
+            "url": "https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2691",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2009/02/05/i-dont-like-phps-extract-function/#comment-2682\">David Brewer</a>.\n\nDitto this approach. I do this all the time, without the array_fill magic:\n\n<code>$name_first = $name_last = $name_middle = $name_suffix = $name_prefix = null;\nextract($person, EXTR_IF_EXISTS);\n</code>\n\nThe ones which do it without pre-declaring the vars it feel a little scary to me.",
+            "content_text": "In reply to David Brewer.\n\nDitto this approach. I do this all the time, without the array_fill magic:\n\n$name_first = $name_last = $name_middle = $name_suffix = $name_prefix = null;\nextract($person, EXTR_IF_EXISTS);\n\n\nThe ones which do it without pre-declaring the vars it feel a little scary to me.",
+            "date_published": "2011-05-16T15:15:57-06:00",
+            "authors": [
+                {
+                    "name": "Kent Davidson",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/f740e98279c1b9de00060d43df5465ba?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Kent Davidson",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/f740e98279c1b9de00060d43df5465ba?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

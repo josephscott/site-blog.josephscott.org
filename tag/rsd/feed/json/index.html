@@ -1,0 +1,37 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/rsd/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/rsd/",
+    "feed_url": "https://blog.josephscott.org/tag/rsd/feed/json/",
+    "language": "en-US",
+    "title": "rsd &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://josephscott.org/?p=1009",
+            "url": "https://blog.josephscott.org/2009/03/23/slow-loading-rsd-urls-in-wordpress/",
+            "title": "Slow Loading RSD URLs In WordPress",
+            "content_html": "<p>A common mechanism for XML-RPC clients to find out information about your WordPress blog is to look for the <a href=\"http://cyber.law.harvard.edu/blogs/gems/tech/rsd.html\">Really Simple Discovery (RSD)</a> URL.  The RSD contains information about the available APIs that WordPress supports.  A typical discovery process would look something like this:</p>\n<ol>\n<li>Request your blog URL, http://example.com/ and look for the RSD link element</li>\n<li>Request the RSD URL and parse the provided info</li>\n<li>Determine which API information to use</li>\n<li>Communicate with your blog via the determined API</li>\n</ol>\n<p>On rare occasions I&#8217;ve seen reports where the RSD URL (which looks like http://example.com/xmlrpc.php?rsd in WordPress) will take a very long time to load (3 minutes or more) even though the rest of the site responds very quickly.  This can cause problems for XML-RPC clients (like the <a href=\"http://iphone.wordpress.org/\">WordPress iPhone app</a>) if they timeout trying to get the RSD data.  The reports of this problem were few and far between, without much of a common thread.  Until today.</p>\n<p><a href=\"http://core.trac.wordpress.org/ticket/9380\">Ticket 9380</a> showed up earlier today, reported by foks.  Foks noticed that the SSL check being done when the RSD URL was requested didn&#8217;t have a timeout set, so if the conditions were just right it will wait for the system level timeout before failing.  That explained why the RSD request would take so long in some cases.  If you&#8217;ve run into this problem you can use the trivial one line patch or grab a copy of the <a href=\"http://core.trac.wordpress.org/browser/branches/2.7/wp-includes/functions.php?rev=10831\">wp-includes/functions.php</a> file from the WordPress 2.7.x branch at <a href=\"http://core.trac.wordpress.org/browser/branches/2.7/wp-includes/functions.php?rev=10831&amp;format=txt\">http://core.trac.wordpress.org/browser/branches/2.7/wp-includes/functions.php?rev=10831&amp;format=txt</a> and try it out.</p>\n<p>This fix has been applied to both the 2.7.x branch (meaning it will be part of a 2.7.2 release if there is one) and -trunk (meaning it will be part of the upcoming 2.8 release).</p>\n",
+            "content_text": "A common mechanism for XML-RPC clients to find out information about your WordPress blog is to look for the Really Simple Discovery (RSD) URL.  The RSD contains information about the available APIs that WordPress supports.  A typical discovery process would look something like this:\n\nRequest your blog URL, http://example.com/ and look for the RSD link element\nRequest the RSD URL and parse the provided info\nDetermine which API information to use\nCommunicate with your blog via the determined API\n\nOn rare occasions I&#8217;ve seen reports where the RSD URL (which looks like http://example.com/xmlrpc.php?rsd in WordPress) will take a very long time to load (3 minutes or more) even though the rest of the site responds very quickly.  This can cause problems for XML-RPC clients (like the WordPress iPhone app) if they timeout trying to get the RSD data.  The reports of this problem were few and far between, without much of a common thread.  Until today.\nTicket 9380 showed up earlier today, reported by foks.  Foks noticed that the SSL check being done when the RSD URL was requested didn&#8217;t have a timeout set, so if the conditions were just right it will wait for the system level timeout before failing.  That explained why the RSD request would take so long in some cases.  If you&#8217;ve run into this problem you can use the trivial one line patch or grab a copy of the wp-includes/functions.php file from the WordPress 2.7.x branch at http://core.trac.wordpress.org/browser/branches/2.7/wp-includes/functions.php?rev=10831&amp;format=txt and try it out.\nThis fix has been applied to both the 2.7.x branch (meaning it will be part of a 2.7.2 release if there is one) and -trunk (meaning it will be part of the upcoming 2.8 release).",
+            "date_published": "2009-03-23T15:52:51-06:00",
+            "date_modified": "2009-03-23T15:52:51-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "rsd",
+                "WordPress",
+                "xml-rpc",
+                "Posts"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>basic-auth &#8211; Joseph Scott</title>
+	<atom:link href="/tag/basic-auth/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 07 Jun 2011 15:48:03 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>HTTP Basic Auth with httplib2</title>
+		<link>/2011/06/07/http-basic-auth-with-httplib2/</link>
+					<comments>/2011/06/07/http-basic-auth-with-httplib2/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 07 Jun 2011 15:48:03 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[basic-auth]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[httplib2]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4075</guid>
+
+					<description><![CDATA[While working on pressfs I ran into an issue with httplib2 using HTTP Basic Authentication. Here is some example code: [sourcecode lang=&#8221;python&#8221;] import httplib2 if __name__ == &#8216;__main__&#8217; : httplib2.debuglevel = 1 h = httplib2.Http() h.add_credentials( &#8216;username&#8217;, &#8216;password&#8217; ) resp, content = h.request( &#8216;http://www.google.com/&#8217;, &#8216;GET&#8217; ) [/sourcecode] If you run this you&#8217;ll notice that httplib2 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>While working on <a href="http://josephscott.org/archives/2011/05/pressfs-a-wordpress-filesystem/">pressfs</a> I ran into an issue with <a href="http://code.google.com/p/httplib2/">httplib2</a> using <a href="http://www.faqs.org/rfcs/rfc2617.html">HTTP Basic Authentication</a>.</p>
+<p>Here is some example code:</p>
+<p>[sourcecode lang=&#8221;python&#8221;]<br />
+import httplib2</p>
+<p>if __name__ == &#8216;__main__&#8217; :<br />
+    httplib2.debuglevel = 1</p>
+<p>    h = httplib2.Http()<br />
+    h.add_credentials( &#8216;username&#8217;, &#8216;password&#8217; )</p>
+<p>    resp, content = h.request( &#8216;http://www.google.com/&#8217;, &#8216;GET&#8217; )<br />
+[/sourcecode]</p>
+<p>If you run this you&#8217;ll notice that httplib2 doesn&#8217;t actually include the HTTP Basic Auth details in the request, even though the code specifically asks it to do so.  By design it will always make one request with no authentication details and then check to see if it gets an HTTP 401 Unauthorized response back.  If and only if it gets a 401 response back will it then make a second request that includes the authentication data.</p>
+<p>Bottom line, I didn&#8217;t want to make two HTTP requests when only one was needed (huge performance hit).  There is no option to force the authentication header to be sent on the first request, so you have to do it manually:</p>
+<p>[sourcecode lang=&#8221;python&#8221;]<br />
+import base64<br />
+import httplib2</p>
+<p>if __name__ == &#8216;__main__&#8217; :<br />
+    httplib2.debuglevel = 1</p>
+<p>    h = httplib2.Http()<br />
+    auth = base64.encodestring( &#8216;username&#8217; + &#8216;:&#8217; + &#8216;password&#8217; )</p>
+<p>    resp, content = h.request(<br />
+        &#8216;http://www.google.com/&#8217;,<br />
+        &#8216;GET&#8217;,<br />
+        headers = { &#8216;Authorization&#8217; : &#8216;Basic &#8216; + auth }<br />
+    )<br />
+[/sourcecode]</p>
+<p>Watching the output of this you&#8217;ll see the authentication header in the request.</p>
+<p>Someone else already opened an issue about this ( <a href="http://code.google.com/p/httplib2/issues/detail?id=130#makechanges">Issue 130</a> ), unfortunately Joe Gregorio has indicated that he has no intention of ever fixing this <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>On the up side, working around this deficiency only takes a little bit of extra code.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/06/07/http-basic-auth-with-httplib2/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

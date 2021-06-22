@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>jo &#8211; Joseph Scott</title>
+	<atom:link href="/tag/jo/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 14 Mar 2016 17:11:28 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>jo, Create JSON On The Command Line</title>
+		<link>/2016/03/14/jo-create-json-on-the-command-line/</link>
+					<comments>/2016/03/14/jo-create-json-on-the-command-line/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 14 Mar 2016 17:11:28 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[jo]]></category>
+		<category><![CDATA[json]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=15481</guid>
+
+					<description><![CDATA[Do you remember jq, the tool that makes it easy it parse JSON on the command line? Have you ever wondered what the opposite of jq would be? The answer is jo. It simplifies the process of creating JSON on the command line. Here is one of the simple examples the author listed: > jo [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Do you remember <a href="https://josephscott.org/archives/2013/03/jq-command-line-json-processor/">jq</a>, the tool that makes it easy it parse JSON on the command line?  Have you ever wondered what the opposite of jq would be?</p>
+<p>The answer is <a href="http://jpmens.net/2016/03/05/a-shell-command-to-create-json-jo/">jo</a>.  It simplifies the process of creating JSON on the command line.  Here is one of the simple examples the author listed:</p>
+<pre>
+> jo time=$(date +%s) dir=$HOME
+{"time":1457195712,"dir":"/Users/jpm"}
+</pre>
+<p>Along with a more interesting one:</p>
+<pre>
+> jo -p name=JP object=$(jo fruit=Orange point=$(jo x=10 y=20) number=17) sunday=false
+{
+   "name": "JP",
+   "object": {
+      "fruit": "Orange",
+      "point": {
+         "x": 10,
+         "y": 20
+      },
+      "number": 17
+   },
+   "sunday": false
+}
+</pre>
+<p>This would be handy for writing to <a href="https://josephscott.org/archives/2016/03/json-lines/">JSON Lines</a> log files.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/03/14/jo-create-json-on-the-command-line/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

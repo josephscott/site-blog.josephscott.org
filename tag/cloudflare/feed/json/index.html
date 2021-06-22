@@ -1,0 +1,90 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/cloudflare/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/cloudflare/",
+    "feed_url": "https://blog.josephscott.org/tag/cloudflare/feed/json/",
+    "language": "en-US",
+    "title": "cloudflare &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/?p=17259",
+            "url": "https://blog.josephscott.org/2019/01/22/cloudflare-injected-javascript/",
+            "title": "Cloudflare Injected JavaScript",
+            "content_html": "<p>I was surprised while looking at a site using the <a href=\"https://www.cloudflare.com/\">Cloudflare CDN</a> to see a piece of JavaScript I hadn&#8217;t come across before: <code>/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js</code></p>\n<p>Cloudflare has a feature called &#8220;Scrape Shield&#8221; that looks for pages with email addresses in them, then automatically injects this JavaScript to obfuscate the addresses.  The idea is to reduce the risk that bots will harvest the email address for spam.  This feature is turned out by default.</p>\n<p>Turning it off ( if you want to do that ) is easy enough:</p>\n<p><a href=\"https://blog.josephscott.org/wp-content/uploads/2019/01/scrape-shield.png\"><img loading=\"lazy\" src=\"https://blog.josephscott.org/wp-content/uploads/2019/01/scrape-shield-1024x334.png\" alt=\"\" width=\"788\" height=\"257\" class=\"aligncenter size-large wp-image-17289\" srcset=\"https://blog.josephscott.org/wp-content/uploads/2019/01/scrape-shield-1024x334.png 1024w, https://blog.josephscott.org/wp-content/uploads/2019/01/scrape-shield-300x98.png 300w, https://blog.josephscott.org/wp-content/uploads/2019/01/scrape-shield-768x250.png 768w, https://blog.josephscott.org/wp-content/uploads/2019/01/scrape-shield-788x257.png 788w\" sizes=\"(max-width: 788px) 100vw, 788px\" /></a></p>\n<p>There are more details at <a href=\"https://support.cloudflare.com/hc/en-us/articles/200170016-What-is-Email-Address-Obfuscation-\">https://support.cloudflare.com/hc/en-us/articles/200170016-What-is-Email-Address-Obfuscation-</a> on how this works.</p>\n",
+            "content_text": "I was surprised while looking at a site using the Cloudflare CDN to see a piece of JavaScript I hadn&#8217;t come across before: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js\nCloudflare has a feature called &#8220;Scrape Shield&#8221; that looks for pages with email addresses in them, then automatically injects this JavaScript to obfuscate the addresses.  The idea is to reduce the risk that bots will harvest the email address for spam.  This feature is turned out by default.\nTurning it off ( if you want to do that ) is easy enough:\n\nThere are more details at https://support.cloudflare.com/hc/en-us/articles/200170016-What-is-Email-Address-Obfuscation- on how this works.",
+            "date_published": "2019-01-22T15:12:38-07:00",
+            "date_modified": "2019-01-22T15:12:38-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "cloudflare",
+                "email"
+            ]
+        },
+        {
+            "id": "https://blog.josephscott.org/?p=16795",
+            "url": "https://blog.josephscott.org/2018/07/03/cloudflare-workers-to-support-webassembly/",
+            "title": "Cloudflare Workers To Support WebAssembly",
+            "content_html": "<p>A recent <a href=\"https://news.ycombinator.com/item?id=17445602\">thread on Hacker News discussing Cloudflare Workers</a> brought up an interesting item from <a href=\"https://twitter.com/KentonVarda?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor\">Kenton Varda</a>, tech lead for their Workers service ( <a href=\"https://blog.josephscott.org/wp-content/uploads/2018/07/cloudflare-wasm.png\">#</a> ):</p>\n<blockquote><p>\nOn another note, currently we only support JavaScript, but we&#8217;re putting the finishing touches on WebAssembly support, which would let you run Go on Workers&#8230; stay tuned.\n</p></blockquote>\n<p>The context was using <a href=\"https://golang.org/\">Go</a> for Cloudflare Workers, but supporting WASM ( WebAssembly ) potentially opens the door to a broader range of programming languages.</p>\n<p>There is a list at <a href=\"https://github.com/appcypher/awesome-wasm-langs\">https://github.com/appcypher/awesome-wasm-langs</a> with references for 30 different languages with projects to target WASM.</p>\n",
+            "content_text": "A recent thread on Hacker News discussing Cloudflare Workers brought up an interesting item from Kenton Varda, tech lead for their Workers service ( # ):\n\nOn another note, currently we only support JavaScript, but we&#8217;re putting the finishing touches on WebAssembly support, which would let you run Go on Workers&#8230; stay tuned.\n\nThe context was using Go for Cloudflare Workers, but supporting WASM ( WebAssembly ) potentially opens the door to a broader range of programming languages.\nThere is a list at https://github.com/appcypher/awesome-wasm-langs with references for 30 different languages with projects to target WASM.",
+            "date_published": "2018-07-03T13:25:37-06:00",
+            "date_modified": "2018-07-03T13:25:37-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "cloudflare",
+                "kenton-varda",
+                "webassembly"
+            ]
+        },
+        {
+            "id": "https://josephscott.org/?p=14048",
+            "url": "https://blog.josephscott.org/2015/11/20/brotli-for-nginx/",
+            "title": "Brotli for Nginx",
+            "content_html": "<p>Two months ago Google announced <a href=\"http://google-opensource.blogspot.com/2015/09/introducing-brotli-new-compression.html\">Brotli</a>, a new compression format:</p>\n<blockquote><p>\nBrotli is a whole new data format. This new format allows us to get 20\u201326% higher compression ratios over Zopfli. In our study \u2018Comparison of Brotli, Deflate, Zopfli, LZMA, LZHAM and Bzip2 Compression Algorithms\u2019 we show that Brotli is roughly as fast as zlib\u2019s Deflate implementation. At the same time, it compresses slightly more densely than LZMA and bzip2 on the Canterbury corpus. The higher data density is achieved by a 2nd order context modeling, re-use of entropy codes, larger memory window of past data and joint distribution codes. Just like Zopfli, the new algorithm is named after Swiss bakery products. Br\u00f6tli means \u2018small bread\u2019 in Swiss German.\n</p></blockquote>\n<p>Compression is a big deal for web performance, being able to send the same file with fewer bytes is a big win.</p>\n<p>There are now two Nginx modules for supporting Brotli compression: <a href=\"https://github.com/google/ngx_brotli\">ngx_brotli from Google</a> and <a href=\"https://github.com/cloudflare/ngx_brotli_module\">ngx_brotli_module from CloudFlare</a>.</p>\n",
+            "content_text": "Two months ago Google announced Brotli, a new compression format:\n\nBrotli is a whole new data format. This new format allows us to get 20\u201326% higher compression ratios over Zopfli. In our study \u2018Comparison of Brotli, Deflate, Zopfli, LZMA, LZHAM and Bzip2 Compression Algorithms\u2019 we show that Brotli is roughly as fast as zlib\u2019s Deflate implementation. At the same time, it compresses slightly more densely than LZMA and bzip2 on the Canterbury corpus. The higher data density is achieved by a 2nd order context modeling, re-use of entropy codes, larger memory window of past data and joint distribution codes. Just like Zopfli, the new algorithm is named after Swiss bakery products. Br\u00f6tli means \u2018small bread\u2019 in Swiss German.\n\nCompression is a big deal for web performance, being able to send the same file with fewer bytes is a big win.\nThere are now two Nginx modules for supporting Brotli compression: ngx_brotli from Google and ngx_brotli_module from CloudFlare.",
+            "date_published": "2015-11-20T09:15:55-07:00",
+            "date_modified": "2015-11-20T09:15:55-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "brotli",
+                "cloudflare",
+                "compression",
+                "google",
+                "nginx",
+                "Posts"
+            ]
+        }
+    ]
+}

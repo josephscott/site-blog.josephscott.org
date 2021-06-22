@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Remembering To Document Everything	</title>
+	<atom:link href="/2005/12/02/remembering-to-document-everything/feed/" rel="self" type="application/rss+xml" />
+	<link>/2005/12/02/remembering-to-document-everything/</link>
+	<description></description>
+	<lastBuildDate>Tue, 20 Dec 2005 20:33:11 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Jim Vanderveen		</title>
+		<link>/2005/12/02/remembering-to-document-everything/#comment-1050</link>
+
+		<dc:creator><![CDATA[Jim Vanderveen]]></dc:creator>
+		<pubDate>Tue, 20 Dec 2005 20:33:11 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=527#comment-1050</guid>
+
+					<description><![CDATA[Actually, I would call that a poorly-named function. Instead of &lt;code&gt;comment-check()&lt;/code&gt;, perhaps a more meaningful (and self-documenting) name would have been &lt;code&gt;comment-is-spam()&lt;/code&gt;.]]></description>
+			<content:encoded><![CDATA[<p>Actually, I would call that a poorly-named function. Instead of <code>comment-check()</code>, perhaps a more meaningful (and self-documenting) name would have been <code>comment-is-spam()</code>.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

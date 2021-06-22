@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>proxy &#8211; Joseph Scott</title>
+	<atom:link href="/tag/proxy/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 04 Mar 2011 21:03:54 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>autotunnel</title>
+		<link>/2011/03/04/autotunnel/</link>
+					<comments>/2011/03/04/autotunnel/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 04 Mar 2011 21:03:54 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[autotunnel]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[proxy]]></category>
+		<category><![CDATA[ssh]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3705</guid>
+
+					<description><![CDATA[This is a set of scripts for OS X that will automatically connect your SSH SOCKS proxy when you switch to a SOCKS-enabled Network Location. Basically, we add a LaunchAgent to detect when your active Network Location profile has changed. If set to a SOCKS-enabled profile, it enables another LaunchAgent to start an autossh session. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+This is a set of scripts for OS X that will automatically connect your SSH SOCKS proxy when you switch to a SOCKS-enabled Network Location.</p>
+<p>Basically, we add a LaunchAgent to detect when your active Network Location profile has changed. If set to a SOCKS-enabled profile, it enables another LaunchAgent to start an autossh session.  If changed to a non-SOCKS profile, we disable that LaunchAgent, stopping autossh. Easy peezy.
+</p></blockquote>
+<p><a href='https://github.com/lhl/autotunnel'>lhl/autotunnel &#8211; GitHub</a></p>
+<p>I like the idea of using the network location to manage making the right ssh connections for a SOCKS proxy to work automatically.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/03/04/autotunnel/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Charles Web Debugging Proxy</title>
+		<link>/2010/11/09/charles-web-debugging-proxy/</link>
+					<comments>/2010/11/09/charles-web-debugging-proxy/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 09 Nov 2010 15:54:48 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[charles]]></category>
+		<category><![CDATA[fiddler]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[https]]></category>
+		<category><![CDATA[proxy]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3117</guid>
+
+					<description><![CDATA[Charles &#8211; cross platform HTTP/HTTPS proxy for debugging web requests on your own system. I wonder how this compares to Fiddler.]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.charlesproxy.com/">Charles</a> &#8211; cross platform HTTP/HTTPS proxy for debugging web requests on your own system.  I wonder how this compares to <a href="http://www.fiddler2.com/fiddler2/">Fiddler</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/11/09/charles-web-debugging-proxy/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

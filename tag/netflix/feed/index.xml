@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>netflix &#8211; Joseph Scott</title>
+	<atom:link href="/tag/netflix/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 21 Dec 2015 16:59:02 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>The First Minute</title>
+		<link>/2015/12/21/the-first-minute/</link>
+					<comments>/2015/12/21/the-first-minute/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 21 Dec 2015 16:59:02 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[netflix]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14459</guid>
+
+					<description><![CDATA[Netflix gives an answer to the question &#8220;You login to a Linux server with a performance issue: what do you check in the first minute?&#8221; in Linux Performance Analysis in 60,000 Milliseconds. The short version: uptime dmesg &#124; tail vmstat 1 mpstat -P ALL 1 pidstat 1 iostat -xz 1 free -m sar -n DEV [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Netflix gives an answer to the question &#8220;You login to a Linux server with a performance issue: what do you check in the first minute?&#8221; in <a href="http://techblog.netflix.com/2015/11/linux-performance-analysis-in-60s.html">Linux Performance Analysis in 60,000 Milliseconds</a>.</p>
+<p>The short version:</p>
+<blockquote><p>
+uptime<br />
+dmesg | tail<br />
+vmstat 1<br />
+mpstat -P ALL 1<br />
+pidstat 1<br />
+iostat -xz 1<br />
+free -m<br />
+sar -n DEV 1<br />
+sar -n TCP,ETCP 1<br />
+top
+</p></blockquote>
+<p>They provide a short discussion on each tool.</p>
+<p>Anything else you would add?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/21/the-first-minute/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Netflix &#038; FreeBSD</title>
+		<link>/2015/08/27/netflix-freebsd/</link>
+					<comments>/2015/08/27/netflix-freebsd/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 27 Aug 2015 14:01:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[netflix]]></category>
+		<category><![CDATA[video]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10996</guid>
+
+					<description><![CDATA[The Netflix Open Connect Appliances installed at ISPs are built on FreeBSD.]]></description>
+										<content:encoded><![CDATA[<a href="/2015/08/27/netflix-freebsd/"><img src="/wp-content/plugins/wp-youtube-lyte/lyteCache.php?origThumbUrl=%2F%2Fi.ytimg.com%2Fvi%2FFL5U4wr86L4%2Fhqdefault.jpg" alt="YouTube Video"></a><br /><br /></p>
+<p>The Netflix <a href="https://openconnect.netflix.com/software/">Open Connect Appliance</a>s installed at ISPs are built on FreeBSD.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/08/27/netflix-freebsd/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Netflix Now Showing Gumby SciFi</title>
+		<link>/2012/04/03/netflix-now-showing-gumby-scifi/</link>
+					<comments>/2012/04/03/netflix-now-showing-gumby-scifi/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 03 Apr 2012 15:34:49 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[gumby]]></category>
+		<category><![CDATA[netflix]]></category>
+		<category><![CDATA[science-fiction]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=5612</guid>
+
+					<description><![CDATA[This is the Science Fiction and Fantasy section of my Netflix account: Granted a movie staring talking balls of clay is pretty fantastic, but I don&#8217;t think I&#8217;d put it in the realm of &#8220;SciFi &#038; Fantasy&#8221;. Then again, you&#8217;ve got Babe in there as well, so perhaps it is my perception of what SciFi [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>This is the Science Fiction and Fantasy section of my Netflix account:</p>
+<figure style="width: 512px" class="wp-caption alignnone"><img loading="lazy" alt="Gumby SciFi on Netflix" src="https://lh5.googleusercontent.com/-JFmNeBdcqgI/T3mzKHIXErI/AAAAAAAAAXs/_7mSFo3Qjes/s1024/Screen%2520shot%25202012-04-02%2520at%25208.08.54%2520AM.png" title="Gumby SciFi on Netflix" width="512" height="135" /><figcaption class="wp-caption-text">Gumby SciFi on Netflix</figcaption></figure>
+<p>Granted a movie staring talking balls of clay is pretty fantastic, but I don&#8217;t think I&#8217;d put it in the realm of &#8220;SciFi &#038; Fantasy&#8221;.  Then again,  you&#8217;ve got Babe in there as well, so perhaps it is my perception of what SciFi &#038; Fantasy is that is off ;-).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/04/03/netflix-now-showing-gumby-scifi/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Consumer group wants to tax Netflix to pay for rural broadband</title>
+		<link>/2011/02/25/consumer-group-wants-to-tax-netflix-to-pay-for-rural-broadband/</link>
+					<comments>/2011/02/25/consumer-group-wants-to-tax-netflix-to-pay-for-rural-broadband/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 25 Feb 2011 22:02:07 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[broadband]]></category>
+		<category><![CDATA[netflix]]></category>
+		<category><![CDATA[taxes]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3638</guid>
+
+					<description><![CDATA[Consumer group wants to tax Netflix to pay for rural broadband &#8211; doesn&#8217;t make any sense to me. This would be like taxing people extra who use the most long distance minutes, even though they already pay to use those minutes.]]></description>
+										<content:encoded><![CDATA[<p><a href="http://thehill.com/blogs/hillicon-valley/technology/145915-consumer-group-tax-netflix-to-pay-for-rural-broadband">Consumer group wants to tax Netflix to pay for rural broadband</a> &#8211; doesn&#8217;t make any sense to me.  This would be like taxing people extra who use the most long distance minutes, even though they already pay to use those minutes.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/02/25/consumer-group-wants-to-tax-netflix-to-pay-for-rural-broadband/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

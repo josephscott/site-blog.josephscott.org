@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>joe-gregorio &#8211; Joseph Scott</title>
+	<atom:link href="/tag/joe-gregorio/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 06 Jan 2010 21:24:19 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Joe Gregorio on AtomPub and XML</title>
+		<link>/2010/01/06/joe-gregorio-on-atompub-and-xml/</link>
+					<comments>/2010/01/06/joe-gregorio-on-atompub-and-xml/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 06 Jan 2010 21:24:19 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[atompub]]></category>
+		<category><![CDATA[joe-gregorio]]></category>
+		<category><![CDATA[json]]></category>
+		<category><![CDATA[xml]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1695</guid>
+
+					<description><![CDATA[In a follow up comment on his WebFinger post Joe Gregorio gives some perspective on AtomPub and XML: Look, AtomPub has this problem, and if I had to do it all over again I would build AtomPub in JSON. An implementer wants to go from bits on the wire to a native data structure they [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>In a <a href="http://bitworking.org/news/2010/01/webfinger#IDComment50460759">follow up comment on his WebFinger post</a> Joe Gregorio gives some perspective on AtomPub and XML:</p>
+<blockquote><p>
+Look, AtomPub has this problem, and if I had to do it all over again I would build AtomPub in JSON. An implementer wants to go from bits on the wire to a native data structure they can interact with in their programming language. I used to think that was laziness, or lack of knowledge, but it&#8217;s purely pragmatic. By using XML you have introduced a layer of indirection, you&#8217;ve taken a data structure and converted it into a tree based document which then has to be converted back into a native data structure, but now that has to be done on a per language basis.
+</p></blockquote>
+<p>I&#8217;m in the lazy/pragmatic camp <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>I really don’t want documents to describe data, I just want a nice way to serialize the data and right now my favored way of doing that is <a href="http://www.json.org/">JSON</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/01/06/joe-gregorio-on-atompub-and-xml/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

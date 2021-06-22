@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Database Indexes on Domain Names	</title>
+	<atom:link href="/2010/02/23/database-indexes-on-domain-names/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/02/23/database-indexes-on-domain-names/</link>
+	<description></description>
+	<lastBuildDate>Wed, 24 Feb 2010 16:09:52 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/02/23/database-indexes-on-domain-names/#comment-3252</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 24 Feb 2010 16:09:52 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1935#comment-3252</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/02/23/database-indexes-on-domain-names/#comment-3251&quot;&gt;Angelo Mandato&lt;/a&gt;.
+
+There definitely more tests that could be done in this area, but I think you&#039;ll find the same general rule of LIKE &#039;%blahblahblah&#039; being slower than LIKE &#039;blahblahblah%&#039; will apply.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/02/23/database-indexes-on-domain-names/#comment-3251">Angelo Mandato</a>.</p>
+<p>There definitely more tests that could be done in this area, but I think you&#8217;ll find the same general rule of LIKE &#8216;%blahblahblah&#8217; being slower than LIKE &#8216;blahblahblah%&#8217; will apply.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Angelo Mandato		</title>
+		<link>/2010/02/23/database-indexes-on-domain-names/#comment-3251</link>
+
+		<dc:creator><![CDATA[Angelo Mandato]]></dc:creator>
+		<pubDate>Wed, 24 Feb 2010 13:55:32 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1935#comment-3251</guid>
+
+					<description><![CDATA[I believe only the first X characters in a VARCHAR are indexed, which explains why you may find that your query is more efficient reversed like it is. I would recommend doing some testing with very large domain names and many more records. Don&#039;t forget the MySQL server&#039;s index cache size is a factor, if the table has way more VARCHAR indexes than the cache can store then it will still do a full scan.]]></description>
+			<content:encoded><![CDATA[<p>I believe only the first X characters in a VARCHAR are indexed, which explains why you may find that your query is more efficient reversed like it is. I would recommend doing some testing with very large domain names and many more records. Don&#8217;t forget the MySQL server&#8217;s index cache size is a factor, if the table has way more VARCHAR indexes than the cache can store then it will still do a full scan.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/02/23/database-indexes-on-domain-names/#comment-3250</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 24 Feb 2010 06:43:19 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1935#comment-3250</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/02/23/database-indexes-on-domain-names/#comment-3249&quot;&gt;Artem Russakovskii&lt;/a&gt;.
+
+I&#039;d expect a full index scan to be faster than a full table scan in most cases, but yes, it will still be noticeably slower than an index lookup.
+
+PostgreSQL supports functional indexes - http://www.postgresql.org/docs/8.4/static/sql-createindex.html - by allowing you to include an expression in CREATE INDEX.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/02/23/database-indexes-on-domain-names/#comment-3249">Artem Russakovskii</a>.</p>
+<p>I&#8217;d expect a full index scan to be faster than a full table scan in most cases, but yes, it will still be noticeably slower than an index lookup.</p>
+<p>PostgreSQL supports functional indexes &#8211; <a href="http://www.postgresql.org/docs/8.4/static/sql-createindex.html" rel="nofollow ugc">http://www.postgresql.org/docs/8.4/static/sql-createindex.html</a> &#8211; by allowing you to include an expression in CREATE INDEX.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Artem Russakovskii		</title>
+		<link>/2010/02/23/database-indexes-on-domain-names/#comment-3249</link>
+
+		<dc:creator><![CDATA[Artem Russakovskii]]></dc:creator>
+		<pubDate>Wed, 24 Feb 2010 06:39:14 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1935#comment-3249</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/02/23/database-indexes-on-domain-names/#comment-3248&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+Yeah, either way all would be slow unless you use this solution or go more advanced.
+
+As far as I remember, PostgreSQL supports functional indexes and MySQL definitely doesn&#039;t.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/02/23/database-indexes-on-domain-names/#comment-3248">Joseph Scott</a>.</p>
+<p>Yeah, either way all would be slow unless you use this solution or go more advanced.</p>
+<p>As far as I remember, PostgreSQL supports functional indexes and MySQL definitely doesn&#8217;t.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/02/23/database-indexes-on-domain-names/#comment-3248</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 24 Feb 2010 06:35:32 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1935#comment-3248</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/02/23/database-indexes-on-domain-names/#comment-3247&quot;&gt;Artem Russakovskii&lt;/a&gt;.
+
+I&#039;d need to go back and review query plans for different database systems, but I believe in some they will use the index.  Now when I say &quot;use the index&quot; it&#039;s often not in the way you think, they will do a full index scan.  That&#039;s not the same as doing an index lookup.
+
+MySQL indexes are fairly primitive.  For instance as far as I know there&#039;s no support for functional indexes.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/02/23/database-indexes-on-domain-names/#comment-3247">Artem Russakovskii</a>.</p>
+<p>I&#8217;d need to go back and review query plans for different database systems, but I believe in some they will use the index.  Now when I say &#8220;use the index&#8221; it&#8217;s often not in the way you think, they will do a full index scan.  That&#8217;s not the same as doing an index lookup.</p>
+<p>MySQL indexes are fairly primitive.  For instance as far as I know there&#8217;s no support for functional indexes.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Artem Russakovskii		</title>
+		<link>/2010/02/23/database-indexes-on-domain-names/#comment-3247</link>
+
+		<dc:creator><![CDATA[Artem Russakovskii]]></dc:creator>
+		<pubDate>Wed, 24 Feb 2010 06:25:30 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1935#comment-3247</guid>
+
+					<description><![CDATA[That&#039;s a pretty good idea, though it&#039;s an old trick in the book. But tell me, what database would use an index for a &#039;%foo&#039; query?
+
+As far as I know, no index supports that and the only way to do that would be to go with either FULLTEXT search (in which case you&#039;re stuck with MyISAM and the query would look different) or go for a separate solution, such as Solr or sphinx.]]></description>
+			<content:encoded><![CDATA[<p>That&#8217;s a pretty good idea, though it&#8217;s an old trick in the book. But tell me, what database would use an index for a &#8216;%foo&#8217; query?</p>
+<p>As far as I know, no index supports that and the only way to do that would be to go with either FULLTEXT search (in which case you&#8217;re stuck with MyISAM and the query would look different) or go for a separate solution, such as Solr or sphinx.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

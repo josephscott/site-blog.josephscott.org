@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>xiao-yu &#8211; Joseph Scott</title>
+	<atom:link href="/tag/xiao-yu/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 16 Oct 2014 15:53:46 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>perfmap</title>
+		<link>/2014/10/16/perfmap/</link>
+					<comments>/2014/10/16/perfmap/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 16 Oct 2014 15:53:46 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[perfmap]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[xiao-yu]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11195</guid>
+
+					<description><![CDATA[Xiao Yu mentioned perfmap at work last week: A bookmarklet to create a front-end performance heatmap of resources loaded in the browser using the Resource Timing API. A browser with support for the Resource Timing API is required. It gives you a quick way to see how far into the page load images on the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.xyu.io/">Xiao Yu</a> mentioned <a href="https://github.com/zeman/perfmap">perfmap</a> at work last week:</p>
+<blockquote><p>
+A bookmarklet to create a front-end performance heatmap of resources loaded in the browser using the Resource Timing API. A browser with <a href="http://caniuse.com/#feat=resource-timing">support for the Resource Timing API</a> is required.
+</p></blockquote>
+<p>It gives you a quick way to see how far into the page load images on the page finished loading.</p>
+<p><a href="/wp-content/uploads/2014/10/perfmap-1.png"><img loading="lazy" src="/wp-content/uploads/2014/10/perfmap-1-1024x563.png" alt="perfmap" width="676" height="371" class="aligncenter size-large wp-image-11282" srcset="/wp-content/uploads/2014/10/perfmap-1-1024x563.png 1024w, /wp-content/uploads/2014/10/perfmap-1-300x165.png 300w, /wp-content/uploads/2014/10/perfmap-1-768x423.png 768w, /wp-content/uploads/2014/10/perfmap-1-1200x660.png 1200w, /wp-content/uploads/2014/10/perfmap-1.png 1423w" sizes="(max-width: 676px) 100vw, 676px" /></a></p>
+<p>If you are going to use this regularly I&#8217;d recommend editing the bookmarklet to load perfmap.js from a trusted source that you control.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/10/16/perfmap/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,64 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/preconnect/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/preconnect/",
+    "feed_url": "https://blog.josephscott.org/tag/preconnect/feed/json/",
+    "language": "en-US",
+    "title": "preconnect &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=13538",
+            "url": "https://blog.josephscott.org/2015/10/29/preconnect/",
+            "title": "Preconnect",
+            "content_html": "<p><a href=\"https://www.chromestatus.com/feature/5560623895150592\">Chrome 46</a>, released a few weeks ago, includes support for the <a href=\"https://w3c.github.io/resource-hints/#dfn-preconnect\">preconnect resource hint</a>.  Ilya Grigorik has a good write up on <a href=\"https://www.igvita.com/2015/08/17/eliminating-roundtrips-with-preconnect/\">Eliminating Roundtrips with Preconnect</a>:</p>\n<blockquote><p>\nThe preconnect HTML hint allows the application to tell the browser which sockets it will need ahead of initiating the actual requests; preconnect eliminates DNS, TCP, and TLS roundtrips from the request&#8217;s critical path.\n</p></blockquote>\n<p>Using it is easy:</p>\n<p>[sourcecode lang=&#8221;html&#8221;]<br />\n&lt;link rel=&quot;preconnect&quot; href=&quot;//example.com&quot;&gt;<br />\n&lt;link rel=&quot;preconnect&quot; href=&quot;//cdn.example.com&quot; crossorigin&gt;<br />\n[/sourcecode]</p>\n<p>Currently preconnect is only supported on <a href=\"http://caniuse.com/#search=Preconnect\">Firefox and Chrome</a> ( it first appeared in Firefox 39, back in July ).  This is a potentially powerful feature, definitely worth experimenting with.</p>\n",
+            "content_text": "Chrome 46, released a few weeks ago, includes support for the preconnect resource hint.  Ilya Grigorik has a good write up on Eliminating Roundtrips with Preconnect:\n\nThe preconnect HTML hint allows the application to tell the browser which sockets it will need ahead of initiating the actual requests; preconnect eliminates DNS, TCP, and TLS roundtrips from the request&#8217;s critical path.\n\nUsing it is easy:\n[sourcecode lang=&#8221;html&#8221;]\n&lt;link rel=&quot;preconnect&quot; href=&quot;//example.com&quot;&gt;\n&lt;link rel=&quot;preconnect&quot; href=&quot;//cdn.example.com&quot; crossorigin&gt;\n[/sourcecode]\nCurrently preconnect is only supported on Firefox and Chrome ( it first appeared in Firefox 39, back in July ).  This is a potentially powerful feature, definitely worth experimenting with.",
+            "date_published": "2015-10-29T07:33:43-06:00",
+            "date_modified": "2015-10-29T07:33:43-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "ilya-grigorik",
+                "preconnect",
+                "Posts"
+            ]
+        },
+        {
+            "id": "http://josephscott.org/?p=3509",
+            "url": "https://blog.josephscott.org/2011/02/11/ie9-preconnect/",
+            "title": "IE9 Preconnect",
+            "content_html": "<blockquote><p>\nI was playing around on WebSiteTest today \u2013 trying out it new IE9 test feature, and I noticed something new that IE9 does: preconnect.</p>\n<p>What is preconnect?\u00a0 Preconnect is making a connection to a site before you have a request to use that connection for.\u00a0 The browser may have an inkling that it will need the connection, but if you don\u2019t have a request in hand yet, it is a speculative request, and therefore a preconnect.\n</p></blockquote>\n<p>via <a href='http://www.belshe.com/2011/02/10/the-era-of-browser-preconnect/'>Mike&#8217;s Lookout \u00bb Blog Archive \u00bb The Era of Browser Preconnect</a></p>\n<p>Interesting behavior from IE9, making connections to sites in the hope that there will be additional resources that need to be downloaded.  If IE9 becomes widely adopted (which seems likely) then taking this behavior into consideration when building a site may be useful.</p>\n",
+            "content_text": "I was playing around on WebSiteTest today \u2013 trying out it new IE9 test feature, and I noticed something new that IE9 does: preconnect.\nWhat is preconnect?\u00a0 Preconnect is making a connection to a site before you have a request to use that connection for.\u00a0 The browser may have an inkling that it will need the connection, but if you don\u2019t have a request in hand yet, it is a speculative request, and therefore a preconnect.\n\nvia Mike&#8217;s Lookout \u00bb Blog Archive \u00bb The Era of Browser Preconnect\nInteresting behavior from IE9, making connections to sites in the hope that there will be additional resources that need to be downloaded.  If IE9 becomes widely adopted (which seems likely) then taking this behavior into consideration when building a site may be useful.",
+            "date_published": "2011-02-11T10:00:45-07:00",
+            "date_modified": "2011-02-11T10:00:45-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "http",
+                "ie9",
+                "internet-explorer",
+                "preconnect",
+                "Posts"
+            ]
+        }
+    ]
+}

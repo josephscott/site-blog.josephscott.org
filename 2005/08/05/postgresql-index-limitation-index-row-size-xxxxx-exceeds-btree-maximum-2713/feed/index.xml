@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: PostgreSQL Index Limitation (index row size xxxxx exceeds btree maximum, 2713)	</title>
+	<atom:link href="/2005/08/05/postgresql-index-limitation-index-row-size-xxxxx-exceeds-btree-maximum-2713/feed/" rel="self" type="application/rss+xml" />
+	<link>/2005/08/05/postgresql-index-limitation-index-row-size-xxxxx-exceeds-btree-maximum-2713/</link>
+	<description></description>
+	<lastBuildDate>Sat, 06 Aug 2005 03:59:26 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: joseph		</title>
+		<link>/2005/08/05/postgresql-index-limitation-index-row-size-xxxxx-exceeds-btree-maximum-2713/#comment-886</link>
+
+		<dc:creator><![CDATA[joseph]]></dc:creator>
+		<pubDate>Sat, 06 Aug 2005 03:59:26 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=453#comment-886</guid>
+
+					<description><![CDATA[A partial index would work.  The index on that column wasn&#039;t a deal breaker for me, so not having it is no big loss at this point.]]></description>
+			<content:encoded><![CDATA[<p>A partial index would work.  The index on that column wasn&#8217;t a deal breaker for me, so not having it is no big loss at this point.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Greg Linden		</title>
+		<link>/2005/08/05/postgresql-index-limitation-index-row-size-xxxxx-exceeds-btree-maximum-2713/#comment-885</link>
+
+		<dc:creator><![CDATA[Greg Linden]]></dc:creator>
+		<pubDate>Sat, 06 Aug 2005 02:13:46 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=453#comment-885</guid>
+
+					<description><![CDATA[Does a partial index not work for you on this TEXT column?
+
+The standard thing for long varchar columns is to do a partial index.  Usually that works fine, though, if you need a unique constraint on the column, you might have to enforce that in the application.]]></description>
+			<content:encoded><![CDATA[<p>Does a partial index not work for you on this TEXT column?</p>
+<p>The standard thing for long varchar columns is to do a partial index.  Usually that works fine, though, if you need a unique constraint on the column, you might have to enforce that in the application.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

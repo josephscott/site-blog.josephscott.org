@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>two-factor-authentication &#8211; Joseph Scott</title>
+	<atom:link href="/tag/two-factor-authentication/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 27 Sep 2019 20:34:17 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>SMS Does Not Count As Two Factor Authentication</title>
+		<link>/2019/09/27/sms-does-not-count-as-two-factor-authentication/</link>
+					<comments>/2019/09/27/sms-does-not-count-as-two-factor-authentication/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 27 Sep 2019 20:34:17 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[two-factor-authentication]]></category>
+		<guid isPermaLink="false">/?p=17716</guid>
+
+					<description><![CDATA[Just so that I&#8217;m clear, here is the message: Sending a code via SMS to a mobile phone does not count as Two Factor Authentication ( 2FA ). I saw two things recently that brought up this issue again. First, reading the account of someone who was hit with a SIM card swap attack &#8211; [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Just so that I&#8217;m clear, here is the message:</p>
+<blockquote><p>
+Sending a code via SMS to a mobile phone does not count as Two Factor Authentication ( 2FA ).
+</p></blockquote>
+<p>I saw two things recently that brought up this issue again.  First, reading the account of someone who was hit with a SIM card swap attack &#8211; where someone else calls up your mobile carrier claiming to be you and has your phone number moved to a new SIM card.  That led to all sorts of pain from accounts that considered his phone number to be a trusted source of authentication.</p>
+<p>The second trigger in all of this was seeing a notification from a financial institution that was going to start enabling &#8220;Two Factor Authentication&#8221; on accounts.  The default method was a code sent via SMS, and given the power of defaults I expect most people will pick that one.  Fortunately they do offer a way to use <a href="https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm">TOTP ( Time base One Time Password )</a> codes, so the situation wasn&#8217;t as bad as it could have been.</p>
+<p>At best I&#8217;d call that 1.5FA instead of 2FA.</p>
+<p>However, I&#8217;ve reached a point where any mention of SMS as a 2FA ( Two Factor Authentication ) option should come with a large warning in red blinking text about how this really isn&#8217;t what you want to do.</p>
+<h3>What To Use Instead</h3>
+<p>I strongly prefer the TOTP option instead, with a mobile app like <a href="https://authy.com/">Authy</a>, <a href="https://duo.com/">Duo</a>, <a href="https://freeotp.github.io/">FreeOTP</a>, or <a href="https://apps.apple.com/us/app/google-authenticator/id388497605">Google Authenticator</a>.</p>
+<p>Standard disclaimer applies here, nothing is perfect.  Using a TOTP app won&#8217;t give you perfect security ( I&#8217;d argue that doesn&#8217;t exist ), but it is miles better than no 2FA and significantly better than SMS tokens.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/09/27/sms-does-not-count-as-two-factor-authentication/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Two Factor Authentication</title>
+		<link>/2014/10/15/two-factor-authentication/</link>
+					<comments>/2014/10/15/two-factor-authentication/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 15 Oct 2014 15:52:16 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[two-factor-authentication]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11271</guid>
+
+					<description><![CDATA[Dropbox is reminding people to enable two-factor authentication as an extra layer of protection for your account. There are a number of services that offer two-factor authentication now ( including WordPress.com ), which is really good to see. A list has been put together at twofactorauth.org of sites that support it.]]></description>
+										<content:encoded><![CDATA[<p>Dropbox is reminding people to <a href="https://blog.dropbox.com/2014/10/dropbox-wasnt-hacked/">enable two-factor authentication</a> as an extra layer of protection for your account.</p>
+<p>There are a number of services that offer two-factor authentication now ( <a href="http://en.support.wordpress.com/security/two-step-authentication/">including WordPress.com</a> ), which is really good to see.  A list has been put together at <a href="https://twofactorauth.org/">twofactorauth.org</a> of sites that support it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/10/15/two-factor-authentication/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

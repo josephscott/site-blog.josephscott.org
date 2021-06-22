@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>tsearch2 &#8211; Joseph Scott</title>
+	<atom:link href="/tag/tsearch2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 05 Aug 2005 17:30:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>PostgreSQL Index Limitation (index row size xxxxx exceeds btree maximum, 2713)</title>
+		<link>/2005/08/05/postgresql-index-limitation-index-row-size-xxxxx-exceeds-btree-maximum-2713/</link>
+					<comments>/2005/08/05/postgresql-index-limitation-index-row-size-xxxxx-exceeds-btree-maximum-2713/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 05 Aug 2005 17:30:45 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[btreeindex]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[tsearch2]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=453</guid>
+
+					<description><![CDATA[I&#8217;m working on a project that includes the need to store a fair amount of raw text. I&#8217;m using PostgreSQL to store this text, with the raw data being stored in a TEXT data type field. When it came time to decide which fields to index I included this field to see what would happen. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m working on a project that includes the need to store a fair amount of raw text.  I&#8217;m using <a href="http://www.postgresql.org/">PostgreSQL</a> to store this text, with the raw data being stored in a <a href="http://www.postgresql.org/docs/8.0/interactive/datatype-character.html">TEXT</a> data type field.  When it came time to decide which fields to index I included this field to see what would happen.  It didn&#8217;t give me an error when <a href="http://www.postgresql.org/docs/8.0/interactive/sql-createindex.html">creating the index</a>, so I thought it would be fine.  And it was, for awhile.</p>
+<p>The first few dozen inserts went fine, the raw text for these weren&#8217;t very big.  Later on the inserts start failing and PostgreSQL was logging the errors as:</p>
+<blockquote><p>
+postgres[6289]: [1-1] ERROR:  index row size 5364 exceeds btree maximum, 2713
+</p></blockquote>
+<p>When inserting larger chunks of data the index update failed because it was too large.  I removed the index on the raw text column and errors went away.  So the lesson I learned here is that the B-tree index in PostgreSQL has a maximum size of 2713 bytes.  Keep this in mind when you are going to index large VARCHAR or TEXT fields.</p>
+<p>If you really need to index large TEXT fields then you&#8217;ll have to look at full text indexing with <a href="http://www.sai.msu.su/~megera/postgres/gist/tsearch/V2/">Tsearch2</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/08/05/postgresql-index-limitation-index-row-size-xxxxx-exceeds-btree-maximum-2713/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

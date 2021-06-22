@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>widget &#8211; Joseph Scott</title>
+	<atom:link href="/tag/widget/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 20 Jun 2012 15:41:29 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>iTunes Dashboard Widget for Mac OS X 10.7 Lion</title>
+		<link>/2012/06/20/itunes-dashboard-widget-for-mac-os-x-10-7-lion/</link>
+					<comments>/2012/06/20/itunes-dashboard-widget-for-mac-os-x-10-7-lion/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 20 Jun 2012 15:41:29 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[dashboard]]></category>
+		<category><![CDATA[iTunes]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[widget]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6069</guid>
+
+					<description><![CDATA[I was disappointed to see that the iTunes dashboard widget had been removed in Mac OS X 10.7. Fortunately the iTunes widget from 10.6 works just fine. If you don&#8217;t have an older copy of Mac OS X around you can download the iTunes widget from 10.6 (Snow Leopard) thanks to Simon Nettle.]]></description>
+										<content:encoded><![CDATA[<p>I was disappointed to see that the iTunes dashboard widget had been removed in Mac OS X 10.7.  Fortunately the iTunes widget from 10.6 works just fine.</p>
+<p>If you don&#8217;t have an older copy of Mac OS X around you can download the <a href="http://flyinghigh.org/2011/10/missing-the-itunes-dashboard-widget-in-mac-osx-10-7-lion/">iTunes widget from 10.6 (Snow Leopard)</a> thanks to Simon Nettle.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/06/20/itunes-dashboard-widget-for-mac-os-x-10-7-lion/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How To Add GMT To the World Clock Dashboard Widget</title>
+		<link>/2011/11/11/how-to-add-gmt-to-the-world-clock-dashboard-widget/</link>
+					<comments>/2011/11/11/how-to-add-gmt-to-the-world-clock-dashboard-widget/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 11 Nov 2011 17:35:58 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[dashboard]]></category>
+		<category><![CDATA[gmt]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[widget]]></category>
+		<category><![CDATA[world-clock]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=5084</guid>
+
+					<description><![CDATA[Having co-workers around the globe means that we often use GMT to refer to a date &#038; time. I turned to the Word Clock widget (for Dashboard in Mac OS X) in hopes of showing GMT in an easy reference area. Unfortunately GMT is not one of the available timezones in the drop down list. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Having co-workers around the globe means that we often use GMT to refer to a date &#038; time.  I turned to the Word Clock widget (for Dashboard in Mac OS X) in hopes of showing GMT in an easy reference area.  Unfortunately GMT is not one of the available timezones in the drop down list.</p>
+<p>The easiest way to show the right time is to select a city in GMT that doesn&#8217;t change for summer time.  Reykjavík, Iceland in the Atlantic region is the option I see most people recommend.  But I wanted the the label on the clock to read GMT as well.  This turned out to be really easy to do.</p>
+<p>First step, open <code>/Library/Widgets/World Clock.wdgt/WorldClock.js</code> in your favorite editor (as root).</p>
+<p>Near the top of the file you&#8217;ll see the region arrays defined.  I added a new one:</p>
+<p>[sourcecode lang=&#8221;javascript&#8221;]<br />
+var GMT = [<br />
+    { city: &#8216;GMT&#8217;, offset: 0, timezone: &#8216;GMT&#8217; },<br />
+];<br />
+[/sourcecode]</p>
+<p>Next you need to add it to the list of regions (around line 238), which looks like:</p>
+<p>[sourcecode lang=&#8221;javascript&#8221;]<br />
+var continents = [<br />
+    {name:&quot;GMT&quot;, array:GMT},<br />
+    {name:&quot;Africa&quot;, array:Africa},<br />
+    {name:&quot;Asia&quot;, array:Asia},<br />
+    {name:&quot;Atlantic&quot;, array:Atlantic},<br />
+    {name:&quot;Australia&quot;, array:Australia},<br />
+    {name:&quot;Europe&quot;, array:Europe},<br />
+    {name:&quot;North America&quot;, array:NorthAmerica},<br />
+    {name:&quot;Pacific&quot;, array:Pacific},<br />
+    {name:&quot;South America&quot;, array:SouthAmerica}<br />
+];<br />
+[/sourcecode]</p>
+<p>Save the file and exit the editor.  As your regular user account run <code>killall Dock</code>, which will restart the process that manages the Dashboard.</p>
+<p>Now go into the Dashboard and add a World Clock widget.  You&#8217;ll see GMT as one of the region options:</p>
+<p><img loading="lazy" alt="" src="https://lh6.googleusercontent.com/-2iW9S4RWoYc/TrwvFipnvxI/AAAAAAAAARA/s6HZswPZ43k/s220/world-clock-gmt-region.png" title="World Clock GMT - Regions" class="alignnone" width="200" height="220" /></p>
+<p>In the new GMT region there is only one city:</p>
+<p><img loading="lazy" alt="" src="https://lh4.googleusercontent.com/-Rwrwwq069kE/TrwvFhWFJoI/AAAAAAAAAQ0/iZQCMgCBTl4/s163/world-clock-gmt-options.png" title="World Clock GMT - Options" class="alignnone" width="163" height="163" /></p>
+<p>Giving you a World Clock widget that shows GMT and is labeled as such:</p>
+<p><img loading="lazy" alt="" src="https://lh6.googleusercontent.com/-uuws2UbEn6k/TrwvFkTnm9I/AAAAAAAAAQw/DzcBLMXb2tI/s170/world-clock-gmt.png" title="World Clock GMT" class="alignnone" width="170" height="170" /></p>
+<p>This worked for me on Mac OS 10.6.8.  I expect it to be the same for 10.7 but I haven&#8217;t tried it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/11/11/how-to-add-gmt-to-the-world-clock-dashboard-widget/feed/</wfw:commentRss>
+			<slash:comments>7</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

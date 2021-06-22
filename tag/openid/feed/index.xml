@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>openid &#8211; Joseph Scott</title>
+	<atom:link href="/tag/openid/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 18 Jan 2008 00:30:08 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Links for Thu 17 Jan 2008</title>
+		<link>/2008/01/17/links-for-thu-17-jan-2008/</link>
+					<comments>/2008/01/17/links-for-thu-17-jan-2008/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 18 Jan 2008 00:30:08 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[autocomplete]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[openid]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[vim]]></category>
+		<category><![CDATA[yahoo]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/01/17/links-for-thu-17-jan-2008/</guid>
+
+					<description><![CDATA[Autocomplete HTML/CSS/JavaScript/python/xml/php/c with CTRL-X CTRL-O &#8211; parsed.org &#8211; Add autocomplete features to Vim. Wish I&#8217;d come across this sooner. Tags: vim autocomplete php javascript html python OpenID Splash &#8211; Looks like Yahoo has taken major dive into the OpenID pool. Tags: openid yahoo]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://www.parsed.org/tip/415/">Autocomplete HTML/CSS/JavaScript/python/xml/php/c with CTRL-X CTRL-O &#8211; parsed.org</a> &#8211; Add autocomplete features to Vim.  Wish I&#8217;d come across this sooner. <br /> Tags: <a href="http://del.icio.us/josephscott/vim">vim</a> <a href="http://del.icio.us/josephscott/autocomplete">autocomplete</a> <a href="http://del.icio.us/josephscott/php">php</a> <a href="http://del.icio.us/josephscott/javascript">javascript</a> <a href="http://del.icio.us/josephscott/html">html</a> <a href="http://del.icio.us/josephscott/python">python</a>  </p>
+</li>
+<li>
+<p><a href="http://openid.yahoo.com/">OpenID Splash</a> &#8211; Looks like Yahoo has taken major dive into the OpenID pool. <br /> Tags: <a href="http://del.icio.us/josephscott/openid">openid</a> <a href="http://del.icio.us/josephscott/yahoo">yahoo</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/01/17/links-for-thu-17-jan-2008/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>OpenID</title>
+		<link>/2005/07/06/openid/</link>
+					<comments>/2005/07/06/openid/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 06 Jul 2005 18:05:40 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[identity]]></category>
+		<category><![CDATA[openid]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=429</guid>
+
+					<description><![CDATA[Since Slashdot brought it up, I took a brief look at OpenID. Take a moment to read the front page of their site, they briefly cover the what, why and how of OpenID. The first thing to note is scope, the goal is to establish a distributed identity system. This identity is just a URL, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Since <a href="http://slashdot.org/article.pl?sid=05/07/05/2020221&amp;tid=95&amp;tid=1">Slashdot brought it up</a>, I took a brief look at <a href="http://openid.net/">OpenID</a>.  Take a moment to read the front page of their site, they briefly cover the what, why and how of OpenID.  The first thing to note is scope, the goal is to establish a distributed identity system.  This identity is just a URL, which allows for the distributed portion of their model.</p>
+<p>As noted on their site, there is no trust involved, only identity.  This is a key point, because they also point out that this does nothing to prevent comment spam.  What it is hoped that it will do is prevent someone from claiming to be me in a comment, but even that isn&#8217;t entirely true (see the section called &#8216;What about signing comments?&#8217;).  I suspect that they are hoping that others will build on top of this layer to form trust and spam identification.  These potential additional layers would have some promise.  I could tag all comments to be moderated and then once I okay a validated OpenID then any future comments by that person would skip moderation.</p>
+<p>This is an interesting idea, that could yield some real benefits down the line.  Like all new ideas/technologies though, time has to be spent thinking about how it could be used for evil (spam, etc.).  OpenID by itself doesn&#8217;t do anything to prevent comment spam, they are pretty open about this on their site.  So in order for this to be worthwhile some additional features need to be developed.  What sort of ways could this be hijacked so that I could pretend to be <a href="http://jeremy.zawodny.com/blog/">Jeremy Zawodny</a>?  What layers are below OpenID that might be available to exploitation (HTTP, DNS, etc.)?  What specific implementations of those lower level layers are prone to security flaws that could be taken advantage of?  If I can successfully poison the right DNS server can I pretend to be someone else?</p>
+<p>I&#8217;m not claiming that <a href="http://www.livejournal.com/~brad/">Brad</a> and company haven&#8217;t pondered this ideas yet, but if they have then it would be nice to have it documented somewhere for others to use as a point of reference.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/07/06/openid/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

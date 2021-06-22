@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Performance Analysis: lds.org	</title>
+	<atom:link href="/2010/12/01/performance-analysis-lds-org/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/12/01/performance-analysis-lds-org/</link>
+	<description></description>
+	<lastBuildDate>Thu, 02 Dec 2010 18:24:07 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/12/01/performance-analysis-lds-org/#comment-3588</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 02 Dec 2010 18:24:07 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3253#comment-3588</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/12/01/performance-analysis-lds-org/#comment-3587&quot;&gt;Mike Place&lt;/a&gt;.
+
+Thanks Mike!
+
+I specifically forwarded this to a few people I know as well.  I&#039;m not sure who or how, but the latest test I ran - http://www.webpagetest.org/result/101202_1F7E/ - does show all appropriate requests getting a compressed response.  One down, several more million sites to go ;-)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/12/01/performance-analysis-lds-org/#comment-3587">Mike Place</a>.</p>
+<p>Thanks Mike!</p>
+<p>I specifically forwarded this to a few people I know as well.  I&#8217;m not sure who or how, but the latest test I ran &#8211; <a href="http://www.webpagetest.org/result/101202_1F7E/" rel="nofollow ugc">http://www.webpagetest.org/result/101202_1F7E/</a> &#8211; does show all appropriate requests getting a compressed response.  One down, several more million sites to go 😉</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Mike Place		</title>
+		<link>/2010/12/01/performance-analysis-lds-org/#comment-3587</link>
+
+		<dc:creator><![CDATA[Mike Place]]></dc:creator>
+		<pubDate>Thu, 02 Dec 2010 17:38:19 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3253#comment-3587</guid>
+
+					<description><![CDATA[I sent your post over to my buddy there. It appears that, as of this morning, gzip compression is on for all but one element on the page.]]></description>
+			<content:encoded><![CDATA[<p>I sent your post over to my buddy there. It appears that, as of this morning, gzip compression is on for all but one element on the page.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/12/01/performance-analysis-lds-org/#comment-3586</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 02 Dec 2010 17:02:28 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3253#comment-3586</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/12/01/performance-analysis-lds-org/#comment-3585&quot;&gt;Aaron Barker&lt;/a&gt;.
+
+I&#039;ve been asking for better HTTP compression from different folks there for a couple of years, hopefully it will eventually get to the right person :-)
+
+Unfortunate on the versioning since that has such a negative impact on caching.  Also if you ever move to a separate commercial CDN you may run into invalidation issues.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/12/01/performance-analysis-lds-org/#comment-3585">Aaron Barker</a>.</p>
+<p>I&#8217;ve been asking for better HTTP compression from different folks there for a couple of years, hopefully it will eventually get to the right person 🙂</p>
+<p>Unfortunate on the versioning since that has such a negative impact on caching.  Also if you ever move to a separate commercial CDN you may run into invalidation issues.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron Barker		</title>
+		<link>/2010/12/01/performance-analysis-lds-org/#comment-3585</link>
+
+		<dc:creator><![CDATA[Aaron Barker]]></dc:creator>
+		<pubDate>Thu, 02 Dec 2010 16:06:13 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3253#comment-3585</guid>
+
+					<description><![CDATA[compression... yeah, tell me about it. I keep saying &quot;all it is is flipping a switch&quot;. Not sure where in the chain it is getting hung up. Definitely one I will be pounding on.
+
+versioning - it&#039;s not as much the size of the site as I am sure wordpress is much bigger. It&#039;s the different projects. calendar, directory, content, scriptures, etc are all different projects running at different speeds. I don&#039;t want to talk out of place too much, just to say that I have brought this up many times and been told an emphatic &quot;no.&quot; So we work with what we can :)]]></description>
+			<content:encoded><![CDATA[<p>compression&#8230; yeah, tell me about it. I keep saying &#8220;all it is is flipping a switch&#8221;. Not sure where in the chain it is getting hung up. Definitely one I will be pounding on.</p>
+<p>versioning &#8211; it&#8217;s not as much the size of the site as I am sure wordpress is much bigger. It&#8217;s the different projects. calendar, directory, content, scriptures, etc are all different projects running at different speeds. I don&#8217;t want to talk out of place too much, just to say that I have brought this up many times and been told an emphatic &#8220;no.&#8221; So we work with what we can 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/12/01/performance-analysis-lds-org/#comment-3584</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 02 Dec 2010 15:18:11 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3253#comment-3584</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/12/01/performance-analysis-lds-org/#comment-3583&quot;&gt;Aaron Barker&lt;/a&gt;.
+
+Hi Aaron, thanks for taking a look at this.
+
+There is one very simple, very easy thing that will help improve things - enable HTTP compression.  As you know, this requires zero changes to the site, it is strictly a server level issue.  I know a few people in the IT department, but so far have had little luck actually getting that changed.  At this point I&#039;m beginning to wonder if MarkLogic doesn&#039;t support HTTP compression, if that is the case they should pack it up and send it back to 1999.
+
+On versioning resources, there are plenty of smart folks there, I&#039;m sure they can manage that :-)  We do it for WordPress.com, which I believe is a much larger site than lds.org.
+
+Good to hear that more of the teams are looking at performance.  It isn&#039;t just the design and code teams though, the server and network people need to be involved as well.  I&#039;m going to continue to push for doing at least the basics, which not only improve performance, but can save the church money.
+
+I&#039;m happy to chat more about this, drop me a note if you want to meet for lunch sometime.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/12/01/performance-analysis-lds-org/#comment-3583">Aaron Barker</a>.</p>
+<p>Hi Aaron, thanks for taking a look at this.</p>
+<p>There is one very simple, very easy thing that will help improve things &#8211; enable HTTP compression.  As you know, this requires zero changes to the site, it is strictly a server level issue.  I know a few people in the IT department, but so far have had little luck actually getting that changed.  At this point I&#8217;m beginning to wonder if MarkLogic doesn&#8217;t support HTTP compression, if that is the case they should pack it up and send it back to 1999.</p>
+<p>On versioning resources, there are plenty of smart folks there, I&#8217;m sure they can manage that 🙂  We do it for WordPress.com, which I believe is a much larger site than lds.org.</p>
+<p>Good to hear that more of the teams are looking at performance.  It isn&#8217;t just the design and code teams though, the server and network people need to be involved as well.  I&#8217;m going to continue to push for doing at least the basics, which not only improve performance, but can save the church money.</p>
+<p>I&#8217;m happy to chat more about this, drop me a note if you want to meet for lunch sometime.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron Barker		</title>
+		<link>/2010/12/01/performance-analysis-lds-org/#comment-3583</link>
+
+		<dc:creator><![CDATA[Aaron Barker]]></dc:creator>
+		<pubDate>Thu, 02 Dec 2010 14:35:37 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3253#comment-3583</guid>
+
+					<description><![CDATA[Nice review.
+
+I am not a member of the lds.org team, but I do work at the church, and am kind of the resident performance guru/pesterer (unoficially).  Pretty much everything on your list has been on the radar for quite a while, they are just taking time to implement.
+
+Getting the site up and running, and porting over the tons of content has understandably been the priority. But we do get the occasional performance victory as well.
+
+Two of the biggest wins so far have been to:
+1) get the carousel content loaded at the very bottom of the page. Yes those large banner images could be optimized (trying to get that built into the process), but all but the first one are loaded via ajax when the jQuery ondomload fires, so they at least are not really influencing the render time of the page. This is naturally a huge win from loading a few hundred K worth of images at the top of the page, that weren&#039;t even going to be seen for a while.
+2) get the cdn.lds.org up and running. This has been a long time coming, and we still have room to grow. The .lds.org cookies being applied to the subdomain somehow slipped past my defenses and I recognized that as soon as the CDN started being used. Gonna have to look into getting that separate domain. The CDN only got into production a week or two ago, so it was late to the game for the lds.org update. That they have any files pointing to it is awesome, and we hope to increase that number as things progress.
+
+Files that we know will not change, and that we can put a version number on (jQuery), get the 20 year cache.  Files that are more site specific, and that will be updated fairly regularly get the 4 hour cache, which is at least up from the 1 hr they used to have. 
+
+We had to find a happy medium between a long cache on files that would have a unique name versus common names that could NOT be cached forever else things might break when we updated.  With a site as large as lds.org it is very difficult to introduce a version number into the name as not all parts of the site are built at once.  So 4 hours is the happy medium we came up with.  If you have other insight into how to get around this we&#039;d love to hear it.
+
+Per the &quot;46 parallelizable&quot; requests, the biggest thing I am pushing for here is to create some sprites to reduce the number. 20-30 or so could easily be moved into a few sprites to drop that connection count dramatically. Again, getting the site out the door being the priority I didn&#039;t pester too much on this. But now that it IS out the door, I can be a little more annoying ;)
+
+Whenever I hear about a site coming on line (newsroom, store.lds.org, mormon.org, etc) I do a review very similar to yours and put it directly in the hands of the teams responsible. Similar to the above, getting the site out the door is priority, but teams are becoming more and more performance conscious.
+
+There is a long climb ahead, but I am optimistic for the future.  Things will steadily continue to get better.
+
+Thanks again for your review. As many voices preaching the same &quot;gospel&quot; can only help the cause :)]]></description>
+			<content:encoded><![CDATA[<p>Nice review.</p>
+<p>I am not a member of the lds.org team, but I do work at the church, and am kind of the resident performance guru/pesterer (unoficially).  Pretty much everything on your list has been on the radar for quite a while, they are just taking time to implement.</p>
+<p>Getting the site up and running, and porting over the tons of content has understandably been the priority. But we do get the occasional performance victory as well.</p>
+<p>Two of the biggest wins so far have been to:<br />
+1) get the carousel content loaded at the very bottom of the page. Yes those large banner images could be optimized (trying to get that built into the process), but all but the first one are loaded via ajax when the jQuery ondomload fires, so they at least are not really influencing the render time of the page. This is naturally a huge win from loading a few hundred K worth of images at the top of the page, that weren&#8217;t even going to be seen for a while.<br />
+2) get the cdn.lds.org up and running. This has been a long time coming, and we still have room to grow. The .lds.org cookies being applied to the subdomain somehow slipped past my defenses and I recognized that as soon as the CDN started being used. Gonna have to look into getting that separate domain. The CDN only got into production a week or two ago, so it was late to the game for the lds.org update. That they have any files pointing to it is awesome, and we hope to increase that number as things progress.</p>
+<p>Files that we know will not change, and that we can put a version number on (jQuery), get the 20 year cache.  Files that are more site specific, and that will be updated fairly regularly get the 4 hour cache, which is at least up from the 1 hr they used to have. </p>
+<p>We had to find a happy medium between a long cache on files that would have a unique name versus common names that could NOT be cached forever else things might break when we updated.  With a site as large as lds.org it is very difficult to introduce a version number into the name as not all parts of the site are built at once.  So 4 hours is the happy medium we came up with.  If you have other insight into how to get around this we&#8217;d love to hear it.</p>
+<p>Per the &#8220;46 parallelizable&#8221; requests, the biggest thing I am pushing for here is to create some sprites to reduce the number. 20-30 or so could easily be moved into a few sprites to drop that connection count dramatically. Again, getting the site out the door being the priority I didn&#8217;t pester too much on this. But now that it IS out the door, I can be a little more annoying 😉</p>
+<p>Whenever I hear about a site coming on line (newsroom, store.lds.org, mormon.org, etc) I do a review very similar to yours and put it directly in the hands of the teams responsible. Similar to the above, getting the site out the door is priority, but teams are becoming more and more performance conscious.</p>
+<p>There is a long climb ahead, but I am optimistic for the future.  Things will steadily continue to get better.</p>
+<p>Thanks again for your review. As many voices preaching the same &#8220;gospel&#8221; can only help the cause 🙂</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sql-injection &#8211; Joseph Scott</title>
+	<atom:link href="/tag/sql-injection/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 08 Dec 2015 15:57:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Error Based SQL Injection</title>
+		<link>/2015/12/08/error-based-sql-injection/</link>
+					<comments>/2015/12/08/error-based-sql-injection/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 08 Dec 2015 15:57:07 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[sql-injection]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13613</guid>
+
+					<description><![CDATA[Looking for a new twist on SQL injection? Try BIGINT Overflow Error Based SQL Injection: To perform these injection the mysql_error() should be echoed back to us that’s why this is error based injection. The MySQL version should be 5.5.5 or above. There can be lots of variations for these overflow injections. Even error messages [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Looking for a new twist on SQL injection?  Try <a href="https://osandamalith.wordpress.com/2015/07/08/bigint-overflow-error-based-sql-injection/">BIGINT Overflow Error Based SQL Injection</a>:</p>
+<blockquote><p>
+To perform these injection the mysql_error() should be echoed back to us that’s why this is error based injection. The MySQL version should be 5.5.5 or above. There can be lots of variations for these overflow injections.</p></blockquote>
+<p>Even error messages can betray you.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/12/08/error-based-sql-injection/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>reddit.com HTTP Response Headers</title>
+		<link>/2013/05/22/reddit-com-http-response-headers/</link>
+					<comments>/2013/05/22/reddit-com-http-response-headers/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 22 May 2013 14:46:37 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[reddit]]></category>
+		<category><![CDATA[sql-injection]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4700</guid>
+
+					<description><![CDATA[I found an old note to myself to look at the HTTP response headers for reddit.com. So I did this: $ curl -v -s http://www.reddit.com/ > /dev/null * About to connect() to www.reddit.com port 80 (#0) * Trying 69.22.154.10&#8230; * connected * Connected to www.reddit.com (69.22.154.10) port 80 (#0) > GET / HTTP/1.1 > User-Agent: [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I found an old note to myself to look at the HTTP response headers for reddit.com.  So I did this:</p>
+<p>$ curl -v -s http://www.reddit.com/ > /dev/null<br />
+* About to connect() to www.reddit.com port 80 (#0)<br />
+*   Trying 69.22.154.10&#8230;<br />
+* connected<br />
+* Connected to www.reddit.com (69.22.154.10) port 80 (#0)<br />
+> GET / HTTP/1.1<br />
+> User-Agent: curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8r zlib/1.2.5<br />
+> Host: www.reddit.com<br />
+> Accept: */*<br />
+><br />
+< HTTP/1.1 200 OK
+< Content-Type: text/html; charset=UTF-8
+< <strong>Server: &#8216;; DROP TABLE servertypes; &#8212;</strong><br />
+< Vary: accept-encoding
+< Date: Wed, 22 May 2013 14:37:25 GMT
+< Transfer-Encoding:  chunked
+< Connection: keep-alive
+< Connection: Transfer-Encoding
+< 
+{ [data not shown]
+* Connection #0 to host www.reddit.com left intact
+* Closing connection #0
+
+Fun Server entry in there.  Reminded me of <a href="http://xkcd.com/327/">little Bobby tables from xkcd</a>.</p>
+<p>I&#8217;m sure this has made the rounds in other places.  Unfortunately my note didn&#8217;t indicate where I first saw this.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/05/22/reddit-com-http-response-headers/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

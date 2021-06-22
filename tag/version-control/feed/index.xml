@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>version-control &#8211; Joseph Scott</title>
+	<atom:link href="/tag/version-control/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 24 Sep 2015 14:45:11 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Version Control of Third Party Code</title>
+		<link>/2015/09/24/version-control-of-third-party-code/</link>
+					<comments>/2015/09/24/version-control-of-third-party-code/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 24 Sep 2015 14:45:11 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[version-control]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12844</guid>
+
+					<description><![CDATA[Plenty of people have been advocating the following approach to third party code: The actual package/library files (vendor folder) should not be part of version control, since their revisions are already handled by the declaration, which is thereby under version control and it would be redundant to do both. This particular quote came from Ulrich [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Plenty of people have been advocating the following approach to third party code:</p>
+<blockquote><p>
+The actual package/library files (vendor folder) should not be part of version control, since their revisions are already handled by the declaration, which is thereby under version control and it would be redundant to do both.
+</p></blockquote>
+<p>This particular quote came from Ulrich Kautz in <a href="http://blog.fortrabbit.com/10-pillars-php-dev">10 pillars of modern PHP development</a>.</p>
+<p>I disagree with this method.  My general rule is:</p>
+<blockquote><p>
+If it is part of your site then it should be in your version control system.
+</p></blockquote>
+<p>Sure, that might mean higher disk usage.  But it also means fewer potential failure points.  That is a trade off I can live with.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/09/24/version-control-of-third-party-code/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

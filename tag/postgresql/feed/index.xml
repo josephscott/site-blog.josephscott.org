@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>PostgreSQL &#8211; Joseph Scott</title>
+	<atom:link href="/tag/postgresql/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 20 Jan 2016 16:59:59 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>PostgreSQL UPSERT</title>
+		<link>/2016/01/20/postgresql-upsert/</link>
+					<comments>/2016/01/20/postgresql-upsert/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 20 Jan 2016 16:59:59 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14837</guid>
+
+					<description><![CDATA[Very nice to see PostgreSQL 9.5 has added UPSERT. It is managed via the general ON CONFLICT clause for INSERT: The optional ON CONFLICT clause specifies an alternative action to raising a unique violation or exclusion constraint violation error. For each individual row proposed for insertion, either the insertion proceeds, or, if an arbiter constraint [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Very nice to see <a href="http://www.postgresql.org/about/news/1636/">PostgreSQL 9.5 has added UPSERT</a>.  It is managed via the general <a href="http://www.postgresql.org/docs/9.5/static/sql-insert.html#SQL-ON-CONFLICT">ON CONFLICT clause</a> for <a href="http://www.postgresql.org/docs/9.5/static/sql-insert.html">INSERT</a>:</p>
+<blockquote><p>
+The optional ON CONFLICT clause specifies an alternative action to raising a unique violation or exclusion constraint violation error. For each individual row proposed for insertion, either the insertion proceeds, or, if an arbiter constraint or index specified by conflict_target is violated, the alternative conflict_action is taken. ON CONFLICT DO NOTHING simply avoids inserting a row as its alternative action. ON CONFLICT DO UPDATE updates the existing row that conflicts with the row proposed for insertion as its alternative action.
+</p></blockquote>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/01/20/postgresql-upsert/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>HTTP API for PostgreSQL</title>
+		<link>/2014/10/08/http-api-for-postgresql/</link>
+					<comments>/2014/10/08/http-api-for-postgresql/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 08 Oct 2014 14:51:04 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11178</guid>
+
+					<description><![CDATA[PostgreSQL has also been considering a HTTP API.]]></description>
+										<content:encoded><![CDATA[<p>PostgreSQL has also been considering a <a href="https://wiki.postgresql.org/wiki/HTTP_API">HTTP API</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/10/08/http-api-for-postgresql/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Sun Should Be in the Consumer Cloud Services Business</title>
+		<link>/2008/04/28/sun-should-be-in-the-consumer-cloud-services-business/</link>
+					<comments>/2008/04/28/sun-should-be-in-the-consumer-cloud-services-business/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 28 Apr 2008 17:11:40 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[cloudservices]]></category>
+		<category><![CDATA[datacenter]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[solaris]]></category>
+		<category><![CDATA[sun]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1061</guid>
+
+					<description><![CDATA[When Google App Engine was announced one of the features that was heavily pushed was it&#8217;s ability to scale. Combined with Amazon&#8217;s AWS products, I&#8217;ve been thinking about other companies who could/should be in the cloud services business. There&#8217;s the obvious ones that everyone talks about like Microsoft and Yahoo, but then another name came [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>When <a href="http://code.google.com/appengine/">Google App Engine</a> was announced one of the features that was heavily pushed was it&#8217;s ability to scale.  Combined with Amazon&#8217;s AWS products, I&#8217;ve been thinking about other companies who could/should be in the cloud services business.  There&#8217;s the obvious ones that everyone talks about like Microsoft and Yahoo, but then another name came to mind: <a href="http://www.sun.com/">Sun</a>.</p>
+<p>What service should Sun offer to the world?  I&#8217;ll give you a hint, they recently spent $1 billion dollars <a href="http://joseph.randomnetworks.com/archives/2008/01/16/sun-buys-mysql/">acquiring the company</a> behind the product.  Yep, none other than <a href="http://mysql.com/">MySQL</a>.</p>
+<p>Love it or hate it, MySQL is widely used by many companies and individuals.  What I&#8217;d like to see from Sun is a MySQL cloud service that works just like your current MySQL server(s), only better.  It should scale such that I don&#8217;t have to worry about performance and replicate data sufficiently that I&#8217;ll always have access to my data.  There&#8217;s no need for a new API, since MySQL already supports network connectivity.</p>
+<p>With MySQL already in such wide spread use, the benefits would be easy to see.  For instance, I could use such a service to power my WordPress blog with only a few changes to my wp-config.php file.  Effectively requiring zero code changes.</p>
+<p>Pricing wise I&#8217;d expect something similar to EC2 or S3, a general pay as you go schedule.  Perhaps even with a very low use free option, just enough for people to get hooked.  But if I were <a href="http://blogs.sun.com/jonathan/">Jonathan Schwartz</a> I wouldn&#8217;t stop there.</p>
+<p>As nice as it is to have an easy to use pay as you go web service, there are many companies that would like the performance, scalability and reliability of such a service but don&#8217;t want to send all their data to Sun.  Enter Sun&#8217;s <a href="http://www.sun.com/products/sunmd/s20/">Modular Datacenter</a>, a.k.a. data center in a box.  Okay, a very big box, but a box none the less.  Take all the lessons they learn making the MySQL cloud service work and put them in the data center box and sell it.</p>
+<p>This would also appeal to hosting companies, who could then offer the same sort of service to the users.  Imagine some place like <a href="http://www.theplanet.com/">The Planet</a> having a few of these in their data centers.  They&#8217;d get the benefits of the cloud service without having to haul all that traffic over their Internet connections.</p>
+<p>In my ideal world this wouldn&#8217;t be limited to MySQL.  I&#8217;d love to see this same sort of thing for <a href="http://www.postgresql.org/">PostgreSQL</a>, since Sun has also been pushing <a href="http://www.sun.com/software/products/postgresql/index.jsp">PostgreSQL for Solaris</a> as well.  Sadly I&#8217;m not holding my breath on that one.  With PostgreSQL being a much more community based project, there&#8217;s nothing to stop some other company from providing this service.</p>
+<p>Perhaps Sun should have <a href="http://joseph.randomnetworks.com/archives/2007/08/23/from-sunw-to-java/">changed their stock ticker</a> to MYSQ instead of JAVA.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/04/28/sun-should-be-in-the-consumer-cloud-services-business/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Tue 19 Feb 2008</title>
+		<link>/2008/02/20/links-for-tue-19-feb-2008-2/</link>
+					<comments>/2008/02/20/links-for-tue-19-feb-2008-2/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 20 Feb 2008 16:15:58 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[cache]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[email]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[markmail]]></category>
+		<category><![CDATA[memcache]]></category>
+		<category><![CDATA[memcachedb]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/02/20/links-for-tue-19-feb-2008-2/</guid>
+
+					<description><![CDATA[The Making of MarkMail: PostgreSQL: More Traffic than MySQL (and a first Google spotting) &#8211; I&#039;m not really surprised that the PostgreSQL lists have more traffic than the MySQL lists. PostgreSQL seems to be much more of a community owned project than MySQL is. Tags: email markmail mysql postgresql memcachedb &#8211; Google Code &#8211; Persistent [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://markmail.blogspot.com/2008/02/postgresql-more-traffic-than-mysql-and.html">The Making of MarkMail: PostgreSQL: More Traffic than MySQL (and a first Google spotting)</a> &#8211; I&#039;m not really surprised that the PostgreSQL lists have more traffic than the MySQL lists.  PostgreSQL seems to be much more of a community owned project than MySQL is. <br /> Tags: <a href="http://del.icio.us/josephscott/email">email</a> <a href="http://del.icio.us/josephscott/markmail">markmail</a> <a href="http://del.icio.us/josephscott/mysql">mysql</a> <a href="http://del.icio.us/josephscott/postgresql">postgresql</a>  </p>
+</li>
+<li>
+<p><a href="http://code.google.com/p/memcachedb/">memcachedb &#8211; Google Code</a> &#8211; Persistent version of Memcache that uses Berkeley DB as back end storage. <br /> Tags: <a href="http://del.icio.us/josephscott/cache">cache</a> <a href="http://del.icio.us/josephscott/database">database</a> <a href="http://del.icio.us/josephscott/memcache">memcache</a> <a href="http://del.icio.us/josephscott/memcachedb">memcachedb</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/02/20/links-for-tue-19-feb-2008-2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Mon 11 Feb 2008</title>
+		<link>/2008/02/11/links-for-mon-11-feb-2008/</link>
+					<comments>/2008/02/11/links-for-mon-11-feb-2008/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 12 Feb 2008 00:30:20 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[storage]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/02/11/links-for-mon-11-feb-2008/</guid>
+
+					<description><![CDATA[Sizing PostgreSQL 8.3 Logs &#8211; Jignesh Shah&#8217;s Weblog &#8211; Interesting walk through on figuring out how to make PostgreSQL WAL keep up with your expected traffic. Tags: postgresql database storage performance]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://blogs.sun.com/jkshah/entry/sizing_postgresql_8_3_logs">Sizing PostgreSQL 8.3 Logs &#8211; Jignesh Shah&#8217;s Weblog</a> &#8211; Interesting walk through on figuring out how to make PostgreSQL WAL keep up with your expected traffic. <br /> Tags: <a href="http://del.icio.us/josephscott/postgresql">postgresql</a> <a href="http://del.icio.us/josephscott/database">database</a> <a href="http://del.icio.us/josephscott/storage">storage</a> <a href="http://del.icio.us/josephscott/performance">performance</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/02/11/links-for-mon-11-feb-2008/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Tue 5 Feb 2008</title>
+		<link>/2008/02/05/links-for-tue-5-feb-2008/</link>
+					<comments>/2008/02/05/links-for-tue-5-feb-2008/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 06 Feb 2008 00:30:09 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[funny]]></category>
+		<category><![CDATA[iham]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[paradoy]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[video]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/02/05/links-for-tue-5-feb-2008/</guid>
+
+					<description><![CDATA[iHam &#8211; The strangest Apple spoof I have ever seen. Tags: apple funny paradoy video iham Failing silently is bad &#8211; gnegg &#8211; If your database has a choice between storing incorrect data or throwing an error, I&#8217;ll vote for throwing an error every time. Tags: mysql postgresql]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://ijam.es/">iHam</a> &#8211; The strangest Apple spoof I have ever seen. <br /> Tags: <a href="http://del.icio.us/josephscott/apple">apple</a> <a href="http://del.icio.us/josephscott/funny">funny</a> <a href="http://del.icio.us/josephscott/paradoy">paradoy</a> <a href="http://del.icio.us/josephscott/video">video</a> <a href="http://del.icio.us/josephscott/iham">iham</a>  </p>
+</li>
+<li>
+<p><a href="http://www.gnegg.ch/archives/386-Failing-silently-is-bad.html">Failing silently is bad &#8211; gnegg</a> &#8211; If your database has a choice between storing incorrect data or throwing an error, I&#8217;ll vote for throwing an error every time. <br /> Tags: <a href="http://del.icio.us/josephscott/mysql">mysql</a> <a href="http://del.icio.us/josephscott/postgresql">postgresql</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/02/05/links-for-tue-5-feb-2008/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Sun Buys MySQL</title>
+		<link>/2008/01/16/sun-buys-mysql/</link>
+					<comments>/2008/01/16/sun-buys-mysql/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 16 Jan 2008 17:07:44 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[sun]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/01/16/sun-buys-mysql/</guid>
+
+					<description><![CDATA[The big news today is that Sun purchased MySQL: Sun Press Kit, Sun Announcement, MySQL Announcement and Jonathan Schwartz&#8217;s Blog Announcement. Let&#8217;s get the obvious issues/questions out of the way first. The purchase price is $1 billion, $800 million cash, $200 million in options. What is this going to mean for Sun&#8217;s PostgreSQL development? How [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The big news today is that <a href="http://www.sun.com/">Sun</a> purchased <a href="http://mysql.com/">MySQL</a>: <a href="http://www.sun.com/aboutsun/media/presskits/2008-0116/index.jsp?intcmp=hp2008jan16_mysql_learn">Sun Press Kit</a>, <a href="http://www.sun.com/aboutsun/pr/2008-01/sunflash.20080116.1.xml">Sun Announcement</a>, <a href="http://mysql.com/news-and-events/sun-to-acquire-mysql.html">MySQL Announcement</a> and <a href="http://blogs.sun.com/jonathan/entry/winds_of_change_are_blowing#comments">Jonathan Schwartz&#8217;s Blog Announcement</a>.</p>
+<p>Let&#8217;s get the obvious issues/questions out of the way first.  The purchase price is $1 billion, $800 million cash, $200 million in options.  What is this going to mean for <a href="http://www.sun.com/software/products/postgresql/index.jsp">Sun&#8217;s PostgreSQL development</a>?  How will this impact the relationship between Sun and Oracle?  Historically Sun has been one of the big iron Oracle platforms.  Oracle owns a vital piece of MySQL, InnoDB.  And of course, what will this mean to the MySQL community?</p>
+<p>Now some of my own thoughts on this deal.  This seems like something of a desperate move for both companies.  In the case of MySQL, they need to find a way to stay intact as a company and bring in lots of cash.  Guess all that talk of an IPO goes out the window now.  So the list of potential buyers becomes pretty small.  It would have to be to a company with lots of hard core tech but without a major database platform of their own, which rules out Oracle, IBM and Microsoft.  Google and Yahoo might have smart folks who could make it better, but getting into the customer support business isn&#8217;t something that they&#8217;d want to do.  So how many other big tech companies are left that would be willing or able to pay the kind of money that MySQL was looking for?  Like I said, small list.</p>
+<p>Then there is the Sun side of this deal.  Recently Sun has been pushing PostgreSQL, but there isn&#8217;t one single company behind PostgreSQL, making it much more difficult to control in the manner that Sun prefers.  In this respect MySQL fits perfectly, although it is Open Source (mostly), there really isn&#8217;t much of a developer community for it.  Basically all development happens at MySQL the company.  This would allow Sun to have the same massive grip over development that it has had for its other open source products.  I think another factor is that Sun desperately wants to avoid becoming ignored in the world of big name web companies.  They&#8217;ve developed some great stuff (Dtrace, ZFS) and even open sourced their OS (Solaris), but have still have failed to get their foot in the door in any big way for tech startups.  So if you can&#8217;t convince them to like you, buy someone they already do.  And better to do it now while you still have the money to do so.</p>
+<p>Sun has just bought their way into becoming every tech company&#8217;s best friend.  Maybe now they&#8217;ll change their stock ticker symbol from <a href="http://joseph.randomnetworks.com/archives/2007/08/23/from-sunw-to-java/">JAVA</a> to MYSQL.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/01/16/sun-buys-mysql/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Wed 12 Dec 2007</title>
+		<link>/2007/12/12/links-for-wed-12-dec-2007/</link>
+					<comments>/2007/12/12/links-for-wed-12-dec-2007/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 13 Dec 2007 00:30:16 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[leadership]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<category><![CDATA[redhat]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/12/12/links-for-wed-12-dec-2007/</guid>
+
+					<description><![CDATA[Red Hat Magazine &#124; Tip from an RHCE: Memory storage on PostgreSQL &#8211; One way to make sure your PostgreSQL (temporary) table is in memory. Tags: postgresql linux redhat Stephen R. Covey &#62; Blog Archive &#62; The Leader Formula: The 4 things that make a good leader. &#8211; Four imperatives of leadership. Tags: leadership]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://www.redhatmagazine.com/2007/12/12/tip-from-an-rhce-memory-storage-on-postgresql/">Red Hat Magazine | Tip from an RHCE: Memory storage on PostgreSQL</a> &#8211; One way to make sure your PostgreSQL (temporary) table is in memory. <br /> Tags: <a href="http://del.icio.us/josephscott/postgresql">postgresql</a> <a href="http://del.icio.us/josephscott/linux">linux</a> <a href="http://del.icio.us/josephscott/redhat">redhat</a>  </p>
+</li>
+<li>
+<p><a href="http://www.stephencovey.com/blog/?p=6">Stephen R. Covey &gt; Blog Archive &gt; The Leader Formula: The 4 things that make a good leader.</a> &#8211; Four imperatives of leadership. <br /> Tags: <a href="http://del.icio.us/josephscott/leadership">leadership</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/12/12/links-for-wed-12-dec-2007/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Tue 11 Dec 2007</title>
+		<link>/2007/12/11/links-for-tue-11-dec-2007/</link>
+					<comments>/2007/12/11/links-for-tue-11-dec-2007/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 12 Dec 2007 00:30:09 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/12/11/links-for-tue-11-dec-2007/</guid>
+
+					<description><![CDATA[8.3 vs. 8.2 &#8211; a simple benchmark &#8211; mastermind&#8217;s weblog &#8211; Simple comparision of PostgreSQL 8.2 vs. 8.3, showing a nice improvement in 8.3. Tags: postgresql]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://www.kaltenbrunner.cc/blog/index.php?/archives/21-guid.html">8.3 vs. 8.2 &#8211; a simple benchmark &#8211; mastermind&#8217;s weblog</a> &#8211; Simple comparision of PostgreSQL 8.2 vs. 8.3, showing a nice improvement in 8.3. <br /> Tags: <a href="http://del.icio.us/josephscott/postgresql">postgresql</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/12/11/links-for-tue-11-dec-2007/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Links for Fri 7 Dec 2007</title>
+		<link>/2007/12/07/links-for-fri-7-dec-2007/</link>
+					<comments>/2007/12/07/links-for-fri-7-dec-2007/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Sat, 08 Dec 2007 00:30:13 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/12/07/links-for-fri-7-dec-2007/</guid>
+
+					<description><![CDATA[Database Abstraction with Updateable Views &#8211; Postgres OnLine Journal &#8211; Nice description of how to setup updateable views in PostgreSQL. Tags: postgresql]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://www.postgresonline.com/journal/index.php?/archives/11-guid.html">Database Abstraction with Updateable Views &#8211; Postgres OnLine Journal</a> &#8211; Nice description of how to setup updateable views in PostgreSQL. <br /> Tags: <a href="http://del.icio.us/josephscott/postgresql">postgresql</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/12/07/links-for-fri-7-dec-2007/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: PostgreSQL rtrim() Strangeness	</title>
+	<atom:link href="/2004/07/23/postgresql-rtrim-strangeness/feed/" rel="self" type="application/rss+xml" />
+	<link>/2004/07/23/postgresql-rtrim-strangeness/</link>
+	<description></description>
+	<lastBuildDate>Wed, 25 Aug 2004 11:16:29 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Steve		</title>
+		<link>/2004/07/23/postgresql-rtrim-strangeness/#comment-495</link>
+
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+		<pubDate>Wed, 25 Aug 2004 11:16:29 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/07/23/postgresql-rtrim-strangeness/#comment-495</guid>
+
+					<description><![CDATA[You might also want to look into the PG function &#039;coalesce&#039; (from some old 7.2 docs):
+
+COALESCE(value[, ...])
+
+The COALESCE function returns the first of its arguments that is not NULL. This is often useful to substitute a default value for NULL values when data is retrieved for display, for example:
+
+SELECT COALESCE(description, short_description, &#039;(none)&#039;) ...]]></description>
+			<content:encoded><![CDATA[<p>You might also want to look into the PG function &#8216;coalesce&#8217; (from some old 7.2 docs):</p>
+<p>COALESCE(value[, &#8230;])</p>
+<p>The COALESCE function returns the first of its arguments that is not NULL. This is often useful to substitute a default value for NULL values when data is retrieved for display, for example:</p>
+<p>SELECT COALESCE(description, short_description, &#8216;(none)&#8217;) &#8230;</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

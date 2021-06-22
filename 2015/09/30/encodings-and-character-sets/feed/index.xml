@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Encodings and Character Sets	</title>
+	<atom:link href="/2015/09/30/encodings-and-character-sets/feed/" rel="self" type="application/rss+xml" />
+	<link>/2015/09/30/encodings-and-character-sets/</link>
+	<description></description>
+	<lastBuildDate>Fri, 05 Feb 2016 06:02:10 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Jahir		</title>
+		<link>/2015/09/30/encodings-and-character-sets/#comment-4383</link>
+
+		<dc:creator><![CDATA[Jahir]]></dc:creator>
+		<pubDate>Fri, 05 Feb 2016 06:02:10 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=13068#comment-4383</guid>
+
+					<description><![CDATA[Basically, you can visualise this by assuming that all characters are stored in computers using a code, like the ciphers used in espionage. A character encoding provides a key to unlock (ie. crack) the code. It is a set of mappings between the bytes representing numbers in the computer and characters in the coded character set. Without the key, the data looks like garbage.]]></description>
+			<content:encoded><![CDATA[<p>Basically, you can visualise this by assuming that all characters are stored in computers using a code, like the ciphers used in espionage. A character encoding provides a key to unlock (ie. crack) the code. It is a set of mappings between the bytes representing numbers in the computer and characters in the coded character set. Without the key, the data looks like garbage.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

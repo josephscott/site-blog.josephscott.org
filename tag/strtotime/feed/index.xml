@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>strtotime &#8211; Joseph Scott</title>
+	<atom:link href="/tag/strtotime/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 19 Jul 2011 15:19:06 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Under Appreciated Code: strtotime</title>
+		<link>/2011/07/19/under-appreciated-code-strtotime/</link>
+					<comments>/2011/07/19/under-appreciated-code-strtotime/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 19 Jul 2011 15:19:06 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[strtotime]]></category>
+		<category><![CDATA[under-appreciated-code]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4486</guid>
+
+					<description><![CDATA[There are some functions that are so useful, you sometimes wonder how anyone gets by without them. I give you the under appreciated code of the day : strtotime. In the PHP world strtotime is a given. Here are a few examples: [sourcecode lang=&#8221;php&#8221;] $when = &#8216;yesterday&#8217;; echo &#34;{$when} : &#34; . date( &#8216;Y-m-d H:i:s&#8217;, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>There are some functions that are so useful, you sometimes wonder how anyone gets by without them.  I give you the under appreciated code of the day : strtotime.</p>
+<p>In the PHP world <a href="http://us3.php.net/strtotime">strtotime</a> is a given.  Here are a few examples:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+$when = &#8216;yesterday&#8217;;<br />
+echo &quot;{$when} : &quot; . date( &#8216;Y-m-d H:i:s&#8217;, strtotime( $when ) ) . &quot;n&quot;;</p>
+<p>$when = &#8216;first day of last month&#8217;;<br />
+echo &quot;{$when} : &quot; . date( &#8216;Y-m-d H:i:s&#8217;, strtotime( $when ) ) . &quot;n&quot;;</p>
+<p>$when = &#8216;+45 days&#8217;;<br />
+echo &quot;{$when} : &quot; . date( &#8216;Y-m-d H:i:s&#8217;, strtotime( $when ) ) . &quot;n&quot;;</p>
+<p>$when = &#8216;+1 year 3 months 4 days 6 hours 14 seconds&#8217;;<br />
+echo &quot;{$when} : &quot; . date( &#8216;Y-m-d H:i:s&#8217;, strtotime( $when ) ) . &quot;n&quot;;</p>
+<p>$when = &#8216;last monday of next month&#8217;;<br />
+echo &quot;{$when} : &quot; . date( &#8216;Y-m-d H:i:s&#8217;, strtotime( $when ) ) . &quot;n&quot;;<br />
+[/sourcecode]</p>
+<p>The ability of strtotime to slice and dice dates and intervals can be a life saver.  I highly recommend taking 10 minutes to try it out.</p>
+<p>I was really disappointed to see that strtotime was not part of the Python &#8220;batteries included&#8221; approach.  Fortunately there are Python implementations of strtotime, but really it is so amazingly handy that it should be up for strong consideration as a core feature.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/07/19/under-appreciated-code-strtotime/feed/</wfw:commentRss>
+			<slash:comments>11</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

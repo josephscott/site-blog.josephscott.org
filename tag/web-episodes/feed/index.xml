@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>web-episodes &#8211; Joseph Scott</title>
+	<atom:link href="/tag/web-episodes/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 06 Apr 2015 15:19:34 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Real User Measurement: Web Episodes</title>
+		<link>/2015/04/06/real-user-measurement-web-episodes/</link>
+					<comments>/2015/04/06/real-user-measurement-web-episodes/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 06 Apr 2015 15:19:34 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[boomerang]]></category>
+		<category><![CDATA[steve-souders]]></category>
+		<category><![CDATA[web-episodes]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11009</guid>
+
+					<description><![CDATA[I&#8217;ve been reasonably happy with using boomerang for RUM ( real user measurement ), then came across Web Episodes from Steve Souders. Has anyone opted to use Web Episodes instead of boomerang?]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been reasonably happy with using <a href="https://github.com/lognormal/boomerang">boomerang</a> for RUM ( real user measurement ), then came across <a href='http://stevesouders.com/episodes/'>Web Episodes</a> from Steve Souders.</p>
+<p>Has anyone opted to use Web Episodes instead of boomerang?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/04/06/real-user-measurement-web-episodes/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

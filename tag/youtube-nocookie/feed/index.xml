@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>youtube-nocookie &#8211; Joseph Scott</title>
+	<atom:link href="/tag/youtube-nocookie/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 02 Apr 2020 02:02:31 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>youtube-nocookie.com</title>
+		<link>/2020/04/01/youtube-nocookie-com/</link>
+					<comments>/2020/04/01/youtube-nocookie-com/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 02 Apr 2020 02:02:31 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[jeremy-keith]]></category>
+		<category><![CDATA[youtube]]></category>
+		<category><![CDATA[youtube-nocookie]]></category>
+		<guid isPermaLink="false">/?p=18129</guid>
+
+					<description><![CDATA[During his write up on better YouTube embeds, Jeremy Keith mentioned youtube-nocookie.com. That was the first time I&#8217;d heard of that domain. It is owned and run by Google, and is used specifically for embedding videos. And it does what the name implies: YouTube without setting cookies. The normal https://www.youtube.com/watch?v=oHg5SJYRHA0 YouTube URL would then be [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>During his write up on <a href="https://adactio.com/journal/16594">better YouTube embeds</a>, Jeremy Keith mentioned youtube-nocookie.com.  That was the first time I&#8217;d heard of that domain.  It is <a href="http://whois.domaintools.com/youtube-nocookie.com">owned and run by Google</a>, and is used specifically for embedding videos.  And it does what the name implies: YouTube without setting cookies.</p>
+<p>The normal <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0">https://www.youtube.com/watch?v=oHg5SJYRHA0</a> YouTube URL would then be <a href="https://www.youtube-nocookie.com/embed/oHg5SJYRHA0">https://www.youtube-nocookie.com/embed/oHg5SJYRHA0</a>.</p>
+<p>If you find yourself needing to embed a YouTube video, then youtube-nocookie.com is the better option.  Better performance, a better user experience, and better for privacy.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/04/01/youtube-nocookie-com/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

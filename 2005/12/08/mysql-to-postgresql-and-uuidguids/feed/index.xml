@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: MySQL to PostgreSQL and UUID/GUIDs	</title>
+	<atom:link href="/2005/12/08/mysql-to-postgresql-and-uuidguids/feed/" rel="self" type="application/rss+xml" />
+	<link>/2005/12/08/mysql-to-postgresql-and-uuidguids/</link>
+	<description></description>
+	<lastBuildDate>Fri, 09 Dec 2005 17:29:10 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: joseph		</title>
+		<link>/2005/12/08/mysql-to-postgresql-and-uuidguids/#comment-1054</link>
+
+		<dc:creator><![CDATA[joseph]]></dc:creator>
+		<pubDate>Fri, 09 Dec 2005 17:29:10 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=528#comment-1054</guid>
+
+					<description><![CDATA[With the additional features that you get out of PostgreSQL it seems like would be the way to go moving forward.  You could add full text indexing without having to give up foreign key support for example.
+
+The reduced disk space and restore times along with good performance certainly make it that much more compelling.]]></description>
+			<content:encoded><![CDATA[<p>With the additional features that you get out of PostgreSQL it seems like would be the way to go moving forward.  You could add full text indexing without having to give up foreign key support for example.</p>
+<p>The reduced disk space and restore times along with good performance certainly make it that much more compelling.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Alex		</title>
+		<link>/2005/12/08/mysql-to-postgresql-and-uuidguids/#comment-1053</link>
+
+		<dc:creator><![CDATA[Alex]]></dc:creator>
+		<pubDate>Fri, 09 Dec 2005 16:40:46 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=528#comment-1053</guid>
+
+					<description><![CDATA[&lt;blockquote&gt;there hasn’t been any feedback yet to confirm if it fixed all of the differences between InnoDB and PostgreSQL.&lt;/blockquote&gt;
+
+We haven&#039;t tried it - it would be quite a bit of work to test out and PostgreSQL hasn&#039;t given us cause to feel that the pain of that test is worth doing yet.]]></description>
+			<content:encoded><![CDATA[<blockquote><p>there hasn’t been any feedback yet to confirm if it fixed all of the differences between InnoDB and PostgreSQL.</p></blockquote>
+<p>We haven&#8217;t tried it &#8211; it would be quite a bit of work to test out and PostgreSQL hasn&#8217;t given us cause to feel that the pain of that test is worth doing yet.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: joseph		</title>
+		<link>/2005/12/08/mysql-to-postgresql-and-uuidguids/#comment-1052</link>
+
+		<dc:creator><![CDATA[joseph]]></dc:creator>
+		<pubDate>Fri, 09 Dec 2005 07:26:19 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=528#comment-1052</guid>
+
+					<description><![CDATA[&lt;a href=&quot;http://feedlounge.com/blog/2005/11/20/switched-to-postgresql/#comment-408&quot; rel=&quot;nofollow&quot;&gt;Scott&#039;s comment on 3 Dec 2005&lt;/a&gt; indicated that they are generating real UUID/GUIDs from either MySQL&#039;s UUID() function or from a Python function.  Recent versions of FreeBSD include uuidgen for this.]]></description>
+			<content:encoded><![CDATA[<p><a href="http://feedlounge.com/blog/2005/11/20/switched-to-postgresql/#comment-408" rel="nofollow">Scott&#8217;s comment on 3 Dec 2005</a> indicated that they are generating real UUID/GUIDs from either MySQL&#8217;s UUID() function or from a Python function.  Recent versions of FreeBSD include uuidgen for this.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Matt		</title>
+		<link>/2005/12/08/mysql-to-postgresql-and-uuidguids/#comment-1051</link>
+
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+		<pubDate>Fri, 09 Dec 2005 03:48:50 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=528#comment-1051</guid>
+
+					<description><![CDATA[I think people in that conversation are missing that the FL guys are talking about the RSS concept of a GUID, which (1) often isn&#039;t and (2) in WordPress is the entire permalink.]]></description>
+			<content:encoded><![CDATA[<p>I think people in that conversation are missing that the FL guys are talking about the RSS concept of a GUID, which (1) often isn&#8217;t and (2) in WordPress is the entire permalink.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

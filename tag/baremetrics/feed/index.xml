@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>baremetrics &#8211; Joseph Scott</title>
+	<atom:link href="/tag/baremetrics/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 31 Aug 2015 14:22:14 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Baremetrics</title>
+		<link>/2015/08/31/baremetrics/</link>
+					<comments>/2015/08/31/baremetrics/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 31 Aug 2015 14:22:14 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[baremetrics]]></category>
+		<category><![CDATA[stripe]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12116</guid>
+
+					<description><![CDATA[One of the things really interesting services trigger is other interesting services built on top of it. It was that thinking that had me looking at Baremetrics, &#8220;Analytics &#38; Insights for Stripe&#8221;. This is the type of data everyone who deals with money wants to see. Beyond that they offer something that is definitely outside [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>One of the things really interesting services trigger is other interesting services built on top of it.  It was that thinking that had me looking at <a href='https://baremetrics.com/'>Baremetrics</a>, &#8220;Analytics &amp; Insights for Stripe&#8221;.  This is the type of data everyone who deals with money wants to see.</p>
+<p>Beyond that they offer something that is definitely outside the box: public revenue dashboards.  In the past I&#8217;ve come across dashboards for <a href="https://buffer.baremetrics.com/dashboard">Buffer</a> and <a href="https://ghost.baremetrics.com/dashboard">Ghost</a>.  <a href="https://baremetrics.com/open">baremetrics.com/open</a> has a list of sites with public dashboards, including <a href="https://demo.baremetrics.com/">Baremetrics</a> itself.  Not every company wants to be so transparent with money matters, for those that do Baremetrics has made it very easy.</p>
+<p>I wonder how Stripe thinks about Baremetrics.  There is the traditional corporate method: Stripe should acquire them and offer the analytics as an add on themselves.  Then others put forward the idea that having a thriving third party ecosystem is more important for the long term health and survival of Stripe.</p>
+<p>Which approach would you take?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/08/31/baremetrics/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: The First Minute	</title>
+	<atom:link href="/2015/12/21/the-first-minute/feed/" rel="self" type="application/rss+xml" />
+	<link>/2015/12/21/the-first-minute/</link>
+	<description></description>
+	<lastBuildDate>Mon, 11 Jul 2016 17:11:40 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Jim Vanderveen		</title>
+		<link>/2015/12/21/the-first-minute/#comment-5211</link>
+
+		<dc:creator><![CDATA[Jim Vanderveen]]></dc:creator>
+		<pubDate>Mon, 11 Jul 2016 17:11:40 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=14459#comment-5211</guid>
+
+					<description><![CDATA[df -i : check for free inodes (I just got bit by this one over the weekend)]]></description>
+			<content:encoded><![CDATA[<p>df -i : check for free inodes (I just got bit by this one over the weekend)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: julien		</title>
+		<link>/2015/12/21/the-first-minute/#comment-4429</link>
+
+		<dc:creator><![CDATA[julien]]></dc:creator>
+		<pubDate>Wed, 23 Dec 2015 19:24:24 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=14459#comment-4429</guid>
+
+					<description><![CDATA[df -m
+
+How many times have I logged into a server where disk space ran out :(]]></description>
+			<content:encoded><![CDATA[<p>df -m</p>
+<p>How many times have I logged into a server where disk space ran out 🙁</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

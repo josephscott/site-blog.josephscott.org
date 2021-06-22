@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>progressive-enhancement &#8211; Joseph Scott</title>
+	<atom:link href="/tag/progressive-enhancement/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 29 Jan 2014 16:48:16 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Progressive Enhancement, Where Art Thou?</title>
+		<link>/2014/01/29/progressive-enhancement-where-art-thou/</link>
+					<comments>/2014/01/29/progressive-enhancement-where-art-thou/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 29 Jan 2014 16:48:16 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[drew-mclellan]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[progressive-enhancement]]></category>
+		<category><![CDATA[simon-st-laurent]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9854</guid>
+
+					<description><![CDATA[Drew McLellan wonders Why is Progressive Enhancement so unpopular?: Does that mean we shouldn’t use JavaScript? Of course not. Scripting in the browser is an important part of the experience of using the web in 2014. It’s my opinion that you shouldn’t depend on JavaScript running for your site to work. Build with HTML, add [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Drew McLellan wonders <a href='http://allinthehead.com/retro/367/why-is-progressive-enhancement-so-unpopular' title='Too many people are too quick to go all JavaScript all the time.'>Why is Progressive Enhancement so unpopular?</a>:</p>
+<blockquote><p>
+Does that mean we shouldn’t use JavaScript? Of course not. Scripting in the browser is an important part of the experience of using the web in 2014. It’s my opinion that you shouldn’t depend on JavaScript running for your site to work. Build with HTML, add styling with CSS, add behaviour with JavaScript. If the JavaScript fails, the HTML should still work.
+</p></blockquote>
+<p>Simon St. Laurent touched on this as well in <a href="http://programming.oreilly.com/2014/01/web-application-development-is-different-and-better.html" title="Constraints can be a good thing.">Web Application Development is Different (and Better)</a>:</p>
+<blockquote><p>
+Let’s extend the Web and help it do more – but let’s do that by valuing the many strengths it already brings.
+</p></blockquote>
+<p>Intentional or not the last few years have brought us a strong push to ignore the idea of progressive enhancement.  In many cases that has been to our detriment.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/01/29/progressive-enhancement-where-art-thou/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>marty-weiner &#8211; Joseph Scott</title>
+	<atom:link href="/tag/marty-weiner/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 30 Oct 2015 13:33:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>It Will Fail</title>
+		<link>/2015/10/30/it-will-fail/</link>
+					<comments>/2015/10/30/it-will-fail/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 30 Oct 2015 13:33:07 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[failure]]></category>
+		<category><![CDATA[marty-weiner]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13561</guid>
+
+					<description><![CDATA[Marty Weiner on how to &#8220;Learn to stop using shiny new things and love MySQL&#8221; ( emphasis mine ): Through the gauntlet, two of the most important lessons I learned building Pinterest were: &#8211; Don’t be the biggest. If you’re the biggest user of a technology, your challenges will be greatly amplified. &#8211; Keep it [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Marty Weiner on how to &#8220;<a href="https://engineering.pinterest.com/blog/learn-stop-using-shiny-new-things-and-love-mysql">Learn to stop using shiny new things and love MySQL</a>&#8221; ( emphasis mine ):</p>
+<blockquote><p>
+Through the gauntlet, two of the most important lessons I learned building Pinterest were: </p>
+<p>&#8211; Don’t be the biggest. If you’re the biggest user of a technology, your challenges will be greatly amplified.<br />
+&#8211; <strong>Keep it simple. No matter what technology you’re using, it will fail.</strong>
+</p></blockquote>
+<p>If failure is inevitable, then knowledge about how a system can fail is invaluable.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/30/it-will-fail/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

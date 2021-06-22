@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Problems With libxml2 For WordPress XML-RPC Users	</title>
+	<atom:link href="/2008/12/30/problems-with-libxml2-for-wordpress-xml-rpc-users/feed/" rel="self" type="application/rss+xml" />
+	<link>/2008/12/30/problems-with-libxml2-for-wordpress-xml-rpc-users/</link>
+	<description></description>
+	<lastBuildDate>Mon, 19 Jul 2010 15:34:44 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: the rasx() context &#187; Blog Archive &#187; Now I remember why I stopped using Windows Live Writer…		</title>
+		<link>/2008/12/30/problems-with-libxml2-for-wordpress-xml-rpc-users/#comment-2647</link>
+
+		<dc:creator><![CDATA[the rasx() context &#187; Blog Archive &#187; Now I remember why I stopped using Windows Live Writer…]]></dc:creator>
+		<pubDate>Mon, 19 Jul 2010 15:34:44 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=550#comment-2647</guid>
+
+					<description><![CDATA[[...] “Problems With libxml2 For WordPress XML-RPC Users” (from 2008!) [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] “Problems With libxml2 For WordPress XML-RPC Users” (from 2008!) [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: evilzenscientist :: thoughts &#187; PHP XML parsing bug &#8211; and a workaround		</title>
+		<link>/2008/12/30/problems-with-libxml2-for-wordpress-xml-rpc-users/#comment-2646</link>
+
+		<dc:creator><![CDATA[evilzenscientist :: thoughts &#187; PHP XML parsing bug &#8211; and a workaround]]></dc:creator>
+		<pubDate>Thu, 06 Aug 2009 05:35:54 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=550#comment-2646</guid>
+
+					<description><![CDATA[[...] http://josephscott.org/archives/2008/12/problems-with-libxml2-for-wordpress-xml-rpc-users/ [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] <a href="http://josephscott.org/archives/2008/12/problems-with-libxml2-for-wordpress-xml-rpc-users/" rel="nofollow ugc">http://josephscott.org/archives/2008/12/problems-with-libxml2-for-wordpress-xml-rpc-users/</a> [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: misiek		</title>
+		<link>/2008/12/30/problems-with-libxml2-for-wordpress-xml-rpc-users/#comment-2645</link>
+
+		<dc:creator><![CDATA[misiek]]></dc:creator>
+		<pubDate>Thu, 11 Jun 2009 05:06:49 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=550#comment-2645</guid>
+
+					<description><![CDATA[wheee
+
+I figured that finally, basically went through the code and could display the status var of rss object, it says 500. Then I could finally display the error and it says limit 2s timeout, the time out of fetching the rss, and this hit me , because this rss is pretty big, so increasing to 5s fixed the problem :)
+
+thanks Joseph to figure the problem]]></description>
+			<content:encoded><![CDATA[<p>wheee</p>
+<p>I figured that finally, basically went through the code and could display the status var of rss object, it says 500. Then I could finally display the error and it says limit 2s timeout, the time out of fetching the rss, and this hit me , because this rss is pretty big, so increasing to 5s fixed the problem 🙂</p>
+<p>thanks Joseph to figure the problem</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: misiek		</title>
+		<link>/2008/12/30/problems-with-libxml2-for-wordpress-xml-rpc-users/#comment-2644</link>
+
+		<dc:creator><![CDATA[misiek]]></dc:creator>
+		<pubDate>Thu, 11 Jun 2009 03:52:36 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=550#comment-2644</guid>
+
+					<description><![CDATA[yeah , there is another option timestamp for that feed, deleted it didn&#039;t help, I will look at it tomorrow yet.
+
+I just thought that there are WP functions which deals with caching.
+
+I played also with code little bit, found cache_age vars or other which may be responsible for keeping the cache but there must be something else yet like you said.]]></description>
+			<content:encoded><![CDATA[<p>yeah , there is another option timestamp for that feed, deleted it didn&#8217;t help, I will look at it tomorrow yet.</p>
+<p>I just thought that there are WP functions which deals with caching.</p>
+<p>I played also with code little bit, found cache_age vars or other which may be responsible for keeping the cache but there must be something else yet like you said.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/12/30/problems-with-libxml2-for-wordpress-xml-rpc-users/#comment-2643</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 11 Jun 2009 03:22:42 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=550#comment-2643</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2008/12/30/problems-with-libxml2-for-wordpress-xml-rpc-users/#comment-2642&quot;&gt;misiek&lt;/a&gt;.
+
+I&#039;d have to look through that chunk of code to figure out why it isn&#039;t trying to refresh the cache for that feed.  If I were to guess there might be another option that lists what feeds have been cached and where in the options table they are. If that&#039;s the case and you only deleted the cached feeds then it might think that the feed is cached, but then find nothing in the cache.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2008/12/30/problems-with-libxml2-for-wordpress-xml-rpc-users/#comment-2642">misiek</a>.</p>
+<p>I&#8217;d have to look through that chunk of code to figure out why it isn&#8217;t trying to refresh the cache for that feed.  If I were to guess there might be another option that lists what feeds have been cached and where in the options table they are. If that&#8217;s the case and you only deleted the cached feeds then it might think that the feed is cached, but then find nothing in the cache.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: misiek		</title>
+		<link>/2008/12/30/problems-with-libxml2-for-wordpress-xml-rpc-users/#comment-2642</link>
+
+		<dc:creator><![CDATA[misiek]]></dc:creator>
+		<pubDate>Wed, 10 Jun 2009 22:51:35 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=550#comment-2642</guid>
+
+					<description><![CDATA[I figured that it cache in DB in wp_options table, I found my record, but before I changed url of rss to see is it actually caching it there. New record showed up, awesome.
+
+So I removed the new record and that bad one.
+
+Now it does not cache at all, my rss feed won&#039;t show up because fetch_rss() return false.
+
+I wonder why it doesn&#039;t want to cache new feeds
+
+Any ideas
+
+I know that this is not right place to ask about that but you may know the solution.
+
+Thanks]]></description>
+			<content:encoded><![CDATA[<p>I figured that it cache in DB in wp_options table, I found my record, but before I changed url of rss to see is it actually caching it there. New record showed up, awesome.</p>
+<p>So I removed the new record and that bad one.</p>
+<p>Now it does not cache at all, my rss feed won&#8217;t show up because fetch_rss() return false.</p>
+<p>I wonder why it doesn&#8217;t want to cache new feeds</p>
+<p>Any ideas</p>
+<p>I know that this is not right place to ask about that but you may know the solution.</p>
+<p>Thanks</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/12/30/problems-with-libxml2-for-wordpress-xml-rpc-users/#comment-2641</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 10 Jun 2009 22:26:18 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=550#comment-2641</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2008/12/30/problems-with-libxml2-for-wordpress-xml-rpc-users/#comment-2640&quot;&gt;misiek&lt;/a&gt;.
+
+No problem.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2008/12/30/problems-with-libxml2-for-wordpress-xml-rpc-users/#comment-2640">misiek</a>.</p>
+<p>No problem.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: misiek		</title>
+		<link>/2008/12/30/problems-with-libxml2-for-wordpress-xml-rpc-users/#comment-2640</link>
+
+		<dc:creator><![CDATA[misiek]]></dc:creator>
+		<pubDate>Wed, 10 Jun 2009 21:48:36 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=550#comment-2640</guid>
+
+					<description><![CDATA[very interesting !
+
+I replaced the url of the rss from the same user picasa account and this WP took it.
+
+Caching old rss maybe possible, but have no idea how to clear it.
+
+Thanks for help and responds.]]></description>
+			<content:encoded><![CDATA[<p>very interesting !</p>
+<p>I replaced the url of the rss from the same user picasa account and this WP took it.</p>
+<p>Caching old rss maybe possible, but have no idea how to clear it.</p>
+<p>Thanks for help and responds.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/12/30/problems-with-libxml2-for-wordpress-xml-rpc-users/#comment-2639</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 10 Jun 2009 20:45:00 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=550#comment-2639</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2008/12/30/problems-with-libxml2-for-wordpress-xml-rpc-users/#comment-2638&quot;&gt;misiek&lt;/a&gt;.
+
+Since you are using fetch_rss() did you check to see if it was a using a cached copy of the feed? If it cached the feed while having libxml2 problems then it might be still using it.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2008/12/30/problems-with-libxml2-for-wordpress-xml-rpc-users/#comment-2638">misiek</a>.</p>
+<p>Since you are using fetch_rss() did you check to see if it was a using a cached copy of the feed? If it cached the feed while having libxml2 problems then it might be still using it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: misiek		</title>
+		<link>/2008/12/30/problems-with-libxml2-for-wordpress-xml-rpc-users/#comment-2638</link>
+
+		<dc:creator><![CDATA[misiek]]></dc:creator>
+		<pubDate>Wed, 10 Jun 2009 18:01:58 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=550#comment-2638</guid>
+
+					<description><![CDATA[I checked that in phpinfo()
+
+it use correct version.]]></description>
+			<content:encoded><![CDATA[<p>I checked that in phpinfo()</p>
+<p>it use correct version.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

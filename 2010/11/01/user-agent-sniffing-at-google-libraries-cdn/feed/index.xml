@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: User Agent Sniffing at Google Libraries CDN	</title>
+	<atom:link href="/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/</link>
+	<description></description>
+	<lastBuildDate>Thu, 13 Aug 2015 16:10:59 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comment-3570</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 13 Aug 2015 16:10:59 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3081#comment-3570</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comment-3569&quot;&gt;Maria Smith&lt;/a&gt;.
+
+Each browser behaves a bit differently, and it is entirely possible that your CDN is treating different browsers differently.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comment-3569">Maria Smith</a>.</p>
+<p>Each browser behaves a bit differently, and it is entirely possible that your CDN is treating different browsers differently.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Maria Smith		</title>
+		<link>/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comment-3569</link>
+
+		<dc:creator><![CDATA[Maria Smith]]></dc:creator>
+		<pubDate>Thu, 13 Aug 2015 10:50:22 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3081#comment-3569</guid>
+
+					<description><![CDATA[Does Google&#039;s CDN work well while using particular browser? (I mean Chrome of course). I&#039;ve just recently found that my site&#039;s speed is different in different browsers. I&#039;m using cdnsun and I&#039;ve found that site works more productive in Mozilla only. So, tell me guys: may google&#039;s cdn show the best of it in chrome? Thanks.]]></description>
+			<content:encoded><![CDATA[<p>Does Google&#8217;s CDN work well while using particular browser? (I mean Chrome of course). I&#8217;ve just recently found that my site&#8217;s speed is different in different browsers. I&#8217;m using cdnsun and I&#8217;ve found that site works more productive in Mozilla only. So, tell me guys: may google&#8217;s cdn show the best of it in chrome? Thanks.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Federico		</title>
+		<link>/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comment-3568</link>
+
+		<dc:creator><![CDATA[Federico]]></dc:creator>
+		<pubDate>Fri, 17 Dec 2010 10:59:39 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3081#comment-3568</guid>
+
+					<description><![CDATA[good post!
+I&#039;m using Firefox 3.6.13 and asking for 
+http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js
+I receive an uncompressed file... 
+...but using https
+https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js
+the returned file is definitely compressed.
+There&#039;s something wrong in their white list approach.
+I wonder why not trusting the request headers?
+Federico]]></description>
+			<content:encoded><![CDATA[<p>good post!<br />
+I&#8217;m using Firefox 3.6.13 and asking for<br />
+<a href="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" rel="nofollow ugc">http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js</a><br />
+I receive an uncompressed file&#8230;<br />
+&#8230;but using https<br />
+<a href="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" rel="nofollow ugc">https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js</a><br />
+the returned file is definitely compressed.<br />
+There&#8217;s something wrong in their white list approach.<br />
+I wonder why not trusting the request headers?<br />
+Federico</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comment-3567</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 04 Nov 2010 19:31:29 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3081#comment-3567</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comment-3566&quot;&gt;Thomas Scholz&lt;/a&gt;.
+
+I&#039;m not sure about the empty Location header, but the &#039;X-Cnection&#039; appears to be a load balancer - http://www.nextthing.org/archives/2005/08/07/fun-with-http-headers]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comment-3566">Thomas Scholz</a>.</p>
+<p>I&#8217;m not sure about the empty Location header, but the &#8216;X-Cnection&#8217; appears to be a load balancer &#8211; <a href="http://www.nextthing.org/archives/2005/08/07/fun-with-http-headers" rel="nofollow ugc">http://www.nextthing.org/archives/2005/08/07/fun-with-http-headers</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Thomas Scholz		</title>
+		<link>/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comment-3566</link>
+
+		<dc:creator><![CDATA[Thomas Scholz]]></dc:creator>
+		<pubDate>Thu, 04 Nov 2010 19:22:32 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3081#comment-3566</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comment-3561&quot;&gt;Julien&lt;/a&gt;.
+
+Reminds me of FaceBook: You get &#039;X-Cnection: close&#039; when you try to call an unknown user, e.g.:  http://www.facebook.com/people/hammernich/
+Oh, and an empty Location header …]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comment-3561">Julien</a>.</p>
+<p>Reminds me of FaceBook: You get &#8216;X-Cnection: close&#8217; when you try to call an unknown user, e.g.:  <a href="http://www.facebook.com/people/hammernich/" rel="nofollow ugc">http://www.facebook.com/people/hammernich/</a><br />
+Oh, and an empty Location header …</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comment-3565</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 02 Nov 2010 17:10:37 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3081#comment-3565</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comment-3564&quot;&gt;Steve Souders&lt;/a&gt;.
+
+Thanks.  As for a whitelist approach, are there really that many new HTTP clients coming out that have broken compression support?  If most of the broken ones are older then it seems like less work to simply black list known problem clients.  As the Opera item highlights, there is often little motivation in updating a white list.  A black list might cause more pain in the short term (when a new broken client shows up), but that pain would lead to motivation in making sure the list is up to date.
+
+Making the white list that Google Library is using to determine feature support public would be really helpful.  Including test methodologies and contact info for sending in updates would allow others to help keep the list up to date.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comment-3564">Steve Souders</a>.</p>
+<p>Thanks.  As for a whitelist approach, are there really that many new HTTP clients coming out that have broken compression support?  If most of the broken ones are older then it seems like less work to simply black list known problem clients.  As the Opera item highlights, there is often little motivation in updating a white list.  A black list might cause more pain in the short term (when a new broken client shows up), but that pain would lead to motivation in making sure the list is up to date.</p>
+<p>Making the white list that Google Library is using to determine feature support public would be really helpful.  Including test methodologies and contact info for sending in updates would allow others to help keep the list up to date.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Steve Souders		</title>
+		<link>/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comment-3564</link>
+
+		<dc:creator><![CDATA[Steve Souders]]></dc:creator>
+		<pubDate>Tue, 02 Nov 2010 16:53:34 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3081#comment-3564</guid>
+
+					<description><![CDATA[Great post, Joseph! Using a whitelist even in the presence of Accept-Encoding has merit (I discuss this in HPWS). However, Opera should be in the whitelist afaik. I&#039;ll contact the Google Libraries API folks.]]></description>
+			<content:encoded><![CDATA[<p>Great post, Joseph! Using a whitelist even in the presence of Accept-Encoding has merit (I discuss this in HPWS). However, Opera should be in the whitelist afaik. I&#8217;ll contact the Google Libraries API folks.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comment-3563</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 02 Nov 2010 16:09:03 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3081#comment-3563</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comment-3561&quot;&gt;Julien&lt;/a&gt;.
+
+Interesting, I&#039;ll have to look closer at the Connection header behavior in more detail at some point.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comment-3561">Julien</a>.</p>
+<p>Interesting, I&#8217;ll have to look closer at the Connection header behavior in more detail at some point.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comment-3562</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 02 Nov 2010 16:08:18 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3081#comment-3562</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comment-3560&quot;&gt;Thomas Scholz&lt;/a&gt;.
+
+I&#039;m not sure if it is reason enough to avoid using the Google Library CDN, but it does raise a few more questions.
+
+As for Hoffman&#039;s post, he brings up good points, but tries to apply them way too broadly.  To say that avoiding a CDN for your Javascript files is the right answer for every site on the web is over simplifying by a long (LONG) shot.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comment-3560">Thomas Scholz</a>.</p>
+<p>I&#8217;m not sure if it is reason enough to avoid using the Google Library CDN, but it does raise a few more questions.</p>
+<p>As for Hoffman&#8217;s post, he brings up good points, but tries to apply them way too broadly.  To say that avoiding a CDN for your Javascript files is the right answer for every site on the web is over simplifying by a long (LONG) shot.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Julien		</title>
+		<link>/2010/11/01/user-agent-sniffing-at-google-libraries-cdn/#comment-3561</link>
+
+		<dc:creator><![CDATA[Julien]]></dc:creator>
+		<pubDate>Tue, 02 Nov 2010 08:53:11 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=3081#comment-3561</guid>
+
+					<description><![CDATA[We actually found out that many servers do similar things. We have the same pattern with the &#039;Connection: Close&#039; header. Some servers will automatically close the connection based on the UA (browsers mostly), or will keep it alive (Bots).]]></description>
+			<content:encoded><![CDATA[<p>We actually found out that many servers do similar things. We have the same pattern with the &#8216;Connection: Close&#8217; header. Some servers will automatically close the connection based on the UA (browsers mostly), or will keep it alive (Bots).</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

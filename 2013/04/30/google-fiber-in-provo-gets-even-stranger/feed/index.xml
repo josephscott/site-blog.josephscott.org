@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Google Fiber in Provo Gets Even Stranger	</title>
+	<atom:link href="/2013/04/30/google-fiber-in-provo-gets-even-stranger/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/04/30/google-fiber-in-provo-gets-even-stranger/</link>
+	<description></description>
+	<lastBuildDate>Fri, 24 May 2013 02:33:09 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2013/04/30/google-fiber-in-provo-gets-even-stranger/#comment-4036</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 24 May 2013 02:33:09 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=7577#comment-4036</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/04/30/google-fiber-in-provo-gets-even-stranger/#comment-4035&quot;&gt;Adam Armstrong&lt;/a&gt;.
+
+Not exactly.
+
+There are several factors at play.  If you assume that they are using VLANs without separate fiber, then that is only as secure as the devices implementing the VLANs.  But running over the same fiber has other problems.  It is one thing if a neighborhood looses Internet access because of a fiber cut, it is another thing if police loose a portion of their communication due to that same fiber cut.  Having separate fiber runs would reduce the collateral damage.
+
+Next, they already admitted that they didn&#039;t know where some of the fiber line actually was.  This is infrastructure that they are using for traffic signals and police, and they don&#039;t know where it is.  At least part of the reason for that is that iProvo infrastructure has had various owners over the years.  If there were separate fiber runs for traffic signals/police then then they wouldn&#039;t have to keep including those pieces in the sale of this infrastructure.
+
+Just because you can potentially use a single set of fiber infrastructure for everything, doesn&#039;t mean you should.  Having redundant connectivity for critical things like public services just makes sense, not having it is eventually asking for problems.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/04/30/google-fiber-in-provo-gets-even-stranger/#comment-4035">Adam Armstrong</a>.</p>
+<p>Not exactly.</p>
+<p>There are several factors at play.  If you assume that they are using VLANs without separate fiber, then that is only as secure as the devices implementing the VLANs.  But running over the same fiber has other problems.  It is one thing if a neighborhood looses Internet access because of a fiber cut, it is another thing if police loose a portion of their communication due to that same fiber cut.  Having separate fiber runs would reduce the collateral damage.</p>
+<p>Next, they already admitted that they didn&#8217;t know where some of the fiber line actually was.  This is infrastructure that they are using for traffic signals and police, and they don&#8217;t know where it is.  At least part of the reason for that is that iProvo infrastructure has had various owners over the years.  If there were separate fiber runs for traffic signals/police then then they wouldn&#8217;t have to keep including those pieces in the sale of this infrastructure.</p>
+<p>Just because you can potentially use a single set of fiber infrastructure for everything, doesn&#8217;t mean you should.  Having redundant connectivity for critical things like public services just makes sense, not having it is eventually asking for problems.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Adam Armstrong		</title>
+		<link>/2013/04/30/google-fiber-in-provo-gets-even-stranger/#comment-4035</link>
+
+		<dc:creator><![CDATA[Adam Armstrong]]></dc:creator>
+		<pubDate>Fri, 24 May 2013 01:47:43 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=7577#comment-4035</guid>
+
+					<description><![CDATA[There is almost certainly nothing wrong with traffic lights and things being connected to the same fiber plant. You&#039;re confusing layer 1 with layer 3.
+
+It&#039;s akin to complaining that your company&#039;s T1 runs on the same copper network as your neighbour&#039;s phone sex line. :)
+
+The copper runs side by side, but there is no actual network crossover at all. Same in the case of this fiber. They&#039;ll just have built a big private ethernet/IP network with it to link up all of the city services. It&#039;s very standard, and quite secure.]]></description>
+			<content:encoded><![CDATA[<p>There is almost certainly nothing wrong with traffic lights and things being connected to the same fiber plant. You&#8217;re confusing layer 1 with layer 3.</p>
+<p>It&#8217;s akin to complaining that your company&#8217;s T1 runs on the same copper network as your neighbour&#8217;s phone sex line. 🙂</p>
+<p>The copper runs side by side, but there is no actual network crossover at all. Same in the case of this fiber. They&#8217;ll just have built a big private ethernet/IP network with it to link up all of the city services. It&#8217;s very standard, and quite secure.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2013/04/30/google-fiber-in-provo-gets-even-stranger/#comment-4034</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 02 May 2013 17:42:39 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=7577#comment-4034</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/04/30/google-fiber-in-provo-gets-even-stranger/#comment-4033&quot;&gt;Nate&lt;/a&gt;.
+
+Wouldn&#039;t each of the owners of the network need to file permits for the work involved in moving the fiber?  Could be that they don&#039;t I suppose.
+
+On the $39M, I agree, and I think it is possible that Provo still comes out with a net win in all of this.  Won&#039;t know for sure for several years.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/04/30/google-fiber-in-provo-gets-even-stranger/#comment-4033">Nate</a>.</p>
+<p>Wouldn&#8217;t each of the owners of the network need to file permits for the work involved in moving the fiber?  Could be that they don&#8217;t I suppose.</p>
+<p>On the $39M, I agree, and I think it is possible that Provo still comes out with a net win in all of this.  Won&#8217;t know for sure for several years.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Nate		</title>
+		<link>/2013/04/30/google-fiber-in-provo-gets-even-stranger/#comment-4033</link>
+
+		<dc:creator><![CDATA[Nate]]></dc:creator>
+		<pubDate>Thu, 02 May 2013 16:13:45 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=7577#comment-4033</guid>
+
+					<description><![CDATA[In regards to not knowing where the fiber is, you have to remember that the network has been owned by three different private users and there was a period of about four years where Provo didn&#039;t have any control of it. As a result, the city is now mapping  changes made by the previous owners.
+
+Also, regardless of cost, the city is stuck with a $39m bill. Where before we were getting very little for $39m, now we are getting much more.]]></description>
+			<content:encoded><![CDATA[<p>In regards to not knowing where the fiber is, you have to remember that the network has been owned by three different private users and there was a period of about four years where Provo didn&#8217;t have any control of it. As a result, the city is now mapping  changes made by the previous owners.</p>
+<p>Also, regardless of cost, the city is stuck with a $39m bill. Where before we were getting very little for $39m, now we are getting much more.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2013/04/30/google-fiber-in-provo-gets-even-stranger/#comment-4032</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 01 May 2013 16:49:48 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=7577#comment-4032</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/04/30/google-fiber-in-provo-gets-even-stranger/#comment-4031&quot;&gt;Jesse Harris&lt;/a&gt;.
+
+Obviously I&#039;m not privy to how the negotiations between Provo and Google went.  From the outside it certainly seems like Provo could have received some amount greater that $1 from Google.
+
+I think there is a possibility that Provo still comes out ahead on the money issues after all of this.  Guess we won&#039;t really know for another 12 years when the bonds are paid off.  Of course by then Google may have sold the fiber network back to Provo for $1.  If that happens, well, who knows where it would end up.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/04/30/google-fiber-in-provo-gets-even-stranger/#comment-4031">Jesse Harris</a>.</p>
+<p>Obviously I&#8217;m not privy to how the negotiations between Provo and Google went.  From the outside it certainly seems like Provo could have received some amount greater that $1 from Google.</p>
+<p>I think there is a possibility that Provo still comes out ahead on the money issues after all of this.  Guess we won&#8217;t really know for another 12 years when the bonds are paid off.  Of course by then Google may have sold the fiber network back to Provo for $1.  If that happens, well, who knows where it would end up.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jesse Harris		</title>
+		<link>/2013/04/30/google-fiber-in-provo-gets-even-stranger/#comment-4031</link>
+
+		<dc:creator><![CDATA[Jesse Harris]]></dc:creator>
+		<pubDate>Wed, 01 May 2013 16:36:05 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=7577#comment-4031</guid>
+
+					<description><![CDATA[Provo could and should have negotiated a better deal. Google would still make bank on it even if they had assumed the bond payments. As it stands right now, Google is effectively getting to lease the network in perpetuity at no monthly cost for a $1 security deposit and $19.7M in closing costs (of which Provo pays $1.7M). The real question remaining is if this deal will generate an additional $24.8M in tax revenue over the seven-year commitment to make this break even. I&#039;m slightly pessimistic on that front.]]></description>
+			<content:encoded><![CDATA[<p>Provo could and should have negotiated a better deal. Google would still make bank on it even if they had assumed the bond payments. As it stands right now, Google is effectively getting to lease the network in perpetuity at no monthly cost for a $1 security deposit and $19.7M in closing costs (of which Provo pays $1.7M). The real question remaining is if this deal will generate an additional $24.8M in tax revenue over the seven-year commitment to make this break even. I&#8217;m slightly pessimistic on that front.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

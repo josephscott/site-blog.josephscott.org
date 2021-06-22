@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>libxml2 &#8211; Joseph Scott</title>
+	<atom:link href="/tag/libxml2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 04 Oct 2011 16:00:36 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Updated libxml2-fix Plugin for WordPress</title>
+		<link>/2011/10/04/updated-libxml2-fix-plugin-for-wordpress/</link>
+					<comments>/2011/10/04/updated-libxml2-fix-plugin-for-wordpress/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 04 Oct 2011 16:00:36 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[libxml2]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xml-rpc]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4892</guid>
+
+					<description><![CDATA[I made a small update to the libxml2-fix WordPress plugin this morning. There are few more odd combinations of PHP + libxml2 that have problems, so this change applies the work around as long as the libxml2 version is below 2.7.3. That saves on having to list all of the individual versions that may have [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I made a small update to the <a href="http://wordpress.org/extend/plugins/libxml2-fix/">libxml2-fix WordPress plugin</a> this morning.  There are few more odd combinations of PHP + libxml2 that have problems, so this change applies the work around as long as the libxml2 version is below 2.7.3.  That saves on having to list all of the individual versions that may have this issue.  This improvement was submitted by <a href="http://daniloercoli.wordpress.com/">Danilo Ercoli</a>.</p>
+<p>I&#8217;m bummed that there are still so many hosts running known to be broken combinations of PHP + libxml2.  In the meantime we may as well make it easier for people to work around the issue.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/10/04/updated-libxml2-fix-plugin-for-wordpress/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>WordPress Plugin Update: LibXML2 Fix</title>
+		<link>/2009/12/29/wordpress-plugin-update-libxml2-fix/</link>
+					<comments>/2009/12/29/wordpress-plugin-update-libxml2-fix/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 30 Dec 2009 04:20:45 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[libxml2]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xml-rpc]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1665</guid>
+
+					<description><![CDATA[A small update to the LibXML2 Fix WordPress plugin is now available, version 0.2.3. The only change was the addition of 2.6.27 to the list of libxml versions that the plugin looks for. I&#8217;ve had a few reports that this version also has problems with stripping brackets. For those that haven&#8217;t been following this problem [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>A small update to the <a href="http://wordpress.org/extend/plugins/libxml2-fix/">LibXML2 Fix</a> WordPress plugin is now available, version 0.2.3.</p>
+<p>The only change was the addition of 2.6.27 to the list of libxml versions that the plugin looks for.  I&#8217;ve had a few reports that this version also has problems with stripping brackets.</p>
+<p>For those that haven&#8217;t been following this problem here&#8217;s the <a href="http://josephscott.org/code/wordpress/plugin-libxml2-fix/">short version of the story</a>.  Some combinations of libxml and PHP don&#8217;t play nice with each other, the result being that brackets get stripped out of XML content.  This is a particular problem for XML-RPC requests in WordPress.  This plugin injects a small hack into the XML-RPC data before it gets processed in an attempt to preserve the brackets.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/12/29/wordpress-plugin-update-libxml2-fix/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>LibXML2 Fix &#8211; Version 0.2</title>
+		<link>/2009/04/15/libxml2-fix-version-02/</link>
+					<comments>/2009/04/15/libxml2-fix-version-02/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 15 Apr 2009 23:12:28 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[libxml2]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xml-rpc]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1169</guid>
+
+					<description><![CDATA[I&#8217;ve updated my LibXML2 Fix WordPress plugin so that the work around is enabled even if you have libxml2 2.7.3 installed but have a PHP version that is less that 5.2.9. This should fix servers who decided to update libxml2 without updating PHP. Further details and history are at my LibXML2 Fix plugin page. Update: [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve updated my <a href="http://wordpress.org/extend/plugins/libxml2-fix/">LibXML2 Fix</a> WordPress plugin so that the work around is enabled even if you have libxml2 2.7.3 installed but have a PHP version that is less that 5.2.9.  This should fix servers who decided to update libxml2 without updating PHP.</p>
+<p>Further details and history are at my <a href="http://josephscott.org/code/wordpress/plugin-libxml2-fix/">LibXML2 Fix plugin page</a>.</p>
+<p><strong>Update:</strong> Rein caught a typo in version 0.2, so make sure that you get version 0.2.2.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/04/15/libxml2-fix-version-02/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>WordPress &#038; libxml2 Episode IV: A New Plugin</title>
+		<link>/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/</link>
+					<comments>/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 17 Mar 2009 20:31:28 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[libxml2]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xml-rpc]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=982</guid>
+
+					<description><![CDATA[Despite the libxml2 problems having been solved by the release of PHP 5.2.9 and libxml2 2.7.3 there are still hosts out there who refuse to update their known to be broken setup. This really bummed me out, I didn&#8217;t want to include a hack to deal with this in core WordPress. Just as I was [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Despite the libxml2 problems having been solved by the <a href="http://josephscott.org/archives/2009/03/conclusion-of-libxml2-issues-use-php-529-libxml2-273/">release of PHP 5.2.9 and libxml2 2.7.3</a> there are still hosts out there who refuse to update their known to be broken setup.  This really bummed me out, I didn&#8217;t want to include a hack to deal with this in core WordPress.</p>
+<p>Just as I was ready to throw in the towel and look at getting a work around into core WordPress <a href="http://blog.ftwr.co.uk/">Peter Westwood</a> suggested a method that would allow this &#8220;fix&#8221; to work in a plugin.  His idea was spot on and I wrote a small <a href="http://josephscott.org/code/wordpress/plugin-libxml2-fix/#comment-2690">WordPress plugin, LibXML2 Fix</a>, the next day and tested it on a WordPress install with this problem.  It fixed the stripped brackets problem for XML-RPC requests, so I&#8217;ve submitted it to the <a href="http://wordpress.org/extend/plugins/">plugin directory</a> and it&#8217;s now available at <a href="http://wordpress.org/extend/plugins/libxml2-fix/">http://wordpress.org/extend/plugins/libxml2-fix/</a>.</p>
+<p>To be clear, the best way to fix this is to upgrade to PHP 5.2.9+ and libxml2 2.7.3+.  But if you are stuck in a hosting situation where that&#8217;s not possible then the <a href="http://josephscott.org/code/wordpress/plugin-libxml2-fix/">LibXML2 Fixed</a> plugin will fix XML-RPC requests so that brackets don&#8217;t get stripped.</p>
+<p>I&#8217;ve closed ticket <a href="http://core.trac.wordpress.org/ticket/7771">7771</a> and will be pointing people to this plugin if they can&#8217;t upgrade PHP and libxml2.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/03/17/wordpress-libxml2-episode-iv-a-new-plugin/feed/</wfw:commentRss>
+			<slash:comments>30</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Conclusion of libxml2 Issues &#8211; Use PHP 5.2.9 &#038; libxml2 2.7.3</title>
+		<link>/2009/03/04/conclusion-of-libxml2-issues-use-php-529-libxml2-273/</link>
+					<comments>/2009/03/04/conclusion-of-libxml2-issues-use-php-529-libxml2-273/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 04 Mar 2009 21:39:41 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[libxml2]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xml-rpc]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=899</guid>
+
+					<description><![CDATA[Updates 17 Mar 2009 @ 3:05pm : WordPress &#38; libxml2 Episode IV: A New Plugin With the release of PHP 5.2.9 all of the pieces are available to solve the XML bracket stripping puzzle. To make it perfectly clear, you need to have BOTH libxml2 version 2.7.3 and PHP version 5.2.9 in order to make [&#8230;]]]></description>
+										<content:encoded><![CDATA[<div class="update-post">
+<em>Updates</em><br />
+<strong>17 Mar 2009 @ 3:05pm</strong> : <a href="http://josephscott.org/archives/2009/03/wordpress-libxml2-episode-iv-a-new-plugin/">WordPress &amp; libxml2 Episode IV: A New Plugin</a>
+</div>
+<p>With the release of <a href="http://www.php.net/archive/2009.php#id2009-02-26-1">PHP 5.2.9</a> all of the pieces are available to solve the XML bracket stripping puzzle.  To make it perfectly clear, you need to have <b>BOTH</b> libxml2 version 2.7.3 and PHP version 5.2.9 in order to make this work.  Mixing either one with older versions will not work.  When testing this also confirm that your build of PHP 5.2.9 is using the correct version of libxml2 and not some older version (you can easily check this using phpinfo( ) ).</p>
+<p>I went back to my test setup and built PHP 5.2.9 with libxml2 2.7.3 and added new posts to a WordPress blog via XML-RPC with lots of tags in the post body.  They all came through intact.  Not a single bracket missing.</p>
+<p>If you are on a host that is using known broken version combinations of PHP &amp; libxml2 now you can tell them exactly which versions do work.  Feel free to point them this and previous posts (<a href="http://josephscott.org/archives/2008/12/problems-with-libxml2-for-wordpress-xml-rpc-users/">Problems With libxml2 For WordPress XML-RPC Users</a> and <a href="http://josephscott.org/archives/2009/02/update-on-libxml2-issues/">Update On libxml2 Issues</a>) if they want some history and context of the problem.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/03/04/conclusion-of-libxml2-issues-use-php-529-libxml2-273/feed/</wfw:commentRss>
+			<slash:comments>25</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Update On libxml2 Issues</title>
+		<link>/2009/02/03/update-on-libxml2-issues/</link>
+					<comments>/2009/02/03/update-on-libxml2-issues/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 03 Feb 2009 20:28:39 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[libxml2]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xml-rpc]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=763</guid>
+
+					<description><![CDATA[Updates 4 Mar 2009 @ 2:38pm : Conclusion of libxml2 Issues &#8211; Use PHP 5.2.9 &#38; libxml2 2.7.3 17 Mar 2009 @ 3:05pm : WordPress &#38; libxml2 Episode IV: A New Plugin At the end of December I detailed problems people were seeing with WordPress, XML-RPC and libxml2. I&#8217;ve got good news, both PHP and [&#8230;]]]></description>
+										<content:encoded><![CDATA[<div class="update-post">
+<em>Updates</em><br />
+<strong>4 Mar 2009 @ 2:38pm</strong> : <a href="http://josephscott.org/archives/2009/03/conclusion-of-libxml2-issues-use-php-529-libxml2-273/">Conclusion of libxml2 Issues &#8211; Use PHP 5.2.9 &amp; libxml2 2.7.3</a><br />
+<br />
+<strong>17 Mar 2009 @ 3:05pm</strong> : <a href="http://josephscott.org/archives/2009/03/wordpress-libxml2-episode-iv-a-new-plugin/">WordPress &amp; libxml2 Episode IV: A New Plugin</a>
+</div>
+<p>At the end of December I detailed problems people were seeing with <a href="http://josephscott.org/archives/2008/12/problems-with-libxml2-for-wordpress-xml-rpc-users/">WordPress, XML-RPC and libxml2</a>.  I&#8217;ve got good news, both PHP and libxml2 have been updated to fix the issue.  You can send your many thanks to <a href="http://www.cdatazone.org/">Rob Richards</a> who addressed this a couple of weeks ago with <a href="http://www.cdatazone.org/index.php?/archives/49-Entities,-extxml-and-libxml-2.7.html">updates to ext/xml (PHP) and libxml2</a>.</p>
+<p>You&#8217;ll need version 2.7.3 or higher of <a href="http://xmlsoft.org/">libxml2</a> and 5.2.9 (not released yet) of <a href="http://php.net/">PHP</a>.  I&#8217;ve tried this out on a system that had libxml2 2.7.1 with known problems and then upgraded it to 2.7.3 and a <a href="http://snaps.php.net/">nightly build of PHP</a>.  I&#8217;m not sure if we&#8217;ll see 5.3 or 5.2.9 as the next PHP release, so I tested snapshots from both branches with libxml2 2.7.3 and confirmed that they both work.</p>
+<p>After this all started there were a <a href="http://blog.hoofoo.net/2009/01/14/wordpress-patch-for-problamatic-libxml2-version/">few patches</a> making the rounds that basically changed the encoding for the HTML entities that were having problems.  I&#8217;ve done some light testing of those for the XML-RPC case and found that they do appear to work.  I&#8217;m not sure yet about adding that to WordPress, especially now that we&#8217;ve got viable fixes at the PHP and libxml2 level.  I think if we see a PHP release soon that includes this fix then it&#8217;s best to encourage people to upgrade to address the problem.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/02/03/update-on-libxml2-issues/feed/</wfw:commentRss>
+			<slash:comments>10</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Problems With libxml2 For WordPress XML-RPC Users</title>
+		<link>/2008/12/30/problems-with-libxml2-for-wordpress-xml-rpc-users/</link>
+					<comments>/2008/12/30/problems-with-libxml2-for-wordpress-xml-rpc-users/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 31 Dec 2008 01:01:02 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[libxml2]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[xml-rpc]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=550</guid>
+
+					<description><![CDATA[Updates 3 Feb 2009 @ 2:00pm : Update on libxml2 issues 4 Mar 2009 @ 2:38pm : Conclusion of libxml2 Issues &#8211; Use PHP 5.2.9 &#38; libxml2 2.7.3 17 Mar 2009 @ 3:05pm : WordPress &#38; libxml2 Episode IV: A New Plugin A gradually growing list of people have run into a very odd problem [&#8230;]]]></description>
+										<content:encoded><![CDATA[<div class="update-post">
+<em>Updates</em><br />
+<strong>3 Feb 2009 @ 2:00pm</strong> : <a href="http://josephscott.org/archives/2009/02/update-on-libxml2-issues/">Update on libxml2 issues</a><br />
+<br />
+<strong>4 Mar 2009 @ 2:38pm</strong> : <a href="http://josephscott.org/archives/2009/03/conclusion-of-libxml2-issues-use-php-529-libxml2-273/">Conclusion of libxml2 Issues &#8211; Use PHP 5.2.9 &amp; libxml2 2.7.3</a><br />
+<br />
+<strong>17 Mar 2009 @ 3:05pm</strong> : <a href="http://josephscott.org/archives/2009/03/wordpress-libxml2-episode-iv-a-new-plugin/">WordPress &amp; libxml2 Episode IV: A New Plugin</a>
+</div>
+<p>A gradually growing list of people have run into a very odd problem using XML-RPC methods in WordPress, where the left angle bracket ( &lt; ) gets stripped.  There&#039;s been a fair bit of discussion about this on <a href="http://trac.wordpress.org/ticket/7771">ticket #7771</a>.  The bottom line: the behavior of the PHP XML extension when built against newer versions of <a href="http://xmlsoft.org/">libxml2</a> changed, such that left angle brackets get stripped when parsing XML.</p>
+<p>There&#8217;s been some back and forth between <a href="http://thread.gmane.org/gmane.comp.gnome.lib.xml.general/14595/focus=14610">libxml2 folks (email list)</a> and the <a href="http://bugs.php.net/bug.php?id=45996">PHP folks (bug 45996)</a>, with no real solution for those using the tainted versions of libxml2.  So what are your options if you&#8217;ve got this problem?  Here&#8217;s two:</p>
+<ul>
+<li>Stick with older, known to work versions of libxml2.  It&#8217;s been reported by others that libxml2 &lt;= 2.6.32 work.  I&#039;ve personally only tested up to 2.6.30, which has been working fine for me.</li>
+<li>Build the PHP XML module against the <a href="http://expat.sourceforge.net/">expat</a> parser instead of libxml2</li>
+</ul>
+<p>Both of these options require some server admin abilities and know how, making them unrealistic options for many WordPress users.  Undoubtedly many hosting services will role out these newer versions of libxml2 as part of their regular updates.  This will leave some WordPress users with sudden errors that weren&#8217;t there before.</p>
+<p>As this was spurred by a change in behavior by libxml2, I think the ideal solution would be to provide a backwards compatible mode that would restore the old parsing mechanism (you know, the one that doesn&#8217;t strip angle brackets).  Short of that happening perhaps the XML extension for PHP will need to grow to work correctly with the new way that libxml2 works.  Either way, I&#8217;d like to see PHP XML parsing work correctly again.</p>
+<p>If you aren&#8217;t having any of these problems right now I recommend <b>NOT</b> upgrading libxml2 on your system until this has been sorted out.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/12/30/problems-with-libxml2-for-wordpress-xml-rpc-users/feed/</wfw:commentRss>
+			<slash:comments>54</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

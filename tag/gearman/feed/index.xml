@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>gearman &#8211; Joseph Scott</title>
+	<atom:link href="/tag/gearman/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 16 Nov 2010 18:47:57 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>shard-query</title>
+		<link>/2010/11/16/shard-query/</link>
+					<comments>/2010/11/16/shard-query/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 16 Nov 2010 18:47:57 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[gearman]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3197</guid>
+
+					<description><![CDATA[ShardQuery is a PHP class which is intended to make working with a partitioned dataset easier. QueryBroadcast &#8211; Send queries to all shards in a parallel pipeline]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+ShardQuery is a PHP class which is intended to make working with a partitioned dataset easier.</p>
+<ul>
+<li>QueryBroadcast &#8211; Send queries to all shards in a parallel pipeline</li
+
+
+<li>ParallelPipelining &#8211; Runs parts of queries in parallel and combines results</li>
+<li>QueryRouting &#8211; Sends queries only to the shard containing the requested data.</li>
+<li>ConditionPushdown &#8211; Aggregation, joins and filtering are always performed at the shard level (in the pipeline) which distributes the work</li
+
+
+<li>Gearman Workers &#8211; PHP is not threaded. Gearman (Net_Gearman) is leveraged to create each pipeline process.</li
+</ul>
+</blockquote>
+<p>via <a href='http://code.google.com/p/shard-query/'>shard-query</a>.</p>
+<p>There are some limitations, despite that I think we&#8217;ll see more tools like this in the future.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/11/16/shard-query/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

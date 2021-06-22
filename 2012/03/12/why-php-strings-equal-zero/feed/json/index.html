@@ -1,0 +1,200 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/",
+    "feed_url": "https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: Why PHP Strings Equal Zero",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/#comment-129141",
+            "url": "https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/#comment-129141",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/#comment-129137\">Kumar rahul</a>.\n\nAt some point you need to use some PHP functions to check it.  You could avoid the traditional integer checking ones and use <code>preg_match</code> like:\r\n\r\n<blockquote>\r\n$string ='bce0';\r\n\r\nif ( preg_match('/[0-9]/', $string ) ){\r\n    echo \"Has INT\";\r\n} else {\r\n    echo \"NO INT\";\r\n}\r\n</blockquote>",
+            "content_text": "In reply to Kumar rahul.\n\nAt some point you need to use some PHP functions to check it.  You could avoid the traditional integer checking ones and use preg_match like:\r\n\r\n\r\n$string ='bce0';\r\n\r\nif ( preg_match('/[0-9]/', $string ) ){\r\n    echo \"Has INT\";\r\n} else {\r\n    echo \"NO INT\";\r\n}",
+            "date_published": "2018-10-18T10:41:01-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/#comment-129137",
+            "url": "https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/#comment-129137",
+            "content_html": "$string ='bce0';\r\nHow to determine if this string contains an integer. Can u help me to write a small program without using any built-in function like is_numeric,is_int etc?",
+            "content_text": "$string ='bce0';\r\nHow to determine if this string contains an integer. Can u help me to write a small program without using any built-in function like is_numeric,is_int etc?",
+            "date_published": "2018-10-18T09:19:28-06:00",
+            "authors": [
+                {
+                    "name": "Kumar rahul",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/f2bc57a7fff05794b0071c812ce1e3f7?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Kumar rahul",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/f2bc57a7fff05794b0071c812ce1e3f7?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/#comment-3943",
+            "url": "https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/#comment-3943",
+            "content_html": "It bit me w/ an array looping evaluation too. So should we always use === for evaluation?",
+            "content_text": "It bit me w/ an array looping evaluation too. So should we always use === for evaluation?",
+            "date_published": "2014-06-07T12:17:32-06:00",
+            "authors": [
+                {
+                    "name": "Bertrand Rasmagillicutty",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/21b2cfcea4d6bb2d6a2699a4b75cbfba?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Bertrand Rasmagillicutty",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/21b2cfcea4d6bb2d6a2699a4b75cbfba?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/#comment-3942",
+            "url": "https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/#comment-3942",
+            "content_html": "Great explanation of a confusing issue.\n\nRan into an actual bug because of this behaviour in some legacy code handling ldap today. When using ldap_get_entries the first element in the result array is 'count'. This array was looped through and checked that ($key != 'count) - this led to the first actual element always missing from the output...",
+            "content_text": "Great explanation of a confusing issue.\n\nRan into an actual bug because of this behaviour in some legacy code handling ldap today. When using ldap_get_entries the first element in the result array is 'count'. This array was looped through and checked that ($key != 'count) - this led to the first actual element always missing from the output...",
+            "date_published": "2013-10-10T11:29:14-06:00",
+            "authors": [
+                {
+                    "name": "kris",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/758b3dcfda4196cba0fd48c45bfb6df3?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "kris",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/758b3dcfda4196cba0fd48c45bfb6df3?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/#comment-3941",
+            "url": "https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/#comment-3941",
+            "content_html": "well done for mentioning this.  People who don't get it, may get stumbled by it at some point.\n... the solution is as you said: be a strict as possible...just not with absolutely everything...\n\ncheers mr scott.",
+            "content_text": "well done for mentioning this.  People who don't get it, may get stumbled by it at some point.\n... the solution is as you said: be a strict as possible...just not with absolutely everything...\n\ncheers mr scott.",
+            "date_published": "2013-10-01T14:33:19-06:00",
+            "authors": [
+                {
+                    "name": "ord is php's biggest weakness",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/0cd2fee2102b6af327e85c104a136401?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "ord is php's biggest weakness",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/0cd2fee2102b6af327e85c104a136401?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/#comment-3940",
+            "url": "https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/#comment-3940",
+            "content_html": "This is a great post, thank you! \nThis issue or bug was truly getting me an headache! In my case was this condition that was making my application go wrong:\nif($value == \"NOW()\"){\nand I had to change it to:\nif($value === \"NOW()\"){\nbecause on the first case, if $value is 0 the condition would return TRUE (I was wondering why 0 would be same as \"NOW()\" string) instead of the expected false.\n\nMany thanks!",
+            "content_text": "This is a great post, thank you! \nThis issue or bug was truly getting me an headache! In my case was this condition that was making my application go wrong:\nif($value == \"NOW()\"){\nand I had to change it to:\nif($value === \"NOW()\"){\nbecause on the first case, if $value is 0 the condition would return TRUE (I was wondering why 0 would be same as \"NOW()\" string) instead of the expected false.\n\nMany thanks!",
+            "date_published": "2012-10-04T11:25:15-06:00",
+            "authors": [
+                {
+                    "name": "Rosario",
+                    "url": "",
+                    "avatar": "https://secure.gravatar.com/avatar/6022e3d5de85b960fc5f2ae2850c265c?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Rosario",
+                "url": "",
+                "avatar": "https://secure.gravatar.com/avatar/6022e3d5de85b960fc5f2ae2850c265c?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/#comment-3939",
+            "url": "https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/#comment-3939",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/#comment-3937\">olvlvl</a>.\n\nThat is why I specifically choose not to say 'all PHP strings' in the post title.",
+            "content_text": "In reply to olvlvl.\n\nThat is why I specifically choose not to say 'all PHP strings' in the post title.",
+            "date_published": "2012-03-16T09:22:44-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/#comment-3938",
+            "url": "https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/#comment-3938",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/#comment-3936\">olvlvl</a>.\n\nI noted at the end of the post that I don't think this is really a big deal.  I haven't seen in happen in non-example code, I suspect the number of times people hit this is relatively small.  But if they do hit it I bet it is frustrating.",
+            "content_text": "In reply to olvlvl.\n\nI noted at the end of the post that I don't think this is really a big deal.  I haven't seen in happen in non-example code, I suspect the number of times people hit this is relatively small.  But if they do hit it I bet it is frustrating.",
+            "date_published": "2012-03-16T09:22:01-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/#comment-3937",
+            "url": "https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/#comment-3937",
+            "content_html": "BTW the title of your article is not correct because as you mentioned \"7php\" is equivalent to 7, not zero.",
+            "content_text": "BTW the title of your article is not correct because as you mentioned \"7php\" is equivalent to 7, not zero.",
+            "date_published": "2012-03-16T02:55:03-06:00",
+            "authors": [
+                {
+                    "name": "olvlvl",
+                    "url": "http://www.weirdog.com",
+                    "avatar": "https://secure.gravatar.com/avatar/4137d4e521b829ff3de67910d26e5b5f?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "olvlvl",
+                "url": "http://www.weirdog.com",
+                "avatar": "https://secure.gravatar.com/avatar/4137d4e521b829ff3de67910d26e5b5f?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/#comment-3936",
+            "url": "https://blog.josephscott.org/2012/03/12/why-php-strings-equal-zero/#comment-3936",
+            "content_html": "I don't see an issue with string casting here but bad programming skills/habits. It is known that casting is in the work when comparing different types and it's only natural that they are casted to the lowest common type, which is often the numeric type.\n\nThe developer who wrote `'php' == 0` should be punished by copying 10 times the documentation excerpt you mentioned.",
+            "content_text": "I don't see an issue with string casting here but bad programming skills/habits. It is known that casting is in the work when comparing different types and it's only natural that they are casted to the lowest common type, which is often the numeric type.\n\nThe developer who wrote `'php' == 0` should be punished by copying 10 times the documentation excerpt you mentioned.",
+            "date_published": "2012-03-16T02:45:05-06:00",
+            "authors": [
+                {
+                    "name": "olvlvl",
+                    "url": "http://www.weirdog.com",
+                    "avatar": "https://secure.gravatar.com/avatar/4137d4e521b829ff3de67910d26e5b5f?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "olvlvl",
+                "url": "http://www.weirdog.com",
+                "avatar": "https://secure.gravatar.com/avatar/4137d4e521b829ff3de67910d26e5b5f?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

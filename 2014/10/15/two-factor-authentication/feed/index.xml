@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Two Factor Authentication	</title>
+	<atom:link href="/2014/10/15/two-factor-authentication/feed/" rel="self" type="application/rss+xml" />
+	<link>/2014/10/15/two-factor-authentication/</link>
+	<description></description>
+	<lastBuildDate>Thu, 16 Oct 2014 15:38:24 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2014/10/15/two-factor-authentication/#comment-4267</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 16 Oct 2014 15:38:24 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11271#comment-4267</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/10/15/two-factor-authentication/#comment-4266&quot;&gt;julien51&lt;/a&gt;.
+
+Totally agree on the SMS only thing, it isn&#039;t reliable enough.  I&#039;d go even further than that, my mobile device shouldn&#039;t need connectivity in order to generate a two factor token.
+
+In most cases using something like the &lt;a href=&quot;https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8&quot; rel=&quot;nofollow&quot;&gt;Google Authenticator app&lt;/a&gt; is a much better option.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/10/15/two-factor-authentication/#comment-4266">julien51</a>.</p>
+<p>Totally agree on the SMS only thing, it isn&#8217;t reliable enough.  I&#8217;d go even further than that, my mobile device shouldn&#8217;t need connectivity in order to generate a two factor token.</p>
+<p>In most cases using something like the <a href="https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8" rel="nofollow">Google Authenticator app</a> is a much better option.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: julien51		</title>
+		<link>/2014/10/15/two-factor-authentication/#comment-4266</link>
+
+		<dc:creator><![CDATA[julien51]]></dc:creator>
+		<pubDate>Thu, 16 Oct 2014 07:25:07 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11271#comment-4266</guid>
+
+					<description><![CDATA[To be honest, as much as I like the idea of 2FA, most of the implementation rely on SMS which is... a bummer. Not only SMS is unreliable, slow and aboslutely not user friendly, but it also fails hopelessly when on travels.
+
+2FA could also work using other types of mechanism: direct messages on social networks for example... or even better; &lt;a href=&quot;https://medium.com/@julien51/friendly-auth-e7a7b71edff3&quot; rel=&quot;nofollow&quot;&gt;friends&lt;/a&gt;!]]></description>
+			<content:encoded><![CDATA[<p>To be honest, as much as I like the idea of 2FA, most of the implementation rely on SMS which is&#8230; a bummer. Not only SMS is unreliable, slow and aboslutely not user friendly, but it also fails hopelessly when on travels.</p>
+<p>2FA could also work using other types of mechanism: direct messages on social networks for example&#8230; or even better; <a href="https://medium.com/@julien51/friendly-auth-e7a7b71edff3" rel="nofollow">friends</a>!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

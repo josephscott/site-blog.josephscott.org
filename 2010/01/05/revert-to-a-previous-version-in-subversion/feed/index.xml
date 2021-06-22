@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Revert to a Previous Version in Subversion	</title>
+	<atom:link href="/2010/01/05/revert-to-a-previous-version-in-subversion/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/01/05/revert-to-a-previous-version-in-subversion/</link>
+	<description></description>
+	<lastBuildDate>Sat, 21 Apr 2018 15:52:20 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Shady Kahaleh		</title>
+		<link>/2010/01/05/revert-to-a-previous-version-in-subversion/#comment-118675</link>
+
+		<dc:creator><![CDATA[Shady Kahaleh]]></dc:creator>
+		<pubDate>Sat, 21 Apr 2018 15:52:20 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1684#comment-118675</guid>
+
+					<description><![CDATA[what if u want to revert one file?]]></description>
+			<content:encoded><![CDATA[<p>what if u want to revert one file?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: pacman		</title>
+		<link>/2010/01/05/revert-to-a-previous-version-in-subversion/#comment-3159</link>
+
+		<dc:creator><![CDATA[pacman]]></dc:creator>
+		<pubDate>Sun, 18 May 2014 21:03:58 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1684#comment-3159</guid>
+
+					<description><![CDATA[Awesome! Thanks! This was really helpful. I was missing the pointer to the current directory (.). All other websites were pointing to the directory of the trunk.]]></description>
+			<content:encoded><![CDATA[<p>Awesome! Thanks! This was really helpful. I was missing the pointer to the current directory (.). All other websites were pointing to the directory of the trunk.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: mc		</title>
+		<link>/2010/01/05/revert-to-a-previous-version-in-subversion/#comment-3158</link>
+
+		<dc:creator><![CDATA[mc]]></dc:creator>
+		<pubDate>Wed, 19 Sep 2012 19:55:25 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1684#comment-3158</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/01/05/revert-to-a-previous-version-in-subversion/#comment-3156&quot;&gt;Lloyd Budd&lt;/a&gt;.
+
+A little correction to the command:
+
+svn merge -cr -[rev] .
+
+if you use -c switch, you should not use -r switch, because
+
+given 12345 is a previous revision number,
+
+svn merge -r HEAD:12345
+
+is equal to use the following command:
+
+svn merge -c -12345]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/01/05/revert-to-a-previous-version-in-subversion/#comment-3156">Lloyd Budd</a>.</p>
+<p>A little correction to the command:</p>
+<p>svn merge -cr -[rev] .</p>
+<p>if you use -c switch, you should not use -r switch, because</p>
+<p>given 12345 is a previous revision number,</p>
+<p>svn merge -r HEAD:12345</p>
+<p>is equal to use the following command:</p>
+<p>svn merge -c -12345</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/01/05/revert-to-a-previous-version-in-subversion/#comment-3157</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 06 Jan 2010 04:11:07 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1684#comment-3157</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/01/05/revert-to-a-previous-version-in-subversion/#comment-3156&quot;&gt;Lloyd Budd&lt;/a&gt;.
+
+Nice tip, thanks.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/01/05/revert-to-a-previous-version-in-subversion/#comment-3156">Lloyd Budd</a>.</p>
+<p>Nice tip, thanks.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Lloyd Budd		</title>
+		<link>/2010/01/05/revert-to-a-previous-version-in-subversion/#comment-3156</link>
+
+		<dc:creator><![CDATA[Lloyd Budd]]></dc:creator>
+		<pubDate>Tue, 05 Jan 2010 23:51:57 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1684#comment-3156</guid>
+
+					<description><![CDATA[Most often I&#039;m cherry picking reverting a specific revision to see if that resolves the issue:
+
+&lt;code&gt;svn merge -cr -[rev] .&lt;code&gt;]]></description>
+			<content:encoded><![CDATA[<p>Most often I&#8217;m cherry picking reverting a specific revision to see if that resolves the issue:</p>
+<p><code>svn merge -cr -[rev] .</code><code></code></p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

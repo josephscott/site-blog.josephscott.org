@@ -1,0 +1,143 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/2009/09/03/showing-your-last-tweet-with-javascript/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/2009/09/03/showing-your-last-tweet-with-javascript/",
+    "feed_url": "https://blog.josephscott.org/2009/09/03/showing-your-last-tweet-with-javascript/feed/json/",
+    "language": "en-US",
+    "title": "Comments on: Showing Your Last Tweet With Javascript",
+    "items": [
+        {
+            "id": "https://blog.josephscott.org/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3042",
+            "url": "https://blog.josephscott.org/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3042",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3041\">dhme</a>.\n\nOdd, any idea which line is causing problems with the _?",
+            "content_text": "In reply to dhme.\n\nOdd, any idea which line is causing problems with the _?",
+            "date_published": "2010-01-08T09:55:17-07:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3041",
+            "url": "https://blog.josephscott.org/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3041",
+            "content_html": "Hi, I try to do it, but as I can see it doesn\u2019t work if there is a \u201c_\u201d in the twitter username.\n\nDoes anybody help me?\n\nThanks a lot",
+            "content_text": "Hi, I try to do it, but as I can see it doesn\u2019t work if there is a \u201c_\u201d in the twitter username.\n\nDoes anybody help me?\n\nThanks a lot",
+            "date_published": "2010-01-08T04:39:47-07:00",
+            "authors": [
+                {
+                    "name": "dhme",
+                    "url": "http://www.dhme.it",
+                    "avatar": "https://secure.gravatar.com/avatar/d1540138b4921ef8414c2ed2e72c766f?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "dhme",
+                "url": "http://www.dhme.it",
+                "avatar": "https://secure.gravatar.com/avatar/d1540138b4921ef8414c2ed2e72c766f?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3040",
+            "url": "https://blog.josephscott.org/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3040",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3039\">Austin</a>.\n\nIn defense of my jQuery laziness http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js only transmits 19kb over the wire :-)",
+            "content_text": "In reply to Austin.\n\nIn defense of my jQuery laziness http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js only transmits 19kb over the wire :-)",
+            "date_published": "2009-10-22T19:10:00-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3039",
+            "url": "https://blog.josephscott.org/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3039",
+            "content_html": "It's a great idea and would be even better by dropping jQuery's 57kb of bloat.\n\nAssign the tweet wrapper element to a variable:\n\n<code>var lastTweet = document.getElementById('last_tweet');</code>\n\nThen you can replace\n\n<code>$('#last_tweet').html(</code>\n\nwith\n\n<code>lastTweet.innerHTML = </code>\n\nand\n\n<code>$('#last_tweet').addClass('last_tweet_box');</code>\n\nwith\n\n<code>lastTweet.className = 'last_tweet_box';</code>\n\nIt's guaranteed to be faster, too!",
+            "content_text": "It's a great idea and would be even better by dropping jQuery's 57kb of bloat.\n\nAssign the tweet wrapper element to a variable:\n\nvar lastTweet = document.getElementById('last_tweet');\n\nThen you can replace\n\n$('#last_tweet').html(\n\nwith\n\nlastTweet.innerHTML = \n\nand\n\n$('#last_tweet').addClass('last_tweet_box');\n\nwith\n\nlastTweet.className = 'last_tweet_box';\n\nIt's guaranteed to be faster, too!",
+            "date_published": "2009-10-22T17:48:32-06:00",
+            "authors": [
+                {
+                    "name": "Austin",
+                    "url": "http://ilfilosofo.com",
+                    "avatar": "https://secure.gravatar.com/avatar/cafb8825dfad096fdce29dde452787d8?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Austin",
+                "url": "http://ilfilosofo.com",
+                "avatar": "https://secure.gravatar.com/avatar/cafb8825dfad096fdce29dde452787d8?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3038",
+            "url": "https://blog.josephscott.org/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3038",
+            "content_html": "In reply to <a href=\"https://blog.josephscott.org/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3037\">Bouke</a>.\n\nTrue, there are definitely other ways to do this.",
+            "content_text": "In reply to Bouke.\n\nTrue, there are definitely other ways to do this.",
+            "date_published": "2009-10-20T08:17:01-06:00",
+            "authors": [
+                {
+                    "name": "Joseph Scott",
+                    "url": "http://josephscott.org/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Joseph Scott",
+                "url": "http://josephscott.org/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3037",
+            "url": "https://blog.josephscott.org/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3037",
+            "content_html": "Nice example, but you could make better use of JQuery by using an AJAX-call, like this:\n\n<code>\n$.ajax({\n   url: \"http://twitter.com/statuses/user_timeline/josephscott.json\",\n   data: { count: 1 },\n   dataType: \"jsonp\",\n   success: twitter_callback_function\n});\n</code>",
+            "content_text": "Nice example, but you could make better use of JQuery by using an AJAX-call, like this:\n\n\n$.ajax({\n   url: \"http://twitter.com/statuses/user_timeline/josephscott.json\",\n   data: { count: 1 },\n   dataType: \"jsonp\",\n   success: twitter_callback_function\n});",
+            "date_published": "2009-10-18T15:06:14-06:00",
+            "authors": [
+                {
+                    "name": "Bouke",
+                    "url": "http://www.b19a.nl",
+                    "avatar": "https://secure.gravatar.com/avatar/a35791fba6e2367948964345bf85bb75?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Bouke",
+                "url": "http://www.b19a.nl",
+                "avatar": "https://secure.gravatar.com/avatar/a35791fba6e2367948964345bf85bb75?s=512&d=mm&r=g"
+            }
+        },
+        {
+            "id": "https://blog.josephscott.org/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3036",
+            "url": "https://blog.josephscott.org/2009/09/03/showing-your-last-tweet-with-javascript/#comment-3036",
+            "content_html": "Nice! :)",
+            "content_text": "Nice! :)",
+            "date_published": "2009-09-04T07:16:37-06:00",
+            "authors": [
+                {
+                    "name": "Matt",
+                    "url": "http://ma.tt/",
+                    "avatar": "https://secure.gravatar.com/avatar/767fc9c115a1b989744c755db47feb60?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "Matt",
+                "url": "http://ma.tt/",
+                "avatar": "https://secure.gravatar.com/avatar/767fc9c115a1b989744c755db47feb60?s=512&d=mm&r=g"
+            }
+        }
+    ]
+}

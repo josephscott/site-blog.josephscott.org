@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>nginx &#8211; Joseph Scott</title>
+	<atom:link href="/tag/nginx/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 20 Nov 2015 16:15:55 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Brotli for Nginx</title>
+		<link>/2015/11/20/brotli-for-nginx/</link>
+					<comments>/2015/11/20/brotli-for-nginx/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 20 Nov 2015 16:15:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[brotli]]></category>
+		<category><![CDATA[cloudflare]]></category>
+		<category><![CDATA[compression]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[nginx]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14048</guid>
+
+					<description><![CDATA[Two months ago Google announced Brotli, a new compression format: Brotli is a whole new data format. This new format allows us to get 20–26% higher compression ratios over Zopfli. In our study ‘Comparison of Brotli, Deflate, Zopfli, LZMA, LZHAM and Bzip2 Compression Algorithms’ we show that Brotli is roughly as fast as zlib’s Deflate [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Two months ago Google announced <a href="http://google-opensource.blogspot.com/2015/09/introducing-brotli-new-compression.html">Brotli</a>, a new compression format:</p>
+<blockquote><p>
+Brotli is a whole new data format. This new format allows us to get 20–26% higher compression ratios over Zopfli. In our study ‘Comparison of Brotli, Deflate, Zopfli, LZMA, LZHAM and Bzip2 Compression Algorithms’ we show that Brotli is roughly as fast as zlib’s Deflate implementation. At the same time, it compresses slightly more densely than LZMA and bzip2 on the Canterbury corpus. The higher data density is achieved by a 2nd order context modeling, re-use of entropy codes, larger memory window of past data and joint distribution codes. Just like Zopfli, the new algorithm is named after Swiss bakery products. Brötli means ‘small bread’ in Swiss German.
+</p></blockquote>
+<p>Compression is a big deal for web performance, being able to send the same file with fewer bytes is a big win.</p>
+<p>There are now two Nginx modules for supporting Brotli compression: <a href="https://github.com/google/ngx_brotli">ngx_brotli from Google</a> and <a href="https://github.com/cloudflare/ngx_brotli_module">ngx_brotli_module from CloudFlare</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/20/brotli-for-nginx/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Nginx HTTP/2</title>
+		<link>/2015/10/15/nginx-http2/</link>
+					<comments>/2015/10/15/nginx-http2/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 15 Oct 2015 12:29:32 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http2]]></category>
+		<category><![CDATA[nginx]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14086</guid>
+
+					<description><![CDATA[With version 1.9.5 Nginx added support for http/2. Last night up I switched my Nginx configuration for josephscott.org from SPDY to H2. So far everything appears to be working normal, if you do find something broken please let me know.]]></description>
+										<content:encoded><![CDATA[<p>With version 1.9.5 <a href="http://nginx.org/">Nginx</a> added support for <a href="http://nginx.org/en/docs/http/ngx_http_v2_module.html">http/2</a>.  Last night up I switched my Nginx configuration for josephscott.org from SPDY to H2.</p>
+<p>So far everything appears to be working normal, if you do find something broken <a href="https://josephscott.org/contact/">please let me know</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/15/nginx-http2/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Tracking TCP Round Trip Time in Nginx</title>
+		<link>/2015/09/11/tracking-tcp-round-trip-time-in-nginx/</link>
+					<comments>/2015/09/11/tracking-tcp-round-trip-time-in-nginx/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 11 Sep 2015 15:01:53 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[tcp/ip]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12689</guid>
+
+					<description><![CDATA[The TCP_INFO option provides information about round trip times ( RTT ) for a TCP connection. Turns out that Nginx can expose this information for you as embedded variables: $tcpinfo_rtt, $tcpinfo_rttvar, $tcpinfo_snd_cwnd, $tcpinfo_rcv_space information about the client TCP connection; available on systems that support the TCP_INFO socket option Easy to log this information. From there: [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The <a href="http://linuxgazette.net/136/pfeiffer.html">TCP_INFO</a> option provides information about round trip times ( RTT ) for a TCP connection.  Turns out that Nginx can expose this information for you as <a href="http://nginx.org/en/docs/http/ngx_http_core_module.html">embedded variables</a>:</p>
+<blockquote><p>
+$tcpinfo_rtt, $tcpinfo_rttvar, $tcpinfo_snd_cwnd, $tcpinfo_rcv_space</p>
+<p>information about the client TCP connection; available on systems that support the TCP_INFO socket option
+</p></blockquote>
+<p>Easy to log this information.  From there: periodically parse Nginx logs looking for client IP and RTT data, GEO IP lookup on the client, compute the median RTT value for each country/state, color code countries from highest to lowest RTT, then use Google Maps for the display.</p>
+<p>You&#8217;ll have yourself a nice page showing the RTT values across the world for visitors to your site.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/09/11/tracking-tcp-round-trip-time-in-nginx/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Dynamically Generated Certificates</title>
+		<link>/2015/05/19/dynamically-generated-certificates/</link>
+					<comments>/2015/05/19/dynamically-generated-certificates/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 19 May 2015 15:08:50 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[https]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[openresty]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=12371</guid>
+
+					<description><![CDATA[tl;dr: generate dynamic certificates on the fly with nginx. Leveraging OpenResty to generate certificates on demand, which follows fairly direct pattern: Generate private key Generate signing request ( CSR ) Sign the CSR with a CA Use the new key A little bit of Lua inside Nginx goes a surprisingly long way.]]></description>
+										<content:encoded><![CDATA[<blockquote><p>tl;dr: generate dynamic certificates on the fly with nginx.</p></blockquote>
+<p>Leveraging <a href="http://openresty.org/">OpenResty</a> to <a href="http://blog.dutchcoders.io/openresty-with-dynamic-generated-certificates/">generate certificates on demand</a>, which follows fairly direct pattern:</p>
+<ul>
+<li>Generate private key</li>
+<li>Generate signing request ( CSR )</li>
+<li>Sign the CSR with a CA</li>
+<li>Use the new key</li>
+</ul>
+<p>A little bit of <a href="http://www.lua.org/">Lua</a> inside <a href="http://nginx.org/">Nginx</a> goes a surprisingly long way.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/05/19/dynamically-generated-certificates/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Nginx 1.7.8 &#8211; Fixes 200ms Delay With SPDY</title>
+		<link>/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/</link>
+					<comments>/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 03 Dec 2014 18:03:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[spdy]]></category>
+		<category><![CDATA[webperf]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11433</guid>
+
+					<description><![CDATA[Nginx 1.7.8 is now available, and I&#8217;m really happy to see this entry in the changelog: Feature: now the &#8220;tcp_nodelay&#8221; directive works with SPDY connections. To be more specific, this commit. The Story Back in September I spun up a private instance of webpagetest ( WPT ). One of the first things I did was [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://nginx.org/">Nginx 1.7.8</a> is now available, and I&#8217;m really happy to see this entry in the <a href="http://nginx.org/en/CHANGES">changelog</a>:</p>
+<blockquote><p>
+Feature: now the &#8220;tcp_nodelay&#8221; directive works with SPDY connections.
+</p></blockquote>
+<p>To be more specific, <a href='http://trac.nginx.org/nginx/changeset/2c10db908b8c4a9c0532c58830275d5ad84ae686/nginx/src'>this commit</a>.</p>
+<hr />
+<h3>The Story</h3>
+<p>Back in September I spun up a <a href="https://sites.google.com/a/webpagetest.org/docs/private-instances">private instance</a> of <a href="http://webpagetest.org/">webpagetest</a> ( WPT ).  One of the first things I did was run near optimal condition tests.  I wanted to see what the lower bound were for a few performance tests.  The test system was very close to one of <a href="http://automattic.com/">our</a> data centers ( less than 1ms ping times ), so I configured tests to use Chrome as the browser, with no traffic shaping.</p>
+<p>Like a kid with a new toy on Christmas morning I started running tests against this private WPT instance.  Quickly something odd came up.  In some cases we were seeing requests for very small ( sometimes less than 1kb ) resources take much longer than they should have.  And by &#8220;much longer&#8221;, I mean these were 3 to 4 times slower than requests for larger resources.</p>
+<p>Long story short, these slower small requests were seeing ~200ms delays in time to first byte ( TTFB ).  But it only happened with <a href="http://en.wikipedia.org/wiki/SPDY">SPDY</a>, with compression enabled, for small files ( my tests showed 1,602 bytes or smaller ), when the small file was the first resource requested in the SPDY connection.  Once I was able to list all of the variables that needed to be in place it was very simple to reproduce the problem using WPT.</p>
+<p>Some of you will look at the mention of a ~200ms delay and immediately recognize this as a <a href="http://support.microsoft.com/kb/214397">delayed ack issue</a>:</p>
+<blockquote><p>
+When a Microsoft TCP stack receives a data packet, a 200-ms delay timer goes off. When an ACK is eventually sent, the delay timer is reset and will initiate another 200-ms delay when the next data packet is received.
+</p></blockquote>
+<p>( Note that the WPT tester system in our instance uses Windows, so that we can test Internet Explorer )</p>
+<p>But that is why Nginx has a <a href="http://nginx.org/en/docs/http/ngx_http_core_module.html#tcp_nodelay">tcp_nodelay</a> option.  Unfortunately it wasn&#8217;t being applied when these variables came together in a SPDY connection.  I started a <a href="http://www.webpagetest.org/forums/showthread.php?tid=13322">thread in the WPT forums</a> about this and we all basically agreed that this was the issue.</p>
+<p>The systems team at <a href="http://automattic.com/">Automattic</a> reached out the Nginx team, describing what we were observing and how to reproduce it.  They sent back a patch, which I ran through my tests and confirmed that it fixed the problem.  The patch led to the <a href="http://trac.nginx.org/nginx/changeset/2c10db908b8c4a9c0532c58830275d5ad84ae686/nginx/src">commit</a> I mentioned above.  And now that change is part of the Nginx 1.7.8 release.</p>
+<h3>Waterfall</h3>
+<p>Here is what this looks like in action.  First, a WPT waterfall graph using Nginx 1.7.7:</p>
+<p><a href="/wp-content/uploads/2014/12/nginx-177-1.png"><img loading="lazy" src="/wp-content/uploads/2014/12/nginx-177-1.png" alt="nginx-177" width="966" height="433" class="aligncenter size-full wp-image-11467" srcset="/wp-content/uploads/2014/12/nginx-177-1.png 966w, /wp-content/uploads/2014/12/nginx-177-1-300x134.png 300w, /wp-content/uploads/2014/12/nginx-177-1-768x344.png 768w" sizes="(max-width: 966px) 100vw, 966px" /></a></p>
+<p>That TTFB of 212ms is significantly slower than it should be.  Compare that with the same test conditions using Nginx 1.7.8:</p>
+<p><a href="/wp-content/uploads/2014/12/nginx-178-1.png"><img loading="lazy" src="/wp-content/uploads/2014/12/nginx-178-1.png" alt="nginx-178" width="970" height="425" class="aligncenter size-full wp-image-11468" srcset="/wp-content/uploads/2014/12/nginx-178-1.png 970w, /wp-content/uploads/2014/12/nginx-178-1-300x131.png 300w, /wp-content/uploads/2014/12/nginx-178-1-768x336.png 768w" sizes="(max-width: 970px) 100vw, 970px" /></a></p>
+<p>A TTFB of 15ms is inline with what I expected to see.  Going from 212ms to 15ms is a 14x improvement!  The total request time dropped from 266ms to 69ms, a 3.8X improvement.  I&#8217;ll take gains like that anytime.</p>
+<h3>Reproducing This Yourself</h3>
+<p>I ran numerous tests during this process.  To make running new tests easier I put together a simple script to take care of the Nginx build and configuration:</p>
+View the code on <a href="https://gist.github.com/b79e79a8b7e17ca1bdb7">Gist</a>.
+<p>For each test I&#8217;d spin up a new DigitalOcean VM with Ubuntu 14.04 LTS.  The build script would complete in a few minutes and then I&#8217;d run new WPT tests.</p>
+<p>Conveniently it turns out that the default <a href="http://trac.nginx.org/nginx/browser/nginx/docs/html/index.html">Welcome to nginx!</a> page is small enough to trigger the ~200ms delay.</p>
+<p>With all of that in place you can run a test at <a href="http://www.webpagetest.org/">webpagetest.org</a> to see this in action.  I&#8217;ve been using the following test config:</p>
+<p>&#8211; Test Location: Dulles, VA<br />
+&#8211; Browser: Chrome<br />
+&#8211; Connection: Native Connection ( No Traffic Shaping )<br />
+&#8211; &#8220;Ignore SSL Certificate Errors&#8221; ( under the Advanced tab ) &#8212; this is need because I&#8217;ve been using a self signed cert</p>
+<p>The &#8220;Dulles, VA&#8221; location has a fast enough route to DigitalOcean &#8220;New York 3&#8221; that you can still observe the ~200ms TTFB difference between Nginx 1.7.7 and 1.7.8.</p>
+<hr />
+<p>A big thank you to the Nginx team for fixing this.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/12/03/nginx-1-7-8-fixes-200ms-delay-with-spdy/feed/</wfw:commentRss>
+			<slash:comments>9</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Tried Out SPDY</title>
+		<link>/2014/04/28/tried-spdy/</link>
+					<comments>/2014/04/28/tried-spdy/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 28 Apr 2014 13:52:14 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[spdy]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10358</guid>
+
+					<description><![CDATA[Zack Tollman suggested I try out SPDY with my updated Nginx install. While I&#8217;m sad at the idea of giving up a plain text HTTP API, I was curious to see what SPDY looked like on this site. I was disappointed with the results. The fastest page load time out of 5 runs without SPDY [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Zack Tollman suggested I <a href="https://josephscott.org/archives/2014/04/update-nginx-for-better-https-performance/#comment-15955" title="Comments like these make writing posts more enjoyable.">try out SPDY</a> with my updated Nginx install.  While I&#8217;m sad at the idea of giving up a plain text HTTP API, I was curious to see what SPDY looked like on this site.</p>
+<p>I was disappointed with the results.  The fastest page load time out of 5 runs without SPDY was 1.039 s.  With SPDY the fastest result was 1.273 s.  I then did several more runs of the same test with SPDY enabled to see if any of them could get close to the 1.0 s base line.  None of them did, most came in close to 2 seconds.  I had honestly expected to see SPDY perform better.  That said this type of testing is not particularly rigorous, so take these numbers with a sufficiently large grain of salt.</p>
+<p>Given the initial poor showing of SPDY in these tests I&#8217;m going to leave it turned off for now.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/04/28/tried-spdy/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Update Nginx For Better HTTPS Performance</title>
+		<link>/2014/04/22/update-nginx-for-better-https-performance/</link>
+					<comments>/2014/04/22/update-nginx-for-better-https-performance/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 22 Apr 2014 15:37:41 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[https]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10261</guid>
+
+					<description><![CDATA[I decided to try out this suggestion from Optimizing NGINX TLS Time To First Byte (TTFB) ( which I mentioned at the end of 2013 ): After digging through the nginx source code, one stumbles onto this gem. Turns out, any nginx version prior to 1.5.6 has this issue: certificates over 4KB in size incur [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I decided to try out this suggestion from <a href="http://www.igvita.com/2013/12/16/optimizing-nginx-tls-time-to-first-byte/" title="Time to first byte is one of my favorite topics.">Optimizing NGINX TLS Time To First Byte (TTFB)</a> ( which <a href="https://josephscott.org/archives/2013/12/nginx-tls-time-to-first-byte/" title="I should have read this in full sooner.">I mentioned at the end of 2013</a> ):</p>
+<blockquote><p>
+After digging through the nginx source code, one stumbles <a href="https://github.com/nginx/nginx/commit/e52bddaaa90e64b2291f6e58ef1a2cff71604f6a#diff-0584d16332cf0d6dd9adb990a3c76a0cR539">onto this gem</a>. Turns out, any nginx version prior to 1.5.6 has this issue: certificates over 4KB in size incur an extra roundtrip, turning a two roundtrip handshake into a three roundtrip affair &#8211; yikes. Worse, in this particular case we trigger another unfortunate edge case in Windows TCP stack: the client ACKs the first few packets from the server, but then waits ~200ms before it triggers a delayed ACK for the last segment. In total, that results in extra 580ms of latency that we did not expect.
+</p></blockquote>
+<p>I&#8217;ve been using Nginx 1.4.x from the Ubuntu package collection on this site.  A few <a href="http://www.webpagetest.org/" title="Still one of my favorite performance testing resources.">webpagetest.org</a> runs showed that HTTPS negotiation was taking more than 300ms on the initial request.  After updating to Nginx 1.5.13 more tests showed HTTPS negotiation was down around 250ms.</p>
+<p>The 50ms savings isn&#8217;t nearly as dramatic as the worst case scenario described in the quote above, but I&#8217;ll take it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/04/22/update-nginx-for-better-https-performance/feed/</wfw:commentRss>
+			<slash:comments>9</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>NGINX TLS Time To First Byte</title>
+		<link>/2013/12/26/nginx-tls-time-to-first-byte/</link>
+					<comments>/2013/12/26/nginx-tls-time-to-first-byte/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 26 Dec 2013 17:29:03 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[https]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[ssl]]></category>
+		<category><![CDATA[time-to-first-byte]]></category>
+		<category><![CDATA[tls]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9676</guid>
+
+					<description><![CDATA[Ilya Grigorik on optimizing NGINX TLS time to first byte (TTTFB): let&#8217;s now turn to the practical matter of picking and tuning the server to deliver the best results. One would hope that the default “out of the box” experience for most servers would do a good job… unfortunately, that is not the case. Let&#8217;s [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Ilya Grigorik on <a href="http://www.igvita.com/2013/12/16/optimizing-nginx-tls-time-to-first-byte/" title="A race before the race.">optimizing NGINX TLS time to first byte (TTTFB)</a>:</p>
+<blockquote><p>
+let&#8217;s now turn to the practical matter of picking and tuning the server to deliver the best results. One would hope that the default “out of the box” experience for most servers would do a good job… unfortunately, that is not the case. Let&#8217;s take a closer look nginx
+</p></blockquote>
+<p>In the simplest terms, TLS involves more work.  The current realities of securing communications means we don&#8217;t have a good way to avoid doing that additional work, indeed we will be doing it more often than we ever have before.  The end result is that we need to spend more time thinking about how to optimize the HTTPS experience for all users.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/12/26/nginx-tls-time-to-first-byte/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>MNPP</title>
+		<link>/2011/04/28/mnpp/</link>
+					<comments>/2011/04/28/mnpp/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 28 Apr 2011 22:32:40 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[mnpp]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[percona]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4010</guid>
+
+					<description><![CDATA[MNPP is Mac + Nginx + Percona + PHP. Could be a handy alternative to MAMP.]]></description>
+										<content:encoded><![CDATA[<p><a href="http://getmnpp.org/">MNPP</a> is Mac + Nginx + Percona + PHP.  Could be a handy alternative to MAMP.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/04/28/mnpp/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Nginx, Redirect non-SSL Requests</title>
+		<link>/2011/02/07/nginx-redirect-non-ssl-requests/</link>
+					<comments>/2011/02/07/nginx-redirect-non-ssl-requests/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 07 Feb 2011 17:51:43 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[ssl]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3495</guid>
+
+					<description><![CDATA[Since I managed to do this incorrectly a couple of times I figured it was worth noting here. You already have a working site setup in Nginx that uses SSL. Now you want to make sure that any non-SSL requests to the site get redirected. Turns out to be very simple: [sourcecode lang=&#8221;plain&#8221;] server { [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Since I managed to do this incorrectly a couple of times I figured it was worth noting here.</p>
+<p>You already have a working site setup in Nginx that uses SSL.  Now you want to make sure that any non-SSL requests to the site get redirected.  Turns out to be very simple:</p>
+<p>[sourcecode lang=&#8221;plain&#8221;]<br />
+server {<br />
+  listen 80;<br />
+  server_name example.com;<br />
+  rewrite ^(.*) https://$server_name$1/ permanent;<br />
+}<br />
+[/sourcecode]</p>
+<p>This sends back an <code>HTTP/1.1 301 Moved Permanently</code> response for non-SSL requests for example.com.</p>
+<p>Three short and easy to read lines, I like it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/02/07/nginx-redirect-non-ssl-requests/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

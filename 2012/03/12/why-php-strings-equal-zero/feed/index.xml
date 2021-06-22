@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Why PHP Strings Equal Zero	</title>
+	<atom:link href="/2012/03/12/why-php-strings-equal-zero/feed/" rel="self" type="application/rss+xml" />
+	<link>/2012/03/12/why-php-strings-equal-zero/</link>
+	<description></description>
+	<lastBuildDate>Thu, 18 Oct 2018 16:41:01 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: josephscott		</title>
+		<link>/2012/03/12/why-php-strings-equal-zero/#comment-129141</link>
+
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 18 Oct 2018 16:41:01 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=5452#comment-129141</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2012/03/12/why-php-strings-equal-zero/#comment-129137&quot;&gt;Kumar rahul&lt;/a&gt;.
+
+At some point you need to use some PHP functions to check it.  You could avoid the traditional integer checking ones and use &lt;code&gt;preg_match&lt;/code&gt; like:
+
+&lt;blockquote&gt;
+$string =&#039;bce0&#039;;
+
+if ( preg_match(&#039;/[0-9]/&#039;, $string ) ){
+    echo &quot;Has INT&quot;;
+} else {
+    echo &quot;NO INT&quot;;
+}
+&lt;/blockquote&gt;]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2012/03/12/why-php-strings-equal-zero/#comment-129137">Kumar rahul</a>.</p>
+<p>At some point you need to use some PHP functions to check it.  You could avoid the traditional integer checking ones and use <code>preg_match</code> like:</p>
+<blockquote><p>
+$string =&#8217;bce0&#8242;;</p>
+<p>if ( preg_match(&#8216;/[0-9]/&#8217;, $string ) ){<br />
+    echo &#8220;Has INT&#8221;;<br />
+} else {<br />
+    echo &#8220;NO INT&#8221;;<br />
+}
+</p></blockquote>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Kumar rahul		</title>
+		<link>/2012/03/12/why-php-strings-equal-zero/#comment-129137</link>
+
+		<dc:creator><![CDATA[Kumar rahul]]></dc:creator>
+		<pubDate>Thu, 18 Oct 2018 15:19:28 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=5452#comment-129137</guid>
+
+					<description><![CDATA[$string =&#039;bce0&#039;;
+How to determine if this string contains an integer. Can u help me to write a small program without using any built-in function like is_numeric,is_int etc?]]></description>
+			<content:encoded><![CDATA[<p>$string =&#8217;bce0&#8242;;<br />
+How to determine if this string contains an integer. Can u help me to write a small program without using any built-in function like is_numeric,is_int etc?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bertrand Rasmagillicutty		</title>
+		<link>/2012/03/12/why-php-strings-equal-zero/#comment-3943</link>
+
+		<dc:creator><![CDATA[Bertrand Rasmagillicutty]]></dc:creator>
+		<pubDate>Sat, 07 Jun 2014 12:17:32 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=5452#comment-3943</guid>
+
+					<description><![CDATA[It bit me w/ an array looping evaluation too. So should we always use === for evaluation?]]></description>
+			<content:encoded><![CDATA[<p>It bit me w/ an array looping evaluation too. So should we always use === for evaluation?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: kris		</title>
+		<link>/2012/03/12/why-php-strings-equal-zero/#comment-3942</link>
+
+		<dc:creator><![CDATA[kris]]></dc:creator>
+		<pubDate>Thu, 10 Oct 2013 11:29:14 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=5452#comment-3942</guid>
+
+					<description><![CDATA[Great explanation of a confusing issue.
+
+Ran into an actual bug because of this behaviour in some legacy code handling ldap today. When using ldap_get_entries the first element in the result array is &#039;count&#039;. This array was looped through and checked that ($key != &#039;count) - this led to the first actual element always missing from the output...]]></description>
+			<content:encoded><![CDATA[<p>Great explanation of a confusing issue.</p>
+<p>Ran into an actual bug because of this behaviour in some legacy code handling ldap today. When using ldap_get_entries the first element in the result array is &#8216;count&#8217;. This array was looped through and checked that ($key != &#8216;count) &#8211; this led to the first actual element always missing from the output&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: ord is php's biggest weakness		</title>
+		<link>/2012/03/12/why-php-strings-equal-zero/#comment-3941</link>
+
+		<dc:creator><![CDATA[ord is php's biggest weakness]]></dc:creator>
+		<pubDate>Tue, 01 Oct 2013 14:33:19 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=5452#comment-3941</guid>
+
+					<description><![CDATA[well done for mentioning this.  People who don&#039;t get it, may get stumbled by it at some point.
+... the solution is as you said: be a strict as possible...just not with absolutely everything...
+
+cheers mr scott.]]></description>
+			<content:encoded><![CDATA[<p>well done for mentioning this.  People who don&#8217;t get it, may get stumbled by it at some point.<br />
+&#8230; the solution is as you said: be a strict as possible&#8230;just not with absolutely everything&#8230;</p>
+<p>cheers mr scott.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rosario		</title>
+		<link>/2012/03/12/why-php-strings-equal-zero/#comment-3940</link>
+
+		<dc:creator><![CDATA[Rosario]]></dc:creator>
+		<pubDate>Thu, 04 Oct 2012 17:25:15 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=5452#comment-3940</guid>
+
+					<description><![CDATA[This is a great post, thank you! 
+This issue or bug was truly getting me an headache! In my case was this condition that was making my application go wrong:
+if($value == &quot;NOW()&quot;){
+and I had to change it to:
+if($value === &quot;NOW()&quot;){
+because on the first case, if $value is 0 the condition would return TRUE (I was wondering why 0 would be same as &quot;NOW()&quot; string) instead of the expected false.
+
+Many thanks!]]></description>
+			<content:encoded><![CDATA[<p>This is a great post, thank you!<br />
+This issue or bug was truly getting me an headache! In my case was this condition that was making my application go wrong:<br />
+if($value == &#8220;NOW()&#8221;){<br />
+and I had to change it to:<br />
+if($value === &#8220;NOW()&#8221;){<br />
+because on the first case, if $value is 0 the condition would return TRUE (I was wondering why 0 would be same as &#8220;NOW()&#8221; string) instead of the expected false.</p>
+<p>Many thanks!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2012/03/12/why-php-strings-equal-zero/#comment-3939</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 16 Mar 2012 15:22:44 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=5452#comment-3939</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2012/03/12/why-php-strings-equal-zero/#comment-3937&quot;&gt;olvlvl&lt;/a&gt;.
+
+That is why I specifically choose not to say &#039;all PHP strings&#039; in the post title.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2012/03/12/why-php-strings-equal-zero/#comment-3937">olvlvl</a>.</p>
+<p>That is why I specifically choose not to say &#8216;all PHP strings&#8217; in the post title.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2012/03/12/why-php-strings-equal-zero/#comment-3938</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 16 Mar 2012 15:22:01 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=5452#comment-3938</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2012/03/12/why-php-strings-equal-zero/#comment-3936&quot;&gt;olvlvl&lt;/a&gt;.
+
+I noted at the end of the post that I don&#039;t think this is really a big deal.  I haven&#039;t seen in happen in non-example code, I suspect the number of times people hit this is relatively small.  But if they do hit it I bet it is frustrating.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2012/03/12/why-php-strings-equal-zero/#comment-3936">olvlvl</a>.</p>
+<p>I noted at the end of the post that I don&#8217;t think this is really a big deal.  I haven&#8217;t seen in happen in non-example code, I suspect the number of times people hit this is relatively small.  But if they do hit it I bet it is frustrating.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: olvlvl		</title>
+		<link>/2012/03/12/why-php-strings-equal-zero/#comment-3937</link>
+
+		<dc:creator><![CDATA[olvlvl]]></dc:creator>
+		<pubDate>Fri, 16 Mar 2012 08:55:03 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=5452#comment-3937</guid>
+
+					<description><![CDATA[BTW the title of your article is not correct because as you mentioned &quot;7php&quot; is equivalent to 7, not zero.]]></description>
+			<content:encoded><![CDATA[<p>BTW the title of your article is not correct because as you mentioned &#8220;7php&#8221; is equivalent to 7, not zero.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: olvlvl		</title>
+		<link>/2012/03/12/why-php-strings-equal-zero/#comment-3936</link>
+
+		<dc:creator><![CDATA[olvlvl]]></dc:creator>
+		<pubDate>Fri, 16 Mar 2012 08:45:05 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=5452#comment-3936</guid>
+
+					<description><![CDATA[I don&#039;t see an issue with string casting here but bad programming skills/habits. It is known that casting is in the work when comparing different types and it&#039;s only natural that they are casted to the lowest common type, which is often the numeric type.
+
+The developer who wrote `&#039;php&#039; == 0` should be punished by copying 10 times the documentation excerpt you mentioned.]]></description>
+			<content:encoded><![CDATA[<p>I don&#8217;t see an issue with string casting here but bad programming skills/habits. It is known that casting is in the work when comparing different types and it&#8217;s only natural that they are casted to the lowest common type, which is often the numeric type.</p>
+<p>The developer who wrote `&#8217;php&#8217; == 0` should be punished by copying 10 times the documentation excerpt you mentioned.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Answer To Peter Bowyer&#8217;s Question	</title>
+	<atom:link href="/2004/08/04/answer-to-peter-bowyers-question/feed/" rel="self" type="application/rss+xml" />
+	<link>/2004/08/04/answer-to-peter-bowyers-question/</link>
+	<description></description>
+	<lastBuildDate>Thu, 05 Aug 2004 14:48:49 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2004/08/04/answer-to-peter-bowyers-question/#comment-508</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 05 Aug 2004 14:48:49 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/08/04/answer-to-peter-bowyers-question/#comment-508</guid>
+
+					<description><![CDATA[I only did basic testing to see the two solutions would work in PHP (4.3.8).  It wouldn&#039;t surprise me if they both needed some tweaking to get exactly the results you want.]]></description>
+			<content:encoded><![CDATA[<p>I only did basic testing to see the two solutions would work in PHP (4.3.8).  It wouldn&#8217;t surprise me if they both needed some tweaking to get exactly the results you want.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Peter Bowyer		</title>
+		<link>/2004/08/04/answer-to-peter-bowyers-question/#comment-507</link>
+
+		<dc:creator><![CDATA[Peter Bowyer]]></dc:creator>
+		<pubDate>Thu, 05 Aug 2004 11:46:01 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/08/04/answer-to-peter-bowyers-question/#comment-507</guid>
+
+					<description><![CDATA[..Although for some reason in the FormProcessor code the first construct didn&#039;t work (it was the more suitable one of the two).  It messed up handling tags that should have been caught by the &#039;default&#039; statement.  Most odd, as a demo similar to your one was working fine!
+
+Hmmmm.]]></description>
+			<content:encoded><![CDATA[<p>..Although for some reason in the FormProcessor code the first construct didn&#8217;t work (it was the more suitable one of the two).  It messed up handling tags that should have been caught by the &#8216;default&#8217; statement.  Most odd, as a demo similar to your one was working fine!</p>
+<p>Hmmmm.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Peter Bowyer		</title>
+		<link>/2004/08/04/answer-to-peter-bowyers-question/#comment-506</link>
+
+		<dc:creator><![CDATA[Peter Bowyer]]></dc:creator>
+		<pubDate>Thu, 05 Aug 2004 09:16:17 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/08/04/answer-to-peter-bowyers-question/#comment-506</guid>
+
+					<description><![CDATA[Thanks for the code Joseph, these look to be good answers to the problem - I&#039;ll go and see which looks neater in FormProcessor now :-)
+
+Sorry you had problems posting to my blog - the username/password are in the &#039;message&#039; displayed in the HTTP Basic Authentication dialogue.  I implemented spam protection this way and haven&#039;t had any spam since doing it.]]></description>
+			<content:encoded><![CDATA[<p>Thanks for the code Joseph, these look to be good answers to the problem &#8211; I&#8217;ll go and see which looks neater in FormProcessor now 🙂</p>
+<p>Sorry you had problems posting to my blog &#8211; the username/password are in the &#8216;message&#8217; displayed in the HTTP Basic Authentication dialogue.  I implemented spam protection this way and haven&#8217;t had any spam since doing it.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

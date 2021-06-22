@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>nvidia &#8211; Joseph Scott</title>
+	<atom:link href="/tag/nvidia/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 29 Jun 2006 17:46:35 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>NVIDIA FreeBSD kernel feature requests</title>
+		<link>/2006/06/29/nvidia-freebsd-kernel-feature-requests/</link>
+					<comments>/2006/06/29/nvidia-freebsd-kernel-feature-requests/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 29 Jun 2006 17:46:35 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[nvidia]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/06/29/nvidia-freebsd-kernel-feature-requests/</guid>
+
+					<description><![CDATA[Christian Zander sent an email to the FreeBSD-Hackers list detailing NVIDIA FreeBSD kernel feature requests. Having high quality video drivers is a very good thing: NVIDIA has been looking at ways to improve its graphics driver for the FreeBSD i386 platform, as well as investigating the possibility of adding support for the FreeBSD amd64 platform, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Christian Zander sent an email to the <a href="http://lists.freebsd.org/mailman/listinfo/freebsd-hackers">FreeBSD-Hackers</a> list detailing <a href="http://lists.freebsd.org/pipermail/freebsd-hackers/2006-June/016995.html">NVIDIA FreeBSD kernel feature requests</a>.  Having high quality video drivers is a very good thing:</p>
+<blockquote><p>
+NVIDIA has been looking at ways to improve its graphics driver for the<br />
+FreeBSD i386 platform, as well as investigating the possibility of adding<br />
+support for the FreeBSD amd64 platform, and identified a number of<br />
+obstacles. Some progress has been made to resolve them, and NVIDIA would<br />
+like to summarize the current status. We would also like to thank John<br />
+Baldwin and Doug Rabson for their valuable help.</p>
+<p>This summary makes an attempt to describe the kernel interfaces needed by<br />
+the NVIDIA FreeBSD i386 graphics driver to achieve feature parity with<br />
+the Linux/Solaris graphics drivers, and/or required to make support for<br />
+the FreeBSD amd64 platform feasible. It also describes some of the<br />
+technical difficulties encountered by NVIDIA during the FreeBSD i386<br />
+graphics driver&#8217;s development, how these problems have been worked around<br />
+and what could be done to solve them better.
+</p></blockquote>
+<p><b>UPDATE Thu 13 Jul 2006 @ 2:30pm :</b> <a href="http://http://bsdtalk.blogspot.com/">BSDTalk</a> has an <a href="http://bsdtalk.blogspot.com/2006/07/bsdtalk054-interview-with-andy-ritger.html">interview with Andy Ritger and Christian Zander from nVidia</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/06/29/nvidia-freebsd-kernel-feature-requests/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

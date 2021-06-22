@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Introducing jQuery Edit In Place (JEIP)	</title>
+	<atom:link href="/2008/11/10/introducing-jquery-edit-in-place-jeip/feed/" rel="self" type="application/rss+xml" />
+	<link>/2008/11/10/introducing-jquery-edit-in-place-jeip/</link>
+	<description></description>
+	<lastBuildDate>Thu, 20 Nov 2008 20:26:16 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/11/10/introducing-jquery-edit-in-place-jeip/#comment-2461</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 20 Nov 2008 20:26:16 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=189#comment-2461</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2008/11/10/introducing-jquery-edit-in-place-jeip/#comment-2460&quot;&gt;mark henry&lt;/a&gt;.
+
+Look at the XHR in Firebug, the &quot;html&quot; field in the JSON string is returning an empty string.  That wouldn&#039;t prevent the &quot;Saving...&quot; text from being removed though.  Have you tried this on an empty page?  Perhaps there&#039;s something else on the page that&#039;s causing the problem.
+
+If you can pin down what&#039;s going on please contact me (http://josephscott.org/contact/).  I&#039;m happy to fix bugs in the code.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2008/11/10/introducing-jquery-edit-in-place-jeip/#comment-2460">mark henry</a>.</p>
+<p>Look at the XHR in Firebug, the &#8220;html&#8221; field in the JSON string is returning an empty string.  That wouldn&#8217;t prevent the &#8220;Saving&#8230;&#8221; text from being removed though.  Have you tried this on an empty page?  Perhaps there&#8217;s something else on the page that&#8217;s causing the problem.</p>
+<p>If you can pin down what&#8217;s going on please contact me (<a href="http://josephscott.org/contact/" rel="nofollow ugc">http://josephscott.org/contact/</a>).  I&#8217;m happy to fix bugs in the code.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: mark henry		</title>
+		<link>/2008/11/10/introducing-jquery-edit-in-place-jeip/#comment-2460</link>
+
+		<dc:creator><![CDATA[mark henry]]></dc:creator>
+		<pubDate>Thu, 20 Nov 2008 19:24:22 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=189#comment-2460</guid>
+
+					<description><![CDATA[Dont know whether it is a bug, but after submit the save text hangs.
+http://www.sionvalais.com/livecam/Morgins/128924
+
+function on save
+http://www.sionvalais.com/php/edit.php]]></description>
+			<content:encoded><![CDATA[<p>Dont know whether it is a bug, but after submit the save text hangs.<br />
+<a href="http://www.sionvalais.com/livecam/Morgins/128924" rel="nofollow ugc">http://www.sionvalais.com/livecam/Morgins/128924</a></p>
+<p>function on save<br />
+<a href="http://www.sionvalais.com/php/edit.php" rel="nofollow ugc">http://www.sionvalais.com/php/edit.php</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/11/10/introducing-jquery-edit-in-place-jeip/#comment-2459</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 20 Nov 2008 18:39:47 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=189#comment-2459</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2008/11/10/introducing-jquery-edit-in-place-jeip/#comment-2458&quot;&gt;mark henry&lt;/a&gt;.
+
+The DOM id of the element is submitted in the save XHR.  Check out the &#039;The Save XHR and Response&#039; section on the http://josephscott.org/code/javascript/jquery-edit-in-place/ page]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2008/11/10/introducing-jquery-edit-in-place-jeip/#comment-2458">mark henry</a>.</p>
+<p>The DOM id of the element is submitted in the save XHR.  Check out the &#8216;The Save XHR and Response&#8217; section on the <a href="http://josephscott.org/code/javascript/jquery-edit-in-place/" rel="nofollow ugc">http://josephscott.org/code/javascript/jquery-edit-in-place/</a> page</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: mark henry		</title>
+		<link>/2008/11/10/introducing-jquery-edit-in-place-jeip/#comment-2458</link>
+
+		<dc:creator><![CDATA[mark henry]]></dc:creator>
+		<pubDate>Thu, 20 Nov 2008 11:57:21 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=189#comment-2458</guid>
+
+					<description><![CDATA[How can I send an id to the php file? Is it possible to use the id of the dom object?]]></description>
+			<content:encoded><![CDATA[<p>How can I send an id to the php file? Is it possible to use the id of the dom object?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jason Davies		</title>
+		<link>/2008/11/10/introducing-jquery-edit-in-place-jeip/#comment-2457</link>
+
+		<dc:creator><![CDATA[Jason Davies]]></dc:creator>
+		<pubDate>Thu, 20 Nov 2008 11:26:07 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=189#comment-2457</guid>
+
+					<description><![CDATA[Awesome, I&#039;ve been looking for exactly this for some time now!  I am a big fan of edit-in-place interfaces, I think they are the way forward for making Web sites easy to administrate as it avoids the user having to learn a completely different interface UI for administration.
+
+I just happened to stumble across your blog from reading your old blog post describing how to do recursive search-and-replace in a Perl one-liner.]]></description>
+			<content:encoded><![CDATA[<p>Awesome, I&#8217;ve been looking for exactly this for some time now!  I am a big fan of edit-in-place interfaces, I think they are the way forward for making Web sites easy to administrate as it avoids the user having to learn a completely different interface UI for administration.</p>
+<p>I just happened to stumble across your blog from reading your old blog post describing how to do recursive search-and-replace in a Perl one-liner.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/11/10/introducing-jquery-edit-in-place-jeip/#comment-2456</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Sun, 16 Nov 2008 04:24:53 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=189#comment-2456</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2008/11/10/introducing-jquery-edit-in-place-jeip/#comment-2455&quot;&gt;du yu&lt;/a&gt;.
+
+Thanks for pointing this out.  The click event for editing wasn&#039;t being turned off after it was clicked the first time.  I&#039;ve fixed this in version 0.1.2 of jeip.js.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2008/11/10/introducing-jquery-edit-in-place-jeip/#comment-2455">du yu</a>.</p>
+<p>Thanks for pointing this out.  The click event for editing wasn&#8217;t being turned off after it was clicked the first time.  I&#8217;ve fixed this in version 0.1.2 of jeip.js.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: du yu		</title>
+		<link>/2008/11/10/introducing-jquery-edit-in-place-jeip/#comment-2455</link>
+
+		<dc:creator><![CDATA[du yu]]></dc:creator>
+		<pubDate>Sat, 15 Nov 2008 06:52:38 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=189#comment-2455</guid>
+
+					<description><![CDATA[the demo has a bug. if you double click the text to be edit, it will show you two textarea.]]></description>
+			<content:encoded><![CDATA[<p>the demo has a bug. if you double click the text to be edit, it will show you two textarea.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: iulian.anghel &#187; Blog Archive &#187; Monday Script News (1)		</title>
+		<link>/2008/11/10/introducing-jquery-edit-in-place-jeip/#comment-2454</link>
+
+		<dc:creator><![CDATA[iulian.anghel &#187; Blog Archive &#187; Monday Script News (1)]]></dc:creator>
+		<pubDate>Mon, 10 Nov 2008 18:45:45 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=189#comment-2454</guid>
+
+					<description><![CDATA[[...] Scott lansează prima versiune de jQuery Edit in Place (JEIP). Nu e chiar la început, fiind o portare de pe Prototype,  și se miscă foarte [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Scott lansează prima versiune de jQuery Edit in Place (JEIP). Nu e chiar la început, fiind o portare de pe Prototype,  și se miscă foarte [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

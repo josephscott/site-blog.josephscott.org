@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>jon-fox &#8211; Joseph Scott</title>
+	<atom:link href="/tag/jon-fox/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 04 Apr 2019 19:01:39 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Timing Details With cURL</title>
+		<link>/2011/10/14/timing-details-with-curl/</link>
+					<comments>/2011/10/14/timing-details-with-curl/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 14 Oct 2011 16:17:05 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[curl]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[jon-fox]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4943</guid>
+
+					<description><![CDATA[Jon&#8217;s recent Find the Time to First Byte Using Curl post reminded me about the additional timing details that cURL can provide. cURL supports formatted output for the details of the request ( see the cURL manpage for details, under &#8220;-w, &#8211; write-out &#60;format&#62;&#8221; ). For our purposes we&#8217;ll focus just on the timing details [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Jon&#8217;s recent <a href="http://www.jonefox.com/blog/2011/10/10/find-the-time-to-first-byte-using-curl/">Find the Time to First Byte Using Curl</a> post reminded me about the additional timing details that <a href="http://curl.haxx.se/">cURL</a> can provide.</p>
+<p>cURL supports formatted output for the details of the request ( see the <a href="http://curl.haxx.se/docs/manpage.html">cURL manpage</a> for details, under &#8220;-w, &#8211;write-out &lt;format&gt;&#8221; ). For our purposes we&#8217;ll focus just on the timing details that are provided.</p>
+<p>Step one: create a new file, curl-format.txt, and paste in:</p>
+<pre class="line-numbers"><code class="language-markup">time_namelookup: %{time_namelookup}
+time_connect: %{time_connect}
+time_appconnect: %{time_appconnect}
+time_pretransfer: %{time_pretransfer}
+time_redirect: %{time_redirect}
+time_starttransfer: %{time_starttransfer}
+———
+time_total: %{time_total}</code></pre>
+<p>Step two, make a request:</p>
+<pre>curl -w "@curl-format.txt" -o /dev/null -s http://wordpress.com/
+</pre>
+<p>What this does:</p>
+<ul>
+<li><code>-w "@curl-format.txt"</code> tells cURL to use our format file</li>
+<li><code>-o /dev/null</code> redirects the output of the request to /dev/null</li>
+<li><code>-s</code> tells cURL not to show a progress meter</li>
+<li><code>http://wordpress.com/</code> is the URL we are requesting</li>
+</ul>
+<p>And here is what you get back:</p>
+<pre class="line-numbers"><code class="language-markup">time_namelookup: 0.001
+time_connect: 0.037
+time_appconnect: 0.000
+time_pretransfer: 0.037
+time_redirect: 0.000
+time_starttransfer: 0.092
+———
+time_total: 0.164</code></pre>
+<p>Jon was looking specifically at time to first byte, which is the time_starttransfer line. The other timing details include DNS lookup, TCP connect, pre-transfer negotiations, redirects (in this case there were none), and of course the total time.</p>
+<p>The format file for this output provides a reasonable level of flexibility, for instance you could make it CSV formatted for easy parsing. You might want to do that if you were running this as a cron job to track timing details of a specific URL.</p>
+<p>For details on the other information that cURL can provide using <code>-w</code> check out the <a href="http://curl.haxx.se/docs/manpage.html">cURL manpage</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/10/14/timing-details-with-curl/feed/</wfw:commentRss>
+			<slash:comments>42</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

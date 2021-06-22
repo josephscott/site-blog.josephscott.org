@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: PHP Helpers: esc_html	</title>
+	<atom:link href="/2010/01/19/php-helpers-esc_html/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/01/19/php-helpers-esc_html/</link>
+	<description></description>
+	<lastBuildDate>Mon, 28 Jun 2010 21:17:11 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/01/19/php-helpers-esc_html/#comment-3173</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 28 Jun 2010 21:17:11 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1796#comment-3173</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/01/19/php-helpers-esc_html/#comment-3172&quot;&gt;Matt&lt;/a&gt;.
+
+For html_print_r and html_var_dump, I did the same thing for my local code, they echo by default.  After more thought it seemed like the right thing to do.
+
+I&#039;m not sure exactly what the right answer is for using these in a WordPress context.  Perhaps load them as a plugin and keep the conditional checks for function name collisions?
+
+Thanks for the feedback.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/01/19/php-helpers-esc_html/#comment-3172">Matt</a>.</p>
+<p>For html_print_r and html_var_dump, I did the same thing for my local code, they echo by default.  After more thought it seemed like the right thing to do.</p>
+<p>I&#8217;m not sure exactly what the right answer is for using these in a WordPress context.  Perhaps load them as a plugin and keep the conditional checks for function name collisions?</p>
+<p>Thanks for the feedback.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Matt		</title>
+		<link>/2010/01/19/php-helpers-esc_html/#comment-3172</link>
+
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+		<pubDate>Mon, 28 Jun 2010 21:12:07 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1796#comment-3172</guid>
+
+					<description><![CDATA[These are great, I have always had one that I used called pre_dump, which was var_dump wrapped in PRE tags and several others that I use for debugging purposes.
+
+I recently decided to test yours out, and ran into at least 1 thing that would help me, which is to rename esc_html to something else.  I have always used auto_prepend_file to include these common helpers, and when doing so it of course conflicts with my WordPress install.
+
+Also, and this is just me wanting to type less but, I think that html_print_r and html_var_dump should echo rather than return.
+
+I know this wasn&#039;t really designed for my specific use case, but it does perform this job well.
+
+In any case, thank you for these, it will surely help me out.]]></description>
+			<content:encoded><![CDATA[<p>These are great, I have always had one that I used called pre_dump, which was var_dump wrapped in PRE tags and several others that I use for debugging purposes.</p>
+<p>I recently decided to test yours out, and ran into at least 1 thing that would help me, which is to rename esc_html to something else.  I have always used auto_prepend_file to include these common helpers, and when doing so it of course conflicts with my WordPress install.</p>
+<p>Also, and this is just me wanting to type less but, I think that html_print_r and html_var_dump should echo rather than return.</p>
+<p>I know this wasn&#8217;t really designed for my specific use case, but it does perform this job well.</p>
+<p>In any case, thank you for these, it will surely help me out.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

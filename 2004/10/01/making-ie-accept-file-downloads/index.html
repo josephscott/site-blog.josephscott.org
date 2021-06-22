@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="profile" href="https://gmpg.org/xfn/11"> <meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@josephscott">
+<meta name="twitter:site" content="@josephscott">
+<meta name="twitter:title" content="Making IE Accept File Downloads">
+<meta name="twitter:description" content="I&#039;ve been adding more report features to our internal web app at work.  Getting them to the point they are at now is another story, for now let me tell the tale of convincing Internet Explorer (IE) to"> <link media="all" href="/wp-content/cache/autoptimize/css/autoptimize_da876478aa27b35cb47c491625986a1f.css" rel="stylesheet">
+<link media="print" href="/wp-content/cache/autoptimize/css/autoptimize_4a8bc5d490127fba1e504524cfa205e6.css" rel="stylesheet">
+<title>Making IE Accept File Downloads &#8211; Joseph Scott</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="alternate" type="application/rss+xml" title="Joseph Scott &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="Joseph Scott &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Joseph Scott &raquo; Making IE Accept File Downloads Comments Feed" href="/2004/10/01/making-ie-accept-file-downloads/feed/">
+<style id="twentytwenty-style-inline-css">.color-accent,.color-accent-hover:hover,.color-accent-hover:focus,:root .has-accent-color,.has-drop-cap:not(:focus):first-letter,.wp-block-button.is-style-outline,a { color: #e20842; }blockquote,.border-color-accent,.border-color-accent-hover:hover,.border-color-accent-hover:focus { border-color: #e20842; }button,.button,.faux-button,.wp-block-button__link,.wp-block-file .wp-block-file__button,input[type="button"],input[type="reset"],input[type="submit"],.bg-accent,.bg-accent-hover:hover,.bg-accent-hover:focus,:root .has-accent-background-color,.comment-reply-link { background-color: #e20842; }.fill-children-accent,.fill-children-accent * { fill: #e20842; }:root .has-background-color,button,.button,.faux-button,.wp-block-button__link,.wp-block-file__button,input[type="button"],input[type="reset"],input[type="submit"],.wp-block-button,.comment-reply-link,.has-background.has-primary-background-color:not(.has-text-color),.has-background.has-primary-background-color *:not(.has-text-color),.has-background.has-accent-background-color:not(.has-text-color),.has-background.has-accent-background-color *:not(.has-text-color) { color: #f7f7f7; }:root .has-background-background-color { background-color: #f7f7f7; }body,.entry-title a,:root .has-primary-color { color: #000000; }:root .has-primary-background-color { background-color: #000000; }cite,figcaption,.wp-caption-text,.post-meta,.entry-content .wp-block-archives li,.entry-content .wp-block-categories li,.entry-content .wp-block-latest-posts li,.wp-block-latest-comments__comment-date,.wp-block-latest-posts__post-date,.wp-block-embed figcaption,.wp-block-image figcaption,.wp-block-pullquote cite,.comment-metadata,.comment-respond .comment-notes,.comment-respond .logged-in-as,.pagination .dots,.entry-content hr:not(.has-background),hr.styled-separator,:root .has-secondary-color { color: #686868; }:root .has-secondary-background-color { background-color: #686868; }pre,fieldset,input,textarea,table,table *,hr { border-color: #d3d3d3; }caption,code,code,kbd,samp,.wp-block-table.is-style-stripes tbody tr:nth-child(odd),:root .has-subtle-background-background-color { background-color: #d3d3d3; }.wp-block-table.is-style-stripes { border-bottom-color: #d3d3d3; }.wp-block-latest-posts.is-grid li { border-top-color: #d3d3d3; }:root .has-subtle-background-color { color: #d3d3d3; }body:not(.overlay-header) .primary-menu > li > a,body:not(.overlay-header) .primary-menu > li > .icon,.modal-menu a,.footer-menu a, .footer-widgets a,#site-footer .wp-block-button.is-style-outline,.wp-block-pullquote:before,.singular:not(.overlay-header) .entry-header a,.archive-header a,.header-footer-group .color-accent,.header-footer-group .color-accent-hover:hover { color: #e20842; }.social-icons a,#site-footer button:not(.toggle),#site-footer .button,#site-footer .faux-button,#site-footer .wp-block-button__link,#site-footer .wp-block-file__button,#site-footer input[type="button"],#site-footer input[type="reset"],#site-footer input[type="submit"] { background-color: #e20842; }.social-icons a,body:not(.overlay-header) .primary-menu ul,.header-footer-group button,.header-footer-group .button,.header-footer-group .faux-button,.header-footer-group .wp-block-button:not(.is-style-outline) .wp-block-button__link,.header-footer-group .wp-block-file__button,.header-footer-group input[type="button"],.header-footer-group input[type="reset"],.header-footer-group input[type="submit"] { color: #f7f7f7; }#site-header,.footer-nav-widgets-wrapper,#site-footer,.menu-modal,.menu-modal-inner,.search-modal-inner,.archive-header,.singular .entry-header,.singular .featured-media:before,.wp-block-pullquote:before { background-color: #f7f7f7; }.header-footer-group,body:not(.overlay-header) #site-header .toggle,.menu-modal .toggle { color: #000000; }body:not(.overlay-header) .primary-menu ul { background-color: #000000; }body:not(.overlay-header) .primary-menu > li > ul:after { border-bottom-color: #000000; }body:not(.overlay-header) .primary-menu ul ul:after { border-left-color: #000000; }.site-description,body:not(.overlay-header) .toggle-inner .toggle-text,.widget .post-date,.widget .rss-date,.widget_archive li,.widget_categories li,.widget cite,.widget_pages li,.widget_meta li,.widget_nav_menu li,.powered-by-wordpress,.to-the-top,.singular .entry-header .post-meta,.singular:not(.overlay-header) .entry-header .post-meta a { color: #686868; }.header-footer-group pre,.header-footer-group fieldset,.header-footer-group input,.header-footer-group textarea,.header-footer-group table,.header-footer-group table *,.footer-nav-widgets-wrapper,#site-footer,.menu-modal nav *,.footer-widgets-outer-wrapper,.footer-top { border-color: #d3d3d3; }.header-footer-group table caption,body:not(.overlay-header) .header-inner .toggle-wrapper::before { background-color: #d3d3d3; }.overlay-header .header-inner { color: #f7f7f7; }.cover-header .entry-header * { color: #f7f7f7; }</style>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/164">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 5.7.2">
+<link rel="canonical" href="/2004/10/01/making-ie-accept-file-downloads/">
+<link rel="shortlink" href="/?p=164">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2004%2F10%2F01%2Fmaking-ie-accept-file-downloads%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2004%2F10%2F01%2Fmaking-ie-accept-file-downloads%2F&#038;format=xml">
+<link rel="alternate" type="application/feed+json" title="Joseph Scott &raquo; JSON Feed" href="/feed/json/">
+<link rel="alternate" type="application/feed+json" title="Joseph Scott &raquo; Making IE Accept File Downloads Comments Feed" href="/2004/10/01/making-ie-accept-file-downloads/feed/json/"> <script>document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );</script> <style id="custom-background-css">body.custom-background { background-color: #f7f7f7; }</style>
+<style id="wp-custom-css">.powered-by-wordpress { display: none;}
+
+.entry-categories { display: none;}</style>
+</head>
+<body class="post-template-default single single-post postid-164 single-format-standard custom-background wp-embed-responsive singular enable-search-modal missing-post-thumbnail has-single-pagination showing-comments show-avatars footer-top-visible reduced-spacing"> <a class="skip-link screen-reader-text" href="#site-content">Skip to the content</a><header id="site-header" class="header-footer-group" role="banner"><div class="header-inner section-inner">
+<div class="header-titles-wrapper"> <button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false"> <span class="toggle-inner"> <span class="toggle-icon"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewbox="0 0 23 23"><path d="M38.710696,48.0601792 L43,52.3494831 L41.3494831,54 L37.0601792,49.710696 C35.2632422,51.1481185 32.9839107,52.0076499 30.5038249,52.0076499 C24.7027226,52.0076499 20,47.3049272 20,41.5038249 C20,35.7027226 24.7027226,31 30.5038249,31 C36.3049272,31 41.0076499,35.7027226 41.0076499,41.5038249 C41.0076499,43.9839107 40.1481185,46.2632422 38.710696,48.0601792 Z M36.3875844,47.1716785 C37.8030221,45.7026647 38.6734666,43.7048964 38.6734666,41.5038249 C38.6734666,36.9918565 35.0157934,33.3341833 30.5038249,33.3341833 C25.9918565,33.3341833 22.3341833,36.9918565 22.3341833,41.5038249 C22.3341833,46.0157934 25.9918565,49.6734666 30.5038249,49.6734666 C32.7048964,49.6734666 34.7026647,48.8030221 36.1716785,47.3875844 C36.2023931,47.347638 36.2360451,47.3092237 36.2726343,47.2726343 C36.3092237,47.2360451 36.347638,47.2023931 36.3875844,47.1716785 Z" transform="translate(-20 -31)"></path></svg> </span> <span class="toggle-text">Search</span> </span> </button><div class="header-titles"><div class="site-title faux-heading"><a href="/">Joseph Scott</a></div></div> <button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle"> <span class="toggle-inner"> <span class="toggle-icon"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="26" height="7" viewbox="0 0 26 7"><path fill-rule="evenodd" d="M332.5,45 C330.567003,45 329,43.4329966 329,41.5 C329,39.5670034 330.567003,38 332.5,38 C334.432997,38 336,39.5670034 336,41.5 C336,43.4329966 334.432997,45 332.5,45 Z M342,45 C340.067003,45 338.5,43.4329966 338.5,41.5 C338.5,39.5670034 340.067003,38 342,38 C343.932997,38 345.5,39.5670034 345.5,41.5 C345.5,43.4329966 343.932997,45 342,45 Z M351.5,45 C349.567003,45 348,43.4329966 348,41.5 C348,39.5670034 349.567003,38 351.5,38 C353.432997,38 355,39.5670034 355,41.5 C355,43.4329966 353.432997,45 351.5,45 Z" transform="translate(-329 -38)"></path></svg> </span> <span class="toggle-text">Menu</span> </span> </button>
+</div>
+<div class="header-navigation-wrapper">
+<nav class="primary-menu-wrapper" aria-label="Horizontal" role="navigation"><ul class="primary-menu reset-list-style">
+<li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><a href="https://josephscott.org/">Home</a></li>
+<li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-8"><a href="/">Blog</a></li>
+<li id="menu-item-15706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15706"><a href="/contact/">Contact</a></li>
+</ul></nav><div class="header-toggles hide-no-js"><div class="toggle-wrapper search-toggle-wrapper"> <button class="toggle search-toggle desktop-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false"> <span class="toggle-inner"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewbox="0 0 23 23"><path d="M38.710696,48.0601792 L43,52.3494831 L41.3494831,54 L37.0601792,49.710696 C35.2632422,51.1481185 32.9839107,52.0076499 30.5038249,52.0076499 C24.7027226,52.0076499 20,47.3049272 20,41.5038249 C20,35.7027226 24.7027226,31 30.5038249,31 C36.3049272,31 41.0076499,35.7027226 41.0076499,41.5038249 C41.0076499,43.9839107 40.1481185,46.2632422 38.710696,48.0601792 Z M36.3875844,47.1716785 C37.8030221,45.7026647 38.6734666,43.7048964 38.6734666,41.5038249 C38.6734666,36.9918565 35.0157934,33.3341833 30.5038249,33.3341833 C25.9918565,33.3341833 22.3341833,36.9918565 22.3341833,41.5038249 C22.3341833,46.0157934 25.9918565,49.6734666 30.5038249,49.6734666 C32.7048964,49.6734666 34.7026647,48.8030221 36.1716785,47.3875844 C36.2023931,47.347638 36.2360451,47.3092237 36.2726343,47.2726343 C36.3092237,47.2360451 36.347638,47.2023931 36.3875844,47.1716785 Z" transform="translate(-20 -31)"></path></svg> <span class="toggle-text">Search</span> </span> </button>
+</div></div>
+</div>
+</div>
+<div class="search-modal cover-modal header-footer-group" data-modal-target-string=".search-modal"><div class="search-modal-inner modal-inner"><div class="section-inner">
+<form role="search" aria-label="Search for:" method="get" class="search-form" action="/"> <label for="search-form-1"> <span class="screen-reader-text">Search for:</span> <input type="search" id="search-form-1" class="search-field" placeholder="Search &hellip;" value="" name="s"> </label> <input type="submit" class="search-submit" value="Search">
+</form> <button class="toggle search-untoggle close-search-toggle fill-children-current-color" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field"> <span class="screen-reader-text">Close search</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16"><polygon fill="" fill-rule="evenodd" points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102"></polygon></svg> </button>
+</div></div></div></header><div class="menu-modal cover-modal header-footer-group" data-modal-target-string=".menu-modal"><div class="menu-modal-inner modal-inner"><div class="menu-wrapper section-inner">
+<div class="menu-top"> <button class="toggle close-nav-toggle fill-children-current-color" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".menu-modal"> <span class="toggle-text">Close Menu</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16"><polygon fill="" fill-rule="evenodd" points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102"></polygon></svg> </button><nav class="mobile-menu" aria-label="Mobile" role="navigation"><ul class="modal-menu reset-list-style">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><div class="ancestor-wrapper"><a href="https://josephscott.org/">Home</a></div></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-8"><div class="ancestor-wrapper"><a href="/">Blog</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15706"><div class="ancestor-wrapper"><a href="/contact/">Contact</a></div></li>
+</ul></nav>
+</div>
+<div class="menu-bottom"></div>
+</div></div></div>
+<main id="site-content" role="main"><article class="post-164 post type-post status-publish format-standard hentry category-browsers category-how-to category-php category-programming category-web" id="post-164"><header class="entry-header has-text-align-center header-footer-group"><div class="entry-header-inner section-inner medium">
+<div class="entry-categories"> <span class="screen-reader-text">Categories</span><div class="entry-categories-inner"> <a href="/category/web/browsers/" rel="category tag">Browsers</a> <a href="/category/how-to/" rel="category tag">How To</a> <a href="/category/programming/php/" rel="category tag">PHP</a> <a href="/category/programming/" rel="category tag">Programming</a> <a href="/category/web/" rel="category tag">Web</a>
+</div>
+</div>
+<h1 class="entry-title">Making IE Accept File Downloads</h1>
+<div class="post-meta-wrapper post-meta-single post-meta-single-top"><ul class="post-meta">
+<li class="post-author meta-wrapper"> <span class="meta-icon"> <span class="screen-reader-text">Post author</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewbox="0 0 18 20"><path fill="" d="M18,19 C18,19.5522847 17.5522847,20 17,20 C16.4477153,20 16,19.5522847 16,19 L16,17 C16,15.3431458 14.6568542,14 13,14 L5,14 C3.34314575,14 2,15.3431458 2,17 L2,19 C2,19.5522847 1.55228475,20 1,20 C0.44771525,20 0,19.5522847 0,19 L0,17 C0,14.2385763 2.23857625,12 5,12 L13,12 C15.7614237,12 18,14.2385763 18,17 L18,19 Z M9,10 C6.23857625,10 4,7.76142375 4,5 C4,2.23857625 6.23857625,0 9,0 C11.7614237,0 14,2.23857625 14,5 C14,7.76142375 11.7614237,10 9,10 Z M9,8 C10.6568542,8 12,6.65685425 12,5 C12,3.34314575 10.6568542,2 9,2 C7.34314575,2 6,3.34314575 6,5 C6,6.65685425 7.34314575,8 9,8 Z"></path></svg> </span> <span class="meta-text"> By <a href="/author/josephscott/">josephscott</a> </span>
+</li>
+<li class="post-date meta-wrapper"> <span class="meta-icon"> <span class="screen-reader-text">Post date</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewbox="0 0 18 19"><path fill="" d="M4.60069444,4.09375 L3.25,4.09375 C2.47334957,4.09375 1.84375,4.72334957 1.84375,5.5 L1.84375,7.26736111 L16.15625,7.26736111 L16.15625,5.5 C16.15625,4.72334957 15.5266504,4.09375 14.75,4.09375 L13.3993056,4.09375 L13.3993056,4.55555556 C13.3993056,5.02154581 13.0215458,5.39930556 12.5555556,5.39930556 C12.0895653,5.39930556 11.7118056,5.02154581 11.7118056,4.55555556 L11.7118056,4.09375 L6.28819444,4.09375 L6.28819444,4.55555556 C6.28819444,5.02154581 5.9104347,5.39930556 5.44444444,5.39930556 C4.97845419,5.39930556 4.60069444,5.02154581 4.60069444,4.55555556 L4.60069444,4.09375 Z M6.28819444,2.40625 L11.7118056,2.40625 L11.7118056,1 C11.7118056,0.534009742 12.0895653,0.15625 12.5555556,0.15625 C13.0215458,0.15625 13.3993056,0.534009742 13.3993056,1 L13.3993056,2.40625 L14.75,2.40625 C16.4586309,2.40625 17.84375,3.79136906 17.84375,5.5 L17.84375,15.875 C17.84375,17.5836309 16.4586309,18.96875 14.75,18.96875 L3.25,18.96875 C1.54136906,18.96875 0.15625,17.5836309 0.15625,15.875 L0.15625,5.5 C0.15625,3.79136906 1.54136906,2.40625 3.25,2.40625 L4.60069444,2.40625 L4.60069444,1 C4.60069444,0.534009742 4.97845419,0.15625 5.44444444,0.15625 C5.9104347,0.15625 6.28819444,0.534009742 6.28819444,1 L6.28819444,2.40625 Z M1.84375,8.95486111 L1.84375,15.875 C1.84375,16.6516504 2.47334957,17.28125 3.25,17.28125 L14.75,17.28125 C15.5266504,17.28125 16.15625,16.6516504 16.15625,15.875 L16.15625,8.95486111 L1.84375,8.95486111 Z"></path></svg> </span> <span class="meta-text"> <a href="/2004/10/01/making-ie-accept-file-downloads/">Fri 1 Oct 2004</a> </span>
+</li>
+<li class="post-comment-link meta-wrapper"> <span class="meta-icon"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewbox="0 0 19 19"><path d="M9.43016863,13.2235931 C9.58624731,13.094699 9.7823475,13.0241935 9.98476849,13.0241935 L15.0564516,13.0241935 C15.8581553,13.0241935 16.5080645,12.3742843 16.5080645,11.5725806 L16.5080645,3.44354839 C16.5080645,2.64184472 15.8581553,1.99193548 15.0564516,1.99193548 L3.44354839,1.99193548 C2.64184472,1.99193548 1.99193548,2.64184472 1.99193548,3.44354839 L1.99193548,11.5725806 C1.99193548,12.3742843 2.64184472,13.0241935 3.44354839,13.0241935 L5.76612903,13.0241935 C6.24715123,13.0241935 6.63709677,13.4141391 6.63709677,13.8951613 L6.63709677,15.5301903 L9.43016863,13.2235931 Z M3.44354839,14.766129 C1.67980032,14.766129 0.25,13.3363287 0.25,11.5725806 L0.25,3.44354839 C0.25,1.67980032 1.67980032,0.25 3.44354839,0.25 L15.0564516,0.25 C16.8201997,0.25 18.25,1.67980032 18.25,3.44354839 L18.25,11.5725806 C18.25,13.3363287 16.8201997,14.766129 15.0564516,14.766129 L10.2979143,14.766129 L6.32072889,18.0506004 C5.75274472,18.5196577 4.89516129,18.1156602 4.89516129,17.3790323 L4.89516129,14.766129 L3.44354839,14.766129 Z"></path></svg> </span> <span class="meta-text"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comments">87 Comments<span class="screen-reader-text"> on Making IE Accept File Downloads</span></a> </span>
+</li>
+</ul></div>
+</div></header><div class="post-inner thin "><div class="entry-content">
+<p>I&#8217;ve been adding more report features to our internal web app at work. Getting them to the point they are at now is another story, for now let me tell the tale of convincing Internet Explorer (IE) to download a comma separated value (CSV) version of these reports. Here is the situation, a secure (SSL) connection to Apache to an internal website written in PHP talking to a PostgreSQL database with IE 6 on the client end. The initial version of the reports just displayed in an HTML table as part of the site. It was suggested that the data should be available as CSV so that employees could easily manipulate or graph the data in Excel. Sounded reasonable enough. After a couple of tries it looked like I had everything working. All of my initial tests were done using Firefox on Windows, with a little bit of testing using Safari on OS X. I know we still have some folks at work who are still using IE (that too is another story) so I tested that one out last. Everything worked, right up until I tried to download the CSV version of the reports.</p>
+<p>Instead of prompting me with a dialog box to determine if I wanted to open the file or save, IE simply came back and indicated that it couldn&#8217;t save the file and presented with me with one option, &#8216;OK&#8217;. Of course &#8216;OK&#8217; isn&#8217;t really &#8216;OK&#8217;, because it terminated the download and dropped me back into the website. Just great, I thought I was pretty much done and then IE showed its unpleasant side. Knowing that someone else must have ran into this problem I went on a hunt for a solution. After trying out several ideas over a couple of hours I came across the solution. Here is what I believe to be the minimum solution to make IE correctly download a file presented to it from PHP.</p>
+<p>First, when talking to IE there is an additional session parameter that must be set for the download to work (this was the last piece of the puzzle that I found). This has to be done before starting the session.</p>
+<blockquote><pre>
+if(strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE')) {
+    session_cache_limiter("public");
+}
+session_start();
+</pre></blockquote>
+<p>Once you have built your CSV string and are ready to send it to the browser you&#8217;ll need to add a couple of headers first.</p>
+<blockquote><pre>
+header('Content-type: application/octet-stream');
+header('Content-Disposition: attachment; filename="report.csv"');
+print($csv);
+</pre></blockquote>
+<p>Now that it all seems to be working it doesn&#8217;t look very impressive, but it was certainly disappointing to have my initial solution work in Safari, Firefox and Opera but not IE. I hope this saves someone else the hours I spent figuring out why IE hates me.</p>
+</div></div>
+<div class="section-inner"></div>
+<nav class="pagination-single section-inner" aria-label="Post" role="navigation"><hr class="styled-separator is-style-wide" aria-hidden="true">
+<div class="pagination-single-inner"> <a class="previous-post" href="/2004/10/01/link-dump-58/"> <span class="arrow" aria-hidden="true">&larr;</span> <span class="title"><span class="title-inner">Link Dump</span></span> </a> <a class="next-post" href="/2004/10/03/two-new-apostles/"> <span class="arrow" aria-hidden="true">&rarr;</span> <span class="title"><span class="title-inner">Two New Apostles</span></span> </a>
+</div>
+<hr class="styled-separator is-style-wide" aria-hidden="true"></nav><div class="comments-wrapper section-inner">
+<div class="comments" id="comments">
+<div class="comments-header section-inner small max-percentage"><h2 class="comment-reply-title"> 87 replies on &ldquo;Making IE Accept File Downloads&rdquo;</h2></div>
+<div class="comments-inner section-inner thin max-percentage">
+<div id="comment-578" class="comment even thread-even depth-1"><article id="div-comment-578" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-d0b12173bc5ed108483b1b1a8646b964-120-60d169cf7cba4" alt="Mark" src="/wp-content/uploads/gravatar-cache/d0b12173bc5ed108483b1b1a8646b964-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Mark</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-578"><time datetime="2004-10-02T08:24:59-06:00" title="Sat 2 Oct 2004 at 8:24 am">Sat 2 Oct 2004 at 8:24 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Gah! I ended up doing just that a couple of weeks ago. I was writing a Large File Transfer application (in CF, ASP mind you) and IE would just no co-operate with the download, every other browser worked fine.</p></div></article></div>
+<div id="comment-579" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-579" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.ranking.ws/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169cf82756" alt="Wayne Colby" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Wayne Colby</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-579"><time datetime="2004-10-22T17:39:27-06:00" title="Fri 22 Oct 2004 at 5:39 pm">Fri 22 Oct 2004 at 5:39 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>It blows me away how many issues IE has. You would think the richest corporation in the world would have made a major update in the last 3 years.</p></div></article></div>
+<div id="comment-580" class="comment even thread-even depth-1"><article id="div-comment-580" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.pandemedia.biz/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169cf8844f" alt="Will Gibson" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Will Gibson</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-580"><time datetime="2005-02-09T12:58:36-07:00" title="Wed 9 Feb 2005 at 12:58 pm">Wed 9 Feb 2005 at 12:58 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>FAO: Joseph Scott<br> Sir, you are a star. It took me ages to find your solution, but it works.<br> Now I can anaesthetise my cold with some whiskey and go to bed with the knowledge that I have completed my days work.</p></div></article></div>
+<div id="comment-581" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-581" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://joseph.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d169cf908c5" alt="Joseph Scott" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Joseph Scott</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-581"><time datetime="2005-02-09T13:08:59-07:00" title="Wed 9 Feb 2005 at 1:08 pm">Wed 9 Feb 2005 at 1:08 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Will, glad I could help. What were you searching for? Perhaps I should update the entry to reflect how people are searching for a solution to this problem.</p></div></article></div>
+<div id="comment-582" class="comment even thread-even depth-1"><article id="div-comment-582" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://krisgale.com/" rel="external nofollow" class="url"><img id="grav-b0877366584c890d8adaca0655c8c146-120-60d169cf91709" alt="kris gale" src="/wp-content/uploads/gravatar-cache/b0877366584c890d8adaca0655c8c146-120.png" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">kris gale</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-582"><time datetime="2005-04-29T13:06:55-06:00" title="Fri 29 Apr 2005 at 1:06 pm">Fri 29 Apr 2005 at 1:06 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>just ran into this today &#8211; i&#8217;m wrapping up an ecommerce application and i have a .csv export of shipping addresses for nearly-completed orders&#8230; worked fine in firefox, and lo and behold, the client complained they couldn&#8217;t download the .csv &#8211; their browser of choice? IE. (cue sad horn-playing sounds.)</p></div></article></div>
+<div id="comment-583" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-583" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169cf96f2c" alt="Adrian Hall" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Adrian Hall</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-583"><time datetime="2005-06-01T09:02:40-06:00" title="Wed 1 Jun 2005 at 9:02 am">Wed 1 Jun 2005 at 9:02 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Came across this one too. Seems to work with IE.</p>
+<p><a href="http://lists.nyphp.org/pipermail/talk/2004-September/011778.html" rel="nofollow ugc">http://lists.nyphp.org/pipermail/talk/2004-September/011778.html</a></p>
+</div></article></div>
+<div id="comment-584" class="comment even thread-even depth-1"><article id="div-comment-584" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169cf9c460" alt="scoutt" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">scoutt</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-584"><time datetime="2005-07-15T05:05:26-06:00" title="Fri 15 Jul 2005 at 5:05 am">Fri 15 Jul 2005 at 5:05 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>you can get rid of the session_cache_limiter and just change your header to this</p>
+<p>header(&#8220;Content-disposition: inline; filename=filename=&#8221;report.csv&#8221;&#8221;);</p>
+<p>notice I changed it to &#8220;inline&#8221; IE needs that.</p>
+</div></article></div>
+<div id="comment-585" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-585" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.linktracers.com/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169cfa20bb" alt="Crirus" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Crirus</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-585"><time datetime="2005-07-31T02:44:11-06:00" title="Sun 31 Jul 2005 at 2:44 am">Sun 31 Jul 2005 at 2:44 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi guys</p>
+<p>I use this to make IE works but no luck:<br> header(&#8220;Cache-Control: no-store, no-cache, must-revalidate&#8221;);<br> header(&#8220;Cache-Control: post-check=0, pre-check=0&#8221;, false);<br> header(&#8220;Cache-control: private&#8221;);<br> header(&#8220;Pragma: no-cache&#8221;);<br> header(&#8216;Content-type: application/octet-stream&#8217;);<br> header(&#8216;Content-Disposition: attachment; filename=&#8221;links.csv&#8221;&#8216;);<br> header(&#8220;Content-Length: &#8221; . strlen($content));<br> header(&#8220;Content-transfer-encoding: binary&#8221;);<br> print($content);</p>
+<p>What am I possibly doing wrong here.</p>
+<p>Thanks<br> Crsitian</p>
+</div></article></div>
+<div id="comment-586" class="comment even thread-even depth-1"><article id="div-comment-586" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169cfa6b25" alt="Jon M" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Jon M</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-586"><time datetime="2005-08-02T11:44:24-06:00" title="Tue 2 Aug 2005 at 11:44 am">Tue 2 Aug 2005 at 11:44 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Thanks to scoutt&#8217;s comment and some more searching, the following code worked for me in Firefox and IE:</p>
+<p>header(&#8220;Content-type: application/vnd.ms-excel; name=&#8217;Excel'&#8221;);<br> header(&#8220;Content-Disposition: attachment; filename=myWorksheet.xls&#8221;);<br> header(&#8220;Expires: 0&#8221;); // Optional<br> print &#8220;$headern$data&#8221;;</p>
+</div></article></div>
+<div id="comment-587" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-587" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.BlackBox.com/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169cfab3f0" alt="Robert Simpson" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Robert Simpson</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-587"><time datetime="2005-09-14T10:12:33-06:00" title="Wed 14 Sep 2005 at 10:12 am">Wed 14 Sep 2005 at 10:12 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Great help, thanks. Amazing that while the standard indicates the server&#8217;s &#8220;Content-type&#8221; is &#8220;authoritative&#8221;, Microsoft (<a href="https://msdn.microsoft.com/workshop/networking/moniker/overview/appendix_a.asp" rel="nofollow ugc">http://msdn.microsoft.com/workshop/networking/moniker/overview/appendix_a.asp</a>) calls it &#8220;suggested&#8221;.</p></div></article></div>
+<div id="comment-588" class="comment even thread-even depth-1"><article id="div-comment-588" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.newtnotes.com/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169cfaff6c" alt="JDS" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">JDS</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-588"><time datetime="2005-09-16T12:39:51-06:00" title="Fri 16 Sep 2005 at 12:39 pm">Fri 16 Sep 2005 at 12:39 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>There is one more piece to the puzzle that no one seems to have mentioned. For MSIE, Under Tools-&gt;Internet Options-&gt;Advanced (tab), there is a checkbox &#8220;Do not save encrypted pages to disk&#8221;</p>
+<p>If this is checked, then pages are not cached which can cause similar problems as mentioned in this article. Uncheck the box.</p>
+</div></article></div>
+<div id="comment-589" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-589" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.grahamband.com/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169cfb5b0e" alt="Jason Karns" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Jason Karns</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-589"><time datetime="2005-09-18T11:15:52-06:00" title="Sun 18 Sep 2005 at 11:15 am">Sun 18 Sep 2005 at 11:15 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Thanks a million for the solution. I tried, for giggles, the other suggested solutions in the comments of this post; all to no avail. The only way my spreadsheet download worked was with the cache_limiter. You saved me, Joseph. (btw, The tab order is out of whack for the comment fields. Is that intentional?)</p></div></article></div>
+<div id="comment-590" class="comment even thread-even depth-1"><article id="div-comment-590" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.robertgray5.com/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169cfbadf4" alt="Denn" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Denn</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-590"><time datetime="2005-12-28T09:58:11-07:00" title="Wed 28 Dec 2005 at 9:58 am">Wed 28 Dec 2005 at 9:58 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Will, glad I could help. What were you searching for? Perhaps I should update the entry to reflect how people are searching for a solution to this problem.</p></div></article></div>
+<div id="comment-591" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-591" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-35c7b7b7818de885f47b5d395afd48e5-120-60d169cfbbf4c" alt="paul" src="/wp-content/uploads/gravatar-cache/35c7b7b7818de885f47b5d395afd48e5-120.png" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">paul</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-591"><time datetime="2006-05-25T11:35:14-06:00" title="Thu 25 May 2006 at 11:35 am">Thu 25 May 2006 at 11:35 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>man this was bugging me out all day. thanks for the great post.</p></div></article></div>
+<div id="comment-592" class="comment even thread-even depth-1"><article id="div-comment-592" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169cfc11b4" alt="Moustafa Elqabbany" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Moustafa Elqabbany</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-592"><time datetime="2006-05-29T03:54:21-06:00" title="Mon 29 May 2006 at 3:54 am">Mon 29 May 2006 at 3:54 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>To prevent overly-aggressive caching by IE, I had to use:<br> session_cache_limiter(&#8220;must-revalidate&#8221;);</p>
+<p>instead of:<br> session_cache_limiter(&#8220;public&#8221;);</p>
+<p>HTH</p>
+</div></article></div>
+<div id="comment-593" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-593" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169cfc6512" alt="Amit A More" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Amit A More</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-593"><time datetime="2006-06-01T22:36:51-06:00" title="Thu 1 Jun 2006 at 10:36 pm">Thu 1 Jun 2006 at 10:36 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>This works fine IN IE and save file &#8220;Oreilly Php.chm&#8221; to my desktop. But after downloading this file i have noticed that the actual size of &#8220;Oreilly Php.chm&#8221; is 1.5MB and after ckecking the size of downloaded file i.e. &#8220;Oreilly Php.chm&#8221; i am quite surprise that it was &#8220;3Kb&#8221; only also i have tried to open that file. But i have got error message &#8220;can not open the file:@MIST Store:C:WindowsdesktopOreilly Php.chm&#8221;.<br> Why this Please Help Me! Or Reply me at &#8220;555.amit@gamil.com&#8221;</p></div></article></div>
+<div id="comment-594" class="comment even thread-even depth-1"><article id="div-comment-594" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.mycomicpile.com/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169cfcb0a5" alt="Dough Boy" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Dough Boy</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-594"><time datetime="2006-06-10T19:51:18-06:00" title="Sat 10 Jun 2006 at 7:51 pm">Sat 10 Jun 2006 at 7:51 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I wanted to thank you. I had built an export class several months ago that will allow CSV, HTML, XML, and TAB files. The problem is that everything worked in Firefox. I had a request to make my class &#8220;public&#8221; and as soon as I did, I got IE&#8217;s unhelpful message.</p>
+<p>A quick trip to Google, and 1 search later, found your site. Took all of 5 minutes.</p>
+<p>Life saver!</p>
+</div></article></div>
+<div id="comment-595" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-595" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://saei.org/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169cfd09e2" alt="FJ Caballero" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">FJ Caballero</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-595"><time datetime="2006-06-30T06:15:09-06:00" title="Fri 30 Jun 2006 at 6:15 am">Fri 30 Jun 2006 at 6:15 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi,<br> My web is hosted in a Windows server and I use ASP, instead of PHP. The following code goes well with HTTP, but fails with HTTPS:</p>
+<p>Any suggestion, please?</p>
+</div></article></div>
+<div id="comment-596" class="comment even thread-even depth-1"><article id="div-comment-596" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.ribox.nl/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169cfd5929" alt="loonatic" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">loonatic</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-596"><time datetime="2006-07-05T06:56:51-06:00" title="Wed 5 Jul 2006 at 6:56 am">Wed 5 Jul 2006 at 6:56 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Mind you, all this isn&#8217;t quite enough to get downloads working in IE as of jul 2006.<br> What does work is:</p>
+<p> header(&#8216;Content-type: application/octet-stream&#8217;);<br> header(&#8216;Content-Disposition: attachment; filename=&#8221;&#8216;.$fileName.'&#8221;&#8216;);<br> header(&#8216;Cache-Control: no-store, no-cache, no-transform, must-revalidate, private&#8217;);<br> header(&#8216;Expires: 0&#8217;);</p>
+<p>Never use: header(&#8216;Pragma: no-cache&#8217;)<br> As IE simply won&#8217;t let users download your data.</p>
+<p>But it doesn&#8217;t stop there, the combination of HTTPS and sessions requires another tweak<br> hinted at above.<br> _before_ you issue a session_start() be sure to call this first:<br> session_cache_limiter(&#8216;private&#8217;);</p>
+</div></article></div>
+<div id="comment-597" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-597" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169cfdafd7" alt="Duncan" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Duncan</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-597"><time datetime="2006-07-10T19:16:27-06:00" title="Mon 10 Jul 2006 at 7:16 pm">Mon 10 Jul 2006 at 7:16 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I&#8217;ve just experienced similar problems getting a DB-generated CSV file to download in IE. It was within a web application using PHP sessions and I didn&#8217;t want to upset any of the session cookie or cache header settings.</p>
+<p>I was able to get things working satisfactorily with the following code:</p>
+<p>header(&#8216;Content-Type: &#8216; . $mime_type);<br> header(&#8216;Expires: &#8216; . gmdate(&#8216;D, d M Y H:i:s&#8217;) . &#8216; GMT&#8217;);<br> header(&#8216;Content-Disposition: attachment; filename=&#8221;&#8216; . $filename . &#8216;&#8221;&#8216;);</p>
+<p>if(strpos($_SERVER[&#8216;HTTP_USER_AGENT&#8217;], &#8216;MSIE&#8217;)) {<br> header(&#8216;Cache-Control: must-revalidate, post-check=0, pre-check=0&#8217;);<br> header(&#8216;Pragma: public&#8217;);<br> } else {<br> header(&#8216;Pragma: no-cache&#8217;);<br> }</p>
+</div></article></div>
+<div id="comment-598" class="pingback even thread-even depth-1"><article id="div-comment-598" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://chris.boxclever.ca/2006/07/11/internet-explorer-and-https-fun/" rel="external nofollow" class="url"><span class="fn">chris.boxclever.ca &raquo; Blog Archive &raquo; Internet Explorer and https:// fun</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-598"><time datetime="2006-07-11T12:46:12-06:00" title="Tue 11 Jul 2006 at 12:46 pm">Tue 11 Jul 2006 at 12:46 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] #2 &#8211; IE didn&#8217;t want to accept file downloads over SSL. Total frustration. Fortunately a solution was found on <a href="http://joseph.randomnetworks.com/archives/2004/10/01/making-ie-accept-file-downloads/" rel="nofollow ugc">http://joseph.randomnetworks.com/archives/2004/10/01/making-ie-accept-file-downloads/</a> [&#8230;]</p></div></article></div>
+<div id="comment-599" class="pingback odd alt thread-odd thread-alt depth-1"><article id="div-comment-599" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://abing.gotdns.com/2006/07/21/45/" rel="external nofollow" class="url"><span class="fn">Terminus a Quo &raquo; Blog Archive &raquo; MSIE + Dynamically Generated Downloads + HTTPS = BADNESS</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-599"><time datetime="2006-07-20T08:51:26-06:00" title="Thu 20 Jul 2006 at 8:51 am">Thu 20 Jul 2006 at 8:51 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] After a bit of searching it seems that I was not alone with this problem. I found the solution to the problem in this blog post. It turned out to be very simple. [&#8230;]</p></div></article></div>
+<div id="comment-600" class="comment even thread-even depth-1"><article id="div-comment-600" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://Private/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169cfdfdb8" alt="Ashley Hatch" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Ashley Hatch</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-600"><time datetime="2006-07-20T10:18:33-06:00" title="Thu 20 Jul 2006 at 10:18 am">Thu 20 Jul 2006 at 10:18 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Heh, my first google hit for this problem was your site. Thanks for writing this up. Simple but frustrating.</p></div></article></div>
+<div id="comment-601" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-601" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.kuroiryu.com/" rel="external nofollow" class="url"><img id="grav-1c94d6f524b2c79439fbaa65b3d2e827-120-60d169cfe0dac" alt="Kuroiryu" src="/wp-content/uploads/gravatar-cache/1c94d6f524b2c79439fbaa65b3d2e827-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Kuroiryu</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-601"><time datetime="2006-07-31T07:41:19-06:00" title="Mon 31 Jul 2006 at 7:41 am">Mon 31 Jul 2006 at 7:41 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>July 31, 2006: Some of the other proposed solutions had issues, but what you need to remember is this:</p>
+<p>The &#8220;no-cache&#8221; and &#8220;no-store&#8221; options are telling IE to get rid of the file once it&#8217;s been launched in Excel. The problem is that IE doesn&#8217;t actually KNOW when Excel launches the file. Since newer versions of Office are slow to start up, the delay isn&#8217;t great enough, so by the time Excel is ready to open the file, IE has already deleted it. Joseph&#8217;s solution works because the only cache limiter he&#8217;s using is &#8220;public&#8221;. This haunted me for about 3 hours of solid debugging, and left me feeling like an idiot, since I had originally used a different tutorial that used &#8220;Pragma: no-cache&#8221;. 😉</p>
+</div></article></div>
+<div id="comment-602" class="comment even thread-even depth-1"><article id="div-comment-602" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-15e8bc85b747730a768a840864c66e24-120-60d169cfe1db9" alt="Justin" src="/wp-content/uploads/gravatar-cache/15e8bc85b747730a768a840864c66e24-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Justin</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-602"><time datetime="2006-08-30T10:52:10-06:00" title="Wed 30 Aug 2006 at 10:52 am">Wed 30 Aug 2006 at 10:52 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Great post and discussion. The comments about:</p>
+<p>if(strpos($_SERVER[&#8216;HTTP_USER_AGENT&#8217;], &#8216;MSIE&#8217;)) {<br> session_cache_limiter(&#8220;public&#8221;);<br> }</p>
+<p>helped me in forcing IE to properly display a Word doc (really, an RTF doc) in SSL.</p>
+</div></article></div>
+<div id="comment-603" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-603" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://web.engr.oregonstate.edu/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169cfe76df" alt="Bill" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Bill</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-603"><time datetime="2006-09-20T10:25:10-06:00" title="Wed 20 Sep 2006 at 10:25 am">Wed 20 Sep 2006 at 10:25 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Unfortunately, none of this has helped me with excel files. I have done it at least 30 different ways and each time it works in Firefox but never in IE!! I am about to go absoultely mad!!</p>
+<p>I am using PHP5 on a server runing Apache/2.0.52 (Red Hat). The server is web.engr.oregonstate.edu if it helps.</p>
+<p>I have tried unchecking the box in IE that says “Do not save encrypted pages to disk”.</p>
+<p>I have tried using PEAR&#8217;s Spreadsheet_Excel_Writer to no avail, even after modifying the headers.</p>
+<p>I have tried echoing, printing, and even fpassthrough, with excel files, CSV files, and tab delimited files trying to get something, anything working with IE.</p>
+<p>I have tried the following code mentioned in other pages:</p>
+<p>if(!strpos(strtolower($_SERVER[&#8216;HTTP_USER_AGENT&#8217;]), &#8220;msie&#8221;) === FALSE)<br> {<br> header(&#8220;HTTP/1.x 205 OK&#8221;);<br> } else {<br> header(&#8220;HTTP/1.x 200 OK&#8221;);<br> }</p>
+<p>While that helps a few things(which I dont really need), it doesnt help the file serving.</p>
+<p>I have also tried a bunch of different combinations of the follwoing headers:</p>
+<p>//various headers from web<br> header(&#8220;Content-Type: application/vnd.ms-excel&#8221;);<br> header(&#8216;Content-type: application/octet-stream&#8217;);<br> header(&#8216;Content-type: application/vnd.ms-excel; name=&#8221;Excel&#8221;&#8216;);<br> header(&#8216;Content-Disposition: attachment; filename=&#8221;test.xls&#8221;&#8216;);<br> header(&#8216;Content-Disposition: attachment; filename=test.xls&#8217;);<br> header(&#8216;Cache-Control: no-store, no-cache, no-transform, must-revalidate, public&#8217;);<br> header(&#8220;Cache-Control: no-store, no-cache, must-revalidate&#8221;);<br> header(&#8220;Cache-Control: no-cache, cachehack=&#8221;.time());<br> header(&#8216;Cache-control: private, must-revalidate&#8217;);<br> header(&#8220;Cache-Control: no-store, must-revalidate&#8221;);<br> header(&#8220;Cache-Control: post-check=-1, pre-check=-1&#8221;, false);<br> header(&#8216;Pragma: private&#8217;);<br> header(&#8216;Pragma: public&#8217;);<br> header(&#8216;Expires: 0&#8217;);<br> header(&#8220;Expires: -1&#8221;);<br> header(&#8220;Expires: Mon, 26 Jul 1997 05:00:00 GMT&#8221;);<br> header(&#8220;Last-Modified: &#8221; . gmdate(&#8220;D, d M Y H:i:s&#8221;) . &#8221; GMT&#8221;);</p>
+<p>//headers from Spreadsheet_Excel_Writer<br> header(&#8220;Content-type: application/vnd.ms-excel&#8221;, false);<br> header(&#8220;Content-Disposition: attachment; filename=&#8221;$filename&#8221;&#8221;, false);<br> header(&#8220;Expires: 0&#8221;, false);<br> header(&#8220;Cache-Control: must-revalidate, post-check=0,pre-check=0&#8221;, false);<br> header(&#8220;Pragma: public&#8221;, false);</p>
+<p>Oh yeah. I have been trying those headers with and without both the public and private versions of the following before my session_start() even though I havent been using session variables in my latest test script:</p>
+<p>if(strpos($_SERVER[&#8216;HTTP_USER_AGENT&#8217;], &#8216;MSIE&#8217;))<br> {<br> session_cache_limiter(&#8220;public&#8221;);<br> }<br> session_start();</p>
+<p>IE has been the bane of my existence for a few months now. If anyone can help I&#8217;d appreciate it. That&#8217;s awesome the stuff above worked for a lot of you. I wonder if its all about older versions of IE. Speaking of which the verion on my development computer as well as most of the computers around campus are IE 6.0.2900&#8230;</p>
+<p>-Bill</p>
+</div></article></div>
+<div id="comment-604" class="comment even thread-even depth-1"><article id="div-comment-604" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.techniartist.com/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169cfec24a" alt="Patrick" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Patrick</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-604"><time datetime="2006-10-02T18:49:42-06:00" title="Mon 2 Oct 2006 at 6:49 pm">Mon 2 Oct 2006 at 6:49 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Thank you! You saved my life.</p></div></article></div>
+<div id="comment-605" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-605" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169cff108f" alt="matt" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">matt</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-605"><time datetime="2006-10-20T11:36:21-06:00" title="Fri 20 Oct 2006 at 11:36 am">Fri 20 Oct 2006 at 11:36 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Man, thank you thank you&#8230;I had a heck of a time finding a solution until I finally stumbled across your page&#8230;.live saver.</p></div></article></div>
+<div id="comment-606" class="comment even thread-even depth-1"><article id="div-comment-606" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-030c7d0f318c6c2ce512135343f8ce99-120-60d169cff2054" alt="Eric Jones" src="/wp-content/uploads/gravatar-cache/030c7d0f318c6c2ce512135343f8ce99-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Eric Jones</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-606"><time datetime="2006-11-01T16:30:56-07:00" title="Wed 1 Nov 2006 at 4:30 pm">Wed 1 Nov 2006 at 4:30 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Scott&#8211;where have you been for the last 6 hours! I&#8217;m so glad I stumbled across your site, because my issues are now solved! You are the MAN!!</p></div></article></div>
+<div id="comment-607" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-607" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.netzorz.se/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d002dd8" alt="Kalle Lundgren" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Kalle Lundgren</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-607"><time datetime="2006-11-06T06:21:13-07:00" title="Mon 6 Nov 2006 at 6:21 am">Mon 6 Nov 2006 at 6:21 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Cheers! Saved me a few hours of crawling! 🙂</p></div></article></div>
+<div id="comment-608" class="comment even thread-even depth-1"><article id="div-comment-608" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://h4.x0rz.com/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d0084f6" alt="luvpig" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">luvpig</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-608"><time datetime="2006-11-10T22:26:11-07:00" title="Fri 10 Nov 2006 at 10:26 pm">Fri 10 Nov 2006 at 10:26 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>thanks allot for the info, have been battling with this problem all morning. Even in IE7 it&#8217;s not fixed! WEAK!</p></div></article></div>
+<div id="comment-609" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-609" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d00cbb3" alt="Harry School" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Harry School</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-609"><time datetime="2006-12-01T04:39:43-07:00" title="Fri 1 Dec 2006 at 4:39 am">Fri 1 Dec 2006 at 4:39 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Thanks Duncan. Your solution worked for me.</p>
+<p>&#8211; php generated xls and doc<br> &#8211; https site</p>
+<p>Thanks again.</p>
+<p>Harry</p>
+<p># Duncan said on July 10th, 2006 at 7:16 pm</p>
+<p>I’ve just experienced similar problems getting a DB-generated CSV file to download in IE. It was within a web application using PHP sessions and I didn’t want to upset any of the session cookie or cache header settings.</p>
+<p>I was able to get things working satisfactorily with the following code:</p>
+<p>header(’Content-Type: ‘ . $mime_type);<br> header(’Expires: ‘ . gmdate(’D, d M Y H:i:s’) . ‘ GMT’);<br> header(’Content-Disposition: attachment; filename=”‘ . $filename . ‘”‘);</p>
+<p>if(strpos($_SERVER[’HTTP_USER_AGENT’], ‘MSIE’)) {<br> header(’Cache-Control: must-revalidate, post-check=0, pre-check=0′);<br> header(’Pragma: public’);<br> } else {<br> header(’Pragma: no-cache’);<br> }</p>
+</div></article></div>
+<div id="comment-610" class="comment even thread-even depth-1"><article id="div-comment-610" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-250a2383214d062127e683c282d11fca-120-60d169d00d6a1" alt="Juan" src="/wp-content/uploads/gravatar-cache/250a2383214d062127e683c282d11fca-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Juan</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-610"><time datetime="2006-12-04T08:39:44-07:00" title="Mon 4 Dec 2006 at 8:39 am">Mon 4 Dec 2006 at 8:39 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>thanks yo save my life.</p></div></article></div>
+<div id="comment-611" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-611" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.ecpcorp.com/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d012345" alt="Satish Rao" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Satish Rao</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-611"><time datetime="2006-12-05T11:03:17-07:00" title="Tue 5 Dec 2006 at 11:03 am">Tue 5 Dec 2006 at 11:03 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I have a similar problem with IE 6.0 where I am using ASP.NET for downloading (using HTTP Headers)</p>
+<p>Response.AddHeader(&#8220;Content-Type&#8221;,&#8221;application/octet-stream&#8221;)<br> Response.AddHeader(&#8220;Content-Disposition&#8221;,&#8221;attachment; filename=abc.tif&#8221;)<br> Response.WriteBinary(oImageData)</p>
+<p>I works fine about 30% of time, but the remaining time it behaves odd. Sometimes it does not show SAVEAS dialog box, SomeTimes it shows but fails to Show FileSave DialogBox and Some times it does nothing.</p>
+<p>This is a very patchy and un-predictable behaviour.<br> Can anyone tell me what the problem might be.</p>
+<p>1. File Size<br> 2. Some settings on IE or the IIS 6.0 Web server</p>
+<p>It is driving me and our client crazy.</p>
+</div></article></div>
+<div id="comment-612" class="comment even thread-even depth-1"><article id="div-comment-612" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169d0175f2" alt="Paul Stam" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Paul Stam</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-612"><time datetime="2006-12-22T06:43:25-07:00" title="Fri 22 Dec 2006 at 6:43 am">Fri 22 Dec 2006 at 6:43 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>muchos gracias!</p>
+<p>now it is also working in IE and I have been looking for quite some time!</p>
+</div></article></div>
+<div id="comment-613" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-613" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d01d381" alt="James R. Leu" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">James R. Leu</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-613"><time datetime="2006-12-29T12:57:49-07:00" title="Fri 29 Dec 2006 at 12:57 pm">Fri 29 Dec 2006 at 12:57 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I found this article and it started me down the right path, but was not the definitive answer, so I wanted to share my finding in hopes of helping others. After the fact I was able to recongnize that some of the above posters came to the same conclusions as me, but no one explicitly stated them.</p>
+<p>My environment is SSL, PDF or RTF download, IE6+, my users where getting the &#8220;file could not be written to the cache&#8221; error.</p>
+<p>This MS KB entry gives the details (and suggests horrible registry hacks)</p>
+<p> <a href="https://support.microsoft.com/?kbid=323308" rel="nofollow ugc">http://support.microsoft.com/?kbid=323308</a></p>
+<p>I choose a simpler route, I made sure my web application did not send any of the following:</p>
+<p> Cache-control:no-store<br> Cache-control:no-cache<br> Pragma: no-cache</p>
+<p>and then make my users have unchecked the &#8220;Do not save encrypted pages to disk&#8221; in &#8220;Internet Options / Advanced&#8221; (unchecked _is_ the default setting, but some users have changed it)</p>
+</div></article></div>
+<div id="comment-614" class="comment even thread-even depth-1"><article id="div-comment-614" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169d0242f2" alt="Daniel" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Daniel</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-614"><time datetime="2007-01-02T06:58:47-07:00" title="Tue 2 Jan 2007 at 6:58 am">Tue 2 Jan 2007 at 6:58 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Thank you so much! It finally works!!</p></div></article></div>
+<div id="comment-615" class="pingback odd alt thread-odd thread-alt depth-1"><article id="div-comment-615" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://downside.ch/blog/?p=26" rel="external nofollow" class="url"><span class="fn">the downside &raquo; Internet Explorer and file download on HTTPS</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-615"><time datetime="2007-01-15T01:29:48-07:00" title="Mon 15 Jan 2007 at 1:29 am">Mon 15 Jan 2007 at 1:29 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] Comment nr. 24 by Kuroiryu in Joseph Scotts blog explains why things are not working as expected: [&#8230;]</p></div></article></div>
+<div id="comment-616" class="comment even thread-even depth-1"><article id="div-comment-616" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://perth.bz/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d029314" alt="Ryan" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Ryan</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-616"><time datetime="2007-01-19T10:22:25-07:00" title="Fri 19 Jan 2007 at 10:22 am">Fri 19 Jan 2007 at 10:22 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>You just saved me a lot of time. Much appreciated.</p></div></article></div>
+<div id="comment-617" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-617" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d02eb17" alt="bill" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">bill</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-617"><time datetime="2007-01-22T03:50:09-07:00" title="Mon 22 Jan 2007 at 3:50 am">Mon 22 Jan 2007 at 3:50 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Cheers,<br> I&#8217;m not sure if I&#8217;m happy to have found the solution or p1ssed off that I&#8217;ve wasted 4 hours of my life because of 3 lines of IE hack. If you&#8217;re interested it is still needed in ie 7!</p>
+<p>Right I&#8217;m off to find out what the hell a session cache limiter is</p>
+</div></article></div>
+<div id="comment-618" class="comment even thread-even depth-1"><article id="div-comment-618" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-e414c4d6a4acc04fb943b344addb18b7-120-60d169d02f832" alt="Shovels" src="/wp-content/uploads/gravatar-cache/e414c4d6a4acc04fb943b344addb18b7-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Shovels</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-618"><time datetime="2007-02-13T06:11:11-07:00" title="Tue 13 Feb 2007 at 6:11 am">Tue 13 Feb 2007 at 6:11 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Having developed the site mainly in Firefox only to start testing to find that bl00dy IE has a bug &#8211; Getting that sicky feeling knowing there&#8217;s such a tight deadline.</p>
+<p>All I can say is thanks! This was one of the first pages I came across and it solved it a peach.</p>
+<p>Cheers again.</p>
+</div></article></div>
+<div id="comment-619" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-619" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.dranger.com/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d034f49" alt="dranger" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">dranger</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-619"><time datetime="2007-02-19T20:36:49-07:00" title="Mon 19 Feb 2007 at 8:36 pm">Mon 19 Feb 2007 at 8:36 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Good gravy. I have yet more reason to loathe IE. This solution isn&#8217;t even on Microsoft&#8217;s article about the issue.</p></div></article></div>
+<div id="comment-620" class="comment even thread-even depth-1"><article id="div-comment-620" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d03a506" alt="sg347" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">sg347</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-620"><time datetime="2007-03-07T14:25:00-07:00" title="Wed 7 Mar 2007 at 2:25 pm">Wed 7 Mar 2007 at 2:25 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>This is a very useful posting and especially the one that worked for me :</p>
+<p>header(’Content-type: application/octet-stream’);<br> header(’Content-Disposition: attachment; filename=”‘.$fileName.’”‘);private’);<br> header(’Expires: 0′);</p>
+<p>Cheers!</p>
+</div></article></div>
+<div id="comment-621" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-621" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d03ea12" alt="Kevin" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Kevin</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-621"><time datetime="2007-03-28T22:51:37-06:00" title="Wed 28 Mar 2007 at 10:51 pm">Wed 28 Mar 2007 at 10:51 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Good God after banging my head against my keyboard for the better part of the day I found this posting.</p>
+<p>Code did the trick</p>
+<p>You saved my melon and my keyboard from a truely horrific end.</p>
+<p>Thanks!!!</p>
+</div></article></div>
+<div id="comment-622" class="comment even thread-even depth-1"><article id="div-comment-622" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d0460db" alt="Cyinner" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Cyinner</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-622"><time datetime="2007-03-30T00:29:15-06:00" title="Fri 30 Mar 2007 at 12:29 am">Fri 30 Mar 2007 at 12:29 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I have the same problem, however when i remove session_start(), it works then in IE.</p>
+<p>Seems like session_start does something to the headers, which causes some issues for IE.</p>
+</div></article></div>
+<div id="comment-623" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-623" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d04b3eb" alt="exiled" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">exiled</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-623"><time datetime="2007-05-03T17:11:52-06:00" title="Thu 3 May 2007 at 5:11 pm">Thu 3 May 2007 at 5:11 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>MANY, MANY THANKS!</p></div></article></div>
+<div id="comment-624" class="comment even thread-even depth-1"><article id="div-comment-624" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d04ff3b" alt="chris" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">chris</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-624"><time datetime="2007-05-04T10:38:21-06:00" title="Fri 4 May 2007 at 10:38 am">Fri 4 May 2007 at 10:38 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Well, I&#8217;ve read all the comments and tried all of them on ie7 and nothing works, bill tried the same stuff as me and his is now working, what did you do in the end BILL?????</p></div></article></div>
+<div id="comment-625" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-625" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d0544dc" alt="Lance" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Lance</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-625"><time datetime="2007-05-30T06:20:24-06:00" title="Wed 30 May 2007 at 6:20 am">Wed 30 May 2007 at 6:20 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Worked like a charm and saved tons of worry and time spent trying to understand m$oft.</p>
+<p>Thanks!!!</p>
+</div></article></div>
+<div id="comment-626" class="pingback even thread-even depth-1"><article id="div-comment-626" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://yeago.net/works/fixing-file-download-errors-in-ie-with-asp-classic" rel="external nofollow" class="url"><span class="fn">yeago works &raquo; Blog Archive &raquo; Fixing File Download Errors in IE with ASP Classic</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-626"><time datetime="2007-06-26T06:58:34-06:00" title="Tue 26 Jun 2007 at 6:58 am">Tue 26 Jun 2007 at 6:58 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] Making IE Accept File Downloads [&#8230;]</p></div></article></div>
+<div id="comment-627" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-627" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.yeago.net/works" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d059dcd" alt="Yeago" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Yeago</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-627"><time datetime="2007-06-26T07:13:47-06:00" title="Tue 26 Jun 2007 at 7:13 am">Tue 26 Jun 2007 at 7:13 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>An ASP solution</p>
+<p><a href="http://yeago.net/works/fixing-file-download-errors-in-ie-with-asp-classic" rel="nofollow ugc">http://yeago.net/works/fixing-file-download-errors-in-ie-with-asp-classic</a></p>
+</div></article></div>
+<div id="comment-628" class="comment even thread-even depth-1"><article id="div-comment-628" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169d05febb" alt="Matt Ryan" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Matt Ryan</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-628"><time datetime="2007-06-28T03:32:14-06:00" title="Thu 28 Jun 2007 at 3:32 am">Thu 28 Jun 2007 at 3:32 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Im having the same problem but were using asp.net and none of the soutions above work for asp.net.</p>
+<p>Weve tried all but the &#8220;session_cache_limiter(”public”);&#8221; stuff as i cant seem to find an equivalent in dotnet?</p>
+<p>Please someonw help me im stuff and the deadline ive got is getting nearer and i have no solution as yet&#8230;</p>
+<p>Thanks<br> Matt</p>
+</div></article></div>
+<div id="comment-629" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-629" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="https://www.google.com/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d06466a" alt="Rafa" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Rafa</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-629"><time datetime="2007-07-09T09:16:02-06:00" title="Mon 9 Jul 2007 at 9:16 am">Mon 9 Jul 2007 at 9:16 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>for: Moustafa Elqabbany</p>
+<p>You are the best!!! Thanks for your help.</p>
+<p>session_cache_limiter(”must-revalidate”);</p>
+<p>this is the solution for the &#8220;new&#8221; IE.</p>
+</div></article></div>
+<div id="comment-630" class="comment even thread-even depth-1"><article id="div-comment-630" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://none/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d068b68" alt="James" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">James</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-630"><time datetime="2007-07-29T15:57:24-06:00" title="Sun 29 Jul 2007 at 3:57 pm">Sun 29 Jul 2007 at 3:57 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>I love you for posting this, and Google for helping me find it&#8230; saved me about 2 hours work!!! legend</p></div></article></div>
+<div id="comment-631" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-631" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.mindpalette.com/" rel="external nofollow" class="url"><img id="grav-e3ee81399ab4c671e184c2b1ea332f4d-120-60d169d0698e1" alt="Nate" src="/wp-content/uploads/gravatar-cache/e3ee81399ab4c671e184c2b1ea332f4d-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Nate</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-631"><time datetime="2007-09-05T09:18:18-06:00" title="Wed 5 Sep 2007 at 9:18 am">Wed 5 Sep 2007 at 9:18 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Thanks! Just what I was looking for.</p></div></article></div>
+<div id="comment-632" class="comment even thread-even depth-1"><article id="div-comment-632" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d06f03e" alt="Vlad" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Vlad</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-632"><time datetime="2007-10-04T14:30:22-06:00" title="Thu 4 Oct 2007 at 2:30 pm">Thu 4 Oct 2007 at 2:30 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>&gt; session_cache_limiter(”must-revalidate”);</p>
+<p>it work!!!</p>
+</div></article></div>
+<div id="comment-633" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-633" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d074738" alt="Piotr" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Piotr</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-633"><time datetime="2007-11-16T06:18:26-07:00" title="Fri 16 Nov 2007 at 6:18 am">Fri 16 Nov 2007 at 6:18 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>After 3 years it&#8217;s still working. Thanks a lot!!!</p>
+<p>IE7 still have this bug (what a sh*t!).</p>
+</div></article></div>
+<div id="comment-634" class="comment even thread-even depth-1"><article id="div-comment-634" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d079e5b" alt="Florin" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Florin</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-634"><time datetime="2008-01-30T08:32:37-07:00" title="Wed 30 Jan 2008 at 8:32 am">Wed 30 Jan 2008 at 8:32 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Still needed for IE. Thanks a lot.</p></div></article></div>
+<div id="comment-635" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-635" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d169d07e902" alt="Joseph Scott" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Joseph Scott</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-635"><time datetime="2008-01-30T09:44:22-07:00" title="Wed 30 Jan 2008 at 9:44 am">Wed 30 Jan 2008 at 9:44 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Glad people are still finding this helpful. Would be nice to have a version of IE that didn&#8217;t need this though.</p></div></article></div>
+<div id="comment-636" class="comment even thread-even depth-1"><article id="div-comment-636" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://joseph.randomnetworks.com/archives/2004/10/01/making-ie-accept-file-downloads" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d08410d" alt="gavintat" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">gavintat</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-636"><time datetime="2008-02-15T22:25:55-07:00" title="Fri 15 Feb 2008 at 10:25 pm">Fri 15 Feb 2008 at 10:25 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I have tried to follow the instructions mentioned above.<br> But it does not work properly for https too.<br> I find out that the &#8216;header&#8217; function does not run in https. As I coded it<br> header(&#8220;Location: xxx.html&#8221;);<br> which would not redirect by itself.<br> I had to change it to javascript (window.location).<br> What&#8217;s the problem with my server/ my coding?I have tried many different combination of the code mentioned&#8230;What should I change in server config or sth else?</p>
+<p>Please help me T.T</p>
+<p>if(strpos($_SERVER[&#8216;HTTP_USER_AGENT&#8217;], &#8216;MSIE&#8217;))<br> {<br> session_cache_limiter(&#8216;public&#8217;);<br> }</p>
+<p>header(&#8216;Content-type: application/vnd.ms-excel&#8217;);<br> header(&#8220;Content-Disposition: inline; filename=&#8221;xxx.xls&#8221;);<br> header(&#8216;Expires: 0&#8217;, false);<br> header(&#8216;Cache-Control: must-revalidate, post-check=0,pre-check=0&#8217;);<br> header(&#8216;Pragma: public&#8217;);</p>
+</div></article></div>
+<div id="comment-637" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-637" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.davematthews.eu/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d0892f5" alt="Dave Matthews" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Dave Matthews</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-637"><time datetime="2008-02-21T07:27:54-07:00" title="Thu 21 Feb 2008 at 7:27 am">Thu 21 Feb 2008 at 7:27 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Isn&#8217;t it annoying when you get everything perfect, then try IE to find it doesn&#8217;t work.</p>
+<p>Change to inline instead of attachment and it works&#8230;</p>
+</div></article></div>
+<div id="comment-638" class="comment even thread-even depth-1"><article id="div-comment-638" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d08dd0f" alt="Hunt" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Hunt</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-638"><time datetime="2008-02-27T08:02:11-07:00" title="Wed 27 Feb 2008 at 8:02 am">Wed 27 Feb 2008 at 8:02 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I am having an issue with IE 6 and MS Excel 2000. When I launch the csv file into IE from my jsp for some reason Excel puts all the data into the first column of the excel document showing the commas.</p>
+<p>This WORKS in Excel 2000 with IE6. Its only on a couple workstations in my office. Also, if I &#8216;Save&#8217; the csv documnet to a know location and then open it with Excel&#8230;its parsed into columns just fine so their is something in the way IE and Excel are communicating about the file type that is an issue.</p>
+<p>response.setHeader(&#8220;Cache-Control&#8221;, &#8220;cache&#8221;);<br> response.setContentType(&#8220;application/binary&#8221;);<br> response.setHeader(&#8220;Content-Disposition&#8221;, &#8220;inline; filename=&#8221;+csv_filename );</p>
+<p>Has anyone else experienced this?</p>
+<p>Also, you&#8217;ll see that I am setting Cache-Control to &#8216;cache&#8217;. If I try to set it to &#8216;no-cache&#8217;, IE will not pickup the &#8216;filename&#8217; parameter within the Content-Disposition header&#8230;&#8230;similar to mentioned here.</p>
+<p>Thank You</p>
+</div></article></div>
+<div id="comment-639" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-639" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d0922f5" alt="Hunt" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Hunt</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-639"><time datetime="2008-02-27T08:03:25-07:00" title="Wed 27 Feb 2008 at 8:03 am">Wed 27 Feb 2008 at 8:03 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Sorry &#8211; I meant to say in the second paragraph &#8216;This WORKS in Excel 2002 with IE6 and DOES NOT work in Excel 2000&#8217;</p>
+<p>very sorry</p>
+</div></article></div>
+<div id="comment-640" class="comment even thread-even depth-1"><article id="div-comment-640" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d096b51" alt="EduHL" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">EduHL</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-640"><time datetime="2008-03-13T03:19:29-06:00" title="Thu 13 Mar 2008 at 3:19 am">Thu 13 Mar 2008 at 3:19 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>You can try with this in IE:</p>
+<p>Tools -&gt; Internet Options -&gt; Advanced (tab), checkbox &#147;[x] Do not save encrypted pages to disk&#148; prevented IE from saving the exported file to its browser cache (and consequently from opening it afterwards).</p>
+<p>In my case, unchecking this setting, fixed the problem.</p>
+<p>Regards,</p>
+<p>Edu.</p>
+</div></article></div>
+<div id="comment-641" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-641" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d09badc" alt="Brijendra Singh Rajput" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Brijendra Singh Rajput</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-641"><time datetime="2008-05-09T03:22:43-06:00" title="Fri 9 May 2008 at 3:22 am">Fri 9 May 2008 at 3:22 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Hi Duncan,<br> Thanks a million to you solution.I changed a module in my ERP for excel export.but it was triggering errors in IE.i worked for more than 10 Hours for this problem.But you saved my a lot of time.<br> Thanks a lat</p></div></article></div>
+<div id="comment-642" class="comment even thread-even depth-1"><article id="div-comment-642" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169d0a0fa3" alt="Kamaljith" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Kamaljith</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-642"><time datetime="2008-05-14T04:46:18-06:00" title="Wed 14 May 2008 at 4:46 am">Wed 14 May 2008 at 4:46 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Thanks.<br> It worked for me.</p></div></article></div>
+<div id="comment-643" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-643" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169d0a608b" alt="Meenu" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Meenu</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-643"><time datetime="2008-05-28T04:15:52-06:00" title="Wed 28 May 2008 at 4:15 am">Wed 28 May 2008 at 4:15 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>I m not able to export excel sheet in IE using HTTPS<br> it is running in firefox and safari.</p></div></article></div>
+<div id="comment-644" class="comment even thread-even depth-1"><article id="div-comment-644" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.flipflops.org/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d0aa607" alt="John" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">John</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-644"><time datetime="2008-06-04T07:15:48-06:00" title="Wed 4 Jun 2008 at 7:15 am">Wed 4 Jun 2008 at 7:15 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>@Jon M</p>
+<p>Thanks your solution of:</p>
+<p>header(&#148;Content-type: application/vnd.ms-excel; name=&#146;Excel&#146;&#148;);<br> header(&#148;Content-Disposition: attachment; filename=myWorksheet.xls&#148;);<br> header(&#148;Expires: 0?); // Optional<br> print &#147;$headern$data&#148;;</p>
+<p>works for me using Firefox 2 and IE 7 &#8211; thats in PHP over https://</p>
+<p>Cheers</p>
+</div></article></div>
+<div id="comment-645" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-645" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169d0af547" alt="hbourchi" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">hbourchi</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-645"><time datetime="2008-08-12T07:47:11-06:00" title="Tue 12 Aug 2008 at 7:47 am">Tue 12 Aug 2008 at 7:47 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Duncan!</p>
+<p>Your code solved my problem. Thanks!</p>
+<p>if(strpos($_SERVER[&#8216;HTTP_USER_AGENT&#8217;], &#145;MSIE&#146;)) {<br> header(&#146;Cache-Control: must-revalidate, post-check=0, pre-check=0?);<br> header(&#146;Pragma: public&#146;);<br> } else {<br> header(&#146;Pragma: no-cache&#146;);<br> }</p>
+</div></article></div>
+<div id="comment-646" class="comment even thread-even depth-1"><article id="div-comment-646" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-42822043a46639cee1b84938b596f20b-120-60d169d0b01bf" alt="Shaun" src="/wp-content/uploads/gravatar-cache/42822043a46639cee1b84938b596f20b-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Shaun</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-646"><time datetime="2008-09-16T08:38:54-06:00" title="Tue 16 Sep 2008 at 8:38 am">Tue 16 Sep 2008 at 8:38 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>There is a easy solution to the SSL problem here:</p>
+<p><a href="http://us2.php.net/manual/en/function.header.php#83219" rel="nofollow ugc">http://us2.php.net/manual/en/function.header.php#83219</a></p>
+</div></article></div>
+<div id="comment-647" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-647" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://trgc.com/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169d0b5daf" alt="Michael Rodriguez" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Michael Rodriguez</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-647"><time datetime="2008-09-30T16:16:25-06:00" title="Tue 30 Sep 2008 at 4:16 pm">Tue 30 Sep 2008 at 4:16 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Help, I have IE6 and I have directory browsing turned on so that Logs can get pulled via <a href="http://x:8181/LogFiles" rel="nofollow ugc">http://x:8181/LogFiles</a>. I don&#8217;t want to have to write .asp to enumerate as that would mean having to add ASP as an allowed extension unnecessariy.</p>
+<p>I see a lot of scripting solutions, but can I manipulate the custom headers in IE to yield the same results for a directory that has Browsing turned on. The file extensions are currently the date in a YYYYMMDD format.</p>
+<p>thanks</p>
+<p>Michael</p>
+</div></article></div>
+<div id="comment-648" class="comment even thread-even depth-1"><article id="div-comment-648" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169d0bbd34" alt="Radek Sipka" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Radek Sipka</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-648"><time datetime="2008-10-12T12:43:21-06:00" title="Sun 12 Oct 2008 at 12:43 pm">Sun 12 Oct 2008 at 12:43 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Thanks, your solution worked, and probably saved me a lot of work. so thanks!!</p></div></article></div>
+<div id="comment-649" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-649" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.sudste.com/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169d0c216e" alt="Steve" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Steve</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-649"><time datetime="2008-11-10T11:52:00-07:00" title="Mon 10 Nov 2008 at 11:52 am">Mon 10 Nov 2008 at 11:52 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Thank you for this. You definitely saved me some time.</p></div></article></div>
+<div id="comment-650" class="comment even thread-even depth-1"><article id="div-comment-650" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-c53aa0d80e56c1c115eb9f68c39f081a-120-60d169d0c2c95" alt="Lutz Mahle" src="/wp-content/uploads/gravatar-cache/c53aa0d80e56c1c115eb9f68c39f081a-120.png" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Lutz Mahle</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-650"><time datetime="2008-11-12T01:26:02-07:00" title="Wed 12 Nov 2008 at 1:26 am">Wed 12 Nov 2008 at 1:26 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>I lost my nervs in a couple of weeks to solve this problem on our website. Great Hint! Thank you so much!<br> Now our CSV-download works fine, only inserting these small four lines of code!</p></div></article></div>
+<div id="comment-651" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-651" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-1d95073b6cb232de3ea12b3ec2cce91a-120-60d169d0c3b34" alt="jan" src="/wp-content/uploads/gravatar-cache/1d95073b6cb232de3ea12b3ec2cce91a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">jan</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-651"><time datetime="2008-11-25T06:11:43-07:00" title="Tue 25 Nov 2008 at 6:11 am">Tue 25 Nov 2008 at 6:11 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Thanks alot &#8230; been looking for this for ages!!</p>
+<p>Kind regards,</p>
+</div></article></div>
+<div id="comment-652" class="comment even thread-even depth-1"><article id="div-comment-652" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169d0c8a92" alt="Jason" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Jason</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-652"><time datetime="2008-12-17T00:21:12-07:00" title="Wed 17 Dec 2008 at 12:21 am">Wed 17 Dec 2008 at 12:21 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>You star! That one completely stumped me&#8230; You&#8217;re a bloody legend.</p></div></article></div>
+<div id="comment-653" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-653" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d0cda0a" alt="Andy" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Andy</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-653"><time datetime="2008-12-29T02:30:52-07:00" title="Mon 29 Dec 2008 at 2:30 am">Mon 29 Dec 2008 at 2:30 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi,<br> I am facing problem while opening a text file using IE6. It gives an error message like &#147;C:Documents and SettingsLocal SettingsTemporary Internet FilesContent.IE5file[1].csv could not be found.</p>
+<p>After doing google I came to know that it is a know issue with IE6 (<a href="http://www.webmasterworld.com/forum88/5891.htm" rel="nofollow ugc">http://www.webmasterworld.com/forum88/5891.htm</a> ) But mentioned fix did not work in my case. This is how I am setting http header:</p>
+<p> header(&#8220;Cache-Control: &#8220;);<br> header(&#8220;Pragma: &#8220;);<br> header(&#8216;Content-type: application/octet-stream&#8217;);<br> header(&#8216;Content-Disposition: attachment; filename=&#8221;&#8216; . $file . &#8216;.txt&#8221;&#8216;); //default extension to .txt for easier open)</p>
+<p>But problem still persist. One workaround is to replace a .txt format to .doc / .rtf, In that case I am able to open file using MS word, but issue will be when someone trying to open a file where don&#146;t have MS word.</p>
+<p>Please Help. I also tried with all the combination for header Pragma and Cache-Control mentioned on this page.</p>
+</div></article></div>
+<div id="comment-654" class="comment even thread-even depth-1"><article id="div-comment-654" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d0d35f7" alt="Meesh" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Meesh</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-654"><time datetime="2009-02-03T14:10:46-07:00" title="Tue 3 Feb 2009 at 2:10 pm">Tue 3 Feb 2009 at 2:10 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Thank you thank you thank you!!!! This saved me a massive headache.. well, I had one starting until I found your helpful article.. your solution worked.<br> Gracias merci and danke schoen!!!</p></div></article></div>
+<div id="comment-655" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-655" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.slscorp.com/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d0d95ac" alt="pkachhia" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">pkachhia</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-655"><time datetime="2009-02-23T04:09:24-07:00" title="Mon 23 Feb 2009 at 4:09 am">Mon 23 Feb 2009 at 4:09 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi,<br> I have the problem which is something related to this post.<br> I have trying to download the file using the download code.<br> It&#8217;s work fine in IE7, Mozilla, chrome but it is not works in IE6.<br> The most socking thing is , few days ago , it is working in all the browsers, even in IE6. But today i got this error.When I have trying to use IE6 for download it shows the following message:<br> &#8220;Internet explorer was not able to open this Internet site. The requested site is either unavailable or cannot be found. Please try again later.&#8221;<br> Can any body help me?</p>
+<p>Regards,<br> Pkachhia</p>
+</div></article></div>
+<div id="comment-656" class="comment even thread-even depth-1"><article id="div-comment-656" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169d0de59f" alt="sandy" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">sandy</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-656"><time datetime="2009-03-09T18:13:28-06:00" title="Mon 9 Mar 2009 at 6:13 pm">Mon 9 Mar 2009 at 6:13 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>I am running into similar problem and tried all the combination given in this post but alas!<br> I have asp page over SSL and trying to generate the CSV file but not working. Any help?<br> esponse.Clear<br> Response.AddHeader &#8220;Pragma: public&#8221;<br> Response.AddHeader &#8220;Cache-Control: no-store, no-cache, no-transform, must-revalidate, private&#8221;;<br> Response.AddHeader &#8220;Title&#8221;, &#8220;My Report Results&#8221;<br> Response.ContentType = &#8220;text/csv&#8221;<br> Response.AddHeader &#8220;Content-disposition&#8221;, &#8220;Attachment;filename=Myreport.csv&#8221;</p></div></article></div>
+<div id="comment-657" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-657" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d0e3d2b" alt="stephan" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">stephan</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-657"><time datetime="2009-03-23T06:46:30-06:00" title="Mon 23 Mar 2009 at 6:46 am">Mon 23 Mar 2009 at 6:46 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>thanks for that. additionally the particular IE&#8217;s here are only happy if content-type header offers encoding=&#8230; as well.</p>
+<p>e.g.<br> header(&#8216;Content-type: application/octet-stream; encoding=UTF-8&#8217;);</p>
+</div></article></div>
+<div id="comment-658" class="comment even thread-even depth-1"><article id="div-comment-658" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="https://gordonotspanish.blogspot.com/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d0e9c21" alt="Gordon" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Gordon</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-658"><time datetime="2009-03-25T12:22:45-06:00" title="Wed 25 Mar 2009 at 12:22 pm">Wed 25 Mar 2009 at 12:22 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I&#8217;m still having trouble after looking through and trying your suggestion and those in the comments. I&#8217;m running ASP.NET 2.0, IIS, Win2003.</p>
+<p>I&#8217;m generating a CSV file for users to download when they click a button on a page (the page is SiteReports.aspx). Without SSL, it works great in FF and IE7. With SSL (which I need to do), it works great in FF, but in IE7:</p>
+<p>-&gt; If I have ContentType set to &#8216;application/octet-stream&#8217;, I get a file download prompt, but the filename I gave it is replaced with &#8216;SiteReports_aspx&#8217;, with no extension, so if they user chooses &#8216;open&#8217; from the download prompt, it opens as plain text within IE.<br> -&gt; If I have ContentType set to anything else, I get &#8216;Internet Explorer cannot download SiteReports.aspx from etc&#8230;&#8217;.</p>
+<p>I don&#8217;t understand why it tries to download something with a different filename than the one I specified in Content-Disposition. I&#8217;m currently setting up my headers like this:</p>
+<p>Response.Clear();<br> Response.Charset = String.Empty;<br> Response.ContentType = &#8220;application/octet-stream&#8221;;<br> Response.AddHeader(&#8220;Pragma&#8221;, &#8220;public&#8221;);<br> Response.AddHeader(&#8220;Cache-Control&#8221;, &#8220;max-age=10&#8221;);<br> Response.AddHeader(&#8220;Content-Disposition&#8221;, &#8220;attachment; filename=test.csv&#8221;);<br> Response.Write(fileContents);<br> Response.End();</p>
+<p>Any ideas? Thanks.</p>
+</div></article></div>
+<div id="comment-659" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-659" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-d1a5b612cd666429d115c54a679cd657-120-60d169d0ea724" alt="Jody" src="/wp-content/uploads/gravatar-cache/d1a5b612cd666429d115c54a679cd657-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Jody</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-659"><time datetime="2009-03-31T16:35:09-06:00" title="Tue 31 Mar 2009 at 4:35 pm">Tue 31 Mar 2009 at 4:35 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Thanks Duncan, your method works for my site which uses SSL that annoys the crap out of me. For both IE and FF&gt; 🙂 Whee now I can work better!</p></div></article></div>
+<div id="comment-660" class="comment even thread-even depth-1"><article id="div-comment-660" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-89f870e0a3a0f113613a503e39f02a2c-120-60d169d0eb3d0" alt="Glen H. Barratt" src="/wp-content/uploads/gravatar-cache/89f870e0a3a0f113613a503e39f02a2c-120.png" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Glen H. Barratt</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-660"><time datetime="2009-04-03T17:42:52-06:00" title="Fri 3 Apr 2009 at 5:42 pm">Fri 3 Apr 2009 at 5:42 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Thank you so much. Your fix was the only one that worked for me. The &#8220;if(strpos($_SERVER[&#8216;HTTP_USER_AGENT&#8217;], &#8216;MSIE&#8217;)) session_cache_limiter(&#8220;public&#8221;);&#8221; that is.</p></div></article></div>
+<div id="comment-661" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-661" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169d0f0047" alt="Ram" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Ram</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-661"><time datetime="2011-06-03T02:25:50-06:00" title="Fri 3 Jun 2011 at 2:25 am">Fri 3 Jun 2011 at 2:25 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Guys, thanks everyone for the ideas. I tried various combinations. Finally, the below code worked and saved me from more agony. Many thanks to Harry School &amp; Duncan. post-check=0 and pre-check=0 did the trick.</p>
+<p> header(&#8220;Content-Disposition: attachment; filename=filenamehere.csv;&#8221;);<br> header(&#8220;Content-Type: text/csv&#8221;);</p>
+<p> if(strpos($_SERVER[&#8216;HTTP_USER_AGENT&#8217;], &#8216;MSIE&#8217;))<br> {<br> header(&#8216;Cache-Control: must-revalidate, post-check=0, pre-check=0&#8217;);<br> header(&#8216;Pragma: public&#8217;);<br> }<br> else<br> {<br> header(&#8216;Pragma: no-cache&#8217;);<br> }</p>
+</div></article></div>
+<div id="comment-662" class="comment even thread-even depth-1"><article id="div-comment-662" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d1017e8" alt="Joel" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Joel</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-662"><time datetime="2011-09-09T11:58:12-06:00" title="Fri 9 Sep 2011 at 11:58 am">Fri 9 Sep 2011 at 11:58 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi people, I might be shouting at the wrong crowd&#8230;</p>
+<p>But I can&#8217;t get IE&#8217;s authentication to &#8220;carry over&#8221; to Excel&#8217;s web query, could any of you coders help please?</p>
+<p>Thanks.</p>
+</div></article></div>
+<div id="comment-663" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-663" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d169d106c91" alt="Joel" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Joel</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-663"><time datetime="2011-09-09T12:05:42-06:00" title="Fri 9 Sep 2011 at 12:05 pm">Fri 9 Sep 2011 at 12:05 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Sorry, I should have mentioned that it worked before but it doesn&#8217;t now&#8230;<br> It works on my manager&#8217;s laptop with his parasite-browser (sorry I don&#8217;t know what else to call it &#8211; I believe this &#8220;browser&#8221; uses the IE-engine but runs its own interface)&#8230;</p>
+<p>&amp; yes my default browser is IE (&amp; I thought that would help&#8230;)</p>
+<p>Thanks in advance for anyone who&#8217;s giving this some thought.<br> &amp; since I don&#8217;t know much about coding, I thought this &#8220;might be part of the puzzle&#8221;.</p>
+<p>Cheers.</p>
+</div></article></div>
+<div id="comment-664" class="comment even thread-even depth-1"><article id="div-comment-664" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d169d10b441" alt="l Laundry" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">l Laundry</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2004/10/01/making-ie-accept-file-downloads/#comment-664"><time datetime="2013-08-01T16:47:29-06:00" title="Thu 1 Aug 2013 at 4:47 pm">Thu 1 Aug 2013 at 4:47 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Using IIS and IE8. Had same problem where the csv would not open. It worked for years but when I added code to make my site IE10 compliant (in my case I told the browser to act like it was IE8, way too much code to change to make it truly IE10). Anyway the problem occured and the post from &#8220;Harry School&#8221; on (Fri 1 Dec 2006 at 4:39 am) worked for me.</p>
+<p>My asp file has this in it and it works fine now.</p>
+<p>Response.ContentType = &#8220;application/octet-stream&#8221;<br> Response.AddHeader &#8220;content-disposition&#8221;,&#8221;attachment; filename=&#8221; &amp; sfile &amp; &#8220;.CSV&#8221;<br> Response.CacheControl = &#8220;Cache-Control: must-revalidate, post-check=0, pre-check=0&#8221;</p>
+<p>I was missing the last line.</p>
+<p>Thanks so much!</p>
+</div></article></div>
+</div>
+</div>
+<hr class="styled-separator is-style-wide" aria-hidden="true">
+<div id="respond" class="comment-respond">
+<h2 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2004/10/01/making-ie-accept-file-downloads/#respond" style="display:none;">Cancel reply</a></small>
+</h2>
+<form action="/wp-comments-post.php" method="post" id="commentform" class="section-inner thin max-percentage" novalidate>
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
+<p class="comment-form-comment"><label for="comment">Comment</label><textarea autocomplete="new-password" id="bc99c64e1e" name="bc99c64e1e" cols="45" rows="8" maxlength="65525" required="required"></textarea><textarea id="comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea><script data-noptimize type="text/javascript">document.getElementById("comment").setAttribute( "id", "ae46e717965c3121a5615fbc0cb7c9e1" );document.getElementById("bc99c64e1e").setAttribute( "id", "comment" );</script></p>
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="164" id="comment_post_ID"> <input type="hidden" name="comment_parent" id="comment_parent" value="0"></p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="48b99d273e"></p>
+<input type="hidden" id="ak_js" name="ak_js" value="81"><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea>
+</form>
+</div>
+</div></article></main><div class="footer-nav-widgets-wrapper header-footer-group"><div class="footer-inner section-inner"><aside class="footer-widgets-outer-wrapper" role="complementary"><div class="footer-widgets-wrapper"><div class="footer-widgets column-one grid-item"><div class="widget widget_search"><div class="widget-content"><form role="search" method="get" class="search-form" action="/"> <label for="search-form-2"> <span class="screen-reader-text">Search for:</span> <input type="search" id="search-form-2" class="search-field" placeholder="Search &hellip;" value="" name="s"> </label> <input type="submit" class="search-submit" value="Search">
+</form></div></div></div></div></aside></div></div>
+<footer id="site-footer" role="contentinfo" class="header-footer-group"><div class="section-inner">
+<div class="footer-credits">
+<p class="footer-copyright">&copy;
+2021 <a href="/">Joseph Scott</a></p>
+<p class="powered-by-wordpress"> <a href="https://wordpress.org/"> Powered by WordPress </a></p>
+</div> <a class="to-the-top" href="#site-header"> <span class="to-the-top-long"> To the top <span class="arrow" aria-hidden="true">&uarr;</span> </span> <span class="to-the-top-short"> Up <span class="arrow" aria-hidden="true">&uarr;</span> </span> </a>
+</div></footer> <script>/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);</script> <script defer src="/wp-content/cache/autoptimize/js/autoptimize_7f503920b823033d01081cc5ae68a469.js"></script>
+</body>
+</html>

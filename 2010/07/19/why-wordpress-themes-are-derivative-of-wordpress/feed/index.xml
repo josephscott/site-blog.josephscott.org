@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Why WordPress Themes are Derivative of WordPress	</title>
+	<atom:link href="/2010/07/19/why-wordpress-themes-are-derivative-of-wordpress/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/07/19/why-wordpress-themes-are-derivative-of-wordpress/</link>
+	<description></description>
+	<lastBuildDate>Tue, 20 Jul 2010 05:06:08 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/07/19/why-wordpress-themes-are-derivative-of-wordpress/#comment-3490</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 20 Jul 2010 05:06:08 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2553#comment-3490</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/07/19/why-wordpress-themes-are-derivative-of-wordpress/#comment-3489&quot;&gt;Lulz&lt;/a&gt;.
+
+Here&#039;s a simple example.  If you want to build a single binary (using hiphop for example) you&#039;ll need to compile WordPress + your theme + all your plugins in order to produce a single, functional application.  As Mark mentioned, themes aren&#039;t something that simply run on top of WordPress, they join together to form a single application.  This goes beyond just calling functions in separate libraries, theme and plugin code completely co-mingle with WordPress core to produce your site.
+
+There&#039;s simply no similarity to this in Windows, for print drivers from HP or applications like Firefox.
+
+For applications that want to speak to WordPress there are APIs like XML-RPC, AtomPub, and RSS.  Applications that make use of those APIs do not fit into the example I gave above, they are separate from WordPress and don&#039;t combine in the way that themes and plugins do to actually become a single application.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/07/19/why-wordpress-themes-are-derivative-of-wordpress/#comment-3489">Lulz</a>.</p>
+<p>Here&#8217;s a simple example.  If you want to build a single binary (using hiphop for example) you&#8217;ll need to compile WordPress + your theme + all your plugins in order to produce a single, functional application.  As Mark mentioned, themes aren&#8217;t something that simply run on top of WordPress, they join together to form a single application.  This goes beyond just calling functions in separate libraries, theme and plugin code completely co-mingle with WordPress core to produce your site.</p>
+<p>There&#8217;s simply no similarity to this in Windows, for print drivers from HP or applications like Firefox.</p>
+<p>For applications that want to speak to WordPress there are APIs like XML-RPC, AtomPub, and RSS.  Applications that make use of those APIs do not fit into the example I gave above, they are separate from WordPress and don&#8217;t combine in the way that themes and plugins do to actually become a single application.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Lulz		</title>
+		<link>/2010/07/19/why-wordpress-themes-are-derivative-of-wordpress/#comment-3489</link>
+
+		<dc:creator><![CDATA[Lulz]]></dc:creator>
+		<pubDate>Tue, 20 Jul 2010 02:19:41 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2553#comment-3489</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/07/19/why-wordpress-themes-are-derivative-of-wordpress/#comment-3488&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+Care to explain why?
+
+The manner in which the code is executed in memory is irrelevant, as operation is the domain of patents. The theme debate is one of copyright, where the issue is the actual substance - the code in the theme files.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/07/19/why-wordpress-themes-are-derivative-of-wordpress/#comment-3488">Joseph Scott</a>.</p>
+<p>Care to explain why?</p>
+<p>The manner in which the code is executed in memory is irrelevant, as operation is the domain of patents. The theme debate is one of copyright, where the issue is the actual substance &#8211; the code in the theme files.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/07/19/why-wordpress-themes-are-derivative-of-wordpress/#comment-3488</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 19 Jul 2010 20:32:40 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2553#comment-3488</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/07/19/why-wordpress-themes-are-derivative-of-wordpress/#comment-3487&quot;&gt;viki&lt;/a&gt;.
+
+That has been brought up and dealt with several times already.  Short answer: no it doesn&#039;t lead to that at all.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/07/19/why-wordpress-themes-are-derivative-of-wordpress/#comment-3487">viki</a>.</p>
+<p>That has been brought up and dealt with several times already.  Short answer: no it doesn&#8217;t lead to that at all.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: viki		</title>
+		<link>/2010/07/19/why-wordpress-themes-are-derivative-of-wordpress/#comment-3487</link>
+
+		<dc:creator><![CDATA[viki]]></dc:creator>
+		<pubDate>Mon, 19 Jul 2010 19:08:41 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2553#comment-3487</guid>
+
+					<description><![CDATA[Sadly Mark has closed his comments, otherwise I would point out that, if you follow this line or argument, which is easy enough and probably justified, then HP, Lexmark, Brother et al are a part of Windows / Microsoft, since they all work together using compatible software. Without Windows,or any other similar OS, none of them would exist.]]></description>
+			<content:encoded><![CDATA[<p>Sadly Mark has closed his comments, otherwise I would point out that, if you follow this line or argument, which is easy enough and probably justified, then HP, Lexmark, Brother et al are a part of Windows / Microsoft, since they all work together using compatible software. Without Windows,or any other similar OS, none of them would exist.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

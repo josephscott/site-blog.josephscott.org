@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: WordPress Theme Authors, Don&#8217;t Forget The wp_head() Function	</title>
+	<atom:link href="/2009/04/08/wordpress-theme-authors-dont-forget-the-wp_head-function/feed/" rel="self" type="application/rss+xml" />
+	<link>/2009/04/08/wordpress-theme-authors-dont-forget-the-wp_head-function/</link>
+	<description></description>
+	<lastBuildDate>Mon, 10 Feb 2020 15:39:40 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Ria		</title>
+		<link>/2009/04/08/wordpress-theme-authors-dont-forget-the-wp_head-function/#comment-182807</link>
+
+		<dc:creator><![CDATA[Ria]]></dc:creator>
+		<pubDate>Mon, 10 Feb 2020 15:39:40 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1124#comment-182807</guid>
+
+					<description><![CDATA[I am still unable to get this to work on my blog site. The area for the sidebar shows up. But the actual sidebar doesn&#039;t.  I have an area for designating the widget areas and have activated use of sidebar (Posts) in post and pages. I have tried putting 
+[sourcecode lang=”php”]
+wp_head();
+[/sourcecode] 
+
+in the header and the code actually shows up in the header. What amd I doing wrong?]]></description>
+			<content:encoded><![CDATA[<p>I am still unable to get this to work on my blog site. The area for the sidebar shows up. But the actual sidebar doesn&#8217;t.  I have an area for designating the widget areas and have activated use of sidebar (Posts) in post and pages. I have tried putting<br />
+[sourcecode lang=”php”]<br />
+wp_head();<br />
+[/sourcecode] </p>
+<p>in the header and the code actually shows up in the header. What amd I doing wrong?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/04/08/wordpress-theme-authors-dont-forget-the-wp_head-function/#comment-2959</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 04 Sep 2012 05:05:55 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1124#comment-2959</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/04/08/wordpress-theme-authors-dont-forget-the-wp_head-function/#comment-2958&quot;&gt;syndrael&lt;/a&gt;.
+
+Sounds like you&#039;ve got something hooking into wp_head that is taking a long time to process.  Could be a plugin or theme.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/04/08/wordpress-theme-authors-dont-forget-the-wp_head-function/#comment-2958">syndrael</a>.</p>
+<p>Sounds like you&#8217;ve got something hooking into wp_head that is taking a long time to process.  Could be a plugin or theme.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: syndrael		</title>
+		<link>/2009/04/08/wordpress-theme-authors-dont-forget-the-wp_head-function/#comment-2958</link>
+
+		<dc:creator><![CDATA[syndrael]]></dc:creator>
+		<pubDate>Mon, 03 Sep 2012 20:16:52 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1124#comment-2958</guid>
+
+					<description><![CDATA[wp_head makes my site very slow. In average, 2.5 seconds on 3.6 needed for the whole page.
+I&#039;ve removed action in wp_head (may be the list useful) but i can&#039;t resolve this problem.
+Any ideas ?
+Best regards from Paris, France]]></description>
+			<content:encoded><![CDATA[<p>wp_head makes my site very slow. In average, 2.5 seconds on 3.6 needed for the whole page.<br />
+I&#8217;ve removed action in wp_head (may be the list useful) but i can&#8217;t resolve this problem.<br />
+Any ideas ?<br />
+Best regards from Paris, France</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Tim		</title>
+		<link>/2009/04/08/wordpress-theme-authors-dont-forget-the-wp_head-function/#comment-2957</link>
+
+		<dc:creator><![CDATA[Tim]]></dc:creator>
+		<pubDate>Fri, 01 Apr 2011 20:35:26 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1124#comment-2957</guid>
+
+					<description><![CDATA[No wonder my stats weren&#039;t working!  Thanks for the &quot;duh&quot; moment. :)]]></description>
+			<content:encoded><![CDATA[<p>No wonder my stats weren&#8217;t working!  Thanks for the &#8220;duh&#8221; moment. 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Randnotiz &#124; Minor Blog Changes &#124; macfidelity		</title>
+		<link>/2009/04/08/wordpress-theme-authors-dont-forget-the-wp_head-function/#comment-2956</link>
+
+		<dc:creator><![CDATA[Randnotiz &#124; Minor Blog Changes &#124; macfidelity]]></dc:creator>
+		<pubDate>Fri, 05 Feb 2010 16:36:01 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1124#comment-2956</guid>
+
+					<description><![CDATA[[...] versteckten Felder im Kommentarbereich &#8211; was nach einem CSS Problem riecht &#8211; wobei der gängige Grund bei Problemen mit bestimmten Themes &#060;?php wp_head(); [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] versteckten Felder im Kommentarbereich &#8211; was nach einem CSS Problem riecht &#8211; wobei der gängige Grund bei Problemen mit bestimmten Themes &lt;?php wp_head(); [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jue		</title>
+		<link>/2009/04/08/wordpress-theme-authors-dont-forget-the-wp_head-function/#comment-2955</link>
+
+		<dc:creator><![CDATA[Jue]]></dc:creator>
+		<pubDate>Wed, 30 Sep 2009 04:12:09 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1124#comment-2955</guid>
+
+					<description><![CDATA[Thank you, this cleared up a problem I had with the WP-Polls plugin. I had removed BOTH wp_head and wp_footer from my template a long time ago when I knew much less about theming, and only recently have begun to pay for it with mysterious plugin problems. This warning should be emblazoned on EVERY beginner themer&#039;s guide out there.]]></description>
+			<content:encoded><![CDATA[<p>Thank you, this cleared up a problem I had with the WP-Polls plugin. I had removed BOTH wp_head and wp_footer from my template a long time ago when I knew much less about theming, and only recently have begun to pay for it with mysterious plugin problems. This warning should be emblazoned on EVERY beginner themer&#8217;s guide out there.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ryan Ray		</title>
+		<link>/2009/04/08/wordpress-theme-authors-dont-forget-the-wp_head-function/#comment-2954</link>
+
+		<dc:creator><![CDATA[Ryan Ray]]></dc:creator>
+		<pubDate>Fri, 31 Jul 2009 00:01:37 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1124#comment-2954</guid>
+
+					<description><![CDATA[Thank you!! You fixed my problem! I had edited my Header and took the   tag out]]></description>
+			<content:encoded><![CDATA[<p>Thank you!! You fixed my problem! I had edited my Header and took the   tag out</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Isaac Gerg &#187; Blog Archive &#187; Fixing Counterize II When Stats Not Updating		</title>
+		<link>/2009/04/08/wordpress-theme-authors-dont-forget-the-wp_head-function/#comment-2953</link>
+
+		<dc:creator><![CDATA[Isaac Gerg &#187; Blog Archive &#187; Fixing Counterize II When Stats Not Updating]]></dc:creator>
+		<pubDate>Fri, 17 Jul 2009 01:26:56 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1124#comment-2953</guid>
+
+					<description><![CDATA[[...] some more searching, I found this website which helped me fix my problem.  For Counterize II to function, you have to [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] some more searching, I found this website which helped me fix my problem.  For Counterize II to function, you have to [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/04/08/wordpress-theme-authors-dont-forget-the-wp_head-function/#comment-2952</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 18 May 2009 23:59:25 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1124#comment-2952</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/04/08/wordpress-theme-authors-dont-forget-the-wp_head-function/#comment-2951&quot;&gt;Thom Allen&lt;/a&gt;.
+
+I don&#039;t think any of the default actions (see wp-includes/default-filters.php) will change the styling at all.  Any theme that doesn&#039;t call wp_head() should be considered broken.  There are core features of WordPress that require it in order to work.  In addition to RSD there&#039;s: wp_enqueue_scripts (makes sure the correct Javascript files get included in pages), WLW manifest file (tells Windows Live Writer what features WP supports) and comment threading Javascript.  That isn&#039;t a complete list, just the highlights.
+
+There are also plugins that make us of wp_head() as well.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/04/08/wordpress-theme-authors-dont-forget-the-wp_head-function/#comment-2951">Thom Allen</a>.</p>
+<p>I don&#8217;t think any of the default actions (see wp-includes/default-filters.php) will change the styling at all.  Any theme that doesn&#8217;t call wp_head() should be considered broken.  There are core features of WordPress that require it in order to work.  In addition to RSD there&#8217;s: wp_enqueue_scripts (makes sure the correct Javascript files get included in pages), WLW manifest file (tells Windows Live Writer what features WP supports) and comment threading Javascript.  That isn&#8217;t a complete list, just the highlights.</p>
+<p>There are also plugins that make us of wp_head() as well.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Thom Allen		</title>
+		<link>/2009/04/08/wordpress-theme-authors-dont-forget-the-wp_head-function/#comment-2951</link>
+
+		<dc:creator><![CDATA[Thom Allen]]></dc:creator>
+		<pubDate>Mon, 18 May 2009 17:28:05 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=1124#comment-2951</guid>
+
+					<description><![CDATA[Will using wp_head() cause any styling issues? or is it simply giving the theme access to internal WordPress functionality?]]></description>
+			<content:encoded><![CDATA[<p>Will using wp_head() cause any styling issues? or is it simply giving the theme access to internal WordPress functionality?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

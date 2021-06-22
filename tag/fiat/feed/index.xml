@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>fiat &#8211; Joseph Scott</title>
+	<atom:link href="/tag/fiat/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 26 Jul 2012 18:31:17 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Recommended Adium Theme: Fiat</title>
+		<link>/2012/07/26/recommended-adium-theme-fiat/</link>
+					<comments>/2012/07/26/recommended-adium-theme-fiat/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 26 Jul 2012 18:31:17 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[adium]]></category>
+		<category><![CDATA[fiat]]></category>
+		<category><![CDATA[theme]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=6056</guid>
+
+					<description><![CDATA[I use the Jabber support in Adium to read real time updates from WordPress.com sites that I subscribe to. For the most part that is limited to just internal Automattic blogs. I don&#8217;t particularly care for the default message style themes in Adium though. So I went through the long list of Adium message styles [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I use the Jabber support in <a href="http://adium.im/">Adium</a> to read <a href="http://im.wordpress.com/">real time updates from WordPress.com sites</a> that I subscribe to.  For the most part that is limited to just internal <a href="http://automattic.com/">Automattic</a> blogs.</p>
+<p>I don&#8217;t particularly care for the default message style themes in Adium though.  So I went through the long list of <a href="http://www.adiumxtras.com/index.php?a=search&#038;cat_id=5">Adium message styles</a> looking for something more readable.  I eventually found <a href="http://www.adiumxtras.com/index.php?a=xtras&#038;xtra_id=206">Fiat</a>:</p>
+<p><img loading="lazy" alt="" src="https://lh4.googleusercontent.com/-wSTwnhd3Hqg/UBFx3EyaiaI/AAAAAAAAAas/MAmfitnQfEA/s317/adium-fiat.png" title="Adium Fiat Theme" class="alignnone" width="317" height="300" /></p>
+<p>After a few adjustments, specifically using the &#8216;Green over Blue&#8217; variant and increasing the Lucida Grande font size to 14, I&#8217;m happy with the result.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/07/26/recommended-adium-theme-fiat/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

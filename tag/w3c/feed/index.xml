@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>w3c &#8211; Joseph Scott</title>
+	<atom:link href="/tag/w3c/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 04 May 2011 15:12:02 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>HTML5 Spec Calls For Altering Your Data</title>
+		<link>/2011/05/04/html5-spec-calls-for-altering-your-data/</link>
+					<comments>/2011/05/04/html5-spec-calls-for-altering-your-data/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 04 May 2011 15:12:02 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[data-attribute]]></category>
+		<category><![CDATA[html5]]></category>
+		<category><![CDATA[jquery]]></category>
+		<category><![CDATA[w3c]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4030</guid>
+
+					<description><![CDATA[While reading the jQuery 1.6 release announcement I came across this gem: jQuery 1.5 introduced a feature in the .data() method to automatically import any data- attributes that were set on the element and convert them to JavaScript values using JSON semantics. In jQuery 1.6 we have updated this feature to match the W3C HTML5 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>While reading the <a href="http://blog.jquery.com/2011/05/03/jquery-16-released/">jQuery 1.6 release announcement</a> I came across this gem:</p>
+<blockquote><p>
+jQuery 1.5 introduced a feature in the .data() method to automatically import any data- attributes that were set on the element and convert them to JavaScript values using JSON semantics. In jQuery 1.6 we have updated this feature to match the W3C HTML5 spec with regards to camel-casing data attributes that have embedded dashes. So for example in jQuery 1.5.2, an attribute of data-max-value=&#8221;15&#8243; would create a data object of { max-value: 15 } but as of jQuery 1.6 it sets { maxValue: 15 }.
+</p></blockquote>
+<p>The portion of the W3C HTML5 spec mentioned is <a href="http://www.w3.org/TR/html5/elements.html#embedding-custom-non-visible-data-with-the-data-attributes">http://www.w3.org/TR/html5/elements.html#embedding-custom-non-visible-data-with-the-data-attributes</a> &#8211; and the specific wording in this regard is:</p>
+<blockquote><p>
+<strong>element . dataset</strong><br />
+Returns a DOMStringMap object for the element&#8217;s data-* attributes.</p>
+<p>Hyphenated names become camel-cased. For example, data-foo-bar=&#8221;&#8221; becomes element.dataset.fooBar.
+</p></blockquote>
+<p>My feelings on this are simple &#8211; this is an absolutely horrible idea!  Why would you indicate that implementations of the spec actually alter the attribute names used in the HTML?  The only result from this I can see is confusion and wasted time when code breaks from this but it isn&#8217;t obvious why.</p>
+<p>To make this even more confusing the data attribute section of the spec also mentions:</p>
+<blockquote><p>
+Note: All attributes on HTML elements in HTML documents get ASCII-lowercased automatically, so the restriction on ASCII uppercase letters doesn&#8217;t affect such documents.
+</p></blockquote>
+<p>So even if you wanted to CamelCase your data attribute names, to avoid the auto conversion described in the spec, you can&#8217;t.  Using <code>data-CamelCase</code> would become <code>data-camelcase</code>.</p>
+<p>Where does all this leave the average web dev?  Well, I think the easiest way out is to never, ever, ever use a name for a data attribute that the spec indicates will be altered.  This means no dashes any where in the dev controlled section of data attribute names.  That isn&#8217;t very pretty since the attribute is required to start with <code>data-</code>, but it is the safest route. </p>
+<p> In practice this will result in either names with no breaks or using underscores where you would normally use dashes.  &#8220;Safe&#8221; examples would be:</p>
+<ul>
+<li>data-foobar</li>
+<li>data-foo_bar</li>
+</ul>
+<p>I&#8217;m really disappointed to see attribute name changes be part of the HTML5 spec.  I&#8217;d be really curious to know what the justification was for this move.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/05/04/html5-spec-calls-for-altering-your-data/feed/</wfw:commentRss>
+			<slash:comments>7</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: PINGQueue.com	</title>
+	<atom:link href="/2005/11/02/pingqueuecom/feed/" rel="self" type="application/rss+xml" />
+	<link>/2005/11/02/pingqueuecom/</link>
+	<description></description>
+	<lastBuildDate>Fri, 04 Nov 2005 17:29:57 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: joseph		</title>
+		<link>/2005/11/02/pingqueuecom/#comment-1004</link>
+
+		<dc:creator><![CDATA[joseph]]></dc:creator>
+		<pubDate>Fri, 04 Nov 2005 17:29:57 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=513#comment-1004</guid>
+
+					<description><![CDATA[Good idea.  Done.]]></description>
+			<content:encoded><![CDATA[<p>Good idea.  Done.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jim Vanderveen		</title>
+		<link>/2005/11/02/pingqueuecom/#comment-1003</link>
+
+		<dc:creator><![CDATA[Jim Vanderveen]]></dc:creator>
+		<pubDate>Fri, 04 Nov 2005 17:21:37 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=513#comment-1003</guid>
+
+					<description><![CDATA[Hey dude,
+
+I was checking my ping history. It seems like having the ping enqueue timestamp in the header of the &quot;Ping Details&quot; (&lt;a href=&quot;http://www.pingqueue.com/history/ping/?blog_ping_uuid=c6a301af-4bee-11da-8ec9-000cf1c93f2f&quot; rel=&quot;nofollow&quot;&gt;example&lt;/a&gt;) page would be useful for checking the queue delay.
+
+Jim]]></description>
+			<content:encoded><![CDATA[<p>Hey dude,</p>
+<p>I was checking my ping history. It seems like having the ping enqueue timestamp in the header of the &#8220;Ping Details&#8221; (<a href="http://www.pingqueue.com/history/ping/?blog_ping_uuid=c6a301af-4bee-11da-8ec9-000cf1c93f2f" rel="nofollow">example</a>) page would be useful for checking the queue delay.</p>
+<p>Jim</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: SonicChicken weblog &#187; Blog Archive &#187; New ping service is live!		</title>
+		<link>/2005/11/02/pingqueuecom/#comment-1002</link>
+
+		<dc:creator><![CDATA[SonicChicken weblog &#187; Blog Archive &#187; New ping service is live!]]></dc:creator>
+		<pubDate>Fri, 04 Nov 2005 00:11:45 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=513#comment-1002</guid>
+
+					<description><![CDATA[[...] PingQueue is Joseph&#8217;s recently-announced ping service. Details of this service are available via the links in this entry. But in a nutshell, the advantage of this service is that ping requests are queued up&#8211;this sounds like a disadvantage, but the response time for adding a request to the queue is much faster than synchronously pinging multiple services. [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] PingQueue is Joseph&#8217;s recently-announced ping service. Details of this service are available via the links in this entry. But in a nutshell, the advantage of this service is that ping requests are queued up&#8211;this sounds like a disadvantage, but the response time for adding a request to the queue is much faster than synchronously pinging multiple services. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

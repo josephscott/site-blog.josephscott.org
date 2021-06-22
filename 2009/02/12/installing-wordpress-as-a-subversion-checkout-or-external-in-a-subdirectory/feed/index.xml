@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Installing WordPress As A Subversion Checkout ( Or External ) In A Subdirectory	</title>
+	<atom:link href="/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/feed/" rel="self" type="application/rss+xml" />
+	<link>/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/</link>
+	<description></description>
+	<lastBuildDate>Thu, 21 Jan 2010 02:05:04 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Subversion repository with WordPress external &#124; Aaron Whitman		</title>
+		<link>/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/#comment-2743</link>
+
+		<dc:creator><![CDATA[Subversion repository with WordPress external &#124; Aaron Whitman]]></dc:creator>
+		<pubDate>Thu, 21 Jan 2010 02:05:04 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=779#comment-2743</guid>
+
+					<description><![CDATA[[...] 2. http://josephscott.org/archives/2009/02/installing-wordpress-as-a-subversion-checkout-or-external-in... [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] 2. <a href="http://josephscott.org/archives/2009/02/installing-wordpress-as-a-subversion-checkout-or-external-in" rel="nofollow ugc">http://josephscott.org/archives/2009/02/installing-wordpress-as-a-subversion-checkout-or-external-in</a>&#8230; [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Angelo Mandato		</title>
+		<link>/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/#comment-2742</link>
+
+		<dc:creator><![CDATA[Angelo Mandato]]></dc:creator>
+		<pubDate>Wed, 11 Nov 2009 17:04:59 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=779#comment-2742</guid>
+
+					<description><![CDATA[I&#039;m happy to report that the Alias technique with locating the wp-content in an entirely different folder than where the WordPress subversion checkout is located works perfectly for my setup. None of the plugins I am using include the wp-config.php in them, so I don&#039;t need the hack I described in a previous reply.
+
+My folders look like this:
+
+/home/username/example.com/htdocs (where I do the svn co wordpress)
+/home/username/example.com/wp-content (where I map my wp-content to)
+
+Apache Alias entry looks like this:
+
+	Alias &quot;/wp-content&quot; &quot;/home/username/example.com/wp-content&quot;
+
+		AllowOverride None
+		Options None
+		php_admin_flag engine off # optional
+
+
+defines added to wp-config.php:
+
+define( &#039;WP_CONTENT_DIR&#039;, &#039;/home/username/example.com/wp-content&#039; );
+define( &#039;WP_CONTENT_URL&#039;, &#039;http://example.com/wp-content&#039; );
+
+With this setup, the writable folders for my WordPress installation cannot execute PHP directly, which is a huge security benefit of using this technique. This may not work for everyone. If your open_basedir setting is set in PHP this may not work for you.
+
+Anytime I install a new plugin, I first grep the source to make sure it doesn&#039;t include the wp-config.php. If a plugin does include the wp-config.php anywhere, that&#039;s an indication that the PHP in that plugin must execute directly, in which case you will have to remove the php_admin_flag engine off line above and add the hack I described in the last reply and put a wp-config.php in the /home/username/example.com/ folder.]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;m happy to report that the Alias technique with locating the wp-content in an entirely different folder than where the WordPress subversion checkout is located works perfectly for my setup. None of the plugins I am using include the wp-config.php in them, so I don&#8217;t need the hack I described in a previous reply.</p>
+<p>My folders look like this:</p>
+<p>/home/username/example.com/htdocs (where I do the svn co wordpress)<br />
+/home/username/example.com/wp-content (where I map my wp-content to)</p>
+<p>Apache Alias entry looks like this:</p>
+<p>	Alias &#8220;/wp-content&#8221; &#8220;/home/username/example.com/wp-content&#8221;</p>
+<p>		AllowOverride None<br />
+		Options None<br />
+		php_admin_flag engine off # optional</p>
+<p>defines added to wp-config.php:</p>
+<p>define( &#8216;WP_CONTENT_DIR&#8217;, &#8216;/home/username/example.com/wp-content&#8217; );<br />
+define( &#8216;WP_CONTENT_URL&#8217;, &#8216;http://example.com/wp-content&#8217; );</p>
+<p>With this setup, the writable folders for my WordPress installation cannot execute PHP directly, which is a huge security benefit of using this technique. This may not work for everyone. If your open_basedir setting is set in PHP this may not work for you.</p>
+<p>Anytime I install a new plugin, I first grep the source to make sure it doesn&#8217;t include the wp-config.php. If a plugin does include the wp-config.php anywhere, that&#8217;s an indication that the PHP in that plugin must execute directly, in which case you will have to remove the php_admin_flag engine off line above and add the hack I described in the last reply and put a wp-config.php in the /home/username/example.com/ folder.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Angelo Mandato		</title>
+		<link>/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/#comment-2741</link>
+
+		<dc:creator><![CDATA[Angelo Mandato]]></dc:creator>
+		<pubDate>Mon, 09 Nov 2009 17:45:48 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=779#comment-2741</guid>
+
+					<description><![CDATA[I agree. If all plugins used the query_vars hook or the built in AJAX handlers in WP rather than the include of the wp-config.php, then you could do what I originally said and block php execution for all files and folders in the wp-content folder, which would result in a much more secure WordPress installation.]]></description>
+			<content:encoded><![CDATA[<p>I agree. If all plugins used the query_vars hook or the built in AJAX handlers in WP rather than the include of the wp-config.php, then you could do what I originally said and block php execution for all files and folders in the wp-content folder, which would result in a much more secure WordPress installation.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/#comment-2740</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 09 Nov 2009 17:33:04 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=779#comment-2740</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/#comment-2739&quot;&gt;Angelo Mandato&lt;/a&gt;.
+
+Plugins and themes should never, ever, EVER, include wp-config.php, wp-load.php, wp-blog-header.php, etc. directly.  It will break on some WP installs, just no two ways around it.
+
+From what I&#039;ve seen themes &#038; plugins do this because they want to provide custom CSS and AJAX hander with data from the database.  Using the query_vars hook or the built in AJAX handlers in WP are much better way of doing this, as they will work for all WP installs.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/#comment-2739">Angelo Mandato</a>.</p>
+<p>Plugins and themes should never, ever, EVER, include wp-config.php, wp-load.php, wp-blog-header.php, etc. directly.  It will break on some WP installs, just no two ways around it.</p>
+<p>From what I&#8217;ve seen themes &amp; plugins do this because they want to provide custom CSS and AJAX hander with data from the database.  Using the query_vars hook or the built in AJAX handlers in WP are much better way of doing this, as they will work for all WP installs.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Angelo Mandato		</title>
+		<link>/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/#comment-2739</link>
+
+		<dc:creator><![CDATA[Angelo Mandato]]></dc:creator>
+		<pubDate>Sun, 08 Nov 2009 15:23:11 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=779#comment-2739</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/#comment-2726&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+You are right, blocking PHP is problematic for some plugins that provide additional services that use links directly to the plugin directory to execute PHP. These plugins most all include the following line:
+
+require_once(&#039;../../../wp-config.php&#039;);
+
+Which means you cannot do what I was suggesting with using the Alias directive in Apache without creating an additional wp-config.php. Essentially, where ever your wp-content folder is located, a wp-config.php file must also be located for those plugins that try to include it.
+
+To get my example to work, you would need to create a wp-config.php file in the same directory where you put the wp-content folder. In this wp-config.php, you would add a require_once function call with the absolute path where your actual wp-config.php is located. If you installed via subversion to /home/example.com/public_html/, then...
+
+
+
+I&#039;m in the process of moving a site to a new server and will be testing this out. Either way, I&#039;m quite pleased the defines WP_CONTENT_DIR and WP_CONTENT_URL are available to us.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/#comment-2726">Joseph Scott</a>.</p>
+<p>You are right, blocking PHP is problematic for some plugins that provide additional services that use links directly to the plugin directory to execute PHP. These plugins most all include the following line:</p>
+<p>require_once(&#8216;../../../wp-config.php&#8217;);</p>
+<p>Which means you cannot do what I was suggesting with using the Alias directive in Apache without creating an additional wp-config.php. Essentially, where ever your wp-content folder is located, a wp-config.php file must also be located for those plugins that try to include it.</p>
+<p>To get my example to work, you would need to create a wp-config.php file in the same directory where you put the wp-content folder. In this wp-config.php, you would add a require_once function call with the absolute path where your actual wp-config.php is located. If you installed via subversion to /home/example.com/public_html/, then&#8230;</p>
+<p>I&#8217;m in the process of moving a site to a new server and will be testing this out. Either way, I&#8217;m quite pleased the defines WP_CONTENT_DIR and WP_CONTENT_URL are available to us.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/#comment-2738</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 07 Aug 2009 17:45:15 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=779#comment-2738</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/#comment-2737&quot;&gt;Bodger&lt;/a&gt;.
+
+At what point did you see that error?]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/#comment-2737">Bodger</a>.</p>
+<p>At what point did you see that error?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bodger		</title>
+		<link>/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/#comment-2737</link>
+
+		<dc:creator><![CDATA[Bodger]]></dc:creator>
+		<pubDate>Fri, 07 Aug 2009 09:36:35 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=779#comment-2737</guid>
+
+					<description><![CDATA[I could kiss you.
+
+Just thought I&#039;d add the svn error message here so it&#039;s googleable:
+
+svn: Directory &#039;wp-content&#039; is missing]]></description>
+			<content:encoded><![CDATA[<p>I could kiss you.</p>
+<p>Just thought I&#8217;d add the svn error message here so it&#8217;s googleable:</p>
+<p>svn: Directory &#8216;wp-content&#8217; is missing</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/#comment-2736</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 08 May 2009 22:57:54 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=779#comment-2736</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/#comment-2735&quot;&gt;Ivo&lt;/a&gt;.
+
+I think I&#039;d probably make it an optional match instead.
+
+Any particular reason for removing the 301 redirect too?]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/#comment-2735">Ivo</a>.</p>
+<p>I think I&#8217;d probably make it an optional match instead.</p>
+<p>Any particular reason for removing the 301 redirect too?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ivo		</title>
+		<link>/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/#comment-2735</link>
+
+		<dc:creator><![CDATA[Ivo]]></dc:creator>
+		<pubDate>Thu, 07 May 2009 20:31:02 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=779#comment-2735</guid>
+
+					<description><![CDATA[If you change this line:
+
+RewriteRule ^wp-admin/(.*)$ wp/wp-admin/$1 [R=301,L]
+
+to:
+
+RewriteRule ^wp-admin(.*)$ wp/wp-admin$1 [L]
+
+then your admin is also available as wp-admin instead of wp/wp-admin]]></description>
+			<content:encoded><![CDATA[<p>If you change this line:</p>
+<p>RewriteRule ^wp-admin/(.*)$ wp/wp-admin/$1 [R=301,L]</p>
+<p>to:</p>
+<p>RewriteRule ^wp-admin(.*)$ wp/wp-admin$1 [L]</p>
+<p>then your admin is also available as wp-admin instead of wp/wp-admin</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ivo		</title>
+		<link>/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/#comment-2734</link>
+
+		<dc:creator><![CDATA[Ivo]]></dc:creator>
+		<pubDate>Thu, 07 May 2009 20:20:34 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=779#comment-2734</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/#comment-2733&quot;&gt;Joseph Scott&lt;/a&gt;.
+
+Sorry, my fix was wrong.
+
+What now is:
+
+define( &#039;WP_CONTENT_DIR&#039;, dirname( ABSPATH . &#039;/wp-content&#039; ) );
+
+should be:
+
+define( &#039;WP_CONTENT_DIR&#039;, dirname( ABSPATH ) . &#039;/wp-content&#039; );
+
+as you need the dirname of abspath only.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/02/12/installing-wordpress-as-a-subversion-checkout-or-external-in-a-subdirectory/#comment-2733">Joseph Scott</a>.</p>
+<p>Sorry, my fix was wrong.</p>
+<p>What now is:</p>
+<p>define( &#8216;WP_CONTENT_DIR&#8217;, dirname( ABSPATH . &#8216;/wp-content&#8217; ) );</p>
+<p>should be:</p>
+<p>define( &#8216;WP_CONTENT_DIR&#8217;, dirname( ABSPATH ) . &#8216;/wp-content&#8217; );</p>
+<p>as you need the dirname of abspath only.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

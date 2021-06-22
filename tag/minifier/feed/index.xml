@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>minifier &#8211; Joseph Scott</title>
+	<atom:link href="/tag/minifier/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 15 Nov 2010 15:35:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>CSS Minifiers Comparison</title>
+		<link>/2010/11/15/css-minifiers-comparison/</link>
+					<comments>/2010/11/15/css-minifiers-comparison/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 15 Nov 2010 15:35:45 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[csstidy]]></category>
+		<category><![CDATA[minifier]]></category>
+		<category><![CDATA[ms-ajaxadmin]]></category>
+		<category><![CDATA[yuicompressor]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3087</guid>
+
+					<description><![CDATA[compared CSSTidy with best compression, YUICompressor and MS&#8217; Ajaxmin. The verdict is still the same &#8211; CSSTidy looks the best, but there really isn&#8217;t that big of a difference between the three (and virtually no difference between YUIC and Ajaxmin), especially if you take into account gzipping. Still on average you get about 35% size [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+compared CSSTidy with best compression, YUICompressor and MS&#8217; Ajaxmin. The verdict is still the same &#8211; CSSTidy looks the best, but there really isn&#8217;t that big of a difference between the three (and virtually no difference between YUIC and Ajaxmin), especially if you take into account gzipping.</p>
+<p>Still on average you get about 35% size reduction when you minify and 80% when you gzip the minified CSS. Meaning when all is done your users only download 19-20% of what they would normally do if you don&#8217;t perform these simple optimizations.
+</p></blockquote>
+<p>via <a href='http://www.phpied.com/css-minifiers-comparison/'>CSS minifiers comparison / Stoyan&#8217;s phpied.com</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/11/15/css-minifiers-comparison/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>fastclick &#8211; Joseph Scott</title>
+	<atom:link href="/tag/fastclick/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 01 May 2014 14:35:58 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>What A Difference 300ms Can Make</title>
+		<link>/2014/05/01/what-a-difference-300ms-can-make/</link>
+					<comments>/2014/05/01/what-a-difference-300ms-can-make/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 01 May 2014 14:35:58 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[fastclick]]></category>
+		<category><![CDATA[mobile]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10146</guid>
+
+					<description><![CDATA[How we code interactions on the web has changed significantly with mobile touch devices. It isn&#8217;t just about hover, it is also about timing: By default, if you tap on a touchscreen it takes about 300ms before a click event fires. It’s possible to remove this delay, but it’s complicated. &#8211; via Suppressing the 300ms [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>How we code interactions on the web has changed significantly with mobile touch devices.  It isn&#8217;t just about hover, it is also about timing:</p>
+<blockquote><p>
+By default, if you tap on a touchscreen it takes about 300ms before a click event fires. It’s possible to remove this delay, but it’s complicated.
+</p></blockquote>
+<p>&#8211; via <a href='http://www.quirksmode.org/blog/archives/2014/04/suppressing_the.html' title="Great site for front end web issues.">Suppressing the 300ms click delay &#8211; QuirksBlog</a>.</p>
+<p>Some browsers allow pages to turn off this delay when you have <code>width=device-width</code> set.  Unfortunately mobile Safari isn&#8217;t one of those.</p>
+<p>There are JavaScript approaches like <a href="https://github.com/ftlabs/fastclick" title="From the Financial Times no less.">fastclick</a> that can help.  If you are using a UI framework make sure to test the two together, you don&#8217;t want both of them trying to fire click events at the same time.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/05/01/what-a-difference-300ms-can-make/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

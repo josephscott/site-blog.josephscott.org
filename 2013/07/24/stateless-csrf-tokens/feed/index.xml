@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Stateless CSRF Tokens	</title>
+	<atom:link href="/2013/07/24/stateless-csrf-tokens/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/07/24/stateless-csrf-tokens/</link>
+	<description></description>
+	<lastBuildDate>Tue, 27 Aug 2013 21:50:44 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2013/07/24/stateless-csrf-tokens/#comment-4085</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 27 Aug 2013 21:50:44 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=8476#comment-4085</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/07/24/stateless-csrf-tokens/#comment-4084&quot;&gt;mbrubeck&lt;/a&gt;.
+
+There is a === comparison in that function, is that what you meant to refer to?
+
+I also need to update this post to point to an improved version of the code - &lt;a href=&quot;https://josephscott.org/archives/2013/08/better-stateless-csrf-tokens/&quot; rel=&quot;nofollow&quot;&gt;https://josephscott.org/archives/2013/08/better-stateless-csrf-tokens/&lt;/a&gt;.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/07/24/stateless-csrf-tokens/#comment-4084">mbrubeck</a>.</p>
+<p>There is a === comparison in that function, is that what you meant to refer to?</p>
+<p>I also need to update this post to point to an improved version of the code &#8211; <a href="https://josephscott.org/archives/2013/08/better-stateless-csrf-tokens/" rel="nofollow">https://josephscott.org/archives/2013/08/better-stateless-csrf-tokens/</a>.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: mbrubeck		</title>
+		<link>/2013/07/24/stateless-csrf-tokens/#comment-4084</link>
+
+		<dc:creator><![CDATA[mbrubeck]]></dc:creator>
+		<pubDate>Tue, 27 Aug 2013 21:41:36 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=8476#comment-4084</guid>
+
+					<description><![CDATA[It looks like this might be vulnerable to timing attacks, because of the == string comparison to check the hash in request_token_verify.  You should use a constant-time string comparison to prevent this.]]></description>
+			<content:encoded><![CDATA[<p>It looks like this might be vulnerable to timing attacks, because of the == string comparison to check the hash in request_token_verify.  You should use a constant-time string comparison to prevent this.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2013/07/24/stateless-csrf-tokens/#comment-4083</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 12 Aug 2013 16:37:38 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=8476#comment-4083</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/07/24/stateless-csrf-tokens/#comment-4082&quot;&gt;John Wilander&lt;/a&gt;.
+
+I didn&#039;t want to get into cookies for CSRF tokens.  If you have multiple forms on a page you would potentially want a unique CSRF token for each form.  While you could still do that using cookies, it would bit a more management.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/07/24/stateless-csrf-tokens/#comment-4082">John Wilander</a>.</p>
+<p>I didn&#8217;t want to get into cookies for CSRF tokens.  If you have multiple forms on a page you would potentially want a unique CSRF token for each form.  While you could still do that using cookies, it would bit a more management.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: John Wilander		</title>
+		<link>/2013/07/24/stateless-csrf-tokens/#comment-4082</link>
+
+		<dc:creator><![CDATA[John Wilander]]></dc:creator>
+		<pubDate>Mon, 12 Aug 2013 16:27:26 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=8476#comment-4082</guid>
+
+					<description><![CDATA[I blogged about this in January 2012: http://appsandsecurity.blogspot.se/2012/01/stateless-csrf-protection.html
+… and later that year I did a presentation on even further research, proposing a triple submit to countermeasure HttpOnly cookie overwrites via subdomain XSS and cookie jar overflow: http://www.slideshare.net/johnwilander/stateless-anticsrf]]></description>
+			<content:encoded><![CDATA[<p>I blogged about this in January 2012: <a href="http://appsandsecurity.blogspot.se/2012/01/stateless-csrf-protection.html" rel="nofollow ugc">http://appsandsecurity.blogspot.se/2012/01/stateless-csrf-protection.html</a><br />
+… and later that year I did a presentation on even further research, proposing a triple submit to countermeasure HttpOnly cookie overwrites via subdomain XSS and cookie jar overflow: <a href="http://www.slideshare.net/johnwilander/stateless-anticsrf" rel="nofollow ugc">http://www.slideshare.net/johnwilander/stateless-anticsrf</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2013/07/24/stateless-csrf-tokens/#comment-4081</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 02 Aug 2013 19:21:55 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=8476#comment-4081</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/07/24/stateless-csrf-tokens/#comment-4079&quot;&gt;Holger&lt;/a&gt;.
+
+Depends on what other processes submitted data goes through.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/07/24/stateless-csrf-tokens/#comment-4079">Holger</a>.</p>
+<p>Depends on what other processes submitted data goes through.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2013/07/24/stateless-csrf-tokens/#comment-4080</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Fri, 02 Aug 2013 19:20:35 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=8476#comment-4080</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/07/24/stateless-csrf-tokens/#comment-4078&quot;&gt;Steve Clay&lt;/a&gt;.
+
+True, a but not additional state.  Perhaps that would have been a better way to describe it.
+
+You should be validating user accounts along with CSRF tokens anyway.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/07/24/stateless-csrf-tokens/#comment-4078">Steve Clay</a>.</p>
+<p>True, a but not additional state.  Perhaps that would have been a better way to describe it.</p>
+<p>You should be validating user accounts along with CSRF tokens anyway.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Holger		</title>
+		<link>/2013/07/24/stateless-csrf-tokens/#comment-4079</link>
+
+		<dc:creator><![CDATA[Holger]]></dc:creator>
+		<pubDate>Fri, 02 Aug 2013 19:01:33 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=8476#comment-4079</guid>
+
+					<description><![CDATA[&quot;...as an attacker can set the token to zero and it ...&quot;
+How, can an attacker pass an INT? ;-)]]></description>
+			<content:encoded><![CDATA[<p>&#8220;&#8230;as an attacker can set the token to zero and it &#8230;&#8221;<br />
+How, can an attacker pass an INT? 😉</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Steve Clay		</title>
+		<link>/2013/07/24/stateless-csrf-tokens/#comment-4078</link>
+
+		<dc:creator><![CDATA[Steve Clay]]></dc:creator>
+		<pubDate>Fri, 02 Aug 2013 18:51:40 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=8476#comment-4078</guid>
+
+					<description><![CDATA[Useful but not stateless. If you need user specific data (and you definitely want to for this) that&#039;s &quot;state&quot;.]]></description>
+			<content:encoded><![CDATA[<p>Useful but not stateless. If you need user specific data (and you definitely want to for this) that&#8217;s &#8220;state&#8221;.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2013/07/24/stateless-csrf-tokens/#comment-4077</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 25 Jul 2013 04:59:34 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=8476#comment-4077</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/07/24/stateless-csrf-tokens/#comment-4076&quot;&gt;Daniel Bachhuber&lt;/a&gt;.
+
+It was a fun exercise thinking through the issues involved.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/07/24/stateless-csrf-tokens/#comment-4076">Daniel Bachhuber</a>.</p>
+<p>It was a fun exercise thinking through the issues involved.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Daniel Bachhuber		</title>
+		<link>/2013/07/24/stateless-csrf-tokens/#comment-4076</link>
+
+		<dc:creator><![CDATA[Daniel Bachhuber]]></dc:creator>
+		<pubDate>Thu, 25 Jul 2013 04:51:39 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=8476#comment-4076</guid>
+
+					<description><![CDATA[Fun read — thanks for taking the time to write it up.]]></description>
+			<content:encoded><![CDATA[<p>Fun read — thanks for taking the time to write it up.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

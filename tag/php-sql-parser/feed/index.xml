@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>php-sql-parser &#8211; Joseph Scott</title>
+	<atom:link href="/tag/php-sql-parser/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 18 Nov 2010 17:26:02 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>php-sql-parser</title>
+		<link>/2010/11/18/php-sql-parser/</link>
+					<comments>/2010/11/18/php-sql-parser/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 18 Nov 2010 17:26:02 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[parser]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[php-sql-parser]]></category>
+		<category><![CDATA[sql]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3204</guid>
+
+					<description><![CDATA[Full support for the MySQL dialect for the following statement types SELECT INSERT UPDATE DELETE REPLACE via php-sql-parser Targeting MySQL syntax is a reasonable trade off. It appears to handle reasonably complex queries as well. I&#8217;m going to keep this link handy, I&#8217;ve got a feeling there are some fun (and perhaps twisted) ways to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+Full support for the MySQL dialect for the following statement types</p>
+<ul>
+<li>SELECT</li>
+<li>INSERT</li>
+<li>UPDATE</li>
+<li>DELETE</li>
+<li>REPLACE</li>
+</blockquote>
+<p>via <a href='http://code.google.com/p/php-sql-parser/'>php-sql-parser</a></p>
+<p>Targeting MySQL syntax is a reasonable trade off.  It appears to handle <a href="http://code.google.com/p/php-sql-parser/wiki/ComplexExample">reasonably complex queries</a> as well.</p>
+<p>I&#8217;m going to keep this link handy, I&#8217;ve got a feeling there are some fun (and perhaps twisted) ways to make use of this.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/11/18/php-sql-parser/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

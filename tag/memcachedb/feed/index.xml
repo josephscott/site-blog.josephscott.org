@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>memcachedb &#8211; Joseph Scott</title>
+	<atom:link href="/tag/memcachedb/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 20 Feb 2008 16:15:58 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Links for Tue 19 Feb 2008</title>
+		<link>/2008/02/20/links-for-tue-19-feb-2008-2/</link>
+					<comments>/2008/02/20/links-for-tue-19-feb-2008-2/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 20 Feb 2008 16:15:58 +0000</pubDate>
+				<category><![CDATA[Link Dump]]></category>
+		<category><![CDATA[cache]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[email]]></category>
+		<category><![CDATA[Links]]></category>
+		<category><![CDATA[markmail]]></category>
+		<category><![CDATA[memcache]]></category>
+		<category><![CDATA[memcachedb]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[PostgreSQL]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2008/02/20/links-for-tue-19-feb-2008-2/</guid>
+
+					<description><![CDATA[The Making of MarkMail: PostgreSQL: More Traffic than MySQL (and a first Google spotting) &#8211; I&#039;m not really surprised that the PostgreSQL lists have more traffic than the MySQL lists. PostgreSQL seems to be much more of a community owned project than MySQL is. Tags: email markmail mysql postgresql memcachedb &#8211; Google Code &#8211; Persistent [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>
+<p><a href="http://markmail.blogspot.com/2008/02/postgresql-more-traffic-than-mysql-and.html">The Making of MarkMail: PostgreSQL: More Traffic than MySQL (and a first Google spotting)</a> &#8211; I&#039;m not really surprised that the PostgreSQL lists have more traffic than the MySQL lists.  PostgreSQL seems to be much more of a community owned project than MySQL is. <br /> Tags: <a href="http://del.icio.us/josephscott/email">email</a> <a href="http://del.icio.us/josephscott/markmail">markmail</a> <a href="http://del.icio.us/josephscott/mysql">mysql</a> <a href="http://del.icio.us/josephscott/postgresql">postgresql</a>  </p>
+</li>
+<li>
+<p><a href="http://code.google.com/p/memcachedb/">memcachedb &#8211; Google Code</a> &#8211; Persistent version of Memcache that uses Berkeley DB as back end storage. <br /> Tags: <a href="http://del.icio.us/josephscott/cache">cache</a> <a href="http://del.icio.us/josephscott/database">database</a> <a href="http://del.icio.us/josephscott/memcache">memcache</a> <a href="http://del.icio.us/josephscott/memcachedb">memcachedb</a>  </p>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/02/20/links-for-tue-19-feb-2008-2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

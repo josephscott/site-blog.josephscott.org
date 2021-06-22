@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Efficient PHP: Don&#8217;t Abuse dirname( __FILE__ )	</title>
+	<atom:link href="/2010/04/08/efficient-php-dont-abuse-dirname-__file__/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/04/08/efficient-php-dont-abuse-dirname-__file__/</link>
+	<description></description>
+	<lastBuildDate>Wed, 15 Jan 2014 13:39:02 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Toby		</title>
+		<link>/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3404</link>
+
+		<dc:creator><![CDATA[Toby]]></dc:creator>
+		<pubDate>Wed, 15 Jan 2014 13:39:02 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2147#comment-3404</guid>
+
+					<description><![CDATA[I have justed played around with YiiFramework and tested it.
+
+A page from yii-user-management module (index page) took 3-4 seconds to load.
+
+I analyzed it and saw YiiFramework uses dirname all over the place. 99% of the total page loading time was is the dirname method!
+
+Why is everyone using YiiFramework I wonder...]]></description>
+			<content:encoded><![CDATA[<p>I have justed played around with YiiFramework and tested it.</p>
+<p>A page from yii-user-management module (index page) took 3-4 seconds to load.</p>
+<p>I analyzed it and saw YiiFramework uses dirname all over the place. 99% of the total page loading time was is the dirname method!</p>
+<p>Why is everyone using YiiFramework I wonder&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Isi		</title>
+		<link>/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3403</link>
+
+		<dc:creator><![CDATA[Isi]]></dc:creator>
+		<pubDate>Fri, 20 Jul 2012 12:41:06 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2147#comment-3403</guid>
+
+					<description><![CDATA[Hi
+
+I&#039;m not expert in PHP, but I see a problem in your approach or I am doing something wrong! :-)
+
+If in all the files I define 
+$dirname=dirname(__FILE__)
+this will modify the value of that variable in the including files (is there any way to have a really local variable?)
+
+Suppose the following files:
+master.php includes dir1/child.php and dir2/child.php and the child.php files inlude other files.
+
+[master.php]
+
+
+[child.php]
+
+
+In this situation, I will get an error in master.php when trying to include
+require_once($dirBase . &#039;/dir2/child.php&#039;);
+because after including &#039;dir1/child.php&#039; the value of dirBase will have changed!
+
+But If I use dirname(__FILE__ everywhere (unfortunately I can&#039;t use __DIR__) everything works fine!
+
+As I have said, probably I&#039;m doing something wrong, any hint please? :-)
+
+Thanks
+
+Isi]]></description>
+			<content:encoded><![CDATA[<p>Hi</p>
+<p>I&#8217;m not expert in PHP, but I see a problem in your approach or I am doing something wrong! 🙂</p>
+<p>If in all the files I define<br />
+$dirname=dirname(__FILE__)<br />
+this will modify the value of that variable in the including files (is there any way to have a really local variable?)</p>
+<p>Suppose the following files:<br />
+master.php includes dir1/child.php and dir2/child.php and the child.php files inlude other files.</p>
+<p>[master.php]</p>
+<p>[child.php]</p>
+<p>In this situation, I will get an error in master.php when trying to include<br />
+require_once($dirBase . &#8216;/dir2/child.php&#8217;);<br />
+because after including &#8216;dir1/child.php&#8217; the value of dirBase will have changed!</p>
+<p>But If I use dirname(__FILE__ everywhere (unfortunately I can&#8217;t use __DIR__) everything works fine!</p>
+<p>As I have said, probably I&#8217;m doing something wrong, any hint please? 🙂</p>
+<p>Thanks</p>
+<p>Isi</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3402</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 17 Nov 2010 06:37:14 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2147#comment-3402</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3401&quot;&gt;Felipe Lavín&lt;/a&gt;.
+
+I haven&#039;t tested it, but I&#039;d expect it to be at least as efficient as calling dirname( __FILE__ ) just once, if not more so.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3401">Felipe Lavín</a>.</p>
+<p>I haven&#8217;t tested it, but I&#8217;d expect it to be at least as efficient as calling dirname( __FILE__ ) just once, if not more so.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Felipe Lavín		</title>
+		<link>/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3401</link>
+
+		<dc:creator><![CDATA[Felipe Lavín]]></dc:creator>
+		<pubDate>Tue, 16 Nov 2010 19:10:18 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2147#comment-3401</guid>
+
+					<description><![CDATA[Have you tested this with __DIR__ ? (it&#039;s a new magic constant as of PHP 5.3.0)]]></description>
+			<content:encoded><![CDATA[<p>Have you tested this with __DIR__ ? (it&#8217;s a new magic constant as of PHP 5.3.0)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3400</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 17 Jun 2010 17:04:07 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2147#comment-3400</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3399&quot;&gt;Steven Spraot&lt;/a&gt;.
+
+dirname( __FILE__ ) gets you the full path, no matter where your file lives or gets moved to.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3399">Steven Spraot</a>.</p>
+<p>dirname( __FILE__ ) gets you the full path, no matter where your file lives or gets moved to.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Steven Spraot		</title>
+		<link>/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3399</link>
+
+		<dc:creator><![CDATA[Steven Spraot]]></dc:creator>
+		<pubDate>Wed, 16 Jun 2010 23:47:15 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2147#comment-3399</guid>
+
+					<description><![CDATA[Using full paths is often not possible, e.g. developing for a client with a different directory layout to what you&#039;re developing with locally.
+
+Or, when the client changes the paths of your files.]]></description>
+			<content:encoded><![CDATA[<p>Using full paths is often not possible, e.g. developing for a client with a different directory layout to what you&#8217;re developing with locally.</p>
+<p>Or, when the client changes the paths of your files.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3398</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 31 May 2010 16:33:06 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2147#comment-3398</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3397&quot;&gt;alexanderpas&lt;/a&gt;.
+
+The general rule is to use full paths when ever possible.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3397">alexanderpas</a>.</p>
+<p>The general rule is to use full paths when ever possible.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: alexanderpas		</title>
+		<link>/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3397</link>
+
+		<dc:creator><![CDATA[alexanderpas]]></dc:creator>
+		<pubDate>Sat, 29 May 2010 06:08:57 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2147#comment-3397</guid>
+
+					<description><![CDATA[don&#039;t forget you can use the current directory indicator (the dot) in required and include.]]></description>
+			<content:encoded><![CDATA[<p>don&#8217;t forget you can use the current directory indicator (the dot) in required and include.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3396</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 08 Apr 2010 20:17:25 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2147#comment-3396</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3395&quot;&gt;Angelo Mandato&lt;/a&gt;.
+
+Right, I think the general goal for something like this is to minimize the number of times something like dirname( __FILE__ ) is called.  And if you can avoid it entirely with __DIR__ in 5.3 then all the better!]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3395">Angelo Mandato</a>.</p>
+<p>Right, I think the general goal for something like this is to minimize the number of times something like dirname( __FILE__ ) is called.  And if you can avoid it entirely with __DIR__ in 5.3 then all the better!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Angelo Mandato		</title>
+		<link>/2010/04/08/efficient-php-dont-abuse-dirname-__file__/#comment-3395</link>
+
+		<dc:creator><![CDATA[Angelo Mandato]]></dc:creator>
+		<pubDate>Thu, 08 Apr 2010 20:04:59 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2147#comment-3395</guid>
+
+					<description><![CDATA[This was an eye opener! I use dirname() and basename() a lot. I wonder if this is also a performance issue when using an accelerator such as APC with PHP.
+
+Luckily in my case for many of my applications, I get the root folder with a special function call so my quick plan is to set a unique global variable when the function is called the first time and all future calls return the global variable. When I do a major rewrite I will change my projects to a unique define approach. I&#039;m definitely going to switch my WordPress plugins to use a define for the root folder as well!]]></description>
+			<content:encoded><![CDATA[<p>This was an eye opener! I use dirname() and basename() a lot. I wonder if this is also a performance issue when using an accelerator such as APC with PHP.</p>
+<p>Luckily in my case for many of my applications, I get the root folder with a special function call so my quick plan is to set a unique global variable when the function is called the first time and all future calls return the global variable. When I do a major rewrite I will change my projects to a unique define approach. I&#8217;m definitely going to switch my WordPress plugins to use a define for the root folder as well!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

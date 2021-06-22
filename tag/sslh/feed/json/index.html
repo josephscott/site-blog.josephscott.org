@@ -1,0 +1,39 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/sslh/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/sslh/",
+    "feed_url": "https://blog.josephscott.org/tag/sslh/feed/json/",
+    "language": "en-US",
+    "title": "sslh &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=9293",
+            "url": "https://blog.josephscott.org/2013/10/29/listen-for-ssl-and-ssh-on-the-same-port/",
+            "title": "Listen for SSL and SSH on the Same Port",
+            "content_html": "<p>Many corporate firewalls will limit outgoing connections to ports 80 and 443 in a vain effort to restrict access to non-web services.  You could run SSH on port 80 or 443 on a VPS or dedicated server, but if you have one of those you are probably already using it to host a small web site. Wouldn&#8217;t it be nice if your server could listen for both SSH and HTTP/S on port 80 and 443?  That is where <a href=\"http://www.rutschle.net/tech/sslh.shtml\">sslh</a> comes in:</p>\n<blockquote><p>\nsslh accepts connections on specified ports, and forwards them further based on tests performed on the first data packet sent by the remote client.</p>\n<p>Probes for HTTP, SSL, SSH, OpenVPN, tinc, XMPP are implemented, and any other protocol that can be tested using a regular expression, can be recognised. A typical use case is to allow serving several services on port 443 (e.g. to connect to ssh from inside a corporate firewall, which almost never block port 443) while still serving HTTPS on that port.</p>\n<p>Hence sslh acts as a protocol demultiplexer, or a switchboard. Its name comes from its original function to serve SSH and HTTPS on the same port.\n</p></blockquote>\n<p>Source code is available at <a href=\"https://github.com/yrutschle/sslh\">https://github.com/yrutschle/sslh</a>.</p>\n<p>For small uses cases this may come in handy.  If you were constantly needing to SSH to port 80 or 443 then I&#8217;d recommend just spending a few dollars a month to get a VPS dedicated to that task.</p>\n<p>If you are stuck in a limited corporate network another tool you may find useful is <a href=\"http://www.agroman.net/corkscrew/\">corkscrew</a>, which tunnels SSH connections through HTTP proxies.</p>\n",
+            "content_text": "Many corporate firewalls will limit outgoing connections to ports 80 and 443 in a vain effort to restrict access to non-web services.  You could run SSH on port 80 or 443 on a VPS or dedicated server, but if you have one of those you are probably already using it to host a small web site. Wouldn&#8217;t it be nice if your server could listen for both SSH and HTTP/S on port 80 and 443?  That is where sslh comes in:\n\nsslh accepts connections on specified ports, and forwards them further based on tests performed on the first data packet sent by the remote client.\nProbes for HTTP, SSL, SSH, OpenVPN, tinc, XMPP are implemented, and any other protocol that can be tested using a regular expression, can be recognised. A typical use case is to allow serving several services on port 443 (e.g. to connect to ssh from inside a corporate firewall, which almost never block port 443) while still serving HTTPS on that port.\nHence sslh acts as a protocol demultiplexer, or a switchboard. Its name comes from its original function to serve SSH and HTTPS on the same port.\n\nSource code is available at https://github.com/yrutschle/sslh.\nFor small uses cases this may come in handy.  If you were constantly needing to SSH to port 80 or 443 then I&#8217;d recommend just spending a few dollars a month to get a VPS dedicated to that task.\nIf you are stuck in a limited corporate network another tool you may find useful is corkscrew, which tunnels SSH connections through HTTP proxies.",
+            "date_published": "2013-10-29T17:15:58-06:00",
+            "date_modified": "2013-10-29T17:15:58-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "corkscrew",
+                "http",
+                "ssh",
+                "ssl",
+                "sslh",
+                "Posts"
+            ]
+        }
+    ]
+}

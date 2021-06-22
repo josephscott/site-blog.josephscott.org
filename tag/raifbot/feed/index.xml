@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>raifbot &#8211; Joseph Scott</title>
+	<atom:link href="/tag/raifbot/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 17 May 2011 20:05:33 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>An IRC Experiment &#8211; raifbot</title>
+		<link>/2011/05/17/an-irc-experiment-raifbot/</link>
+					<comments>/2011/05/17/an-irc-experiment-raifbot/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 17 May 2011 20:05:33 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[anonymous-functions]]></category>
+		<category><![CDATA[irc]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[raifbot]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=4079</guid>
+
+					<description><![CDATA[Toward the end of 2010 I really got the itch to experiment with new/different coding projects. The first thing this led me to was to write an IRC bot. While I use IRC daily, it has been years since I&#8217;ve been any deeper besides casual use. So I started with writing a simple library to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Toward the end of 2010 I really got the itch to experiment with new/different coding projects.  The first thing this led me to was to write an IRC bot.</p>
+<p>While I use IRC daily, it has been years since I&#8217;ve been any deeper besides casual use.  So I started with writing a simple library to speak to IRC servers.  That didn&#8217;t hold my interest for very long, so I retired that code and started building on top of the <a href="http://pear.php.net/package/Net_SmartIRC/">Net_SmartIRC</a> package from <a href="http://pear.php.net/">Pear</a>.   I was writing this bot in <a href="http://php.net/">PHP</a>, in part because I wanted to play with a few new language feature, specifically &#8211; <a href="http://www.php.net/manual/en/functions.anonymous.php">anonymous functions</a>.  More on those in a minute.</p>
+<p>From that effort was born <a href="http://raifbot.wordpress.com/">raifbot</a>, which hangs on out #uphpu on <a href="http://freenode.net/">freenode</a>.  It&#8217;s been fun hooking up bot commands to various features and servers, you can see the list of currently support commands at <a href="http://raifbot.wordpress.com/">http://raifbot.wordpress.com/</a>.  Many of the popular commands are just fun little diversions: <a href="http://raifbot.wordpress.com/commands-lart/">$lart</a>, <a href="http://raifbot.wordpress.com/commands-8ball/">$8ball</a>, <a href="http://raifbot.wordpress.com/commands-chuck-fact/">$chuck-fact</a>.  Others reach out to online services to provide info, like <a href="http://raifbot.wordpress.com/commands-weather/">$weather</a>.</p>
+<p>Now back to the idea of using anonymous functions.  All of the command functions in raifbot have this style:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+$_commands[&#8216;rot13&#8217;] = function ( $channel, $nick, $msg ) {<br />
+    global $bot;</p>
+<p>    if ( empty( $msg ) ) {<br />
+        return;<br />
+    }</p>
+<p>    $reply = &quot;{$nick} &#8211; rot13( &#8216;{$msg}&#8217; ) : &quot; . str_rot13( $msg );<br />
+    $bot-&gt;send_message( $channel, $reply );<br />
+};<br />
+[/sourcecode]</p>
+<p>Each command function definition is just an entry in the global <code>$_commands</code> array.</p>
+<p>I used this approach because I had a particular feature in mind, the ability to add new commands and update existing ones without having to restart the bot process.  In the end I choose anonymous functions to accomplish this, which allowed me to avoid <code>eval</code> and other odd language hacks.</p>
+<p>When I send a <code>HUP</code> signal to the bot process that triggers a reload of all the command files.  At that point updating a command function definition is just a matter of updating an entry in an array.  No errors and no fuss.  I add new commands and update existing ones without having to ever take down the bot process.  So far this has worked very well.</p>
+<p>If you want to interact with raifbot join the #uphpu channel on freenode and give a spin.  Remember all of the commands start with $ and the list of supported commands is <a href="http://raifbot.wordpress.com/">http://raifbot.wordpress.com/</a>.</p>
+<p>In addition to raifbot I&#8217;ve started a few other experimental projects.  Some more successful than others.  Though one I started last week I&#8217;m particularly excited about, I&#8217;ll post more on that after I&#8217;ve added a few more features.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/05/17/an-irc-experiment-raifbot/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>UPHPU &#8211; PHP and IRC Bots</title>
+		<link>/2011/01/18/uphpu-php-and-irc-bots/</link>
+					<comments>/2011/01/18/uphpu-php-and-irc-bots/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 18 Jan 2011 18:56:18 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[irc]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[raifbot]]></category>
+		<category><![CDATA[uphpu]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3433</guid>
+
+					<description><![CDATA[This Thursday I&#8217;m going to talk about PHP and IRC bots at the UPHPU meeting. I recently wrote an IRC bot in PHP using the Net_SmartIRC library. For now the bot, raifbot, has been living in #uphpu on freenode. It understands some basic commands, like: $lart , $rlart, $chuck-fact, $random-number and so on. I&#8217;ll talk [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>This Thursday I&#8217;m going to talk about PHP and IRC bots at the <a href="http://uphpu.org/">UPHPU</a> meeting.  I recently wrote an IRC bot in PHP using the <a href="http://pear.php.net/package/Net_SmartIRC">Net_SmartIRC</a> library.  For now the bot, raifbot, has been living in #uphpu on freenode.  It understands some basic commands, like: $lart <nick>, $rlart, $chuck-fact, $random-number and so on.</p>
+<p>I&#8217;ll talk about the basics of getting started with Net_SmartIRC as well the details of how raifbot works.  Bring some ideas on new features you&#8217;d like to see in raifbot and we&#8217;ll add some of them live, during the meeting.</p>
+<p>The UPHPU meeting is still at the Code Greene offices in down town Salt Lake City, but they&#8217;ve moved:</p>
+<blockquote><p>
+Please note the new location of Code Greene&#8217;s office, around the corner on State Street, between Charles Schwab on 300 S and America First/Five Star Restaurant/Gallivan Avenue. On street parking is usually plentiful, free after 6, and might be the best option, but there are garages there too
+</p></blockquote>
+<p>268 S State St #100<br />
+Salt Lake City, UT  84111</p>
+<p><iframe loading="lazy" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;q=268+S+State+St,+Salt+Lake+City,+Salt+Lake,+Utah+84111&amp;sll=40.5455,-111.8524&amp;sspn=0.012604,0.023754&amp;ie=UTF8&amp;geocode=FbP-bQIdUbdU-Q&amp;split=0&amp;hq=&amp;hnear=268+S+State+St,+Salt+Lake+City,+Salt+Lake,+Utah+84111&amp;ll=40.763059,-111.888559&amp;spn=0.003157,0.005938&amp;z=14&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;q=268+S+State+St,+Salt+Lake+City,+Salt+Lake,+Utah+84111&amp;sll=40.5455,-111.8524&amp;sspn=0.012604,0.023754&amp;ie=UTF8&amp;geocode=FbP-bQIdUbdU-Q&amp;split=0&amp;hq=&amp;hnear=268+S+State+St,+Salt+Lake+City,+Salt+Lake,+Utah+84111&amp;ll=40.763059,-111.888559&amp;spn=0.003157,0.005938&amp;z=14" style="color:#0000FF;text-align:left">View Larger Map</a></small></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/01/18/uphpu-php-and-irc-bots/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

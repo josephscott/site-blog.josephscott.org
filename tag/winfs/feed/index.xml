@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>winfs &#8211; Joseph Scott</title>
+	<atom:link href="/tag/winfs/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 26 Jun 2006 19:32:48 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>&#8220;It represents a change to our original delivery strategy&#8221;</title>
+		<link>/2006/06/26/it-represents-a-change-to-our-original-delivery-strategy/</link>
+					<comments>/2006/06/26/it-represents-a-change-to-our-original-delivery-strategy/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 26 Jun 2006 19:32:48 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<category><![CDATA[Windows]]></category>
+		<category><![CDATA[winfs]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/06/26/it-represents-a-change-to-our-original-delivery-strategy/</guid>
+
+					<description><![CDATA[Isn&#8217;t that the truth 🙂 The big news at the end of last week is that WinFS will not ship with Windows Vista. If you follow that link you should be warned that it is mostly spin. Don&#8217;t believe me? You&#8217;ll see gems like: It&#8217;s great technology and we are super-excited to be productizing this [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Isn&#8217;t that the truth <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>The big news at the end of last week is that <a href="http://blogs.msdn.com/winfs/archive/2006/06/23/644706.aspx">WinFS will not ship with Windows Vista</a>.  If you follow that link you should be warned that it is mostly spin.  Don&#8217;t believe me?  You&#8217;ll see gems like:</p>
+<blockquote><p>
+It&#8217;s great technology and we are super-excited to be productizing this way.
+</p></blockquote>
+<p>Productizing?  Is that even a word?  The folks at <a href="http://www.m-w.com/dictionary/productizing">Merriam-Webster Online don&#8217;t seem to think so</a>.  I checked a few other dictionaries and turned up nothing.  So Quentin Clark, what exactly is productizing that makes you &#8220;super-excited&#8221;?</p>
+<p>Back to WinFS, it seems that it will be absorbed into the next version of SQL Server and ADO.NET.  Given the last update to SQL Server (2005) took five or six years, is there any hope of seeing WinFS in SQL Server before 2010?  Of course if you want to bring up file system announcements from Microsoft you could argue that the basis of WinFS was announced almost 15 years ago with Cairo.  I expect that the general concept of WinFS will buried from a PR stand point as quickly as possible by Microsoft.</p>
+<p>At some point I hope to see a giant collective &#8220;we&#8217;ll believe it when it ships&#8221; response when Microsoft announces yet another new technology that will change everything.  Oh yeah, and it will ship in the next version of Windows.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/06/26/it-represents-a-change-to-our-original-delivery-strategy/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

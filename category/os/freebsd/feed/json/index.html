@@ -1,0 +1,266 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/category/os/freebsd/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/category/os/freebsd/",
+    "feed_url": "https://blog.josephscott.org/category/os/freebsd/feed/json/",
+    "language": "en-US",
+    "title": "FreeBSD &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2005/05/13/everybody-caches/",
+            "url": "https://blog.josephscott.org/2005/05/13/everybody-caches/",
+            "title": "Everybody Caches",
+            "content_html": "<p>Caching is one of the techniques used in software and hardware to make things faster.  We usually like things to be fast, so we are usually happy to use systems that cache in a variety of ways.  Let&#8217;s face it, everybody caches.</p>\n<p>If you&#8217;ve been living on this planet for awhile now you&#8217;ll recognize that it is pretty rare that you get something for nothing.  It&#8217;s no different with caching.  The OS on your computer caches reads and writes to your hard drive, and from time to time will flush that cache out to disk.  It&#8217;s important that this flush happens so that when you loose power your data is on the hard drive, not memory.  Except that everybody caches, this includes your hard drives.  So when your OS goes to flush data to the disk, the disk caches it in its own memory and eventually flushes to the actual disk portion of the drive.  Once again this is all down in the name of speed.  And once again the biggest risk of this is loss of data when the power goes out.  You want to note that this is why many RAID controllers will often have a small battery to keep that data they&#8217;ve cached in memory still there for a day or two, by which time we hope the power will have been restored.</p>\n<p>Hopefully none of the above is news, this has been the situation for computers and hard drives for years.  It is news for at least some folks though, other wise the <a href=\"http://slashdot.org/\">Slashdot</a> crowd wouldn&#8217;t be so surprised that <a href=\"http://hardware.slashdot.org/article.pl?sid=05/05/13/0529252&amp;tid=198&amp;tid=128\">your hard drive lies to you</a>.  This discussion seems to have been touched off by a <a href=\"http://www.livejournal.com/~brad/2116715.html\">tool that demos your hard drive caching</a> and how you can turn it off in Linux.  Brad wrote this tool as a result of <a href=\"http://www.livejournal.com/community/lj_dev/670215.html\">LiveJournal&#8217;s outage</a>, where data loss do to drive write caching seems to have been a pretty major problem for them.  Not long after LJs problems <a href=\"http://news.netcraft.com/archives/2005/02/22/power_outage_knocks_wikipedia_offline.html\">Wikipedia was offline for the same reason</a>.</p>\n<p>Some of the comments on the Slashdot article about hard drives caching did provide good information.  One <a href=\"http://hardware.slashdot.org/comments.pl?sid=149349&amp;cid=12517596\">comment pointed out caching issues mentioned on various man pages</a> from Mac OS X, Linux and FreeBSD.  This comment was interesting because it references another point in time where there was a lot of discussion about what do with hard drive caching and the risks there of.  The FreeBSD man page quoted in the comment references FreeBSD 4.3, which was <a href=\"http://www.freebsd.org/releases/\">released four years ago</a>.  I remember the huge discussion that broke out about disabling hard drive caching in FreeBSD.  Many argued that the risks of data of loss were just too great, but in the end the huge performance loss when turning off the hard drive caching was just too much bare.</p>\n<p>Thankfully another comment also pointed to an <a href=\"http://lists.apple.com/archives/darwin-dev/2005/Feb/msg00072.html\">Apple email about hard drive caching</a>.  If you deal with file storage go read that, it is very informative.  The lesson learned is that for plain average systems with off the shelf hard drives, you may or may not be able to convince your hard drive to put data on to the disk manually.</p>\n<p>Just remember, everybody caches, so plan accordingly.</p>\n",
+            "content_text": "Caching is one of the techniques used in software and hardware to make things faster.  We usually like things to be fast, so we are usually happy to use systems that cache in a variety of ways.  Let&#8217;s face it, everybody caches.\nIf you&#8217;ve been living on this planet for awhile now you&#8217;ll recognize that it is pretty rare that you get something for nothing.  It&#8217;s no different with caching.  The OS on your computer caches reads and writes to your hard drive, and from time to time will flush that cache out to disk.  It&#8217;s important that this flush happens so that when you loose power your data is on the hard drive, not memory.  Except that everybody caches, this includes your hard drives.  So when your OS goes to flush data to the disk, the disk caches it in its own memory and eventually flushes to the actual disk portion of the drive.  Once again this is all down in the name of speed.  And once again the biggest risk of this is loss of data when the power goes out.  You want to note that this is why many RAID controllers will often have a small battery to keep that data they&#8217;ve cached in memory still there for a day or two, by which time we hope the power will have been restored.\nHopefully none of the above is news, this has been the situation for computers and hard drives for years.  It is news for at least some folks though, other wise the Slashdot crowd wouldn&#8217;t be so surprised that your hard drive lies to you.  This discussion seems to have been touched off by a tool that demos your hard drive caching and how you can turn it off in Linux.  Brad wrote this tool as a result of LiveJournal&#8217;s outage, where data loss do to drive write caching seems to have been a pretty major problem for them.  Not long after LJs problems Wikipedia was offline for the same reason.\nSome of the comments on the Slashdot article about hard drives caching did provide good information.  One comment pointed out caching issues mentioned on various man pages from Mac OS X, Linux and FreeBSD.  This comment was interesting because it references another point in time where there was a lot of discussion about what do with hard drive caching and the risks there of.  The FreeBSD man page quoted in the comment references FreeBSD 4.3, which was released four years ago.  I remember the huge discussion that broke out about disabling hard drive caching in FreeBSD.  Many argued that the risks of data of loss were just too great, but in the end the huge performance loss when turning off the hard drive caching was just too much bare.\nThankfully another comment also pointed to an Apple email about hard drive caching.  If you deal with file storage go read that, it is very informative.  The lesson learned is that for plain average systems with off the shelf hard drives, you may or may not be able to convince your hard drive to put data on to the disk manually.\nJust remember, everybody caches, so plan accordingly.",
+            "date_published": "2005-05-13T09:39:08-06:00",
+            "date_modified": "2005-05-13T09:39:08-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "FreeBSD",
+                "Linux",
+                "Mac OS X",
+                "OS",
+                "Windows"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2005/04/12/scott-long-steps-down-from-the-freebsd-core-team/",
+            "url": "https://blog.josephscott.org/2005/04/12/scott-long-steps-down-from-the-freebsd-core-team/",
+            "title": "Scott Long Steps Down From The FreeBSD Core Team",
+            "content_html": "<p>Scott Long announced today that he is <a href=\"http://lists.freebsd.org/pipermail/freebsd-hackers/2005-April/011443.html\">stepping down from the FreeBSD Core Team</a>.  It sounds like he was just getting spread too thin, so by leaving the Core Team he can spend more time hacking on FreeBSD and dealing with release engineering.  If this will make for a better FreeBSD and keep Scott happy then I think this is a wise decision.</p>\n<p>While I&#8217;m here, thank you Scott for all your hard work on FreeBSD, I appreciate it.</p>\n",
+            "content_text": "Scott Long announced today that he is stepping down from the FreeBSD Core Team.  It sounds like he was just getting spread too thin, so by leaving the Core Team he can spend more time hacking on FreeBSD and dealing with release engineering.  If this will make for a better FreeBSD and keep Scott happy then I think this is a wise decision.\nWhile I&#8217;m here, thank you Scott for all your hard work on FreeBSD, I appreciate it.",
+            "date_published": "2005-04-12T14:49:28-06:00",
+            "date_modified": "2005-04-12T14:49:28-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "FreeBSD",
+                "OS"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2005/03/15/bsd-certification/",
+            "url": "https://blog.josephscott.org/2005/03/15/bsd-certification/",
+            "title": "BSD Certification",
+            "content_html": "<p>The <a href=\"http://www.bsdcertification.org/about.htm\">folks</a> at <a href=\"http://www.bsdcertification.org/\">BSDCertification.org</a> taking on the challenge of putting together a certification process for the BSD (NetBSD, FreeBSD, OpenBSD, DragonFlyBSD).  There doesn&#8217;t appear to be anything concrete there yet, so I think there are looking to generate some momentum and get people thinking about how to make this work.  I&#8217;m not sure if certification can really work without some sort of commercial backing, or at least push for it.  Doing certification for something like RedHat Linux works because RedHat as a company has a financial interest it making certification for its products work.  Same thing for Microsoft for that matter.  It will be interesting to see if something like that ends up happening or if they go some other route.</p>\n",
+            "content_text": "The folks at BSDCertification.org taking on the challenge of putting together a certification process for the BSD (NetBSD, FreeBSD, OpenBSD, DragonFlyBSD).  There doesn&#8217;t appear to be anything concrete there yet, so I think there are looking to generate some momentum and get people thinking about how to make this work.  I&#8217;m not sure if certification can really work without some sort of commercial backing, or at least push for it.  Doing certification for something like RedHat Linux works because RedHat as a company has a financial interest it making certification for its products work.  Same thing for Microsoft for that matter.  It will be interesting to see if something like that ends up happening or if they go some other route.",
+            "date_published": "2005-03-15T16:44:01-07:00",
+            "date_modified": "2005-03-15T16:44:01-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "FreeBSD",
+                "OS"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2005/02/11/mysql-performance-on-linux-opennetfreebsd-and-solaris/",
+            "url": "https://blog.josephscott.org/2005/02/11/mysql-performance-on-linux-opennetfreebsd-and-solaris/",
+            "title": "MySQL Performance On Linux, (Open|Net|Free)BSD and Solaris",
+            "content_html": "<p>The world of benchmarks is fraught with peril, those who enter are likely to get flamed, not matter what the results are.  I had already prepared myself for the worst when I saw the title of <a href=\"http://software.newsforge.com/software/04/12/27/1238216.shtml?tid=152&amp;tid=72&amp;tid=29\">Using MySQL to benchmark OS performance</a> on NewsForge the other day.  After reading through it, and part 2, <a href=\"http://software.newsforge.com/article.pl?sid=04/12/27/1243207\">Comparing MySQL performance</a>, I was pleasantly surprised.  At the end of the article I got the feeling that <a href=\"http://vegan.net/tony/\">Tony Bourke</a> had made an honest attempt at testing MySQL 4.0.22 on the following operating systems:</p>\n<ul>\n<li>FreeBSD 4.11</li>\n<li>FreeBSD 5.3</li>\n<li>NetBSD 2.0</li>\n<li>Linux 2.6</li>\n<li>Linux 2.4</li>\n<li>Solaris 10 x86 (build 69)</li>\n<li>OpenBSD 3.6</li>\n</ul>\n<p>While there are things that I&#8217;d recommend doing differently, it certainly seems like Tony did a good job to trying to make this as balanced as possible.  Perhaps my biggest beef with his methods was the decision to run all of the tests locally, instead over the network.  To his credit he does a good job explaining why he ended up not doing so, but that doesn&#8217;t change the fact that for those building apps (web or otherwise), don&#8217;t usually run that application on the same system that is running MySQL.</p>\n<p>The results of the test still feel a little bit odd.  I can&#8217;t really hold this against Tony though, I&#8217;m sure he was working on a deadline and if you put off publishing forever then why bother doing it in the first place.  That said, I suspect that there is more that could be done if more time and resources were available.  Some of the other obvious possibilities include using MySQL built for that OS (rpm&#8217;s, BSD ports, etc), looking at additional file system tweaks and differences (does Linux still default to async fs mounts?) and trying different versions of MySQL (4.1 just went into production, but 5.x betas have been around for awhile too).</p>\n",
+            "content_text": "The world of benchmarks is fraught with peril, those who enter are likely to get flamed, not matter what the results are.  I had already prepared myself for the worst when I saw the title of Using MySQL to benchmark OS performance on NewsForge the other day.  After reading through it, and part 2, Comparing MySQL performance, I was pleasantly surprised.  At the end of the article I got the feeling that Tony Bourke had made an honest attempt at testing MySQL 4.0.22 on the following operating systems:\n\nFreeBSD 4.11\nFreeBSD 5.3\nNetBSD 2.0\nLinux 2.6\nLinux 2.4\nSolaris 10 x86 (build 69)\nOpenBSD 3.6\n\nWhile there are things that I&#8217;d recommend doing differently, it certainly seems like Tony did a good job to trying to make this as balanced as possible.  Perhaps my biggest beef with his methods was the decision to run all of the tests locally, instead over the network.  To his credit he does a good job explaining why he ended up not doing so, but that doesn&#8217;t change the fact that for those building apps (web or otherwise), don&#8217;t usually run that application on the same system that is running MySQL.\nThe results of the test still feel a little bit odd.  I can&#8217;t really hold this against Tony though, I&#8217;m sure he was working on a deadline and if you put off publishing forever then why bother doing it in the first place.  That said, I suspect that there is more that could be done if more time and resources were available.  Some of the other obvious possibilities include using MySQL built for that OS (rpm&#8217;s, BSD ports, etc), looking at additional file system tweaks and differences (does Linux still default to async fs mounts?) and trying different versions of MySQL (4.1 just went into production, but 5.x betas have been around for awhile too).",
+            "date_published": "2005-02-11T14:37:26-07:00",
+            "date_modified": "2005-02-11T14:37:26-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "Database",
+                "FreeBSD",
+                "Linux",
+                "MySQL",
+                "OS"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2005/02/09/replacing-the-dameon/",
+            "url": "https://blog.josephscott.org/2005/02/09/replacing-the-dameon/",
+            "title": "Replacing The Dameon?",
+            "content_html": "<p>Can it be true?  It appears that <a href=\"http://www.freebsd.org/\">FreeBSD</a> is going to run a <a href=\"http://logo-contest.freebsd.org/\">design contest for a new logo</a>.  After reading through the <a href=\"http://logo-contest.freebsd.org/announce.txt\">announcement</a> text it looks like this could be real.</p>\n<p>I&#8217;ve been using FreeBSD for more than seven years and I have seen the discussion about people not liking the <a href=\"http://www.freebsd.org/gifs/freebsd_1.gif\">FreeBSD daemon</a> come ago more times than I can remember.  I bet you <a href=\"http://people.freebsd.org/~jkh/\">JKH</a> is getting a good laugh out of this in his office over at Apple <img src=\"https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png\" alt=\"\ud83d\ude42\" class=\"wp-smiley\" style=\"height: 1em; max-height: 1em;\" /></p>\n<p><strong>UPDATE 2:30pm 09 Feb 2005</strong>: There is already a <a href=\"http://www.petitiononline.com/fbsdmsc1/petition.html\">petition to save the daemon</a> mascot.  As of now it has 325 signatures.</p>\n<p><strong>UPDATE: 5:50am 10 Feb 2005</strong>: The logo contest site now indicates that they aren&#8217;t ready to do an official announcement.</p>\n",
+            "content_text": "Can it be true?  It appears that FreeBSD is going to run a design contest for a new logo.  After reading through the announcement text it looks like this could be real.\nI&#8217;ve been using FreeBSD for more than seven years and I have seen the discussion about people not liking the FreeBSD daemon come ago more times than I can remember.  I bet you JKH is getting a good laugh out of this in his office over at Apple \nUPDATE 2:30pm 09 Feb 2005: There is already a petition to save the daemon mascot.  As of now it has 325 signatures.\nUPDATE: 5:50am 10 Feb 2005: The logo contest site now indicates that they aren&#8217;t ready to do an official announcement.",
+            "date_published": "2005-02-09T13:28:09-07:00",
+            "date_modified": "2005-02-09T13:28:09-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "FreeBSD",
+                "OS"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2004/12/23/freebsd-foundation/",
+            "url": "https://blog.josephscott.org/2004/12/23/freebsd-foundation/",
+            "title": "FreeBSD Foundation",
+            "content_html": "<p>The <a href=\"http://www.freebsdfoundation.org/\">FreeBSD Foundation</a> has been pretty quiet for most of its life, just doing what needs to get done.  Now they are asking for your help in <a href=\"http://www.freebsdfoundation.org/press/20041221-newsletter.shtml\">keeping their charitable status</a>.  From what I gather, they need more donations from a broader group of people.  You can <a href=\"http://www.freebsdfoundation.org/donating.shtml\">donate</a> via check, money order, credit card or PayPal.  My check is going in the mail today.</p>\n<p><strong>UPDATE 27 Dec 2004 @ 11:25pm</strong>: In less than a week <a href=\"http://www.freebsdfoundation.org/\">The FreeBSD Foundation</a> has met and exceeded their donation needs to keep their public charity status.</p>\n",
+            "content_text": "The FreeBSD Foundation has been pretty quiet for most of its life, just doing what needs to get done.  Now they are asking for your help in keeping their charitable status.  From what I gather, they need more donations from a broader group of people.  You can donate via check, money order, credit card or PayPal.  My check is going in the mail today.\nUPDATE 27 Dec 2004 @ 11:25pm: In less than a week The FreeBSD Foundation has met and exceeded their donation needs to keep their public charity status.",
+            "date_published": "2004-12-23T11:29:26-07:00",
+            "date_modified": "2004-12-23T11:29:26-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "FreeBSD",
+                "OS"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2004/11/29/usl-vs-bsd-1994/",
+            "url": "https://blog.josephscott.org/2004/11/29/usl-vs-bsd-1994/",
+            "title": "USL vs BSD, 1994",
+            "content_html": "<p>The text of the settlement between the USL and The Regents of the University of California <a href=\"http://www.groklaw.net/article.php?story=20041126130302760\">showed up with comments</a> on  <a href=\"http://www.groklaw.net/index.php\">Groklaw</a> over the weekend.  The <a href=\"http://www.groklaw.net/pdf/USLsettlement.pdf\">original PDF</a> is also available.  The modern day issue that this brings up of course is the SCO lawsuits.  Such a strange a twisted legal world we live in. (via <a href=\"http://slashdot.org/\">Slashdot</a>)</p>\n",
+            "content_text": "The text of the settlement between the USL and The Regents of the University of California showed up with comments on  Groklaw over the weekend.  The original PDF is also available.  The modern day issue that this brings up of course is the SCO lawsuits.  Such a strange a twisted legal world we live in. (via Slashdot)",
+            "date_published": "2004-11-29T15:43:36-07:00",
+            "date_modified": "2004-11-29T15:43:36-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "FreeBSD",
+                "OS"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2004/11/29/eurobsdcon-2004/",
+            "url": "https://blog.josephscott.org/2004/11/29/eurobsdcon-2004/",
+            "title": "EuroBSDCon 2004",
+            "content_html": "<p>There is a nice little <a href=\"http://www.onlamp.com/pub/a/bsd/2004/11/24/eurobsdcon2004.html\">write up</a> on EuroBSDCon 2004 over at <a href=\"http://www.onlamp.com/\">ONLamp.com</a> (does anyone know why O&#8217;Reilly has so many different sites instead of just sticking with O&#8217;Reillynet.com?).  The papers and presentations are <a href=\"http://2004.eurobsdcon.org/papers.html\">available</a> for download.  I haven&#8217;t been to a conference in awhile, I rather miss them sometimes.</p>\n",
+            "content_text": "There is a nice little write up on EuroBSDCon 2004 over at ONLamp.com (does anyone know why O&#8217;Reilly has so many different sites instead of just sticking with O&#8217;Reillynet.com?).  The papers and presentations are available for download.  I haven&#8217;t been to a conference in awhile, I rather miss them sometimes.",
+            "date_published": "2004-11-29T15:30:08-07:00",
+            "date_modified": "2004-11-29T15:30:08-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "FreeBSD",
+                "OS"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2004/11/08/freebsd-53-release/",
+            "url": "https://blog.josephscott.org/2004/11/08/freebsd-53-release/",
+            "title": "FreeBSD 5.3 Release",
+            "content_html": "<p>The time has finally come for <a href=\"http://lists.freebsd.org/pipermail/freebsd-announce/2004-November/000964.html\">FreeBSD 5.3 Release</a>.  I&#8217;m excited about this release and hope that it helps accelerate the maturity of new features in FreeBSD.  I anticipate rotating 5.3 in on a couple of production servers in the next month or two.</p>\n",
+            "content_text": "The time has finally come for FreeBSD 5.3 Release.  I&#8217;m excited about this release and hope that it helps accelerate the maturity of new features in FreeBSD.  I anticipate rotating 5.3 in on a couple of production servers in the next month or two.",
+            "date_published": "2004-11-08T12:57:03-07:00",
+            "date_modified": "2004-11-08T12:57:03-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "FreeBSD",
+                "OS"
+            ]
+        },
+        {
+            "id": "http://joseph.randomnetworks.com/archives/2004/10/19/bsd-install/",
+            "url": "https://blog.josephscott.org/2004/10/19/bsd-install/",
+            "title": "BSD Install",
+            "content_html": "<p>The install process for any OS can be a tricky thing.  Over the years things have gotten better though, especially in the open source OS field.  Most of the Linux distributions now come with a fully graphical install process.  For the BSD systems not much has changed over the years, they are all mostly basic, straight forward, no frills steps.  The <a href=\"http://www.dragonflybsd.org/main/\">DragonFly BSD</a> project has been trying to change that, with their <a href=\"http://www.bsdinstaller.com/\">BSD Installer</a>.  This new installer is being used by <a href=\"http://www.livebsd.com/5_X/\">LiveBSD for a FreeBSD live CD</a>.  I can already picture all of those who cursed <a href=\"http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/using-sysinstall.html\">sysinstall</a> for lo these many years jumping up for joy.</p>\n<p>Truth be told, I&#8217;ve never had much of a problem with sysinstall.  Sure there are a some things I would change, but nothing really huge.</p>\n",
+            "content_text": "The install process for any OS can be a tricky thing.  Over the years things have gotten better though, especially in the open source OS field.  Most of the Linux distributions now come with a fully graphical install process.  For the BSD systems not much has changed over the years, they are all mostly basic, straight forward, no frills steps.  The DragonFly BSD project has been trying to change that, with their BSD Installer.  This new installer is being used by LiveBSD for a FreeBSD live CD.  I can already picture all of those who cursed sysinstall for lo these many years jumping up for joy.\nTruth be told, I&#8217;ve never had much of a problem with sysinstall.  Sure there are a some things I would change, but nothing really huge.",
+            "date_published": "2004-10-19T15:21:42-06:00",
+            "date_modified": "2004-10-19T15:21:42-06:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "FreeBSD",
+                "OS"
+            ]
+        }
+    ]
+}

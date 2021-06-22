@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>swoole &#8211; Joseph Scott</title>
+	<atom:link href="/tag/swoole/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Fri, 29 Jan 2016 16:59:33 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Swoole</title>
+		<link>/2016/01/29/swoole/</link>
+					<comments>/2016/01/29/swoole/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 29 Jan 2016 16:59:33 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[swoole]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=14960</guid>
+
+					<description><![CDATA[Swoole is another effort to bring event-driven async features to PHP: Swoole is an event-driven, asynchronous &#038; concurrent networking communication framework with higher performance written only in C for PHP. While I&#8217;m not sure about using this as an application server for PHP ( I have mixed feelings about PHP app servers in general ), [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.swoole.com/index.en.html">Swoole</a> is another effort to bring event-driven async features to PHP:</p>
+<blockquote><p>
+Swoole is an event-driven, asynchronous &#038; concurrent networking communication framework with higher performance written only in C for PHP.
+</p></blockquote>
+<p>While I&#8217;m not sure about using this as an application server for PHP ( I have mixed feelings about PHP app servers in general ), I do like their TCP server example:</p>
+<p>[sourcecode lang=&#8221;php&#8221;]<br />
+$serv = new swoole_server(&quot;127.0.0.1&quot;, 9501);<br />
+$serv-&gt;set(array(<br />
+    &#8216;worker_num&#8217; =&gt; 8,<br />
+    &#8216;daemonize&#8217; =&gt; true,<br />
+));<br />
+$serv-&gt;on(&#8216;connect&#8217;, function ($serv, $fd){<br />
+    echo &quot;Client:Connect.n&quot;;<br />
+});<br />
+$serv-&gt;on(&#8216;receive&#8217;, function ($serv, $fd, $from_id, $data) {<br />
+    $serv-&gt;send($fd, &#8216;Swoole: &#8216;.$data);<br />
+    $serv-&gt;close($fd);<br />
+});<br />
+$serv-&gt;on(&#8216;close&#8217;, function ($serv, $fd) {<br />
+    echo &quot;Client: Close.n&quot;;<br />
+});<br />
+$serv-&gt;start();<br />
+[/sourcecode]</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/01/29/swoole/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

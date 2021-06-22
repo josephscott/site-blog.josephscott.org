@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Synergy, Leopard and Vista	</title>
+	<atom:link href="/2007/11/05/synergy-leopard-and-vista/feed/" rel="self" type="application/rss+xml" />
+	<link>/2007/11/05/synergy-leopard-and-vista/</link>
+	<description></description>
+	<lastBuildDate>Mon, 09 Mar 2009 06:38:28 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Zorvy		</title>
+		<link>/2007/11/05/synergy-leopard-and-vista/#comment-2015</link>
+
+		<dc:creator><![CDATA[Zorvy]]></dc:creator>
+		<pubDate>Mon, 09 Mar 2009 06:38:28 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/05/synergy-leopard-and-vista/#comment-2015</guid>
+
+					<description><![CDATA[I am wondering if it is a change in 10.5.6 because I just got a new mini and have the same problem. I can host from the mini with an error, but I cannot get any connection hosting from my vista?]]></description>
+			<content:encoded><![CDATA[<p>I am wondering if it is a change in 10.5.6 because I just got a new mini and have the same problem. I can host from the mini with an error, but I cannot get any connection hosting from my vista?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: JEO		</title>
+		<link>/2007/11/05/synergy-leopard-and-vista/#comment-2014</link>
+
+		<dc:creator><![CDATA[JEO]]></dc:creator>
+		<pubDate>Fri, 27 Feb 2009 19:18:19 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/05/synergy-leopard-and-vista/#comment-2014</guid>
+
+					<description><![CDATA[Hi alll,
+I have  MacBook Leopard 10.5.6 running SynergyKM as a Host and a Win Xp sp3 as a client with synergy 1.3.1.  I updated SynergyKm to 1.3.1 as well.
+
+I get the connection refused  problem with SynergyKM  of using the default port 24800.  I tried everything and no luck yet   What to do ?? Tks]]></description>
+			<content:encoded><![CDATA[<p>Hi alll,<br />
+I have  MacBook Leopard 10.5.6 running SynergyKM as a Host and a Win Xp sp3 as a client with synergy 1.3.1.  I updated SynergyKm to 1.3.1 as well.</p>
+<p>I get the connection refused  problem with SynergyKM  of using the default port 24800.  I tried everything and no luck yet   What to do ?? Tks</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Josh		</title>
+		<link>/2007/11/05/synergy-leopard-and-vista/#comment-2013</link>
+
+		<dc:creator><![CDATA[Josh]]></dc:creator>
+		<pubDate>Mon, 23 Feb 2009 05:28:17 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/05/synergy-leopard-and-vista/#comment-2013</guid>
+
+					<description><![CDATA[I ran into the same problem.  I have synergy installed on computers at work and at home and use two separate config files, so I wrote two small shell scripts on my mac (the server) to start the sever inside of a detached screen:
+
+/usr/local/bin/start_synergy_home:
+screen -dmS synergy_home_server /usr/local/bin/synergys --config /usr/local/etc/synergy-home.conf -f
+
+/usr/local/bin/start_synergy_work:
+screen -dmS synergy_work_server /usr/local/bin/synergys --config /usr/local/etc/synergy-work.conf -f
+
+At home, I just run start_synergy_home, and at work, I run start_synergy_work, and it loads the proper configs so I&#039;m good to go.
+
+If you need to see the output for some reason, you just do `screen -r synergy_home_server`
+
+Hope it helps someone.]]></description>
+			<content:encoded><![CDATA[<p>I ran into the same problem.  I have synergy installed on computers at work and at home and use two separate config files, so I wrote two small shell scripts on my mac (the server) to start the sever inside of a detached screen:</p>
+<p>/usr/local/bin/start_synergy_home:<br />
+screen -dmS synergy_home_server /usr/local/bin/synergys &#8211;config /usr/local/etc/synergy-home.conf -f</p>
+<p>/usr/local/bin/start_synergy_work:<br />
+screen -dmS synergy_work_server /usr/local/bin/synergys &#8211;config /usr/local/etc/synergy-work.conf -f</p>
+<p>At home, I just run start_synergy_home, and at work, I run start_synergy_work, and it loads the proper configs so I&#8217;m good to go.</p>
+<p>If you need to see the output for some reason, you just do `screen -r synergy_home_server`</p>
+<p>Hope it helps someone.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Brenda		</title>
+		<link>/2007/11/05/synergy-leopard-and-vista/#comment-2012</link>
+
+		<dc:creator><![CDATA[Brenda]]></dc:creator>
+		<pubDate>Tue, 03 Feb 2009 01:31:38 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/05/synergy-leopard-and-vista/#comment-2012</guid>
+
+					<description><![CDATA[Will: Maybe a description of the &quot;issues&quot; you&#039;re having?]]></description>
+			<content:encoded><![CDATA[<p>Will: Maybe a description of the &#8220;issues&#8221; you&#8217;re having?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Will		</title>
+		<link>/2007/11/05/synergy-leopard-and-vista/#comment-2011</link>
+
+		<dc:creator><![CDATA[Will]]></dc:creator>
+		<pubDate>Wed, 21 Jan 2009 02:25:03 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/05/synergy-leopard-and-vista/#comment-2011</guid>
+
+					<description><![CDATA[Hey guys, most of what you have been saying is above my level so i apologize but i am having issues, i am trying to use my new vista machine as my server and an imac with leopard as the client via a linksys router.  Most settings are comepletely normal. If anyone can point me where to go i would greatly appreciate it.]]></description>
+			<content:encoded><![CDATA[<p>Hey guys, most of what you have been saying is above my level so i apologize but i am having issues, i am trying to use my new vista machine as my server and an imac with leopard as the client via a linksys router.  Most settings are comepletely normal. If anyone can point me where to go i would greatly appreciate it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: brenda		</title>
+		<link>/2007/11/05/synergy-leopard-and-vista/#comment-2010</link>
+
+		<dc:creator><![CDATA[brenda]]></dc:creator>
+		<pubDate>Sun, 30 Nov 2008 16:16:20 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/05/synergy-leopard-and-vista/#comment-2010</guid>
+
+					<description><![CDATA[chris:  maybe some more information about your set up would help.  I just this got my iMac running as the server and connecting to an Ubuntu server, a Mandrake server and a Windows laptop (one of them through a dmz pinhole  on my firewall).
+
+Are you sure your timeout problem isn&#039;t due to a firewall issue (mine was).
+
+Have you tried using synergy -f -d DEBUG2 to get more info about what&#039;s happening?]]></description>
+			<content:encoded><![CDATA[<p>chris:  maybe some more information about your set up would help.  I just this got my iMac running as the server and connecting to an Ubuntu server, a Mandrake server and a Windows laptop (one of them through a dmz pinhole  on my firewall).</p>
+<p>Are you sure your timeout problem isn&#8217;t due to a firewall issue (mine was).</p>
+<p>Have you tried using synergy -f -d DEBUG2 to get more info about what&#8217;s happening?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: chris		</title>
+		<link>/2007/11/05/synergy-leopard-and-vista/#comment-2009</link>
+
+		<dc:creator><![CDATA[chris]]></dc:creator>
+		<pubDate>Wed, 19 Nov 2008 22:07:20 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/05/synergy-leopard-and-vista/#comment-2009</guid>
+
+					<description><![CDATA[Please help me....I simply cannot get synergy to run...I&#039;ve done everything...I&#039;m getting timeout errors...name errors...errors that haven&#039;t even been invented yet.]]></description>
+			<content:encoded><![CDATA[<p>Please help me&#8230;.I simply cannot get synergy to run&#8230;I&#8217;ve done everything&#8230;I&#8217;m getting timeout errors&#8230;name errors&#8230;errors that haven&#8217;t even been invented yet.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Mac Mouse		</title>
+		<link>/2007/11/05/synergy-leopard-and-vista/#comment-2008</link>
+
+		<dc:creator><![CDATA[Mac Mouse]]></dc:creator>
+		<pubDate>Wed, 18 Jun 2008 10:34:25 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/05/synergy-leopard-and-vista/#comment-2008</guid>
+
+					<description><![CDATA[Hi, done a awesome work. Synergy has only been extensively tested on Linux which make the my work more easier. Thank you for the blog posted. The Mac OS X port is incomplete. It does not synchronize the screen saver. Therefore in this case Synergy as helped me a lot with its special features.
+SynergyKM was previously hosted on a personal server and I decided to move it here in coming week. Hopefully it will give the project more visibility and provide better tools to maintain it.
+Thank U.]]></description>
+			<content:encoded><![CDATA[<p>Hi, done a awesome work. Synergy has only been extensively tested on Linux which make the my work more easier. Thank you for the blog posted. The Mac OS X port is incomplete. It does not synchronize the screen saver. Therefore in this case Synergy as helped me a lot with its special features.<br />
+SynergyKM was previously hosted on a personal server and I decided to move it here in coming week. Hopefully it will give the project more visibility and provide better tools to maintain it.<br />
+Thank U.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Karen Nakamura		</title>
+		<link>/2007/11/05/synergy-leopard-and-vista/#comment-2007</link>
+
+		<dc:creator><![CDATA[Karen Nakamura]]></dc:creator>
+		<pubDate>Wed, 16 Apr 2008 20:24:39 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/05/synergy-leopard-and-vista/#comment-2007</guid>
+
+					<description><![CDATA[I&#039;ve been using Teleport which seems rock solid on 10.5.]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve been using Teleport which seems rock solid on 10.5.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Roger Pack		</title>
+		<link>/2007/11/05/synergy-leopard-and-vista/#comment-2006</link>
+
+		<dc:creator><![CDATA[Roger Pack]]></dc:creator>
+		<pubDate>Wed, 20 Feb 2008 20:37:12 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/11/05/synergy-leopard-and-vista/#comment-2006</guid>
+
+					<description><![CDATA[Thank you! running synergyc with -f as you suggested makes is so I can use it as a client in leopard. Rock on.]]></description>
+			<content:encoded><![CDATA[<p>Thank you! running synergyc with -f as you suggested makes is so I can use it as a client in leopard. Rock on.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

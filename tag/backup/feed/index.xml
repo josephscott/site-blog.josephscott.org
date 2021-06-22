@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>backup &#8211; Joseph Scott</title>
+	<atom:link href="/tag/backup/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 02 Feb 2009 14:00:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Response To: &#8216;The State of Blogging Sucks&#8217;</title>
+		<link>/2009/02/02/response-to-the-state-of-blogging-sucks/</link>
+					<comments>/2009/02/02/response-to-the-state-of-blogging-sucks/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 02 Feb 2009 14:00:38 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[backup]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=743</guid>
+
+					<description><![CDATA[Craig Burton had a post yesterday titled &#8216;The State of Blogging Sucks&#8216;, mostly complaining about the backup situation for blogs. I was going to leave a comment about how to do this in WordPress (since he indicated there was no way to do, which is wrong), but in order to leave comments on his blog [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.craigburton.com/">Craig Burton</a> had a post yesterday titled &#8216;<a href="http://www.craigburton.com/?p=2929">The State of Blogging Sucks</a>&#8216;, mostly complaining about the backup situation for blogs.  I was going to leave a comment about how to do this in WordPress (since he indicated there was no way to do, which is wrong), but in order to leave comments on his blog I had to register for an account.  Not something I&#8217;m a fan of, so I&#8217;ll just reply here on my own blog.</p>
+<blockquote><p>
+The wordpress.org site says they make backups. I assume they do. But you have no access to those backups and cannot make off-line backups of the data found in your blog.
+</p></blockquote>
+<p>I&#8217;m not sure why he cites the WordPress.org site, since it only provides the software, not hosting services.  Perhaps he meant WordPress.COM instead, which is a hosted blog service run by Automattic (my employer).  You can make a backup of your WordPress.COM blog at any time in the admin panel by going to <strong>Tools -&gt; Export</strong>.  You&#8217;ll then get an export file that can be used to restore your blog to another install of WordPress.  Since this includes the open source software that you can get from WordPress.org and use any where, you&#8217;re pretty safe.</p>
+<p>The same holds true for people running their own copy of WordPress, which has the same exact export feature.</p>
+<p>If you are doing regular backups/export of your WordPress blog there&#8217;s really no reason why you shouldn&#8217;t be able to restore a WordPress blog in just a few minutes.  To make sure you keep the same look you&#8217;ll need to have a copy of your site&#8217;s theme as well, which is pretty easy to do since most of them are distributed as a single zip file.  Same holds true for any plugins that you are using.</p>
+<blockquote><p>
+If you use the wordpress.org site. You are vulnerable.
+</p></blockquote>
+<p>I don&#8217;t believe this is the case.  I suspect Craig just didn&#8217;t know about the export feature.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/02/02/response-to-the-state-of-blogging-sucks/feed/</wfw:commentRss>
+			<slash:comments>11</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Mac Backup To Dreamhost</title>
+		<link>/2007/04/02/mac-backup-to-dreamhost/</link>
+					<comments>/2007/04/02/mac-backup-to-dreamhost/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 02 Apr 2007 17:10:46 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[amazon]]></category>
+		<category><![CDATA[backup]]></category>
+		<category><![CDATA[dreamhost]]></category>
+		<category><![CDATA[howto]]></category>
+		<category><![CDATA[macosx]]></category>
+		<category><![CDATA[s3]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/04/02/mac-backup-to-dreamhost/</guid>
+
+					<description><![CDATA[When I posted a brief comparison to Amazon S3 and Dreamhost one thing I didn&#8217;t do was suggest how one could actually use Dreamhost in a similar way as S3, like backups. For S3 Jungle Disk is one option for backups. Now there is a how to on backing up your Mac to Dreamhost (part [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>When I posted a brief comparison to <a href="http://joseph.randomnetworks.com/archives/2006/10/03/amazon-s3-vs-dreamhost/">Amazon S3 and Dreamhost</a> one thing I didn&#8217;t do was suggest how one could actually use Dreamhost in a similar way as S3, like backups.  For S3 <a href="http://www.jungledisk.com/">Jungle Disk</a> is one option for backups.  Now there is a <a href="http://addisonrd.com/WordPress/2007/03/09/how-to-backup-your-mac-to-a-dreamhost-server-part-1-of-2/">how to on backing up your Mac to Dreamhost</a> (<a href="http://addisonrd.com/WordPress/2007/03/09/how-to-backup-your-mac-to-a-dreamhost-server-part-2-of-2/">part 2</a>).</p>
+<p>Another approach would involve using <a href="http://code.google.com/p/macfuse/">MacFUSE</a> with the <a href="http://code.google.com/p/macfuse/wiki/MACFUSE_FS_SSHFS">ssh module</a>.  Have I mentioned how much I&#8217;d like to see Apple include MacFUSE in OS X by default?  Well, I would, a lot.</p>
+<p>What this approach doesn&#8217;t do that Jungle Disk does is encrypt the files on your remote backup.  But on the other hand S3 has a file size limit of 5GB, as long as it isn&#8217;t <a href="http://developer.amazonwebservices.com/connect/entry.jspa?externalID=422&amp;categoryID=49">between 2GB and 4GB</a>.  So really S3 on supports files sizes from 1-2GB and 4-5GB.  Each method has pros and cons.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/04/02/mac-backup-to-dreamhost/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

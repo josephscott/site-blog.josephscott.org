@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>changelog &#8211; Joseph Scott</title>
+	<atom:link href="/tag/changelog/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 26 Feb 2020 20:58:08 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Changelog</title>
+		<link>/2020/02/26/changelog/</link>
+					<comments>/2020/02/26/changelog/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 26 Feb 2020 20:58:08 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[changelog]]></category>
+		<guid isPermaLink="false">/?p=18064</guid>
+
+					<description><![CDATA[There is a site dedicated to standardizing changelogs: keepachangelog.com. That one is more detailed than the GNU &#8220;Style of Change Logs&#8221;. I&#8217;m a fan of changelogs, it is one of the first things that I look for when exploring a new repo. So please, include a changelog for your project. Oh, and includes dates in [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>There is a site dedicated to standardizing changelogs: <a href="https://keepachangelog.com/en/1.0.0/">keepachangelog.com</a>.  That one is more detailed than the <a href="https://www.gnu.org/prep/standards/html_node/Style-of-Change-Logs.html#Style-of-Change-Logs">GNU &#8220;Style of Change Logs&#8221;</a>.</p>
+<p>I&#8217;m a fan of changelogs, it is one of the first things that I look for when exploring a new repo.  So please, include a changelog for your project.  Oh, and includes dates in the changelog, it makes them more useful.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2020/02/26/changelog/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

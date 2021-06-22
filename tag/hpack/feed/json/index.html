@@ -1,0 +1,37 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://blog.josephscott.org/tag/hpack/feed/json/ -- and add it your reader.",
+    "home_page_url": "https://blog.josephscott.org/tag/hpack/",
+    "feed_url": "https://blog.josephscott.org/tag/hpack/feed/json/",
+    "language": "en-US",
+    "title": "hpack &#8211; Joseph Scott",
+    "items": [
+        {
+            "id": "https://josephscott.org/?p=14930",
+            "url": "https://blog.josephscott.org/2016/01/18/hpack-static-table-definitionhpack-header-compression-for-http2/",
+            "title": "HPACK, Static Table Definition",
+            "content_html": "<p>The HPACK ( <a href=\"https://http2.github.io/http2-spec/compression.html\">header compression for HTTP/2</a> ) static table:</p>\n<blockquote><p>\nThe static table was created from the most frequent header fields used by popular web sites, with the addition of HTTP/2-specific pseudo-header fields (see Section 8.1.2.1 of [HTTP2]). For header fields with a few frequent values, an entry was added for each of these frequent values. For other header fields, an entry was added with an empty value.\n</p></blockquote>\n<p>Here is a <a href=\"https://http2.github.io/http2-spec/compression.html#static.table.entries\">direct link to the list</a>.  I like number 16, <code>accept-encoding: gzip, deflate</code>, even though that means this won&#8217;t be usable with <a href=\"https://josephscott.org/archives/2015/12/brotli-in-browsers/\">Brotli</a>.</p>\n",
+            "content_text": "The HPACK ( header compression for HTTP/2 ) static table:\n\nThe static table was created from the most frequent header fields used by popular web sites, with the addition of HTTP/2-specific pseudo-header fields (see Section 8.1.2.1 of [HTTP2]). For header fields with a few frequent values, an entry was added for each of these frequent values. For other header fields, an entry was added with an empty value.\n\nHere is a direct link to the list.  I like number 16, accept-encoding: gzip, deflate, even though that means this won&#8217;t be usable with Brotli.",
+            "date_published": "2016-01-18T11:51:43-07:00",
+            "date_modified": "2016-01-18T11:51:43-07:00",
+            "authors": [
+                {
+                    "name": "josephscott",
+                    "url": "https://blog.josephscott.org/author/josephscott/",
+                    "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+                }
+            ],
+            "author": {
+                "name": "josephscott",
+                "url": "https://blog.josephscott.org/author/josephscott/",
+                "avatar": "https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=512&d=mm&r=g"
+            },
+            "tags": [
+                "hpack",
+                "http",
+                "http2",
+                "Posts"
+            ]
+        }
+    ]
+}

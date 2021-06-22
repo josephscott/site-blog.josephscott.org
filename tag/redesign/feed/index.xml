@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>redesign &#8211; Joseph Scott</title>
+	<atom:link href="/tag/redesign/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 26 May 2005 17:18:46 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>New Site Design</title>
+		<link>/2005/05/26/new-site-design/</link>
+					<comments>/2005/05/26/new-site-design/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 26 May 2005 17:18:46 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[blog]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[redesign]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2005/05/26/new-site-design/</guid>
+
+					<description><![CDATA[If you&#8217;ve ever been here before you&#8217;ll probably quickly realize that I&#8217;ve redesigned the site. I finally took some time over a few weeks to put together my own layout. I borrowed the feel of the layout from Russell Beattie. I&#8217;m not done yet, but it seems to be functional, so I figured it was [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you&#8217;ve ever been here before you&#8217;ll probably quickly realize that I&#8217;ve redesigned the site.  I finally took some time over a few weeks to put together my own layout.  I borrowed the feel of the layout from <a href="http://www.russellbeattie.com/notebook/">Russell Beattie</a>.  I&#8217;m not done yet, but it seems to be functional, so I figured it was better to get it up an live than to wait for it be complete/perfect.</p>
+<p>I&#8217;m making more use of <a href="http://www.wordpress.org/">WordPress</a>&#8216;s page feature and several plugins to get the features that I wanted.  Here&#8217;s a list of the plugins I&#8217;m using (so far):</p>
+<ul>
+<li><a href="http://www.meyerweb.com/eric/tools/wordpress/wp-gatekeeper.html">WP-GateKeeper</a> to prevent comment spam.  This is a plugin that I was already using, but it is worth another mention.</li>
+<li><a href="http://vapourtrails.ca/wp-keywords">Jerome&#8217;s Keywords Plugin</a>: This plugin manages tags for WP posts.  This seems to be one of the best tag plugins for WP, it certainly has a lot of documention.</li>
+<li><a href="http://priyadi.net/archives/2005/03/02/wordpress-php-exec-plugin/">WordPress PHP Exec Plugin</a>: The pages feature in WP is nice, but I needed to be able to run code from within a page, this plugin has worked well for that so far.</li>
+</ul>
+<p>In the short term I need to get some sort search functionality going again.  Perhaps I&#8217;ll just stick with using Google for that.  I&#8217;m hoping that tagging my posts will be more useful than using the categories support in WP.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/05/26/new-site-design/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: MySQL&#8217;s Funny Math	</title>
+	<atom:link href="/2004/11/08/mysqls-funny-math/feed/" rel="self" type="application/rss+xml" />
+	<link>/2004/11/08/mysqls-funny-math/</link>
+	<description></description>
+	<lastBuildDate>Wed, 12 Apr 2006 14:50:53 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Leif		</title>
+		<link>/2004/11/08/mysqls-funny-math/#comment-698</link>
+
+		<dc:creator><![CDATA[Leif]]></dc:creator>
+		<pubDate>Wed, 12 Apr 2006 14:50:53 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/11/08/mysqls-funny-math/#comment-698</guid>
+
+					<description><![CDATA[I don&#039;t think ’select 11/5;’ should be considered Integer math and yes, I would expect 2.2.  Yes, 11 and 5 are integers but that doesn&#039;t mean anything, even floats are integers sometimes.  Now, if you typed &#039;select `col_a` / `col_b`;&#039; and both col_a and col_b were integer types then sure, the result should be 2.  Likewise if  one uses a function which is defined as being an integer function then I would expect an integer.
+
+The round behavior is odd though, I would expect a default of rounding to the nearest with an option to specify round up/down if preffered.]]></description>
+			<content:encoded><![CDATA[<p>I don&#8217;t think ’select 11/5;’ should be considered Integer math and yes, I would expect 2.2.  Yes, 11 and 5 are integers but that doesn&#8217;t mean anything, even floats are integers sometimes.  Now, if you typed &#8216;select `col_a` / `col_b`;&#8217; and both col_a and col_b were integer types then sure, the result should be 2.  Likewise if  one uses a function which is defined as being an integer function then I would expect an integer.</p>
+<p>The round behavior is odd though, I would expect a default of rounding to the nearest with an option to specify round up/down if preffered.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: joseph		</title>
+		<link>/2004/11/08/mysqls-funny-math/#comment-697</link>
+
+		<dc:creator><![CDATA[joseph]]></dc:creator>
+		<pubDate>Fri, 24 Mar 2006 06:00:19 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/11/08/mysqls-funny-math/#comment-697</guid>
+
+					<description><![CDATA[George - I&#039;m going to leave the comment, I think the additional reference to rounding methods is worthwhile.]]></description>
+			<content:encoded><![CDATA[<p>George &#8211; I&#8217;m going to leave the comment, I think the additional reference to rounding methods is worthwhile.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: George		</title>
+		<link>/2004/11/08/mysqls-funny-math/#comment-696</link>
+
+		<dc:creator><![CDATA[George]]></dc:creator>
+		<pubDate>Fri, 24 Mar 2006 05:23:23 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/11/08/mysqls-funny-math/#comment-696</guid>
+
+					<description><![CDATA[just a quick note re MySQL&#039;s rounding: it&#039;s not wrong at all; MySQL uses the perfectly valid &#039;round to even&#039; method of rounding. For more info: http://en.wikipedia.org/wiki/Rounding]]></description>
+			<content:encoded><![CDATA[<p>just a quick note re MySQL&#8217;s rounding: it&#8217;s not wrong at all; MySQL uses the perfectly valid &#8217;round to even&#8217; method of rounding. For more info: <a href="http://en.wikipedia.org/wiki/Rounding" rel="nofollow ugc">http://en.wikipedia.org/wiki/Rounding</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: imran		</title>
+		<link>/2004/11/08/mysqls-funny-math/#comment-695</link>
+
+		<dc:creator><![CDATA[imran]]></dc:creator>
+		<pubDate>Fri, 04 Nov 2005 19:02:00 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/11/08/mysqls-funny-math/#comment-695</guid>
+
+					<description><![CDATA[Hi
+
+I am in big problem since many days. Any kind of help would be appeiciated.
+
+I want some help to enter data into mysql databasefrom a flash form using coldfusion components ?
+
+i’m using web services and simply want to pass data from my flash form to my cfc while staying in flash…
+
+any actionscript (or coldfusion code ‘cfc’) that anyone could provide or even links to other ressources on this specific topic would be awesome…
+
+if someone could help me with this process i would be greatful…..
+
+thank you in advance…
+
+Imran Hashmi
+http://www.visionstudio.co.uk]]>/</description>
+			<content:encoded><![CDATA[<p>Hi</p>
+<p>I am in big problem since many days. Any kind of help would be appeiciated.</p>
+<p>I want some help to enter data into mysql databasefrom a flash form using coldfusion components ?</p>
+<p>i’m using web services and simply want to pass data from my flash form to my cfc while staying in flash…</p>
+<p>any actionscript (or coldfusion code ‘cfc’) that anyone could provide or even links to other ressources on this specific topic would be awesome…</p>
+<p>if someone could help me with this process i would be greatful…..</p>
+<p>thank you in advance…</p>
+<p>Imran Hashmi<br />
+<a href="http://www.visionstudio.co.uk/" rel="nofollow ugc">http://www.visionstudio.co.uk/</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: nullgod		</title>
+		<link>/2004/11/08/mysqls-funny-math/#comment-694</link>
+
+		<dc:creator><![CDATA[nullgod]]></dc:creator>
+		<pubDate>Fri, 12 Nov 2004 02:59:47 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/11/08/mysqls-funny-math/#comment-694</guid>
+
+					<description><![CDATA[In answer to Mark Stosberg&#039;s comment on why its not the expected result is because integer maths normally always return an integer, and if your expecting an integer and get a floating point number problems can occur. If you want a real answer then you use floating point maths.  That rounding issue is rather more scary to me...viva la piggy-squeal (pgsql)]]></description>
+			<content:encoded><![CDATA[<p>In answer to Mark Stosberg&#8217;s comment on why its not the expected result is because integer maths normally always return an integer, and if your expecting an integer and get a floating point number problems can occur. If you want a real answer then you use floating point maths.  That rounding issue is rather more scary to me&#8230;viva la piggy-squeal (pgsql)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Karim		</title>
+		<link>/2004/11/08/mysqls-funny-math/#comment-693</link>
+
+		<dc:creator><![CDATA[Karim]]></dc:creator>
+		<pubDate>Wed, 10 Nov 2004 07:40:40 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/11/08/mysqls-funny-math/#comment-693</guid>
+
+					<description><![CDATA[I have got such problems while trying to calculate the varege of a class, ans so I were obliged to do it with PHP code directly, now it seems that after two years I&#039;ve found the answer, I thought that I was a bug, but it&#039;s nothing else an other limit of MySql, postgresql is great anyway !]]></description>
+			<content:encoded><![CDATA[<p>I have got such problems while trying to calculate the varege of a class, ans so I were obliged to do it with PHP code directly, now it seems that after two years I&#8217;ve found the answer, I thought that I was a bug, but it&#8217;s nothing else an other limit of MySql, postgresql is great anyway !</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2004/11/08/mysqls-funny-math/#comment-692</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 10 Nov 2004 01:44:49 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/11/08/mysqls-funny-math/#comment-692</guid>
+
+					<description><![CDATA[Really?  I tried out bc with 11/5 and got 2.  With 11%5 I got 1, just like PostgreSQL did.  Again, the MySQL isn&#039;t wrong, for this case, just perhaps not what some would expect.  It is also inconsistent with their DIV() function, which I would expect to work the same way as the math operator of the same name.]]></description>
+			<content:encoded><![CDATA[<p>Really?  I tried out bc with 11/5 and got 2.  With 11%5 I got 1, just like PostgreSQL did.  Again, the MySQL isn&#8217;t wrong, for this case, just perhaps not what some would expect.  It is also inconsistent with their DIV() function, which I would expect to work the same way as the math operator of the same name.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Mark Stosberg		</title>
+		<link>/2004/11/08/mysqls-funny-math/#comment-691</link>
+
+		<dc:creator><![CDATA[Mark Stosberg]]></dc:creator>
+		<pubDate>Wed, 10 Nov 2004 01:34:24 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2004/11/08/mysqls-funny-math/#comment-691</guid>
+
+					<description><![CDATA[Why are programmers more likely to expect the answer that PostgreSQL gives for division than MySQL? I would expect the MySQL answer myself, because it &#039;more accurate&#039; in the sense that it contains more significant digits. It&#039;s also the answer I get whenn using the &#039;bc&#039; command line calculator. (I&#039;m a programmer who prefers PostgreSQL).]]></description>
+			<content:encoded><![CDATA[<p>Why are programmers more likely to expect the answer that PostgreSQL gives for division than MySQL? I would expect the MySQL answer myself, because it &#8216;more accurate&#8217; in the sense that it contains more significant digits. It&#8217;s also the answer I get whenn using the &#8216;bc&#8217; command line calculator. (I&#8217;m a programmer who prefers PostgreSQL).</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

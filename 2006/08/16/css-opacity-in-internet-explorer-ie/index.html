@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="profile" href="https://gmpg.org/xfn/11"> <meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@josephscott">
+<meta name="twitter:site" content="@josephscott">
+<meta name="twitter:title" content="CSS Opacity in Internet Explorer (IE)">
+<meta name="twitter:description" content="I&#039;ve been looking into opacity in CSS.  All of my initial testing was done in Firefox and worked as expected.  Using opacity in CSS is simple enough, accepting values between 1.0 (completely vis"> <link media="all" href="/wp-content/cache/autoptimize/css/autoptimize_da876478aa27b35cb47c491625986a1f.css" rel="stylesheet">
+<link media="print" href="/wp-content/cache/autoptimize/css/autoptimize_4a8bc5d490127fba1e504524cfa205e6.css" rel="stylesheet">
+<title>CSS Opacity in Internet Explorer (IE) &#8211; Joseph Scott</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="alternate" type="application/rss+xml" title="Joseph Scott &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="Joseph Scott &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Joseph Scott &raquo; CSS Opacity in Internet Explorer (IE) Comments Feed" href="/2006/08/16/css-opacity-in-internet-explorer-ie/feed/">
+<style id="twentytwenty-style-inline-css">.color-accent,.color-accent-hover:hover,.color-accent-hover:focus,:root .has-accent-color,.has-drop-cap:not(:focus):first-letter,.wp-block-button.is-style-outline,a { color: #e20842; }blockquote,.border-color-accent,.border-color-accent-hover:hover,.border-color-accent-hover:focus { border-color: #e20842; }button,.button,.faux-button,.wp-block-button__link,.wp-block-file .wp-block-file__button,input[type="button"],input[type="reset"],input[type="submit"],.bg-accent,.bg-accent-hover:hover,.bg-accent-hover:focus,:root .has-accent-background-color,.comment-reply-link { background-color: #e20842; }.fill-children-accent,.fill-children-accent * { fill: #e20842; }:root .has-background-color,button,.button,.faux-button,.wp-block-button__link,.wp-block-file__button,input[type="button"],input[type="reset"],input[type="submit"],.wp-block-button,.comment-reply-link,.has-background.has-primary-background-color:not(.has-text-color),.has-background.has-primary-background-color *:not(.has-text-color),.has-background.has-accent-background-color:not(.has-text-color),.has-background.has-accent-background-color *:not(.has-text-color) { color: #f7f7f7; }:root .has-background-background-color { background-color: #f7f7f7; }body,.entry-title a,:root .has-primary-color { color: #000000; }:root .has-primary-background-color { background-color: #000000; }cite,figcaption,.wp-caption-text,.post-meta,.entry-content .wp-block-archives li,.entry-content .wp-block-categories li,.entry-content .wp-block-latest-posts li,.wp-block-latest-comments__comment-date,.wp-block-latest-posts__post-date,.wp-block-embed figcaption,.wp-block-image figcaption,.wp-block-pullquote cite,.comment-metadata,.comment-respond .comment-notes,.comment-respond .logged-in-as,.pagination .dots,.entry-content hr:not(.has-background),hr.styled-separator,:root .has-secondary-color { color: #686868; }:root .has-secondary-background-color { background-color: #686868; }pre,fieldset,input,textarea,table,table *,hr { border-color: #d3d3d3; }caption,code,code,kbd,samp,.wp-block-table.is-style-stripes tbody tr:nth-child(odd),:root .has-subtle-background-background-color { background-color: #d3d3d3; }.wp-block-table.is-style-stripes { border-bottom-color: #d3d3d3; }.wp-block-latest-posts.is-grid li { border-top-color: #d3d3d3; }:root .has-subtle-background-color { color: #d3d3d3; }body:not(.overlay-header) .primary-menu > li > a,body:not(.overlay-header) .primary-menu > li > .icon,.modal-menu a,.footer-menu a, .footer-widgets a,#site-footer .wp-block-button.is-style-outline,.wp-block-pullquote:before,.singular:not(.overlay-header) .entry-header a,.archive-header a,.header-footer-group .color-accent,.header-footer-group .color-accent-hover:hover { color: #e20842; }.social-icons a,#site-footer button:not(.toggle),#site-footer .button,#site-footer .faux-button,#site-footer .wp-block-button__link,#site-footer .wp-block-file__button,#site-footer input[type="button"],#site-footer input[type="reset"],#site-footer input[type="submit"] { background-color: #e20842; }.social-icons a,body:not(.overlay-header) .primary-menu ul,.header-footer-group button,.header-footer-group .button,.header-footer-group .faux-button,.header-footer-group .wp-block-button:not(.is-style-outline) .wp-block-button__link,.header-footer-group .wp-block-file__button,.header-footer-group input[type="button"],.header-footer-group input[type="reset"],.header-footer-group input[type="submit"] { color: #f7f7f7; }#site-header,.footer-nav-widgets-wrapper,#site-footer,.menu-modal,.menu-modal-inner,.search-modal-inner,.archive-header,.singular .entry-header,.singular .featured-media:before,.wp-block-pullquote:before { background-color: #f7f7f7; }.header-footer-group,body:not(.overlay-header) #site-header .toggle,.menu-modal .toggle { color: #000000; }body:not(.overlay-header) .primary-menu ul { background-color: #000000; }body:not(.overlay-header) .primary-menu > li > ul:after { border-bottom-color: #000000; }body:not(.overlay-header) .primary-menu ul ul:after { border-left-color: #000000; }.site-description,body:not(.overlay-header) .toggle-inner .toggle-text,.widget .post-date,.widget .rss-date,.widget_archive li,.widget_categories li,.widget cite,.widget_pages li,.widget_meta li,.widget_nav_menu li,.powered-by-wordpress,.to-the-top,.singular .entry-header .post-meta,.singular:not(.overlay-header) .entry-header .post-meta a { color: #686868; }.header-footer-group pre,.header-footer-group fieldset,.header-footer-group input,.header-footer-group textarea,.header-footer-group table,.header-footer-group table *,.footer-nav-widgets-wrapper,#site-footer,.menu-modal nav *,.footer-widgets-outer-wrapper,.footer-top { border-color: #d3d3d3; }.header-footer-group table caption,body:not(.overlay-header) .header-inner .toggle-wrapper::before { background-color: #d3d3d3; }.overlay-header .header-inner { color: #f7f7f7; }.cover-header .entry-header * { color: #f7f7f7; }</style>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/668">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 5.7.2">
+<link rel="canonical" href="/2006/08/16/css-opacity-in-internet-explorer-ie/">
+<link rel="shortlink" href="/?p=668">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2006%2F08%2F16%2Fcss-opacity-in-internet-explorer-ie%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2006%2F08%2F16%2Fcss-opacity-in-internet-explorer-ie%2F&#038;format=xml">
+<link rel="alternate" type="application/feed+json" title="Joseph Scott &raquo; JSON Feed" href="/feed/json/">
+<link rel="alternate" type="application/feed+json" title="Joseph Scott &raquo; CSS Opacity in Internet Explorer (IE) Comments Feed" href="/2006/08/16/css-opacity-in-internet-explorer-ie/feed/json/"> <script>document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );</script> <style id="custom-background-css">body.custom-background { background-color: #f7f7f7; }</style>
+<style id="wp-custom-css">.powered-by-wordpress { display: none;}
+
+.entry-categories { display: none;}</style>
+</head>
+<body class="post-template-default single single-post postid-668 single-format-standard custom-background wp-embed-responsive singular enable-search-modal missing-post-thumbnail has-single-pagination showing-comments show-avatars footer-top-visible reduced-spacing"> <a class="skip-link screen-reader-text" href="#site-content">Skip to the content</a><header id="site-header" class="header-footer-group" role="banner"><div class="header-inner section-inner">
+<div class="header-titles-wrapper"> <button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false"> <span class="toggle-inner"> <span class="toggle-icon"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewbox="0 0 23 23"><path d="M38.710696,48.0601792 L43,52.3494831 L41.3494831,54 L37.0601792,49.710696 C35.2632422,51.1481185 32.9839107,52.0076499 30.5038249,52.0076499 C24.7027226,52.0076499 20,47.3049272 20,41.5038249 C20,35.7027226 24.7027226,31 30.5038249,31 C36.3049272,31 41.0076499,35.7027226 41.0076499,41.5038249 C41.0076499,43.9839107 40.1481185,46.2632422 38.710696,48.0601792 Z M36.3875844,47.1716785 C37.8030221,45.7026647 38.6734666,43.7048964 38.6734666,41.5038249 C38.6734666,36.9918565 35.0157934,33.3341833 30.5038249,33.3341833 C25.9918565,33.3341833 22.3341833,36.9918565 22.3341833,41.5038249 C22.3341833,46.0157934 25.9918565,49.6734666 30.5038249,49.6734666 C32.7048964,49.6734666 34.7026647,48.8030221 36.1716785,47.3875844 C36.2023931,47.347638 36.2360451,47.3092237 36.2726343,47.2726343 C36.3092237,47.2360451 36.347638,47.2023931 36.3875844,47.1716785 Z" transform="translate(-20 -31)"></path></svg> </span> <span class="toggle-text">Search</span> </span> </button><div class="header-titles"><div class="site-title faux-heading"><a href="/">Joseph Scott</a></div></div> <button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle"> <span class="toggle-inner"> <span class="toggle-icon"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="26" height="7" viewbox="0 0 26 7"><path fill-rule="evenodd" d="M332.5,45 C330.567003,45 329,43.4329966 329,41.5 C329,39.5670034 330.567003,38 332.5,38 C334.432997,38 336,39.5670034 336,41.5 C336,43.4329966 334.432997,45 332.5,45 Z M342,45 C340.067003,45 338.5,43.4329966 338.5,41.5 C338.5,39.5670034 340.067003,38 342,38 C343.932997,38 345.5,39.5670034 345.5,41.5 C345.5,43.4329966 343.932997,45 342,45 Z M351.5,45 C349.567003,45 348,43.4329966 348,41.5 C348,39.5670034 349.567003,38 351.5,38 C353.432997,38 355,39.5670034 355,41.5 C355,43.4329966 353.432997,45 351.5,45 Z" transform="translate(-329 -38)"></path></svg> </span> <span class="toggle-text">Menu</span> </span> </button>
+</div>
+<div class="header-navigation-wrapper">
+<nav class="primary-menu-wrapper" aria-label="Horizontal" role="navigation"><ul class="primary-menu reset-list-style">
+<li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><a href="https://josephscott.org/">Home</a></li>
+<li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-8"><a href="/">Blog</a></li>
+<li id="menu-item-15706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15706"><a href="/contact/">Contact</a></li>
+</ul></nav><div class="header-toggles hide-no-js"><div class="toggle-wrapper search-toggle-wrapper"> <button class="toggle search-toggle desktop-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false"> <span class="toggle-inner"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewbox="0 0 23 23"><path d="M38.710696,48.0601792 L43,52.3494831 L41.3494831,54 L37.0601792,49.710696 C35.2632422,51.1481185 32.9839107,52.0076499 30.5038249,52.0076499 C24.7027226,52.0076499 20,47.3049272 20,41.5038249 C20,35.7027226 24.7027226,31 30.5038249,31 C36.3049272,31 41.0076499,35.7027226 41.0076499,41.5038249 C41.0076499,43.9839107 40.1481185,46.2632422 38.710696,48.0601792 Z M36.3875844,47.1716785 C37.8030221,45.7026647 38.6734666,43.7048964 38.6734666,41.5038249 C38.6734666,36.9918565 35.0157934,33.3341833 30.5038249,33.3341833 C25.9918565,33.3341833 22.3341833,36.9918565 22.3341833,41.5038249 C22.3341833,46.0157934 25.9918565,49.6734666 30.5038249,49.6734666 C32.7048964,49.6734666 34.7026647,48.8030221 36.1716785,47.3875844 C36.2023931,47.347638 36.2360451,47.3092237 36.2726343,47.2726343 C36.3092237,47.2360451 36.347638,47.2023931 36.3875844,47.1716785 Z" transform="translate(-20 -31)"></path></svg> <span class="toggle-text">Search</span> </span> </button>
+</div></div>
+</div>
+</div>
+<div class="search-modal cover-modal header-footer-group" data-modal-target-string=".search-modal"><div class="search-modal-inner modal-inner"><div class="section-inner">
+<form role="search" aria-label="Search for:" method="get" class="search-form" action="/"> <label for="search-form-1"> <span class="screen-reader-text">Search for:</span> <input type="search" id="search-form-1" class="search-field" placeholder="Search &hellip;" value="" name="s"> </label> <input type="submit" class="search-submit" value="Search">
+</form> <button class="toggle search-untoggle close-search-toggle fill-children-current-color" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field"> <span class="screen-reader-text">Close search</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16"><polygon fill="" fill-rule="evenodd" points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102"></polygon></svg> </button>
+</div></div></div></header><div class="menu-modal cover-modal header-footer-group" data-modal-target-string=".menu-modal"><div class="menu-modal-inner modal-inner"><div class="menu-wrapper section-inner">
+<div class="menu-top"> <button class="toggle close-nav-toggle fill-children-current-color" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".menu-modal"> <span class="toggle-text">Close Menu</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16"><polygon fill="" fill-rule="evenodd" points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102"></polygon></svg> </button><nav class="mobile-menu" aria-label="Mobile" role="navigation"><ul class="modal-menu reset-list-style">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><div class="ancestor-wrapper"><a href="https://josephscott.org/">Home</a></div></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-8"><div class="ancestor-wrapper"><a href="/">Blog</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15706"><div class="ancestor-wrapper"><a href="/contact/">Contact</a></div></li>
+</ul></nav>
+</div>
+<div class="menu-bottom"></div>
+</div></div></div>
+<main id="site-content" role="main"><article class="post-668 post type-post status-publish format-standard hentry category-josephscott" id="post-668"><header class="entry-header has-text-align-center header-footer-group"><div class="entry-header-inner section-inner medium">
+<div class="entry-categories"> <span class="screen-reader-text">Categories</span><div class="entry-categories-inner"> <a href="/category/josephscott/" rel="category tag">josephscott</a>
+</div>
+</div>
+<h1 class="entry-title">CSS Opacity in Internet Explorer (IE)</h1>
+<div class="post-meta-wrapper post-meta-single post-meta-single-top"><ul class="post-meta">
+<li class="post-author meta-wrapper"> <span class="meta-icon"> <span class="screen-reader-text">Post author</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewbox="0 0 18 20"><path fill="" d="M18,19 C18,19.5522847 17.5522847,20 17,20 C16.4477153,20 16,19.5522847 16,19 L16,17 C16,15.3431458 14.6568542,14 13,14 L5,14 C3.34314575,14 2,15.3431458 2,17 L2,19 C2,19.5522847 1.55228475,20 1,20 C0.44771525,20 0,19.5522847 0,19 L0,17 C0,14.2385763 2.23857625,12 5,12 L13,12 C15.7614237,12 18,14.2385763 18,17 L18,19 Z M9,10 C6.23857625,10 4,7.76142375 4,5 C4,2.23857625 6.23857625,0 9,0 C11.7614237,0 14,2.23857625 14,5 C14,7.76142375 11.7614237,10 9,10 Z M9,8 C10.6568542,8 12,6.65685425 12,5 C12,3.34314575 10.6568542,2 9,2 C7.34314575,2 6,3.34314575 6,5 C6,6.65685425 7.34314575,8 9,8 Z"></path></svg> </span> <span class="meta-text"> By <a href="/author/josephscott/">josephscott</a> </span>
+</li>
+<li class="post-date meta-wrapper"> <span class="meta-icon"> <span class="screen-reader-text">Post date</span> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewbox="0 0 18 19"><path fill="" d="M4.60069444,4.09375 L3.25,4.09375 C2.47334957,4.09375 1.84375,4.72334957 1.84375,5.5 L1.84375,7.26736111 L16.15625,7.26736111 L16.15625,5.5 C16.15625,4.72334957 15.5266504,4.09375 14.75,4.09375 L13.3993056,4.09375 L13.3993056,4.55555556 C13.3993056,5.02154581 13.0215458,5.39930556 12.5555556,5.39930556 C12.0895653,5.39930556 11.7118056,5.02154581 11.7118056,4.55555556 L11.7118056,4.09375 L6.28819444,4.09375 L6.28819444,4.55555556 C6.28819444,5.02154581 5.9104347,5.39930556 5.44444444,5.39930556 C4.97845419,5.39930556 4.60069444,5.02154581 4.60069444,4.55555556 L4.60069444,4.09375 Z M6.28819444,2.40625 L11.7118056,2.40625 L11.7118056,1 C11.7118056,0.534009742 12.0895653,0.15625 12.5555556,0.15625 C13.0215458,0.15625 13.3993056,0.534009742 13.3993056,1 L13.3993056,2.40625 L14.75,2.40625 C16.4586309,2.40625 17.84375,3.79136906 17.84375,5.5 L17.84375,15.875 C17.84375,17.5836309 16.4586309,18.96875 14.75,18.96875 L3.25,18.96875 C1.54136906,18.96875 0.15625,17.5836309 0.15625,15.875 L0.15625,5.5 C0.15625,3.79136906 1.54136906,2.40625 3.25,2.40625 L4.60069444,2.40625 L4.60069444,1 C4.60069444,0.534009742 4.97845419,0.15625 5.44444444,0.15625 C5.9104347,0.15625 6.28819444,0.534009742 6.28819444,1 L6.28819444,2.40625 Z M1.84375,8.95486111 L1.84375,15.875 C1.84375,16.6516504 2.47334957,17.28125 3.25,17.28125 L14.75,17.28125 C15.5266504,17.28125 16.15625,16.6516504 16.15625,15.875 L16.15625,8.95486111 L1.84375,8.95486111 Z"></path></svg> </span> <span class="meta-text"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/">Wed 16 Aug 2006</a> </span>
+</li>
+<li class="post-comment-link meta-wrapper"> <span class="meta-icon"> <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewbox="0 0 19 19"><path d="M9.43016863,13.2235931 C9.58624731,13.094699 9.7823475,13.0241935 9.98476849,13.0241935 L15.0564516,13.0241935 C15.8581553,13.0241935 16.5080645,12.3742843 16.5080645,11.5725806 L16.5080645,3.44354839 C16.5080645,2.64184472 15.8581553,1.99193548 15.0564516,1.99193548 L3.44354839,1.99193548 C2.64184472,1.99193548 1.99193548,2.64184472 1.99193548,3.44354839 L1.99193548,11.5725806 C1.99193548,12.3742843 2.64184472,13.0241935 3.44354839,13.0241935 L5.76612903,13.0241935 C6.24715123,13.0241935 6.63709677,13.4141391 6.63709677,13.8951613 L6.63709677,15.5301903 L9.43016863,13.2235931 Z M3.44354839,14.766129 C1.67980032,14.766129 0.25,13.3363287 0.25,11.5725806 L0.25,3.44354839 C0.25,1.67980032 1.67980032,0.25 3.44354839,0.25 L15.0564516,0.25 C16.8201997,0.25 18.25,1.67980032 18.25,3.44354839 L18.25,11.5725806 C18.25,13.3363287 16.8201997,14.766129 15.0564516,14.766129 L10.2979143,14.766129 L6.32072889,18.0506004 C5.75274472,18.5196577 4.89516129,18.1156602 4.89516129,17.3790323 L4.89516129,14.766129 L3.44354839,14.766129 Z"></path></svg> </span> <span class="meta-text"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comments">77 Comments<span class="screen-reader-text"> on CSS Opacity in Internet Explorer (IE)</span></a> </span>
+</li>
+</ul></div>
+</div></header><div class="post-inner thin "><div class="entry-content">
+<p><span style="float: left;padding: 10px"></span></p>
+<p><br> I&#8217;ve been looking into opacity in CSS. All of my initial testing was done in Firefox and worked as expected. Using <code>opacity</code> in CSS is simple enough, accepting values between 1.0 (completely visible) and 0.0 (invisible). As an added bonus it also works in Safari and Opera.</p>
+<p>Then I ran into Internet Explorer (IE). IE&#8217;s CSS uses <code>filter</code> instead of <code>opacity</code>, and the expected values are different. The filter opacity values range from 100 (completely visible) to 0 (invisible). This turns out to be easy enough to deal with. Here&#8217;s an example that sets the opacity to 50%, it works in IE (filter) and others (opacity):</p>
+<pre>
+.change_opacity {
+  opacity: 0.5;
+  filter: alpha(opacity = 50);
+}
+</pre>
+<p>But simply setting the filter/opacity value in IE isn&#8217;t enough. Turns out that IE requires an element to be positioned in order for filter/opacity to work. If your element doesn&#8217;t have a position you can work around this by adding &#8216;<code>zoom: 1</code>&#8216; to your CSS. There are other hacks to deal with this, zoom was the one I picked and it seems to work well enough.</p>
+<p>In JavaScript you can find out if an element in IE has a position component by checking <code>element.currentStyle.hasLayout</code>. If hasLayout is false then the element has no CSS positioning.</p>
+<p>If you want to learn more about this issue here is a reading list to get your started:</p>
+<ul>
+<li><a href="http://www.mandarindesign.com/opacity.html">Exploring OpacityStep-by-Step</a></li>
+<li><a href="http://www.satzansatz.de/cssd/onhavinglayout.html">On having layout</a></li>
+<li><a href="http://www.quirksmode.org/css/opacity.html">Opacity @ QuirksMode</a></li>
+</ul>
+<p><b>UPDATE: Fri 1 Sep 2006 @ 12:45pm</b> Michael correctly pointed out that IE doesn&#8217;t use a % for opacity, so I&#8217;ve removed it.</p>
+</div></div>
+<div class="section-inner"></div>
+<nav class="pagination-single section-inner" aria-label="Post" role="navigation"><hr class="styled-separator is-style-wide" aria-hidden="true">
+<div class="pagination-single-inner"> <a class="previous-post" href="/2006/08/15/ajax-edit-in-place-with-prototype-javascript-version-032/"> <span class="arrow" aria-hidden="true">&larr;</span> <span class="title"><span class="title-inner">AJAX Edit In Place With Prototype (Javascript), Version 0.3.2</span></span> </a> <a class="next-post" href="/2006/08/20/feed-crier/"> <span class="arrow" aria-hidden="true">&rarr;</span> <span class="title"><span class="title-inner">Feed Crier</span></span> </a>
+</div>
+<hr class="styled-separator is-style-wide" aria-hidden="true"></nav><div class="comments-wrapper section-inner">
+<div class="comments" id="comments">
+<div class="comments-header section-inner small max-percentage"><h2 class="comment-reply-title"> 77 replies on &ldquo;CSS Opacity in Internet Explorer (IE)&rdquo;</h2></div>
+<div class="comments-inner section-inner thin max-percentage">
+<div id="comment-1498" class="comment even thread-even depth-1"><article id="div-comment-1498" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://mike.eire.ca/" rel="external nofollow" class="url"><img id="grav-16031c8aecf65e12158e38b96419449e-120-60d16d36b3fb1" alt="Michael Newton" src="/wp-content/uploads/gravatar-cache/16031c8aecf65e12158e38b96419449e-120.png" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Michael Newton</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1498"><time datetime="2006-09-01T11:32:16-06:00" title="Fri 1 Sep 2006 at 11:32 am">Fri 1 Sep 2006 at 11:32 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>There&#8217;s no %</p></div></article></div>
+<div id="comment-1499" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1499" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d16d36b910e" alt="joseph" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">joseph</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1499"><time datetime="2006-09-01T11:47:12-06:00" title="Fri 1 Sep 2006 at 11:47 am">Fri 1 Sep 2006 at 11:47 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Michael-<br> You are correct, I&#8217;m not sure where I picked the % from. I&#8217;ve removed it.</p></div></article></div>
+<div id="comment-1500" class="comment even thread-even depth-1"><article id="div-comment-1500" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://arathael.awardspace.com/" rel="external nofollow" class="url"><img id="grav-6211db5366591bff1e1a1d9087f34af1-120-60d16d36b9b7f" alt="arathael" src="/wp-content/uploads/gravatar-cache/6211db5366591bff1e1a1d9087f34af1-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">arathael</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1500"><time datetime="2006-10-31T12:28:55-07:00" title="Tue 31 Oct 2006 at 12:28 pm">Tue 31 Oct 2006 at 12:28 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Thanks man, im developing a webapp for my job and i was going quite crazy about this matter. My Css was fine, and worked in FF (as always) but the application has to be cross-browser and i didn&#8217;t know was happening here..</p>
+<p>I was working before, on an anchor element, and when I nested the anchor within a list item, it stopped working&#8230; even with float and block display.</p>
+<p>The zoom property seems to be quite a thing&#8230;</p>
+</div></article></div>
+<div id="comment-1501" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1501" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://joseph.randomnetworks.com/archives/2006/08/16/css-opacity-in-internet-explorer-ie/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d36be1a8" alt="Jeremy" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Jeremy</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1501"><time datetime="2007-04-09T23:38:11-06:00" title="Mon 9 Apr 2007 at 11:38 pm">Mon 9 Apr 2007 at 11:38 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Thanks so much! id been trying to fix this bug for ages, but couldn&#8217;t work out why it wouldn&#8217;t work in IE!</p></div></article></div>
+<div id="comment-1502" class="comment even thread-even depth-1"><article id="div-comment-1502" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://several/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d36c3853" alt="maaaaak" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">maaaaak</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1502"><time datetime="2007-04-18T12:03:19-06:00" title="Wed 18 Apr 2007 at 12:03 pm">Wed 18 Apr 2007 at 12:03 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>zoom: 1; thank you very much, makes sense in a microsoft sort of way *shrug</p></div></article></div>
+<div id="comment-1503" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1503" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.fbcofshelby.org/new/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d36c8399" alt="Ted" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Ted</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1503"><time datetime="2007-05-22T07:16:46-06:00" title="Tue 22 May 2007 at 7:16 am">Tue 22 May 2007 at 7:16 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Joseph,</p>
+<p>I&#8217;ve been experimenting with opacity in a js menu over top of an image. As you can see in this webpage, FF works but IE does not. Here&#8217;s the line I&#8217;m using.</p>
+<p>I have eliminated all possibilies except the &#8220;position: absolute;&#8221; If I remove this, the menu works in both FF/IE but the opacity only works in FF with it.</p>
+<p>Any ideas would be greatly helpful.</p>
+<p>&#8211;Ted</p>
+</div></article></div>
+<div id="comment-1504" class="comment even thread-even depth-1"><article id="div-comment-1504" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://trebla.cz/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d36cca87" alt="trebla" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">trebla</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1504"><time datetime="2007-06-04T19:01:34-06:00" title="Mon 4 Jun 2007 at 7:01 pm">Mon 4 Jun 2007 at 7:01 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi there,</p>
+<p>to make it work in IE add width:100%</p>
+<p>.change_opacity {<br> opacity: 0.5;<br> filter: alpha(opacity = 50);<br> width: 100%; /* stupid IE */<br> }</p>
+<p>see you</p>
+</div></article></div>
+<div id="comment-1505" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1505" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://ninjaprawn.myby.co.uk/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d36d18f1" alt="danny" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">danny</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1505"><time datetime="2007-06-24T16:54:03-06:00" title="Sun 24 Jun 2007 at 4:54 pm">Sun 24 Jun 2007 at 4:54 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>genious!!! the &#8216;zoom:1;&#8217; worked perfectly to give me transparentcy in ie! BUT, my hit counter and ad, lose there &#8216;position:absolute&#8217; attributes! is there anything else that can be used instead of the zoom feature to get transparentcy to work in ie? or a way of getting my hitcounter and ad to stay on the right of the page?? email me any decent response, please, <a href="mailto:ninjaprawn@blueyonder.co.uk">ninjaprawn@blueyonder.co.uk</a> , or visit my site, my email is there to <a href="http://ninjaprawn.myby.co.uk/" rel="nofollow ugc">http://ninjaprawn.myby.co.uk</a> !!!</p></div></article></div>
+<div id="comment-1506" class="comment even thread-even depth-1"><article id="div-comment-1506" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.ivoo.com.ar/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d36d6465" alt="Iván" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Iván</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1506"><time datetime="2007-06-27T07:59:32-06:00" title="Wed 27 Jun 2007 at 7:59 am">Wed 27 Jun 2007 at 7:59 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>@danny:<br> I think you can use &#8216;float: right&#8217;.</p></div></article></div>
+<div id="comment-1507" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1507" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://faded.reiku.org/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d36dba41" alt="Fei" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Fei</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1507"><time datetime="2007-09-08T19:30:00-06:00" title="Sat 8 Sep 2007 at 7:30 pm">Sat 8 Sep 2007 at 7:30 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Even though you posted this a while ago, just wanted to say; thank you so much for the code! Been wondering why the code wasn&#8217;t working and then I read your blog, thank you!</p></div></article></div>
+<div id="comment-1508" class="comment even thread-even depth-1"><article id="div-comment-1508" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.torreco.com/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d36e105e" alt="Torreco" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Torreco</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1508"><time datetime="2007-09-24T21:01:34-06:00" title="Mon 24 Sep 2007 at 9:01 pm">Mon 24 Sep 2007 at 9:01 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi<br> I&#8217;m having a problem with the css in my blog, and I&#8217;m wondering if you could help.<br> I&#8217;m using this code to hide the Blogger navbar, but in only works with FF. It isn&#8217;t the same with IE or Opera. The goal is that the navbar remains hidden, and become visible when you roll the mouse over it. This is the code:</p>
+<p>#navbar-iframe{opacity:0.0;filter:alpha(Opacity=0)}<br> #navbar-iframe:hover{opacity:1.0;filter:alpha(Opacity=100, FinishedOpacity=100);width:100%}</p>
+<p>As you can see, I read your post and added widht to the code, but doing this way it didn&#8217;t worked.</p>
+</div></article></div>
+<div id="comment-1509" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1509" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.munterwegs.de/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d36e6901" alt="Torsten" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Torsten</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1509"><time datetime="2007-10-17T23:21:02-06:00" title="Wed 17 Oct 2007 at 11:21 pm">Wed 17 Oct 2007 at 11:21 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I have exactly the same problem as Torreco!</p>
+<p>IE recognize the string &#8220;#navbar-iframe &#8230;&#8221; and it is displayed transparent. It&#8217;s working fine. But IE seem NOT to recognize the string &#8220;#navbar-iframe:hover &#8230;&#8221; because on hovering the navbar &#8211; in IE &#8211; it not changes anything, it is still so transparent as in &#8220;#navbar-iframe &#8230;&#8221; defined.</p>
+<p>So my only thought is, that the problem lies in the string &#8220;#navbar-iframe:hover&#8221;. Why does firefox recognize it, and IE does not???</p>
+</div></article></div>
+<div id="comment-1510" class="comment even thread-even depth-1"><article id="div-comment-1510" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://blog.onetrackmind.co.nz/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d36ec2dc" alt="Rob" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Rob</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1510"><time datetime="2007-10-23T03:07:59-06:00" title="Tue 23 Oct 2007 at 3:07 am">Tue 23 Oct 2007 at 3:07 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>The :hover psuedo-class only works in IE6 for A elements. And if #navbar-iframe is actually an iframe, that might be a different bundle of fun again&#8230;</p>
+<p>You could make your A element act like a DIV via &#8216;display:block&#8217;.</p>
+</div></article></div>
+<div id="comment-1511" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1511" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.munterwegs.de/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d36f1351" alt="Torsten" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Torsten</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1511"><time datetime="2007-10-30T07:38:58-06:00" title="Tue 30 Oct 2007 at 7:38 am">Tue 30 Oct 2007 at 7:38 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Thanx for the answer. But it doesn&#8217;t seem to work. At first I have added the following lines to my stylessheet:</p>
+<p>#navbar-iframe {<br> display:none;<br> }</p>
+<p>but this destroyed my whole blog-formation.</p>
+<p>than I added it to the hover-string:</p>
+<p>#navbar-iframe:hover { opacity: 0.8; filter: alpha(opacity=80); display:block; }</p>
+<p>my blog-formation was there again, but the hover-effect didn&#8217;t stil work in IE.</p>
+</div></article></div>
+<div id="comment-1512" class="comment even thread-even depth-1"><article id="div-comment-1512" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://phxshadow.com/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d3701f5f" alt="Phoenix Shadow" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Phoenix Shadow</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1512"><time datetime="2007-11-17T00:04:30-07:00" title="Sat 17 Nov 2007 at 12:04 am">Sat 17 Nov 2007 at 12:04 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Thanks for that. Somedays I just wish everyone could decide to interpret css and html the same way you know? Anyone else ever feel that, or is just me? 🙂</p>
+<p>Torsten:<br> display: none; will remove the object entirely from the layout where as<br> visibility: hidden; just means it&#8217;s not visible.</p>
+<p>Then to make things visible again, you just go:<br> document.getElementByID(objectID).style.visibility = &#8220;visible&#8221;;</p>
+</div></article></div>
+<div id="comment-1513" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1513" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d37076a0" alt="nahum silva" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">nahum silva</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1513"><time datetime="2008-01-22T17:38:23-07:00" title="Tue 22 Jan 2008 at 5:38 pm">Tue 22 Jan 2008 at 5:38 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi every body I really Dont know why get angry about IE, get a javascript framework and all this is going to be disappear also you use the reset css of yahoo for make your app easy of use with css&#8230;</p>
+<p>get <a href="http://www.prototypejs.com/" rel="nofollow ugc">http://www.prototypejs.com</a> and yahoo css reset yui&#8230;</p>
+</div></article></div>
+<div id="comment-1514" class="comment even thread-even depth-1"><article id="div-comment-1514" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d16d370bc49" alt="Joseph Scott" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Joseph Scott</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1514"><time datetime="2008-01-30T06:57:55-07:00" title="Wed 30 Jan 2008 at 6:57 am">Wed 30 Jan 2008 at 6:57 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>@nahum &#8211;</p>
+<p>Expecting people to use Javascript to fix a CSS issue is a sign that there is a problem (or at the very least, significant difference) with your CSS implementation. While the Yahoo CSS reset is nice, it doesn&#8217;t really address this particular issue as far as I can tell.</p>
+<p>The intent of the post was to provide a reference on how to make CSS opacity work in Firefox and IE.</p>
+</div></article></div>
+<div id="comment-1515" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1515" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.andreaswacker.com/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16d371038e" alt="Andreas Wacker" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Andreas Wacker</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1515"><time datetime="2008-01-30T17:17:02-07:00" title="Wed 30 Jan 2008 at 5:17 pm">Wed 30 Jan 2008 at 5:17 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Thanks for &#8220;zoom: 1&#8221;</p>
+<p>What was frustrating is now fixed.</p>
+<p>Thank you.</p>
+<p>People: 1 &#8211; IE: 0</p>
+</div></article></div>
+<div id="comment-1516" class="comment even thread-even depth-1"><article id="div-comment-1516" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d16d3714f54" alt="Joseph Scott" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Joseph Scott</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1516"><time datetime="2008-01-31T10:45:34-07:00" title="Thu 31 Jan 2008 at 10:45 am">Thu 31 Jan 2008 at 10:45 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>@Andreas Wacker &#8211;</p>
+<p>No problem, that seemed to be the least intrusive way to deal with the issue that I&#8217;d found.</p>
+<p>Let&#8217;s hope that IE doesn&#8217;t start scoring any points against the people 🙂</p>
+</div></article></div>
+<div id="comment-1517" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1517" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16d371988d" alt="Sarah" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Sarah</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1517"><time datetime="2008-02-20T13:19:03-07:00" title="Wed 20 Feb 2008 at 1:19 pm">Wed 20 Feb 2008 at 1:19 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>thanks for the tip. Worked perfectly for me. =*</p></div></article></div>
+<div id="comment-1518" class="comment even thread-even depth-1"><article id="div-comment-1518" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d371e2d9" alt="Philip" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Philip</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1518"><time datetime="2008-02-28T15:39:51-07:00" title="Thu 28 Feb 2008 at 3:39 pm">Thu 28 Feb 2008 at 3:39 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>In IE, I found that if you create an element in JS, it does not grab the CSS property of filter (and probably other attributes). This had me stumped as to why IE did NOT have the opacity value I gave it. Example:</p>
+<p>&#8212;- THIS DOES NOT WORK IN IE &#8212;-<br> [javascript]<br> var div = document.createElement(&#8216;div&#8217;);<br> div.setAttribute(&#8216;class&#8217;, &#8216;partiallyTransparent&#8217;);</p>
+<p>var body = document.getElementsByTagName(&amp;quot;body&amp;quot;).item(0);<br> body.appendChild(div);<br> [/javascript]</p>
+<p>[CSS]<br> .partiallyTransparent {<br> border: solid 1px #999;<br> background: #FFF;<br> color: #000;<br> opacity: .7;<br> filter:alpha(opacity=70);<br> width: 100%;<br> z-index: 1;<br> }<br> [/CSS]<br> &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-</p>
+<p>If I created the div in the HTML (and not dynamically in the JS), then the opacity worked fine. Example:</p>
+<p>&#8212;- THIS DOES WORK IN IE &#8212;-<br> [HTML]</p>
+<p> Hi, this is some text</p>
+<p>[/HTML]</p>
+<p>[CSS]<br> .partiallyTransparent {<br> border: solid 1px #999;<br> background: #FFF;<br> color: #000;<br> opacity: .7;<br> filter:alpha(opacity=70);<br> width: 100%;<br> z-index: 1;<br> }<br> [/CSS]<br> &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</p>
+<p>Of course, in FF 2.x, the dynamically-generated HTML pulls the CSS attributes just fine. Hope that helps someone because it had me stumped for a few minutes. 😉</p>
+</div></article></div>
+<div id="comment-1519" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1519" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.pixel-templates.com/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16d37228a4" alt="mediaVinci" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">mediaVinci</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1519"><time datetime="2008-03-06T08:48:36-07:00" title="Thu 6 Mar 2008 at 8:48 am">Thu 6 Mar 2008 at 8:48 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Does this work in IE?</p>
+<p>.microflop {<br> opacity: micro$oft(webstandards = 0);<br> }</p>
+<p>graphically &amp; sincerely,</p>
+<p>Marc Klein</p>
+</div></article></div>
+<div id="comment-1520" class="comment even thread-even depth-1"><article id="div-comment-1520" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d37277fd" alt="Java2Architect" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Java2Architect</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1520"><time datetime="2008-03-29T14:26:49-06:00" title="Sat 29 Mar 2008 at 2:26 pm">Sat 29 Mar 2008 at 2:26 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Philip,</p>
+<p>Are you certain the opacity did not get applied in IE when you created the html element dynamically using Javascript because of some different problem with applying class styles in IE?</p>
+<p>What I wanted to ask is, I don&#8217;t see zoom : 1 in your CSS. Can you confirm if things continue to break in IE even after you put this CSS style and create the html element dynamically using JS?</p>
+<p>Fact is, I&#8217;m working on something for which I need to absolutely create html elements on the fly and if I can&#8217;t change the opacity on them, then I&#8217;m screwed.</p>
+<p>Thanks much.</p>
+</div></article></div>
+<div id="comment-1521" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1521" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.digitalfunktion.co.uk/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d372bcfd" alt="Wilko" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Wilko</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1521"><time datetime="2008-04-05T10:57:49-06:00" title="Sat 5 Apr 2008 at 10:57 am">Sat 5 Apr 2008 at 10:57 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>@Java2Architect,<br> The reason Philip&#8217;s style didn&#8217;t get applied is because a of another wonderful problem with IE. This time its DOM implementation.<br> It is exactly as Philip says, if you apply the class attribute with the proper DOM method &#8216;setAttribute&#8217;, it will not be applied properly. It seems to apply the class attribute properly but not actually set the CSS at runtime.</p>
+<p>The way to get arround this is to use the object property &#8216;className&#8217;.</p>
+<p>So for Philip&#8217;s example change;<br> var div = document.createElement(&#146;div&#146;);<br> div.setAttribute(&#146;class&#146;, &#145;partiallyTransparent&#146;);</p>
+<p>to,</p>
+<p>var div = document.createElement(&#146;div&#146;);<br> div.className = &#8216;partiallyTransparent&#8217;;</p>
+<p>That should do the trick. Completely cross-browser too (its nice to be able to say that every now and again) :).</p>
+<p>Ciao</p>
+</div></article></div>
+<div id="comment-1522" class="comment even thread-even depth-1"><article id="div-comment-1522" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-4512bd2c750cc9b9c38e3ddd9ae759a0-120-60d16d372c745" alt="Dan" src="/wp-content/uploads/gravatar-cache/4512bd2c750cc9b9c38e3ddd9ae759a0-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Dan</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1522"><time datetime="2008-04-18T11:56:16-06:00" title="Fri 18 Apr 2008 at 11:56 am">Fri 18 Apr 2008 at 11:56 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I&#8217;m having a strange problem:</p>
+<p>I have a table that I&#8217;m fading using &#8220;filter&#8221; and &#8220;opacity&#8221; so that it works with both IE and FireFox.</p>
+<p>There are anchor tags in my table and are positioned relative (necessary for my roll-over labels). However, I&#8217;ve found out that if I have any positioning specified for the anchor tags, they do not fade with the rest of the table. If I omit the positioning in my CSS, then it fades fine (though my roll-over labels no longer work correctly).</p>
+<p>It seems the IE no longer considers the anchor tags as children of the table? This is very vexing for me because it only happens with anchors; if I specify positions for img tags, they work fine&#8230;</p>
+</div></article></div>
+<div id="comment-1523" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1523" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d3730e5f" alt="saly" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">saly</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1523"><time datetime="2008-05-07T04:42:34-06:00" title="Wed 7 May 2008 at 4:42 am">Wed 7 May 2008 at 4:42 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>thanks, salvation for me 🙂</p></div></article></div>
+<div id="comment-1524" class="comment even thread-even depth-1"><article id="div-comment-1524" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.blubolt.com/" rel="external nofollow" class="url"><img id="grav-b405199d09af74881d6b077e52095d81-120-60d16d37317f6" alt="Amy Mahon" src="/wp-content/uploads/gravatar-cache/b405199d09af74881d6b077e52095d81-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Amy Mahon</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1524"><time datetime="2008-05-22T03:59:50-06:00" title="Thu 22 May 2008 at 3:59 am">Thu 22 May 2008 at 3:59 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Thanks! This post definitely helped me in a quick pinch.</p></div></article></div>
+<div id="comment-1525" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1525" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d3735c3b" alt="tom" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">tom</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1525"><time datetime="2008-05-25T14:40:50-06:00" title="Sun 25 May 2008 at 2:40 pm">Sun 25 May 2008 at 2:40 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>&#8220;zoom: 1&#8221; saved me.<br> Great post, Joseph!</p></div></article></div>
+<div id="comment-1526" class="comment even thread-even depth-1"><article id="div-comment-1526" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16d373a0d0" alt="shruthi" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">shruthi</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1526"><time datetime="2008-05-28T00:17:44-06:00" title="Wed 28 May 2008 at 12:17 am">Wed 28 May 2008 at 12:17 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>div.fileinputs {<br> position: relative;<br> }</p>
+<p>div.fakefile {<br> position: absolute;<br> top: 0px;<br> left: 0px;<br> z-index: 1;<br> }</p>
+<p>input.file {<br> position: relative;<br> text-align: right;<br> -moz-opacity:0 ;<br> filter:alpha(opacity: 0);<br> opacity: 0;<br> z-index: 2;<br> }</p>
+<p>not working in Fire fox</p>
+</div></article></div>
+<div id="comment-1527" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1527" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d373e3b1" alt="tom" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">tom</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1527"><time datetime="2008-05-28T22:39:38-06:00" title="Wed 28 May 2008 at 10:39 pm">Wed 28 May 2008 at 10:39 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Of course it&#8217;s not working, for security reasons. But there are work-arounds to this. Google for:<br> javascript file upload browse button<br> and you will find how to hide and style the input type=file</p></div></article></div>
+<div id="comment-1528" class="comment even thread-even depth-1"><article id="div-comment-1528" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16d3742c67" alt="shruthi" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">shruthi</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1528"><time datetime="2008-05-28T22:59:38-06:00" title="Wed 28 May 2008 at 10:59 pm">Wed 28 May 2008 at 10:59 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>But if control style is set to display none, then file1.hasFile vil be nothing, i am not able to track how to save the file into server</p></div></article></div>
+<div id="comment-1529" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1529" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d3746c78" alt="tom" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">tom</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1529"><time datetime="2008-05-28T23:23:32-06:00" title="Wed 28 May 2008 at 11:23 pm">Wed 28 May 2008 at 11:23 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p><a href="http://csscreator.com/node/29222" rel="nofollow ugc">http://csscreator.com/node/29222</a><br> <a href="https://www.google.com/search?num=50&#038;hl=en&#038;safe=off&#038;q=input+type%3Dfile+style&#038;btnG=Search" rel="nofollow ugc">http://www.google.com/search?num=50&#038;hl=en&#038;safe=off&#038;q=input+type%3Dfile+style&#038;btnG=Search</a></p>
+<p>I will not comment any more regarding this matter.</p>
+</div></article></div>
+<div id="comment-1530" class="comment even thread-even depth-1"><article id="div-comment-1530" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d374b397" alt="Andrew" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Andrew</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1530"><time datetime="2008-07-07T17:07:56-06:00" title="Mon 7 Jul 2008 at 5:07 pm">Mon 7 Jul 2008 at 5:07 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>In the code below, I can&#8217;t seem to find a way to make the inner div opaque. It seems the opacity can be set to a lower value, but not a higher one.</p>
+<p> var oOuterDiv = document.createElement( &#8216;div&#8217; );</p>
+<p> oOuterDiv.style.position = &#8216;absolute&#8217;;<br> oOuterDiv.style.top = &#8216;0px&#8217;;<br> oOuterDiv.style.left = &#8216;0px&#8217;;<br> oOuterDiv.style.width = &#8216;100%&#8217;;<br> oOuterDiv.style.height = &#8216;100%&#8217;;<br> oOuterDiv.style.backgroundColor = &#8216;red&#8217;;<br> oOuterDiv.style.opacity = &#8216;.5&#8217;;<br> oOuterDiv.style.filter = &#8216;alpha( opacity=50 )&#8217;;<br> oOuterDiv.style.display = &#8216;block&#8217;;</p>
+<p> var oInnerDiv = document.createElement( &#8216;div&#8217; );</p>
+<p> oInnerDiv.style.position = &#8216;absolute&#8217;;<br> oInnerDiv.style.top = &#8216;200px&#8217;;<br> oInnerDiv.style.width = &#8216;200px&#8217;;<br> oInnerDiv.style.height = &#8216;200px&#8217;;<br> oInnerDiv.style.border = &#8216;5px solid black&#8217;;<br> oInnerDiv.style.backgroundColor = &#8216;white&#8217;;<br> oInnerDiv.style.opacity = &#8216;1&#8217;;<br> oInnerDiv.style.filter = &#8216;alpha( opacity=100 )&#8217;;<br> oInnerDiv.style.display = &#8216;block&#8217;;</p>
+<p> oOuterDiv.appendChild( oInnerDiv );</p>
+<p> var oBody = document.getElementsByTagName( &#8216;body&#8217; )[0];<br> oBody.appendChild( oOuterDiv );</p>
+</div></article></div>
+<div id="comment-1531" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1531" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d374f8ac" alt="tom" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">tom</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1531"><time datetime="2008-07-08T00:05:13-06:00" title="Tue 8 Jul 2008 at 12:05 am">Tue 8 Jul 2008 at 12:05 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>You can&#8217;t do that. Let me explain this in a few ways &#8211; they all mean the same thing, I&#8217;m just making sure everyone gets the point:<br> 1) If you have an element INNER inside an element OUTER, you can&#8217;t make INNER appear more opaque than OUTER because the opacity you give OUTER will be the opacity used to paint that element and all it&#8217;s children.</p>
+<p>2) Here are some examples:<br> &#8211; If you give OUTER 25% opacity and INNER 100%, then on the screen INNER will appear to have 25%.<br> &#8211; If you give OUTER 25% opacity and INNER 50%, then on screen INNER will appear to have 12.5%.</p>
+<p>3) The opacity is relative to the parent, therefore the final result will be the product of all opacity values starting with the given element and continuing with all of it&#8217;s parents (25% * 50% = 12.5% because the &#8220;%&#8221; sign simply means &#8221; / 100&#8243;).</p>
+<p>Note: You can NOT have opacity &gt; 100% because that simply doesn&#8217;t make sense.</p>
+<p>Hope that&#8217;s clear&#8230;</p>
+</div></article></div>
+<div id="comment-1532" class="comment even thread-even depth-1"><article id="div-comment-1532" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d3754eb1" alt="Andrew" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Andrew</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1532"><time datetime="2008-07-09T10:30:22-06:00" title="Wed 9 Jul 2008 at 10:30 am">Wed 9 Jul 2008 at 10:30 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi Tom, thanks for responding. I was able to make this work as expected by adding the inner div to the body as opposed to adding it to the outer div.</p>
+<p>In the example I gave above, both FF and IE have the same result. I would submit this is a bug, or at the very least, inconsistent design. There are some style elements that certainly make sense in relation to a parent. Opacity, color, font style, etc&#8230; are not among them. These items should vary independent of any parent unless inherit is specified. Said another way, I don&#8217;t see how the opacity of a block element with z-index 0, should affect the opacity of an element with a higher z-index positioned above it. These should not depend on each other and should render as such.</p>
+<p>Best Regards,<br> Andrew</p>
+</div></article></div>
+<div id="comment-1533" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1533" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d3759a6d" alt="tom" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">tom</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1533"><time datetime="2008-07-10T10:00:09-06:00" title="Thu 10 Jul 2008 at 10:00 am">Thu 10 Jul 2008 at 10:00 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Opacity makes sense, because you don&#8217;t &#8220;stick&#8221; the inner div &#8220;on&#8221; the outer div. By your logic, you couldn&#8217;t make the contents of a div transparent unless you reached EACH AND EVERY element inside it and all their children and gave them the same opacity. Opacity is relative because a div is a container and if you make it transparent, it&#8217;s pretty clear you want the contents to have the same transparency, otherwise it wouldn&#8217;t make any sense, except for making transparent rectangles.</p></div></article></div>
+<div id="comment-1534" class="comment even thread-even depth-1"><article id="div-comment-1534" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-f5fcb7a19780a156c8af6c796662d8ce-120-60d16d375a92a" alt="Stéphane" src="/wp-content/uploads/gravatar-cache/f5fcb7a19780a156c8af6c796662d8ce-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Stéphane</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1534"><time datetime="2008-07-22T01:06:57-06:00" title="Tue 22 Jul 2008 at 1:06 am">Tue 22 Jul 2008 at 1:06 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi, I tried every trick but none works.<br> Here is the web page : <a href="http://www.ca-alpesprovence.fr/Vitrine/ObjCommun/Fic/AlpesProvence/interconso/" rel="nofollow ugc">http://www.ca-alpesprovence.fr/Vitrine/ObjCommun/Fic/AlpesProvence/interconso/</a></p>
+<p>When you roll over the pink words, a bubble appears. Then when you roll over one of the 3 parts of the bubble, the two other should fade out slightly. It works in any browser but IE.</p>
+<p>Does anyone know what is wrong with this page ?</p>
+<p>Thanks</p>
+</div></article></div>
+<div id="comment-1535" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1535" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d375fe94" alt="tom" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">tom</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1535"><time datetime="2008-07-23T11:00:40-06:00" title="Wed 23 Jul 2008 at 11:00 am">Wed 23 Jul 2008 at 11:00 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hello, Stéphane,</p>
+<p>I&#8217;m not sure, but see line 1171 in wz_tooltip.js, change it to if opa &lt; 100 &#8230; &#8230; Let me know if that worked.</p>
+<p>Regards,<br> Tom</p>
+</div></article></div>
+<div id="comment-1536" class="comment even thread-even depth-1"><article id="div-comment-1536" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d3764abb" alt="Nipun" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Nipun</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1536"><time datetime="2008-07-26T06:03:09-06:00" title="Sat 26 Jul 2008 at 6:03 am">Sat 26 Jul 2008 at 6:03 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I have a div defined in my JSP as follows:</p>
+<p>css for both is:</p>
+<p>#order_left_assaysList{<br> overflow: hidden;<br> width:100%;<br> }</p>
+<p>.overlay_div_css{<br> background:#dedede no-repeat center center;<br> height: 303px;<br> width: 450px;<br> zoom: 1;<br> position: absolute;<br> z-index:999;<br> }</p>
+<p>javascript to set the overlay is:</p>
+<p>var setOverlayProps = function(rye) {<br> var elm=dijit.byId(rye);<br> var dojoMargins = dojo.marginBox(elm.domNode);<br> _height = dojoMargins.h;<br> _top = dojoMargins.t;<br> overlay = document.getElementById(&#8220;overlay_div&#8221;);<br> overlay.style.height = _height + &#8220;px&#8221;;<br> overlay.style.top = _top + &#8220;px&#8221;;<br> overlay.style.filter = &#8220;alpha(opacity=50)&#8221;;<br> overlay.style.opacity = &#8220;.5&#8221;;<br> };</p>
+<p>I can see the div being created but has the lower div completely blocked, the opacity is not being set and I can&#8217;t figure out what am I doing wrong.</p>
+</div></article></div>
+<div id="comment-1537" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1537" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-f5fcb7a19780a156c8af6c796662d8ce-120-60d16d3765076" alt="Stéphane" src="/wp-content/uploads/gravatar-cache/f5fcb7a19780a156c8af6c796662d8ce-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Stéphane</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1537"><time datetime="2008-07-28T00:18:52-06:00" title="Mon 28 Jul 2008 at 12:18 am">Mon 28 Jul 2008 at 12:18 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Thanks Tom.<br> &#8220;&lt;100&#8221; was the initial setting but it didn&#8217;t work : the DIV disappeared completely in IE so I figured out I could temporarily disable the transparency effect for IE if I replaced &#8220;100&#8221;&#8230;</p></div></article></div>
+<div id="comment-1538" class="comment even thread-even depth-1"><article id="div-comment-1538" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.randomnetworks.com/" rel="external nofollow" class="url"><img id="grav-582b66ad5ae1b69c7601a990cb9a661a-120-60d16d376973b" alt="Joseph Scott" src="/wp-content/uploads/gravatar-cache/582b66ad5ae1b69c7601a990cb9a661a-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Joseph Scott</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1538"><time datetime="2008-07-28T10:08:27-06:00" title="Mon 28 Jul 2008 at 10:08 am">Mon 28 Jul 2008 at 10:08 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>@Stéphane (40) &#8211;</p>
+<p>When I look at the pink bubbles in Firebug I don&#8217;t see the filter attribute being set, only the opacity value.</p>
+</div></article></div>
+<div id="comment-1539" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1539" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-f5eb15149a234113965963b8c36773b8-120-60d16d376a14b" alt="lj" src="/wp-content/uploads/gravatar-cache/f5eb15149a234113965963b8c36773b8-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">lj</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1539"><time datetime="2008-08-15T12:47:45-06:00" title="Fri 15 Aug 2008 at 12:47 pm">Fri 15 Aug 2008 at 12:47 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Thank you so much for this fix.</p>
+<p>This is what I used and it worked perfectly in both FireFox and IE&#8230; Thanks again!!!</p>
+<p>/* for IE */<br> filter:alpha(opacity=60);<br> /* CSS3 standard */<br> opacity:0.6;<br> width: 90%;<br> z-index: 1;}</p>
+</div></article></div>
+<div id="comment-1540" class="comment even thread-even depth-1"><article id="div-comment-1540" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d376e79b" alt="Ian" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Ian</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1540"><time datetime="2008-08-24T06:22:04-06:00" title="Sun 24 Aug 2008 at 6:22 am">Sun 24 Aug 2008 at 6:22 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Having read every ones comment I don&#8217;t think anyone has described this. But I am hoping someone one knows what is going on.</p>
+<p>I have a custom input (file).<br> The input has 0 opacity (so I can make it look custom).<br> There is a div behind it and a span over it.</p>
+<p>The input is in an iframe.<br> When I change the opacity of the iframe the opacity of the input breaks. Basically anything behind it disappears. So with the input at 0 opacity all I get is a blank spot where the input would go.</p>
+<p>Input works fine if I don&#8217;t change the iframe.<br> And everything works fine in firefox.</p>
+<p>Any ideas?</p>
+</div></article></div>
+<div id="comment-1541" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1541" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d37729b2" alt="tom" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">tom</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1541"><time datetime="2008-08-25T09:50:21-06:00" title="Mon 25 Aug 2008 at 9:50 am">Mon 25 Aug 2008 at 9:50 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I&#8217;m sorry, but I don&#8217;t understand what you&#8217;re saying. I think basically you need to customize an input type=&#8221;file&#8221; which is a bit tricky (because of security reasons) but it&#8217;s still possible.<br> Try this Google search: <a href="https://www.google.com/search?hl=en&#038;q=html+style+file+input&#038;btnG=Search" rel="nofollow ugc">http://www.google.com/search?hl=en&#038;q=html+style+file+input&#038;btnG=Search</a><br> (avoid reading the w3schools pages at all costs, they&#8217;re terrible and teach you proprietary things, they&#8217;re incomplete, etc.)</p>
+<p>Regards,<br> Tom</p>
+</div></article></div>
+<div id="comment-1542" class="comment even thread-even depth-1"><article id="div-comment-1542" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d3776c78" alt="Ian" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Ian</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1542"><time datetime="2008-08-25T16:24:25-06:00" title="Mon 25 Aug 2008 at 4:24 pm">Mon 25 Aug 2008 at 4:24 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Sorry, I have already made the custom input box.</p>
+<p>My problem is when I change the opacity of the iframe (which has the input in it) breaks the input box. I will set up a demo when go home.</p>
+</div></article></div>
+<div id="comment-1543" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1543" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d377aecd" alt="tom" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">tom</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1543"><time datetime="2008-08-25T23:46:59-06:00" title="Mon 25 Aug 2008 at 11:46 pm">Mon 25 Aug 2008 at 11:46 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Then you need this: <a href="http://www.experts-exchange.com/Web_Development/Web_Languages-Standards/CSS/Q_20635012.html" rel="nofollow ugc">http://www.experts-exchange.com/Web_Development/Web_Languages-Standards/CSS/Q_20635012.html</a></p>
+<p>I didn&#8217;t check if it works in all browsers, but I think you should put everything that is inside the IFRAME in a DIV and put this DIV with it&#8217;s contents in the IFRAME. Then you can set the opacity of the DIV in stead of the IFRAME. Remember, this works *only* if the IFRAME is on the same domain as you, otherwise you won&#8217;t be able to access the contents of the IFRAME.</p>
+<p>Happy coding!<br> Tom</p>
+</div></article></div>
+<div id="comment-1544" class="pingback even thread-even depth-1"><article id="div-comment-1544" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.webasticno.com/kodiranje/sto-nam-donosi-css3/" rel="external nofollow" class="url"><span class="fn">&#138;to nam donosi CSS3? | Webasticno</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1544"><time datetime="2008-08-27T01:59:18-06:00" title="Wed 27 Aug 2008 at 1:59 am">Wed 27 Aug 2008 at 1:59 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] stvari CSS3 je opacity. Dok IE6 ne mo&#158;e ni podr&#158;ati .png kojim smo prije rje&#154;avali ovaj problem, ipak mo&#158;e rije&#154;iti opacity. Zapravo, ovo je jedna od rijetkih stvari u kojoj IE rula ve? du&#158;e vrijeme. Za one koji ne znaju [&#8230;]</p></div></article></div>
+<div id="comment-1545" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1545" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-b38a4765f793687a395d3e3683228ac6-120-60d16d377bb4b" alt="shamun" src="/wp-content/uploads/gravatar-cache/b38a4765f793687a395d3e3683228ac6-120.png" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">shamun</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1545"><time datetime="2008-11-20T15:22:42-07:00" title="Thu 20 Nov 2008 at 3:22 pm">Thu 20 Nov 2008 at 3:22 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>IE 7.0 using on vista. Read all reply, but no one mention there IE version, where it was working.</p>
+<p>I have one div and inside that i have li and a. Following doesnt working in IE 7.0.</p>
+<p> filter:alpha(opacity=50);<br> opacity: 0.5;<br> width:100%;<br> z-index:1;</p>
+<p>FF, other browsers it works perfect. Whats wrong with IE always for CSS?</p>
+</div></article></div>
+<div id="comment-1546" class="comment even thread-even depth-1"><article id="div-comment-1546" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d377fc89" alt="Tom" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Tom</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1546"><time datetime="2008-11-21T00:37:15-07:00" title="Fri 21 Nov 2008 at 12:37 am">Fri 21 Nov 2008 at 12:37 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Actually, the following worked for me on IE7 on XP SP2:</p>
+<p>div {<br> filter:alpha(opacity=50);<br> opacity: 0.5;<br> width:100%;<br> z-index:1;<br> }</p>
+<p>abc<br> The ul was 50% opaque, but only after I got one of those yellow warning bars, telling me that the page is trying to run some form of scripting (apparently, in IE7 CSS = scripting &#8230; only the gods know why) because the file was created locally. I had to click it and allow the page to run the &#8220;active content.&#8221;</p>
+<p>You could try to open this file: <a href="http://pet.shop.tm/opacity.php" rel="nofollow ugc">http://pet.shop.tm/opacity.php</a><br> It&#8217;s just a HTML file and hopefully it will be available when you open it 🙂<br> I will keep it up for only a few weeks, then I will probably take it down when I&#8217;ll clean up my web server again. If the page isn&#8217;t opening, try again later because my server may be turned off (atm experiencing a lot of power failures) or the hostname may not have updated (using dynamic ip and free DNS services from afraid.org which have quite a big timeout, unfortunately).</p>
+</div></article></div>
+<div id="comment-1547" class="pingback odd alt thread-odd thread-alt depth-1"><article id="div-comment-1547" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://goodies.symphony9.net/tutorials/?p=17" rel="external nofollow" class="url"><span class="fn">Smooth Object Fading with JavaScript | Symphony 9 Tutorials</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1547"><time datetime="2008-11-24T14:15:38-07:00" title="Mon 24 Nov 2008 at 2:15 pm">Mon 24 Nov 2008 at 2:15 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] (hasLayout), which is a proprietary Internet Explorer CSS attribute. A neat hack I found on Joseph Scott&#8217;s Blog requires the CSS attribute &#8220;zoom&#8221; to be set to &#8220;1&#8243; on the element [&#8230;]</p></div></article></div>
+<div id="comment-1548" class="pingback even thread-even depth-1"><article id="div-comment-1548" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://symphony9.net/reference/?p=11" rel="external nofollow" class="url"><span class="fn">Smooth Object Fading with JavaScript | symphony9.net</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1548"><time datetime="2008-12-05T09:46:48-07:00" title="Fri 5 Dec 2008 at 9:46 am">Fri 5 Dec 2008 at 9:46 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] (hasLayout), which is a proprietary Internet Explorer CSS attribute. A neat hack I found on Joseph Scott&#8217;s Blog requires the CSS attribute &#8220;zoom&#8221; to be set to &#8220;1&#8243; on the element [&#8230;]</p></div></article></div>
+<div id="comment-1549" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1549" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.gevelop.com/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d3784f34" alt="Gamileon" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Gamileon</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1549"><time datetime="2009-01-08T12:55:19-07:00" title="Thu 8 Jan 2009 at 12:55 pm">Thu 8 Jan 2009 at 12:55 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Thank you!</p>
+<p>The Zoom trick was just what I needed to get my opacity to work in IE.</p>
+<p>-Gami</p>
+</div></article></div>
+<div id="comment-1550" class="comment even thread-even depth-1"><article id="div-comment-1550" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://ramonm.com/" rel="external nofollow" class="url"><img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d3789d4b" alt="Ramon" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Ramon</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1550"><time datetime="2009-01-15T17:39:11-07:00" title="Thu 15 Jan 2009 at 5:39 pm">Thu 15 Jan 2009 at 5:39 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Thank you very very much!</p></div></article></div>
+<div id="comment-1551" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1551" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d378f126" alt="henrik" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">henrik</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1551"><time datetime="2009-01-29T14:21:18-07:00" title="Thu 29 Jan 2009 at 2:21 pm">Thu 29 Jan 2009 at 2:21 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I&#8217;m using mootools for showing pic in a gallery but the opacity makes a bug in iexplorer7/8</p>
+<p>.slideshow-images-visible { opacity: 1; }<br> .slideshow-images-prev { opacity: 0; }</p>
+</div></article></div>
+<div id="comment-1552" class="comment even thread-even depth-1"><article id="div-comment-1552" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16d3793efb" alt="ViRuSTriNiTy" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">ViRuSTriNiTy</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1552"><time datetime="2009-02-02T02:18:02-07:00" title="Mon 2 Feb 2009 at 2:18 am">Mon 2 Feb 2009 at 2:18 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hi there,</p>
+<p>i have a similar problem with css opacity in IE. Please have a look at the following site:</p>
+<p><a href="http://www.lcdhype.de.vu/stuff/iebug" rel="nofollow ugc">http://www.lcdhype.de.vu/stuff/iebug</a></p>
+<p>As you can see, IE displays the picture with random white pixels. Those pixels are not stored in the picture and those pixels are displayed as soon as you add the css filter attribute to the img tag. This is a massive bug and i reported it to m$ already but got no response yet.</p>
+<p>All your solutions with zoom, z-index and width won&#8217;t work here. My solution: add style=&#8221;width:%px&#8221; to the img tag where % is the actuall width of the img + 1. You may add a surrounding layer with the actual with of the picture and overflow:hidden when the additional pixel bugs you.</p>
+<p>I hope this will help because i have spent so much time figuring this out.</p>
+</div></article></div>
+<div id="comment-1553" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1553" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d3798615" alt="Peter" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Peter</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1553"><time datetime="2009-02-06T05:34:55-07:00" title="Fri 6 Feb 2009 at 5:34 am">Fri 6 Feb 2009 at 5:34 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>It is not at all clear to me why &#8220;You can NOT have opacity &gt; 100% because that simply doesn&#146;t make sense.&#8221;</p>
+<p>As Tom has explained, opacity is a scaling factor on alpha. Why this should only be an attenuation and never an amplification is a complete mystery to me. The way I see it, if a value &gt; 100% is computed as the total opacity of an element, then surely the value used to compute its colour should be clipped at 100, while the value inherited by its children should remain &gt; 100.</p>
+<p>I&#8217;m pretty sure that in OpenGL / DirectX etc, you are able to define values &gt; 1 for a colour channel. If the result of all the lighting / blending / whatever calculations for a given pixel are &gt; 1, then 1 is what gets rasterized.</p>
+<p>Oh, how I hate web design&#8230; its enough to drive a man to flash 😉 (no idea how that handles similar things, but I bet it&#8217;s less idiotic).</p>
+</div></article></div>
+<div id="comment-1554" class="comment even thread-even depth-1"><article id="div-comment-1554" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d379c950" alt="Tom" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Tom</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1554"><time datetime="2009-02-11T00:06:25-07:00" title="Wed 11 Feb 2009 at 12:06 am">Wed 11 Feb 2009 at 12:06 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>&#8220;It is not at all clear to me why &#147;You can NOT have opacity &gt; 100% because that simply doesn&#146;t make sense.&#148;&#8221;<br> Think in physics:<br> Transparency 100% = opacity 0% = all the light goes through the object;<br> Transparency 0% = opacity 100% = all the light is reflected by the object;<br> So, if you try to have opacity 100%, the object should reflect more light than it&#8217;s actually receiving, which is nonsense because there is no other light reaching it except for the one &#8230; reaching it. At opacity = 100%, the object reflects all the light and lets you see it in the clearest way possible.</p>
+<p>Think logic:<br> If the object is completely transparent (opacity = 0%) and you can see everything through it as if it wasn&#8217;t there, how much clearer could you see through it?<br> If the object is completely opaque (opacity = 100%), how much more opaque could it be?</p>
+<p>Think programatic:<br> As a web browser, if you have to draw a pixel with opacity = 0%, you don&#8217;t display it at all, because it&#8217;s completely transparent and you want the user to see whatever was there first (behind it).<br> If you have to draw a pixel with opacity = 50%, you would make an average of the RGB defining that pixel and the one that was previously there (or usually the white background of the page, if there wasn&#8217;t anything) and plot the result.<br> If you have to draw a pixel with opacity = 100%, you just do it, overwriting whatever was before it.</p>
+<p>Blending is done mathematically, something along the lines of:<br> actualR = newR * opacity + oldR * (1 &#8211; opacity)<br> actualG = newG * opacity + oldG * (1 &#8211; opacity)<br> actualB = newB * opacity + oldB * (1 &#8211; opacity)<br> So you have the old pixel that was at that position defined by (oldR, oldG, oldB), the new pixel (newR, newG, newB) and what you&#8217;re actually going to draw on the screen: (actualR, actualG, actualB).<br> Because of the way the computer screen is designed, every R/G/B pixel has to receive a value, usually between 0 and 255, where 0 = darkest, don&#8217;t light at all and 255 = lightest, light at full power. Now, consider that you have a black pixel defined by (0, 0, 0) at a given position and over it you have to draw a white pixel defined by (255, 255, 255) which has opacity 1.5 (that&#8217;s 150%). Here&#8217;s what you get:<br> actualR = actualG = actualB = 255 * 1.5 = 382.5<br> How can you tell that pixel to light up at 382.5 when the brightest it can achieve is 255?</p>
+<p>In conclusion, opacity = 0% and opacity = 100% are physical limitations which also have effect in various other ways &#8211; logic, programatic and electronic. Any value outside the [0..1] bounds is an error, a fallacy, an illogical result of some bad computations. You are right, DirectX and OpenGL may easily implement their own error-fixing or error-ignoring (not sure about it, but it would be stupid to have something crash because of a tiny overflow of 0.0001) but the fact that you could send your video card a value of 1.5 for opacity doesn&#8217;t mean that it makes sense and you always have to think inside those bounds.</p>
+<p>Let me know if it&#8217;s still not clear.</p>
+</div></article></div>
+<div id="comment-1555" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1555" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d37a0ce5" alt="Tom" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Tom</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1555"><time datetime="2009-02-11T01:40:58-07:00" title="Wed 11 Feb 2009 at 1:40 am">Wed 11 Feb 2009 at 1:40 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>@ViRuSTriNiTy: That is an issue with some versions of Internet Explorer. Your example worked fine on a few computers but it showed the white pixels on others. It&#8217;s a &#8220;classic&#8221; issue with IE and there&#8217;s not much you can do about it. You could try to re-encode your image, give it a different compression value to get it to encode differently or use a different format.<br> I have seen this bug show up on various IE versions and file formats, so just converting from jpeg to png might not help&#8230; There&#8217;s no fix for this Microsoft bug (like there&#8217;s no fix for many, many others) and all you can try is a work-around by re-encoding.</p></div></article></div>
+<div id="comment-1556" class="comment even thread-even depth-1"><article id="div-comment-1556" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d37a4d5e" alt="Peter" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Peter</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1556"><time datetime="2009-02-16T09:55:29-07:00" title="Mon 16 Feb 2009 at 9:55 am">Mon 16 Feb 2009 at 9:55 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>@Tom: Sorry, but I stand by what I said, although perhaps I could&#8217;ve been clearer:</p>
+<p>&#8220;The way I see it, if a value &gt; 100% is computed as the total opacity of an element, then surely the value used to compute its colour should be clipped at 100, while the value *inherited by its children* should remain &gt; 100.&#8221;</p>
+<p>So, the final computed opacity of an element would be limited 0-100%, but it would still be possible to define a relationship whereby a child was more opaque than its parent.</p>
+<p>I just confirmed for myself that making a diffuse material colour &gt; 1 in a colour channel in fixed function OpenGL lighting causes &#8216;more than 100% reflection&#8217;. This is calculations in a computer, not physics; conservation of energy need not apply if we don&#8217;t wish it to :).</p>
+<p>To quote the OpenGL &#8220;Red Book&#8221;:<br> &#8220;For the versions of glColor*() that accept floating-point data types, the values should *typically* range between 0.0 and 1.0, the minimum and maximum values that can be stored in the framebuffer&#8230;&#8230;</p>
+<p>&#8220;Neither floating-point nor signed-integer values are clamped to the range [0,1] before updating the current color or current lighting material parameters. After lighting calculations, resulting color values outside the range [0,1] are clamped to the range [0,1] before they are interpolated or written into a color buffer. Even if lighting is disabled, the color components are clamped before rasterization.&#8221;<br> <a href="http://www.glprogramming.com/red/chapter04.html" rel="nofollow ugc">http://www.glprogramming.com/red/chapter04.html</a></p>
+<p>To take a non-hypothetical CSS example: I have a menu which I want to overlay on a header, with opacity. This works and I&#8217;m happy with how it looks. I then want to add drop-down menus, but I find that if they have low opacity, they become illegible as they blend with the page content. So I wish to apply &gt;1 opacity so that the drop-downs are more opaque than their parents. Tough, I can&#8217;t. Oh well; I&#8217;ll have to make another plan.</p>
+<p>So, internal values used for calculation can be out of bounds, but the final value used in output is clipped: Let me know if it&#8217;s still not clear, or if you think I&#8217;m mistaken.</p>
+</div></article></div>
+<div id="comment-1557" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1557" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d37a93ba" alt="Peter" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Peter</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1557"><time datetime="2009-02-16T11:16:21-07:00" title="Mon 16 Feb 2009 at 11:16 am">Mon 16 Feb 2009 at 11:16 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Whooops, my last statement was referring to how I *want* things to be, not how they are&#8230;</p>
+<p>So, I&#8217;d like to be able to have a parent with &#8220;opacity: 0.5&#8221; and a child with &#8220;opacity: 2&#8221;, and have the child finally rendered with 100% opacity. This would be consistent with the fact that, AFAIK, if I specified &#8220;opacity: 0.5&#8221; for both of them, the child would end up with 25% opacity.</p>
+<p>If I nested the child with &#8220;opacity: 2&#8221; inside something with &gt;50% opacity, I would expect it to have 100% opacity as a result: no more, no less.</p>
+</div></article></div>
+<div id="comment-1558" class="comment even thread-even depth-1"><article id="div-comment-1558" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.lcdhype.de.vu/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16d37ad71d" alt="ViRuSTriNiTy" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">ViRuSTriNiTy</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1558"><time datetime="2009-02-16T13:55:21-07:00" title="Mon 16 Feb 2009 at 1:55 pm">Mon 16 Feb 2009 at 1:55 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>@Tom</p>
+<p>Thanks for your reply. I throught i solved it with my method but i have white pixels again now T_T and reencoding of the picture in any way is not working because those pixels are there whatever i try to do (they are some times here and sometimes there, the location changes but it wont go away). the gif format is the only format where ie does not show the white pixel bug but i cannot save my pics as gif due to color los and therefore ugly gradients.</p>
+</div></article></div>
+<div id="comment-1559" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1559" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://haravikk.com/" rel="external nofollow" class="url"><img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16d37b299e" alt="Haravikk" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Haravikk</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1559"><time datetime="2009-04-04T04:55:24-06:00" title="Sat 4 Apr 2009 at 4:55 am">Sat 4 Apr 2009 at 4:55 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>I&#8217;d just like to note here; in Safari, FireFox, etc. the opacity attribute multiplies the opacity of the element and its contents, whereas in Internet Explorer the filter attribute /sets/ the opacity value of the element.</p>
+<p>So if the element you apply the filter to has transparent child-elements, then their transparency will be set to the new value. This is especially nasty if you have for-example a .png with partially transparent edges, as all pixels with opacity greater than 0.0 are set to whatever the new-value is, resulting in jagged-edges.</p>
+<p>For example:<br> pixel&#8217;s opacity, opacity: 0.5, filter: alpha(opacity = 50)<br> 75%, 37.5%, 50%<br> 50%, 25%, 50%<br> 25%, 12.5%, 50%</p>
+</div></article></div>
+<div id="comment-1560" class="comment even thread-even depth-1"><article id="div-comment-1560" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d37b7041" alt="Jeepers" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Jeepers</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1560"><time datetime="2009-04-30T21:13:07-06:00" title="Thu 30 Apr 2009 at 9:13 pm">Thu 30 Apr 2009 at 9:13 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>As far as I can see, nobody has mentioned M$&#8217;s alpha filter breaking if the page is longer than 2048px in IE7 (possibly other IE versions as well). Many have commented that this is due to Vista, XP, graphic cards, drivers etc etc, all not true! M$ sucks at programming and gets most things wrong basically charging for customers to be beta testers for their next product .</p>
+<p>There is no way around the breaking alpha filter except to progmatically limit the size of the element that the filter is to be used on to 2048px high (or for everyone to use Firefox who implement opacity in CSS).</p>
+<p>Writing this I have suddenly realised how much I wish M$ IE would just go away as most standards compliant code has to be hacked to work the same in IE!</p>
+</div></article></div>
+<div id="comment-1561" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1561" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16d37bb780" alt="Oxin" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Oxin</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1561"><time datetime="2009-06-02T07:02:13-06:00" title="Tue 2 Jun 2009 at 7:02 am">Tue 2 Jun 2009 at 7:02 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Just fyi, I was working on a semi-transparent movable div overtop an image and &#8220;filter:alpha(opacity=80);&#8221; made it IE compatible but when I moved it, it would hide under the that was behind it in some areas. Adding &#8220;width:100%;height:100%;&#8221; worked but &#8220;zoom:1;&#8221; didn&#8217;t. Hope this helps someone.</p></div></article></div>
+<div id="comment-1562" class="pingback even thread-even depth-1"><article id="div-comment-1562" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="http://www.9lives.be/forum/webdesign-webdevelopment/762055-ie8-opacity-problem.html#post14193467" rel="external nofollow" class="url"><span class="fn">JS IE8 opacity problem - 9lives - Games Forum</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1562"><time datetime="2010-12-02T13:57:50-07:00" title="Thu 2 Dec 2010 at 1:57 pm">Thu 2 Dec 2010 at 1:57 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>[&#8230;] CSS Opacity in Internet Explorer (IE) &#8211; Joseph Scott probeer dat dan eens =) [&#8230;]</p></div></article></div>
+<div id="comment-1563" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1563" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d37c0579" alt="Avinashbhageloe" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Avinashbhageloe</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1563"><time datetime="2011-07-12T15:13:51-06:00" title="Tue 12 Jul 2011 at 3:13 pm">Tue 12 Jul 2011 at 3:13 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>@ Philip<br> Thanx the code wokred :<br> border: solid 1px #999;<br> background: #FFF;<br> color: #000;<br> opacity: .7;<br> filter:alpha(opacity=0);<br> width: 100%;<br> z-index: 2;</p>
+<p>Mvg,<br> Avinash Bhageloe</p>
+</div></article></div>
+<div id="comment-1564" class="comment even thread-even depth-1"><article id="div-comment-1564" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d37c4f2e" alt="Yulia" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Yulia</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1564"><time datetime="2011-10-09T10:20:43-06:00" title="Sun 9 Oct 2011 at 10:20 am">Sun 9 Oct 2011 at 10:20 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>I&#8217;m using posion: relative, with &#8220;zoom:1&#8221; works perfectly ! Thanks!</p></div></article></div>
+<div id="comment-1565" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1565" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d37c9ef4" alt="Jörgen Myhrman" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Jörgen Myhrman</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1565"><time datetime="2011-10-13T10:44:33-06:00" title="Thu 13 Oct 2011 at 10:44 am">Thu 13 Oct 2011 at 10:44 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Thanks!<br> Was trying with filter: alpha(opacity=1) like forever and nothing happened 🙂</p>
+<p>Turns out that EI9 uses the standard opacity property, here&#8217;s a little hack dealing with older as well as newer versions:<br> if (/MSIE (d+.d+);/.test(navigator.userAgent)){ //test for MSIE x.x<br> var ieversion=new Number(RegExp.$1) // capture x.x portion and store as a number<br> if (ieversion&gt;=9) {<br> document.getElementById(LL_infoID[m_section]).style.opacity=&#8217;1&#8242;;<br> }<br> else {<br> document.getElementById(LL_infoID[m_section]).style.filter=&#8217;alpha(opacity=100)&#8217;;<br> }<br> }</p>
+</div></article></div>
+<div id="comment-1566" class="comment even thread-even depth-1"><article id="div-comment-1566" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fa263c80ceeaa71b7a9b48925350a290-120-60d16d37cabe3" alt="Google Traffic" src="/wp-content/uploads/gravatar-cache/fa263c80ceeaa71b7a9b48925350a290-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Google Traffic</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1566"><time datetime="2011-10-13T13:24:39-06:00" title="Thu 13 Oct 2011 at 1:24 pm">Thu 13 Oct 2011 at 1:24 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>It&#8217;s an old post, but since I found it someone else will also &#8211; the &#8216;filter&#8217; code seems to break the id/anchor links in ie7 (that&#8217;s where I am seeing the problem.)<br> The area is in an overflow hidden area with named anchor text and the text doesn&#8217;t move when the filter is part of the css for that text area. Otherwise it&#8217;s fine.</p>
+<p>So if you have opacity filter and your anchor id/text do not move, try turning off the opacity.</p>
+</div></article></div>
+<div id="comment-1567" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1567" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="https://thiyagarajan.wordpress.com/" rel="external nofollow" class="url"><img id="grav-a67bdb2d3a365da1bc43f82b85aa2fb1-120-60d16d37cb83f" alt="Thiyagarajan Veluchamy" src="/wp-content/uploads/gravatar-cache/a67bdb2d3a365da1bc43f82b85aa2fb1-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Thiyagarajan Veluchamy</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1567"><time datetime="2011-11-08T14:15:24-07:00" title="Tue 8 Nov 2011 at 2:15 pm">Tue 8 Nov 2011 at 2:15 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>use,</p>
+<p>-ms-filter:&#8221;progid:DXImageTransform.Microsoft.Alpha(Opacity=50)&#8221;; // first!<br> filter: alpha(opacity=50); // second!</p>
+</div></article></div>
+<div id="comment-1568" class="comment even thread-even depth-1"><article id="div-comment-1568" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <a href="https://thiyagarajan.wordpress.com/" rel="external nofollow" class="url"><img id="grav-a67bdb2d3a365da1bc43f82b85aa2fb1-120-60d16d37cbf26" alt="Thiyagarajan Veluchamy" src="/wp-content/uploads/gravatar-cache/a67bdb2d3a365da1bc43f82b85aa2fb1-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Thiyagarajan Veluchamy</span><span class="screen-reader-text says">says:</span></a>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1568"><time datetime="2011-11-08T14:16:37-07:00" title="Tue 8 Nov 2011 at 2:16 pm">Tue 8 Nov 2011 at 2:16 pm</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>we can use,</p>
+<p>opacity: 0.5;<br> -ms-filter:&#8221;progid:DXImageTransform.Microsoft.Alpha(Opacity=50)&#8221;;<br> filter: alpha(opacity=50);</p>
+<p>for all browsers.</p>
+</div></article></div>
+<div id="comment-1570" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1570" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d37d08eb" alt="Pete" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Pete</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1570"><time datetime="2012-06-17T01:50:08-06:00" title="Sun 17 Jun 2012 at 1:50 am">Sun 17 Jun 2012 at 1:50 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>My CSS works in IE, but due to security settings in IE, it blocks the opacity, and the bar becomes solid white. It&#8217;s not until you click the pop up warning and allow the site to run ActiveX controls and scripts to run, that the site will display the opacity. IS there a way around this? so that in case a visitor of the page has the same security settings and doesnt realise they need to change the settings in order to view the page properly?</p>
+<p>my code is :</p>
+<p>.Bar {<br> width: 100%;<br> height: 70px;<br> background-color: #FFF;<br> opacity: 0.2;<br> filter: alpha(opacity=20);<br> position: absolute;<br> top: 300px;<br> }</p>
+</div></article></div>
+<div id="comment-1571" class="comment even thread-even depth-1"><article id="div-comment-1571" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-2a3aa31abfe8eea6930b6afe9a8e39ee-120-60d16d37d1356" alt="Ayesh" src="/wp-content/uploads/gravatar-cache/2a3aa31abfe8eea6930b6afe9a8e39ee-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Ayesh</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1571"><time datetime="2012-08-07T17:20:24-06:00" title="Tue 7 Aug 2012 at 5:20 pm">Tue 7 Aug 2012 at 5:20 pm</time></a>
+</div></footer><div class="comment-content entry-content"><p>Thanks. It really makes sense, that at least we can get the same effect on IE with few lines of changes. IE8 is not that bad. Personally the only change I make is removing rgba stuff, transitions, vendor-specific stuff and this opacity thing.<br> Thanks for the nice writing.</p></div></article></div>
+<div id="comment-1572" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1572" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d37d5b6a" alt="shobixiam" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">shobixiam</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1572"><time datetime="2012-08-09T08:11:39-06:00" title="Thu 9 Aug 2012 at 8:11 am">Thu 9 Aug 2012 at 8:11 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>hey all I have used all the tricks for IE, but I couldn&#8217;t get the right way to do that.<br> so if you are trying opacity then use visible property this will work 🙂 i was searching for answers and added zoom, width, bla bla nothing happened.</p>
+<p>My css</p>
+<p>.hiden-element{opacity:0.0;<br> -ms-filter:&#8221;progid:DXImageTransform.Microsoft.Alpha(Opacity=0)&#8221;;<br> filter:alpha(opacity=0);<br> visibility:hidden;<br> /*&#8212;FOR LATEST BROWSERS EFFECTS &#8212;-*/<br> -webkit-transition: opacity .20s;<br> -moz-transition: opacity .20s;<br> -o-transition: opacity .20s;<br> transition: opacity .20s;}</p>
+<p>.parent:hover .hiden-element{opacity:1.0;<br> visibility:visible; -ms-filter:&#8221;progid:DXImageTransform.Microsoft.Alpha(Opacity=100)&#8221;;<br> filter:alpha(opacity=100);}</p>
+<p>visibility property works =)</p>
+</div></article></div>
+<div id="comment-1573" class="comment even thread-even depth-1"><article id="div-comment-1573" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-e6418ce22ad4afb7532e80415be463ce-120-60d16d37d67c0" alt="Ulken" src="/wp-content/uploads/gravatar-cache/e6418ce22ad4afb7532e80415be463ce-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Ulken</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1573"><time datetime="2012-10-08T07:59:04-06:00" title="Mon 8 Oct 2012 at 7:59 am">Mon 8 Oct 2012 at 7:59 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>Thank you, thank you, thank you! I had to remove the filter though. But using visibility instead of opacity works perfect in IE, while maintaining opacity in other (functional) browsers. Saved my day!</p></div></article></div>
+<div id="comment-1574" class="comment odd alt thread-odd thread-alt depth-1"><article id="div-comment-1574" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-fef22f841ddf155476b0823225a8fdc3-120-60d16d37dbb50" alt="Etsuko" src="/wp-content/uploads/gravatar-cache/fef22f841ddf155476b0823225a8fdc3-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Etsuko</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1574"><time datetime="2012-10-10T09:53:36-06:00" title="Wed 10 Oct 2012 at 9:53 am">Wed 10 Oct 2012 at 9:53 am</time></a>
+</div></footer><div class="comment-content entry-content"><p>.BGtransparency {<br> font-family: Arial, Helvetica, sans-serif;<br> font-size: 36px;<br> font-style: italic;<br> font-weight: bold;<br> color: #000;<br> background: rgba(3,92,254,0.5);/*for firefox and chrome<br> filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99035cfe);<br> -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99035cfe);<br> /*you have to find alpha hexagonal value for MS IE</p></div></article></div>
+<div id="comment-1575" class="comment even thread-even depth-1"><article id="div-comment-1575" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard"> <img id="grav-8fc211d3bc6bacd61fa0539129c7f307-120-60d16d37e10ff" alt="Johnny" src="/wp-content/uploads/gravatar-cache/8fc211d3bc6bacd61fa0539129c7f307-120.jpg" class="avatar avatar-120 photo" height="120" width="120" loading="lazy"><span class="fn">Johnny</span><span class="screen-reader-text says">says:</span>
+</div>
+<div class="comment-metadata"> <a href="/2006/08/16/css-opacity-in-internet-explorer-ie/#comment-1575"><time datetime="2014-09-08T11:12:56-06:00" title="Mon 8 Sep 2014 at 11:12 am">Mon 8 Sep 2014 at 11:12 am</time></a>
+</div></footer><div class="comment-content entry-content">
+<p>Hello!</p>
+<p>Need your help&#8230;</p>
+<p>Here is my code (i put it on codepen for easiest way to check it): <a href="https://codepen.io/JohnnyJuarez/pen/zHxaG" rel="nofollow ugc">http://codepen.io/JohnnyJuarez/pen/zHxaG</a></p>
+<p>Everything works properly everywhere exept IE&#8230;actualy, I have IE11&#8230;<br> When I press and hold the button (Registration or OK) &#8211; it&#8217;s disappear&#8230;</p>
+<p>I left every code i had used (just commented it by /* */), so youi can see that i had tried everything 🙁</p>
+</div></article></div>
+</div>
+</div>
+<hr class="styled-separator is-style-wide" aria-hidden="true">
+<div id="respond" class="comment-respond">
+<h2 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2006/08/16/css-opacity-in-internet-explorer-ie/#respond" style="display:none;">Cancel reply</a></small>
+</h2>
+<form action="/wp-comments-post.php" method="post" id="commentform" class="section-inner thin max-percentage" novalidate>
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
+<p class="comment-form-comment"><label for="comment">Comment</label><textarea autocomplete="new-password" id="gc8a51e464" name="gc8a51e464" cols="45" rows="8" maxlength="65525" required="required"></textarea><textarea id="comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea><script data-noptimize type="text/javascript">document.getElementById("comment").setAttribute( "id", "a0a3bb9445154af2ce5dfbe290c82a21" );document.getElementById("gc8a51e464").setAttribute( "id", "comment" );</script></p>
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="668" id="comment_post_ID"> <input type="hidden" name="comment_parent" id="comment_parent" value="0"></p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="6046809aab"></p>
+<input type="hidden" id="ak_js" name="ak_js" value="107"><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea>
+</form>
+</div>
+</div></article></main><div class="footer-nav-widgets-wrapper header-footer-group"><div class="footer-inner section-inner"><aside class="footer-widgets-outer-wrapper" role="complementary"><div class="footer-widgets-wrapper"><div class="footer-widgets column-one grid-item"><div class="widget widget_search"><div class="widget-content"><form role="search" method="get" class="search-form" action="/"> <label for="search-form-2"> <span class="screen-reader-text">Search for:</span> <input type="search" id="search-form-2" class="search-field" placeholder="Search &hellip;" value="" name="s"> </label> <input type="submit" class="search-submit" value="Search">
+</form></div></div></div></div></aside></div></div>
+<footer id="site-footer" role="contentinfo" class="header-footer-group"><div class="section-inner">
+<div class="footer-credits">
+<p class="footer-copyright">&copy;
+2021 <a href="/">Joseph Scott</a></p>
+<p class="powered-by-wordpress"> <a href="https://wordpress.org/"> Powered by WordPress </a></p>
+</div> <a class="to-the-top" href="#site-header"> <span class="to-the-top-long"> To the top <span class="arrow" aria-hidden="true">&uarr;</span> </span> <span class="to-the-top-short"> Up <span class="arrow" aria-hidden="true">&uarr;</span> </span> </a>
+</div></footer> <script>/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);</script> <script defer src="/wp-content/cache/autoptimize/js/autoptimize_7f503920b823033d01081cc5ae68a469.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>server-timing &#8211; Joseph Scott</title>
+	<atom:link href="/tag/server-timing/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 28 Aug 2018 19:47:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Server Timing API</title>
+		<link>/2018/08/28/server-timing-api/</link>
+					<comments>/2018/08/28/server-timing-api/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 28 Aug 2018 19:47:44 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[server-timing]]></category>
+		<guid isPermaLink="false">/?p=16941</guid>
+
+					<description><![CDATA[Leaving myself a note in the form of a few links for the Server Timing API: &#8211; W3C Server Timing spec &#8211; Mozilla Server Timing &#8211; Server Timing as of Chrome 65 This is a method that allows you to include performance related metrics in the HTTP response, using the Server-Timing header. Browsers, like Chrome, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Leaving myself a note in the form of a few links for the <a href="https://w3c.github.io/server-timing/">Server Timing API</a>:</p>
+<p>&#8211; <a href="https://w3c.github.io/server-timing/">W3C Server Timing spec</a><br />
+&#8211; <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Server-Timing">Mozilla Server Timing</a><br />
+&#8211; <a href="https://developers.google.com/web/updates/2018/03/nic65#server-timing">Server Timing as of Chrome 65</a></p>
+<p>This is a method that allows you to include performance related metrics in the HTTP response, using the <code>Server-Timing</code> header.  Browsers, like Chrome, can then display that information as part of the request timing details.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2018/08/28/server-timing-api/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

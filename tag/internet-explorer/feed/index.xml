@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>internet-explorer &#8211; Joseph Scott</title>
+	<atom:link href="/tag/internet-explorer/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 09 Nov 2015 18:18:48 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>CSS Limits in Internet Explorer</title>
+		<link>/2015/11/09/css-limits-in-internet-explorer/</link>
+					<comments>/2015/11/09/css-limits-in-internet-explorer/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Mon, 09 Nov 2015 18:18:48 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[internet-explorer]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=13677</guid>
+
+					<description><![CDATA[File this under things you usually find out about the hard way: Stylesheet Limits in Internet Explorer. For IE 6 &#8211; 9 the limits are: &#8211; A sheet may contain up to 4095 rules &#8211; A sheet may @import up to 31 sheets &#8211; @import nesting supports up to 4 levels deep In IE 10 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>File this under things you usually find out about the hard way: <a href="http://blogs.msdn.com/b/ieinternals/archive/2011/05/14/10164546.aspx">Stylesheet Limits in Internet Explorer</a>.  For IE 6 &#8211; 9 the limits are:</p>
+<blockquote><p>
+&#8211; A sheet may contain up to 4095 rules<br />
+&#8211; A sheet may @import up to 31 sheets<br />
+&#8211; @import nesting supports up to 4 levels deep
+</p></blockquote>
+<p>In IE 10 these were increased to:</p>
+<blockquote><p>
+&#8211; A sheet may contain up to 65534 rules<br />
+&#8211; A document may use up to 4095 stylesheets<br />
+&#8211; @import nesting is limited to 4095 levels (due to the 4095 stylesheet limit)
+</p></blockquote>
+<p>I haven&#8217;t been able to find data on similar limits for Chrome, Firefox, or Safari.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/11/09/css-limits-in-internet-explorer/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Internet Explorer Still Tied to Windows Releases</title>
+		<link>/2014/10/03/internet-explorer-still-tied-to-windows-releases/</link>
+					<comments>/2014/10/03/internet-explorer-still-tied-to-windows-releases/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 03 Oct 2014 16:50:44 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[internet-explorer]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=11157</guid>
+
+					<description><![CDATA[The IEBlog on the best why to try out the latest IE versions: Today, the Windows 10 Technical Preview was launched to give an early look at what’s next for Windows. Only available to install by joining the Windows Insider Program, the Technical Preview is also the best way to see the latest from Internet [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The <a href="http://blogs.msdn.com/b/ie/archive/2014/10/01/internet-explorer-and-the-windows-10-technical-preview.aspx">IEBlog on the best why to try out the latest IE versions</a>:</p>
+<blockquote><p>
+Today, the Windows 10 Technical Preview was launched to give an early look at what’s next for Windows. Only available to install by joining the Windows Insider Program, the Technical Preview is also the best way to see the latest from Internet Explorer so join today. In this post we’re sharing what’s new for IE as well as launching the Internet Explorer Platform Suggestion Box for web developers to give us feature suggestions using the UserVoice platform.
+</p></blockquote>
+<p>At this point it feels like IE is being used as an upgrade stick for Windows.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/10/03/internet-explorer-still-tied-to-windows-releases/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Zero-Day Windows XP Exploit</title>
+		<link>/2014/04/29/zero-day-windows-xp-exploits/</link>
+					<comments>/2014/04/29/zero-day-windows-xp-exploits/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 29 Apr 2014 14:58:50 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[internet-explorer]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[windows-xp]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10373</guid>
+
+					<description><![CDATA[Perhaps the scariest part of the recent remote execution vulnerability in Internet Explorer is this thought from Brian Krebs: This is the first of many zero-day attacks and vulnerabilities that will never be fixed for Windows XP users. Microsoft last month shipped its final set of updates for XP. Unfortunately, many of the exploit mitigation [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Perhaps the scariest part of the <a href="https://technet.microsoft.com/library/security/2963983" title="It goes alway the way back to IE 6.">recent remote execution vulnerability in Internet Explorer</a> is this thought from <a href="http://krebsonsecurity.com/2014/04/microsoft-warns-of-attacks-on-ie-zero-day/" title="Why isn't the 'Enhanced Mitigation Experience Toolkit' shipped with Windows?">Brian Krebs</a>:</p>
+<blockquote><p>
+This is the first of many zero-day attacks and vulnerabilities that will never be fixed for Windows XP users. Microsoft last month shipped its final set of updates for XP. Unfortunately, many of the exploit mitigation techniques that EMET brings do not work in XP.
+</p></blockquote>
+<p>According to <a href="http://gs.statcounter.com/#os-US-monthly-201303-201403-bar" title="Their global stats site is super useful for this type of data.">StatCounter</a> Windows XP still accounts for 10% of systems browsing the web in the United States.  That includes mobile users too.</p>
+<p><a href="/wp-content/uploads/2014/04/statcounter-os-march-2014-1.jpg" title="More than Android?"><img loading="lazy" src="/wp-content/uploads/2014/04/statcounter-os-march-2014-1.jpg" alt="statcounter-os-march-2014" width="845" height="540" class="aligncenter size-full wp-image-10383" srcset="/wp-content/uploads/2014/04/statcounter-os-march-2014-1.jpg 845w, /wp-content/uploads/2014/04/statcounter-os-march-2014-1-300x192.jpg 300w, /wp-content/uploads/2014/04/statcounter-os-march-2014-1-768x491.jpg 768w" sizes="(max-width: 845px) 100vw, 845px" /></a></p>
+<p>When you look at the <a href="http://gs.statcounter.com/#all-os-ww-monthly-201303-201403-bar" title="I wonder which country has the highest use of Windows XP in the world.">world wide use</a> that 10% jumps to 16%.</p>
+<p>I expect there are people who are still actively looking for holes in Windows XP.  It is only a matter of time before they find them.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/04/29/zero-day-windows-xp-exploits/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>IE9</title>
+		<link>/2011/03/15/ie9/</link>
+					<comments>/2011/03/15/ie9/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 15 Mar 2011 17:03:48 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[ie9]]></category>
+		<category><![CDATA[internet-explorer]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3829</guid>
+
+					<description><![CDATA[Yesterday marked the official release of IE9 from Microsoft. I&#8217;m very curious to see what sort of impact (or lack there of) that this will have on the browser field. The key point is that IE9 does not support Windows XP. That is a big deal for a few different reasons. Using that numbers available [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Yesterday marked the <a href="http://blogs.msdn.com/b/ie/archive/2011/03/14/ie9-release-globally-available-for-consumers-and-businesses.aspx">official release of IE9 from Microsoft</a>.</p>
+<p>I&#8217;m very curious to see what sort of impact (or lack there of) that this will have on the browser field.  The key point is that IE9 does not support Windows XP.  That is a big deal for a few different reasons.</p>
+<p>Using that numbers available at <a href="http://gs.statcounter.com/">gs.statcounter.com</a> the <a href="http://gs.statcounter.com/#os-ww-monthly-201012-201102">worldwide OS breakdown for Dec 10 -> Feb 11</a> is:</p>
+<figure style="width: 620px" class="wp-caption alignnone"><img loading="lazy" alt="" src="https://lh4.googleusercontent.com/_7O62-xwgnLw/TX-QhHvITjI/AAAAAAAAACM/rnJw4wSqNlk/gs-statcounter-os-world.png" title="OS versions" width="620" height="408" /><figcaption class="wp-caption-text">OS versions</figcaption></figure>
+<p>That is Windows XP at 48%, Windows 7 at 29%, and Windows Vista at 14%.  That puts total Windows share at 91%, unfortunately only 43% are actually able to upgrade to IE9.  More than half of the current Windows users have no way to upgrade to IE9.</p>
+<p>Next up is the IE6 issue, a browser that everyone loves to hate.  Even <a href="http://josephscott.org/archives/2011/03/ie6-countdown/">Microsoft doesn&#8217;t want people to use it anymore</a>.  The release of IE9 does absolutely nothing to reduce the number of IE6 users out there.  Why?  Because the only versions of Windows that IE9 supports, Vista and 7, never shipped with IE6.  Windows Vista shipped with IE7 and Windows 7 shipped with IE8.</p>
+<figure style="width: 620px" class="wp-caption alignnone"><img loading="lazy" alt="" src="https://lh3.googleusercontent.com/_7O62-xwgnLw/TX-XBru1BKI/AAAAAAAAACU/AqsZAzzY8_M/gs-statcounter-browser-versions.png" title="Browser versions" width="620" height="405" /><figcaption class="wp-caption-text">Browser versions</figcaption></figure>
+<p>IE6 is listed as the 5th most popular browser version is use.  Starting from the top: IE8 at 30%, Firefox 3.6 at 25%, Chrome 9 at 12%, IE7 at 10%, and IE6 at 4%.</p>
+<p>If we want to reduce IE6 usage in the world the focus has to be on getting people to switch to a completely different browser.  Pushing IE7 or IE8 as options for those Windows XP users isn&#8217;t good either, since neither of them support <a href="http://en.wikipedia.org/wiki/Server_Name_Indication">TLS server name identification</a>.  For Windows XP users you are best served by moving to either <a href="http://www.google.com/chrome/intl/en/landing_chrome_mac.html?hl=en">Google Chrome</a> or <a href="http://www.mozilla.com/en-US/firefox/">Mozilla Firefox</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/03/15/ie9/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>IE6 Countdown</title>
+		<link>/2011/03/04/ie6-countdown/</link>
+					<comments>/2011/03/04/ie6-countdown/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 04 Mar 2011 16:38:47 +0000</pubDate>
+				<category><![CDATA[Asides]]></category>
+		<category><![CDATA[ie6]]></category>
+		<category><![CDATA[internet-explorer]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3698</guid>
+
+					<description><![CDATA[The IE6 Countdown &#8211; if Microsoft can&#8217;t convince people to stop using IE6, no one can.]]></description>
+										<content:encoded><![CDATA[<p>The <a href='http://ie6countdown.com/'>IE6 Countdown</a> &#8211; if Microsoft can&#8217;t convince people to stop using IE6, no one can.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/03/04/ie6-countdown/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>IE9 Preconnect</title>
+		<link>/2011/02/11/ie9-preconnect/</link>
+					<comments>/2011/02/11/ie9-preconnect/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 11 Feb 2011 17:00:45 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[ie9]]></category>
+		<category><![CDATA[internet-explorer]]></category>
+		<category><![CDATA[preconnect]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=3509</guid>
+
+					<description><![CDATA[I was playing around on WebSiteTest today – trying out it new IE9 test feature, and I noticed something new that IE9 does: preconnect. What is preconnect?  Preconnect is making a connection to a site before you have a request to use that connection for.  The browser may have an inkling that it will need [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>
+I was playing around on WebSiteTest today – trying out it new IE9 test feature, and I noticed something new that IE9 does: preconnect.</p>
+<p>What is preconnect?  Preconnect is making a connection to a site before you have a request to use that connection for.  The browser may have an inkling that it will need the connection, but if you don’t have a request in hand yet, it is a speculative request, and therefore a preconnect.
+</p></blockquote>
+<p>via <a href='http://www.belshe.com/2011/02/10/the-era-of-browser-preconnect/'>Mike&#8217;s Lookout » Blog Archive » The Era of Browser Preconnect</a></p>
+<p>Interesting behavior from IE9, making connections to sites in the hope that there will be additional resources that need to be downloaded.  If IE9 becomes widely adopted (which seems likely) then taking this behavior into consideration when building a site may be useful.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/02/11/ie9-preconnect/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How To Kill IE Performance</title>
+		<link>/2010/10/15/how-to-kill-ie-performance/</link>
+					<comments>/2010/10/15/how-to-kill-ie-performance/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 15 Oct 2010 18:49:26 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[internet-explorer]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jquery]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2954</guid>
+
+					<description><![CDATA[Remember: IE (still) doesn&#8217;t have getElementsByClassName, so in IE, jQuery has to iterate the whole DOM and check whether each elements class attribute contains &#34;lineitem&#34;. Considering that IE&#8217;s DOM isn&#8217;t really fast to start with, this is a HUGE no-no. via How to kill IE performance « gnegg. Doing something as simple as: [sourcecode lang=&#8221;javascript&#8221;] [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>Remember: IE (still) doesn&#8217;t have getElementsByClassName, so in IE, jQuery has to iterate the whole DOM and check whether each elements class attribute contains &quot;lineitem&quot;. Considering that IE&#8217;s DOM isn&#8217;t really fast to start with, this is a HUGE no-no.</p></blockquote>
+<p>via <a href='http://www.gnegg.ch/2010/10/how-to-kill-ie-performance/?utm_source=feedburner&#038;utm_medium=feed&#038;utm_campaign=Feed%3A+gnegg%2Fteaser+%28gnegg+%28teasers%29%29&#038;utm_content=Google+Reader'>How to kill IE performance « gnegg</a>.</p>
+<p>Doing something as simple as:</p>
+<p>[sourcecode lang=&#8221;javascript&#8221;]<br />
+$(&#8216;.some-class-name&#8217;)<br />
+[/sourcecode]</p>
+<p>with jQuery in Javascript can be brutal in IE if it matches a large number of nodes in the DOM.  The reason, as noted in the quote above, is because IE doesn&#8217;t have a native <code>getElementsByClassName()</code> Javascript function.  As a result you have to walk the DOM looking for nodes with that particular class.  Expect this to be slow.  If the DOM for your page is large expect this to be painfully slow.</p>
+<p>The good news is that <a href="http://www.quirksmode.org/dom/w3c_core.html#gettingelement">modern versions of other other major browsers out there do implement <code>getElementsByClassName()</code></a> and that the IE9 previews also support it.  Unfortunately this means killing off IE6 isn&#8217;t enough, we&#8217;ve got to find a way to convince people who stick with IE to move all the way up to IE9 (once it is finally released).  Not an easy task since IE9 requires Windows Vista or Windows 7.  If you are still on Windows XP (still the <a href="http://gs.statcounter.com/#os-ww-monthly-200909-201009">most popular OS for those browsing the web</a>), IE9 is not an option for you.</p>
+<p>What do we do in the meantime?  First, be careful when using a class to select nodes.  Second, convince people to download Chrome, Firefox, or Safari and stop using IE (unless they are already using the IE9 betas).</p>
+<p><b>UPDATE:</b> Want a better idea of how much  faster a native implementation of <code>getElementsByClassName()</code> can be?  Check out <a href="http://ejohn.org/blog/getelementsbyclassname-speed-comparison/">John Resig&#8217;s speed comparison</a> from March 2007.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/10/15/how-to-kill-ie-performance/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>CSS Border Radius Percentages and Elliptical Borders</title>
+		<link>/2010/01/28/css-border-radius-percentages-and-elliptical-borders/</link>
+					<comments>/2010/01/28/css-border-radius-percentages-and-elliptical-borders/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 29 Jan 2010 02:09:52 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[firefox]]></category>
+		<category><![CDATA[internet-explorer]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=1814</guid>
+
+					<description><![CDATA[When using CSS border radius I&#8217;ve always specified the radius in pixels (px), something like this: [sourcecode lang=&#8221;css&#8221;] .round-box { border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; } [/sourcecode] This got me to wondering, does it support percentages as well? So I tried this: [sourcecode lang=&#8221;css&#8221;] .round-box { border-radius: 5%; -moz-border-radius: 5%; -webkit-border-radius: 5%; } [/sourcecode] [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>When using CSS border radius I&#8217;ve always specified the radius in pixels (px), something like this:</p>
+<p>[sourcecode lang=&#8221;css&#8221;]<br />
+.round-box {<br />
+    border-radius: 5px;<br />
+    -moz-border-radius: 5px;<br />
+    -webkit-border-radius: 5px;<br />
+}<br />
+[/sourcecode]</p>
+<p>This got me to wondering, does it support percentages as well?  So I tried this:</p>
+<p>[sourcecode lang=&#8221;css&#8221;]<br />
+.round-box {<br />
+    border-radius: 5%;<br />
+    -moz-border-radius: 5%;<br />
+    -webkit-border-radius: 5%;<br />
+}<br />
+[/sourcecode]</p>
+<p>This worked in Firefox 3.6 but not in Chrome.  Some searching around revealed the <a href="https://developer.mozilla.org/en/CSS:-moz-border-radius">Mozilla -moz-border-radius</a> page.  For border radius it specifically mentions that it supports <a href="https://developer.mozilla.org/en/CSS/length">length units</a> as well as percentages:</p>
+<blockquote><p>
+A percentage, relative to the width of the box (the percentage is relative to the width even when specifying the radius for a height).
+</p></blockquote>
+<p>That page also mentioned support for elliptical borders.  To do that you add another radius value separated by a slash:</p>
+<p>[sourcecode lang=&#8221;css&#8221;]<br />
+.round-box {<br />
+    border-radius: 15px / 50px;<br />
+    -moz-border-radius: 15px / 50px;<br />
+    -webkit-border-radius: 15px / 50px;<br />
+}<br />
+[/sourcecode]</p>
+<p>The elliptical border worked on Chrome as well.  If you bend this tight enough you can get pretty close to a circle.</p>
+<p>I wanted Internet Explorer to add support for border radius before; now that I&#8217;ve got even more radius toys to play with I&#8217;m practically begging.  I&#8217;m sorry Internet Explorer users but I&#8217;m tired of various border hacks when there are simple and clean CSS methods available.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/01/28/css-border-radius-percentages-and-elliptical-borders/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Banging Head Gif</title>
+		<link>/2006/02/09/banging-head-gif/</link>
+					<comments>/2006/02/09/banging-head-gif/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 09 Feb 2006 17:02:31 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[funny]]></category>
+		<category><![CDATA[internet-explorer]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/02/09/banging-head-gif/</guid>
+
+					<description><![CDATA[Earlier today Alex King posted about a frustrating problem he was having with Internet Explorer (IE). We can all sympathize, who hasn&#8217;t wanted to curse IE while trying to get something to working that is fine in FireFox? I have, more than once 🙂 Alex eventually found a way to accomplish what he wanted in [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Earlier today <a href="http://www.alexking.org/">Alex King</a> posted about a <a href="http://www.alexking.org/blog/2006/02/09/setting-div-height-in-ie/">frustrating problem</a> he was having with <a href="http://www.microsoft.com/windows/ie/default.mspx">Internet Explorer</a> (IE).  We can all sympathize, who hasn&#8217;t wanted to curse IE while trying to get something to working that is fine in <a href="http://www.mozilla.com/firefox/">FireFox</a>?  I have, more than once <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Alex eventually found a way to accomplish what he wanted in IE, but that wasn&#8217;t the best thing about his post.  It was this banging your head against the wall gif:</p>
+<p><img border="0" src="http://static.flickr.com/26/97729975_6b24129899_o.gif" /></p>
+<p>Just remember that image the next time something just doesn&#8217;t want to work the way it should.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/02/09/banging-head-gif/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The Story of file: in IE</title>
+		<link>/2005/11/11/the-story-of-file-in-ie/</link>
+					<comments>/2005/11/11/the-story-of-file-in-ie/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Fri, 11 Nov 2005 10:20:54 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[ie]]></category>
+		<category><![CDATA[internet-explorer]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=517</guid>
+
+					<description><![CDATA[Every now and then you come across a piece of written history that is just classic. This is one of those times: The Bizarre and Unhappy Story of &#8216;file:&#8217; URLs. Welcome to the strange tale of how Internet Explorer (IE) eventually figured out how to deal with the file: URL in a way wasn&#8217;t completely [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Every now and then you come across a piece of written history that is just classic.  This is one of those times: <a href="http://blogs.msdn.com/freeassociations/archive/2005/05/19/420059.aspx">The Bizarre and Unhappy Story of &#8216;file:&#8217; URLs</a>.  Welcome to the strange tale of how <a href="http://www.microsoft.com/windows/ie/default.mspx">Internet Explorer</a> (IE) eventually figured out how to deal with the file: URL in a way wasn&#8217;t completely broken.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2005/11/11/the-story-of-file-in-ie/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

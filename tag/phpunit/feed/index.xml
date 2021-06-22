@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>phpunit &#8211; Joseph Scott</title>
+	<atom:link href="/tag/phpunit/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 19 Nov 2013 16:34:08 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Speaking: PHPUnit Code Coverage ( at UPHPU )</title>
+		<link>/2013/11/19/speaking-phpunit-code-coverage-at-uphpu/</link>
+					<comments>/2013/11/19/speaking-phpunit-code-coverage-at-uphpu/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 19 Nov 2013 16:34:08 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[code-coverage]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[phpunit]]></category>
+		<category><![CDATA[speaking]]></category>
+		<category><![CDATA[uphpu]]></category>
+		<category><![CDATA[utah]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=9436</guid>
+
+					<description><![CDATA[This Thursday ( 21 November 2013 ) I&#8217;ll be speaking at UPHPU on PHPUnit Code Coverage. The two second pitch: You’ve been writing unit tests for your PHP code, but how sure are you that they cover every line of code. We’ll go over generating code coverage analysis reports using PHPUnit so that you can [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>This Thursday ( 21 November 2013 ) I&#8217;ll be speaking at <a href="http://uphpu.org/2013/11/19/november-21st-meeting-phpunit-code-coverage-by-joseph-scott/">UPHPU on PHPUnit Code Coverage</a>.  The two second pitch:</p>
+<blockquote><p>
+You’ve been writing unit tests for your PHP code, but how sure are you that they cover every line of code. We’ll go over generating code coverage analysis reports using PHPUnit so that you can see exactly how much of your code your unit tests cover.
+</p></blockquote>
+<p>The process is direct and simple enough for all PHP skill levels to follow.</p>
+<p>The <a href="http://uphpu.org/2013/11/19/november-21st-meeting-phpunit-code-coverage-by-joseph-scott/">Utah PHP Users Group ( UPHPU )</a> meets at the Needle.com office in Bluffdale, UT on the third Thursday of each month at 7pm.  Maps and details are available at <a href="http://uphpu.org/">uphpu.org</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/11/19/speaking-phpunit-code-coverage-at-uphpu/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

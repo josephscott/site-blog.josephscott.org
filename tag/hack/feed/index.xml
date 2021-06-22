@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>hack &#8211; Joseph Scott</title>
+	<atom:link href="/tag/hack/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 28 Jul 2015 14:01:55 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Hack vs. PHP</title>
+		<link>/2015/07/28/hack-vs-php/</link>
+					<comments>/2015/07/28/hack-vs-php/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 28 Jul 2015 14:01:55 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[hack]]></category>
+		<category><![CDATA[hhvm]]></category>
+		<category><![CDATA[marco-arment]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=10094</guid>
+
+					<description><![CDATA[Marco Arment rightly pointed out that Hack Isn&#8217;t PHP: Unlike HHVM, adopting Hack is a huge risk. HHVM was great because you could switch to it and switch away from it freely, with almost no effort (especially to switch away). You were still writing PHP. But once you convert a file to Hack and use [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Marco Arment rightly pointed out that <a href="http://www.marco.org/2014/03/21/hack">Hack Isn&#8217;t PHP</a>:</p>
+<blockquote><p>
+Unlike HHVM, adopting Hack is a huge risk. HHVM was great because you could switch to it and switch away from it freely, with almost no effort (especially to switch away). You were still writing PHP. But once you convert a file to Hack and use any of its new features, it’s no longer valid PHP, so you must always use Hack and HHVM from that point forward (or undertake an expensive rewrite).
+</p></blockquote>
+<p>That was 18 months ago.  It got me wondering.  Is anyone writing new projects starting with <a href="http://hacklang.org/">Hack</a>?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/07/28/hack-vs-php/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

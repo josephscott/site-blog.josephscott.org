@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: WordPress for iPhone	</title>
+	<atom:link href="/2008/07/22/wordpress-for-iphone/feed/" rel="self" type="application/rss+xml" />
+	<link>/2008/07/22/wordpress-for-iphone/</link>
+	<description></description>
+	<lastBuildDate>Thu, 16 Apr 2009 07:42:30 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Art Geigel		</title>
+		<link>/2008/07/22/wordpress-for-iphone/#comment-2300</link>
+
+		<dc:creator><![CDATA[Art Geigel]]></dc:creator>
+		<pubDate>Thu, 16 Apr 2009 07:42:30 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1136#comment-2300</guid>
+
+					<description><![CDATA[* Nudge *
+
+I&#039;m still having the problem I described on 2/24/09... any ideas/help?
+
+Thanks in advance,
+
+AG3
+art@geigel.com]]></description>
+			<content:encoded><![CDATA[<p>* Nudge *</p>
+<p>I&#8217;m still having the problem I described on 2/24/09&#8230; any ideas/help?</p>
+<p>Thanks in advance,</p>
+<p>AG3<br />
+<a href="mailto:art@geigel.com">art@geigel.com</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Art Geigel		</title>
+		<link>/2008/07/22/wordpress-for-iphone/#comment-2299</link>
+
+		<dc:creator><![CDATA[Art Geigel]]></dc:creator>
+		<pubDate>Tue, 24 Feb 2009 07:34:59 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1136#comment-2299</guid>
+
+					<description><![CDATA[Hello everyone.  I was receiving the same XML-RPC error you were receiving, and after reading your discussion I added the RSD link to the header of my blog pages thinking this would solve my problem.  You can view source here: http://www.geigel.com/acorn.php?page=blog
+
+I have the XML-RPC option activated in WP admin area (and have deactivated/reactivated it again per the suggestion above) but now when I try to setup my connection on the iPhone I no longer receive the error I got before, but instead the WP app simply quits and I&#039;m taken back to the iPhone main screen.
+
+I opted to custom build my display/theme to work with my site&#039;s design instead of using an official WP theme, but this theoretically shouldn&#039;t affect the mechanics going on behind the scenes as it relates to xmlrpc.php -- right?
+
+Any help would be appreciated.  I&#039;d really like to be able to edit on the fly using the iPhone.
+
+Thanks,
+
+AG3
+art@geigel.com]]></description>
+			<content:encoded><![CDATA[<p>Hello everyone.  I was receiving the same XML-RPC error you were receiving, and after reading your discussion I added the RSD link to the header of my blog pages thinking this would solve my problem.  You can view source here: <a href="http://www.geigel.com/acorn.php?page=blog" rel="nofollow ugc">http://www.geigel.com/acorn.php?page=blog</a></p>
+<p>I have the XML-RPC option activated in WP admin area (and have deactivated/reactivated it again per the suggestion above) but now when I try to setup my connection on the iPhone I no longer receive the error I got before, but instead the WP app simply quits and I&#8217;m taken back to the iPhone main screen.</p>
+<p>I opted to custom build my display/theme to work with my site&#8217;s design instead of using an official WP theme, but this theoretically shouldn&#8217;t affect the mechanics going on behind the scenes as it relates to xmlrpc.php &#8212; right?</p>
+<p>Any help would be appreciated.  I&#8217;d really like to be able to edit on the fly using the iPhone.</p>
+<p>Thanks,</p>
+<p>AG3<br />
+<a href="mailto:art@geigel.com">art@geigel.com</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/07/22/wordpress-for-iphone/#comment-2298</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 02 Feb 2009 16:38:50 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1136#comment-2298</guid>
+
+					<description><![CDATA[Good to know, thanks for the follow up.]]></description>
+			<content:encoded><![CDATA[<p>Good to know, thanks for the follow up.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Patrick Steiner		</title>
+		<link>/2008/07/22/wordpress-for-iphone/#comment-2297</link>
+
+		<dc:creator><![CDATA[Patrick Steiner]]></dc:creator>
+		<pubDate>Mon, 02 Feb 2009 16:34:43 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1136#comment-2297</guid>
+
+					<description><![CDATA[@Joseph
+
+Found the problem. Even though XML-RPC was selected in the Wordpress settings, I had to disable and re-enable it. Seems like the &quot;checkbox&quot; was selected but the function not activated.
+
+After fixing that I did run into the next problem with the XML-Parser ( Error 64 ) which was caused by two blank lines in my Workpress config-file.
+
+Seems to work now.
+
+Thanks
+
+Patrick]]></description>
+			<content:encoded><![CDATA[<p>@Joseph</p>
+<p>Found the problem. Even though XML-RPC was selected in the WordPress settings, I had to disable and re-enable it. Seems like the &#8220;checkbox&#8221; was selected but the function not activated.</p>
+<p>After fixing that I did run into the next problem with the XML-Parser ( Error 64 ) which was caused by two blank lines in my Workpress config-file.</p>
+<p>Seems to work now.</p>
+<p>Thanks</p>
+<p>Patrick</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/07/22/wordpress-for-iphone/#comment-2296</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 02 Feb 2009 16:15:59 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1136#comment-2296</guid>
+
+					<description><![CDATA[@Miguel Galve
+
+You don&#039;t have an RSD link in your header area, so that the iPhone app won&#039;t be able to tell where the XML-RPC end point is for your blog.
+
+@Patrick Steiner
+
+I don&#039;t see anything obvious that would cause a problem on your site.  It might be having problems with the character set.  This has been improved in the latest version the app, which should be out soon.  You can test it out in the simulator as well to see if this has already been fixed.]]></description>
+			<content:encoded><![CDATA[<p>@Miguel Galve</p>
+<p>You don&#8217;t have an RSD link in your header area, so that the iPhone app won&#8217;t be able to tell where the XML-RPC end point is for your blog.</p>
+<p>@Patrick Steiner</p>
+<p>I don&#8217;t see anything obvious that would cause a problem on your site.  It might be having problems with the character set.  This has been improved in the latest version the app, which should be out soon.  You can test it out in the simulator as well to see if this has already been fixed.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Patrick Steiner		</title>
+		<link>/2008/07/22/wordpress-for-iphone/#comment-2295</link>
+
+		<dc:creator><![CDATA[Patrick Steiner]]></dc:creator>
+		<pubDate>Sun, 01 Feb 2009 14:04:28 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1136#comment-2295</guid>
+
+					<description><![CDATA[Same here. Wordpress 2.7 with XML-RPC enabled.
+Anyone found a solution yet?
+
+Thanks/Danke
+
+Patrick]]></description>
+			<content:encoded><![CDATA[<p>Same here. WordPress 2.7 with XML-RPC enabled.<br />
+Anyone found a solution yet?</p>
+<p>Thanks/Danke</p>
+<p>Patrick</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: miguel galve		</title>
+		<link>/2008/07/22/wordpress-for-iphone/#comment-2294</link>
+
+		<dc:creator><![CDATA[miguel galve]]></dc:creator>
+		<pubDate>Tue, 21 Oct 2008 22:29:33 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1136#comment-2294</guid>
+
+					<description><![CDATA[Hi
+
+I&#039;m having the same problem with mi blog www.miguelgalve.com/blog. And already I don&#039;t match the solution to this problem. Can you are any recent new?
+
+Hola,
+
+Yo también tengo el mismo problema y todavía no he conseguido solucionarlo, sabes donde puedo leer más información al respecto donde paso a paso indiquen como solucionarlo.
+
+Muchas gracias]]></description>
+			<content:encoded><![CDATA[<p>Hi</p>
+<p>I&#8217;m having the same problem with mi blog <a href="http://www.miguelgalve.com/blog" rel="nofollow ugc">http://www.miguelgalve.com/blog</a>. And already I don&#8217;t match the solution to this problem. Can you are any recent new?</p>
+<p>Hola,</p>
+<p>Yo también tengo el mismo problema y todavía no he conseguido solucionarlo, sabes donde puedo leer más información al respecto donde paso a paso indiquen como solucionarlo.</p>
+<p>Muchas gracias</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2008/07/22/wordpress-for-iphone/#comment-2293</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 05 Aug 2008 15:21:59 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1136#comment-2293</guid>
+
+					<description><![CDATA[I suggest filing a ticket at http://iphone.trac.wordpress.org/ and provide as many details as possible.  We may need to see the raw XML-RPC requests to determine exactly what&#039;s going on.]]></description>
+			<content:encoded><![CDATA[<p>I suggest filing a ticket at <a href="http://iphone.trac.wordpress.org/" rel="nofollow ugc">http://iphone.trac.wordpress.org/</a> and provide as many details as possible.  We may need to see the raw XML-RPC requests to determine exactly what&#8217;s going on.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Xavier Tello		</title>
+		<link>/2008/07/22/wordpress-for-iphone/#comment-2292</link>
+
+		<dc:creator><![CDATA[Xavier Tello]]></dc:creator>
+		<pubDate>Tue, 05 Aug 2008 02:29:26 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1136#comment-2292</guid>
+
+					<description><![CDATA[Hi.
+
+I just installed the latest version of WP in my 3G iPhone, but I cant add my Blog: blogs.strat-cons.com.
+
+Theres this message which keeps appearing: We could not find the XML-RPC service for your blog
+
+What does this mean? How can I solve it?
+
+I have WP 2.6 and the XML-RPC controls are checked ON.
+
+Thanks in advance.
+
+Regards]]></description>
+			<content:encoded><![CDATA[<p>Hi.</p>
+<p>I just installed the latest version of WP in my 3G iPhone, but I cant add my Blog: blogs.strat-cons.com.</p>
+<p>Theres this message which keeps appearing: We could not find the XML-RPC service for your blog</p>
+<p>What does this mean? How can I solve it?</p>
+<p>I have WP 2.6 and the XML-RPC controls are checked ON.</p>
+<p>Thanks in advance.</p>
+<p>Regards</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Performance Analysis: beta-newsroom.lds.org	</title>
+	<atom:link href="/2010/09/27/performance-analysis-beta-newsroom-lds-org/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/09/27/performance-analysis-beta-newsroom-lds-org/</link>
+	<description></description>
+	<lastBuildDate>Mon, 04 Oct 2010 16:09:20 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/09/27/performance-analysis-beta-newsroom-lds-org/#comment-3549</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 04 Oct 2010 16:09:20 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2890#comment-3549</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/09/27/performance-analysis-beta-newsroom-lds-org/#comment-3548&quot;&gt;Ryan&lt;/a&gt;.
+
+Actually your performance goal is to provide a high performance, fast loading site.  If it took 10 minutes for the site to load each page on a 20Mbps fiber connection would you use it?  No.  That is why I said, the problem is when people testing the site get into the realm of &quot;good enough&quot;.  Obviously that isn&#039;t the only goal for the site, it is &quot;a goal&quot;, but not &quot;the only goal&quot;.  Unfortunately this often translates into simply having no performance goals.
+
+The IE6 example, well, hey, no one likes supporting IE6 :-)  However simply saying that throwing out 15% of your users is alright is insufficient data to come even close to making a decision. On WordPress.com for instance - http://en.wordpress.com/stats/traffic/ http://www.quantcast.com/p-18-mFEk4J448M we average 65million page views a day, 15% of that is 9 million page views a day.  Deciding to ignore all those users will result in a huge increase in support requests.  It still might be worth it, but looking at just the percentage can be very mis-leading if the numbers are very high.  And that doesn&#039;t even touch the issue of individual attributes of those users.  What if that 15% make up 90% of your most critical users (by revenue, target market, etc.)?
+
+I&#039;m all for throwing IE6 under a bus, it just turns out to be a harder decision than most web devs would like.
+
+I want to be clear that I agree 100% that performance is not the only issue, but it should included in the list of issues.  In the context of the beta-newsroom.lds.org, just turn on HTTP compression support to start with, that would have a large impact and require zero code changes to the site.  Same for HTTP caching headers.  If it takes more than 5 minutes to enable compression for the site then &quot;you&#039;re doing it wrong&quot;(TM)  :-)
+
+I look forward to seeing an iteration of the site with improved performance.  I&#039;m happy to offer pointers on techniques for improving performance.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/09/27/performance-analysis-beta-newsroom-lds-org/#comment-3548">Ryan</a>.</p>
+<p>Actually your performance goal is to provide a high performance, fast loading site.  If it took 10 minutes for the site to load each page on a 20Mbps fiber connection would you use it?  No.  That is why I said, the problem is when people testing the site get into the realm of &#8220;good enough&#8221;.  Obviously that isn&#8217;t the only goal for the site, it is &#8220;a goal&#8221;, but not &#8220;the only goal&#8221;.  Unfortunately this often translates into simply having no performance goals.</p>
+<p>The IE6 example, well, hey, no one likes supporting IE6 🙂  However simply saying that throwing out 15% of your users is alright is insufficient data to come even close to making a decision. On WordPress.com for instance &#8211; <a href="http://en.wordpress.com/stats/traffic/" rel="nofollow ugc">http://en.wordpress.com/stats/traffic/</a> <a href="http://www.quantcast.com/p-18-mFEk4J448M" rel="nofollow ugc">http://www.quantcast.com/p-18-mFEk4J448M</a> we average 65million page views a day, 15% of that is 9 million page views a day.  Deciding to ignore all those users will result in a huge increase in support requests.  It still might be worth it, but looking at just the percentage can be very mis-leading if the numbers are very high.  And that doesn&#8217;t even touch the issue of individual attributes of those users.  What if that 15% make up 90% of your most critical users (by revenue, target market, etc.)?</p>
+<p>I&#8217;m all for throwing IE6 under a bus, it just turns out to be a harder decision than most web devs would like.</p>
+<p>I want to be clear that I agree 100% that performance is not the only issue, but it should included in the list of issues.  In the context of the beta-newsroom.lds.org, just turn on HTTP compression support to start with, that would have a large impact and require zero code changes to the site.  Same for HTTP caching headers.  If it takes more than 5 minutes to enable compression for the site then &#8220;you&#8217;re doing it wrong&#8221;(TM)  🙂</p>
+<p>I look forward to seeing an iteration of the site with improved performance.  I&#8217;m happy to offer pointers on techniques for improving performance.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ryan		</title>
+		<link>/2010/09/27/performance-analysis-beta-newsroom-lds-org/#comment-3548</link>
+
+		<dc:creator><![CDATA[Ryan]]></dc:creator>
+		<pubDate>Mon, 04 Oct 2010 15:33:35 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2890#comment-3548</guid>
+
+					<description><![CDATA[Well, like I said, everything gets prioritized. The site is still in active development. It&#039;s like a stream going by, and at some point you say, &quot;we are going public at this point,&quot; but you are still not done. I don&#039;t know if I&#039;d say the goal is to provide &quot;high performance, fast loading site to the client.&quot; Of course we want it not to be a painful user experience, but we have to weight the costs and benefits of speed and functionality, and when certain work is done. And like I said, your target audience influences the benefits. For example, even if 15% of your users use IE6, the cost to support a positive user experience on IE6 still may not be worth it.]]></description>
+			<content:encoded><![CDATA[<p>Well, like I said, everything gets prioritized. The site is still in active development. It&#8217;s like a stream going by, and at some point you say, &#8220;we are going public at this point,&#8221; but you are still not done. I don&#8217;t know if I&#8217;d say the goal is to provide &#8220;high performance, fast loading site to the client.&#8221; Of course we want it not to be a painful user experience, but we have to weight the costs and benefits of speed and functionality, and when certain work is done. And like I said, your target audience influences the benefits. For example, even if 15% of your users use IE6, the cost to support a positive user experience on IE6 still may not be worth it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2010/09/27/performance-analysis-beta-newsroom-lds-org/#comment-3547</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Mon, 04 Oct 2010 15:04:50 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2890#comment-3547</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/09/27/performance-analysis-beta-newsroom-lds-org/#comment-3546&quot;&gt;Ryan&lt;/a&gt;.
+
+&lt;blockquote&gt;There are different levels where performance comes into play&lt;/blockquote&gt;
+
+Yes, and as I don&#039;t have any familiarity with the back end structure or systems (other than what is mentioned in HTTP responses) so I focused specifically items that impacted the client and were measurable from there.  The site is small enough traffic wise that scaling the back end should not be a difficult problem.  Ultimately the goal is to present a high performance, fast loading site to the client.  They won&#039;t really care how that gets accomplished.
+
+&lt;blockquote&gt;The new Beta Newsoom site has been live for a little over a week and a lot of the browser-side performance improvements have not been the focus or priority yet.&lt;/blockquote&gt;
+
+For some of the items I mentioned I could see this being acceptable, but for the most part performance is part of development.  Something as simple as: under conditions X we expect the page load time to be under Y 95% of the time.  Then test for that.  This usually gets skipped over when performance comes into the range of &quot;good enough&quot;.  We&#039;ve become spoiled with high speed connections though, and our sense of &quot;good enough&quot; often doesn&#039;t take into account people on slower connections.
+
+The lack of compression support for instance it pretty bad and obvious.  I imagine this was someone simply mis-configuring a server and should only take a few minutes to fix.  But this is also more than just performance.  Quantcast puts your monthly visits ( http://www.quantcast.com/newsroom.lds.org ) to newsroom.lds.org at around 150K per month (obviously direct measurement would give a more accurate number, but this works for a ball park).  If we take that as page views, 150,000 pv/mo x 600k = 90GB per month.  Cutting that in half is a good thing not just for clients, but for network infrastructure as well (for a variety of reasons it isn&#039;t actually half, but that&#039;s the ball park), giving you room to serve more clients with few resources.  And we haven&#039;t even touched on peak load issues.  Spending less tithing dollars to accomplish the same task with better performance is a good thing :-)
+
+You mentioned General Conference being a test for the site, I just ran webpagetest.org against the site again and the page weight is now over 700KB - http://www.webpagetest.org/result/101004_6VEY/ - so compression would make an even bigger difference.  That said, the number of HTTP requests was smaller, so the page actually loads faster now.  Still no compression support though, which is sad.
+
+I&#039;m happy to chat more about this ( contact form - http://josephscott.org/contact/ ).]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/09/27/performance-analysis-beta-newsroom-lds-org/#comment-3546">Ryan</a>.</p>
+<blockquote><p>There are different levels where performance comes into play</p></blockquote>
+<p>Yes, and as I don&#8217;t have any familiarity with the back end structure or systems (other than what is mentioned in HTTP responses) so I focused specifically items that impacted the client and were measurable from there.  The site is small enough traffic wise that scaling the back end should not be a difficult problem.  Ultimately the goal is to present a high performance, fast loading site to the client.  They won&#8217;t really care how that gets accomplished.</p>
+<blockquote><p>The new Beta Newsoom site has been live for a little over a week and a lot of the browser-side performance improvements have not been the focus or priority yet.</p></blockquote>
+<p>For some of the items I mentioned I could see this being acceptable, but for the most part performance is part of development.  Something as simple as: under conditions X we expect the page load time to be under Y 95% of the time.  Then test for that.  This usually gets skipped over when performance comes into the range of &#8220;good enough&#8221;.  We&#8217;ve become spoiled with high speed connections though, and our sense of &#8220;good enough&#8221; often doesn&#8217;t take into account people on slower connections.</p>
+<p>The lack of compression support for instance it pretty bad and obvious.  I imagine this was someone simply mis-configuring a server and should only take a few minutes to fix.  But this is also more than just performance.  Quantcast puts your monthly visits ( <a href="http://www.quantcast.com/newsroom.lds.org" rel="nofollow ugc">http://www.quantcast.com/newsroom.lds.org</a> ) to newsroom.lds.org at around 150K per month (obviously direct measurement would give a more accurate number, but this works for a ball park).  If we take that as page views, 150,000 pv/mo x 600k = 90GB per month.  Cutting that in half is a good thing not just for clients, but for network infrastructure as well (for a variety of reasons it isn&#8217;t actually half, but that&#8217;s the ball park), giving you room to serve more clients with few resources.  And we haven&#8217;t even touched on peak load issues.  Spending less tithing dollars to accomplish the same task with better performance is a good thing 🙂</p>
+<p>You mentioned General Conference being a test for the site, I just ran webpagetest.org against the site again and the page weight is now over 700KB &#8211; <a href="http://www.webpagetest.org/result/101004_6VEY/" rel="nofollow ugc">http://www.webpagetest.org/result/101004_6VEY/</a> &#8211; so compression would make an even bigger difference.  That said, the number of HTTP requests was smaller, so the page actually loads faster now.  Still no compression support though, which is sad.</p>
+<p>I&#8217;m happy to chat more about this ( contact form &#8211; <a href="http://josephscott.org/contact/" rel="nofollow ugc">http://josephscott.org/contact/</a> ).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ryan		</title>
+		<link>/2010/09/27/performance-analysis-beta-newsroom-lds-org/#comment-3546</link>
+
+		<dc:creator><![CDATA[Ryan]]></dc:creator>
+		<pubDate>Mon, 04 Oct 2010 12:19:53 +0000</pubDate>
+		<guid isPermaLink="false">http://josephscott.org/?p=2890#comment-3546</guid>
+
+					<description><![CDATA[Joseph, I am in involved in the site. There are different levels where performance comes into play: the app server, caching appliance, and client performance. Client performance would include page weight, number of requests, browser caching, compression, and other speed tricks, like puting js files at the end of the html. And depending on who your target audience is, you will make cost-benefit decisions and tradeoffs along the way. 
+
+The new Beta Newsoom site has been live for a little over a week and a lot of the browser-side performance improvements have not been the focus or priority yet. We wanted to make sure that the functionality was correct and solid, that the app ran well, and that we had a good foundation for everything else. Conference of course was a great test of all this. After most of the functionality is in place, I would expect that we will spend more time on the browser-side performance improvements. And like you said, there is some low hanging fruit that shouldn&#039;t be too difficult to implement. In a few weeks we may have addresses some of these issues.
+
+Thanks for the analysis!]]></description>
+			<content:encoded><![CDATA[<p>Joseph, I am in involved in the site. There are different levels where performance comes into play: the app server, caching appliance, and client performance. Client performance would include page weight, number of requests, browser caching, compression, and other speed tricks, like puting js files at the end of the html. And depending on who your target audience is, you will make cost-benefit decisions and tradeoffs along the way. </p>
+<p>The new Beta Newsoom site has been live for a little over a week and a lot of the browser-side performance improvements have not been the focus or priority yet. We wanted to make sure that the functionality was correct and solid, that the app ran well, and that we had a good foundation for everything else. Conference of course was a great test of all this. After most of the functionality is in place, I would expect that we will spend more time on the browser-side performance improvements. And like you said, there is some low hanging fruit that shouldn&#8217;t be too difficult to implement. In a few weeks we may have addresses some of these issues.</p>
+<p>Thanks for the analysis!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

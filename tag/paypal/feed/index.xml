@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>paypal &#8211; Joseph Scott</title>
+	<atom:link href="/tag/paypal/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 07 May 2008 10:01:04 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Payment Systems As A Strategic Advantage</title>
+		<link>/2008/05/07/payment-systems-as-a-strategic-advantage/</link>
+					<comments>/2008/05/07/payment-systems-as-a-strategic-advantage/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 07 May 2008 10:01:04 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[amazon]]></category>
+		<category><![CDATA[aws]]></category>
+		<category><![CDATA[checkout]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[paymentsystems]]></category>
+		<category><![CDATA[paypal]]></category>
+		<category><![CDATA[sun]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=1065</guid>
+
+					<description><![CDATA[A couple of days after suggesting that Sun should offer cloud services they announced that they would be supporting Amazon EC2 by having it run Sun&#8217;s OpenSolaris and offer MySQL support for instances running on top of EC2. Nice, but not any where near what I&#8217;m hoping for. So I started looking at the other [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>A couple of days after suggesting that <a href="http://joseph.randomnetworks.com/archives/2008/04/28/sun-should-be-in-the-consumer-cloud-services-business/">Sun should offer cloud services</a> they <a href="http://www.sun.com/aboutsun/pr/2008-05/sunflash.20080505.3.xml">announced</a> that they would be supporting Amazon EC2 by having it run Sun&#8217;s OpenSolaris and offer MySQL support for instances running on top of EC2.  Nice, but not any where near what I&#8217;m hoping for.  So I started looking at the other side of the coin, what things are keeping Sun from being able to offer pay as you go consumer services?  One thing quickly came to mind: dealing with many payment transactions, often for small amounts.</p>
+<p>The beauty of pay as you go cloud services is that you pay for what you use.  If you only use a small amount, you only pay a small amount.  My S3 bill each month rarely goes over $5, because I only use it in small amounts.  Amazon charges my credit card and sends me an email with the details.  But for most companies doing lots of credit card transactions for small amounts simply isn&#8217;t worth it.  The fees associated with credit card transactions add up fast when dealing with such small transactions.  At least for most companies.</p>
+<p>Amazon has been doing large volumes of credit card transactions for a number of years, I&#8217;d be very surprised if they don&#8217;t have some custom fee structure for processing them.  When you do the volume of transactions that a company like Amazon does, that gives you a little more leverage.  So part of what has allowed Amazon to grow into the pay as go cloud services market is the fact that they already had a large payment system in place that allows them to process even fairly small transactions efficiently.</p>
+<p>This gives <a href="http://checkout.google.com/">Google Checkout</a> an even more important role than just being a competitor to <a href="http://paypal.com/">PayPal</a>.  With AdWords and AdSense already going, Google already has plenty of reason to want the same sort of leverage Amazon has for processing payments.  With Google App Engine expected to have a similar pay as go structure as AWS, there will be even more focus on processing small amounts without taking a big hit on fees.</p>
+<p>Now back to Sun.  As far as I know Sun has nothing that even comes close to Amazon&#8217;s volume of transactions or Google&#8217;s small fee services.  So they&#8217;ve had no reason to build up an efficient payment system that can handle small amounts.  This leaves them with two choices, build one to try and gain the needed leverage to reduce the fees involved, or partner with someone else who already has.  So far they&#8217;ve gone with the later, specifically Amazon and their EC2 service.</p>
+<p>One way around the small transaction amount problem is to have customers pay in advance.  Sun could still offer pay as you go services, but you have pay for them upfront in $100 increments.  Each month your usage fee would be deducted from the amount you already paid them.  If I only used $10 this month, I&#8217;d still have $90 left in my account.  This isn&#8217;t nearly as attractive from the small customer side as simply paying $10 per month from their credit card, but not horrendous either, especially if you could get the minimum pay in advance amount down to something under $50.</p>
+<p>I&#8217;d really like to see more competition in the cloud services space, but so far Amazon has it pretty much all to itself (which a small niche potentially going to Google App Engine).  And unless companies like Sun can find ways to process small payments efficiently we might not be seeing any for a long time to come.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2008/05/07/payment-systems-as-a-strategic-advantage/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Google Checkout</title>
+		<link>/2006/06/29/google-checkout/</link>
+					<comments>/2006/06/29/google-checkout/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 29 Jun 2006 17:27:45 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[googlecheckout]]></category>
+		<category><![CDATA[paypal]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/06/29/google-checkout/</guid>
+
+					<description><![CDATA[The big news for today: Google Checkout. There is an official announcement about the service on the Google Blog, complete with a 2 minute video touting Google Checkout features. This service has been expected for quite awhile (remember the rumors about Google Wallet?) and has been widely seen as competition for PayPal. I think Google [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The big news for today: <a href="http://checkout.google.com/">Google Checkout</a>.  There is an <a href="http://googleblog.blogspot.com/2006/06/find-it-with-google-buy-it-with-google.html">official announcement</a> about the service on the <a href="http://googleblog.blogspot.com/">Google Blog</a>, complete with a 2 minute video touting Google Checkout features.  This service has been expected for quite awhile (remember the rumors about <a href="http://www.google.com/search?q=google+wallet&amp;start=0&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox&amp;rls=org.mozilla:en-US:unofficial">Google Wallet</a>?) and has been widely seen as competition for <a href="http://www.paypal.com/">PayPal</a>.</p>
+<p>I think Google might finally be learning some lessons from Microsoft.  First, they need add new services that generate non-ad based revenue.  With a stock price of over $400 per share I expect to see more and more pressure applied to Google to  generate A LOT MORE MONEY as time goes on.  Second, leveraging new services with what you already have.  Integrating the service with <a href="http://www.google.com/adwords">AdWords</a> will provide a way for Checkout to grow.  Not only grow, but grow in a way that others (PayPal) will be unlikely to duplicate, at least not easily.  Third, many people still trust Google, so now is the time to strike before a major reputation dip hits.  There are are of course plenty of people who have been distrustful of Google for quite awhile, but I think the &#8220;main stream web user&#8221; still gets a mostly warm fuzzy feeling when using Google services.</p>
+<p>If Google really has learned some of these lessons, expect the integration march to continue.  How about sending payments via <a href="http://www.gmail.com/">Gmail</a>, <a href="http://www.google.com/talk/">Google Talk</a>, or <a href="http://www.google.com/sms/">SMS</a>?  Scheduling payments via <a href="http://www.google.com/calendar">Google Calendar</a>?  Twisting this around a bit, how about getting Checkout credits instead of a check for your <a href="https://www.google.com/adsense/">Google AdSense</a> account?</p>
+<p>There is a reason that PayPal has been making features similar to these available, because Google can come in and do it without having to partner with anyone else.</p>
+<p>This might be another example of Google coming into an existing field late in the game, but doing it so much better than everyone else that they quickly become the dominant player.  Then again, Google has launched so many so-so services over the last 18 months that may do nothing more than live on life support.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2006/06/29/google-checkout/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

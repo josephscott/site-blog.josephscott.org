@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: OnMetal	</title>
+	<atom:link href="/2014/06/24/onmetal/feed/" rel="self" type="application/rss+xml" />
+	<link>/2014/06/24/onmetal/</link>
+	<description></description>
+	<lastBuildDate>Thu, 31 Jul 2014 05:00:27 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2014/06/24/onmetal/#comment-4233</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Thu, 31 Jul 2014 05:00:27 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10647#comment-4233</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/06/24/onmetal/#comment-4232&quot;&gt;Paul&lt;/a&gt;.
+
+No idea if that is something they have built in or not, but it would still be doable either way.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/06/24/onmetal/#comment-4232">Paul</a>.</p>
+<p>No idea if that is something they have built in or not, but it would still be doable either way.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Paul		</title>
+		<link>/2014/06/24/onmetal/#comment-4232</link>
+
+		<dc:creator><![CDATA[Paul]]></dc:creator>
+		<pubDate>Wed, 30 Jul 2014 14:17:06 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10647#comment-4232</guid>
+
+					<description><![CDATA[Hi, Can you automatically scale the OnMetal servers on an hourly basis. I.E. &quot;&quot;Auto Scaling allows you to scale your Amazon EC2 capacity up or down automatically according to conditions you define. With Auto Scaling, you can ensure that the number of Amazon EC2 instances you’re using increases seamlessly during demand spikes to maintain performance, and decreases automatically during demand lulls to minimize costs.&quot;&quot; Can you do this with OnMetal? Thanks.]]></description>
+			<content:encoded><![CDATA[<p>Hi, Can you automatically scale the OnMetal servers on an hourly basis. I.E. &#8220;&#8221;Auto Scaling allows you to scale your Amazon EC2 capacity up or down automatically according to conditions you define. With Auto Scaling, you can ensure that the number of Amazon EC2 instances you’re using increases seamlessly during demand spikes to maintain performance, and decreases automatically during demand lulls to minimize costs.&#8221;&#8221; Can you do this with OnMetal? Thanks.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2014/06/24/onmetal/#comment-4231</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Wed, 25 Jun 2014 14:39:19 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10647#comment-4231</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/06/24/onmetal/#comment-4230&quot;&gt;julien51&lt;/a&gt;.
+
+Something in the category of Heroku?]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/06/24/onmetal/#comment-4230">julien51</a>.</p>
+<p>Something in the category of Heroku?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: julien51		</title>
+		<link>/2014/06/24/onmetal/#comment-4230</link>
+
+		<dc:creator><![CDATA[julien51]]></dc:creator>
+		<pubDate>Wed, 25 Jun 2014 08:10:59 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10647#comment-4230</guid>
+
+					<description><![CDATA[Well, I&#039;m looking for something that uses the capacity of all the hosts all the time (not just for HA purposes), basically, something that would scale up when we had more hosts, without changing the VM runtime.]]></description>
+			<content:encoded><![CDATA[<p>Well, I&#8217;m looking for something that uses the capacity of all the hosts all the time (not just for HA purposes), basically, something that would scale up when we had more hosts, without changing the VM runtime.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2014/06/24/onmetal/#comment-4229</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 24 Jun 2014 16:08:56 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10647#comment-4229</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/06/24/onmetal/#comment-4228&quot;&gt;julien51&lt;/a&gt;.
+
+How multi-host are you thinking?  VMWare has a HA cluster version that will automatically move a VM to a new server in the event of a hard crash.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/06/24/onmetal/#comment-4228">julien51</a>.</p>
+<p>How multi-host are you thinking?  VMWare has a HA cluster version that will automatically move a VM to a new server in the event of a hard crash.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: julien51		</title>
+		<link>/2014/06/24/onmetal/#comment-4228</link>
+
+		<dc:creator><![CDATA[julien51]]></dc:creator>
+		<pubDate>Tue, 24 Jun 2014 16:06:20 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=10647#comment-4228</guid>
+
+					<description><![CDATA[I&#039;m still waiting for the multi-host single VM server. I wonder if we will ever see this kind of beast, but that surely would be interesting!]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;m still waiting for the multi-host single VM server. I wonder if we will ever see this kind of beast, but that surely would be interesting!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

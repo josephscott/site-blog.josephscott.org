@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: WordPress File Uploads With IIS	</title>
+	<atom:link href="/2007/09/04/wordpress-file-uploads-with-iis/feed/" rel="self" type="application/rss+xml" />
+	<link>/2007/09/04/wordpress-file-uploads-with-iis/</link>
+	<description></description>
+	<lastBuildDate>Sat, 08 Oct 2011 01:14:28 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Shannon		</title>
+		<link>/2007/09/04/wordpress-file-uploads-with-iis/#comment-1920</link>
+
+		<dc:creator><![CDATA[Shannon]]></dc:creator>
+		<pubDate>Sat, 08 Oct 2011 01:14:28 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/09/04/wordpress-file-uploads-with-iis/#comment-1920</guid>
+
+					<description><![CDATA[I also had to adjust the following in the php.ini then it worked
+upload_max_filesize = 128M 
+Default was 2M]]></description>
+			<content:encoded><![CDATA[<p>I also had to adjust the following in the php.ini then it worked<br />
+upload_max_filesize = 128M<br />
+Default was 2M</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Office Warfare &#187; Uploading Pictuers to Wordpress in IIS		</title>
+		<link>/2007/09/04/wordpress-file-uploads-with-iis/#comment-1919</link>
+
+		<dc:creator><![CDATA[Office Warfare &#187; Uploading Pictuers to Wordpress in IIS]]></dc:creator>
+		<pubDate>Tue, 31 Mar 2009 16:28:14 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/09/04/wordpress-file-uploads-with-iis/#comment-1919</guid>
+
+					<description><![CDATA[[...] and that I was going to fix the problem. I started in the obvious place, Google, and came up with this link that got me part way there and filled me in on some inlightening stuff about php temp files.  [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] and that I was going to fix the problem. I started in the obvious place, Google, and came up with this link that got me part way there and filled me in on some inlightening stuff about php temp files.  [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: DanD		</title>
+		<link>/2007/09/04/wordpress-file-uploads-with-iis/#comment-1918</link>
+
+		<dc:creator><![CDATA[DanD]]></dc:creator>
+		<pubDate>Tue, 24 Feb 2009 07:36:18 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/09/04/wordpress-file-uploads-with-iis/#comment-1918</guid>
+
+					<description><![CDATA[Ok, this post helped, thanks, but I still had an issue when windows would not put the proper permissions on the file after Wordpress would copy it from the tmp folder to the uploads directory.  The end result was a file uploaded but not viewable.
+
+What solved my issue is uncommenting the following line in php.ini :  &quot;fastcgi.impersonate = 1;&quot;.  This will allow IIS to copy the permissions properly.
+
+Don&#039;t forget to recyle the application pool in iis manager to reload the  re-edited php.ini.]]></description>
+			<content:encoded><![CDATA[<p>Ok, this post helped, thanks, but I still had an issue when windows would not put the proper permissions on the file after WordPress would copy it from the tmp folder to the uploads directory.  The end result was a file uploaded but not viewable.</p>
+<p>What solved my issue is uncommenting the following line in php.ini :  &#8220;fastcgi.impersonate = 1;&#8221;.  This will allow IIS to copy the permissions properly.</p>
+<p>Don&#8217;t forget to recyle the application pool in iis manager to reload the  re-edited php.ini.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: JonB		</title>
+		<link>/2007/09/04/wordpress-file-uploads-with-iis/#comment-1917</link>
+
+		<dc:creator><![CDATA[JonB]]></dc:creator>
+		<pubDate>Mon, 19 Jan 2009 16:34:28 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/09/04/wordpress-file-uploads-with-iis/#comment-1917</guid>
+
+					<description><![CDATA[OK - I gave it up for the Zip fix thing, LOL.  Its an explanation -]]></description>
+			<content:encoded><![CDATA[<p>OK &#8211; I gave it up for the Zip fix thing, LOL.  Its an explanation &#8211;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: JonB		</title>
+		<link>/2007/09/04/wordpress-file-uploads-with-iis/#comment-1916</link>
+
+		<dc:creator><![CDATA[JonB]]></dc:creator>
+		<pubDate>Mon, 19 Jan 2009 16:06:45 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/09/04/wordpress-file-uploads-with-iis/#comment-1916</guid>
+
+					<description><![CDATA[Hi James -
+
+I will have some answers for you tomorrow on both your issues I think.  At least things you will be able to check.  I&#039;m mostly a cross platform server geek. I will &#039;probably&#039; post the info on your WordPress threads.
+
+Right now I&#039;m in the midst of installs &#038; way too many checklists.
+
+/me feels like a party-crasher, LOL]]></description>
+			<content:encoded><![CDATA[<p>Hi James &#8211;</p>
+<p>I will have some answers for you tomorrow on both your issues I think.  At least things you will be able to check.  I&#8217;m mostly a cross platform server geek. I will &#8216;probably&#8217; post the info on your WordPress threads.</p>
+<p>Right now I&#8217;m in the midst of installs &amp; way too many checklists.</p>
+<p>/me feels like a party-crasher, LOL</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: James		</title>
+		<link>/2007/09/04/wordpress-file-uploads-with-iis/#comment-1915</link>
+
+		<dc:creator><![CDATA[James]]></dc:creator>
+		<pubDate>Wed, 14 Jan 2009 11:24:09 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/09/04/wordpress-file-uploads-with-iis/#comment-1915</guid>
+
+					<description><![CDATA[This is at least peripherally related to two issues I am seeing.
+
+I am having troubles where my image uploader is not giving any option but full size for image uploads.  I am fairly certain this is not a permissions issue since I am able to upload the images and further I am able to select tn views using the edit feature after the image is uploaded:
+
+http://wordpress.org/support/topic/231020
+
+Also, I am not able to auto-update plugins due to a permissions issue of some sort:
+
+http://wordpress.org/support/topic/187786
+
+I wonder if you might be able to offer any insight into the matter?  It&#039;s tough to find other Windows/WP administrators out there.
+
+(Feel free to write to me and we can take this off-line if that&#039;s better for you.)]]></description>
+			<content:encoded><![CDATA[<p>This is at least peripherally related to two issues I am seeing.</p>
+<p>I am having troubles where my image uploader is not giving any option but full size for image uploads.  I am fairly certain this is not a permissions issue since I am able to upload the images and further I am able to select tn views using the edit feature after the image is uploaded:</p>
+<p><a href="http://wordpress.org/support/topic/231020" rel="nofollow ugc">http://wordpress.org/support/topic/231020</a></p>
+<p>Also, I am not able to auto-update plugins due to a permissions issue of some sort:</p>
+<p><a href="http://wordpress.org/support/topic/187786" rel="nofollow ugc">http://wordpress.org/support/topic/187786</a></p>
+<p>I wonder if you might be able to offer any insight into the matter?  It&#8217;s tough to find other Windows/WP administrators out there.</p>
+<p>(Feel free to write to me and we can take this off-line if that&#8217;s better for you.)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Milwaukee SEO Firm		</title>
+		<link>/2007/09/04/wordpress-file-uploads-with-iis/#comment-1914</link>
+
+		<dc:creator><![CDATA[Milwaukee SEO Firm]]></dc:creator>
+		<pubDate>Sat, 03 Jan 2009 18:38:39 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/09/04/wordpress-file-uploads-with-iis/#comment-1914</guid>
+
+					<description><![CDATA[@Christian
+
+Based on my experience with 5 different ASP.Net shared hosting companies, I sort of doubt that you will be able to get this to work.  Your only choice might be a VPS or dedicated server.  I have a BlogEngine.Net blog that works with IIS, but am considering using WordPress for a second blog.  I will very likely choose a Linux plan for it.]]></description>
+			<content:encoded><![CDATA[<p>@Christian</p>
+<p>Based on my experience with 5 different ASP.Net shared hosting companies, I sort of doubt that you will be able to get this to work.  Your only choice might be a VPS or dedicated server.  I have a BlogEngine.Net blog that works with IIS, but am considering using WordPress for a second blog.  I will very likely choose a Linux plan for it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Christian Gehrke		</title>
+		<link>/2007/09/04/wordpress-file-uploads-with-iis/#comment-1913</link>
+
+		<dc:creator><![CDATA[Christian Gehrke]]></dc:creator>
+		<pubDate>Mon, 17 Nov 2008 15:51:52 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/09/04/wordpress-file-uploads-with-iis/#comment-1913</guid>
+
+					<description><![CDATA[Joe this looks pretty good for people hosting their WP on their own servers. I have a shared hosting account with a company and can&#039;t access the services you mention.
+
+Does anyone have a way to get uploads working in a shared hosting environment?]]></description>
+			<content:encoded><![CDATA[<p>Joe this looks pretty good for people hosting their WP on their own servers. I have a shared hosting account with a company and can&#8217;t access the services you mention.</p>
+<p>Does anyone have a way to get uploads working in a shared hosting environment?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: JonB		</title>
+		<link>/2007/09/04/wordpress-file-uploads-with-iis/#comment-1912</link>
+
+		<dc:creator><![CDATA[JonB]]></dc:creator>
+		<pubDate>Fri, 24 Oct 2008 18:23:28 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/09/04/wordpress-file-uploads-with-iis/#comment-1912</guid>
+
+					<description><![CDATA[Umm - Clay
+
+the &#039;user&#039; never owns the file in this kind of an environment, they aren&#039;t authenticated.
+
+IUSR is the proxy for the client. It represents the Anonymous Access view/filter of files and folders present in an IIS website. I hope this helps.]]></description>
+			<content:encoded><![CDATA[<p>Umm &#8211; Clay</p>
+<p>the &#8216;user&#8217; never owns the file in this kind of an environment, they aren&#8217;t authenticated.</p>
+<p>IUSR is the proxy for the client. It represents the Anonymous Access view/filter of files and folders present in an IIS website. I hope this helps.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Clay		</title>
+		<link>/2007/09/04/wordpress-file-uploads-with-iis/#comment-1911</link>
+
+		<dc:creator><![CDATA[Clay]]></dc:creator>
+		<pubDate>Thu, 23 Oct 2008 13:47:35 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/09/04/wordpress-file-uploads-with-iis/#comment-1911</guid>
+
+					<description><![CDATA[i am not sure if it was covered but whatever you put in your upload_tmp_dir is deleted by PHP when the script ends, at least that&#039;s how it used to be i believe, that is a bit of a temp holding ground, you&#039;re supposed to migrate it to a permanent location after receiving the upload stream, this should be why someon&#039;s image wasn&#039;t showing up after upload, it didn&#039;t really exsist after it.
+
+this is in reference to uploading files / using $_FILES.
+
+If you&#039;re gonna upload, read the manual on it so you know what you&#039;re using:
+http://us3.php.net/file-upload
+FROM PHP SITE:
+&quot;The file will be deleted from the temporary directory at the end of the request if it has not been moved away or renamed. &quot;
+
+and from what i saw above, IUSR is being given too many rights and the user does not (and i would think should not) not own any file.]]></description>
+			<content:encoded><![CDATA[<p>i am not sure if it was covered but whatever you put in your upload_tmp_dir is deleted by PHP when the script ends, at least that&#8217;s how it used to be i believe, that is a bit of a temp holding ground, you&#8217;re supposed to migrate it to a permanent location after receiving the upload stream, this should be why someon&#8217;s image wasn&#8217;t showing up after upload, it didn&#8217;t really exsist after it.</p>
+<p>this is in reference to uploading files / using $_FILES.</p>
+<p>If you&#8217;re gonna upload, read the manual on it so you know what you&#8217;re using:<br />
+<a href="http://us3.php.net/file-upload" rel="nofollow ugc">http://us3.php.net/file-upload</a><br />
+FROM PHP SITE:<br />
+&#8220;The file will be deleted from the temporary directory at the end of the request if it has not been moved away or renamed. &#8221;</p>
+<p>and from what i saw above, IUSR is being given too many rights and the user does not (and i would think should not) not own any file.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

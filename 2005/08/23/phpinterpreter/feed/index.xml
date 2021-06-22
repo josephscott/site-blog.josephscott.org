@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: PHP::Interpreter	</title>
+	<atom:link href="/2005/08/23/phpinterpreter/feed/" rel="self" type="application/rss+xml" />
+	<link>/2005/08/23/phpinterpreter/</link>
+	<description></description>
+	<lastBuildDate>Tue, 23 Aug 2005 16:46:54 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Greg Linden		</title>
+		<link>/2005/08/23/phpinterpreter/#comment-937</link>
+
+		<dc:creator><![CDATA[Greg Linden]]></dc:creator>
+		<pubDate>Tue, 23 Aug 2005 16:46:54 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/?p=463#comment-937</guid>
+
+					<description><![CDATA[Interesting.  But if reaching back into Perl is desirable, why not use HTML::Mason instead of PHP?  Mason allows you to embed Perl directly into your templates and access Perl libraries.
+
+I know there&#039;s a lot of existing sites using PHP, but, for new sites, HTML::Mason might be a good pick.]]></description>
+			<content:encoded><![CDATA[<p>Interesting.  But if reaching back into Perl is desirable, why not use HTML::Mason instead of PHP?  Mason allows you to embed Perl directly into your templates and access Perl libraries.</p>
+<p>I know there&#8217;s a lot of existing sites using PHP, but, for new sites, HTML::Mason might be a good pick.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

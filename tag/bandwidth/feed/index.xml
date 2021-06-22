@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>bandwidth &#8211; Joseph Scott</title>
+	<atom:link href="/tag/bandwidth/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 21 Sep 2017 16:34:04 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Akamai, State of the Internet</title>
+		<link>/2017/09/21/akamai-state-of-the-internet/</link>
+					<comments>/2017/09/21/akamai-state-of-the-internet/#respond</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 21 Sep 2017 16:34:04 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[akamai]]></category>
+		<category><![CDATA[bandwidth]]></category>
+		<category><![CDATA[internet]]></category>
+		<guid isPermaLink="false">/?p=16168</guid>
+
+					<description><![CDATA[Here are a few data points I pulled from the Akamai &#8220;State of the Internet&#8221;, 2017 Q1 PDF. The global average connection speed increased 2.3% quarter-over-quarter to 7.2 Mbps Page 3 Insert a general warning about &#8220;averages&#8221; here. A little further down, on page 12, they do break it down further by providing the top [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Here are a few data points I pulled from the <a href="https://www.akamai.com/us/en/multimedia/documents/state-of-the-internet/q1-2017-state-of-the-internet-connectivity-report.pdf">Akamai &#8220;State of the Internet&#8221;, 2017 Q1</a> PDF.</p>
+<blockquote><p>
+The global average connection speed increased 2.3% quarter-over-quarter to 7.2 Mbps</p>
+<p><cite>Page 3</cite>
+</p></blockquote>
+<p>Insert a general warning about &#8220;averages&#8221; here.  A little further down, on page 12, they do break it down further by providing the top 10 countries:</p>
+<p><a href="/wp-content/uploads/2017/09/country-average-connections.png"><img loading="lazy" src="/wp-content/uploads/2017/09/country-average-connections.png" alt="" width="600" height="502" class="aligncenter size-full wp-image-16178" srcset="/wp-content/uploads/2017/09/country-average-connections.png 600w, /wp-content/uploads/2017/09/country-average-connections-300x251.png 300w" sizes="(max-width: 600px) 100vw, 600px" /></a></p>
+<p>This puts the US at ~2.6 times higher than the global average.  Then I found a table on page 15 that was ever more useful:</p>
+<p><a href="/wp-content/uploads/2017/09/connection-above-15mbps.png"><img loading="lazy" src="/wp-content/uploads/2017/09/connection-above-15mbps.png" alt="" width="600" height="491" class="aligncenter size-full wp-image-16179" srcset="/wp-content/uploads/2017/09/connection-above-15mbps.png 600w, /wp-content/uploads/2017/09/connection-above-15mbps-300x246.png 300w" sizes="(max-width: 600px) 100vw, 600px" /></a></p>
+<p>My take away: 52% of US connections are less than 15 Mbps.  Let that sink in for minute.  There is an entire section, starting on page 17, that goes into more detail on US connections.</p>
+<p>It is worth at least skimming through the ~55 pages, especially the mobile section starting on page 43.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2017/09/21/akamai-state-of-the-internet/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Best Bandwidth in Utah?</title>
+		<link>/2010/08/03/best-bandwidth-in-utah/</link>
+					<comments>/2010/08/03/best-bandwidth-in-utah/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Tue, 03 Aug 2010 17:04:04 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[bandwidth]]></category>
+		<category><![CDATA[brigham-city-utah]]></category>
+		<category><![CDATA[sandy-utah]]></category>
+		<category><![CDATA[utah]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=2651</guid>
+
+					<description><![CDATA[How did Brigham City end up ranking number one for bandwidth in Utah? It&#8217;s a small town (2000 Census lists it at 17,412) about half way between Ogden and Logan. So if a little town like that can have an average of 21Mbps how is it that down in Sandy the average is barely 8Mbps [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>How did <a href="http://www.brighamcity.utah.gov/">Brigham City</a> end up ranking number one for <a href="http://www.netindex.com/download/3,136/Utah/">bandwidth in Utah</a>?  It&#8217;s a small town (2000 Census lists it at 17,412) <a href="http://maps.google.com/maps?q=brigham+city+utah&amp;ie=UTF8&amp;hq=&amp;hnear=Brigham+City,+Box+Elder,+Utah&amp;gl=us&amp;ei=5FVXTMfUNIHdnAemidTOAw&amp;ved=0CCsQ8gEwAA&amp;ll=41.510634,-112.015228&amp;spn=0.918321,1.652069&amp;z=10">about half way between Ogden and Logan</a>.  So if a little town like that can have an average of 21Mbps how is it that down in Sandy the average is barely 8Mbps (ranking 19th!)?</p>
+<p>Granted all of is from numbers produced by <a href="http://speedtest.net/">Speedtest.net</a>, but the sample sizes seem reasonable enough.</p>
+<p>I&#8217;m sure if I look hard enough I&#8217;ll find a way to blame this on Qwest.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/08/03/best-bandwidth-in-utah/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How Much Does One Terabyte Of Bandwidth Cost?</title>
+		<link>/2009/01/22/how-much-does-one-terabyte-of-bandwidth-cost/</link>
+					<comments>/2009/01/22/how-much-does-one-terabyte-of-bandwidth-cost/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 22 Jan 2009 15:00:30 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[bandwidth]]></category>
+		<guid isPermaLink="false">http://josephscott.org/?p=685</guid>
+
+					<description><![CDATA[This is going to require you to use your imagine, so just role with it and let&#8217;s see if there&#8217;s anything useful the be learned from this exercise. Imagine you had a 55026 byte file (which happens to be size of the minified version of jQuery 1.3) that you needed to serve on the web. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>This is going to require you to use your imagine, so just role with it and let&#8217;s see if there&#8217;s anything useful the be learned from this exercise.</p>
+<p>Imagine you had a 55026 byte file (which happens to be size of the minified version of <a href="http://jquery.com/">jQuery</a> 1.3) that you needed to serve on the web.  Beyond that we expect to use exactly 1 terabyte (TB) of bandwidth per month from browsers downloading our file.</p>
+<p>There are two general approaches to dealing with this, use some sort of content delivery network (CDN) or put it up on a server some where.  The traditional CDN approach is nice, but also tends to be pretty expensive.  Hoping to stretch our dollars a little further we&#8217;ll skip the CDN option for now and see what the costs are for a dedicated server who&#8217;s only job is to serve up this 55026 byte file.  The question then becomes, what&#8217;s the best deal per TB per month?</p>
+<p>With that question in mind I went looking at some of the dedicated server providers to find out what the lowest cost was for servers that included at least 1 TB per month.  To make comparison easier I didn&#8217;t include setup costs.</p>
+<p><a href="http://www.layeredtech.com/">Layered Tech</a>: <a href="http://www.layeredtech.com/dedicated-hosting/dedicated-servers/dual-and-quad-core-servers/">$169</a> (2 TB/month)<br />
+<a href="http://theplanet.com/">The Planet</a>: <a href="https://www.theplanet.com/servers/">$149</a> (1.5 TB/month)<br />
+<a href="http://www.superbhosting.net/">Superb Hosting</a>: <a href="http://www.superbhosting.net/dedicated-servers/services/single-processor-dual-core-servers.php">$119</a> (2 TB/month)<br />
+<a href="http://www.hostway.com/">Hostway</a>: <a href="http://www.hostway.com/dedicated-hosting-solutions/configurations.html">$99</a> (2 TB/month)<br />
+<a href="http://www.serverbeach.com/">Server Beach</a>: <a href="http://www.serverbeach.com/servers/index.php?category=1">$75</a> (1.2 TB/month)<br />
+<a href="http://www.cari.net/">Cari.net</a>: <a href="http://www.cari.net/netstat.compare-all-servers.2009-01-02.88.html">$60</a> (1.3 TB/month)</p>
+<p>There are plenty of others, but this gives a reasonable sampling of per month costs.  Remember, we aren&#8217;t comparing hardware specs, just what the base entry costs are for serving 1 TB per month.</p>
+<p>This is where person A sticks up their hand and says,&#8221; Joseph, why didn&#8217;t you include <a href="http://aws.amazon.com/ec2/">Amazon EC2</a> in that list?&#8221;  Reasonable question, let&#8217;s see what the minimum cost would be for 1 TB per month running the smallest EC2 instance for one month.  This is really easy to do using the <a href="http://calculator.s3.amazonaws.com/calc5.html">AWS monthly calculator</a>.  To keep things simple we&#8217;ll set instance hours to 744, data transfer out to 1000 GB and everything else to zero.</p>
+<p><a href="http://aws.amazon.com/ec2/">Amazon EC2</a>: $244.40</p>
+<p>The bandwidth costs alone for EC2 is $170.00 per month, the cost of an entire server at Layered Tech, the most expensive option on our list.</p>
+<p>About this time person B grumbles something insulting towards person A and then speaks up and says &#8220;that&#8217;s just dumb.  Just put the file on an <a href="http://aws.amazon.com/s3/">Amazon S3</a> bucket and skip the server part entirely.&#8221;  Not an exact comparison, is still one way to answer our question of how much it costs to server 1 TB of data.  Sticking with our simplistic model I&#8217;m going to set the S3 storage and incoming bandwidth values to zero.</p>
+<p><a href="http://aws.amazon.com/s3/">Amazon S3</a>:  $170</p>
+<p>Not surprisingly the bandwidth costs for S3 are the same as EC2.</p>
+<p>Person C can&#8217;t take it any more, he reaches over and slaps person B on the back of the head.  &#8220;Hello, this is exactly the sort of thing that <a href="http://aws.amazon.com/cloudfront/">Amazon CloudFront</a> was designed for.&#8221;  This edges us near the traditional CDN approach, minus many of the spiffy CDN features.  Any one want to guess how much it will cost to server 1 TB from CloudFront?  We&#8217;ll set everything but the US out going traffic to zero.</p>
+<p><a href="http://aws.amazon.com/cloudfront/">Amazon CloudFront</a>: $170</p>
+<p>I know, amazing, the same exact cost as EC2 (for the bandwidth) and S3.  Now in reality we&#8217;ve low balled this in all of the Amazon cases because there are other costs that come into play.</p>
+<p>AWS (EC2, S3 and CloudFront) is going to charge you at least $170 per month for that 1 TB of bandwidth, no matter which service is being used.  While AWS might be convenient it&#8217;s not likely to be the cheapest.  And that&#8217;s okay if the other capabilities of AWS offset that extra cost for your particular needs.  For instance, in the S3 and CloudFront cases Amazon takes care of running the servers for you.</p>
+<p>It isn&#8217;t clear that all of the servers listed above would do well at serving 1 TB per month, that&#8217;s lot of sustained traffic.  If we needed two servers to adequately deal with the load then that changes the cost structure quite a bit.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/01/22/how-much-does-one-terabyte-of-bandwidth-cost/feed/</wfw:commentRss>
+			<slash:comments>16</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>forward-compatibility &#8211; Joseph Scott</title>
+	<atom:link href="/tag/forward-compatibility/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 26 Jun 2013 04:14:32 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>Forward Compatibility, Another Reason for Named Parameters in PHP</title>
+		<link>/2013/06/26/forward-compatibility-another-reason-for-named-parameters-in-php/</link>
+					<comments>/2013/06/26/forward-compatibility-another-reason-for-named-parameters-in-php/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Wed, 26 Jun 2013 04:14:32 +0000</pubDate>
+				<category><![CDATA[Posts]]></category>
+		<category><![CDATA[anthony-ferrara]]></category>
+		<category><![CDATA[forward-compatibility]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">https://josephscott.org/?p=8368</guid>
+
+					<description><![CDATA[While Anthony Ferrara&#8217;s Backwards Compatibility Is For Suckers starts off as mostly flame bait, he does bring up one important issue: forward compatibility. The PHP example he cites is the new password_hash function. It looks like this: password_hash( $password, $algo, array $options = array() ); Currently $options supports two values: salt and cost. The forward [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>While Anthony Ferrara&#8217;s <a href="http://blog.ircmaxell.com/2013/06/backwards-compatibility-is-for-suckers.html">Backwards Compatibility Is For Suckers</a> starts off as mostly flame bait, he does bring up one important issue: forward compatibility.</p>
+<p>The PHP example he cites is the new <a href="http://us3.php.net/password_hash">password_hash</a> function.  It looks like this:</p>
+<pre><code>password_hash( $password, $algo, array $options = array() );</code></pre>
+<p>Currently <code>$options</code> supports two values: <code>salt</code> and <code>cost</code>.  The forward compatibility part is that new values can be added to <code>$options</code> without having to change the function signature.</p>
+<p>This is the best you can do with PHP right now, which is a bummer.  The (much) better solution would be to have named parameter support.  Use Python as the reference for this.  No more hiding parameters in an opaque options array, instead expose all of them in the function signature.</p>
+<p>Until PHP has proper named parameter support we&#8217;ll have to continue the awkward use of arrays to hide current and future optional parameters.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/06/26/forward-compatibility-another-reason-for-named-parameters-in-php/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

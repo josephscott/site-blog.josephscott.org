@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>marsedit &#8211; Joseph Scott</title>
+	<atom:link href="/tag/marsedit/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Thu, 04 Oct 2007 23:42:03 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<atom:link rel='hub' href='/?pushpress=hub'/>
+	<item>
+		<title>MarsEdit and WordPress 2.3 Tags</title>
+		<link>/2007/10/04/marsedit-and-wordpress-23-tags/</link>
+					<comments>/2007/10/04/marsedit-and-wordpress-23-tags/#comments</comments>
+		
+		<dc:creator><![CDATA[josephscott]]></dc:creator>
+		<pubDate>Thu, 04 Oct 2007 23:42:03 +0000</pubDate>
+				<category><![CDATA[josephscott]]></category>
+		<category><![CDATA[marsedit]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2007/10/04/marsedit-and-wordpress-23-tags/</guid>
+
+					<description><![CDATA[Daniel Jalkut mentions that MarsEdit supports tags in WordPress 2.3. No need to upgrade MarsEdit, just use the existing keywords feature, nice.]]></description>
+										<content:encoded><![CDATA[<p>Daniel Jalkut mentions that <a href="http://www.red-sweater.com/blog/406/tags-in-wordpress-23">MarsEdit supports tags in WordPress 2.3</a>.  No need to upgrade MarsEdit, just use the existing keywords feature, nice.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2007/10/04/marsedit-and-wordpress-23-tags/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

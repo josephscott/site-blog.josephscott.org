@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Cache Hits in Web Browsers	</title>
+	<atom:link href="/2006/11/28/cache-hits-in-web-browsers/feed/" rel="self" type="application/rss+xml" />
+	<link>/2006/11/28/cache-hits-in-web-browsers/</link>
+	<description></description>
+	<lastBuildDate>Thu, 16 Oct 2008 20:18:08 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Another http traffic debugger		</title>
+		<link>/2006/11/28/cache-hits-in-web-browsers/#comment-1753</link>
+
+		<dc:creator><![CDATA[Another http traffic debugger]]></dc:creator>
+		<pubDate>Thu, 16 Oct 2008 20:18:08 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/11/28/cache-hits-in-web-browsers/#comment-1753</guid>
+
+					<description><![CDATA[There are some other good http traffic debuggers.
+For example http debugger ($50) http://www.httpdebugger.com/ or fiddler (free) http://www.fiddlertool.org.]]>/</description>
+			<content:encoded><![CDATA[<p>There are some other good http traffic debuggers.<br />
+For example http debugger ($50) <a href="http://www.httpdebugger.com/" rel="nofollow ugc">http://www.httpdebugger.com/</a> or fiddler (free) <a href="http://www.fiddlertool.org/" rel="nofollow ugc">http://www.fiddlertool.org/</a>.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Kristian		</title>
+		<link>/2006/11/28/cache-hits-in-web-browsers/#comment-1752</link>
+
+		<dc:creator><![CDATA[Kristian]]></dc:creator>
+		<pubDate>Wed, 13 Dec 2006 09:32:06 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/11/28/cache-hits-in-web-browsers/#comment-1752</guid>
+
+					<description><![CDATA[In firebug you can check if elements is cached in the Net tab. The color of the bar indicates if the element is cached or not - dark gray = not cached, light gray = from cache. You can also check the content-length in the response header.]]></description>
+			<content:encoded><![CDATA[<p>In firebug you can check if elements is cached in the Net tab. The color of the bar indicates if the element is cached or not &#8211; dark gray = not cached, light gray = from cache. You can also check the content-length in the response header.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ian		</title>
+		<link>/2006/11/28/cache-hits-in-web-browsers/#comment-1751</link>
+
+		<dc:creator><![CDATA[Ian]]></dc:creator>
+		<pubDate>Thu, 30 Nov 2006 16:30:16 +0000</pubDate>
+		<guid isPermaLink="false">http://joseph.randomnetworks.com/archives/2006/11/28/cache-hits-in-web-browsers/#comment-1751</guid>
+
+					<description><![CDATA[I just purchased a plugin for IE to do this. It&#039;s pricey but it does work very well.
+
+http://www.httpwatch.com/
+
+It also works with ajax requests which is what I primarily use it for along with checking if my JS includes are coming from cache or not since getting that working right on IE is a pain.]]></description>
+			<content:encoded><![CDATA[<p>I just purchased a plugin for IE to do this. It&#8217;s pricey but it does work very well.</p>
+<p><a href="http://www.httpwatch.com/" rel="nofollow ugc">http://www.httpwatch.com/</a></p>
+<p>It also works with ajax requests which is what I primarily use it for along with checking if my JS includes are coming from cache or not since getting that working right on IE is a pain.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

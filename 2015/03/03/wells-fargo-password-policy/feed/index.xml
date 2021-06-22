@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Wells Fargo Password Policy	</title>
+	<atom:link href="/2015/03/03/wells-fargo-password-policy/feed/" rel="self" type="application/rss+xml" />
+	<link>/2015/03/03/wells-fargo-password-policy/</link>
+	<description></description>
+	<lastBuildDate>Wed, 27 Apr 2016 00:59:05 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: DenFern		</title>
+		<link>/2015/03/03/wells-fargo-password-policy/#comment-4293</link>
+
+		<dc:creator><![CDATA[DenFern]]></dc:creator>
+		<pubDate>Wed, 27 Apr 2016 00:59:05 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11652#comment-4293</guid>
+
+					<description><![CDATA[I just discovered that Wells Fargo passwords are not case sensitive.]]></description>
+			<content:encoded><![CDATA[<p>I just discovered that Wells Fargo passwords are not case sensitive.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2015/03/03/wells-fargo-password-policy/#comment-4292</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 03 Mar 2015 21:52:00 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11652#comment-4292</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2015/03/03/wells-fargo-password-policy/#comment-4291&quot;&gt;julien51&lt;/a&gt;.
+
+&lt;blockquote&gt;
+any constraint on the size means that they’re storing the actual value somewhere
+&lt;/blockquote&gt;
+
+Not exactly.  For instance, if they used bcrypt, then limiting it to 72 characters would be a good idea ( because bcrypt only uses the first 72 ).  You could hash the password with something else first and then feed the hash of the password to bcrypt to get around that limitation.  But if you were using bcrypt directly then I&#039;d be fine with a 72 character limit.
+
+In general, allowing for an unlimited size for a password probably isn&#039;t a good idea either.  Do you really want to feed a 15 MB string into your password hashing algorithm?  Instead, a hard limit of something like a 1,000 characters, no matter what hashing system you are using, would be reasonable.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2015/03/03/wells-fargo-password-policy/#comment-4291">julien51</a>.</p>
+<blockquote><p>
+any constraint on the size means that they’re storing the actual value somewhere
+</p></blockquote>
+<p>Not exactly.  For instance, if they used bcrypt, then limiting it to 72 characters would be a good idea ( because bcrypt only uses the first 72 ).  You could hash the password with something else first and then feed the hash of the password to bcrypt to get around that limitation.  But if you were using bcrypt directly then I&#8217;d be fine with a 72 character limit.</p>
+<p>In general, allowing for an unlimited size for a password probably isn&#8217;t a good idea either.  Do you really want to feed a 15 MB string into your password hashing algorithm?  Instead, a hard limit of something like a 1,000 characters, no matter what hashing system you are using, would be reasonable.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: julien51		</title>
+		<link>/2015/03/03/wells-fargo-password-policy/#comment-4291</link>
+
+		<dc:creator><![CDATA[julien51]]></dc:creator>
+		<pubDate>Tue, 03 Mar 2015 21:38:48 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11652#comment-4291</guid>
+
+					<description><![CDATA[As a matter of fact, any constraint on the size means that they&#039;re storing the actual value somewhere... because hashes have constant sizes, whatever the input.
+
+In my dream world, the browsers would hash passwords before they send them so that passwords never leave my devices.]]></description>
+			<content:encoded><![CDATA[<p>As a matter of fact, any constraint on the size means that they&#8217;re storing the actual value somewhere&#8230; because hashes have constant sizes, whatever the input.</p>
+<p>In my dream world, the browsers would hash passwords before they send them so that passwords never leave my devices.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Joseph Scott		</title>
+		<link>/2015/03/03/wells-fargo-password-policy/#comment-4290</link>
+
+		<dc:creator><![CDATA[Joseph Scott]]></dc:creator>
+		<pubDate>Tue, 03 Mar 2015 17:23:52 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11652#comment-4290</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2015/03/03/wells-fargo-password-policy/#comment-4289&quot;&gt;Alt&lt;/a&gt;.
+
+Good point, I could totally see that being a problem.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2015/03/03/wells-fargo-password-policy/#comment-4289">Alt</a>.</p>
+<p>Good point, I could totally see that being a problem.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Alt		</title>
+		<link>/2015/03/03/wells-fargo-password-policy/#comment-4289</link>
+
+		<dc:creator><![CDATA[Alt]]></dc:creator>
+		<pubDate>Tue, 03 Mar 2015 17:21:14 +0000</pubDate>
+		<guid isPermaLink="false">https://josephscott.org/?p=11652#comment-4289</guid>
+
+					<description><![CDATA[I&#039;ll bet the 9 or more number restriction is to prevent people from using phone numbers in their passwords.]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ll bet the 9 or more number restriction is to prevent people from using phone numbers in their passwords.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>
